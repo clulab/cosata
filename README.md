@@ -142,6 +142,12 @@ A: While a number of aspects of the solving algorithm are wrapped in parallel st
 
 A: I have noticed that a large number of threads will sometimes freeze in the console, but not when running through IntelliJ.  This is likely due to the volume of verbose output generated.  A fix is likely to reduce the number of threads, or run through IntelliJ. 
 
+**Q: Where is the code for the parser/interpreter?**
+
+A: The bulk of the code for the parser/interpreter is in [src/main/scala/inferenceengine/iml](src/main/scala/inferenceengine/iml).  The `runtime` package includes the main interpreter (Interpreter.scala) that walks the abstract syntax tree. The IMLReader (IMLReader.scala) reads the IML files, calls the parser, and generates the AST tree.  The parser itself (IMLParser.scala) parses the IML text into case classes for the AST, where the case classes are found in `model`. 
+
+The stand-alone solver runs by generating a faux runscript for the interpreter (loading the IML files, and calling the logfile generation), then calling the interpreter to load the IML, perform the constraint satisfaction, and then export the results. 
+
 **Q: Is the IDE available?**
 
 A: The IDE is written in Electron, and uses the Monaco editor for code editing (the same editor as Visual Studio Code).  Unfortunately the libraries moved faster than the project, and the code now uses legacy versions of the libraries and is difficult to compile.  The code for the IDE is available in this github repo: ... 
