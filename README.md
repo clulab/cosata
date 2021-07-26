@@ -23,9 +23,15 @@ CoSaTa is written in Scala 2.11 and requires Java 1.8+.  It has been tested on U
 
 
 # Installation
-Assuming Java 1.8+ is installed on your Ubuntu distribution:
 
-Step 1: Install SBT (Scala Build Tool)
+
+Step 0: Install Java 1.8+, e.g.: 
+```
+sudo apt install openjdk-8-jdk
+```
+
+Step 1: Install SBT (Scala Build Tool):
+
 [SBT Installation Instructions](https://www.scala-sbt.org/download.html)
 
 Step 2: Clone the repository:
