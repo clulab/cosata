@@ -62,6 +62,35 @@ This distribution includes output of the examples.  If you'd like to run the con
 sbt "runMain inferenceengine.util.EnumeratePatternsToJSON -props props-release/worldtree-simple/enumeratePatternsToJSON1.props"
 ```
 
+After successful completion, the solver will display a summary message similar to this: 
+```
+EnumeratePatternsToJSON(): Execution Summary 
+
+--------------------------------------------------------------------------------------------
+               Pattern Summary Statistics (Average counts per pattern):
+--------------------------------------------------------------------------------------------
+
+             AVG PATTERN_ROWS_TOTAL:  2.0
+   AVG PATTERN_NUM_UNIQUE_VARIABLES:  4.2
+      AVG PATTERN_ROWS_WITHOUT_VARS:  0.0
+         AVG PATTERN_ROWS_WITH_VARS:  2.0
+
+--------------------------------------------------------------------------------------------
+                              Execution Summary Statistics
+--------------------------------------------------------------------------------------------
+
+               Total Execution time:  14 second(s)  (threads: 8)
+           Total Patterns Processed:  5 pattern(s)
+          Total Solutions Generated:  6767 solution(s)
+         Solution Limit Per Pattern:  10000 solution(s)
+          Number of times limit hit:  0 time(s)
+                 Pattern Input Path:  examples/enumeration/worldtree/
+                   JSON Output Path:  output/enumeration/worldtree/
+
+[success] Total time: 24 s, completed Jul 26, 2021 2:56:44 PM
+user@ubuntu:~/github/cosata$ 
+```
+
 # Inference Pattern Output
 
 The pre-generated output solutions of the ~400 automatic + manual science-themed inference patterns (Section 4 of the paper) is included here: [output/worldtree-v2/outputAutomaticPlusManual](output/worldtree-v2/outputAutomaticPlusManual/) .  This output includes the JSON (to incorporate into your system, without having to run the solver), as well as the HTML visualizations.
