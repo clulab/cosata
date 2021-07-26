@@ -1,0 +1,53 @@
+// Automatically converted pattern
+inferencepattern CEL_FEATURES_Light_by_The_Moon
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "earth", HYPERNYM: "planet"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "earth", HYPERNYM: "planet"]
+
+	// GROUNDING       KINDOF: sunlight is a kind of light     (49dc-4526-46f9-5b32) [ HYPONYM:"sunlight", HYPERNYM:"light" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "sunlight", HYPERNYM: "light"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "sunlight", HYPERNYM: "light"]
+
+	// CENTRAL         CAUSE: light reflecting off of an object causes that object to be visible to the observer     (6315-d70b-bc57-16c8) [ CONDITION_AGENT_OBJECT:"light", CONDITION_VERB:"reflect", CONDITION_PATIENT:"off of object", RESULT_AGENT:"that object", RESULT_VERB:"be visible", RESULT_PATIENT:"observer" ]
+	//row autoRow2 = [UUID:"6315-d70b-bc57-16c8", CONDITION_AGENT_OBJECT: "light", CONDITION_VERB: "reflect", CONDITION_PATIENT: "off of object", RESULT_AGENT: "that object", RESULT_VERB: "be visible", RESULT_PATIENT: "observer"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"6315-d70b-bc57-16c8", CONDITION_AGENT_OBJECT: "light", CONDITION_VERB: "reflect", CONDITION_PATIENT: "off of object", RESULT_AGENT: "that object", RESULT_VERB: "be visible", RESULT_PATIENT: "observer"]
+
+	// CENTRAL         IFTHEN: if an object reflects light toward the eye then that object can be seen     (ae74-32dc-4291-fb82) [ THING:"object", ACTION1:"reflect", OBJECT_PATIENT1:"light", SCOPE1B:"toward eye", ACTOR_AGENT_PROCESS2:"that object", ACTION3:"see" ]
+	//row autoRow3 = [UUID:"ae74-32dc-4291-fb82", THING: "object", ACTION1: "reflect", OBJECT_PATIENT1: "light", SCOPE1B: "toward eye", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "see"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"ae74-32dc-4291-fb82", THING: "object", ACTION1: "reflect", OBJECT_PATIENT1: "light", SCOPE1B: "toward eye", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "see"]
+
+	// CENTRAL         TRANSFER: reflection is when light is reflected from one object ; one place to another object ; another place     (264f-5a85-6765-8c90) [ PROCESS_NAME:"reflect", ACTOR_WHO:"light", VERB:"be reflect", SOURCE:"one object;one place", DESTINATION:"object;place" ]
+	//row autoRow4 = [UUID:"264f-5a85-6765-8c90", PROCESS_NAME: "reflect", ACTOR_WHO: "light", VERB: "be reflect", SOURCE: "one object", DESTINATION: "object"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"264f-5a85-6765-8c90", PROCESS_NAME: "reflect", ACTOR_WHO: "light", VERB: "be reflect", SOURCE: "one object", DESTINATION: "object"]
+
+	// CENTRAL         ACTION: the moon reflects sunlight towards the Earth     (a423-40e8-3886-4df5) [ AGENT_OBJECT:"moon", ACTION2:"reflect", OBJECT_PROPERTY:"sunlight", WHEN_WHERE:"towards earth" ]
+	//row autoRow5 = [UUID:"a423-40e8-3886-4df5", AGENT_OBJECT: "moon", ACTION2: "reflect", OBJECT_PROPERTY: "sunlight", WHEN_WHERE: "towards earth"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"a423-40e8-3886-4df5", AGENT_OBJECT: "moon", ACTION2: "reflect", OBJECT_PROPERTY: "sunlight", WHEN_WHERE: "towards earth"]
+
+	// CENTRAL         SOURCEOF: the sun is a source of light ; light energy called sunlight     (a538-175f-9223-d117) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"light;light energy", NAME:"sunlight" ]
+	//row autoRow6 = [UUID:"a538-175f-9223-d117", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "light energy", NAME: "sunlight"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"a538-175f-9223-d117", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "light energy", NAME: "sunlight"]
+
+	// CENTRAL         KINDOF: a moon is a kind of celestial object ; body     (e2ec-1655-c1fd-cb58) [ HYPONYM:"moon", SCOPE1:"celestial", HYPERNYM:"object;body" ]
+	//  Notes: peripheral central
+	//row autoRow7 = [UUID:"e2ec-1655-c1fd-cb58", HYPONYM: "moon", SCOPE1: "celestial", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"e2ec-1655-c1fd-cb58", HYPONYM: "moon", SCOPE1: "celestial", HYPERNYM: "object"]
+
+	// CENTRAL         KINDOF: a planet is a kind of celestial object ; body     (22a2-1029-702e-a29a) [ HYPONYM:"planet", SCOPE1:"celestial", HYPERNYM:"object;body" ]
+	//  Notes: peripheral central
+	//row autoRow8 = [UUID:"22a2-1029-702e-a29a", HYPONYM: "planet", SCOPE1: "celestial", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"22a2-1029-702e-a29a", HYPONYM: "planet", SCOPE1: "celestial", HYPERNYM: "object"]
+
+	// CENTRAL         KINDOF: a star is a kind of celestial object ; celestial body     (dbe8-e776-f804-99a0) [ HYPONYM:"star", HYPERNYM:"celestial object;celestial body" ]
+	//row autoRow9 = [UUID:"dbe8-e776-f804-99a0", HYPONYM: "star", HYPERNYM: "celestial object"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"dbe8-e776-f804-99a0", HYPONYM: "star", HYPERNYM: "celestial object"]
+
+endinferencepattern

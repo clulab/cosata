@@ -1,0 +1,77 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Plants_Changing_due_to_Habitat_Changes
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW an apple tree is a kind of plant     (00a7-56fc-3c22-e6f2) [ HYPONYM:"apple tree", HYPERNYM:"plant" ]
+	//        HINTROW a cactus is a kind of plant     (aadb-cb93-3373-eefa) [ HYPONYM:"cactus", HYPERNYM:"plant" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// GROUNDING       KINDOF: rain is a kind of water     (214a-9ca3-2983-aa79) [ HYPONYM:"rain", HYPERNYM:"water" ]
+	//        HINTROW rainwater is a kind of water     (c546-7b47-1430-cf87) [ HYPONYM:"rainwater", HYPERNYM:"water" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "water"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "water"]
+
+	// GROUNDING       KINDOF: a forest is a kind of ecosystem     (e58d-03a1-b94d-942d) [ HYPONYM:"forest", HYPERNYM:"ecosystem" ]
+	//        HINTROW a rainforest is a kind of ecosystem     (4560-3d4b-41c1-7cdb) [ HYPONYM:"rainforest", HYPERNYM:"ecosystem" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "ecosystem"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "ecosystem"]
+
+	// CENTRAL         REQUIRES: a plants ; living things require water for survival ; to grow     (f3ed-dedc-2aad-109c) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"water", FOR_PURPOSE:"survive;grow" ]
+	//row autoRow3 = [UUID:"f3ed-dedc-2aad-109c", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "water", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"f3ed-dedc-2aad-109c", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "water", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"]
+
+	// CENTRAL         HABITAT: organisms ; living things live in their habitat ; their home     (8af3-1381-b634-8b97) [ ORGANISM:"organism;live thing", HABITAT:"habitat;home" ]
+	//row autoRow5 = [UUID:"8af3-1381-b634-8b97", ORGANISM: "live thing", HABITAT: "habitat"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"8af3-1381-b634-8b97", ORGANISM: "live thing", HABITAT: "habitat"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the amount of rainfall increases in an area , the amount of available water in that area will increase     (296e-c3bd-d88a-2edf) [ QUANTITY_MEASURE1:"amount", AGENT_ATTRIBUTE1:"of rainfall", CHANGE1:"increase", SCOPE1B:"in area", QUANTITY_MEASURE2:"amount of", AGENT_ATTRIBUTE2:"available water", SCOPE2A:"in area", CHANGE2:"increase" ]
+	//row autoRow6 = [UUID:"296e-c3bd-d88a-2edf", QUANTITY_MEASURE1: "amount", AGENT_ATTRIBUTE1: "of rainfall", CHANGE1: "increase", SCOPE1B: "in area", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "available water", SCOPE2A: "in area", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"296e-c3bd-d88a-2edf", QUANTITY_MEASURE1: "amount", AGENT_ATTRIBUTE1: "of rainfall", CHANGE1: "increase", SCOPE1B: "in area", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "available water", SCOPE2A: "in area", CHANGE2: "increase"]
+
+	// CENTRAL         MEASUREMENTS: rainfall is the amount of rain an area receives     (f2a1-5807-2b1e-fef3) [ MEASURE:"rainfall", QUANTITY_ADJ:"amount of", ATTRIBUTE:"rain", AGENT:"area", ACTION:"receive" ]
+	//row autoRow7 = [UUID:"f2a1-5807-2b1e-fef3", MEASURE: "rainfall", QUANTITY_ADJ: "amount of", ATTRIBUTE: "rain", AGENT: "area", ACTION: "receive"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"f2a1-5807-2b1e-fef3", MEASURE: "rainfall", QUANTITY_ADJ: "amount of", ATTRIBUTE: "rain", AGENT: "area", ACTION: "receive"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as available water decreases , the population of plants will decrease     (c815-1f8a-8ea2-6492) [ QUANTITY_MEASURE1:"available water", CHANGE1:"decrease", QUANTITY_MEASURE2:"population", AGENT_ATTRIBUTE2:"of plant", CHANGE2:"decrease" ]
+	//row autoRow8 = [UUID:"c815-1f8a-8ea2-6492", QUANTITY_MEASURE1: "available water", CHANGE1: "decrease", QUANTITY_MEASURE2: "population", AGENT_ATTRIBUTE2: "of plant", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"c815-1f8a-8ea2-6492", QUANTITY_MEASURE1: "available water", CHANGE1: "decrease", QUANTITY_MEASURE2: "population", AGENT_ATTRIBUTE2: "of plant", CHANGE2: "decrease"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the available water in an environment increases , the populations of organisms in that environment will increase     (e124-fe21-9a74-45f3) [ QUANTITY_MEASURE1:"available water", AGENT_ATTRIBUTE1:"in environment", CHANGE1:"increase", QUANTITY_MEASURE2:"population", AGENT_ATTRIBUTE2:"of organism", SCOPE2A:"in that environment", CHANGE2:"increase" ]
+	//row autoRow9 = [UUID:"e124-fe21-9a74-45f3", QUANTITY_MEASURE1: "available water", AGENT_ATTRIBUTE1: "in environment", CHANGE1: "increase", QUANTITY_MEASURE2: "population", AGENT_ATTRIBUTE2: "of organism", SCOPE2A: "in that environment", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"e124-fe21-9a74-45f3", QUANTITY_MEASURE1: "available water", AGENT_ATTRIBUTE1: "in environment", CHANGE1: "increase", QUANTITY_MEASURE2: "population", AGENT_ATTRIBUTE2: "of organism", SCOPE2A: "in that environment", CHANGE2: "increase"]
+
+	// CENTRAL         CHANGE-VEC: growth means size ; number ; value ; strength increases     (8a51-fb44-d9d2-73ae) [ PROCESS_NAME_ACTION:"grow", AGENT_OBJECT:"size;numb;value;strength", DIRECTION:"increase" ]
+	//row autoRow10 = [UUID:"8a51-fb44-d9d2-73ae", PROCESS_NAME_ACTION: "grow", AGENT_OBJECT: "size", DIRECTION: "increase"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"8a51-fb44-d9d2-73ae", PROCESS_NAME_ACTION: "grow", AGENT_OBJECT: "size", DIRECTION: "increase"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the amount of water received by a plant increases , rate of growth of that plant will usually increase     (f8e4-1e90-0a4f-5fde) [ QUANTITY_MEASURE1:"amount", AGENT_ATTRIBUTE1:"of water", ACTION1:"receive", PATIENT1:"by plant", CHANGE1:"increase", QUANTITY_MEASURE2:"rate of grow", AGENT_ATTRIBUTE2:"of plant", QUALIFIER2:"usually", CHANGE2:"increase" ]
+	//row autoRow11 = [UUID:"f8e4-1e90-0a4f-5fde", QUANTITY_MEASURE1: "amount", AGENT_ATTRIBUTE1: "of water", ACTION1: "receive", PATIENT1: "by plant", CHANGE1: "increase", QUANTITY_MEASURE2: "rate of grow", AGENT_ATTRIBUTE2: "of plant", QUALIFIER2: "usually", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"f8e4-1e90-0a4f-5fde", QUANTITY_MEASURE1: "amount", AGENT_ATTRIBUTE1: "of water", ACTION1: "receive", PATIENT1: "by plant", CHANGE1: "increase", QUANTITY_MEASURE2: "rate of grow", AGENT_ATTRIBUTE2: "of plant", QUALIFIER2: "usually", CHANGE2: "increase"]
+
+	// CENTRAL         KINDOF: an ecosystem is a kind of habitat     (9156-3212-805b-fd3d) [ HYPONYM:"ecosystem", HYPERNYM:"habitat" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"9156-3212-805b-fd3d", HYPONYM: "ecosystem", HYPERNYM: "habitat"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"9156-3212-805b-fd3d", HYPONYM: "ecosystem", HYPERNYM: "habitat"]
+
+	// CENTRAL         REQUIRES: a plant requires a habitat for survival     (b7e4-dce3-2bc1-dc3e) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"habitat", FOR_PURPOSE:"survive" ]
+	//row autoRow13 = [UUID:"b7e4-dce3-2bc1-dc3e", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "habitat", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"b7e4-dce3-2bc1-dc3e", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "habitat", FOR_PURPOSE: "survive"]
+
+	// LEXGLUE         SYNONYMY: an area receiving rain means rain falling in that area     (94f1-7e8b-5438-dfdb) [ X1:"area", ACTION1:"receive", Y1:"rain", X2:"rain", ACTION2:"fall", Y2:"in area" ]
+	//row autoRow14 = [UUID:"94f1-7e8b-5438-dfdb", X1: "area", ACTION1: "receive", Y1: "rain", X2: "rain", ACTION2: "fall", Y2: "in area"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"94f1-7e8b-5438-dfdb", X1: "area", ACTION1: "receive", Y1: "rain", X2: "rain", ACTION2: "fall", Y2: "in area"]
+
+endinferencepattern

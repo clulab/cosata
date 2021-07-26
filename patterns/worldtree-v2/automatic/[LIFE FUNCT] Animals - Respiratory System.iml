@@ -1,0 +1,61 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Respiratory_System
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PARTOF: the lungs are a part of the respiratory system     (abc0-1f2b-3484-cf27) [ PART:"lung", QUANTIFIER1:"be", WHOLE:"respiratory system" ]
+	//        HINTROW the diaphragm is a part of the respiratory system     (4304-de86-44cb-bd22) [ PART:"diaphragm", WHOLE:"respiratory system" ]
+	//        HINTROW the mouth is a part of the respiratory system     (c441-c5a7-5f2c-23b1) [ PART:"mouth", WHOLE:"respiratory system" ]
+	//        HINTROW the nose is a part of the respiratory system     (30a3-5bb3-b571-89ec) [ PART:"nose", WHOLE:"respiratory system" ]
+	//  Notes: spatial model
+	//row autoRow0 = [TABLE:"PARTOF", WHOLE: "respiratory system"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PARTOF", WHOLE: "respiratory system"]
+
+	// GROUNDING       KINDOF: a lung is a kind of organ for breathing air     (e7d7-9393-dfc8-98bf) [ HYPONYM:"lung", HYPERNYM:"organ", FOR_PURPOSE:"breathe air" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "lung", HYPERNYM: "organ", FOR_PURPOSE: "breathe air"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "lung", HYPERNYM: "organ", FOR_PURPOSE: "breathe air"]
+
+	// GROUNDING       KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "human", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "human", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: breathing is a kind of function     (dc43-d733-c6bc-1b6f) [ HYPONYM:"breathe", HYPERNYM:"function" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "breathe", HYPERNYM: "function"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "breathe", HYPERNYM: "function"]
+
+	// CENTRAL        (OPTIONAL) TRANSFER: breathing out is when animals exhale ; expel carbon dioxide from their lungs into the air     (7889-c90a-31ff-9e04) [ PROCESS_NAME:"breathe", ACTOR_WHO:"animal", VERB:"exhale;expel", WHAT:"carbon dioxide", SOURCE:"lung", DESTINATION:"air" ]
+	//row *autoRow4 = [UUID:"7889-c90a-31ff-9e04", PROCESS_NAME: "breathe", ACTOR_WHO: "animal", VERB: "exhale", WHAT: "carbon dioxide", SOURCE: "lung", DESTINATION: "air"] //OVER-CONSTR.
+	row *autoRow4 = [UUID:"7889-c90a-31ff-9e04", PROCESS_NAME: "breathe", ACTOR_WHO: "animal", VERB: "exhale", WHAT: "carbon dioxide", SOURCE: "lung", DESTINATION: "air"]
+
+	// CENTRAL        (OPTIONAL) CHANGE: breathing is when animals convert oxygen into carbon dioxide     (4106-cc86-22ec-615e) [ PROCESS_NAME:"breathe", ACTOR_WHO:"animal", VERB:"convert", FROM:"oxygen", INTO:"carbon dioxide" ]
+	//row *autoRow5 = [UUID:"4106-cc86-22ec-615e", PROCESS_NAME: "breathe", ACTOR_WHO: "animal", VERB: "convert", FROM: "oxygen", INTO: "carbon dioxide"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"4106-cc86-22ec-615e", PROCESS_NAME: "breathe", ACTOR_WHO: "animal", VERB: "convert", FROM: "oxygen", INTO: "carbon dioxide"]
+
+	// CENTRAL         KINDOF: the respiratory system is a kind of human ; organ ; body system     (1517-61c2-23bb-8cfb) [ HYPONYM:"respiratory system", SCOPE1:"human;organ;body", HYPERNYM:"system" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"1517-61c2-23bb-8cfb", HYPONYM: "respiratory system", SCOPE1: "human", HYPERNYM: "system"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"1517-61c2-23bb-8cfb", HYPONYM: "respiratory system", SCOPE1: "human", HYPERNYM: "system"]
+
+	// CENTRAL         ACTION: the respiratory system takes in oxygen from the air     (a8c6-3b66-4842-24bc) [ AGENT_OBJECT:"respiratory system", ACTION2:"take in", OBJECT_PROPERTY:"oxygen", WHEN_WHERE:"from air" ]
+	//row autoRow7 = [UUID:"a8c6-3b66-4842-24bc", AGENT_OBJECT: "respiratory system", ACTION2: "take in", OBJECT_PROPERTY: "oxygen", WHEN_WHERE: "from air"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"a8c6-3b66-4842-24bc", AGENT_OBJECT: "respiratory system", ACTION2: "take in", OBJECT_PROPERTY: "oxygen", WHEN_WHERE: "from air"]
+
+	// CENTRAL         KINDOF: bringing oxygen to the body is a kind of function     (4043-728e-19d8-238d) [ HYPONYM:"bring oxygen body", HYPERNYM:"function" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"4043-728e-19d8-238d", HYPONYM: "bring oxygen body", HYPERNYM: "function"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"4043-728e-19d8-238d", HYPONYM: "bring oxygen body", HYPERNYM: "function"]
+
+	// CENTRAL         TRANSFER: the respiratory system transfers oxygen to the circulatory system     (cd92-04a0-8f80-387c) [ ACTOR_WHO:"respiratory system", VERB:"transfer", WHAT:"oxygen", DESTINATION:"circulatory system" ]
+	//row autoRow9 = [UUID:"cd92-04a0-8f80-387c", ACTOR_WHO: "respiratory system", VERB: "transfer", WHAT: "oxygen", DESTINATION: "circulatory system"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"cd92-04a0-8f80-387c", ACTOR_WHO: "respiratory system", VERB: "transfer", WHAT: "oxygen", DESTINATION: "circulatory system"]
+
+	// LEXGLUE         SYNONYMY: take in oxygen means get oxygen into the blood     (65bb-ee0e-f67d-f6d9) [ ACTION1:"take", Y1:"oxygen", ACTION2:"get", Y2:"oxygen into blood" ]
+	//row autoRow10 = [UUID:"65bb-ee0e-f67d-f6d9", ACTION1: "take", Y1: "oxygen", ACTION2: "get", Y2: "oxygen into blood"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"65bb-ee0e-f67d-f6d9", ACTION1: "take", Y1: "oxygen", ACTION2: "get", Y2: "oxygen into blood"]
+
+endinferencepattern

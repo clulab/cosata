@@ -1,0 +1,59 @@
+// Automatically converted pattern
+inferencepattern LIFE_REPROD_Alleles
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-THINGS: an allele can be a dominant gene     (ec30-7220-5517-49b1) [ THING:"allele", VALUE:"dominant gene" ]
+	//        HINTROW an allele can be a recessive gene     (8fc0-999b-61ad-d2c8) [ THING:"allele", VALUE:"recessive gene" ]
+	//row autoRow0 = [TABLE:"PROP-THINGS", THING: "allele", VALUE: "dominant gene"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-THINGS", THING: "allele", VALUE: "dominant gene"]
+
+	// GROUNDING       PROP-INHERITEDLEARNED: blood type is an inherited characteristic     (073a-7112-f53b-18fc) [ AGENT:"blood type", INHERITED_LEARNED:"inherit" ]
+	//        HINTROW eye color is an inherited characteristic     (1763-9f64-7941-cb50) [ AGENT:"eye color", INHERITED_LEARNED:"inherit" ]
+	//row autoRow1 = [TABLE:"PROP-INHERITEDLEARNED", INHERITED_LEARNED: "inherit"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-INHERITEDLEARNED", INHERITED_LEARNED: "inherit"]
+
+	// CENTRAL         ACTION: genes are able to determine the inherited characteristics of a living thing     (c566-22fd-4845-1df2) [ AGENT_OBJECT:"gene", QUANITIFIER:"be able", ACTION2:"determine", OBJECT_PROPERTY:"inherit characteristic", SCOPE2:"of live thing" ]
+	//row autoRow2 = [UUID:"c566-22fd-4845-1df2", AGENT_OBJECT: "gene", QUANITIFIER: "be able", ACTION2: "determine", OBJECT_PROPERTY: "inherit characteristic", SCOPE2: "of live thing"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"c566-22fd-4845-1df2", AGENT_OBJECT: "gene", QUANITIFIER: "be able", ACTION2: "determine", OBJECT_PROPERTY: "inherit characteristic", SCOPE2: "of live thing"]
+
+	// CENTRAL         IFTHEN: if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait     (88f6-2447-45c5-9275) [ THING:"offspring", SCOPE1A:"of two parent", ACTION1:"have", OBJECT_PATIENT1:"dominant recessive trait", ACTOR_AGENT_PROCESS2:"parent", ACTION3:"have", ADJ_QUANTIFIER3:"differ", OBJECT_PROPERTY3:"allele", SCOPE4:"for trait" ]
+	//row autoRow3 = [UUID:"88f6-2447-45c5-9275", THING: "offspring", SCOPE1A: "of two parent", ACTION1: "have", OBJECT_PATIENT1: "dominant recessive trait", ACTOR_AGENT_PROCESS2: "parent", ACTION3: "have", ADJ_QUANTIFIER3: "differ", OBJECT_PROPERTY3: "allele", SCOPE4: "for trait"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"88f6-2447-45c5-9275", THING: "offspring", SCOPE1A: "of two parent", ACTION1: "have", OBJECT_PATIENT1: "dominant recessive trait", ACTOR_AGENT_PROCESS2: "parent", ACTION3: "have", ADJ_QUANTIFIER3: "differ", OBJECT_PROPERTY3: "allele", SCOPE4: "for trait"]
+
+	// CENTRAL         TRANSFER: inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA     (ee78-0795-be47-6ad8) [ PROCESS_NAME:"inherit", ACTOR_WHO:"inherit characteristic", VERB:"be copy;be pass", SOURCE:"parent", DESTINATION:"offspring", BY_THROUGH_HOW:"genetic;dna" ]
+	//row autoRow4 = [UUID:"ee78-0795-be47-6ad8", PROCESS_NAME: "inherit", ACTOR_WHO: "inherit characteristic", VERB: "be copy", SOURCE: "parent", DESTINATION: "offspring", BY_THROUGH_HOW: "genetic"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"ee78-0795-be47-6ad8", PROCESS_NAME: "inherit", ACTOR_WHO: "inherit characteristic", VERB: "be copy", SOURCE: "parent", DESTINATION: "offspring", BY_THROUGH_HOW: "genetic"]
+
+	// CENTRAL         LOCATIONS: alleles are found at the same place on a chromosome     (757e-8aeb-8783-5f7f) [ THING_PROCESS:"allele", LOCATION:"same place", SCOPE:"on chromosome" ]
+	//row autoRow5 = [UUID:"757e-8aeb-8783-5f7f", THING_PROCESS: "allele", LOCATION: "same place", SCOPE: "on chromosome"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"757e-8aeb-8783-5f7f", THING_PROCESS: "allele", LOCATION: "same place", SCOPE: "on chromosome"]
+
+	// CENTRAL         AFFORDANCES: alleles can determine the inherited characteristics of animals     (3e07-973f-a338-f284) [ ACTOR_THING:"allele", VERB:"determine", PATIENT:"inherit characteristic", SCOPE:"of animal" ]
+	//row autoRow6 = [UUID:"3e07-973f-a338-f284", ACTOR_THING: "allele", VERB: "determine", PATIENT: "inherit characteristic", SCOPE: "of animal"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3e07-973f-a338-f284", ACTOR_THING: "allele", VERB: "determine", PATIENT: "inherit characteristic", SCOPE: "of animal"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//row autoRow7 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+	// CENTRAL         KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"4253-4b9e-1e5f-1742", HYPONYM: "human", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"4253-4b9e-1e5f-1742", HYPONYM: "human", HYPERNYM: "animal"]
+
+	// CENTRAL         KINDOF: an allele is a kind of gene     (4b1c-487f-db88-a697) [ HYPONYM:"allele", HYPERNYM:"gene" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"4b1c-487f-db88-a697", HYPONYM: "allele", HYPERNYM: "gene"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"4b1c-487f-db88-a697", HYPONYM: "allele", HYPERNYM: "gene"]
+
+	// CENTRAL         FORMEDBY: an allele is formed by mutation     (b5af-096a-4c9b-b9c8) [ OBJECT:"allele", AGENT_PROCESS:"mutation" ]
+	//row autoRow10 = [UUID:"b5af-096a-4c9b-b9c8", OBJECT: "allele", AGENT_PROCESS: "mutation"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"b5af-096a-4c9b-b9c8", OBJECT: "allele", AGENT_PROCESS: "mutation"]
+
+endinferencepattern

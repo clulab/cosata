@@ -1,0 +1,37 @@
+// Automatically converted pattern
+inferencepattern LIFE_REPROD_Asexual_Offspring
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       EXAMPLES: An example of asexual reproduction is an organism creating cells identical to itself without combining genes from parent cells     (204e-415d-e74c-49d0) [ AGENT_OBJECT1:"asexual reproduce", AGENT_OBJECT2:"organism", VERB2:"create", AGENT_OBJECT3:"cell identical", SCOPE:"without combine gene from parent cell" ]
+	//        HINTROW An example of asexual reproduction is a plant sending out rootlike extensions to produce new stems     (8f91-3786-5abf-54e2) [ AGENT_OBJECT1:"asexual reproduce", AGENT_OBJECT2:"plant", VERB2:"send", AGENT_OBJECT3:"rootlike extension", FOR_PURPOSE:"product new stem" ]
+	//row autoRow0 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "asexual reproduce", SCOPE: *"POS:IN"+*"POS:VB"+*"POS:NN"+*"POS:IN"+"parent"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "asexual reproduce"]
+
+	// CENTRAL         ACTION: asexual reproduction is when a single parent passes inherited traits to offspring     (17d4-3f1e-ec31-de07) [ DEFINITION_NAME:"asexual reproduce", ADJ:"single", AGENT_OBJECT:"parent", ACTION2:"pass", OBJECT_PROPERTY:"inherit trait", SCOPE2:"offspring" ]
+	//row autoRow1 = [UUID:"17d4-3f1e-ec31-de07", DEFINITION_NAME: "asexual reproduce", ADJ: "single", AGENT_OBJECT: "parent", ACTION2: "pass", OBJECT_PROPERTY: "inherit trait", SCOPE2: "offspring"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"17d4-3f1e-ec31-de07", DEFINITION_NAME: "asexual reproduce", ADJ: "single", AGENT_OBJECT: "parent", ACTION2: "pass", OBJECT_PROPERTY: "inherit trait", SCOPE2: "offspring"]
+
+	// CENTRAL         PROP-THINGS: an asexually produced offspring is identical in genes to its parent     (4601-cce0-f16b-6969) [ ADJ:"asexually produce", THING:"offspring", VALUE:"identical", ATTRIBUTE:"in gene", SCOPE_RELATIVETO:"parent" ]
+	//row autoRow2 = [UUID:"4601-cce0-f16b-6969", ADJ: "asexually produce", THING: "offspring", VALUE: "identical", ATTRIBUTE: "in gene", SCOPE_RELATIVETO: "parent"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"4601-cce0-f16b-6969", ADJ: "asexually produce", THING: "offspring", VALUE: "identical", ATTRIBUTE: "in gene", SCOPE_RELATIVETO: "parent"]
+
+	// CENTRAL         SOURCEOF: asexual reproduction is not a source of genetic variation in offspring     (341b-588a-42ea-2eae) [ AGENT:"asexual reproduce", QUALIFIER:"be not", VERB_SOURCEOF_PROVIDE_ETC:"source of", WHAT_IT_PROVIDES:"genetic variation", AGENT_IT_PROVIDES_THING_TO:"in offspring" ]
+	//row autoRow3 = [UUID:"341b-588a-42ea-2eae", AGENT: "asexual reproduce", QUALIFIER: "be not", VERB_SOURCEOF_PROVIDE_ETC: "source of", WHAT_IT_PROVIDES: "genetic variation", AGENT_IT_PROVIDES_THING_TO: "in offspring"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"341b-588a-42ea-2eae", AGENT: "asexual reproduce", QUALIFIER: "be not", VERB_SOURCEOF_PROVIDE_ETC: "source of", WHAT_IT_PROVIDES: "genetic variation", AGENT_IT_PROVIDES_THING_TO: "in offspring"]
+
+	// CENTRAL         STAGE-IN-PROCESS: fertilization is not a stage in the asexual reproduction process     (12ce-fbfe-7ad4-fbaf) [ STAGE:"fertilization", QUANTIFIER1:"be not", PROCESS:"asexual reproduce" ]
+	//row autoRow4 = [UUID:"12ce-fbfe-7ad4-fbaf", STAGE: "fertilization", QUANTIFIER1: "be not", PROCESS: "asexual reproduce"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"12ce-fbfe-7ad4-fbaf", STAGE: "fertilization", QUANTIFIER1: "be not", PROCESS: "asexual reproduce"]
+
+	// CENTRAL         KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"]
+
+endinferencepattern

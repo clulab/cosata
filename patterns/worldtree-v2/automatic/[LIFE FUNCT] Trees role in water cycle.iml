@@ -1,0 +1,71 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Trees_role_in_water_cycle
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW an apple tree is a kind of plant     (00a7-56fc-3c22-e6f2) [ HYPONYM:"apple tree", HYPERNYM:"plant" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// CENTRAL        (OPTIONAL) FORMEDBY: clouds are formed by water vapor rising into colder regions of the atmosphere and condensing     (3c3a-0eac-88e6-b000) [ OBJECT:"cloud", AGENT_PROCESS:"water vapor", VERB:"rise into cold region of atmosphere condense" ]
+	//row *autoRow1 = [UUID:"3c3a-0eac-88e6-b000", OBJECT: "cloud", AGENT_PROCESS: "water vapor", VERB: "rise into cold region of atmosphere condense"] //OVER-CONSTR.
+	row *autoRow1 = [UUID:"3c3a-0eac-88e6-b000", OBJECT: "cloud", AGENT_PROCESS: "water vapor", VERB: "rise into cold region of atmosphere condense"]
+
+	// CENTRAL         TRANSFER: plant uptake is when plants absorb nutrients ; water from soil into themselves through their roots     (d7c1-cdfd-2de5-6b7d) [ PROCESS_NAME:"plant uptake", ACTOR_WHO:"plant", VERB:"absorb", WHAT:"nutrient;water", SOURCE:"soil", BY_THROUGH_HOW:"root" ]
+	//row autoRow2 = [UUID:"d7c1-cdfd-2de5-6b7d", PROCESS_NAME: "plant uptake", ACTOR_WHO: "plant", VERB: "absorb", WHAT: "nutrient", SOURCE: "soil", BY_THROUGH_HOW: "root"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"d7c1-cdfd-2de5-6b7d", PROCESS_NAME: "plant uptake", ACTOR_WHO: "plant", VERB: "absorb", WHAT: "nutrient", SOURCE: "soil", BY_THROUGH_HOW: "root"]
+
+	// CENTRAL        (OPTIONAL) PROCESSSTAGES-ORDERS: In the water cycle , transpiration always follows plant uptake     (b15f-4dc7-7fdd-4f51) [ PROCESS_NAME:"water cycle", STAGEAFTER_STAGE:"transpiration", QUALIFIER:"always", FOLLOWS_PARTOF:"follow", STAGEBEFORE:"plant uptake" ]
+	//row *autoRow3 = [UUID:"b15f-4dc7-7fdd-4f51", PROCESS_NAME: "water cycle", STAGEAFTER_STAGE: "transpiration", QUALIFIER: "always", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "plant uptake"] //OVER-CONSTR.
+	row *autoRow3 = [UUID:"b15f-4dc7-7fdd-4f51", PROCESS_NAME: "water cycle", STAGEAFTER_STAGE: "transpiration", QUALIFIER: "always", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "plant uptake"]
+
+	// CENTRAL        (OPTIONAL) PROCESSSTAGES-ORDERS: In the water cycle , condensation always follows transpiration     (7bfb-f49c-5dc6-99ab) [ PROCESS_NAME:"water cycle", STAGEAFTER_STAGE:"condense", QUALIFIER:"always", FOLLOWS_PARTOF:"follow", STAGEBEFORE:"transpiration" ]
+	//row *autoRow4 = [UUID:"7bfb-f49c-5dc6-99ab", PROCESS_NAME: "water cycle", STAGEAFTER_STAGE: "condense", QUALIFIER: "always", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "transpiration"] //OVER-CONSTR.
+	row *autoRow4 = [UUID:"7bfb-f49c-5dc6-99ab", PROCESS_NAME: "water cycle", STAGEAFTER_STAGE: "condense", QUALIFIER: "always", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "transpiration"]
+
+	// CENTRAL         TRANSFER: transpiration is when water vapor moves from plants ; leaves into the atmosphere     (51c3-47cf-792c-8142) [ PROCESS_NAME:"transpiration", ACTOR_WHO:"water vapor", VERB:"move;move", SOURCE:"plant;leaf", DESTINATION:"atmosphere" ]
+	//  Notes: 03c0-59bd-bf14-aaa0->51c3-47cf-792c-8142
+	//row autoRow5 = [UUID:"51c3-47cf-792c-8142", PROCESS_NAME: "transpiration", ACTOR_WHO: "water vapor", VERB: "move", SOURCE: "plant", DESTINATION: "atmosphere"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"51c3-47cf-792c-8142", PROCESS_NAME: "transpiration", ACTOR_WHO: "water vapor", VERB: "move", SOURCE: "plant", DESTINATION: "atmosphere"]
+
+	// CENTRAL         STAGE-IN-PROCESS: transpiration is a stage in the water cycle process     (7893-9c24-3199-bd03) [ STAGE:"transpiration", PROCESS:"water cycle" ]
+	//  Notes: 9974-bcb8-7899-2ae4->7893-9c24-3199-bd03peripheral
+	//row autoRow6 = [UUID:"7893-9c24-3199-bd03", STAGE: "transpiration", PROCESS: "water cycle"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"7893-9c24-3199-bd03", STAGE: "transpiration", PROCESS: "water cycle"]
+
+	// CENTRAL        (OPTIONAL) LOCATIONS: clouds are located in the atmosphere     (3b17-133a-867e-177e) [ THING_PROCESS:"cloud", LOCATION:"atmosphere" ]
+	//row *autoRow7 = [UUID:"3b17-133a-867e-177e", THING_PROCESS: "cloud", LOCATION: "atmosphere"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"3b17-133a-867e-177e", THING_PROCESS: "cloud", LOCATION: "atmosphere"]
+
+	// CENTRAL        (OPTIONAL) SYNONYMY: investigating a stage of something means investigating that something     (50a9-e4d7-21ed-8c2e) [ ACTION1:"investigate", Y1:"stage of something", ACTION2:"investigate", Y2:"that something" ]
+	//row *autoRow8 = [UUID:"50a9-e4d7-21ed-8c2e", ACTION1: "investigate", Y1: "stage of something", ACTION2: "investigate", Y2: "that something"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"50a9-e4d7-21ed-8c2e", ACTION1: "investigate", Y1: "stage of something", ACTION2: "investigate", Y2: "that something"]
+
+	// CENTRAL         LOCATIONS: transpiration usually happens in the leaves of a plant     (6778-0a90-bf9d-69c4) [ THING_PROCESS:"transpiration", LOCATION:"leaf of plant" ]
+	//row autoRow9 = [UUID:"6778-0a90-bf9d-69c4", THING_PROCESS: "transpiration", LOCATION: "leaf of plant"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"6778-0a90-bf9d-69c4", THING_PROCESS: "transpiration", LOCATION: "leaf of plant"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C     (e474-2a11-6e7b-ae8b) [ MATERIAL_NAME:"water", STATEOFMATTER:"gas", FORM_NAME:"water vapor;steam", LOWER_BOUND:"373;212;100", UPPER_BOUND:"100000000000", UNITS:"k;f;c" ]
+	//row autoRow10 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//row autoRow11 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"]
+
+	// CENTRAL         CONTAINS: soil contains water ; humus ; weathered rocks ; organic matter ; sand ; clay     (24c1-678f-d0a3-2af7) [ OBJECT_AGENT:"soil", WHAT_IT_CONTAINS:"water;humus;weather rock;organic matt;sand;clay" ]
+	//  Notes: so that plants take the water in the soil to live
+	//row autoRow12 = [UUID:"24c1-678f-d0a3-2af7", OBJECT_AGENT: "soil", WHAT_IT_CONTAINS: "weather rock"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"24c1-678f-d0a3-2af7", OBJECT_AGENT: "soil", WHAT_IT_CONTAINS: "weather rock"]
+
+	// LEXGLUE         SYNONYMY: transport means to move ; to make travel     (48be-b112-3323-84b6) [ ACTION1:"transport", ACTION2:"move;make travel" ]
+	//row autoRow13 = [UUID:"48be-b112-3323-84b6", ACTION1: "transport", ACTION2: "make travel"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"48be-b112-3323-84b6", ACTION1: "transport", ACTION2: "make travel"]
+
+endinferencepattern

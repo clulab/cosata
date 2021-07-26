@@ -1,0 +1,108 @@
+// Automatically converted pattern
+inferencepattern MAT_ENVEFF_Physcial_Changes_Temperature_Changes
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       IFTHEN: if heat is conducted to an object then that object will become hot     (2a3c-96de-3124-d8f9) [ THING:"heat", ACTION1:"conduct", OBJECT_PATIENT1:"object", ACTOR_AGENT_PROCESS2:"object", ACTION3:"become", ADJ_QUANTIFIER3:"hot" ]
+	//        HINTROW if heat is transferred to an object , then the object will get hot     (5a0e-924d-c180-98d7) [ THING:"heat", ACTION1:"transfer", OBJECT_PATIENT1:"object", ACTOR_AGENT_PROCESS2:"object", ACTION3:"get", OBJECT_PROPERTY3:"hot" ]
+	//  Notes: thermal conduction --> object becomes hot
+	//row autoRow0 = [TABLE:"IFTHEN", THING: "heat", ACTION1: "conduct", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "object", ADJ_QUANTIFIER3: "hot"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"IFTHEN", THING: "heat", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "object"]
+
+	// CENTRALSW       SOURCEOF: a hot substance is a source of heat     (bdf8-fbda-ff94-54f5) [ ADJ:"hot", AGENT:"substance", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"heat" ]
+	//        HINTROW a hot plate is a source of heat     (945f-acde-29f3-d573) [ AGENT:"hot plate", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"heat" ]
+	//        HINTROW a hot ; warm something is a source of heat     (55b7-97a0-0554-156d) [ ADJ:"hot;warm", AGENT:"something", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"heat" ]
+	//        HINTROW an oven is a source of heat     (926d-355a-9b2c-c5d1) [ AGENT:"oven", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"heat" ]
+	//  Notes: source of heat examples
+	//row autoRow1 = [TABLE:"SOURCEOF", ADJ: "hot", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "heat"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "heat"]
+
+	// GROUNDING       KINDOF: water is a kind of liquid at room temperature     (3961-d09c-4b9a-a6f7) [ HYPONYM:"water", HYPERNYM:"liquid", SCOPE2:"at room temperature" ]
+	//        HINTROW soup is a kind of liquid     (3005-d180-4d74-cdb2) [ HYPONYM:"soup", HYPERNYM:"liquid" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "liquid"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "liquid"]
+
+	// GROUNDING       KINDOF: a lid is a kind of object     (c903-f0a2-2d4c-8d0b) [ HYPONYM:"lid", HYPERNYM:"object" ]
+	//        HINTROW a spoon is a kind of object     (fb45-a64a-13f3-241c) [ HYPONYM:"spoon", HYPERNYM:"object" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// CENTRAL         PROP-GENERIC: temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot     (4084-f2bc-52cf-0f74) [ X:"temperature;heat energy", Y:"object;weather", ORDERED_UNORDERED:"order", VALUES:"cold;cool;warm;hot" ]
+	//row autoRow4 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"]
+
+	// CENTRAL         IFTHEN: if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm     (c9e0-141e-88fa-2c43) [ THING:"thermal conduct;object", ACTION1:"expose", ADJ_QUANTITY1A:"source of", OBJECT_PATIENT1:"heat", ACTOR_AGENT_PROCESS2:"that conduct;that object", OBJECT_PROPERTY3:"hot;warm" ]
+	//  Notes: exposure to heat source --> temperature increase
+	//row autoRow5 = [UUID:"c9e0-141e-88fa-2c43", THING: "thermal conduct", ACTION1: "expose", ADJ_QUANTITY1A: "source of", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "that conduct", OBJECT_PROPERTY3: "hot"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"c9e0-141e-88fa-2c43", THING: "thermal conduct", ACTION1: "expose", ADJ_QUANTITY1A: "source of", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "that conduct", OBJECT_PROPERTY3: "hot"]
+
+	// CENTRAL         IFTHEN: if a hot object ; substance is exposed to ; touches a cold object ; substance then that object ; that substance will likely cool     (284d-e19c-6811-6a99) [ ADJ_QUANTITY1:"hot", THING:"object;substance", ACTION1:"expose;touch", ADJ_QUANTITY1A:"cold", OBJECT_PATIENT1:"object;substance", ACTOR_AGENT_PROCESS2:"that object;that substance", ACTION3:"cool" ]
+	//  Notes: hot touches cold --> hot object cools 
+	//row autoRow6 = [UUID:"284d-e19c-6811-6a99", ADJ_QUANTITY1: "hot", THING: "object", ACTION1: "expose", ADJ_QUANTITY1A: "cold", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "cool"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"284d-e19c-6811-6a99", ADJ_QUANTITY1: "hot", THING: "object", ACTION1: "expose", ADJ_QUANTITY1A: "cold", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "cool"]
+
+	// CENTRAL         TRANSFER: thermal conduction is when materials conduct heat through those materials through collision of particles     (04a3-0791-9bd3-602d) [ PROCESS_NAME:"thermal conduction", ACTOR_WHO:"material", VERB:"conduct", WHAT:"heat", BY_THROUGH_HOW:"material", SCOPE:"through collision of particle" ]
+	//  Notes: thermal conduction
+	//row autoRow7 = [UUID:"04a3-0791-9bd3-602d", PROCESS_NAME: "thermal conduction", ACTOR_WHO: "material", VERB: "conduct", WHAT: "heat", BY_THROUGH_HOW: "material", SCOPE: "through collision of particle"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"04a3-0791-9bd3-602d", PROCESS_NAME: "thermal conduction", ACTOR_WHO: "material", VERB: "conduct", WHAT: "heat", BY_THROUGH_HOW: "material", SCOPE: "through collision of particle"]
+
+	// CENTRAL         TRANSFER: a thermal energy conductor transfers heat from warmer objects ; hotter objects to cooler objects     (3dcc-05e2-48cc-db62) [ ACTOR_WHO:"thermal energy conduct", VERB:"transfer", WHAT:"heat", SOURCE:"warm object;hot object", DESTINATION:"cool object" ]
+	//  Notes: thermal conductor conducts heat
+	//row autoRow8 = [UUID:"3dcc-05e2-48cc-db62", ACTOR_WHO: "thermal energy conduct", VERB: "transfer", WHAT: "heat", SOURCE: "warm object", DESTINATION: "cool object"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"3dcc-05e2-48cc-db62", ACTOR_WHO: "thermal energy conduct", VERB: "transfer", WHAT: "heat", SOURCE: "warm object", DESTINATION: "cool object"]
+
+	// CENTRAL        (OPTIONAL) PROP-GENERIC: thermal expansion is a property of matter and includes ordered values of high ; low     (6568-9958-de55-4427) [ X:"thermal expansion", Y:"matt", ORDERED_UNORDERED:"order", VALUES:"high;low" ]
+	//row *autoRow9 = [UUID:"6568-9958-de55-4427", X: "thermal expansion", Y: "matt", ORDERED_UNORDERED: "order", VALUES: "high"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"6568-9958-de55-4427", X: "thermal expansion", Y: "matt", ORDERED_UNORDERED: "order", VALUES: "high"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if one surface ; one substance ; one object touches something then one is exposed to that something     (010a-f960-ad4b-537c) [ THING:"one surface;one substance;one object", ACTION1:"touch", OBJECT_PATIENT1:"something", ACTOR_AGENT_PROCESS2:"one", ACTION3:"expose", OBJECT_PROPERTY3:"something" ]
+	//  Notes: peripheral
+	//row *autoRow10 = [UUID:"010a-f960-ad4b-537c", THING: "one surface", ACTION1: "touch", OBJECT_PATIENT1: "something", ACTOR_AGENT_PROCESS2: "one", ACTION3: "expose", OBJECT_PROPERTY3: "something"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"010a-f960-ad4b-537c", THING: "one surface", ACTION1: "touch", OBJECT_PATIENT1: "something", ACTOR_AGENT_PROCESS2: "one", ACTION3: "expose", OBJECT_PROPERTY3: "something"]
+
+	// CENTRAL         IFTHEN: if something is places over a heat source then that something is exposed to that heat source     (fb09-0269-17fe-9106) [ THING:"something", ACTION1:"place over", OBJECT_PATIENT1:"heat source", ACTOR_AGENT_PROCESS2:"that something", ACTION3:"expose", OBJECT_PROPERTY3:"heat source" ]
+	//  Notes: exposure to heat source
+	//row autoRow11 = [UUID:"fb09-0269-17fe-9106", THING: "something", ACTION1: "place over", OBJECT_PATIENT1: "heat source", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "expose", OBJECT_PROPERTY3: "heat source"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"fb09-0269-17fe-9106", THING: "something", ACTION1: "place over", OBJECT_PATIENT1: "heat source", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "expose", OBJECT_PROPERTY3: "heat source"]
+
+	// CENTRAL         IFTHEN: if an object is held under a substance then that object is touching that substance     (d472-1fc5-345a-5485) [ THING:"object", ACTION1:"hold", SCOPE1B:"under substance", ACTOR_AGENT_PROCESS2:"object", ACTION3:"touch", OBJECT_PROPERTY3:"that substance" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"d472-1fc5-345a-5485", THING: "object", ACTION1: "hold", SCOPE1B: "under substance", ACTOR_AGENT_PROCESS2: "object", ACTION3: "touch", OBJECT_PROPERTY3: "that substance"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"d472-1fc5-345a-5485", THING: "object", ACTION1: "hold", SCOPE1B: "under substance", ACTOR_AGENT_PROCESS2: "object", ACTION3: "touch", OBJECT_PROPERTY3: "that substance"]
+
+	// CENTRAL         CAUSE: increasing heat causes thermal expansion     (3f85-e8bf-c6a4-33fd) [ CONDITION_VERB:"increase", CONDITION_PATIENT:"heat", RESULT_AGENT:"thermal expansion" ]
+	//  Notes: result in A: thermal expansion
+	//row autoRow13 = [UUID:"3f85-e8bf-c6a4-33fd", CONDITION_VERB: "increase", CONDITION_PATIENT: "heat", RESULT_AGENT: "thermal expansion"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"3f85-e8bf-c6a4-33fd", CONDITION_VERB: "increase", CONDITION_PATIENT: "heat", RESULT_AGENT: "thermal expansion"]
+
+	// CENTRAL         CAUSE: temperature changing can cause phase changes     (f45b-e36a-7934-50a5) [ CONDITION_AGENT_OBJECT:"temperature", CONDITION_VERB:"change", RESULT_AGENT:"phase change" ]
+	//  Notes: result in B: phase change
+	//row autoRow14 = [UUID:"f45b-e36a-7934-50a5", CONDITION_AGENT_OBJECT: "temperature", CONDITION_VERB: "change", RESULT_AGENT: "phase change"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"f45b-e36a-7934-50a5", CONDITION_AGENT_OBJECT: "temperature", CONDITION_VERB: "change", RESULT_AGENT: "phase change"]
+
+	// CENTRAL         KINDOF: thermal expansion is a kind of physical property     (9598-72ec-2a84-4591) [ HYPONYM:"thermal expansion", SCOPE1:"physical", HYPERNYM:"property" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"9598-72ec-2a84-4591", HYPONYM: "thermal expansion", SCOPE1: "physical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"9598-72ec-2a84-4591", HYPONYM: "thermal expansion", SCOPE1: "physical", HYPERNYM: "property"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: when metal conducts heat , that metal expands     (d048-f899-4d5e-fcd7) [ THING:"metal", ACTION1:"conduct", OBJECT_PATIENT1:"heat", ACTOR_AGENT_PROCESS2:"metal", ACTION3:"expand" ]
+	//  Notes: thermal expansion on metal
+	//row *autoRow16 = [UUID:"d048-f899-4d5e-fcd7", THING: "metal", ACTION1: "conduct", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "metal", ACTION3: "expand"] //OVER-CONSTR.
+	row *autoRow16 = [UUID:"d048-f899-4d5e-fcd7", THING: "metal", ACTION1: "conduct", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "metal", ACTION3: "expand"]
+
+	// CENTRAL         KINDOF: a liquid is a kind of substance     (3f2b-87bb-f73a-3e5d) [ HYPONYM:"liquid", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow17 = [UUID:"3f2b-87bb-f73a-3e5d", HYPONYM: "liquid", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"3f2b-87bb-f73a-3e5d", HYPONYM: "liquid", HYPERNYM: "substance"]
+
+	// CENTRAL         PROP-CONDUCTIVITY: metal is a thermal ; thermal energy conductor     (0439-8c06-da63-6721) [ OBJECT_AGENT:"metal", KIND_OF_CONDUCTIVITY:"thermal;thermal energy", CONDUCTOR_INSULATOR:"conduct" ]
+	//  Notes: thermal conduction through metal
+	//row autoRow18 = [UUID:"0439-8c06-da63-6721", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "thermal energy", CONDUCTOR_INSULATOR: "conduct"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"0439-8c06-da63-6721", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "thermal energy", CONDUCTOR_INSULATOR: "conduct"]
+
+endinferencepattern

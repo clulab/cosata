@@ -1,0 +1,61 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Origin_Natural_Gas
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW a bean plant is a kind of plant     (7881-6f75-7de9-2722) [ HYPONYM:"bean plant", HYPERNYM:"plant" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// GROUNDING       KINDOF: a bear is a kind of animal     (5639-8136-4788-3ee6) [ HYPONYM:"bear", HYPERNYM:"animal" ]
+	//        HINTROW a bat is a kind of animal     (7ca2-740e-37f4-0a9e) [ HYPONYM:"bat", HYPERNYM:"animal" ]
+	//        HINTROW a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"KINDOF"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// CENTRAL         FORMEDBY: natural gas is formed by heat and pressure acting on the remains of prehistoric animals and plants     (1d61-22c7-c31a-e8cc) [ OBJECT:"nature gas", AGENT_PROCESS:"heat pressure", VERB:"act on", PATIENT:"remain of prehistoric animal plant" ]
+	//row autoRow2 = [UUID:"1d61-22c7-c31a-e8cc", OBJECT: "nature gas", AGENT_PROCESS: "heat pressure", VERB: "act on", PATIENT: "remain of prehistoric animal plant"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"1d61-22c7-c31a-e8cc", OBJECT: "nature gas", AGENT_PROCESS: "heat pressure", VERB: "act on", PATIENT: "remain of prehistoric animal plant"]
+
+	// CENTRAL         KINDOF: natural gas is a kind of fossil fuel     (2355-0cfa-86f8-5767) [ HYPONYM:"nature gas", HYPERNYM:"fossil fuel" ]
+	//  Notes: peripheral
+	//row autoRow3 = [UUID:"2355-0cfa-86f8-5767", HYPONYM: "nature gas", HYPERNYM: "fossil fuel"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"2355-0cfa-86f8-5767", HYPONYM: "nature gas", HYPERNYM: "fossil fuel"]
+
+	// CENTRAL         KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"]
+
+	// CENTRAL         CAUSE: high temperatures during fossil-fuel formation causes a higher percentage of natural gas to form     (ca51-6f77-efc6-1813) [ CONDITION_AGENT_OBJECT:"high temperature", DURATION1:"during fossil-fuel form;during fossil fuel form", RESULT_AGENT:"high percentage of nature gas", RESULT_VERB:"form" ]
+	//row autoRow5 = [UUID:"ca51-6f77-efc6-1813", CONDITION_AGENT_OBJECT: "high temperature", DURATION1: "during fossil fuel form", RESULT_AGENT: "high percentage of nature gas", RESULT_VERB: "form"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"ca51-6f77-efc6-1813", CONDITION_AGENT_OBJECT: "high temperature", DURATION1: "during fossil fuel form", RESULT_AGENT: "high percentage of nature gas", RESULT_VERB: "form"]
+
+	// CENTRAL         CHANGE: being buried under soil and mud changes dead plant matter ; dead animal matter ; remains of living things into oil ; natural gas through extreme heat and pressure at the bottom of the sea over a long period of time     (1661-ce4a-34f0-7409) [ ACTOR_WHO:"be bury", QUANTIFIER_SCOPE:"under soil mud", VERB:"change", FROM:"dead plant matt;dead animal matt;remain of live thing", INTO:"oil;nature gas", BY_THROUGH_HOW:"extreme heat pressure", SCOPE:"at bottom of sea over long period of time" ]
+	//row autoRow6 = [UUID:"1661-ce4a-34f0-7409", ACTOR_WHO: "be bury", QUANTIFIER_SCOPE: "under soil mud", VERB: "change", FROM: "remain of live thing", INTO: "nature gas", BY_THROUGH_HOW: "extreme heat pressure", SCOPE: "at bottom of sea over long period of time"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"1661-ce4a-34f0-7409", ACTOR_WHO: "be bury", QUANTIFIER_SCOPE: "under soil mud", VERB: "change", FROM: "remain of live thing", INTO: "nature gas", BY_THROUGH_HOW: "extreme heat pressure", SCOPE: "at bottom of sea over long period of time"]
+
+	// CENTRAL         FORMEDBY: fossil fuels ; fossils are formed from dead organisms over time     (18f3-bb02-623d-b420) [ OBJECT:"fossil fuel;fossil", AGENT_PROCESS:"dead organism", SCOPE:"over time" ]
+	//row autoRow7 = [UUID:"18f3-bb02-623d-b420", OBJECT: "fossil fuel", AGENT_PROCESS: "dead organism", SCOPE: "over time"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"18f3-bb02-623d-b420", OBJECT: "fossil fuel", AGENT_PROCESS: "dead organism", SCOPE: "over time"]
+
+	// CENTRAL         REQUIRES: forming coal ; fossil fuels requires deposition and burial of decaying vegetation     (69e3-9034-d59c-1674) [ ACTION1:"form", OBJECT_AGENT_PROCESS:"coal;fossil fuel", VERB_REQUIRES:"require", ACTION2:"deposition burial of", OBJECT:"decay vegetation" ]
+	//row autoRow8 = [UUID:"69e3-9034-d59c-1674", ACTION1: "form", OBJECT_AGENT_PROCESS: "fossil fuel", VERB_REQUIRES: "require", ACTION2: "deposition burial of", OBJECT: "decay vegetation"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"69e3-9034-d59c-1674", ACTION1: "form", OBJECT_AGENT_PROCESS: "fossil fuel", VERB_REQUIRES: "require", ACTION2: "deposition burial of", OBJECT: "decay vegetation"]
+
+	// LEXGLUE         SYNONYMY: remains mean parts of a dead organism     (5d86-6036-9920-2c88) [ X1:"remain", X2:"part of dead organism" ]
+	//row autoRow9 = [UUID:"5d86-6036-9920-2c88", X1: "remain", X2: "part of dead organism"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"5d86-6036-9920-2c88", X1: "remain", X2: "part of dead organism"]
+
+	// LEXGLUE         SYNONYMY: prehistoric means before 300000000 years ago     (bb85-0f6e-6d4c-f342) [ X1:"prehistoric", X2:"before 300000000 year ago" ]
+	//row autoRow10 = [UUID:"bb85-0f6e-6d4c-f342", X1: "prehistoric", X2: "before 300000000 year ago"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"bb85-0f6e-6d4c-f342", X1: "prehistoric", X2: "before 300000000 year ago"]
+
+endinferencepattern

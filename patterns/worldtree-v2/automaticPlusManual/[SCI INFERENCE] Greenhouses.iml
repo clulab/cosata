@@ -1,0 +1,72 @@
+// Automatically converted pattern
+inferencepattern SCI_INFERENCE_Greenhouses
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       USEDFOR: a greenhouse is used to protect plants by keeping them warm     (029c-4b0e-d2c0-2383) [ AGENT_OBJECT:"greenhouse", FOR_PURPOSE:"protect", PATIENT:"plant", BY_THROUGH_HOW:"keep warm" ]
+	//        HINTROW a greenhouse is used to protect plants from the cold     (0b8a-d16a-4a24-14c5) [ AGENT_OBJECT:"greenhouse", FOR_PURPOSE:"protect", PATIENT:"plant", SCOPE2:"from cold" ]
+	//row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT: "greenhouse", FOR_PURPOSE: "protect", PATIENT: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT: "greenhouse", FOR_PURPOSE: "protect", PATIENT: "plant"]
+
+	// GROUNDING       KINDOF: a lemon tree is a kind of plant     (9cf1-bc5a-d350-5541) [ HYPONYM:"lemon tree", HYPERNYM:"plant" ]
+	//        HINTROW an apple tree is a kind of plant     (00a7-56fc-3c22-e6f2) [ HYPONYM:"apple tree", HYPERNYM:"plant" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: *"POS:JJ"+"tree", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: *"POS:JJ"+"tree", HYPERNYM: "plant"]
+
+	// CENTRAL         IFTHEN: if the environmental temperature ; air temperature is too cold then an animal ; a living thing in that environment may become cold     (2460-c937-4e53-293a) [ THING:"environment temperature;air temperature", ADJ_QUANTITY1A:"too", OBJECT_PROPERTY1:"cold", ACTOR_AGENT_PROCESS2:"animal;live thing", PROPERTY_SCOPE:"in that environment", OBJECT_PROPERTY3:"cold" ]
+	//row autoRow2 = [UUID:"2460-c937-4e53-293a", THING: "environment temperature", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "live thing", PROPERTY_SCOPE: "in that environment", OBJECT_PROPERTY3: "cold"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"2460-c937-4e53-293a", THING: "environment temperature", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "live thing", PROPERTY_SCOPE: "in that environment", OBJECT_PROPERTY3: "cold"]
+
+	// CENTRAL         PROP-GENERIC: temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot     (4084-f2bc-52cf-0f74) [ X:"temperature;heat energy", Y:"object;weather", ORDERED_UNORDERED:"order", VALUES:"cold;cool;warm;hot" ]
+	//row autoRow3 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"]
+
+	// CENTRAL         AFFECT: cold temperatures usually have a negative impact on organisms     (cf66-dfc6-48d2-57ce) [ ACTOR_WHO:"cold temperature", QUALIFIER1:"usually", POSITIVE_NEGATIVE:"negative", PATIENT:"organism" ]
+	//row autoRow4 = [UUID:"cf66-dfc6-48d2-57ce", ACTOR_WHO: "cold temperature", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"cf66-dfc6-48d2-57ce", ACTOR_WHO: "cold temperature", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism"]
+
+	// CENTRAL         AFFECT: protecting a living thing has a positive impact on that living thing 's survival ; health     (1992-cbd3-6534-a7f7) [ VERB:"protect", OBJECT_PROPERTY:"live thing", POSITIVE_NEGATIVE:"positive", ADJ:"live thing", PATIENT:"survive;health" ]
+	//row autoRow5 = [UUID:"1992-cbd3-6534-a7f7", VERB: "protect", OBJECT_PROPERTY: "live thing", POSITIVE_NEGATIVE: "positive", ADJ: "live thing", PATIENT: "survive"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"1992-cbd3-6534-a7f7", VERB: "protect", OBJECT_PROPERTY: "live thing", POSITIVE_NEGATIVE: "positive", ADJ: "live thing", PATIENT: "survive"]
+
+	// CENTRAL         CHANGE: a greenhouse converts sunlight from radiation into thermal energy     (f26c-fe95-6f4c-c4ba) [ ACTOR_WHO:"greenhouse", VERB:"convert", WHAT:"sunlight", FROM:"radiation", INTO:"thermal energy" ]
+	//row autoRow6 = [UUID:"f26c-fe95-6f4c-c4ba", ACTOR_WHO: "greenhouse", VERB: "convert", WHAT: "sunlight", FROM: "radiation", INTO: "thermal energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"f26c-fe95-6f4c-c4ba", ACTOR_WHO: "greenhouse", VERB: "convert", WHAT: "sunlight", FROM: "radiation", INTO: "thermal energy"]
+
+	// CENTRAL         ATTRIBUTE-VALUE-RANGE: cold means low in temperature     (cf2a-6257-0c5c-7445) [ THING:"cold", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//row autoRow7 = [UUID:"cf2a-6257-0c5c-7445", THING: "cold", VALUE: "low", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"cf2a-6257-0c5c-7445", THING: "cold", VALUE: "low", ATTRIBUTE: "temperature"]
+
+	// CENTRAL         IFTHEN: if a living thing becomes too cold then that living thing will die     (d662-f8eb-acab-099f) [ THING:"live thing", ACTION1:"become", ADJ_QUANTITY1A:"too", OBJECT_PROPERTY1:"cold", ACTOR_AGENT_PROCESS2:"that live thing", ACTION3:"die" ]
+	//row autoRow8 = [UUID:"d662-f8eb-acab-099f", THING: "live thing", ACTION1: "become", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "that live thing", ACTION3: "die"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"d662-f8eb-acab-099f", THING: "live thing", ACTION1: "become", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "that live thing", ACTION3: "die"]
+
+	// CENTRAL         CHANGE-VEC: winter means environmental ; outdoor temperature decreases     (d428-62e1-fa35-44c4) [ PROCESS_NAME_ACTION:"winter", ADJ:"environment;outdoor", AGENT_OBJECT:"temperature", DIRECTION:"decrease" ]
+	//row autoRow9 = [UUID:"d428-62e1-fa35-44c4", PROCESS_NAME_ACTION: "winter", ADJ: "environment", AGENT_OBJECT: "temperature", DIRECTION: "decrease"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"d428-62e1-fa35-44c4", PROCESS_NAME_ACTION: "winter", ADJ: "environment", AGENT_OBJECT: "temperature", DIRECTION: "decrease"]
+
+	// CENTRAL         KINDOF: a greenhouse is a kind of shelter for plants     (4349-2e73-8808-3750) [ HYPONYM:"greenhouse", HYPERNYM:"shelter", FOR_PURPOSE:"plant" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"4349-2e73-8808-3750", HYPONYM: "greenhouse", HYPERNYM: "shelter", FOR_PURPOSE: "plant"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"4349-2e73-8808-3750", HYPONYM: "greenhouse", HYPERNYM: "shelter", FOR_PURPOSE: "plant"]
+
+	// CENTRAL         KINDOF: shelter is a kind of protective covering     (07ae-5b5d-6e83-d86a) [ HYPONYM:"shelter", SCOPE1:"protect", HYPERNYM:"cover" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"07ae-5b5d-6e83-d86a", HYPONYM: "shelter", SCOPE1: "protect", HYPERNYM: "cover"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"07ae-5b5d-6e83-d86a", HYPONYM: "shelter", SCOPE1: "protect", HYPERNYM: "cover"]
+
+	// CENTRAL         KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"]
+
+	// LEXGLUE         SYNONYMY: heat energy is synonymous with thermal energy     (ae86-c631-e4ad-1669) [ X1:"heat energy", X2:"thermal energy" ]
+	//row autoRow13 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"]
+
+endinferencepattern

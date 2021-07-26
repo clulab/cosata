@@ -1,0 +1,90 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Global_Warming_Caused_by_Deforestation
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a rainforest is a kind of forest     (9cd8-1401-0318-9bae) [ HYPONYM:"rainforest", HYPERNYM:"forest" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "rainforest", HYPERNYM: "forest"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "rainforest", HYPERNYM: "forest"]
+
+	// CENTRAL        (OPTIONAL) CHANGE: photosynthesis means producers ; green plants convert from carbon dioxide and water and solar energy into carbohydrates and food and oxygen for themselves     (0962-4a47-4e17-ce97) [ PROCESS_NAME:"photosynthesis", ACTOR_WHO:"producer;green plant", VERB:"convert", FROM:"carbon dioxide water solar energy", INTO:"carbohydrate food oxygen" ]
+	//row *autoRow1 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"] //OVER-CONSTR.
+	row *autoRow1 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the amount of carbon dioxide in the atmosphere increases , the temperature of the planet ; the atmosphere will increase     (7ab2-0e60-962b-f6ab) [ QUANTITY_MEASURE1:"amount of", AGENT_ATTRIBUTE1:"carbon dioxide", SCOPE1A:"in atmosphere", CHANGE1:"increase", QUANTITY_MEASURE2:"temperature of", AGENT_ATTRIBUTE2:"planet;atmosphere", CHANGE2:"increase" ]
+	//row autoRow2 = [UUID:"7ab2-0e60-962b-f6ab", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "carbon dioxide", SCOPE1A: "in atmosphere", CHANGE1: "increase", QUANTITY_MEASURE2: "temperature of", AGENT_ATTRIBUTE2: "planet", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"7ab2-0e60-962b-f6ab", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "carbon dioxide", SCOPE1A: "in atmosphere", CHANGE1: "increase", QUANTITY_MEASURE2: "temperature of", AGENT_ATTRIBUTE2: "planet", CHANGE2: "increase"]
+
+	// CENTRAL         CAUSE: cutting down trees in a forest causes the number of trees to decrease in that forest     (521a-5b49-3683-2b01) [ CONDITION_VERB:"cut", CONDITION_PATIENT:"tree", SCOPE1:"in forest", RESULT_AGENT:"numb of tree", RESULT_VERB:"decrease", SCOPE2:"in forest" ]
+	//row autoRow3 = [UUID:"521a-5b49-3683-2b01", CONDITION_VERB: "cut", CONDITION_PATIENT: "tree", SCOPE1: "in forest", RESULT_AGENT: "numb of tree", RESULT_VERB: "decrease", SCOPE2: "in forest"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"521a-5b49-3683-2b01", CONDITION_VERB: "cut", CONDITION_PATIENT: "tree", SCOPE1: "in forest", RESULT_AGENT: "numb of tree", RESULT_VERB: "decrease", SCOPE2: "in forest"]
+
+	// CENTRAL         IFTHEN: when carbon dioxide in the atmosphere is absorbed by plants , the amount of carbon dioxide in the atmosphere is reduced in the atmosphere     (ebb4-ac9f-a65c-44c9) [ THING:"carbon dioxide", SCOPE1A:"in atmosphere", ACTION1:"absorb by", OBJECT_PATIENT1:"plant", ACTOR_AGENT_PROCESS2:"amount", PROPERTY_SCOPE:"of carbon dioxide in atmosphere", ACTION3:"reduce", SCOPE4:"in atmosphere" ]
+	//row autoRow4 = [UUID:"ebb4-ac9f-a65c-44c9", THING: "carbon dioxide", SCOPE1A: "in atmosphere", ACTION1: "absorb by", OBJECT_PATIENT1: "plant", ACTOR_AGENT_PROCESS2: "amount", PROPERTY_SCOPE: "of carbon dioxide in atmosphere", ACTION3: "reduce", SCOPE4: "in atmosphere"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"ebb4-ac9f-a65c-44c9", THING: "carbon dioxide", SCOPE1A: "in atmosphere", ACTION1: "absorb by", OBJECT_PATIENT1: "plant", ACTOR_AGENT_PROCESS2: "amount", PROPERTY_SCOPE: "of carbon dioxide in atmosphere", ACTION3: "reduce", SCOPE4: "in atmosphere"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the deforestation increases , the amount of carbon dioxide in the atmosphere will increase     (02dc-cd37-581a-992b) [ AGENT_ATTRIBUTE1:"deforestation", CHANGE1:"increase", QUANTITY_MEASURE2:"amount of", AGENT_ATTRIBUTE2:"carbon dioxide", SCOPE2A:"in atmosphere", CHANGE2:"increase" ]
+	//row autoRow5 = [UUID:"02dc-cd37-581a-992b", AGENT_ATTRIBUTE1: "deforestation", CHANGE1: "increase", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "carbon dioxide", SCOPE2A: "in atmosphere", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"02dc-cd37-581a-992b", AGENT_ATTRIBUTE1: "deforestation", CHANGE1: "increase", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "carbon dioxide", SCOPE2A: "in atmosphere", CHANGE2: "increase"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the population of plants decreases , carbon in the atmosphere will increase     (163a-1ae9-b8d6-c3ab) [ QUANTITY_MEASURE1:"population", AGENT_ATTRIBUTE1:"of plant", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"carbon", SCOPE2A:"in atmosphere", CHANGE2:"increase" ]
+	//row autoRow6 = [UUID:"163a-1ae9-b8d6-c3ab", QUANTITY_MEASURE1: "population", AGENT_ATTRIBUTE1: "of plant", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "carbon", SCOPE2A: "in atmosphere", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"163a-1ae9-b8d6-c3ab", QUANTITY_MEASURE1: "population", AGENT_ATTRIBUTE1: "of plant", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "carbon", SCOPE2A: "in atmosphere", CHANGE2: "increase"]
+
+	// CENTRAL         CAUSE: greenhouse gases building up can cause global warming     (e52b-5483-6739-4e8d) [ CONDITION_AGENT_OBJECT:"greenhouse gas", CONDITION_VERB:"build", RESULT_AGENT:"global warm" ]
+	//row autoRow7 = [UUID:"e52b-5483-6739-4e8d", CONDITION_AGENT_OBJECT: "greenhouse gas", CONDITION_VERB: "build", RESULT_AGENT: "global warm"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"e52b-5483-6739-4e8d", CONDITION_AGENT_OBJECT: "greenhouse gas", CONDITION_VERB: "build", RESULT_AGENT: "global warm"]
+
+	// CENTRAL         ACTION: a plant absorbs carbon dioxide from the air to perform photosynthesis     (7b20-0992-8ec1-c73c) [ AGENT_OBJECT:"plant", ACTION2:"absorb", OBJECT_PROPERTY:"carbon dioxide", WHEN_WHERE:"from air", FOR_PURPOSE:"perform photosynthesis" ]
+	//row autoRow8 = [UUID:"7b20-0992-8ec1-c73c", AGENT_OBJECT: "plant", ACTION2: "absorb", OBJECT_PROPERTY: "carbon dioxide", WHEN_WHERE: "from air", FOR_PURPOSE: "perform photosynthesis"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"7b20-0992-8ec1-c73c", AGENT_OBJECT: "plant", ACTION2: "absorb", OBJECT_PROPERTY: "carbon dioxide", WHEN_WHERE: "from air", FOR_PURPOSE: "perform photosynthesis"]
+
+	// CENTRAL         AFFECT: global warming has a negative impact on environment ; organisms     (df4c-4ccc-d375-0191) [ ACTOR_WHO:"global warm", POSITIVE_NEGATIVE:"negative", PATIENT:"environment;organism" ]
+	//row autoRow9 = [UUID:"df4c-4ccc-d375-0191", ACTOR_WHO: "global warm", POSITIVE_NEGATIVE: "negative", PATIENT: "environment"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"df4c-4ccc-d375-0191", ACTOR_WHO: "global warm", POSITIVE_NEGATIVE: "negative", PATIENT: "environment"]
+
+	// CENTRAL         AFFECT: harming something has a negative impact on ; effect on that something     (57d4-79ba-a97d-0f9a) [ VERB:"harm", OBJECT_PROPERTY:"something", POSITIVE_NEGATIVE:"negative", PATIENT:"something" ]
+	//row autoRow10 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"]
+
+	// CENTRAL         CONTAINS: a forest contains lots of plants ; trees     (a54a-a04c-71eb-ba0a) [ OBJECT_AGENT:"forest", QUANTITY_RANGE:"lot of", WHAT_IT_CONTAINS:"plant;tree" ]
+	//row autoRow11 = [UUID:"a54a-a04c-71eb-ba0a", OBJECT_AGENT: "forest", QUANTITY_RANGE: "lot of", WHAT_IT_CONTAINS: "plant"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"a54a-a04c-71eb-ba0a", OBJECT_AGENT: "forest", QUANTITY_RANGE: "lot of", WHAT_IT_CONTAINS: "plant"]
+
+	// CENTRAL         KINDOF: carbon dioxide is a kind of greenhouse gas     (c707-5698-3407-a884) [ HYPONYM:"carbon dioxide", HYPERNYM:"greenhouse gas" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"c707-5698-3407-a884", HYPONYM: "carbon dioxide", HYPERNYM: "greenhouse gas"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"c707-5698-3407-a884", HYPONYM: "carbon dioxide", HYPERNYM: "greenhouse gas"]
+
+	// CENTRAL         IFTHEN: if a tree is cut down then that tree will die     (767b-d14d-c5e5-ba84) [ THING:"tree", ACTION1:"cut", ACTOR_AGENT_PROCESS2:"that tree", ACTION3:"die" ]
+	//row autoRow13 = [UUID:"767b-d14d-c5e5-ba84", THING: "tree", ACTION1: "cut", ACTOR_AGENT_PROCESS2: "that tree", ACTION3: "die"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"767b-d14d-c5e5-ba84", THING: "tree", ACTION1: "cut", ACTOR_AGENT_PROCESS2: "that tree", ACTION3: "die"]
+
+	// CENTRAL         IFTHEN: if an organism dies then the population of that organism will decrease     (3a44-7b6a-8b5c-d15f) [ THING:"organism", ACTION1:"die", ADJ_QUANTITY2:"population of", ACTOR_AGENT_PROCESS2:"organism" ]
+	//row autoRow14 = [UUID:"3a44-7b6a-8b5c-d15f", THING: "organism", ACTION1: "die", ADJ_QUANTITY2: "population of", ACTOR_AGENT_PROCESS2: "organism"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"3a44-7b6a-8b5c-d15f", THING: "organism", ACTION1: "die", ADJ_QUANTITY2: "population of", ACTOR_AGENT_PROCESS2: "organism"]
+
+	// CENTRAL         KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"]
+
+	// CENTRAL         KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//  Notes: peripheral
+	//row autoRow16 = [UUID:"0d3a-8739-9f42-5e1c", HYPONYM: "tree", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"0d3a-8739-9f42-5e1c", HYPONYM: "tree", HYPERNYM: "plant"]
+
+	// CENTRAL         IFTHEN: if a planet becomes too hot then that planet cannot sustain life     (c10a-dc84-f182-ff4d) [ THING:"planet", ACTION1:"become", ADJ_QUANTITY1A:"too hot", ACTOR_AGENT_PROCESS2:"planet", QUANTIFIER3:"not", ACTION3:"sustain", OBJECT_PROPERTY3:"life" ]
+	//row autoRow17 = [UUID:"c10a-dc84-f182-ff4d", THING: "planet", ACTION1: "become", ADJ_QUANTITY1A: "too hot", ACTOR_AGENT_PROCESS2: "planet", QUANTIFIER3: "not", ACTION3: "sustain", OBJECT_PROPERTY3: "life"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"c10a-dc84-f182-ff4d", THING: "planet", ACTION1: "become", ADJ_QUANTITY1A: "too hot", ACTOR_AGENT_PROCESS2: "planet", QUANTIFIER3: "not", ACTION3: "sustain", OBJECT_PROPERTY3: "life"]
+
+	// LEXGLUE         SYNONYMY: deforestation is the process of cutting down trees     (fc89-46d1-f058-2a39) [ X1:"deforestation", X2:"process of cut tree" ]
+	//row autoRow18 = [UUID:"fc89-46d1-f058-2a39", X1: "deforestation", X2: "process of cut tree"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"fc89-46d1-f058-2a39", X1: "deforestation", X2: "process of cut tree"]
+
+endinferencepattern

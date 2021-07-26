@@ -1,0 +1,67 @@
+// Automatically converted pattern
+inferencepattern MAT_MEAS_Volume_From_Length
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       MEASUREMENTS: length is a measure of distance from one end of an object to the other end of that object     (067d-1aca-bec2-8141) [ MEASURE:"length", QUANTITY_ADJ:"measure of", ATTRIBUTE:"distance", FROM:"from one end of object", TO:"other end of object" ]
+	//        HINTROW height is a measure of length from the top of an object to the bottom of an object     (833b-2c13-d01b-2ac2) [ MEASURE:"height", QUANTITY_ADJ:"measure of", ATTRIBUTE:"length", FROM:"from top of object", TO:"bottom of object" ]
+	//row autoRow0 = [TABLE:"MEASUREMENTS", MEASURE: "length", QUANTITY_ADJ: "measure of", FROM: "from"+*"POS:CD"+*"POS:NN"+"of object", TO: *"POS:JJ"+*"POS:NN"+"of object"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"MEASUREMENTS", MEASURE: "length", QUANTITY_ADJ: "measure of", FROM: "from"+*"POS:CD"+*"POS:NN"+"of object", TO: *"POS:JJ"+*"POS:NN"+"of object"]
+
+	// CENTRALSW       USEDFOR: a ruler is used for measuring the length of an object     (80e7-ecfd-5d68-a0d3) [ AGENT_OBJECT:"ruler", FOR_PURPOSE:"measure", PATIENT:"length", SCOPE2:"of object" ]
+	//        HINTROW a meter stick is used to measure distance ; height ; length     (48c0-261e-72f5-c101) [ AGENT_OBJECT:"meter stick", FOR_PURPOSE:"measure", PATIENT:"distance;height;length" ]
+	//        HINTROW a tape measure is used to measure length ; distance     (1f6a-7744-7f91-26b5) [ AGENT_OBJECT:"tape measure", FOR_PURPOSE:"measure", PATIENT:"length;distance" ]
+	//  Notes: measuring length tools
+	//row autoRow1 = [TABLE:"USEDFOR", AGENT_OBJECT: <ruler_0>, FOR_PURPOSE: "measure", PATIENT: "length", SCOPE2: "of object"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"USEDFOR", AGENT_OBJECT: <ruler_0>, FOR_PURPOSE: "measure", PATIENT: "length"]
+
+	// CENTRALSW       PROP-GENERIC: length is a property of the shape of an object     (0969-6f9e-9555-9731) [ X:"length", Y:"shape of object" ]
+	//        HINTROW height is a property of the size of an object     (bb6d-ca48-eef1-5996) [ X:"height", Y:"size of object" ]
+	//        HINTROW depth is a property of the shape of an object     (1e74-5982-396e-69c8) [ X:"depth", Y:"shape of object" ]
+	//row autoRow2 = [TABLE:"PROP-GENERIC", X: "length", Y: "shape of object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"PROP-GENERIC", Y: "shape of object"]
+
+	// GROUNDING       KINDOF: a ruler is a kind of tool for measuring length     (a429-ec06-2e2a-f6f9) [ HYPONYM:"ruler", HYPERNYM:"tool", FOR_PURPOSE:"measure length" ]
+	//        HINTROW a meter stick is a kind of tool for measuring length ; measuring distance     (1958-4336-80f2-90bd) [ HYPONYM:"meter stick", HYPERNYM:"tool", FOR_PURPOSE:"measure length;measure distance" ]
+	//        HINTROW a tape measure is a kind of tool for measuring distance ; measuring length     (89ff-54de-77cf-9d13) [ HYPONYM:"tape measure", HYPERNYM:"tool", FOR_PURPOSE:"measure distance;measure length" ]
+	//  Notes: KINDOF TOOL
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: <ruler_0>, HYPERNYM: "tool", FOR_PURPOSE: "measure length"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: <ruler_0>, HYPERNYM: "tool", FOR_PURPOSE: "measure length"]
+
+	// GROUNDING       KINDOF: a box is a kind of object     (1d87-b214-3eab-4a4e) [ HYPONYM:"box", HYPERNYM:"object" ]
+	//        HINTROW a table is a kind of object     (268d-a671-9d83-031a) [ HYPONYM:"table", HYPERNYM:"object" ]
+	//        HINTROW a room is a kind of object     (260e-fab8-c411-4312) [ HYPONYM:"room", HYPERNYM:"object" ]
+	//  Notes: object examples
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// CENTRAL         MEASUREMENTS: volume is a measure of the size of an object by multiplying the length, width, and height of the object     (19c2-c24b-e693-d22e) [ MEASURE:"volume", QUANTITY_ADJ:"measure of", ATTRIBUTE:"size of", AGENT:"object", SCOPE:"by multiply length width height of object" ]
+	//row autoRow5 = [UUID:"19c2-c24b-e693-d22e", MEASURE: "volume", QUANTITY_ADJ: "measure of", ATTRIBUTE: "size of", AGENT: "object", SCOPE: "by multiply length width height of object"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"19c2-c24b-e693-d22e", MEASURE: "volume", QUANTITY_ADJ: "measure of", ATTRIBUTE: "size of", AGENT: "object", SCOPE: "by multiply length width height of object"]
+
+	// CENTRAL         REQUIRES: measuring the volume of an object requires measuring the length, width, and the height of the object     (c7e5-7e90-b44c-10e3) [ ACTION1:"measure", OBJECT_AGENT_PROCESS:"volume", SCOPE1:"of object", VERB_REQUIRES:"require", ACTION2:"measure", OBJECT:"length width height", SCOPE2:"of object" ]
+	//row autoRow6 = [UUID:"c7e5-7e90-b44c-10e3", ACTION1: "measure", OBJECT_AGENT_PROCESS: "volume", SCOPE1: "of object", VERB_REQUIRES: "require", ACTION2: "measure", OBJECT: "length width height", SCOPE2: "of object"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"c7e5-7e90-b44c-10e3", ACTION1: "measure", OBJECT_AGENT_PROCESS: "volume", SCOPE1: "of object", VERB_REQUIRES: "require", ACTION2: "measure", OBJECT: "length width height", SCOPE2: "of object"]
+
+	// CENTRAL         PROP-GENERIC: width is a property of size ; shape and includes ordered values of narrow ; wide     (ba20-8706-42c6-1f9b) [ X:"width", Y:"size;shape", ORDERED_UNORDERED:"order", VALUES:"narrow;wide" ]
+	//row autoRow7 = [UUID:"ba20-8706-42c6-1f9b", X: "width", Y: "size", ORDERED_UNORDERED: "order", VALUES: "narrow"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"ba20-8706-42c6-1f9b", X: "width", Y: "size", ORDERED_UNORDERED: "order", VALUES: "narrow"]
+
+	// LEXGLUE         SYNONYMY: size ; amount of space means volume     (3949-4114-a899-79d8) [ X1:"size;amount of space", X2:"volume" ]
+	//row autoRow8 = [UUID:"3949-4114-a899-79d8", X1: "amount of space", X2: "volume"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"3949-4114-a899-79d8", X1: "amount of space", X2: "volume"]
+
+	// LEXGLUE         KINDOF: timing ; multiplying is a kind of calculating     (de97-2b1d-0459-b676) [ HYPONYM:"time;multiply", HYPERNYM:"calculate" ]
+	//row autoRow9 = [UUID:"de97-2b1d-0459-b676", HYPONYM: "time", HYPERNYM: "calculate"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"de97-2b1d-0459-b676", HYPONYM: "time", HYPERNYM: "calculate"]
+
+	// LEXGLUE         SYNONYMY: to measure means to calculate     (99c3-c8ef-6a85-8d37) [ ACTION1:"measure", ACTION2:"calculate" ]
+	//row autoRow10 = [UUID:"99c3-c8ef-6a85-8d37", ACTION1: "measure", ACTION2: "calculate"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"99c3-c8ef-6a85-8d37", ACTION1: "measure", ACTION2: "calculate"]
+
+endinferencepattern

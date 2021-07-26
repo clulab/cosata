@@ -1,0 +1,44 @@
+// function
+function test()
+	var a = 10
+endfunction
+
+// Changing states of matter
+inferencepattern stateOfMatter	
+	// Plain text description
+	description = "A substance changing it's state of matter"
+	
+	// Constants
+	const <a> = "blah"
+	const <b> = "blah 1 2 3"
+	
+	// Row definitions
+	
+	// e.g. solid/liquid/gas is a kind of state of matter
+	row som1 = [TABLE:"KINDOF", HYPONYM:<SOM1>, HYPERNYM:"state of matter"]
+	row som2 = [TABLE:"KINDOF", HYPONYM:<SOM2>, HYPERNYM:"state of matter"]
+	
+	// e.g. melting/boiling/freezing is a kind of change of state
+	row cos  = [TABLE:"KINDOF", HYPONYM:<ChangeOfState>, HYPERNYM:"change of state"]
+
+	// e.g. a boiling point is a kind of phase transition point
+	row point = [TABLE:"KINDOF", HYPONYM:<PhaseTransitonPoint>, HYPERNYM:"phase transition point"]
+	
+	// e.g. melting means (matter; a substance) changes from a solid to a liquid by increasing heat energy
+	row change = [TABLE:"CHANGE", PROCESS_NAME:<ChangeOfState>, FROM:<SOM1>, INTO:<SOM2>, BY_THROUGH_HOW:<incDec> + "heat energy"]
+	
+	// e.g. melting occurs when the temperature of a substance is increased above the substance's melting point, and below it's boiling point
+	row thresh = [TABLE:"CONDITION-VEC", EVENT:<ChangeOfState>, VALUE:<PhaseTransitionPoint>]
+	
+	// e.g. heating means the (temperature; heat energy) of an (object; substance) is increased
+	row change = [TABLE:"CHANGE-VEC-PROP", PROCESS_NAME:<heatingOrCooling>, PROPERTY:"heat energy", INCREASED_DECREASED:<incDec>]
+	
+	
+	// Code
+	
+endinferencepattern
+
+// main
+main:	
+	var b = 20	
+	

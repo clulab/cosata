@@ -1,0 +1,95 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Plants_React_to_Drought
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: dry means low in amount of water ; wetness ; moisture     (5554-6d9d-779d-d5f5) [ THING:"spin-dry", VALUE:"low", ATTRIBUTE:"amount of water;wet;moisture" ]
+	//        HINTROW drier means lower in amount of water ; wetness ; moisture     (3cfa-bd2a-6867-18ba) [ THING:"dry", VALUE:"low", ATTRIBUTE:"amount of water;wet;moisture" ]
+	//row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "spin-dry", VALUE: "low", ATTRIBUTE: "amount of water"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", VALUE: "low", ATTRIBUTE: "amount of water"]
+
+	// CENTRALSW       CHANGE-VEC: drought is when available water decreases in an environment     (3492-2519-a7cc-d552) [ PROCESS_NAME_ACTION:"drought", AGENT_OBJECT:"available water", DIRECTION:"decrease", SCOPE2:"in environment" ]
+	//        HINTROW drought is when amount of precipitation decreases     (2298-6f12-b46e-4f4e) [ PROCESS_NAME_ACTION:"drought", AGENT_OBJECT:"amount of precipitation", DIRECTION:"decrease" ]
+	//        HINTROW drying means amount of water ; amount of liquid ; wetness decreases     (85c8-f683-bc89-7bc5) [ PROCESS_NAME_ACTION:"dry", AGENT_OBJECT:"amount of water;amount of liquid;wet", DIRECTION:"decrease;decrease" ]
+	//row autoRow1 = [TABLE:"CHANGE-VEC", PROCESS_NAME_ACTION: "drought", AGENT_OBJECT: "available water", DIRECTION: "decrease", SCOPE2: "in environment"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CHANGE-VEC", AGENT_OBJECT: *"POS:JJ"+"water", DIRECTION: "decrease"]
+
+	// GROUNDING       KINDOF: rain is a kind of precipitation     (da1e-dca3-f46a-5189) [ HYPONYM:"rain", HYPERNYM:"precipitation" ]
+	//        HINTROW snow is a kind of precipitation     (8083-d6d0-9cba-da83) [ HYPONYM:"snow", HYPERNYM:"precipitation" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "precipitation"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "precipitation"]
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW an apple tree is a kind of plant     (00a7-56fc-3c22-e6f2) [ HYPONYM:"apple tree", HYPERNYM:"plant" ]
+	//        HINTROW a marsh willow herb is a kind of plant     (ab88-7ab1-d6b7-0e6c) [ HYPONYM:"marsh willow herb", HYPERNYM:"plant" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// CENTRAL         KINDOF: a plant is a kind of living thing     (2e89-d8e8-a8fb-9acc) [ HYPONYM:"plant", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"2e89-d8e8-a8fb-9acc", HYPONYM: "plant", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"2e89-d8e8-a8fb-9acc", HYPONYM: "plant", HYPERNYM: "live thing"]
+
+	// CENTRAL         REQUIRES: a plants ; living things require water for survival ; to grow     (f3ed-dedc-2aad-109c) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"water", FOR_PURPOSE:"survive;grow" ]
+	//row autoRow5 = [UUID:"f3ed-dedc-2aad-109c", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "water", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"f3ed-dedc-2aad-109c", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "water", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         AFFECT: an adaptation ; an ability has a positive impact on an animal 's ; living thing 's survival ; health ; ability to reproduce     (b48d-28f4-b020-de9f) [ OBJECT_PROPERTY:"adapt;ability", POSITIVE_NEGATIVE:"positive", ADJ:"animal;live thing", PATIENT:"survive;health;ability reproduce" ]
+	//row autoRow6 = [UUID:"b48d-28f4-b020-de9f", OBJECT_PROPERTY: "adapt", POSITIVE_NEGATIVE: "positive", ADJ: "live thing", PATIENT: "ability reproduce"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"b48d-28f4-b020-de9f", OBJECT_PROPERTY: "adapt", POSITIVE_NEGATIVE: "positive", ADJ: "live thing", PATIENT: "ability reproduce"]
+
+	// CENTRAL         ACTION: precipitation is when water falls from the sky     (7975-13c2-aeb2-5a9a) [ DEFINITION_NAME:"precipitation", AGENT_OBJECT:"water", ACTION2:"fall from", OBJECT_PROPERTY:"sky" ]
+	//row autoRow7 = [UUID:"7975-13c2-aeb2-5a9a", DEFINITION_NAME: "precipitation", AGENT_OBJECT: "water", ACTION2: "fall from", OBJECT_PROPERTY: "sky"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"7975-13c2-aeb2-5a9a", DEFINITION_NAME: "precipitation", AGENT_OBJECT: "water", ACTION2: "fall from", OBJECT_PROPERTY: "sky"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the amount of rainfall increases in an area , the amount of available water in that area will increase     (296e-c3bd-d88a-2edf) [ QUANTITY_MEASURE1:"amount", AGENT_ATTRIBUTE1:"of rainfall", CHANGE1:"increase", SCOPE1B:"in area", QUANTITY_MEASURE2:"amount of", AGENT_ATTRIBUTE2:"available water", SCOPE2A:"in area", CHANGE2:"increase" ]
+	//row autoRow8 = [UUID:"296e-c3bd-d88a-2edf", QUANTITY_MEASURE1: "amount", AGENT_ATTRIBUTE1: "of rainfall", CHANGE1: "increase", SCOPE1B: "in area", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "available water", SCOPE2A: "in area", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"296e-c3bd-d88a-2edf", QUANTITY_MEASURE1: "amount", AGENT_ATTRIBUTE1: "of rainfall", CHANGE1: "increase", SCOPE1B: "in area", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "available water", SCOPE2A: "in area", CHANGE2: "increase"]
+
+	// CENTRAL         CHANGE-VEC: storing water increases the water available to organisms in a dry environment     (7626-ebfe-aa54-61db) [ PROCESS_NAME_ACTION:"store", AGENT_OBJECT:"water", DIRECTION:"increase", PATIENT:"water available organism", SCOPE2:"in spin-dry environment" ]
+	//row autoRow9 = [UUID:"7626-ebfe-aa54-61db", PROCESS_NAME_ACTION: "store", AGENT_OBJECT: "water", DIRECTION: "increase", PATIENT: "water available organism", SCOPE2: "in spin-dry environment"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"7626-ebfe-aa54-61db", PROCESS_NAME_ACTION: "store", AGENT_OBJECT: "water", DIRECTION: "increase", PATIENT: "water available organism", SCOPE2: "in spin-dry environment"]
+
+	// CENTRAL         KINDOF: a drought is a kind of slow environmental change     (31b1-33e5-a71c-0f61) [ HYPONYM:"drought", SCOPE1:"slow", HYPERNYM:"environment change" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"31b1-33e5-a71c-0f61", HYPONYM: "drought", SCOPE1: "slow", HYPERNYM: "environment change"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"31b1-33e5-a71c-0f61", HYPONYM: "drought", SCOPE1: "slow", HYPERNYM: "environment change"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as available water decreases , the population of plants will decrease     (c815-1f8a-8ea2-6492) [ QUANTITY_MEASURE1:"available water", CHANGE1:"decrease", QUANTITY_MEASURE2:"population", AGENT_ATTRIBUTE2:"of plant", CHANGE2:"decrease" ]
+	//row autoRow11 = [UUID:"c815-1f8a-8ea2-6492", QUANTITY_MEASURE1: "available water", CHANGE1: "decrease", QUANTITY_MEASURE2: "population", AGENT_ATTRIBUTE2: "of plant", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"c815-1f8a-8ea2-6492", QUANTITY_MEASURE1: "available water", CHANGE1: "decrease", QUANTITY_MEASURE2: "population", AGENT_ATTRIBUTE2: "of plant", CHANGE2: "decrease"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as dryness increases in an environment , the available water in that environment will decrease     (2999-5991-d180-65c1) [ QUANTITY_MEASURE1:"dryness", CHANGE1:"increase", SCOPE1B:"in environment", QUANTITY_MEASURE2:"available water", SCOPE2A:"in that environment", CHANGE2:"decrease" ]
+	//row autoRow12 = [UUID:"2999-5991-d180-65c1", QUANTITY_MEASURE1: "dryness", CHANGE1: "increase", SCOPE1B: "in environment", QUANTITY_MEASURE2: "available water", SCOPE2A: "in that environment", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"2999-5991-d180-65c1", QUANTITY_MEASURE1: "dryness", CHANGE1: "increase", SCOPE1B: "in environment", QUANTITY_MEASURE2: "available water", SCOPE2A: "in that environment", CHANGE2: "decrease"]
+
+	// CENTRAL         AFFECT: harming something has a negative impact on ; effect on that something     (57d4-79ba-a97d-0f9a) [ VERB:"harm", OBJECT_PROPERTY:"something", POSITIVE_NEGATIVE:"negative", PATIENT:"something" ]
+	//row autoRow13 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"]
+
+	// CENTRAL         CAUSE: dry and hot weather for a long time can cause drought     (b6b1-26df-3362-29e1) [ CONDITION_AGENT_OBJECT:"spin-dry hot weather", SCOPE1:"for long time", RESULT_AGENT:"drought" ]
+	//row autoRow14 = [UUID:"b6b1-26df-3362-29e1", CONDITION_AGENT_OBJECT: "spin-dry hot weather", SCOPE1: "for long time", RESULT_AGENT: "drought"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"b6b1-26df-3362-29e1", CONDITION_AGENT_OBJECT: "spin-dry hot weather", SCOPE1: "for long time", RESULT_AGENT: "drought"]
+
+	// CENTRAL         CAUSE: a decrease in soil thickness can cause harm to trees     (ef4c-b558-c86c-1f78) [ CONDITION_AGENT_OBJECT:"decrease", CONDITION_PATIENT:"in soil thickness", RESULT_AGENT:"harm", RESULT_PATIENT:"tree" ]
+	//row autoRow15 = [UUID:"ef4c-b558-c86c-1f78", CONDITION_AGENT_OBJECT: "decrease", CONDITION_PATIENT: "in soil thickness", RESULT_AGENT: "harm", RESULT_PATIENT: "tree"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"ef4c-b558-c86c-1f78", CONDITION_AGENT_OBJECT: "decrease", CONDITION_PATIENT: "in soil thickness", RESULT_AGENT: "harm", RESULT_PATIENT: "tree"]
+
+	// CENTRAL         CHANGE-VEC: drought decreases the thickness of soil     (bf22-721b-6f63-055c) [ AGENT_OBJECT:"drought", DIRECTION:"decrease", PATIENT:"thickness", SCOPE2:"of soil" ]
+	//row autoRow16 = [UUID:"bf22-721b-6f63-055c", AGENT_OBJECT: "drought", DIRECTION: "decrease", PATIENT: "thickness", SCOPE2: "of soil"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"bf22-721b-6f63-055c", AGENT_OBJECT: "drought", DIRECTION: "decrease", PATIENT: "thickness", SCOPE2: "of soil"]
+
+	// CENTRAL         REQUIRES: trees require a certain thickness of soil to grow     (954e-672f-6d11-c27e) [ OBJECT_AGENT_PROCESS:"tree", VERB_REQUIRES:"require", OBJECT:"certain thickness", SCOPE2:"of soil", FOR_PURPOSE:"grow" ]
+	//row autoRow17 = [UUID:"954e-672f-6d11-c27e", OBJECT_AGENT_PROCESS: "tree", VERB_REQUIRES: "require", OBJECT: "certain thickness", SCOPE2: "of soil", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"954e-672f-6d11-c27e", OBJECT_AGENT_PROCESS: "tree", VERB_REQUIRES: "require", OBJECT: "certain thickness", SCOPE2: "of soil", FOR_PURPOSE: "grow"]
+
+	// LEXGLUE         OPPOSITES: an increase is the opposite of a decrease     (bfdf-b468-ee22-1b60) [ THING_PROPERTY1:"increase", THING_PROPERTY2:"decrease" ]
+	//row autoRow18 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"]
+
+endinferencepattern

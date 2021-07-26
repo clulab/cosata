@@ -1,0 +1,73 @@
+// NOTE: This IML has been edited from it's original state
+
+// Automatically converted pattern
+inferencepattern CEL_ORBIT_Earth_Revolution
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         CAUSE: the Earth revolving around the sun causes stars to appear in different areas in the sky at different times of year     (b018-4375-d391-cb98) [ CONDITION_AGENT_OBJECT:"earth", CONDITION_VERB:"revolve", SCOPE1:"around sun", RESULT_AGENT:"star", RESULT_VERB:"appear", RESULT_PATIENT:"in differ area in sky", DURATION2:"at differ time of year" ]
+	//row autoRow0 = [UUID:"b018-4375-d391-cb98", CONDITION_AGENT_OBJECT: "earth", CONDITION_VERB: "revolve", SCOPE1: "around sun", RESULT_AGENT: "star", RESULT_VERB: "appear", RESULT_PATIENT: "in differ area in sky", DURATION2: "at differ time of year"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"b018-4375-d391-cb98", CONDITION_AGENT_OBJECT: "earth", CONDITION_VERB: "revolve", SCOPE1: "around sun", RESULT_AGENT: "star", RESULT_VERB: "appear", RESULT_PATIENT: "in differ area in sky", DURATION2: "at differ time of year"]
+
+	// CENTRAL         PROP-ORBITAL-ROT: a complete revolution ; orbit of the Earth around the sun takes 1 ; one year ; solar year ; Earth year     (e682-f47d-cc9c-a67c) [ REVOLUTION_ROTATION:"revolve;orbit", WHAT_S_MOVING:"earth", CENTER_POINT:"sun", HOW_LONG_IT_TAKES:"1;one", UNITS:"year;solar year;earth year" ]
+	//row autoRow1 = [UUID:"e682-f47d-cc9c-a67c", REVOLUTION_ROTATION: "revolve", WHAT_S_MOVING: "earth", CENTER_POINT: "sun", HOW_LONG_IT_TAKES: "1", UNITS: "solar year"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"e682-f47d-cc9c-a67c", REVOLUTION_ROTATION: "revolve", WHAT_S_MOVING: <planet>, CENTER_POINT: <starName>, UNITS: <unitName>]
+
+	// CENTRAL         CAUSE: the Earth revolving around the Sun causes the seasons to change ; to occur on its axis     (1cca-1ac1-5bea-5cf6) [ CONDITION_AGENT_OBJECT:"earth", CONDITION_VERB:"revolve", CONDITION_PATIENT:"around sun", RESULT_AGENT:"season", RESULT_VERB:"change;occur", RESULT_PATIENT:"on axis" ]
+	//row autoRow2 = [UUID:"1cca-1ac1-5bea-5cf6", CONDITION_AGENT_OBJECT: "earth", CONDITION_VERB: "revolve", CONDITION_PATIENT: "around sun", RESULT_AGENT: "season", RESULT_VERB: "change", RESULT_PATIENT: "on axis"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"1cca-1ac1-5bea-5cf6", CONDITION_AGENT_OBJECT: <planet>, CONDITION_VERB: "revolve", CONDITION_PATIENT: "around" + <starName>, RESULT_AGENT: "season", RESULT_VERB: "change", RESULT_PATIENT: "on axis"]
+
+	// CENTRAL         CONVERSIONS: 1 year is equal to 365 days     (4adf-935f-2a7e-de97) [ QUANTITY1:"1", UNIT1:"year", QUANTITY2:"365", UNIT2:"day" ]
+	//row autoRow3 = [UUID:"4adf-935f-2a7e-de97", QUANTITY1: "1", UNIT1: "year", QUANTITY2: "365", UNIT2: "day"] //OVER-CONSTR.
+    // NOTE: Might want to make <~unitName> more strict, and update knowledge base for units with alternatives such as 'Earth Year' (instead of just 'year'). 
+	row *autoRow3 = [UUID:"4adf-935f-2a7e-de97", UNIT1: <~unitName>]
+
+	// CENTRAL         ACTION: the Earth revolves around the sun     (5471-05b0-00bd-1669) [ AGENT_OBJECT:"earth", ACTION2:"revolve around", OBJECT_PROPERTY:"sun" ]
+	//row autoRow4 = [UUID:"5471-05b0-00bd-1669", AGENT_OBJECT: "earth", ACTION2: "revolve around", OBJECT_PROPERTY: "sun"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"5471-05b0-00bd-1669", AGENT_OBJECT: <planet>, ACTION2: "revolve around", OBJECT_PROPERTY: <starName>]
+
+	// CENTRAL         KINDOF: Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//  Notes: peripheral central
+	//row autoRow5 = [UUID:"e473-7297-61c1-56fa", HYPONYM: "earth", HYPERNYM: "planet"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"e473-7297-61c1-56fa", HYPONYM: <planet>, HYPERNYM: "planet"]
+
+	// CENTRAL         CAUSE: gravity causes orbits     (828a-1af1-a7bd-61e8) [ CONDITION_AGENT_OBJECT:"gravity", RESULT_AGENT:"orbit" ]
+	//row autoRow6 = [UUID:"828a-1af1-a7bd-61e8", CONDITION_AGENT_OBJECT: "gravity", RESULT_AGENT: "orbit"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"828a-1af1-a7bd-61e8", CONDITION_AGENT_OBJECT: "gravity", RESULT_AGENT: "orbit"]
+
+	// CENTRAL         ACTION: planets orbit stars     (e35c-e251-2993-ac25) [ AGENT_OBJECT:"planet", ACTION2:"orbit", OBJECT_PROPERTY:"star" ]
+	//row autoRow7 = [UUID:"e35c-e251-2993-ac25", AGENT_OBJECT: "planet", ACTION2: "orbit", OBJECT_PROPERTY: "star"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"e35c-e251-2993-ac25", AGENT_OBJECT: "planet", ACTION2: "orbit", OBJECT_PROPERTY: "star"]
+
+	// CENTRAL         KINDOF: revolving is a kind of motion     (02f7-3d00-6d43-0289) [ HYPONYM:"revolve", HYPERNYM:"move" ]
+	//  Notes: peripheral central
+	//row autoRow8 = [UUID:"02f7-3d00-6d43-0289", HYPONYM: "revolve", HYPERNYM: "move"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"02f7-3d00-6d43-0289", HYPONYM: "revolve", HYPERNYM: "move"]
+
+	// CENTRAL         KINDOF: the Sun is a kind of star     (af26-8083-b908-7d3b) [ HYPONYM:"sun", HYPERNYM:"star" ]
+	//  Notes: peripheral central
+	//row autoRow9 = [UUID:"af26-8083-b908-7d3b", HYPONYM: "sun", HYPERNYM: "star"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"af26-8083-b908-7d3b", HYPONYM: <starName>, HYPERNYM: "star"]
+
+	// LEXGLUE         SYNONYMY: revolve once means to complete a revolution     (12bd-8d59-15c1-b412) [ ACTION1:"revolve one", ACTION2:"complete revolve" ]
+	//row autoRow10 = [UUID:"12bd-8d59-15c1-b412", ACTION1: "revolve one", ACTION2: "complete revolve"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"12bd-8d59-15c1-b412", ACTION1: "revolve one", ACTION2: "complete revolve"]
+
+	// LEXGLUE         SYNONYMY: revolving around something means orbiting that something     (3dd5-2225-75cc-e350) [ ACTION1:"revolve", Y1:"around something", ACTION2:"orbit", Y2:"that something" ]
+	//row autoRow11 = [UUID:"3dd5-2225-75cc-e350", ACTION1: "revolve", Y1: "around something", ACTION2: "orbit", Y2: "that something"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"3dd5-2225-75cc-e350", ACTION1: "revolve", Y1: "around something", ACTION2: "orbit", Y2: "that something"]
+
+	// LEXGLUE         SYNONYMY: gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction     (a6ed-d678-af19-2281) [ X1:"gravity", X2:"gravitational pull;gravitational energy;gravitational force;gravitational attraction" ]
+	//row autoRow12 = [UUID:"a6ed-d678-af19-2281", X1: "gravity", X2: "gravitational pull"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"a6ed-d678-af19-2281", X1: "gravity", X2: "gravitational pull"]
+
+	// LEXGLUE         SYNONYMY: orbit means orbital path     (3b4e-37fa-74e3-24e3) [ X1:"orbit", X2:"orbital path" ]
+	//row autoRow13 = [UUID:"3b4e-37fa-74e3-24e3", X1: "orbit", X2: "orbital path"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"3b4e-37fa-74e3-24e3", X1: "orbit", X2: "orbital path"]
+
+endinferencepattern

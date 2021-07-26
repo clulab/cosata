@@ -1,0 +1,40 @@
+// Automatically converted pattern
+inferencepattern OTHER_HIST_Computers_Effect_on_Communication
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a laptop is a kind of computer     (cc5a-33bc-0636-e708) [ HYPONYM:"laptop", HYPERNYM:"computer" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "laptop", HYPERNYM: "computer"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "laptop", HYPERNYM: "computer"]
+
+	// CENTRAL         AFFECT: communication has a positive impact on a person 's life     (03f4-694a-d986-eb3a) [ ACTOR_WHO:"communicate", POSITIVE_NEGATIVE:"positive", PATIENT:"person life" ]
+	//row autoRow1 = [UUID:"03f4-694a-d986-eb3a", ACTOR_WHO: "communicate", POSITIVE_NEGATIVE: "positive", PATIENT: "person life"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"03f4-694a-d986-eb3a", ACTOR_WHO: "communicate", POSITIVE_NEGATIVE: "positive", PATIENT: "person life"]
+
+	// CENTRAL         AFFECT: helping something has a positive impact on that something     (b5b8-ce64-6568-4a6c) [ VERB:"help", OBJECT_PROPERTY:"something", POSITIVE_NEGATIVE:"positive", PATIENT:"something" ]
+	//row autoRow2 = [UUID:"b5b8-ce64-6568-4a6c", VERB: "help", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "positive", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"b5b8-ce64-6568-4a6c", VERB: "help", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "positive", PATIENT: "something"]
+
+	// CENTRAL         USEDFOR: a computer is used for communication ; finding information     (eb81-1c0b-6039-ee96) [ AGENT_OBJECT:"computer", FOR_PURPOSE:"communicate;find information" ]
+	//row autoRow3 = [UUID:"eb81-1c0b-6039-ee96", AGENT_OBJECT: "computer", FOR_PURPOSE: "find information"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"eb81-1c0b-6039-ee96", AGENT_OBJECT: "computer", FOR_PURPOSE: "find information"]
+
+	// CENTRAL         CHANGE-VEC: something that is used for communication increases communication     (95f3-60ac-0a8c-04ca) [ AGENT_OBJECT:"something be use for communicate", DIRECTION:"increase", PATIENT:"communicate" ]
+	//row autoRow4 = [UUID:"95f3-60ac-0a8c-04ca", AGENT_OBJECT: "something be use for communicate", DIRECTION: "increase", PATIENT: "communicate"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"95f3-60ac-0a8c-04ca", AGENT_OBJECT: "something be use for communicate", DIRECTION: "increase", PATIENT: "communicate"]
+
+	// CENTRAL         KINDOF: a computer is a kind of tool     (da4f-8a91-c9d9-0eab) [ HYPONYM:"computer", HYPERNYM:"tool" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"da4f-8a91-c9d9-0eab", HYPONYM: "computer", HYPERNYM: "tool"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"da4f-8a91-c9d9-0eab", HYPONYM: "computer", HYPERNYM: "tool"]
+
+	// CENTRAL         ACTION: inventing a tool allows ; enables that tool to be used     (efcb-faab-cd79-cd07) [ ACTION1:"invent", AGENT_OBJECT:"tool", ACTION2:"allow;enable", OBJECT_PROPERTY:"that tool be use" ]
+	//row autoRow6 = [UUID:"efcb-faab-cd79-cd07", ACTION1: "invent", AGENT_OBJECT: "tool", ACTION2: "allow", OBJECT_PROPERTY: "that tool be use"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"efcb-faab-cd79-cd07", ACTION1: "invent", AGENT_OBJECT: "tool", ACTION2: "allow", OBJECT_PROPERTY: "that tool be use"]
+
+endinferencepattern

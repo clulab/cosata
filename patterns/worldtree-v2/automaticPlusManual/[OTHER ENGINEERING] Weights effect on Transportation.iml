@@ -1,0 +1,48 @@
+// Automatically converted pattern
+inferencepattern OTHER_ENGINEERING_Weights_effect_on_Transportation
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: light means low in weight     (2e40-b4c8-727f-c33f) [ THING:"light", VALUE:"low", ATTRIBUTE:"weight" ]
+	//        HINTROW heavy means a large amount of weight     (cf35-7fb9-d732-4bba) [ THING:"heavy", VALUE:"large amount", ATTRIBUTE:"weight" ]
+	//row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "weight"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "weight"]
+
+	// CENTRAL         USEDFOR: a restriction can be used to limit something ; keep something low     (192b-61b4-fc99-3a22) [ AGENT_OBJECT:"restriction", QUALIFIER:"be", FOR_PURPOSE:"limit something;keep something low" ]
+	//row autoRow1 = [UUID:"192b-61b4-fc99-3a22", AGENT_OBJECT: "restriction", QUALIFIER: "be", FOR_PURPOSE: "keep something low"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"192b-61b4-fc99-3a22", AGENT_OBJECT: "restriction", QUALIFIER: "be", FOR_PURPOSE: "keep something low"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the weight of an object decreases , the object will be transported more easily     (6bc6-742d-a8b8-4c8b) [ QUANTITY_MEASURE1:"weight of", AGENT_ATTRIBUTE1:"object", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"object", ACTION2:"transport", CHANGE2:"much easy" ]
+	//row autoRow2 = [UUID:"6bc6-742d-a8b8-4c8b", QUANTITY_MEASURE1: "weight of", AGENT_ATTRIBUTE1: "object", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "object", ACTION2: "transport", CHANGE2: "much easy"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"6bc6-742d-a8b8-4c8b", QUANTITY_MEASURE1: "weight of", AGENT_ATTRIBUTE1: "object", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "object", ACTION2: "transport", CHANGE2: "much easy"]
+
+	// CENTRAL         KINDOF: a computer is a kind of tool     (da4f-8a91-c9d9-0eab) [ HYPONYM:"computer", HYPERNYM:"tool" ]
+	//row autoRow3 = [UUID:"da4f-8a91-c9d9-0eab", HYPONYM: "computer", HYPERNYM: "tool"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"da4f-8a91-c9d9-0eab", HYPONYM: "computer", HYPERNYM: "tool"]
+
+	// CENTRAL        (OPTIONAL) USEDFOR: a computer is used for communication ; finding information     (eb81-1c0b-6039-ee96) [ AGENT_OBJECT:"computer", FOR_PURPOSE:"communicate;find information" ]
+	//row *autoRow4 = [UUID:"eb81-1c0b-6039-ee96", AGENT_OBJECT: "computer", FOR_PURPOSE: "find information"] //OVER-CONSTR.
+	row *autoRow4 = [UUID:"eb81-1c0b-6039-ee96", AGENT_OBJECT: "computer", FOR_PURPOSE: "find information"]
+
+	// CENTRAL         KINDOF: a tool is a kind of object     (75de-7e0e-d204-6ec0) [ HYPONYM:"tool", HYPERNYM:"object" ]
+	//row autoRow5 = [UUID:"75de-7e0e-d204-6ec0", HYPONYM: "tool", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"75de-7e0e-d204-6ec0", HYPONYM: "tool", HYPERNYM: "object"]
+
+	// LEXGLUE         SYNONYMY: to be used for something means to help to do that something     (679c-fab2-a001-db1e) [ ACTION1:"be use", Y1:"for something", ACTION2:"help do", Y2:"something" ]
+	//row autoRow6 = [UUID:"679c-fab2-a001-db1e", ACTION1: "be use", Y1: "for something", ACTION2: "help do", Y2: "something"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"679c-fab2-a001-db1e", ACTION1: "be use", Y1: "for something", ACTION2: "help do", Y2: "something"]
+
+	// LEXGLUE         SYNONYMY: device means tool     (de25-e9d6-aced-d88e) [ X1:"device", X2:"tool" ]
+	//row autoRow7 = [UUID:"de25-e9d6-aced-d88e", X1: "device", X2: "tool"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"de25-e9d6-aced-d88e", X1: "device", X2: "tool"]
+
+	// LEXGLUE         SYNONYMY: instrument means tool     (a0d5-68ec-fccc-fd82) [ X1:"instrument", X2:"tool" ]
+	//row autoRow8 = [UUID:"a0d5-68ec-fccc-fd82", X1: "instrument", X2: "tool"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"a0d5-68ec-fccc-fd82", X1: "instrument", X2: "tool"]
+
+endinferencepattern

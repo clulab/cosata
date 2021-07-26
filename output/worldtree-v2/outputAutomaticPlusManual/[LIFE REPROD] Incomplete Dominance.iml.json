@@ -1,0 +1,164 @@
+{"patternMatches": [
+{
+	"patternName":"LIFE_REPROD_Incomplete_Dominance",
+	"matches":[
+		{
+		"uuids": ["7a88-cff4-5a86-4681","b0f1-dcbf-644a-6d0a","29be-69ad-17f4-11f0","33ee-cd38-fb7f-73fc","0e01-7b7a-deee-6f56","10ce-c060-90b9-b748","7892-f43a-8f12-2a8d","ba6b-2114-c011-3b87","12c9-e2b2-25cd-65c6","4fc9-5989-d008-dd3e","b0f7-0b94-dd72-578c","bf6d-30bb-f14c-54bb","c789-7d60-5d0e-bc67","ee4a-b456-7903-e43d","acda-b7a0-d62c-ff9b","0df9-78d7-51d9-6e54","2299-0633-182b-92f3","9d19-224c-847b-a622","f00a-7d92-6e19-784a","b3f6-5f19-c2eb-85e9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7a88-cff4-5a86-4681", "rowText": "black fur is a dominant trait in guinea pig", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b0f1-dcbf-644a-6d0a", "rowText": "white fur is a recessive trait in guinea pig", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "29be-69ad-17f4-11f0", "rowText": "the color of ; coloration of fur is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "33ee-cd38-fb7f-73fc", "rowText": "gray is a combination of black and white", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0e01-7b7a-deee-6f56", "rowText": "guinea pig is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "10ce-c060-90b9-b748", "rowText": "an animal is a kind of organism", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "7892-f43a-8f12-2a8d", "rowText": "black is a kind of color", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "ba6b-2114-c011-3b87", "rowText": "pink is a kind of color", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "12c9-e2b2-25cd-65c6", "rowText": "white is a kind of color", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4fc9-5989-d008-dd3e", "rowText": "incomplete dominance is when offspring exhibit a combination of a property caused by the genes of its parents", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b0f7-0b94-dd72-578c", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 25% probability of being homozygous recessive", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "bf6d-30bb-f14c-54bb", "rowText": "a heterozygous organism contains both dominant and recessive genes", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "c789-7d60-5d0e-bc67", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 25% probability of being homozygous dominant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "ee4a-b456-7903-e43d", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 75% probability of having dominant trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acda-b7a0-d62c-ff9b", "rowText": "a homozygous dominant organism contains only dominant genes", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "0df9-78d7-51d9-6e54", "rowText": "a homozygous recessive organism contains only recessive genes", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "2299-0633-182b-92f3", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 50% probability of being heterozygous dominant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "9d19-224c-847b-a622", "rowText": "if both a dominant and recessive gene are present , the dominant trait will be visible ; expressed", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "f00a-7d92-6e19-784a", "rowText": "if both dominant genes are present , then the dominant trait will be visible ; expressed", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "b3f6-5f19-c2eb-85e9", "rowText": "if both recessive genes are present , then the recessive trait will be visible ; expressed", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"animal_4", "value":"animal" },
+			{ "name":"black_3", "value":"black" },
+			{ "name":"fur_0", "value":"fur" },
+			{ "name":"guinea_1", "value":"guinea" },
+			{ "name":"pig_2", "value":"pig" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"animal_4", "value":"animal" },
+			{ "name":"black_3", "value":"black" },
+			{ "name":"fur_0", "value":"fur" },
+			{ "name":"guinea_1", "value":"guinea" },
+			{ "name":"pig_2", "value":"pig" }
+		]
+		},
+		{
+		"uuids": ["7a88-cff4-5a86-4681","b0f1-dcbf-644a-6d0a","29be-69ad-17f4-11f0","33ee-cd38-fb7f-73fc","TEMPGEN-2074193","21a9-8b33-b63d-dca2","7892-f43a-8f12-2a8d","ba6b-2114-c011-3b87","12c9-e2b2-25cd-65c6","4fc9-5989-d008-dd3e","b0f7-0b94-dd72-578c","bf6d-30bb-f14c-54bb","c789-7d60-5d0e-bc67","ee4a-b456-7903-e43d","acda-b7a0-d62c-ff9b","0df9-78d7-51d9-6e54","2299-0633-182b-92f3","9d19-224c-847b-a622","f00a-7d92-6e19-784a","b3f6-5f19-c2eb-85e9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7a88-cff4-5a86-4681", "rowText": "black fur is a dominant trait in guinea pig", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b0f1-dcbf-644a-6d0a", "rowText": "white fur is a recessive trait in guinea pig", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "29be-69ad-17f4-11f0", "rowText": "the color of ; coloration of fur is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "33ee-cd38-fb7f-73fc", "rowText": "gray is a combination of black and white", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "TEMPGEN-2074193", "rowText": "guinea pig is a kind of consumer", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "21a9-8b33-b63d-dca2", "rowText": "a consumer is a kind of organism", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "7892-f43a-8f12-2a8d", "rowText": "black is a kind of color", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "ba6b-2114-c011-3b87", "rowText": "pink is a kind of color", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "12c9-e2b2-25cd-65c6", "rowText": "white is a kind of color", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4fc9-5989-d008-dd3e", "rowText": "incomplete dominance is when offspring exhibit a combination of a property caused by the genes of its parents", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b0f7-0b94-dd72-578c", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 25% probability of being homozygous recessive", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "bf6d-30bb-f14c-54bb", "rowText": "a heterozygous organism contains both dominant and recessive genes", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "c789-7d60-5d0e-bc67", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 25% probability of being homozygous dominant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "ee4a-b456-7903-e43d", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 75% probability of having dominant trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acda-b7a0-d62c-ff9b", "rowText": "a homozygous dominant organism contains only dominant genes", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "0df9-78d7-51d9-6e54", "rowText": "a homozygous recessive organism contains only recessive genes", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "2299-0633-182b-92f3", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 50% probability of being heterozygous dominant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "9d19-224c-847b-a622", "rowText": "if both a dominant and recessive gene are present , the dominant trait will be visible ; expressed", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "f00a-7d92-6e19-784a", "rowText": "if both dominant genes are present , then the dominant trait will be visible ; expressed", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "b3f6-5f19-c2eb-85e9", "rowText": "if both recessive genes are present , then the recessive trait will be visible ; expressed", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"animal_4", "value":"consumer" },
+			{ "name":"black_3", "value":"black" },
+			{ "name":"fur_0", "value":"fur" },
+			{ "name":"guinea_1", "value":"guinea" },
+			{ "name":"pig_2", "value":"pig" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"animal_4", "value":"consumer" },
+			{ "name":"black_3", "value":"black" },
+			{ "name":"fur_0", "value":"fur" },
+			{ "name":"guinea_1", "value":"guinea" },
+			{ "name":"pig_2", "value":"pig" }
+		]
+		},
+		{
+		"uuids": ["7a88-cff4-5a86-4681","b0f1-dcbf-644a-6d0a","102a-fa79-43cd-e9a4","33ee-cd38-fb7f-73fc","0e01-7b7a-deee-6f56","10ce-c060-90b9-b748","7892-f43a-8f12-2a8d","ba6b-2114-c011-3b87","12c9-e2b2-25cd-65c6","4fc9-5989-d008-dd3e","b0f7-0b94-dd72-578c","bf6d-30bb-f14c-54bb","c789-7d60-5d0e-bc67","ee4a-b456-7903-e43d","acda-b7a0-d62c-ff9b","0df9-78d7-51d9-6e54","2299-0633-182b-92f3","9d19-224c-847b-a622","f00a-7d92-6e19-784a","b3f6-5f19-c2eb-85e9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7a88-cff4-5a86-4681", "rowText": "black fur is a dominant trait in guinea pig", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b0f1-dcbf-644a-6d0a", "rowText": "white fur is a recessive trait in guinea pig", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "102a-fa79-43cd-e9a4", "rowText": "the colors of parts of an organism are inherited characteristics", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "33ee-cd38-fb7f-73fc", "rowText": "gray is a combination of black and white", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0e01-7b7a-deee-6f56", "rowText": "guinea pig is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "10ce-c060-90b9-b748", "rowText": "an animal is a kind of organism", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "7892-f43a-8f12-2a8d", "rowText": "black is a kind of color", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "ba6b-2114-c011-3b87", "rowText": "pink is a kind of color", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "12c9-e2b2-25cd-65c6", "rowText": "white is a kind of color", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4fc9-5989-d008-dd3e", "rowText": "incomplete dominance is when offspring exhibit a combination of a property caused by the genes of its parents", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b0f7-0b94-dd72-578c", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 25% probability of being homozygous recessive", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "bf6d-30bb-f14c-54bb", "rowText": "a heterozygous organism contains both dominant and recessive genes", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "c789-7d60-5d0e-bc67", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 25% probability of being homozygous dominant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "ee4a-b456-7903-e43d", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 75% probability of having dominant trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acda-b7a0-d62c-ff9b", "rowText": "a homozygous dominant organism contains only dominant genes", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "0df9-78d7-51d9-6e54", "rowText": "a homozygous recessive organism contains only recessive genes", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "2299-0633-182b-92f3", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 50% probability of being heterozygous dominant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "9d19-224c-847b-a622", "rowText": "if both a dominant and recessive gene are present , the dominant trait will be visible ; expressed", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "f00a-7d92-6e19-784a", "rowText": "if both dominant genes are present , then the dominant trait will be visible ; expressed", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "b3f6-5f19-c2eb-85e9", "rowText": "if both recessive genes are present , then the recessive trait will be visible ; expressed", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"animal_4", "value":"animal" },
+			{ "name":"black_3", "value":"black" },
+			{ "name":"fur_0", "value":"fur" },
+			{ "name":"guinea_1", "value":"guinea" },
+			{ "name":"pig_2", "value":"pig" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"animal_4", "value":"animal" },
+			{ "name":"black_3", "value":"black" },
+			{ "name":"fur_0", "value":"fur" },
+			{ "name":"guinea_1", "value":"guinea" },
+			{ "name":"pig_2", "value":"pig" }
+		]
+		},
+		{
+		"uuids": ["7a88-cff4-5a86-4681","b0f1-dcbf-644a-6d0a","102a-fa79-43cd-e9a4","33ee-cd38-fb7f-73fc","TEMPGEN-2074193","21a9-8b33-b63d-dca2","7892-f43a-8f12-2a8d","ba6b-2114-c011-3b87","12c9-e2b2-25cd-65c6","4fc9-5989-d008-dd3e","b0f7-0b94-dd72-578c","bf6d-30bb-f14c-54bb","c789-7d60-5d0e-bc67","ee4a-b456-7903-e43d","acda-b7a0-d62c-ff9b","0df9-78d7-51d9-6e54","2299-0633-182b-92f3","9d19-224c-847b-a622","f00a-7d92-6e19-784a","b3f6-5f19-c2eb-85e9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7a88-cff4-5a86-4681", "rowText": "black fur is a dominant trait in guinea pig", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b0f1-dcbf-644a-6d0a", "rowText": "white fur is a recessive trait in guinea pig", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "102a-fa79-43cd-e9a4", "rowText": "the colors of parts of an organism are inherited characteristics", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "33ee-cd38-fb7f-73fc", "rowText": "gray is a combination of black and white", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "TEMPGEN-2074193", "rowText": "guinea pig is a kind of consumer", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "21a9-8b33-b63d-dca2", "rowText": "a consumer is a kind of organism", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "7892-f43a-8f12-2a8d", "rowText": "black is a kind of color", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "ba6b-2114-c011-3b87", "rowText": "pink is a kind of color", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "12c9-e2b2-25cd-65c6", "rowText": "white is a kind of color", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4fc9-5989-d008-dd3e", "rowText": "incomplete dominance is when offspring exhibit a combination of a property caused by the genes of its parents", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b0f7-0b94-dd72-578c", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 25% probability of being homozygous recessive", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "bf6d-30bb-f14c-54bb", "rowText": "a heterozygous organism contains both dominant and recessive genes", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "c789-7d60-5d0e-bc67", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 25% probability of being homozygous dominant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "ee4a-b456-7903-e43d", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 75% probability of having dominant trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acda-b7a0-d62c-ff9b", "rowText": "a homozygous dominant organism contains only dominant genes", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "0df9-78d7-51d9-6e54", "rowText": "a homozygous recessive organism contains only recessive genes", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "2299-0633-182b-92f3", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 50% probability of being heterozygous dominant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "9d19-224c-847b-a622", "rowText": "if both a dominant and recessive gene are present , the dominant trait will be visible ; expressed", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "f00a-7d92-6e19-784a", "rowText": "if both dominant genes are present , then the dominant trait will be visible ; expressed", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "b3f6-5f19-c2eb-85e9", "rowText": "if both recessive genes are present , then the recessive trait will be visible ; expressed", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"animal_4", "value":"consumer" },
+			{ "name":"black_3", "value":"black" },
+			{ "name":"fur_0", "value":"fur" },
+			{ "name":"guinea_1", "value":"guinea" },
+			{ "name":"pig_2", "value":"pig" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"animal_4", "value":"consumer" },
+			{ "name":"black_3", "value":"black" },
+			{ "name":"fur_0", "value":"fur" },
+			{ "name":"guinea_1", "value":"guinea" },
+			{ "name":"pig_2", "value":"pig" }
+		]
+		}
+	]
+}
+]}
+

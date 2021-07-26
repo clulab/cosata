@@ -1,0 +1,88 @@
+// Automatically converted pattern
+inferencepattern MAT_CHANGES_Physical_Changes_vs_Chemical_Changes
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE: freezing means matter ; a substance changes from a liquid into a solid by decreasing heat energy     (f03c-decc-030f-b860) [ PROCESS_NAME:"freeze", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"solid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//        HINTROW melting means matter ; a substance changes from a solid into a liquid by increasing heat energy     (6abc-4443-f672-9a97) [ PROCESS_NAME:"melt", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"solid", INTO:"liquid", BY_THROUGH_HOW:"increase heat energy" ]
+	//        HINTROW condensing means matter ; a substance changes from a gas into a liquid by decreasing heat energy     (2aba-39fa-3a07-5ee4) [ PROCESS_NAME:"condense", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"gas", INTO:"liquid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//        HINTROW desublimation ; deposition means matter ; a substance changes from a gas into a solid by decreasing heat energy     (3002-4c80-039d-2114) [ PROCESS_NAME:"desublimation;deposition", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"gas", INTO:"solid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//        HINTROW boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy     (a0b2-a45f-01e1-4bf4) [ PROCESS_NAME:"boil;evaporate", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"gas", BY_THROUGH_HOW:"increase heat energy" ]
+	//        HINTROW condensation is when matter ; a substance changes from a gas into a liquid by decreasing heat energy     (2c44-c2fa-bff1-5946) [ PROCESS_NAME:"condense", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"gas", INTO:"liquid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//        HINTROW sublimation means matter ; a substance changes from a solid into a gas by increasing heat energy     (1613-c8b2-f818-85be) [ PROCESS_NAME:"sublimation", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"solid", INTO:"gas", BY_THROUGH_HOW:"increase heat energy" ]
+	//  Notes: phase change
+	//row autoRow0 = [TABLE:"CHANGE", ACTOR_WHO: "matt", VERB: "change", FROM: <liquid_0>, BY_THROUGH_HOW: *"POS:VB"+"heat energy"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CHANGE", ACTOR_WHO: "matt", VERB: "change", FROM: <liquid_0>, BY_THROUGH_HOW: *"POS:VB"+"heat energy"]
+
+	// CENTRALSW       CHANGE: a phase change is when matter ; a substance changes from one state of matter into another state of matter     (72bd-5535-598e-82e8) [ PROCESS_NAME:"phase change", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"one state of matt", INTO:"state of matt" ]
+	//        HINTROW crumple means change shape from smooth ; flat into compacted ; irregular by mechanical force ; kinetic energy     (57f8-2232-d549-6dbc) [ PROCESS_NAME:"crumple", VERB:"change", WHAT:"shape", FROM:"smooth;flat", INTO:"compact;irregular", BY_THROUGH_HOW:"mechanical force;kinetic energy" ]
+	//        HINTROW breaking down an object changes that object 's shape ; that object 's mass     (9697-ac7b-6ca7-7421) [ PROCESS_NAME:"break", ACTOR_WHO:"object", VERB:"change", WHAT:"object shape;object mass" ]
+	//  Notes: the effect of the physical change
+	//row autoRow1 = [TABLE:"CHANGE", PROCESS_NAME: "phase change", ACTOR_WHO: "matt", VERB: "change", FROM: *"POS:CD"+*"POS:NN"+"of matt", INTO: *"POS:NN"+"of matt"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CHANGE", VERB: "change"]
+
+	// CENTRALSW       EXAMPLES: An example of a chemical change is acid breaking down substances     (9213-5a66-7733-0fc8) [ AGENT_OBJECT1:"chemical change", AGENT_OBJECT2:"acid", VERB2:"break", AGENT_OBJECT3:"substance" ]
+	//        HINTROW An example of a chemical change is electrical energy breaking down a compound     (3ad2-9672-21b6-16b9) [ AGENT_OBJECT1:"chemical change", AGENT_OBJECT2:"electric energy", VERB2:"break", AGENT_OBJECT3:"compound" ]
+	//        HINTROW An example of a chemical change is starch turning into sugar through reactions with saliva     (faef-a69d-08a2-286d) [ AGENT_OBJECT1:"chemical change", AGENT_OBJECT2:"starch", VERB2:"turn into", AGENT_OBJECT3:"sugar", BY_THROUGH_HOW:"through", SCOPE:"reaction with saliva" ]
+	//  Notes: chemical change examples
+	//row autoRow2 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "chemical change", AGENT_OBJECT3: "substance"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "chemical change"]
+
+	// CENTRALSW       IFTHEN: if something undergoes a physical change then the physical properties of that something will change     (e555-8a18-84d7-15d1) [ THING:"something", ACTION1:"undergo", OBJECT_PATIENT1:"physical change", ACTOR_AGENT_PROCESS2:"physical property", PROPERTY_SCOPE:"of something", ACTION3:"change" ]
+	//        HINTROW if something undergoes physical change then the chemical properties of that something will remain unchanged     (36ff-8e28-fa84-d964) [ THING:"something", ACTION1:"undergo", OBJECT_PATIENT1:"physical change", ACTOR_AGENT_PROCESS2:"chemical property", PROPERTY_SCOPE:"of something", ACTION3:"remain", ADJ_QUANTIFIER3:"unchanged" ]
+	//  Notes: physical change generic
+	//row autoRow3 = [TABLE:"IFTHEN", THING: "something", ACTION1: "undergo", OBJECT_PATIENT1: "physical change", ACTOR_AGENT_PROCESS2: "physical property", PROPERTY_SCOPE: "of something", ACTION3: "change"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"IFTHEN", THING: "something", ACTION1: "undergo", OBJECT_PATIENT1: "physical change", ACTOR_AGENT_PROCESS2: *"POS:JJ"+"property", PROPERTY_SCOPE: "of something"]
+
+	// CENTRALSW       EXAMPLES: An example of a physical change is a phase change     (c9d0-76ee-8b56-ea6e) [ AGENT_OBJECT1:"physical change", AGENT_OBJECT2:"phase change" ]
+	//        HINTROW An example of a physical change is breaking an object     (bfd6-6128-4946-9642) [ AGENT_OBJECT1:"physical change", VERB2:"break", AGENT_OBJECT3:"object" ]
+	//row autoRow4 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "physical change", AGENT_OBJECT2: "phase change"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "physical change"]
+
+	// CENTRALSW       KINDOF: liquid is a kind of state of matter     (f7e9-c6f8-892b-3496) [ HYPONYM:"liquid", HYPERNYM:"state of matt" ]
+	//        HINTROW solid is a kind of state of matter     (cf49-1b7a-89f0-41f5) [ HYPONYM:"solid", HYPERNYM:"state of matt" ]
+	//        HINTROW gas is a kind of state of matter     (aa73-331e-e970-c934) [ HYPONYM:"gas", HYPERNYM:"state of matt" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPONYM: <liquid_0>, HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPONYM: <liquid_0>, HYPERNYM: "state of matt"]
+
+	// GROUNDING       KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//        HINTROW food is a kind of substance     (c31f-f938-8a69-233b) [ HYPONYM:"food", HYPERNYM:"substance" ]
+	//row autoRow6 = [TABLE:"KINDOF", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPERNYM: "substance"]
+
+	// CENTRAL         CAUSE: chemical reactions cause new substances ; different substances to form     (3dca-07f2-1404-d404) [ CONDITION_AGENT_OBJECT:"chemical reaction", RESULT_AGENT:"new substance;differ substance", RESULT_VERB:"form" ]
+	//row autoRow7 = [UUID:"3dca-07f2-1404-d404", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "new substance", RESULT_VERB: "form"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3dca-07f2-1404-d404", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "new substance", RESULT_VERB: "form"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C     (4a5a-9115-28a9-b97b) [ MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice", LOWER_BOUND:"0;-459;-273;459;273", UPPER_BOUND:"273;32;0", UNITS:"k;f;c" ]
+	//row autoRow8 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"]
+
+	// CENTRAL         IFTHEN: if an object undergoes chemical change then that object will have new chemical properties     (5d42-f489-fc8e-6263) [ THING:"object", ACTION1:"undergo", OBJECT_PROPERTY1:"chemical change", ACTOR_AGENT_PROCESS2:"that object", ACTION3:"have", ADJ_QUANTIFIER3:"new", OBJECT_PROPERTY3:"chemical property" ]
+	//  Notes: chemical change generic
+	//row autoRow9 = [UUID:"5d42-f489-fc8e-6263", THING: "object", ACTION1: "undergo", OBJECT_PROPERTY1: "chemical change", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "have", ADJ_QUANTIFIER3: "new", OBJECT_PROPERTY3: "chemical property"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"5d42-f489-fc8e-6263", THING: "object", ACTION1: "undergo", OBJECT_PROPERTY1: "chemical change", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "have", ADJ_QUANTIFIER3: "new", OBJECT_PROPERTY3: "chemical property"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//row autoRow10 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: <liquid_0>, FORM_NAME: <liquid_0>+"water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: <liquid_0>, FORM_NAME: <liquid_0>+"water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C     (e474-2a11-6e7b-ae8b) [ MATERIAL_NAME:"water", STATEOFMATTER:"gas", FORM_NAME:"water vapor;steam", LOWER_BOUND:"373;212;100", UPPER_BOUND:"100000000000", UNITS:"k;f;c" ]
+	//row autoRow11 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"]
+
+	// CENTRAL         KINDOF: a phase change is a kind of physical change     (b6d6-89d9-43a5-fd91) [ HYPONYM:"phase change", SCOPE1:"physical", HYPERNYM:"change" ]
+	//  Notes: Has a better row in EXAMPLES, but peripheral
+	//row autoRow12 = [UUID:"b6d6-89d9-43a5-fd91", HYPONYM: "phase change", SCOPE1: "physical", HYPERNYM: "change"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"b6d6-89d9-43a5-fd91", HYPONYM: "phase change", SCOPE1: "physical", HYPERNYM: "change"]
+
+	// CENTRAL         CAUSE: chemical reactions cause chemical change     (0f0d-2cc5-fcc1-3c1f) [ CONDITION_AGENT_OBJECT:"chemical reaction", RESULT_AGENT:"chemical change" ]
+	//row autoRow13 = [UUID:"0f0d-2cc5-fcc1-3c1f", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "chemical change"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"0f0d-2cc5-fcc1-3c1f", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "chemical change"]
+
+endinferencepattern

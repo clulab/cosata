@@ -1,0 +1,44 @@
+// Automatically converted pattern
+inferencepattern MAT_PROPO_Shape_Can_be_felt
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ACTION: feeling is when an living thing senses through touch     (e58b-6fd8-4321-1a69) [ DEFINITION_NAME:"feel", AGENT_OBJECT:"live thing", ACTION2:"sense", BY_THROUGH_HOW:"touch" ]
+	//        HINTROW touching is when a body part makes contact with the surface of an object     (7c06-acbe-198f-0202) [ DEFINITION_NAME:"touch", AGENT_OBJECT:"body part", ACTION2:"make contact with", OBJECT_PROPERTY:"surface", WHEN_WHERE:"of object" ]
+	//row autoRow0 = [TABLE:"ACTION", DEFINITION_NAME: "feel", BY_THROUGH_HOW: "touch"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ACTION", DEFINITION_NAME: "feel"]
+
+	// CENTRALSW       ACTION: classifying means grouping objects ; materials by their properties     (69c1-2991-2421-ce63) [ DEFINITION_NAME:"classify", ACTION2:"group", OBJECT_PROPERTY:"object;material", HOW:"property" ]
+	//        HINTROW classifying is when one sorts something by kind ; type     (0d00-93f4-5616-0efc) [ DEFINITION_NAME:"classify", AGENT_OBJECT:"one", ACTION2:"sort", OBJECT_PROPERTY:"something", HOW:"kind;type" ]
+	//row autoRow1 = [TABLE:"ACTION", DEFINITION_NAME: "classify"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"ACTION", DEFINITION_NAME: "classify"]
+
+	// GROUNDING       KINDOF: a circle is a kind of shape     (38f2-2457-a706-7e80) [ HYPONYM:"circle", HYPERNYM:"shape" ]
+	//        HINTROW straight is a kind of shape     (4254-27a2-4921-a663) [ HYPONYM:"straight", HYPERNYM:"shape" ]
+	//        HINTROW elliptical is a kind of shape     (2375-dc07-7da1-9ada) [ HYPONYM:"elliptical", HYPERNYM:"shape" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "shape"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "shape"]
+
+	// GROUNDING       KINDOF: a rock is a kind of object     (7c8b-3728-1d36-f922) [ HYPONYM:"rock", HYPERNYM:"object" ]
+	//        HINTROW a ball is a kind of object     (5650-b213-46ea-d9dd) [ HYPONYM:"ball", HYPERNYM:"object" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// CENTRAL         AFFORDANCES: the shape of an object can be discovered through feeling that object ; touching that object     (064c-653b-1ec4-4e84) [ ACTOR_THING:"shape", PROPERTY_OBJECT:"of object", VERB:"discover", BY_THROUGH_HOW:"feel object;touch that object" ]
+	//row autoRow4 = [UUID:"064c-653b-1ec4-4e84", ACTOR_THING: "shape", PROPERTY_OBJECT: "of object", VERB: "discover", BY_THROUGH_HOW: "touch that object"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"064c-653b-1ec4-4e84", ACTOR_THING: "shape", PROPERTY_OBJECT: "of object", VERB: "discover", BY_THROUGH_HOW: "touch that object"]
+
+	// CENTRAL         PROP-GENERIC: shape is a property of an object     (93fd-6a6f-7782-77d1) [ X:"shape", Y:"object" ]
+	//row autoRow5 = [UUID:"93fd-6a6f-7782-77d1", X: "shape", Y: "object"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"93fd-6a6f-7782-77d1", X: "shape", Y: "object"]
+
+	// LEXGLUE         SYNONYMY: touching something means feeling that something     (6722-33ad-ff6e-30b3) [ ACTION1:"touch", Y1:"something", ACTION2:"feel", Y2:"that something" ]
+	//row autoRow6 = [UUID:"6722-33ad-ff6e-30b3", ACTION1: "touch", Y1: "something", ACTION2: "feel", Y2: "that something"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"6722-33ad-ff6e-30b3", ACTION1: "touch", Y1: "something", ACTION2: "feel", Y2: "that something"]
+
+endinferencepattern

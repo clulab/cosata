@@ -1,0 +1,54 @@
+// Automatically converted pattern
+inferencepattern ENG_CONV_Conversion_Mechanical_to_Electrical_Energy_Wind
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         SOURCEOF: hydroelectric power generates electricity by using water     (bb20-e0e5-41ea-87c6) [ ADJ:"hydroelectric", AGENT:"power", VERB_SOURCEOF_PROVIDE_ETC:"generate", WHAT_IT_PROVIDES:"electric", BY_THROUGH_HOW:"use water" ]
+	//  Notes: 9c75-4e4b-7b2c-e2f6->bb20-e0e5-41ea-87c6
+	//row autoRow0 = [UUID:"bb20-e0e5-41ea-87c6", ADJ: "hydroelectric", AGENT: "power", VERB_SOURCEOF_PROVIDE_ETC: "generate", WHAT_IT_PROVIDES: "electric", BY_THROUGH_HOW: "use water"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"bb20-e0e5-41ea-87c6", ADJ: "hydroelectric", AGENT: "power", VERB_SOURCEOF_PROVIDE_ETC: "generate", WHAT_IT_PROVIDES: "electric", BY_THROUGH_HOW: "use water"]
+
+	// CENTRAL         EXAMPLES: An example of mechanical energy is an object in motion     (4aca-cf16-fcc6-1f79) [ AGENT_OBJECT1:"mechanical energy", AGENT_OBJECT2:"object in move" ]
+	//row autoRow1 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"]
+
+	// CENTRAL         CHANGE: hydropower converts kinetic energy into electric energy     (7dca-fb0b-9471-efd5) [ ACTOR_WHO:"hydropower", VERB:"convert", FROM:"kinetic energy", INTO:"electric energy" ]
+	//row autoRow2 = [UUID:"7dca-fb0b-9471-efd5", ACTOR_WHO: "hydropower", VERB: "convert", FROM: "kinetic energy", INTO: "electric energy"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"7dca-fb0b-9471-efd5", ACTOR_WHO: "hydropower", VERB: "convert", FROM: "kinetic energy", INTO: "electric energy"]
+
+	// CENTRAL         ACTION: hydropower is when falling water produces electricity     (b301-6de7-7042-2581) [ DEFINITION_NAME:"hydropower", ACTION1:"fall", AGENT_OBJECT:"water", ACTION2:"produce", OBJECT_PROPERTY:"electric" ]
+	//row autoRow3 = [UUID:"b301-6de7-7042-2581", DEFINITION_NAME: "hydropower", ACTION1: "fall", AGENT_OBJECT: "water", ACTION2: "produce", OBJECT_PROPERTY: "electric"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"b301-6de7-7042-2581", DEFINITION_NAME: "hydropower", ACTION1: "fall", AGENT_OBJECT: "water", ACTION2: "produce", OBJECT_PROPERTY: "electric"]
+
+	// CENTRAL         SOURCEOF: a hydroelectric plant produces hydropower     (ab6a-8f83-cf72-6f4f) [ ADJ:"hydroelectric", AGENT:"plant", VERB_SOURCEOF_PROVIDE_ETC:"produce", WHAT_IT_PROVIDES:"hydropower" ]
+	//row autoRow4 = [UUID:"ab6a-8f83-cf72-6f4f", ADJ: "hydroelectric", AGENT: "plant", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "hydropower"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"ab6a-8f83-cf72-6f4f", ADJ: "hydroelectric", AGENT: "plant", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "hydropower"]
+
+	// CENTRAL         CHANGE-VEC: falling means moving downward     (2522-2f06-9dd6-6bf1) [ PROCESS_NAME_ACTION:"fall", ACTION:"move", DIRECTION:"downward" ]
+	//row autoRow5 = [UUID:"2522-2f06-9dd6-6bf1", PROCESS_NAME_ACTION: "fall", ACTION: "move", DIRECTION: "downward"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"2522-2f06-9dd6-6bf1", PROCESS_NAME_ACTION: "fall", ACTION: "move", DIRECTION: "downward"]
+
+	// CENTRAL         KINDOF: kinetic energy is a kind of mechanical energy     (8f4b-dcdb-2be5-9423) [ HYPONYM:"kinetic energy", HYPERNYM:"mechanical energy" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"]
+
+	// CENTRAL         KINDOF: water is a kind of object     (533c-79f7-8267-e271) [ HYPONYM:"water", HYPERNYM:"object" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"533c-79f7-8267-e271", HYPONYM: "water", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"533c-79f7-8267-e271", HYPONYM: "water", HYPERNYM: "object"]
+
+	// LEXGLUE         SYNONYMY: motion ; movement means moving ; to move     (d8a3-10bb-9aea-178a) [ X1:"move;move", ACTION2:"move;move" ]
+	//row autoRow8 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"]
+
+	// LEXGLUE         SYNONYMY: hydropower means hydroelectric power     (c910-b0d4-3035-e6bd) [ X1:"hydropower", X2:"hydroelectric power" ]
+	//row autoRow9 = [UUID:"c910-b0d4-3035-e6bd", X1: "hydropower", X2: "hydroelectric power"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"c910-b0d4-3035-e6bd", X1: "hydropower", X2: "hydroelectric power"]
+
+endinferencepattern

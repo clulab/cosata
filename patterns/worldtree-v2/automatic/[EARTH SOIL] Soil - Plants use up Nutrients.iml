@@ -1,0 +1,72 @@
+// Automatically converted pattern
+inferencepattern EARTH_SOIL_Soil_Plants_use_up_Nutrients
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW      (OPTIONAL) ACTION: farming is when a human plants crops for food     (e9e1-2164-9acf-637a) [ DEFINITION_NAME:"farm", AGENT_OBJECT:"human", ACTION2:"plant", OBJECT_PROPERTY:"crop", FOR_PURPOSE:"food" ]
+	//        HINTROW a farmer farms crops ; plants for food     (4499-c264-9f56-7549) [ AGENT_OBJECT:"farmer", ACTION2:"farm", OBJECT_PROPERTY:"crop;plant", FOR_PURPOSE:"food" ]
+	//row *autoRow0 = [TABLE:"ACTION", OBJECT_PROPERTY: "crop", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row *autoRow0 = [TABLE:"ACTION", OBJECT_PROPERTY: "crop", FOR_PURPOSE: "food"]
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as a population of organisms decreases , the resources used by those organisms will increase     (489c-08fa-2ab4-0f49) [ QUANTITY_MEASURE1:"population of", AGENT_ATTRIBUTE1:"organism", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"resource", ACTION2:"use by", PATIENT2:"organism", CHANGE2:"increase" ]
+	//        HINTROW as a population of organisms increases , the resources used by those organisms will decrease     (41dc-5a9d-b5a2-b743) [ QUANTITY_MEASURE1:"population of", AGENT_ATTRIBUTE1:"organism", CHANGE1:"increase", AGENT_ATTRIBUTE2:"resource", ACTION2:"use by", PATIENT2:"organism", CHANGE2:"decrease" ]
+	//row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "population of", AGENT_ATTRIBUTE1: "organism", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "resource", ACTION2: "use by", PATIENT2: "organism"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "population of", AGENT_ATTRIBUTE1: "organism", AGENT_ATTRIBUTE2: "resource", ACTION2: "use by", PATIENT2: "organism"]
+
+	// CENTRALSW       CAUSE: crops ; farming cause nutrients in the soil to decrease     (7dcd-a12c-54b1-a787) [ CONDITION_AGENT_OBJECT:"crop;farm", RESULT_AGENT:"nutrient in soil", RESULT_VERB:"decrease" ]
+	//        HINTROW overproduction of crops can cause soil fertility to decrease     (75fc-bb83-6dc1-8b09) [ CONDITION_AGENT_OBJECT:"overproduction", SCOPE1:"of crop", RESULT_AGENT:"soil fertility", RESULT_VERB:"decrease" ]
+	//row autoRow2 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "crop", RESULT_AGENT: "nutrient"+<in_0>+"soil", RESULT_VERB: "decrease"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"CAUSE", RESULT_AGENT: *"POS:NN"+<in_0>+"soil", RESULT_VERB: "decrease"]
+
+	// GROUNDING       KINDOF: crops are a kind of edible plant for eating     (281b-9541-e1c7-6c92) [ HYPONYM:"crop", SCOPE1:"edible", HYPERNYM:"plant", FOR_PURPOSE:"eat" ]
+	//        HINTROW an apple tree is a kind of plant     (00a7-56fc-3c22-e6f2) [ HYPONYM:"apple tree", HYPERNYM:"plant" ]
+	//        HINTROW a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// GROUNDING      (OPTIONAL) ACTION: crops grow in soil     (9eae-84e3-fc7e-69c9) [ AGENT_OBJECT:"crop", ACTION2:"grow", WHEN_WHERE:"in soil" ]
+	//row *autoRow4 = [TABLE:"ACTION", AGENT_OBJECT: "crop", ACTION2: "grow", WHEN_WHERE: <in_0>+"soil"] //OVER-CONSTR.
+	row *autoRow4 = [TABLE:"ACTION", AGENT_OBJECT: "crop", ACTION2: "grow", WHEN_WHERE: <in_0>+"soil"]
+
+	// CENTRAL         KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//row autoRow5 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"]
+
+	// CENTRAL         REQUIRES: a plant ; living thing requires nutrients to grow     (085c-28bf-bb51-79e6) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"nutrient", FOR_PURPOSE:"grow" ]
+	//row autoRow6 = [UUID:"085c-28bf-bb51-79e6", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"085c-28bf-bb51-79e6", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "grow"]
+
+	// CENTRAL         PARTOF: roots are a part of a plant ; tree     (6cdd-9626-9859-7279) [ PART:"root", WHOLE:"plant;tree" ]
+	//row autoRow7 = [UUID:"6cdd-9626-9859-7279", PART: "root", WHOLE: "plant"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"6cdd-9626-9859-7279", PART: "root", WHOLE: "plant"]
+
+	// CENTRAL         CONTAINS: soil contains nutrients for plants     (ddcc-3b71-b14e-97d1) [ OBJECT_AGENT:"soil", WHAT_IT_CONTAINS:"nutrient", FOR_PURPOSE:"plant" ]
+	//row autoRow8 = [UUID:"ddcc-3b71-b14e-97d1", OBJECT_AGENT: "soil", WHAT_IT_CONTAINS: "nutrient", FOR_PURPOSE: "plant"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"ddcc-3b71-b14e-97d1", OBJECT_AGENT: "soil", WHAT_IT_CONTAINS: "nutrient", FOR_PURPOSE: "plant"]
+
+	// CENTRAL         TRANSFER: plant uptake is when plants absorb nutrients ; water from soil into themselves through their roots     (d7c1-cdfd-2de5-6b7d) [ PROCESS_NAME:"plant uptake", ACTOR_WHO:"plant", VERB:"absorb", WHAT:"nutrient;water", SOURCE:"soil", BY_THROUGH_HOW:"root" ]
+	//row autoRow9 = [UUID:"d7c1-cdfd-2de5-6b7d", PROCESS_NAME: "plant uptake", ACTOR_WHO: "plant", VERB: "absorb", WHAT: "nutrient", SOURCE: "soil", BY_THROUGH_HOW: "root"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"d7c1-cdfd-2de5-6b7d", PROCESS_NAME: "plant uptake", ACTOR_WHO: "plant", VERB: "absorb", WHAT: "nutrient", SOURCE: "soil", BY_THROUGH_HOW: "root"]
+
+	// CENTRAL         PROP-RESOURCES-RENEWABLE: soil is a renewable resource for growing plants     (1af4-c273-5b80-34e6) [ RESOURCE:"soil", REWABLE_NONRENEWABLE:"renewable", FOR_PURPOSE:"grow plant" ]
+	//row autoRow10 = [UUID:"1af4-c273-5b80-34e6", RESOURCE: "soil", REWABLE_NONRENEWABLE: "renewable", FOR_PURPOSE: "grow plant"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"1af4-c273-5b80-34e6", RESOURCE: "soil", REWABLE_NONRENEWABLE: "renewable", FOR_PURPOSE: "grow plant"]
+
+	// CENTRAL         REQUIRES: a plant requires soil for survival ; to grow     (5ebe-099f-fd30-b713) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"soil", FOR_PURPOSE:"survive;grow" ]
+	//row autoRow11 = [UUID:"5ebe-099f-fd30-b713", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "soil", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"5ebe-099f-fd30-b713", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "soil", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         CHANGE-VEC: using resources decreases those resources     (4f1d-c03f-115a-0bd5) [ ACTION:"use resource", DIRECTION:"decrease", PATIENT:"resource" ]
+	//row autoRow12 = [UUID:"4f1d-c03f-115a-0bd5", ACTION: "use resource", DIRECTION: "decrease", PATIENT: "resource"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"4f1d-c03f-115a-0bd5", ACTION: "use resource", DIRECTION: "decrease", PATIENT: "resource"]
+
+	// LEXGLUE         OPPOSITES: an increase is the opposite of a decrease     (bfdf-b468-ee22-1b60) [ THING_PROPERTY1:"increase", THING_PROPERTY2:"decrease" ]
+	//row autoRow13 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"]
+
+endinferencepattern

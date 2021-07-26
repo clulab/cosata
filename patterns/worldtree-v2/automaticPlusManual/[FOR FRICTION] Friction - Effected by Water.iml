@@ -1,0 +1,72 @@
+// Automatically converted pattern
+inferencepattern FOR_FRICTION_Friction_Effected_by_Water
+
+	// Plain text description
+	description = "rubbing dry hands will produce more heat because of lack of water"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: dry means low in amount of water ; wetness ; moisture     (5554-6d9d-779d-d5f5) [ THING:"spin-dry", VALUE:"low", ATTRIBUTE:"amount of water;wet;moisture" ]
+	//        HINTROW moist means high in moisture     (4765-ccbd-4fbb-78b8) [ THING:"moist", VALUE:"high", ATTRIBUTE:"moisture" ]
+	//row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: *"POS:NN"+"of water"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "moisture"]
+
+	// GROUNDING       KINDOF: a hand is a kind of object     (d691-82fb-2145-80e4) [ HYPONYM:"hand", HYPERNYM:"object" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "hand", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "hand", HYPERNYM: "object"]
+
+	// CENTRAL         ACTION: friction acts to counter the motion of two objects when their surfaces are touching     (512a-c5ef-bcba-905d) [ AGENT_OBJECT:"friction", ACTION2:"act counter", OBJECT_PROPERTY:"move of two object", WHEN_WHERE:"surface be touch" ]
+	//row autoRow2 = [UUID:"512a-c5ef-bcba-905d", AGENT_OBJECT: "friction", ACTION2: "act counter", OBJECT_PROPERTY: "move of two object", WHEN_WHERE: "surface be touch"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"512a-c5ef-bcba-905d", AGENT_OBJECT: "friction", ACTION2: "act counter", OBJECT_PROPERTY: "move of two object", WHEN_WHERE: "surface be touch"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as moisture of an object decreases , the friction of that object against another object will increase     (2ca8-b3c1-6ebc-f1a0) [ QUANTITY_MEASURE1:"moisture", AGENT_ATTRIBUTE1:"of object", CHANGE1:"decrease", QUANTITY_MEASURE2:"friction", AGENT_ATTRIBUTE2:"of object", SCOPE2A:"against object", CHANGE2:"increase" ]
+	//row autoRow3 = [UUID:"2ca8-b3c1-6ebc-f1a0", QUANTITY_MEASURE1: "moisture", AGENT_ATTRIBUTE1: "of object", CHANGE1: "decrease", QUANTITY_MEASURE2: "friction", AGENT_ATTRIBUTE2: "of object", SCOPE2A: "against object", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"2ca8-b3c1-6ebc-f1a0", QUANTITY_MEASURE1: "moisture", AGENT_ATTRIBUTE1: "of object", CHANGE1: "decrease", QUANTITY_MEASURE2: "friction", AGENT_ATTRIBUTE2: "of object", SCOPE2A: "against object", CHANGE2: "increase"]
+
+	// CENTRAL         ACTION: friction exerts force on moving objects     (3518-79e5-2f89-2bc0) [ AGENT_OBJECT:"friction", ACTION2:"exert", OBJECT_PROPERTY:"force", WHEN_WHERE:"on move object" ]
+	//row autoRow4 = [UUID:"3518-79e5-2f89-2bc0", AGENT_OBJECT: "friction", ACTION2: "exert", OBJECT_PROPERTY: "force", WHEN_WHERE: "on move object"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3518-79e5-2f89-2bc0", AGENT_OBJECT: "friction", ACTION2: "exert", OBJECT_PROPERTY: "force", WHEN_WHERE: "on move object"]
+
+	// CENTRAL         ACTION: friction occurs when two object 's surfaces move against each other     (e9ed-3032-6736-3077) [ DEFINITION_NAME:"friction", ADJ:"two object", AGENT_OBJECT:"surface", ACTION2:"move against", OBJECT_PROPERTY:"other" ]
+	//row autoRow5 = [UUID:"e9ed-3032-6736-3077", DEFINITION_NAME: "friction", ADJ: "two object", AGENT_OBJECT: "surface", ACTION2: "move against", OBJECT_PROPERTY: "other"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"e9ed-3032-6736-3077", DEFINITION_NAME: "friction", ADJ: "two object", AGENT_OBJECT: "surface", ACTION2: "move against", OBJECT_PROPERTY: "other"]
+
+	// CENTRAL         CAUSE: friction causes the temperature of an object to increase     (26cb-7582-a17c-a0d6) [ CONDITION_AGENT_OBJECT:"friction", RESULT_AGENT:"temperature of object", RESULT_VERB:"increase" ]
+	//row autoRow6 = [UUID:"26cb-7582-a17c-a0d6", CONDITION_AGENT_OBJECT: "friction", RESULT_AGENT: "temperature of object", RESULT_VERB: "increase"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"26cb-7582-a17c-a0d6", CONDITION_AGENT_OBJECT: "friction", RESULT_AGENT: "temperature of object", RESULT_VERB: "increase"]
+
+	// CENTRAL         IFTHEN: if one surface is moved against ; moved over ; moved down another surface then those surfaces are touching     (ce72-7053-8df0-6419) [ THING:"one surface", ACTION1:"move against;move over;move down", OBJECT_PATIENT1:"surface", ACTOR_AGENT_PROCESS2:"surface", ACTION3:"touch" ]
+	//row autoRow7 = [UUID:"ce72-7053-8df0-6419", THING: "one surface", ACTION1: "move against", OBJECT_PATIENT1: "surface", ACTOR_AGENT_PROCESS2: "surface", ACTION3: "touch"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"ce72-7053-8df0-6419", THING: "one surface", ACTION1: "move against", OBJECT_PATIENT1: "surface", ACTOR_AGENT_PROCESS2: "surface", ACTION3: "touch"]
+
+	// CENTRAL         ATTRIBUTE-VALUE-RANGE: warmer means greater ; higher in temperature ; warmth     (3c5b-8471-16d4-f1b2) [ THING:"warm", VALUE:"great;high", ATTRIBUTE:"temperature;warmth" ]
+	//row autoRow8 = [UUID:"3c5b-8471-16d4-f1b2", THING: "warm", VALUE: "great", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"3c5b-8471-16d4-f1b2", THING: "warm", VALUE: "great", ATTRIBUTE: "temperature"]
+
+	// CENTRAL         SOURCEOF: a wet object is a source of water     (a877-7709-2bd0-5e41) [ ADJ:"wet", AGENT:"object", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"water" ]
+	//row autoRow9 = [UUID:"a877-7709-2bd0-5e41", ADJ: "wet", AGENT: "object", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "water"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"a877-7709-2bd0-5e41", ADJ: "wet", AGENT: "object", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "water"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of heat energy     (d753-423d-5ce7-53ce) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"heat energy" ]
+	//row autoRow10 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"]
+
+	// LEXGLUE         SYNONYMY: motion ; movement means moving ; to move     (d8a3-10bb-9aea-178a) [ X1:"move;move", ACTION2:"move;move" ]
+	//row autoRow11 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"]
+
+	// LEXGLUE         SYNONYMY: moisture means liquid ; liquid water     (bffa-0cd0-0745-6d03) [ X1:"moisture", X2:"liquid;liquid water" ]
+	//row autoRow12 = [UUID:"bffa-0cd0-0745-6d03", X1: "moisture", X2: "liquid water"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"bffa-0cd0-0745-6d03", X1: "moisture", X2: "liquid water"]
+
+	// LEXGLUE         SYNONYMY: to rub ; to rub together means to move against     (c4a5-564d-59d0-1074) [ ACTION1:"rub;rub together", ACTION2:"move against" ]
+	//row autoRow13 = [UUID:"c4a5-564d-59d0-1074", ACTION1: "rub together", ACTION2: "move against"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"c4a5-564d-59d0-1074", ACTION1: "rub together", ACTION2: "move against"]
+
+	// LEXGLUE         OPPOSITES: wet is the opposite of dry     (11df-b5ab-f051-1665) [ THING_PROPERTY1:"wet", THING_PROPERTY2:"spin-dry" ]
+	//row autoRow14 = [UUID:"11df-b5ab-f051-1665", THING_PROPERTY1: "wet", THING_PROPERTY2: "spin-dry"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"11df-b5ab-f051-1665", THING_PROPERTY1: "wet", THING_PROPERTY2: "spin-dry"]
+
+endinferencepattern

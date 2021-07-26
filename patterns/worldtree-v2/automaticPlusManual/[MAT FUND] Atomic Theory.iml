@@ -1,0 +1,62 @@
+// Automatically converted pattern
+inferencepattern MAT_FUND_Atomic_Theory
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       MADEOF: ice cube is made of ice     (2c7a-314b-2dd8-2290) [ OBJECT:"ice cube", MATERIAL:"ice" ]
+	//        HINTROW a hammer often is made of metal     (ad82-82a5-0304-0dbc) [ OBJECT:"hammer", QUALIFIER:"often", MATERIAL:"metal" ]
+	//  Notes: object X is made of substance Y
+	//row autoRow0 = [TABLE:"MADEOF", OBJECT: <ice_0>+<cube_1>, MATERIAL: <ice_0>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"MADEOF", OBJECT: <ice_0>+<cube_1>]
+
+	// GROUNDING      (OPTIONAL) KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//        HINTROW a plant is a kind of living thing     (2e89-d8e8-a8fb-9acc) [ HYPONYM:"plant", HYPERNYM:"live thing" ]
+	//row *autoRow1 = [TABLE:"KINDOF", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row *autoRow1 = [TABLE:"KINDOF", HYPERNYM: "live thing"]
+
+	// GROUNDING       KINDOF: an ice cube is a kind of object     (d5e1-2384-26cc-edb9) [ HYPONYM:"ice cube", HYPERNYM:"object" ]
+	//        HINTROW a hammer is a kind of object     (825f-0757-a890-fe46) [ HYPONYM:"hammer", HYPERNYM:"object" ]
+	//  Notes: object X example
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <ice_0>+<cube_1>, HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <ice_0>+<cube_1>, HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: aluminum is a kind of metal     (a580-1b9e-6ec9-a275) [ HYPONYM:"aluminum", HYPERNYM:"metal" ]
+	//        HINTROW iron is a kind of metal     (de4c-ca36-c336-540f) [ HYPONYM:"iron", HYPERNYM:"metal" ]
+	//  Notes: metal example
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "metal"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "metal"]
+
+	// GROUNDING       KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//        HINTROW metal is a kind of substance     (777a-cdbf-9167-82e0) [ HYPONYM:"metal", HYPERNYM:"substance" ]
+	//  Notes: substance Y example
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "substance"]
+
+	// CENTRAL        (OPTIONAL) KINDOF: a living thing is a kind of object     (4eac-892f-ecd2-6e0d) [ HYPONYM:"live thing", HYPERNYM:"object" ]
+	//  Notes: peripheral
+	//row *autoRow5 = [UUID:"4eac-892f-ecd2-6e0d", HYPONYM: "live thing", HYPERNYM: "object"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"4eac-892f-ecd2-6e0d", HYPONYM: "live thing", HYPERNYM: "object"]
+
+	// CENTRAL         COMPARISON: the atom is the smallest unit ; particle that has the properties of an element     (9059-174e-fc66-fd7a) [ THING:"atom", ACTION1:"be", COMPARISON:"small", WHAT:"unit;particle", SCOPE2:"have property of element" ]
+	//  Notes: 3b8b-8c35-53cf-354f->9059-174e-fc66-fd7a
+	//row autoRow6 = [UUID:"9059-174e-fc66-fd7a", THING: "atom", ACTION1: "be", COMPARISON: "small", WHAT: "unit", SCOPE2: "have property of element"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"9059-174e-fc66-fd7a", THING: "atom", ACTION1: "be", COMPARISON: "small", WHAT: "unit", SCOPE2: "have property of element"]
+
+	// CENTRAL         MADEOF: matter ; materials ; substances are made of atoms ; particles     (1758-a1b7-4083-9e99) [ OBJECT:"matt;material;substance", MATERIAL:"atom;particle" ]
+	//row autoRow7 = [UUID:"1758-a1b7-4083-9e99", OBJECT: "matt", MATERIAL: "atom"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"1758-a1b7-4083-9e99", OBJECT: "matt", MATERIAL: "atom"]
+
+	// CENTRAL         MADEOF: objects are made of materials ; substances ; matter     (80a3-454d-e8e0-3de2) [ OBJECT:"object", MATERIAL:"material;substance;matt" ]
+	//row autoRow8 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"]
+
+	// LEXGLUE         SYNONYMY: material means substance     (efac-0ec0-58dc-8f9e) [ X1:"material", X2:"substance" ]
+	//row autoRow9 = [UUID:"efac-0ec0-58dc-8f9e", X1: "material", X2: "substance"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"efac-0ec0-58dc-8f9e", X1: "material", X2: "substance"]
+
+endinferencepattern

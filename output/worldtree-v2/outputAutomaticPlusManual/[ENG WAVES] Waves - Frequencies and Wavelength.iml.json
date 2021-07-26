@@ -1,0 +1,638 @@
+{"patternMatches": [
+{
+	"patternName":"ENG_WAVES_Waves_Frequencies_and_Wavelength",
+	"matches":[
+		{
+		"uuids": ["13eb-ea19-5bae-123e","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","c106-d344-8728-cf3c","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","204e-3747-f760-35b4","a98b-a949-e175-63c5","8661-5700-67ef-4ac8","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "c106-d344-8728-cf3c", "rowText": "high-frequency sound waves have low ; short wavelengths", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["c0fe-e47e-44b2-66e7","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","c106-d344-8728-cf3c","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","204e-3747-f760-35b4","a98b-a949-e175-63c5","8661-5700-67ef-4ac8","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c0fe-e47e-44b2-66e7", "rowText": "sound wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "c106-d344-8728-cf3c", "rowText": "high-frequency sound waves have low ; short wavelengths", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-365852","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","c106-d344-8728-cf3c","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","204e-3747-f760-35b4","a98b-a949-e175-63c5","8661-5700-67ef-4ac8","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-365852", "rowText": "rossby wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "c106-d344-8728-cf3c", "rowText": "high-frequency sound waves have low ; short wavelengths", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["13eb-ea19-5bae-123e","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","c106-d344-8728-cf3c","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","204e-3747-f760-35b4","a98b-a949-e175-63c5","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "c106-d344-8728-cf3c", "rowText": "high-frequency sound waves have low ; short wavelengths", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" }
+		]
+		},
+		{
+		"uuids": ["13eb-ea19-5bae-123e","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","c106-d344-8728-cf3c","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","a98b-a949-e175-63c5","8661-5700-67ef-4ac8","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "c106-d344-8728-cf3c", "rowText": "high-frequency sound waves have low ; short wavelengths", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" }
+		]
+		},
+		{
+		"uuids": ["13eb-ea19-5bae-123e","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","204e-3747-f760-35b4","a98b-a949-e175-63c5","8661-5700-67ef-4ac8","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["c0fe-e47e-44b2-66e7","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","c106-d344-8728-cf3c","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","204e-3747-f760-35b4","a98b-a949-e175-63c5","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c0fe-e47e-44b2-66e7", "rowText": "sound wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "c106-d344-8728-cf3c", "rowText": "high-frequency sound waves have low ; short wavelengths", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" }
+		]
+		},
+		{
+		"uuids": ["c0fe-e47e-44b2-66e7","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","c106-d344-8728-cf3c","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","a98b-a949-e175-63c5","8661-5700-67ef-4ac8","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c0fe-e47e-44b2-66e7", "rowText": "sound wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "c106-d344-8728-cf3c", "rowText": "high-frequency sound waves have low ; short wavelengths", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" }
+		]
+		},
+		{
+		"uuids": ["c0fe-e47e-44b2-66e7","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","204e-3747-f760-35b4","a98b-a949-e175-63c5","8661-5700-67ef-4ac8","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c0fe-e47e-44b2-66e7", "rowText": "sound wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-365852","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","c106-d344-8728-cf3c","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","204e-3747-f760-35b4","a98b-a949-e175-63c5","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-365852", "rowText": "rossby wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "c106-d344-8728-cf3c", "rowText": "high-frequency sound waves have low ; short wavelengths", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-365852","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","c106-d344-8728-cf3c","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","a98b-a949-e175-63c5","8661-5700-67ef-4ac8","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-365852", "rowText": "rossby wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "c106-d344-8728-cf3c", "rowText": "high-frequency sound waves have low ; short wavelengths", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-365852","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","204e-3747-f760-35b4","a98b-a949-e175-63c5","8661-5700-67ef-4ac8","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-365852", "rowText": "rossby wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["13eb-ea19-5bae-123e","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","c106-d344-8728-cf3c","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","a98b-a949-e175-63c5","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "c106-d344-8728-cf3c", "rowText": "high-frequency sound waves have low ; short wavelengths", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow12", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow12", "value":"" }
+		]
+		},
+		{
+		"uuids": ["13eb-ea19-5bae-123e","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","204e-3747-f760-35b4","a98b-a949-e175-63c5","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["13eb-ea19-5bae-123e","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","a98b-a949-e175-63c5","8661-5700-67ef-4ac8","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["c0fe-e47e-44b2-66e7","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","c106-d344-8728-cf3c","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","a98b-a949-e175-63c5","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c0fe-e47e-44b2-66e7", "rowText": "sound wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "c106-d344-8728-cf3c", "rowText": "high-frequency sound waves have low ; short wavelengths", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow12", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow12", "value":"" }
+		]
+		},
+		{
+		"uuids": ["c0fe-e47e-44b2-66e7","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","204e-3747-f760-35b4","a98b-a949-e175-63c5","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c0fe-e47e-44b2-66e7", "rowText": "sound wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["c0fe-e47e-44b2-66e7","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","a98b-a949-e175-63c5","8661-5700-67ef-4ac8","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c0fe-e47e-44b2-66e7", "rowText": "sound wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-365852","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","c106-d344-8728-cf3c","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","a98b-a949-e175-63c5","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-365852", "rowText": "rossby wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "c106-d344-8728-cf3c", "rowText": "high-frequency sound waves have low ; short wavelengths", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow12", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow12", "value":"" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-365852","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","204e-3747-f760-35b4","a98b-a949-e175-63c5","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-365852", "rowText": "rossby wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-365852","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","a98b-a949-e175-63c5","8661-5700-67ef-4ac8","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-365852", "rowText": "rossby wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["13eb-ea19-5bae-123e","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","a98b-a949-e175-63c5","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["c0fe-e47e-44b2-66e7","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","a98b-a949-e175-63c5","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c0fe-e47e-44b2-66e7", "rowText": "sound wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-365852","1e57-ef38-54af-14f2","854b-0236-4e0a-359d","ae22-e1f3-9605-1f39","9d5e-3c7b-1544-1550","eb81-410b-b688-32b1","6758-2fe3-2711-02aa","4bfe-b3d1-e09b-dfa8","1bc3-eb48-01fa-14c2","a98b-a949-e175-63c5","44df-5a0a-23f4-7a7b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-365852", "rowText": "rossby wave is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1e57-ef38-54af-14f2", "rowText": "as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "854b-0236-4e0a-359d", "rowText": "a short wavelength has low ; little distance before it repeats", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ae22-e1f3-9605-1f39", "rowText": "as the frequency of a sound increases , the wavelength of that sound decreases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d5e-3c7b-1544-1550", "rowText": "as the wavelength of a wave increases , the frequency of the wave will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "eb81-410b-b688-32b1", "rowText": "as the frequency of a wave increases , the energy of the wave will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6758-2fe3-2711-02aa", "rowText": "frequency is a property of a wave ; a particel of light ; an event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4bfe-b3d1-e09b-dfa8", "rowText": "wavelength is a property of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "a98b-a949-e175-63c5", "rowText": "different types of light have different wavelengths", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "44df-5a0a-23f4-7a7b", "rowText": "the Doppler Effect is when the distance from the wave source changes the frequency of the waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		}
+	]
+}
+]}
+

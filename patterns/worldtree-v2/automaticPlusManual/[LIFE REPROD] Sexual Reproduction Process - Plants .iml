@@ -1,0 +1,112 @@
+// Automatically converted pattern
+inferencepattern LIFE_REPROD_Sexual_Reproduction_Process_Plants
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       PROP-ANIMAL-ATTRIB: A bee is a pollinating animal     (2d4d-44be-d6a6-655f) [ ANIMAL:"bee", VALUE:"pollinate" ]
+	//        HINTROW A bird is a pollinating animal     (14de-6699-6b2e-a5d1) [ ANIMAL:"bird", VALUE:"pollinate" ]
+	//        HINTROW An insect is a pollinating animal     (d57d-4cbb-11ee-2f47) [ ANIMAL:"insect", VALUE:"pollinate" ]
+	//row autoRow0 = [TABLE:"PROP-ANIMAL-ATTRIB", VALUE: "pollinate"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-ANIMAL-ATTRIB", VALUE: "pollinate"]
+
+	// CENTRAL         TRANSFER: pollination is when pollinating animals ; wind ; water carry pollen from one flower to another flower     (5900-59b1-bb87-4115) [ PROCESS_NAME:"pollination", ACTOR_WHO:"pollinate animal;wind;water", VERB:"carry", WHAT:"pollen", SOURCE:"one flower", DESTINATION:"flower" ]
+	//row autoRow1 = [UUID:"5900-59b1-bb87-4115", PROCESS_NAME: "pollination", ACTOR_WHO: "pollinate animal", VERB: "carry", WHAT: "pollen", SOURCE: "one flower", DESTINATION: "flower"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"5900-59b1-bb87-4115", PROCESS_NAME: "pollination", ACTOR_WHO: "pollinate animal", VERB: "carry", WHAT: "pollen", SOURCE: "one flower", DESTINATION: "flower"]
+
+	// CENTRAL         AFFECT: seed dispersal has a positive impact on a plant ; a plant 's reproduction     (2337-f998-9a82-5444) [ OBJECT_PROPERTY:"seed dispersal", POSITIVE_NEGATIVE:"positive", PATIENT:"plant;plant reproduce" ]
+	//row autoRow2 = [UUID:"2337-f998-9a82-5444", OBJECT_PROPERTY: "seed dispersal", POSITIVE_NEGATIVE: "positive", PATIENT: "plant reproduce"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"2337-f998-9a82-5444", OBJECT_PROPERTY: "seed dispersal", POSITIVE_NEGATIVE: "positive", PATIENT: "plant reproduce"]
+
+	// CENTRAL         SOURCEOF: sexual reproduction produces offspring with genetic material from both parents ; cells with genetic material from both parent cells     (8943-36d2-8c4d-ab9e) [ AGENT:"sexual reproduce", VERB_SOURCEOF_PROVIDE_ETC:"produce", WHAT_IT_PROVIDES:"offspring with genetic material from parent;cell with genetic material from parent cell" ]
+	//row autoRow3 = [UUID:"8943-36d2-8c4d-ab9e", AGENT: "sexual reproduce", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "cell with genetic material from parent cell"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"8943-36d2-8c4d-ab9e", AGENT: "sexual reproduce", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "cell with genetic material from parent cell"]
+
+	// CENTRAL         TRANSFER: seed dispersal is when the seeds of a plant are moved ; are carried ; are spread ; are dropped ;  from the parent plant to another area ; new environment     (dbc7-1c37-35fd-e1f8) [ PROCESS_NAME:"seed dispersal", ACTOR_WHO:"seed of plant", VERB:"be move;be carry;be spread;be drop", SOURCE:"parent plant", DESTINATION:"area;new environment" ]
+	//  Notes: 2b90-a4f5-326a-d34f->dbc7-1c37-35fd-e1f8
+	//row autoRow4 = [UUID:"dbc7-1c37-35fd-e1f8", PROCESS_NAME: "seed dispersal", ACTOR_WHO: "seed of plant", VERB: "be move", SOURCE: "parent plant", DESTINATION: "new environment"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"dbc7-1c37-35fd-e1f8", PROCESS_NAME: "seed dispersal", ACTOR_WHO: "seed of plant", VERB: "be move", SOURCE: "parent plant", DESTINATION: "new environment"]
+
+	// CENTRAL         ACTION: reproduction ensures the continuation of a plant or animal species     (85ec-94e2-04d2-8aae) [ AGENT_OBJECT:"reproduce", ACTION2:"ensure", OBJECT_PROPERTY:"continuation", SCOPE2:"of plant animal species" ]
+	//row autoRow5 = [UUID:"85ec-94e2-04d2-8aae", AGENT_OBJECT: "reproduce", ACTION2: "ensure", OBJECT_PROPERTY: "continuation", SCOPE2: "of plant animal species"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"85ec-94e2-04d2-8aae", AGENT_OBJECT: "reproduce", ACTION2: "ensure", OBJECT_PROPERTY: "continuation", SCOPE2: "of plant animal species"]
+
+	// CENTRAL         STAGE-IN-PROCESS: reproduction is a stage in the life cycle process     (7289-5346-1246-0060) [ STAGE:"reproduce", PROCESS:"life cycle" ]
+	//row autoRow6 = [UUID:"7289-5346-1246-0060", STAGE: "reproduce", PROCESS: "life cycle"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"7289-5346-1246-0060", STAGE: "reproduce", PROCESS: "life cycle"]
+
+	// CENTRAL         REQUIRES: plant reproduction ; seed production requires pollination     (7b88-0a72-7d90-ea1d) [ OBJECT_AGENT_PROCESS:"plant reproduce;seed production", VERB_REQUIRES:"require", OBJECT:"pollination" ]
+	//row autoRow7 = [UUID:"7b88-0a72-7d90-ea1d", OBJECT_AGENT_PROCESS: "plant reproduce", VERB_REQUIRES: "require", OBJECT: "pollination"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"7b88-0a72-7d90-ea1d", OBJECT_AGENT_PROCESS: "plant reproduce", VERB_REQUIRES: "require", OBJECT: "pollination"]
+
+	// CENTRAL         PARTOF: a flower is a part of a plant for attracting pollinators ; producing seeds     (d42a-e547-fdf9-9c35) [ PART:"flower", WHOLE:"plant", FOR_PURPOSE:"attract pollinator;produce seed" ]
+	//row autoRow8 = [UUID:"d42a-e547-fdf9-9c35", PART: "flower", WHOLE: "plant", FOR_PURPOSE: "attract pollinator"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"d42a-e547-fdf9-9c35", PART: "flower", WHOLE: "plant", FOR_PURPOSE: "attract pollinator"]
+
+	// CENTRAL         IFTHEN: if something is required for a process then that something positively impacts that process     (3976-3829-4098-1312) [ THING:"something", ACTION1:"require", OBJECT_PROPERTY1:"for process", ACTOR_AGENT_PROCESS2:"that something", ACTION3:"positive impact", OBJECT_PROPERTY3:"that process" ]
+	//row autoRow9 = [UUID:"3976-3829-4098-1312", THING: "something", ACTION1: "require", OBJECT_PROPERTY1: "for process", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "positive impact", OBJECT_PROPERTY3: "that process"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"3976-3829-4098-1312", THING: "something", ACTION1: "require", OBJECT_PROPERTY1: "for process", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "positive impact", OBJECT_PROPERTY3: "that process"]
+
+	// CENTRAL         REQUIRES: plant requires seed dispersal for reproduction     (c814-78ab-6951-9f93) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"seed dispersal", FOR_PURPOSE:"reproduce" ]
+	//row autoRow10 = [UUID:"c814-78ab-6951-9f93", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "seed dispersal", FOR_PURPOSE: "reproduce"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"c814-78ab-6951-9f93", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "seed dispersal", FOR_PURPOSE: "reproduce"]
+
+	// CENTRAL         STAGE-IN-PROCESS: cross-pollination is a stage in the sexual reproduction process of plants     (e477-2c0c-9782-8b1b) [ STAGE:"cross-pollination;cross pollination", PROCESS:"sexual reproduce", SCOPE:"of plant" ]
+	//  Notes: f55b-507a-c8f0-2acf->e477-2c0c-9782-8b1b
+	//row autoRow11 = [UUID:"e477-2c0c-9782-8b1b", STAGE: "cross pollination", PROCESS: "sexual reproduce", SCOPE: "of plant"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"e477-2c0c-9782-8b1b", STAGE: "cross pollination", PROCESS: "sexual reproduce", SCOPE: "of plant"]
+
+	// CENTRAL         REQUIRES: reproduction of the plants often requires pollen     (82fa-7d32-6cd6-b331) [ ACTION1:"reproduce of", OBJECT_AGENT_PROCESS:"plant", QUANTIFIER:"often", VERB_REQUIRES:"require", OBJECT:"pollen" ]
+	//row autoRow12 = [UUID:"82fa-7d32-6cd6-b331", ACTION1: "reproduce of", OBJECT_AGENT_PROCESS: "plant", QUANTIFIER: "often", VERB_REQUIRES: "require", OBJECT: "pollen"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"82fa-7d32-6cd6-b331", ACTION1: "reproduce of", OBJECT_AGENT_PROCESS: "plant", QUANTIFIER: "often", VERB_REQUIRES: "require", OBJECT: "pollen"]
+
+	// CENTRAL         SOURCEOF: a flower produces pollen and seeds     (1788-1cd3-6a0a-82f2) [ AGENT:"flower", VERB_SOURCEOF_PROVIDE_ETC:"produce", WHAT_IT_PROVIDES:"pollen seed" ]
+	//row autoRow13 = [UUID:"1788-1cd3-6a0a-82f2", AGENT: "flower", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "pollen seed"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"1788-1cd3-6a0a-82f2", AGENT: "flower", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "pollen seed"]
+
+	// CENTRAL         USEDFOR: a flower 's purpose is to produce seeds     (7ce5-9209-691b-8810) [ AGENT_OBJECT:"flower", FOR_PURPOSE:"product", PATIENT:"seed" ]
+	//row autoRow14 = [UUID:"7ce5-9209-691b-8810", AGENT_OBJECT: "flower", FOR_PURPOSE: "product", PATIENT: "seed"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"7ce5-9209-691b-8810", AGENT_OBJECT: "flower", FOR_PURPOSE: "product", PATIENT: "seed"]
+
+	// CENTRAL         PARTOF: pollen is part of a flower for reproduction     (4dcf-7536-2995-3a73) [ PART:"pollen", WHOLE:"flower", FOR_PURPOSE:"reproduce" ]
+	//row autoRow15 = [UUID:"4dcf-7536-2995-3a73", PART: "pollen", WHOLE: "flower", FOR_PURPOSE: "reproduce"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"4dcf-7536-2995-3a73", PART: "pollen", WHOLE: "flower", FOR_PURPOSE: "reproduce"]
+
+	// CENTRAL         REQUIRES: pollination requires pollinators ; pollinating animals     (2c1d-72c3-3a94-c25b) [ OBJECT_AGENT_PROCESS:"pollination", VERB_REQUIRES:"require", OBJECT:"pollinator;pollinate animal" ]
+	//row autoRow16 = [UUID:"2c1d-72c3-3a94-c25b", OBJECT_AGENT_PROCESS: "pollination", VERB_REQUIRES: "require", OBJECT: "pollinate animal"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"2c1d-72c3-3a94-c25b", OBJECT_AGENT_PROCESS: "pollination", VERB_REQUIRES: "require", OBJECT: "pollinate animal"]
+
+	// CENTRAL         SOURCEOF: reproduction produces ; produce offspring     (a6ff-574e-11c6-a86c) [ AGENT:"reproduce", VERB_SOURCEOF_PROVIDE_ETC:"produce;product", WHAT_IT_PROVIDES:"offspring" ]
+	//row autoRow17 = [UUID:"a6ff-574e-11c6-a86c", AGENT: "reproduce", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "offspring"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"a6ff-574e-11c6-a86c", AGENT: "reproduce", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "offspring"]
+
+	// CENTRAL         KINDOF: reproduction is a kind of process     (1076-5022-7c68-9365) [ HYPONYM:"reproduce", HYPERNYM:"process" ]
+	//  Notes: peripheral
+	//row autoRow18 = [UUID:"1076-5022-7c68-9365", HYPONYM: "reproduce", HYPERNYM: "process"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"1076-5022-7c68-9365", HYPONYM: "reproduce", HYPERNYM: "process"]
+
+	// CENTRAL         CONTAINS: fruit contains seeds     (ef49-c852-8727-d2dd) [ OBJECT_AGENT:"fruit", WHAT_IT_CONTAINS:"seed" ]
+	//row autoRow19 = [UUID:"ef49-c852-8727-d2dd", OBJECT_AGENT: "fruit", WHAT_IT_CONTAINS: "seed"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"ef49-c852-8727-d2dd", OBJECT_AGENT: "fruit", WHAT_IT_CONTAINS: "seed"]
+
+	// CENTRAL         CHANGE-VEC: reproduction increases the number ; population of a living thing     (4246-79d1-f727-337c) [ AGENT_OBJECT:"reproduce", DIRECTION:"increase", QUANTITY:"numb;population", PATIENT:"of live thing" ]
+	//row autoRow20 = [UUID:"4246-79d1-f727-337c", AGENT_OBJECT: "reproduce", DIRECTION: "increase", QUANTITY: "numb", PATIENT: "of live thing"] //OVER-CONSTR.
+	row autoRow20 = [UUID:"4246-79d1-f727-337c", AGENT_OBJECT: "reproduce", DIRECTION: "increase", QUANTITY: "numb", PATIENT: "of live thing"]
+
+	// LEXGLUE         SYNONYMY: to depend on ; to rely on ; to need means to require     (e9f8-f0c7-07ec-99de) [ ACTION1:"depend on;rely on;need", ACTION2:"require" ]
+	//row autoRow21 = [UUID:"e9f8-f0c7-07ec-99de", ACTION1: "depend on", ACTION2: "require"] //OVER-CONSTR.
+	row autoRow21 = [UUID:"e9f8-f0c7-07ec-99de", ACTION1: "depend on", ACTION2: "require"]
+
+	// LEXGLUE         SYNONYMY: pollinated means after pollination     (e82d-32d4-1996-aead) [ X1:"pollinate", X2:"after pollination" ]
+	//row autoRow22 = [UUID:"e82d-32d4-1996-aead", X1: "pollinate", X2: "after pollination"] //OVER-CONSTR.
+	row autoRow22 = [UUID:"e82d-32d4-1996-aead", X1: "pollinate", X2: "after pollination"]
+
+	// LEXGLUE         SYNONYMY: pollinator means pollinating animal     (6baa-61fa-ccac-43d0) [ X1:"pollinator", X2:"pollinate animal" ]
+	//row autoRow23 = [UUID:"6baa-61fa-ccac-43d0", X1: "pollinator", X2: "pollinate animal"] //OVER-CONSTR.
+	row autoRow23 = [UUID:"6baa-61fa-ccac-43d0", X1: "pollinator", X2: "pollinate animal"]
+
+endinferencepattern

@@ -1,0 +1,82 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Climate_Humidity
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: dry means low in amount of water ; wetness ; moisture     (5554-6d9d-779d-d5f5) [ THING:"spin-dry", VALUE:"low", ATTRIBUTE:"amount of water;wet;moisture" ]
+	//        HINTROW moist means high in moisture     (4765-ccbd-4fbb-78b8) [ THING:"moist", VALUE:"high", ATTRIBUTE:"moisture" ]
+	//row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "spin-dry", VALUE: <low_0>, ATTRIBUTE: "amount of water"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", VALUE: <low_0>, ATTRIBUTE: *"POS:NN"+*"POS:IN"+"water"]
+
+	// CENTRALSW       SUBDIVISION-COUNTRY: Nevada is a state located in the United States of America     (e30b-6621-73f9-b0a3) [ SUBDIVISION:"nevada", TYPE_OF_SUBDIVISION:"state", COUNTRY:"unite state of america" ]
+	//        HINTROW California is a state located in the United States of America     (0409-e9e6-43fb-ed4c) [ SUBDIVISION:"california", TYPE_OF_SUBDIVISION:"state", COUNTRY:"unite state of america" ]
+	//row autoRow1 = [TABLE:"SUBDIVISION-COUNTRY", SUBDIVISION: <nevada_1>, TYPE_OF_SUBDIVISION: "state", COUNTRY: "unite state of america"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"SUBDIVISION-COUNTRY", SUBDIVISION: <nevada_1>, TYPE_OF_SUBDIVISION: "state", COUNTRY: "unite state of america"]
+
+	// CENTRALSW       PROP-THINGS: the climate is low in humidity in Nevada     (4493-589b-f126-ea3e) [ THING:"climate", VALUE:"low", ATTRIBUTE:"in humidity", SCOPE_RELATIVETO:"in nevada" ]
+	//        HINTROW the climate is high in humidity in California     (7f16-ff51-fa37-ef72) [ THING:"climate", VALUE:"high", ATTRIBUTE:"in humidity", SCOPE_RELATIVETO:"in california" ]
+	//row autoRow2 = [TABLE:"PROP-THINGS", THING: "climate", VALUE: <low_0>, ATTRIBUTE: "in humidity", SCOPE_RELATIVETO: "in"+<nevada_1>] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"PROP-THINGS", THING: "climate", VALUE: <low_0>, ATTRIBUTE: "in humidity", SCOPE_RELATIVETO: "in"+<nevada_1>]
+
+	// GROUNDING       KINDOF: Atlantic Ocean is a kind of ocean     (cea7-aca6-4f38-15d1) [ HYPONYM:"atlantic ocean", HYPERNYM:"ocean" ]
+	//        HINTROW Gulf of Mexico is a kind of ocean basin     (2f19-ae12-c8a1-5693) [ HYPONYM:"gulf of mexico", HYPERNYM:"ocean basin" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "atlantic ocean", HYPERNYM: "ocean"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "atlantic ocean", HYPERNYM: "ocean"]
+
+	// CENTRAL         MEASUREMENTS: climate is the usual kind of weather in a location over a period of time     (1dba-dc42-8ca9-0ab2) [ MEASURE:"climate", QUANTITY_ADJ:"usual kind of", ATTRIBUTE:"weather", SCOPE:"in locate over period of time" ]
+	//row autoRow4 = [UUID:"1dba-dc42-8ca9-0ab2", MEASURE: "climate", QUANTITY_ADJ: "usual kind of", ATTRIBUTE: "weather", SCOPE: "in locate over period of time"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"1dba-dc42-8ca9-0ab2", MEASURE: "climate", QUANTITY_ADJ: "usual kind of", ATTRIBUTE: "weather", SCOPE: "in locate over period of time"]
+
+	// CENTRAL         MEASUREMENTS: humidity is the amount of water vapor ; moisture in the air ; in the atmosphere     (1c42-416a-fc92-2b03) [ MEASURE:"humidity", QUANTITY_ADJ:"amount of", ATTRIBUTE:"water vapor;moisture", SCOPE:"in air;in atmosphere" ]
+	//row autoRow5 = [UUID:"1c42-416a-fc92-2b03", MEASURE: "humidity", QUANTITY_ADJ: "amount of", ATTRIBUTE: "water vapor", SCOPE: "in air"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"1c42-416a-fc92-2b03", MEASURE: "humidity", QUANTITY_ADJ: "amount of", ATTRIBUTE: "water vapor", SCOPE: "in air"]
+
+	// CENTRAL         PROP-GENERIC: humidity is a property of weather and include ordered values of dry ; humid     (33cb-429a-ce86-2d79) [ X:"humidity", Y:"weather", ORDERED_UNORDERED:"order", VALUES:"spin-dry;humid" ]
+	//row autoRow6 = [UUID:"33cb-429a-ce86-2d79", X: "humidity", Y: "weather", ORDERED_UNORDERED: "order", VALUES: "spin-dry"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"33cb-429a-ce86-2d79", X: "humidity", Y: "weather", ORDERED_UNORDERED: "order", VALUES: "spin-dry"]
+
+	// CENTRAL         LOCATIONS: water vapor is found in the atmosphere     (7896-0ee6-9c3c-f3c1) [ THING_PROCESS:"water vapor", LOCATION:"atmosphere" ]
+	//row autoRow7 = [UUID:"7896-0ee6-9c3c-f3c1", THING_PROCESS: "water vapor", LOCATION: "atmosphere"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"7896-0ee6-9c3c-f3c1", THING_PROCESS: "water vapor", LOCATION: "atmosphere"]
+
+	// CENTRAL         EXAMPLES: An example of moisture is water vapor in the atmosphere     (e7b5-57e9-5c3c-fe3e) [ AGENT_OBJECT1:"moisture", AGENT_OBJECT2:"water vapor", SCOPE:"in atmosphere" ]
+	//row autoRow8 = [UUID:"e7b5-57e9-5c3c-fe3e", AGENT_OBJECT1: "moisture", AGENT_OBJECT2: "water vapor", SCOPE: "in atmosphere"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"e7b5-57e9-5c3c-fe3e", AGENT_OBJECT1: "moisture", AGENT_OBJECT2: "water vapor", SCOPE: "in atmosphere"]
+
+	// CENTRAL        (OPTIONAL) PROP-REL-DIST: Boston is a city that is near to the coast of the Atlantic Ocean     (6d05-237f-42f2-6589) [ OBJECT_AGENT:"boston", CLASS:"city", RELATIVE_DISTANCE:"near", TO_REFERENCE_POINT:"coast of atlantic ocean" ]
+	//row *autoRow9 = [UUID:"6d05-237f-42f2-6589", OBJECT_AGENT: "boston", CLASS: "city", RELATIVE_DISTANCE: "near", TO_REFERENCE_POINT: "coast of atlantic ocean"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"6d05-237f-42f2-6589", OBJECT_AGENT: "boston", CLASS: "city", RELATIVE_DISTANCE: "near", TO_REFERENCE_POINT: "coast of atlantic ocean"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as distance from water decreases , humidity will increase     (b9e7-6612-b3bc-264a) [ QUANTITY_MEASURE1:"distance", SCOPE1A:"from water", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"humidity", CHANGE2:"increase" ]
+	//row autoRow10 = [UUID:"b9e7-6612-b3bc-264a", QUANTITY_MEASURE1: "distance", SCOPE1A: "from water", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "humidity", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"b9e7-6612-b3bc-264a", QUANTITY_MEASURE1: "distance", SCOPE1A: "from water", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "humidity", CHANGE2: "increase"]
+
+	// CENTRAL         KINDOF: moisture is a kind of environmental factor     (926e-6eea-3b5a-f747) [ HYPONYM:"moisture", SCOPE1:"environment", HYPERNYM:"factor" ]
+	//row autoRow11 = [UUID:"926e-6eea-3b5a-f747", HYPONYM: "moisture", SCOPE1: "environment", HYPERNYM: "factor"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"926e-6eea-3b5a-f747", HYPONYM: "moisture", SCOPE1: "environment", HYPERNYM: "factor"]
+
+	// CENTRAL        (OPTIONAL) PROP-GENERIC: moisture is a property of air mass and includes ordered values of dry ; humid     (fa3b-1528-2b6e-4d28) [ X:"moisture", Y:"air mass", ORDERED_UNORDERED:"order", VALUES:"spin-dry;humid" ]
+	//row *autoRow12 = [UUID:"fa3b-1528-2b6e-4d28", X: "moisture", Y: "air mass", ORDERED_UNORDERED: "order", VALUES: "spin-dry"] //OVER-CONSTR.
+	row *autoRow12 = [UUID:"fa3b-1528-2b6e-4d28", X: "moisture", Y: "air mass", ORDERED_UNORDERED: "order", VALUES: "spin-dry"]
+
+	// CENTRAL         CONTAINS: moist air mass contains a high amount of water vapor     (1fd7-6b9d-6694-78b6) [ ADJ:"moist", OBJECT_AGENT:"air mass", QUANTITY_RANGE:"high amount of", WHAT_IT_CONTAINS:"water vapor" ]
+	//row autoRow13 = [UUID:"1fd7-6b9d-6694-78b6", ADJ: "moist", OBJECT_AGENT: "air mass", QUANTITY_RANGE: "high amount of", WHAT_IT_CONTAINS: "water vapor"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"1fd7-6b9d-6694-78b6", ADJ: "moist", OBJECT_AGENT: "air mass", QUANTITY_RANGE: "high amount of", WHAT_IT_CONTAINS: "water vapor"]
+
+	// CENTRAL         SOURCEOF: oceans are the source of most of water vapor in the atmosphere     (264c-58db-a41c-9483) [ AGENT:"ocean", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"much of water vapor", SCOPE:"in atmosphere" ]
+	//row autoRow14 = [UUID:"264c-58db-a41c-9483", AGENT: "ocean", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "much of water vapor", SCOPE: "in atmosphere"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"264c-58db-a41c-9483", AGENT: "ocean", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "much of water vapor", SCOPE: "in atmosphere"]
+
+	// LEXGLUE         SYNONYMY: moist means humid     (9736-3e2b-eeb0-9a01) [ X1:"moist", X2:"humid" ]
+	//        HINTROW moisture means liquid ; liquid water     (bffa-0cd0-0745-6d03) [ X1:"moisture", X2:"liquid;liquid water" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow15 = [UUID:"9736-3e2b-eeb0-9a01"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow15 = [UUID:"9736-3e2b-eeb0-9a01"]
+
+endinferencepattern

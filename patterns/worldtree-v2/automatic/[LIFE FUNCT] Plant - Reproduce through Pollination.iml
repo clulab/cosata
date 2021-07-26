@@ -1,0 +1,97 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Plant_Reproduce_through_Pollination
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-ANIMAL-ATTRIB: A bird is a pollinating animal     (14de-6699-6b2e-a5d1) [ ANIMAL:"bird", VALUE:"pollinate" ]
+	//        HINTROW A bee is a pollinating animal     (2d4d-44be-d6a6-655f) [ ANIMAL:"bee", VALUE:"pollinate" ]
+	//        HINTROW An insect is a pollinating animal     (d57d-4cbb-11ee-2f47) [ ANIMAL:"insect", VALUE:"pollinate" ]
+	//row autoRow0 = [TABLE:"PROP-ANIMAL-ATTRIB", VALUE: "pollinate"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-ANIMAL-ATTRIB", VALUE: "pollinate"]
+
+	// CENTRALSW       CONSUMERS-EATING: bees eat pollen     (de5e-63cc-6e02-60b7) [ ORGANISM1:"bee", EATS_CONSUMES:"eat", ORGANISM2:"pollen" ]
+	//        HINTROW hummingbirds eat nectar     (a047-de39-c558-706a) [ ORGANISM1:"hummingbird", EATS_CONSUMES:"eat", ORGANISM2:"nectar" ]
+	//row autoRow1 = [TABLE:"CONSUMERS-EATING", EATS_CONSUMES: "eat"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CONSUMERS-EATING", EATS_CONSUMES: "eat"]
+
+	// GROUNDING       KINDOF: a hummingbird is a kind of bird     (3ed3-ffdd-5807-f126) [ HYPONYM:"hummingbird", HYPERNYM:"bird" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "hummingbird", HYPERNYM: "bird"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "hummingbird", HYPERNYM: "bird"]
+
+	// CENTRAL         TRANSFER: pollination is when pollinating animals ; wind ; water carry pollen from one flower to another flower     (5900-59b1-bb87-4115) [ PROCESS_NAME:"pollination", ACTOR_WHO:"pollinate animal;wind;water", VERB:"carry", WHAT:"pollen", SOURCE:"one flower", DESTINATION:"flower" ]
+	//row autoRow3 = [UUID:"5900-59b1-bb87-4115", PROCESS_NAME: "pollination", ACTOR_WHO: "pollinate animal", VERB: "carry", WHAT: "pollen", SOURCE: "one flower", DESTINATION: "flower"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"5900-59b1-bb87-4115", PROCESS_NAME: "pollination", ACTOR_WHO: "pollinate animal", VERB: "carry", WHAT: "pollen", SOURCE: "one flower", DESTINATION: "flower"]
+
+	// CENTRAL         PARTOF: a flower is a part of a plant for attracting pollinators ; producing seeds     (d42a-e547-fdf9-9c35) [ PART:"flower", WHOLE:"plant", FOR_PURPOSE:"attract pollinator;produce seed" ]
+	//row autoRow4 = [UUID:"d42a-e547-fdf9-9c35", PART: "flower", WHOLE: "plant", FOR_PURPOSE: "attract pollinator"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"d42a-e547-fdf9-9c35", PART: "flower", WHOLE: "plant", FOR_PURPOSE: "attract pollinator"]
+
+	// CENTRAL         CHANGE: bees convert nectar into honey for food     (a6ad-5582-fb3b-6c50) [ ACTOR_WHO:"bee", VERB:"convert", FROM:"nectar", INTO:"honey", FOR_PURPOSE:"food" ]
+	//row autoRow5 = [UUID:"a6ad-5582-fb3b-6c50", ACTOR_WHO: "bee", VERB: "convert", FROM: "nectar", INTO: "honey", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"a6ad-5582-fb3b-6c50", ACTOR_WHO: "bee", VERB: "convert", FROM: "nectar", INTO: "honey", FOR_PURPOSE: "food"]
+
+	// CENTRAL         REQUIRES: plant reproduction ; seed production requires pollination     (7b88-0a72-7d90-ea1d) [ OBJECT_AGENT_PROCESS:"plant reproduce;seed production", VERB_REQUIRES:"require", OBJECT:"pollination" ]
+	//row autoRow6 = [UUID:"7b88-0a72-7d90-ea1d", OBJECT_AGENT_PROCESS: "plant reproduce", VERB_REQUIRES: "require", OBJECT: "pollination"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"7b88-0a72-7d90-ea1d", OBJECT_AGENT_PROCESS: "plant reproduce", VERB_REQUIRES: "require", OBJECT: "pollination"]
+
+	// CENTRAL         USEDFOR: nectar is used for attracting pollinators by plants     (e470-cbe8-086a-5af9) [ AGENT_OBJECT:"nectar", FOR_PURPOSE:"attract", PATIENT:"pollinator", AGENT_THING_WHO_USES:"plant" ]
+	//row autoRow7 = [UUID:"e470-cbe8-086a-5af9", AGENT_OBJECT: "nectar", FOR_PURPOSE: "attract", PATIENT: "pollinator", AGENT_THING_WHO_USES: "plant"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"e470-cbe8-086a-5af9", AGENT_OBJECT: "nectar", FOR_PURPOSE: "attract", PATIENT: "pollinator", AGENT_THING_WHO_USES: "plant"]
+
+	// CENTRAL         STAGE-IN-PROCESS: cross-pollination is a stage in the sexual reproduction process of plants     (e477-2c0c-9782-8b1b) [ STAGE:"cross-pollination;cross pollination", PROCESS:"sexual reproduce", SCOPE:"of plant" ]
+	//  Notes: f55b-507a-c8f0-2acf->e477-2c0c-9782-8b1b
+	//row autoRow8 = [UUID:"e477-2c0c-9782-8b1b", STAGE: "cross pollination", PROCESS: "sexual reproduce", SCOPE: "of plant"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"e477-2c0c-9782-8b1b", STAGE: "cross pollination", PROCESS: "sexual reproduce", SCOPE: "of plant"]
+
+	// CENTRAL         REQUIRES: pollination requires pollinators ; pollinating animals     (2c1d-72c3-3a94-c25b) [ OBJECT_AGENT_PROCESS:"pollination", VERB_REQUIRES:"require", OBJECT:"pollinator;pollinate animal" ]
+	//row autoRow9 = [UUID:"2c1d-72c3-3a94-c25b", OBJECT_AGENT_PROCESS: "pollination", VERB_REQUIRES: "require", OBJECT: "pollinate animal"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"2c1d-72c3-3a94-c25b", OBJECT_AGENT_PROCESS: "pollination", VERB_REQUIRES: "require", OBJECT: "pollinate animal"]
+
+	// CENTRAL         REQUIRES: reproduction of the plants often requires pollen     (82fa-7d32-6cd6-b331) [ ACTION1:"reproduce of", OBJECT_AGENT_PROCESS:"plant", QUANTIFIER:"often", VERB_REQUIRES:"require", OBJECT:"pollen" ]
+	//row autoRow10 = [UUID:"82fa-7d32-6cd6-b331", ACTION1: "reproduce of", OBJECT_AGENT_PROCESS: "plant", QUANTIFIER: "often", VERB_REQUIRES: "require", OBJECT: "pollen"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"82fa-7d32-6cd6-b331", ACTION1: "reproduce of", OBJECT_AGENT_PROCESS: "plant", QUANTIFIER: "often", VERB_REQUIRES: "require", OBJECT: "pollen"]
+
+	// CENTRAL         IFTHEN: when pollen sticks to a hummingbird , that pollen will move to where the hummingbird moves     (cf2b-eb3d-dfe5-d6d3) [ THING:"pollen", ACTION1:"stick", OBJECT_PATIENT1:"hummingbird", ACTOR_AGENT_PROCESS2:"pollen", ACTION3:"move", OBJECT_PROPERTY3:"hummingbird move" ]
+	//row autoRow11 = [UUID:"cf2b-eb3d-dfe5-d6d3", THING: "pollen", ACTION1: "stick", OBJECT_PATIENT1: "hummingbird", ACTOR_AGENT_PROCESS2: "pollen", ACTION3: "move", OBJECT_PROPERTY3: "hummingbird move"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"cf2b-eb3d-dfe5-d6d3", THING: "pollen", ACTION1: "stick", OBJECT_PATIENT1: "hummingbird", ACTOR_AGENT_PROCESS2: "pollen", ACTION3: "move", OBJECT_PROPERTY3: "hummingbird move"]
+
+	// CENTRAL         SOURCEOF: a flower produces pollen and seeds     (1788-1cd3-6a0a-82f2) [ AGENT:"flower", VERB_SOURCEOF_PROVIDE_ETC:"produce", WHAT_IT_PROVIDES:"pollen seed" ]
+	//row autoRow12 = [UUID:"1788-1cd3-6a0a-82f2", AGENT: "flower", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "pollen seed"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"1788-1cd3-6a0a-82f2", AGENT: "flower", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "pollen seed"]
+
+	// CENTRAL         USEDFOR: a flower 's purpose is to produce seeds     (7ce5-9209-691b-8810) [ AGENT_OBJECT:"flower", FOR_PURPOSE:"product", PATIENT:"seed" ]
+	//row autoRow13 = [UUID:"7ce5-9209-691b-8810", AGENT_OBJECT: "flower", FOR_PURPOSE: "product", PATIENT: "seed"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"7ce5-9209-691b-8810", AGENT_OBJECT: "flower", FOR_PURPOSE: "product", PATIENT: "seed"]
+
+	// CENTRAL         KINDOF: a plant is a kind of living thing     (2e89-d8e8-a8fb-9acc) [ HYPONYM:"plant", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow14 = [UUID:"2e89-d8e8-a8fb-9acc", HYPONYM: "plant", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"2e89-d8e8-a8fb-9acc", HYPONYM: "plant", HYPERNYM: "live thing"]
+
+	// CENTRAL         PARTOF: pollen is part of a flower for reproduction     (4dcf-7536-2995-3a73) [ PART:"pollen", WHOLE:"flower", FOR_PURPOSE:"reproduce" ]
+	//row autoRow15 = [UUID:"4dcf-7536-2995-3a73", PART: "pollen", WHOLE: "flower", FOR_PURPOSE: "reproduce"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"4dcf-7536-2995-3a73", PART: "pollen", WHOLE: "flower", FOR_PURPOSE: "reproduce"]
+
+	// CENTRAL         SOURCEOF: reproduction produces ; produce offspring     (a6ff-574e-11c6-a86c) [ AGENT:"reproduce", VERB_SOURCEOF_PROVIDE_ETC:"produce;product", WHAT_IT_PROVIDES:"offspring" ]
+	//row autoRow16 = [UUID:"a6ff-574e-11c6-a86c", AGENT: "reproduce", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "offspring"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"a6ff-574e-11c6-a86c", AGENT: "reproduce", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "offspring"]
+
+	// CENTRAL         KINDOF: reproduction is a kind of process     (1076-5022-7c68-9365) [ HYPONYM:"reproduce", HYPERNYM:"process" ]
+	//  Notes: peripheral
+	//row autoRow17 = [UUID:"1076-5022-7c68-9365", HYPONYM: "reproduce", HYPERNYM: "process"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"1076-5022-7c68-9365", HYPONYM: "reproduce", HYPERNYM: "process"]
+
+	// LEXGLUE         SYNONYMY: pollinator means pollinating animal     (6baa-61fa-ccac-43d0) [ X1:"pollinator", X2:"pollinate animal" ]
+	//row autoRow18 = [UUID:"6baa-61fa-ccac-43d0", X1: "pollinator", X2: "pollinate animal"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"6baa-61fa-ccac-43d0", X1: "pollinator", X2: "pollinate animal"]
+
+	// LEXGLUE         SYNONYMY: pollinated means after pollination     (e82d-32d4-1996-aead) [ X1:"pollinate", X2:"after pollination" ]
+	//row autoRow19 = [UUID:"e82d-32d4-1996-aead", X1: "pollinate", X2: "after pollination"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"e82d-32d4-1996-aead", X1: "pollinate", X2: "after pollination"]
+
+endinferencepattern

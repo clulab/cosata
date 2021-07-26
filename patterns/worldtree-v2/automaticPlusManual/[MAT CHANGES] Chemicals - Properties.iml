@@ -1,0 +1,59 @@
+// Automatically converted pattern
+inferencepattern MAT_CHANGES_Chemicals_Properties
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       EXAMPLES: An example of a chemical property is how a material reacts chemically     (c8e1-3a3e-2e83-fbbc) [ AGENT_OBJECT1:"chemical property", AGENT_OBJECT2:"material", VERB2:"react", AGENT_OBJECT3:"chemically" ]
+	//        HINTROW An example of a chemical property is the elements making up a compound     (01e9-8b08-cbae-4187) [ AGENT_OBJECT1:"chemical property", AGENT_OBJECT2:"element", VERB2:"make", AGENT_OBJECT3:"compound" ]
+	//row autoRow0 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "chemical property", AGENT_OBJECT2: "material"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "chemical property"]
+
+	// CENTRALSW       PROP-GENERIC: combustibility is a property of matter and includes ordered values of combustible ; incombustible     (0e0f-42a2-11e2-d4e3) [ X:"combustibility", Y:"matt", ORDERED_UNORDERED:"order", VALUES:"combustible;incombustible" ]
+	//        HINTROW flammability is a property of matter and includes values of flammable ; inflammable     (459f-ac72-bd1f-2be3) [ X:"flammability", Y:"matt", VALUES:"flammable;inflammable" ]
+	//row autoRow1 = [TABLE:"PROP-GENERIC", Y: "matt"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-GENERIC", Y: "matt"]
+
+	// CENTRALSW       KINDOF: combustibility is a kind of chemical property     (aef8-bb04-9f18-8bdd) [ HYPONYM:"combustibility", SCOPE1:"chemical", HYPERNYM:"property" ]
+	//        HINTROW flammability is a kind of chemical property     (6583-a76d-4f3f-b4f0) [ HYPONYM:"flammability", SCOPE1:"chemical", HYPERNYM:"property" ]
+	//        HINTROW material composition is a kind of chemical property     (de82-e643-178a-0a7b) [ HYPONYM:"material compose", SCOPE1:"chemical", HYPERNYM:"property" ]
+	//        HINTROW reaction to light is a kind of chemical property     (1c51-920c-5b1c-5ebd) [ HYPONYM:"react light", SCOPE1:"chemical", HYPERNYM:"property" ]
+	//row autoRow2 = [TABLE:"KINDOF", SCOPE1: "chemical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", SCOPE1: "chemical", HYPERNYM: "property"]
+
+	// GROUNDING       KINDOF: combustion is a kind of chemical change     (eaad-89d5-b78f-cf5a) [ HYPONYM:"combust", SCOPE1:"chemical", HYPERNYM:"change" ]
+	//        HINTROW flammability is a kind of chemical property     (6583-a76d-4f3f-b4f0) [ HYPONYM:"flammability", SCOPE1:"chemical", HYPERNYM:"property" ]
+	//  Notes: peripheral
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "combust", SCOPE1: "chemical", HYPERNYM: "change"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", SCOPE1: "chemical"]
+
+	// CENTRAL         CHANGE: combustion means fire converts chemical energy into light energy and heat energy     (941b-2c2b-0aae-ee3a) [ PROCESS_NAME:"combust", ACTOR_WHO:"fire", VERB:"convert", FROM:"chemical energy", INTO:"light energy heat energy" ]
+	//row autoRow4 = [UUID:"941b-2c2b-0aae-ee3a", PROCESS_NAME: "combust", ACTOR_WHO: "fire", VERB: "convert", FROM: "chemical energy", INTO: "light energy heat energy"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"941b-2c2b-0aae-ee3a", PROCESS_NAME: "combust", ACTOR_WHO: "fire", VERB: "convert", FROM: "chemical energy", INTO: "light energy heat energy"]
+
+	// CENTRAL         ACTION: classifying means grouping objects ; materials by their properties     (69c1-2991-2421-ce63) [ DEFINITION_NAME:"classify", ACTION2:"group", OBJECT_PROPERTY:"object;material", HOW:"property" ]
+	//row autoRow5 = [UUID:"69c1-2991-2421-ce63", DEFINITION_NAME: "classify", ACTION2: "group", OBJECT_PROPERTY: "object", HOW: "property"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"69c1-2991-2421-ce63", DEFINITION_NAME: "classify", ACTION2: "group", OBJECT_PROPERTY: "object", HOW: "property"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: chemical reactions cause chemical change     (0f0d-2cc5-fcc1-3c1f) [ CONDITION_AGENT_OBJECT:"chemical reaction", RESULT_AGENT:"chemical change" ]
+	//row *autoRow6 = [UUID:"0f0d-2cc5-fcc1-3c1f", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "chemical change"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"0f0d-2cc5-fcc1-3c1f", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "chemical change"]
+
+	// CENTRAL         CAUSE: fire causes burning     (4dc5-13bf-3c46-af74) [ CONDITION_AGENT_OBJECT:"fire", RESULT_VERB:"burn" ]
+	//row autoRow7 = [UUID:"4dc5-13bf-3c46-af74", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "burn"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4dc5-13bf-3c46-af74", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "burn"]
+
+	// CENTRAL         MADEOF: substances are made of matter     (3395-b5a2-ae2d-39c2) [ OBJECT:"substance", MATERIAL:"matt" ]
+	//row autoRow8 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"]
+
+	// CENTRAL         PROP-THINGS: substances have chemical properties     (d4a5-b86b-d960-183f) [ THING:"substance", ATTRIBUTE:"chemical property" ]
+	//  Notes: 760d-a151-5c82-d6c5->d4a5-b86b-d960-183f
+	//row autoRow9 = [UUID:"d4a5-b86b-d960-183f", THING: "substance", ATTRIBUTE: "chemical property"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"d4a5-b86b-d960-183f", THING: "substance", ATTRIBUTE: "chemical property"]
+
+endinferencepattern

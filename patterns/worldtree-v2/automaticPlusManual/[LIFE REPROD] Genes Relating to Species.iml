@@ -1,0 +1,66 @@
+// Automatically converted pattern
+inferencepattern LIFE_REPROD_Genes_Relating_to_Species
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: toad is a kind of animal     (c48a-6281-7aa1-907d) [ HYPONYM:"toad", HYPERNYM:"animal" ]
+	//        HINTROW a snake is a kind of animal     (6188-73e6-6db4-bfea) [ HYPONYM:"snake", HYPERNYM:"animal" ]
+	//        HINTROW a lizard is a kind of animal     (33a0-5ab1-14b3-6bf8) [ HYPONYM:"lizard", HYPERNYM:"animal" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// CENTRAL         VEHICLE: in sexual reproduction the egg is a vehicle for the genes from the mother to the offspring     (aae5-c447-54cd-b1a0) [ PROCESS:"in sexual reproduce", ACTOR_WHO:"egg", WHAT:"gene", SOURCE:"mother", DESTINATION:"offspring" ]
+	//row autoRow1 = [UUID:"aae5-c447-54cd-b1a0", PROCESS: "in sexual reproduce", ACTOR_WHO: "egg", WHAT: "gene", SOURCE: "mother", DESTINATION: "offspring"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"aae5-c447-54cd-b1a0", PROCESS: "in sexual reproduce", ACTOR_WHO: "egg", WHAT: "gene", SOURCE: "mother", DESTINATION: "offspring"]
+
+	// CENTRAL         ACTION: genes are able to determine the inherited characteristics of a living thing     (c566-22fd-4845-1df2) [ AGENT_OBJECT:"gene", QUANITIFIER:"be able", ACTION2:"determine", OBJECT_PROPERTY:"inherit characteristic", SCOPE2:"of live thing" ]
+	//row autoRow2 = [UUID:"c566-22fd-4845-1df2", AGENT_OBJECT: "gene", QUANITIFIER: "be able", ACTION2: "determine", OBJECT_PROPERTY: "inherit characteristic", SCOPE2: "of live thing"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"c566-22fd-4845-1df2", AGENT_OBJECT: "gene", QUANITIFIER: "be able", ACTION2: "determine", OBJECT_PROPERTY: "inherit characteristic", SCOPE2: "of live thing"]
+
+	// CENTRAL         VEHICLE: genes is a vehicle for passing inherited characteristics from parent to offspring     (42cf-e041-f00a-7e84) [ ACTOR_WHO:"gene", VERB:"pass", WHAT:"inherit characteristic", SOURCE:"parent", DESTINATION:"offspring" ]
+	//row autoRow3 = [UUID:"42cf-e041-f00a-7e84", ACTOR_WHO: "gene", VERB: "pass", WHAT: "inherit characteristic", SOURCE: "parent", DESTINATION: "offspring"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"42cf-e041-f00a-7e84", ACTOR_WHO: "gene", VERB: "pass", WHAT: "inherit characteristic", SOURCE: "parent", DESTINATION: "offspring"]
+
+	// CENTRAL         VEHICLE: in sexual reproduction sperm is a vehicle for the genes from the father to the offspring     (69f2-5296-cdef-d02b) [ PROCESS:"in sexual reproduce", ACTOR_WHO:"sperm", WHAT:"gene", SOURCE:"father", DESTINATION:"offspring" ]
+	//row autoRow4 = [UUID:"69f2-5296-cdef-d02b", PROCESS: "in sexual reproduce", ACTOR_WHO: "sperm", WHAT: "gene", SOURCE: "father", DESTINATION: "offspring"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"69f2-5296-cdef-d02b", PROCESS: "in sexual reproduce", ACTOR_WHO: "sperm", WHAT: "gene", SOURCE: "father", DESTINATION: "offspring"]
+
+	// CENTRAL         TRANSFER: inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA     (ee78-0795-be47-6ad8) [ PROCESS_NAME:"inherit", ACTOR_WHO:"inherit characteristic", VERB:"be copy;be pass", SOURCE:"parent", DESTINATION:"offspring", BY_THROUGH_HOW:"genetic;dna" ]
+	//row autoRow5 = [UUID:"ee78-0795-be47-6ad8", PROCESS_NAME: "inherit", ACTOR_WHO: "inherit characteristic", VERB: "be copy", SOURCE: "parent", DESTINATION: "offspring", BY_THROUGH_HOW: "genetic"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"ee78-0795-be47-6ad8", PROCESS_NAME: "inherit", ACTOR_WHO: "inherit characteristic", VERB: "be copy", SOURCE: "parent", DESTINATION: "offspring", BY_THROUGH_HOW: "genetic"]
+
+	// CENTRAL         USEDFOR: the inherited characteristics of the parents can be used to predict inherited characteristics of the offspring     (13fe-fbb8-d3d3-8bb8) [ AGENT_OBJECT:"inherit characteristic", SCOPE1:"of parent", QUALIFIER:"be", FOR_PURPOSE:"predict", PATIENT:"inherit characteristic", SCOPE2:"of offspring" ]
+	//row autoRow6 = [UUID:"13fe-fbb8-d3d3-8bb8", AGENT_OBJECT: "inherit characteristic", SCOPE1: "of parent", QUALIFIER: "be", FOR_PURPOSE: "predict", PATIENT: "inherit characteristic", SCOPE2: "of offspring"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"13fe-fbb8-d3d3-8bb8", AGENT_OBJECT: "inherit characteristic", SCOPE1: "of parent", QUALIFIER: "be", FOR_PURPOSE: "predict", PATIENT: "inherit characteristic", SCOPE2: "of offspring"]
+
+	// CENTRAL         ACTION: offspring receive genes from their parents through inheritence ; DNA ; sexual reproduction     (5524-96d8-a5d8-f0ce) [ AGENT_OBJECT:"offspring", ACTION2:"receive", OBJECT_PROPERTY:"gene", WHEN_WHERE:"from parent", HOW:"inheritence;dna;sexual reproduce" ]
+	//row autoRow7 = [UUID:"5524-96d8-a5d8-f0ce", AGENT_OBJECT: "offspring", ACTION2: "receive", OBJECT_PROPERTY: "gene", WHEN_WHERE: "from parent", HOW: "sexual reproduce"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"5524-96d8-a5d8-f0ce", AGENT_OBJECT: "offspring", ACTION2: "receive", OBJECT_PROPERTY: "gene", WHEN_WHERE: "from parent", HOW: "sexual reproduce"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//row autoRow8 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+	// CENTRAL         ACTION: eggs become baby animals     (c284-c764-7abd-4e68) [ AGENT_OBJECT:"egg", ACTION2:"become", OBJECT_PROPERTY:"baby animal" ]
+	//row autoRow9 = [UUID:"c284-c764-7abd-4e68", AGENT_OBJECT: "egg", ACTION2: "become", OBJECT_PROPERTY: "baby animal"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"c284-c764-7abd-4e68", AGENT_OBJECT: "egg", ACTION2: "become", OBJECT_PROPERTY: "baby animal"]
+
+	// CENTRAL         PROP-INHERITEDLEARNED: species is an inherited characteristic     (710b-668d-7cf4-e34a) [ AGENT:"species", INHERITED_LEARNED:"inherit" ]
+	//row autoRow10 = [UUID:"710b-668d-7cf4-e34a", AGENT: "species", INHERITED_LEARNED: "inherit"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"710b-668d-7cf4-e34a", AGENT: "species", INHERITED_LEARNED: "inherit"]
+
+	// LEXGLUE         SYNONYMY: an animal is a member of an animal species     (3f4c-c241-6217-60ff) [ X1:"animal", X2:"member of animal species" ]
+	//        HINTROW a plant is a member of a plant species     (fb5f-417c-8bf2-037e) [ X1:"plant", X2:"member of plant species" ]
+	//row autoRow11 = [UUID:"3f4c-c241-6217-60ff", X2: "member of animal species"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"3f4c-c241-6217-60ff", X2: "member of animal species"]
+
+	// LEXGLUE         SYNONYMY: species means a group of like organisms     (2171-5edd-a3d0-f2c2) [ X1:"species", X2:"group of like organism" ]
+	//row autoRow12 = [UUID:"2171-5edd-a3d0-f2c2", X1: "species", X2: "group of like organism"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"2171-5edd-a3d0-f2c2", X1: "species", X2: "group of like organism"]
+
+endinferencepattern

@@ -1,0 +1,64 @@
+// Automatically converted pattern
+inferencepattern LIFE_INTERDEP_Carnivores
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       XIVORE: an eagle is a kind of carnivore     (1846-e872-e856-3ce3) [ ANIMAL:"eagle", XIVORE:"carnivore" ]
+	//        HINTROW an alligator is a kind of carnivore     (eeda-6609-161c-9926) [ ANIMAL:"alligator", XIVORE:"carnivore" ]
+	//        HINTROW a hawk is a kind of carnivore     (b7ce-2574-5bf6-af4f) [ ANIMAL:"hawk", XIVORE:"carnivore" ]
+	//row autoRow0 = [TABLE:"XIVORE", ANIMAL: <eagle_0>, XIVORE: "carnivore"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"XIVORE", ANIMAL: <eagle_0>, XIVORE: "carnivore"]
+
+	// GROUNDING       CONSUMERS-EATING: eagles eat fish     (efb4-baee-b1ad-1184) [ ORGANISM1:"eagle", EATS_CONSUMES:"eat", ORGANISM2:"fish" ]
+	//        HINTROW alligators eat frogs ; turtles ; fish ; mice ; birds     (aa17-e87c-2259-5f04) [ ORGANISM1:"alligator", EATS_CONSUMES:"eat", ORGANISM2:"frog;turtle;fish;mouse;bird" ]
+	//        HINTROW eagles eat rabbits     (5ac6-9dc1-9a19-3eaa) [ ORGANISM1:"eagle", EATS_CONSUMES:"eat", ORGANISM2:"rabbit" ]
+	//        HINTROW hawks ; eagles eat snakes ; lizards ; rats ; rabbits ; mice     (d28f-0727-460f-5ab6) [ ORGANISM1:"hawk;eagle", EATS_CONSUMES:"eat", ORGANISM2:"snake;lizard;rat;rabbit;mouse" ]
+	//  Notes: carnivore X eats animal Y
+	//row autoRow1 = [TABLE:"CONSUMERS-EATING", ORGANISM1: <eagle_0>, EATS_CONSUMES: "eat", ORGANISM2: <fish_1>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CONSUMERS-EATING", ORGANISM1: <eagle_0>, EATS_CONSUMES: "eat", ORGANISM2: <fish_1>]
+
+	// GROUNDING       KINDOF: an eagle is a kind of animal     (133f-8977-dfd9-c969) [ HYPONYM:"eagle", HYPERNYM:"animal" ]
+	//        HINTROW an alligator is a kind of aquatic animal     (5086-b21f-9f0a-e67d) [ HYPONYM:"alligator", SCOPE1:"aquatic", HYPERNYM:"animal" ]
+	//        HINTROW a hawk is a kind of animal     (78d2-c53f-0244-23c2) [ HYPONYM:"hawk", HYPERNYM:"animal" ]
+	//  Notes: carnivore X
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <eagle_0>, HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <eagle_0>, HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: a fish is a kind of animal     (9526-aecc-22b2-4b6a) [ HYPONYM:"fish", HYPERNYM:"animal" ]
+	//        HINTROW a rabbit is a kind of animal     (44d7-fef6-90ef-75aa) [ HYPONYM:"rabbit", HYPERNYM:"animal" ]
+	//        HINTROW a frog is a kind of animal     (9e89-73fd-66d5-18e2) [ HYPONYM:"frog", HYPERNYM:"animal" ]
+	//  Notes: food animal Y
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: <fish_1>, HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: <fish_1>, HYPERNYM: "animal"]
+
+	// CENTRAL         USEDFOR: eating ; taking in food is used to get nutrients ; energy by animals ; living things     (4842-3518-d7ab-f670) [ ACTION:"eat;take", AGENT_OBJECT:"food", FOR_PURPOSE:"get", PATIENT:"nutrient;energy", AGENT_THING_WHO_USES:"animal;live thing" ]
+	//row autoRow4 = [UUID:"4842-3518-d7ab-f670", ACTION: "eat", AGENT_OBJECT: "food", FOR_PURPOSE: "get", PATIENT: "nutrient", AGENT_THING_WHO_USES: "live thing"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4842-3518-d7ab-f670", ACTION: "eat", AGENT_OBJECT: "food", FOR_PURPOSE: "get", PATIENT: "nutrient", AGENT_THING_WHO_USES: "live thing"]
+
+	// CENTRAL         IFTHEN: if two or more carnivores share the same ecosystem then those carnivores may share the same food source     (87bf-0489-981e-be99) [ ADJ_QUANTITY1:"two much", THING:"carnivore", ACTION1:"share", ADJ_QUANTITY1A:"same", OBJECT_PATIENT1:"ecosystem", ACTOR_AGENT_PROCESS2:"carnivore", ACTION3:"share", ADJ_QUANTIFIER3:"same", OBJECT_PROPERTY3:"food source" ]
+	//row autoRow5 = [UUID:"87bf-0489-981e-be99", ADJ_QUANTITY1: "two much", THING: "carnivore", ACTION1: "share", ADJ_QUANTITY1A: "same", OBJECT_PATIENT1: "ecosystem", ACTOR_AGENT_PROCESS2: "carnivore", ACTION3: "share", ADJ_QUANTIFIER3: "same", OBJECT_PROPERTY3: "food source"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"87bf-0489-981e-be99", ADJ_QUANTITY1: "two much", THING: "carnivore", ACTION1: "share", ADJ_QUANTITY1A: "same", OBJECT_PATIENT1: "ecosystem", ACTOR_AGENT_PROCESS2: "carnivore", ACTION3: "share", ADJ_QUANTIFIER3: "same", OBJECT_PROPERTY3: "food source"]
+
+	// CENTRAL         KINDOF: carnivores ; omnivores ; herbivores are a kind of animal     (c709-83dd-975c-b05d) [ HYPONYM:"carnivore;omnivore;herbivore", HYPERNYM:"animal" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"c709-83dd-975c-b05d", HYPONYM: "carnivore", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"c709-83dd-975c-b05d", HYPONYM: "carnivore", HYPERNYM: "animal"]
+
+	// CENTRAL         CONSUMERS-EATING: predators ; carnivores ; omnivores eat other animals     (20a3-dcb5-8ce4-ae5c) [ ORGANISM1:"predator;carnivore;omnivore", EATS_CONSUMES:"eat", ORGANISM2:"other animal" ]
+	//row autoRow7 = [UUID:"20a3-dcb5-8ce4-ae5c", ORGANISM1: "predator", EATS_CONSUMES: "eat", ORGANISM2: "other animal"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"20a3-dcb5-8ce4-ae5c", ORGANISM1: "predator", EATS_CONSUMES: "eat", ORGANISM2: "other animal"]
+
+	// CENTRAL         CONSUMERS-EATING: carnivores only eat animals     (f2b6-e2f5-8939-94ae) [ ORGANISM1:"carnivore", QUANTIFIER:"only", EATS_CONSUMES:"eat", ORGANISM2:"animal" ]
+	//row autoRow8 = [UUID:"f2b6-e2f5-8939-94ae", ORGANISM1: "carnivore", QUANTIFIER: "only", EATS_CONSUMES: "eat", ORGANISM2: "animal"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f2b6-e2f5-8939-94ae", ORGANISM1: "carnivore", QUANTIFIER: "only", EATS_CONSUMES: "eat", ORGANISM2: "animal"]
+
+	// LEXGLUE         SYNONYMY: food web is synonymous with food chain     (349d-dd0e-2deb-7b57) [ X1:"food web", X2:"food chain" ]
+	//row autoRow9 = [UUID:"349d-dd0e-2deb-7b57", X1: "food web", X2: "food chain"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"349d-dd0e-2deb-7b57", X1: "food web", X2: "food chain"]
+
+endinferencepattern

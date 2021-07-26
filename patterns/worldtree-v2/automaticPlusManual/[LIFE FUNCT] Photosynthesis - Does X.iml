@@ -1,0 +1,80 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Photosynthesis_Does_X
+
+	// Plain text description
+	description = "might be redundant due to Photosynthesis - Process"
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "tree", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "tree", HYPERNYM: "plant"]
+
+	// CENTRAL         CHANGE: photosynthesis means producers ; green plants convert from carbon dioxide and water and solar energy into carbohydrates and food and oxygen for themselves     (0962-4a47-4e17-ce97) [ PROCESS_NAME:"photosynthesis", ACTOR_WHO:"producer;green plant", VERB:"convert", FROM:"carbon dioxide water solar energy", INTO:"carbohydrate food oxygen" ]
+	//row autoRow1 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"]
+
+	// CENTRAL         SOURCEOF: photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates     (a9fc-ec58-9496-d635) [ AGENT:"photosynthesis", VERB_SOURCEOF_PROVIDE_ETC:"be source of;make", WHAT_IT_PROVIDES:"food;energy", AGENT_IT_PROVIDES_THING_TO:"plant", BY_THROUGH_HOW:"convert carbon dioxide water sunlight into carbohydrate" ]
+	//row autoRow2 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"]
+
+	// CENTRAL         CHANGE-VEC: early photosynthetic life increases the oxygen level in Earth 's atmosphere     (3c17-20cb-5bf2-680d) [ ADJ:"early photosynthetic", AGENT_OBJECT:"life", DIRECTION:"increase", PATIENT:"oxygen level", SCOPE2:"in earth atmosphere" ]
+	//  Notes: B: increase O2
+	//row autoRow3 = [UUID:"3c17-20cb-5bf2-680d", ADJ: "early photosynthetic", AGENT_OBJECT: "life", DIRECTION: "increase", PATIENT: "oxygen level", SCOPE2: "in earth atmosphere"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"3c17-20cb-5bf2-680d", ADJ: "early photosynthetic", AGENT_OBJECT: "life", DIRECTION: "increase", PATIENT: "oxygen level", SCOPE2: "in earth atmosphere"]
+
+	// CENTRAL         ACTION: a plant absorbs carbon dioxide from the air to perform photosynthesis     (7b20-0992-8ec1-c73c) [ AGENT_OBJECT:"plant", ACTION2:"absorb", OBJECT_PROPERTY:"carbon dioxide", WHEN_WHERE:"from air", FOR_PURPOSE:"perform photosynthesis" ]
+	//row autoRow4 = [UUID:"7b20-0992-8ec1-c73c", AGENT_OBJECT: "plant", ACTION2: "absorb", OBJECT_PROPERTY: "carbon dioxide", WHEN_WHERE: "from air", FOR_PURPOSE: "perform photosynthesis"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"7b20-0992-8ec1-c73c", AGENT_OBJECT: "plant", ACTION2: "absorb", OBJECT_PROPERTY: "carbon dioxide", WHEN_WHERE: "from air", FOR_PURPOSE: "perform photosynthesis"]
+
+	// CENTRAL         CHANGE-VEC: absorbing something from the air decreases the amount of that something in the air     (4989-d132-39f1-7c78) [ AGENT_OBJECT:"absorb something", SCOPE1:"from air", DIRECTION:"decrease", QUANTITY:"amount of", PATIENT:"something", SCOPE2:"in air" ]
+	//row autoRow5 = [UUID:"4989-d132-39f1-7c78", AGENT_OBJECT: "absorb something", SCOPE1: "from air", DIRECTION: "decrease", QUANTITY: "amount of", PATIENT: "something", SCOPE2: "in air"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"4989-d132-39f1-7c78", AGENT_OBJECT: "absorb something", SCOPE1: "from air", DIRECTION: "decrease", QUANTITY: "amount of", PATIENT: "something", SCOPE2: "in air"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the population of plants decreases , carbon in the atmosphere will increase     (163a-1ae9-b8d6-c3ab) [ QUANTITY_MEASURE1:"population", AGENT_ATTRIBUTE1:"of plant", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"carbon", SCOPE2A:"in atmosphere", CHANGE2:"increase" ]
+	//  Notes: A: plants decrease --> CO2 increase
+	//row autoRow6 = [UUID:"163a-1ae9-b8d6-c3ab", QUANTITY_MEASURE1: "population", AGENT_ATTRIBUTE1: "of plant", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "carbon", SCOPE2A: "in atmosphere", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"163a-1ae9-b8d6-c3ab", QUANTITY_MEASURE1: "population", AGENT_ATTRIBUTE1: "of plant", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "carbon", SCOPE2A: "in atmosphere", CHANGE2: "increase"]
+
+	// CENTRAL         LOCATIONS: carbon dioxide can be found in the air     (3cff-4d77-9e27-7dc5) [ THING_PROCESS:"carbon dioxide", LOCATION:"air" ]
+	//  Notes: CO2 in air
+	//row autoRow7 = [UUID:"3cff-4d77-9e27-7dc5", THING_PROCESS: "carbon dioxide", LOCATION: "air"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3cff-4d77-9e27-7dc5", THING_PROCESS: "carbon dioxide", LOCATION: "air"]
+
+	// CENTRAL         SOURCEOF: plants are a source of oxygen through photosynthesis     (a908-944e-04aa-71bc) [ AGENT:"plant", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"oxygen", BY_THROUGH_HOW:"photosynthesis" ]
+	//row autoRow8 = [UUID:"a908-944e-04aa-71bc", AGENT: "plant", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "oxygen", BY_THROUGH_HOW: "photosynthesis"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"a908-944e-04aa-71bc", AGENT: "plant", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "oxygen", BY_THROUGH_HOW: "photosynthesis"]
+
+	// CENTRAL         CHANGE-VEC: a source of something increases the amount of that something     (da68-3173-2681-d90e) [ AGENT_OBJECT:"source", SCOPE1:"of something", DIRECTION:"increase", QUANTITY:"amount of", PATIENT:"something" ]
+	//row autoRow9 = [UUID:"da68-3173-2681-d90e", AGENT_OBJECT: "source", SCOPE1: "of something", DIRECTION: "increase", QUANTITY: "amount of", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"da68-3173-2681-d90e", AGENT_OBJECT: "source", SCOPE1: "of something", DIRECTION: "increase", QUANTITY: "amount of", PATIENT: "something"]
+
+	// CENTRAL         ACTION: the photosynthetic life performs photosynthesis     (4509-bfe2-61ad-8a15) [ ADJ:"photosynthetic", AGENT_OBJECT:"life", ACTION2:"perform", OBJECT_PROPERTY:"photosynthesis" ]
+	//row autoRow10 = [UUID:"4509-bfe2-61ad-8a15", ADJ: "photosynthetic", AGENT_OBJECT: "life", ACTION2: "perform", OBJECT_PROPERTY: "photosynthesis"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"4509-bfe2-61ad-8a15", ADJ: "photosynthetic", AGENT_OBJECT: "life", ACTION2: "perform", OBJECT_PROPERTY: "photosynthesis"]
+
+	// CENTRAL         SOURCEOF: photosynthesis is a source of oxygen     (b63a-5449-2c11-e70d) [ AGENT:"photosynthesis", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"oxygen" ]
+	//row autoRow11 = [UUID:"b63a-5449-2c11-e70d", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "oxygen"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"b63a-5449-2c11-e70d", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "oxygen"]
+
+	// CENTRAL         KINDOF: sunlight is a kind of solar energy     (59d6-9954-ef5e-12b2) [ HYPONYM:"sunlight", HYPERNYM:"solar energy" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"59d6-9954-ef5e-12b2", HYPONYM: "sunlight", HYPERNYM: "solar energy"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"59d6-9954-ef5e-12b2", HYPONYM: "sunlight", HYPERNYM: "solar energy"]
+
+	// CENTRAL         LOCATIONS: oxygen can be found in air     (fd2c-50ef-261b-d5c2) [ THING_PROCESS:"oxygen", LOCATION:"air" ]
+	//  Notes: O2 in air
+	//row autoRow13 = [UUID:"fd2c-50ef-261b-d5c2", THING_PROCESS: "oxygen", LOCATION: "air"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"fd2c-50ef-261b-d5c2", THING_PROCESS: "oxygen", LOCATION: "air"]
+
+	// CENTRAL         ACTION: a source of something emits ; produces ; generates ; provides that something     (b877-a58b-f75a-3998) [ AGENT_OBJECT:"source of something", ACTION2:"emit;produce;generate;provide", OBJECT_PROPERTY:"that something" ]
+	//row autoRow14 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"]
+
+	// LEXGLUE         SYNONYMY: absorbing something from the air means removing that something from Earth 's atmosphere     (d8c7-2c45-02f6-ba6c) [ ACTION1:"absorb", Y1:"something from air", ACTION2:"remove", Y2:"that something from earth atmosphere" ]
+	//row autoRow15 = [UUID:"d8c7-2c45-02f6-ba6c", ACTION1: "absorb", Y1: "something from air", ACTION2: "remove", Y2: "that something from earth atmosphere"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"d8c7-2c45-02f6-ba6c", ACTION1: "absorb", Y1: "something from air", ACTION2: "remove", Y2: "that something from earth atmosphere"]
+
+endinferencepattern

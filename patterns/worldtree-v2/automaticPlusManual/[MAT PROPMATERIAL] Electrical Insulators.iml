@@ -1,0 +1,79 @@
+// Automatically converted pattern
+inferencepattern MAT_PROPMATERIAL_Electrical_Insulators
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-CONDUCTIVITY: rubber is an electrical ; electrical energy insulator     (3bc7-7251-4566-95f7) [ OBJECT_AGENT:"rubber", KIND_OF_CONDUCTIVITY:"electric;electric energy", CONDUCTOR_INSULATOR:"insulator" ]
+	//        HINTROW wood is an electrical ; electrical energy insulator     (8f3b-ed0c-5dae-f30e) [ OBJECT_AGENT:"wood", KIND_OF_CONDUCTIVITY:"electric;electric energy", CONDUCTOR_INSULATOR:"insulator" ]
+	//        HINTROW wax is an electrical ; electrical energy insulator     (acae-d127-8de0-100d) [ OBJECT_AGENT:"wax", KIND_OF_CONDUCTIVITY:"electric;electric energy", CONDUCTOR_INSULATOR:"insulator" ]
+	//        HINTROW brick is an electrical ; electrical energy insulator     (c4f6-ee5c-204a-6f07) [ OBJECT_AGENT:"brick", KIND_OF_CONDUCTIVITY:"electric;electric energy", CONDUCTOR_INSULATOR:"insulator" ]
+	//        HINTROW plastic is an electrical ; electrical energy insulator     (5127-d7fd-08d7-8f5c) [ OBJECT_AGENT:"plastic", KIND_OF_CONDUCTIVITY:"electric;electric energy", CONDUCTOR_INSULATOR:"insulator" ]
+	//  Notes: X is an electrical insulator
+	//row autoRow0 = [TABLE:"PROP-CONDUCTIVITY", KIND_OF_CONDUCTIVITY: "electric energy", CONDUCTOR_INSULATOR: "insulator"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-CONDUCTIVITY", KIND_OF_CONDUCTIVITY: "electric energy", CONDUCTOR_INSULATOR: "insulator"]
+
+	// GROUNDING       KINDOF: copper is a kind of metal     (9cea-7fba-e1c5-f8b3) [ HYPONYM:"copper", HYPERNYM:"metal" ]
+	//        HINTROW iron is a kind of metal     (de4c-ca36-c336-540f) [ HYPONYM:"iron", HYPERNYM:"metal" ]
+	//  Notes: metal examples
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "metal"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "metal"]
+
+	// CENTRAL         REQUIRES: electrical insulation requires wrapping a conductor in an insulator     (6152-0048-10b7-5dd7) [ OBJECT_AGENT_PROCESS:"electric insulation", VERB_REQUIRES:"require", ACTION2:"wrap", OBJECT:"conduct", SCOPE2:"in insulator" ]
+	//row autoRow2 = [UUID:"6152-0048-10b7-5dd7", OBJECT_AGENT_PROCESS: "electric insulation", VERB_REQUIRES: "require", ACTION2: "wrap", OBJECT: "conduct", SCOPE2: "in insulator"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"6152-0048-10b7-5dd7", OBJECT_AGENT_PROCESS: "electric insulation", VERB_REQUIRES: "require", ACTION2: "wrap", OBJECT: "conduct", SCOPE2: "in insulator"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if electricity flows through ; is transferred through the body of an animal then that animal is electrocuted     (cf3b-d6fc-6b3d-87d4) [ THING:"electric", ACTION1:"flow through;be transfer through", OBJECT_PATIENT1:"body", OBJECT_PROPERTY1:"of animal", ACTOR_AGENT_PROCESS2:"that animal", ACTION3:"electrocute" ]
+	//row *autoRow3 = [UUID:"cf3b-d6fc-6b3d-87d4", THING: "electric", ACTION1: "be transfer through", OBJECT_PATIENT1: "body", OBJECT_PROPERTY1: "of animal", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "electrocute"] //OVER-CONSTR.
+	row *autoRow3 = [UUID:"cf3b-d6fc-6b3d-87d4", THING: "electric", ACTION1: "be transfer through", OBJECT_PATIENT1: "body", OBJECT_PROPERTY1: "of animal", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "electrocute"]
+
+	// CENTRAL         CAUSE: sending electricity through a conductor causes electricity ; electric current to flow through that conductor     (d12e-268f-1b21-6879) [ CONDITION_VERB:"send", CONDITION_PATIENT:"electric", SCOPE1:"through conduct", RESULT_AGENT:"electric;electric current", RESULT_VERB:"flow", SCOPE2:"through conduct" ]
+	//row autoRow4 = [UUID:"d12e-268f-1b21-6879", CONDITION_VERB: "send", CONDITION_PATIENT: "electric", SCOPE1: "through conduct", RESULT_AGENT: "electric current", RESULT_VERB: "flow", SCOPE2: "through conduct"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"d12e-268f-1b21-6879", CONDITION_VERB: "send", CONDITION_PATIENT: "electric", SCOPE1: "through conduct", RESULT_AGENT: "electric current", RESULT_VERB: "flow", SCOPE2: "through conduct"]
+
+	// CENTRAL         TRANSFER: electrical conduction is when metals ; electrical conductors conduct electricity through a wire ; electrical conductor ; metal     (22ce-038b-ff4f-c5ba) [ PROCESS_NAME:"electric conduction", ACTOR_WHO:"metal;electric conductor", VERB:"conduct", WHAT:"electric", BY_THROUGH_HOW:"wire;electric conduct;metal" ]
+	//row autoRow5 = [UUID:"22ce-038b-ff4f-c5ba", PROCESS_NAME: "electric conduction", ACTOR_WHO: "electric conductor", VERB: "conduct", WHAT: "electric", BY_THROUGH_HOW: "electric conduct"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"22ce-038b-ff4f-c5ba", PROCESS_NAME: "electric conduction", ACTOR_WHO: "electric conductor", VERB: "conduct", WHAT: "electric", BY_THROUGH_HOW: "electric conduct"]
+
+	// CENTRAL         CHANGE-VEC: an electrical insulator slows ; prevents the transfer of ; flow of electricity     (0ad2-d22e-525e-0038) [ AGENT_OBJECT:"electric insulator", DIRECTION:"slow;prevent", QUANTITY:"transfer of;flow of", PATIENT:"electric" ]
+	//row autoRow6 = [UUID:"0ad2-d22e-525e-0038", AGENT_OBJECT: "electric insulator", DIRECTION: "slow", QUANTITY: "transfer of", PATIENT: "electric"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"0ad2-d22e-525e-0038", AGENT_OBJECT: "electric insulator", DIRECTION: "slow", QUANTITY: "transfer of", PATIENT: "electric"]
+
+	// CENTRAL         CAUSE: electrocution causes harm to an organism     (7409-4a52-a23a-0c5c) [ CONDITION_AGENT_OBJECT:"electrocute", RESULT_VERB:"harm", RESULT_PATIENT:"organism" ]
+	//row autoRow7 = [UUID:"7409-4a52-a23a-0c5c", CONDITION_AGENT_OBJECT: "electrocute", RESULT_VERB: "harm", RESULT_PATIENT: "organism"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"7409-4a52-a23a-0c5c", CONDITION_AGENT_OBJECT: "electrocute", RESULT_VERB: "harm", RESULT_PATIENT: "organism"]
+
+	// CENTRAL         AFFECT: harming something has a negative impact on ; effect on that something     (57d4-79ba-a97d-0f9a) [ VERB:"harm", OBJECT_PROPERTY:"something", POSITIVE_NEGATIVE:"negative", PATIENT:"something" ]
+	//row autoRow8 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"]
+
+	// CENTRAL         REQUIRES: insulation requires an insulator     (f035-5b81-7cfb-750e) [ OBJECT_AGENT_PROCESS:"insulation", VERB_REQUIRES:"require", OBJECT:"insulator" ]
+	//row autoRow9 = [UUID:"f035-5b81-7cfb-750e", OBJECT_AGENT_PROCESS: "insulation", VERB_REQUIRES: "require", OBJECT: "insulator"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"f035-5b81-7cfb-750e", OBJECT_AGENT_PROCESS: "insulation", VERB_REQUIRES: "require", OBJECT: "insulator"]
+
+	// CENTRAL         PROP-CONDUCTIVITY: metal is an electrical ; electrical energy conductor     (23bf-e586-9387-c883) [ OBJECT_AGENT:"metal", KIND_OF_CONDUCTIVITY:"electric;electric energy", CONDUCTOR_INSULATOR:"conduct" ]
+	//  Notes: conductor examples
+	//row autoRow10 = [UUID:"23bf-e586-9387-c883", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "electric energy", CONDUCTOR_INSULATOR: "conduct"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"23bf-e586-9387-c883", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "electric energy", CONDUCTOR_INSULATOR: "conduct"]
+
+	// CENTRAL         MADEOF: a wire is usually made of metal     (5b47-bd0e-73fe-67d6) [ OBJECT:"wire", QUALIFIER:"be usually", MATERIAL:"metal" ]
+	//row autoRow11 = [UUID:"5b47-bd0e-73fe-67d6", OBJECT: "wire", QUALIFIER: "be usually", MATERIAL: "metal"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"5b47-bd0e-73fe-67d6", OBJECT: "wire", QUALIFIER: "be usually", MATERIAL: "metal"]
+
+	// LEXGLUE         OPPOSITES: an insulator is the opposite of a conductor     (9493-f99f-c366-f5bc) [ THING_PROPERTY1:"insulator", THING_PROPERTY2:"conduct" ]
+	//row autoRow12 = [UUID:"9493-f99f-c366-f5bc", THING_PROPERTY1: "insulator", THING_PROPERTY2: "conduct"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"9493-f99f-c366-f5bc", THING_PROPERTY1: "insulator", THING_PROPERTY2: "conduct"]
+
+	// LEXGLUE         SYNONYMY: a good conductor is a conductor     (7f34-d679-9088-bc21) [ X1:"good conduct", X2:"conduct" ]
+	//row autoRow13 = [UUID:"7f34-d679-9088-bc21", X1: "good conduct", X2: "conduct"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"7f34-d679-9088-bc21", X1: "good conduct", X2: "conduct"]
+
+	// LEXGLUE         SYNONYMY: wrapping is similar to covering     (caff-4de5-d4b5-f9a7) [ ACTION1:"wrap", ACTION2:"cover" ]
+	//row autoRow14 = [UUID:"caff-4de5-d4b5-f9a7", ACTION1: "wrap", ACTION2: "cover"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"caff-4de5-d4b5-f9a7", ACTION1: "wrap", ACTION2: "cover"]
+
+endinferencepattern

@@ -1,0 +1,119 @@
+// FLAGS: READY
+// QID: NYSEDREGENTS_2014_4_9
+// Question: A student removes an ice cube tray from the freezer and places it on a table. The ice cubes are solid and cold. The student forgets to put the ice cube tray back into the freezer. The next day, the ice cubes should be (A) liquid and warmer (B) solid and warmer (C) liquid and colder (D) solid and colder
+
+// Test script
+
+// Includes
+import "scienceimports.iml"
+import "processtest.iml"
+
+// Steps:
+// 1. Instantiate a 'freezer' with common parameters (location, environment temperature)
+// 2. Instantiate a 'ice cube' with common parameters (temperature)
+// 3. Set location of 'ice cube' to be inside 'freezer'
+// 4. Set temperature of 'ice cube' to be the temperature of freezer (inference pattern)
+
+// 5. Instantiate an environment, 'outside freezer', that is the location of the freezer 'kitchen'
+// 6. Instantiate the environment with the common properties (temperature)
+
+// 7. Set the location of the ice cube to change from 'freezer' to 'outside freezer' (kitchen)
+
+// 8. Do the warm up loop
+// 9. Change of state
+
+// 10. For the extra ('warmer' in answer), note temperature at start, temperature at end, and
+//  create an inference pattern that compares to temperatures and returns 'warmer' or 'colder'
+
+populateInfPatMatches       // Should do this automatically
+executeAutoPatterns
+
+exportInfPatHTML("infpattern_out.html")
+exportTableStoreHTML("tablestore_export.html")
+
+
+// Main
+
+// Step 1: Initialize instances
+
+//#qreference# obj1 = ice cube
+instantiate obj1([KINDOF:"ice cube"])
+obj1."name" = "test object 1"
+
+//#qreference# freezer = freezer
+//instantiate freezer([KINDOF:"freezer"])
+instantiate freezer([KINDOF:"freezer"])
+freezer."name" = "freezer"
+
+//#qreference# outside = table
+var freezerLocation = freezer."location"
+instantiate outside([KINDOF:freezerLocation])           // the outside environment is whatever location the freezer is in
+outside."name" = "outside environment"
+
+//##
+//## populateInfPatMatches       // Should do this automatically
+
+incrementState
+/*
+exportInfPatHTML()
+exportTableStoreHTML()
+exportStateSpaceHTML()
+exit(1)
+*/
+
+// Step 2: Give the ice cube common properties (state of matter, temperature, etc)
+executePattern(giveCommonSubstanceProperties, [formName == obj1."material"], [substance1->obj1])
+
+/*
+// Unused?
+// Set that object1 and object2 are touching
+generateRow([TABLE:"SPATIAL", THING1:"test object 1", FILL_IS:"is", SPATIALRELATION:"touching", THING2:"test object 2"])
+
+// Set that object1 is in environment outside
+generateRow([TABLE:"SPATIAL", THING1:"test object 1", FILL_IS:"is", SPATIALRELATION:"located", THING2:"outside environment"])
+*/
+
+// Step 3: Set initial location of obj1 (ice cube)to be the freezer
+executePattern(setInitialEnvironment, "0", [object1->obj1, environment1->freezer])
+
+//## populateInfPatMatches       // Should do this automatically
+
+// Step 4: The ice cube starts in the freezer.  Give it the freezer environment's temperature. 
+executePattern(setInitialTemperature, [environmentName == obj1."location", thingName == obj1."name"], [object1->obj1, environment1->freezer])
+
+
+// Step 5: Ice cube is moved from the freezer to the table (outside environment)
+executePattern(moveObjectEnvironment, "0", [object1->obj1, environmentFrom->freezer, environmentTo->outside])
+
+
+// Step 6: Exchange heat energy between the substance and the environment.  Exit when it can perform a phase transition.
+//while (meetsRequirements(ChangeOfStateWithSubstanceFromTo, [fromSOM.SOM == obj1."state of matter", fromSOM.materialName == obj1."material", COS.heatingOrCooling == "heat"], [sub1->obj1]) == 0)
+    executePattern(heatTransferEnvironmentObject, [thingName1 == obj1."name", envName1 == outside."name"], [object1->obj1, environment1->outside], temporalblocks=[step])
+
+	executePattern(heatTransferEnvironmentObject, [thingName1 == obj1."name", envName1 == outside."name"], [object1->obj1, environment1->outside], temporalblocks=[step])
+	executePattern(heatTransferEnvironmentObject, [thingName1 == obj1."name", envName1 == outside."name"], [object1->obj1, environment1->outside], temporalblocks=[step])
+	executePattern(heatTransferEnvironmentObject, [thingName1 == obj1."name", envName1 == outside."name"], [object1->obj1, environment1->outside], temporalblocks=[step])
+	executePattern(heatTransferEnvironmentObject, [thingName1 == obj1."name", envName1 == outside."name"], [object1->obj1, environment1->outside], temporalblocks=[step])
+	executePattern(heatTransferEnvironmentObject, [thingName1 == obj1."name", envName1 == outside."name"], [object1->obj1, environment1->outside], temporalblocks=[step])
+
+//endwhile
+
+populateInfPatMatches       // Should do this automatically
+
+// Step 7: When the substance reaches a phase transition point, change the state of matter
+executePattern(ChangeOfStateWithSubstanceFromTo, [fromSOM.SOM == obj1."state of matter", fromSOM.materialName == obj1."material", COS.heatingOrCooling == "heat"], [sub1->obj1])
+printInstances
+
+
+// Step 8: Answer verification -- the answer is the changed state of matter.
+verifyAnswer(obj1."state of matter" == "liquid")
+
+addExplanationText("Completed.")
+
+exportInfPatHTML()			// **
+exportTableStoreHTML()
+exportStateSpaceHTML()
+
+exportInfPatDebugHTML()			// new
+
+

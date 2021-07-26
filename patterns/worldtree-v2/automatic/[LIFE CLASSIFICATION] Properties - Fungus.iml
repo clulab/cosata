@@ -1,0 +1,58 @@
+// Automatically converted pattern
+inferencepattern LIFE_CLASSIFICATION_Properties_Fungus
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a mushroom is a kind of fungus     (ea91-5664-cefc-e7ee) [ HYPONYM:"mushroom", HYPERNYM:"fungus" ]
+	//        HINTROW mold is a kind of fungus     (0d28-3295-e473-c310) [ HYPONYM:"mold", HYPERNYM:"fungus" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "fungus"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "fungus"]
+
+	// CENTRAL         PROCESSROLES: In the food chain process fungi have the role of decomposer     (7435-65b5-4a59-89b4) [ PROCESS_NAME:"food chain", ACTOR_COMMON_EXAMPLE:"fungus", ROLE:"decomposer" ]
+	//row autoRow1 = [UUID:"7435-65b5-4a59-89b4", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "fungus", ROLE: "decomposer"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"7435-65b5-4a59-89b4", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "fungus", ROLE: "decomposer"]
+
+	// CENTRAL         ACTION: fungi absorb nutrients from decaying tissue     (57be-0d7a-49ad-762b) [ AGENT_OBJECT:"fungus", ACTION2:"absorb", OBJECT_PROPERTY:"nutrient", SCOPE2:"from decay tissue" ]
+	//row autoRow2 = [UUID:"57be-0d7a-49ad-762b", AGENT_OBJECT: "fungus", ACTION2: "absorb", OBJECT_PROPERTY: "nutrient", SCOPE2: "from decay tissue"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"57be-0d7a-49ad-762b", AGENT_OBJECT: "fungus", ACTION2: "absorb", OBJECT_PROPERTY: "nutrient", SCOPE2: "from decay tissue"]
+
+	// CENTRAL         KINDOF: a fungus is a kind of living thing     (4ae9-5a73-3f04-48f7) [ HYPONYM:"fungus", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow3 = [UUID:"4ae9-5a73-3f04-48f7", HYPONYM: "fungus", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"4ae9-5a73-3f04-48f7", HYPONYM: "fungus", HYPERNYM: "live thing"]
+
+	// CENTRAL         INSTANCES: a decomposer is usually a bacterium ; fungus     (4189-af64-dc68-aab7) [ INSTANCE:"decomposer", QUANTIFIER:"usually", CLASS:"bacterium;fungus" ]
+	//row autoRow4 = [UUID:"4189-af64-dc68-aab7", INSTANCE: "decomposer", QUANTIFIER: "usually", CLASS: "bacterium"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4189-af64-dc68-aab7", INSTANCE: "decomposer", QUANTIFIER: "usually", CLASS: "bacterium"]
+
+	// CENTRAL         KINDOF: a fungus is a kind of eukaryote     (a2a5-d7a1-78bb-3c45) [ HYPONYM:"fungus", HYPERNYM:"eukaryote" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"a2a5-d7a1-78bb-3c45", HYPONYM: "fungus", HYPERNYM: "eukaryote"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"a2a5-d7a1-78bb-3c45", HYPONYM: "fungus", HYPERNYM: "eukaryote"]
+
+	// CENTRAL         PROP-THINGS: fungi can be multicellular     (a31f-d867-e1b3-30c8) [ VALUE:"multicellular" ]
+	//row autoRow6 = [UUID:"a31f-d867-e1b3-30c8", VALUE: "multicellular"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"a31f-d867-e1b3-30c8", VALUE: "multicellular"]
+
+	// CENTRAL        (OPTIONAL) SOURCEOF: green algae are a source of food for fungi in a lichen     (130f-5baf-16d0-3283) [ AGENT:"green alga", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"food", AGENT_IT_PROVIDES_THING_TO:"fungus", SCOPE:"in lichen" ]
+	//row *autoRow7 = [UUID:"130f-5baf-16d0-3283", AGENT: "green alga", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "fungus", SCOPE: "in lichen"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"130f-5baf-16d0-3283", AGENT: "green alga", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "fungus", SCOPE: "in lichen"]
+
+	// CENTRAL        (OPTIONAL) MADEOF: a lichen is made of fungi and green algae in a symbiotic relationship     (ef7b-e31b-e0e1-a111) [ OBJECT:"lichen", MATERIAL:"fungus green alga", SCOPE:"in symbiotic relationship" ]
+	//row *autoRow8 = [UUID:"ef7b-e31b-e0e1-a111", OBJECT: "lichen", MATERIAL: "fungus green alga", SCOPE: "in symbiotic relationship"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"ef7b-e31b-e0e1-a111", OBJECT: "lichen", MATERIAL: "fungus green alga", SCOPE: "in symbiotic relationship"]
+
+	// CENTRAL         INSTANCES: fungi are sometimes single-celled organisms     (781a-3708-5309-828a) [ INSTANCE:"fungus", QUANTIFIER:"sometimes", ADJ:"single-celled;single cell", CLASS:"organism" ]
+	//row autoRow9 = [UUID:"781a-3708-5309-828a", INSTANCE: "fungus", QUANTIFIER: "sometimes", ADJ: "single cell", CLASS: "organism"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"781a-3708-5309-828a", INSTANCE: "fungus", QUANTIFIER: "sometimes", ADJ: "single cell", CLASS: "organism"]
+
+	// CENTRAL         PARTOF: fungi are part of the biological kingdom Fungi     (fd2c-c66e-7252-9c71) [ PART:"fungus", QUANTIFIER2:"biological kingdom", WHOLE:"fungus" ]
+	//row autoRow10 = [UUID:"fd2c-c66e-7252-9c71", PART: "fungus", QUANTIFIER2: "biological kingdom", WHOLE: "fungus"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"fd2c-c66e-7252-9c71", PART: "fungus", QUANTIFIER2: "biological kingdom", WHOLE: "fungus"]
+
+endinferencepattern

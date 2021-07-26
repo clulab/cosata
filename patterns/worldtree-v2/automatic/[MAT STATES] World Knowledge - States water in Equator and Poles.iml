@@ -1,0 +1,60 @@
+// Automatically converted pattern
+inferencepattern MAT_STATES_World_Knowledge_States_water_in_Equator_and_Poles
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C     (e474-2a11-6e7b-ae8b) [ MATERIAL_NAME:"water", STATEOFMATTER:"gas", FORM_NAME:"water vapor;steam", LOWER_BOUND:"373;212;100", UPPER_BOUND:"100000000000", UNITS:"k;f;c" ]
+	//row autoRow0 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C     (4a5a-9115-28a9-b97b) [ MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice", LOWER_BOUND:"0;-459;-273;459;273", UPPER_BOUND:"273;32;0", UNITS:"k;f;c" ]
+	//row autoRow1 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//row autoRow2 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"]
+
+	// CENTRAL         LOCATIONS: ice is found in arctic environments     (fff8-5c88-0710-70ae) [ THING_PROCESS:"ice", LOCATION:"arctic environment" ]
+	//row autoRow3 = [UUID:"fff8-5c88-0710-70ae", THING_PROCESS: "ice", LOCATION: "arctic environment"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"fff8-5c88-0710-70ae", THING_PROCESS: "ice", LOCATION: "arctic environment"]
+
+	// CENTRAL         LOCATIONS: water vapor is found in the atmosphere     (7896-0ee6-9c3c-f3c1) [ THING_PROCESS:"water vapor", LOCATION:"atmosphere" ]
+	//row autoRow4 = [UUID:"7896-0ee6-9c3c-f3c1", THING_PROCESS: "water vapor", LOCATION: "atmosphere"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"7896-0ee6-9c3c-f3c1", THING_PROCESS: "water vapor", LOCATION: "atmosphere"]
+
+	// CENTRAL         CONTAINS: a body of water contains water     (b927-5436-1d17-c396) [ OBJECT_AGENT:"body of water", WHAT_IT_CONTAINS:"water" ]
+	//row autoRow5 = [UUID:"b927-5436-1d17-c396", OBJECT_AGENT: "body of water", WHAT_IT_CONTAINS: "water"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"b927-5436-1d17-c396", OBJECT_AGENT: "body of water", WHAT_IT_CONTAINS: "water"]
+
+	// CENTRAL         LOCATIONS: bodies of water are located on the surface of the Earth     (02ad-ecb6-9455-502a) [ THING_PROCESS:"body of water", LOCATION:"surface", SCOPE:"of earth" ]
+	//row autoRow6 = [UUID:"02ad-ecb6-9455-502a", THING_PROCESS: "body of water", LOCATION: "surface", SCOPE: "of earth"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"02ad-ecb6-9455-502a", THING_PROCESS: "body of water", LOCATION: "surface", SCOPE: "of earth"]
+
+	// CENTRAL         KINDOF: water is a kind of liquid at room temperature     (3961-d09c-4b9a-a6f7) [ HYPONYM:"water", HYPERNYM:"liquid", SCOPE2:"at room temperature" ]
+	//row autoRow7 = [UUID:"3961-d09c-4b9a-a6f7", HYPONYM: "water", HYPERNYM: "liquid", SCOPE2: "at room temperature"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3961-d09c-4b9a-a6f7", HYPONYM: "water", HYPERNYM: "liquid", SCOPE2: "at room temperature"]
+
+	// CENTRAL         ACTION: water exists in liquid ; solid ; gas state on Earth     (e7e6-0a8e-4db4-7402) [ AGENT_OBJECT:"water", ACTION2:"exist in", OBJECT_PROPERTY:"liquid;solid;gas state", WHEN_WHERE:"on earth" ]
+	//row autoRow8 = [UUID:"e7e6-0a8e-4db4-7402", AGENT_OBJECT: "water", ACTION2: "exist in", OBJECT_PROPERTY: "gas state", WHEN_WHERE: "on earth"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"e7e6-0a8e-4db4-7402", AGENT_OBJECT: "water", ACTION2: "exist in", OBJECT_PROPERTY: "gas state", WHEN_WHERE: "on earth"]
+
+	// CENTRAL         PROP-THINGS: the water is in liquid or gas state of matter near the equator     (f7a9-3087-100f-1e47) [ THING:"water", VALUE:"in liquid gas", ATTRIBUTE:"state of matt", SCOPE_RELATIVETO:"near equator" ]
+	//row autoRow9 = [UUID:"f7a9-3087-100f-1e47", THING: "water", VALUE: "in liquid gas", ATTRIBUTE: "state of matt", SCOPE_RELATIVETO: "near equator"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"f7a9-3087-100f-1e47", THING: "water", VALUE: "in liquid gas", ATTRIBUTE: "state of matt", SCOPE_RELATIVETO: "near equator"]
+
+	// CENTRAL         PROP-THINGS: the water is only in a solid or liquid state of matter at the South Pole     (391d-a189-6a8f-ec12) [ THING:"water", QUALIFIER2:"only", VALUE:"in solid liquid", ATTRIBUTE:"state of matt", SCOPE_RELATIVETO:"at south pole" ]
+	//row autoRow10 = [UUID:"391d-a189-6a8f-ec12", THING: "water", QUALIFIER2: "only", VALUE: "in solid liquid", ATTRIBUTE: "state of matt", SCOPE_RELATIVETO: "at south pole"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"391d-a189-6a8f-ec12", THING: "water", QUALIFIER2: "only", VALUE: "in solid liquid", ATTRIBUTE: "state of matt", SCOPE_RELATIVETO: "at south pole"]
+
+	// CENTRAL        (OPTIONAL) COMPARISON: the equator receives more sunlight than the poles on Earth     (6f54-6f77-4dff-56e3) [ THING:"equator", ACTION1:"receive", COMPARISON:"much", WHAT:"sunlight", THING_COMPARED:"pole", SCOPE:"on earth" ]
+	//  Notes: b401-733c-cfa3-138b->6f54-6f77-4dff-56e3
+	//row *autoRow11 = [UUID:"6f54-6f77-4dff-56e3", THING: "equator", ACTION1: "receive", COMPARISON: "much", WHAT: "sunlight", THING_COMPARED: "pole", SCOPE: "on earth"] //OVER-CONSTR.
+	row *autoRow11 = [UUID:"6f54-6f77-4dff-56e3", THING: "equator", ACTION1: "receive", COMPARISON: "much", WHAT: "sunlight", THING_COMPARED: "pole", SCOPE: "on earth"]
+
+endinferencepattern

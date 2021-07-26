@@ -1,0 +1,94 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Origin_Nutrients_in_Soil
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       SOURCEOF: humus is a source of nutrients in soil     (3c86-6978-b91e-9903) [ AGENT:"humus", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"nutrient", SCOPE:"in soil" ]
+	//        HINTROW organic matter is a source of nutrients in soil     (4cea-623e-a78d-cea8) [ AGENT:"organic matt", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"nutrient", SCOPE:"in soil" ]
+	//  Notes: source of nutrients in soil
+	//row autoRow0 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "nutrient", SCOPE: "in soil"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "nutrient", SCOPE: "in soil"]
+
+	// CENTRALSW       IFTHEN: if a tree falls then that tree is dead     (4809-553c-eae1-9b6f) [ THING:"tree", ACTION1:"fall", ACTOR_AGENT_PROCESS2:"that tree", OBJECT_PROPERTY3:"dead" ]
+	//        HINTROW if a leaf falls off of a tree then that leaf is dead     (e03e-ee31-4d99-c0fe) [ THING:"leaf", ACTION1:"fall off of", OBJECT_PATIENT1:"tree", ACTOR_AGENT_PROCESS2:"that leaf", ADJ_QUANTIFIER3:"dead" ]
+	//        HINTROW if a tree is cut down then that tree will die     (767b-d14d-c5e5-ba84) [ THING:"tree", ACTION1:"cut", ACTOR_AGENT_PROCESS2:"that tree", ACTION3:"die" ]
+	//row autoRow1 = [TABLE:"IFTHEN", ACTOR_AGENT_PROCESS2: "that"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"IFTHEN", ACTOR_AGENT_PROCESS2: "that"+*"POS:NN"]
+
+	// GROUNDING       KINDOF: a bear is a kind of animal     (5639-8136-4788-3ee6) [ HYPONYM:"bear", HYPERNYM:"animal" ]
+	//        HINTROW a bat is a kind of animal     (7ca2-740e-37f4-0a9e) [ HYPONYM:"bat", HYPERNYM:"animal" ]
+	//  Notes: dead animals examples
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW a lemon tree is a kind of plant     (9cf1-bc5a-d350-5541) [ HYPONYM:"lemon tree", HYPERNYM:"plant" ]
+	//  Notes: dead plants examples
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// GROUNDING       KINDOF: an earthworm is a kind of decomposer     (cf2d-8332-c29b-2c57) [ HYPONYM:"earthworm", HYPERNYM:"decomposer" ]
+	//        HINTROW a bacterium is a kind of decomposer     (8c18-8f91-c1ab-742b) [ HYPONYM:"bacterium", HYPERNYM:"decomposer" ]
+	//        HINTROW a microorganism is a kind of decomposer     (a817-2b63-7962-2e34) [ HYPONYM:"microorganism", HYPERNYM:"decomposer" ]
+	//  Notes: decomposer examples
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "decomposer"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "decomposer"]
+
+	// CENTRAL         TRANSFER: decomposition is when a decomposer recycles ; returns nutrients ; nitrogen from dead organisms to the soil by eating those dead organisms     (12d9-60df-23de-f00f) [ PROCESS_NAME:"decompose", ACTOR_WHO:"decomposer", VERB:"recycle;return", WHAT:"nutrient;nitrogen", SOURCE:"dead organism", DESTINATION:"soil", BY_THROUGH_HOW:"eat dead organism" ]
+	//row autoRow5 = [UUID:"12d9-60df-23de-f00f", PROCESS_NAME: "decompose", ACTOR_WHO: "decomposer", VERB: "recycle", WHAT: "nutrient", SOURCE: "dead organism", DESTINATION: "soil", BY_THROUGH_HOW: "eat dead organism"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"12d9-60df-23de-f00f", PROCESS_NAME: "decompose", ACTOR_WHO: "decomposer", VERB: "recycle", WHAT: "nutrient", SOURCE: "dead organism", DESTINATION: "soil", BY_THROUGH_HOW: "eat dead organism"]
+
+	// CENTRAL         CHANGE-VEC: decomposition increases the amount of nutrients ; nitrogen in the soil     (39b8-47a9-eee1-d2d4) [ AGENT_OBJECT:"decompose", DIRECTION:"increase", QUANTITY:"amount of", PATIENT:"nutrient;nitrogen", SCOPE2:"in soil" ]
+	//  Notes: Nutrients Source A: decomposition
+	//row autoRow6 = [UUID:"39b8-47a9-eee1-d2d4", AGENT_OBJECT: "decompose", DIRECTION: "increase", QUANTITY: "amount of", PATIENT: "nutrient", SCOPE2: "in soil"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"39b8-47a9-eee1-d2d4", AGENT_OBJECT: "decompose", DIRECTION: "increase", QUANTITY: "amount of", PATIENT: "nutrient", SCOPE2: "in soil"]
+
+	// CENTRAL         STAGE-IN-PROCESS: decomposition is a stage in the nutrient recycling process     (2078-7d29-3896-595e) [ STAGE:"decompose", PROCESS:"nutrient recycle" ]
+	//row autoRow7 = [UUID:"2078-7d29-3896-595e", STAGE: "decompose", PROCESS: "nutrient recycle"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"2078-7d29-3896-595e", STAGE: "decompose", PROCESS: "nutrient recycle"]
+
+	// CENTRAL        (OPTIONAL) CHANGE: decomposition is when a decomposer breaks down dead organisms     (f0e5-d444-871d-9ea3) [ PROCESS_NAME:"decompose", ACTOR_WHO:"decomposer", VERB:"break down", WHAT:"dead organism" ]
+	//row *autoRow8 = [UUID:"f0e5-d444-871d-9ea3", PROCESS_NAME: "decompose", ACTOR_WHO: "decomposer", VERB: "break down", WHAT: "dead organism"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"f0e5-d444-871d-9ea3", PROCESS_NAME: "decompose", ACTOR_WHO: "decomposer", VERB: "break down", WHAT: "dead organism"]
+
+	// CENTRAL        (OPTIONAL) REQUIRES: a plant ; living thing requires nutrients to grow     (085c-28bf-bb51-79e6) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"nutrient", FOR_PURPOSE:"grow" ]
+	//row *autoRow9 = [UUID:"085c-28bf-bb51-79e6", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"085c-28bf-bb51-79e6", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "grow"]
+
+	// CENTRAL         MADEOF: humus is made of dead plants ; dead animals     (25ca-113e-fd20-fb52) [ OBJECT:"humus", MATERIAL:"dead plant;dead animal" ]
+	//row autoRow10 = [UUID:"25ca-113e-fd20-fb52", OBJECT: "humus", MATERIAL: "dead plant"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"25ca-113e-fd20-fb52", OBJECT: "humus", MATERIAL: "dead plant"]
+
+	// CENTRAL         CHANGE-VEC: renewing soil increases the nutrients in soil     (900e-36d2-bd30-b664) [ AGENT_OBJECT:"renew soil", DIRECTION:"increase", PATIENT:"nutrient", SCOPE2:"in soil" ]
+	//  Notes: 3d47-6c34-3450-a5bb->900e-36d2-bd30-b664Nutrient Source B: renewing soil
+	//row autoRow11 = [UUID:"900e-36d2-bd30-b664", AGENT_OBJECT: "renew soil", DIRECTION: "increase", PATIENT: "nutrient", SCOPE2: "in soil"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"900e-36d2-bd30-b664", AGENT_OBJECT: "renew soil", DIRECTION: "increase", PATIENT: "nutrient", SCOPE2: "in soil"]
+
+	// CENTRAL         KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"]
+
+	// CENTRAL         KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"]
+
+	// CENTRAL         INSTANCES: a decomposer is usually a bacterium ; fungus     (4189-af64-dc68-aab7) [ INSTANCE:"decomposer", QUANTIFIER:"usually", CLASS:"bacterium;fungus" ]
+	//row autoRow14 = [UUID:"4189-af64-dc68-aab7", INSTANCE: "decomposer", QUANTIFIER: "usually", CLASS: "bacterium"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"4189-af64-dc68-aab7", INSTANCE: "decomposer", QUANTIFIER: "usually", CLASS: "bacterium"]
+
+	// LEXGLUE         SYNONYMY: dead plants means dead plant material     (2ce2-ff8c-2d8a-2242) [ X1:"dead plant", X2:"dead plant material" ]
+	//row autoRow15 = [UUID:"2ce2-ff8c-2d8a-2242", X1: "dead plant", X2: "dead plant material"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"2ce2-ff8c-2d8a-2242", X1: "dead plant", X2: "dead plant material"]
+
+	// LEXGLUE         OPPOSITES: an increase is the opposite of a decrease     (bfdf-b468-ee22-1b60) [ THING_PROPERTY1:"increase", THING_PROPERTY2:"decrease" ]
+	//row autoRow16 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"]
+
+endinferencepattern

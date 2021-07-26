@@ -1,0 +1,54 @@
+// Automatically converted pattern
+inferencepattern LIFEENVADPAnimalsHuntWithX
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+	// CENTRALSW       USEDFOR: claws are used to catch prey by some predators
+	// TODO: Related matching? "catch prey", "some predators"
+	row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT:<varName7>, FOR_PURPOSE:<vb> + "prey", AGENT_THING_WHO_USES:"predator"]
+	//row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT:<varName7>, AGENT_THING_WHO_USES:"predator"]		
+
+	// CENTRAL         ACTION: hunting is when an animal kills another animal to eat that animal
+	//row autoRow1 = [UUID:"e1e4-0797-e545-e336", AGENT_OBJECT:"animal", ACTION:"kill", OBJECT_PROPERTY:"animal", FOR_PURPOSE:"animal"]
+
+	// CENTRALSW       PARTOF: a claw sometimes is a part of a predator
+	//        HINTROW a claw is often part of a bird
+	row autoRow2 = [TABLE:"PARTOF", PART:<varName7>, WHOLE:"predator"]
+
+	/*
+	// CENTRAL         ACTION: a predator eats other animals for food
+	row autoRow3 = [UUID:"9bdc-0291-3f7e-751d", AGENT_OBJECT:"predator", ACTION:"eat", OBJECT_PROPERTY:"animal", FOR_PURPOSE:"food"]
+
+	// CENTRAL         KINDOF: prey is a kind of food for predators
+	row autoRow4 = [UUID:"d719-81ad-03ff-57f0", HYPONYM:"prey", HYPERNYM:"food", FOR_PURPOSE:"predator"]
+
+	// GROUNDING       XIVORE: an hawk is a kind of predator
+	//        HINTROW a hawk is a kind of bird
+	row autoRow5 = [TABLE:"XIVORE", ANIMAL:"hawk", XIVORE:"predator"]
+
+	// CENTRAL         CONSUMERS-EATING: predators eat prey
+	row autoRow6 = [UUID:"fb00-41ad-f198-b5ac", ORGANISM:"predator", EATS_CONSUMES:"eat", ORGANISM:"prey"]
+
+	// CENTRAL         CONSUMERS-EATING: hawks ; eagles eat snakes ; lizards ; rats ; rabbits ; mice
+	row autoRow7 = [UUID:"d28f-0727-460f-5ab6", ORGANISM:"hawk", EATS_CONSUMES:"eat", ORGANISM:"snake"]
+*/
+	
+	// CENTRAL         ACTION: a predator usually kills its prey to eat it
+	row autoRow8 = [UUID:"952c-f654-fec2-8b06", AGENT_OBJECT:"predator", ACTION:"kill", OBJECT_PROPERTY:"prey", FOR_PURPOSE:"eat"]
+	//row autoRow8 = [UUID:"952c-f654-fec2-8b06"]
+
+	
+	// GROUNDING       KINDOF: a hawk is a kind of animal
+	//        HINTROW an eagle is a kind of animal
+	row autoRow9 = [TABLE:"KINDOF", HYPONYM:"hawk", HYPERNYM:"animal"]
+
+	// GROUNDING       KINDOF: a snake is a kind of animal
+	//        HINTROW a lizard is a kind of animal
+	//        HINTROW a rabbit is a kind of animal
+	//        HINTROW a mouse is a kind of animal
+	row autoRow10 = [TABLE:"KINDOF", HYPONYM:"snake", HYPERNYM:"animal"]
+
+endinferencepattern

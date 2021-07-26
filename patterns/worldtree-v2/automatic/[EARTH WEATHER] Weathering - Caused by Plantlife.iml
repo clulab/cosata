@@ -1,0 +1,80 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Weathering_Caused_by_Plantlife
+
+	// Plain text description
+	description = "future potential pattern Soil Erosion."
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//        HINTROW a plant is a kind of living thing     (2e89-d8e8-a8fb-9acc) [ HYPONYM:"plant", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "plant"]
+
+	// GROUNDING       KINDOF: a boulder is a kind of large rock     (93f5-d52b-1446-d912) [ HYPONYM:"boulder", SCOPE1:"large", HYPERNYM:"rock" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "boulder", SCOPE1: "large", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "boulder", SCOPE1: "large", HYPERNYM: "rock"]
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW grass is a kind of green plant     (9d2f-b39b-3921-a54c) [ HYPONYM:"grass", SCOPE1:"green", HYPERNYM:"plant" ]
+	//        HINTROW a seedling is a kind of young plant     (0ce1-6d50-d5df-3d0e) [ HYPONYM:"seedling", SCOPE1:"young", HYPERNYM:"plant" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// CENTRAL         CHANGE: weathering ; mechanical weathering means breaking down rocks ; surface materials from a larger whole into smaller pieces by weather ; mechanical means     (791e-1c71-7a1d-d10a) [ PROCESS_NAME:"weather;mechanical weather", VERB:"break", WHAT:"rock;surface material", FROM:"large whole", INTO:"small piece", BY_THROUGH_HOW:"weather;mechanical mean" ]
+	//row autoRow3 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"]
+
+	// CENTRAL         DURATIONS: weathering ; erosion usually occurs over a period of many years which is considered a long time     (3823-1fac-a50b-665f) [ EVENT:"weather;erode", QUANTIFIER:"usually", LOWERBOUND:"many", DURATIONUNIT:"year", MAGNITUDE:"long", ATTRIBUTE:"time" ]
+	//row autoRow4 = [UUID:"3823-1fac-a50b-665f", EVENT: "weather", QUANTIFIER: "usually", LOWERBOUND: "many", DURATIONUNIT: "year", MAGNITUDE: "long", ATTRIBUTE: "time"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3823-1fac-a50b-665f", EVENT: "weather", QUANTIFIER: "usually", LOWERBOUND: "many", DURATIONUNIT: "year", MAGNITUDE: "long", ATTRIBUTE: "time"]
+
+	// CENTRAL         EXAMPLES: An example of weathering is a plant root growing into a crack in rock     (9066-bf57-f1ce-0134) [ AGENT_OBJECT1:"weather", AGENT_OBJECT2:"plant root", VERB2:"grow", AGENT_OBJECT3:"into crack in rock" ]
+	//row autoRow5 = [UUID:"9066-bf57-f1ce-0134", AGENT_OBJECT1: "weather", AGENT_OBJECT2: "plant root", VERB2: "grow", AGENT_OBJECT3: "into crack in rock"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"9066-bf57-f1ce-0134", AGENT_OBJECT1: "weather", AGENT_OBJECT2: "plant root", VERB2: "grow", AGENT_OBJECT3: "into crack in rock"]
+
+	// CENTRAL         ACTION: a plant 's roots slowly break down rocks as the roots grow     (c083-9545-9c5e-f943) [ ADJ:"plant", AGENT_OBJECT:"root", ACTION2:"slowly break", OBJECT_PROPERTY:"rock", WHEN_WHERE:"a root grow" ]
+	//row autoRow6 = [UUID:"c083-9545-9c5e-f943", ADJ: "plant", AGENT_OBJECT: "root", ACTION2: "slowly break", OBJECT_PROPERTY: "rock", WHEN_WHERE: "a root grow"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"c083-9545-9c5e-f943", ADJ: "plant", AGENT_OBJECT: "root", ACTION2: "slowly break", OBJECT_PROPERTY: "rock", WHEN_WHERE: "a root grow"]
+
+	// CENTRAL         CHANGE: break down means change from a whole into pieces     (400d-d80d-09a3-3206) [ PROCESS_NAME:"break", VERB:"change", FROM:"whole", INTO:"piece" ]
+	//row autoRow7 = [UUID:"400d-d80d-09a3-3206", PROCESS_NAME: "break", VERB: "change", FROM: "whole", INTO: "piece"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"400d-d80d-09a3-3206", PROCESS_NAME: "break", VERB: "change", FROM: "whole", INTO: "piece"]
+
+	// CENTRAL         IFTHEN: if a tree is located near a sidewalk then the roots of that tree might crack the sidewalk     (33fe-9382-75a8-9316) [ THING:"tree", ACTION1:"locate near", OBJECT_PATIENT1:"sidewalk", ACTOR_AGENT_PROCESS2:"root", PROPERTY_SCOPE:"of tree", ACTION3:"crack", OBJECT_PROPERTY3:"sidewalk" ]
+	//row autoRow8 = [UUID:"33fe-9382-75a8-9316", THING: "tree", ACTION1: "locate near", OBJECT_PATIENT1: "sidewalk", ACTOR_AGENT_PROCESS2: "root", PROPERTY_SCOPE: "of tree", ACTION3: "crack", OBJECT_PROPERTY3: "sidewalk"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"33fe-9382-75a8-9316", THING: "tree", ACTION1: "locate near", OBJECT_PATIENT1: "sidewalk", ACTOR_AGENT_PROCESS2: "root", PROPERTY_SCOPE: "of tree", ACTION3: "crack", OBJECT_PROPERTY3: "sidewalk"]
+
+	// CENTRAL         IFTHEN: when something breaks , a crack may form in that something     (0671-af0e-d6f3-eacf) [ THING:"something", ACTION1:"break", ACTOR_AGENT_PROCESS2:"crack", ACTION3:"form", SCOPE4:"in something" ]
+	//row autoRow9 = [UUID:"0671-af0e-d6f3-eacf", THING: "something", ACTION1: "break", ACTOR_AGENT_PROCESS2: "crack", ACTION3: "form", SCOPE4: "in something"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"0671-af0e-d6f3-eacf", THING: "something", ACTION1: "break", ACTOR_AGENT_PROCESS2: "crack", ACTION3: "form", SCOPE4: "in something"]
+
+	// CENTRAL         CHANGE: erosion ; weathering changes the Earth 's surface     (4267-93f0-e703-47f2) [ ACTOR_WHO:"erode;weather", VERB:"change;change", WHAT:"earth surface" ]
+	//row autoRow10 = [UUID:"4267-93f0-e703-47f2", ACTOR_WHO: "erode", VERB: "change", WHAT: "earth surface"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"4267-93f0-e703-47f2", ACTOR_WHO: "erode", VERB: "change", WHAT: "earth surface"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: cracking something may cause that something to break apart     (7007-3239-2cab-e863) [ CONDITION_VERB:"crack", CONDITION_PATIENT:"something", RESULT_AGENT:"that something", RESULT_VERB:"break" ]
+	//row *autoRow11 = [UUID:"7007-3239-2cab-e863", CONDITION_VERB: "crack", CONDITION_PATIENT: "something", RESULT_AGENT: "that something", RESULT_VERB: "break"] //OVER-CONSTR.
+	row *autoRow11 = [UUID:"7007-3239-2cab-e863", CONDITION_VERB: "crack", CONDITION_PATIENT: "something", RESULT_AGENT: "that something", RESULT_VERB: "break"]
+
+	// CENTRAL         LOCATIONS: weathering occurs at the the surface of the Earth     (a215-0329-ae3c-d11d) [ THING_PROCESS:"weather", LOCATION:"surface", SCOPE:"of earth" ]
+	//row autoRow12 = [UUID:"a215-0329-ae3c-d11d", THING_PROCESS: "weather", LOCATION: "surface", SCOPE: "of earth"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"a215-0329-ae3c-d11d", THING_PROCESS: "weather", LOCATION: "surface", SCOPE: "of earth"]
+
+	// CENTRAL         KINDOF: weathering is a kind of erosion     (1272-6781-b4fb-96ab) [ HYPONYM:"weather", HYPERNYM:"erode" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"1272-6781-b4fb-96ab", HYPONYM: "weather", HYPERNYM: "erode"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"1272-6781-b4fb-96ab", HYPONYM: "weather", HYPERNYM: "erode"]
+
+	// LEXGLUE         SYNONYMY: to break down means to break into smaller pieces     (0610-89d4-acb3-b0dc) [ ACTION1:"break", ACTION2:"break", Y2:"into small piece" ]
+	//row autoRow14 = [UUID:"0610-89d4-acb3-b0dc", ACTION1: "break", ACTION2: "break", Y2: "into small piece"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"0610-89d4-acb3-b0dc", ACTION1: "break", ACTION2: "break", Y2: "into small piece"]
+
+	// LEXGLUE         SYNONYMY: to cause something means to contribute to that something happening     (29f7-bead-ba29-6a7f) [ ACTION1:"cause", Y1:"something", ACTION2:"contribute something happen" ]
+	//row autoRow15 = [UUID:"29f7-bead-ba29-6a7f", ACTION1: "cause", Y1: "something", ACTION2: "contribute something happen"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"29f7-bead-ba29-6a7f", ACTION1: "cause", Y1: "something", ACTION2: "contribute something happen"]
+
+endinferencepattern

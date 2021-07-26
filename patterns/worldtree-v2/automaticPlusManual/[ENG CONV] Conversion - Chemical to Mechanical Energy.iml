@@ -1,0 +1,84 @@
+// Automatically converted pattern
+inferencepattern ENG_CONV_Conversion_Chemical_to_Mechanical_Energy
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a car is a kind of automobile     (eb14-f908-f76d-7cf0) [ HYPONYM:"car", HYPERNYM:"automobile" ]
+	//        HINTROW a motorcycle is a kind of automobile     (c9c3-ae93-6335-a96e) [ HYPONYM:"motorcycle", HYPERNYM:"automobile" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "car", HYPERNYM: "automobile"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "automobile"]
+
+	// GROUNDING       KINDOF: gasoline is a kind of fuel     (96b8-8897-2576-7ee6) [ HYPONYM:"gasoline", HYPERNYM:"fuel" ]
+	//        HINTROW coal is a kind of fuel     (bc22-ba46-53be-ea3a) [ HYPONYM:"coal", HYPERNYM:"fuel" ]
+	//        HINTROW biofuel is a kind of fuel     (5309-2b3c-1fc5-ecbd) [ HYPONYM:"biofuel", HYPERNYM:"fuel" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "fuel"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "fuel"]
+
+	// CENTRAL         CHANGE: a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion     (144d-b049-cabe-6198) [ ACTOR_WHO:"internal combust engine;car engine;automobile engine", QUALIFIER:"usually", VERB:"convert", FROM:"fuel;chemical energy", INTO:"mechanical energy heat energy", BY_THROUGH_HOW:"combust" ]
+	//row autoRow2 = [UUID:"144d-b049-cabe-6198", ACTOR_WHO: "internal combust engine", QUALIFIER: "usually", VERB: "convert", FROM: "chemical energy", INTO: "mechanical energy heat energy", BY_THROUGH_HOW: "combust"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"144d-b049-cabe-6198", ACTOR_WHO: "internal combust engine", QUALIFIER: "usually", VERB: "convert", FROM: "chemical energy", INTO: "mechanical energy heat energy", BY_THROUGH_HOW: "combust"]
+
+	// CENTRAL         CHANGE: combustion means fire converts chemical energy into light energy and heat energy     (941b-2c2b-0aae-ee3a) [ PROCESS_NAME:"combust", ACTOR_WHO:"fire", VERB:"convert", FROM:"chemical energy", INTO:"light energy heat energy" ]
+	//row autoRow3 = [UUID:"941b-2c2b-0aae-ee3a", PROCESS_NAME: "combust", ACTOR_WHO: "fire", VERB: "convert", FROM: "chemical energy", INTO: "light energy heat energy"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"941b-2c2b-0aae-ee3a", PROCESS_NAME: "combust", ACTOR_WHO: "fire", VERB: "convert", FROM: "chemical energy", INTO: "light energy heat energy"]
+
+	// CENTRAL         CHANGE: energy transformation means one kind of energy changes into another kind of energy     (3d34-b43e-8a7e-07fd) [ PROCESS_NAME:"energy transformation", ACTOR_WHO:"one kind of energy", VERB:"change", INTO:"kind of energy" ]
+	//row autoRow4 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"]
+
+	// CENTRAL         USEDFOR: an internal combustion engine is used to move the automobile     (f58a-3073-53ae-87b4) [ AGENT_OBJECT:"internal combust engine", FOR_PURPOSE:"move", PATIENT:"automobile" ]
+	//row autoRow5 = [UUID:"f58a-3073-53ae-87b4", AGENT_OBJECT: "internal combust engine", FOR_PURPOSE: "move", PATIENT: "automobile"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"f58a-3073-53ae-87b4", AGENT_OBJECT: "internal combust engine", FOR_PURPOSE: "move", PATIENT: "automobile"]
+
+	// CENTRAL         REQUIRES: a combustion engine requires fuel to operate     (5029-a71e-ab37-c4f9) [ OBJECT_AGENT_PROCESS:"combust engine", VERB_REQUIRES:"require", OBJECT:"fuel", FOR_PURPOSE:"operate" ]
+	//row autoRow6 = [UUID:"5029-a71e-ab37-c4f9", OBJECT_AGENT_PROCESS: "combust engine", VERB_REQUIRES: "require", OBJECT: "fuel", FOR_PURPOSE: "operate"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"5029-a71e-ab37-c4f9", OBJECT_AGENT_PROCESS: "combust engine", VERB_REQUIRES: "require", OBJECT: "fuel", FOR_PURPOSE: "operate"]
+
+	// CENTRAL         CAUSE: mechanical energy can cause objects to move     (9314-ce5b-a917-1d9c) [ CONDITION_AGENT_OBJECT:"mechanical energy", RESULT_AGENT:"object", RESULT_VERB:"move" ]
+	//row autoRow7 = [UUID:"9314-ce5b-a917-1d9c", CONDITION_AGENT_OBJECT: "mechanical energy", RESULT_AGENT: "object", RESULT_VERB: "move"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"9314-ce5b-a917-1d9c", CONDITION_AGENT_OBJECT: "mechanical energy", RESULT_AGENT: "object", RESULT_VERB: "move"]
+
+	// CENTRAL         CONTAINS: fuel contains chemical energy     (c23e-4123-ef7b-6907) [ OBJECT_AGENT:"fuel", WHAT_IT_CONTAINS:"chemical energy" ]
+	//row autoRow8 = [UUID:"c23e-4123-ef7b-6907", OBJECT_AGENT: "fuel", WHAT_IT_CONTAINS: "chemical energy"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"c23e-4123-ef7b-6907", OBJECT_AGENT: "fuel", WHAT_IT_CONTAINS: "chemical energy"]
+
+	// CENTRAL         KINDOF: fuel is a kind of energy source     (1b14-afc4-9d2b-8dbd) [ HYPONYM:"fuel", HYPERNYM:"energy source" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"1b14-afc4-9d2b-8dbd", HYPONYM: "fuel", HYPERNYM: "energy source"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"1b14-afc4-9d2b-8dbd", HYPONYM: "fuel", HYPERNYM: "energy source"]
+
+	// CENTRAL         KINDOF: kinetic energy is a kind of mechanical energy     (8f4b-dcdb-2be5-9423) [ HYPONYM:"kinetic energy", HYPERNYM:"mechanical energy" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"]
+
+	// CENTRAL         PARTOF: an engine is a part of an automobile     (3c28-d2a7-4f05-ca25) [ PART:"engine", WHOLE:"automobile" ]
+	//row autoRow11 = [UUID:"3c28-d2a7-4f05-ca25", PART: "engine", WHOLE: "automobile"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"3c28-d2a7-4f05-ca25", PART: "engine", WHOLE: "automobile"]
+
+	// CENTRAL         KINDOF: heat is a kind of energy     (9e7d-986e-6af1-5ac1) [ HYPONYM:"heat", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"]
+
+	// CENTRAL         KINDOF: light is a kind of energy     (f742-384b-744c-10a9) [ HYPONYM:"light", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"f742-384b-744c-10a9", HYPONYM: "light", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"f742-384b-744c-10a9", HYPONYM: "light", HYPERNYM: "energy"]
+
+	// CENTRAL         KINDOF: an automobile is a kind of vehicle     (7cb7-40ac-f4d5-eb6c) [ HYPONYM:"automobile", HYPERNYM:"vehicle" ]
+	//  Notes: peripheral
+	//row autoRow14 = [UUID:"7cb7-40ac-f4d5-eb6c", HYPONYM: "automobile", HYPERNYM: "vehicle"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"7cb7-40ac-f4d5-eb6c", HYPONYM: "automobile", HYPERNYM: "vehicle"]
+
+	// CENTRAL         KINDOF: a vehicle is a kind of object     (d047-715f-550d-3eaa) [ HYPONYM:"vehicle", HYPERNYM:"object" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"d047-715f-550d-3eaa", HYPONYM: "vehicle", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"d047-715f-550d-3eaa", HYPONYM: "vehicle", HYPERNYM: "object"]
+
+endinferencepattern

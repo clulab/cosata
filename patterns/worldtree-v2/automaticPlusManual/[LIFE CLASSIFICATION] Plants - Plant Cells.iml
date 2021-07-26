@@ -1,0 +1,86 @@
+// Automatically converted pattern
+inferencepattern LIFE_CLASSIFICATION_Plants_Plant_Cells
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ACTION: classifying is when one sorts something by kind ; type     (0d00-93f4-5616-0efc) [ DEFINITION_NAME:"classify", AGENT_OBJECT:"one", ACTION2:"sort", OBJECT_PROPERTY:"something", HOW:"kind;type" ]
+	//        HINTROW classifying means grouping objects ; materials by their properties     (69c1-2991-2421-ce63) [ DEFINITION_NAME:"classify", ACTION2:"group", OBJECT_PROPERTY:"object;material", HOW:"property" ]
+	//row autoRow0 = [TABLE:"ACTION", DEFINITION_NAME: "classify"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ACTION", DEFINITION_NAME: "classify"]
+
+	// GROUNDING      (OPTIONAL) KINDOF: a chloroplast is a kind of plant cell structure     (112d-7d57-4de0-714e) [ HYPONYM:"chloroplast", SCOPE1:"plant cell", HYPERNYM:"structure" ]
+	//  Notes: plant cell structure
+	//row *autoRow1 = [TABLE:"KINDOF", HYPONYM: "chloroplast", SCOPE1: "plant cell", HYPERNYM: "structure"] //OVER-CONSTR.
+	row *autoRow1 = [TABLE:"KINDOF", HYPONYM: "chloroplast", SCOPE1: "plant cell", HYPERNYM: "structure"]
+
+	// GROUNDING       KINDOF: providing support is a kind of function     (aefd-91ae-8cfa-8c9e) [ HYPONYM:"provide support", HYPERNYM:"function" ]
+	//        HINTROW providing structure is a kind of function     (a617-2cd4-da7e-6e6b) [ HYPONYM:"provide structure", HYPERNYM:"function" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "provide support", HYPERNYM: "function"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "provide support", HYPERNYM: "function"]
+
+	// GROUNDING       KINDOF: a vegetable is a kind of plant     (6755-3424-c45b-3c9c) [ HYPONYM:"vegetable", HYPERNYM:"plant" ]
+	//        HINTROW a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: <vegetable_0>, HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: <vegetable_0>, HYPERNYM: "plant"]
+
+	// GROUNDING       KINDOF: an onion is a kind of vegetable     (1871-0cbf-610d-1e47) [ HYPONYM:"onion", HYPERNYM:"vegetable" ]
+	//        HINTROW a pine tree is a kind of tree     (8d1a-ae77-8695-f8b6) [ HYPONYM:"pine tree", HYPERNYM:"tree" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: <vegetable_0>] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: <vegetable_0>]
+
+	// CENTRAL         SOURCEOF: a cell wall provides support ; protection ; shape ; structure for a plant cell     (3254-8f73-9122-fec8) [ AGENT:"cell wall", VERB_SOURCEOF_PROVIDE_ETC:"provide", WHAT_IT_PROVIDES:"support;protect;shape;structure", AGENT_IT_PROVIDES_THING_TO:"plant cell" ]
+	//row autoRow5 = [UUID:"3254-8f73-9122-fec8", AGENT: "cell wall", VERB_SOURCEOF_PROVIDE_ETC: "provide", WHAT_IT_PROVIDES: "support", AGENT_IT_PROVIDES_THING_TO: "plant cell"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"3254-8f73-9122-fec8", AGENT: "cell wall", VERB_SOURCEOF_PROVIDE_ETC: "provide", WHAT_IT_PROVIDES: "support", AGENT_IT_PROVIDES_THING_TO: "plant cell"]
+
+	// CENTRAL         PARTOF: a cell wall is a part of a plant cell for supporting and protecting the cell membrane     (6c0f-ee50-8f2c-401e) [ PART:"cell wall", WHOLE:"plant cell", FOR_PURPOSE:"support protect cell membrane" ]
+	//row autoRow6 = [UUID:"6c0f-ee50-8f2c-401e", PART: "cell wall", WHOLE: "plant cell", FOR_PURPOSE: "support protect cell membrane"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"6c0f-ee50-8f2c-401e", PART: "cell wall", WHOLE: "plant cell", FOR_PURPOSE: "support protect cell membrane"]
+
+	// CENTRAL         PROP-THINGS: a cell wall is the outermost structure of a plant cell     (4172-46aa-e465-534f) [ THING:"cell wall", VALUE:"outermost", ATTRIBUTE:"structure", SCOPE_RELATIVETO:"of plant cell" ]
+	//row autoRow7 = [UUID:"4172-46aa-e465-534f", THING: "cell wall", VALUE: "outermost", ATTRIBUTE: "structure", SCOPE_RELATIVETO: "of plant cell"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4172-46aa-e465-534f", THING: "cell wall", VALUE: "outermost", ATTRIBUTE: "structure", SCOPE_RELATIVETO: "of plant cell"]
+
+	// CENTRAL         LOCATIONS: most chloroplasts are found in the leaves of a plant     (962d-0077-a672-6f9a) [ QUANTIFIER:"much", THING_PROCESS:"chloroplast", LOCATION:"leaf", SCOPE:"of plant" ]
+	//row autoRow8 = [UUID:"962d-0077-a672-6f9a", QUANTIFIER: "much", THING_PROCESS: "chloroplast", LOCATION: "leaf", SCOPE: "of plant"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"962d-0077-a672-6f9a", QUANTIFIER: "much", THING_PROCESS: "chloroplast", LOCATION: "leaf", SCOPE: "of plant"]
+
+	// CENTRAL         PARTOF: plants are part of the bilogical kingdom Plantae     (e82a-92a7-2446-5fde) [ PART:"plant", QUANTIFIER2:"bilogical kingdom", WHOLE:"plantae" ]
+	//row autoRow9 = [UUID:"e82a-92a7-2446-5fde", PART: "plant", QUANTIFIER2: "bilogical kingdom", WHOLE: "plantae"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"e82a-92a7-2446-5fde", PART: "plant", QUANTIFIER2: "bilogical kingdom", WHOLE: "plantae"]
+
+	// CENTRAL         KINDOF: Plantae is a kind of biological kingdom     (b021-6641-4c5f-5aea) [ HYPONYM:"plantae", SCOPE1:"biological", HYPERNYM:"kingdom" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"b021-6641-4c5f-5aea", HYPONYM: "plantae", SCOPE1: "biological", HYPERNYM: "kingdom"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"b021-6641-4c5f-5aea", HYPONYM: "plantae", SCOPE1: "biological", HYPERNYM: "kingdom"]
+
+	// CENTRAL         CONTAINS: a plant cell contains chloroplasts     (4e64-cd5b-9e82-e218) [ ADJ:"plant", OBJECT_AGENT:"cell", WHAT_IT_CONTAINS:"chloroplast" ]
+	//row autoRow11 = [UUID:"4e64-cd5b-9e82-e218", ADJ: "plant", OBJECT_AGENT: "cell", WHAT_IT_CONTAINS: "chloroplast"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"4e64-cd5b-9e82-e218", ADJ: "plant", OBJECT_AGENT: "cell", WHAT_IT_CONTAINS: "chloroplast"]
+
+	// CENTRAL         PROP-THINGS: a plant cell is box-like in shape     (aab8-00f7-ef3f-7b5d) [ THING:"plant cell", VALUE:"box-like;box like", ATTRIBUTE:"in shape" ]
+	//row autoRow12 = [UUID:"aab8-00f7-ef3f-7b5d", THING: "plant cell", VALUE: "box like", ATTRIBUTE: "in shape"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"aab8-00f7-ef3f-7b5d", THING: "plant cell", VALUE: "box like", ATTRIBUTE: "in shape"]
+
+	// CENTRAL         PARTOF: chloroplast is a part of a plant cell     (f1b0-1ed6-289e-c065) [ PART:"chloroplast", QUANTIFIER1:"be", WHOLE:"plant cell" ]
+	//row autoRow13 = [UUID:"f1b0-1ed6-289e-c065", PART: "chloroplast", QUANTIFIER1: "be", WHOLE: "plant cell"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"f1b0-1ed6-289e-c065", PART: "chloroplast", QUANTIFIER1: "be", WHOLE: "plant cell"]
+
+	// CENTRAL         PARTOF: a cell nucleus is a part of a cell     (88b6-8bff-95aa-75e1) [ PART:"cell nucleus", WHOLE:"cell" ]
+	//row autoRow14 = [UUID:"88b6-8bff-95aa-75e1", PART: "cell nucleus", WHOLE: "cell"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"88b6-8bff-95aa-75e1", PART: "cell nucleus", WHOLE: "cell"]
+
+	// CENTRAL         KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"]
+
+	// CENTRAL         MADEOF: a plant is made of plant cells     (1e1d-6ed6-25e3-5f30) [ OBJECT:"plant", MATERIAL:"plant cell" ]
+	//row autoRow16 = [UUID:"1e1d-6ed6-25e3-5f30", OBJECT: "plant", MATERIAL: "plant cell"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"1e1d-6ed6-25e3-5f30", OBJECT: "plant", MATERIAL: "plant cell"]
+
+endinferencepattern

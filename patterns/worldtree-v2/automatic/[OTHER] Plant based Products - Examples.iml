@@ -1,0 +1,36 @@
+// Automatically converted pattern
+inferencepattern OTHER_Plant_based_Products_Examples
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW an apple tree is a kind of plant     (00a7-56fc-3c22-e6f2) [ HYPONYM:"apple tree", HYPERNYM:"plant" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// CENTRALSW       KINDOF: paper is a kind of material     (1c5c-3f13-e713-63f5) [ HYPONYM:"paper", HYPERNYM:"material" ]
+	//        HINTROW spices are a kind of material     (cf70-3fdf-c124-a754) [ HYPONYM:"spice", HYPERNYM:"material" ]
+	//        HINTROW fiber is a kind of material     (04a7-76c0-16a3-fbb0) [ HYPONYM:"fiber", HYPERNYM:"material" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: <paper_0>, HYPERNYM: "material"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: <paper_0>, HYPERNYM: "material"]
+
+	// CENTRALSW       SOURCEOF: trees are a source of paper     (228c-e968-0417-3f8d) [ AGENT:"tree", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"paper" ]
+	//        HINTROW plants are the source of spices     (bef6-e915-46ee-d0dd) [ AGENT:"plant", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"spice" ]
+	//        HINTROW plants are a source of fibers     (d36c-a9f0-2f37-c0e1) [ AGENT:"plant", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"fiber" ]
+	//row autoRow2 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: <paper_0>] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: <paper_0>]
+
+	// CENTRAL         ACTION: a source of something emits ; produces ; generates ; provides that something     (b877-a58b-f75a-3998) [ AGENT_OBJECT:"source of something", ACTION2:"emit;produce;generate;provide", OBJECT_PROPERTY:"that something" ]
+	//row autoRow3 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"]
+
+	// CENTRAL         ACTION: products are formed ; are produced ; are created     (30c3-cdda-8d6b-d470) [ AGENT_OBJECT:"product", ACTION2:"be form;be produce;be create" ]
+	//row autoRow4 = [UUID:"30c3-cdda-8d6b-d470", AGENT_OBJECT: "product", ACTION2: "be form"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"30c3-cdda-8d6b-d470", AGENT_OBJECT: "product", ACTION2: "be form"]
+
+endinferencepattern

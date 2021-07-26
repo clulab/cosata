@@ -1,0 +1,344 @@
+{"patternMatches": [
+{
+	"patternName":"CEL_DISTANCES_Lightyears_as_Units",
+	"matches":[
+		{
+		"uuids": ["4e12-62f2-0830-d602","TEMPGEN-2400770","TEMPGEN-2399897","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4e12-62f2-0830-d602", "rowText": "the Sun is the star that is closest to Earth", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "TEMPGEN-2400770", "rowText": "sun is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2399897", "rowText": "earth is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"sun" },
+			{ "name":"thing2", "value":"earth" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"Sun" },
+			{ "name":"thing2", "value":"Earth" }
+		]
+		},
+		{
+		"uuids": ["a352-bde5-b854-f460","TEMPGEN-2399897","TEMPGEN-2400770","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a352-bde5-b854-f460", "rowText": "Earth is the planet that is third closest to the Sun", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "TEMPGEN-2399897", "rowText": "earth is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2400770", "rowText": "sun is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"earth" },
+			{ "name":"thing2", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"Earth" },
+			{ "name":"thing2", "value":"Sun" }
+		]
+		},
+		{
+		"uuids": ["c14b-4971-7d32-d1d3","dbe8-e776-f804-99a0","TEMPGEN-2399897","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c14b-4971-7d32-d1d3", "rowText": "the stars in the night sky are very far away from the Earth", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "dbe8-e776-f804-99a0", "rowText": "a star is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2399897", "rowText": "earth is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"star" },
+			{ "name":"thing2", "value":"earth" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"stars" },
+			{ "name":"thing2", "value":"Earth" }
+		]
+		},
+		{
+		"uuids": ["fe9e-0b3d-813c-75d7","TEMPGEN-2399897","TEMPGEN-2400770","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "fe9e-0b3d-813c-75d7", "rowText": "Earth is a planet that is closer to the Sun than Jupiter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "TEMPGEN-2399897", "rowText": "earth is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2400770", "rowText": "sun is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"earth" },
+			{ "name":"thing2", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"Earth" },
+			{ "name":"thing2", "value":"Sun" }
+		]
+		},
+		{
+		"uuids": ["ae9e-abc3-9cb3-216c","5491-9457-39e4-2a7a","TEMPGEN-2399897","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ae9e-abc3-9cb3-216c", "rowText": "the moon is the celestial object that is closest to the Earth", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "5491-9457-39e4-2a7a", "rowText": "a moon is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2399897", "rowText": "earth is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"moon" },
+			{ "name":"thing2", "value":"earth" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"moon" },
+			{ "name":"thing2", "value":"Earth" }
+		]
+		},
+		{
+		"uuids": ["c3ef-1aeb-c9fd-2b71","TEMPGEN-2402021","TEMPGEN-2400770","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c3ef-1aeb-c9fd-2b71", "rowText": "Mercury is the planet that is first closest to the Sun", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "TEMPGEN-2402021", "rowText": "mercury is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2400770", "rowText": "sun is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"mercury" },
+			{ "name":"thing2", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"Mercury" },
+			{ "name":"thing2", "value":"Sun" }
+		]
+		},
+		{
+		"uuids": ["859f-86f6-8ed6-3885","TEMPGEN-2401313","TEMPGEN-2400770","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "859f-86f6-8ed6-3885", "rowText": "Venus is the planet that is second closest to the Sun", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "TEMPGEN-2401313", "rowText": "venus is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2400770", "rowText": "sun is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"venus" },
+			{ "name":"thing2", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"Venus" },
+			{ "name":"thing2", "value":"Sun" }
+		]
+		},
+		{
+		"uuids": ["393c-5d80-c259-3ee9","TEMPGEN-2401545","TEMPGEN-2400770","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "393c-5d80-c259-3ee9", "rowText": "Jupiter is the planet that is fifth closest to the Sun", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "TEMPGEN-2401545", "rowText": "jupiter is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2400770", "rowText": "sun is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"jupiter" },
+			{ "name":"thing2", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"Jupiter" },
+			{ "name":"thing2", "value":"Sun" }
+		]
+		},
+		{
+		"uuids": ["ffc8-4214-81e1-3903","TEMPGEN-2402933","TEMPGEN-2400770","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ffc8-4214-81e1-3903", "rowText": "Saturn is the planet that is sixth closest to the Sun", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "TEMPGEN-2402933", "rowText": "saturn is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2400770", "rowText": "sun is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"saturn" },
+			{ "name":"thing2", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"Saturn" },
+			{ "name":"thing2", "value":"Sun" }
+		]
+		},
+		{
+		"uuids": ["10d4-66aa-afc0-5c09","TEMPGEN-2402701","TEMPGEN-2400770","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "10d4-66aa-afc0-5c09", "rowText": "Uranus is the planet that is seventh closest to the Sun", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "TEMPGEN-2402701", "rowText": "uranus is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2400770", "rowText": "sun is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"uranus" },
+			{ "name":"thing2", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"Uranus" },
+			{ "name":"thing2", "value":"Sun" }
+		]
+		},
+		{
+		"uuids": ["397b-d199-32b2-6e1f","TEMPGEN-2402417","TEMPGEN-2400770","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "397b-d199-32b2-6e1f", "rowText": "Neptune is the planet that is eighth closest to the Sun", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "TEMPGEN-2402417", "rowText": "neptune is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2400770", "rowText": "sun is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"neptune" },
+			{ "name":"thing2", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"Neptune" },
+			{ "name":"thing2", "value":"Sun" }
+		]
+		},
+		{
+		"uuids": ["2a54-5bc0-92f5-2816","TEMPGEN-2402417","TEMPGEN-2400770","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2a54-5bc0-92f5-2816", "rowText": "Neptune is the planet that is furthest to the Sun in the solar system", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "TEMPGEN-2402417", "rowText": "neptune is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2400770", "rowText": "sun is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"neptune" },
+			{ "name":"thing2", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"Neptune" },
+			{ "name":"thing2", "value":"Sun" }
+		]
+		},
+		{
+		"uuids": ["0239-6af2-d042-caf6","TEMPGEN-2403860","TEMPGEN-2399897","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0239-6af2-d042-caf6", "rowText": "the Andromeda galaxy is the galaxy that is 2.5 million light years to the Earth", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "TEMPGEN-2403860", "rowText": "andromeda galaxy is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2399897", "rowText": "earth is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"andromeda galaxy" },
+			{ "name":"thing2", "value":"earth" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"Andromeda galaxy" },
+			{ "name":"thing2", "value":"Earth" }
+		]
+		},
+		{
+		"uuids": ["a988-da0d-6d1a-f0b4","5491-9457-39e4-2a7a","TEMPGEN-2399897","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a988-da0d-6d1a-f0b4", "rowText": "the Moon is the celestial object that is closer to the Earth than the Sun", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "5491-9457-39e4-2a7a", "rowText": "a moon is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2399897", "rowText": "earth is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"moon" },
+			{ "name":"thing2", "value":"earth" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"Moon" },
+			{ "name":"thing2", "value":"Earth" }
+		]
+		},
+		{
+		"uuids": ["e302-985d-b7ef-ad07","TEMPGEN-2401313","TEMPGEN-2400770","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "e302-985d-b7ef-ad07", "rowText": "Venus is the planet that is closer to the Sun than the Earth to the Sun", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "TEMPGEN-2401313", "rowText": "venus is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2400770", "rowText": "sun is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"venus" },
+			{ "name":"thing2", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"Venus" },
+			{ "name":"thing2", "value":"Sun" }
+		]
+		},
+		{
+		"uuids": ["d711-ca1e-0766-bd59","TEMPGEN-2402021","TEMPGEN-2400770","b0ba-81fa-58f4-a81b","91b9-6388-d5b8-58b6","8529-317a-ba9f-b990","406d-464a-cfa5-7b67","42f0-a182-922d-511a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d711-ca1e-0766-bd59", "rowText": "Mercury is the planet that is closer to the Sun than Earth ; Mars ; Venus to the Sun", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "TEMPGEN-2402021", "rowText": "mercury is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2a", "uuid": "TEMPGEN-2400770", "rowText": "sun is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8529-317a-ba9f-b990", "rowText": "light year is a measure of the distance light travels in one year", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "406d-464a-cfa5-7b67", "rowText": "years are a kind of unit for measuring time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "42f0-a182-922d-511a", "rowText": "a light-year is used for describing long distances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"thing1", "value":"mercury" },
+			{ "name":"thing2", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"thing1", "value":"Mercury" },
+			{ "name":"thing2", "value":"Sun" }
+		]
+		}
+	]
+}
+]}
+

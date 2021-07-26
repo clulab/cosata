@@ -1,0 +1,127 @@
+// Automatically converted pattern
+inferencepattern MAT_PROPMATERIAL_Thermal_Insulators_Examples
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+    musthaveoromit( ((<autoRow2A> == "") && (<autoRow2B> == "")) || (<autoRow2A> != <autoRow2B>) )
+    musthaveoromit(  ((<autoRow2B> == "") && (<autoRow3> == "")) || ((<autoRow2B> != "") && (<autoRow3> != "")) )
+
+	// Row Definitions
+
+    // Grounding
+
+	// CENTRALSW       PROP-CONDUCTIVITY: metal is a thermal ; thermal energy conductor     (0439-8c06-da63-6721) [ OBJECT_AGENT:"metal", KIND_OF_CONDUCTIVITY:"thermal;thermal energy", CONDUCTOR_INSULATOR:"conduct" ]
+	//        HINTROW salt water is an electrical ; electrical energy conductor     (794e-d07f-c9c3-c8d0) [ OBJECT_AGENT:"salt water", KIND_OF_CONDUCTIVITY:"electric;electric energy", CONDUCTOR_INSULATOR:"conduct" ]
+	//  Notes: conductor examples
+	//row autoRow0 = [TABLE:"PROP-CONDUCTIVITY", KIND_OF_CONDUCTIVITY: <thermal_0>+"energy", CONDUCTOR_INSULATOR: "conduct"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-CONDUCTIVITY", OBJECT_AGENT:<materialName>, KIND_OF_CONDUCTIVITY: "thermal" + *"energy", CONDUCTOR_INSULATOR: <insulatorConductor>]
+
+	// GROUNDING       MADEOF: pot ; pan ; frying pan is made of metal for cooking     (a955-8642-4044-5a48) [ OBJECT:"pot;pan;fry pan", MATERIAL:"metal", FOR_PURPOSE:"cook" ]
+	//        HINTROW a burner is made of metal     (7750-9e0a-ea70-dbc3) [ OBJECT:"burner", MATERIAL:"metal" ]
+	//  Notes: object X is made of Y conductor
+	//row autoRow2 = [TABLE:"MADEOF", MATERIAL: "metal"] //OVER-CONSTR.
+	row *autoRow2A = [TABLE:"MADEOF", OBJECT:<objectName>, MATERIAL: <materialName>]
+    row *autoRow2B = [TABLE:"MADEOF", OBJECT:<objectName>, MATERIAL: <materialName1>]
+
+    
+
+	// GROUNDING       KINDOF: iron is a kind of metal     (de4c-ca36-c336-540f) [ HYPONYM:"iron", HYPERNYM:"metal" ]
+	//        HINTROW copper is a kind of metal     (9cea-7fba-e1c5-f8b3) [ HYPONYM:"copper", HYPERNYM:"metal" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "metal"] //OVER-CONSTR.
+    // Disabled for speed
+	row *autoRow3 = [TABLE:"KINDOF", HYPONYM:<materialName1>, HYPERNYM: <materialName>]
+
+	// GROUNDING       KINDOF: metal is a kind of substance     (777a-cdbf-9167-82e0) [ HYPONYM:"metal", HYPERNYM:"substance" ]
+	//        HINTROW water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//        HINTROW saltwater is a kind of substance     (d60d-6c10-0203-e659) [ HYPONYM:"saltwater", HYPERNYM:"substance" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "substance"] //OVER-CONSTR.
+	row *autoRow4 = [TABLE:"KINDOF", HYPONYM:<materialName>, HYPERNYM: "substance"]
+
+endinferencepattern
+
+
+inferencepattern MAT_PROPMATERIAL_ThermalConductorInsulatorCore
+    // Requrements
+    infpat materialGrounding = MAT_PROPMATERIAL_Thermal_Insulators_Examples
+    musthaveoromit(materialGrounding.<insulatorConductor> == <insulatorConductor>)
+
+    // Thermal Conductivity Core
+
+	// CENTRAL         TRANSFER: thermal conduction is when materials conduct heat through those materials through collision of particles     (04a3-0791-9bd3-602d) [ PROCESS_NAME:"thermal conduction", ACTOR_WHO:"material", VERB:"conduct", WHAT:"heat", BY_THROUGH_HOW:"material", SCOPE:"through collision of particle" ]
+	//row autoRow8 = [UUID:"04a3-0791-9bd3-602d", PROCESS_NAME: <thermal_0>+"conduction", ACTOR_WHO: "material", VERB: "conduct", WHAT: "heat", BY_THROUGH_HOW: "material", SCOPE: "through collision of particle"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"04a3-0791-9bd3-602d", PROCESS_NAME: <thermal_0>+"conduction", ACTOR_WHO: "material", VERB: "conduct", WHAT: "heat", BY_THROUGH_HOW: "material", SCOPE: "through collision of particle"]
+
+	// CENTRAL         TRANSFER: a thermal energy conductor transfers heat from warmer objects ; hotter objects to cooler objects     (3dcc-05e2-48cc-db62) [ ACTOR_WHO:"thermal energy conduct", VERB:"transfer", WHAT:"heat", SOURCE:"warm object;hot object", DESTINATION:"cool object" ]
+	//row autoRow9 = [UUID:"3dcc-05e2-48cc-db62", ACTOR_WHO: <thermal_0>+"energy conduct", VERB: "transfer", WHAT: "heat", SOURCE: "warm object", DESTINATION: "cool object"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"3dcc-05e2-48cc-db62", ACTOR_WHO: <thermal_0>+"energy conduct", VERB: "transfer", WHAT: "heat", SOURCE: "warm object", DESTINATION: "cool object"]
+
+	// CENTRAL         USEDFOR: a thermal insulator can be used to remove hot objects from a heat source     (a79c-b257-b8ca-1792) [ AGENT_OBJECT:"thermal insulator", QUALIFIER:"be", FOR_PURPOSE:"remove", PATIENT:"hot object", SCOPE2:"from heat source" ]
+	//row autoRow10 = [UUID:"a79c-b257-b8ca-1792", AGENT_OBJECT: <thermal_0>+"insulator", QUALIFIER: "be", FOR_PURPOSE: "remove", PATIENT: "hot object", SCOPE2: "from heat source"] //OVER-CONSTR.
+	row *autoRow10 = [TABLE:"USEDFOR", AGENT_OBJECT: "thermal" + <insulatorConductor>]
+
+	// CENTRAL         REQUIRES: thermal insulation requires covering the conductor with an insulator     (5da2-8ec5-7d70-874e) [ OBJECT_AGENT_PROCESS:"thermal insulation", VERB_REQUIRES:"require", ACTION2:"cover", OBJECT:"conduct", SCOPE4:"with insulator" ]
+	//row autoRow11 = [UUID:"5da2-8ec5-7d70-874e", OBJECT_AGENT_PROCESS: <thermal_0>+"insulation", VERB_REQUIRES: "require", ACTION2: "cover", OBJECT: "conduct", SCOPE4: "with insulator"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"5da2-8ec5-7d70-874e", OBJECT_AGENT_PROCESS: <thermal_0>+"insulation", VERB_REQUIRES: "require", ACTION2: "cover", OBJECT: "conduct", SCOPE4: "with insulator"]
+
+	// CENTRAL         CHANGE-VEC: a thermal insulator slows ; prevents the transfer of heat     (a469-8103-d86d-9765) [ AGENT_OBJECT:"thermal insulator", DIRECTION:"slow;prevent", QUANTITY:"transfer of", PATIENT:"heat" ]
+	//row autoRow15 = [UUID:"a469-8103-d86d-9765", AGENT_OBJECT: <thermal_0>+"insulator", DIRECTION: "slow", QUANTITY: "transfer of", PATIENT: "heat"] //OVER-CONSTR.
+	row *autoRow15 = [TABLE:"CHANGE-VEC", AGENT_OBJECT: "thermal" + <insulatorConductor>]        //<thermal_0>+"insulator", DIRECTION: "slow", QUANTITY: "transfer of", PATIENT: "heat"]
+
+	// CENTRAL         MADEOF: a thermal conductor is made of thermal conductive materials     (a49d-0411-7e72-17d8) [ OBJECT:"thermal conduct", MATERIAL:"thermal conduct material" ]
+	//row autoRow13 = [UUID:"a49d-0411-7e72-17d8", OBJECT: <thermal_0>+"conduct", MATERIAL: <thermal_0>+"conduct material"] //OVER-CONSTR.
+	row *autoRow13 = [TABLE:"MADEOF", OBJECT: "thermal" + <insulatorConductor>] //, MATERIAL: <thermal_0>+"conduct material"]
+
+
+    // As a property
+
+	// CENTRAL         PROP-GENERIC: conductivity is a property of a material ; substance     (d681-3158-6a99-253a) [ X:"conduct", Y:"material;substance" ]
+	//row autoRow16 = [UUID:"d681-3158-6a99-253a", X: "conduct", Y: "material"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"d681-3158-6a99-253a", X: "conduct", Y: "material"]
+
+	// CENTRAL         PROP-GENERIC: temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot     (4084-f2bc-52cf-0f74) [ X:"temperature;heat energy", Y:"object;weather", ORDERED_UNORDERED:"order", VALUES:"cold;cool;warm;hot" ]
+	//row autoRow12 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"]
+
+
+    // Usage
+
+	// CENTRAL         IFTHEN: if an object is made of a material then that object has the properties of that material     (1e4c-46e8-996c-f2f7) [ THING:"object", OBJECT_PROPERTY1:"make of material", ACTOR_AGENT_PROCESS2:"that object", OBJECT_PROPERTY3:"property of material" ]
+	//row autoRow17 = [UUID:"1e4c-46e8-996c-f2f7", THING: "object", OBJECT_PROPERTY1: "make of material", ACTOR_AGENT_PROCESS2: "that object", OBJECT_PROPERTY3: "property of material"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"1e4c-46e8-996c-f2f7", THING: "object", OBJECT_PROPERTY1: "make of material", ACTOR_AGENT_PROCESS2: "that object", OBJECT_PROPERTY3: "property of material"]
+
+	// CENTRAL         IFTHEN: if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm     (c9e0-141e-88fa-2c43) [ THING:"thermal conduct;object", ACTION1:"expose", ADJ_QUANTITY1A:"source of", OBJECT_PATIENT1:"heat", ACTOR_AGENT_PROCESS2:"that conduct;that object", OBJECT_PROPERTY3:"hot;warm" ]
+	//row autoRow6 = [UUID:"c9e0-141e-88fa-2c43", THING: <thermal_0>+"conduct", ACTION1: "expose", ADJ_QUANTITY1A: "source of", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "that conduct", OBJECT_PROPERTY3: "hot"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"c9e0-141e-88fa-2c43", THING: <thermal_0>+"conduct", ACTION1: "expose", ADJ_QUANTITY1A: "source of", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "that conduct", OBJECT_PROPERTY3: "hot"]
+
+
+	// CENTRAL         REQUIRES: removing hot objects from a heat source requires thermal insulators     (4a89-0774-ec0d-d44f) [ ACTION1:"remove", OBJECT_AGENT_PROCESS:"hot object", SCOPE1:"from heat source", VERB_REQUIRES:"require", OBJECT:"thermal insulator" ]
+	//row autoRow7 = [UUID:"4a89-0774-ec0d-d44f", ACTION1: "remove", OBJECT_AGENT_PROCESS: "hot object", SCOPE1: "from heat source", VERB_REQUIRES: "require", OBJECT: <thermal_0>+"insulator"] //OVER-CONSTR.
+	//## row autoRow7 = [UUID:"4a89-0774-ec0d-d44f", ACTION1: "remove", OBJECT_AGENT_PROCESS: "hot object", SCOPE1: "from heat source", VERB_REQUIRES: "require", OBJECT: <thermal_0>+"insulator"]
+
+
+
+/*
+	// LEXGLUE         OPPOSITES: an insulator is the opposite of a conductor     (9493-f99f-c366-f5bc) [ THING_PROPERTY1:"insulator", THING_PROPERTY2:"conduct" ]
+	//row autoRow18 = [UUID:"9493-f99f-c366-f5bc", THING_PROPERTY1: "insulator", THING_PROPERTY2: "conduct"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"9493-f99f-c366-f5bc", THING_PROPERTY1: "insulator", THING_PROPERTY2: "conduct"]
+
+	// LEXGLUE         SYNONYMY: heat energy is synonymous with thermal energy     (ae86-c631-e4ad-1669) [ X1:"heat energy", X2:"thermal energy" ]
+	//row autoRow19 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: <thermal_0>+"energy"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: <thermal_0>+"energy"]
+
+	// LEXGLUE         SYNONYMY: material means substance     (efac-0ec0-58dc-8f9e) [ X1:"material", X2:"substance" ]
+	//row autoRow20 = [UUID:"efac-0ec0-58dc-8f9e", X1: "material", X2: "substance"] //OVER-CONSTR.
+	row autoRow20 = [UUID:"efac-0ec0-58dc-8f9e", X1: "material", X2: "substance"]
+
+	// LEXGLUE         SYNONYMY: insulator means good insulator     (5733-18d0-8191-c1ce) [ X1:"insulator", X2:"good insulator" ]
+	//row autoRow21 = [UUID:"5733-18d0-8191-c1ce", X1: "insulator", X2: "good insulator"] //OVER-CONSTR.
+	row autoRow21 = [UUID:"5733-18d0-8191-c1ce", X1: "insulator", X2: "good insulator"]
+
+	// LEXGLUE         SYNONYMY: wrapping is similar to covering     (caff-4de5-d4b5-f9a7) [ ACTION1:"wrap", ACTION2:"cover" ]
+	//row autoRow22 = [UUID:"caff-4de5-d4b5-f9a7", ACTION1: "wrap", ACTION2: "cover"] //OVER-CONSTR.
+	row autoRow22 = [UUID:"caff-4de5-d4b5-f9a7", ACTION1: "wrap", ACTION2: "cover"]
+*/
+
+endinferencepattern

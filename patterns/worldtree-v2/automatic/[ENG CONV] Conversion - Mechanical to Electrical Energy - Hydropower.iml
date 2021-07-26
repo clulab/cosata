@@ -1,0 +1,45 @@
+// Automatically converted pattern
+inferencepattern ENG_CONV_Conversion_Mechanical_to_Electrical_Energy_Hydropower
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a wind turbine is a kind of windmill     (39f5-f605-2483-a467) [ HYPONYM:"wind turbine", HYPERNYM:"windmill" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "wind turbine", HYPERNYM: "windmill"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "wind turbine", HYPERNYM: "windmill"]
+
+	// CENTRAL         EXAMPLES: An example of mechanical energy is an object in motion     (4aca-cf16-fcc6-1f79) [ AGENT_OBJECT1:"mechanical energy", AGENT_OBJECT2:"object in move" ]
+	//row autoRow1 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"]
+
+	// CENTRAL         KINDOF: kinetic energy is a kind of mechanical energy     (8f4b-dcdb-2be5-9423) [ HYPONYM:"kinetic energy", HYPERNYM:"mechanical energy" ]
+	//  Notes: peripheral
+	//row autoRow2 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"]
+
+	// CENTRAL         CHANGE: a windmill converts wind energy into electrical energy ; electricity primarily by using mechanical energy     (d68e-b9c5-62d5-f63e) [ ACTOR_WHO:"windmill", VERB:"convert", FROM:"wind energy", INTO:"electric energy;electric", BY_THROUGH_HOW:"use mechanical energy" ]
+	//row autoRow3 = [UUID:"d68e-b9c5-62d5-f63e", ACTOR_WHO: "windmill", VERB: "convert", FROM: "wind energy", INTO: "electric energy", BY_THROUGH_HOW: "use mechanical energy"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"d68e-b9c5-62d5-f63e", ACTOR_WHO: "windmill", VERB: "convert", FROM: "wind energy", INTO: "electric energy", BY_THROUGH_HOW: "use mechanical energy"]
+
+	// CENTRAL        (OPTIONAL) ACTION: a windmill does not create pollution     (4ed1-58db-05c6-ad49) [ AGENT_OBJECT:"windmill", QUANITIFIER:"doe not", ACTION2:"create", OBJECT_PROPERTY:"pollute" ]
+	//row *autoRow4 = [UUID:"4ed1-58db-05c6-ad49", AGENT_OBJECT: "windmill", QUANITIFIER: "doe not", ACTION2: "create", OBJECT_PROPERTY: "pollute"] //OVER-CONSTR.
+	row *autoRow4 = [UUID:"4ed1-58db-05c6-ad49", AGENT_OBJECT: "windmill", QUANITIFIER: "doe not", ACTION2: "create", OBJECT_PROPERTY: "pollute"]
+
+	// CENTRAL         REQUIRES: windmills require high wind force to generate electricity     (c6a4-4426-a298-1ba2) [ OBJECT_AGENT_PROCESS:"windmill", VERB_REQUIRES:"require", QUANTITY_VALUE:"high", OBJECT:"wind force", FOR_PURPOSE:"generate electric" ]
+	//row autoRow5 = [UUID:"c6a4-4426-a298-1ba2", OBJECT_AGENT_PROCESS: "windmill", VERB_REQUIRES: "require", QUANTITY_VALUE: "high", OBJECT: "wind force", FOR_PURPOSE: "generate electric"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"c6a4-4426-a298-1ba2", OBJECT_AGENT_PROCESS: "windmill", VERB_REQUIRES: "require", QUANTITY_VALUE: "high", OBJECT: "wind force", FOR_PURPOSE: "generate electric"]
+
+	// CENTRAL         PROP-RESOURCES-RENEWABLE: wind is a renewable ; inexhaustible resource     (0da1-2296-dfe8-6873) [ RESOURCE:"wind", REWABLE_NONRENEWABLE:"renewable;inexhaustible" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"0da1-2296-dfe8-6873", RESOURCE: "wind", REWABLE_NONRENEWABLE: "renewable"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"0da1-2296-dfe8-6873", RESOURCE: "wind", REWABLE_NONRENEWABLE: "renewable"]
+
+	// LEXGLUE         SYNONYMY: motion ; movement means moving ; to move     (d8a3-10bb-9aea-178a) [ X1:"move;move", ACTION2:"move;move" ]
+	//row autoRow7 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"]
+
+endinferencepattern

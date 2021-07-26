@@ -1,0 +1,62 @@
+{"patternMatches": [
+{
+	"patternName":"EARTH_WEATHER_Erosion_Inhibited_by_Plantlife",
+	"matches":[
+		{
+		"uuids": ["08a7-34bf-d1a2-f681","0d3a-8739-9f42-5e1c","214a-9ca3-2983-aa79","4c93-e1e3-546a-8cfa","d54f-e502-fa51-788d","6cdd-9626-9859-7279","5e75-4bbb-dae0-311f","1fc9-87b3-4b09-6451","edb7-8723-f5ce-c5d8","70be-f77b-7def-9453","b1c8-b2b3-3088-3bb5","53a9-7d7d-dbcb-98aa","d390-3d50-786d-4e9f","1ec2-4fac-096f-d2fc","83fc-2b11-a88e-56cd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "08a7-34bf-d1a2-f681", "rowText": "tree roots decrease ; reduce soil erosion", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0d3a-8739-9f42-5e1c", "rowText": "a tree is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "214a-9ca3-2983-aa79", "rowText": "rain is a kind of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4c93-e1e3-546a-8cfa", "rowText": "soil erosion is when wind ; moving water ; gravity moves soil from fields ; environments", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "d54f-e502-fa51-788d", "rowText": "In the erosion process roots of plants are an inhibitor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6cdd-9626-9859-7279", "rowText": "roots are a part of a plant ; tree", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5e75-4bbb-dae0-311f", "rowText": "soil erosion means soil loss through wind ; water ; animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "1fc9-87b3-4b09-6451", "rowText": "erosion of soil has a negative impact on the environment ; soil quality", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "edb7-8723-f5ce-c5d8", "rowText": "removing an inhibitor of a process causes that process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "70be-f77b-7def-9453", "rowText": "roots hold soil in place", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b1c8-b2b3-3088-3bb5", "rowText": "as the deforestation increases , the soil erosion will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "53a9-7d7d-dbcb-98aa", "rowText": "planting trees has a positive impact on an ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "d390-3d50-786d-4e9f", "rowText": "decreasing something negative has a positive impact on a thing", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "1ec2-4fac-096f-d2fc", "rowText": "inhibitor means something that prevents something from happening", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "83fc-2b11-a88e-56cd", "rowText": "to inhibit means to prevent", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"tree_0", "value":"tree" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"tree_0", "value":"tree" }
+		]
+		},
+		{
+		"uuids": ["08a7-34bf-d1a2-f681","0d3a-8739-9f42-5e1c","214a-9ca3-2983-aa79","4c93-e1e3-546a-8cfa","d54f-e502-fa51-788d","6cdd-9626-9859-7279","5e75-4bbb-dae0-311f","1fc9-87b3-4b09-6451","edb7-8723-f5ce-c5d8","70be-f77b-7def-9453","b1c8-b2b3-3088-3bb5","53a9-7d7d-dbcb-98aa","1ec2-4fac-096f-d2fc","83fc-2b11-a88e-56cd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "08a7-34bf-d1a2-f681", "rowText": "tree roots decrease ; reduce soil erosion", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0d3a-8739-9f42-5e1c", "rowText": "a tree is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "214a-9ca3-2983-aa79", "rowText": "rain is a kind of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4c93-e1e3-546a-8cfa", "rowText": "soil erosion is when wind ; moving water ; gravity moves soil from fields ; environments", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "d54f-e502-fa51-788d", "rowText": "In the erosion process roots of plants are an inhibitor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6cdd-9626-9859-7279", "rowText": "roots are a part of a plant ; tree", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5e75-4bbb-dae0-311f", "rowText": "soil erosion means soil loss through wind ; water ; animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "1fc9-87b3-4b09-6451", "rowText": "erosion of soil has a negative impact on the environment ; soil quality", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "edb7-8723-f5ce-c5d8", "rowText": "removing an inhibitor of a process causes that process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "70be-f77b-7def-9453", "rowText": "roots hold soil in place", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b1c8-b2b3-3088-3bb5", "rowText": "as the deforestation increases , the soil erosion will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "53a9-7d7d-dbcb-98aa", "rowText": "planting trees has a positive impact on an ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "1ec2-4fac-096f-d2fc", "rowText": "inhibitor means something that prevents something from happening", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "83fc-2b11-a88e-56cd", "rowText": "to inhibit means to prevent", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"tree_0", "value":"tree" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"tree_0", "value":"tree" }
+		]
+		}
+	]
+}
+]}
+

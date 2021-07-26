@@ -1,0 +1,56 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Valence_Electrons
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHEM-PERIODIC-TAB-FAM: Calcium ; Beryllium ; Strontium ; Radium ; Barium ; Magnesium belongs to alkaline earth metal family , group 2 on the periodic table     (74db-af44-c803-040e) [ ELEMENTS:"calcium;beryllium;strontium;radium;barium;magnesium", FAMILY:"alkaline earth metal family", GROUP:"group 2" ]
+	//        HINTROW nitrogen ; arsenic ; phosphorus ; antimony belongs to nitrogen family , group 15 on the periodic table     (ee5c-bc13-caa0-1e9d) [ ELEMENTS:"nitrogen;arsenic;phosphorus;antimony", FAMILY:"nitrogen family", GROUP:"group 15" ]
+	//        HINTROW oxygen ; selenium ; sulfur ; tellurium ; polonium belongs to oxygen family , group 16 on the periodic table     (83f3-71f5-10e2-cb64) [ ELEMENTS:"oxygen;selenium;sulfur;tellurium;polonium", FAMILY:"oxygen family", GROUP:"group 16" ]
+	//        HINTROW lithium ; sodium ; potassium ; rubidium ; caesium ; francium belongs to alkali metals , group 1 on the periodic table     (1b97-cdfe-55ae-ac9d) [ ELEMENTS:"lithium;sodium;potassium;rubidium;caesium;francium", FAMILY:"alkali metal", GROUP:"group 1" ]
+	//  Notes: acd8-430e-0f25-eb3f->74db-af44-c803-040e;7ac9-22e1-e8a1-a46a->1b97-cdfe-55ae-ac9d;089a-894c-36b3-2c2e->ee5c-bc13-caa0-1e9d;45eb-9c1a-5697-147e->83f3-71f5-10e2-cb64
+	//row autoRow0 = [TABLE:"CHEM-PERIODIC-TAB-FAM", FAMILY: <alkaline_0>+<earth_1>+<metal_2>+"family", GROUP: "group"+*"POS:CD"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CHEM-PERIODIC-TAB-FAM", FAMILY: <alkaline_0>+<earth_1>+<metal_2>+"family", GROUP: "group"+*"POS:CD"]
+
+	// CENTRALSW       PROP-THINGS: alkaline earth metal elements have two valence electrons     (8117-b3de-0422-92dc) [ THING:"alkaline earth metal element", VALUE:"two", ATTRIBUTE:"valence electron" ]
+	//        HINTROW elements in nitrogen family have five ; 5 valence electrons     (ec02-4233-0c33-ceca) [ THING:"element in nitrogen family", VALUE:"five;5", ATTRIBUTE:"valence electron" ]
+	//        HINTROW elements in oxygen family have six ; 6 valence electrons     (3408-53a4-d9de-1f86) [ THING:"element in oxygen family", VALUE:"six;6", ATTRIBUTE:"valence electron" ]
+	//        HINTROW the alkali metals have one valence electron     (4af5-b04a-2f94-d861) [ THING:"alkali metal", VALUE:"one", ATTRIBUTE:"valence electron" ]
+	//        HINTROW elements in carbon family have four valence electrons     (f14c-405e-3789-dcd6) [ THING:"element in carbon family", VALUE:"four", ATTRIBUTE:"valence electron" ]
+	//  Notes: X family have x number of valence electrons
+	//row autoRow1 = [TABLE:"PROP-THINGS", THING: <alkaline_0>+<earth_1>+<metal_2>+"element", ATTRIBUTE: "valence electron"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-THINGS", THING: <alkaline_0>+<earth_1>+<metal_2>+*"POS:NN", ATTRIBUTE: "valence electron"]
+
+	// GROUNDING       KINDOF: an alkaline earth metal is a kind of element     (27ac-74b2-541c-f0eb) [ HYPONYM:"alkaline earth metal", HYPERNYM:"element" ]
+	//        HINTROW the nitrogen family is a kind of group in periodic table     (d2a8-f687-bf07-978a) [ HYPONYM:"nitrogen family", HYPERNYM:"group", SCOPE2:"in periodic table" ]
+	//        HINTROW the oxygen family is a kind of group in the periodic table     (a4ab-d12b-ea22-7f96) [ HYPONYM:"oxygen family", HYPERNYM:"group", SCOPE2:"in periodic table" ]
+	//  Notes: X family is a kind of element
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <alkaline_0>+<earth_1>+<metal_2>, HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <alkaline_0>+<earth_1>+<metal_2>]
+
+	// CENTRAL         IFTHEN: if the elements have similar electron configurations , then the elements will be grouped into same family ; group on the Periodic Table of Elements     (89b0-c697-2931-d544) [ THING:"element", ACTION1:"have", ADJ_QUANTITY1A:"similar", OBJECT_PATIENT1:"electron configuration", ACTOR_AGENT_PROCESS2:"element", ACTION3:"be group into", ADJ_QUANTIFIER3:"same", OBJECT_PROPERTY3:"family;group", SCOPE4:"on periodic table of element" ]
+	//row autoRow3 = [UUID:"89b0-c697-2931-d544", THING: "element", ACTION1: "have", ADJ_QUANTITY1A: "similar", OBJECT_PATIENT1: "electron configuration", ACTOR_AGENT_PROCESS2: "element", ACTION3: "be group into", ADJ_QUANTIFIER3: "same", OBJECT_PROPERTY3: "family", SCOPE4: "on periodic table of element"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"89b0-c697-2931-d544", THING: "element", ACTION1: "have", ADJ_QUANTITY1A: "similar", OBJECT_PATIENT1: "electron configuration", ACTOR_AGENT_PROCESS2: "element", ACTION3: "be group into", ADJ_QUANTIFIER3: "same", OBJECT_PROPERTY3: "family", SCOPE4: "on periodic table of element"]
+
+	// CENTRAL         PROP-CHEM-REACT: elements of alkaline earth metals family react actively with water     (3264-9771-53e4-3ecb) [ THING:"element", SCOPE1A:"of alkaline earth metal family", QUALIFIER:"react", HOW:"actively", CHEMICALSCOPE:"water" ]
+	//  Notes: ada9-2fec-8dee-e2c0->3264-9771-53e4-3ecb
+	//row autoRow4 = [UUID:"3264-9771-53e4-3ecb", THING: "element", SCOPE1A: "of"+<alkaline_0>+<earth_1>+<metal_2>+"family", QUALIFIER: "react", HOW: "actively", CHEMICALSCOPE: "water"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3264-9771-53e4-3ecb", THING: "element", SCOPE1A: "of"+<alkaline_0>+<earth_1>+<metal_2>+"family", QUALIFIER: "react", HOW: "actively", CHEMICALSCOPE: "water"]
+
+	// CENTRAL         ACTION: the tendency of an element to react chemically is determined by the number of valence electrons     (609d-7a3f-35c8-7524) [ AGENT_OBJECT:"tendency of element react chemically", ACTION2:"be determine by", OBJECT_PROPERTY:"numb", SCOPE2:"of valence electron" ]
+	//row autoRow5 = [UUID:"609d-7a3f-35c8-7524", AGENT_OBJECT: "tendency of element react chemically", ACTION2: "be determine by", OBJECT_PROPERTY: "numb", SCOPE2: "of valence electron"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"609d-7a3f-35c8-7524", AGENT_OBJECT: "tendency of element react chemically", ACTION2: "be determine by", OBJECT_PROPERTY: "numb", SCOPE2: "of valence electron"]
+
+	// CENTRAL         USEDFOR: valence electrons are used to describe electrons on the outer electron shell     (788e-2a30-a662-9602) [ AGENT_OBJECT:"valence electron", FOR_PURPOSE:"describe", PATIENT:"electron", SCOPE2:"on outer electron shell" ]
+	//row autoRow6 = [UUID:"788e-2a30-a662-9602", AGENT_OBJECT: "valence electron", FOR_PURPOSE: "describe", PATIENT: "electron", SCOPE2: "on outer electron shell"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"788e-2a30-a662-9602", AGENT_OBJECT: "valence electron", FOR_PURPOSE: "describe", PATIENT: "electron", SCOPE2: "on outer electron shell"]
+
+	// CENTRAL         IFTHEN: if the elements are in the same family , then the elements will share the same number of valence electrons     (ecba-b67f-03a0-1140) [ THING:"element", SCOPE1B:"in same family", ACTOR_AGENT_PROCESS2:"element", ACTION3:"share", ADJ_QUANTIFIER3:"same", OBJECT_PROPERTY3:"numb of valence electron" ]
+	//row autoRow7 = [UUID:"ecba-b67f-03a0-1140", THING: "element", SCOPE1B: "in same family", ACTOR_AGENT_PROCESS2: "element", ACTION3: "share", ADJ_QUANTIFIER3: "same", OBJECT_PROPERTY3: "numb of valence electron"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"ecba-b67f-03a0-1140", THING: "element", SCOPE1B: "in same family", ACTOR_AGENT_PROCESS2: "element", ACTION3: "share", ADJ_QUANTIFIER3: "same", OBJECT_PROPERTY3: "numb of valence electron"]
+
+endinferencepattern

@@ -1,0 +1,56 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Origin_Fossil_Fuels
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//        HINTROW an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "organism"]
+
+	// GROUNDING       KINDOF: coal is a kind of fossil fuel     (cab1-f3c3-59de-b682) [ HYPONYM:"coal", HYPERNYM:"fossil fuel" ]
+	//        HINTROW oil is a kind of fossil fuel     (3092-233a-f999-2512) [ HYPONYM:"oil", SCOPE1:"fossil", HYPERNYM:"fuel" ]
+	//        HINTROW natural gas is a kind of fossil fuel     (2355-0cfa-86f8-5767) [ HYPONYM:"nature gas", HYPERNYM:"fossil fuel" ]
+	//  Notes: fossil fuel examples
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"KINDOF"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "fossil fuel"]
+
+	// CENTRAL         REQUIRES: forming coal ; fossil fuels requires deposition and burial of decaying vegetation     (69e3-9034-d59c-1674) [ ACTION1:"form", OBJECT_AGENT_PROCESS:"coal;fossil fuel", VERB_REQUIRES:"require", ACTION2:"deposition burial of", OBJECT:"decay vegetation" ]
+	//row autoRow2 = [UUID:"69e3-9034-d59c-1674", ACTION1: "form", OBJECT_AGENT_PROCESS: "fossil fuel", VERB_REQUIRES: "require", ACTION2: "deposition burial of", OBJECT: "decay vegetation"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"69e3-9034-d59c-1674", ACTION1: "form", OBJECT_AGENT_PROCESS: "fossil fuel", VERB_REQUIRES: "require", ACTION2: "deposition burial of", OBJECT: "decay vegetation"]
+
+	// CENTRAL         ACTION: dead organisms decay     (2e43-6a8c-1231-65f1) [ ADJ:"dead", AGENT_OBJECT:"organism", ACTION2:"decay" ]
+	//row autoRow3 = [UUID:"2e43-6a8c-1231-65f1", ADJ: "dead", AGENT_OBJECT: "organism", ACTION2: "decay"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"2e43-6a8c-1231-65f1", ADJ: "dead", AGENT_OBJECT: "organism", ACTION2: "decay"]
+
+	// CENTRAL         DURATIONS: fossil fuels ; fossils forming occurs over a period of 300000000 years which is considered a very long time to a human     (a3a9-88b4-59db-d0b9) [ AGENT:"fossil fuel;fossil", ACTION:"form", LOWERBOUND:"300000000", DURATIONUNIT:"year", MAGNITUDE:"very long", ATTRIBUTE:"time", SCOPE:"human" ]
+	//row autoRow4 = [UUID:"a3a9-88b4-59db-d0b9", AGENT: "fossil fuel", ACTION: "form", LOWERBOUND: "300000000", DURATIONUNIT: "year", MAGNITUDE: "very long", ATTRIBUTE: "time", SCOPE: "human"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"a3a9-88b4-59db-d0b9", AGENT: "fossil fuel", ACTION: "form", LOWERBOUND: "300000000", DURATIONUNIT: "year", MAGNITUDE: "very long", ATTRIBUTE: "time", SCOPE: "human"]
+
+	// CENTRAL         FORMEDBY: fossil fuels ; fossils are formed from dead organisms over time     (18f3-bb02-623d-b420) [ OBJECT:"fossil fuel;fossil", AGENT_PROCESS:"dead organism", SCOPE:"over time" ]
+	//row autoRow5 = [UUID:"18f3-bb02-623d-b420", OBJECT: "fossil fuel", AGENT_PROCESS: "dead organism", SCOPE: "over time"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"18f3-bb02-623d-b420", OBJECT: "fossil fuel", AGENT_PROCESS: "dead organism", SCOPE: "over time"]
+
+	// LEXGLUE         SYNONYMY: vegetation means plants     (b5f5-69f4-c4e2-6552) [ X1:"vegetation", X2:"plant" ]
+	//row autoRow6 = [UUID:"b5f5-69f4-c4e2-6552", X1: "vegetation", X2: "plant"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"b5f5-69f4-c4e2-6552", X1: "vegetation", X2: "plant"]
+
+	// LEXGLUE         SYNONYMY: prehistoric means before 300000000 years ago     (bb85-0f6e-6d4c-f342) [ X1:"prehistoric", X2:"before 300000000 year ago" ]
+	//row autoRow7 = [UUID:"bb85-0f6e-6d4c-f342", X1: "prehistoric", X2: "before 300000000 year ago"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"bb85-0f6e-6d4c-f342", X1: "prehistoric", X2: "before 300000000 year ago"]
+
+	// LEXGLUE         SYNONYMY: once-living means dead     (bcfb-6f90-61bf-55c6) [ X1:"once-living;one live", X2:"dead" ]
+	//row autoRow8 = [UUID:"bcfb-6f90-61bf-55c6", X1: "one live", X2: "dead"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"bcfb-6f90-61bf-55c6", X1: "one live", X2: "dead"]
+
+	// LEXGLUE         SYNONYMY: remains is similar to dead organisms     (0163-db99-2818-250a) [ X1:"remain", X2:"dead organism" ]
+	//row autoRow9 = [UUID:"0163-db99-2818-250a", X1: "remain", X2: "dead organism"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"0163-db99-2818-250a", X1: "remain", X2: "dead organism"]
+
+endinferencepattern

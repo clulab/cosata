@@ -1,0 +1,60 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Exothermic_Reactions
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: a hot pack reaction is a kind of exothermic reaction     (b6e3-e429-57e0-71cd) [ HYPONYM:"hot pack react", HYPERNYM:"exothermic react" ]
+	//        HINTROW combustion is a kind of exothermic reaction     (c647-3cc8-d585-a196) [ HYPONYM:"combust", SCOPE1:"exothermic", HYPERNYM:"react" ]
+	//        HINTROW nuclear reaction is a kind of exothermic reaction     (52cc-5e07-88c5-5d70) [ HYPONYM:"nuclear react", HYPERNYM:"exothermic react" ]
+	//        HINTROW burning coal is a kind of exothermic reaction     (517e-8296-a427-22ab) [ HYPONYM:"burn coal", HYPERNYM:"exothermic react" ]
+	//        HINTROW breaking down fat and sugar is a kind of exothermic reaction     (b147-b4cf-2fd5-778a) [ HYPONYM:"break fat sugar", HYPERNYM:"exothermic react" ]
+	//        HINTROW methane reacting with oxygen is a kind of exothermic reaction     (3ebb-d5a4-fdc0-8fce) [ HYPONYM:"methane react with oxygen", HYPERNYM:"exothermic react" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: *"POS:JJ"+*"POS:NN"+"react", HYPERNYM: "exothermic react"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "exothermic react"]
+
+	// CENTRAL         CHANGE: melting means matter ; a substance changes from a solid into a liquid by increasing heat energy     (6abc-4443-f672-9a97) [ PROCESS_NAME:"melt", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"solid", INTO:"liquid", BY_THROUGH_HOW:"increase heat energy" ]
+	//row autoRow1 = [UUID:"6abc-4443-f672-9a97", PROCESS_NAME: "melt", ACTOR_WHO: "matt", VERB: "change", FROM: "solid", INTO: "liquid", BY_THROUGH_HOW: "increase heat energy"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"6abc-4443-f672-9a97", PROCESS_NAME: "melt", ACTOR_WHO: "matt", VERB: "change", FROM: "solid", INTO: "liquid", BY_THROUGH_HOW: "increase heat energy"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//row autoRow2 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C     (4a5a-9115-28a9-b97b) [ MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice", LOWER_BOUND:"0;-459;-273;459;273", UPPER_BOUND:"273;32;0", UNITS:"k;f;c" ]
+	//row autoRow3 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"]
+
+	// CENTRAL         CAUSE: combining ; mixing two substances chemically causes chemical reactions     (37e1-5b9e-00a1-5e21) [ CONDITION_VERB:"combine;mix", CONDITION_PATIENT:"two substance", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS:"chemically", RESULT_AGENT:"chemical reaction" ]
+	//row autoRow4 = [UUID:"37e1-5b9e-00a1-5e21", CONDITION_VERB: "combine", CONDITION_PATIENT: "two substance", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "chemically", RESULT_AGENT: "chemical reaction"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"37e1-5b9e-00a1-5e21", CONDITION_VERB: "combine", CONDITION_PATIENT: "two substance", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "chemically", RESULT_AGENT: "chemical reaction"]
+
+	// CENTRAL         SOURCEOF: an exothermic process releases heat energy ; light energy     (08b5-ca53-c1f0-593c) [ AGENT:"exothermic process", VERB_SOURCEOF_PROVIDE_ETC:"release", WHAT_IT_PROVIDES:"heat energy;light energy" ]
+	//row autoRow5 = [UUID:"08b5-ca53-c1f0-593c", AGENT: "exothermic process", VERB_SOURCEOF_PROVIDE_ETC: "release", WHAT_IT_PROVIDES: "heat energy"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"08b5-ca53-c1f0-593c", AGENT: "exothermic process", VERB_SOURCEOF_PROVIDE_ETC: "release", WHAT_IT_PROVIDES: "heat energy"]
+
+	// CENTRAL         ACTION: most chemical reactions release or absorb heat energy     (3c81-75ca-5724-f2eb) [ QUANTIFIER:"much", AGENT_OBJECT:"chemical reaction", ACTION2:"release absorb", OBJECT_PROPERTY:"heat energy" ]
+	//row autoRow6 = [UUID:"3c81-75ca-5724-f2eb", QUANTIFIER: "much", AGENT_OBJECT: "chemical reaction", ACTION2: "release absorb", OBJECT_PROPERTY: "heat energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3c81-75ca-5724-f2eb", QUANTIFIER: "much", AGENT_OBJECT: "chemical reaction", ACTION2: "release absorb", OBJECT_PROPERTY: "heat energy"]
+
+	// CENTRAL         CHANGE-VEC: an exothermic reaction increases the amount of heat     (ed83-0798-7781-6842) [ AGENT_OBJECT:"exothermic react", DIRECTION:"increase", QUANTITY:"amount of", PATIENT:"heat" ]
+	//row autoRow7 = [UUID:"ed83-0798-7781-6842", AGENT_OBJECT: "exothermic react", DIRECTION: "increase", QUANTITY: "amount of", PATIENT: "heat"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"ed83-0798-7781-6842", AGENT_OBJECT: "exothermic react", DIRECTION: "increase", QUANTITY: "amount of", PATIENT: "heat"]
+
+	// CENTRAL        (OPTIONAL) SOURCEOF: exergonic chemical reactions only release energy     (b1b6-f4cf-0de7-efeb) [ AGENT:"exergonic chemical reaction", QUALIFIER:"only", VERB_SOURCEOF_PROVIDE_ETC:"release", WHAT_IT_PROVIDES:"energy" ]
+	//row *autoRow8 = [UUID:"b1b6-f4cf-0de7-efeb", AGENT: "exergonic chemical reaction", QUALIFIER: "only", VERB_SOURCEOF_PROVIDE_ETC: "release", WHAT_IT_PROVIDES: "energy"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"b1b6-f4cf-0de7-efeb", AGENT: "exergonic chemical reaction", QUALIFIER: "only", VERB_SOURCEOF_PROVIDE_ETC: "release", WHAT_IT_PROVIDES: "energy"]
+
+	// CENTRAL         KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//row autoRow9 = [UUID:"81b7-0a58-5b0b-0bbf", HYPONYM: "water", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"81b7-0a58-5b0b-0bbf", HYPONYM: "water", HYPERNYM: "substance"]
+
+	// CENTRAL         KINDOF: heat is a kind of energy     (9e7d-986e-6af1-5ac1) [ HYPONYM:"heat", HYPERNYM:"energy" ]
+	//row autoRow10 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"]
+
+endinferencepattern

@@ -1,0 +1,110 @@
+// processtest.iml
+
+/*
+process test stage start
+        // Plain text description
+        description = "Test process: start..."
+
+        // Instances
+        require instance obj1 = [KINDOF:"object"]
+
+        // Code
+        processStageTransition(middle)
+
+endprocess
+
+process test stage middle
+        // Plain text description
+        description = "Test process: middle... "
+
+        // Instances
+        require instance obj1 = [KINDOF:"object"]
+
+        // Code
+        processStageTransition(end)
+
+endprocess
+
+process test stage end
+        // Plain text description
+        description = "Test process: end... "
+
+        // Instances
+        require instance obj1 = [KINDOF:"object"]
+
+        // Code
+        processStageComplete()
+
+endprocess
+
+
+
+
+process lifestages stage start
+        // Plain text description
+        description = "Heat transfer test"
+
+        // Instances
+		require instance obj1 = [KINDOF:"object"]
+		require instance obj2 = [KINDOF:"object"]
+		musthave (obj1."temperature" != "")
+		musthave (obj2."temperature" != "")
+
+
+        // Row definitions
+        // e.g. a stove is a king of heating device
+        row som = [TABLE:"KINDOF", HYPONYM:<devicename>, HYPERNYM:<heatingOrCoolingDevice>]
+
+        // e.g. heating devices are used for heating objects
+        row usedfor = [TABLE:"USEDFOR", AGENT_OBJECT:<heatingOrCoolingDevice>, FOR_PURPOSE:<heatingOrCooling>, PATIENT:<obj>]
+
+        // e.g. heating means the (temperature; heat energy) of an (object; substance) is increased
+        row heatcoolchange = [TABLE:"CHANGE-VEC-PROP", PROCESS_NAME:<heatingOrCooling>, PROPERTY:<tempHeatEnergy>, INCREASED_DECREASED:<incDec>]
+
+
+        // Code
+        var delta = 0.0
+        var stepProportion = 0.1        // At each step, temperatures become 0.1 (or 10%) closer to the other object's temperature
+
+        if (obj1."temperature" > obj2."temperature") then
+            // obj2 has more heat than obj1
+            delta = obj1."temperature" - obj2."temperature"
+            var stepSize = delta * stepProportion
+            obj1."temperature" = obj1."temperature" - stepSize      // warmer object becomes cooler
+            obj2."temperature" = obj2."temperature" + stepSize      // cooler object becomes warmer
+
+            printVariables
+        else
+            // obj1 has more heat than obj2
+            delta = obj2."temperature" - obj1."temperature"
+            var stepSize = delta * stepProportion
+            obj1."temperature" = obj1."temperature" + stepSize      // cooler object becomes warmer
+            obj2."temperature" = obj2."temperature" - stepSize      // warmer object becomes cooler
+
+            printVariables
+        endif
+
+        temporalblock(now)
+            // Now code
+            println ("NOW")
+            printInstances
+
+        endtemporalblock
+
+        temporalblock(step)
+            // Step code
+            println ("STEP")
+            printInstances
+
+        endtemporalblock
+
+        temporalblock(eventually)
+            // Eventually code
+            println ("EVENTUALLY")
+            printInstances
+
+        endtemporalblock
+
+
+endprocess
+*/

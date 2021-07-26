@@ -1,0 +1,63 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Storms_Result_in
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a thunderstorm is a kind of storm     (ed1d-c1cf-76c9-eed3) [ HYPONYM:"thunderstorm", HYPERNYM:"storm" ]
+	//        HINTROW a blizzard is a kind of storm     (4da6-c3de-0469-7d18) [ HYPONYM:"blizzard", HYPERNYM:"storm" ]
+	//        HINTROW a hurricane is a kind of storm     (65b3-3bde-505c-db9e) [ HYPONYM:"hurricane", HYPERNYM:"storm" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "storm"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "storm"]
+
+	// CENTRAL         IFTHEN: when a body of water receives more water than it can hold , a flood occurs     (6a1a-d4cc-de02-eac6) [ THING:"body of water", ACTION1:"receive", ADJ_QUANTITY1A:"much", OBJECT_PATIENT1:"water", SCOPE1B:"than hold", ACTOR_AGENT_PROCESS2:"flood", ACTION3:"occur" ]
+	//row autoRow1 = [UUID:"6a1a-d4cc-de02-eac6", THING: "body of water", ACTION1: "receive", ADJ_QUANTITY1A: "much", OBJECT_PATIENT1: "water", SCOPE1B: "than hold", ACTOR_AGENT_PROCESS2: "flood", ACTION3: "occur"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"6a1a-d4cc-de02-eac6", THING: "body of water", ACTION1: "receive", ADJ_QUANTITY1A: "much", OBJECT_PATIENT1: "water", SCOPE1B: "than hold", ACTOR_AGENT_PROCESS2: "flood", ACTION3: "occur"]
+
+	// CENTRAL         TRANSFER: a landslide is when water ; gravity rapidly moves rocks ; soil downhill especially after a rain storm     (14a5-1229-3653-681c) [ PROCESS_NAME:"landslide", ACTOR_WHO:"water;gravity", VERB:"rapid move", WHAT:"rock;soil", DESTINATION:"downhill", SCOPE:"especially after rain storm" ]
+	//row autoRow2 = [UUID:"14a5-1229-3653-681c", PROCESS_NAME: "landslide", ACTOR_WHO: "water", VERB: "rapid move", WHAT: "rock", DESTINATION: "downhill", SCOPE: "especially after rain storm"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"14a5-1229-3653-681c", PROCESS_NAME: "landslide", ACTOR_WHO: "water", VERB: "rapid move", WHAT: "rock", DESTINATION: "downhill", SCOPE: "especially after rain storm"]
+
+	// CENTRAL         KINDOF: storm is a kind of weather ; weather event     (182e-8760-e878-1751) [ HYPONYM:"storm", HYPERNYM:"weather;weather event" ]
+	//  Notes: peripheral
+	//row autoRow3 = [UUID:"182e-8760-e878-1751", HYPONYM: "storm", HYPERNYM: "weather event"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"182e-8760-e878-1751", HYPONYM: "storm", HYPERNYM: "weather event"]
+
+	// CENTRAL         CAUSE: erosion ; storms can cause a landslide     (ad27-ad14-2ed7-2b55) [ CONDITION_AGENT_OBJECT:"erode;storm", RESULT_AGENT:"landslide" ]
+	//row autoRow4 = [UUID:"ad27-ad14-2ed7-2b55", CONDITION_AGENT_OBJECT: "erode", RESULT_AGENT: "landslide"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"ad27-ad14-2ed7-2b55", CONDITION_AGENT_OBJECT: "erode", RESULT_AGENT: "landslide"]
+
+	// CENTRAL         SOURCEOF: a storm is a source of precipitation     (0ea5-1238-12df-899e) [ AGENT:"storm", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"precipitation" ]
+	//row autoRow5 = [UUID:"0ea5-1238-12df-899e", AGENT: "storm", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "precipitation"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"0ea5-1238-12df-899e", AGENT: "storm", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "precipitation"]
+
+	// CENTRAL         CAUSE: storms ; rain cause bodies of water to increase amount of water they contain     (c1bf-db54-7c40-a799) [ CONDITION_AGENT_OBJECT:"storm;rain", RESULT_AGENT:"body of water", RESULT_VERB:"increase", RESULT_PATIENT:"amount of water contain" ]
+	//row autoRow6 = [UUID:"c1bf-db54-7c40-a799", CONDITION_AGENT_OBJECT: "storm", RESULT_AGENT: "body of water", RESULT_VERB: "increase", RESULT_PATIENT: "amount of water contain"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"c1bf-db54-7c40-a799", CONDITION_AGENT_OBJECT: "storm", RESULT_AGENT: "body of water", RESULT_VERB: "increase", RESULT_PATIENT: "amount of water contain"]
+
+	// CENTRAL         CAUSE: wind and rain ; storms cause erosion     (a4ff-959e-a3ef-5a67) [ CONDITION_AGENT_OBJECT:"wind rain;storm", RESULT_AGENT:"erode" ]
+	//row autoRow7 = [UUID:"a4ff-959e-a3ef-5a67", CONDITION_AGENT_OBJECT: "wind rain", RESULT_AGENT: "erode"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"a4ff-959e-a3ef-5a67", CONDITION_AGENT_OBJECT: "wind rain", RESULT_AGENT: "erode"]
+
+	// CENTRAL         SOURCEOF: a storm is usually a source of strong winds     (cea4-791e-8859-9c10) [ AGENT:"storm", QUALIFIER:"be usually", VERB_SOURCEOF_PROVIDE_ETC:"source of", WHAT_IT_PROVIDES:"strong wind" ]
+	//row autoRow8 = [UUID:"cea4-791e-8859-9c10", AGENT: "storm", QUALIFIER: "be usually", VERB_SOURCEOF_PROVIDE_ETC: "source of", WHAT_IT_PROVIDES: "strong wind"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"cea4-791e-8859-9c10", AGENT: "storm", QUALIFIER: "be usually", VERB_SOURCEOF_PROVIDE_ETC: "source of", WHAT_IT_PROVIDES: "strong wind"]
+
+	// CENTRAL         CHANGE-VEC: amount of water in a body of water increases by storms ; rain ; glaciers melting ; snow melting ; ice melting     (19c9-47bf-de91-1f2e) [ AGENT_OBJECT:"amount of water", SCOPE1:"in body of water", DIRECTION:"increase", BY_THROUGH_HOW:"storm;rain;glacier melt;snow melt;ice melt" ]
+	//  Notes: cause water level to rise
+	//row autoRow9 = [UUID:"19c9-47bf-de91-1f2e", AGENT_OBJECT: "amount of water", SCOPE1: "in body of water", DIRECTION: "increase", BY_THROUGH_HOW: "glacier melt"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"19c9-47bf-de91-1f2e", AGENT_OBJECT: "amount of water", SCOPE1: "in body of water", DIRECTION: "increase", BY_THROUGH_HOW: "glacier melt"]
+
+	// CENTRAL         REQUIRES: preparing for a storm requires predicting the occurrence of that storm     (bbef-5cd8-4316-7358) [ ACTION1:"prepare for", OBJECT_AGENT_PROCESS:"storm", VERB_REQUIRES:"require", ACTION2:"predict", OBJECT:"occurrence", SCOPE2:"of storm" ]
+	//row autoRow10 = [UUID:"bbef-5cd8-4316-7358", ACTION1: "prepare for", OBJECT_AGENT_PROCESS: "storm", VERB_REQUIRES: "require", ACTION2: "predict", OBJECT: "occurrence", SCOPE2: "of storm"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"bbef-5cd8-4316-7358", ACTION1: "prepare for", OBJECT_AGENT_PROCESS: "storm", VERB_REQUIRES: "require", ACTION2: "predict", OBJECT: "occurrence", SCOPE2: "of storm"]
+
+	// LEXGLUE         SYNONYMY: rainstorm means rain storm     (fb92-b17a-c650-08cf) [ X1:"rainstorm", X2:"rain storm" ]
+	//row autoRow11 = [UUID:"fb92-b17a-c650-08cf", X1: "rainstorm", X2: "rain storm"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"fb92-b17a-c650-08cf", X1: "rainstorm", X2: "rain storm"]
+
+endinferencepattern

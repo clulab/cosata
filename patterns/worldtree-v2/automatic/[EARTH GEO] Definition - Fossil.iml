@@ -1,0 +1,81 @@
+// Automatically converted pattern
+inferencepattern EARTH_GEO_Definition_Fossil
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       FORMEDBY: fossils are formed when layers of sediment cover the remains of organisms over time     (b0d4-928e-e799-54a6) [ OBJECT:"fossil", AGENT_PROCESS:"layer of sediment", VERB:"cover", PATIENT:"remain of organism", SCOPE:"over time" ]
+	//        HINTROW index fossils are formed from species that existed for a relatively short time     (7195-6887-7136-14df) [ OBJECT:"index fossil", AGENT_PROCESS:"species", VERB:"exist", SCOPE:"for relatively short time" ]
+	//row autoRow0 = [TABLE:"FORMEDBY", OBJECT: "fossil", AGENT_PROCESS: *"POS:NN"+"of"+*"POS:NN", VERB: "cover", PATIENT: "remain of organism", SCOPE: "over time"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"FORMEDBY", OBJECT: "fossil", SCOPE: "over time"]
+
+	// CENTRALSW       IFTHEN: if fossils of a water animal or plant are found in a place then that animal or plant used to live in that place     (72b4-027a-430e-ee18) [ THING:"fossil", SCOPE1A:"of water animal plant", ACTION1:"find", SCOPE1B:"in place", ACTOR_AGENT_PROCESS2:"that animal plant", ACTION3:"live in", OBJECT_PROPERTY3:"place" ]
+	//        HINTROW if fossils of an animal or plant are found in a place then that animal or plant used to live in that place     (11f0-d642-4805-a3e8) [ THING:"fossil", SCOPE1A:"of animal plant", ACTION1:"find", SCOPE1B:"in place", ACTOR_AGENT_PROCESS2:"that animal plant", ACTION3:"live in", OBJECT_PROPERTY3:"place" ]
+	//  Notes: fossils of animal --> animal used to live in that place
+	//row autoRow1 = [TABLE:"IFTHEN", THING: "fossil", SCOPE1A: "of"+<water_0>+"animal plant", ACTION1: "find", SCOPE1B: "in place", ACTOR_AGENT_PROCESS2: "that animal plant", ACTION3: "live in", OBJECT_PROPERTY3: "place"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"IFTHEN", THING: "fossil", SCOPE1A: "of"+<water_0>+"animal plant", ACTION1: "find", SCOPE1B: "in place", ACTOR_AGENT_PROCESS2: "that animal plant", ACTION3: "live in", OBJECT_PROPERTY3: "place"]
+
+	// GROUNDING       KINDOF: a river is a kind of flowing ; moving body of water     (9885-6337-f26c-cfbd) [ HYPONYM:"river", SCOPE1:"flow;move", HYPERNYM:"body of water" ]
+	//        HINTROW an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//        HINTROW a pool is a kind of body of water     (7ebb-7a94-af1e-9fa9) [ HYPONYM:"pool", HYPERNYM:"body of water" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "body of"+<water_0>] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "body of"+<water_0>]
+
+	// GROUNDING       HABITAT: sharks live in oceans     (8ccf-4c8b-aad5-e326) [ ORGANISM:"shark", HABITAT:"in ocean" ]
+	//        HINTROW a fish lives in water     (6e0c-4bc9-7e10-351a) [ ORGANISM:"fish", HABITAT:"water" ]
+	//  Notes: X lives in water
+//WARNING! Slot with no constraints.
+//	//row autoRow3 = [TABLE:"HABITAT"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow3 = [TABLE:"HABITAT"]
+
+	// GROUNDING       KINDOF: a shark is a kind of fish     (737d-9e1b-683f-862c) [ HYPONYM:"shark", HYPERNYM:"fish" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "shark", HYPERNYM: "fish"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "shark", HYPERNYM: "fish"]
+
+	// CENTRAL        (OPTIONAL) DURATIONS: fossil fuels ; fossils forming occurs over a period of 300000000 years which is considered a very long time to a human     (a3a9-88b4-59db-d0b9) [ AGENT:"fossil fuel;fossil", ACTION:"form", LOWERBOUND:"300000000", DURATIONUNIT:"year", MAGNITUDE:"very long", ATTRIBUTE:"time", SCOPE:"human" ]
+	//row *autoRow5 = [UUID:"a3a9-88b4-59db-d0b9", AGENT: "fossil fuel", ACTION: "form", LOWERBOUND: "300000000", DURATIONUNIT: "year", MAGNITUDE: "very long", ATTRIBUTE: "time", SCOPE: "human"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"a3a9-88b4-59db-d0b9", AGENT: "fossil fuel", ACTION: "form", LOWERBOUND: "300000000", DURATIONUNIT: "year", MAGNITUDE: "very long", ATTRIBUTE: "time", SCOPE: "human"]
+
+	// CENTRAL         AFFORDANCES: conclusions can be drawn about changes in organisms over time by determining the age of fossils of those organisms     (4dde-29a9-1c36-dc87) [ ACTOR_THING:"conclusion", VERB:"draw", PATIENT:"about change in organism over time", BY_THROUGH_HOW:"determine age of fossil of organism" ]
+	//row autoRow6 = [UUID:"4dde-29a9-1c36-dc87", ACTOR_THING: "conclusion", VERB: "draw", PATIENT: "about change in organism over time", BY_THROUGH_HOW: "determine age of fossil of organism"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4dde-29a9-1c36-dc87", ACTOR_THING: "conclusion", VERB: "draw", PATIENT: "about change in organism over time", BY_THROUGH_HOW: "determine age of fossil of organism"]
+
+	// CENTRAL         IFTHEN: if fossils of a water animal or plant are found in a place then that place used to be covered by water in the past     (965d-4d8b-7777-6434) [ THING:"fossil", SCOPE1A:"of water animal plant", ACTION1:"find", SCOPE1B:"in place", ACTOR_AGENT_PROCESS2:"that place", ACTION3:"cover by", OBJECT_PROPERTY3:"water", SCOPE4:"in past" ]
+	//  Notes: fossils of water animal; water plants --> used to be water
+	//row autoRow7 = [UUID:"965d-4d8b-7777-6434", THING: "fossil", SCOPE1A: "of"+<water_0>+"animal plant", ACTION1: "find", SCOPE1B: "in place", ACTOR_AGENT_PROCESS2: "that place", ACTION3: "cover by", OBJECT_PROPERTY3: <water_0>, SCOPE4: "in past"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"965d-4d8b-7777-6434", THING: "fossil", SCOPE1A: "of"+<water_0>+"animal plant", ACTION1: "find", SCOPE1B: "in place", ACTOR_AGENT_PROCESS2: "that place", ACTION3: "cover by", OBJECT_PROPERTY3: <water_0>, SCOPE4: "in past"]
+
+	// CENTRAL         HABITAT: aquatic animals ; plants live in bodies of water     (a13a-1bd4-3d64-f3db) [ SUBSPECIES:"aquatic", ORGANISM:"animal;plant", HABITAT:"body of water" ]
+	//  Notes: 2125-ab14-605b-2b8c->a13a-1bd4-3d64-f3db
+	//row autoRow8 = [UUID:"a13a-1bd4-3d64-f3db", SUBSPECIES: "aquatic", ORGANISM: "animal", HABITAT: "body of"+<water_0>] //OVER-CONSTR.
+	row autoRow8 = [UUID:"a13a-1bd4-3d64-f3db", SUBSPECIES: "aquatic", ORGANISM: "animal", HABITAT: "body of"+<water_0>]
+
+	// CENTRAL         LOCATIONS: nearly all fossils are found in sedimentary rock     (c734-55b0-6cf4-c9d9) [ QUANTIFIER:"nearly", THING_PROCESS:"fossil", LOCATION:"sedimentary rock" ]
+	//row autoRow9 = [UUID:"c734-55b0-6cf4-c9d9", QUANTIFIER: "nearly", THING_PROCESS: "fossil", LOCATION: "sedimentary rock"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"c734-55b0-6cf4-c9d9", QUANTIFIER: "nearly", THING_PROCESS: "fossil", LOCATION: "sedimentary rock"]
+
+	// CENTRAL         KINDOF: a body of water is a kind of environment     (3f9d-8b3a-54b5-6a3c) [ HYPONYM:"body of water", HYPERNYM:"environment" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"3f9d-8b3a-54b5-6a3c", HYPONYM: "body of"+<water_0>, HYPERNYM: "environment"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"3f9d-8b3a-54b5-6a3c", HYPONYM: "body of"+<water_0>, HYPERNYM: "environment"]
+
+	// CENTRAL         KINDOF: index fossils are a kind of fossil     (4cf3-4227-89f0-d5d0) [ HYPONYM:"index fossil", HYPERNYM:"fossil" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"4cf3-4227-89f0-d5d0", HYPONYM: "index fossil", HYPERNYM: "fossil"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"4cf3-4227-89f0-d5d0", HYPONYM: "index fossil", HYPERNYM: "fossil"]
+
+	// CENTRAL         KINDOF: an aquatic animal is a kind of animal     (b80f-f372-967d-6ac4) [ HYPONYM:"aquatic animal", HYPERNYM:"animal" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"b80f-f372-967d-6ac4", HYPONYM: "aquatic animal", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"b80f-f372-967d-6ac4", HYPONYM: "aquatic animal", HYPERNYM: "animal"]
+
+	// LEXGLUE         SYNONYMY: fossil means preserved remains of ancient organisms     (c527-3fa0-13ee-6b34) [ X1:"fossil", X2:"preserve remain of ancient organism" ]
+	//row autoRow13 = [UUID:"c527-3fa0-13ee-6b34", X1: "fossil", X2: "preserve remain of ancient organism"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"c527-3fa0-13ee-6b34", X1: "fossil", X2: "preserve remain of ancient organism"]
+
+endinferencepattern

@@ -1,0 +1,75 @@
+// Automatically converted pattern
+inferencepattern MAT_PROPMATERIAL_Density_Comparison_Result
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-THINGS: solid water is less dense than liquid water     (77b1-84e2-1483-8b30) [ ADJ:"solid", THING:"water", VALUE:"little dense", SCOPE_RELATIVETO:"than liquid water" ]
+	//        HINTROW magnesium is less dense than iron     (1734-ce7f-d198-39d4) [ THING:"magnesium", ACTION1:"be", COMPARISON:"little dense", THING_COMPARED:"iron" ]
+	//        HINTROW silicate is less dense than nickel     (e67a-eb1a-e950-1e0b) [ THING:"silicate", ACTION1:"be", COMPARISON:"little dense", THING_COMPARED:"nickel" ]
+	//        HINTROW sand is denser than water     (a235-51c0-e383-120d) [ THING:"sand", VALUE:"dense", SCOPE_RELATIVETO:"than water" ]
+	//        HINTROW basalt is more dense than granite     (350a-57e1-551e-cfe5) [ THING:"basalt", ACTION1:"be", COMPARISON:"much dense", THING_COMPARED:"granite" ]
+	//  Notes: 3d7f-734c-2fe3-1eaa->1734-ce7f-d198-39d4;3a25-68cc-a553-f553->e67a-eb1a-e950-1e0b;2be9-40c7-02e2-74df->350a-57e1-551e-cfe5X is less dense/denser than Y
+//WARNING! Slot with no constraints.
+//	//row autoRow0 = [TABLE:"PROP-THINGS"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow0 = [TABLE:"PROP-THINGS"]
+
+	// GROUNDING       KINDOF: water is a kind of liquid at room temperature     (3961-d09c-4b9a-a6f7) [ HYPONYM:"water", HYPERNYM:"liquid", SCOPE2:"at room temperature" ]
+	//        HINTROW nickel is a kind of metal     (b9cc-677a-5ae7-0e65) [ HYPONYM:"nickel", HYPERNYM:"metal" ]
+	//        HINTROW iron is a kind of metal     (de4c-ca36-c336-540f) [ HYPONYM:"iron", HYPERNYM:"metal" ]
+	//        HINTROW water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//        HINTROW granite is a kind of igneous rock     (65b7-dcc0-e9d7-6b54) [ HYPONYM:"granite", SCOPE1:"igneous", HYPERNYM:"rock" ]
+	//  Notes: Y column
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow1 = [TABLE:"KINDOF"]
+
+	// GROUNDING       KINDOF: ice is a kind of solid     (7ef1-c28b-22e3-3edc) [ HYPONYM:"ice", HYPERNYM:"solid" ]
+	//        HINTROW magnesium is a kind of substance     (add0-eb27-c0b6-4ad7) [ HYPONYM:"magnesium", HYPERNYM:"substance" ]
+	//        HINTROW silicate is a kind of substance     (8cca-da8f-c243-68d5) [ HYPONYM:"silicate", HYPERNYM:"substance" ]
+	//        HINTROW sand is a kind of substance     (3218-9c9c-ff54-04b8) [ HYPONYM:"sand", HYPERNYM:"substance" ]
+	//        HINTROW basalt is a kind of igneous rock     (a5c0-d9cf-135e-ad06) [ HYPONYM:"basalt", HYPERNYM:"igneous rock" ]
+	//  Notes: X column
+//WARNING! Slot with no constraints.
+//	//row autoRow2 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow2 = [TABLE:"KINDOF"]
+
+	// CENTRAL         ACTION: denser liquids ; particles in liquids ; materials settle below liquids or particles in liquids ; materials that are less dense     (54ff-9d51-da43-e4f9) [ ADJ:"dense", AGENT_OBJECT:"liquid;particle in liquid;material", ACTION2:"settle", WHEN_WHERE:"below liquid particle in liquid;material", SCOPE2:"be little dense" ]
+	//row autoRow3 = [UUID:"54ff-9d51-da43-e4f9", ADJ: "dense", AGENT_OBJECT: "particle in liquid", ACTION2: "settle", WHEN_WHERE: "below liquid particle in liquid", SCOPE2: "be little dense"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"54ff-9d51-da43-e4f9", ADJ: "dense", AGENT_OBJECT: "particle in liquid", ACTION2: "settle", WHEN_WHERE: "below liquid particle in liquid", SCOPE2: "be little dense"]
+
+	// CENTRAL         ACTION: less dense liquids ; particles in liquids ; materials float liquids ; particiles in liquids ; materials that are more dense     (4b8b-1f9b-9227-55b4) [ QUANTIFIER:"little", ADJ:"dense", AGENT_OBJECT:"liquid;particle in liquid;material", ACTION2:"float", WHEN_WHERE:"liquid;particile in liquid;material", SCOPE2:"be much dense" ]
+	//row autoRow4 = [UUID:"4b8b-1f9b-9227-55b4", QUANTIFIER: "little", ADJ: "dense", AGENT_OBJECT: "particle in liquid", ACTION2: "float", WHEN_WHERE: "particile in liquid", SCOPE2: "be much dense"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4b8b-1f9b-9227-55b4", QUANTIFIER: "little", ADJ: "dense", AGENT_OBJECT: "particle in liquid", ACTION2: "float", WHEN_WHERE: "particile in liquid", SCOPE2: "be much dense"]
+
+	// CENTRAL         KINDOF: ice is a kind of water phase     (9470-ce58-a3b8-9f1f) [ HYPONYM:"ice", HYPERNYM:"water phase" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"9470-ce58-a3b8-9f1f", HYPONYM: "ice", HYPERNYM: "water phase"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"9470-ce58-a3b8-9f1f", HYPONYM: "ice", HYPERNYM: "water phase"]
+
+	// CENTRAL         MADEOF: matter ; materials ; substances are made of atoms ; particles     (1758-a1b7-4083-9e99) [ OBJECT:"matt;material;substance", MATERIAL:"atom;particle" ]
+	//row autoRow6 = [UUID:"1758-a1b7-4083-9e99", OBJECT: "matt", MATERIAL: "atom"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"1758-a1b7-4083-9e99", OBJECT: "matt", MATERIAL: "atom"]
+
+	// CENTRAL         KINDOF: a liquid is a kind of substance     (3f2b-87bb-f73a-3e5d) [ HYPONYM:"liquid", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"3f2b-87bb-f73a-3e5d", HYPONYM: "liquid", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3f2b-87bb-f73a-3e5d", HYPONYM: "liquid", HYPERNYM: "substance"]
+
+	// CENTRAL         KINDOF: a solid is a kind of substance     (ba9b-b2e3-d362-1dd0) [ HYPONYM:"solid", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"ba9b-b2e3-d362-1dd0", HYPONYM: "solid", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"ba9b-b2e3-d362-1dd0", HYPONYM: "solid", HYPERNYM: "substance"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if an object in a fluid is more dense than that fluid then that object will sink in that fluid because of gravity     (a081-932e-1f21-c78c) [ THING:"object", SCOPE1A:"in fluid", OBJECT_PROPERTY1:"much dense", SCOPE1B:"than fluid", ACTOR_AGENT_PROCESS2:"object", ACTION3:"sink", ADJ_QUANTIFIER3:"in fluid", BY_THROUGH_HOW:"gravity" ]
+	//row *autoRow9 = [UUID:"a081-932e-1f21-c78c", THING: "object", SCOPE1A: "in fluid", OBJECT_PROPERTY1: "much dense", SCOPE1B: "than fluid", ACTOR_AGENT_PROCESS2: "object", ACTION3: "sink", ADJ_QUANTIFIER3: "in fluid", BY_THROUGH_HOW: "gravity"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"a081-932e-1f21-c78c", THING: "object", SCOPE1A: "in fluid", OBJECT_PROPERTY1: "much dense", SCOPE1B: "than fluid", ACTOR_AGENT_PROCESS2: "object", ACTION3: "sink", ADJ_QUANTIFIER3: "in fluid", BY_THROUGH_HOW: "gravity"]
+
+endinferencepattern

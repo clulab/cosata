@@ -1,0 +1,856 @@
+{"patternMatches": [
+{
+	"patternName":"CEL_MOONPHASES_Moon_Phases",
+	"matches":[
+		{
+		"uuids": ["7839-d019-df9a-89fb","4104-c781-9d26-6c93","39c7-8e56-d1a9-efbe","f5d1-54ee-c653-9285","061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7839-d019-df9a-89fb", "rowText": "a lunar eclipse could only occur during a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "4104-c781-9d26-6c93", "rowText": "a full moon occurs after a waxing gibbous moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "39c7-8e56-d1a9-efbe", "rowText": "a new moon occurs 14 days after a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "f5d1-54ee-c653-9285", "rowText": "the full moon is when the Earth is in between the sun and the moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["86d9-dd35-a5bf-7a09","39c7-8e56-d1a9-efbe","7a15-299b-1e0d-5bc9","cb3b-8b0b-8cfe-a3e2","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "86d9-dd35-a5bf-7a09", "rowText": "a solar eclipse could only happen during the new moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "39c7-8e56-d1a9-efbe", "rowText": "a new moon occurs 14 days after a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7a15-299b-1e0d-5bc9", "rowText": "the new moon is when the dark half of the moon faces the Earth", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb3b-8b0b-8cfe-a3e2", "rowText": "a new moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		]
+		},
+		{
+		"uuids": ["86d9-dd35-a5bf-7a09","39c7-8e56-d1a9-efbe","bb05-85fe-5214-0da7","cb3b-8b0b-8cfe-a3e2","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "86d9-dd35-a5bf-7a09", "rowText": "a solar eclipse could only happen during the new moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "39c7-8e56-d1a9-efbe", "rowText": "a new moon occurs 14 days after a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "bb05-85fe-5214-0da7", "rowText": "the new moon is when the lighted half of the moon faces the Sun", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb3b-8b0b-8cfe-a3e2", "rowText": "a new moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		]
+		},
+		{
+		"uuids": ["7839-d019-df9a-89fb","4104-c781-9d26-6c93","39c7-8e56-d1a9-efbe","061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7839-d019-df9a-89fb", "rowText": "a lunar eclipse could only occur during a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "4104-c781-9d26-6c93", "rowText": "a full moon occurs after a waxing gibbous moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "39c7-8e56-d1a9-efbe", "rowText": "a new moon occurs 14 days after a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["7839-d019-df9a-89fb","4104-c781-9d26-6c93","f5d1-54ee-c653-9285","061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7839-d019-df9a-89fb", "rowText": "a lunar eclipse could only occur during a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "4104-c781-9d26-6c93", "rowText": "a full moon occurs after a waxing gibbous moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "f5d1-54ee-c653-9285", "rowText": "the full moon is when the Earth is in between the sun and the moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["7839-d019-df9a-89fb","39c7-8e56-d1a9-efbe","f5d1-54ee-c653-9285","061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7839-d019-df9a-89fb", "rowText": "a lunar eclipse could only occur during a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "39c7-8e56-d1a9-efbe", "rowText": "a new moon occurs 14 days after a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "f5d1-54ee-c653-9285", "rowText": "the full moon is when the Earth is in between the sun and the moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["4104-c781-9d26-6c93","39c7-8e56-d1a9-efbe","f5d1-54ee-c653-9285","061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "4104-c781-9d26-6c93", "rowText": "a full moon occurs after a waxing gibbous moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "39c7-8e56-d1a9-efbe", "rowText": "a new moon occurs 14 days after a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "f5d1-54ee-c653-9285", "rowText": "the full moon is when the Earth is in between the sun and the moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["86d9-dd35-a5bf-7a09","39c7-8e56-d1a9-efbe","cb3b-8b0b-8cfe-a3e2","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "86d9-dd35-a5bf-7a09", "rowText": "a solar eclipse could only happen during the new moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "39c7-8e56-d1a9-efbe", "rowText": "a new moon occurs 14 days after a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb3b-8b0b-8cfe-a3e2", "rowText": "a new moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		]
+		},
+		{
+		"uuids": ["86d9-dd35-a5bf-7a09","7a15-299b-1e0d-5bc9","cb3b-8b0b-8cfe-a3e2","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "86d9-dd35-a5bf-7a09", "rowText": "a solar eclipse could only happen during the new moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7a15-299b-1e0d-5bc9", "rowText": "the new moon is when the dark half of the moon faces the Earth", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb3b-8b0b-8cfe-a3e2", "rowText": "a new moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		]
+		},
+		{
+		"uuids": ["86d9-dd35-a5bf-7a09","bb05-85fe-5214-0da7","cb3b-8b0b-8cfe-a3e2","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "86d9-dd35-a5bf-7a09", "rowText": "a solar eclipse could only happen during the new moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "bb05-85fe-5214-0da7", "rowText": "the new moon is when the lighted half of the moon faces the Sun", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb3b-8b0b-8cfe-a3e2", "rowText": "a new moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		]
+		},
+		{
+		"uuids": ["7839-d019-df9a-89fb","4104-c781-9d26-6c93","061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7839-d019-df9a-89fb", "rowText": "a lunar eclipse could only occur during a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "4104-c781-9d26-6c93", "rowText": "a full moon occurs after a waxing gibbous moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["7839-d019-df9a-89fb","39c7-8e56-d1a9-efbe","061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7839-d019-df9a-89fb", "rowText": "a lunar eclipse could only occur during a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "39c7-8e56-d1a9-efbe", "rowText": "a new moon occurs 14 days after a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["7839-d019-df9a-89fb","f5d1-54ee-c653-9285","061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7839-d019-df9a-89fb", "rowText": "a lunar eclipse could only occur during a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "f5d1-54ee-c653-9285", "rowText": "the full moon is when the Earth is in between the sun and the moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["4104-c781-9d26-6c93","39c7-8e56-d1a9-efbe","061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "4104-c781-9d26-6c93", "rowText": "a full moon occurs after a waxing gibbous moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "39c7-8e56-d1a9-efbe", "rowText": "a new moon occurs 14 days after a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["4104-c781-9d26-6c93","f5d1-54ee-c653-9285","061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "4104-c781-9d26-6c93", "rowText": "a full moon occurs after a waxing gibbous moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "f5d1-54ee-c653-9285", "rowText": "the full moon is when the Earth is in between the sun and the moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["39c7-8e56-d1a9-efbe","7a15-299b-1e0d-5bc9","cb3b-8b0b-8cfe-a3e2","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "39c7-8e56-d1a9-efbe", "rowText": "a new moon occurs 14 days after a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7a15-299b-1e0d-5bc9", "rowText": "the new moon is when the dark half of the moon faces the Earth", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb3b-8b0b-8cfe-a3e2", "rowText": "a new moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		]
+		},
+		{
+		"uuids": ["39c7-8e56-d1a9-efbe","bb05-85fe-5214-0da7","cb3b-8b0b-8cfe-a3e2","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "39c7-8e56-d1a9-efbe", "rowText": "a new moon occurs 14 days after a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "bb05-85fe-5214-0da7", "rowText": "the new moon is when the lighted half of the moon faces the Sun", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb3b-8b0b-8cfe-a3e2", "rowText": "a new moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		]
+		},
+		{
+		"uuids": ["39c7-8e56-d1a9-efbe","f5d1-54ee-c653-9285","061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "39c7-8e56-d1a9-efbe", "rowText": "a new moon occurs 14 days after a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "f5d1-54ee-c653-9285", "rowText": "the full moon is when the Earth is in between the sun and the moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["86d9-dd35-a5bf-7a09","cb3b-8b0b-8cfe-a3e2","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "86d9-dd35-a5bf-7a09", "rowText": "a solar eclipse could only happen during the new moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb3b-8b0b-8cfe-a3e2", "rowText": "a new moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		]
+		},
+		{
+		"uuids": ["7839-d019-df9a-89fb","061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7839-d019-df9a-89fb", "rowText": "a lunar eclipse could only occur during a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["4104-c781-9d26-6c93","061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "4104-c781-9d26-6c93", "rowText": "a full moon occurs after a waxing gibbous moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["39c7-8e56-d1a9-efbe","cb3b-8b0b-8cfe-a3e2","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "39c7-8e56-d1a9-efbe", "rowText": "a new moon occurs 14 days after a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb3b-8b0b-8cfe-a3e2", "rowText": "a new moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		]
+		},
+		{
+		"uuids": ["39c7-8e56-d1a9-efbe","061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "39c7-8e56-d1a9-efbe", "rowText": "a new moon occurs 14 days after a full moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["7a15-299b-1e0d-5bc9","cb3b-8b0b-8cfe-a3e2","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7a15-299b-1e0d-5bc9", "rowText": "the new moon is when the dark half of the moon faces the Earth", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb3b-8b0b-8cfe-a3e2", "rowText": "a new moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		]
+		},
+		{
+		"uuids": ["bb05-85fe-5214-0da7","cb3b-8b0b-8cfe-a3e2","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "bb05-85fe-5214-0da7", "rowText": "the new moon is when the lighted half of the moon faces the Sun", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb3b-8b0b-8cfe-a3e2", "rowText": "a new moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		]
+		},
+		{
+		"uuids": ["f5d1-54ee-c653-9285","061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "f5d1-54ee-c653-9285", "rowText": "the full moon is when the Earth is in between the sun and the moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["a62b-415d-357f-995a","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a62b-415d-357f-995a", "rowText": "a first quarter is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"﻿1 quarter" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"first quarter" }
+		]
+		},
+		{
+		"uuids": ["061d-1ec6-4a7a-9f63","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "061d-1ec6-4a7a-9f63", "rowText": "a full moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"full moon" }
+		]
+		},
+		{
+		"uuids": ["0cac-60e6-ae3d-50ec","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "0cac-60e6-ae3d-50ec", "rowText": "a last quarter is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"last quarter" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"last quarter" }
+		]
+		},
+		{
+		"uuids": ["cb3b-8b0b-8cfe-a3e2","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb3b-8b0b-8cfe-a3e2", "rowText": "a new moon is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"new moon" }
+		]
+		},
+		{
+		"uuids": ["ad73-5c93-32aa-6f1f","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ad73-5c93-32aa-6f1f", "rowText": "a waning crescent is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"wane crescent" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"waning crescent" }
+		]
+		},
+		{
+		"uuids": ["c5a9-9966-e1ba-9643","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c5a9-9966-e1ba-9643", "rowText": "a waning gibbous is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"wane gibbous" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"waning gibbous" }
+		]
+		},
+		{
+		"uuids": ["9dd7-2ee2-44ed-2a08","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9dd7-2ee2-44ed-2a08", "rowText": "a waxing crescent is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"wax crescent" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"waxing crescent" }
+		]
+		},
+		{
+		"uuids": ["59a8-0777-9606-d6a2","d1de-2ec6-5323-1c1d","06da-bc83-aab7-015f","e70b-e515-02a3-8958","05fd-88ed-b538-e2dd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "59a8-0777-9606-d6a2", "rowText": "a waxing gibbous is a kind of phase of the moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d1de-2ec6-5323-1c1d", "rowText": "a different moon phase occurs approximately once per week", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "06da-bc83-aab7-015f", "rowText": "each of the moon 's phases occurs once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e70b-e515-02a3-8958", "rowText": "the moon revolving around ; orbiting the Earth causes the phases of the moon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fd-88ed-b538-e2dd", "rowText": "monthly means once per month", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"wax gibbous" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow1a", "value":"" },
+			{ "name":"autoRow1b", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"moonPhase", "value":"waxing gibbous" }
+		]
+		}
+	]
+}
+]}
+

@@ -1,0 +1,55 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Plants_Transpiration
+
+	// Plain text description
+	description = "Rows need rework"
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW an apple tree is a kind of plant     (00a7-56fc-3c22-e6f2) [ HYPONYM:"apple tree", HYPERNYM:"plant" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// CENTRAL         TRANSFER: transpiration is when water vapor moves from plants ; leaves into the atmosphere     (51c3-47cf-792c-8142) [ PROCESS_NAME:"transpiration", ACTOR_WHO:"water vapor", VERB:"move;move", SOURCE:"plant;leaf", DESTINATION:"atmosphere" ]
+	//  Notes: 03c0-59bd-bf14-aaa0->51c3-47cf-792c-8142
+	//row autoRow1 = [UUID:"51c3-47cf-792c-8142", PROCESS_NAME: "transpiration", ACTOR_WHO: "water vapor", VERB: "move", SOURCE: "plant", DESTINATION: "atmosphere"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"51c3-47cf-792c-8142", PROCESS_NAME: "transpiration", ACTOR_WHO: "water vapor", VERB: "move", SOURCE: "plant", DESTINATION: "atmosphere"]
+
+	// CENTRAL         ACTION: plants control the amount of water in their leaves through transpiration     (3944-665a-cd65-c185) [ AGENT_OBJECT:"plant", ACTION2:"control", OBJECT_PROPERTY:"amount of water", WHEN_WHERE:"in leaf", BY_THROUGH_HOW:"transpiration" ]
+	//row autoRow2 = [UUID:"3944-665a-cd65-c185", AGENT_OBJECT: "plant", ACTION2: "control", OBJECT_PROPERTY: "amount of water", WHEN_WHERE: "in leaf", BY_THROUGH_HOW: "transpiration"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"3944-665a-cd65-c185", AGENT_OBJECT: "plant", ACTION2: "control", OBJECT_PROPERTY: "amount of water", WHEN_WHERE: "in leaf", BY_THROUGH_HOW: "transpiration"]
+
+	// CENTRAL         KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow3 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"]
+
+	// CENTRAL         STAGE-IN-PROCESS: transpiration is a stage in the water cycle process     (7893-9c24-3199-bd03) [ STAGE:"transpiration", PROCESS:"water cycle" ]
+	//  Notes: 9974-bcb8-7899-2ae4->7893-9c24-3199-bd03peripheral
+	//row autoRow4 = [UUID:"7893-9c24-3199-bd03", STAGE: "transpiration", PROCESS: "water cycle"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"7893-9c24-3199-bd03", STAGE: "transpiration", PROCESS: "water cycle"]
+
+	// CENTRAL         LOCATIONS: transpiration usually happens in the leaves of a plant     (6778-0a90-bf9d-69c4) [ THING_PROCESS:"transpiration", LOCATION:"leaf of plant" ]
+	//row autoRow5 = [UUID:"6778-0a90-bf9d-69c4", THING_PROCESS: "transpiration", LOCATION: "leaf of plant"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"6778-0a90-bf9d-69c4", THING_PROCESS: "transpiration", LOCATION: "leaf of plant"]
+
+	// CENTRAL         REQUIRES: organisms require liquid water to survive     (3338-5ddb-6fa9-7e2c) [ OBJECT_AGENT_PROCESS:"organism", VERB_REQUIRES:"require", OBJECT:"liquid water", FOR_PURPOSE:"survive" ]
+	//row autoRow6 = [UUID:"3338-5ddb-6fa9-7e2c", OBJECT_AGENT_PROCESS: "organism", VERB_REQUIRES: "require", OBJECT: "liquid water", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3338-5ddb-6fa9-7e2c", OBJECT_AGENT_PROCESS: "organism", VERB_REQUIRES: "require", OBJECT: "liquid water", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         PARTOF: a leaf is a part of a green plant     (ecf3-617e-32df-416b) [ PART:"leaf", WHOLE:"green plant" ]
+	//row autoRow7 = [UUID:"ecf3-617e-32df-416b", PART: "leaf", WHOLE: "green plant"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"ecf3-617e-32df-416b", PART: "leaf", WHOLE: "green plant"]
+
+	// CENTRAL         PROCESSSTAGES-ORDERS: In the water cycle , transpiration always follows plant uptake     (b15f-4dc7-7fdd-4f51) [ PROCESS_NAME:"water cycle", STAGEAFTER_STAGE:"transpiration", QUALIFIER:"always", FOLLOWS_PARTOF:"follow", STAGEBEFORE:"plant uptake" ]
+	//row autoRow8 = [UUID:"b15f-4dc7-7fdd-4f51", PROCESS_NAME: "water cycle", STAGEAFTER_STAGE: "transpiration", QUALIFIER: "always", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "plant uptake"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"b15f-4dc7-7fdd-4f51", PROCESS_NAME: "water cycle", STAGEAFTER_STAGE: "transpiration", QUALIFIER: "always", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "plant uptake"]
+
+	// CENTRAL         TRANSFER: plant uptake is when plants absorb nutrients ; water from soil into themselves through their roots     (d7c1-cdfd-2de5-6b7d) [ PROCESS_NAME:"plant uptake", ACTOR_WHO:"plant", VERB:"absorb", WHAT:"nutrient;water", SOURCE:"soil", BY_THROUGH_HOW:"root" ]
+	//row autoRow9 = [UUID:"d7c1-cdfd-2de5-6b7d", PROCESS_NAME: "plant uptake", ACTOR_WHO: "plant", VERB: "absorb", WHAT: "nutrient", SOURCE: "soil", BY_THROUGH_HOW: "root"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"d7c1-cdfd-2de5-6b7d", PROCESS_NAME: "plant uptake", ACTOR_WHO: "plant", VERB: "absorb", WHAT: "nutrient", SOURCE: "soil", BY_THROUGH_HOW: "root"]
+
+endinferencepattern

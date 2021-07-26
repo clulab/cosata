@@ -1,0 +1,2235 @@
+{"patternMatches": [
+{
+	"patternName":"MAT_MEAS_MeasurementCore",
+	"matches":[
+		{
+		"uuids": ["461f-00e5-56fe-dd2c","8346-8315-1f24-a5be","1296-2edb-a443-10d1","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "461f-00e5-56fe-dd2c", "rowText": "degrees fahrenheit ( F ) is a imperial unit used for measuring temperature generally used for values between -450 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8346-8315-1f24-a5be", "rowText": "a thermometer is used to measure temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1296-2edb-a443-10d1", "rowText": "a thermometer is a kind of instrument for measuring temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"temperature" },
+			{ "name":"tool", "value":"thermometer" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"temperature" },
+			{ "name":"tool", "value":"thermometer" }
+		]
+		},
+		{
+		"uuids": ["93f5-b0bb-73b5-8b40","8346-8315-1f24-a5be","1296-2edb-a443-10d1","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "93f5-b0bb-73b5-8b40", "rowText": "degrees celsius ( C ) is a metric unit used for measuring temperature generally used for values between -273 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8346-8315-1f24-a5be", "rowText": "a thermometer is used to measure temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1296-2edb-a443-10d1", "rowText": "a thermometer is a kind of instrument for measuring temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"temperature" },
+			{ "name":"tool", "value":"thermometer" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"temperature" },
+			{ "name":"tool", "value":"thermometer" }
+		]
+		},
+		{
+		"uuids": ["140c-77ad-c6a7-5b26","8346-8315-1f24-a5be","1296-2edb-a443-10d1","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "140c-77ad-c6a7-5b26", "rowText": "degrees kelvin ( K ) is an SI unit used for measuring temperature generally used for values between 0 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8346-8315-1f24-a5be", "rowText": "a thermometer is used to measure temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1296-2edb-a443-10d1", "rowText": "a thermometer is a kind of instrument for measuring temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"temperature" },
+			{ "name":"tool", "value":"thermometer" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"temperature" },
+			{ "name":"tool", "value":"thermometer" }
+		]
+		},
+		{
+		"uuids": ["f297-a722-c60d-7be0","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f297-a722-c60d-7be0", "rowText": "meters ( m ) are a metric ; SI unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["f297-a722-c60d-7be0","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f297-a722-c60d-7be0", "rowText": "meters ( m ) are a metric ; SI unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["f297-a722-c60d-7be0","80e7-ecfd-5d68-a0d3","a429-ec06-2e2a-f6f9","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f297-a722-c60d-7be0", "rowText": "meters ( m ) are a metric ; SI unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "80e7-ecfd-5d68-a0d3", "rowText": "a ruler is used for measuring the length of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a429-ec06-2e2a-f6f9", "rowText": "a ruler is a kind of tool for measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		]
+		},
+		{
+		"uuids": ["f297-a722-c60d-7be0","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f297-a722-c60d-7be0", "rowText": "meters ( m ) are a metric ; SI unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["f297-a722-c60d-7be0","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f297-a722-c60d-7be0", "rowText": "meters ( m ) are a metric ; SI unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["f33c-7d47-3cf5-ef70","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f33c-7d47-3cf5-ef70", "rowText": "millimeters ( mm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 100", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["f33c-7d47-3cf5-ef70","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f33c-7d47-3cf5-ef70", "rowText": "millimeters ( mm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 100", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["f33c-7d47-3cf5-ef70","80e7-ecfd-5d68-a0d3","a429-ec06-2e2a-f6f9","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f33c-7d47-3cf5-ef70", "rowText": "millimeters ( mm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 100", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "80e7-ecfd-5d68-a0d3", "rowText": "a ruler is used for measuring the length of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a429-ec06-2e2a-f6f9", "rowText": "a ruler is a kind of tool for measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		]
+		},
+		{
+		"uuids": ["f33c-7d47-3cf5-ef70","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f33c-7d47-3cf5-ef70", "rowText": "millimeters ( mm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 100", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["f33c-7d47-3cf5-ef70","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f33c-7d47-3cf5-ef70", "rowText": "millimeters ( mm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 100", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["8489-9ffe-b585-3aaf","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8489-9ffe-b585-3aaf", "rowText": "centimeters ( cm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 250", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["8489-9ffe-b585-3aaf","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8489-9ffe-b585-3aaf", "rowText": "centimeters ( cm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 250", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["8489-9ffe-b585-3aaf","80e7-ecfd-5d68-a0d3","a429-ec06-2e2a-f6f9","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8489-9ffe-b585-3aaf", "rowText": "centimeters ( cm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 250", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "80e7-ecfd-5d68-a0d3", "rowText": "a ruler is used for measuring the length of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a429-ec06-2e2a-f6f9", "rowText": "a ruler is a kind of tool for measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		]
+		},
+		{
+		"uuids": ["8489-9ffe-b585-3aaf","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8489-9ffe-b585-3aaf", "rowText": "centimeters ( cm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 250", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["8489-9ffe-b585-3aaf","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8489-9ffe-b585-3aaf", "rowText": "centimeters ( cm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 250", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["c840-d35c-641c-e5ea","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c840-d35c-641c-e5ea", "rowText": "nanometers ( nm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["c840-d35c-641c-e5ea","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c840-d35c-641c-e5ea", "rowText": "nanometers ( nm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["c840-d35c-641c-e5ea","80e7-ecfd-5d68-a0d3","a429-ec06-2e2a-f6f9","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c840-d35c-641c-e5ea", "rowText": "nanometers ( nm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "80e7-ecfd-5d68-a0d3", "rowText": "a ruler is used for measuring the length of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a429-ec06-2e2a-f6f9", "rowText": "a ruler is a kind of tool for measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		]
+		},
+		{
+		"uuids": ["c840-d35c-641c-e5ea","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c840-d35c-641c-e5ea", "rowText": "nanometers ( nm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["c840-d35c-641c-e5ea","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c840-d35c-641c-e5ea", "rowText": "nanometers ( nm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["76d6-aa20-ec92-1c4a","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "76d6-aa20-ec92-1c4a", "rowText": "kilometers ( km ) are a metric unit used for measuring length ; distance generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["76d6-aa20-ec92-1c4a","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "76d6-aa20-ec92-1c4a", "rowText": "kilometers ( km ) are a metric unit used for measuring length ; distance generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["76d6-aa20-ec92-1c4a","80e7-ecfd-5d68-a0d3","a429-ec06-2e2a-f6f9","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "76d6-aa20-ec92-1c4a", "rowText": "kilometers ( km ) are a metric unit used for measuring length ; distance generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "80e7-ecfd-5d68-a0d3", "rowText": "a ruler is used for measuring the length of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a429-ec06-2e2a-f6f9", "rowText": "a ruler is a kind of tool for measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		]
+		},
+		{
+		"uuids": ["76d6-aa20-ec92-1c4a","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "76d6-aa20-ec92-1c4a", "rowText": "kilometers ( km ) are a metric unit used for measuring length ; distance generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["76d6-aa20-ec92-1c4a","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "76d6-aa20-ec92-1c4a", "rowText": "kilometers ( km ) are a metric unit used for measuring length ; distance generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["2bea-d875-bb6c-a12a","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2bea-d875-bb6c-a12a", "rowText": "decimeters ( dm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 10", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["2bea-d875-bb6c-a12a","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2bea-d875-bb6c-a12a", "rowText": "decimeters ( dm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 10", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["2bea-d875-bb6c-a12a","80e7-ecfd-5d68-a0d3","a429-ec06-2e2a-f6f9","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2bea-d875-bb6c-a12a", "rowText": "decimeters ( dm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 10", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "80e7-ecfd-5d68-a0d3", "rowText": "a ruler is used for measuring the length of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a429-ec06-2e2a-f6f9", "rowText": "a ruler is a kind of tool for measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		]
+		},
+		{
+		"uuids": ["2bea-d875-bb6c-a12a","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2bea-d875-bb6c-a12a", "rowText": "decimeters ( dm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 10", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["2bea-d875-bb6c-a12a","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2bea-d875-bb6c-a12a", "rowText": "decimeters ( dm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 10", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["b118-56f3-85c4-5e8b","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b118-56f3-85c4-5e8b", "rowText": "miles ( mi ) are a imperial unit used for measuring length ; distance generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["b118-56f3-85c4-5e8b","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b118-56f3-85c4-5e8b", "rowText": "miles ( mi ) are a imperial unit used for measuring length ; distance generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["b118-56f3-85c4-5e8b","80e7-ecfd-5d68-a0d3","a429-ec06-2e2a-f6f9","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b118-56f3-85c4-5e8b", "rowText": "miles ( mi ) are a imperial unit used for measuring length ; distance generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "80e7-ecfd-5d68-a0d3", "rowText": "a ruler is used for measuring the length of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a429-ec06-2e2a-f6f9", "rowText": "a ruler is a kind of tool for measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		]
+		},
+		{
+		"uuids": ["b118-56f3-85c4-5e8b","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b118-56f3-85c4-5e8b", "rowText": "miles ( mi ) are a imperial unit used for measuring length ; distance generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["b118-56f3-85c4-5e8b","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b118-56f3-85c4-5e8b", "rowText": "miles ( mi ) are a imperial unit used for measuring length ; distance generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["b69d-9d08-0ad6-3023","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b69d-9d08-0ad6-3023", "rowText": "feet ( ft ) are a imperial unit used for measuring length ; distance generally used for values between 1 and 50000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["b69d-9d08-0ad6-3023","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b69d-9d08-0ad6-3023", "rowText": "feet ( ft ) are a imperial unit used for measuring length ; distance generally used for values between 1 and 50000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["b69d-9d08-0ad6-3023","80e7-ecfd-5d68-a0d3","a429-ec06-2e2a-f6f9","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b69d-9d08-0ad6-3023", "rowText": "feet ( ft ) are a imperial unit used for measuring length ; distance generally used for values between 1 and 50000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "80e7-ecfd-5d68-a0d3", "rowText": "a ruler is used for measuring the length of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a429-ec06-2e2a-f6f9", "rowText": "a ruler is a kind of tool for measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		]
+		},
+		{
+		"uuids": ["b69d-9d08-0ad6-3023","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b69d-9d08-0ad6-3023", "rowText": "feet ( ft ) are a imperial unit used for measuring length ; distance generally used for values between 1 and 50000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["b69d-9d08-0ad6-3023","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b69d-9d08-0ad6-3023", "rowText": "feet ( ft ) are a imperial unit used for measuring length ; distance generally used for values between 1 and 50000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["f75f-1151-f222-2281","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f75f-1151-f222-2281", "rowText": "picometer ( pm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["f75f-1151-f222-2281","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f75f-1151-f222-2281", "rowText": "picometer ( pm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["f75f-1151-f222-2281","80e7-ecfd-5d68-a0d3","a429-ec06-2e2a-f6f9","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f75f-1151-f222-2281", "rowText": "picometer ( pm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "80e7-ecfd-5d68-a0d3", "rowText": "a ruler is used for measuring the length of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a429-ec06-2e2a-f6f9", "rowText": "a ruler is a kind of tool for measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		]
+		},
+		{
+		"uuids": ["f75f-1151-f222-2281","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f75f-1151-f222-2281", "rowText": "picometer ( pm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["f75f-1151-f222-2281","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f75f-1151-f222-2281", "rowText": "picometer ( pm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["cd08-fa15-26b8-135f","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "cd08-fa15-26b8-135f", "rowText": "femtometers ( fm ) are an SI unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["cd08-fa15-26b8-135f","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "cd08-fa15-26b8-135f", "rowText": "femtometers ( fm ) are an SI unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["cd08-fa15-26b8-135f","80e7-ecfd-5d68-a0d3","a429-ec06-2e2a-f6f9","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "cd08-fa15-26b8-135f", "rowText": "femtometers ( fm ) are an SI unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "80e7-ecfd-5d68-a0d3", "rowText": "a ruler is used for measuring the length of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a429-ec06-2e2a-f6f9", "rowText": "a ruler is a kind of tool for measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		]
+		},
+		{
+		"uuids": ["cd08-fa15-26b8-135f","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "cd08-fa15-26b8-135f", "rowText": "femtometers ( fm ) are an SI unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["cd08-fa15-26b8-135f","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "cd08-fa15-26b8-135f", "rowText": "femtometers ( fm ) are an SI unit used for measuring length ; distance generally used for values between 1 and 1000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["b0ba-81fa-58f4-a81b","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["b0ba-81fa-58f4-a81b","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["b0ba-81fa-58f4-a81b","80e7-ecfd-5d68-a0d3","a429-ec06-2e2a-f6f9","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "80e7-ecfd-5d68-a0d3", "rowText": "a ruler is used for measuring the length of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a429-ec06-2e2a-f6f9", "rowText": "a ruler is a kind of tool for measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		]
+		},
+		{
+		"uuids": ["b0ba-81fa-58f4-a81b","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["b0ba-81fa-58f4-a81b","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b0ba-81fa-58f4-a81b", "rowText": "light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["3ad2-62a6-57f5-df68","5c76-a005-e9c2-354a","fad5-a6d6-cfd6-b9ed","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3ad2-62a6-57f5-df68", "rowText": "grams ( g ) are a metric unit used for measuring mass ; weight generally used for values between 1 and 2000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c76-a005-e9c2-354a", "rowText": "a balance is used for measuring mass ; weight of an object ; of a substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fad5-a6d6-cfd6-b9ed", "rowText": "a balance is a kind of instrument for measuring mass ; measuring weight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"mass" },
+			{ "name":"tool", "value":"balance" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"mass" },
+			{ "name":"tool", "value":"balance" }
+		]
+		},
+		{
+		"uuids": ["3ad2-62a6-57f5-df68","5c76-a005-e9c2-354a","fad5-a6d6-cfd6-b9ed","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3ad2-62a6-57f5-df68", "rowText": "grams ( g ) are a metric unit used for measuring mass ; weight generally used for values between 1 and 2000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c76-a005-e9c2-354a", "rowText": "a balance is used for measuring mass ; weight of an object ; of a substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fad5-a6d6-cfd6-b9ed", "rowText": "a balance is a kind of instrument for measuring mass ; measuring weight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"weight" },
+			{ "name":"tool", "value":"balance" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"weight" },
+			{ "name":"tool", "value":"balance" }
+		]
+		},
+		{
+		"uuids": ["7a26-9d80-a88f-94fa","5c76-a005-e9c2-354a","fad5-a6d6-cfd6-b9ed","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7a26-9d80-a88f-94fa", "rowText": "kilograms ( kg ) are a metric ; SI unit used for measuring mass ; weight generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c76-a005-e9c2-354a", "rowText": "a balance is used for measuring mass ; weight of an object ; of a substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fad5-a6d6-cfd6-b9ed", "rowText": "a balance is a kind of instrument for measuring mass ; measuring weight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"mass" },
+			{ "name":"tool", "value":"balance" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"mass" },
+			{ "name":"tool", "value":"balance" }
+		]
+		},
+		{
+		"uuids": ["7a26-9d80-a88f-94fa","5c76-a005-e9c2-354a","fad5-a6d6-cfd6-b9ed","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7a26-9d80-a88f-94fa", "rowText": "kilograms ( kg ) are a metric ; SI unit used for measuring mass ; weight generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c76-a005-e9c2-354a", "rowText": "a balance is used for measuring mass ; weight of an object ; of a substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fad5-a6d6-cfd6-b9ed", "rowText": "a balance is a kind of instrument for measuring mass ; measuring weight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"weight" },
+			{ "name":"tool", "value":"balance" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"weight" },
+			{ "name":"tool", "value":"balance" }
+		]
+		},
+		{
+		"uuids": ["68fe-16bc-d67a-41b9","5c76-a005-e9c2-354a","fad5-a6d6-cfd6-b9ed","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "68fe-16bc-d67a-41b9", "rowText": "pounds ( lb ) are a imperial unit used for measuring mass ; weight generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c76-a005-e9c2-354a", "rowText": "a balance is used for measuring mass ; weight of an object ; of a substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fad5-a6d6-cfd6-b9ed", "rowText": "a balance is a kind of instrument for measuring mass ; measuring weight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"mass" },
+			{ "name":"tool", "value":"balance" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"mass" },
+			{ "name":"tool", "value":"balance" }
+		]
+		},
+		{
+		"uuids": ["68fe-16bc-d67a-41b9","5c76-a005-e9c2-354a","fad5-a6d6-cfd6-b9ed","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "68fe-16bc-d67a-41b9", "rowText": "pounds ( lb ) are a imperial unit used for measuring mass ; weight generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c76-a005-e9c2-354a", "rowText": "a balance is used for measuring mass ; weight of an object ; of a substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fad5-a6d6-cfd6-b9ed", "rowText": "a balance is a kind of instrument for measuring mass ; measuring weight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"weight" },
+			{ "name":"tool", "value":"balance" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"weight" },
+			{ "name":"tool", "value":"balance" }
+		]
+		},
+		{
+		"uuids": ["1456-f51f-a4cd-2dfb","5c76-a005-e9c2-354a","fad5-a6d6-cfd6-b9ed","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1456-f51f-a4cd-2dfb", "rowText": "tonnes ( t ) are a imperial unit used for measuring mass ; weight generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c76-a005-e9c2-354a", "rowText": "a balance is used for measuring mass ; weight of an object ; of a substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fad5-a6d6-cfd6-b9ed", "rowText": "a balance is a kind of instrument for measuring mass ; measuring weight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"mass" },
+			{ "name":"tool", "value":"balance" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"mass" },
+			{ "name":"tool", "value":"balance" }
+		]
+		},
+		{
+		"uuids": ["1456-f51f-a4cd-2dfb","5c76-a005-e9c2-354a","fad5-a6d6-cfd6-b9ed","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1456-f51f-a4cd-2dfb", "rowText": "tonnes ( t ) are a imperial unit used for measuring mass ; weight generally used for values between 1 and 50000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c76-a005-e9c2-354a", "rowText": "a balance is used for measuring mass ; weight of an object ; of a substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fad5-a6d6-cfd6-b9ed", "rowText": "a balance is a kind of instrument for measuring mass ; measuring weight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"weight" },
+			{ "name":"tool", "value":"balance" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"weight" },
+			{ "name":"tool", "value":"balance" }
+		]
+		},
+		{
+		"uuids": ["0fb6-3ecf-eb41-0b84","5c76-a005-e9c2-354a","fad5-a6d6-cfd6-b9ed","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0fb6-3ecf-eb41-0b84", "rowText": "ounces ( oz ) are a imperial unit used for measuring weight generally used for values between 1 and 16", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c76-a005-e9c2-354a", "rowText": "a balance is used for measuring mass ; weight of an object ; of a substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fad5-a6d6-cfd6-b9ed", "rowText": "a balance is a kind of instrument for measuring mass ; measuring weight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"weight" },
+			{ "name":"tool", "value":"balance" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"weight" },
+			{ "name":"tool", "value":"balance" }
+		]
+		},
+		{
+		"uuids": ["4753-1b7f-3bca-f7bf","40b8-ce9a-9919-60f8","4f6c-7f8c-b9d5-f3cb","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4753-1b7f-3bca-f7bf", "rowText": "years ( y ) are a metric unit used for measuring time generally used for values between 1 and 14000000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "40b8-ce9a-9919-60f8", "rowText": "seconds are used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4f6c-7f8c-b9d5-f3cb", "rowText": "seconds are a kind of unit for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"second" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"seconds" }
+		]
+		},
+		{
+		"uuids": ["4753-1b7f-3bca-f7bf","91bf-d72e-f4e5-1526","ba0a-4b3e-ff60-ec49","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4753-1b7f-3bca-f7bf", "rowText": "years ( y ) are a metric unit used for measuring time generally used for values between 1 and 14000000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["4753-1b7f-3bca-f7bf","563d-53cc-0a8a-e8da","ba0a-4b3e-ff60-ec49","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4753-1b7f-3bca-f7bf", "rowText": "years ( y ) are a metric unit used for measuring time generally used for values between 1 and 14000000000", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["5fa3-ff9a-dc19-47a0","40b8-ce9a-9919-60f8","4f6c-7f8c-b9d5-f3cb","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5fa3-ff9a-dc19-47a0", "rowText": "months ( m ) are a metric unit used for measuring time generally used for values between 1 and 24", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "40b8-ce9a-9919-60f8", "rowText": "seconds are used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4f6c-7f8c-b9d5-f3cb", "rowText": "seconds are a kind of unit for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"second" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"seconds" }
+		]
+		},
+		{
+		"uuids": ["5fa3-ff9a-dc19-47a0","91bf-d72e-f4e5-1526","ba0a-4b3e-ff60-ec49","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5fa3-ff9a-dc19-47a0", "rowText": "months ( m ) are a metric unit used for measuring time generally used for values between 1 and 24", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["5fa3-ff9a-dc19-47a0","563d-53cc-0a8a-e8da","ba0a-4b3e-ff60-ec49","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5fa3-ff9a-dc19-47a0", "rowText": "months ( m ) are a metric unit used for measuring time generally used for values between 1 and 24", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["a459-e38e-38fd-c536","40b8-ce9a-9919-60f8","4f6c-7f8c-b9d5-f3cb","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a459-e38e-38fd-c536", "rowText": "days ( d ) are a metric unit used for measuring time generally used for values between 1 and 365", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "40b8-ce9a-9919-60f8", "rowText": "seconds are used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4f6c-7f8c-b9d5-f3cb", "rowText": "seconds are a kind of unit for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"second" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"seconds" }
+		]
+		},
+		{
+		"uuids": ["a459-e38e-38fd-c536","91bf-d72e-f4e5-1526","ba0a-4b3e-ff60-ec49","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a459-e38e-38fd-c536", "rowText": "days ( d ) are a metric unit used for measuring time generally used for values between 1 and 365", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["a459-e38e-38fd-c536","563d-53cc-0a8a-e8da","ba0a-4b3e-ff60-ec49","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a459-e38e-38fd-c536", "rowText": "days ( d ) are a metric unit used for measuring time generally used for values between 1 and 365", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["6959-8a0c-c3fb-f49b","40b8-ce9a-9919-60f8","4f6c-7f8c-b9d5-f3cb","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6959-8a0c-c3fb-f49b", "rowText": "seconds ( s ; sec ) are a metric unit used for measuring time generally used for values between 1 and 300", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "40b8-ce9a-9919-60f8", "rowText": "seconds are used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4f6c-7f8c-b9d5-f3cb", "rowText": "seconds are a kind of unit for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"second" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"seconds" }
+		]
+		},
+		{
+		"uuids": ["6959-8a0c-c3fb-f49b","91bf-d72e-f4e5-1526","ba0a-4b3e-ff60-ec49","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6959-8a0c-c3fb-f49b", "rowText": "seconds ( s ; sec ) are a metric unit used for measuring time generally used for values between 1 and 300", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["6959-8a0c-c3fb-f49b","563d-53cc-0a8a-e8da","ba0a-4b3e-ff60-ec49","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6959-8a0c-c3fb-f49b", "rowText": "seconds ( s ; sec ) are a metric unit used for measuring time generally used for values between 1 and 300", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["4a6c-5f70-fc7a-02fd","40b8-ce9a-9919-60f8","4f6c-7f8c-b9d5-f3cb","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4a6c-5f70-fc7a-02fd", "rowText": "hours ( hr ) are a metric unit used for measuring time generally used for values between 0.25 and 72", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "40b8-ce9a-9919-60f8", "rowText": "seconds are used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4f6c-7f8c-b9d5-f3cb", "rowText": "seconds are a kind of unit for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"second" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"seconds" }
+		]
+		},
+		{
+		"uuids": ["4a6c-5f70-fc7a-02fd","91bf-d72e-f4e5-1526","ba0a-4b3e-ff60-ec49","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4a6c-5f70-fc7a-02fd", "rowText": "hours ( hr ) are a metric unit used for measuring time generally used for values between 0.25 and 72", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["4a6c-5f70-fc7a-02fd","563d-53cc-0a8a-e8da","ba0a-4b3e-ff60-ec49","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4a6c-5f70-fc7a-02fd", "rowText": "hours ( hr ) are a metric unit used for measuring time generally used for values between 0.25 and 72", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["204e-3747-f760-35b4","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["204e-3747-f760-35b4","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["204e-3747-f760-35b4","80e7-ecfd-5d68-a0d3","a429-ec06-2e2a-f6f9","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "80e7-ecfd-5d68-a0d3", "rowText": "a ruler is used for measuring the length of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a429-ec06-2e2a-f6f9", "rowText": "a ruler is a kind of tool for measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		]
+		},
+		{
+		"uuids": ["204e-3747-f760-35b4","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["204e-3747-f760-35b4","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "204e-3747-f760-35b4", "rowText": "angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["e048-91cb-e649-7a0e","5c76-a005-e9c2-354a","fad5-a6d6-cfd6-b9ed","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "e048-91cb-e649-7a0e", "rowText": "newton ( N ) is an SI unit used for measuring weight", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c76-a005-e9c2-354a", "rowText": "a balance is used for measuring mass ; weight of an object ; of a substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fad5-a6d6-cfd6-b9ed", "rowText": "a balance is a kind of instrument for measuring mass ; measuring weight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"weight" },
+			{ "name":"tool", "value":"balance" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"weight" },
+			{ "name":"tool", "value":"balance" }
+		]
+		},
+		{
+		"uuids": ["f208-142f-6e82-7f5f","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f208-142f-6e82-7f5f", "rowText": "inch ( in ) is a imperial unit used for measuring length ; distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["f208-142f-6e82-7f5f","48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f208-142f-6e82-7f5f", "rowText": "inch ( in ) is a imperial unit used for measuring length ; distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["f208-142f-6e82-7f5f","80e7-ecfd-5d68-a0d3","a429-ec06-2e2a-f6f9","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f208-142f-6e82-7f5f", "rowText": "inch ( in ) is a imperial unit used for measuring length ; distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "80e7-ecfd-5d68-a0d3", "rowText": "a ruler is used for measuring the length of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a429-ec06-2e2a-f6f9", "rowText": "a ruler is a kind of tool for measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		]
+		},
+		{
+		"uuids": ["f208-142f-6e82-7f5f","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f208-142f-6e82-7f5f", "rowText": "inch ( in ) is a imperial unit used for measuring length ; distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["f208-142f-6e82-7f5f","1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f208-142f-6e82-7f5f", "rowText": "inch ( in ) is a imperial unit used for measuring length ; distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["7a68-d438-ce92-5fb1","ad64-e231-181e-0684","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7a68-d438-ce92-5fb1", "rowText": "an anemometer is used to measure wind speed", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ad64-e231-181e-0684", "rowText": "an anemometer is a kind of instrument for measuring wind speed", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"wind speed" },
+			{ "name":"tool", "value":"anemometer" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"wind speed" },
+			{ "name":"tool", "value":"anemometer" }
+		]
+		},
+		{
+		"uuids": ["5c76-a005-e9c2-354a","fad5-a6d6-cfd6-b9ed","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c76-a005-e9c2-354a", "rowText": "a balance is used for measuring mass ; weight of an object ; of a substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fad5-a6d6-cfd6-b9ed", "rowText": "a balance is a kind of instrument for measuring mass ; measuring weight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"mass" },
+			{ "name":"tool", "value":"balance" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"mass" },
+			{ "name":"tool", "value":"balance" }
+		]
+		},
+		{
+		"uuids": ["5c76-a005-e9c2-354a","fad5-a6d6-cfd6-b9ed","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c76-a005-e9c2-354a", "rowText": "a balance is used for measuring mass ; weight of an object ; of a substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fad5-a6d6-cfd6-b9ed", "rowText": "a balance is a kind of instrument for measuring mass ; measuring weight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"weight" },
+			{ "name":"tool", "value":"balance" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"weight" },
+			{ "name":"tool", "value":"balance" }
+		]
+		},
+		{
+		"uuids": ["a341-f03e-05a7-a158","ab9f-bddf-b450-6260","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a341-f03e-05a7-a158", "rowText": "a barometer is used to measure air pressure", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ab9f-bddf-b450-6260", "rowText": "a barometer is a kind of instrument for measuring air pressure", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"air pressure" },
+			{ "name":"tool", "value":"barometer" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"air pressure" },
+			{ "name":"tool", "value":"barometer" }
+		]
+		},
+		{
+		"uuids": ["48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["48c0-261e-72f5-c101","1958-4336-80f2-90bd","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"meter stick" }
+		]
+		},
+		{
+		"uuids": ["0108-3682-5f8c-6324","5c21-2b5a-75b8-edca","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "0108-3682-5f8c-6324", "rowText": "a protractor is used for measuring the angles of a triangular object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "5c21-2b5a-75b8-edca", "rowText": "a protractor is a kind of tool for measuring the angles of a triangular object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"angle of triangular object" },
+			{ "name":"tool", "value":"protractor" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"angles of triangular object" },
+			{ "name":"tool", "value":"protractor" }
+		]
+		},
+		{
+		"uuids": ["80e7-ecfd-5d68-a0d3","a429-ec06-2e2a-f6f9","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "80e7-ecfd-5d68-a0d3", "rowText": "a ruler is used for measuring the length of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a429-ec06-2e2a-f6f9", "rowText": "a ruler is a kind of tool for measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"ruler" }
+		]
+		},
+		{
+		"uuids": ["40b8-ce9a-9919-60f8","4f6c-7f8c-b9d5-f3cb","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "40b8-ce9a-9919-60f8", "rowText": "seconds are used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4f6c-7f8c-b9d5-f3cb", "rowText": "seconds are a kind of unit for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"second" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"seconds" }
+		]
+		},
+		{
+		"uuids": ["eb11-ce60-5982-6b34","0ad1-f529-32a2-a01d","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "eb11-ce60-5982-6b34", "rowText": "a seismograph is used for measuring the size of an earthquake", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0ad1-f529-32a2-a01d", "rowText": "a seismograph is a kind of tool for measuring the size of an earthquake", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"size of earthquake" },
+			{ "name":"tool", "value":"seismograph" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"size of earthquake" },
+			{ "name":"tool", "value":"seismograph" }
+		]
+		},
+		{
+		"uuids": ["91bf-d72e-f4e5-1526","ba0a-4b3e-ff60-ec49","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"tool", "value":"tape measure" }
+		]
+		},
+		{
+		"uuids": ["8346-8315-1f24-a5be","1296-2edb-a443-10d1","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8346-8315-1f24-a5be", "rowText": "a thermometer is used to measure temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1296-2edb-a443-10d1", "rowText": "a thermometer is a kind of instrument for measuring temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"temperature" },
+			{ "name":"tool", "value":"thermometer" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"temperature" },
+			{ "name":"tool", "value":"thermometer" }
+		]
+		},
+		{
+		"uuids": ["563d-53cc-0a8a-e8da","ba0a-4b3e-ff60-ec49","fc75-dfcd-e46e-e318","a0d5-68ec-fccc-fd82"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "fc75-dfcd-e46e-e318", "rowText": "determining often requires measuring ; observing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "a0d5-68ec-fccc-fd82", "rowText": "instrument means tool", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"propBeingMeasured", "value":"time" },
+			{ "name":"tool", "value":"stopwatch" }
+		]
+		}
+	]
+},
+{
+	"patternName":"MAT_MEAS_MeasurementProperties",
+	"matches":[
+		{
+		"uuids": ["b416-cff8-0999-48a9","833b-2c13-d01b-2ac2","bb6d-ca48-eef1-5996"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "b416-cff8-0999-48a9", "rowText": "long means great in length", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "833b-2c13-d01b-2ac2", "rowText": "height is a measure of length from the top of an object to the bottom of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb6d-ca48-eef1-5996", "rowText": "height is a property of the size of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"propName", "value":"height" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"propName", "value":"height" }
+		]
+		},
+		{
+		"uuids": ["4c40-fb3b-92a4-0c8d","833b-2c13-d01b-2ac2","bb6d-ca48-eef1-5996"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "4c40-fb3b-92a4-0c8d", "rowText": "longest means greatest in length", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "833b-2c13-d01b-2ac2", "rowText": "height is a measure of length from the top of an object to the bottom of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb6d-ca48-eef1-5996", "rowText": "height is a property of the size of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"propName", "value":"height" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"propName", "value":"height" }
+		]
+		},
+		{
+		"uuids": ["87c6-f5c1-2d8f-e14a","1bc3-eb48-01fa-14c2"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87c6-f5c1-2d8f-e14a", "rowText": "speed is a measure of how fast an object is moving", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"fast" },
+			{ "name":"propName", "value":"speed" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"fast" },
+			{ "name":"propName", "value":"speed" }
+		]
+		},
+		{
+		"uuids": ["d753-423d-5ce7-53ce","4084-f2bc-52cf-0f74"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"heat energy" },
+			{ "name":"propName", "value":"temperature" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"heat energy" },
+			{ "name":"propName", "value":"temperature" }
+		]
+		},
+		{
+		"uuids": ["cd12-aac7-4181-607b","05fc-2dd1-7863-00f2"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cd12-aac7-4181-607b", "rowText": "thickness is a measure of how thick an object is", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "05fc-2dd1-7863-00f2", "rowText": "thickness is a property of an object and includes ordered values of thin ; thick", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"thick" },
+			{ "name":"propName", "value":"thickness" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"thick" },
+			{ "name":"propName", "value":"thickness" }
+		]
+		},
+		{
+		"uuids": ["833b-2c13-d01b-2ac2","bb6d-ca48-eef1-5996"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "833b-2c13-d01b-2ac2", "rowText": "height is a measure of length from the top of an object to the bottom of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb6d-ca48-eef1-5996", "rowText": "height is a property of the size of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"propName", "value":"height" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"length" },
+			{ "name":"propName", "value":"height" }
+		]
+		},
+		{
+		"uuids": ["067d-1aca-bec2-8141","0969-6f9e-9555-9731"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "067d-1aca-bec2-8141", "rowText": "length is a measure of distance from one end of an object to the other end of that object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0969-6f9e-9555-9731", "rowText": "length is a property of the shape of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"propName", "value":"length" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"distance" },
+			{ "name":"propName", "value":"length" }
+		]
+		},
+		{
+		"uuids": ["b753-a285-8304-024a","1bc3-eb48-01fa-14c2"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"distance travel" },
+			{ "name":"propName", "value":"speed" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"distance travelled" },
+			{ "name":"propName", "value":"speed" }
+		]
+		},
+		{
+		"uuids": ["8d85-3a9e-2f98-5a9b","b765-cf69-400e-c8f8"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8d85-3a9e-2f98-5a9b", "rowText": "density is a measure of mass of an object over volume ; divided by volume", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "b765-cf69-400e-c8f8", "rowText": "density is a property of an object ; a substance and includes ordered values of dense ; not dense", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"mass" },
+			{ "name":"propName", "value":"density" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"mass" },
+			{ "name":"propName", "value":"density" }
+		]
+		},
+		{
+		"uuids": ["6dd3-883b-2639-04d5","bbf0-3d09-563f-196b"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "6dd3-883b-2639-04d5", "rowText": "mass is a measure of the amount of matter in an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bbf0-3d09-563f-196b", "rowText": "mass is a property of objects ; matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"amount of matt in" },
+			{ "name":"propName", "value":"mass" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"amount of matter in" },
+			{ "name":"propName", "value":"mass" }
+		]
+		},
+		{
+		"uuids": ["c03f-fad3-ae99-57e3","ca64-cc38-3e22-c1c1"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c03f-fad3-ae99-57e3", "rowText": "weight is a measure of the force of the gravity on the mass of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "ca64-cc38-3e22-c1c1", "rowText": "weight is a property of objects ; matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"force of gravity on" },
+			{ "name":"propName", "value":"weight" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"force of gravity on" },
+			{ "name":"propName", "value":"weight" }
+		]
+		},
+		{
+		"uuids": ["c999-1159-e330-fb03","1bc3-eb48-01fa-14c2"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c999-1159-e330-fb03", "rowText": "speed is a measure of how fast the wave passes the medium", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1bc3-eb48-01fa-14c2", "rowText": "speed is a property of an object and includes values of slow ; fast", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"fast" },
+			{ "name":"propName", "value":"speed" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"fast" },
+			{ "name":"propName", "value":"speed" }
+		]
+		},
+		{
+		"uuids": ["4be1-14fa-5a9c-0444","4084-f2bc-52cf-0f74"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4be1-14fa-5a9c-0444", "rowText": "temperature is a measure of kinetic energy of molecules", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"kinetic energy of" },
+			{ "name":"propName", "value":"temperature" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"kinetic energy of" },
+			{ "name":"propName", "value":"temperature" }
+		]
+		},
+		{
+		"uuids": ["a6b1-8a48-8882-cdfd","72e2-6cde-7faa-4d2b"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "a6b1-8a48-8882-cdfd", "rowText": "hardness is a measure of a mineral 's ability to resist scratching", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "72e2-6cde-7faa-4d2b", "rowText": "hardness is a property of a material ; an object and includes ordered values of malleable ; rigid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"mineral ability resist scratch" },
+			{ "name":"propName", "value":"hardness" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"propBeingMeasured", "value":"mineral ability resist scratching" },
+			{ "name":"propName", "value":"hardness" }
+		]
+		}
+	]
+}
+]}
+

@@ -1,0 +1,76 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Organic_Molecules_Properties
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       MADEOF: organic compounds mainly are made of carbon ; hydrogen ; oxygen ; nitrogen     (4bc4-153f-1e76-5bb4) [ OBJECT:"organic compound", QUALIFIER:"mainly", MATERIAL:"carbon;hydrogen;oxygen;nitrogen" ]
+	//        HINTROW organic compounds are made of carbon chains with other elements attached to it     (1b69-2d4b-4748-b6c1) [ OBJECT:"organic compound", MATERIAL:"carbon chain", BY_THROUGH_HOW:"with other element attach" ]
+	//  Notes: organic compound <-- C,H,O,N
+	//row autoRow0 = [TABLE:"MADEOF", OBJECT: "organic compound", MATERIAL: <hydrogen_0>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"MADEOF", OBJECT: "organic compound", MATERIAL: <hydrogen_0>]
+
+	// GROUNDING       MADEOF: sugar is made of carbon, hydrogen, oxygen     (4af3-2008-2732-2547) [ OBJECT:"sugar", MATERIAL:"carbon hydrogen oxygen" ]
+	//row autoRow1 = [TABLE:"MADEOF", OBJECT: "sugar", MATERIAL: "carbon"+<hydrogen_0>+<oxygen_1>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"MADEOF", OBJECT: "sugar", MATERIAL: "carbon"+<hydrogen_0>+<oxygen_1>]
+
+	// GROUNDING       KINDOF: a carbohydrate is a kind of compound     (d6cd-1a0c-a91b-726d) [ HYPONYM:"carbohydrate", HYPERNYM:"compound" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "carbohydrate", HYPERNYM: "compound"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "carbohydrate", HYPERNYM: "compound"]
+
+	// GROUNDING       KINDOF: carbon is a kind of element     (2ae6-3458-f1d9-a724) [ HYPONYM:"carbon", HYPERNYM:"element" ]
+	//        HINTROW hydrogen is a kind of element     (f861-f54e-3435-b0e6) [ HYPONYM:"hydrogen", HYPERNYM:"element" ]
+	//        HINTROW oxygen is a kind of element     (936b-92a1-0e96-0846) [ HYPONYM:"oxygen", HYPERNYM:"element" ]
+	//        HINTROW nitrogen is a kind of element     (2d67-baa5-abb9-5015) [ HYPONYM:"nitrogen", HYPERNYM:"element" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "carbon", HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "carbon", HYPERNYM: "element"]
+
+	// CENTRAL         PROP-THINGS: carbon ; hydrogen ; nitrogen ; oxygen are the most common elements in organic compounds     (b575-c6e9-ca7e-c8c1) [ THING:"carbon;hydrogen;nitrogen;oxygen", VALUE:"much common", ATTRIBUTE:"element", SCOPE_RELATIVETO:"in organic compound" ]
+	//row autoRow4 = [UUID:"b575-c6e9-ca7e-c8c1", THING: <hydrogen_0>, VALUE: "much common", ATTRIBUTE: "element", SCOPE_RELATIVETO: "in organic compound"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"b575-c6e9-ca7e-c8c1", THING: <hydrogen_0>, VALUE: "much common", ATTRIBUTE: "element", SCOPE_RELATIVETO: "in organic compound"]
+
+	// CENTRAL         MADEOF: a compound is made of two or more elements chemically combined     (6bb0-ea31-6fee-5e77) [ OBJECT:"compound", VALUE:"two much", MATERIAL:"element", BY_THROUGH_HOW:"chemically combine" ]
+	//row autoRow5 = [UUID:"6bb0-ea31-6fee-5e77", OBJECT: "compound", VALUE: "two much", MATERIAL: "element", BY_THROUGH_HOW: "chemically combine"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"6bb0-ea31-6fee-5e77", OBJECT: "compound", VALUE: "two much", MATERIAL: "element", BY_THROUGH_HOW: "chemically combine"]
+
+	// CENTRAL         MADEOF: a molecule is made of atoms chemically combined ; bonded     (d227-791c-6134-8fba) [ OBJECT:"molecule", MATERIAL:"atom", BY_THROUGH_HOW:"chemically combine;bond" ]
+	//row autoRow6 = [UUID:"d227-791c-6134-8fba", OBJECT: "molecule", MATERIAL: "atom", BY_THROUGH_HOW: "chemically combine"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"d227-791c-6134-8fba", OBJECT: "molecule", MATERIAL: "atom", BY_THROUGH_HOW: "chemically combine"]
+
+	// CENTRAL         PROP-THINGS: carbon has the property of catenation to form a carbon chain     (f457-6be6-2383-4c64) [ THING:"carbon", VALUE:"property of", ATTRIBUTE:"catenation", PURPOSE:"form carbon chain" ]
+	//row autoRow7 = [UUID:"f457-6be6-2383-4c64", THING: "carbon", VALUE: "property of", ATTRIBUTE: "catenation", PURPOSE: "form carbon chain"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"f457-6be6-2383-4c64", THING: "carbon", VALUE: "property of", ATTRIBUTE: "catenation", PURPOSE: "form carbon chain"]
+
+	// CENTRAL         COMPARISON: a molecule is the smallest particle ; unit that has the properties of a compound     (f25a-54b9-3641-f7e4) [ THING:"molecule", ACTION1:"be", COMPARISON:"small", WHAT:"particle;unit", SCOPE2:"have property of compound" ]
+	//  Notes: 5c74-6feb-16a4-2fd8->f25a-54b9-3641-f7e4
+	//row autoRow8 = [UUID:"f25a-54b9-3641-f7e4", THING: "molecule", ACTION1: "be", COMPARISON: "small", WHAT: "particle", SCOPE2: "have property of compound"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f25a-54b9-3641-f7e4", THING: "molecule", ACTION1: "be", COMPARISON: "small", WHAT: "particle", SCOPE2: "have property of compound"]
+
+	// CENTRAL         CONTAINS: organic compounds contain hydrogen     (6129-95b7-29b6-b458) [ ADJ:"organic", OBJECT_AGENT:"compound", WHAT_IT_CONTAINS:"hydrogen" ]
+	//  Notes: organic compound CONTAINS
+	//row autoRow9 = [UUID:"6129-95b7-29b6-b458", ADJ: "organic", OBJECT_AGENT: "compound", WHAT_IT_CONTAINS: <hydrogen_0>] //OVER-CONSTR.
+	row autoRow9 = [UUID:"6129-95b7-29b6-b458", ADJ: "organic", OBJECT_AGENT: "compound", WHAT_IT_CONTAINS: <hydrogen_0>]
+
+	// CENTRAL         CONTAINS: organic compounds do not contain potassium     (5041-52ea-f8a3-b6d3) [ ADJ:"organic", OBJECT_AGENT:"compound", QUANTIFIER:"do not", WHAT_IT_CONTAINS:"potassium" ]
+	//  Notes: organic compound NOT CONTAINS
+	//row autoRow10 = [UUID:"5041-52ea-f8a3-b6d3", ADJ: "organic", OBJECT_AGENT: "compound", QUANTIFIER: "do not", WHAT_IT_CONTAINS: "potassium"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"5041-52ea-f8a3-b6d3", ADJ: "organic", OBJECT_AGENT: "compound", QUANTIFIER: "do not", WHAT_IT_CONTAINS: "potassium"]
+
+	// CENTRAL         MADEOF: organisms are made of organic compounds     (da2d-6850-c952-aaf1) [ OBJECT:"organism", VALUE:"organic", MATERIAL:"compound" ]
+	//  Notes: organism <-- organic compound
+	//row autoRow11 = [UUID:"da2d-6850-c952-aaf1", OBJECT: "organism", VALUE: "organic", MATERIAL: "compound"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"da2d-6850-c952-aaf1", OBJECT: "organism", VALUE: "organic", MATERIAL: "compound"]
+
+	// CENTRAL         MADEOF: carbohydrates are made of sugars     (93e8-b9fd-8d3a-5601) [ OBJECT:"carbohydrate", MATERIAL:"sugar" ]
+	//row autoRow12 = [UUID:"93e8-b9fd-8d3a-5601", OBJECT: "carbohydrate", MATERIAL: "sugar"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"93e8-b9fd-8d3a-5601", OBJECT: "carbohydrate", MATERIAL: "sugar"]
+
+	// LEXGLUE         SYNONYMY: organic is similar to of organism     (19dc-32da-d19f-7fce) [ X1:"organic", X2:"of organism" ]
+	//row autoRow13 = [UUID:"19dc-32da-d19f-7fce", X1: "organic", X2: "of organism"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"19dc-32da-d19f-7fce", X1: "organic", X2: "of organism"]
+
+endinferencepattern

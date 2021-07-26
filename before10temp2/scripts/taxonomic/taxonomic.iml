@@ -1,0 +1,26 @@
+// IML 
+
+/*
+ * Supporting inference patterns
+ */ 
+
+// Taxonomic traversal
+// If X is a kind of Y, and Y is a kind of Z, then X is a kind of Z
+inferencepattern taxonomicTraversal
+        // Plain text description
+        description = "Taxonomic traversal (If X is a kind of Y, and Y is a kind of Z, then X is a kind of Z)"
+        executionmode = "AUTOREGEN"
+
+        // Constants
+
+        // Requirements
+        musthave (<x> != <z>)   //## Suppress deep cases where there are loops in the taxonomy graph
+
+        // Row definitions
+        row upper = [TABLE:"KINDOF", HYPONYM:<x>, HYPERNYM:<y>]
+        row lower = [TABLE:"KINDOF", HYPONYM:<y>, HYPERNYM:<z>]
+
+        // Code
+        generateRow([TABLE:"KINDOF", HYPONYM:<x>, FILL_IS:"is", FILL_A_KIND_OF:"a kind of", HYPERNYM:<z>])
+
+endinferencepattern

@@ -1,0 +1,109 @@
+// Automatically converted pattern
+inferencepattern CEL_DISTANCES_Brightness_by_Distance
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-REL-DIST: Earth is the planet that is third closest to the Sun     (a352-bde5-b854-f460) [ OBJECT_AGENT:"earth", CLASS:"planet", RELATIVE_DISTANCE:"3 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Mercury is the planet that is first closest to the Sun     (c3ef-1aeb-c9fd-2b71) [ OBJECT_AGENT:"mercury", CLASS:"planet", RELATIVE_DISTANCE:"﻿1 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Venus is the planet that is second closest to the Sun     (859f-86f6-8ed6-3885) [ OBJECT_AGENT:"venus", CLASS:"planet", RELATIVE_DISTANCE:"2 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Neptune is the planet that is eighth closest to the Sun     (397b-d199-32b2-6e1f) [ OBJECT_AGENT:"neptune", CLASS:"planet", RELATIVE_DISTANCE:"8 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Mars is the planet that is fourth closest to the Sun     (4b45-65e4-b5c2-85c9) [ OBJECT_AGENT:"mar", CLASS:"planet", RELATIVE_DISTANCE:"4 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Jupiter is the planet that is fifth closest to the Sun     (393c-5d80-c259-3ee9) [ OBJECT_AGENT:"jupiter", CLASS:"planet", RELATIVE_DISTANCE:"5 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Saturn is the planet that is sixth closest to the Sun     (ffc8-4214-81e1-3903) [ OBJECT_AGENT:"saturn", CLASS:"planet", RELATIVE_DISTANCE:"6 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Uranus is the planet that is seventh closest to the Sun     (10d4-66aa-afc0-5c09) [ OBJECT_AGENT:"uranus", CLASS:"planet", RELATIVE_DISTANCE:"7 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW the stars in the night sky are very far away from the Earth     (c14b-4971-7d32-d1d3) [ OBJECT_AGENT:"star", WHERE:"in night sky", RELATIVE_DISTANCE:"very far away", TO_REFERENCE_POINT:"earth" ]
+	//        HINTROW the Sun is the star that is closest to Earth     (4e12-62f2-0830-d602) [ OBJECT_AGENT:"sun", CLASS:"star", RELATIVE_DISTANCE:"close", TO_REFERENCE_POINT:"earth" ]
+	//  Notes: Distance examples. X is close or far away from Y
+	//row autoRow0 = [TABLE:"PROP-REL-DIST", RELATIVE_DISTANCE: *"POS:JJ"+<close_0>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-REL-DIST", RELATIVE_DISTANCE: *"POS:JJ"+<close_0>]
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as a source of light becomes closer , the light will appear brighter     (12b0-e9bb-c84e-6a42) [ QUANTITY_MEASURE1:"source of", AGENT_ATTRIBUTE1:"light", ACTION1:"become", CHANGE1:"close", AGENT_ATTRIBUTE2:"light", ACTION2:"appear", CHANGE2:"bright" ]
+	//        HINTROW as the source of light becomes farther , that source of light will appear dimmer     (247f-1076-f052-4a42) [ QUANTITY_MEASURE1:"source", AGENT_ATTRIBUTE1:"of light", ACTION1:"become", CHANGE1:"far", QUANTITY_MEASURE2:"source", AGENT_ATTRIBUTE2:"of light", ACTION2:"appear", CHANGE2:"dim" ]
+	//row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "source of", AGENT_ATTRIBUTE1: "light", ACTION1: "become", CHANGE1: <close_0>, AGENT_ATTRIBUTE2: "light", ACTION2: "appear", CHANGE2: <bright_1>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "source of", AGENT_ATTRIBUTE1: "light", ACTION1: "become", CHANGE1: <close_0>, AGENT_ATTRIBUTE2: "light", ACTION2: "appear", CHANGE2: <bright_1>]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: brighter means higher ; greater in brightness     (72aa-c401-72cf-ded5) [ THING:"bright", VALUE:"high;great", ATTRIBUTE:"brightness" ]
+	//        HINTROW dimmer means less bright     (e70f-e13e-37af-1fda) [ THING:"dim", VALUE:"little", ATTRIBUTE:"bright" ]
+	//row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: <bright_1>, ATTRIBUTE: "brightness"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: <bright_1>]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: closer means lower ; less ; a decrease in distance     (04ee-408f-6c7a-54fc) [ THING:"close", VALUE:"low;little;decrease", ATTRIBUTE:"distance" ]
+	//        HINTROW furthest ; farthest means greatest ; most ; highest in distance     (3d48-21e9-c4e5-6491) [ THING:"far;far", VALUE:"great;much;high", ATTRIBUTE:"distance" ]
+	//row autoRow3 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: <close_0>, ATTRIBUTE: "distance"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: <close_0>, ATTRIBUTE: "distance"]
+
+	// GROUNDING       KINDOF: Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//        HINTROW Jupiter is a kind of planet     (b772-8846-82c7-f2d8) [ HYPONYM:"jupiter", HYPERNYM:"planet" ]
+	//        HINTROW Mars is a kind of planet     (1fb6-af63-74de-86fd) [ HYPONYM:"mar", HYPERNYM:"planet" ]
+	//        HINTROW Mercury is a kind of planet     (106b-d671-313e-b596) [ HYPONYM:"mercury", HYPERNYM:"planet" ]
+	//        HINTROW Neptune is a kind of planet in the solar system     (9803-3975-7c41-48b6) [ HYPONYM:"neptune", HYPERNYM:"planet", SCOPE2:"in solar system" ]
+	//        HINTROW Venus is a kind of planet     (73aa-f84a-b42e-53b3) [ HYPONYM:"venus", HYPERNYM:"planet" ]
+	//        HINTROW Uranus is a kind of planet     (7bc0-9f19-77c2-4fcf) [ HYPONYM:"uranus", HYPERNYM:"planet" ]
+	//        HINTROW Saturn is a kind of planet     (65b3-1a89-cdd6-22b0) [ HYPONYM:"saturn", HYPERNYM:"planet" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "earth", HYPERNYM: "planet"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "planet"]
+
+	// CENTRAL         PROP-GENERIC: distance is a property of space and includes ordered values of close ; far     (91b9-6388-d5b8-58b6) [ X:"distance", Y:"space", ORDERED_UNORDERED:"order", VALUES:"close;far" ]
+	//row autoRow5 = [UUID:"91b9-6388-d5b8-58b6", X: "distance", Y: "space", ORDERED_UNORDERED: "order", VALUES: <close_0>] //OVER-CONSTR.
+	row autoRow5 = [UUID:"91b9-6388-d5b8-58b6", X: "distance", Y: "space", ORDERED_UNORDERED: "order", VALUES: <close_0>]
+
+	// CENTRAL        (OPTIONAL) ACTION: planets in the solar system orbit the Sun     (4f0f-94ba-06b4-84be) [ AGENT_OBJECT:"planet", SCOPE1:"in solar system", ACTION2:"orbit", OBJECT_PROPERTY:"sun" ]
+	//row *autoRow6 = [UUID:"4f0f-94ba-06b4-84be", AGENT_OBJECT: "planet", SCOPE1: "in solar system", ACTION2: "orbit", OBJECT_PROPERTY: "sun"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"4f0f-94ba-06b4-84be", AGENT_OBJECT: "planet", SCOPE1: "in solar system", ACTION2: "orbit", OBJECT_PROPERTY: "sun"]
+
+	// CENTRAL         PROP-GENERIC: brightness is a property of a light source and includes values of bright ; dim     (2980-ded2-b96d-7722) [ X:"brightness", Y:"light source", VALUES:"bright;dim" ]
+	//row autoRow7 = [UUID:"2980-ded2-b96d-7722", X: "brightness", Y: "light source", VALUES: <bright_1>] //OVER-CONSTR.
+	row autoRow7 = [UUID:"2980-ded2-b96d-7722", X: "brightness", Y: "light source", VALUES: <bright_1>]
+
+	// CENTRAL         KINDOF: a star is a kind of celestial object ; celestial body     (dbe8-e776-f804-99a0) [ HYPONYM:"star", HYPERNYM:"celestial object;celestial body" ]
+	//  Notes: peripheral central
+	//row autoRow8 = [UUID:"dbe8-e776-f804-99a0", HYPONYM: "star", HYPERNYM: "celestial object"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"dbe8-e776-f804-99a0", HYPONYM: "star", HYPERNYM: "celestial object"]
+
+	// CENTRAL        (OPTIONAL) ACTION: planets orbit stars     (e35c-e251-2993-ac25) [ AGENT_OBJECT:"planet", ACTION2:"orbit", OBJECT_PROPERTY:"star" ]
+	//row *autoRow9 = [UUID:"e35c-e251-2993-ac25", AGENT_OBJECT: "planet", ACTION2: "orbit", OBJECT_PROPERTY: "star"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"e35c-e251-2993-ac25", AGENT_OBJECT: "planet", ACTION2: "orbit", OBJECT_PROPERTY: "star"]
+
+	// CENTRAL         KINDOF: the Sun is a kind of star     (af26-8083-b908-7d3b) [ HYPONYM:"sun", HYPERNYM:"star" ]
+	//  Notes: peripheral central
+	//row autoRow10 = [UUID:"af26-8083-b908-7d3b", HYPONYM: "sun", HYPERNYM: "star"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"af26-8083-b908-7d3b", HYPONYM: "sun", HYPERNYM: "star"]
+
+	// CENTRAL         ACTION: a source of something emits ; produces ; generates ; provides that something     (b877-a58b-f75a-3998) [ AGENT_OBJECT:"source of something", ACTION2:"emit;produce;generate;provide", OBJECT_PROPERTY:"that something" ]
+	//row autoRow11 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"]
+
+	// CENTRAL         SOURCEOF: a star is a source of light ; light energy through nuclear reactions     (d567-d49e-293e-95bf) [ AGENT:"star", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"light;light energy", BY_THROUGH_HOW:"nuclear reaction" ]
+	//row autoRow12 = [UUID:"d567-d49e-293e-95bf", AGENT: "star", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "light energy", BY_THROUGH_HOW: "nuclear reaction"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"d567-d49e-293e-95bf", AGENT: "star", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "light energy", BY_THROUGH_HOW: "nuclear reaction"]
+
+	// CENTRAL         ACTION: planets reflect the light of the sun     (e5f7-f7b8-e54c-8df9) [ AGENT_OBJECT:"planet", ACTION2:"reflect", OBJECT_PROPERTY:"light", SCOPE2:"of sun" ]
+	//row autoRow13 = [UUID:"e5f7-f7b8-e54c-8df9", AGENT_OBJECT: "planet", ACTION2: "reflect", OBJECT_PROPERTY: "light", SCOPE2: "of sun"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"e5f7-f7b8-e54c-8df9", AGENT_OBJECT: "planet", ACTION2: "reflect", OBJECT_PROPERTY: "light", SCOPE2: "of sun"]
+
+	// CENTRAL        (OPTIONAL) ACTION: Venus reflects more sunlight toward Earth than other planets     (b948-ddcc-f32e-aa11) [ AGENT_OBJECT:"venus", ACTION2:"reflect", OBJECT_PROPERTY:"much sunlight", WHEN_WHERE:"toward earth", SCOPE2:"than other planet" ]
+	//row *autoRow14 = [UUID:"b948-ddcc-f32e-aa11", AGENT_OBJECT: "venus", ACTION2: "reflect", OBJECT_PROPERTY: "much sunlight", WHEN_WHERE: "toward earth", SCOPE2: "than other planet"] //OVER-CONSTR.
+	row *autoRow14 = [UUID:"b948-ddcc-f32e-aa11", AGENT_OBJECT: "venus", ACTION2: "reflect", OBJECT_PROPERTY: "much sunlight", WHEN_WHERE: "toward earth", SCOPE2: "than other planet"]
+
+	// CENTRAL         MEASUREMENTS: apparent magnitude is a measure of the brightness of a celestial object ; celestial body as observed on Earth     (1bae-622f-4093-d6da) [ MEASURE:"apparent magnitude", QUANTITY_ADJ:"measure of", ATTRIBUTE:"brightness of", AGENT:"celestial object;celestial body", SCOPE:"a observe on earth" ]
+	//row autoRow15 = [UUID:"1bae-622f-4093-d6da", MEASURE: "apparent magnitude", QUANTITY_ADJ: "measure of", ATTRIBUTE: "brightness of", AGENT: "celestial object", SCOPE: "a observe on earth"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"1bae-622f-4093-d6da", MEASURE: "apparent magnitude", QUANTITY_ADJ: "measure of", ATTRIBUTE: "brightness of", AGENT: "celestial object", SCOPE: "a observe on earth"]
+
+	// CENTRAL        (OPTIONAL) COUPLEDRELATIONSHIP: as the light reflected off of an object increases , the object will appear to be brighter     (3a8d-e5f2-c79e-fcef) [ AGENT_ATTRIBUTE1:"light", SCOPE1A:"reflect off of object", CHANGE1:"increase", AGENT_ATTRIBUTE2:"object", ACTION2:"appear", PATIENT2:"be bright" ]
+	//row *autoRow16 = [UUID:"3a8d-e5f2-c79e-fcef", AGENT_ATTRIBUTE1: "light", SCOPE1A: "reflect off of object", CHANGE1: "increase", AGENT_ATTRIBUTE2: "object", ACTION2: "appear", PATIENT2: "be"+<bright_1>] //OVER-CONSTR.
+	row *autoRow16 = [UUID:"3a8d-e5f2-c79e-fcef", AGENT_ATTRIBUTE1: "light", SCOPE1A: "reflect off of object", CHANGE1: "increase", AGENT_ATTRIBUTE2: "object", ACTION2: "appear", PATIENT2: "be"+<bright_1>]
+
+	// LEXGLUE         OPPOSITES: far is the opposite of close     (769f-6117-1272-9b62) [ THING_PROPERTY1:"far", THING_PROPERTY2:"close" ]
+	//row autoRow17 = [UUID:"769f-6117-1272-9b62", THING_PROPERTY1: "far", THING_PROPERTY2: <close_0>] //OVER-CONSTR.
+	row autoRow17 = [UUID:"769f-6117-1272-9b62", THING_PROPERTY1: "far", THING_PROPERTY2: <close_0>]
+
+	// LEXGLUE         OPPOSITES: dimmer is the opposite of brighter     (67b1-cfae-5a8e-a28c) [ THING_PROPERTY1:"dim", THING_PROPERTY2:"bright" ]
+	//row autoRow18 = [UUID:"67b1-cfae-5a8e-a28c", THING_PROPERTY1: "dim", THING_PROPERTY2: <bright_1>] //OVER-CONSTR.
+	row autoRow18 = [UUID:"67b1-cfae-5a8e-a28c", THING_PROPERTY1: "dim", THING_PROPERTY2: <bright_1>]
+
+endinferencepattern

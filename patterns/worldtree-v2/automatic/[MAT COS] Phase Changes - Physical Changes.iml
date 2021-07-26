@@ -1,0 +1,92 @@
+// Automatically converted pattern
+inferencepattern MAT_COS_Phase_Changes_Physical_Changes
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE: melting means matter ; a substance changes from a solid into a liquid by increasing heat energy     (6abc-4443-f672-9a97) [ PROCESS_NAME:"melt", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"solid", INTO:"liquid", BY_THROUGH_HOW:"increase heat energy" ]
+	//        HINTROW boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy     (a0b2-a45f-01e1-4bf4) [ PROCESS_NAME:"boil;evaporate", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"gas", BY_THROUGH_HOW:"increase heat energy" ]
+	//        HINTROW freezing means matter ; a substance changes from a liquid into a solid by decreasing heat energy     (f03c-decc-030f-b860) [ PROCESS_NAME:"freeze", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"solid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//        HINTROW sublimation means matter ; a substance changes from a solid into a gas by increasing heat energy     (1613-c8b2-f818-85be) [ PROCESS_NAME:"sublimation", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"solid", INTO:"gas", BY_THROUGH_HOW:"increase heat energy" ]
+	//        HINTROW desublimation ; deposition means matter ; a substance changes from a gas into a solid by decreasing heat energy     (3002-4c80-039d-2114) [ PROCESS_NAME:"desublimation;deposition", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"gas", INTO:"solid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//        HINTROW condensation is when matter ; a substance changes from a gas into a liquid by decreasing heat energy     (2c44-c2fa-bff1-5946) [ PROCESS_NAME:"condense", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"gas", INTO:"liquid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//row autoRow0 = [TABLE:"CHANGE", PROCESS_NAME: "melt", ACTOR_WHO: "matt", VERB: "change", FROM: "solid", INTO: "liquid", BY_THROUGH_HOW: *"POS:VB"+"heat energy"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CHANGE", ACTOR_WHO: "matt", VERB: "change", FROM: "solid", INTO: "liquid", BY_THROUGH_HOW: *"POS:VB"+"heat energy"]
+
+	// CENTRALSW       KINDOF: melting is a kind of phase change     (fae9-3cca-92cd-bf20) [ HYPONYM:"melt", HYPERNYM:"phase change" ]
+	//        HINTROW boiling is a kind of phase change     (edd3-cea2-f046-e76f) [ HYPONYM:"boil", HYPERNYM:"phase change" ]
+	//        HINTROW evaporating is a kind of phase change     (4a2c-c349-a627-edc5) [ HYPONYM:"evaporate", HYPERNYM:"phase change" ]
+	//        HINTROW freezing is a kind of phase change     (eebb-a341-23c6-8447) [ HYPONYM:"freeze", HYPERNYM:"phase change" ]
+	//        HINTROW condensing is a kind of phase change     (e2ac-16b6-eb78-880e) [ HYPONYM:"condense", HYPERNYM:"phase change" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "melt", HYPERNYM: "phase change"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "phase change"]
+
+	// GROUNDING       KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//        HINTROW the air is a kind of substance     (3ed6-1fa7-1a63-34a0) [ HYPONYM:"air", HYPERNYM:"substance" ]
+	//        HINTROW butter is a kind of substance     (e15d-0c5d-0e78-b5dc) [ HYPONYM:"butter", HYPERNYM:"substance" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "substance"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C     (e474-2a11-6e7b-ae8b) [ MATERIAL_NAME:"water", STATEOFMATTER:"gas", FORM_NAME:"water vapor;steam", LOWER_BOUND:"373;212;100", UPPER_BOUND:"100000000000", UNITS:"k;f;c" ]
+	//row autoRow3 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C     (4a5a-9115-28a9-b97b) [ MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice", LOWER_BOUND:"0;-459;-273;459;273", UPPER_BOUND:"273;32;0", UNITS:"k;f;c" ]
+	//row autoRow4 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//row autoRow5 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"]
+
+	// CENTRAL         KINDOF: a phase change is a kind of physical change     (b6d6-89d9-43a5-fd91) [ HYPONYM:"phase change", SCOPE1:"physical", HYPERNYM:"change" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"b6d6-89d9-43a5-fd91", HYPONYM: "phase change", SCOPE1: "physical", HYPERNYM: "change"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"b6d6-89d9-43a5-fd91", HYPONYM: "phase change", SCOPE1: "physical", HYPERNYM: "change"]
+
+	// CENTRAL         KINDOF: gas is a kind of state of matter     (aa73-331e-e970-c934) [ HYPONYM:"gas", HYPERNYM:"state of matt" ]
+	//row autoRow7 = [UUID:"aa73-331e-e970-c934", HYPONYM: "gas", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"aa73-331e-e970-c934", HYPONYM: "gas", HYPERNYM: "state of matt"]
+
+	// CENTRAL         KINDOF: liquid is a kind of state of matter     (f7e9-c6f8-892b-3496) [ HYPONYM:"liquid", HYPERNYM:"state of matt" ]
+	//row autoRow8 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"]
+
+	// CENTRAL         KINDOF: solid is a kind of state of matter     (cf49-1b7a-89f0-41f5) [ HYPONYM:"solid", HYPERNYM:"state of matt" ]
+	//row autoRow9 = [UUID:"cf49-1b7a-89f0-41f5", HYPONYM: "solid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"cf49-1b7a-89f0-41f5", HYPONYM: "solid", HYPERNYM: "state of matt"]
+
+	// CENTRAL         MADEOF: substances are made of matter     (3395-b5a2-ae2d-39c2) [ OBJECT:"substance", MATERIAL:"matt" ]
+	//row autoRow10 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"]
+
+	// CENTRAL         CHANGE: heat energy can change the state of matter     (7909-f63c-46d1-01a2) [ ACTOR_WHO:"heat energy", VERB:"change", WHAT:"state of matt" ]
+	//row autoRow11 = [UUID:"7909-f63c-46d1-01a2", ACTOR_WHO: "heat energy", VERB: "change", WHAT: "state of matt"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"7909-f63c-46d1-01a2", ACTOR_WHO: "heat energy", VERB: "change", WHAT: "state of matt"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of heat energy     (d753-423d-5ce7-53ce) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"heat energy" ]
+	//row autoRow12 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"]
+
+	// CENTRAL         IFTHEN: if something undergoes a physical change then the physical properties of that something will change     (e555-8a18-84d7-15d1) [ THING:"something", ACTION1:"undergo", OBJECT_PATIENT1:"physical change", ACTOR_AGENT_PROCESS2:"physical property", PROPERTY_SCOPE:"of something", ACTION3:"change" ]
+	//row autoRow13 = [UUID:"e555-8a18-84d7-15d1", THING: "something", ACTION1: "undergo", OBJECT_PATIENT1: "physical change", ACTOR_AGENT_PROCESS2: "physical property", PROPERTY_SCOPE: "of something", ACTION3: "change"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"e555-8a18-84d7-15d1", THING: "something", ACTION1: "undergo", OBJECT_PATIENT1: "physical change", ACTOR_AGENT_PROCESS2: "physical property", PROPERTY_SCOPE: "of something", ACTION3: "change"]
+
+	// CENTRAL         PROP-GENERIC: state of matter is a property of matter and includes ordered values of solid ; liquid ; gas     (c1df-9444-188f-6d1a) [ X:"state of matt", Y:"matt", ORDERED_UNORDERED:"order", VALUES:"solid;liquid;gas" ]
+	//row autoRow14 = [UUID:"c1df-9444-188f-6d1a", X: "state of matt", Y: "matt", ORDERED_UNORDERED: "order", VALUES: "solid"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"c1df-9444-188f-6d1a", X: "state of matt", Y: "matt", ORDERED_UNORDERED: "order", VALUES: "solid"]
+
+	// CENTRAL         KINDOF: state of matter is a kind of physical property     (7532-01eb-475e-acbd) [ HYPONYM:"state of matt", SCOPE1:"physical", HYPERNYM:"property" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"7532-01eb-475e-acbd", HYPONYM: "state of matt", SCOPE1: "physical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"7532-01eb-475e-acbd", HYPONYM: "state of matt", SCOPE1: "physical", HYPERNYM: "property"]
+
+	// LEXGLUE         OPPOSITES: chemical change is the opposite of physical change     (1fa7-be03-588e-ba38) [ THING_PROPERTY1:"chemical change", THING_PROPERTY2:"physical change" ]
+	//row autoRow16 = [UUID:"1fa7-be03-588e-ba38", THING_PROPERTY1: "chemical change", THING_PROPERTY2: "physical change"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"1fa7-be03-588e-ba38", THING_PROPERTY1: "chemical change", THING_PROPERTY2: "physical change"]
+
+endinferencepattern

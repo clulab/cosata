@@ -1,0 +1,55 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Global_Warming
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       SOURCEOF: automobiles ; industrialization are a source of carbon dioxide     (e954-31b9-137b-012b) [ AGENT:"automobile;industrialization", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"carbon dioxide" ]
+	//        HINTROW animals are a source of carbon dioxide by exhaling     (54ee-9f16-9249-7336) [ AGENT:"animal", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"carbon dioxide", BY_THROUGH_HOW:"exhale" ]
+	//        HINTROW an organism breaking down sugar is a source of carbon dioxide ; water     (5c21-873c-7d14-83ef) [ AGENT:"organism", ACTION:"break", OBJECT_PATIENT:"sugar", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"carbon dioxide;water" ]
+	//        HINTROW sea water brought by upwelling releases carbon dioxide into the atmosphere     (bf38-69c6-cb14-26a8) [ AGENT:"sea water", ACTION:"bring by", OBJECT_PATIENT:"upwelling", VERB_SOURCEOF_PROVIDE_ETC:"release", WHAT_IT_PROVIDES:"carbon dioxide", SCOPE:"into atmosphere" ]
+	//        HINTROW burning fossil fuels releases carbon dioxide into the atmosphere     (1cfe-ae6c-8ca4-2bd2) [ ACTION:"burn", OBJECT_PATIENT:"fossil fuel", VERB_SOURCEOF_PROVIDE_ETC:"release", WHAT_IT_PROVIDES:"carbon dioxide", SCOPE:"into atmosphere" ]
+	//  Notes: source of carbon dioxide
+	//row autoRow0 = [TABLE:"SOURCEOF", WHAT_IT_PROVIDES: <carbon_0>+<dioxide_1>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"SOURCEOF", WHAT_IT_PROVIDES: <carbon_0>+<dioxide_1>]
+
+	// GROUNDING       KINDOF: carbon dioxide is a kind of greenhouse gas     (c707-5698-3407-a884) [ HYPONYM:"carbon dioxide", HYPERNYM:"greenhouse gas" ]
+	//        HINTROW water vapor is a kind of greenhouse gas     (dc5f-51cc-0c46-18df) [ HYPONYM:"water vapor", HYPERNYM:"greenhouse gas" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: <carbon_0>+<dioxide_1>, HYPERNYM: "greenhouse gas"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: <carbon_0>+<dioxide_1>, HYPERNYM: "greenhouse gas"]
+
+	// CENTRAL         CAUSE: greenhouse gases building up can cause global warming     (e52b-5483-6739-4e8d) [ CONDITION_AGENT_OBJECT:"greenhouse gas", CONDITION_VERB:"build", RESULT_AGENT:"global warm" ]
+	//row autoRow2 = [UUID:"e52b-5483-6739-4e8d", CONDITION_AGENT_OBJECT: "greenhouse gas", CONDITION_VERB: "build", RESULT_AGENT: "global warm"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"e52b-5483-6739-4e8d", CONDITION_AGENT_OBJECT: "greenhouse gas", CONDITION_VERB: "build", RESULT_AGENT: "global warm"]
+
+	// CENTRAL         ACTION: the greenhouse effect is when carbon in the air heats a planet 's atmosphere     (b8bd-0f06-439a-5721) [ DEFINITION_NAME:"greenhouse effect", AGENT_OBJECT:"carbon", SCOPE1:"in air", ACTION2:"heat", OBJECT_PROPERTY:"planet atmosphere" ]
+	//row autoRow3 = [UUID:"b8bd-0f06-439a-5721", DEFINITION_NAME: "greenhouse effect", AGENT_OBJECT: <carbon_0>, SCOPE1: "in air", ACTION2: "heat", OBJECT_PROPERTY: "planet atmosphere"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"b8bd-0f06-439a-5721", DEFINITION_NAME: "greenhouse effect", AGENT_OBJECT: <carbon_0>, SCOPE1: "in air", ACTION2: "heat", OBJECT_PROPERTY: "planet atmosphere"]
+
+	// CENTRAL        (OPTIONAL) REQUIRES: operating an automobile usually requires fossil fuels     (dada-1ff5-eaf9-f0d7) [ ACTION1:"operate", OBJECT_AGENT_PROCESS:"automobile", QUANTIFIER:"usually", VERB_REQUIRES:"require", OBJECT:"fossil fuel" ]
+	//row *autoRow4 = [UUID:"dada-1ff5-eaf9-f0d7", ACTION1: "operate", OBJECT_AGENT_PROCESS: "automobile", QUANTIFIER: "usually", VERB_REQUIRES: "require", OBJECT: "fossil fuel"] //OVER-CONSTR.
+	row *autoRow4 = [UUID:"dada-1ff5-eaf9-f0d7", ACTION1: "operate", OBJECT_AGENT_PROCESS: "automobile", QUANTIFIER: "usually", VERB_REQUIRES: "require", OBJECT: "fossil fuel"]
+
+	// CENTRAL         KINDOF: global warming is a kind of environmental problem     (e0db-fc01-d887-ea05) [ HYPONYM:"global warm", SCOPE1:"environment", HYPERNYM:"problem" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"e0db-fc01-d887-ea05", HYPONYM: "global warm", SCOPE1: "environment", HYPERNYM: "problem"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"e0db-fc01-d887-ea05", HYPONYM: "global warm", SCOPE1: "environment", HYPERNYM: "problem"]
+
+	// CENTRAL         CHANGE-VEC: global warming is when worldwide temperature increases     (4040-94c5-cc21-a29c) [ PROCESS_NAME_ACTION:"global warm", ADJ:"worldwide", AGENT_OBJECT:"temperature", DIRECTION:"increase" ]
+	//row autoRow6 = [UUID:"4040-94c5-cc21-a29c", PROCESS_NAME_ACTION: "global warm", ADJ: "worldwide", AGENT_OBJECT: "temperature", DIRECTION: "increase"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4040-94c5-cc21-a29c", PROCESS_NAME_ACTION: "global warm", ADJ: "worldwide", AGENT_OBJECT: "temperature", DIRECTION: "increase"]
+
+	// CENTRAL         CHANGE-VEC: greenhouse gases absorbing infrared radation increases the temperature of the atmosphere     (244e-0024-b731-9ef5) [ AGENT_OBJECT:"greenhouse gas", ACTION:"absorb infrared radation", DIRECTION:"increase", PATIENT:"temperature", SCOPE2:"of atmosphere" ]
+	//  Notes: f36d-2454-17e6-5c90->244e-0024-b731-9ef5,f058-dc42-3994-4b33,d753-423d-5ce7-53ce
+	//row autoRow7 = [UUID:"244e-0024-b731-9ef5", AGENT_OBJECT: "greenhouse gas", ACTION: "absorb infrared radation", DIRECTION: "increase", PATIENT: "temperature", SCOPE2: "of atmosphere"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"244e-0024-b731-9ef5", AGENT_OBJECT: "greenhouse gas", ACTION: "absorb infrared radation", DIRECTION: "increase", PATIENT: "temperature", SCOPE2: "of atmosphere"]
+
+	// CENTRAL         CAUSE: gases released during the use of fossil fuels causes global warming     (f753-aa2a-323e-a18d) [ CONDITION_AGENT_OBJECT:"gas", CONDITION_VERB:"release", SCOPE1:"during use of fossil fuel", RESULT_AGENT:"global warm" ]
+	//row autoRow8 = [UUID:"f753-aa2a-323e-a18d", CONDITION_AGENT_OBJECT: "gas", CONDITION_VERB: "release", SCOPE1: "during use of fossil fuel", RESULT_AGENT: "global warm"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f753-aa2a-323e-a18d", CONDITION_AGENT_OBJECT: "gas", CONDITION_VERB: "release", SCOPE1: "during use of fossil fuel", RESULT_AGENT: "global warm"]
+
+endinferencepattern

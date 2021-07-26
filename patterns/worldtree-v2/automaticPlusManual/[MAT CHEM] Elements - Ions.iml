@@ -1,0 +1,60 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Elements_Ions
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       IFTHEN: if an atom has more electrons than protons , then the atom will be an ion with negative charge     (aed0-71c3-8d8d-f323) [ THING:"atom", ACTION1:"have", OBJECT_PATIENT1:"much electron", SCOPE1B:"than proton", ACTOR_AGENT_PROCESS2:"atom", OBJECT_PROPERTY3:"ion", SCOPE4:"with negative charge" ]
+	//        HINTROW if an object has a negative net charge then that object contains more electrons than protons     (d585-bdfd-7ec3-db26) [ THING:"object", ADJ_QUANTITY1A:"negative", OBJECT_PATIENT1:"net charge", ACTOR_AGENT_PROCESS2:"object", ACTION3:"contain", ADJ_QUANTIFIER3:"much", OBJECT_PROPERTY3:"electron", SCOPE4:"than proton" ]
+	//row autoRow0 = [TABLE:"IFTHEN", THING: "atom", ACTION1: "have", OBJECT_PATIENT1: "much electron", SCOPE1B: "than proton", ACTOR_AGENT_PROCESS2: "atom", OBJECT_PROPERTY3: "ion", SCOPE4: "with"+*"POS:JJ"+"charge"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"IFTHEN", THING: "atom"]
+
+	// GROUNDING       FORMEDBY: an oxygen ion is formed by gaining 2 electrons     (13d6-3481-6cb8-bdaa) [ OBJECT:"oxygen ion", VERB:"gain", PATIENT:"2 electron" ]
+	//row autoRow1 = [TABLE:"FORMEDBY", OBJECT: "oxygen ion", VERB: "gain", PATIENT: "2 electron"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"FORMEDBY", OBJECT: "oxygen ion", VERB: "gain", PATIENT: "2 electron"]
+
+	// GROUNDING       PROP-CHEM-CHARGE: an oxygen ion has a negative -2 electric charge     (8f8b-9c0a-8f64-e23c) [ THING:"oxygen ion", POSITIVE_NEGATIVE_NEUTRAL:"negative", NUMERICQUANTITY:"-2;2" ]
+	//  Notes: 0f64-e288-def7-353e->8f8b-9c0a-8f64-e23c
+	//row autoRow2 = [TABLE:"PROP-CHEM-CHARGE", THING: "oxygen ion", POSITIVE_NEGATIVE_NEUTRAL: "negative", NUMERICQUANTITY: "-2"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"PROP-CHEM-CHARGE", THING: "oxygen ion", POSITIVE_NEGATIVE_NEUTRAL: "negative", NUMERICQUANTITY: "-2"]
+
+	// GROUNDING       KINDOF: oxygen is a kind of element     (936b-92a1-0e96-0846) [ HYPONYM:"oxygen", HYPERNYM:"element" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "oxygen", HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "oxygen", HYPERNYM: "element"]
+
+	// CENTRAL         FORMEDBY: an ion with negative charge is formed by atom gaining electrons     (c149-dc55-e10f-22fd) [ OBJECT:"ion with negative charge", AGENT_PROCESS:"atom", VERB:"gain", PATIENT:"electron" ]
+	//row autoRow4 = [UUID:"c149-dc55-e10f-22fd", OBJECT: "ion with negative charge", AGENT_PROCESS: "atom", VERB: "gain", PATIENT: "electron"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"c149-dc55-e10f-22fd", OBJECT: "ion with negative charge", AGENT_PROCESS: "atom", VERB: "gain", PATIENT: "electron"]
+
+	// CENTRAL         FORMEDBY: an ion with positive charge is formed by atom losing electrons     (39cb-3fd1-83ad-822d) [ OBJECT:"ion with positive charge", AGENT_PROCESS:"atom", VERB:"lose", PATIENT:"electron" ]
+	//row autoRow5 = [UUID:"39cb-3fd1-83ad-822d", OBJECT: "ion with positive charge", AGENT_PROCESS: "atom", VERB: "lose", PATIENT: "electron"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"39cb-3fd1-83ad-822d", OBJECT: "ion with positive charge", AGENT_PROCESS: "atom", VERB: "lose", PATIENT: "electron"]
+
+	// CENTRAL         IFTHEN: if an atom has more protons than electrons , then the atom will be an ion with positive charge     (8ec2-b239-2753-046b) [ THING:"atom", ACTION1:"have", OBJECT_PATIENT1:"much proton", SCOPE1B:"than electron", ACTOR_AGENT_PROCESS2:"atom", OBJECT_PROPERTY3:"ion", SCOPE4:"with positive charge" ]
+	//row autoRow6 = [UUID:"8ec2-b239-2753-046b", THING: "atom", ACTION1: "have", OBJECT_PATIENT1: "much proton", SCOPE1B: "than electron", ACTOR_AGENT_PROCESS2: "atom", OBJECT_PROPERTY3: "ion", SCOPE4: "with positive charge"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"8ec2-b239-2753-046b", THING: "atom", ACTION1: "have", OBJECT_PATIENT1: "much proton", SCOPE1B: "than electron", ACTOR_AGENT_PROCESS2: "atom", OBJECT_PROPERTY3: "ion", SCOPE4: "with positive charge"]
+
+	// CENTRAL         PROP-CHEM-CHARGE: an ion atom has a positive or negative electric charge     (27fd-f99e-a9ff-2b4e) [ QUALIFIER:"ion", THING:"atom", POSITIVE_NEGATIVE_NEUTRAL:"positive negative" ]
+	//  Notes: c8f9-40ee-1517-c378->27fd-f99e-a9ff-2b4e
+	//row autoRow7 = [UUID:"27fd-f99e-a9ff-2b4e", QUALIFIER: "ion", THING: "atom", POSITIVE_NEGATIVE_NEUTRAL: "positive negative"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"27fd-f99e-a9ff-2b4e", QUALIFIER: "ion", THING: "atom", POSITIVE_NEGATIVE_NEUTRAL: "positive negative"]
+
+	// CENTRAL         ACTION: metal atoms tend to lose electrons     (2dd9-3ea1-4c0c-3076) [ ADJ:"metal", AGENT_OBJECT:"atom", ACTION2:"tend lose", OBJECT_PROPERTY:"electron" ]
+	//row autoRow8 = [UUID:"2dd9-3ea1-4c0c-3076", ADJ: "metal", AGENT_OBJECT: "atom", ACTION2: "tend lose", OBJECT_PROPERTY: "electron"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"2dd9-3ea1-4c0c-3076", ADJ: "metal", AGENT_OBJECT: "atom", ACTION2: "tend lose", OBJECT_PROPERTY: "electron"]
+
+	// CENTRAL         KINDOF: an ion is a kind of charged particle     (469e-66b4-459c-7362) [ HYPONYM:"ion", HYPERNYM:"charge particle" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"469e-66b4-459c-7362", HYPONYM: "ion", HYPERNYM: "charge particle"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"469e-66b4-459c-7362", HYPONYM: "ion", HYPERNYM: "charge particle"]
+
+	// CENTRAL         KINDOF: an element is a kind of atom     (9042-ff16-ab5c-0dc2) [ HYPONYM:"element", HYPERNYM:"atom" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"9042-ff16-ab5c-0dc2", HYPONYM: "element", HYPERNYM: "atom"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"9042-ff16-ab5c-0dc2", HYPONYM: "element", HYPERNYM: "atom"]
+
+endinferencepattern

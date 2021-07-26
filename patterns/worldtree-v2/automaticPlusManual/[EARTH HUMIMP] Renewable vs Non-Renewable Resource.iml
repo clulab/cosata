@@ -1,0 +1,241 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_RenewableNonRenewableResource_Renewable
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+    // Renewable Resources
+
+    // CENTRALSW       PROP-RESOURCES-RENEWABLE: solar energy is a renewable ; inexhaustible resource     (f5c3-d141-1a8b-80c9) [ RESOURCE:"solar energy", REWABLE_NONRENEWABLE:"renewable;inexhaustible" ]
+	//        HINTROW soil is a renewable resource for growing plants     (1af4-c273-5b80-34e6) [ RESOURCE:"soil", REWABLE_NONRENEWABLE:"renewable", FOR_PURPOSE:"grow plant" ]
+	//        HINTROW water is a renewable resource     (df02-656d-260a-04d5) [ RESOURCE:"water", REWABLE_NONRENEWABLE:"renewable" ]
+	//        HINTROW trees are a renewable resource     (27d4-eb24-0630-19ed) [ RESOURCE:"tree", REWABLE_NONRENEWABLE:"renewable" ]
+	//        HINTROW wind is a renewable ; inexhaustible resource     (0da1-2296-dfe8-6873) [ RESOURCE:"wind", REWABLE_NONRENEWABLE:"renewable;inexhaustible" ]
+	//row autoRow1 = [TABLE:"PROP-RESOURCES-RENEWABLE", REWABLE_NONRENEWABLE: "renewable"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-RESOURCES-RENEWABLE", RESOURCE:<resourceName>, REWABLE_NONRENEWABLE: "renewable"]
+
+
+    // Energy source connection
+	// CENTRAL         KINDOF: an energy source is a kind of resource     (044f-98c1-07d1-2e57) [ HYPONYM:"energy source", HYPERNYM:"resource" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: "energy source", HYPERNYM: "resource"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: "energy source", HYPERNYM: "resource"]
+    
+    row *autoRow8A = [TABLE:"SOURCEOF", AGENT:<resourceName>, WHAT_IT_PROVIDES:~"energy"]
+    row *autoRow8B = [TABLE:"SOURCEOF", OBJECT_PATIENT:<resourceName>, WHAT_IT_PROVIDES:~"energy"]
+
+
+
+    // Common core
+
+	// CENTRAL        (OPTIONAL) COUPLEDRELATIONSHIP: as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease     (a979-cbd2-fb2d-175e) [ QUANTITY_MEASURE1:"use of renewable resource", ACTION1:"use", PATIENT1:"of renewable resource", CHANGE1:"increase", ACTION2:"use", PATIENT2:"of nonrenewable resource", CHANGE2:"decrease" ]
+	//row *autoRow3 = [UUID:"a979-cbd2-fb2d-175e", QUANTITY_MEASURE1: "use of renewable resource", ACTION1: "use", PATIENT1: "of renewable resource", CHANGE1: "increase", ACTION2: "use", PATIENT2: "of nonrenewable resource", CHANGE2: "decrease"] //OVER-CONSTR.
+    //## NOTE: Error in row?
+	row *autoRow3 = [UUID:"a979-cbd2-fb2d-175e", QUANTITY_MEASURE1: "use of renewable resource", ACTION1: "use", PATIENT1: "of renewable resource", CHANGE1: "increase", ACTION2: "use", PATIENT2: "of nonrenewable resource", CHANGE2: "decrease"]
+
+	// CENTRAL         COMPARISON: renewable resources are replenished more quickly than they are used     (9997-39e4-b71d-1e0d) [ ADJ:"renewable", THING:"resource", ACTION1:"be replenish", COMPARISON:"much quickly", ACTION2:"be use" ]
+	//  Notes: b035-14b1-8601-19d0->9997-39e4-b71d-1e0d
+	//row autoRow4 = [UUID:"9997-39e4-b71d-1e0d", ADJ: "renewable", THING: "resource", ACTION1: "be replenish", COMPARISON: "much quickly", ACTION2: "be use"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"9997-39e4-b71d-1e0d", ADJ: "renewable", THING: "resource", ACTION1: "be replenish", COMPARISON: "much quickly", ACTION2: "be use"]
+
+	// CENTRAL         AFFORDANCES: renewable resources can slow the depletion of nonrenewable resources     (9cc5-f9fc-8ca8-2fe1) [ ACTOR_THING:"renewable resource", VERB:"slow", PATIENT:"depletion", SCOPE:"of nonrenewable resource" ]
+	//row autoRow5 = [UUID:"9cc5-f9fc-8ca8-2fe1", ACTOR_THING: "renewable resource", VERB: "slow", PATIENT: "depletion", SCOPE: "of nonrenewable resource"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"9cc5-f9fc-8ca8-2fe1", ACTOR_THING: "renewable resource", VERB: "slow", PATIENT: "depletion", SCOPE: "of nonrenewable resource"]
+
+	// CENTRAL         ACTION: nonrenewable resources will eventually be depleted     (87e4-0553-c70e-56fa) [ ADJ:"nonrenewable", AGENT_OBJECT:"resource", QUANITIFIER:"eventually", ACTION2:"be deplete" ]
+	//row autoRow6 = [UUID:"87e4-0553-c70e-56fa", ADJ: "nonrenewable", AGENT_OBJECT: "resource", QUANITIFIER: "eventually", ACTION2: "be deplete"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"87e4-0553-c70e-56fa", ADJ: "nonrenewable", AGENT_OBJECT: "resource", QUANITIFIER: "eventually", ACTION2: "be deplete"]
+
+	// LEXGLUE         SYNONYMY: deplete is similar to decrease     (f2d6-29ba-1070-12fd) [ ACTION1:"deplete", ACTION2:"decrease" ]
+	//row autoRow8 = [UUID:"f2d6-29ba-1070-12fd", ACTION1: "deplete", ACTION2: "decrease"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f2d6-29ba-1070-12fd", ACTION1: "deplete", ACTION2: "decrease"]
+
+endinferencepattern
+
+inferencepattern EARTH_HUMIMP_RenewableNonRenewableResource_NonRenewable
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+
+    // Non-renewable Resources
+
+    // CENTRALSW       PROP-RESOURCES-RENEWABLE: metal is a nonrenewable resource     (9e1f-a1a8-643b-0b8c) [ RESOURCE:"metal", REWABLE_NONRENEWABLE:"nonrenewable" ]
+	//        HINTROW plastic is a nonrenewable resource     (06f5-8cbc-7ae5-111f) [ RESOURCE:"plastic", REWABLE_NONRENEWABLE:"nonrenewable" ]
+	//        HINTROW fossil fuels are a nonrenewable resource     (0b4c-355e-1cca-d698) [ RESOURCE:"fossil fuel", REWABLE_NONRENEWABLE:"nonrenewable" ]
+	//        HINTROW aluminum is a nonrenewable resource     (982b-08d3-f40e-289f) [ RESOURCE:"aluminum", REWABLE_NONRENEWABLE:"nonrenewable" ]
+	//        HINTROW coal is a nonrenewable resource     (77f9-749f-9394-ae34) [ RESOURCE:"coal", REWABLE_NONRENEWABLE:"nonrenewable" ]
+	//row autoRow0 = [TABLE:"PROP-RESOURCES-RENEWABLE", REWABLE_NONRENEWABLE: "nonrenewable"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-RESOURCES-RENEWABLE", RESOURCE:<resourceName>, REWABLE_NONRENEWABLE: "nonrenewable"]
+
+
+    // CENTRAL         DURATIONS: nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human     (1456-98fe-3171-af46) [ AGENT:"nonrenewable resource", ACTION:"form", LOWERBOUND:"300000000", DURATIONUNIT:"year", MAGNITUDE:"very long", ATTRIBUTE:"time", SCOPE:"human" ]
+	//row autoRow2 = [UUID:"1456-98fe-3171-af46", AGENT: "nonrenewable resource", ACTION: "form", LOWERBOUND: "300000000", DURATIONUNIT: "year", MAGNITUDE: "very long", ATTRIBUTE: "time", SCOPE: "human"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"1456-98fe-3171-af46", AGENT: "nonrenewable resource", ACTION: "form", LOWERBOUND: "300000000", DURATIONUNIT: "year", MAGNITUDE: "very long", ATTRIBUTE: "time", SCOPE: "human"]
+
+
+    // Energy source connection
+	// CENTRAL         KINDOF: an energy source is a kind of resource     (044f-98c1-07d1-2e57) [ HYPONYM:"energy source", HYPERNYM:"resource" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: "energy source", HYPERNYM: "resource"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: "energy source", HYPERNYM: "resource"]
+    
+    row *autoRow8A = [TABLE:"SOURCEOF", AGENT:<resourceName>, WHAT_IT_PROVIDES:~"energy"]
+    row *autoRow8B = [TABLE:"SOURCEOF", OBJECT_PATIENT:<resourceName>, WHAT_IT_PROVIDES:~"energy"]
+
+
+
+    // Common core
+
+	// CENTRAL        (OPTIONAL) COUPLEDRELATIONSHIP: as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease     (a979-cbd2-fb2d-175e) [ QUANTITY_MEASURE1:"use of renewable resource", ACTION1:"use", PATIENT1:"of renewable resource", CHANGE1:"increase", ACTION2:"use", PATIENT2:"of nonrenewable resource", CHANGE2:"decrease" ]
+	//row *autoRow3 = [UUID:"a979-cbd2-fb2d-175e", QUANTITY_MEASURE1: "use of renewable resource", ACTION1: "use", PATIENT1: "of renewable resource", CHANGE1: "increase", ACTION2: "use", PATIENT2: "of nonrenewable resource", CHANGE2: "decrease"] //OVER-CONSTR.
+    //## NOTE: Error in row?
+	row *autoRow3 = [UUID:"a979-cbd2-fb2d-175e", QUANTITY_MEASURE1: "use of renewable resource", ACTION1: "use", PATIENT1: "of renewable resource", CHANGE1: "increase", ACTION2: "use", PATIENT2: "of nonrenewable resource", CHANGE2: "decrease"]
+
+	// CENTRAL         COMPARISON: renewable resources are replenished more quickly than they are used     (9997-39e4-b71d-1e0d) [ ADJ:"renewable", THING:"resource", ACTION1:"be replenish", COMPARISON:"much quickly", ACTION2:"be use" ]
+	//  Notes: b035-14b1-8601-19d0->9997-39e4-b71d-1e0d
+	//row autoRow4 = [UUID:"9997-39e4-b71d-1e0d", ADJ: "renewable", THING: "resource", ACTION1: "be replenish", COMPARISON: "much quickly", ACTION2: "be use"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"9997-39e4-b71d-1e0d", ADJ: "renewable", THING: "resource", ACTION1: "be replenish", COMPARISON: "much quickly", ACTION2: "be use"]
+
+	// CENTRAL         AFFORDANCES: renewable resources can slow the depletion of nonrenewable resources     (9cc5-f9fc-8ca8-2fe1) [ ACTOR_THING:"renewable resource", VERB:"slow", PATIENT:"depletion", SCOPE:"of nonrenewable resource" ]
+	//row autoRow5 = [UUID:"9cc5-f9fc-8ca8-2fe1", ACTOR_THING: "renewable resource", VERB: "slow", PATIENT: "depletion", SCOPE: "of nonrenewable resource"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"9cc5-f9fc-8ca8-2fe1", ACTOR_THING: "renewable resource", VERB: "slow", PATIENT: "depletion", SCOPE: "of nonrenewable resource"]
+
+	// CENTRAL         ACTION: nonrenewable resources will eventually be depleted     (87e4-0553-c70e-56fa) [ ADJ:"nonrenewable", AGENT_OBJECT:"resource", QUANITIFIER:"eventually", ACTION2:"be deplete" ]
+	//row autoRow6 = [UUID:"87e4-0553-c70e-56fa", ADJ: "nonrenewable", AGENT_OBJECT: "resource", QUANITIFIER: "eventually", ACTION2: "be deplete"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"87e4-0553-c70e-56fa", ADJ: "nonrenewable", AGENT_OBJECT: "resource", QUANITIFIER: "eventually", ACTION2: "be deplete"]
+
+	// LEXGLUE         SYNONYMY: deplete is similar to decrease     (f2d6-29ba-1070-12fd) [ ACTION1:"deplete", ACTION2:"decrease" ]
+	//row autoRow8 = [UUID:"f2d6-29ba-1070-12fd", ACTION1: "deplete", ACTION2: "decrease"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f2d6-29ba-1070-12fd", ACTION1: "deplete", ACTION2: "decrease"]
+
+endinferencepattern
+
+
+inferencepattern EnergyConnection1A
+
+    // CENTRALSW       PROP-RESOURCES-RENEWABLE: solar energy is a renewable ; inexhaustible resource     (f5c3-d141-1a8b-80c9) [ RESOURCE:"solar energy", REWABLE_NONRENEWABLE:"renewable;inexhaustible" ]
+	//        HINTROW soil is a renewable resource for growing plants     (1af4-c273-5b80-34e6) [ RESOURCE:"soil", REWABLE_NONRENEWABLE:"renewable", FOR_PURPOSE:"grow plant" ]
+	//        HINTROW water is a renewable resource     (df02-656d-260a-04d5) [ RESOURCE:"water", REWABLE_NONRENEWABLE:"renewable" ]
+	//        HINTROW trees are a renewable resource     (27d4-eb24-0630-19ed) [ RESOURCE:"tree", REWABLE_NONRENEWABLE:"renewable" ]
+	//        HINTROW wind is a renewable ; inexhaustible resource     (0da1-2296-dfe8-6873) [ RESOURCE:"wind", REWABLE_NONRENEWABLE:"renewable;inexhaustible" ]
+	//row autoRow1 = [TABLE:"PROP-RESOURCES-RENEWABLE", REWABLE_NONRENEWABLE: "renewable"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-RESOURCES-RENEWABLE", RESOURCE:<resourceName>, REWABLE_NONRENEWABLE: "renewable"]
+
+    // Energy source connection
+	// CENTRAL         KINDOF: an energy source is a kind of resource     (044f-98c1-07d1-2e57) [ HYPONYM:"energy source", HYPERNYM:"resource" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: "energy source", HYPERNYM: "resource"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: "energy source", HYPERNYM: "resource"]
+    
+    row autoRow8A = [TABLE:"SOURCEOF", AGENT:<resourceName>, WHAT_IT_PROVIDES:<thingProvided>]
+    //row autoRow8B = [TABLE:"SOURCEOF", OBJECT_PATIENT:<resourceName>, WHAT_IT_PROVIDES:<thingProvided>]
+
+    row autoRow9A = [TABLE:"KINDOF", HYPONYM: <thingProvided>, HYPERNYM: *"POS:JJ" + *"POS:NN" + "energy"]
+    row *autoRow9B = [TABLE:"SOURCEOF", AGENT:<thingProvided>, WHAT_IT_PROVIDES:*"POS:JJ" + *"POS:NN" + "energy"]
+
+endinferencepattern
+
+inferencepattern EnergyConnection1B
+
+    // CENTRALSW       PROP-RESOURCES-RENEWABLE: solar energy is a renewable ; inexhaustible resource     (f5c3-d141-1a8b-80c9) [ RESOURCE:"solar energy", REWABLE_NONRENEWABLE:"renewable;inexhaustible" ]
+	//        HINTROW soil is a renewable resource for growing plants     (1af4-c273-5b80-34e6) [ RESOURCE:"soil", REWABLE_NONRENEWABLE:"renewable", FOR_PURPOSE:"grow plant" ]
+	//        HINTROW water is a renewable resource     (df02-656d-260a-04d5) [ RESOURCE:"water", REWABLE_NONRENEWABLE:"renewable" ]
+	//        HINTROW trees are a renewable resource     (27d4-eb24-0630-19ed) [ RESOURCE:"tree", REWABLE_NONRENEWABLE:"renewable" ]
+	//        HINTROW wind is a renewable ; inexhaustible resource     (0da1-2296-dfe8-6873) [ RESOURCE:"wind", REWABLE_NONRENEWABLE:"renewable;inexhaustible" ]
+	//row autoRow1 = [TABLE:"PROP-RESOURCES-RENEWABLE", REWABLE_NONRENEWABLE: "renewable"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-RESOURCES-RENEWABLE", RESOURCE:<resourceName>, REWABLE_NONRENEWABLE: "renewable"]
+
+    // Energy source connection
+	// CENTRAL         KINDOF: an energy source is a kind of resource     (044f-98c1-07d1-2e57) [ HYPONYM:"energy source", HYPERNYM:"resource" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: "energy source", HYPERNYM: "resource"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: "energy source", HYPERNYM: "resource"]
+    
+    row autoRow8A = [TABLE:"SOURCEOF", AGENT:<resourceName>, WHAT_IT_PROVIDES:<thingProvided>]
+    //row autoRow8B = [TABLE:"SOURCEOF", OBJECT_PATIENT:<resourceName>, WHAT_IT_PROVIDES:<thingProvided>]
+
+    row *autoRow9A = [TABLE:"KINDOF", HYPONYM: <thingProvided>, HYPERNYM: *"POS:JJ" + *"POS:NN" + "energy"]
+    row autoRow9B = [TABLE:"SOURCEOF", AGENT:<thingProvided>, WHAT_IT_PROVIDES:*"POS:JJ" + *"POS:NN" + "energy"]
+
+endinferencepattern
+
+
+inferencepattern EnergyConnection1C
+
+    // CENTRALSW       PROP-RESOURCES-RENEWABLE: solar energy is a renewable ; inexhaustible resource     (f5c3-d141-1a8b-80c9) [ RESOURCE:"solar energy", REWABLE_NONRENEWABLE:"renewable;inexhaustible" ]
+	//        HINTROW soil is a renewable resource for growing plants     (1af4-c273-5b80-34e6) [ RESOURCE:"soil", REWABLE_NONRENEWABLE:"renewable", FOR_PURPOSE:"grow plant" ]
+	//        HINTROW water is a renewable resource     (df02-656d-260a-04d5) [ RESOURCE:"water", REWABLE_NONRENEWABLE:"renewable" ]
+	//        HINTROW trees are a renewable resource     (27d4-eb24-0630-19ed) [ RESOURCE:"tree", REWABLE_NONRENEWABLE:"renewable" ]
+	//        HINTROW wind is a renewable ; inexhaustible resource     (0da1-2296-dfe8-6873) [ RESOURCE:"wind", REWABLE_NONRENEWABLE:"renewable;inexhaustible" ]
+	//row autoRow1 = [TABLE:"PROP-RESOURCES-RENEWABLE", REWABLE_NONRENEWABLE: "renewable"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-RESOURCES-RENEWABLE", RESOURCE:<resourceName>, REWABLE_NONRENEWABLE: "renewable"]
+
+    // Energy source connection
+	// CENTRAL         KINDOF: an energy source is a kind of resource     (044f-98c1-07d1-2e57) [ HYPONYM:"energy source", HYPERNYM:"resource" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: "energy source", HYPERNYM: "resource"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: "energy source", HYPERNYM: "resource"]
+    
+    row autoRow8A = [TABLE:"SOURCEOF", AGENT:<resourceName>, WHAT_IT_PROVIDES:<thingProvided>]
+    row autoRow8A = [TABLE:"SYNONYMY", X1:<thingProvided>, X2:~"energy"]
+
+endinferencepattern
+
+
+inferencepattern EnergyConnection2A
+
+    // CENTRALSW       PROP-RESOURCES-RENEWABLE: solar energy is a renewable ; inexhaustible resource     (f5c3-d141-1a8b-80c9) [ RESOURCE:"solar energy", REWABLE_NONRENEWABLE:"renewable;inexhaustible" ]
+	//        HINTROW soil is a renewable resource for growing plants     (1af4-c273-5b80-34e6) [ RESOURCE:"soil", REWABLE_NONRENEWABLE:"renewable", FOR_PURPOSE:"grow plant" ]
+	//        HINTROW water is a renewable resource     (df02-656d-260a-04d5) [ RESOURCE:"water", REWABLE_NONRENEWABLE:"renewable" ]
+	//        HINTROW trees are a renewable resource     (27d4-eb24-0630-19ed) [ RESOURCE:"tree", REWABLE_NONRENEWABLE:"renewable" ]
+	//        HINTROW wind is a renewable ; inexhaustible resource     (0da1-2296-dfe8-6873) [ RESOURCE:"wind", REWABLE_NONRENEWABLE:"renewable;inexhaustible" ]
+	//row autoRow1 = [TABLE:"PROP-RESOURCES-RENEWABLE", REWABLE_NONRENEWABLE: "renewable"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-RESOURCES-RENEWABLE", RESOURCE:<resourceName>, REWABLE_NONRENEWABLE: "renewable"]
+
+    // Energy source connection
+	// CENTRAL         KINDOF: an energy source is a kind of resource     (044f-98c1-07d1-2e57) [ HYPONYM:"energy source", HYPERNYM:"resource" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: "energy source", HYPERNYM: "resource"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: "energy source", HYPERNYM: "resource"]
+    
+    //row autoRow8A = [TABLE:"SOURCEOF", AGENT:<resourceName>, WHAT_IT_PROVIDES:<thingProvided>]
+    row autoRow8B = [TABLE:"SOURCEOF", OBJECT_PATIENT:<resourceName>, WHAT_IT_PROVIDES:<thingProvided>]
+
+    row autoRow9A = [TABLE:"KINDOF", HYPONYM: <thingProvided>, HYPERNYM: *"POS:JJ" + *"POS:NN" + "energy"]
+    row *autoRow9B = [TABLE:"SOURCEOF", AGENT:<thingProvided>, WHAT_IT_PROVIDES:*"POS:JJ" + *"POS:NN" + "energy"]
+
+endinferencepattern
+
+
+inferencepattern EnergyConnection2B
+
+    // CENTRALSW       PROP-RESOURCES-RENEWABLE: solar energy is a renewable ; inexhaustible resource     (f5c3-d141-1a8b-80c9) [ RESOURCE:"solar energy", REWABLE_NONRENEWABLE:"renewable;inexhaustible" ]
+	//        HINTROW soil is a renewable resource for growing plants     (1af4-c273-5b80-34e6) [ RESOURCE:"soil", REWABLE_NONRENEWABLE:"renewable", FOR_PURPOSE:"grow plant" ]
+	//        HINTROW water is a renewable resource     (df02-656d-260a-04d5) [ RESOURCE:"water", REWABLE_NONRENEWABLE:"renewable" ]
+	//        HINTROW trees are a renewable resource     (27d4-eb24-0630-19ed) [ RESOURCE:"tree", REWABLE_NONRENEWABLE:"renewable" ]
+	//        HINTROW wind is a renewable ; inexhaustible resource     (0da1-2296-dfe8-6873) [ RESOURCE:"wind", REWABLE_NONRENEWABLE:"renewable;inexhaustible" ]
+	//row autoRow1 = [TABLE:"PROP-RESOURCES-RENEWABLE", REWABLE_NONRENEWABLE: "renewable"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-RESOURCES-RENEWABLE", RESOURCE:<resourceName>, REWABLE_NONRENEWABLE: "renewable"]
+
+    // Energy source connection
+	// CENTRAL         KINDOF: an energy source is a kind of resource     (044f-98c1-07d1-2e57) [ HYPONYM:"energy source", HYPERNYM:"resource" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: "energy source", HYPERNYM: "resource"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: "energy source", HYPERNYM: "resource"]
+    
+    //row autoRow8A = [TABLE:"SOURCEOF", AGENT:<resourceName>, WHAT_IT_PROVIDES:<thingProvided>]
+    row autoRow8B = [TABLE:"SOURCEOF", OBJECT_PATIENT:<resourceName>, WHAT_IT_PROVIDES:<thingProvided>]
+
+    row *autoRow9A = [TABLE:"KINDOF", HYPONYM: <thingProvided>, HYPERNYM: *"POS:JJ" + *"POS:NN" + "energy"]
+    row autoRow9B = [TABLE:"SOURCEOF", AGENT:<thingProvided>, WHAT_IT_PROVIDES:*"POS:JJ" + *"POS:NN" + "energy"]
+
+endinferencepattern

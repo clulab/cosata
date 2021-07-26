@@ -1,0 +1,310 @@
+{"patternMatches": [
+{
+	"patternName":"MAT_PROPO_States_with_Definite_Volume",
+	"matches":[
+		{
+		"uuids": ["5364-1d90-a262-32e7","5364-1d90-a262-32e7","4959-f789-6e66-e100","d068-9891-46a3-e999","92b1-8801-0e59-845e","cf49-1b7a-89f0-41f5","866b-5e77-f131-2b80","93fd-6a6f-7782-77d1","490c-5be7-2ff7-4bf2","b3e1-3703-6490-1530","de31-9a4c-d874-ac06"],
+		"slots": [
+			{"rowSlotName": "autoRow2a", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2b", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3b", "uuid": "4959-f789-6e66-e100", "rowText": "if something has a definite volume , then its volume will not change when transferred into a different container", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "shape", "uuid": "d068-9891-46a3-e999", "rowText": "Matter in the solid phase has definite shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "volume", "uuid": "92b1-8801-0e59-845e", "rowText": "Matter in the solid phase has definite volume", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8a", "uuid": "866b-5e77-f131-2b80", "rowText": "volume is a property of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8b", "uuid": "93fd-6a6f-7782-77d1", "rowText": "shape is a property of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b3e1-3703-6490-1530", "rowText": "definite is the opposite of variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"definiteVariableShape", "value":"definite" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"solid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"definiteVariableShape", "value":"definite" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"solid" }
+		]
+		},
+		{
+		"uuids": ["5364-1d90-a262-32e7","5364-1d90-a262-32e7","4959-f789-6e66-e100","d068-9891-46a3-e999","92b1-8801-0e59-845e","cf49-1b7a-89f0-41f5","866b-5e77-f131-2b80","92e5-34ee-da79-3c25","490c-5be7-2ff7-4bf2","b3e1-3703-6490-1530","de31-9a4c-d874-ac06"],
+		"slots": [
+			{"rowSlotName": "autoRow2a", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2b", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3b", "uuid": "4959-f789-6e66-e100", "rowText": "if something has a definite volume , then its volume will not change when transferred into a different container", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "shape", "uuid": "d068-9891-46a3-e999", "rowText": "Matter in the solid phase has definite shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "volume", "uuid": "92b1-8801-0e59-845e", "rowText": "Matter in the solid phase has definite volume", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8a", "uuid": "866b-5e77-f131-2b80", "rowText": "volume is a property of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8b", "uuid": "92e5-34ee-da79-3c25", "rowText": "shape is a property of the appearance of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b3e1-3703-6490-1530", "rowText": "definite is the opposite of variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"definiteVariableShape", "value":"definite" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"solid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"definiteVariableShape", "value":"definite" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"solid" }
+		]
+		},
+		{
+		"uuids": ["5364-1d90-a262-32e7","5364-1d90-a262-32e7","4959-f789-6e66-e100","5458-220e-3046-62d2","d048-a12a-4f58-5472","f7e9-c6f8-892b-3496","866b-5e77-f131-2b80","93fd-6a6f-7782-77d1","490c-5be7-2ff7-4bf2","b3e1-3703-6490-1530","de31-9a4c-d874-ac06"],
+		"slots": [
+			{"rowSlotName": "autoRow2a", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2b", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3b", "uuid": "4959-f789-6e66-e100", "rowText": "if something has a definite volume , then its volume will not change when transferred into a different container", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "shape", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "volume", "uuid": "d048-a12a-4f58-5472", "rowText": "Matter in the liquid phase has definite volume", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8a", "uuid": "866b-5e77-f131-2b80", "rowText": "volume is a property of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8b", "uuid": "93fd-6a6f-7782-77d1", "rowText": "shape is a property of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b3e1-3703-6490-1530", "rowText": "definite is the opposite of variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"definiteVariableShape", "value":"variable" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"definiteVariableShape", "value":"variability" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["5364-1d90-a262-32e7","5364-1d90-a262-32e7","4959-f789-6e66-e100","5458-220e-3046-62d2","d048-a12a-4f58-5472","f7e9-c6f8-892b-3496","866b-5e77-f131-2b80","92e5-34ee-da79-3c25","490c-5be7-2ff7-4bf2","b3e1-3703-6490-1530","de31-9a4c-d874-ac06"],
+		"slots": [
+			{"rowSlotName": "autoRow2a", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2b", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3b", "uuid": "4959-f789-6e66-e100", "rowText": "if something has a definite volume , then its volume will not change when transferred into a different container", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "shape", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "volume", "uuid": "d048-a12a-4f58-5472", "rowText": "Matter in the liquid phase has definite volume", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8a", "uuid": "866b-5e77-f131-2b80", "rowText": "volume is a property of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8b", "uuid": "92e5-34ee-da79-3c25", "rowText": "shape is a property of the appearance of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b3e1-3703-6490-1530", "rowText": "definite is the opposite of variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"definiteVariableShape", "value":"variable" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"definiteVariableShape", "value":"variability" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["5364-1d90-a262-32e7","5364-1d90-a262-32e7","d068-9891-46a3-e999","92b1-8801-0e59-845e","cf49-1b7a-89f0-41f5","866b-5e77-f131-2b80","93fd-6a6f-7782-77d1","490c-5be7-2ff7-4bf2","b3e1-3703-6490-1530","de31-9a4c-d874-ac06"],
+		"slots": [
+			{"rowSlotName": "autoRow2a", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2b", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "shape", "uuid": "d068-9891-46a3-e999", "rowText": "Matter in the solid phase has definite shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "volume", "uuid": "92b1-8801-0e59-845e", "rowText": "Matter in the solid phase has definite volume", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8a", "uuid": "866b-5e77-f131-2b80", "rowText": "volume is a property of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8b", "uuid": "93fd-6a6f-7782-77d1", "rowText": "shape is a property of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b3e1-3703-6490-1530", "rowText": "definite is the opposite of variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"autoRow3b", "value":"" },
+			{ "name":"definiteVariableShape", "value":"definite" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"solid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"autoRow3b", "value":"" },
+			{ "name":"definiteVariableShape", "value":"definite" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"solid" }
+		]
+		},
+		{
+		"uuids": ["5364-1d90-a262-32e7","5364-1d90-a262-32e7","d068-9891-46a3-e999","92b1-8801-0e59-845e","cf49-1b7a-89f0-41f5","866b-5e77-f131-2b80","92e5-34ee-da79-3c25","490c-5be7-2ff7-4bf2","b3e1-3703-6490-1530","de31-9a4c-d874-ac06"],
+		"slots": [
+			{"rowSlotName": "autoRow2a", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2b", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "shape", "uuid": "d068-9891-46a3-e999", "rowText": "Matter in the solid phase has definite shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "volume", "uuid": "92b1-8801-0e59-845e", "rowText": "Matter in the solid phase has definite volume", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8a", "uuid": "866b-5e77-f131-2b80", "rowText": "volume is a property of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8b", "uuid": "92e5-34ee-da79-3c25", "rowText": "shape is a property of the appearance of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b3e1-3703-6490-1530", "rowText": "definite is the opposite of variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"autoRow3b", "value":"" },
+			{ "name":"definiteVariableShape", "value":"definite" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"solid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"autoRow3b", "value":"" },
+			{ "name":"definiteVariableShape", "value":"definite" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"solid" }
+		]
+		},
+		{
+		"uuids": ["5364-1d90-a262-32e7","5364-1d90-a262-32e7","5458-220e-3046-62d2","d048-a12a-4f58-5472","f7e9-c6f8-892b-3496","866b-5e77-f131-2b80","93fd-6a6f-7782-77d1","490c-5be7-2ff7-4bf2","b3e1-3703-6490-1530","de31-9a4c-d874-ac06"],
+		"slots": [
+			{"rowSlotName": "autoRow2a", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2b", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "shape", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "volume", "uuid": "d048-a12a-4f58-5472", "rowText": "Matter in the liquid phase has definite volume", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8a", "uuid": "866b-5e77-f131-2b80", "rowText": "volume is a property of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8b", "uuid": "93fd-6a6f-7782-77d1", "rowText": "shape is a property of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b3e1-3703-6490-1530", "rowText": "definite is the opposite of variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"autoRow3b", "value":"" },
+			{ "name":"definiteVariableShape", "value":"variable" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"autoRow3b", "value":"" },
+			{ "name":"definiteVariableShape", "value":"variability" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["5364-1d90-a262-32e7","5364-1d90-a262-32e7","5458-220e-3046-62d2","d048-a12a-4f58-5472","f7e9-c6f8-892b-3496","866b-5e77-f131-2b80","92e5-34ee-da79-3c25","490c-5be7-2ff7-4bf2","b3e1-3703-6490-1530","de31-9a4c-d874-ac06"],
+		"slots": [
+			{"rowSlotName": "autoRow2a", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2b", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "shape", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "volume", "uuid": "d048-a12a-4f58-5472", "rowText": "Matter in the liquid phase has definite volume", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8a", "uuid": "866b-5e77-f131-2b80", "rowText": "volume is a property of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8b", "uuid": "92e5-34ee-da79-3c25", "rowText": "shape is a property of the appearance of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b3e1-3703-6490-1530", "rowText": "definite is the opposite of variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"autoRow3b", "value":"" },
+			{ "name":"definiteVariableShape", "value":"variable" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"autoRow3b", "value":"" },
+			{ "name":"definiteVariableShape", "value":"variability" },
+			{ "name":"definiteVariableVolume", "value":"definite" },
+			{ "name":"phase", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["5364-1d90-a262-32e7","5364-1d90-a262-32e7","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","866b-5e77-f131-2b80","93fd-6a6f-7782-77d1","490c-5be7-2ff7-4bf2","b3e1-3703-6490-1530","de31-9a4c-d874-ac06"],
+		"slots": [
+			{"rowSlotName": "autoRow2a", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2b", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "shape", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "volume", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8a", "uuid": "866b-5e77-f131-2b80", "rowText": "volume is a property of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8b", "uuid": "93fd-6a6f-7782-77d1", "rowText": "shape is a property of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b3e1-3703-6490-1530", "rowText": "definite is the opposite of variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"autoRow3b", "value":"" },
+			{ "name":"definiteVariableShape", "value":"variable" },
+			{ "name":"definiteVariableVolume", "value":"variable" },
+			{ "name":"phase", "value":"gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"autoRow3b", "value":"" },
+			{ "name":"definiteVariableShape", "value":"variability" },
+			{ "name":"definiteVariableVolume", "value":"variability" },
+			{ "name":"phase", "value":"gas" }
+		]
+		},
+		{
+		"uuids": ["5364-1d90-a262-32e7","5364-1d90-a262-32e7","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","866b-5e77-f131-2b80","92e5-34ee-da79-3c25","490c-5be7-2ff7-4bf2","b3e1-3703-6490-1530","de31-9a4c-d874-ac06"],
+		"slots": [
+			{"rowSlotName": "autoRow2a", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2b", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "shape", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "volume", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8a", "uuid": "866b-5e77-f131-2b80", "rowText": "volume is a property of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8b", "uuid": "92e5-34ee-da79-3c25", "rowText": "shape is a property of the appearance of an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b3e1-3703-6490-1530", "rowText": "definite is the opposite of variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"autoRow3b", "value":"" },
+			{ "name":"definiteVariableShape", "value":"variable" },
+			{ "name":"definiteVariableVolume", "value":"variable" },
+			{ "name":"phase", "value":"gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3a", "value":"" },
+			{ "name":"autoRow3b", "value":"" },
+			{ "name":"definiteVariableShape", "value":"variability" },
+			{ "name":"definiteVariableVolume", "value":"variability" },
+			{ "name":"phase", "value":"gas" }
+		]
+		}
+	]
+}
+]}
+

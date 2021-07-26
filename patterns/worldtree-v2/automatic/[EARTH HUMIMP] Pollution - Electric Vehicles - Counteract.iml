@@ -1,0 +1,70 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Pollution_Electric_Vehicles_Counteract
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         COMPARISON: electric car uses less gasoline than a regular car     (d4de-2953-15c1-fd7f) [ ADJ:"electric", THING:"car", ACTION1:"use", COMPARISON:"little", WHAT:"gasoline", THING_COMPARED:"regular car" ]
+	//  Notes: 8948-37e5-94f2-ca16->d4de-2953-15c1-fd7fsolution A: vehicles that use less gasoline
+	//row autoRow0 = [UUID:"d4de-2953-15c1-fd7f", ADJ: "electric", THING: "car", ACTION1: "use", COMPARISON: "little", WHAT: "gasoline", THING_COMPARED: "regular car"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"d4de-2953-15c1-fd7f", ADJ: "electric", THING: "car", ACTION1: "use", COMPARISON: "little", WHAT: "gasoline", THING_COMPARED: "regular car"]
+
+	// CENTRAL        (OPTIONAL) CHANGE: an electric motor converts electrical energy into mechanical energy     (6cee-7656-3eaa-7124) [ ACTOR_WHO:"electric motor", VERB:"convert", FROM:"electric energy", INTO:"mechanical energy" ]
+	//row *autoRow1 = [UUID:"6cee-7656-3eaa-7124", ACTOR_WHO: "electric motor", VERB: "convert", FROM: "electric energy", INTO: "mechanical energy"] //OVER-CONSTR.
+	row *autoRow1 = [UUID:"6cee-7656-3eaa-7124", ACTOR_WHO: "electric motor", VERB: "convert", FROM: "electric energy", INTO: "mechanical energy"]
+
+	// CENTRAL        (OPTIONAL) COUPLEDRELATIONSHIP: as the use of alternative fuels increases , the use of gasoline will decrease     (4181-279d-7173-5195) [ ACTION1:"use", PATIENT1:"of alternative fuel", CHANGE1:"increase", QUANTITY_MEASURE2:"use", AGENT_ATTRIBUTE2:"of gasoline", CHANGE2:"decrease" ]
+	//row *autoRow2 = [UUID:"4181-279d-7173-5195", ACTION1: "use", PATIENT1: "of alternative fuel", CHANGE1: "increase", QUANTITY_MEASURE2: "use", AGENT_ATTRIBUTE2: "of gasoline", CHANGE2: "decrease"] //OVER-CONSTR.
+	row *autoRow2 = [UUID:"4181-279d-7173-5195", ACTION1: "use", PATIENT1: "of alternative fuel", CHANGE1: "increase", QUANTITY_MEASURE2: "use", AGENT_ATTRIBUTE2: "of gasoline", CHANGE2: "decrease"]
+
+	// CENTRAL         SOURCEOF: many vehicles emit pollution into the air     (8e30-5411-1171-26fa) [ ADJ:"many", AGENT:"vehicle", VERB_SOURCEOF_PROVIDE_ETC:"emit", WHAT_IT_PROVIDES:"pollute", SCOPE:"into air" ]
+	//row autoRow3 = [UUID:"8e30-5411-1171-26fa", ADJ: "many", AGENT: "vehicle", VERB_SOURCEOF_PROVIDE_ETC: "emit", WHAT_IT_PROVIDES: "pollute", SCOPE: "into air"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"8e30-5411-1171-26fa", ADJ: "many", AGENT: "vehicle", VERB_SOURCEOF_PROVIDE_ETC: "emit", WHAT_IT_PROVIDES: "pollute", SCOPE: "into air"]
+
+	// CENTRAL         AFFECT: pollution has a negative impact on the environment ; air quality ; water quality ; society     (d116-6f25-b3ac-7d88) [ ACTOR_WHO:"pollute", POSITIVE_NEGATIVE:"negative", PATIENT:"environment;air quality;water quality;society" ]
+	//row autoRow4 = [UUID:"d116-6f25-b3ac-7d88", ACTOR_WHO: "pollute", POSITIVE_NEGATIVE: "negative", PATIENT: "air quality"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"d116-6f25-b3ac-7d88", ACTOR_WHO: "pollute", POSITIVE_NEGATIVE: "negative", PATIENT: "air quality"]
+
+	// CENTRAL         SOURCEOF: burning gasoline ; oil is a source of air pollution     (86ae-9fcc-40d0-77ab) [ ACTION:"burn", OBJECT_PATIENT:"gasoline;oil", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"air pollute" ]
+	//row autoRow5 = [UUID:"86ae-9fcc-40d0-77ab", ACTION: "burn", OBJECT_PATIENT: "gasoline", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "air pollute"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"86ae-9fcc-40d0-77ab", ACTION: "burn", OBJECT_PATIENT: "gasoline", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "air pollute"]
+
+	// CENTRAL         CAUSE: electricity causes less pollution than gasoline     (c560-8c82-4151-235c) [ CONDITION_AGENT_OBJECT:"electric", RESULT_AGENT:"little pollute", SCOPE2:"than gasoline" ]
+	//row autoRow6 = [UUID:"c560-8c82-4151-235c", CONDITION_AGENT_OBJECT: "electric", RESULT_AGENT: "little pollute", SCOPE2: "than gasoline"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"c560-8c82-4151-235c", CONDITION_AGENT_OBJECT: "electric", RESULT_AGENT: "little pollute", SCOPE2: "than gasoline"]
+
+	// CENTRAL         REQUIRES: using a gasoline engine requires burning gasoline     (1893-0c1c-dddc-e8c4) [ ACTION1:"use", OBJECT_AGENT_PROCESS:"gasoline engine", VERB_REQUIRES:"require", ACTION2:"burn", OBJECT:"gasoline" ]
+	//row autoRow7 = [UUID:"1893-0c1c-dddc-e8c4", ACTION1: "use", OBJECT_AGENT_PROCESS: "gasoline engine", VERB_REQUIRES: "require", ACTION2: "burn", OBJECT: "gasoline"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"1893-0c1c-dddc-e8c4", ACTION1: "use", OBJECT_AGENT_PROCESS: "gasoline engine", VERB_REQUIRES: "require", ACTION2: "burn", OBJECT: "gasoline"]
+
+	// CENTRAL         REQUIRES: vehicles usually require gasoline to operate     (0bb0-16b1-30de-d0e2) [ OBJECT_AGENT_PROCESS:"vehicle", QUANTIFIER:"usually", VERB_REQUIRES:"require", OBJECT:"gasoline", FOR_PURPOSE:"operate" ]
+	//row autoRow8 = [UUID:"0bb0-16b1-30de-d0e2", OBJECT_AGENT_PROCESS: "vehicle", QUANTIFIER: "usually", VERB_REQUIRES: "require", OBJECT: "gasoline", FOR_PURPOSE: "operate"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"0bb0-16b1-30de-d0e2", OBJECT_AGENT_PROCESS: "vehicle", QUANTIFIER: "usually", VERB_REQUIRES: "require", OBJECT: "gasoline", FOR_PURPOSE: "operate"]
+
+	// CENTRAL         CONTAINS: an electric car contains an electric motor     (9d1d-a854-c8ac-a4db) [ ADJ:"electric", OBJECT_AGENT:"car", WHAT_IT_CONTAINS:"electric motor" ]
+	//row autoRow9 = [UUID:"9d1d-a854-c8ac-a4db", ADJ: "electric", OBJECT_AGENT: "car", WHAT_IT_CONTAINS: "electric motor"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"9d1d-a854-c8ac-a4db", ADJ: "electric", OBJECT_AGENT: "car", WHAT_IT_CONTAINS: "electric motor"]
+
+	// CENTRAL         COMPARISON: gas-efficient engines uses less gas ; gasoline     (5fdb-d810-519a-cdc1) [ ADJ:"gas-efficient;gas efficient", THING:"engine", ACTION1:"use", COMPARISON:"little", WHAT:"gas;gasoline" ]
+	//  Notes: c52f-3108-6b06-89fc->5fdb-d810-519a-cdc1
+	//row autoRow10 = [UUID:"5fdb-d810-519a-cdc1", ADJ: "gas efficient", THING: "engine", ACTION1: "use", COMPARISON: "little", WHAT: "gas"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"5fdb-d810-519a-cdc1", ADJ: "gas efficient", THING: "engine", ACTION1: "use", COMPARISON: "little", WHAT: "gas"]
+
+	// CENTRAL         CAUSE: riding a bike does not cause pollution     (b44c-810f-461c-c314) [ CONDITION_VERB:"ride", CONDITION_PATIENT:"bike", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS:"doe not", RESULT_AGENT:"pollute" ]
+	//row autoRow11 = [UUID:"b44c-810f-461c-c314", CONDITION_VERB: "ride", CONDITION_PATIENT: "bike", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "doe not", RESULT_AGENT: "pollute"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"b44c-810f-461c-c314", CONDITION_VERB: "ride", CONDITION_PATIENT: "bike", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "doe not", RESULT_AGENT: "pollute"]
+
+	// CENTRAL         KINDOF: an automobile is a kind of vehicle     (7cb7-40ac-f4d5-eb6c) [ HYPONYM:"automobile", HYPERNYM:"vehicle" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"7cb7-40ac-f4d5-eb6c", HYPONYM: "automobile", HYPERNYM: "vehicle"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"7cb7-40ac-f4d5-eb6c", HYPONYM: "automobile", HYPERNYM: "vehicle"]
+
+	// CENTRAL         PARTOF: an engine is a part of an automobile     (3c28-d2a7-4f05-ca25) [ PART:"engine", WHOLE:"automobile" ]
+	//row autoRow13 = [UUID:"3c28-d2a7-4f05-ca25", PART: "engine", WHOLE: "automobile"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"3c28-d2a7-4f05-ca25", PART: "engine", WHOLE: "automobile"]
+
+endinferencepattern

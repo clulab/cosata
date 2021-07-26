@@ -1,0 +1,119 @@
+// Automatically converted pattern
+inferencepattern CEL_CYCLES_Solar_Energy_in_Summer
+
+	// Plain text description
+	description = "for questions on 'which season will be the best for plant to grow'"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ACTION: summer is when a hemisphere is tilted towards the sun     (5949-8ca0-0ddf-811b) [ DEFINITION_NAME:"summer", AGENT_OBJECT:"hemisphere", ACTION2:"be tilt", OBJECT_PROPERTY:"towards", WHEN_WHERE:"sun" ]
+	//        HINTROW winter is when a hemisphere is tilted away from the sun     (9a54-fdc1-b863-633a) [ DEFINITION_NAME:"winter", AGENT_OBJECT:"hemisphere", ACTION2:"be tilt", OBJECT_PROPERTY:"away", WHEN_WHERE:"from sun" ]
+	//row autoRow0 = [TABLE:"ACTION", DEFINITION_NAME: <summer_0>, AGENT_OBJECT: "hemisphere", ACTION2: "be tilt", OBJECT_PROPERTY: "towards", WHEN_WHERE: "sun"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ACTION", DEFINITION_NAME: <summer_0>, AGENT_OBJECT: "hemisphere", ACTION2: "be tilt", WHEN_WHERE: "sun"]
+
+	// CENTRALSW       SOURCEOF: the sun is the source of solar energy called sunlight     (1ed3-919d-4a4c-1be7) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"solar energy", NAME:"sunlight" ]
+	//        HINTROW the sun is a source of radiation ; heat called sunlight     (d247-b029-3aab-0950) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"radiation;heat", NAME:"sunlight" ]
+	//  Notes: The sun is the source of solar energy and radiation
+	//row autoRow1 = [TABLE:"SOURCEOF", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "solar energy", NAME: "sunlight"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"SOURCEOF", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", NAME: "sunlight"]
+
+	// CENTRALSW       REQUIRES: a plant requires sunlight to grow     (4480-75c2-5b75-c32a) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"sunlight", FOR_PURPOSE:"grow" ]
+	//        HINTROW a plant requires sunlight for photosynthesis     (619e-a5d1-b505-4f69) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"sunlight", FOR_PURPOSE:"photosynthesis" ]
+	//row autoRow2 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight"]
+
+	// CENTRALSW       KINDOF: summer is a kind of season     (3f3f-f2cb-ae3d-f238) [ HYPONYM:"summer", HYPERNYM:"season" ]
+	//  Notes: peripheral central
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: <summer_0>, HYPERNYM: "season"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: <summer_0>, HYPERNYM: "season"]
+
+	// CENTRALSW       COMPARISON: summer has the most sunlight     (564e-eb72-a12b-dbaa) [ THING:"summer", ACTION1:"have", COMPARISON:"much", WHAT:"sunlight" ]
+	//        HINTROW winter has the least sunlight     (0be4-4606-4a12-f564) [ THING:"winter", ACTION1:"have", COMPARISON:"little", WHAT:"sunlight" ]
+	//  Notes: a0de-6074-3154-0632->564e-eb72-a12b-dbaa
+	//row autoRow4 = [TABLE:"COMPARISON", THING: <summer_0>, ACTION1: "have", COMPARISON: "much", WHAT: "sunlight"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"COMPARISON", THING: <summer_0>, ACTION1: "have", WHAT: "sunlight"]
+
+	// GROUNDING       LOCATIONS: gardens are located outside     (4967-a59a-d4c4-9810) [ THING_PROCESS:"garden", LOCATION:"outside" ]
+	//        HINTROW a sidewalk is located outside     (e6ce-9a90-4900-9861) [ THING_PROCESS:"sidewalk", LOCATION:"outside" ]
+	//row autoRow5 = [TABLE:"LOCATIONS", LOCATION: "outside"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"LOCATIONS", LOCATION: "outside"]
+
+	// CENTRAL         SOURCEOF: photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates     (a9fc-ec58-9496-d635) [ AGENT:"photosynthesis", VERB_SOURCEOF_PROVIDE_ETC:"be source of;make", WHAT_IT_PROVIDES:"food;energy", AGENT_IT_PROVIDES_THING_TO:"plant", BY_THROUGH_HOW:"convert carbon dioxide water sunlight into carbohydrate" ]
+	//  Notes: photosynth 
+	//row autoRow6 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"]
+
+	// CENTRAL         CHANGE: photosynthesis means producers ; green plants convert from carbon dioxide and water and solar energy into carbohydrates and food and oxygen for themselves     (0962-4a47-4e17-ce97) [ PROCESS_NAME:"photosynthesis", ACTOR_WHO:"producer;green plant", VERB:"convert", FROM:"carbon dioxide water solar energy", INTO:"carbohydrate food oxygen" ]
+	//row autoRow7 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"]
+
+	// CENTRAL         IFTHEN: when a hemisphere is tilted towards the sun , that hemisphere receives more direct sunlight     (1181-3098-4bab-9d92) [ THING:"hemisphere", ACTION1:"tilt towards", OBJECT_PATIENT1:"sun", ACTOR_AGENT_PROCESS2:"hemisphere", ACTION3:"receive", ADJ_QUANTIFIER3:"much", OBJECT_PROPERTY3:"direct sunlight" ]
+	//row autoRow8 = [UUID:"1181-3098-4bab-9d92", THING: "hemisphere", ACTION1: "tilt towards", OBJECT_PATIENT1: "sun", ACTOR_AGENT_PROCESS2: "hemisphere", ACTION3: "receive", ADJ_QUANTIFIER3: "much", OBJECT_PROPERTY3: "direct sunlight"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"1181-3098-4bab-9d92", THING: "hemisphere", ACTION1: "tilt towards", OBJECT_PATIENT1: "sun", ACTOR_AGENT_PROCESS2: "hemisphere", ACTION3: "receive", ADJ_QUANTIFIER3: "much", OBJECT_PROPERTY3: "direct sunlight"]
+
+	// CENTRAL         IFTHEN: if something is outside during the day then that something will receive sunlight     (c12d-b29a-5073-54ab) [ THING:"something", OBJECT_PROPERTY1:"outside during day", ACTOR_AGENT_PROCESS2:"that something", ACTION3:"receive", OBJECT_PROPERTY3:"sunlight" ]
+	//row autoRow9 = [UUID:"c12d-b29a-5073-54ab", THING: "something", OBJECT_PROPERTY1: "outside during day", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "receive", OBJECT_PROPERTY3: "sunlight"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"c12d-b29a-5073-54ab", THING: "something", OBJECT_PROPERTY1: "outside during day", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "receive", OBJECT_PROPERTY3: "sunlight"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: when the seasons change from summer to fall ; from summer to winter , the amount of daylight will decrease     (27ac-0696-3449-6bd2) [ THING:"season", ACTION1:"change", SCOPE1B:"from summer fall;from summer winter", ADJ_QUANTITY2:"amount of", ACTOR_AGENT_PROCESS2:"daylight", ACTION3:"decrease" ]
+	//row *autoRow10 = [UUID:"27ac-0696-3449-6bd2", THING: "season", ACTION1: "change", SCOPE1B: "from"+<summer_0>+"fall", ADJ_QUANTITY2: "amount of", ACTOR_AGENT_PROCESS2: "daylight", ACTION3: "decrease"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"27ac-0696-3449-6bd2", THING: "season", ACTION1: "change", SCOPE1B: "from"+<summer_0>+"fall", ADJ_QUANTITY2: "amount of", ACTOR_AGENT_PROCESS2: "daylight", ACTION3: "decrease"]
+
+	// CENTRAL         IFTHEN: if an object ; something is in the sunlight then that object ; that something will absorb solar energy     (e00a-03fe-d978-1a27) [ THING:"object;something", OBJECT_PROPERTY1:"in sunlight", ACTOR_AGENT_PROCESS2:"that object;that something", ACTION3:"absorb", OBJECT_PROPERTY3:"solar energy" ]
+	//row autoRow11 = [UUID:"e00a-03fe-d978-1a27", THING: "object", OBJECT_PROPERTY1: "in sunlight", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "absorb", OBJECT_PROPERTY3: "solar energy"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"e00a-03fe-d978-1a27", THING: "object", OBJECT_PROPERTY1: "in sunlight", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "absorb", OBJECT_PROPERTY3: "solar energy"]
+
+	// CENTRAL         PROP-QUANTITY-DATE: the amount of daylight is greatest in the summer     (3d48-ef4c-bf06-a0c5) [ THING:"amount of daylight", QUANTITY:"great", DATE:"summer" ]
+	//row autoRow12 = [UUID:"3d48-ef4c-bf06-a0c5", THING: "amount of daylight", QUANTITY: "great", DATE: <summer_0>] //OVER-CONSTR.
+	row autoRow12 = [UUID:"3d48-ef4c-bf06-a0c5", THING: "amount of daylight", QUANTITY: "great", DATE: <summer_0>]
+
+	// CENTRAL         SOURCEOF: the sun is a source of light ; light energy called sunlight     (a538-175f-9223-d117) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"light;light energy", NAME:"sunlight" ]
+	//row autoRow13 = [UUID:"a538-175f-9223-d117", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "light energy", NAME: "sunlight"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"a538-175f-9223-d117", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "light energy", NAME: "sunlight"]
+
+	// CENTRAL         REQUIRES: a plant requires photosynthesis to grow ; survive     (fe74-c2b4-98c2-9496) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"photosynthesis", FOR_PURPOSE:"grow;survive" ]
+	//row autoRow14 = [UUID:"fe74-c2b4-98c2-9496", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "photosynthesis", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"fe74-c2b4-98c2-9496", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "photosynthesis", FOR_PURPOSE: "grow"]
+
+	// CENTRAL         IFTHEN: if something transfers something else then that something is a source of something else     (78cc-1fa6-2c47-c30f) [ THING:"something", ACTION1:"transfer", OBJECT_PATIENT1:"something else", ACTOR_AGENT_PROCESS2:"that something", OBJECT_PROPERTY3:"source of something else" ]
+	//row autoRow15 = [UUID:"78cc-1fa6-2c47-c30f", THING: "something", ACTION1: "transfer", OBJECT_PATIENT1: "something else", ACTOR_AGENT_PROCESS2: "that something", OBJECT_PROPERTY3: "source of something else"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"78cc-1fa6-2c47-c30f", THING: "something", ACTION1: "transfer", OBJECT_PATIENT1: "something else", ACTOR_AGENT_PROCESS2: "that something", OBJECT_PROPERTY3: "source of something else"]
+
+	// CENTRAL         KINDOF: sunlight is a kind of solar energy     (59d6-9954-ef5e-12b2) [ HYPONYM:"sunlight", HYPERNYM:"solar energy" ]
+	//  Notes: peripheral central
+	//row autoRow16 = [UUID:"59d6-9954-ef5e-12b2", HYPONYM: "sunlight", HYPERNYM: "solar energy"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"59d6-9954-ef5e-12b2", HYPONYM: "sunlight", HYPERNYM: "solar energy"]
+
+	// CENTRAL         KINDOF: green plants are a kind of producer     (f812-4338-e44b-e685) [ HYPONYM:"green plant", HYPERNYM:"producer" ]
+	//  Notes: peripheral central
+	//row autoRow17 = [UUID:"f812-4338-e44b-e685", HYPONYM: "green plant", HYPERNYM: "producer"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"f812-4338-e44b-e685", HYPONYM: "green plant", HYPERNYM: "producer"]
+
+	// CENTRAL         KINDOF: solar energy is a kind of energy     (4849-d977-c75a-e8fb) [ HYPONYM:"solar energy", HYPERNYM:"energy" ]
+	//  Notes: peripheral central
+	//row autoRow18 = [UUID:"4849-d977-c75a-e8fb", HYPONYM: "solar energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"4849-d977-c75a-e8fb", HYPONYM: "solar energy", HYPERNYM: "energy"]
+
+	// LEXGLUE         SYNONYMY: being in the sun is synonymous with being in the sunlight     (3686-5795-31e5-b5e0) [ ACTION1:"be in sun", ACTION2:"be in sunlight" ]
+	//row autoRow19 = [UUID:"3686-5795-31e5-b5e0", ACTION1: "be in sun", ACTION2: "be in sunlight"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"3686-5795-31e5-b5e0", ACTION1: "be in sun", ACTION2: "be in sunlight"]
+
+	// LEXGLUE         SYNONYMY: receiving sunlight is synonymous with absorbing sunlight     (141a-5c36-0fac-52ac) [ ACTION1:"receive", Y1:"sunlight", ACTION2:"absorb", Y2:"sunlight" ]
+	//row autoRow20 = [UUID:"141a-5c36-0fac-52ac", ACTION1: "receive", Y1: "sunlight", ACTION2: "absorb", Y2: "sunlight"] //OVER-CONSTR.
+	row autoRow20 = [UUID:"141a-5c36-0fac-52ac", ACTION1: "receive", Y1: "sunlight", ACTION2: "absorb", Y2: "sunlight"]
+
+	// LEXGLUE         SYNONYMY: to receive sunlight means to absorb sunlight     (5e35-243f-81ab-5eef) [ ACTION1:"receive", Y1:"sunlight", ACTION2:"absorb", Y2:"sunlight" ]
+	//row autoRow21 = [UUID:"5e35-243f-81ab-5eef", ACTION1: "receive", Y1: "sunlight", ACTION2: "absorb", Y2: "sunlight"] //OVER-CONSTR.
+	row autoRow21 = [UUID:"5e35-243f-81ab-5eef", ACTION1: "receive", Y1: "sunlight", ACTION2: "absorb", Y2: "sunlight"]
+
+	// LEXGLUE         SYNONYMY: daylight means sunlight     (81a9-8f8a-02ee-4dbc) [ X1:"daylight", X2:"sunlight" ]
+	//row autoRow22 = [UUID:"81a9-8f8a-02ee-4dbc", X1: "daylight", X2: "sunlight"] //OVER-CONSTR.
+	row autoRow22 = [UUID:"81a9-8f8a-02ee-4dbc", X1: "daylight", X2: "sunlight"]
+
+	// LEXGLUE         SYNONYMY: sunlight means solar energy     (6759-5ee2-140f-df48) [ X1:"sunlight", X2:"solar energy" ]
+	//row autoRow23 = [UUID:"6759-5ee2-140f-df48", X1: "sunlight", X2: "solar energy"] //OVER-CONSTR.
+	row autoRow23 = [UUID:"6759-5ee2-140f-df48", X1: "sunlight", X2: "solar energy"]
+
+endinferencepattern

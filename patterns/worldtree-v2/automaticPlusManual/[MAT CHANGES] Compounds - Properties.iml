@@ -1,0 +1,57 @@
+// Automatically converted pattern
+inferencepattern MAT_CHANGES_Compounds_Properties
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       CONTAINS: organic compounds contain hydrogen     (6129-95b7-29b6-b458) [ ADJ:"organic", OBJECT_AGENT:"compound", WHAT_IT_CONTAINS:"hydrogen" ]
+	//        HINTROW organic compounds do not contain potassium     (5041-52ea-f8a3-b6d3) [ ADJ:"organic", OBJECT_AGENT:"compound", QUANTIFIER:"do not", WHAT_IT_CONTAINS:"potassium" ]
+	//row autoRow0 = [TABLE:"CONTAINS", ADJ: "organic", OBJECT_AGENT: "compound"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CONTAINS", ADJ: "organic", OBJECT_AGENT: "compound"]
+
+	// GROUNDING       KINDOF: a carbohydrate is a kind of compound     (d6cd-1a0c-a91b-726d) [ HYPONYM:"carbohydrate", HYPERNYM:"compound" ]
+	//        HINTROW sodium bicarbonate is a kind of compound     (da29-c8b5-65dd-233e) [ HYPONYM:"sodium bicarbonate", HYPERNYM:"compound" ]
+	//        HINTROW sodium chloride is a kind of chemical compound     (5efe-966e-a1a6-df5e) [ HYPONYM:"sodium chloride", SCOPE1:"chemical", HYPERNYM:"compound" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "compound"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "compound"]
+
+	// CENTRAL         IFTHEN: when two substances together form a compound then those substances cannot be physically separated     (828f-50e9-c9a9-ae64) [ ADJ_QUANTITY1:"two", THING:"substance", SCOPE1A:"together", ACTION1:"form", OBJECT_PATIENT1:"compound", ACTOR_AGENT_PROCESS2:"substance", QUANTIFIER3:"not be", ACTION3:"physically separate" ]
+	//row autoRow2 = [UUID:"828f-50e9-c9a9-ae64", ADJ_QUANTITY1: "two", THING: "substance", SCOPE1A: "together", ACTION1: "form", OBJECT_PATIENT1: "compound", ACTOR_AGENT_PROCESS2: "substance", QUANTIFIER3: "not be", ACTION3: "physically separate"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"828f-50e9-c9a9-ae64", ADJ_QUANTITY1: "two", THING: "substance", SCOPE1A: "together", ACTION1: "form", OBJECT_PATIENT1: "compound", ACTOR_AGENT_PROCESS2: "substance", QUANTIFIER3: "not be", ACTION3: "physically separate"]
+
+	// CENTRAL        (OPTIONAL) EXAMPLES: An example of a chemical change is electrical energy breaking down a compound     (3ad2-9672-21b6-16b9) [ AGENT_OBJECT1:"chemical change", AGENT_OBJECT2:"electric energy", VERB2:"break", AGENT_OBJECT3:"compound" ]
+	//  Notes: chemical property
+	//row *autoRow3 = [UUID:"3ad2-9672-21b6-16b9", AGENT_OBJECT1: "chemical change", AGENT_OBJECT2: "electric energy", VERB2: "break", AGENT_OBJECT3: "compound"] //OVER-CONSTR.
+	row *autoRow3 = [UUID:"3ad2-9672-21b6-16b9", AGENT_OBJECT1: "chemical change", AGENT_OBJECT2: "electric energy", VERB2: "break", AGENT_OBJECT3: "compound"]
+
+	// CENTRAL         EXAMPLES: An example of a chemical property is the elements making up a compound     (01e9-8b08-cbae-4187) [ AGENT_OBJECT1:"chemical property", AGENT_OBJECT2:"element", VERB2:"make", AGENT_OBJECT3:"compound" ]
+	//  Notes: component property
+	//row autoRow4 = [UUID:"01e9-8b08-cbae-4187", AGENT_OBJECT1: "chemical property", AGENT_OBJECT2: "element", VERB2: "make", AGENT_OBJECT3: "compound"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"01e9-8b08-cbae-4187", AGENT_OBJECT1: "chemical property", AGENT_OBJECT2: "element", VERB2: "make", AGENT_OBJECT3: "compound"]
+
+	// CENTRAL         AFFORDANCES: a compound can be chemically separated into the elements that it is made of     (8414-575d-6515-9ade) [ ACTOR_THING:"compound", QUANTIFIER:"chemically", VERB:"separate", SCOPE:"into element that be make of" ]
+	//row autoRow5 = [UUID:"8414-575d-6515-9ade", ACTOR_THING: "compound", QUANTIFIER: "chemically", VERB: "separate", SCOPE: "into element that be make of"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"8414-575d-6515-9ade", ACTOR_THING: "compound", QUANTIFIER: "chemically", VERB: "separate", SCOPE: "into element that be make of"]
+
+	// CENTRAL         MADEOF: a compound is made of two or more elements chemically combined     (6bb0-ea31-6fee-5e77) [ OBJECT:"compound", VALUE:"two much", MATERIAL:"element", BY_THROUGH_HOW:"chemically combine" ]
+	//row autoRow6 = [UUID:"6bb0-ea31-6fee-5e77", OBJECT: "compound", VALUE: "two much", MATERIAL: "element", BY_THROUGH_HOW: "chemically combine"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"6bb0-ea31-6fee-5e77", OBJECT: "compound", VALUE: "two much", MATERIAL: "element", BY_THROUGH_HOW: "chemically combine"]
+
+	// CENTRAL         CONTAINS: chemical compounds contain chemical bonds between atoms ; between elements     (880b-ae92-483a-c9fa) [ ADJ:"chemical", OBJECT_AGENT:"compound", WHAT_IT_CONTAINS:"chemical bond", SCOPE:"between atom;between element" ]
+	//row autoRow7 = [UUID:"880b-ae92-483a-c9fa", ADJ: "chemical", OBJECT_AGENT: "compound", WHAT_IT_CONTAINS: "chemical bond", SCOPE: "between atom"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"880b-ae92-483a-c9fa", ADJ: "chemical", OBJECT_AGENT: "compound", WHAT_IT_CONTAINS: "chemical bond", SCOPE: "between atom"]
+
+	// CENTRAL         COMPARISON: a molecule is the smallest particle ; unit that has the properties of a compound     (f25a-54b9-3641-f7e4) [ THING:"molecule", ACTION1:"be", COMPARISON:"small", WHAT:"particle;unit", SCOPE2:"have property of compound" ]
+	//  Notes: 5c74-6feb-16a4-2fd8->f25a-54b9-3641-f7e4
+	//row autoRow8 = [UUID:"f25a-54b9-3641-f7e4", THING: "molecule", ACTION1: "be", COMPARISON: "small", WHAT: "particle", SCOPE2: "have property of compound"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f25a-54b9-3641-f7e4", THING: "molecule", ACTION1: "be", COMPARISON: "small", WHAT: "particle", SCOPE2: "have property of compound"]
+
+	// CENTRAL         CONTAINS: the bonds of chemical compounds contain chemical energy     (3c5b-ad90-b6bc-f908) [ OBJECT_AGENT:"bond", QUANTIFIER:"of chemical compound", WHAT_IT_CONTAINS:"chemical energy" ]
+	//row autoRow9 = [UUID:"3c5b-ad90-b6bc-f908", OBJECT_AGENT: "bond", QUANTIFIER: "of chemical compound", WHAT_IT_CONTAINS: "chemical energy"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"3c5b-ad90-b6bc-f908", OBJECT_AGENT: "bond", QUANTIFIER: "of chemical compound", WHAT_IT_CONTAINS: "chemical energy"]
+
+endinferencepattern

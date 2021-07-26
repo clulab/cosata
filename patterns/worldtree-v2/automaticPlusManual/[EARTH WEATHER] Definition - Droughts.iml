@@ -1,0 +1,84 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Definition_Droughts
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       REQUIRES: a plants ; living things require water for survival ; to grow     (f3ed-dedc-2aad-109c) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"water", FOR_PURPOSE:"survive;grow" ]
+	//        HINTROW animals ; living things require water for survival     (732f-cb0b-50b4-ad0d) [ OBJECT_AGENT_PROCESS:"animal;live thing", VERB_REQUIRES:"require", OBJECT:"water", FOR_PURPOSE:"survive" ]
+	//row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "water", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "water", FOR_PURPOSE: "survive"]
+
+	// CENTRALSW       CHANGE-VEC: drought is when amount of precipitation decreases     (2298-6f12-b46e-4f4e) [ PROCESS_NAME_ACTION:"drought", AGENT_OBJECT:"amount of precipitation", DIRECTION:"decrease" ]
+	//        HINTROW drying means amount of water ; amount of liquid ; wetness decreases     (85c8-f683-bc89-7bc5) [ PROCESS_NAME_ACTION:"dry", AGENT_OBJECT:"amount of water;amount of liquid;wet", DIRECTION:"decrease;decrease" ]
+	//row autoRow1 = [TABLE:"CHANGE-VEC", PROCESS_NAME_ACTION: "drought", AGENT_OBJECT: "amount of"+*"POS:NN", DIRECTION: "decrease"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CHANGE-VEC", AGENT_OBJECT: "amount of"+*"POS:NN", DIRECTION: "decrease"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: dry means low in amount of water ; wetness ; moisture     (5554-6d9d-779d-d5f5) [ THING:"spin-dry", VALUE:"low", ATTRIBUTE:"amount of water;wet;moisture" ]
+	//        HINTROW drier means lower in amount of water ; wetness ; moisture     (3cfa-bd2a-6867-18ba) [ THING:"dry", VALUE:"low", ATTRIBUTE:"amount of water;wet;moisture" ]
+	//row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", VALUE: "low", ATTRIBUTE: "amount of water"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", VALUE: "low", ATTRIBUTE: "amount of water"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: hot means high in heat energy ; temperature     (9ff8-543c-2f35-5d3f) [ THING:"hot", VALUE:"high", ATTRIBUTE:"heat energy;temperature" ]
+	//        HINTROW warmer means greater ; higher in temperature ; warmth     (3c5b-8471-16d4-f1b2) [ THING:"warm", VALUE:"great;high", ATTRIBUTE:"temperature;warmth" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow3 = [TABLE:"ATTRIBUTE-VALUE-RANGE"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow3 = [TABLE:"ATTRIBUTE-VALUE-RANGE"]
+
+	// GROUNDING       KINDOF: a drought is a kind of slow environmental change     (31b1-33e5-a71c-0f61) [ HYPONYM:"drought", SCOPE1:"slow", HYPERNYM:"environment change" ]
+	//        HINTROW a drought is a kind of natural disaster     (3e09-df41-a63a-cf1c) [ HYPONYM:"drought", SCOPE1:"nature", HYPERNYM:"disaster" ]
+	//        HINTROW a drought is a kind of natural event     (f997-a1ce-5dd5-9716) [ HYPONYM:"drought", SCOPE1:"nature", HYPERNYM:"event" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "drought", HYPERNYM: "environment change"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "drought"]
+
+	// GROUNDING       KINDOF: rain is a kind of precipitation     (da1e-dca3-f46a-5189) [ HYPONYM:"rain", HYPERNYM:"precipitation" ]
+	//        HINTROW snow is a kind of precipitation     (8083-d6d0-9cba-da83) [ HYPONYM:"snow", HYPERNYM:"precipitation" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "precipitation"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "precipitation"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as dryness increases in an environment , the available water in that environment will decrease     (2999-5991-d180-65c1) [ QUANTITY_MEASURE1:"dryness", CHANGE1:"increase", SCOPE1B:"in environment", QUANTITY_MEASURE2:"available water", SCOPE2A:"in that environment", CHANGE2:"decrease" ]
+	//row autoRow6 = [UUID:"2999-5991-d180-65c1", QUANTITY_MEASURE1: "dryness", CHANGE1: "increase", SCOPE1B: "in environment", QUANTITY_MEASURE2: "available water", SCOPE2A: "in that environment", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"2999-5991-d180-65c1", QUANTITY_MEASURE1: "dryness", CHANGE1: "increase", SCOPE1B: "in environment", QUANTITY_MEASURE2: "available water", SCOPE2A: "in that environment", CHANGE2: "decrease"]
+
+	// CENTRAL         CHANGE-VEC: drought is when available water decreases in an environment     (3492-2519-a7cc-d552) [ PROCESS_NAME_ACTION:"drought", AGENT_OBJECT:"available water", DIRECTION:"decrease", SCOPE2:"in environment" ]
+	//row autoRow7 = [UUID:"3492-2519-a7cc-d552", PROCESS_NAME_ACTION: "drought", AGENT_OBJECT: "available water", DIRECTION: "decrease", SCOPE2: "in environment"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3492-2519-a7cc-d552", PROCESS_NAME_ACTION: "drought", AGENT_OBJECT: "available water", DIRECTION: "decrease", SCOPE2: "in environment"]
+
+	// CENTRAL         CAUSE: dry and hot weather for a long time can cause drought     (b6b1-26df-3362-29e1) [ CONDITION_AGENT_OBJECT:"spin-dry hot weather", SCOPE1:"for long time", RESULT_AGENT:"drought" ]
+	//row autoRow8 = [UUID:"b6b1-26df-3362-29e1", CONDITION_AGENT_OBJECT: "spin-dry hot weather", SCOPE1: "for long time", RESULT_AGENT: "drought"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"b6b1-26df-3362-29e1", CONDITION_AGENT_OBJECT: "spin-dry hot weather", SCOPE1: "for long time", RESULT_AGENT: "drought"]
+
+	// CENTRAL         ACTION: precipitation is when water falls from the sky     (7975-13c2-aeb2-5a9a) [ DEFINITION_NAME:"precipitation", AGENT_OBJECT:"water", ACTION2:"fall from", OBJECT_PROPERTY:"sky" ]
+	//row autoRow9 = [UUID:"7975-13c2-aeb2-5a9a", DEFINITION_NAME: "precipitation", AGENT_OBJECT: "water", ACTION2: "fall from", OBJECT_PROPERTY: "sky"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"7975-13c2-aeb2-5a9a", DEFINITION_NAME: "precipitation", AGENT_OBJECT: "water", ACTION2: "fall from", OBJECT_PROPERTY: "sky"]
+
+	// CENTRAL         PROP-GENERIC: amount is a property of something and includes ordered values of none ; least ; little ; some ; half ; much ; many ; most ; all     (624a-c1ec-8c85-45ce) [ X:"amount", Y:"something", ORDERED_UNORDERED:"order", VALUES:"none;little;little;half;much;many;much" ]
+	//row autoRow10 = [UUID:"624a-c1ec-8c85-45ce", X: "amount", Y: "something", ORDERED_UNORDERED: "order", VALUES: "none"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"624a-c1ec-8c85-45ce", X: "amount", Y: "something", ORDERED_UNORDERED: "order", VALUES: "none"]
+
+	// CENTRAL         CHANGE: a drought can change the color of an environment from green to brown     (9b65-3215-0384-875a) [ ACTOR_WHO:"drought", VERB:"change", WHAT:"color of environment", FROM:"green", INTO:"brown" ]
+	//row autoRow11 = [UUID:"9b65-3215-0384-875a", ACTOR_WHO: "drought", VERB: "change", WHAT: "color of environment", FROM: "green", INTO: "brown"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"9b65-3215-0384-875a", ACTOR_WHO: "drought", VERB: "change", WHAT: "color of environment", FROM: "green", INTO: "brown"]
+
+	// CENTRAL         CAUSE: low precipitation lasting for a long time can cause drought     (a984-de64-8180-cdc7) [ CONDITION_AGENT_OBJECT:"low precipitation", CONDITION_VERB:"last", DURATION1:"for long time", RESULT_AGENT:"drought" ]
+	//row autoRow12 = [UUID:"a984-de64-8180-cdc7", CONDITION_AGENT_OBJECT: "low precipitation", CONDITION_VERB: "last", DURATION1: "for long time", RESULT_AGENT: "drought"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"a984-de64-8180-cdc7", CONDITION_AGENT_OBJECT: "low precipitation", CONDITION_VERB: "last", DURATION1: "for long time", RESULT_AGENT: "drought"]
+
+	// CENTRAL         DURATIONS: a drought occurs over a period of months ; years     (5a68-c204-4a35-9c42) [ AGENT:"drought", DURATIONUNIT:"month;year" ]
+	//row autoRow13 = [UUID:"5a68-c204-4a35-9c42", AGENT: "drought", DURATIONUNIT: "month"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"5a68-c204-4a35-9c42", AGENT: "drought", DURATIONUNIT: "month"]
+
+	// LEXGLUE         SYNONYMY: drying up means losing all water     (33d8-6fe3-b609-c1a4) [ ACTION1:"dry", ACTION2:"lose", Y2:"water" ]
+	//row autoRow14 = [UUID:"33d8-6fe3-b609-c1a4", ACTION1: "dry", ACTION2: "lose", Y2: "water"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"33d8-6fe3-b609-c1a4", ACTION1: "dry", ACTION2: "lose", Y2: "water"]
+
+	// LEXGLUE         OPPOSITES: an increase is the opposite of a decrease     (bfdf-b468-ee22-1b60) [ THING_PROPERTY1:"increase", THING_PROPERTY2:"decrease" ]
+	//row autoRow15 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"]
+
+endinferencepattern

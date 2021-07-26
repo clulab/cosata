@@ -1,0 +1,70 @@
+// Automatically converted pattern
+inferencepattern LIFE_ENVADP_Animals_Bright_Color_Implies_Toxic
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow0 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"]
+
+	// CENTRAL         AFFECT: helping something has a positive impact on that something     (b5b8-ce64-6568-4a6c) [ VERB:"help", OBJECT_PROPERTY:"something", POSITIVE_NEGATIVE:"positive", PATIENT:"something" ]
+	//row autoRow1 = [UUID:"b5b8-ce64-6568-4a6c", VERB: "help", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "positive", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"b5b8-ce64-6568-4a6c", VERB: "help", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "positive", PATIENT: "something"]
+
+	// CENTRAL         AFFECT: an adaptation ; an ability has a positive impact on an animal 's ; living thing 's survival ; health ; ability to reproduce     (b48d-28f4-b020-de9f) [ OBJECT_PROPERTY:"adapt;ability", POSITIVE_NEGATIVE:"positive", ADJ:"animal;live thing", PATIENT:"survive;health;ability reproduce" ]
+	//row autoRow2 = [UUID:"b48d-28f4-b020-de9f", OBJECT_PROPERTY: "adapt", POSITIVE_NEGATIVE: "positive", ADJ: "live thing", PATIENT: "ability reproduce"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"b48d-28f4-b020-de9f", OBJECT_PROPERTY: "adapt", POSITIVE_NEGATIVE: "positive", ADJ: "live thing", PATIENT: "ability reproduce"]
+
+	// CENTRAL         REQUIRES: an animal needs to eat food for nutrients     (7d29-0a2c-6959-b1dd) [ OBJECT_AGENT_PROCESS:"animal", VERB_REQUIRES:"need", ACTION2:"eat", OBJECT:"food", FOR_PURPOSE:"nutrient" ]
+	//row autoRow3 = [UUID:"7d29-0a2c-6959-b1dd", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "need", ACTION2: "eat", OBJECT: "food", FOR_PURPOSE: "nutrient"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"7d29-0a2c-6959-b1dd", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "need", ACTION2: "eat", OBJECT: "food", FOR_PURPOSE: "nutrient"]
+
+	// CENTRAL         ACTION: a predator eats other animals for food     (9bdc-0291-3f7e-751d) [ AGENT_OBJECT:"predator", ACTION2:"eat", OBJECT_PROPERTY:"other animal", FOR_PURPOSE:"food" ]
+	//row autoRow4 = [UUID:"9bdc-0291-3f7e-751d", AGENT_OBJECT: "predator", ACTION2: "eat", OBJECT_PROPERTY: "other animal", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"9bdc-0291-3f7e-751d", AGENT_OBJECT: "predator", ACTION2: "eat", OBJECT_PROPERTY: "other animal", FOR_PURPOSE: "food"]
+
+	// CENTRAL         ACTION: adaptation is when an organism develops a trait over time for survival     (c6fe-fa08-c304-093d) [ DEFINITION_NAME:"adapt", AGENT_OBJECT:"organism", ACTION2:"develop", OBJECT_PROPERTY:"trait", WHEN_WHERE:"over time", FOR_PURPOSE:"survive" ]
+	//row autoRow5 = [UUID:"c6fe-fa08-c304-093d", DEFINITION_NAME: "adapt", AGENT_OBJECT: "organism", ACTION2: "develop", OBJECT_PROPERTY: "trait", WHEN_WHERE: "over time", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"c6fe-fa08-c304-093d", DEFINITION_NAME: "adapt", AGENT_OBJECT: "organism", ACTION2: "develop", OBJECT_PROPERTY: "trait", WHEN_WHERE: "over time", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         CAUSE: poison causes harm to living things ; organisms     (ba3c-7ba2-c37a-cb76) [ CONDITION_AGENT_OBJECT:"poison", RESULT_VERB:"harm", RESULT_PATIENT:"live thing;organism" ]
+	//row autoRow6 = [UUID:"ba3c-7ba2-c37a-cb76", CONDITION_AGENT_OBJECT: "poison", RESULT_VERB: "harm", RESULT_PATIENT: "live thing"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"ba3c-7ba2-c37a-cb76", CONDITION_AGENT_OBJECT: "poison", RESULT_VERB: "harm", RESULT_PATIENT: "live thing"]
+
+	// CENTRAL         ACTION: bright colors warn predators to not eat an organism     (ddff-8a8c-a555-b828) [ ADJ:"bright", AGENT_OBJECT:"color", ACTION2:"warn", OBJECT_PROPERTY:"predator", FOR_PURPOSE:"not eat organism" ]
+	//row autoRow7 = [UUID:"ddff-8a8c-a555-b828", ADJ: "bright", AGENT_OBJECT: "color", ACTION2: "warn", OBJECT_PROPERTY: "predator", FOR_PURPOSE: "not eat organism"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"ddff-8a8c-a555-b828", ADJ: "bright", AGENT_OBJECT: "color", ACTION2: "warn", OBJECT_PROPERTY: "predator", FOR_PURPOSE: "not eat organism"]
+
+	// CENTRAL         AFFECT: adaptation has a positive impact on the population ; the survival ; the reproduction of a species ; of individual organisms     (624d-8aa4-92e4-8faa) [ ACTOR_WHO:"adapt", POSITIVE_NEGATIVE:"positive", PATIENT:"population;survive;reproduce", SCOPE:"of species;of individual organism" ]
+	//  Notes: 9a1e-26b8-b7a4-2e8a->624d-8aa4-92e4-8faa,5f43-1c33-197a-fe77
+	//row autoRow8 = [UUID:"624d-8aa4-92e4-8faa", ACTOR_WHO: "adapt", POSITIVE_NEGATIVE: "positive", PATIENT: "population", SCOPE: "of individual organism"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"624d-8aa4-92e4-8faa", ACTOR_WHO: "adapt", POSITIVE_NEGATIVE: "positive", PATIENT: "population", SCOPE: "of individual organism"]
+
+	// CENTRAL         EXAMPLES: An example of adaptation is animals avoid eating organisms with bright color     (5890-f994-1050-8e7f) [ AGENT_OBJECT1:"adapt", AGENT_OBJECT2:"animal", VERB2:"avoid eat", AGENT_OBJECT3:"organism with bright color" ]
+	//row autoRow9 = [UUID:"5890-f994-1050-8e7f", AGENT_OBJECT1: "adapt", AGENT_OBJECT2: "animal", VERB2: "avoid eat", AGENT_OBJECT3: "organism with bright color"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"5890-f994-1050-8e7f", AGENT_OBJECT1: "adapt", AGENT_OBJECT2: "animal", VERB2: "avoid eat", AGENT_OBJECT3: "organism with bright color"]
+
+	// CENTRAL         KINDOF: behavioral adaptation is a kind of behavioral change in a population over successive generations     (8d2c-32e8-fe82-3265) [ HYPONYM:"behavioral adapt", SCOPE1:"behavioral", HYPERNYM:"change", SCOPE2:"in population", QUANTITY_RANGE:"over successive generation" ]
+	//  Notes: 83d8-1dca-f435-c1d0->8d2c-32e8-fe82-3265,7e7e-d5fc-9eed-018f
+	//row autoRow10 = [UUID:"8d2c-32e8-fe82-3265", HYPONYM: "behavioral adapt", SCOPE1: "behavioral", HYPERNYM: "change", SCOPE2: "in population", QUANTITY_RANGE: "over successive generation"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"8d2c-32e8-fe82-3265", HYPONYM: "behavioral adapt", SCOPE1: "behavioral", HYPERNYM: "change", SCOPE2: "in population", QUANTITY_RANGE: "over successive generation"]
+
+	// CENTRAL         PROP-THINGS: organisms with bright color are usually poisonous     (df0b-946e-91df-fd8c) [ THING:"organism with bright color", QUALIFIER2:"usually", VALUE:"poisonous" ]
+	//row autoRow11 = [UUID:"df0b-946e-91df-fd8c", THING: "organism with bright color", QUALIFIER2: "usually", VALUE: "poisonous"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"df0b-946e-91df-fd8c", THING: "organism with bright color", QUALIFIER2: "usually", VALUE: "poisonous"]
+
+	// CENTRAL         IFTHEN: if an animal eats other animals for food , then the animal will be the predator     (bd7a-cd1b-3700-b652) [ THING:"animal", ACTION1:"eat", OBJECT_PATIENT1:"animal", OBJECT_PROPERTY1:"for food", ACTOR_AGENT_PROCESS2:"animal", OBJECT_PROPERTY3:"predator" ]
+	//row autoRow12 = [UUID:"bd7a-cd1b-3700-b652", THING: "animal", ACTION1: "eat", OBJECT_PATIENT1: "animal", OBJECT_PROPERTY1: "for food", ACTOR_AGENT_PROCESS2: "animal", OBJECT_PROPERTY3: "predator"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"bd7a-cd1b-3700-b652", THING: "animal", ACTION1: "eat", OBJECT_PATIENT1: "animal", OBJECT_PROPERTY1: "for food", ACTOR_AGENT_PROCESS2: "animal", OBJECT_PROPERTY3: "predator"]
+
+	// LEXGLUE         SYNONYMY: eating an animal ; a plant means killing that animal ; that plant     (785b-6d16-8fc8-ee28) [ ACTION1:"eat", Y1:"animal;plant", ACTION2:"kill", Y2:"that animal;plant" ]
+	//row autoRow13 = [UUID:"785b-6d16-8fc8-ee28", ACTION1: "eat", Y1: "animal", ACTION2: "kill", Y2: "that animal"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"785b-6d16-8fc8-ee28", ACTION1: "eat", Y1: "animal", ACTION2: "kill", Y2: "that animal"]
+
+endinferencepattern

@@ -1,0 +1,100 @@
+// Automatically converted pattern
+inferencepattern LIFE_INTERDEP_Food_Chain_Dependancies
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as population of prey decreases , the population of predators will decrease     (fe4b-29a0-b3d1-b929) [ QUANTITY_MEASURE1:"population", AGENT_ATTRIBUTE1:"of prey", CHANGE1:"decrease", QUANTITY_MEASURE2:"population", AGENT_ATTRIBUTE2:"of predator", CHANGE2:"decrease" ]
+	//        HINTROW as population of predators decreases , the population of prey will increase in an environment because predator eats prey     (9e69-e4c7-1f9e-a37e) [ QUANTITY_MEASURE1:"population", AGENT_ATTRIBUTE1:"of predator", CHANGE1:"decrease", QUANTITY_MEASURE2:"population", AGENT_ATTRIBUTE2:"of prey", CHANGE2:"increase", SCOPE2B:"in environment", CONTEXT:"because predator eat prey" ]
+	//        HINTROW as population of predators increases , the population of prey will decrease in an environment     (31c6-6384-3593-b4e8) [ QUANTITY_MEASURE1:"population of", AGENT_ATTRIBUTE1:"predator", CHANGE1:"increase", AGENT_ATTRIBUTE2:"population", SCOPE2A:"of prey", CHANGE2:"decrease", SCOPE2B:"in environment" ]
+	//        HINTROW as the population of insects decreases , the population of lizards will likely decrease because lizards eat insects     (4fc5-071a-fc7a-4e97) [ QUANTITY_MEASURE1:"population", AGENT_ATTRIBUTE1:"of insect", CHANGE1:"decrease", QUANTITY_MEASURE2:"population", AGENT_ATTRIBUTE2:"of lizard", QUALIFIER2:"likely", CHANGE2:"decrease", CONTEXT:"because lizard eat insect" ]
+	//        HINTROW as the population of plants decreases , the population of herbivores will decrease     (2590-d8b5-881d-7252) [ QUANTITY_MEASURE1:"population", AGENT_ATTRIBUTE1:"of plant", CHANGE1:"decrease", QUANTITY_MEASURE2:"population", AGENT_ATTRIBUTE2:"of herbivore", CHANGE2:"decrease" ]
+	//  Notes: population dynamic changes
+	//row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "population", AGENT_ATTRIBUTE1: "of prey", CHANGE1: "decrease", QUANTITY_MEASURE2: "population", AGENT_ATTRIBUTE2: "of predator", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "population"]
+
+	// CENTRALSW      (OPTIONAL) CONSUMERS-EATING: carnivores only eat animals     (f2b6-e2f5-8939-94ae) [ ORGANISM1:"carnivore", QUANTIFIER:"only", EATS_CONSUMES:"eat", ORGANISM2:"animal" ]
+	//        HINTROW omnivores eat plants ; animals     (3b62-4057-84c9-7743) [ ORGANISM1:"omnivore", EATS_CONSUMES:"eat", ORGANISM2:"plant;animal" ]
+	//        HINTROW herbivores only eat plants     (57e4-c7f7-0031-fb0a) [ ORGANISM1:"herbivore", QUANTIFIER:"only", EATS_CONSUMES:"eat", ORGANISM2:"plant" ]
+	//row *autoRow1 = [TABLE:"CONSUMERS-EATING", ORGANISM1: "carnivore", EATS_CONSUMES: "eat", ORGANISM2: "animal"] //OVER-CONSTR.
+	row *autoRow1 = [TABLE:"CONSUMERS-EATING", EATS_CONSUMES: "eat"]
+
+	// CENTRALSW       CONSUMERS-EATING: predators eat prey     (fb00-41ad-f198-b5ac) [ ORGANISM1:"predator", EATS_CONSUMES:"eat", ORGANISM2:"prey" ]
+	//        HINTROW predators ; carnivores ; omnivores eat other animals     (20a3-dcb5-8ce4-ae5c) [ ORGANISM1:"predator;carnivore;omnivore", EATS_CONSUMES:"eat", ORGANISM2:"other animal" ]
+	//row autoRow2 = [TABLE:"CONSUMERS-EATING", ORGANISM1: "predator", EATS_CONSUMES: "eat", ORGANISM2: "prey"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"CONSUMERS-EATING", ORGANISM1: "predator", EATS_CONSUMES: "eat"]
+
+	// CENTRALSW       CONSUMERS-EATING: hawks ; eagles eat snakes ; lizards ; rats ; rabbits ; mice     (d28f-0727-460f-5ab6) [ ORGANISM1:"hawk;eagle", EATS_CONSUMES:"eat", ORGANISM2:"snake;lizard;rat;rabbit;mouse" ]
+	//        HINTROW lizards eat insects     (625d-d91e-b300-b6dc) [ ORGANISM1:"lizard", EATS_CONSUMES:"eat", ORGANISM2:"insect" ]
+	//        HINTROW rabbits eat plants     (dce1-e1d6-17ae-e024) [ ORGANISM1:"rabbit", EATS_CONSUMES:"eat", ORGANISM2:"plant" ]
+	//        HINTROW eagles eat fish     (efb4-baee-b1ad-1184) [ ORGANISM1:"eagle", EATS_CONSUMES:"eat", ORGANISM2:"fish" ]
+	//        HINTROW alligators eat frogs ; turtles ; fish ; mice ; birds     (aa17-e87c-2259-5f04) [ ORGANISM1:"alligator", EATS_CONSUMES:"eat", ORGANISM2:"frog;turtle;fish;mouse;bird" ]
+	//  Notes: X eats Y
+	//row autoRow3 = [TABLE:"CONSUMERS-EATING", EATS_CONSUMES: "eat"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"CONSUMERS-EATING", EATS_CONSUMES: "eat"]
+
+	// GROUNDING       KINDOF: an alligator is a kind of aquatic animal     (5086-b21f-9f0a-e67d) [ HYPONYM:"alligator", SCOPE1:"aquatic", HYPERNYM:"animal" ]
+	//        HINTROW an eagle is a kind of animal     (133f-8977-dfd9-c969) [ HYPONYM:"eagle", HYPERNYM:"animal" ]
+	//        HINTROW a hawk is a kind of animal     (78d2-c53f-0244-23c2) [ HYPONYM:"hawk", HYPERNYM:"animal" ]
+	//  Notes: X column
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: a snake is a kind of animal     (6188-73e6-6db4-bfea) [ HYPONYM:"snake", HYPERNYM:"animal" ]
+	//        HINTROW an insect is a kind of animal     (56bd-8c40-3dae-d3e9) [ HYPONYM:"insect", HYPERNYM:"animal" ]
+	//        HINTROW a fish is a kind of animal     (9526-aecc-22b2-4b6a) [ HYPONYM:"fish", HYPERNYM:"animal" ]
+	//  Notes: Y column
+	//row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// CENTRAL         PROCESSROLES: In the food chain process an animal has the role of consumer which eats producers ; other animals for food     (a4f8-5748-0846-cb45) [ PROCESS_NAME:"food chain", ACTOR_COMMON_EXAMPLE:"animal", ROLE:"consumer", VERBS:"eat", PATIENT:"producer;other animal", FOR_PURPOSE:"food" ]
+	//row autoRow6 = [UUID:"a4f8-5748-0846-cb45", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "animal", ROLE: "consumer", VERBS: "eat", PATIENT: "other animal", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"a4f8-5748-0846-cb45", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "animal", ROLE: "consumer", VERBS: "eat", PATIENT: "other animal", FOR_PURPOSE: "food"]
+
+	// CENTRAL         PROCESSROLES: In the food chain process herbivores have the role of primary consumer which eats producers for food     (18e1-c8ad-e980-2db1) [ PROCESS_NAME:"food chain", ACTOR_COMMON_EXAMPLE:"herbivore", ROLE:"primary consumer", VERBS:"eat", PATIENT:"producer", FOR_PURPOSE:"food" ]
+	//row autoRow7 = [UUID:"18e1-c8ad-e980-2db1", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "herbivore", ROLE: "primary consumer", VERBS: "eat", PATIENT: "producer", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"18e1-c8ad-e980-2db1", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "herbivore", ROLE: "primary consumer", VERBS: "eat", PATIENT: "producer", FOR_PURPOSE: "food"]
+
+	// CENTRAL         CAUSE: competition may cause animals to fight ; to make threatening sounds ; to act aggressively towards members of their own species     (3ede-004b-8b5a-d9eb) [ CONDITION_AGENT_OBJECT:"competition", RESULT_AGENT:"animal", RESULT_VERB:"fight;make threaten sound;act aggressively", SCOPE2:"towards member of own species" ]
+	//row autoRow8 = [UUID:"3ede-004b-8b5a-d9eb", CONDITION_AGENT_OBJECT: "competition", RESULT_AGENT: "animal", RESULT_VERB: "make threaten sound", SCOPE2: "towards member of own species"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"3ede-004b-8b5a-d9eb", CONDITION_AGENT_OBJECT: "competition", RESULT_AGENT: "animal", RESULT_VERB: "make threaten sound", SCOPE2: "towards member of own species"]
+
+	// CENTRAL         PROCESSROLES: In the food chain process a green plant has the role of producer ; primary producer     (e4b0-75b1-e5ea-4189) [ PROCESS_NAME:"food chain", ACTOR_COMMON_EXAMPLE:"green plant", ROLE:"producer;primary producer" ]
+	//row autoRow9 = [UUID:"e4b0-75b1-e5ea-4189", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "green plant", ROLE: "primary producer"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"e4b0-75b1-e5ea-4189", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "green plant", ROLE: "primary producer"]
+
+	// CENTRAL         CAUSE: harming an animal species causes that animal 's population to decrease     (458c-0ba5-e5dd-00b8) [ CONDITION_VERB:"harm", CONDITION_PATIENT:"animal species", RESULT_AGENT:"that animal population", RESULT_VERB:"decrease" ]
+	//row autoRow10 = [UUID:"458c-0ba5-e5dd-00b8", CONDITION_VERB: "harm", CONDITION_PATIENT: "animal species", RESULT_AGENT: "that animal population", RESULT_VERB: "decrease"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"458c-0ba5-e5dd-00b8", CONDITION_VERB: "harm", CONDITION_PATIENT: "animal species", RESULT_AGENT: "that animal population", RESULT_VERB: "decrease"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the population of prey decreases , competition between predators will increase     (4215-2fa0-919f-fb85) [ QUANTITY_MEASURE1:"population", AGENT_ATTRIBUTE1:"of prey", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"competition", SCOPE2A:"between predator", CHANGE2:"increase" ]
+	//row autoRow11 = [UUID:"4215-2fa0-919f-fb85", QUANTITY_MEASURE1: "population", AGENT_ATTRIBUTE1: "of prey", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "competition", SCOPE2A: "between predator", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"4215-2fa0-919f-fb85", QUANTITY_MEASURE1: "population", AGENT_ATTRIBUTE1: "of prey", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "competition", SCOPE2A: "between predator", CHANGE2: "increase"]
+
+	// CENTRAL         TRANSFER: energy flows in an ecosystem through food chains     (3825-51d0-5d33-2303) [ ACTOR_WHO:"energy", VERB:"flow", WHAT:"in ecosystem", BY_THROUGH_HOW:"food chain" ]
+	//row autoRow12 = [UUID:"3825-51d0-5d33-2303", ACTOR_WHO: "energy", VERB: "flow", WHAT: "in ecosystem", BY_THROUGH_HOW: "food chain"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"3825-51d0-5d33-2303", ACTOR_WHO: "energy", VERB: "flow", WHAT: "in ecosystem", BY_THROUGH_HOW: "food chain"]
+
+	// CENTRAL         IFTHEN: if an animal eats particles then that animal is a carnivore or omnivore or predator     (dcb0-11ec-8b50-ceb3) [ THING:"animal", ACTION1:"eat", OBJECT_PATIENT1:"particle", ACTOR_AGENT_PROCESS2:"that animal", ACTION3:"be", OBJECT_PROPERTY3:"carnivore omnivore predator" ]
+	//row autoRow13 = [UUID:"dcb0-11ec-8b50-ceb3", THING: "animal", ACTION1: "eat", OBJECT_PATIENT1: "particle", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "be", OBJECT_PROPERTY3: "carnivore omnivore predator"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"dcb0-11ec-8b50-ceb3", THING: "animal", ACTION1: "eat", OBJECT_PATIENT1: "particle", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "be", OBJECT_PROPERTY3: "carnivore omnivore predator"]
+
+	// CENTRAL         KINDOF: a plant is a kind of living thing     (2e89-d8e8-a8fb-9acc) [ HYPONYM:"plant", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow14 = [UUID:"2e89-d8e8-a8fb-9acc", HYPONYM: "plant", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"2e89-d8e8-a8fb-9acc", HYPONYM: "plant", HYPERNYM: "live thing"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+	// LEXGLUE         SYNONYMY: food web is synonymous with food chain     (349d-dd0e-2deb-7b57) [ X1:"food web", X2:"food chain" ]
+	//row autoRow16 = [UUID:"349d-dd0e-2deb-7b57", X1: "food web", X2: "food chain"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"349d-dd0e-2deb-7b57", X1: "food web", X2: "food chain"]
+
+endinferencepattern

@@ -1,0 +1,59 @@
+// Automatically converted pattern
+inferencepattern ENG_DEVICES_Generators_How_they_work
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       SOURCEOF: moving a coil of wire in the magnetic field generates electrical current     (a59b-3794-dd29-6ed4) [ ACTION:"move", OBJECT_PATIENT:"coil of wire in magnetic field", VERB_SOURCEOF_PROVIDE_ETC:"generate", WHAT_IT_PROVIDES:"electric current" ]
+	//        HINTROW passing a magnet through a closed loop of wire generates an electric current     (ad72-705c-1c9c-b6b9) [ ACTION:"pass", OBJECT_PATIENT:"magnet through close loop of wire", VERB_SOURCEOF_PROVIDE_ETC:"generate", WHAT_IT_PROVIDES:"electric current" ]
+	//row autoRow0 = [TABLE:"SOURCEOF", OBJECT_PATIENT: *"POS:NN"+"of"+*"POS:NN"+*"POS:IN"+"magnetic field", VERB_SOURCEOF_PROVIDE_ETC: "generate", WHAT_IT_PROVIDES: "electric current"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"SOURCEOF", OBJECT_PATIENT: *"POS:NN"+"of"+*"POS:NN"+*"POS:IN"+*"POS:JJ"+*"POS:NN", VERB_SOURCEOF_PROVIDE_ETC: "generate", WHAT_IT_PROVIDES: "electric current"]
+
+	// GROUNDING       KINDOF: a conducting metal loop is a kind of electromagnet     (f45c-60ee-15e8-f526) [ HYPONYM:"conduct metal loop", HYPERNYM:"electromagnet" ]
+	//  Notes: peripheral
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "conduct metal loop", HYPERNYM: "electromagnet"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "conduct metal loop", HYPERNYM: "electromagnet"]
+
+	// CENTRAL         CHANGE: a generator converts kinetic energy into electrical energy ; electricity     (8701-c9ad-84a9-d821) [ ACTOR_WHO:"generator", VERB:"convert", FROM:"kinetic energy", INTO:"electric energy;electric" ]
+	//row autoRow2 = [UUID:"8701-c9ad-84a9-d821", ACTOR_WHO: "generator", VERB: "convert", FROM: "kinetic energy", INTO: "electric energy"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"8701-c9ad-84a9-d821", ACTOR_WHO: "generator", VERB: "convert", FROM: "kinetic energy", INTO: "electric energy"]
+
+	// CENTRAL         EXAMPLES: An example of mechanical energy is an object in motion     (4aca-cf16-fcc6-1f79) [ AGENT_OBJECT1:"mechanical energy", AGENT_OBJECT2:"object in move" ]
+	//row autoRow3 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"]
+
+	// CENTRAL         SOURCEOF: electromagnets generate magnetic fields     (f662-7035-f75b-8046) [ AGENT:"electromagnet", VERB_SOURCEOF_PROVIDE_ETC:"generate", WHAT_IT_PROVIDES:"magnetic field" ]
+	//row autoRow4 = [UUID:"f662-7035-f75b-8046", AGENT: "electromagnet", VERB_SOURCEOF_PROVIDE_ETC: "generate", WHAT_IT_PROVIDES: "magnetic field"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"f662-7035-f75b-8046", AGENT: "electromagnet", VERB_SOURCEOF_PROVIDE_ETC: "generate", WHAT_IT_PROVIDES: "magnetic field"]
+
+	// CENTRAL         KINDOF: kinetic energy is a kind of mechanical energy     (8f4b-dcdb-2be5-9423) [ HYPONYM:"kinetic energy", HYPERNYM:"mechanical energy" ]
+	//row autoRow5 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"]
+
+	// CENTRAL         SOURCEOF: electric currents produce magnetic fields     (b3f7-a264-ae60-8ae7) [ ADJ:"electric", AGENT:"current", VERB_SOURCEOF_PROVIDE_ETC:"product", WHAT_IT_PROVIDES:"magnetic field" ]
+	//  Notes: 42b7-6ac8-3bed-d33e->b3f7-a264-ae60-8ae7
+	//row autoRow6 = [UUID:"b3f7-a264-ae60-8ae7", ADJ: "electric", AGENT: "current", VERB_SOURCEOF_PROVIDE_ETC: "product", WHAT_IT_PROVIDES: "magnetic field"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"b3f7-a264-ae60-8ae7", ADJ: "electric", AGENT: "current", VERB_SOURCEOF_PROVIDE_ETC: "product", WHAT_IT_PROVIDES: "magnetic field"]
+
+	// CENTRAL         KINDOF: a generator is a kind of device     (c150-9533-59ad-1c3f) [ HYPONYM:"generator", HYPERNYM:"device" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"c150-9533-59ad-1c3f", HYPONYM: "generator", HYPERNYM: "device"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"c150-9533-59ad-1c3f", HYPONYM: "generator", HYPERNYM: "device"]
+
+	// CENTRAL         CHANGE: energy transformation means one kind of energy changes into another kind of energy     (3d34-b43e-8a7e-07fd) [ PROCESS_NAME:"energy transformation", ACTOR_WHO:"one kind of energy", VERB:"change", INTO:"kind of energy" ]
+	//row autoRow8 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"]
+
+	// LEXGLUE         SYNONYMY: motion ; movement means moving ; to move     (d8a3-10bb-9aea-178a) [ X1:"move;move", ACTION2:"move;move" ]
+	//row autoRow9 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"]
+
+	// LEXGLUE         SYNONYMY: electrical current means electrical energy     (a505-f059-e395-cad8) [ X1:"electric current", X2:"electric energy" ]
+	//row autoRow10 = [UUID:"a505-f059-e395-cad8", X1: "electric current", X2: "electric energy"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"a505-f059-e395-cad8", X1: "electric current", X2: "electric energy"]
+
+endinferencepattern

@@ -1,0 +1,60 @@
+// Automatically converted pattern
+inferencepattern LIFE_CLASSIFICATION_Properties_Birds
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ACTION: classifying means grouping objects ; materials by their properties     (69c1-2991-2421-ce63) [ DEFINITION_NAME:"classify", ACTION2:"group", OBJECT_PROPERTY:"object;material", HOW:"property" ]
+	//        HINTROW classifying is when one sorts something by kind ; type     (0d00-93f4-5616-0efc) [ DEFINITION_NAME:"classify", AGENT_OBJECT:"one", ACTION2:"sort", OBJECT_PROPERTY:"something", HOW:"kind;type" ]
+	//row autoRow0 = [TABLE:"ACTION", DEFINITION_NAME: "classify"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ACTION", DEFINITION_NAME: "classify"]
+
+	// GROUNDING       KINDOF: down is a kind of small feather     (58f2-80ea-9592-38a4) [ HYPONYM:"down", HYPERNYM:"small feather" ]
+	//  Notes: peripheral
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "down", HYPERNYM: "small feather"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "down", HYPERNYM: "small feather"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//row autoRow2 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+	// CENTRAL         KINDOF: a bird is a kind of animal     (e26b-b21d-d4a3-25fc) [ HYPONYM:"bird", HYPERNYM:"animal" ]
+	//row autoRow3 = [UUID:"e26b-b21d-d4a3-25fc", HYPONYM: "bird", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"e26b-b21d-d4a3-25fc", HYPONYM: "bird", HYPERNYM: "animal"]
+
+	// CENTRAL         PARTOF: feathers are a part of a bird     (4bd2-7739-d5e2-99a1) [ PART:"feather", QUANTIFIER1:"be", WHOLE:"bird" ]
+	//  Notes: bird's feature
+	//row autoRow4 = [UUID:"4bd2-7739-d5e2-99a1", PART: "feather", QUANTIFIER1: "be", WHOLE: "bird"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4bd2-7739-d5e2-99a1", PART: "feather", QUANTIFIER1: "be", WHOLE: "bird"]
+
+	// CENTRAL         IFTHEN: if the feathers of a bird are a color then that bird is that color     (de7c-3854-da13-7105) [ THING:"feather", SCOPE1A:"of bird", OBJECT_PROPERTY1:"color", ACTOR_AGENT_PROCESS2:"that bird", OBJECT_PROPERTY3:"that color" ]
+	//row autoRow5 = [UUID:"de7c-3854-da13-7105", THING: "feather", SCOPE1A: "of bird", OBJECT_PROPERTY1: "color", ACTOR_AGENT_PROCESS2: "that bird", OBJECT_PROPERTY3: "that color"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"de7c-3854-da13-7105", THING: "feather", SCOPE1A: "of bird", OBJECT_PROPERTY1: "color", ACTOR_AGENT_PROCESS2: "that bird", OBJECT_PROPERTY3: "that color"]
+
+	// CENTRAL         EXAMPLES: An example of an adaptation for flight in birds is feathers ; wings ; hollow bones     (9d8b-99f3-0599-8f72) [ AGENT_OBJECT1:"adapt", SCOPE1:"for flight in bird", AGENT_OBJECT2:"feather;wing;hollow bone" ]
+	//row autoRow6 = [UUID:"9d8b-99f3-0599-8f72", AGENT_OBJECT1: "adapt", SCOPE1: "for flight in bird", AGENT_OBJECT2: "hollow bone"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"9d8b-99f3-0599-8f72", AGENT_OBJECT1: "adapt", SCOPE1: "for flight in bird", AGENT_OBJECT2: "hollow bone"]
+
+	// CENTRAL        (OPTIONAL) PARTOF: fur is usually part of a mammal     (32f6-7c3e-e2cd-2bd0) [ PART:"fur", QUANTIFIER1:"be usually", WHOLE:"mammal" ]
+	//  Notes: mammal's feature
+	//row *autoRow7 = [UUID:"32f6-7c3e-e2cd-2bd0", PART: "fur", QUANTIFIER1: "be usually", WHOLE: "mammal"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"32f6-7c3e-e2cd-2bd0", PART: "fur", QUANTIFIER1: "be usually", WHOLE: "mammal"]
+
+	// CENTRAL         ACTION: birds build nests in the spring     (ef70-ad11-607b-edd7) [ AGENT_OBJECT:"bird", ACTION2:"build", OBJECT_PROPERTY:"nest", WHEN_WHERE:"in spring" ]
+	//row autoRow8 = [UUID:"ef70-ad11-607b-edd7", AGENT_OBJECT: "bird", ACTION2: "build", OBJECT_PROPERTY: "nest", WHEN_WHERE: "in spring"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"ef70-ad11-607b-edd7", AGENT_OBJECT: "bird", ACTION2: "build", OBJECT_PROPERTY: "nest", WHEN_WHERE: "in spring"]
+
+	// CENTRAL         PROP-ANIMAL-REPROD: birds lay eggs     (c0ac-16f8-6f09-5741) [ ANIMAL:"bird", LIVE_YOUNG_EGGS:"egg" ]
+	//  Notes: d579-8b7c-067c-da38->c0ac-16f8-6f09-5741
+	//row autoRow9 = [UUID:"c0ac-16f8-6f09-5741", ANIMAL: "bird", LIVE_YOUNG_EGGS: "egg"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"c0ac-16f8-6f09-5741", ANIMAL: "bird", LIVE_YOUNG_EGGS: "egg"]
+
+	// LEXGLUE         SYNONYMY: to distinguish means to tell the difference between     (f7dc-b6c2-593e-b623) [ ACTION1:"distinguish", ACTION2:"tell differ between" ]
+	//row autoRow10 = [UUID:"f7dc-b6c2-593e-b623", ACTION1: "distinguish", ACTION2: "tell differ between"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"f7dc-b6c2-593e-b623", ACTION1: "distinguish", ACTION2: "tell differ between"]
+
+endinferencepattern

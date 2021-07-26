@@ -1,0 +1,32 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Excretory_System
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: removing waste is a kind of function     (de82-6668-2baf-1817) [ HYPONYM:"remove waste", HYPERNYM:"function" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "remove waste", HYPERNYM: "function"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "remove waste", HYPERNYM: "function"]
+
+	// CENTRAL         TRANSFER: excretion is when the excretory system removes waste from the body     (262d-6ddb-ec8a-5ea7) [ PROCESS_NAME:"excretion", ACTOR_WHO:"excretory system", VERB:"remove", WHAT:"waste", SOURCE:"body" ]
+	//row autoRow1 = [UUID:"262d-6ddb-ec8a-5ea7", PROCESS_NAME: "excretion", ACTOR_WHO: "excretory system", VERB: "remove", WHAT: "waste", SOURCE: "body"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"262d-6ddb-ec8a-5ea7", PROCESS_NAME: "excretion", ACTOR_WHO: "excretory system", VERB: "remove", WHAT: "waste", SOURCE: "body"]
+
+	// CENTRAL         KINDOF: the excretory system is a kind of body system     (023e-be5e-200d-d253) [ HYPONYM:"excretory system", SCOPE1:"body", HYPERNYM:"system" ]
+	//  Notes: peripheral
+	//row autoRow2 = [UUID:"023e-be5e-200d-d253", HYPONYM: "excretory system", SCOPE1: "body", HYPERNYM: "system"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"023e-be5e-200d-d253", HYPONYM: "excretory system", SCOPE1: "body", HYPERNYM: "system"]
+
+	// LEXGLUE         SYNONYMY: eliminate means remove     (3d7f-11b1-07b1-be51) [ ACTION1:"eliminate", ACTION2:"remove" ]
+	//row autoRow3 = [UUID:"3d7f-11b1-07b1-be51", ACTION1: "eliminate", ACTION2: "remove"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"3d7f-11b1-07b1-be51", ACTION1: "eliminate", ACTION2: "remove"]
+
+	// LEXGLUE         SYNONYMY: to have a function is similar to to be responsible for     (99fc-c23d-a1f5-19a0) [ ACTION1:"have function", ACTION2:"be responsible for" ]
+	//row autoRow4 = [UUID:"99fc-c23d-a1f5-19a0", ACTION1: "have function", ACTION2: "be responsible for"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"99fc-c23d-a1f5-19a0", ACTION1: "have function", ACTION2: "be responsible for"]
+
+endinferencepattern

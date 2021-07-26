@@ -1,0 +1,63 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Organ_X_does_Y
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE: breathing is when a lung converts from oxygen in air into oxygen in blood     (f99f-c36a-d00d-742d) [ PROCESS_NAME:"breathe", ACTOR_WHO:"lung", VERB:"convert", FROM:"oxygen in air", INTO:"oxygen in blood" ]
+	//        HINTROW breathing is when a gill converts from oxygen in water into oxygen in blood     (571a-0a31-ad7b-e097) [ PROCESS_NAME:"breathe", ACTOR_WHO:"gill", VERB:"convert", FROM:"oxygen in water", INTO:"oxygen in blood" ]
+	//  Notes: breathing -- lungs, gills
+	//row autoRow0 = [TABLE:"CHANGE", PROCESS_NAME: "breathe", ACTOR_WHO: <lung_0>, VERB: "convert", FROM: "oxygen in"+<air_1>, INTO: "oxygen in blood"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CHANGE", PROCESS_NAME: "breathe", ACTOR_WHO: <lung_0>, VERB: "convert", FROM: "oxygen in"+<air_1>, INTO: "oxygen in blood"]
+
+	// CENTRALSW       PARTOF: the lungs are a part of the body of an animal used for breathing air     (d1c9-6993-fd7a-b8e9) [ PART:"lung", WHOLE:"body of animal", FOR_PURPOSE:"breathe air" ]
+	//        HINTROW gills are a part of a fish used for breathing water     (686d-e4be-a123-314f) [ PART:"gill", WHOLE:"fish", FOR_PURPOSE:"breathe water" ]
+	//  Notes: lungs, gills
+	//row autoRow1 = [TABLE:"PARTOF", PART: <lung_0>, WHOLE: *"POS:NN"+*"POS:IN"+"animal", FOR_PURPOSE: "breathe"+<air_1>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PARTOF", PART: <lung_0>, FOR_PURPOSE: "breathe"+<air_1>]
+
+	// CENTRALSW       KINDOF: a lung is a kind of organ for breathing air     (e7d7-9393-dfc8-98bf) [ HYPONYM:"lung", HYPERNYM:"organ", FOR_PURPOSE:"breathe air" ]
+	//        HINTROW a gill is a kind of organ for breathing water     (3756-21fd-e448-dbfc) [ HYPONYM:"gill", HYPERNYM:"organ", FOR_PURPOSE:"breathe water" ]
+	//  Notes: breathing organs
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <lung_0>, HYPERNYM: "organ", FOR_PURPOSE: "breathe"+<air_1>] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <lung_0>, HYPERNYM: "organ", FOR_PURPOSE: "breathe"+<air_1>]
+
+	// GROUNDING       KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//        HINTROW a fish is a kind of animal     (9526-aecc-22b2-4b6a) [ HYPONYM:"fish", HYPERNYM:"animal" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: a pond is a kind of body of water     (2a41-7224-fbc2-ba94) [ HYPONYM:"pond", HYPERNYM:"body of water" ]
+	//        HINTROW a lake is a kind of body of water     (5d6a-544c-b296-832e) [ HYPONYM:"lake", HYPERNYM:"body of water" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "body of water"]
+
+	// CENTRAL         REQUIRES: an animal ; bacterium requires oxygen for survival ; to breathe     (f59c-9a1b-f57b-d689) [ OBJECT_AGENT_PROCESS:"animal;bacterium", VERB_REQUIRES:"require", OBJECT:"oxygen", FOR_PURPOSE:"survive;breathe" ]
+	//  Notes: breathing require oxygen
+	//row autoRow5 = [UUID:"f59c-9a1b-f57b-d689", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "oxygen", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"f59c-9a1b-f57b-d689", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "oxygen", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         LOCATIONS: oxygen can be found in air     (fd2c-50ef-261b-d5c2) [ THING_PROCESS:"oxygen", LOCATION:"air" ]
+	//  Notes: oxygen for land animals
+	//row autoRow6 = [UUID:"fd2c-50ef-261b-d5c2", THING_PROCESS: "oxygen", LOCATION: <air_1>] //OVER-CONSTR.
+	row autoRow6 = [UUID:"fd2c-50ef-261b-d5c2", THING_PROCESS: "oxygen", LOCATION: <air_1>]
+
+	// CENTRAL         CONTAINS: water contains dissolved oxygen     (f32e-0424-d7c1-e558) [ OBJECT_AGENT:"water", WHAT_IT_CONTAINS:"dissolve oxygen" ]
+	//  Notes: oxygen for aquatic animals
+	//row autoRow7 = [UUID:"f32e-0424-d7c1-e558", OBJECT_AGENT: "water", WHAT_IT_CONTAINS: "dissolve oxygen"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"f32e-0424-d7c1-e558", OBJECT_AGENT: "water", WHAT_IT_CONTAINS: "dissolve oxygen"]
+
+	// CENTRAL         CHANGE: breathing is when animals convert oxygen into carbon dioxide     (4106-cc86-22ec-615e) [ PROCESS_NAME:"breathe", ACTOR_WHO:"animal", VERB:"convert", FROM:"oxygen", INTO:"carbon dioxide" ]
+	//  Notes: general breathing for all animals
+	//row autoRow8 = [UUID:"4106-cc86-22ec-615e", PROCESS_NAME: "breathe", ACTOR_WHO: "animal", VERB: "convert", FROM: "oxygen", INTO: "carbon dioxide"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"4106-cc86-22ec-615e", PROCESS_NAME: "breathe", ACTOR_WHO: "animal", VERB: "convert", FROM: "oxygen", INTO: "carbon dioxide"]
+
+	// LEXGLUE         SYNONYMY: take in oxygen means get oxygen into the blood     (65bb-ee0e-f67d-f6d9) [ ACTION1:"take", Y1:"oxygen", ACTION2:"get", Y2:"oxygen into blood" ]
+	//row autoRow9 = [UUID:"65bb-ee0e-f67d-f6d9", ACTION1: "take", Y1: "oxygen", ACTION2: "get", Y2: "oxygen into blood"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"65bb-ee0e-f67d-f6d9", ACTION1: "take", Y1: "oxygen", ACTION2: "get", Y2: "oxygen into blood"]
+
+endinferencepattern

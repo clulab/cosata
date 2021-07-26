@@ -1,0 +1,83 @@
+// FLAGS: READY
+// QID: VASoL_2009_5_4
+// Question: When ice cream is left out of a freezer, the ice cream changes from a ___. (A) solid to a gas (B) gas to a liquid (C) solid to a liquid (D) liquid to a gas
+
+// Test script
+
+// Includes
+import "../scienceimports.iml"
+import "../processtest.iml"
+
+// Steps:
+// 1. Instantiate a 'freezer' with common parameters (location, environment temperature)
+// 2. Instantiate a 'ice cream' with common parameters (temperature)
+// 3. Set location of 'ice cream' to be inside 'freezer'
+// 4. Set temperature of 'ice cream' to be the temperature of freezer (inference pattern)
+
+// 5. Instantiate an environment, 'outside freezer', that is the location of the freezer 'kitchen'
+// 6. Instantiate the environment with the common properties (temperature)
+
+// 7. Set the location of the ice cream to change from 'freezer' to 'outside freezer' (kitchen)
+
+// 8. Do the warm up loop
+// 9. Change of state
+
+populateInfPatMatches       // Should do this automatically
+executeAutoPatterns
+
+// Main
+
+// Step 1: Initialize instances
+
+//#qreference# obj1 = ice cream
+instantiate obj1([KINDOF:"ice cream"])
+obj1."name" = "test object 1"
+
+//#qreference# freezer = freezer
+instantiate freezer([KINDOF:"freezer"])
+freezer."name" = "freezer"
+
+//#qreference# outside = table
+var freezerLocation = freezer."location"
+instantiate outside([KINDOF:freezerLocation])           // the outside environment is whatever location the freezer is in
+outside."name" = "outside environment"
+
+incrementState
+
+// Step 2: Give the ice cream common properties (state of matter, temperature, etc)
+executePattern(giveCommonSubstanceProperties, [formName == obj1."material"], [substance1->obj1])
+setStateName("Instantiation")
+
+// Step 3: Set initial location of obj1 (ice cream) to be the freezer
+setStateName("Set Initial Environment")
+executePattern(setInitialEnvironment, "0", [object1->obj1, environment1->freezer])
+
+//## populateInfPatMatches       // Should do this automatically
+
+// Step 4: The ice cream starts in the freezer.  Give it the freezer environment's temperature. 
+setStateName("Set Initial Temperature")
+executePattern(setInitialTemperature, [environmentName == obj1."location", thingName == obj1."name"], [object1->obj1, environment1->freezer])
+
+// Step 5: Ice cream is moved from the freezer to the table (outside environment)
+setStateName("Move Object to New Environment")
+executePattern(moveObjectEnvironment, "0", [object1->obj1, environmentFrom->freezer, environmentTo->outside])
+
+// Step 6: Exchange heat energy between the substance and the environment.  Exit when it can perform a phase transition.
+while (meetsRequirements(ChangeOfStateWithSubstanceFrom, [fromSOM.SOM == obj1."state of matter", fromSOM.materialName == obj1."material", COS.heatingOrCooling == "heat"], [sub1->obj1]) == 0)
+    setStateName("Heating")
+    executePattern(heatTransferEnvironmentObject, [thingName1 == obj1."name", envName1 == outside."name"], [object1->obj1, environment1->outside], temporalblocks=[step])    
+endwhile
+
+// Step 7: When the substance reaches a phase transition point, change the state of matter
+setStateName("Change of State")
+executePattern(ChangeOfStateWithSubstanceFrom, [fromSOM.SOM == obj1."state of matter", fromSOM.materialName == obj1."material", COS.heatingOrCooling == "heat"], [sub1->obj1])
+printInstances
+
+
+// Step 8: Answer verification -- the answer is the changed state of matter.
+
+//#qreference# solid = solid
+verifyAnswer(getStateWithName("Set Initial Temperature").obj1."state of matter" == "solid")
+
+//#qreference# liquid = liquid
+verifyAnswer(getStateWithName("Change of State").obj1."state of matter" == "liquid")

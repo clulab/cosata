@@ -1,0 +1,60 @@
+// Automatically converted pattern
+inferencepattern MAT_PROPO_States_with_Variable_Shapes
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: glass is a kind of open container     (6198-fec8-e40b-1993) [ HYPONYM:"glass", SCOPE1:"open", HYPERNYM:"container" ]
+	//        HINTROW a bottle is a kind of container     (a824-aa4b-d228-d7c7) [ HYPONYM:"bottle", HYPERNYM:"container" ]
+	//        HINTROW a balloon is a kind of container     (511c-d022-b296-0c49) [ HYPONYM:"balloon", HYPERNYM:"container" ]
+	//        HINTROW a beach ball is a kind of container     (cccd-e81f-c177-7b89) [ HYPONYM:"beach ball", HYPERNYM:"container" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "container"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "container"]
+
+	// CENTRAL         PROP-GENERIC: variability of shape ; variability of volume is a property of matter and includes values of variable ; definite     (5364-1d90-a262-32e7) [ X:"variable of shape;variable of volume", Y:"matt", VALUES:"variable;definite" ]
+	//row autoRow1 = [UUID:"5364-1d90-a262-32e7", X: "variable of shape", Y: "matt", VALUES: "variable"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"5364-1d90-a262-32e7", X: "variable of shape", Y: "matt", VALUES: "variable"]
+
+	// CENTRAL         ACTION: matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container     (02c3-9c98-38d9-3711) [ AGENT_OBJECT:"matt", SCOPE1:"with variable volume shape", ACTION2:"assume;expand fill;take", OBJECT_PROPERTY:"shape size", WHEN_WHERE:"of entire container" ]
+	//row autoRow2 = [UUID:"02c3-9c98-38d9-3711", AGENT_OBJECT: "matt", SCOPE1: "with variable volume shape", ACTION2: "expand fill", OBJECT_PROPERTY: "shape size", WHEN_WHERE: "of entire container"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"02c3-9c98-38d9-3711", AGENT_OBJECT: "matt", SCOPE1: "with variable volume shape", ACTION2: "expand fill", OBJECT_PROPERTY: "shape size", WHEN_WHERE: "of entire container"]
+
+	// CENTRAL         CHANGE: matter with variable shape changes shape in different container     (2fcc-e1b8-1198-9d11) [ ACTOR_WHO:"matt", QUANTIFIER_SCOPE:"with variable shape", VERB:"change", WHAT:"shape", SCOPE:"in differ container" ]
+	//  Notes: a8e7-194e-68a5-34e0->2fcc-e1b8-1198-9d11
+	//row autoRow3 = [UUID:"2fcc-e1b8-1198-9d11", ACTOR_WHO: "matt", QUANTIFIER_SCOPE: "with variable shape", VERB: "change", WHAT: "shape", SCOPE: "in differ container"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"2fcc-e1b8-1198-9d11", ACTOR_WHO: "matt", QUANTIFIER_SCOPE: "with variable shape", VERB: "change", WHAT: "shape", SCOPE: "in differ container"]
+
+	// CENTRAL         KINDOF: variability of shape ; variability of volume is a kind of physical property     (f926-954b-1f50-2b3b) [ HYPONYM:"variable of shape;variable of volume", SCOPE1:"physical", HYPERNYM:"property" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"f926-954b-1f50-2b3b", HYPONYM: "variable of shape", SCOPE1: "physical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"f926-954b-1f50-2b3b", HYPONYM: "variable of shape", SCOPE1: "physical", HYPERNYM: "property"]
+
+	// CENTRAL         PROP-STATESOFMATTER-SHAPEVOL: Matter in the gas phase has variable shape     (77a9-72bb-f1d8-77ff) [ PHASE:"gas", VALUE:"variable", ATTRIBUTE:"shape" ]
+	//row autoRow5 = [UUID:"77a9-72bb-f1d8-77ff", PHASE: "gas", VALUE: "variable", ATTRIBUTE: "shape"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"77a9-72bb-f1d8-77ff", PHASE: "gas", VALUE: "variable", ATTRIBUTE: "shape"]
+
+	// CENTRAL         PROP-STATESOFMATTER-SHAPEVOL: Matter in the liquid phase has variable shape     (5458-220e-3046-62d2) [ PHASE:"liquid", VALUE:"variable", ATTRIBUTE:"shape" ]
+	//row autoRow6 = [UUID:"5458-220e-3046-62d2", PHASE: "liquid", VALUE: "variable", ATTRIBUTE: "shape"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"5458-220e-3046-62d2", PHASE: "liquid", VALUE: "variable", ATTRIBUTE: "shape"]
+
+	// CENTRAL         ACTION: a container contains objects ; material ; substances     (490c-5be7-2ff7-4bf2) [ AGENT_OBJECT:"container", ACTION2:"contain", OBJECT_PROPERTY:"object;material;substance" ]
+	//row autoRow7 = [UUID:"490c-5be7-2ff7-4bf2", AGENT_OBJECT: "container", ACTION2: "contain", OBJECT_PROPERTY: "object"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"490c-5be7-2ff7-4bf2", AGENT_OBJECT: "container", ACTION2: "contain", OBJECT_PROPERTY: "object"]
+
+	// CENTRAL         KINDOF: a liquid is a kind of substance     (3f2b-87bb-f73a-3e5d) [ HYPONYM:"liquid", HYPERNYM:"substance" ]
+	//row autoRow8 = [UUID:"3f2b-87bb-f73a-3e5d", HYPONYM: "liquid", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"3f2b-87bb-f73a-3e5d", HYPONYM: "liquid", HYPERNYM: "substance"]
+
+	// CENTRAL         KINDOF: gas is a kind of substance     (6c6f-b690-6b57-aab6) [ HYPONYM:"gas", HYPERNYM:"substance" ]
+	//row autoRow9 = [UUID:"6c6f-b690-6b57-aab6", HYPONYM: "gas", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"6c6f-b690-6b57-aab6", HYPONYM: "gas", HYPERNYM: "substance"]
+
+	// CENTRAL         IFTHEN: if a flexible container is pushed on then that container will change shape     (47ce-3a56-5343-bea8) [ ADJ_QUANTITY1:"flexible", THING:"container", ACTION1:"push on", ACTOR_AGENT_PROCESS2:"container", ACTION3:"change", OBJECT_PROPERTY3:"shape" ]
+	//row autoRow10 = [UUID:"47ce-3a56-5343-bea8", ADJ_QUANTITY1: "flexible", THING: "container", ACTION1: "push on", ACTOR_AGENT_PROCESS2: "container", ACTION3: "change", OBJECT_PROPERTY3: "shape"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"47ce-3a56-5343-bea8", ADJ_QUANTITY1: "flexible", THING: "container", ACTION1: "push on", ACTOR_AGENT_PROCESS2: "container", ACTION3: "change", OBJECT_PROPERTY3: "shape"]
+
+endinferencepattern

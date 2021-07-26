@@ -1,0 +1,72 @@
+// Automatically converted pattern
+inferencepattern LIFE_ENVADP_Animals_Hunt_with_X
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CONSUMERS-EATING: hawks ; eagles eat snakes ; lizards ; rats ; rabbits ; mice     (d28f-0727-460f-5ab6) [ ORGANISM1:"hawk;eagle", EATS_CONSUMES:"eat", ORGANISM2:"snake;lizard;rat;rabbit;mouse" ]
+	//        HINTROW eagles eat rabbits     (5ac6-9dc1-9a19-3eaa) [ ORGANISM1:"eagle", EATS_CONSUMES:"eat", ORGANISM2:"rabbit" ]
+	//        HINTROW eagles eat fish     (efb4-baee-b1ad-1184) [ ORGANISM1:"eagle", EATS_CONSUMES:"eat", ORGANISM2:"fish" ]
+	//row autoRow0 = [TABLE:"CONSUMERS-EATING", ORGANISM1: <hawk_0>, EATS_CONSUMES: "eat"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CONSUMERS-EATING", ORGANISM1: <hawk_0>, EATS_CONSUMES: "eat"]
+
+	// GROUNDING       KINDOF: a hawk is a kind of animal     (78d2-c53f-0244-23c2) [ HYPONYM:"hawk", HYPERNYM:"animal" ]
+	//        HINTROW an eagle is a kind of animal     (133f-8977-dfd9-c969) [ HYPONYM:"eagle", HYPERNYM:"animal" ]
+	//  Notes: predator column
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: <hawk_0>, HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: <hawk_0>, HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: a snake is a kind of animal     (6188-73e6-6db4-bfea) [ HYPONYM:"snake", HYPERNYM:"animal" ]
+	//        HINTROW a lizard is a kind of animal     (33a0-5ab1-14b3-6bf8) [ HYPONYM:"lizard", HYPERNYM:"animal" ]
+	//        HINTROW a rabbit is a kind of animal     (44d7-fef6-90ef-75aa) [ HYPONYM:"rabbit", HYPERNYM:"animal" ]
+	//        HINTROW a mouse is a kind of animal     (782f-7770-b8be-f40e) [ HYPONYM:"mouse", HYPERNYM:"animal" ]
+	//  Notes: prey column
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// CENTRAL         ACTION: a predator eats other animals for food     (9bdc-0291-3f7e-751d) [ AGENT_OBJECT:"predator", ACTION2:"eat", OBJECT_PROPERTY:"other animal", FOR_PURPOSE:"food" ]
+	//row autoRow3 = [UUID:"9bdc-0291-3f7e-751d", AGENT_OBJECT: "predator", ACTION2: "eat", OBJECT_PROPERTY: "other animal", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"9bdc-0291-3f7e-751d", AGENT_OBJECT: "predator", ACTION2: "eat", OBJECT_PROPERTY: "other animal", FOR_PURPOSE: "food"]
+
+	// CENTRAL         KINDOF: prey is a kind of food for predators     (d719-81ad-03ff-57f0) [ HYPONYM:"prey", HYPERNYM:"food", FOR_PURPOSE:"predator" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"d719-81ad-03ff-57f0", HYPONYM: "prey", HYPERNYM: "food", FOR_PURPOSE: "predator"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"d719-81ad-03ff-57f0", HYPONYM: "prey", HYPERNYM: "food", FOR_PURPOSE: "predator"]
+
+	// CENTRAL         CONSUMERS-EATING: predators eat prey     (fb00-41ad-f198-b5ac) [ ORGANISM1:"predator", EATS_CONSUMES:"eat", ORGANISM2:"prey" ]
+	//row autoRow5 = [UUID:"fb00-41ad-f198-b5ac", ORGANISM1: "predator", EATS_CONSUMES: "eat", ORGANISM2: "prey"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"fb00-41ad-f198-b5ac", ORGANISM1: "predator", EATS_CONSUMES: "eat", ORGANISM2: "prey"]
+
+	// CENTRAL         PARTOF: a claw sometimes is a part of a predator     (59ba-92bd-94af-92fd) [ PART:"claw", QUANTIFIER1:"sometimes", WHOLE:"predator" ]
+	//row autoRow6 = [UUID:"59ba-92bd-94af-92fd", PART: "claw", QUANTIFIER1: "sometimes", WHOLE: "predator"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"59ba-92bd-94af-92fd", PART: "claw", QUANTIFIER1: "sometimes", WHOLE: "predator"]
+
+	// CENTRAL         USEDFOR: claws are used to catch prey by some predators     (b69b-8370-5427-d472) [ AGENT_OBJECT:"claw", FOR_PURPOSE:"catch prey", AGENT_THING_WHO_USES:"predator" ]
+	//row autoRow7 = [UUID:"b69b-8370-5427-d472", AGENT_OBJECT: "claw", FOR_PURPOSE: "catch prey", AGENT_THING_WHO_USES: "predator"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"b69b-8370-5427-d472", AGENT_OBJECT: "claw", FOR_PURPOSE: "catch prey", AGENT_THING_WHO_USES: "predator"]
+
+	// CENTRAL         ACTION: a predator usually kills its prey to eat it     (952c-f654-fec2-8b06) [ AGENT_OBJECT:"predator", QUANITIFIER:"usually", ACTION2:"kill", OBJECT_PROPERTY:"prey", FOR_PURPOSE:"eat" ]
+	//row autoRow8 = [UUID:"952c-f654-fec2-8b06", AGENT_OBJECT: "predator", QUANITIFIER: "usually", ACTION2: "kill", OBJECT_PROPERTY: "prey", FOR_PURPOSE: "eat"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"952c-f654-fec2-8b06", AGENT_OBJECT: "predator", QUANITIFIER: "usually", ACTION2: "kill", OBJECT_PROPERTY: "prey", FOR_PURPOSE: "eat"]
+
+	// CENTRAL         ACTION: hunting is when an animal kills another animal to eat that animal     (e1e4-0797-e545-e336) [ DEFINITION_NAME:"hunt", AGENT_OBJECT:"animal", ACTION2:"kill", OBJECT_PROPERTY:"animal", FOR_PURPOSE:"eat that animal" ]
+	//row autoRow9 = [UUID:"e1e4-0797-e545-e336", DEFINITION_NAME: "hunt", AGENT_OBJECT: "animal", ACTION2: "kill", OBJECT_PROPERTY: "animal", FOR_PURPOSE: "eat that animal"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"e1e4-0797-e545-e336", DEFINITION_NAME: "hunt", AGENT_OBJECT: "animal", ACTION2: "kill", OBJECT_PROPERTY: "animal", FOR_PURPOSE: "eat that animal"]
+
+	// CENTRAL         IFTHEN: if an animal eats other animals for food , then the animal will be the predator     (bd7a-cd1b-3700-b652) [ THING:"animal", ACTION1:"eat", OBJECT_PATIENT1:"animal", OBJECT_PROPERTY1:"for food", ACTOR_AGENT_PROCESS2:"animal", OBJECT_PROPERTY3:"predator" ]
+	//row autoRow10 = [UUID:"bd7a-cd1b-3700-b652", THING: "animal", ACTION1: "eat", OBJECT_PATIENT1: "animal", OBJECT_PROPERTY1: "for food", ACTOR_AGENT_PROCESS2: "animal", OBJECT_PROPERTY3: "predator"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"bd7a-cd1b-3700-b652", THING: "animal", ACTION1: "eat", OBJECT_PATIENT1: "animal", OBJECT_PROPERTY1: "for food", ACTOR_AGENT_PROCESS2: "animal", OBJECT_PROPERTY3: "predator"]
+
+	// CENTRAL         IFTHEN: if an animal is eaten by other animals , then the animal will be the prey     (285c-373b-e428-cbba) [ THING:"animal", ACTION1:"be eat by", OBJECT_PATIENT1:"animal", ACTOR_AGENT_PROCESS2:"animal", OBJECT_PROPERTY3:"prey" ]
+	//row autoRow11 = [UUID:"285c-373b-e428-cbba", THING: "animal", ACTION1: "be eat by", OBJECT_PATIENT1: "animal", ACTOR_AGENT_PROCESS2: "animal", OBJECT_PROPERTY3: "prey"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"285c-373b-e428-cbba", THING: "animal", ACTION1: "be eat by", OBJECT_PATIENT1: "animal", ACTOR_AGENT_PROCESS2: "animal", OBJECT_PROPERTY3: "prey"]
+
+	// CENTRAL         PARTOF: a claw is often part of a bird     (06bb-097d-8689-544f) [ PART:"claw", QUANTIFIER1:"be often", WHOLE:"bird" ]
+	//row autoRow12 = [UUID:"06bb-097d-8689-544f", PART: "claw", QUANTIFIER1: "be often", WHOLE: "bird"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"06bb-097d-8689-544f", PART: "claw", QUANTIFIER1: "be often", WHOLE: "bird"]
+
+endinferencepattern

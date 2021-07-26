@@ -1,0 +1,50 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Endocrine_System
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PARTOF: the hypothalamus gland is a part of the endocrine system     (98b8-98a2-26ca-8eff) [ PART:"hypothalamus gland", WHOLE:"endocrine system" ]
+	//        HINTROW the pituitary gland is a part of the endocrine system     (d164-2e0c-6029-a129) [ PART:"pituitary gland", WHOLE:"endocrine system" ]
+	//        HINTROW the thyroid gland is a part of the endocrine system     (4f30-5c33-289c-cb13) [ PART:"thyroid gland", WHOLE:"endocrine system" ]
+	//row autoRow0 = [TABLE:"PARTOF", PART: *"POS:NN"+"gland", WHOLE: "endocrine system"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PARTOF", PART: *"POS:NN"+"gland", WHOLE: "endocrine system"]
+
+	// GROUNDING       KINDOF: regulating is a kind of function     (1498-f901-a5e6-d4bf) [ HYPONYM:"regulate", HYPERNYM:"function" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "regulate", HYPERNYM: "function"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "regulate", HYPERNYM: "function"]
+
+	// CENTRAL         TRANSFER: the endocrine system carries messages from the body to the brain     (ff29-d9eb-b123-44c9) [ ACTOR_WHO:"endocrine system", VERB:"carry", WHAT:"message", SOURCE:"body", DESTINATION:"brain" ]
+	//row autoRow2 = [UUID:"ff29-d9eb-b123-44c9", ACTOR_WHO: "endocrine system", VERB: "carry", WHAT: "message", SOURCE: "body", DESTINATION: "brain"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"ff29-d9eb-b123-44c9", ACTOR_WHO: "endocrine system", VERB: "carry", WHAT: "message", SOURCE: "body", DESTINATION: "brain"]
+
+	// CENTRAL         ACTION: hormones regulate body functions     (ec83-cfcf-d106-10c1) [ ACTION1:"hormone", ACTION2:"regulate", OBJECT_PROPERTY:"body function" ]
+	//row autoRow3 = [UUID:"ec83-cfcf-d106-10c1", ACTION1: "hormone", ACTION2: "regulate", OBJECT_PROPERTY: "body function"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"ec83-cfcf-d106-10c1", ACTION1: "hormone", ACTION2: "regulate", OBJECT_PROPERTY: "body function"]
+
+	// CENTRAL         KINDOF: the endocrine system is a kind of body ; organ system     (2cb6-1dce-a7fd-b13a) [ HYPONYM:"endocrine system", SCOPE1:"body;organ", HYPERNYM:"system" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"2cb6-1dce-a7fd-b13a", HYPONYM: "endocrine system", SCOPE1: "body", HYPERNYM: "system"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"2cb6-1dce-a7fd-b13a", HYPONYM: "endocrine system", SCOPE1: "body", HYPERNYM: "system"]
+
+	// CENTRAL         SOURCEOF: the endocrine system is a source of hormones     (8384-88a1-bba6-dade) [ ADJ:"endocrine", AGENT:"system", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"hormone" ]
+	//row autoRow5 = [UUID:"8384-88a1-bba6-dade", ADJ: "endocrine", AGENT: "system", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "hormone"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"8384-88a1-bba6-dade", ADJ: "endocrine", AGENT: "system", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "hormone"]
+
+	// CENTRAL         ACTION: some hormones regulate growth     (5dd1-fe47-22b1-5587) [ AGENT_OBJECT:"hormone", ACTION2:"regulate", OBJECT_PROPERTY:"grow" ]
+	//row autoRow6 = [UUID:"5dd1-fe47-22b1-5587", AGENT_OBJECT: "hormone", ACTION2: "regulate", OBJECT_PROPERTY: "grow"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"5dd1-fe47-22b1-5587", AGENT_OBJECT: "hormone", ACTION2: "regulate", OBJECT_PROPERTY: "grow"]
+
+	// CENTRAL         ACTION: a source of something emits ; produces ; generates ; provides that something     (b877-a58b-f75a-3998) [ AGENT_OBJECT:"source of something", ACTION2:"emit;produce;generate;provide", OBJECT_PROPERTY:"that something" ]
+	//row autoRow7 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"]
+
+	// CENTRAL         IFTHEN: if something is a part of something else then that something else contains that something     (7bfe-4561-00c1-0ba1) [ THING:"something", OBJECT_PATIENT1:"part", SCOPE1B:"of something else", ACTOR_AGENT_PROCESS2:"something else", ACTION3:"contain", OBJECT_PROPERTY3:"that something" ]
+	//row autoRow8 = [UUID:"7bfe-4561-00c1-0ba1", THING: "something", OBJECT_PATIENT1: "part", SCOPE1B: "of something else", ACTOR_AGENT_PROCESS2: "something else", ACTION3: "contain", OBJECT_PROPERTY3: "that something"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"7bfe-4561-00c1-0ba1", THING: "something", OBJECT_PATIENT1: "part", SCOPE1B: "of something else", ACTOR_AGENT_PROCESS2: "something else", ACTION3: "contain", OBJECT_PROPERTY3: "that something"]
+
+endinferencepattern

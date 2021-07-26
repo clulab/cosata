@@ -1,0 +1,52 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Immune_System
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: rheumatoid arthritis is a kind of autoimmune disease     (fb4c-29a5-410b-d7ff) [ HYPONYM:"rheumatoid arthritis", SCOPE1:"autoimmune", HYPERNYM:"disease" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "rheumatoid arthritis", SCOPE1: "autoimmune", HYPERNYM: "disease"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "rheumatoid arthritis", SCOPE1: "autoimmune", HYPERNYM: "disease"]
+
+	// GROUNDING       KINDOF: protecting is a kind of function     (401b-d6f7-6bc5-3718) [ HYPONYM:"protect", HYPERNYM:"function" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "protect", HYPERNYM: "function"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "protect", HYPERNYM: "function"]
+
+	// CENTRAL         ACTION: the immune system attacks ; gets rid of bacteria ; viruses once they have invaded the body     (18db-5ed3-9662-2caa) [ AGENT_OBJECT:"immune system", ACTION2:"attack;get rid of", OBJECT_PROPERTY:"bacterium;virus", WHEN_WHERE:"one have invade body" ]
+	//row autoRow2 = [UUID:"18db-5ed3-9662-2caa", AGENT_OBJECT: "immune system", ACTION2: "get rid of", OBJECT_PROPERTY: "bacterium", WHEN_WHERE: "one have invade body"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"18db-5ed3-9662-2caa", AGENT_OBJECT: "immune system", ACTION2: "get rid of", OBJECT_PROPERTY: "bacterium", WHEN_WHERE: "one have invade body"]
+
+	// CENTRAL         CAUSE: a disordered immune system causes autoimmune diseases     (d36b-ddb0-d3fe-b18f) [ CONDITION_AGENT_OBJECT:"disorder immune system", RESULT_AGENT:"autoimmune disease" ]
+	//row autoRow3 = [UUID:"d36b-ddb0-d3fe-b18f", CONDITION_AGENT_OBJECT: "disorder immune system", RESULT_AGENT: "autoimmune disease"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"d36b-ddb0-d3fe-b18f", CONDITION_AGENT_OBJECT: "disorder immune system", RESULT_AGENT: "autoimmune disease"]
+
+	// CENTRAL         PARTOF: white blood cells are a part of the immune system     (b91b-e9f6-099b-f79b) [ PART:"white blood cell", WHOLE:"immune system" ]
+	//row autoRow4 = [UUID:"b91b-e9f6-099b-f79b", PART: "white blood cell", WHOLE: "immune system"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"b91b-e9f6-099b-f79b", PART: "white blood cell", WHOLE: "immune system"]
+
+	// CENTRAL         ACTION: an autoimmune disease is when the body attacks its own tissues     (5463-ce08-8322-55ab) [ DEFINITION_NAME:"autoimmune disease", AGENT_OBJECT:"body", ACTION2:"attack", OBJECT_PROPERTY:"own tissue" ]
+	//row autoRow5 = [UUID:"5463-ce08-8322-55ab", DEFINITION_NAME: "autoimmune disease", AGENT_OBJECT: "body", ACTION2: "attack", OBJECT_PROPERTY: "own tissue"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"5463-ce08-8322-55ab", DEFINITION_NAME: "autoimmune disease", AGENT_OBJECT: "body", ACTION2: "attack", OBJECT_PROPERTY: "own tissue"]
+
+	// CENTRAL         USEDFOR: sneezing is used for getting rid of bacteria ; viruses by the body     (5502-6ab1-6c2d-cba2) [ ACTION:"sneeze", FOR_PURPOSE:"get rid of", PATIENT:"bacterium;virus", AGENT_THING_WHO_USES:"body" ]
+	//row autoRow6 = [UUID:"5502-6ab1-6c2d-cba2", ACTION: "sneeze", FOR_PURPOSE: "get rid of", PATIENT: "bacterium", AGENT_THING_WHO_USES: "body"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"5502-6ab1-6c2d-cba2", ACTION: "sneeze", FOR_PURPOSE: "get rid of", PATIENT: "bacterium", AGENT_THING_WHO_USES: "body"]
+
+	// CENTRAL         ACTION: the immune system defends the body against disease     (3076-bb8a-1b40-3520) [ AGENT_OBJECT:"immune system", ACTION2:"defend", OBJECT_PROPERTY:"body", SCOPE2:"against disease" ]
+	//row autoRow7 = [UUID:"3076-bb8a-1b40-3520", AGENT_OBJECT: "immune system", ACTION2: "defend", OBJECT_PROPERTY: "body", SCOPE2: "against disease"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3076-bb8a-1b40-3520", AGENT_OBJECT: "immune system", ACTION2: "defend", OBJECT_PROPERTY: "body", SCOPE2: "against disease"]
+
+	// CENTRAL         KINDOF: the immune system is a kind of body ; human body system     (eb72-192f-4ed4-b1de) [ HYPONYM:"immune system", SCOPE1:"body;human body", HYPERNYM:"system" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"eb72-192f-4ed4-b1de", HYPONYM: "immune system", SCOPE1: "human body", HYPERNYM: "system"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"eb72-192f-4ed4-b1de", HYPONYM: "immune system", SCOPE1: "human body", HYPERNYM: "system"]
+
+	// LEXGLUE         SYNONYMY: to protect means to defend     (142e-2fac-bb31-2e5d) [ ACTION1:"protect", ACTION2:"defend" ]
+	//row autoRow9 = [UUID:"142e-2fac-bb31-2e5d", ACTION1: "protect", ACTION2: "defend"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"142e-2fac-bb31-2e5d", ACTION1: "protect", ACTION2: "defend"]
+
+endinferencepattern

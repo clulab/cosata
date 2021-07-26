@@ -1,0 +1,112 @@
+// Automatically converted pattern
+inferencepattern MAT_COS_Evaporation_Over_a_Stove
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       SOURCEOF: a stove generates heat for cooking usually     (d59b-bac8-e191-05be) [ AGENT:"stave", VERB_SOURCEOF_PROVIDE_ETC:"generate", WHAT_IT_PROVIDES:"heat", FOR_PURPOSE:"cook", SCOPE:"usually" ]
+	//        HINTROW a hot plate is a source of heat     (945f-acde-29f3-d573) [ AGENT:"hot plate", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"heat" ]
+	//row autoRow0 = [TABLE:"SOURCEOF", AGENT: "stave", WHAT_IT_PROVIDES: "heat", FOR_PURPOSE: "cook"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"SOURCEOF", WHAT_IT_PROVIDES: "heat"]
+
+	// CENTRALSW       CHANGE-VEC: warm ; becoming warm means heat is added     (39ec-9974-829d-ba5e) [ PROCESS_NAME_ACTION:"warm;become warm", AGENT_OBJECT:"heat", DIRECTION:"add" ]
+	//        HINTROW heating means adding heat     (9469-8559-7f35-1bbd) [ PROCESS_NAME_ACTION:"heat", DIRECTION:"add", PATIENT:"heat" ]
+	//        HINTROW heat means temperature increases     (7afc-2bcd-13a5-2d35) [ PROCESS_NAME_ACTION:"heat", AGENT_OBJECT:"temperature", DIRECTION:"increase" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"CHANGE-VEC"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow1 = [TABLE:"CHANGE-VEC"]
+
+	// CENTRAL         CHANGE: boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy     (a0b2-a45f-01e1-4bf4) [ PROCESS_NAME:"boil;evaporate", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"gas", BY_THROUGH_HOW:"increase heat energy" ]
+	//row autoRow2 = [UUID:"a0b2-a45f-01e1-4bf4", PROCESS_NAME: "boil", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "gas", BY_THROUGH_HOW: "increase heat energy"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"a0b2-a45f-01e1-4bf4", PROCESS_NAME: "boil", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "gas", BY_THROUGH_HOW: "increase heat energy"]
+
+	// CENTRAL         CHANGE: a phase change is when matter ; a substance changes from one state of matter into another state of matter     (72bd-5535-598e-82e8) [ PROCESS_NAME:"phase change", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"one state of matt", INTO:"state of matt" ]
+	//row autoRow3 = [UUID:"72bd-5535-598e-82e8", PROCESS_NAME: "phase change", ACTOR_WHO: "matt", VERB: "change", FROM: "one state of matt", INTO: "state of matt"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"72bd-5535-598e-82e8", PROCESS_NAME: "phase change", ACTOR_WHO: "matt", VERB: "change", FROM: "one state of matt", INTO: "state of matt"]
+
+	// CENTRAL         USEDFOR: a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove     (33c7-1992-4659-d284) [ AGENT_OBJECT:"pan;fry pan;pot", FOR_PURPOSE:"cook", PATIENT:"food", BY_THROUGH_HOW:"heat food in", SCOPE2:"on stave" ]
+	//row autoRow4 = [UUID:"33c7-1992-4659-d284", AGENT_OBJECT: "fry pan", FOR_PURPOSE: "cook", PATIENT: "food", BY_THROUGH_HOW: "heat food in", SCOPE2: "on stave"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"33c7-1992-4659-d284", AGENT_OBJECT: "fry pan", FOR_PURPOSE: "cook", PATIENT: "food", BY_THROUGH_HOW: "heat food in", SCOPE2: "on stave"]
+
+	// CENTRAL         IFTHEN: if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm     (c9e0-141e-88fa-2c43) [ THING:"thermal conduct;object", ACTION1:"expose", ADJ_QUANTITY1A:"source of", OBJECT_PATIENT1:"heat", ACTOR_AGENT_PROCESS2:"that conduct;that object", OBJECT_PROPERTY3:"hot;warm" ]
+	//row autoRow5 = [UUID:"c9e0-141e-88fa-2c43", THING: "thermal conduct", ACTION1: "expose", ADJ_QUANTITY1A: "source of", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "that conduct", OBJECT_PROPERTY3: "hot"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"c9e0-141e-88fa-2c43", THING: "thermal conduct", ACTION1: "expose", ADJ_QUANTITY1A: "source of", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "that conduct", OBJECT_PROPERTY3: "hot"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C     (e474-2a11-6e7b-ae8b) [ MATERIAL_NAME:"water", STATEOFMATTER:"gas", FORM_NAME:"water vapor;steam", LOWER_BOUND:"373;212;100", UPPER_BOUND:"100000000000", UNITS:"k;f;c" ]
+	//row autoRow6 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//row autoRow7 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"]
+
+	// CENTRAL         MADEOF: a thermal conductor is made of thermal conductive materials     (a49d-0411-7e72-17d8) [ OBJECT:"thermal conduct", MATERIAL:"thermal conduct material" ]
+	//row autoRow8 = [UUID:"a49d-0411-7e72-17d8", OBJECT: "thermal conduct", MATERIAL: "thermal conduct material"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"a49d-0411-7e72-17d8", OBJECT: "thermal conduct", MATERIAL: "thermal conduct material"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the temperature of a liquid increases , the rate of evaporation of that liquid will increase     (cb74-f946-eef2-3ca5) [ QUANTITY_MEASURE1:"temperature", AGENT_ATTRIBUTE1:"of liquid", CHANGE1:"increase", QUANTITY_MEASURE2:"rate of evaporate", AGENT_ATTRIBUTE2:"of liquid", CHANGE2:"increase" ]
+	//  Notes: 1a64-71d5-62de-afa4->cb74-f946-eef2-3ca5
+	//row autoRow9 = [UUID:"cb74-f946-eef2-3ca5", QUANTITY_MEASURE1: "temperature", AGENT_ATTRIBUTE1: "of liquid", CHANGE1: "increase", QUANTITY_MEASURE2: "rate of evaporate", AGENT_ATTRIBUTE2: "of liquid", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"cb74-f946-eef2-3ca5", QUANTITY_MEASURE1: "temperature", AGENT_ATTRIBUTE1: "of liquid", CHANGE1: "increase", QUANTITY_MEASURE2: "rate of evaporate", AGENT_ATTRIBUTE2: "of liquid", CHANGE2: "increase"]
+
+	// CENTRAL         KINDOF: boiling is a kind of phase change     (edd3-cea2-f046-e76f) [ HYPONYM:"boil", HYPERNYM:"phase change" ]
+	//row autoRow10 = [UUID:"edd3-cea2-f046-e76f", HYPONYM: "boil", HYPERNYM: "phase change"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"edd3-cea2-f046-e76f", HYPONYM: "boil", HYPERNYM: "phase change"]
+
+	// CENTRAL         IFTHEN: if a container contains something then that container touches that something     (49e7-9112-fe19-cbb8) [ THING:"container", ACTION1:"contain", OBJECT_PATIENT1:"something", ACTOR_AGENT_PROCESS2:"that container", ACTION3:"touch", OBJECT_PROPERTY3:"something" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"49e7-9112-fe19-cbb8", THING: "container", ACTION1: "contain", OBJECT_PATIENT1: "something", ACTOR_AGENT_PROCESS2: "that container", ACTION3: "touch", OBJECT_PROPERTY3: "something"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"49e7-9112-fe19-cbb8", THING: "container", ACTION1: "contain", OBJECT_PATIENT1: "something", ACTOR_AGENT_PROCESS2: "that container", ACTION3: "touch", OBJECT_PROPERTY3: "something"]
+
+	// CENTRAL         IFTHEN: if heat is added to a substance then that substance absorbs that heat     (9f40-769a-b2ba-d984) [ THING:"heat", ACTION1:"add", OBJECT_PATIENT1:"substance", ACTOR_AGENT_PROCESS2:"substance", ACTION3:"absorb", OBJECT_PROPERTY3:"that heat" ]
+	//row autoRow12 = [UUID:"9f40-769a-b2ba-d984", THING: "heat", ACTION1: "add", OBJECT_PATIENT1: "substance", ACTOR_AGENT_PROCESS2: "substance", ACTION3: "absorb", OBJECT_PROPERTY3: "that heat"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"9f40-769a-b2ba-d984", THING: "heat", ACTION1: "add", OBJECT_PATIENT1: "substance", ACTOR_AGENT_PROCESS2: "substance", ACTION3: "absorb", OBJECT_PROPERTY3: "that heat"]
+
+	// CENTRAL         KINDOF: liquid is a kind of state of matter     (f7e9-c6f8-892b-3496) [ HYPONYM:"liquid", HYPERNYM:"state of matt" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"]
+
+	// CENTRAL         MADEOF: pot ; pan ; frying pan is made of metal for cooking     (a955-8642-4044-5a48) [ OBJECT:"pot;pan;fry pan", MATERIAL:"metal", FOR_PURPOSE:"cook" ]
+	//row autoRow14 = [UUID:"a955-8642-4044-5a48", OBJECT: "fry pan", MATERIAL: "metal", FOR_PURPOSE: "cook"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"a955-8642-4044-5a48", OBJECT: "fry pan", MATERIAL: "metal", FOR_PURPOSE: "cook"]
+
+	// CENTRAL        (OPTIONAL) ACTION: a source of something emits ; produces ; generates ; provides that something     (b877-a58b-f75a-3998) [ AGENT_OBJECT:"source of something", ACTION2:"emit;produce;generate;provide", OBJECT_PROPERTY:"that something" ]
+	//row *autoRow15 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"] //OVER-CONSTR.
+	row *autoRow15 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"]
+
+	// CENTRAL         PROP-CONDUCTIVITY: metal is a thermal ; thermal energy conductor     (0439-8c06-da63-6721) [ OBJECT_AGENT:"metal", KIND_OF_CONDUCTIVITY:"thermal;thermal energy", CONDUCTOR_INSULATOR:"conduct" ]
+	//row autoRow16 = [UUID:"0439-8c06-da63-6721", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "thermal energy", CONDUCTOR_INSULATOR: "conduct"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"0439-8c06-da63-6721", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "thermal energy", CONDUCTOR_INSULATOR: "conduct"]
+
+	// CENTRAL         MADEOF: substances are made of matter     (3395-b5a2-ae2d-39c2) [ OBJECT:"substance", MATERIAL:"matt" ]
+	//row autoRow17 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"]
+
+	// CENTRAL         KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//row autoRow18 = [UUID:"81b7-0a58-5b0b-0bbf", HYPONYM: "water", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"81b7-0a58-5b0b-0bbf", HYPONYM: "water", HYPERNYM: "substance"]
+
+	// LEXGLUE         SYNONYMY: adding heat means increasing temperature     (7d37-b81d-0cf3-9ae0) [ ACTION1:"add", Y1:"heat", ACTION2:"increase", Y2:"temperature" ]
+	//row autoRow19 = [UUID:"7d37-b81d-0cf3-9ae0", ACTION1: "add", Y1: "heat", ACTION2: "increase", Y2: "temperature"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"7d37-b81d-0cf3-9ae0", ACTION1: "add", Y1: "heat", ACTION2: "increase", Y2: "temperature"]
+
+	// LEXGLUE         SYNONYMY: being on something ; placed in something ; placed over something means touching that something     (4d0b-497e-6a7f-bfca) [ ACTION1:"be", Y1:"on something;place in something;place over something", ACTION2:"touch", Y2:"that something" ]
+	//        HINTROW being in something means touching that something     (4e2c-c684-660e-fcbe) [ ACTION1:"be", Y1:"in something", ACTION2:"touch", Y2:"that something" ]
+	//row autoRow20 = [UUID:"4d0b-497e-6a7f-bfca", ACTION1: "be", Y1: "place in something", ACTION2: "touch", Y2: "that something"] //OVER-CONSTR.
+	row autoRow20 = [UUID:"4d0b-497e-6a7f-bfca", ACTION1: "be", Y1: "place in something", ACTION2: "touch", Y2: "that something"]
+
+	// LEXGLUE         SYNONYMY: phase means state     (de31-9a4c-d874-ac06) [ X1:"phase", X2:"state" ]
+	//row autoRow21 = [UUID:"de31-9a4c-d874-ac06", X1: "phase", X2: "state"] //OVER-CONSTR.
+	row autoRow21 = [UUID:"de31-9a4c-d874-ac06", X1: "phase", X2: "state"]
+
+	// LEXGLUE         SYNONYMY: to add means to increase     (7ef3-7d2a-dd0a-7953) [ ACTION1:"add", ACTION2:"increase" ]
+	//row autoRow22 = [UUID:"7ef3-7d2a-dd0a-7953", ACTION1: "add", ACTION2: "increase"] //OVER-CONSTR.
+	row autoRow22 = [UUID:"7ef3-7d2a-dd0a-7953", ACTION1: "add", ACTION2: "increase"]
+
+endinferencepattern

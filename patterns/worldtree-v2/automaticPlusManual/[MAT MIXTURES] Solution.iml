@@ -1,0 +1,80 @@
+// Automatically converted pattern
+inferencepattern MAT_MIXTURES_Solution
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-SOLUTION: In the solution salt water , the solute is salt     (a0b9-0a12-2eb9-c50e) [ SOLUTIONNAME:"salt water", SOLUTION_SOLUTE:"solute", COMPONENTNAME:"salt" ]
+	//        HINTROW In the solution sugar water , the solute is sugar     (d5fc-7ed6-16e4-d556) [ SOLUTIONNAME:"sugar water", SOLUTION_SOLUTE:"solute", COMPONENTNAME:"sugar" ]
+	//        HINTROW In the solution vinegar , the solute is acetic acid     (3405-7a3d-9a8c-5b6d) [ SOLUTIONNAME:"vinegar", SOLUTION_SOLUTE:"solute", COMPONENTNAME:"acetic acid" ]
+	//        Hint Words: solute
+	//  Notes: solute column
+	//row autoRow0 = [TABLE:"PROP-SOLUTION", SOLUTIONNAME: <salt_0>+<water_1>, SOLUTION_SOLUTE: "solute", COMPONENTNAME: <salt_0>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-SOLUTION", SOLUTIONNAME: <salt_0>+<water_1>, SOLUTION_SOLUTE: "solute", COMPONENTNAME: <salt_0>]
+
+	// CENTRALSW       PROP-SOLUTION: In the solution salt water , the solvent is water     (a3ad-e475-4fb4-9be2) [ SOLUTIONNAME:"salt water", SOLUTION_SOLUTE:"solvent", COMPONENTNAME:"water" ]
+	//        HINTROW In the solution sugar water , the solvent is water     (6899-2de5-2ca2-2433) [ SOLUTIONNAME:"sugar water", SOLUTION_SOLUTE:"solvent", COMPONENTNAME:"water" ]
+	//        HINTROW In the solution vinegar , the solvent is water     (8be8-064c-0de0-0ac1) [ SOLUTIONNAME:"vinegar", SOLUTION_SOLUTE:"solvent", COMPONENTNAME:"water" ]
+	//        Hint Words: solvent
+	//  Notes: solvent column
+	//row autoRow1 = [TABLE:"PROP-SOLUTION", SOLUTIONNAME: *"POS:NN"+<water_1>, SOLUTION_SOLUTE: "solvent", COMPONENTNAME: <water_1>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-SOLUTION", SOLUTION_SOLUTE: "solvent", COMPONENTNAME: <water_1>]
+
+	// CENTRALSW       ACTION: sugar dissolves in water when they are combined     (78d4-18c9-9484-0154) [ AGENT_OBJECT:"sugar", ACTION2:"dissolve in", OBJECT_PROPERTY:"water", WHEN_WHERE:"be combine" ]
+	//        HINTROW sodium chloride dissolves in water when they are combined     (6d0b-5a2b-14b5-805d) [ AGENT_OBJECT:"sodium chloride", ACTION2:"dissolve in", OBJECT_PROPERTY:"water", WHEN_WHERE:"be combine" ]
+	//row autoRow2 = [TABLE:"ACTION", ACTION2: "dissolve in", OBJECT_PROPERTY: <water_1>, WHEN_WHERE: "be combine"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"ACTION", ACTION2: "dissolve in", OBJECT_PROPERTY: <water_1>, WHEN_WHERE: "be combine"]
+
+	// GROUNDING       KINDOF: salt is a kind of pure substance     (1fd0-279c-ed27-afca) [ HYPONYM:"salt", SCOPE1:"pure", HYPERNYM:"substance" ]
+	//        HINTROW sugar is a kind of pure substance     (826e-4bd3-1390-0182) [ HYPONYM:"sugar", SCOPE1:"pure", HYPERNYM:"substance" ]
+	//        HINTROW acid is a kind of substance     (0c7c-a16e-cd22-5e05) [ HYPONYM:"acid", HYPERNYM:"substance" ]
+	//  Notes: solute example
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: <salt_0>, HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: <salt_0>, HYPERNYM: "substance"]
+
+	// GROUNDING       KINDOF: salt water is a kind of solution     (e99c-8638-3be1-1fd4) [ HYPONYM:"salt water", HYPERNYM:"solution" ]
+	//        HINTROW sugar water is a kind of solution     (19b4-90e8-2af4-73ec) [ HYPONYM:"sugar water", HYPERNYM:"solution" ]
+	//        HINTROW vinegar is a kind of solution of acetic acid and water     (96d9-24aa-72eb-66b8) [ HYPONYM:"vinegar", HYPERNYM:"solution", SCOPE2:"of acetic acid water" ]
+	//  Notes: solution examples
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: <salt_0>+<water_1>, HYPERNYM: "solution"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: <salt_0>+<water_1>, HYPERNYM: "solution"]
+
+	// GROUNDING       KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//  Notes: solvent example
+	//row autoRow5 = [TABLE:"KINDOF", HYPONYM: <water_1>, HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPONYM: <water_1>, HYPERNYM: "substance"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: when one substance is dissolved in another substance then the molecules of that other substance exist in solution     (340e-90d3-2c17-f434) [ ADJ_QUANTITY1:"one", THING:"substance", ACTION1:"dissolve in", OBJECT_PATIENT1:"substance", ADJ_QUANTITY2:"molecule of", ACTOR_AGENT_PROCESS2:"other substance", ACTION3:"exist", OBJECT_PROPERTY3:"in solution" ]
+	//row *autoRow6 = [UUID:"340e-90d3-2c17-f434", ADJ_QUANTITY1: "one", THING: "substance", ACTION1: "dissolve in", OBJECT_PATIENT1: "substance", ADJ_QUANTITY2: "molecule of", ACTOR_AGENT_PROCESS2: "other substance", ACTION3: "exist", OBJECT_PROPERTY3: "in solution"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"340e-90d3-2c17-f434", ADJ_QUANTITY1: "one", THING: "substance", ACTION1: "dissolve in", OBJECT_PATIENT1: "substance", ADJ_QUANTITY2: "molecule of", ACTOR_AGENT_PROCESS2: "other substance", ACTION3: "exist", OBJECT_PROPERTY3: "in solution"]
+
+	// CENTRAL         FORMEDBY: a solution is formed by one substance being dissolved in another substance     (c803-33fe-2283-daa2) [ OBJECT:"solution", AGENT_PROCESS:"one substance", VERB:"be dissolve in", PATIENT:"substance" ]
+	//row autoRow7 = [UUID:"c803-33fe-2283-daa2", OBJECT: "solution", AGENT_PROCESS: "one substance", VERB: "be dissolve in", PATIENT: "substance"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"c803-33fe-2283-daa2", OBJECT: "solution", AGENT_PROCESS: "one substance", VERB: "be dissolve in", PATIENT: "substance"]
+
+	// CENTRAL         MADEOF: a solution is made of one substance dissolved in another substance     (f688-9579-bfb6-61d1) [ OBJECT:"solution", MATERIAL:"one substance dissolve in substance" ]
+	//row autoRow8 = [UUID:"f688-9579-bfb6-61d1", OBJECT: "solution", MATERIAL: "one substance dissolve in substance"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f688-9579-bfb6-61d1", OBJECT: "solution", MATERIAL: "one substance dissolve in substance"]
+
+	// CENTRAL         CAUSE: dissolving a substance in water causes the water to taste like that substance     (735a-963c-130f-059c) [ CONDITION_VERB:"dissolve", CONDITION_PATIENT:"substance", SCOPE1:"in water", RESULT_AGENT:"water", RESULT_VERB:"taste", RESULT_PATIENT:"like substance" ]
+	//row autoRow9 = [UUID:"735a-963c-130f-059c", CONDITION_VERB: "dissolve", CONDITION_PATIENT: "substance", SCOPE1: "in"+<water_1>, RESULT_AGENT: <water_1>, RESULT_VERB: "taste", RESULT_PATIENT: "like substance"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"735a-963c-130f-059c", CONDITION_VERB: "dissolve", CONDITION_PATIENT: "substance", SCOPE1: "in"+<water_1>, RESULT_AGENT: <water_1>, RESULT_VERB: "taste", RESULT_PATIENT: "like substance"]
+
+	// CENTRAL         ACTION: dissolving is when the solute spread evenly through the solvent     (364c-916c-57f0-8607) [ DEFINITION_NAME:"dissolve", AGENT_OBJECT:"solute", ACTION2:"spread", OBJECT_PROPERTY:"evenly", WHEN_WHERE:"through solvent" ]
+	//row autoRow10 = [UUID:"364c-916c-57f0-8607", DEFINITION_NAME: "dissolve", AGENT_OBJECT: "solute", ACTION2: "spread", OBJECT_PROPERTY: "evenly", WHEN_WHERE: "through solvent"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"364c-916c-57f0-8607", DEFINITION_NAME: "dissolve", AGENT_OBJECT: "solute", ACTION2: "spread", OBJECT_PROPERTY: "evenly", WHEN_WHERE: "through solvent"]
+
+	// CENTRAL         PROP-MAT-PURITY-MIXTURE: a solution is a mixture     (d2e9-11e9-5d56-acb0) [ THING:"solution", MIXTURE_PURE_SUBSTANCE:"mixture" ]
+	//  Notes: 4c81-b2de-2121-602a->d2e9-11e9-5d56-acb0peripheral
+	//row autoRow11 = [UUID:"d2e9-11e9-5d56-acb0", THING: "solution", MIXTURE_PURE_SUBSTANCE: "mixture"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"d2e9-11e9-5d56-acb0", THING: "solution", MIXTURE_PURE_SUBSTANCE: "mixture"]
+
+	// CENTRAL         ACTION: a solute can be dissolved in a solvent when they are combined     (7c08-85f6-fae2-8190) [ AGENT_OBJECT:"solute", QUANITIFIER:"be", ACTION2:"dissolve in", OBJECT_PROPERTY:"solvent", WHEN_WHERE:"be combine" ]
+	//row autoRow12 = [UUID:"7c08-85f6-fae2-8190", AGENT_OBJECT: "solute", QUANITIFIER: "be", ACTION2: "dissolve in", OBJECT_PROPERTY: "solvent", WHEN_WHERE: "be combine"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"7c08-85f6-fae2-8190", AGENT_OBJECT: "solute", QUANITIFIER: "be", ACTION2: "dissolve in", OBJECT_PROPERTY: "solvent", WHEN_WHERE: "be combine"]
+
+endinferencepattern

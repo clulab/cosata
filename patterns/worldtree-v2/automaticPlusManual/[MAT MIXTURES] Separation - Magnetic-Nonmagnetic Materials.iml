@@ -1,0 +1,80 @@
+// Automatically converted pattern
+inferencepattern MAT_MIXTURES_Separation_Magnetic_Nonmagnetic_Materials
+
+	// Plain text description
+	description = "Note (PJ) - needs to have the magnetic material and non-magnetic material be separated into different rows. "
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: metal is a kind of material     (95c4-ec5e-bce9-afd8) [ HYPONYM:"metal", HYPERNYM:"material" ]
+	//  Notes: magnetic material
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "metal", HYPERNYM: "material"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "metal", HYPERNYM: "material"]
+
+	// GROUNDING       KINDOF: sand is a kind of material     (e024-f895-8981-87d8) [ HYPONYM:"sand", HYPERNYM:"material" ]
+	//        HINTROW glass is a kind of material     (3a17-08a8-4755-b109) [ HYPONYM:"glass", HYPERNYM:"material" ]
+	//        HINTROW plastic is a kind of material made by humans     (b24b-be1d-9e0d-4037) [ HYPONYM:"plastic", HYPERNYM:"material", SCOPE2:"make by human" ]
+	//  Notes: nonmagnetic material
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "material"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "material"]
+
+	// GROUNDING       PROP-MAGNETISM: sand is always nonmagnetic     (9f32-c759-d73a-9bf2) [ MATERIAL:"sand", QUALIFIER:"always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC:"nonmagnetic" ]
+	//        HINTROW aluminum is always nonmagnetic     (7cc7-9198-9358-fdf5) [ MATERIAL:"aluminum", QUALIFIER:"always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC:"nonmagnetic" ]
+	//        HINTROW glass is always nonmagnetic     (56c8-cc89-2a22-4eea) [ MATERIAL:"glass", QUALIFIER:"always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC:"nonmagnetic" ]
+	//        HINTROW plastic is always nonmagnetic     (a68f-e428-18de-2f21) [ MATERIAL:"plastic", QUALIFIER:"always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC:"nonmagnetic" ]
+	//  Notes: nonmagnetic material
+	//row autoRow2 = [TABLE:"PROP-MAGNETISM", QUALIFIER: "always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC: "nonmagnetic"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"PROP-MAGNETISM", QUALIFIER: "always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC: "nonmagnetic"]
+
+	// GROUNDING       PROP-MAGNETISM: soft iron ; iron is always ferromagnetic ; magnetic     (8e64-7c6e-2572-2438) [ MATERIAL:"soft iron;iron", QUALIFIER:"always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC:"ferromagnetic;magnetic" ]
+	//        HINTROW steel ; carbon steel is always ferromagnetic ; magnetic     (794a-7ac4-5e27-9d39) [ MATERIAL:"steel;carbon steel", QUALIFIER:"always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC:"ferromagnetic;magnetic" ]
+	//  Notes: magnetic materials
+	//row autoRow3 = [TABLE:"PROP-MAGNETISM", QUALIFIER: "always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC: "ferromagnetic"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"PROP-MAGNETISM", QUALIFIER: "always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC: "ferromagnetic"]
+
+	// GROUNDING       KINDOF: iron is a kind of metal     (de4c-ca36-c336-540f) [ HYPONYM:"iron", HYPERNYM:"metal" ]
+	//        HINTROW steel is a kind of metal     (d49f-dde6-0083-0a5b) [ HYPONYM:"steel", HYPERNYM:"metal" ]
+	//        HINTROW aluminum is a kind of metal     (a580-1b9e-6ec9-a275) [ HYPONYM:"aluminum", HYPERNYM:"metal" ]
+	//  Notes: metal example
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "metal"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "metal"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if two substances together form a mixture then those substances can be separated from one another by physical changes     (9710-6959-2c34-d204) [ THING:"two substance", SCOPE1A:"together", ACTION1:"form", OBJECT_PATIENT1:"mixture", ACTOR_AGENT_PROCESS2:"substance", ACTION3:"separate", OBJECT_PROPERTY3:"from one" ]
+	//row *autoRow5 = [UUID:"9710-6959-2c34-d204", THING: "two substance", SCOPE1A: "together", ACTION1: "form", OBJECT_PATIENT1: "mixture", ACTOR_AGENT_PROCESS2: "substance", ACTION3: "separate", OBJECT_PROPERTY3: "from one"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"9710-6959-2c34-d204", THING: "two substance", SCOPE1A: "together", ACTION1: "form", OBJECT_PATIENT1: "mixture", ACTOR_AGENT_PROCESS2: "substance", ACTION3: "separate", OBJECT_PROPERTY3: "from one"]
+
+	// CENTRAL         IFTHEN: if something contains a large amount of magnetic material then that something will attract magnets     (95f7-f635-f0ef-b67c) [ THING:"something", ACTION1:"contain", ADJ_QUANTITY1A:"large amount of", OBJECT_PATIENT1:"magnetic material", ACTOR_AGENT_PROCESS2:"that something", ACTION3:"attract", OBJECT_PROPERTY3:"magnet" ]
+	//row autoRow6 = [UUID:"95f7-f635-f0ef-b67c", THING: "something", ACTION1: "contain", ADJ_QUANTITY1A: "large amount of", OBJECT_PATIENT1: "magnetic material", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "attract", OBJECT_PROPERTY3: "magnet"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"95f7-f635-f0ef-b67c", THING: "something", ACTION1: "contain", ADJ_QUANTITY1A: "large amount of", OBJECT_PATIENT1: "magnetic material", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "attract", OBJECT_PROPERTY3: "magnet"]
+
+	// CENTRAL         ACTION: magnetic separation is using a magnet to attract magnetic material from the mixture of magnetic and nonmagnetic material     (8343-e17a-aae4-11a1) [ DEFINITION_NAME:"magnetic separation", ACTION1:"use", AGENT_OBJECT:"magnet", ACTION2:"attract", OBJECT_PROPERTY:"magnetic material", WHEN_WHERE:"from mixture of magnetic nonmagnetic material" ]
+	//row autoRow7 = [UUID:"8343-e17a-aae4-11a1", DEFINITION_NAME: "magnetic separation", ACTION1: "use", AGENT_OBJECT: "magnet", ACTION2: "attract", OBJECT_PROPERTY: "magnetic material", WHEN_WHERE: "from mixture of magnetic nonmagnetic material"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"8343-e17a-aae4-11a1", DEFINITION_NAME: "magnetic separation", ACTION1: "use", AGENT_OBJECT: "magnet", ACTION2: "attract", OBJECT_PROPERTY: "magnetic material", WHEN_WHERE: "from mixture of magnetic nonmagnetic material"]
+
+	// CENTRAL         PROP-GENERIC: magnetism is a property of materials ; objects and includes ordered values of nonmagnetic ; magnetic     (4a27-3046-0e5d-9891) [ X:"magnetism", Y:"material;object", ORDERED_UNORDERED:"order", VALUES:"nonmagnetic;magnetic" ]
+	//row autoRow8 = [UUID:"4a27-3046-0e5d-9891", X: "magnetism", Y: "material", ORDERED_UNORDERED: "order", VALUES: "nonmagnetic"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"4a27-3046-0e5d-9891", X: "magnetism", Y: "material", ORDERED_UNORDERED: "order", VALUES: "nonmagnetic"]
+
+	// CENTRAL         USEDFOR: magnet can be used for separating a magnetic material from a mixture of a magnetic and nonmagnetic material     (9222-202b-8d8e-2b9e) [ ACTION:"magnet", QUALIFIER:"be", FOR_PURPOSE:"separate", PATIENT:"magnetic material", SCOPE2:"from mixture of magnetic nonmagnetic material" ]
+	//row autoRow9 = [UUID:"9222-202b-8d8e-2b9e", ACTION: "magnet", QUALIFIER: "be", FOR_PURPOSE: "separate", PATIENT: "magnetic material", SCOPE2: "from mixture of magnetic nonmagnetic material"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"9222-202b-8d8e-2b9e", ACTION: "magnet", QUALIFIER: "be", FOR_PURPOSE: "separate", PATIENT: "magnetic material", SCOPE2: "from mixture of magnetic nonmagnetic material"]
+
+	// CENTRAL         ACTION: a magnet attracts magnetic metals ; ferromagnetic metals through magnetism     (178a-9dd1-8569-86f1) [ AGENT_OBJECT:"magnet", ACTION2:"attract", OBJECT_PROPERTY:"magnetic metal;ferromagnetic metal", HOW:"magnetism" ]
+	//row autoRow10 = [UUID:"178a-9dd1-8569-86f1", AGENT_OBJECT: "magnet", ACTION2: "attract", OBJECT_PROPERTY: "magnetic metal", HOW: "magnetism"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"178a-9dd1-8569-86f1", AGENT_OBJECT: "magnet", ACTION2: "attract", OBJECT_PROPERTY: "magnetic metal", HOW: "magnetism"]
+
+	// CENTRAL         ACTION: a magnet will not attract nonmagnetic metals ; nonmagnetic materials     (23a8-e177-f667-e30f) [ AGENT_OBJECT:"magnet", ACTION2:"not attract", OBJECT_PROPERTY:"nonmagnetic metal;nonmagnetic material" ]
+	//row autoRow11 = [UUID:"23a8-e177-f667-e30f", AGENT_OBJECT: "magnet", ACTION2: "not attract", OBJECT_PROPERTY: "nonmagnetic metal"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"23a8-e177-f667-e30f", AGENT_OBJECT: "magnet", ACTION2: "not attract", OBJECT_PROPERTY: "nonmagnetic metal"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if a magnet is attracted to a metal then that magnet will stick to that metal     (99b9-04cf-f952-473a) [ THING:"magnet", ACTION1:"attract", OBJECT_PATIENT1:"metal", ACTOR_AGENT_PROCESS2:"that magnet", ACTION3:"stick", OBJECT_PROPERTY3:"metal" ]
+	//row *autoRow12 = [UUID:"99b9-04cf-f952-473a", THING: "magnet", ACTION1: "attract", OBJECT_PATIENT1: "metal", ACTOR_AGENT_PROCESS2: "that magnet", ACTION3: "stick", OBJECT_PROPERTY3: "metal"] //OVER-CONSTR.
+	row *autoRow12 = [UUID:"99b9-04cf-f952-473a", THING: "magnet", ACTION1: "attract", OBJECT_PATIENT1: "metal", ACTOR_AGENT_PROCESS2: "that magnet", ACTION3: "stick", OBJECT_PROPERTY3: "metal"]
+
+	// LEXGLUE         SYNONYMY: material means substance     (efac-0ec0-58dc-8f9e) [ X1:"material", X2:"substance" ]
+	//row autoRow13 = [UUID:"efac-0ec0-58dc-8f9e", X1: "material", X2: "substance"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"efac-0ec0-58dc-8f9e", X1: "material", X2: "substance"]
+
+endinferencepattern

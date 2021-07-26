@@ -1,0 +1,48 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Pollution_Landfills
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         AFFECT: humans changing ecosystems ; environments usually has a negative impact on an ecosystem ; organisms living in an ecosystem     (f4dc-5030-6255-a1f8) [ ACTOR_WHO:"human", VERB:"change", OBJECT_PROPERTY:"ecosystem;environment", QUALIFIER1:"usually", POSITIVE_NEGATIVE:"negative", PATIENT:"ecosystem;organism live in ecosystem" ]
+	//row autoRow0 = [UUID:"f4dc-5030-6255-a1f8", ACTOR_WHO: "human", VERB: "change", OBJECT_PROPERTY: "ecosystem", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"f4dc-5030-6255-a1f8", ACTOR_WHO: "human", VERB: "change", OBJECT_PROPERTY: "ecosystem", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"]
+
+	// CENTRAL         AFFECT: pollution has a negative impact on the environment ; air quality ; water quality ; society     (d116-6f25-b3ac-7d88) [ ACTOR_WHO:"pollute", POSITIVE_NEGATIVE:"negative", PATIENT:"environment;air quality;water quality;society" ]
+	//row autoRow1 = [UUID:"d116-6f25-b3ac-7d88", ACTOR_WHO: "pollute", POSITIVE_NEGATIVE: "negative", PATIENT: "air quality"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"d116-6f25-b3ac-7d88", ACTOR_WHO: "pollute", POSITIVE_NEGATIVE: "negative", PATIENT: "air quality"]
+
+	// CENTRAL         TRANSFER: humans move waste to a landfill for disposal ; storage     (27ab-3140-60ab-8b03) [ ACTOR_WHO:"human", VERB:"move", WHAT:"waste", DESTINATION:"landfill", FOR_PURPOSE:"disposal;storage" ]
+	//row autoRow2 = [UUID:"27ab-3140-60ab-8b03", ACTOR_WHO: "human", VERB: "move", WHAT: "waste", DESTINATION: "landfill", FOR_PURPOSE: "disposal"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"27ab-3140-60ab-8b03", ACTOR_WHO: "human", VERB: "move", WHAT: "waste", DESTINATION: "landfill", FOR_PURPOSE: "disposal"]
+
+	// CENTRAL         AFFECT: landfills have a negative impact on the environment ; communities     (fbcb-2151-6afa-c1c5) [ ACTOR_WHO:"landfill", POSITIVE_NEGATIVE:"negative", PATIENT:"environment;community" ]
+	//row autoRow3 = [UUID:"fbcb-2151-6afa-c1c5", ACTOR_WHO: "landfill", POSITIVE_NEGATIVE: "negative", PATIENT: "environment"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"fbcb-2151-6afa-c1c5", ACTOR_WHO: "landfill", POSITIVE_NEGATIVE: "negative", PATIENT: "environment"]
+
+	// CENTRAL         SOURCEOF: an landfill is a source of pollution     (3094-7527-5f14-50d9) [ AGENT:"landfill", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"pollute" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"3094-7527-5f14-50d9", AGENT: "landfill", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "pollute"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3094-7527-5f14-50d9", AGENT: "landfill", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "pollute"]
+
+	// CENTRAL         CAUSE: humans cause pollution     (d951-095d-6862-917c) [ CONDITION_AGENT_OBJECT:"human", RESULT_VERB:"pollute" ]
+	//row autoRow5 = [UUID:"d951-095d-6862-917c", CONDITION_AGENT_OBJECT: "human", RESULT_VERB: "pollute"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"d951-095d-6862-917c", CONDITION_AGENT_OBJECT: "human", RESULT_VERB: "pollute"]
+
+	// CENTRAL        (OPTIONAL) MADEOF: society is made of humans     (ab30-97e0-586f-d18a) [ OBJECT:"society", MATERIAL:"human" ]
+	//row *autoRow6 = [UUID:"ab30-97e0-586f-d18a", OBJECT: "society", MATERIAL: "human"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"ab30-97e0-586f-d18a", OBJECT: "society", MATERIAL: "human"]
+
+	// CENTRAL         CHANGE-VEC: recycling reduces ; decreases the amount of waste sent to landfills     (ce64-9ef7-3084-5195) [ PROCESS_NAME_ACTION:"recycle", DIRECTION:"reduce;decrease", QUANTITY:"amount of", PATIENT:"waste", SCOPE2:"send landfill" ]
+	//row autoRow7 = [UUID:"ce64-9ef7-3084-5195", PROCESS_NAME_ACTION: "recycle", DIRECTION: "reduce", QUANTITY: "amount of", PATIENT: "waste", SCOPE2: "send landfill"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"ce64-9ef7-3084-5195", PROCESS_NAME_ACTION: "recycle", DIRECTION: "reduce", QUANTITY: "amount of", PATIENT: "waste", SCOPE2: "send landfill"]
+
+	// CENTRAL         CAUSE: polluting means something harmful ; something poisonous is added in an environment causes harm in the environment     (d1ac-a510-1958-0100) [ PROCESS_NAME:"pollute", CONDITION_AGENT_OBJECT:"something harm;something poisonous", CONDITION_VERB:"be add", SCOPE1:"in environment", RESULT_PATIENT:"harm", SCOPE2:"in environment" ]
+	//row autoRow8 = [UUID:"d1ac-a510-1958-0100", PROCESS_NAME: "pollute", CONDITION_AGENT_OBJECT: "something harm", CONDITION_VERB: "be add", SCOPE1: "in environment", RESULT_PATIENT: "harm", SCOPE2: "in environment"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"d1ac-a510-1958-0100", PROCESS_NAME: "pollute", CONDITION_AGENT_OBJECT: "something harm", CONDITION_VERB: "be add", SCOPE1: "in environment", RESULT_PATIENT: "harm", SCOPE2: "in environment"]
+
+endinferencepattern

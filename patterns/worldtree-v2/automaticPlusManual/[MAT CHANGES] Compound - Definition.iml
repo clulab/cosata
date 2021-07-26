@@ -1,0 +1,51 @@
+// Automatically converted pattern
+inferencepattern MAT_CHANGES_Compound_Definition
+
+	// Plain text description
+	description = "general definition of chemical compound"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ACTION: classifying is when one sorts something by kind ; type     (0d00-93f4-5616-0efc) [ DEFINITION_NAME:"classify", AGENT_OBJECT:"one", ACTION2:"sort", OBJECT_PROPERTY:"something", HOW:"kind;type" ]
+	//        HINTROW classifying means grouping objects ; materials by their properties     (69c1-2991-2421-ce63) [ DEFINITION_NAME:"classify", ACTION2:"group", OBJECT_PROPERTY:"object;material", HOW:"property" ]
+	//row autoRow0 = [TABLE:"ACTION", DEFINITION_NAME: "classify"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ACTION", DEFINITION_NAME: "classify"]
+
+	// GROUNDING       KINDOF: water is a kind of compound     (9c5e-a6ea-6e77-4f1e) [ HYPONYM:"water", HYPERNYM:"compound" ]
+	//        HINTROW sodium chloride is a kind of chemical compound     (5efe-966e-a1a6-df5e) [ HYPONYM:"sodium chloride", SCOPE1:"chemical", HYPERNYM:"compound" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "compound"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "compound"]
+
+	// CENTRAL         IFTHEN: when two substances together form a compound then those substances cannot be physically separated     (828f-50e9-c9a9-ae64) [ ADJ_QUANTITY1:"two", THING:"substance", SCOPE1A:"together", ACTION1:"form", OBJECT_PATIENT1:"compound", ACTOR_AGENT_PROCESS2:"substance", QUANTIFIER3:"not be", ACTION3:"physically separate" ]
+	//row autoRow2 = [UUID:"828f-50e9-c9a9-ae64", ADJ_QUANTITY1: "two", THING: "substance", SCOPE1A: "together", ACTION1: "form", OBJECT_PATIENT1: "compound", ACTOR_AGENT_PROCESS2: "substance", QUANTIFIER3: "not be", ACTION3: "physically separate"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"828f-50e9-c9a9-ae64", ADJ_QUANTITY1: "two", THING: "substance", SCOPE1A: "together", ACTION1: "form", OBJECT_PATIENT1: "compound", ACTOR_AGENT_PROCESS2: "substance", QUANTIFIER3: "not be", ACTION3: "physically separate"]
+
+	// CENTRAL         AFFORDANCES: a compound can be chemically separated into the elements that it is made of     (8414-575d-6515-9ade) [ ACTOR_THING:"compound", QUANTIFIER:"chemically", VERB:"separate", SCOPE:"into element that be make of" ]
+	//row autoRow3 = [UUID:"8414-575d-6515-9ade", ACTOR_THING: "compound", QUANTIFIER: "chemically", VERB: "separate", SCOPE: "into element that be make of"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"8414-575d-6515-9ade", ACTOR_THING: "compound", QUANTIFIER: "chemically", VERB: "separate", SCOPE: "into element that be make of"]
+
+	// CENTRAL         MADEOF: a compound is made of two or more elements chemically combined     (6bb0-ea31-6fee-5e77) [ OBJECT:"compound", VALUE:"two much", MATERIAL:"element", BY_THROUGH_HOW:"chemically combine" ]
+	//row autoRow4 = [UUID:"6bb0-ea31-6fee-5e77", OBJECT: "compound", VALUE: "two much", MATERIAL: "element", BY_THROUGH_HOW: "chemically combine"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"6bb0-ea31-6fee-5e77", OBJECT: "compound", VALUE: "two much", MATERIAL: "element", BY_THROUGH_HOW: "chemically combine"]
+
+	// CENTRAL         CONTAINS: chemical compounds contain chemical bonds between atoms ; between elements     (880b-ae92-483a-c9fa) [ ADJ:"chemical", OBJECT_AGENT:"compound", WHAT_IT_CONTAINS:"chemical bond", SCOPE:"between atom;between element" ]
+	//row autoRow5 = [UUID:"880b-ae92-483a-c9fa", ADJ: "chemical", OBJECT_AGENT: "compound", WHAT_IT_CONTAINS: "chemical bond", SCOPE: "between atom"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"880b-ae92-483a-c9fa", ADJ: "chemical", OBJECT_AGENT: "compound", WHAT_IT_CONTAINS: "chemical bond", SCOPE: "between atom"]
+
+	// CENTRAL         CONTAINS: the bonds of chemical compounds contain chemical energy     (3c5b-ad90-b6bc-f908) [ OBJECT_AGENT:"bond", QUANTIFIER:"of chemical compound", WHAT_IT_CONTAINS:"chemical energy" ]
+	//row autoRow6 = [UUID:"3c5b-ad90-b6bc-f908", OBJECT_AGENT: "bond", QUANTIFIER: "of chemical compound", WHAT_IT_CONTAINS: "chemical energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3c5b-ad90-b6bc-f908", OBJECT_AGENT: "bond", QUANTIFIER: "of chemical compound", WHAT_IT_CONTAINS: "chemical energy"]
+
+	// CENTRAL         KINDOF: a compound is a kind of substance     (fcf2-562c-5997-2086) [ HYPONYM:"compound", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"fcf2-562c-5997-2086", HYPONYM: "compound", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"fcf2-562c-5997-2086", HYPONYM: "compound", HYPERNYM: "substance"]
+
+	// CENTRAL         COMPARISON: a molecule is the smallest particle ; unit that has the properties of a compound     (f25a-54b9-3641-f7e4) [ THING:"molecule", ACTION1:"be", COMPARISON:"small", WHAT:"particle;unit", SCOPE2:"have property of compound" ]
+	//  Notes: 5c74-6feb-16a4-2fd8->f25a-54b9-3641-f7e4
+	//row autoRow8 = [UUID:"f25a-54b9-3641-f7e4", THING: "molecule", ACTION1: "be", COMPARISON: "small", WHAT: "particle", SCOPE2: "have property of compound"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f25a-54b9-3641-f7e4", THING: "molecule", ACTION1: "be", COMPARISON: "small", WHAT: "particle", SCOPE2: "have property of compound"]
+
+endinferencepattern

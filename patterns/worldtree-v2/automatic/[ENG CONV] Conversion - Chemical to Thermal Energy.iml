@@ -1,0 +1,65 @@
+// Automatically converted pattern
+inferencepattern ENG_CONV_Conversion_Chemical_to_Thermal_Energy
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       USEDFOR: coal is used for generating heat by burning     (7599-58ef-3f3c-3428) [ AGENT_OBJECT:"coal", FOR_PURPOSE:"generate", PATIENT:"heat", BY_THROUGH_HOW:"burn" ]
+	//        HINTROW natural gas is used for generating heat by burning in a furnace ; in a stove     (9f86-6ae1-8a59-fef8) [ AGENT_OBJECT:"nature gas", FOR_PURPOSE:"generate", PATIENT:"heat", BY_THROUGH_HOW:"burn", SCOPE2:"in furnace;in stave" ]
+	//row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT: <coal_0>, FOR_PURPOSE: "generate", PATIENT: "heat", BY_THROUGH_HOW: "burn"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT: <coal_0>, FOR_PURPOSE: "generate", PATIENT: "heat", BY_THROUGH_HOW: "burn"]
+
+	// CENTRALSW       KINDOF: coal is a kind of fossil fuel     (cab1-f3c3-59de-b682) [ HYPONYM:"coal", HYPERNYM:"fossil fuel" ]
+	//        HINTROW natural gas is a kind of fossil fuel     (2355-0cfa-86f8-5767) [ HYPONYM:"nature gas", HYPERNYM:"fossil fuel" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: <coal_0>, HYPERNYM: "fossil fuel"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: <coal_0>, HYPERNYM: "fossil fuel"]
+
+	// CENTRALSW       KINDOF: heat is a kind of energy     (9e7d-986e-6af1-5ac1) [ HYPONYM:"heat", HYPERNYM:"energy" ]
+	//        HINTROW thermal energy is a kind of energy     (8379-1173-6c94-ddd3) [ HYPONYM:"thermal energy", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "heat", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "heat", HYPERNYM: "energy"]
+
+	// CENTRAL         CHANGE: burning fossil fuels converts potential energy into thermal energy     (66a3-8213-aabe-5609) [ ACTOR_WHO:"burn fossil fuel", VERB:"convert", FROM:"potential energy", INTO:"thermal energy" ]
+	//row autoRow3 = [UUID:"66a3-8213-aabe-5609", ACTOR_WHO: "burn fossil fuel", VERB: "convert", FROM: "potential energy", INTO: "thermal energy"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"66a3-8213-aabe-5609", ACTOR_WHO: "burn fossil fuel", VERB: "convert", FROM: "potential energy", INTO: "thermal energy"]
+
+	// CENTRAL         CHANGE: energy transformation means one kind of energy changes into another kind of energy     (3d34-b43e-8a7e-07fd) [ PROCESS_NAME:"energy transformation", ACTOR_WHO:"one kind of energy", VERB:"change", INTO:"kind of energy" ]
+	//row autoRow4 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"]
+
+	// CENTRAL         CONTAINS: fossil fuel contains chemical energy     (bfa4-74ef-3e51-a3cb) [ ADJ:"fossil", OBJECT_AGENT:"fuel", WHAT_IT_CONTAINS:"chemical energy" ]
+	//row autoRow5 = [UUID:"bfa4-74ef-3e51-a3cb", ADJ: "fossil", OBJECT_AGENT: "fuel", WHAT_IT_CONTAINS: "chemical energy"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"bfa4-74ef-3e51-a3cb", ADJ: "fossil", OBJECT_AGENT: "fuel", WHAT_IT_CONTAINS: "chemical energy"]
+
+	// CENTRAL         KINDOF: conversion is a kind of process     (d3f2-e61a-32a0-2306) [ HYPONYM:"conversion", HYPERNYM:"process" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"d3f2-e61a-32a0-2306", HYPONYM: "conversion", HYPERNYM: "process"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"d3f2-e61a-32a0-2306", HYPONYM: "conversion", HYPERNYM: "process"]
+
+	// CENTRAL         KINDOF: chemical energy is a kind of energy     (b043-79cc-a77e-e968) [ HYPONYM:"chemical energy", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"b043-79cc-a77e-e968", HYPONYM: "chemical energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"b043-79cc-a77e-e968", HYPONYM: "chemical energy", HYPERNYM: "energy"]
+
+	// LEXGLUE         SYNONYMY: energy conversion is similar to energy transformation     (a67b-a715-13a4-9b5d) [ X1:"energy conversion", X2:"energy transformation" ]
+	//row autoRow8 = [UUID:"a67b-a715-13a4-9b5d", X1: "energy conversion", X2: "energy transformation"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"a67b-a715-13a4-9b5d", X1: "energy conversion", X2: "energy transformation"]
+
+	// LEXGLUE         SYNONYMY: form means kind     (7c96-f704-e51e-1678) [ X1:"form", X2:"kind" ]
+	//row autoRow9 = [UUID:"7c96-f704-e51e-1678", X1: "form", X2: "kind"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"7c96-f704-e51e-1678", X1: "form", X2: "kind"]
+
+	// LEXGLUE         SYNONYMY: heat energy is synonymous with thermal energy     (ae86-c631-e4ad-1669) [ X1:"heat energy", X2:"thermal energy" ]
+	//row autoRow10 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"]
+
+	// LEXGLUE         SYNONYMY: heat means heat energy     (4710-c993-7a19-bef2) [ X1:"heat", X2:"heat energy" ]
+	//row autoRow11 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"]
+
+endinferencepattern

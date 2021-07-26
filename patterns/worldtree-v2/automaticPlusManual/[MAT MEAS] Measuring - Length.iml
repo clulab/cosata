@@ -1,0 +1,99 @@
+// NOTE: This IML has been edited from it's original state
+
+// Automatically converted pattern
+
+inferencepattern MAT_MEAS_MeasurementCore
+	// Plain text description
+	description = "Core pattern for most X is a tool for measuring Y in units of Z patterns"
+
+    // Measurement Instrument Core
+
+	// CENTRALSW       UNIT: meters ( m ) are a metric ; SI unit used for measuring length ; distance generally used for values between 1 and 1000     (f297-a722-c60d-7be0) [ UNIT:"meter", ABBREVIATION:"be", PROPERTY:"length;distance", LOWERBOUND:"1", UPPERBOUND:"1000" ]
+	//        HINTROW centimeters ( cm ) are a metric unit used for measuring length ; distance generally used for values between 1 and 250     (8489-9ffe-b585-3aaf) [ UNIT:"centimeter", ABBREVIATION:"cm", PROPERTY:"length;distance", LOWERBOUND:"1", UPPERBOUND:"250" ]
+	//        HINTROW kilometers ( km ) are a metric unit used for measuring length ; distance generally used for values between 1 and 50000000     (76d6-aa20-ec92-1c4a) [ UNIT:"kilometer", ABBREVIATION:"km", PROPERTY:"length;distance", LOWERBOUND:"1", UPPERBOUND:"50000000" ]
+	//row autoRow0 = [TABLE:"UNIT", UNIT: <meter_0>, PROPERTY: <distance_2>, LOWERBOUND: "1"] //OVER-CONSTR.
+	row *autoRow0 = [TABLE:"UNIT", PROPERTY: <propBeingMeasured>]
+
+	// CENTRALSW       USEDFOR: a meter stick is used to measure distance ; height ; length     (48c0-261e-72f5-c101) [ AGENT_OBJECT:"meter stick", FOR_PURPOSE:"measure", PATIENT:"distance;height;length" ]
+	//        HINTROW a tape measure is used to measure length ; distance     (1f6a-7744-7f91-26b5) [ AGENT_OBJECT:"tape measure", FOR_PURPOSE:"measure", PATIENT:"length;distance" ]
+	//        HINTROW a ruler is used for measuring the length of an object     (80e7-ecfd-5d68-a0d3) [ AGENT_OBJECT:"ruler", FOR_PURPOSE:"measure", PATIENT:"length", SCOPE2:"of object" ]
+	//row autoRow1 = [TABLE:"USEDFOR", AGENT_OBJECT: <meter_0>+<stick_1>, FOR_PURPOSE: "measure", PATIENT: <distance_2>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"USEDFOR", AGENT_OBJECT: <tool>, FOR_PURPOSE: "measure", PATIENT: <propBeingMeasured>]
+
+	// CENTRALSW       KINDOF: a meter stick is a kind of tool for measuring length ; measuring distance     (1958-4336-80f2-90bd) [ HYPONYM:"meter stick", HYPERNYM:"tool", FOR_PURPOSE:"measure length;measure distance" ]
+	//        HINTROW a tape measure is a kind of tool for measuring distance ; measuring length     (89ff-54de-77cf-9d13) [ HYPONYM:"tape measure", HYPERNYM:"tool", FOR_PURPOSE:"measure distance;measure length" ]
+	//        HINTROW a ruler is a kind of tool for measuring length     (a429-ec06-2e2a-f6f9) [ HYPONYM:"ruler", HYPERNYM:"tool", FOR_PURPOSE:"measure length" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <meter_0>+<stick_1>, HYPERNYM: "tool", FOR_PURPOSE: "measure"+<distance_2>] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <tool>, FOR_PURPOSE: "measure"+<propBeingMeasured>]
+
+
+	// CENTRAL         REQUIRES: determining often requires measuring ; observing     (fc75-dfcd-e46e-e318) [ ACTION1:"determine", QUANTIFIER:"often", VERB_REQUIRES:"require", ACTION2:"measure;observe" ]    
+    // Also often used as lexical glue
+	//row autoRow11 = [UUID:"fc75-dfcd-e46e-e318", ACTION1: "determine", QUANTIFIER: "often", VERB_REQUIRES: "require", ACTION2: "measure"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"fc75-dfcd-e46e-e318", ACTION1: "determine", QUANTIFIER: "often", VERB_REQUIRES: "require", ACTION2: "measure"]
+
+	// LEXGLUE         SYNONYMY: instrument means tool     (a0d5-68ec-fccc-fd82) [ X1:"instrument", X2:"tool" ]
+	//row autoRow7 = [UUID:"a0d5-68ec-fccc-fd82", X1: "instrument", X2: "tool"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"a0d5-68ec-fccc-fd82", X1: "instrument", X2: "tool"]
+
+endinferencepattern
+
+
+inferencepattern MAT_MEAS_MeasurementProperties
+	// Plain text description
+	description = "Properties of objects and how they're measured"
+
+
+	// Requirements
+
+	// Row Definitions
+
+
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: long means great in length     (b416-cff8-0999-48a9) [ THING:"long", VALUE:"great", ATTRIBUTE:"length" ]
+	//        HINTROW longest means greatest in length     (4c40-fb3b-92a4-0c8d) [ THING:"long", VALUE:"great", ATTRIBUTE:"length" ]
+	//        HINTROW shortest means least ; smallest in length     (e288-5cf7-f60d-4e8d) [ THING:"short", VALUE:"little;small", ATTRIBUTE:"length" ]
+	//row autoRow3 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "long", ATTRIBUTE: "length"] //OVER-CONSTR.
+	row *autoRow3 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "long", ATTRIBUTE: <propBeingMeasured>]
+
+	// GROUNDING       KINDOF: a room is a kind of object     (260e-fab8-c411-4312) [ HYPONYM:"room", HYPERNYM:"object" ]
+	//        HINTROW a box is a kind of object     (1d87-b214-3eab-4a4e) [ HYPONYM:"box", HYPERNYM:"object" ]
+	//        HINTROW a leaf is a kind of object     (08e0-810a-daa2-5a48) [ HYPONYM:"leaf", HYPERNYM:"object" ]
+	//        HINTROW a road is a kind of object     (3234-2820-f7a1-4074) [ HYPONYM:"road", HYPERNYM:"object" ]
+	//  Notes: Grounding (Specific object being measured)
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+    // Enumerates a lot
+	//## row autoRow4 = [TABLE:"KINDOF", HYPONYM: <objName>, HYPERNYM: "object"]
+
+	// CENTRAL         MEASUREMENTS: height is a measure of length from the top of an object to the bottom of an object     (833b-2c13-d01b-2ac2) [ MEASURE:"height", QUANTITY_ADJ:"measure of", ATTRIBUTE:"length", FROM:"from top of object", TO:"bottom of object" ]
+	//row autoRow5 = [UUID:"833b-2c13-d01b-2ac2", MEASURE: "height", QUANTITY_ADJ: "measure of", ATTRIBUTE: "length", FROM: "from top of object", TO: "bottom of object"] //OVER-CONSTR.
+    // Covered with generic (autoRow6)
+	//row autoRow5 = [UUID:"833b-2c13-d01b-2ac2", MEASURE: "height", QUANTITY_ADJ: "measure of", ATTRIBUTE: "length", FROM: "from top of object", TO: "bottom of object"]
+
+	// CENTRAL         MEASUREMENTS: length is a measure of distance from one end of an object to the other end of that object     (067d-1aca-bec2-8141) [ MEASURE:"length", QUANTITY_ADJ:"measure of", ATTRIBUTE:"distance", FROM:"from one end of object", TO:"other end of object" ]
+	//row autoRow6 = [UUID:"067d-1aca-bec2-8141", MEASURE: "length", QUANTITY_ADJ: "measure of", ATTRIBUTE: <distance_2>, FROM: "from one end of object", TO: "other end of object"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"MEASUREMENTS", MEASURE: <propName>, QUANTITY_ADJ: "measure of", ATTRIBUTE: <propBeingMeasured>]  //##, FROM: "from one end of object", TO: "other end of object"]
+
+
+
+	// CENTRAL         PROP-GENERIC: height is a property of the size of an object     (bb6d-ca48-eef1-5996) [ X:"height", Y:"size of object" ]
+	//row autoRow7 = [UUID:"bb6d-ca48-eef1-5996", X: "height", Y: "size of object"] //OVER-CONSTR.
+	row autoRow7 = [TABLE:"PROP-GENERIC", X: <propName>, Y: ~"object"]
+
+	// CENTRAL         PROP-GENERIC: length is a property of the shape of an object     (0969-6f9e-9555-9731) [ X:"length", Y:"shape of object" ]
+	//  Notes: Core
+	//row autoRow8 = [UUID:"0969-6f9e-9555-9731", X: "length", Y: "shape of object"] //OVER-CONSTR.
+    // Covered with generic (autoRow7)
+	//row autoRow8 = [UUID:"0969-6f9e-9555-9731", X: "length", Y: "shape of object"]
+
+	// CENTRAL         MEASUREMENTS: distance moved ; distance travelled is a measure of how far an object moves     (27bc-337b-3807-6f55) [ MEASURE:"distance move;distance travel", QUANTITY_ADJ:"measure of", ATTRIBUTE:"far", AGENT:"object", ACTION:"move" ]
+	//row autoRow9 = [UUID:"27bc-337b-3807-6f55", MEASURE: <distance_2>+"move", QUANTITY_ADJ: "measure of", ATTRIBUTE: "far", AGENT: "object", ACTION: "move"] //OVER-CONSTR.
+    // Covered with generic (autoRow6)
+	//row autoRow9 = [UUID:"27bc-337b-3807-6f55", MEASURE: <distance_2>+"move", QUANTITY_ADJ: "measure of", ATTRIBUTE: "far", AGENT: "object", ACTION: "move"]
+
+	// CENTRAL         PARTOF: length is a part of size     (21f2-7587-e5e3-e55c) [ PART:"length", WHOLE:"size" ]
+	//row autoRow10 = [UUID:"21f2-7587-e5e3-e55c", PART: "length", WHOLE: "size"] //OVER-CONSTR.
+	//row autoRow10 = [UUID:"21f2-7587-e5e3-e55c", PART: "length", WHOLE: "size"]
+
+
+endinferencepattern

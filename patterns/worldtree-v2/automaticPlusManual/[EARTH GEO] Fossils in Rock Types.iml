@@ -1,0 +1,69 @@
+// Automatically converted pattern
+inferencepattern EARTH_GEO_Fossils_in_Rock_Types
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       AFFORDANCES: bones can be fossilized into sedimentary rocks     (be85-b6d7-4551-e367) [ ACTOR_THING:"bone", VERB:"fossil", SCOPE:"into sedimentary rock" ]
+	//        HINTROW shells can be fossilized into sedimentary rocks     (1a41-935d-4805-2d9d) [ ACTOR_THING:"shell", VERB:"fossil", SCOPE:"into sedimentary rock" ]
+	//        HINTROW plants can be fossilized into sedimentary rocks     (13b2-7c5c-4c6a-1d52) [ ACTOR_THING:"plant", VERB:"fossil", SCOPE:"into sedimentary rock" ]
+	//row autoRow0 = [TABLE:"AFFORDANCES", VERB: "fossil", SCOPE: "into sedimentary rock"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"AFFORDANCES", VERB: "fossil", SCOPE: "into sedimentary rock"]
+
+	// GROUNDING       KINDOF: a shell is a kind of fossil     (b1d2-660c-6f63-cfd8) [ HYPONYM:"shell", HYPERNYM:"fossil" ]
+	//        HINTROW petrified plants are a kind of fossil     (7916-084c-2de8-d7d5) [ HYPONYM:"petrify plant", HYPERNYM:"fossil" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "fossil"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "fossil"]
+
+	// GROUNDING       KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//        HINTROW a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "organism"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if a sedimentary rock with fossils is changed into another class of rocks , then the fossils will likely be destroyed     (1a3c-40e8-0cfd-a83b) [ THING:"sedimentary rock", SCOPE1A:"with fossil", ACTION1:"be change into", OBJECT_PATIENT1:"class of rock", ACTOR_AGENT_PROCESS2:"fossil", ACTION3:"destroy" ]
+	//row *autoRow3 = [UUID:"1a3c-40e8-0cfd-a83b", THING: "sedimentary rock", SCOPE1A: "with fossil", ACTION1: "be change into", OBJECT_PATIENT1: "class of rock", ACTOR_AGENT_PROCESS2: "fossil", ACTION3: "destroy"] //OVER-CONSTR.
+	row *autoRow3 = [UUID:"1a3c-40e8-0cfd-a83b", THING: "sedimentary rock", SCOPE1A: "with fossil", ACTION1: "be change into", OBJECT_PATIENT1: "class of rock", ACTOR_AGENT_PROCESS2: "fossil", ACTION3: "destroy"]
+
+	// CENTRAL         FORMEDBY: fossils are formed when layers of sediment cover the remains of organisms over time     (b0d4-928e-e799-54a6) [ OBJECT:"fossil", AGENT_PROCESS:"layer of sediment", VERB:"cover", PATIENT:"remain of organism", SCOPE:"over time" ]
+	//row autoRow4 = [UUID:"b0d4-928e-e799-54a6", OBJECT: "fossil", AGENT_PROCESS: "layer of sediment", VERB: "cover", PATIENT: "remain of organism", SCOPE: "over time"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"b0d4-928e-e799-54a6", OBJECT: "fossil", AGENT_PROCESS: "layer of sediment", VERB: "cover", PATIENT: "remain of organism", SCOPE: "over time"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if fossils are destroyed in rock transition , then there will be gaps in the fossil record     (f62e-d7df-de5b-8cfb) [ THING:"fossil", ACTION1:"be destroy", SCOPE1B:"in rock transition", OBJECT_PROPERTY3:"gap", SCOPE4:"in fossil record" ]
+	//row *autoRow5 = [UUID:"f62e-d7df-de5b-8cfb", THING: "fossil", ACTION1: "be destroy", SCOPE1B: "in rock transition", OBJECT_PROPERTY3: "gap", SCOPE4: "in fossil record"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"f62e-d7df-de5b-8cfb", THING: "fossil", ACTION1: "be destroy", SCOPE1B: "in rock transition", OBJECT_PROPERTY3: "gap", SCOPE4: "in fossil record"]
+
+	// CENTRAL         LOCATIONS: nearly all fossils are found in sedimentary rock     (c734-55b0-6cf4-c9d9) [ QUANTIFIER:"nearly", THING_PROCESS:"fossil", LOCATION:"sedimentary rock" ]
+	//row autoRow6 = [UUID:"c734-55b0-6cf4-c9d9", QUANTIFIER: "nearly", THING_PROCESS: "fossil", LOCATION: "sedimentary rock"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"c734-55b0-6cf4-c9d9", QUANTIFIER: "nearly", THING_PROCESS: "fossil", LOCATION: "sedimentary rock"]
+
+	// CENTRAL         AFFORDANCES: organisms can be preserved in sedimentary rock     (198d-4495-e5b7-1477) [ ACTOR_THING:"organism", VERB:"preserve", PATIENT:"in sedimentary rock" ]
+	//row autoRow7 = [UUID:"198d-4495-e5b7-1477", ACTOR_THING: "organism", VERB: "preserve", PATIENT: "in sedimentary rock"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"198d-4495-e5b7-1477", ACTOR_THING: "organism", VERB: "preserve", PATIENT: "in sedimentary rock"]
+
+	// CENTRAL         KINDOF: organic sedimentary is a kind of sedimentary rock     (ceb2-353a-145d-2491) [ HYPONYM:"organic sedimentary", HYPERNYM:"sedimentary rock" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"ceb2-353a-145d-2491", HYPONYM: "organic sedimentary", HYPERNYM: "sedimentary rock"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"ceb2-353a-145d-2491", HYPONYM: "organic sedimentary", HYPERNYM: "sedimentary rock"]
+
+	// CENTRAL         KINDOF: sedimentary rock is a kind of rock     (68cb-62b0-32a3-30e2) [ HYPONYM:"sedimentary rock", HYPERNYM:"rock" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"68cb-62b0-32a3-30e2", HYPONYM: "sedimentary rock", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"68cb-62b0-32a3-30e2", HYPONYM: "sedimentary rock", HYPERNYM: "rock"]
+
+	// CENTRAL         FORMEDBY: organic sedimentary is formed by the remains of organims and sediments compressed together     (a73d-1e73-83e0-424d) [ OBJECT:"organic sedimentary", AGENT_PROCESS:"remain of organim sediment", VERB:"compress together" ]
+	//row autoRow10 = [UUID:"a73d-1e73-83e0-424d", OBJECT: "organic sedimentary", AGENT_PROCESS: "remain of organim sediment", VERB: "compress together"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"a73d-1e73-83e0-424d", OBJECT: "organic sedimentary", AGENT_PROCESS: "remain of organim sediment", VERB: "compress together"]
+
+	// LEXGLUE         SYNONYMY: fossil means preserved remains of ancient organisms     (c527-3fa0-13ee-6b34) [ X1:"fossil", X2:"preserve remain of ancient organism" ]
+	//row autoRow11 = [UUID:"c527-3fa0-13ee-6b34", X1: "fossil", X2: "preserve remain of ancient organism"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"c527-3fa0-13ee-6b34", X1: "fossil", X2: "preserve remain of ancient organism"]
+
+	// LEXGLUE         SYNONYMY: remains is similar to dead organisms     (0163-db99-2818-250a) [ X1:"remain", X2:"dead organism" ]
+	//row autoRow12 = [UUID:"0163-db99-2818-250a", X1: "remain", X2: "dead organism"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"0163-db99-2818-250a", X1: "remain", X2: "dead organism"]
+
+endinferencepattern

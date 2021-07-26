@@ -1,0 +1,52 @@
+// Automatically converted pattern
+inferencepattern ENG_DEVICES_Electrical_to_Heat
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a hand dryer is a kind of electrical device for drying hair     (2728-2bde-6c00-9dd0) [ HYPONYM:"hand dry", HYPERNYM:"electric device", FOR_PURPOSE:"dry hair" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "hand dry", HYPERNYM: "electric device", FOR_PURPOSE: "dry hair"] //OVER-CONSTR.
+	row *autoRow0 = [TABLE:"KINDOF", HYPONYM: <deviceName>, HYPERNYM: "electric device"]
+
+    // Core
+
+	// CENTRAL         CHANGE: energy transformation means one kind of energy changes into another kind of energy     (3d34-b43e-8a7e-07fd) [ PROCESS_NAME:"energy transformation", ACTOR_WHO:"one kind of energy", VERB:"change", INTO:"kind of energy" ]
+	//row autoRow1 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"]
+
+	// CENTRAL         CHANGE: electrical devices convert from electrical energy ; electricity into other forms of energy     (5e4d-6ae2-e556-9200) [ ACTOR_WHO:"electric device", VERB:"convert", FROM:"electric energy;electric", INTO:"other form of energy" ]
+	//row autoRow2 = [UUID:"5e4d-6ae2-e556-9200", ACTOR_WHO: "electric device", VERB: "convert", FROM: "electric energy", INTO: "other form of energy"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"5e4d-6ae2-e556-9200", ACTOR_WHO: "electric device", VERB: "convert", FROM: "electric energy", INTO: "other form of energy"]
+
+	// CENTRAL       KINDOF: electrical energy is a kind of energy     (b5ca-9f64-d6d6-6783) [ HYPONYM:"electric energy", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow5 = [TABLE:"KINDOF", HYPONYM: "electric energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"b5ca-9f64-d6d6-6783", HYPONYM: "electric energy", HYPERNYM: "energy"]
+    
+
+	// LEXGLUE         SYNONYMY: electricity means electrical energy     (5657-c6bc-e6cd-ae38) [ X1:"electric", X2:"electric energy" ]
+	//row autoRow7 = [UUID:"5657-c6bc-e6cd-ae38", X1: "electric", X2: "electric energy"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"5657-c6bc-e6cd-ae38", X1: "electric", X2: "electric energy"]
+
+endinferencepattern
+
+
+inferencepattern ThingOrDeviceProducesEnergyType
+	// GROUNDING       KINDOF: a hand dryer is a kind of electrical device for drying hair     (2728-2bde-6c00-9dd0) [ HYPONYM:"hand dry", HYPERNYM:"electric device", FOR_PURPOSE:"dry hair" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "hand dry", HYPERNYM: "electric device", FOR_PURPOSE: "dry hair"] //OVER-CONSTR.
+	row *autoRow0 = [TABLE:"KINDOF", HYPONYM: <deviceName>, HYPERNYM: "electric device"]
+
+	// GROUNDING      (OPTIONAL) SOURCEOF: a hand dryer produces heat     (2e43-a74f-bca2-5d7f) [ AGENT:"hand dry", VERB_SOURCEOF_PROVIDE_ETC:"produce", WHAT_IT_PROVIDES:"heat" ]
+	//row *autoRow4 = [TABLE:"SOURCEOF", AGENT: "hand dry", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "heat"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"SOURCEOF", AGENT: <deviceName>, WHAT_IT_PROVIDES: <energyKind>]
+
+	// GROUNDING       KINDOF: heat is a kind of energy     (9e7d-986e-6af1-5ac1) [ HYPONYM:"heat", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow6 = [TABLE:"KINDOF", HYPONYM: "heat", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPONYM: <energyKind>, HYPERNYM: ~"energy"]
+
+endinferencepattern

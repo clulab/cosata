@@ -1,0 +1,53 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_React_to_Enviroment_Change
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-GENERIC: temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot     (4084-f2bc-52cf-0f74) [ X:"temperature;heat energy", Y:"object;weather", ORDERED_UNORDERED:"order", VALUES:"cold;cool;warm;hot" ]
+	//        HINTROW temperature is a property of weather     (950c-7489-5659-db44) [ X:"temperature", Y:"weather" ]
+	//row autoRow0 = [TABLE:"PROP-GENERIC", X: "heat"+*"POS:NN", VALUES: "cold"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-GENERIC", X: "heat"+*"POS:NN"]
+
+	// CENTRALSW       PERCEPTIONS: to a human a air ; environment temperature of -450 F to 32 F is considered very cold     (1cda-9709-e82c-ee90) [ THING:"human", SCOPE:"air;environment", X:"temperature", LOWER:"-450;450", UNITS1:"f", UPPER:"32", UNITS2:"f", MAGNITUDE:"very", VALUE:"cold" ]
+	//        HINTROW to a human a air ; environment temperature of 32 F to 50 F is considered cold     (6532-8ea6-ce14-1b62) [ THING:"human", SCOPE:"air;environment", X:"temperature", LOWER:"32", UNITS1:"f", UPPER:"50", UNITS2:"f", VALUE:"cold" ]
+	//row autoRow1 = [TABLE:"PERCEPTIONS", THING: "human", SCOPE: "air", X: "temperature", UNITS1: "f", UNITS2: "f", VALUE: "cold"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PERCEPTIONS", THING: "human", SCOPE: "air", X: "temperature", UNITS1: "f", UNITS2: "f", VALUE: "cold"]
+
+	// GROUNDING       KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "human", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "human", HYPERNYM: "animal"]
+
+	// CENTRAL         IFTHEN: if the environmental temperature ; air temperature is too cold then an animal ; a living thing in that environment may become cold     (2460-c937-4e53-293a) [ THING:"environment temperature;air temperature", ADJ_QUANTITY1A:"too", OBJECT_PROPERTY1:"cold", ACTOR_AGENT_PROCESS2:"animal;live thing", PROPERTY_SCOPE:"in that environment", OBJECT_PROPERTY3:"cold" ]
+	//row autoRow3 = [UUID:"2460-c937-4e53-293a", THING: "environment temperature", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "live thing", PROPERTY_SCOPE: "in that environment", OBJECT_PROPERTY3: "cold"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"2460-c937-4e53-293a", THING: "environment temperature", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "live thing", PROPERTY_SCOPE: "in that environment", OBJECT_PROPERTY3: "cold"]
+
+	// CENTRAL         ACTION: shivering is when an animal creates heat by shaking to keep the body warm     (3b42-d1e1-9cb2-7b6b) [ DEFINITION_NAME:"shiver", AGENT_OBJECT:"animal", ACTION2:"create", OBJECT_PROPERTY:"heat", HOW:"shake", FOR_PURPOSE:"keep body warm" ]
+	//row autoRow4 = [UUID:"3b42-d1e1-9cb2-7b6b", DEFINITION_NAME: "shiver", AGENT_OBJECT: "animal", ACTION2: "create", OBJECT_PROPERTY: "heat", HOW: "shake", FOR_PURPOSE: "keep body warm"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3b42-d1e1-9cb2-7b6b", DEFINITION_NAME: "shiver", AGENT_OBJECT: "animal", ACTION2: "create", OBJECT_PROPERTY: "heat", HOW: "shake", FOR_PURPOSE: "keep body warm"]
+
+	// CENTRAL         REQUIRES: an animal usually requires a warm body temperature for survival     (b08a-c1bc-23ee-1815) [ OBJECT_AGENT_PROCESS:"animal", QUANTIFIER:"usually", VERB_REQUIRES:"require", OBJECT:"warm body temperature", FOR_PURPOSE:"survive" ]
+	//row autoRow5 = [UUID:"b08a-c1bc-23ee-1815", OBJECT_AGENT_PROCESS: "animal", QUANTIFIER: "usually", VERB_REQUIRES: "require", OBJECT: "warm body temperature", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"b08a-c1bc-23ee-1815", OBJECT_AGENT_PROCESS: "animal", QUANTIFIER: "usually", VERB_REQUIRES: "require", OBJECT: "warm body temperature", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         CAUSE: cold temperatures ; cool temperatures cause animals to shiver     (34e8-e10d-e464-de1f) [ CONDITION_AGENT_OBJECT:"cold temperature;cool temperature", RESULT_AGENT:"animal", RESULT_VERB:"shiver" ]
+	//row autoRow6 = [UUID:"34e8-e10d-e464-de1f", CONDITION_AGENT_OBJECT: "cold temperature", RESULT_AGENT: "animal", RESULT_VERB: "shiver"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"34e8-e10d-e464-de1f", CONDITION_AGENT_OBJECT: "cold temperature", RESULT_AGENT: "animal", RESULT_VERB: "shiver"]
+
+	// CENTRAL         CHANGE-VEC: cooling ; colder means removing ; reducing ; decreasing heat ; temperature     (3a9b-81b5-1a3a-40a0) [ PROCESS_NAME_ACTION:"cool;cold", DIRECTION:"remove;reduce;decrease", PATIENT:"heat;temperature" ]
+	//row autoRow7 = [UUID:"3a9b-81b5-1a3a-40a0", PROCESS_NAME_ACTION: "cool", DIRECTION: "remove", PATIENT: "heat"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3a9b-81b5-1a3a-40a0", PROCESS_NAME_ACTION: "cool", DIRECTION: "remove", PATIENT: "heat"]
+
+	// CENTRAL         IFTHEN: if a living thing becomes too cold then that living thing will die     (d662-f8eb-acab-099f) [ THING:"live thing", ACTION1:"become", ADJ_QUANTITY1A:"too", OBJECT_PROPERTY1:"cold", ACTOR_AGENT_PROCESS2:"that live thing", ACTION3:"die" ]
+	//row autoRow8 = [UUID:"d662-f8eb-acab-099f", THING: "live thing", ACTION1: "become", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "that live thing", ACTION3: "die"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"d662-f8eb-acab-099f", THING: "live thing", ACTION1: "become", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "that live thing", ACTION3: "die"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//row autoRow9 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+endinferencepattern

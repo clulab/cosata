@@ -1,0 +1,80 @@
+// Automatically converted pattern
+inferencepattern ENG_POTENTIALKINETIC_Potential_to_Kinetic_Energy
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as an object moves down , potential energy will decrease     (7b1d-3e19-a611-e427) [ AGENT_ATTRIBUTE1:"object", ACTION1:"move", QUANTITY_MEASURE2:"potential energy", CHANGE2:"decrease" ]
+	//        HINTROW as an object falls , the potential energy of that object will decrease     (cd70-98b0-e230-deaf) [ AGENT_ATTRIBUTE1:"object", CHANGE1:"fall", QUANTITY_MEASURE2:"potential energy", AGENT_ATTRIBUTE2:"of object", CHANGE2:"decrease" ]
+	//row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", AGENT_ATTRIBUTE1: "object", ACTION1: "move", QUANTITY_MEASURE2: "potential energy", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", AGENT_ATTRIBUTE1: "object", QUANTITY_MEASURE2: "potential energy", CHANGE2: "decrease"]
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as the mass of an object increases , the potential energy of that object will increase     (2c99-ccff-7520-2b6e) [ QUANTITY_MEASURE1:"mass of", AGENT_ATTRIBUTE1:"object", CHANGE1:"increase", QUANTITY_MEASURE2:"potential energy of", AGENT_ATTRIBUTE2:"object", CHANGE2:"increase" ]
+	//        HINTROW as the altitude of an object increases , the potential energy of the object will increase     (8b15-345a-c7ea-b574) [ QUANTITY_MEASURE1:"altitude of", AGENT_ATTRIBUTE1:"object", CHANGE1:"increase", QUANTITY_MEASURE2:"potential energy of", AGENT_ATTRIBUTE2:"object", CHANGE2:"increase" ]
+	//row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: *"POS:NN"+"of", AGENT_ATTRIBUTE1: "object", CHANGE1: "increase", QUANTITY_MEASURE2: "potential energy of", AGENT_ATTRIBUTE2: "object", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: *"POS:NN"+"of", AGENT_ATTRIBUTE1: "object", CHANGE1: "increase", QUANTITY_MEASURE2: "potential energy of", AGENT_ATTRIBUTE2: "object", CHANGE2: "increase"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: higher means greater ; above in value ; amount ; number     (ecca-9a1d-3074-cd00) [ THING:"high", VALUE:"great;above", ATTRIBUTE:"value;amount;numb" ]
+	//        HINTROW high means great in altitude     (8887-e704-c02a-b51a) [ THING:"high", VALUE:"great", ATTRIBUTE:"altitude" ]
+	//        HINTROW highest means largest ; greatest ; most in height     (6ae1-28fc-3259-5aa5) [ THING:"high", VALUE:"large;great;much", ATTRIBUTE:"height" ]
+	//row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "high"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "high"]
+
+	// GROUNDING      (OPTIONAL) KINDOF: rolling down a ramp is a kind of rolling     (f35e-2be4-87bf-238b) [ HYPONYM:"roll ramp", HYPERNYM:"roll" ]
+	//row *autoRow3 = [TABLE:"KINDOF", HYPONYM: "roll ramp", HYPERNYM: "roll"] //OVER-CONSTR.
+	row *autoRow3 = [TABLE:"KINDOF", HYPONYM: "roll ramp", HYPERNYM: "roll"]
+
+	// GROUNDING       KINDOF: a car is a kind of object     (fe6e-84fa-d289-aee9) [ HYPONYM:"car", HYPERNYM:"object" ]
+	//        HINTROW a ball is a kind of object     (5650-b213-46ea-d9dd) [ HYPONYM:"ball", HYPERNYM:"object" ]
+	//        HINTROW a toy car is a kind of object     (4f86-9f32-f5ab-f744) [ HYPONYM:"toy car", HYPERNYM:"object" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: a hill is a kind of incline     (216c-2f7f-3079-549b) [ HYPONYM:"hill", HYPERNYM:"incline" ]
+	//        HINTROW a ramp is a kind of object     (d99b-5382-b496-b2fd) [ HYPONYM:"ramp", HYPERNYM:"object" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow5 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow5 = [TABLE:"KINDOF"]
+
+	// CENTRAL         IFTHEN: if an object is at rest at the top of an incline then that object 's mechanical energy is all potential     (ad33-3f86-c065-6d55) [ THING:"object", ADJ_QUANTITY1A:"at rest", SCOPE1B:"at top of incline", ACTOR_AGENT_PROCESS2:"object", PROPERTY_SCOPE:"mechanical energy", ADJ_QUANTIFIER3:"potential" ]
+	//row autoRow6 = [UUID:"ad33-3f86-c065-6d55", THING: "object", ADJ_QUANTITY1A: "at rest", SCOPE1B: "at top of incline", ACTOR_AGENT_PROCESS2: "object", PROPERTY_SCOPE: "mechanical energy", ADJ_QUANTIFIER3: "potential"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"ad33-3f86-c065-6d55", THING: "object", ADJ_QUANTITY1A: "at rest", SCOPE1B: "at top of incline", ACTOR_AGENT_PROCESS2: "object", PROPERTY_SCOPE: "mechanical energy", ADJ_QUANTIFIER3: "potential"]
+
+	// CENTRAL         ACTION: mechanical energy of a system includes the sum of kinetic energy and potential energy in the system     (e019-f493-9bac-5187) [ AGENT_OBJECT:"mechanical energy of system", ACTION2:"include", OBJECT_PROPERTY:"sum of kinetic energy potential energy", WHEN_WHERE:"in system" ]
+	//row autoRow7 = [UUID:"e019-f493-9bac-5187", AGENT_OBJECT: "mechanical energy of system", ACTION2: "include", OBJECT_PROPERTY: "sum of kinetic energy potential energy", WHEN_WHERE: "in system"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"e019-f493-9bac-5187", AGENT_OBJECT: "mechanical energy of system", ACTION2: "include", OBJECT_PROPERTY: "sum of kinetic energy potential energy", WHEN_WHERE: "in system"]
+
+	// CENTRAL         CHANGE: moving changes potential energy ; stored energy into kinetic energy and heat energy     (48d9-21f5-7bf4-c99e) [ ACTOR_WHO:"move", VERB:"change", FROM:"potential energy;store energy", INTO:"kinetic energy heat energy" ]
+	//row autoRow8 = [UUID:"48d9-21f5-7bf4-c99e", ACTOR_WHO: "move", VERB: "change", FROM: "potential energy", INTO: "kinetic energy heat energy"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"48d9-21f5-7bf4-c99e", ACTOR_WHO: "move", VERB: "change", FROM: "potential energy", INTO: "kinetic energy heat energy"]
+
+	// CENTRAL         CHANGE: stopping a moving object changes kinetic energy into potential energy     (afa2-2d9f-9435-0d36) [ PROCESS_NAME:"stop move object", VERB:"change", FROM:"kinetic energy", INTO:"potential energy" ]
+	//row autoRow9 = [UUID:"afa2-2d9f-9435-0d36", PROCESS_NAME: "stop move object", VERB: "change", FROM: "kinetic energy", INTO: "potential energy"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"afa2-2d9f-9435-0d36", PROCESS_NAME: "stop move object", VERB: "change", FROM: "kinetic energy", INTO: "potential energy"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the height of a dropped object increases , that object will fall for longer     (37dc-716f-80a0-0aa9) [ QUANTITY_MEASURE1:"height", AGENT_ATTRIBUTE1:"of drop object", CHANGE1:"increase", AGENT_ATTRIBUTE2:"object", ACTION2:"fall for", CHANGE2:"long" ]
+	//row autoRow10 = [UUID:"37dc-716f-80a0-0aa9", QUANTITY_MEASURE1: "height", AGENT_ATTRIBUTE1: "of drop object", CHANGE1: "increase", AGENT_ATTRIBUTE2: "object", ACTION2: "fall for", CHANGE2: "long"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"37dc-716f-80a0-0aa9", QUANTITY_MEASURE1: "height", AGENT_ATTRIBUTE1: "of drop object", CHANGE1: "increase", AGENT_ATTRIBUTE2: "object", ACTION2: "fall for", CHANGE2: "long"]
+
+	// CENTRAL         CHANGE: horizontal change of motion do not change the potential energy of an object     (80e4-a719-2ea2-3624) [ ACTOR_WHO:"horizontal change", QUANTIFIER_SCOPE:"of move", QUALIFIER:"do not", VERB:"change", WHAT:"potential energy", SCOPE:"of object" ]
+	//row autoRow11 = [UUID:"80e4-a719-2ea2-3624", ACTOR_WHO: "horizontal change", QUANTIFIER_SCOPE: "of move", QUALIFIER: "do not", VERB: "change", WHAT: "potential energy", SCOPE: "of object"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"80e4-a719-2ea2-3624", ACTOR_WHO: "horizontal change", QUANTIFIER_SCOPE: "of move", QUALIFIER: "do not", VERB: "change", WHAT: "potential energy", SCOPE: "of object"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as kinetic energy increases , the potential energy will decrease     (83a6-a1ca-cb77-fc0a) [ QUANTITY_MEASURE1:"kinetic energy", CHANGE1:"increase", QUANTITY_MEASURE2:"potential energy", CHANGE2:"decrease" ]
+	//row autoRow12 = [UUID:"83a6-a1ca-cb77-fc0a", QUANTITY_MEASURE1: "kinetic energy", CHANGE1: "increase", QUANTITY_MEASURE2: "potential energy", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"83a6-a1ca-cb77-fc0a", QUANTITY_MEASURE1: "kinetic energy", CHANGE1: "increase", QUANTITY_MEASURE2: "potential energy", CHANGE2: "decrease"]
+
+	// LEXGLUE         SYNONYMY: rolling down is similar to falling     (0478-b243-e592-8add) [ ACTION1:"roll", ACTION2:"fall" ]
+	//row autoRow13 = [UUID:"0478-b243-e592-8add", ACTION1: "roll", ACTION2: "fall"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"0478-b243-e592-8add", ACTION1: "roll", ACTION2: "fall"]
+
+	// LEXGLUE         SYNONYMY: inclined means sloping     (e97b-b975-daf9-dfc2) [ X1:"incline", X2:"slope" ]
+	//row autoRow14 = [UUID:"e97b-b975-daf9-dfc2", X1: "incline", X2: "slope"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"e97b-b975-daf9-dfc2", X1: "incline", X2: "slope"]
+
+endinferencepattern

@@ -1,0 +1,76 @@
+// Automatically converted pattern
+inferencepattern CEL_FEATURES_Definition_Sun
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         SOURCEOF: nuclear fusion in a star 's core generates energy for stars to burn ; shine     (07c6-6564-4fda-1489) [ AGENT:"nuclear fusion", OBJECT_PATIENT:"in star core", VERB_SOURCEOF_PROVIDE_ETC:"generate", WHAT_IT_PROVIDES:"energy", AGENT_IT_PROVIDES_THING_TO:"star", FOR_PURPOSE:"burn;shine" ]
+	//  Notes: 8311-5fc6-4f54-102c->07c6-6564-4fda-1489
+	//row autoRow0 = [UUID:"07c6-6564-4fda-1489", AGENT: "nuclear fusion", OBJECT_PATIENT: "in star core", VERB_SOURCEOF_PROVIDE_ETC: "generate", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "star", FOR_PURPOSE: "burn"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"07c6-6564-4fda-1489", AGENT: "nuclear fusion", OBJECT_PATIENT: "in star core", VERB_SOURCEOF_PROVIDE_ETC: "generate", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "star", FOR_PURPOSE: "burn"]
+
+	// CENTRAL         LOCATIONS: the Sun is located near the edge of the Milky Way Galaxy     (ad66-c566-2728-864f) [ THING_PROCESS:"sun", LOCATION:"near edge", SCOPE:"of milky way galaxy" ]
+	//row autoRow1 = [UUID:"ad66-c566-2728-864f", THING_PROCESS: "sun", LOCATION: "near edge", SCOPE: "of milky way galaxy"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"ad66-c566-2728-864f", THING_PROCESS: "sun", LOCATION: "near edge", SCOPE: "of milky way galaxy"]
+
+	// CENTRAL         SOURCEOF: a star is a source of light ; light energy through nuclear reactions     (d567-d49e-293e-95bf) [ AGENT:"star", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"light;light energy", BY_THROUGH_HOW:"nuclear reaction" ]
+	//row autoRow2 = [UUID:"d567-d49e-293e-95bf", AGENT: "star", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "light energy", BY_THROUGH_HOW: "nuclear reaction"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"d567-d49e-293e-95bf", AGENT: "star", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "light energy", BY_THROUGH_HOW: "nuclear reaction"]
+
+	// CENTRAL         LOCATIONS: nuclear fusion happens in the core of a star     (04ec-17a2-1dcb-c393) [ THING_PROCESS:"nuclear fusion", LOCATION:"core", SCOPE:"of star" ]
+	//  Notes: 4dd2-91f0-c684-e29b->04ec-17a2-1dcb-c393
+	//row autoRow3 = [UUID:"04ec-17a2-1dcb-c393", THING_PROCESS: "nuclear fusion", LOCATION: "core", SCOPE: "of star"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"04ec-17a2-1dcb-c393", THING_PROCESS: "nuclear fusion", LOCATION: "core", SCOPE: "of star"]
+
+	// CENTRAL         PROP-THINGS: the sun is average in size for a star in our galaxy     (c463-e7fe-1eeb-840d) [ THING:"sun", VALUE:"average", ATTRIBUTE:"in size", SCOPE_RELATIVETO:"for star in galaxy" ]
+	//  Notes: properties of the sun
+	//row autoRow4 = [UUID:"c463-e7fe-1eeb-840d", THING: "sun", VALUE: "average", ATTRIBUTE: "in size", SCOPE_RELATIVETO: "for star in galaxy"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"c463-e7fe-1eeb-840d", THING: "sun", VALUE: "average", ATTRIBUTE: "in size", SCOPE_RELATIVETO: "for star in galaxy"]
+
+	// CENTRAL         PROP-THINGS: the sun is average in temperature for a star in our galaxy     (3530-0fd9-f523-ac33) [ THING:"sun", VALUE:"average", ATTRIBUTE:"in temperature", SCOPE_RELATIVETO:"for star in galaxy" ]
+	//  Notes: properties of the sun
+	//row autoRow5 = [UUID:"3530-0fd9-f523-ac33", THING: "sun", VALUE: "average", ATTRIBUTE: "in temperature", SCOPE_RELATIVETO: "for star in galaxy"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"3530-0fd9-f523-ac33", THING: "sun", VALUE: "average", ATTRIBUTE: "in temperature", SCOPE_RELATIVETO: "for star in galaxy"]
+
+	// CENTRAL         LOCATIONS: our Sun is located at the center of our solar system     (8d34-3a25-f54d-9185) [ THING_PROCESS:"sun", LOCATION:"center", SCOPE:"of solar system" ]
+	//row autoRow6 = [UUID:"8d34-3a25-f54d-9185", THING_PROCESS: "sun", LOCATION: "center", SCOPE: "of solar system"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"8d34-3a25-f54d-9185", THING_PROCESS: "sun", LOCATION: "center", SCOPE: "of solar system"]
+
+	// CENTRAL         KINDOF: nuclear fusion is a kind of nuclear reaction     (bf6e-59c8-a896-c3cb) [ HYPONYM:"nuclear fusion", SCOPE1:"nuclear", HYPERNYM:"react" ]
+	//  Notes: peripheral central
+	//row autoRow7 = [UUID:"bf6e-59c8-a896-c3cb", HYPONYM: "nuclear fusion", SCOPE1: "nuclear", HYPERNYM: "react"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"bf6e-59c8-a896-c3cb", HYPONYM: "nuclear fusion", SCOPE1: "nuclear", HYPERNYM: "react"]
+
+	// CENTRAL         KINDOF: the Sun is a kind of star     (af26-8083-b908-7d3b) [ HYPONYM:"sun", HYPERNYM:"star" ]
+	//  Notes: peripheral central
+	//row autoRow8 = [UUID:"af26-8083-b908-7d3b", HYPONYM: "sun", HYPERNYM: "star"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"af26-8083-b908-7d3b", HYPONYM: "sun", HYPERNYM: "star"]
+
+	// CENTRAL         CHANGE: nuclear fusion converts hydrogen into helium     (be6c-78e9-7762-22e3) [ PROCESS_NAME:"nuclear fusion", VERB:"convert", FROM:"hydrogen", INTO:"helium" ]
+	//  Notes: 9918-37ee-ef72-cd4a->be6c-78e9-7762-22e3
+	//row autoRow9 = [UUID:"be6c-78e9-7762-22e3", PROCESS_NAME: "nuclear fusion", VERB: "convert", FROM: "hydrogen", INTO: "helium"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"be6c-78e9-7762-22e3", PROCESS_NAME: "nuclear fusion", VERB: "convert", FROM: "hydrogen", INTO: "helium"]
+
+	// CENTRAL         COMPARISON: the Sun is the largest celestial body in the solar system     (13af-148e-6de8-60de) [ THING:"sun", ACTION1:"be", COMPARISON:"large", WHAT:"celestial body", SCOPE2:"in solar system" ]
+	//row autoRow10 = [UUID:"13af-148e-6de8-60de", THING: "sun", ACTION1: "be", COMPARISON: "large", WHAT: "celestial body", SCOPE2: "in solar system"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"13af-148e-6de8-60de", THING: "sun", ACTION1: "be", COMPARISON: "large", WHAT: "celestial body", SCOPE2: "in solar system"]
+
+	// CENTRAL         PROP-THINGS: main-sequence stars are generally yellow in color     (c88f-1e14-3187-b5cc) [ THING:"main-sequence star;main sequence star", QUALIFIER2:"generally", VALUE:"yellow", ATTRIBUTE:"in color" ]
+	//row autoRow11 = [UUID:"c88f-1e14-3187-b5cc", THING: "main sequence star", QUALIFIER2: "generally", VALUE: "yellow", ATTRIBUTE: "in color"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"c88f-1e14-3187-b5cc", THING: "main sequence star", QUALIFIER2: "generally", VALUE: "yellow", ATTRIBUTE: "in color"]
+
+	// CENTRAL         KINDOF: the sun is a kind of yellow dwarf     (9a65-934e-c26e-f453) [ HYPONYM:"sun", HYPERNYM:"yellow dwarf" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"9a65-934e-c26e-f453", HYPONYM: "sun", HYPERNYM: "yellow dwarf"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"9a65-934e-c26e-f453", HYPONYM: "sun", HYPERNYM: "yellow dwarf"]
+
+	// CENTRAL         KINDOF: a yellow dwarf is a kind of main-sequence star     (452a-f8c6-36f5-dadc) [ HYPONYM:"yellow dwarf", HYPERNYM:"main-sequence star;main sequence star" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"452a-f8c6-36f5-dadc", HYPONYM: "yellow dwarf", HYPERNYM: "main sequence star"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"452a-f8c6-36f5-dadc", HYPONYM: "yellow dwarf", HYPERNYM: "main sequence star"]
+
+endinferencepattern

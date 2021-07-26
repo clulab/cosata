@@ -1,0 +1,504 @@
+{"patternMatches": [
+{
+	"patternName":"ENG_LIGHT_Light_Reflects_more_off_shiny_things",
+	"matches":[
+		{
+		"uuids": ["264f-5a85-6765-8c90","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","4a90-d4de-70aa-2e38","b913-a040-66e7-599a","c272-f462-6ab4-8499","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "264f-5a85-6765-8c90", "rowText": "reflection is when light is reflected from one object ; one place to another object ; another place", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "4a90-d4de-70aa-2e38", "rowText": "a mirror reflects light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b913-a040-66e7-599a", "rowText": "a mirror is used for reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "c272-f462-6ab4-8499", "rowText": "an image in a mirror is formed by reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		},
+		{
+		"uuids": ["48d0-c4ad-8ef9-5fd2","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","4a90-d4de-70aa-2e38","b913-a040-66e7-599a","c272-f462-6ab4-8499","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48d0-c4ad-8ef9-5fd2", "rowText": "reflection is when particles bounce off a surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "4a90-d4de-70aa-2e38", "rowText": "a mirror reflects light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b913-a040-66e7-599a", "rowText": "a mirror is used for reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "c272-f462-6ab4-8499", "rowText": "an image in a mirror is formed by reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		},
+		{
+		"uuids": ["264f-5a85-6765-8c90","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","4a90-d4de-70aa-2e38","b913-a040-66e7-599a","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "264f-5a85-6765-8c90", "rowText": "reflection is when light is reflected from one object ; one place to another object ; another place", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "4a90-d4de-70aa-2e38", "rowText": "a mirror reflects light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b913-a040-66e7-599a", "rowText": "a mirror is used for reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		},
+		{
+		"uuids": ["264f-5a85-6765-8c90","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","4a90-d4de-70aa-2e38","c272-f462-6ab4-8499","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "264f-5a85-6765-8c90", "rowText": "reflection is when light is reflected from one object ; one place to another object ; another place", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "4a90-d4de-70aa-2e38", "rowText": "a mirror reflects light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "c272-f462-6ab4-8499", "rowText": "an image in a mirror is formed by reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		},
+		{
+		"uuids": ["264f-5a85-6765-8c90","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","b913-a040-66e7-599a","c272-f462-6ab4-8499","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "264f-5a85-6765-8c90", "rowText": "reflection is when light is reflected from one object ; one place to another object ; another place", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b913-a040-66e7-599a", "rowText": "a mirror is used for reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "c272-f462-6ab4-8499", "rowText": "an image in a mirror is formed by reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		},
+		{
+		"uuids": ["48d0-c4ad-8ef9-5fd2","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","4a90-d4de-70aa-2e38","b913-a040-66e7-599a","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48d0-c4ad-8ef9-5fd2", "rowText": "reflection is when particles bounce off a surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "4a90-d4de-70aa-2e38", "rowText": "a mirror reflects light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b913-a040-66e7-599a", "rowText": "a mirror is used for reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		},
+		{
+		"uuids": ["48d0-c4ad-8ef9-5fd2","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","4a90-d4de-70aa-2e38","c272-f462-6ab4-8499","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48d0-c4ad-8ef9-5fd2", "rowText": "reflection is when particles bounce off a surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "4a90-d4de-70aa-2e38", "rowText": "a mirror reflects light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "c272-f462-6ab4-8499", "rowText": "an image in a mirror is formed by reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		},
+		{
+		"uuids": ["48d0-c4ad-8ef9-5fd2","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","b913-a040-66e7-599a","c272-f462-6ab4-8499","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48d0-c4ad-8ef9-5fd2", "rowText": "reflection is when particles bounce off a surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b913-a040-66e7-599a", "rowText": "a mirror is used for reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "c272-f462-6ab4-8499", "rowText": "an image in a mirror is formed by reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		},
+		{
+		"uuids": ["264f-5a85-6765-8c90","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","4a90-d4de-70aa-2e38","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "264f-5a85-6765-8c90", "rowText": "reflection is when light is reflected from one object ; one place to another object ; another place", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "4a90-d4de-70aa-2e38", "rowText": "a mirror reflects light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		},
+		{
+		"uuids": ["264f-5a85-6765-8c90","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","b913-a040-66e7-599a","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "264f-5a85-6765-8c90", "rowText": "reflection is when light is reflected from one object ; one place to another object ; another place", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b913-a040-66e7-599a", "rowText": "a mirror is used for reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		},
+		{
+		"uuids": ["264f-5a85-6765-8c90","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","c272-f462-6ab4-8499","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "264f-5a85-6765-8c90", "rowText": "reflection is when light is reflected from one object ; one place to another object ; another place", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "c272-f462-6ab4-8499", "rowText": "an image in a mirror is formed by reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		},
+		{
+		"uuids": ["48d0-c4ad-8ef9-5fd2","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","4a90-d4de-70aa-2e38","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48d0-c4ad-8ef9-5fd2", "rowText": "reflection is when particles bounce off a surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "4a90-d4de-70aa-2e38", "rowText": "a mirror reflects light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		},
+		{
+		"uuids": ["48d0-c4ad-8ef9-5fd2","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","b913-a040-66e7-599a","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48d0-c4ad-8ef9-5fd2", "rowText": "reflection is when particles bounce off a surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b913-a040-66e7-599a", "rowText": "a mirror is used for reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		},
+		{
+		"uuids": ["48d0-c4ad-8ef9-5fd2","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","c272-f462-6ab4-8499","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48d0-c4ad-8ef9-5fd2", "rowText": "reflection is when particles bounce off a surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "c272-f462-6ab4-8499", "rowText": "an image in a mirror is formed by reflecting light", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		},
+		{
+		"uuids": ["264f-5a85-6765-8c90","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "264f-5a85-6765-8c90", "rowText": "reflection is when light is reflected from one object ; one place to another object ; another place", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		},
+		{
+		"uuids": ["48d0-c4ad-8ef9-5fd2","6bcb-607b-500c-ba61","4478-dd94-9b15-a346","733b-ce8a-669c-e222","c2d6-e332-6199-27ac","e47e-e5e2-c6d2-61ed","ae74-32dc-4291-fb82","bf46-dc46-bf5c-abf5","fdba-70d0-fcc6-e529","2827-1a44-52ad-a63e","7830-1dcb-42c6-d8dc","39ca-a831-8d1a-babd","5c9f-a48a-692d-9500","a6d5-5b11-21f7-80bd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48d0-c4ad-8ef9-5fd2", "rowText": "reflection is when particles bounce off a surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6bcb-607b-500c-ba61", "rowText": "a mirror is reflective in opacity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4478-dd94-9b15-a346", "rowText": "a mirror is a kind of reflective object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "733b-ce8a-669c-e222", "rowText": "a mirror has a shiny surface", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c2d6-e332-6199-27ac", "rowText": "reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e47e-e5e2-c6d2-61ed", "rowText": "eyes are used for seeing by animals by sensing light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ae74-32dc-4291-fb82", "rowText": "if an object reflects light toward the eye then that object can be seen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bf46-dc46-bf5c-abf5", "rowText": "when light hits a reflective object , that light bounces off that object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "fdba-70d0-fcc6-e529", "rowText": "eyes can sense ; detect light energy for seeing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "2827-1a44-52ad-a63e", "rowText": "shiny things ; objects reflect light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "39ca-a831-8d1a-babd", "rowText": "sight is a kind of sense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "5c9f-a48a-692d-9500", "rowText": "metallic is similar to shiny", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "a6d5-5b11-21f7-80bd", "rowText": "sight means to see", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"mirror_0", "value":"mirror" }
+		]
+		}
+	]
+}
+]}
+

@@ -1,0 +1,200 @@
+{"patternMatches": [
+{
+	"patternName":"CEL_FEATURES_Definition_Galaxies",
+	"matches":[
+		{
+		"uuids": ["ca02-f295-6df6-5ba8","220e-8d69-4cdf-e5e8","dd3b-8dac-b4d6-5fcf","dcf5-2c9e-ba31-2aa0","0cdb-c505-1f4b-ac80","dbe8-e776-f804-99a0","493c-13ce-92fc-2017","f1cc-21ec-dccb-baab","6700-1965-7952-abf5","9427-406a-f63a-c3ee","e086-0708-980e-b339","3e18-eada-4a5f-aeef"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ca02-f295-6df6-5ba8", "rowText": "a galaxy contains dusts ; stars ; planets", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "220e-8d69-4cdf-e5e8", "rowText": "a galaxy is made of stars", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "dd3b-8dac-b4d6-5fcf", "rowText": "a galaxy is a kind of very large system of stars", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "dcf5-2c9e-ba31-2aa0", "rowText": "the Milky Way is a kind of spiral galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0cdb-c505-1f4b-ac80", "rowText": "a spiral galaxy is a kind of galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "dbe8-e776-f804-99a0", "rowText": "a star is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "493c-13ce-92fc-2017", "rowText": "spiral is a kind of shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "f1cc-21ec-dccb-baab", "rowText": "a galaxy is held together by gravity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "6700-1965-7952-abf5", "rowText": "a halo is a part of a galaxy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9427-406a-f63a-c3ee", "rowText": "galaxies can be classified by shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e086-0708-980e-b339", "rowText": "a halo contains mostly old stars", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3e18-eada-4a5f-aeef", "rowText": "composed of means made of", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"spiral_0", "value":"spiral" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"spiral_0", "value":"spiral" }
+		]
+		},
+		{
+		"uuids": ["ca02-f295-6df6-5ba8","220e-8d69-4cdf-e5e8","b4db-2e88-d470-81a1","dcf5-2c9e-ba31-2aa0","0cdb-c505-1f4b-ac80","dbe8-e776-f804-99a0","493c-13ce-92fc-2017","f1cc-21ec-dccb-baab","6700-1965-7952-abf5","9427-406a-f63a-c3ee","e086-0708-980e-b339","3e18-eada-4a5f-aeef"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ca02-f295-6df6-5ba8", "rowText": "a galaxy contains dusts ; stars ; planets", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "220e-8d69-4cdf-e5e8", "rowText": "a galaxy is made of stars", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "b4db-2e88-d470-81a1", "rowText": "a galaxy is a kind of celestial body ; celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "dcf5-2c9e-ba31-2aa0", "rowText": "the Milky Way is a kind of spiral galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0cdb-c505-1f4b-ac80", "rowText": "a spiral galaxy is a kind of galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "dbe8-e776-f804-99a0", "rowText": "a star is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "493c-13ce-92fc-2017", "rowText": "spiral is a kind of shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "f1cc-21ec-dccb-baab", "rowText": "a galaxy is held together by gravity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "6700-1965-7952-abf5", "rowText": "a halo is a part of a galaxy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9427-406a-f63a-c3ee", "rowText": "galaxies can be classified by shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e086-0708-980e-b339", "rowText": "a halo contains mostly old stars", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3e18-eada-4a5f-aeef", "rowText": "composed of means made of", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"spiral_0", "value":"spiral" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"spiral_0", "value":"spiral" }
+		]
+		},
+		{
+		"uuids": ["ca02-f295-6df6-5ba8","220e-8d69-4cdf-e5e8","3149-bd8c-a93d-9ea8","dcf5-2c9e-ba31-2aa0","0cdb-c505-1f4b-ac80","dbe8-e776-f804-99a0","493c-13ce-92fc-2017","f1cc-21ec-dccb-baab","6700-1965-7952-abf5","9427-406a-f63a-c3ee","e086-0708-980e-b339","3e18-eada-4a5f-aeef"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ca02-f295-6df6-5ba8", "rowText": "a galaxy contains dusts ; stars ; planets", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "220e-8d69-4cdf-e5e8", "rowText": "a galaxy is made of stars", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "3149-bd8c-a93d-9ea8", "rowText": "a galaxy is a kind of structure", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "dcf5-2c9e-ba31-2aa0", "rowText": "the Milky Way is a kind of spiral galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0cdb-c505-1f4b-ac80", "rowText": "a spiral galaxy is a kind of galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "dbe8-e776-f804-99a0", "rowText": "a star is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "493c-13ce-92fc-2017", "rowText": "spiral is a kind of shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "f1cc-21ec-dccb-baab", "rowText": "a galaxy is held together by gravity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "6700-1965-7952-abf5", "rowText": "a halo is a part of a galaxy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9427-406a-f63a-c3ee", "rowText": "galaxies can be classified by shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e086-0708-980e-b339", "rowText": "a halo contains mostly old stars", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3e18-eada-4a5f-aeef", "rowText": "composed of means made of", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"spiral_0", "value":"spiral" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"spiral_0", "value":"spiral" }
+		]
+		},
+		{
+		"uuids": ["ca02-f295-6df6-5ba8","220e-8d69-4cdf-e5e8","TEMPGEN-54009","dcf5-2c9e-ba31-2aa0","0cdb-c505-1f4b-ac80","dbe8-e776-f804-99a0","493c-13ce-92fc-2017","f1cc-21ec-dccb-baab","6700-1965-7952-abf5","9427-406a-f63a-c3ee","e086-0708-980e-b339","3e18-eada-4a5f-aeef"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ca02-f295-6df6-5ba8", "rowText": "a galaxy contains dusts ; stars ; planets", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "220e-8d69-4cdf-e5e8", "rowText": "a galaxy is made of stars", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "TEMPGEN-54009", "rowText": "galaxy is a kind of feature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "dcf5-2c9e-ba31-2aa0", "rowText": "the Milky Way is a kind of spiral galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0cdb-c505-1f4b-ac80", "rowText": "a spiral galaxy is a kind of galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "dbe8-e776-f804-99a0", "rowText": "a star is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "493c-13ce-92fc-2017", "rowText": "spiral is a kind of shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "f1cc-21ec-dccb-baab", "rowText": "a galaxy is held together by gravity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "6700-1965-7952-abf5", "rowText": "a halo is a part of a galaxy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9427-406a-f63a-c3ee", "rowText": "galaxies can be classified by shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e086-0708-980e-b339", "rowText": "a halo contains mostly old stars", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3e18-eada-4a5f-aeef", "rowText": "composed of means made of", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"spiral_0", "value":"spiral" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"spiral_0", "value":"spiral" }
+		]
+		},
+		{
+		"uuids": ["ca02-f295-6df6-5ba8","220e-8d69-4cdf-e5e8","dd3b-8dac-b4d6-5fcf","dcf5-2c9e-ba31-2aa0","0cdb-c505-1f4b-ac80","493c-13ce-92fc-2017","f1cc-21ec-dccb-baab","6700-1965-7952-abf5","9427-406a-f63a-c3ee","e086-0708-980e-b339","3e18-eada-4a5f-aeef"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ca02-f295-6df6-5ba8", "rowText": "a galaxy contains dusts ; stars ; planets", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "220e-8d69-4cdf-e5e8", "rowText": "a galaxy is made of stars", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "dd3b-8dac-b4d6-5fcf", "rowText": "a galaxy is a kind of very large system of stars", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "dcf5-2c9e-ba31-2aa0", "rowText": "the Milky Way is a kind of spiral galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0cdb-c505-1f4b-ac80", "rowText": "a spiral galaxy is a kind of galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "493c-13ce-92fc-2017", "rowText": "spiral is a kind of shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "f1cc-21ec-dccb-baab", "rowText": "a galaxy is held together by gravity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "6700-1965-7952-abf5", "rowText": "a halo is a part of a galaxy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9427-406a-f63a-c3ee", "rowText": "galaxies can be classified by shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e086-0708-980e-b339", "rowText": "a halo contains mostly old stars", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3e18-eada-4a5f-aeef", "rowText": "composed of means made of", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"spiral_0", "value":"spiral" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"spiral_0", "value":"spiral" }
+		]
+		},
+		{
+		"uuids": ["ca02-f295-6df6-5ba8","220e-8d69-4cdf-e5e8","b4db-2e88-d470-81a1","dcf5-2c9e-ba31-2aa0","0cdb-c505-1f4b-ac80","493c-13ce-92fc-2017","f1cc-21ec-dccb-baab","6700-1965-7952-abf5","9427-406a-f63a-c3ee","e086-0708-980e-b339","3e18-eada-4a5f-aeef"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ca02-f295-6df6-5ba8", "rowText": "a galaxy contains dusts ; stars ; planets", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "220e-8d69-4cdf-e5e8", "rowText": "a galaxy is made of stars", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "b4db-2e88-d470-81a1", "rowText": "a galaxy is a kind of celestial body ; celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "dcf5-2c9e-ba31-2aa0", "rowText": "the Milky Way is a kind of spiral galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0cdb-c505-1f4b-ac80", "rowText": "a spiral galaxy is a kind of galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "493c-13ce-92fc-2017", "rowText": "spiral is a kind of shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "f1cc-21ec-dccb-baab", "rowText": "a galaxy is held together by gravity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "6700-1965-7952-abf5", "rowText": "a halo is a part of a galaxy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9427-406a-f63a-c3ee", "rowText": "galaxies can be classified by shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e086-0708-980e-b339", "rowText": "a halo contains mostly old stars", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3e18-eada-4a5f-aeef", "rowText": "composed of means made of", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"spiral_0", "value":"spiral" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"spiral_0", "value":"spiral" }
+		]
+		},
+		{
+		"uuids": ["ca02-f295-6df6-5ba8","220e-8d69-4cdf-e5e8","3149-bd8c-a93d-9ea8","dcf5-2c9e-ba31-2aa0","0cdb-c505-1f4b-ac80","493c-13ce-92fc-2017","f1cc-21ec-dccb-baab","6700-1965-7952-abf5","9427-406a-f63a-c3ee","e086-0708-980e-b339","3e18-eada-4a5f-aeef"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ca02-f295-6df6-5ba8", "rowText": "a galaxy contains dusts ; stars ; planets", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "220e-8d69-4cdf-e5e8", "rowText": "a galaxy is made of stars", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "3149-bd8c-a93d-9ea8", "rowText": "a galaxy is a kind of structure", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "dcf5-2c9e-ba31-2aa0", "rowText": "the Milky Way is a kind of spiral galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0cdb-c505-1f4b-ac80", "rowText": "a spiral galaxy is a kind of galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "493c-13ce-92fc-2017", "rowText": "spiral is a kind of shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "f1cc-21ec-dccb-baab", "rowText": "a galaxy is held together by gravity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "6700-1965-7952-abf5", "rowText": "a halo is a part of a galaxy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9427-406a-f63a-c3ee", "rowText": "galaxies can be classified by shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e086-0708-980e-b339", "rowText": "a halo contains mostly old stars", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3e18-eada-4a5f-aeef", "rowText": "composed of means made of", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"spiral_0", "value":"spiral" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"spiral_0", "value":"spiral" }
+		]
+		},
+		{
+		"uuids": ["ca02-f295-6df6-5ba8","220e-8d69-4cdf-e5e8","TEMPGEN-54009","dcf5-2c9e-ba31-2aa0","0cdb-c505-1f4b-ac80","493c-13ce-92fc-2017","f1cc-21ec-dccb-baab","6700-1965-7952-abf5","9427-406a-f63a-c3ee","e086-0708-980e-b339","3e18-eada-4a5f-aeef"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ca02-f295-6df6-5ba8", "rowText": "a galaxy contains dusts ; stars ; planets", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "220e-8d69-4cdf-e5e8", "rowText": "a galaxy is made of stars", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "TEMPGEN-54009", "rowText": "galaxy is a kind of feature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "dcf5-2c9e-ba31-2aa0", "rowText": "the Milky Way is a kind of spiral galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0cdb-c505-1f4b-ac80", "rowText": "a spiral galaxy is a kind of galaxy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "493c-13ce-92fc-2017", "rowText": "spiral is a kind of shape", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "f1cc-21ec-dccb-baab", "rowText": "a galaxy is held together by gravity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "6700-1965-7952-abf5", "rowText": "a halo is a part of a galaxy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9427-406a-f63a-c3ee", "rowText": "galaxies can be classified by shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e086-0708-980e-b339", "rowText": "a halo contains mostly old stars", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3e18-eada-4a5f-aeef", "rowText": "composed of means made of", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"spiral_0", "value":"spiral" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"spiral_0", "value":"spiral" }
+		]
+		}
+	]
+}
+]}
+

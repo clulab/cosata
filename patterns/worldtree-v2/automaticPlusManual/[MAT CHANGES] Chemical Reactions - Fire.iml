@@ -1,0 +1,58 @@
+// Automatically converted pattern
+inferencepattern MAT_CHANGES_Chemical_Reactions_Fire
+
+	// Plain text description
+	description = "optional rows are prepared for question such as 'how to identify oxygen'"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CAUSE: lighting a candle causes that candle to burn     (615c-9023-3957-0501) [ CONDITION_VERB:"light", CONDITION_PATIENT:"candle", RESULT_AGENT:"that candle", RESULT_VERB:"burn" ]
+	//        HINTROW lighting a match causes that match to burn     (6566-d617-944b-130c) [ CONDITION_VERB:"light", CONDITION_PATIENT:"match", RESULT_AGENT:"that match", RESULT_VERB:"burn" ]
+	//row autoRow0 = [TABLE:"CAUSE", CONDITION_VERB: "light", RESULT_AGENT: "that"+*"POS:NN", RESULT_VERB: "burn"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CAUSE", CONDITION_VERB: "light", RESULT_AGENT: "that"+*"POS:NN", RESULT_VERB: "burn"]
+
+	// GROUNDING       ACTION: wood burns     (1cee-5a44-7f15-d8c5) [ AGENT_OBJECT:"wood", ACTION2:"burn" ]
+	//        HINTROW dry wood easily burns     (50c2-119a-8445-c8b7) [ ADJ:"spin-dry", AGENT_OBJECT:"wood", QUANITIFIER:"easy", ACTION2:"burn" ]
+	//        HINTROW paper burns     (7aff-2493-b367-3958) [ AGENT_OBJECT:"paper", ACTION2:"burn" ]
+	//row autoRow1 = [TABLE:"ACTION", ACTION2: "burn"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"ACTION", ACTION2: "burn"]
+
+	// CENTRAL         REQUIRES: a fire requires oxygen to burn     (204f-bd48-cf69-828a) [ OBJECT_AGENT_PROCESS:"fire", VERB_REQUIRES:"require", OBJECT:"oxygen", FOR_PURPOSE:"burn" ]
+	//row autoRow2 = [UUID:"204f-bd48-cf69-828a", OBJECT_AGENT_PROCESS: "fire", VERB_REQUIRES: "require", OBJECT: "oxygen", FOR_PURPOSE: "burn"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"204f-bd48-cf69-828a", OBJECT_AGENT_PROCESS: "fire", VERB_REQUIRES: "require", OBJECT: "oxygen", FOR_PURPOSE: "burn"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the amount of oxygen exposed to a fire increases the fire will burn longer     (7b9c-c856-86f0-f11e) [ QUANTITY_MEASURE1:"amount of", AGENT_ATTRIBUTE1:"oxygen", ACTION1:"expose", PATIENT1:"fire", CHANGE1:"increase", AGENT_ATTRIBUTE2:"fire", ACTION2:"burn", CHANGE2:"long" ]
+	//row autoRow3 = [UUID:"7b9c-c856-86f0-f11e", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "oxygen", ACTION1: "expose", PATIENT1: "fire", CHANGE1: "increase", AGENT_ATTRIBUTE2: "fire", ACTION2: "burn", CHANGE2: "long"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"7b9c-c856-86f0-f11e", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "oxygen", ACTION1: "expose", PATIENT1: "fire", CHANGE1: "increase", AGENT_ATTRIBUTE2: "fire", ACTION2: "burn", CHANGE2: "long"]
+
+	// CENTRAL         KINDOF: fire is a kind of chemical reaction     (6cf1-9d92-5a26-93fd) [ HYPONYM:"fire", HYPERNYM:"chemical react" ]
+	//row autoRow4 = [UUID:"6cf1-9d92-5a26-93fd", HYPONYM: "fire", HYPERNYM: "chemical react"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"6cf1-9d92-5a26-93fd", HYPONYM: "fire", HYPERNYM: "chemical react"]
+
+	// CENTRAL         PARTOF: a flame are a part of a fire     (bccb-923d-9495-c7af) [ PART:"flame", WHOLE:"fire" ]
+	//row autoRow5 = [UUID:"bccb-923d-9495-c7af", PART: "flame", WHOLE: "fire"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"bccb-923d-9495-c7af", PART: "flame", WHOLE: "fire"]
+
+	// CENTRAL         CAUSE: fire causes burning     (4dc5-13bf-3c46-af74) [ CONDITION_AGENT_OBJECT:"fire", RESULT_VERB:"burn" ]
+	//row autoRow6 = [UUID:"4dc5-13bf-3c46-af74", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "burn"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4dc5-13bf-3c46-af74", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "burn"]
+
+	// CENTRAL         SOURCEOF: fire gives off light ; heat ; smoke     (891f-4f5c-91a2-bd31) [ AGENT:"fire", VERB_SOURCEOF_PROVIDE_ETC:"give", WHAT_IT_PROVIDES:"light;heat;smoke" ]
+	//row autoRow7 = [UUID:"891f-4f5c-91a2-bd31", AGENT: "fire", VERB_SOURCEOF_PROVIDE_ETC: "give", WHAT_IT_PROVIDES: "light"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"891f-4f5c-91a2-bd31", AGENT: "fire", VERB_SOURCEOF_PROVIDE_ETC: "give", WHAT_IT_PROVIDES: "light"]
+
+	// CENTRAL        (OPTIONAL) USEDFOR: a glowing splint can be used for identifying a gas     (d4d7-5043-c289-bcf0) [ ACTION:"glow", AGENT_OBJECT:"splint", QUALIFIER:"be", FOR_PURPOSE:"identify", PATIENT:"gas" ]
+	//row *autoRow8 = [UUID:"d4d7-5043-c289-bcf0", ACTION: "glow", AGENT_OBJECT: "splint", QUALIFIER: "be", FOR_PURPOSE: "identify", PATIENT: "gas"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"d4d7-5043-c289-bcf0", ACTION: "glow", AGENT_OBJECT: "splint", QUALIFIER: "be", FOR_PURPOSE: "identify", PATIENT: "gas"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: oxygen can cause a glowing splint to burst into flame     (f283-05a6-5573-1d12) [ CONDITION_AGENT_OBJECT:"oxygen", RESULT_AGENT:"glow splint", RESULT_VERB:"burst into flame" ]
+	//row *autoRow9 = [UUID:"f283-05a6-5573-1d12", CONDITION_AGENT_OBJECT: "oxygen", RESULT_AGENT: "glow splint", RESULT_VERB: "burst into flame"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"f283-05a6-5573-1d12", CONDITION_AGENT_OBJECT: "oxygen", RESULT_AGENT: "glow splint", RESULT_VERB: "burst into flame"]
+
+	// CENTRAL        (OPTIONAL) ACTION: putting out a fire stops the burning of that fire     (2f15-1978-bedd-7e41) [ ACTION1:"putt", AGENT_OBJECT:"fire", ACTION2:"stop", OBJECT_PROPERTY:"burn", SCOPE2:"of fire" ]
+	//row *autoRow10 = [UUID:"2f15-1978-bedd-7e41", ACTION1: "putt", AGENT_OBJECT: "fire", ACTION2: "stop", OBJECT_PROPERTY: "burn", SCOPE2: "of fire"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"2f15-1978-bedd-7e41", ACTION1: "putt", AGENT_OBJECT: "fire", ACTION2: "stop", OBJECT_PROPERTY: "burn", SCOPE2: "of fire"]
+
+endinferencepattern

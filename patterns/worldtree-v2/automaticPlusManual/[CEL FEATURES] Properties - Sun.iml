@@ -1,0 +1,62 @@
+// Automatically converted pattern
+inferencepattern CEL_FEATURES_Properties_Sun
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         PROP-GENERIC: temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot     (4084-f2bc-52cf-0f74) [ X:"temperature;heat energy", Y:"object;weather", ORDERED_UNORDERED:"order", VALUES:"cold;cool;warm;hot" ]
+	//row autoRow0 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"]
+
+	// CENTRAL         PROP-GENERIC: size is a property of objects and includes ordered values of microscopic ; tiny ; small ; medium ; large     (02eb-d26b-a00c-c559) [ X:"size", Y:"object", ORDERED_UNORDERED:"order", VALUES:"microscopic;tiny;small;medium;large" ]
+	//row autoRow1 = [UUID:"02eb-d26b-a00c-c559", X: "size", Y: "object", ORDERED_UNORDERED: "order", VALUES: "microscopic"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"02eb-d26b-a00c-c559", X: "size", Y: "object", ORDERED_UNORDERED: "order", VALUES: "microscopic"]
+
+	// CENTRAL         PROP-THINGS: the sun is average in size for a star in our galaxy     (c463-e7fe-1eeb-840d) [ THING:"sun", VALUE:"average", ATTRIBUTE:"in size", SCOPE_RELATIVETO:"for star in galaxy" ]
+	//row autoRow2 = [UUID:"c463-e7fe-1eeb-840d", THING: "sun", VALUE: "average", ATTRIBUTE: "in size", SCOPE_RELATIVETO: "for star in galaxy"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"c463-e7fe-1eeb-840d", THING: "sun", VALUE: "average", ATTRIBUTE: "in size", SCOPE_RELATIVETO: "for star in galaxy"]
+
+	// CENTRAL         PROP-THINGS: the sun is average in temperature for a star in our galaxy     (3530-0fd9-f523-ac33) [ THING:"sun", VALUE:"average", ATTRIBUTE:"in temperature", SCOPE_RELATIVETO:"for star in galaxy" ]
+	//row autoRow3 = [UUID:"3530-0fd9-f523-ac33", THING: "sun", VALUE: "average", ATTRIBUTE: "in temperature", SCOPE_RELATIVETO: "for star in galaxy"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"3530-0fd9-f523-ac33", THING: "sun", VALUE: "average", ATTRIBUTE: "in temperature", SCOPE_RELATIVETO: "for star in galaxy"]
+
+	// CENTRAL         PROP-THINGS: main-sequence stars are generally yellow in color     (c88f-1e14-3187-b5cc) [ THING:"main-sequence star;main sequence star", QUALIFIER2:"generally", VALUE:"yellow", ATTRIBUTE:"in color" ]
+	//  Notes: the color of the Sun
+	//row autoRow4 = [UUID:"c88f-1e14-3187-b5cc", THING: "main sequence star", QUALIFIER2: "generally", VALUE: "yellow", ATTRIBUTE: "in color"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"c88f-1e14-3187-b5cc", THING: "main sequence star", QUALIFIER2: "generally", VALUE: "yellow", ATTRIBUTE: "in color"]
+
+	// CENTRAL         AFFORDANCES: stars can be classified by temperature ; color ; chemical composition ; brightness     (942a-e7da-a555-3f97) [ ACTOR_THING:"star", VERB:"classify", BY_THROUGH_HOW:"temperature;color;chemical compose;brightness" ]
+	//row autoRow5 = [UUID:"942a-e7da-a555-3f97", ACTOR_THING: "star", VERB: "classify", BY_THROUGH_HOW: "chemical compose"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"942a-e7da-a555-3f97", ACTOR_THING: "star", VERB: "classify", BY_THROUGH_HOW: "chemical compose"]
+
+	// CENTRAL         KINDOF: a star is a kind of celestial object ; celestial body     (dbe8-e776-f804-99a0) [ HYPONYM:"star", HYPERNYM:"celestial object;celestial body" ]
+	//row autoRow6 = [UUID:"dbe8-e776-f804-99a0", HYPONYM: "star", HYPERNYM: "celestial object"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"dbe8-e776-f804-99a0", HYPONYM: "star", HYPERNYM: "celestial object"]
+
+	// CENTRAL         KINDOF: a yellow dwarf is a kind of main-sequence star     (452a-f8c6-36f5-dadc) [ HYPONYM:"yellow dwarf", HYPERNYM:"main-sequence star;main sequence star" ]
+	//row autoRow7 = [UUID:"452a-f8c6-36f5-dadc", HYPONYM: "yellow dwarf", HYPERNYM: "main sequence star"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"452a-f8c6-36f5-dadc", HYPONYM: "yellow dwarf", HYPERNYM: "main sequence star"]
+
+	// CENTRAL         KINDOF: the sun is a kind of yellow dwarf     (9a65-934e-c26e-f453) [ HYPONYM:"sun", HYPERNYM:"yellow dwarf" ]
+	//  Notes: the sun is X type of star
+	//row autoRow8 = [UUID:"9a65-934e-c26e-f453", HYPONYM: "sun", HYPERNYM: "yellow dwarf"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"9a65-934e-c26e-f453", HYPONYM: "sun", HYPERNYM: "yellow dwarf"]
+
+	// CENTRAL         PROP-GENERIC: color is a property of an object ; a material     (5c52-4f26-3883-a4ef) [ X:"color", Y:"object;material" ]
+	//row autoRow9 = [UUID:"5c52-4f26-3883-a4ef", X: "color", Y: "object"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"5c52-4f26-3883-a4ef", X: "color", Y: "object"]
+
+	// CENTRAL         KINDOF: the Sun is a kind of star     (af26-8083-b908-7d3b) [ HYPONYM:"sun", HYPERNYM:"star" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"af26-8083-b908-7d3b", HYPONYM: "sun", HYPERNYM: "star"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"af26-8083-b908-7d3b", HYPONYM: "sun", HYPERNYM: "star"]
+
+	// CENTRAL         AFFORDANCES: the properties of something can be used to identify ; used to describe that something     (8661-5700-67ef-4ac8) [ ACTOR_THING:"property", PROPERTY_OBJECT:"of something", VERB:"use identify;use describe", PATIENT:"that something" ]
+	//row autoRow11 = [UUID:"8661-5700-67ef-4ac8", ACTOR_THING: "property", PROPERTY_OBJECT: "of something", VERB: "use identify", PATIENT: "that something"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"8661-5700-67ef-4ac8", ACTOR_THING: "property", PROPERTY_OBJECT: "of something", VERB: "use identify", PATIENT: "that something"]
+
+endinferencepattern

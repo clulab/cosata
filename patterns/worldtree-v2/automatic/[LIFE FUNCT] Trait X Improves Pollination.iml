@@ -1,0 +1,83 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Trait_X_Improves_Pollination
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       PROP-ANIMAL-ATTRIB: A bird is a pollinating animal     (14de-6699-6b2e-a5d1) [ ANIMAL:"bird", VALUE:"pollinate" ]
+	//        HINTROW A bee is a pollinating animal     (2d4d-44be-d6a6-655f) [ ANIMAL:"bee", VALUE:"pollinate" ]
+	//        HINTROW An insect is a pollinating animal     (d57d-4cbb-11ee-2f47) [ ANIMAL:"insect", VALUE:"pollinate" ]
+	//row autoRow0 = [TABLE:"PROP-ANIMAL-ATTRIB", VALUE: "pollinate"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-ANIMAL-ATTRIB", VALUE: "pollinate"]
+
+	// GROUNDING       CONSUMERS-EATING: hummingbirds eat nectar     (a047-de39-c558-706a) [ ORGANISM1:"hummingbird", EATS_CONSUMES:"eat", ORGANISM2:"nectar" ]
+	//        HINTROW bees convert nectar into honey for food     (a6ad-5582-fb3b-6c50) [ ACTOR_WHO:"bee", VERB:"convert", FROM:"nectar", INTO:"honey", FOR_PURPOSE:"food" ]
+	//        HINTROW bees eat pollen     (de5e-63cc-6e02-60b7) [ ORGANISM1:"bee", EATS_CONSUMES:"eat", ORGANISM2:"pollen" ]
+	//        HINTROW bees eat honey     (cb75-fdec-6e2b-5a22) [ ORGANISM1:"bee", EATS_CONSUMES:"eat", ORGANISM2:"honey" ]
+	//  Notes: edcd-ed33-4439-04cb->a047-de39-c558-706a
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"CONSUMERS-EATING"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow1 = [TABLE:"CONSUMERS-EATING"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the number of pollinators attracted to a flower ; a plant increases , the ability of that flower ; of that plant to reproduce will increase     (9de6-eb30-5159-2eef) [ QUANTITY_MEASURE1:"numb", AGENT_ATTRIBUTE1:"of pollinator", ACTION1:"attract", PATIENT1:"flower;plant", CHANGE1:"increase", QUANTITY_MEASURE2:"ability", AGENT_ATTRIBUTE2:"of flower;of plant", ACTION2:"reproduce", CHANGE2:"increase" ]
+	//  Notes: why the plants need more pollinators
+	//row autoRow2 = [UUID:"9de6-eb30-5159-2eef", QUANTITY_MEASURE1: "numb", AGENT_ATTRIBUTE1: "of pollinator", ACTION1: "attract", PATIENT1: "flower", CHANGE1: "increase", QUANTITY_MEASURE2: "ability", AGENT_ATTRIBUTE2: "of flower", ACTION2: "reproduce", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"9de6-eb30-5159-2eef", QUANTITY_MEASURE1: "numb", AGENT_ATTRIBUTE1: "of pollinator", ACTION1: "attract", PATIENT1: "flower", CHANGE1: "increase", QUANTITY_MEASURE2: "ability", AGENT_ATTRIBUTE2: "of flower", ACTION2: "reproduce", CHANGE2: "increase"]
+
+	// CENTRAL         TRANSFER: pollination is when pollinating animals ; wind ; water carry pollen from one flower to another flower     (5900-59b1-bb87-4115) [ PROCESS_NAME:"pollination", ACTOR_WHO:"pollinate animal;wind;water", VERB:"carry", WHAT:"pollen", SOURCE:"one flower", DESTINATION:"flower" ]
+	//row autoRow3 = [UUID:"5900-59b1-bb87-4115", PROCESS_NAME: "pollination", ACTOR_WHO: "pollinate animal", VERB: "carry", WHAT: "pollen", SOURCE: "one flower", DESTINATION: "flower"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"5900-59b1-bb87-4115", PROCESS_NAME: "pollination", ACTOR_WHO: "pollinate animal", VERB: "carry", WHAT: "pollen", SOURCE: "one flower", DESTINATION: "flower"]
+
+	// CENTRAL         PROP-THINGS: a flower 's petals often are bright in color to attract pollinators     (f249-a34c-12c4-3aa1) [ ADJ:"flower", THING:"petal", QUALIFIER1:"often", VALUE:"bright", ATTRIBUTE:"in color", PURPOSE:"attract pollinator" ]
+	//  Notes: bright color attracts pollinators
+	//row autoRow4 = [UUID:"f249-a34c-12c4-3aa1", ADJ: "flower", THING: "petal", QUALIFIER1: "often", VALUE: "bright", ATTRIBUTE: "in color", PURPOSE: "attract pollinator"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"f249-a34c-12c4-3aa1", ADJ: "flower", THING: "petal", QUALIFIER1: "often", VALUE: "bright", ATTRIBUTE: "in color", PURPOSE: "attract pollinator"]
+
+	// CENTRAL         PARTOF: a flower is a part of a plant for attracting pollinators ; producing seeds     (d42a-e547-fdf9-9c35) [ PART:"flower", WHOLE:"plant", FOR_PURPOSE:"attract pollinator;produce seed" ]
+	//row autoRow5 = [UUID:"d42a-e547-fdf9-9c35", PART: "flower", WHOLE: "plant", FOR_PURPOSE: "attract pollinator"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"d42a-e547-fdf9-9c35", PART: "flower", WHOLE: "plant", FOR_PURPOSE: "attract pollinator"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the amount of fragrance of a flower increases , the number of pollinators it will attract increases     (eb0b-95a3-aff8-8642) [ QUANTITY_MEASURE1:"amount of fragrance", AGENT_ATTRIBUTE1:"of flower", CHANGE1:"increase", QUANTITY_MEASURE2:"numb", AGENT_ATTRIBUTE2:"of pollinator", ACTION2:"attract", CHANGE2:"increase" ]
+	//  Notes: fragrance attracts pollinators
+	//row autoRow6 = [UUID:"eb0b-95a3-aff8-8642", QUANTITY_MEASURE1: "amount of fragrance", AGENT_ATTRIBUTE1: "of flower", CHANGE1: "increase", QUANTITY_MEASURE2: "numb", AGENT_ATTRIBUTE2: "of pollinator", ACTION2: "attract", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"eb0b-95a3-aff8-8642", QUANTITY_MEASURE1: "amount of fragrance", AGENT_ATTRIBUTE1: "of flower", CHANGE1: "increase", QUANTITY_MEASURE2: "numb", AGENT_ATTRIBUTE2: "of pollinator", ACTION2: "attract", CHANGE2: "increase"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the size of a flower increases , the number of pollinators it will attract increases     (7216-d3cd-86c1-feb2) [ QUANTITY_MEASURE1:"size", AGENT_ATTRIBUTE1:"of flower", CHANGE1:"increase", QUANTITY_MEASURE2:"numb", AGENT_ATTRIBUTE2:"of pollinator", ACTION2:"attract", CHANGE2:"increase" ]
+	//  Notes: bigger flower attracts pollinators
+	//row autoRow7 = [UUID:"7216-d3cd-86c1-feb2", QUANTITY_MEASURE1: "size", AGENT_ATTRIBUTE1: "of flower", CHANGE1: "increase", QUANTITY_MEASURE2: "numb", AGENT_ATTRIBUTE2: "of pollinator", ACTION2: "attract", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"7216-d3cd-86c1-feb2", QUANTITY_MEASURE1: "size", AGENT_ATTRIBUTE1: "of flower", CHANGE1: "increase", QUANTITY_MEASURE2: "numb", AGENT_ATTRIBUTE2: "of pollinator", ACTION2: "attract", CHANGE2: "increase"]
+
+	// CENTRAL         IFTHEN: when pollen sticks to a hummingbird , that pollen will move to where the hummingbird moves     (cf2b-eb3d-dfe5-d6d3) [ THING:"pollen", ACTION1:"stick", OBJECT_PATIENT1:"hummingbird", ACTOR_AGENT_PROCESS2:"pollen", ACTION3:"move", OBJECT_PROPERTY3:"hummingbird move" ]
+	//row autoRow8 = [UUID:"cf2b-eb3d-dfe5-d6d3", THING: "pollen", ACTION1: "stick", OBJECT_PATIENT1: "hummingbird", ACTOR_AGENT_PROCESS2: "pollen", ACTION3: "move", OBJECT_PROPERTY3: "hummingbird move"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"cf2b-eb3d-dfe5-d6d3", THING: "pollen", ACTION1: "stick", OBJECT_PATIENT1: "hummingbird", ACTOR_AGENT_PROCESS2: "pollen", ACTION3: "move", OBJECT_PROPERTY3: "hummingbird move"]
+
+	// CENTRAL         REQUIRES: plant reproduction ; seed production requires pollination     (7b88-0a72-7d90-ea1d) [ OBJECT_AGENT_PROCESS:"plant reproduce;seed production", VERB_REQUIRES:"require", OBJECT:"pollination" ]
+	//row autoRow9 = [UUID:"7b88-0a72-7d90-ea1d", OBJECT_AGENT_PROCESS: "plant reproduce", VERB_REQUIRES: "require", OBJECT: "pollination"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"7b88-0a72-7d90-ea1d", OBJECT_AGENT_PROCESS: "plant reproduce", VERB_REQUIRES: "require", OBJECT: "pollination"]
+
+	// CENTRAL         USEDFOR: nectar is used for attracting pollinators by plants     (e470-cbe8-086a-5af9) [ AGENT_OBJECT:"nectar", FOR_PURPOSE:"attract", PATIENT:"pollinator", AGENT_THING_WHO_USES:"plant" ]
+	//row autoRow10 = [UUID:"e470-cbe8-086a-5af9", AGENT_OBJECT: "nectar", FOR_PURPOSE: "attract", PATIENT: "pollinator", AGENT_THING_WHO_USES: "plant"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"e470-cbe8-086a-5af9", AGENT_OBJECT: "nectar", FOR_PURPOSE: "attract", PATIENT: "pollinator", AGENT_THING_WHO_USES: "plant"]
+
+	// CENTRAL         SOURCEOF: a flower produces pollen and seeds     (1788-1cd3-6a0a-82f2) [ AGENT:"flower", VERB_SOURCEOF_PROVIDE_ETC:"produce", WHAT_IT_PROVIDES:"pollen seed" ]
+	//row autoRow11 = [UUID:"1788-1cd3-6a0a-82f2", AGENT: "flower", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "pollen seed"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"1788-1cd3-6a0a-82f2", AGENT: "flower", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "pollen seed"]
+
+	// CENTRAL         PARTOF: pollen is part of a flower for reproduction     (4dcf-7536-2995-3a73) [ PART:"pollen", WHOLE:"flower", FOR_PURPOSE:"reproduce" ]
+	//row autoRow12 = [UUID:"4dcf-7536-2995-3a73", PART: "pollen", WHOLE: "flower", FOR_PURPOSE: "reproduce"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"4dcf-7536-2995-3a73", PART: "pollen", WHOLE: "flower", FOR_PURPOSE: "reproduce"]
+
+	// CENTRAL         SOURCEOF: a flower is a source of nectar     (b03f-5050-0795-6e43) [ AGENT:"flower", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"nectar" ]
+	//row autoRow13 = [UUID:"b03f-5050-0795-6e43", AGENT: "flower", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "nectar"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"b03f-5050-0795-6e43", AGENT: "flower", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "nectar"]
+
+	// LEXGLUE         SYNONYMY: trait is synonymous with characteristic     (1112-d2ae-a1f5-ffb6) [ X1:"trait", X2:"characteristic" ]
+	//row autoRow14 = [UUID:"1112-d2ae-a1f5-ffb6", X1: "trait", X2: "characteristic"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"1112-d2ae-a1f5-ffb6", X1: "trait", X2: "characteristic"]
+
+endinferencepattern

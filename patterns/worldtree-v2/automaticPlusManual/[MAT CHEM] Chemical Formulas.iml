@@ -1,0 +1,58 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Chemical_Formulas
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       MADEOF: sodium chloride is always made of chemically combined chlorine and sodium     (44d0-0720-a568-afe0) [ OBJECT:"sodium chloride", QUALIFIER:"be always", VALUE:"chemically combine", MATERIAL:"chlorine sodium" ]
+	//        HINTROW water is made of hydrogen and oxygen     (d3bf-21a7-2800-5223) [ OBJECT:"water", MATERIAL:"hydrogen oxygen" ]
+	//  Notes: Z is made of X and Y
+	//row autoRow0 = [TABLE:"MADEOF", OBJECT: <sodium_0>+<chloride_1>, MATERIAL: <chlorine_2>+<sodium_0>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"MADEOF", OBJECT: <sodium_0>+<chloride_1>, MATERIAL: <chlorine_2>+<sodium_0>]
+
+	// CENTRALSW       KINDOF: sodium chloride is a kind of chemical compound     (5efe-966e-a1a6-df5e) [ HYPONYM:"sodium chloride", SCOPE1:"chemical", HYPERNYM:"compound" ]
+	//        HINTROW water is a kind of compound     (9c5e-a6ea-6e77-4f1e) [ HYPONYM:"water", HYPERNYM:"compound" ]
+	//  Notes: Z is a kind of compound
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: <sodium_0>+<chloride_1>, HYPERNYM: "compound"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: <sodium_0>+<chloride_1>, HYPERNYM: "compound"]
+
+	// GROUNDING       KINDOF: sodium chloride is a kind of substance     (cf66-0bec-c1d7-289c) [ HYPONYM:"sodium chloride", HYPERNYM:"substance" ]
+	//        HINTROW water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <sodium_0>+<chloride_1>, HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <sodium_0>+<chloride_1>, HYPERNYM: "substance"]
+
+	// GROUNDING       KINDOF: sodium is a kind of element     (0192-47c6-a615-1984) [ HYPONYM:"sodium", HYPERNYM:"element" ]
+	//        HINTROW oxygen is a kind of element     (936b-92a1-0e96-0846) [ HYPONYM:"oxygen", HYPERNYM:"element" ]
+	//  Notes: Y column
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: <sodium_0>, HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: <sodium_0>, HYPERNYM: "element"]
+
+	// GROUNDING       KINDOF: chlorine is a kind of element     (d176-e42a-2654-8d3c) [ HYPONYM:"chlorine", HYPERNYM:"element" ]
+	//        HINTROW hydrogen is a kind of element     (f861-f54e-3435-b0e6) [ HYPONYM:"hydrogen", HYPERNYM:"element" ]
+	//  Notes: X column
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: <chlorine_2>, HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: <chlorine_2>, HYPERNYM: "element"]
+
+	// CENTRAL         ACTION: the number in chemical formula shows the number of atoms of each element in a molecule     (d42a-9ce6-a782-24a6) [ AGENT_OBJECT:"numb", SCOPE1:"in chemical formulum", ACTION2:"show", OBJECT_PROPERTY:"numb of atom", SCOPE2:"of element in molecule" ]
+	//row autoRow5 = [UUID:"d42a-9ce6-a782-24a6", AGENT_OBJECT: "numb", SCOPE1: "in chemical formulum", ACTION2: "show", OBJECT_PROPERTY: "numb of atom", SCOPE2: "of element in molecule"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"d42a-9ce6-a782-24a6", AGENT_OBJECT: "numb", SCOPE1: "in chemical formulum", ACTION2: "show", OBJECT_PROPERTY: "numb of atom", SCOPE2: "of element in molecule"]
+
+	// CENTRAL         COMPARISON: a molecule is the smallest particle ; unit that has the properties of a compound     (f25a-54b9-3641-f7e4) [ THING:"molecule", ACTION1:"be", COMPARISON:"small", WHAT:"particle;unit", SCOPE2:"have property of compound" ]
+	//  Notes: 5c74-6feb-16a4-2fd8->f25a-54b9-3641-f7e4
+	//row autoRow6 = [UUID:"f25a-54b9-3641-f7e4", THING: "molecule", ACTION1: "be", COMPARISON: "small", WHAT: "particle", SCOPE2: "have property of compound"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"f25a-54b9-3641-f7e4", THING: "molecule", ACTION1: "be", COMPARISON: "small", WHAT: "particle", SCOPE2: "have property of compound"]
+
+	// CENTRAL         KINDOF: a compound is a kind of substance     (fcf2-562c-5997-2086) [ HYPONYM:"compound", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"fcf2-562c-5997-2086", HYPONYM: "compound", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"fcf2-562c-5997-2086", HYPONYM: "compound", HYPERNYM: "substance"]
+
+	// CENTRAL         MADEOF: substances are made of molecules     (1f87-3d79-4268-86d2) [ OBJECT:"substance", MATERIAL:"molecule" ]
+	//row autoRow8 = [UUID:"1f87-3d79-4268-86d2", OBJECT: "substance", MATERIAL: "molecule"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"1f87-3d79-4268-86d2", OBJECT: "substance", MATERIAL: "molecule"]
+
+endinferencepattern

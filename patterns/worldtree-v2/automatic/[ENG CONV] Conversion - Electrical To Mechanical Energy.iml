@@ -1,0 +1,49 @@
+// Automatically converted pattern
+inferencepattern ENG_CONV_Conversion_Electrical_To_Mechanical_Energy
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE: an electric motor converts electrical energy into mechanical energy     (6cee-7656-3eaa-7124) [ ACTOR_WHO:"electric motor", VERB:"convert", FROM:"electric energy", INTO:"mechanical energy" ]
+	//        HINTROW a fan converts electrical energy into mechanical energy ; heat energy ; sound energy     (b560-68a2-6ddb-ce23) [ ACTOR_WHO:"fan", VERB:"convert", FROM:"electric energy", INTO:"mechanical energy;heat energy;sound energy" ]
+	//        HINTROW electrical devices convert from electrical energy ; electricity into other forms of energy     (5e4d-6ae2-e556-9200) [ ACTOR_WHO:"electric device", VERB:"convert", FROM:"electric energy;electric", INTO:"other form of energy" ]
+	//  Notes: d201-bf2c-27ec-14a0->5e4d-6ae2-e556-9200,e58b-3217-6a20-dde2,3144-f8f2-43a4-8712,ff35-14d7-c71b-fe72,8229-9677-683e-24d5
+	//row autoRow0 = [TABLE:"CHANGE", ACTOR_WHO: "electric"+*"POS:NN", VERB: "convert", FROM: "electric energy", INTO: "mechanical energy"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CHANGE", VERB: "convert", FROM: "electric energy", INTO: "mechanical energy"]
+
+	// GROUNDING       KINDOF: a radio is a kind of electrical device     (e58b-3217-6a20-dde2) [ HYPONYM:"radio", SCOPE1:"electric", HYPERNYM:"device" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "radio", SCOPE1: "electric", HYPERNYM: "device"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "radio", SCOPE1: "electric", HYPERNYM: "device"]
+
+	// CENTRAL         CHANGE: energy transformation means one kind of energy changes into another kind of energy     (3d34-b43e-8a7e-07fd) [ PROCESS_NAME:"energy transformation", ACTOR_WHO:"one kind of energy", VERB:"change", INTO:"kind of energy" ]
+	//row autoRow2 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"]
+
+	// CENTRAL        (OPTIONAL) TRANSFER: sound is produced when mechanical energy is transformed into sound energy     (290b-0e4b-0de3-8f9f) [ PROCESS_NAME:"sound be produce", ACTOR_WHO:"mechanical energy", VERB:"be transform", DESTINATION:"sound energy" ]
+	//row *autoRow3 = [UUID:"290b-0e4b-0de3-8f9f", PROCESS_NAME: "sound be produce", ACTOR_WHO: "mechanical energy", VERB: "be transform", DESTINATION: "sound energy"] //OVER-CONSTR.
+	row *autoRow3 = [UUID:"290b-0e4b-0de3-8f9f", PROCESS_NAME: "sound be produce", ACTOR_WHO: "mechanical energy", VERB: "be transform", DESTINATION: "sound energy"]
+
+	// CENTRAL        (OPTIONAL) CONTAINS: a radio contains a speaker     (8229-9677-683e-24d5) [ OBJECT_AGENT:"radio", WHAT_IT_CONTAINS:"speaker" ]
+	//row *autoRow4 = [UUID:"8229-9677-683e-24d5", OBJECT_AGENT: "radio", WHAT_IT_CONTAINS: "speaker"] //OVER-CONSTR.
+	row *autoRow4 = [UUID:"8229-9677-683e-24d5", OBJECT_AGENT: "radio", WHAT_IT_CONTAINS: "speaker"]
+
+	// CENTRAL         KINDOF: electrical energy is a kind of energy     (b5ca-9f64-d6d6-6783) [ HYPONYM:"electric energy", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"b5ca-9f64-d6d6-6783", HYPONYM: "electric energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"b5ca-9f64-d6d6-6783", HYPONYM: "electric energy", HYPERNYM: "energy"]
+
+	// CENTRAL         KINDOF: mechanical energy is a kind of energy     (3144-f8f2-43a4-8712) [ HYPONYM:"mechanical energy", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"3144-f8f2-43a4-8712", HYPONYM: "mechanical energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3144-f8f2-43a4-8712", HYPONYM: "mechanical energy", HYPERNYM: "energy"]
+
+	// CENTRAL        (OPTIONAL) KINDOF: sound is a kind of energy     (1980-256d-b685-846c) [ HYPONYM:"sound", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row *autoRow7 = [UUID:"1980-256d-b685-846c", HYPONYM: "sound", HYPERNYM: "energy"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"1980-256d-b685-846c", HYPONYM: "sound", HYPERNYM: "energy"]
+
+endinferencepattern

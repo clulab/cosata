@@ -1,0 +1,54 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Endothermic_Reactions
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: cold pack reaction is a kind of endothermic reaction     (c061-99eb-af59-1a01) [ HYPONYM:"cold pack react", HYPERNYM:"endothermic react" ]
+	//        HINTROW the reaction between baking soda and vinegar is a kind of endothermic reaction     (fb8f-3fcb-ff3c-770c) [ HYPONYM:"react between bake soda vinegar", HYPERNYM:"endothermic react" ]
+	//        HINTROW melting is a kind of endothermic reaction     (62a2-5907-df58-f6a0) [ HYPONYM:"melt", HYPERNYM:"endothermic react" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "cold"+*"POS:NN"+"react", HYPERNYM: "endothermic react"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "endothermic react"]
+
+	// GROUNDING       KINDOF: first-aid instant cold pack is a kind of cold pack     (c9d1-519c-221c-512c) [ HYPONYM:"first-aid instant cold pack;﻿1 aid instant cold pack", HYPERNYM:"cold pack" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "﻿1 aid instant cold pack", HYPERNYM: "cold pack"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "﻿1 aid instant cold pack", HYPERNYM: "cold pack"]
+
+	// CENTRAL         REQUIRES: an endothermic process usually requires more heat energy from its surroundings than it gives off heat     (0d27-53e1-1637-e724) [ OBJECT_AGENT_PROCESS:"endothermic process", QUANTIFIER:"usually", VERB_REQUIRES:"require", QUANTITY_VALUE:"much", OBJECT:"heat energy", SCOPE2:"from surrounding", SCOPE4:"than give heat" ]
+	//row autoRow2 = [UUID:"0d27-53e1-1637-e724", OBJECT_AGENT_PROCESS: "endothermic process", QUANTIFIER: "usually", VERB_REQUIRES: "require", QUANTITY_VALUE: "much", OBJECT: "heat energy", SCOPE2: "from surrounding", SCOPE4: "than give heat"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"0d27-53e1-1637-e724", OBJECT_AGENT_PROCESS: "endothermic process", QUANTIFIER: "usually", VERB_REQUIRES: "require", QUANTITY_VALUE: "much", OBJECT: "heat energy", SCOPE2: "from surrounding", SCOPE4: "than give heat"]
+
+	// CENTRAL         ACTION: an endothermic reaction absorbs heat energy from its surroundings     (038b-65f8-5e83-61b6) [ ADJ:"endothermic", AGENT_OBJECT:"react", ACTION2:"absorb", OBJECT_PROPERTY:"heat energy", WHEN_WHERE:"from surrounding" ]
+	//row autoRow3 = [UUID:"038b-65f8-5e83-61b6", ADJ: "endothermic", AGENT_OBJECT: "react", ACTION2: "absorb", OBJECT_PROPERTY: "heat energy", WHEN_WHERE: "from surrounding"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"038b-65f8-5e83-61b6", ADJ: "endothermic", AGENT_OBJECT: "react", ACTION2: "absorb", OBJECT_PROPERTY: "heat energy", WHEN_WHERE: "from surrounding"]
+
+	// CENTRAL         ACTION: most chemical reactions release or absorb heat energy     (3c81-75ca-5724-f2eb) [ QUANTIFIER:"much", AGENT_OBJECT:"chemical reaction", ACTION2:"release absorb", OBJECT_PROPERTY:"heat energy" ]
+	//row autoRow4 = [UUID:"3c81-75ca-5724-f2eb", QUANTIFIER: "much", AGENT_OBJECT: "chemical reaction", ACTION2: "release absorb", OBJECT_PROPERTY: "heat energy"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3c81-75ca-5724-f2eb", QUANTIFIER: "much", AGENT_OBJECT: "chemical reaction", ACTION2: "release absorb", OBJECT_PROPERTY: "heat energy"]
+
+	// CENTRAL         KINDOF: a chemical reaction is a kind of process     (c493-daa2-d48d-4fa4) [ HYPONYM:"chemical react", HYPERNYM:"process" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"c493-daa2-d48d-4fa4", HYPONYM: "chemical react", HYPERNYM: "process"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"c493-daa2-d48d-4fa4", HYPONYM: "chemical react", HYPERNYM: "process"]
+
+	// CENTRAL         CAUSE: chemical reactions cause chemical change     (0f0d-2cc5-fcc1-3c1f) [ CONDITION_AGENT_OBJECT:"chemical reaction", RESULT_AGENT:"chemical change" ]
+	//row autoRow6 = [UUID:"0f0d-2cc5-fcc1-3c1f", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "chemical change"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"0f0d-2cc5-fcc1-3c1f", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "chemical change"]
+
+	// CENTRAL         KINDOF: heat is a kind of energy     (9e7d-986e-6af1-5ac1) [ HYPONYM:"heat", HYPERNYM:"energy" ]
+	//row autoRow7 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"]
+
+	// CENTRAL         CHANGE: an endothermic reaction converts heat energy into chemical energy     (e114-ec47-36df-0886) [ ACTOR_WHO:"endothermic react", VERB:"convert", FROM:"heat energy", INTO:"chemical energy" ]
+	//row autoRow8 = [UUID:"e114-ec47-36df-0886", ACTOR_WHO: "endothermic react", VERB: "convert", FROM: "heat energy", INTO: "chemical energy"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"e114-ec47-36df-0886", ACTOR_WHO: "endothermic react", VERB: "convert", FROM: "heat energy", INTO: "chemical energy"]
+
+	// CENTRAL         IFTHEN: if something absorbs ; requires more heat than it gives off in an reaction , then something will be cold in temperature     (49fa-491a-4de3-a36a) [ THING:"something", ACTION1:"absorb;require", ADJ_QUANTITY1A:"much", OBJECT_PATIENT1:"heat", SCOPE1B:"than give in react", ACTOR_AGENT_PROCESS2:"something", ADJ_QUANTIFIER3:"cold", OBJECT_PROPERTY3:"in temperature" ]
+	//row autoRow9 = [UUID:"49fa-491a-4de3-a36a", THING: "something", ACTION1: "absorb", ADJ_QUANTITY1A: "much", OBJECT_PATIENT1: "heat", SCOPE1B: "than give in react", ACTOR_AGENT_PROCESS2: "something", ADJ_QUANTIFIER3: "cold", OBJECT_PROPERTY3: "in temperature"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"49fa-491a-4de3-a36a", THING: "something", ACTION1: "absorb", ADJ_QUANTITY1A: "much", OBJECT_PATIENT1: "heat", SCOPE1B: "than give in react", ACTOR_AGENT_PROCESS2: "something", ADJ_QUANTIFIER3: "cold", OBJECT_PROPERTY3: "in temperature"]
+
+endinferencepattern

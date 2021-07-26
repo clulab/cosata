@@ -1,0 +1,44 @@
+// IML script
+
+
+inferencepattern setInitialEnvironment
+    // Plain text description
+    description = "Set the initial location of an object"
+
+    // Instances
+    require instance object1 = [KINDOF:"thing"]
+    require instance environment1 = [KINDOF:"environment"]    
+
+    // Row definitions    
+    
+    // Constraints
+    
+    // Code
+    generateRow([TABLE:"PROP-LOCATIONS", PROPERTY:"location", AGENT_OBJECT:object1."name", VALUE:environment1."name"])
+    object1."location" = environment1."name"
+    
+    addExplanationText("The object (" + object1."name" + ") is initially set to be in the environment (" + environment1."name" + ").")
+
+endinferencepattern
+
+inferencepattern moveObjectEnvironment
+    // Plain text description
+    description = "Move an object from one environment to another"
+
+    // Instances
+    require instance object1 = [KINDOF:"thing"]
+    require instance environmentFrom = [KINDOF:"environment"]    
+    require instance environmentTo = [KINDOF:"environment"]    
+
+    // Row definitions    
+    
+    // Constraints
+    
+    // Code
+    removeRows([TABLE:"PROP-LOCATIONS", PROPERTY:"location", AGENT_OBJECT:object1."name", VALUE:environmentFrom."name"])
+    generateRow([TABLE:"PROP-LOCATIONS", PROPERTY:"location", AGENT_OBJECT:object1."name", VALUE:environmentTo."name"])
+    object1."location" = environmentTo."name"
+
+    addExplanationText("The object (" + object1."name" + ") moves from environment (" + environmentFrom."name" + ") to environment (" + environmentTo."name" + ").")
+
+endinferencepattern

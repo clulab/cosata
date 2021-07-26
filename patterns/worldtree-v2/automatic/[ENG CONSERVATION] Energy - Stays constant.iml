@@ -1,0 +1,65 @@
+// Automatically converted pattern
+inferencepattern ENG_CONSERVATION_Energy_Stays_constant
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE: a battery converts chemical energy into electrical energy for powering electrical devices     (e83b-d62e-d528-3e9f) [ ACTOR_WHO:"battery", VERB:"convert", FROM:"chemical energy", INTO:"electric energy", FOR_PURPOSE:"power electric device" ]
+	//        HINTROW a solar panel converts sunlight ; solar energy into electrical energy ; electricity     (bc35-178c-432b-77f5) [ ACTOR_WHO:"solar panel", VERB:"convert", FROM:"sunlight;solar energy", INTO:"electric energy;electric" ]
+	//        HINTROW a heating element converts electrical energy ; electricity into heat energy for heating     (a4f3-2cdc-e2e8-292d) [ ACTOR_WHO:"heat element", VERB:"convert", FROM:"electric energy;electric", INTO:"heat energy", FOR_PURPOSE:"heat" ]
+	//        HINTROW a firecracker converts chemical energy into sound energy and light energy and heat energy     (e14a-e7b8-da48-8996) [ ACTOR_WHO:"firecracker", VERB:"convert", FROM:"chemical energy", INTO:"sound energy light energy heat energy" ]
+	//  Notes: X convert Y energy to Z energy
+	//row autoRow0 = [TABLE:"CHANGE", ACTOR_WHO: "battery", VERB: "convert", FROM: <chemical_0>+"energy", INTO: <electric_1>+"energy", FOR_PURPOSE: *"POS:VB"+<electric_1>+"device"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CHANGE", VERB: "convert", FROM: <chemical_0>+"energy", INTO: <electric_1>+"energy"]
+
+	// CENTRALSW       CONTAINS: a battery contains chemical energy     (bca4-02fa-0730-7e0a) [ OBJECT_AGENT:"battery", WHAT_IT_CONTAINS:"chemical energy" ]
+	//        HINTROW fuel contains chemical energy     (c23e-4123-ef7b-6907) [ OBJECT_AGENT:"fuel", WHAT_IT_CONTAINS:"chemical energy" ]
+	//row autoRow1 = [TABLE:"CONTAINS", OBJECT_AGENT: "battery", WHAT_IT_CONTAINS: <chemical_0>+"energy"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CONTAINS", WHAT_IT_CONTAINS: <chemical_0>+"energy"]
+
+	// CENTRALSW       KINDOF: chemical energy is a kind of energy     (b043-79cc-a77e-e968) [ HYPONYM:"chemical energy", HYPERNYM:"energy" ]
+	//        HINTROW solar energy is a kind of energy     (4849-d977-c75a-e8fb) [ HYPONYM:"solar energy", HYPERNYM:"energy" ]
+	//  Notes: Y energy column
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <chemical_0>+"energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <chemical_0>+"energy", HYPERNYM: "energy"]
+
+	// CENTRALSW       KINDOF: electrical energy is a kind of energy     (b5ca-9f64-d6d6-6783) [ HYPONYM:"electric energy", HYPERNYM:"energy" ]
+	//        HINTROW heat is a kind of energy     (9e7d-986e-6af1-5ac1) [ HYPONYM:"heat", HYPERNYM:"energy" ]
+	//        HINTROW light is a kind of energy     (f742-384b-744c-10a9) [ HYPONYM:"light", HYPERNYM:"energy" ]
+	//  Notes: Z energy column
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: <electric_1>+"energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: <electric_1>+"energy", HYPERNYM: "energy"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if something converts one kind of energy into other kinds of energy then that something originally stores that energy as the first kind of energy     (efa0-d868-16db-ae9e) [ THING:"something", ACTION1:"convert", OBJECT_PATIENT1:"one kind of energy", SCOPE1B:"into other kind of energy", ACTOR_AGENT_PROCESS2:"something", QUANTIFIER3:"originally", ACTION3:"store", OBJECT_PROPERTY3:"energy", SCOPE4:"a ﻿1 kind of energy" ]
+	//row *autoRow4 = [UUID:"efa0-d868-16db-ae9e", THING: "something", ACTION1: "convert", OBJECT_PATIENT1: "one kind of energy", SCOPE1B: "into other kind of energy", ACTOR_AGENT_PROCESS2: "something", QUANTIFIER3: "originally", ACTION3: "store", OBJECT_PROPERTY3: "energy", SCOPE4: "a ﻿1 kind of energy"] //OVER-CONSTR.
+	row *autoRow4 = [UUID:"efa0-d868-16db-ae9e", THING: "something", ACTION1: "convert", OBJECT_PATIENT1: "one kind of energy", SCOPE1B: "into other kind of energy", ACTOR_AGENT_PROCESS2: "something", QUANTIFIER3: "originally", ACTION3: "store", OBJECT_PROPERTY3: "energy", SCOPE4: "a ﻿1 kind of energy"]
+
+	// CENTRAL         IFTHEN: when one kind of energy changes into another kind of energy , the total amount of energy is constant     (7eec-d127-5f64-46ba) [ ADJ_QUANTITY1:"one", THING:"kind of energy", ACTION1:"change", OBJECT_PATIENT1:"into kind of energy", ADJ_QUANTITY2:"total", ACTOR_AGENT_PROCESS2:"amount of energy", ADJ_QUANTIFIER3:"constant" ]
+	//row autoRow5 = [UUID:"7eec-d127-5f64-46ba", ADJ_QUANTITY1: "one", THING: "kind of energy", ACTION1: "change", OBJECT_PATIENT1: "into kind of energy", ADJ_QUANTITY2: "total", ACTOR_AGENT_PROCESS2: "amount of energy", ADJ_QUANTIFIER3: "constant"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"7eec-d127-5f64-46ba", ADJ_QUANTITY1: "one", THING: "kind of energy", ACTION1: "change", OBJECT_PATIENT1: "into kind of energy", ADJ_QUANTITY2: "total", ACTOR_AGENT_PROCESS2: "amount of energy", ADJ_QUANTIFIER3: "constant"]
+
+	// CENTRAL         CHANGE: energy transformation means one kind of energy changes into another kind of energy     (3d34-b43e-8a7e-07fd) [ PROCESS_NAME:"energy transformation", ACTOR_WHO:"one kind of energy", VERB:"change", INTO:"kind of energy" ]
+	//row autoRow6 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"]
+
+	// CENTRAL        (OPTIONAL) CHANGE: electrical devices convert from electrical energy ; electricity into other forms of energy     (5e4d-6ae2-e556-9200) [ ACTOR_WHO:"electric device", VERB:"convert", FROM:"electric energy;electric", INTO:"other form of energy" ]
+	//row *autoRow7 = [UUID:"5e4d-6ae2-e556-9200", ACTOR_WHO: <electric_1>+"device", VERB: "convert", FROM: <electric_1>+"energy", INTO: "other form of energy"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"5e4d-6ae2-e556-9200", ACTOR_WHO: <electric_1>+"device", VERB: "convert", FROM: <electric_1>+"energy", INTO: "other form of energy"]
+
+	// LEXGLUE         SYNONYMY: constant means not changing     (56e8-98cf-5c84-2820) [ X1:"constant", X2:"not change" ]
+	//row autoRow8 = [UUID:"56e8-98cf-5c84-2820", X1: "constant", X2: "not change"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"56e8-98cf-5c84-2820", X1: "constant", X2: "not change"]
+
+	// LEXGLUE         SYNONYMY: electricity means electrical energy     (5657-c6bc-e6cd-ae38) [ X1:"electric", X2:"electric energy" ]
+	//row autoRow9 = [UUID:"5657-c6bc-e6cd-ae38", X1: <electric_1>, X2: <electric_1>+"energy"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"5657-c6bc-e6cd-ae38", X1: <electric_1>, X2: <electric_1>+"energy"]
+
+	// LEXGLUE         SYNONYMY: to convert means to change     (72a6-1822-575b-e849) [ ACTION1:"convert", ACTION2:"change" ]
+	//row autoRow10 = [UUID:"72a6-1822-575b-e849", ACTION1: "convert", ACTION2: "change"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"72a6-1822-575b-e849", ACTION1: "convert", ACTION2: "change"]
+
+endinferencepattern

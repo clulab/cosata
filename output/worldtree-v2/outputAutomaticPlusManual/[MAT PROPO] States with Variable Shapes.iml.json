@@ -1,0 +1,448 @@
+{"patternMatches": [
+{
+	"patternName":"MAT_PROPO_States_with_Variable_Shapes",
+	"matches":[
+		{
+		"uuids": ["a824-aa4b-d228-d7c7","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a824-aa4b-d228-d7c7", "rowText": "a bottle is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["13f6-64dd-d4b6-6fec","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "13f6-64dd-d4b6-6fec", "rowText": "a bowl is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["1236-e177-9ba1-f9ad","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1236-e177-9ba1-f9ad", "rowText": "a can is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["b79e-666e-ccf1-f45c","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b79e-666e-ccf1-f45c", "rowText": "a cup is a kind of drinking container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["6198-fec8-e40b-1993","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6198-fec8-e40b-1993", "rowText": "glass is a kind of open container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["3bdb-25d7-3c9f-958b","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3bdb-25d7-3c9f-958b", "rowText": "a jar is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["3f9b-f0b8-3284-7aca","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3f9b-f0b8-3284-7aca", "rowText": "a pail is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["a18a-21be-3303-f9b8","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a18a-21be-3303-f9b8", "rowText": "a pan ; frying pan is a kind of container for cooking ; food", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["4a8d-ee0c-6d0f-d1e8","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4a8d-ee0c-6d0f-d1e8", "rowText": "a pot is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["5e41-af69-31ec-b736","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5e41-af69-31ec-b736", "rowText": "a garbage can is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["511c-d022-b296-0c49","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "511c-d022-b296-0c49", "rowText": "a balloon is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["cccd-e81f-c177-7b89","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "cccd-e81f-c177-7b89", "rowText": "a beach ball is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["7b0d-66ec-5111-5bf0","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7b0d-66ec-5111-5bf0", "rowText": "beaker is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["436b-2999-59d4-649d","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "436b-2999-59d4-649d", "rowText": "a room is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["6614-68f2-3c48-df29","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6614-68f2-3c48-df29", "rowText": "a graduated cylinder is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["8744-ef08-7293-265c","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8744-ef08-7293-265c", "rowText": "a bucket is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["dce9-61e0-1ead-fe39","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "dce9-61e0-1ead-fe39", "rowText": "a bath is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-1098079","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-1098079", "rowText": "classroom is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-1104211","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-1104211", "rowText": "cafeteria is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-1105581","5364-1d90-a262-32e7","02c3-9c98-38d9-3711","2fcc-e1b8-1198-9d11","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","5458-220e-3046-62d2","490c-5be7-2ff7-4bf2","3f2b-87bb-f73a-3e5d","6c6f-b690-6b57-aab6","47ce-3a56-5343-bea8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-1105581", "rowText": "glass bottle is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2fcc-e1b8-1198-9d11", "rowText": "matter with variable shape changes shape in different container", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5458-220e-3046-62d2", "rowText": "Matter in the liquid phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "47ce-3a56-5343-bea8", "rowText": "if a flexible container is pushed on then that container will change shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		}
+	]
+}
+]}
+

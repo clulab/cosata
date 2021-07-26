@@ -1,0 +1,844 @@
+{"patternMatches": [
+{
+	"patternName":"EARTH_HUMIMP_Pollution_Solar_Energy_Counteract",
+	"matches":[
+		{
+		"uuids": ["bc35-178c-432b-77f5","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","b47d-ee7e-9ebb-f9db","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","b47d-ee7e-9ebb-f9db","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["bc35-178c-432b-77f5","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","b47d-ee7e-9ebb-f9db","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["bc35-178c-432b-77f5","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["bc35-178c-432b-77f5","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","b47d-ee7e-9ebb-f9db","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["bc35-178c-432b-77f5","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","b47d-ee7e-9ebb-f9db","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" }
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","b47d-ee7e-9ebb-f9db","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","b47d-ee7e-9ebb-f9db","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","b47d-ee7e-9ebb-f9db","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" }
+		]
+		},
+		{
+		"uuids": ["bc35-178c-432b-77f5","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["bc35-178c-432b-77f5","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","b47d-ee7e-9ebb-f9db","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["bc35-178c-432b-77f5","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["bc35-178c-432b-77f5","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","b47d-ee7e-9ebb-f9db","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["bc35-178c-432b-77f5","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["bc35-178c-432b-77f5","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","b47d-ee7e-9ebb-f9db","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","b47d-ee7e-9ebb-f9db","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","b47d-ee7e-9ebb-f9db","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","b47d-ee7e-9ebb-f9db","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["bc35-178c-432b-77f5","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["bc35-178c-432b-77f5","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["bc35-178c-432b-77f5","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","b47d-ee7e-9ebb-f9db","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["bc35-178c-432b-77f5","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","a979-cbd2-fb2d-175e","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","5ea5-d64d-d43e-4ef8","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","b47d-ee7e-9ebb-f9db","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","77f9-749f-9394-ae34","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["bc35-178c-432b-77f5","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["66e0-20b6-da6c-8421","1ed3-919d-4a4c-1be7","ccfb-9a10-b3bf-b202","37f2-bad8-7109-9377","f5c3-d141-1a8b-80c9","3c69-24d0-2ef2-5007","0308-b556-3182-b793","8bf2-4daa-df7d-c999","d3f2-e61a-32a0-2306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "ccfb-9a10-b3bf-b202", "rowText": "solar energy rarely causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37f2-bad8-7109-9377", "rowText": "using solar energy decreases pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0308-b556-3182-b793", "rowText": "converting is similar to producing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8bf2-4daa-df7d-c999", "rowText": "rarely means not", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow1", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		}
+	]
+}
+]}
+

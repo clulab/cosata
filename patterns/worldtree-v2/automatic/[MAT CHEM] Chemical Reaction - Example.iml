@@ -1,0 +1,60 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Chemical_Reaction_Example
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       EXAMPLES: An example of a chemical change is starch turning into sugar through reactions with saliva     (faef-a69d-08a2-286d) [ AGENT_OBJECT1:"chemical change", AGENT_OBJECT2:"starch", VERB2:"turn into", AGENT_OBJECT3:"sugar", BY_THROUGH_HOW:"through", SCOPE:"reaction with saliva" ]
+	//        HINTROW An example of a chemical change is acid breaking down substances     (9213-5a66-7733-0fc8) [ AGENT_OBJECT1:"chemical change", AGENT_OBJECT2:"acid", VERB2:"break", AGENT_OBJECT3:"substance" ]
+	//        HINTROW An example of a chemical change is electrical energy breaking down a compound     (3ad2-9672-21b6-16b9) [ AGENT_OBJECT1:"chemical change", AGENT_OBJECT2:"electric energy", VERB2:"break", AGENT_OBJECT3:"compound" ]
+	//  Notes: X and Y (optional) combined causes chemical change
+	//row autoRow0 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "chemical change", SCOPE: "reaction"+*"POS:IN"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "chemical change"]
+
+	// CENTRALSW       KINDOF: sugar is a kind of pure substance     (826e-4bd3-1390-0182) [ HYPONYM:"sugar", SCOPE1:"pure", HYPERNYM:"substance" ]
+	//        HINTROW acid is a kind of substance     (0c7c-a16e-cd22-5e05) [ HYPONYM:"acid", HYPERNYM:"substance" ]
+	//        HINTROW baking soda is a kind of solid     (2848-75b1-58eb-c9cf) [ HYPONYM:"bake soda", HYPERNYM:"solid" ]
+	//  Notes: X column
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow1 = [TABLE:"KINDOF"]
+
+	// CENTRALSW       KINDOF: saliva is a kind of substance     (6723-a7ba-dce4-c38a) [ HYPONYM:"saliva", HYPERNYM:"substance" ]
+	//        HINTROW vinegar is a kind of liquid     (1ba7-86f9-9cab-21f4) [ HYPONYM:"vinegar", HYPERNYM:"liquid" ]
+	//  Notes: Y column
+//WARNING! Slot with no constraints.
+//	//row autoRow2 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow2 = [TABLE:"KINDOF"]
+
+	// GROUNDING       KINDOF: combustion is a kind of chemical change     (eaad-89d5-b78f-cf5a) [ HYPONYM:"combust", SCOPE1:"chemical", HYPERNYM:"change" ]
+	//        HINTROW rust forming is a kind of chemical change     (3fb1-78ec-77f8-d713) [ HYPONYM:"rust form", SCOPE1:"chemical", HYPERNYM:"change" ]
+	//row autoRow3 = [TABLE:"KINDOF", SCOPE1: "chemical", HYPERNYM: "change"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", SCOPE1: "chemical", HYPERNYM: "change"]
+
+	// CENTRAL         CAUSE: chemical reactions cause new substances ; different substances to form     (3dca-07f2-1404-d404) [ CONDITION_AGENT_OBJECT:"chemical reaction", RESULT_AGENT:"new substance;differ substance", RESULT_VERB:"form" ]
+	//row autoRow4 = [UUID:"3dca-07f2-1404-d404", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "new substance", RESULT_VERB: "form"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3dca-07f2-1404-d404", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "new substance", RESULT_VERB: "form"]
+
+	// CENTRAL         CAUSE: combining ; mixing two substances chemically causes chemical reactions     (37e1-5b9e-00a1-5e21) [ CONDITION_VERB:"combine;mix", CONDITION_PATIENT:"two substance", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS:"chemically", RESULT_AGENT:"chemical reaction" ]
+	//row autoRow5 = [UUID:"37e1-5b9e-00a1-5e21", CONDITION_VERB: "combine", CONDITION_PATIENT: "two substance", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "chemically", RESULT_AGENT: "chemical reaction"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"37e1-5b9e-00a1-5e21", CONDITION_VERB: "combine", CONDITION_PATIENT: "two substance", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "chemically", RESULT_AGENT: "chemical reaction"]
+
+	// CENTRAL         ACTION: most chemical reactions release or absorb heat energy     (3c81-75ca-5724-f2eb) [ QUANTIFIER:"much", AGENT_OBJECT:"chemical reaction", ACTION2:"release absorb", OBJECT_PROPERTY:"heat energy" ]
+	//row autoRow6 = [UUID:"3c81-75ca-5724-f2eb", QUANTIFIER: "much", AGENT_OBJECT: "chemical reaction", ACTION2: "release absorb", OBJECT_PROPERTY: "heat energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3c81-75ca-5724-f2eb", QUANTIFIER: "much", AGENT_OBJECT: "chemical reaction", ACTION2: "release absorb", OBJECT_PROPERTY: "heat energy"]
+
+	// CENTRAL         CAUSE: chemical reactions cause chemical change     (0f0d-2cc5-fcc1-3c1f) [ CONDITION_AGENT_OBJECT:"chemical reaction", RESULT_AGENT:"chemical change" ]
+	//row autoRow7 = [UUID:"0f0d-2cc5-fcc1-3c1f", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "chemical change"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"0f0d-2cc5-fcc1-3c1f", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "chemical change"]
+
+	// CENTRAL        (OPTIONAL) ACTION: baking soda can react chemically with vinegar     (b39a-5a6f-9af1-b3de) [ ADJ:"bake", AGENT_OBJECT:"soda", ACTION2:"react", OBJECT_PROPERTY:"chemically", HOW:"with vinegar" ]
+	//row *autoRow8 = [UUID:"b39a-5a6f-9af1-b3de", ADJ: "bake", AGENT_OBJECT: "soda", ACTION2: "react", OBJECT_PROPERTY: "chemically", HOW: "with vinegar"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"b39a-5a6f-9af1-b3de", ADJ: "bake", AGENT_OBJECT: "soda", ACTION2: "react", OBJECT_PROPERTY: "chemically", HOW: "with vinegar"]
+
+endinferencepattern

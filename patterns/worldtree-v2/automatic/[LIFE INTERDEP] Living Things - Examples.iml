@@ -1,0 +1,42 @@
+// Automatically converted pattern
+inferencepattern LIFE_INTERDEP_Living_Things_Examples
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a bird is a kind of animal     (e26b-b21d-d4a3-25fc) [ HYPONYM:"bird", HYPERNYM:"animal" ]
+	//        HINTROW a bat is a kind of animal     (7ca2-740e-37f4-0a9e) [ HYPONYM:"bat", HYPERNYM:"animal" ]
+	//        HINTROW a rabbit is a kind of animal     (44d7-fef6-90ef-75aa) [ HYPONYM:"rabbit", HYPERNYM:"animal" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: a bush is a kind of plant     (311e-8d88-cde2-860d) [ HYPONYM:"bush", HYPERNYM:"plant" ]
+	//        HINTROW grass is a kind of green plant     (9d2f-b39b-3921-a54c) [ HYPONYM:"grass", SCOPE1:"green", HYPERNYM:"plant" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// GROUNDING       PARTOF: a seed is a part of a plant     (9e7f-c460-d954-2617) [ PART:"seed", WHOLE:"plant" ]
+	//        HINTROW a flower is a part of a plant for attracting pollinators ; producing seeds     (d42a-e547-fdf9-9c35) [ PART:"flower", WHOLE:"plant", FOR_PURPOSE:"attract pollinator;produce seed" ]
+	//row autoRow2 = [TABLE:"PARTOF", WHOLE: "plant"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"PARTOF", WHOLE: "plant"]
+
+	// GROUNDING      (OPTIONAL) KINDOF: light is a kind of nonliving thing     (c035-787b-ecbc-b968) [ HYPONYM:"light", SCOPE1:"nonliving", HYPERNYM:"thing" ]
+	//        HINTROW rock is a kind of nonliving thing     (af33-4409-5f16-cd4c) [ HYPONYM:"rock", SCOPE1:"nonliving", HYPERNYM:"thing" ]
+	//row *autoRow3 = [TABLE:"KINDOF", SCOPE1: "nonliving", HYPERNYM: "thing"] //OVER-CONSTR.
+	row *autoRow3 = [TABLE:"KINDOF", SCOPE1: "nonliving", HYPERNYM: "thing"]
+
+	// CENTRAL         KINDOF: a plant is a kind of living thing     (2e89-d8e8-a8fb-9acc) [ HYPONYM:"plant", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"2e89-d8e8-a8fb-9acc", HYPONYM: "plant", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"2e89-d8e8-a8fb-9acc", HYPONYM: "plant", HYPERNYM: "live thing"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+endinferencepattern

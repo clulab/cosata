@@ -1,0 +1,54 @@
+{"patternMatches": [
+{
+	"patternName":"ENG_CONV_Conversion_Chemical_to_Thermal_Energy",
+	"matches":[
+		{
+		"uuids": ["7599-58ef-3f3c-3428","cab1-f3c3-59de-b682","9e7d-986e-6af1-5ac1","66a3-8213-aabe-5609","3d34-b43e-8a7e-07fd","bfa4-74ef-3e51-a3cb","d3f2-e61a-32a0-2306","b043-79cc-a77e-e968","a67b-a715-13a4-9b5d","7c96-f704-e51e-1678","ae86-c631-e4ad-1669","4710-c993-7a19-bef2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "66a3-8213-aabe-5609", "rowText": "burning fossil fuels converts potential energy into thermal energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bfa4-74ef-3e51-a3cb", "rowText": "fossil fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "b043-79cc-a77e-e968", "rowText": "chemical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "7c96-f704-e51e-1678", "rowText": "form means kind", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ae86-c631-e4ad-1669", "rowText": "heat energy is synonymous with thermal energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "4710-c993-7a19-bef2", "rowText": "heat means heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"coal_0", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"coal_0", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["9f86-6ae1-8a59-fef8","2355-0cfa-86f8-5767","9e7d-986e-6af1-5ac1","66a3-8213-aabe-5609","3d34-b43e-8a7e-07fd","bfa4-74ef-3e51-a3cb","d3f2-e61a-32a0-2306","b043-79cc-a77e-e968","a67b-a715-13a4-9b5d","7c96-f704-e51e-1678","ae86-c631-e4ad-1669","4710-c993-7a19-bef2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "66a3-8213-aabe-5609", "rowText": "burning fossil fuels converts potential energy into thermal energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bfa4-74ef-3e51-a3cb", "rowText": "fossil fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d3f2-e61a-32a0-2306", "rowText": "conversion is a kind of process", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "b043-79cc-a77e-e968", "rowText": "chemical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "7c96-f704-e51e-1678", "rowText": "form means kind", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ae86-c631-e4ad-1669", "rowText": "heat energy is synonymous with thermal energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "4710-c993-7a19-bef2", "rowText": "heat means heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"coal_0", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"coal_0", "value":"natural gas" }
+		]
+		}
+	]
+}
+]}
+

@@ -1,0 +1,89 @@
+// Automatically converted pattern
+inferencepattern LIFE_INTERDEP_Consumers
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CONSUMERS-EATING: hawks ; eagles eat snakes ; lizards ; rats ; rabbits ; mice     (d28f-0727-460f-5ab6) [ ORGANISM1:"hawk;eagle", EATS_CONSUMES:"eat", ORGANISM2:"snake;lizard;rat;rabbit;mouse" ]
+	//        HINTROW eagles eat rabbits     (5ac6-9dc1-9a19-3eaa) [ ORGANISM1:"eagle", EATS_CONSUMES:"eat", ORGANISM2:"rabbit" ]
+	//        HINTROW eagles eat fish     (efb4-baee-b1ad-1184) [ ORGANISM1:"eagle", EATS_CONSUMES:"eat", ORGANISM2:"fish" ]
+	//        HINTROW humans eat crops     (76c8-6933-622a-64f6) [ ORGANISM1:"human", EATS_CONSUMES:"eat", ORGANISM2:"crop" ]
+	//        HINTROW rabbits eat plants     (dce1-e1d6-17ae-e024) [ ORGANISM1:"rabbit", EATS_CONSUMES:"eat", ORGANISM2:"plant" ]
+	//row autoRow0 = [TABLE:"CONSUMERS-EATING", EATS_CONSUMES: "eat"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CONSUMERS-EATING", EATS_CONSUMES: "eat"]
+
+	// CENTRALSW       CONSUMERS-EATING: carnivores only eat animals     (f2b6-e2f5-8939-94ae) [ ORGANISM1:"carnivore", QUANTIFIER:"only", EATS_CONSUMES:"eat", ORGANISM2:"animal" ]
+	//        HINTROW predators ; carnivores ; omnivores eat other animals     (20a3-dcb5-8ce4-ae5c) [ ORGANISM1:"predator;carnivore;omnivore", EATS_CONSUMES:"eat", ORGANISM2:"other animal" ]
+	//        HINTROW omnivores eat plants ; animals     (3b62-4057-84c9-7743) [ ORGANISM1:"omnivore", EATS_CONSUMES:"eat", ORGANISM2:"plant;animal" ]
+	//        HINTROW herbivores only eat plants     (57e4-c7f7-0031-fb0a) [ ORGANISM1:"herbivore", QUANTIFIER:"only", EATS_CONSUMES:"eat", ORGANISM2:"plant" ]
+	//row autoRow1 = [TABLE:"CONSUMERS-EATING", ORGANISM1: "carnivore", EATS_CONSUMES: "eat", ORGANISM2: "animal"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CONSUMERS-EATING", ORGANISM1: "carnivore", EATS_CONSUMES: "eat"]
+
+	// GROUNDING       XIVORE: a rabbit is a kind of herbivore     (d825-1694-54c8-7842) [ ANIMAL:"rabbit", XIVORE:"herbivore" ]
+	//        HINTROW a cow is a kind of herbivore     (dfcb-6cbb-85ac-9195) [ ANIMAL:"cow", XIVORE:"herbivore" ]
+	//        HINTROW a squirrel is a kind of herbivore     (917a-13e0-ccdc-3673) [ ANIMAL:"squirrel", XIVORE:"herbivore" ]
+	//  Notes: herbivore as consumers
+	//row autoRow2 = [TABLE:"XIVORE", XIVORE: "herbivore"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"XIVORE", XIVORE: "herbivore"]
+
+	// GROUNDING       XIVORE: a turtle is a kind of omnivore     (8567-fc1a-2b84-3ac6) [ ANIMAL:"turtle", XIVORE:"omnivore" ]
+	//        HINTROW a human is a kind of omnivore     (8a5d-2ec2-a25c-bad6) [ ANIMAL:"human", XIVORE:"omnivore" ]
+	//  Notes: omnivore as consumers
+	//row autoRow3 = [TABLE:"XIVORE", XIVORE: "omnivore"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"XIVORE", XIVORE: "omnivore"]
+
+	// GROUNDING       XIVORE: an eagle is a kind of carnivore     (1846-e872-e856-3ce3) [ ANIMAL:"eagle", XIVORE:"carnivore" ]
+	//        HINTROW a cat is a kind of carnivore     (c13c-3759-cff0-cd36) [ ANIMAL:"cat", XIVORE:"carnivore" ]
+	//        HINTROW an alligator is a kind of carnivore     (eeda-6609-161c-9926) [ ANIMAL:"alligator", XIVORE:"carnivore" ]
+	//  Notes: carnivore as consumers
+	//row autoRow4 = [TABLE:"XIVORE", XIVORE: "carnivore"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"XIVORE", XIVORE: "carnivore"]
+
+	// CENTRAL         PROCESSROLES: In the food chain process an animal has the role of consumer which eats producers ; other animals for food     (a4f8-5748-0846-cb45) [ PROCESS_NAME:"food chain", ACTOR_COMMON_EXAMPLE:"animal", ROLE:"consumer", VERBS:"eat", PATIENT:"producer;other animal", FOR_PURPOSE:"food" ]
+	//row autoRow5 = [UUID:"a4f8-5748-0846-cb45", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "animal", ROLE: "consumer", VERBS: "eat", PATIENT: "other animal", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"a4f8-5748-0846-cb45", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "animal", ROLE: "consumer", VERBS: "eat", PATIENT: "other animal", FOR_PURPOSE: "food"]
+
+	// CENTRAL        (OPTIONAL) PROCESSROLES: In the food chain process herbivores have the role of primary consumer which eats producers for food     (18e1-c8ad-e980-2db1) [ PROCESS_NAME:"food chain", ACTOR_COMMON_EXAMPLE:"herbivore", ROLE:"primary consumer", VERBS:"eat", PATIENT:"producer", FOR_PURPOSE:"food" ]
+	//row *autoRow6 = [UUID:"18e1-c8ad-e980-2db1", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "herbivore", ROLE: "primary consumer", VERBS: "eat", PATIENT: "producer", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"18e1-c8ad-e980-2db1", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "herbivore", ROLE: "primary consumer", VERBS: "eat", PATIENT: "producer", FOR_PURPOSE: "food"]
+
+	// CENTRAL         USEDFOR: eating ; taking in food is used to get nutrients ; energy by animals ; living things     (4842-3518-d7ab-f670) [ ACTION:"eat;take", AGENT_OBJECT:"food", FOR_PURPOSE:"get", PATIENT:"nutrient;energy", AGENT_THING_WHO_USES:"animal;live thing" ]
+	//row autoRow7 = [UUID:"4842-3518-d7ab-f670", ACTION: "eat", AGENT_OBJECT: "food", FOR_PURPOSE: "get", PATIENT: "nutrient", AGENT_THING_WHO_USES: "live thing"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4842-3518-d7ab-f670", ACTION: "eat", AGENT_OBJECT: "food", FOR_PURPOSE: "get", PATIENT: "nutrient", AGENT_THING_WHO_USES: "live thing"]
+
+	// CENTRAL         KINDOF: carnivores ; omnivores ; herbivores are a kind of animal     (c709-83dd-975c-b05d) [ HYPONYM:"carnivore;omnivore;herbivore", HYPERNYM:"animal" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"c709-83dd-975c-b05d", HYPONYM: "carnivore", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"c709-83dd-975c-b05d", HYPONYM: "carnivore", HYPERNYM: "animal"]
+
+	// CENTRAL         REQUIRES: an animal needs to eat food for nutrients     (7d29-0a2c-6959-b1dd) [ OBJECT_AGENT_PROCESS:"animal", VERB_REQUIRES:"need", ACTION2:"eat", OBJECT:"food", FOR_PURPOSE:"nutrient" ]
+	//row autoRow9 = [UUID:"7d29-0a2c-6959-b1dd", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "need", ACTION2: "eat", OBJECT: "food", FOR_PURPOSE: "nutrient"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"7d29-0a2c-6959-b1dd", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "need", ACTION2: "eat", OBJECT: "food", FOR_PURPOSE: "nutrient"]
+
+	// CENTRAL         ACTION: a consumer can not produce its own food     (6bf8-4a05-d7b7-8bc0) [ AGENT_OBJECT:"consumer", QUANITIFIER:"not", ACTION2:"product", OBJECT_PROPERTY:"own food" ]
+	//row autoRow10 = [UUID:"6bf8-4a05-d7b7-8bc0", AGENT_OBJECT: "consumer", QUANITIFIER: "not", ACTION2: "product", OBJECT_PROPERTY: "own food"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"6bf8-4a05-d7b7-8bc0", AGENT_OBJECT: "consumer", QUANITIFIER: "not", ACTION2: "product", OBJECT_PROPERTY: "own food"]
+
+	// CENTRAL         KINDOF: a consumer is a kind of organism     (21a9-8b33-b63d-dca2) [ HYPONYM:"consumer", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"21a9-8b33-b63d-dca2", HYPONYM: "consumer", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"21a9-8b33-b63d-dca2", HYPONYM: "consumer", HYPERNYM: "organism"]
+
+	// CENTRAL         KINDOF: an animal is a kind of consumer     (c799-dee0-451a-dd60) [ HYPONYM:"animal", HYPERNYM:"consumer" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"c799-dee0-451a-dd60", HYPONYM: "animal", HYPERNYM: "consumer"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"c799-dee0-451a-dd60", HYPONYM: "animal", HYPERNYM: "consumer"]
+
+	// CENTRAL         CONSUMERS-EATING: consumers eat other organisms     (10c2-8847-99e1-057b) [ ORGANISM1:"consumer", EATS_CONSUMES:"eat", ORGANISM2:"other organism" ]
+	//row autoRow13 = [UUID:"10c2-8847-99e1-057b", ORGANISM1: "consumer", EATS_CONSUMES: "eat", ORGANISM2: "other organism"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"10c2-8847-99e1-057b", ORGANISM1: "consumer", EATS_CONSUMES: "eat", ORGANISM2: "other organism"]
+
+	// LEXGLUE         SYNONYMY: herbivore means first-level consumer     (5706-62c6-1f2a-6e18) [ X1:"herbivore", X2:"first-level consumer;﻿1 level consumer" ]
+	//row autoRow14 = [UUID:"5706-62c6-1f2a-6e18", X1: "herbivore", X2: "﻿1 level consumer"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"5706-62c6-1f2a-6e18", X1: "herbivore", X2: "﻿1 level consumer"]
+
+endinferencepattern

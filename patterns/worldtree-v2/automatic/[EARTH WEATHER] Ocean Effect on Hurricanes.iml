@@ -1,0 +1,59 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Ocean_Effect_on_Hurricanes
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as heat and moisture increases , the strength of a hurricane will increase     (f390-e545-13bc-42de) [ QUANTITY_MEASURE1:"heat moisture", CHANGE1:"increase", QUANTITY_MEASURE2:"strength", AGENT_ATTRIBUTE2:"of hurricane", CHANGE2:"increase" ]
+	//        HINTROW as heat and moisture decreases , the strength of a hurricane will decrease     (9bf6-22d2-4626-dadd) [ QUANTITY_MEASURE1:"heat moisture", CHANGE1:"decrease", QUANTITY_MEASURE2:"strength", AGENT_ATTRIBUTE2:"of hurricane", CHANGE2:"decrease" ]
+	//row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "heat moisture", CHANGE1: "increase", QUANTITY_MEASURE2: "strength", AGENT_ATTRIBUTE2: "of hurricane", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "heat moisture", QUANTITY_MEASURE2: "strength", AGENT_ATTRIBUTE2: "of hurricane"]
+
+	// CENTRAL         CAUSE: heat and moisture over ocean cause the formation of a hurricane     (9358-e2ba-fd68-d0f6) [ CONDITION_AGENT_OBJECT:"heat moisture", SCOPE1:"over ocean", RESULT_AGENT:"form", SCOPE2:"of hurricane" ]
+	//row autoRow1 = [UUID:"9358-e2ba-fd68-d0f6", CONDITION_AGENT_OBJECT: "heat moisture", SCOPE1: "over ocean", RESULT_AGENT: "form", SCOPE2: "of hurricane"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"9358-e2ba-fd68-d0f6", CONDITION_AGENT_OBJECT: "heat moisture", SCOPE1: "over ocean", RESULT_AGENT: "form", SCOPE2: "of hurricane"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the temperature of the ocean increases , the strength of the hurricane will increase     (c358-d481-25a5-0d1e) [ QUANTITY_MEASURE1:"temperature", AGENT_ATTRIBUTE1:"of ocean", CHANGE1:"increase", QUANTITY_MEASURE2:"strength", AGENT_ATTRIBUTE2:"of hurricane", CHANGE2:"increase" ]
+	//row autoRow2 = [UUID:"c358-d481-25a5-0d1e", QUANTITY_MEASURE1: "temperature", AGENT_ATTRIBUTE1: "of ocean", CHANGE1: "increase", QUANTITY_MEASURE2: "strength", AGENT_ATTRIBUTE2: "of hurricane", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"c358-d481-25a5-0d1e", QUANTITY_MEASURE1: "temperature", AGENT_ATTRIBUTE1: "of ocean", CHANGE1: "increase", QUANTITY_MEASURE2: "strength", AGENT_ATTRIBUTE2: "of hurricane", CHANGE2: "increase"]
+
+	// CENTRAL         SOURCEOF: an ocean is a source of heat and moisture for a hurricane     (2030-ad1d-a83f-6581) [ AGENT:"ocean", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"heat moisture", AGENT_IT_PROVIDES_THING_TO:"hurricane" ]
+	//row autoRow3 = [UUID:"2030-ad1d-a83f-6581", AGENT: "ocean", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "heat moisture", AGENT_IT_PROVIDES_THING_TO: "hurricane"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"2030-ad1d-a83f-6581", AGENT: "ocean", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "heat moisture", AGENT_IT_PROVIDES_THING_TO: "hurricane"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as distance to an ocean decreases , the temperature will decrease     (9bcc-b632-9e13-d930) [ QUANTITY_MEASURE1:"distance", SCOPE1A:"ocean", CHANGE1:"decrease", QUANTITY_MEASURE2:"temperature", CHANGE2:"decrease" ]
+	//row autoRow4 = [UUID:"9bcc-b632-9e13-d930", QUANTITY_MEASURE1: "distance", SCOPE1A: "ocean", CHANGE1: "decrease", QUANTITY_MEASURE2: "temperature", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"9bcc-b632-9e13-d930", QUANTITY_MEASURE1: "distance", SCOPE1A: "ocean", CHANGE1: "decrease", QUANTITY_MEASURE2: "temperature", CHANGE2: "decrease"]
+
+	// CENTRAL         REQUIRES: forming a hurricane requires certain water temperature     (cb47-1534-f13a-7f91) [ ACTION1:"form", OBJECT_AGENT_PROCESS:"hurricane", VERB_REQUIRES:"require", QUANTITY_VALUE:"certain", OBJECT:"water temperature" ]
+	//  Notes: 0afa-4dd2-af3e-18cf->cb47-1534-f13a-7f91,5830-0226-d5ec-1248
+	//row autoRow5 = [UUID:"cb47-1534-f13a-7f91", ACTION1: "form", OBJECT_AGENT_PROCESS: "hurricane", VERB_REQUIRES: "require", QUANTITY_VALUE: "certain", OBJECT: "water temperature"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"cb47-1534-f13a-7f91", ACTION1: "form", OBJECT_AGENT_PROCESS: "hurricane", VERB_REQUIRES: "require", QUANTITY_VALUE: "certain", OBJECT: "water temperature"]
+
+	// CENTRAL        (OPTIONAL) KINDOF: a hurricane is a kind of heat engine     (7dae-b754-24da-f248) [ HYPONYM:"hurricane", HYPERNYM:"heat engine" ]
+	//  Notes: peripheral
+	//row *autoRow6 = [UUID:"7dae-b754-24da-f248", HYPONYM: "hurricane", HYPERNYM: "heat engine"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"7dae-b754-24da-f248", HYPONYM: "hurricane", HYPERNYM: "heat engine"]
+
+	// CENTRAL         KINDOF: an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//row autoRow7 = [UUID:"466a-2c15-ac54-8361", HYPONYM: "ocean", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"466a-2c15-ac54-8361", HYPONYM: "ocean", HYPERNYM: "body of water"]
+
+	// CENTRAL         ACTION: oceans regulate the temperature of nearby land     (5a94-7eb8-8140-f2b4) [ AGENT_OBJECT:"ocean", ACTION2:"regulate", OBJECT_PROPERTY:"temperature", SCOPE2:"of nearby land" ]
+	//row autoRow8 = [UUID:"5a94-7eb8-8140-f2b4", AGENT_OBJECT: "ocean", ACTION2: "regulate", OBJECT_PROPERTY: "temperature", SCOPE2: "of nearby land"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"5a94-7eb8-8140-f2b4", AGENT_OBJECT: "ocean", ACTION2: "regulate", OBJECT_PROPERTY: "temperature", SCOPE2: "of nearby land"]
+
+	// CENTRAL         KINDOF: a hurricane is a kind of storm     (65b3-3bde-505c-db9e) [ HYPONYM:"hurricane", HYPERNYM:"storm" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"65b3-3bde-505c-db9e", HYPONYM: "hurricane", HYPERNYM: "storm"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"65b3-3bde-505c-db9e", HYPONYM: "hurricane", HYPERNYM: "storm"]
+
+	// CENTRAL         IFTHEN: when a hurricane moves over land , that hurricane will decrease in strength     (c354-6c73-928e-5ec5) [ THING:"hurricane", ACTION1:"move over", OBJECT_PATIENT1:"land", ACTOR_AGENT_PROCESS2:"hurricane", ACTION3:"decrease", OBJECT_PROPERTY3:"in strength" ]
+	//row autoRow10 = [UUID:"c354-6c73-928e-5ec5", THING: "hurricane", ACTION1: "move over", OBJECT_PATIENT1: "land", ACTOR_AGENT_PROCESS2: "hurricane", ACTION3: "decrease", OBJECT_PROPERTY3: "in strength"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"c354-6c73-928e-5ec5", THING: "hurricane", ACTION1: "move over", OBJECT_PATIENT1: "land", ACTOR_AGENT_PROCESS2: "hurricane", ACTION3: "decrease", OBJECT_PROPERTY3: "in strength"]
+
+endinferencepattern

@@ -1,0 +1,110 @@
+// Automatically converted pattern
+inferencepattern MAT_COS_Temperature_COS_and_Molecular_Speed
+
+	// Plain text description
+	description = "Change of State, Temperature, and Molecular Speed/Kinetic Energy?"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as the temperature of a substance increases , the molecules in that substance will move faster ; farther apart     (ff5e-e6c0-718e-0d9f) [ QUANTITY_MEASURE1:"temperature of", AGENT_ATTRIBUTE1:"substance", CHANGE1:"increase", AGENT_ATTRIBUTE2:"molecule", SCOPE2A:"in substance", ACTION2:"move", CHANGE2:"fast;far apart" ]
+	//        HINTROW as temperature increases , the speed of molecules will increase     (cdd1-71f3-c023-bdd0) [ QUANTITY_MEASURE1:"temperature", CHANGE1:"increase", QUANTITY_MEASURE2:"speed", AGENT_ATTRIBUTE2:"of molecule", CHANGE2:"increase" ]
+	//  Notes: temperature change --> speed of the molecules change
+	//row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "temperature of", AGENT_ATTRIBUTE1: "substance", CHANGE1: "increase", AGENT_ATTRIBUTE2: "molecule", SCOPE2A: "in substance", ACTION2: "move", CHANGE2: "fast"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "temperature of", CHANGE1: "increase", AGENT_ATTRIBUTE2: "molecule"]
+
+	// CENTRALSW       CHANGE: boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy     (a0b2-a45f-01e1-4bf4) [ PROCESS_NAME:"boil;evaporate", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"gas", BY_THROUGH_HOW:"increase heat energy" ]
+	//        HINTROW freezing means matter ; a substance changes from a liquid into a solid by decreasing heat energy     (f03c-decc-030f-b860) [ PROCESS_NAME:"freeze", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"solid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//        HINTROW melting means matter ; a substance changes from a solid into a liquid by increasing heat energy     (6abc-4443-f672-9a97) [ PROCESS_NAME:"melt", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"solid", INTO:"liquid", BY_THROUGH_HOW:"increase heat energy" ]
+	//        HINTROW condensing means matter ; a substance changes from a gas into a liquid by decreasing heat energy     (2aba-39fa-3a07-5ee4) [ PROCESS_NAME:"condense", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"gas", INTO:"liquid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//row autoRow1 = [TABLE:"CHANGE", PROCESS_NAME: <boil_0>, ACTOR_WHO: "matt", VERB: "change", BY_THROUGH_HOW: "increase heat energy"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CHANGE", PROCESS_NAME: <boil_0>, ACTOR_WHO: "matt", VERB: "change", BY_THROUGH_HOW: *"POS:VB"+"heat energy"]
+
+	// GROUNDING       KINDOF: boiling is a kind of phase change     (edd3-cea2-f046-e76f) [ HYPONYM:"boil", HYPERNYM:"phase change" ]
+	//        HINTROW evaporating is a kind of phase change     (4a2c-c349-a627-edc5) [ HYPONYM:"evaporate", HYPERNYM:"phase change" ]
+	//        HINTROW freezing is a kind of phase change     (eebb-a341-23c6-8447) [ HYPONYM:"freeze", HYPERNYM:"phase change" ]
+	//        HINTROW melting is a kind of phase change     (fae9-3cca-92cd-bf20) [ HYPONYM:"melt", HYPERNYM:"phase change" ]
+	//        HINTROW condensing is a kind of phase change     (e2ac-16b6-eb78-880e) [ HYPONYM:"condense", HYPERNYM:"phase change" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <boil_0>, HYPERNYM: "phase change"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <boil_0>, HYPERNYM: "phase change"]
+
+	// GROUNDING       KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//        HINTROW the air is a kind of substance     (3ed6-1fa7-1a63-34a0) [ HYPONYM:"air", HYPERNYM:"substance" ]
+	//        HINTROW butter is a kind of substance     (e15d-0c5d-0e78-b5dc) [ HYPONYM:"butter", HYPERNYM:"substance" ]
+	//        HINTROW saltwater is a kind of substance     (d60d-6c10-0203-e659) [ HYPONYM:"saltwater", HYPERNYM:"substance" ]
+	//        HINTROW glucose is a kind of substance     (a91d-4e3d-356d-a62b) [ HYPONYM:"glucose", HYPERNYM:"substance" ]
+	//  Notes: Grounding (Substance)
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "substance"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the temperature of a substance ; an object decreases , the molecules in that substance will move slower ; closer     (78b6-ba50-67ba-3bd4) [ QUANTITY_MEASURE1:"temperature of", AGENT_ATTRIBUTE1:"substance;object", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"molecule", SCOPE2A:"in substance", ACTION2:"move", CHANGE2:"slow;close" ]
+	//  Notes: temperature decrease --> speed decrease
+	//row autoRow4 = [UUID:"78b6-ba50-67ba-3bd4", QUANTITY_MEASURE1: "temperature of", AGENT_ATTRIBUTE1: "substance", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "molecule", SCOPE2A: "in substance", ACTION2: "move", CHANGE2: "slow"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"78b6-ba50-67ba-3bd4", QUANTITY_MEASURE1: "temperature of", AGENT_ATTRIBUTE1: "substance", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "molecule", SCOPE2A: "in substance", ACTION2: "move", CHANGE2: "slow"]
+
+	// CENTRAL         CHANGE: phase changes change the arrangement of molecules in a substance ; in a sample     (08c0-16d0-2d6d-8df7) [ ACTOR_WHO:"phase change", VERB:"change", FROM:"arrangement of molecule", SCOPE:"in substance;in sample" ]
+	//row autoRow5 = [UUID:"08c0-16d0-2d6d-8df7", ACTOR_WHO: "phase change", VERB: "change", FROM: "arrangement of molecule", SCOPE: "in substance"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"08c0-16d0-2d6d-8df7", ACTOR_WHO: "phase change", VERB: "change", FROM: "arrangement of molecule", SCOPE: "in substance"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the heat of matter increases , the average molecular speed of the matter will increases     (2cf0-fb0f-f13b-457b) [ QUANTITY_MEASURE1:"heat", AGENT_ATTRIBUTE1:"of matt", CHANGE1:"increase", QUANTITY_MEASURE2:"average molecular speed", AGENT_ATTRIBUTE2:"of matt", CHANGE2:"increase" ]
+	//row autoRow6 = [UUID:"2cf0-fb0f-f13b-457b", QUANTITY_MEASURE1: "heat", AGENT_ATTRIBUTE1: "of matt", CHANGE1: "increase", QUANTITY_MEASURE2: "average molecular speed", AGENT_ATTRIBUTE2: "of matt", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"2cf0-fb0f-f13b-457b", QUANTITY_MEASURE1: "heat", AGENT_ATTRIBUTE1: "of matt", CHANGE1: "increase", QUANTITY_MEASURE2: "average molecular speed", AGENT_ATTRIBUTE2: "of matt", CHANGE2: "increase"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the kinetic energy of particles increases , the particles will move faster     (9d60-abde-137b-c45f) [ QUANTITY_MEASURE1:"kinetic energy", AGENT_ATTRIBUTE1:"of particle", CHANGE1:"increase", AGENT_ATTRIBUTE2:"particle", ACTION2:"move", CHANGE2:"fast" ]
+	//row autoRow7 = [UUID:"9d60-abde-137b-c45f", QUANTITY_MEASURE1: "kinetic energy", AGENT_ATTRIBUTE1: "of particle", CHANGE1: "increase", AGENT_ATTRIBUTE2: "particle", ACTION2: "move", CHANGE2: "fast"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"9d60-abde-137b-c45f", QUANTITY_MEASURE1: "kinetic energy", AGENT_ATTRIBUTE1: "of particle", CHANGE1: "increase", AGENT_ATTRIBUTE2: "particle", ACTION2: "move", CHANGE2: "fast"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the temperature increases , the kinetic energy of the molecules will increase     (d148-e8f6-c895-1843) [ QUANTITY_MEASURE1:"temperature", CHANGE1:"increase", QUANTITY_MEASURE2:"kinetic energy", AGENT_ATTRIBUTE2:"of molecule", CHANGE2:"increase" ]
+	//row autoRow8 = [UUID:"d148-e8f6-c895-1843", QUANTITY_MEASURE1: "temperature", CHANGE1: "increase", QUANTITY_MEASURE2: "kinetic energy", AGENT_ATTRIBUTE2: "of molecule", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"d148-e8f6-c895-1843", QUANTITY_MEASURE1: "temperature", CHANGE1: "increase", QUANTITY_MEASURE2: "kinetic energy", AGENT_ATTRIBUTE2: "of molecule", CHANGE2: "increase"]
+
+	// CENTRAL         MEASUREMENTS: speed is a measure of how fast an object is moving     (87c6-f5c1-2d8f-e14a) [ MEASURE:"speed", QUANTITY_ADJ:"measure of", ATTRIBUTE:"fast", AGENT:"object", ACTION:"be move" ]
+	//row autoRow9 = [UUID:"87c6-f5c1-2d8f-e14a", MEASURE: "speed", QUANTITY_ADJ: "measure of", ATTRIBUTE: "fast", AGENT: "object", ACTION: "be move"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"87c6-f5c1-2d8f-e14a", MEASURE: "speed", QUANTITY_ADJ: "measure of", ATTRIBUTE: "fast", AGENT: "object", ACTION: "be move"]
+
+	// CENTRAL         CHANGE-VEC: heat means temperature increases     (7afc-2bcd-13a5-2d35) [ PROCESS_NAME_ACTION:"heat", AGENT_OBJECT:"temperature", DIRECTION:"increase" ]
+	//row autoRow10 = [UUID:"7afc-2bcd-13a5-2d35", PROCESS_NAME_ACTION: "heat", AGENT_OBJECT: "temperature", DIRECTION: "increase"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"7afc-2bcd-13a5-2d35", PROCESS_NAME_ACTION: "heat", AGENT_OBJECT: "temperature", DIRECTION: "increase"]
+
+	// CENTRAL         IFTHEN: if heat is added to a substance then that substance absorbs that heat     (9f40-769a-b2ba-d984) [ THING:"heat", ACTION1:"add", OBJECT_PATIENT1:"substance", ACTOR_AGENT_PROCESS2:"substance", ACTION3:"absorb", OBJECT_PROPERTY3:"that heat" ]
+	//row autoRow11 = [UUID:"9f40-769a-b2ba-d984", THING: "heat", ACTION1: "add", OBJECT_PATIENT1: "substance", ACTOR_AGENT_PROCESS2: "substance", ACTION3: "absorb", OBJECT_PROPERTY3: "that heat"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"9f40-769a-b2ba-d984", THING: "heat", ACTION1: "add", OBJECT_PATIENT1: "substance", ACTOR_AGENT_PROCESS2: "substance", ACTION3: "absorb", OBJECT_PROPERTY3: "that heat"]
+
+	// CENTRAL         SOURCEOF: motion is a source of kinetic energy in an object     (9f23-854a-7dc0-c22e) [ AGENT:"move", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"kinetic energy", SCOPE:"in object" ]
+	//row autoRow12 = [UUID:"9f23-854a-7dc0-c22e", AGENT: "move", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "kinetic energy", SCOPE: "in object"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"9f23-854a-7dc0-c22e", AGENT: "move", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "kinetic energy", SCOPE: "in object"]
+
+	// CENTRAL         MADEOF: objects are made of materials ; substances ; matter     (80a3-454d-e8e0-3de2) [ OBJECT:"object", MATERIAL:"material;substance;matt" ]
+	//row autoRow13 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"]
+
+	// CENTRAL         MADEOF: matter is made of molecules     (e2d6-bafd-aaaa-efd3) [ OBJECT:"matt", MATERIAL:"molecule" ]
+	//row autoRow14 = [UUID:"e2d6-bafd-aaaa-efd3", OBJECT: "matt", MATERIAL: "molecule"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"e2d6-bafd-aaaa-efd3", OBJECT: "matt", MATERIAL: "molecule"]
+
+	// CENTRAL         MADEOF: substances are made of matter     (3395-b5a2-ae2d-39c2) [ OBJECT:"substance", MATERIAL:"matt" ]
+	//row autoRow15 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of heat energy     (d753-423d-5ce7-53ce) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"heat energy" ]
+	//row autoRow16 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"]
+
+	// CENTRAL         KINDOF: a molecule is a kind of object     (e740-00aa-e89d-8af1) [ HYPONYM:"molecule", HYPERNYM:"object" ]
+	//row autoRow17 = [UUID:"e740-00aa-e89d-8af1", HYPONYM: "molecule", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"e740-00aa-e89d-8af1", HYPONYM: "molecule", HYPERNYM: "object"]
+
+	// LEXGLUE         KINDOF: an increase is a kind of change     (782a-53e7-c1c7-aae0) [ HYPONYM:"increase", HYPERNYM:"change" ]
+	//row autoRow18 = [UUID:"782a-53e7-c1c7-aae0", HYPONYM: "increase", HYPERNYM: "change"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"782a-53e7-c1c7-aae0", HYPONYM: "increase", HYPERNYM: "change"]
+
+	// LEXGLUE         SYNONYMY: heat means heat energy     (4710-c993-7a19-bef2) [ X1:"heat", X2:"heat energy" ]
+	//row autoRow19 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"]
+
+	// LEXGLUE         SYNONYMY: to turn means to change     (dfa9-fbe6-0fdf-502c) [ ACTION1:"turn", ACTION2:"change" ]
+	//row autoRow20 = [UUID:"dfa9-fbe6-0fdf-502c", ACTION1: "turn", ACTION2: "change"] //OVER-CONSTR.
+	row autoRow20 = [UUID:"dfa9-fbe6-0fdf-502c", ACTION1: "turn", ACTION2: "change"]
+
+endinferencepattern

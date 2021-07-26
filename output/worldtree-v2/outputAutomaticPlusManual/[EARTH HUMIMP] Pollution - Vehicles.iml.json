@@ -1,0 +1,198 @@
+{"patternMatches": [
+{
+	"patternName":"EARTH_HUMIMP_Pollution_Vehicles",
+	"matches":[
+		{
+		"uuids": ["3c28-d2a7-4f05-ca25","eb14-f908-f76d-7cf0","7cb7-40ac-f4d5-eb6c","8e30-5411-1171-26fa","d116-6f25-b3ac-7d88","0bb0-16b1-30de-d0e2","86ae-9fcc-40d0-77ab","1893-0c1c-dddc-e8c4","4d82-5c75-1ac1-abdd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1A", "uuid": "eb14-f908-f76d-7cf0", "rowText": "a car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1B", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "8e30-5411-1171-26fa", "rowText": "many vehicles emit pollution into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0bb0-16b1-30de-d0e2", "rowText": "vehicles usually require gasoline to operate", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "86ae-9fcc-40d0-77ab", "rowText": "burning gasoline ; oil is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1893-0c1c-dddc-e8c4", "rowText": "using a gasoline engine requires burning gasoline", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4d82-5c75-1ac1-abdd", "rowText": "polluting means something poisonous is added to an environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"enginePart", "value":"engine" },
+			{ "name":"gasolineFuel", "value":"gasoline" },
+			{ "name":"vehicle", "value":"car" },
+			{ "name":"vehicleType", "value":"automobile" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"enginePart", "value":"engine" },
+			{ "name":"gasolineFuel", "value":"gasoline" },
+			{ "name":"vehicle", "value":"car" },
+			{ "name":"vehicleType", "value":"automobile" }
+		]
+		},
+		{
+		"uuids": ["3c28-d2a7-4f05-ca25","c9c3-ae93-6335-a96e","7cb7-40ac-f4d5-eb6c","8e30-5411-1171-26fa","d116-6f25-b3ac-7d88","0bb0-16b1-30de-d0e2","86ae-9fcc-40d0-77ab","1893-0c1c-dddc-e8c4","4d82-5c75-1ac1-abdd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1A", "uuid": "c9c3-ae93-6335-a96e", "rowText": "a motorcycle is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1B", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "8e30-5411-1171-26fa", "rowText": "many vehicles emit pollution into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0bb0-16b1-30de-d0e2", "rowText": "vehicles usually require gasoline to operate", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "86ae-9fcc-40d0-77ab", "rowText": "burning gasoline ; oil is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1893-0c1c-dddc-e8c4", "rowText": "using a gasoline engine requires burning gasoline", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4d82-5c75-1ac1-abdd", "rowText": "polluting means something poisonous is added to an environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"enginePart", "value":"engine" },
+			{ "name":"gasolineFuel", "value":"gasoline" },
+			{ "name":"vehicle", "value":"motorcycle" },
+			{ "name":"vehicleType", "value":"automobile" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"enginePart", "value":"engine" },
+			{ "name":"gasolineFuel", "value":"gasoline" },
+			{ "name":"vehicle", "value":"motorcycle" },
+			{ "name":"vehicleType", "value":"automobile" }
+		]
+		},
+		{
+		"uuids": ["3c28-d2a7-4f05-ca25","TEMPGEN-43473","7cb7-40ac-f4d5-eb6c","8e30-5411-1171-26fa","d116-6f25-b3ac-7d88","0bb0-16b1-30de-d0e2","86ae-9fcc-40d0-77ab","1893-0c1c-dddc-e8c4","4d82-5c75-1ac1-abdd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1A", "uuid": "TEMPGEN-43473", "rowText": "bumper car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1B", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "8e30-5411-1171-26fa", "rowText": "many vehicles emit pollution into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0bb0-16b1-30de-d0e2", "rowText": "vehicles usually require gasoline to operate", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "86ae-9fcc-40d0-77ab", "rowText": "burning gasoline ; oil is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1893-0c1c-dddc-e8c4", "rowText": "using a gasoline engine requires burning gasoline", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4d82-5c75-1ac1-abdd", "rowText": "polluting means something poisonous is added to an environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"enginePart", "value":"engine" },
+			{ "name":"gasolineFuel", "value":"gasoline" },
+			{ "name":"vehicle", "value":"bumper car" },
+			{ "name":"vehicleType", "value":"automobile" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"enginePart", "value":"engine" },
+			{ "name":"gasolineFuel", "value":"gasoline" },
+			{ "name":"vehicle", "value":"bumper car" },
+			{ "name":"vehicleType", "value":"automobile" }
+		]
+		},
+		{
+		"uuids": ["eb14-f908-f76d-7cf0","7cb7-40ac-f4d5-eb6c","8e30-5411-1171-26fa","d116-6f25-b3ac-7d88","0bb0-16b1-30de-d0e2","86ae-9fcc-40d0-77ab","1893-0c1c-dddc-e8c4","4d82-5c75-1ac1-abdd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1A", "uuid": "eb14-f908-f76d-7cf0", "rowText": "a car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1B", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "8e30-5411-1171-26fa", "rowText": "many vehicles emit pollution into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0bb0-16b1-30de-d0e2", "rowText": "vehicles usually require gasoline to operate", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "86ae-9fcc-40d0-77ab", "rowText": "burning gasoline ; oil is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1893-0c1c-dddc-e8c4", "rowText": "using a gasoline engine requires burning gasoline", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4d82-5c75-1ac1-abdd", "rowText": "polluting means something poisonous is added to an environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"enginePart", "value":"engine" },
+			{ "name":"gasolineFuel", "value":"gasoline" },
+			{ "name":"vehicle", "value":"car" },
+			{ "name":"vehicleType", "value":"automobile" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"enginePart", "value":"engine" },
+			{ "name":"gasolineFuel", "value":"gasoline" },
+			{ "name":"vehicle", "value":"car" },
+			{ "name":"vehicleType", "value":"automobile" }
+		]
+		},
+		{
+		"uuids": ["c9c3-ae93-6335-a96e","7cb7-40ac-f4d5-eb6c","8e30-5411-1171-26fa","d116-6f25-b3ac-7d88","0bb0-16b1-30de-d0e2","86ae-9fcc-40d0-77ab","1893-0c1c-dddc-e8c4","4d82-5c75-1ac1-abdd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1A", "uuid": "c9c3-ae93-6335-a96e", "rowText": "a motorcycle is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1B", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "8e30-5411-1171-26fa", "rowText": "many vehicles emit pollution into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0bb0-16b1-30de-d0e2", "rowText": "vehicles usually require gasoline to operate", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "86ae-9fcc-40d0-77ab", "rowText": "burning gasoline ; oil is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1893-0c1c-dddc-e8c4", "rowText": "using a gasoline engine requires burning gasoline", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4d82-5c75-1ac1-abdd", "rowText": "polluting means something poisonous is added to an environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"enginePart", "value":"engine" },
+			{ "name":"gasolineFuel", "value":"gasoline" },
+			{ "name":"vehicle", "value":"motorcycle" },
+			{ "name":"vehicleType", "value":"automobile" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"enginePart", "value":"engine" },
+			{ "name":"gasolineFuel", "value":"gasoline" },
+			{ "name":"vehicle", "value":"motorcycle" },
+			{ "name":"vehicleType", "value":"automobile" }
+		]
+		},
+		{
+		"uuids": ["0302-4bd1-83f7-4280","c1de-b3ef-e1c4-0087","8e30-5411-1171-26fa","d116-6f25-b3ac-7d88","0bb0-16b1-30de-d0e2","86ae-9fcc-40d0-77ab","1893-0c1c-dddc-e8c4","4d82-5c75-1ac1-abdd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1A", "uuid": "0302-4bd1-83f7-4280", "rowText": "a bumper car is a kind of car", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1B", "uuid": "c1de-b3ef-e1c4-0087", "rowText": "a car is a kind of vehicle", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "8e30-5411-1171-26fa", "rowText": "many vehicles emit pollution into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0bb0-16b1-30de-d0e2", "rowText": "vehicles usually require gasoline to operate", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "86ae-9fcc-40d0-77ab", "rowText": "burning gasoline ; oil is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1893-0c1c-dddc-e8c4", "rowText": "using a gasoline engine requires burning gasoline", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4d82-5c75-1ac1-abdd", "rowText": "polluting means something poisonous is added to an environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"enginePart", "value":"engine" },
+			{ "name":"gasolineFuel", "value":"gasoline" },
+			{ "name":"vehicle", "value":"bumper car" },
+			{ "name":"vehicleType", "value":"car" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"enginePart", "value":"engine" },
+			{ "name":"gasolineFuel", "value":"gasoline" },
+			{ "name":"vehicle", "value":"bumper car" },
+			{ "name":"vehicleType", "value":"car" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-43473","7cb7-40ac-f4d5-eb6c","8e30-5411-1171-26fa","d116-6f25-b3ac-7d88","0bb0-16b1-30de-d0e2","86ae-9fcc-40d0-77ab","1893-0c1c-dddc-e8c4","4d82-5c75-1ac1-abdd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1A", "uuid": "TEMPGEN-43473", "rowText": "bumper car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1B", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "8e30-5411-1171-26fa", "rowText": "many vehicles emit pollution into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0bb0-16b1-30de-d0e2", "rowText": "vehicles usually require gasoline to operate", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "86ae-9fcc-40d0-77ab", "rowText": "burning gasoline ; oil is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1893-0c1c-dddc-e8c4", "rowText": "using a gasoline engine requires burning gasoline", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4d82-5c75-1ac1-abdd", "rowText": "polluting means something poisonous is added to an environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"enginePart", "value":"engine" },
+			{ "name":"gasolineFuel", "value":"gasoline" },
+			{ "name":"vehicle", "value":"bumper car" },
+			{ "name":"vehicleType", "value":"automobile" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"enginePart", "value":"engine" },
+			{ "name":"gasolineFuel", "value":"gasoline" },
+			{ "name":"vehicle", "value":"bumper car" },
+			{ "name":"vehicleType", "value":"automobile" }
+		]
+		}
+	]
+}
+]}
+

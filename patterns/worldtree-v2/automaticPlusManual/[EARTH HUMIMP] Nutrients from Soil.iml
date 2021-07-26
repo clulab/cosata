@@ -1,0 +1,75 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Nutrients_from_Soil
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: nitrogen is a kind of nutrient for plant growth     (aed2-c2ce-7d6c-ef26) [ HYPONYM:"nitrogen", HYPERNYM:"nutrient", FOR_PURPOSE:"for plant grow" ]
+	//        HINTROW potassium is a kind of nutrient for plant growth     (0afa-db45-c7bf-4690) [ HYPONYM:"potassium", HYPERNYM:"nutrient for plant grow" ]
+	//        HINTROW phosphorus is a kind of nutrient for plant growth     (03f3-836f-177e-1be9) [ HYPONYM:"phosphorus", HYPERNYM:"nutrient for plant grow" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "nitrogen", HYPERNYM: "nutrient", FOR_PURPOSE: *"POS:IN"+"plant grow"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "nutrient"]
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW a lemon tree is a kind of plant     (9cf1-bc5a-d350-5541) [ HYPONYM:"lemon tree", HYPERNYM:"plant" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// GROUNDING       KINDOF: iron is a kind of mineral     (564d-448d-05b5-998e) [ HYPONYM:"iron", HYPERNYM:"mineral" ]
+	//        HINTROW zinc is a kind of mineral     (77ce-37b8-e09b-f59f) [ HYPONYM:"zinc", HYPERNYM:"mineral" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "mineral"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "mineral"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if the iron in soil is not usable , then the plant will be deficient in iron     (4418-982c-0f8c-f8d3) [ THING:"iron", SCOPE1A:"in soil", ACTION1:"be not", ADJ_QUANTITY1A:"usable", ACTOR_AGENT_PROCESS2:"plant", OBJECT_PROPERTY3:"deficient", SCOPE4:"in iron" ]
+	//row *autoRow3 = [UUID:"4418-982c-0f8c-f8d3", THING: "iron", SCOPE1A: "in soil", ACTION1: "be not", ADJ_QUANTITY1A: "usable", ACTOR_AGENT_PROCESS2: "plant", OBJECT_PROPERTY3: "deficient", SCOPE4: "in iron"] //OVER-CONSTR.
+	row *autoRow3 = [UUID:"4418-982c-0f8c-f8d3", THING: "iron", SCOPE1A: "in soil", ACTION1: "be not", ADJ_QUANTITY1A: "usable", ACTOR_AGENT_PROCESS2: "plant", OBJECT_PROPERTY3: "deficient", SCOPE4: "in iron"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: iron deficiency can cause the leaves of plants to be yellow     (2d08-b803-e81a-961a) [ CONDITION_AGENT_OBJECT:"iron deficiency", RESULT_AGENT:"leaf of plant", RESULT_VERB:"be yellow" ]
+	//row *autoRow4 = [UUID:"2d08-b803-e81a-961a", CONDITION_AGENT_OBJECT: "iron deficiency", RESULT_AGENT: "leaf of plant", RESULT_VERB: "be yellow"] //OVER-CONSTR.
+	row *autoRow4 = [UUID:"2d08-b803-e81a-961a", CONDITION_AGENT_OBJECT: "iron deficiency", RESULT_AGENT: "leaf of plant", RESULT_VERB: "be yellow"]
+
+	// CENTRAL         REQUIRES: a plant ; living thing requires nutrients to grow     (085c-28bf-bb51-79e6) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"nutrient", FOR_PURPOSE:"grow" ]
+	//row autoRow5 = [UUID:"085c-28bf-bb51-79e6", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"085c-28bf-bb51-79e6", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "grow"]
+
+	// CENTRAL         PROP-RESOURCES-RENEWABLE: soil is a renewable resource for growing plants     (1af4-c273-5b80-34e6) [ RESOURCE:"soil", REWABLE_NONRENEWABLE:"renewable", FOR_PURPOSE:"grow plant" ]
+	//row autoRow6 = [UUID:"1af4-c273-5b80-34e6", RESOURCE: "soil", REWABLE_NONRENEWABLE: "renewable", FOR_PURPOSE: "grow plant"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"1af4-c273-5b80-34e6", RESOURCE: "soil", REWABLE_NONRENEWABLE: "renewable", FOR_PURPOSE: "grow plant"]
+
+	// CENTRAL         REQUIRES: a plant requires soil for survival ; to grow     (5ebe-099f-fd30-b713) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"soil", FOR_PURPOSE:"survive;grow" ]
+	//row autoRow7 = [UUID:"5ebe-099f-fd30-b713", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "soil", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"5ebe-099f-fd30-b713", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "soil", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         CONTAINS: soil contains nutrients for plants     (ddcc-3b71-b14e-97d1) [ OBJECT_AGENT:"soil", WHAT_IT_CONTAINS:"nutrient", FOR_PURPOSE:"plant" ]
+	//row autoRow8 = [UUID:"ddcc-3b71-b14e-97d1", OBJECT_AGENT: "soil", WHAT_IT_CONTAINS: "nutrient", FOR_PURPOSE: "plant"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"ddcc-3b71-b14e-97d1", OBJECT_AGENT: "soil", WHAT_IT_CONTAINS: "nutrient", FOR_PURPOSE: "plant"]
+
+	// CENTRAL         MADEOF: soil is made of very small rocks ; minerals     (17a3-86be-a2ea-bdb8) [ OBJECT:"soil", VALUE:"very small", MATERIAL:"rock;mineral" ]
+	//row autoRow9 = [UUID:"17a3-86be-a2ea-bdb8", OBJECT: "soil", VALUE: "very small", MATERIAL: "rock"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"17a3-86be-a2ea-bdb8", OBJECT: "soil", VALUE: "very small", MATERIAL: "rock"]
+
+	// CENTRAL         SOURCEOF: soil provides nutrients for plants     (6758-0732-1458-ec8b) [ AGENT:"soil", VERB_SOURCEOF_PROVIDE_ETC:"provide", WHAT_IT_PROVIDES:"nutrient", AGENT_IT_PROVIDES_THING_TO:"plant" ]
+	//row autoRow10 = [UUID:"6758-0732-1458-ec8b", AGENT: "soil", VERB_SOURCEOF_PROVIDE_ETC: "provide", WHAT_IT_PROVIDES: "nutrient", AGENT_IT_PROVIDES_THING_TO: "plant"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"6758-0732-1458-ec8b", AGENT: "soil", VERB_SOURCEOF_PROVIDE_ETC: "provide", WHAT_IT_PROVIDES: "nutrient", AGENT_IT_PROVIDES_THING_TO: "plant"]
+
+	// CENTRAL         PROP-THINGS: high quality ; rich ; good soil has a high number of nutrients ; amount of nitrogen     (3dad-38fc-471b-0aed) [ ADJ:"high quality;rich;good", THING:"soil", VALUE:"high", ATTRIBUTE:"numb of nutrient;amount of nitrogen" ]
+	//row autoRow11 = [UUID:"3dad-38fc-471b-0aed", ADJ: "high quality", THING: "soil", VALUE: "high", ATTRIBUTE: "numb of nutrient"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"3dad-38fc-471b-0aed", ADJ: "high quality", THING: "soil", VALUE: "high", ATTRIBUTE: "numb of nutrient"]
+
+	// CENTRAL         PROP-THINGS: fertile soil is high in quality     (b7eb-7a34-8336-c669) [ ADJ:"fertile", THING:"soil", VALUE:"high", ATTRIBUTE:"in quality" ]
+	//row autoRow12 = [UUID:"b7eb-7a34-8336-c669", ADJ: "fertile", THING: "soil", VALUE: "high", ATTRIBUTE: "in quality"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"b7eb-7a34-8336-c669", ADJ: "fertile", THING: "soil", VALUE: "high", ATTRIBUTE: "in quality"]
+
+	// CENTRAL         INSTANCES: some minerals are nutrients     (ca61-050e-2c77-6cda) [ INSTANCE:"mineral", CLASS:"nutrient" ]
+	//row autoRow13 = [UUID:"ca61-050e-2c77-6cda", INSTANCE: "mineral", CLASS: "nutrient"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"ca61-050e-2c77-6cda", INSTANCE: "mineral", CLASS: "nutrient"]
+
+	// LEXGLUE         SYNONYMY: soil fertility means the ability of soil to sustain plant growth     (2137-7934-4c51-573e) [ X1:"soil fertility", X2:"ability of soil sustain plant grow" ]
+	//row autoRow14 = [UUID:"2137-7934-4c51-573e", X1: "soil fertility", X2: "ability of soil sustain plant grow"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"2137-7934-4c51-573e", X1: "soil fertility", X2: "ability of soil sustain plant grow"]
+
+endinferencepattern

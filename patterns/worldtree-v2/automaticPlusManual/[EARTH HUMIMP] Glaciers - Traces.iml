@@ -1,0 +1,57 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Glaciers_Traces
+
+	// Plain text description
+	description = "e.g. 'what can be used as an evidence for a glacier once existed at some place'"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       FORMEDBY: U-shaped valley is formed by glaciers     (88b5-2906-5de2-fb01) [ OBJECT:"u-shaped valley;u shape valley", AGENT_PROCESS:"glacier" ]
+	//        HINTROW the Great Lakes were formed by glaciers moving over the ground     (ffc7-259e-e733-5c0c) [ OBJECT:"great lake", AGENT_PROCESS:"glacier", VERB:"move over", PATIENT:"grind" ]
+	//        HINTROW a kettle is formed when chunks of ice left by glaciers melt     (fd00-6ac1-b7ce-d4d6) [ OBJECT:"kettle", AGENT_PROCESS:"chunk of ice leave by glacier", VERB:"melt" ]
+	//        HINTROW sometimes piles of rock are formed by melting glaciers depositing rocks     (cb6d-119e-cb76-09a7) [ QUANTIFIER:"sometimes", OBJECT:"pile of rock", AGENT_PROCESS:"melt glacier", VERB:"deposition", PATIENT:"rock" ]
+	//        HINTROW boulders ; sand ; gravel are formed by glaciers melting sometimes     (f41a-9eca-4647-75e1) [ OBJECT:"boulder;sand;gravel", AGENT_PROCESS:"glacier", VERB:"melt", SCOPE:"sometimes" ]
+	//  Notes: Traces of Glacier Existence
+	//row autoRow0 = [TABLE:"FORMEDBY", AGENT_PROCESS: "glacier"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"FORMEDBY", AGENT_PROCESS: "glacier"]
+
+	// CENTRALSW       CAUSE: glaciers moving cause scratches in rocks     (c323-6873-c26d-4c0b) [ CONDITION_AGENT_OBJECT:"glacier", CONDITION_VERB:"move", RESULT_AGENT:"scratch", SCOPE2:"in rock" ]
+	//        HINTROW glaciers moving causes mechanical weathering     (2f61-1e65-c812-3feb) [ CONDITION_AGENT_OBJECT:"glacier", CONDITION_VERB:"move", RESULT_AGENT:"mechanical weather" ]
+	//row autoRow1 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "glacier", CONDITION_VERB: "move"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "glacier", CONDITION_VERB: "move"]
+
+	// GROUNDING       KINDOF: ice is a kind of solid     (7ef1-c28b-22e3-3edc) [ HYPONYM:"ice", HYPERNYM:"solid" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "ice", HYPERNYM: "solid"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "ice", HYPERNYM: "solid"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C     (4a5a-9115-28a9-b97b) [ MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice", LOWER_BOUND:"0;-459;-273;459;273", UPPER_BOUND:"273;32;0", UNITS:"k;f;c" ]
+	//row autoRow3 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"]
+
+	// CENTRAL         CONTAINS: Earth contains glaciers ; ice caps     (5962-c3e3-67cc-829b) [ OBJECT_AGENT:"earth", WHAT_IT_CONTAINS:"glacier;ice cap" ]
+	//row autoRow4 = [UUID:"5962-c3e3-67cc-829b", OBJECT_AGENT: "earth", WHAT_IT_CONTAINS: "ice cap"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"5962-c3e3-67cc-829b", OBJECT_AGENT: "earth", WHAT_IT_CONTAINS: "ice cap"]
+
+	// CENTRAL         ACTION: glaciers cover 10% of land on Earth     (8b49-0dfa-e6e0-48c1) [ AGENT_OBJECT:"glacier", ACTION2:"cover", OBJECT_PROPERTY:"10 % of land", WHEN_WHERE:"on earth" ]
+	//row autoRow5 = [UUID:"8b49-0dfa-e6e0-48c1", AGENT_OBJECT: "glacier", ACTION2: "cover", OBJECT_PROPERTY: "10 % of land", WHEN_WHERE: "on earth"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"8b49-0dfa-e6e0-48c1", AGENT_OBJECT: "glacier", ACTION2: "cover", OBJECT_PROPERTY: "10 % of land", WHEN_WHERE: "on earth"]
+
+	// CENTRAL         PROP-THINGS: ice is cold in temperature     (d495-a1f3-29eb-04fe) [ THING:"ice", VALUE:"cold", ATTRIBUTE:"in temperature" ]
+	//row autoRow6 = [UUID:"d495-a1f3-29eb-04fe", THING: "ice", VALUE: "cold", ATTRIBUTE: "in temperature"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"d495-a1f3-29eb-04fe", THING: "ice", VALUE: "cold", ATTRIBUTE: "in temperature"]
+
+	// CENTRAL         MADEOF: a glacier is made of ice     (b901-aa66-c858-54e7) [ OBJECT:"glacier", MATERIAL:"ice" ]
+	//row autoRow7 = [UUID:"b901-aa66-c858-54e7", OBJECT: "glacier", MATERIAL: "ice"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"b901-aa66-c858-54e7", OBJECT: "glacier", MATERIAL: "ice"]
+
+	// CENTRAL         ACTION: a glacier moves slowly     (cfd6-1d2a-381a-2ff1) [ AGENT_OBJECT:"glacier", ACTION2:"move", HOW:"slowly" ]
+	//row autoRow8 = [UUID:"cfd6-1d2a-381a-2ff1", AGENT_OBJECT: "glacier", ACTION2: "move", HOW: "slowly"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"cfd6-1d2a-381a-2ff1", AGENT_OBJECT: "glacier", ACTION2: "move", HOW: "slowly"]
+
+	// LEXGLUE         SYNONYMY: fresh water means freshwater     (1fc0-1a1e-2e4e-6bc7) [ X1:"fresh water", X2:"freshwater" ]
+	//row autoRow9 = [UUID:"1fc0-1a1e-2e4e-6bc7", X1: "fresh water", X2: "freshwater"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"1fc0-1a1e-2e4e-6bc7", X1: "fresh water", X2: "freshwater"]
+
+endinferencepattern

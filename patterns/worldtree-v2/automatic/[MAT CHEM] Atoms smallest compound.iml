@@ -1,0 +1,54 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Atoms_smallest_compound
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: atom is a kind of particle     (2661-4bb8-18ac-a908) [ HYPONYM:"atom", HYPERNYM:"particle" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "atom", HYPERNYM: "particle"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "atom", HYPERNYM: "particle"]
+
+	// GROUNDING       KINDOF: gold is a kind of element     (eb57-77f3-768e-3665) [ HYPONYM:"gold", HYPERNYM:"element" ]
+	//        HINTROW copper is a kind of element     (6cfd-e59f-1413-76ff) [ HYPONYM:"copper", HYPERNYM:"element" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "element"]
+
+	// CENTRAL         AFFORDANCES: atom cannot be divided into smaller substances     (f320-ae0d-a535-2f2b) [ ACTOR_THING:"atom", VERB:"be divide into", PATIENT:"small substance" ]
+	//row autoRow2 = [UUID:"f320-ae0d-a535-2f2b", ACTOR_THING: "atom", VERB: "be divide into", PATIENT: "small substance"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"f320-ae0d-a535-2f2b", ACTOR_THING: "atom", VERB: "be divide into", PATIENT: "small substance"]
+
+	// CENTRAL         PROP-THINGS: an atom is exceptionally small in size     (7caf-566e-855c-469b) [ THING:"atom", MAGNITUDE:"exceptionally", VALUE:"small", ATTRIBUTE:"in size" ]
+	//row autoRow3 = [UUID:"7caf-566e-855c-469b", THING: "atom", MAGNITUDE: "exceptionally", VALUE: "small", ATTRIBUTE: "in size"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"7caf-566e-855c-469b", THING: "atom", MAGNITUDE: "exceptionally", VALUE: "small", ATTRIBUTE: "in size"]
+
+	// CENTRAL         MADEOF: an element is made of one kind of atoms     (07ab-6aed-2ab3-9846) [ OBJECT:"element", VALUE:"one kind of", MATERIAL:"atom" ]
+	//row autoRow4 = [UUID:"07ab-6aed-2ab3-9846", OBJECT: "element", VALUE: "one kind of", MATERIAL: "atom"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"07ab-6aed-2ab3-9846", OBJECT: "element", VALUE: "one kind of", MATERIAL: "atom"]
+
+	// CENTRAL         COMPARISON: the atom is the smallest unit ; particle that has the properties of an element     (9059-174e-fc66-fd7a) [ THING:"atom", ACTION1:"be", COMPARISON:"small", WHAT:"unit;particle", SCOPE2:"have property of element" ]
+	//  Notes: 3b8b-8c35-53cf-354f->9059-174e-fc66-fd7a
+	//row autoRow5 = [UUID:"9059-174e-fc66-fd7a", THING: "atom", ACTION1: "be", COMPARISON: "small", WHAT: "unit", SCOPE2: "have property of element"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"9059-174e-fc66-fd7a", THING: "atom", ACTION1: "be", COMPARISON: "small", WHAT: "unit", SCOPE2: "have property of element"]
+
+	// CENTRAL         MADEOF: matter ; materials ; substances are made of atoms ; particles     (1758-a1b7-4083-9e99) [ OBJECT:"matt;material;substance", MATERIAL:"atom;particle" ]
+	//row autoRow6 = [UUID:"1758-a1b7-4083-9e99", OBJECT: "matt", MATERIAL: "atom"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"1758-a1b7-4083-9e99", OBJECT: "matt", MATERIAL: "atom"]
+
+	// CENTRAL         KINDOF: an element is a kind of atom     (9042-ff16-ab5c-0dc2) [ HYPONYM:"element", HYPERNYM:"atom" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"9042-ff16-ab5c-0dc2", HYPONYM: "element", HYPERNYM: "atom"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"9042-ff16-ab5c-0dc2", HYPONYM: "element", HYPERNYM: "atom"]
+
+	// CENTRAL         MADEOF: an atom is made of protons ; neutrons ; electrons     (b5fd-9d86-c99e-9a4e) [ OBJECT:"atom", MATERIAL:"proton;neutron;electron" ]
+	//row autoRow8 = [UUID:"b5fd-9d86-c99e-9a4e", OBJECT: "atom", MATERIAL: "proton"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"b5fd-9d86-c99e-9a4e", OBJECT: "atom", MATERIAL: "proton"]
+
+	// LEXGLUE         SYNONYMY: to retain means to have     (da06-7ae9-543d-8bcd) [ ACTION1:"retain", ACTION2:"have" ]
+	//row autoRow9 = [UUID:"da06-7ae9-543d-8bcd", ACTION1: "retain", ACTION2: "have"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"da06-7ae9-543d-8bcd", ACTION1: "retain", ACTION2: "have"]
+
+endinferencepattern

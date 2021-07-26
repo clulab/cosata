@@ -1,0 +1,560 @@
+{"patternMatches": [
+{
+	"patternName":"EARTH_WEATHER_Properties_Weather",
+	"matches":[
+		{
+		"uuids": ["f992-5698-76aa-c6de","cf2a-6257-0c5c-7445","cb4c-5229-e5b9-6408","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cf2a-6257-0c5c-7445", "rowText": "cold means low in temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "cb4c-5229-e5b9-6408", "rowText": "hail is a kind of precipitation ; ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","cf2a-6257-0c5c-7445","da1e-dca3-f46a-5189","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cf2a-6257-0c5c-7445", "rowText": "cold means low in temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "da1e-dca3-f46a-5189", "rowText": "rain is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","cf2a-6257-0c5c-7445","f704-bbf0-c1f5-b8ba","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cf2a-6257-0c5c-7445", "rowText": "cold means low in temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f704-bbf0-c1f5-b8ba", "rowText": "sleet is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","cf2a-6257-0c5c-7445","8083-d6d0-9cba-da83","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cf2a-6257-0c5c-7445", "rowText": "cold means low in temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8083-d6d0-9cba-da83", "rowText": "snow is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","246e-dd6e-6e09-988a","cb4c-5229-e5b9-6408","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "246e-dd6e-6e09-988a", "rowText": "colder ; cooler means lower in temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "cb4c-5229-e5b9-6408", "rowText": "hail is a kind of precipitation ; ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","246e-dd6e-6e09-988a","da1e-dca3-f46a-5189","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "246e-dd6e-6e09-988a", "rowText": "colder ; cooler means lower in temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "da1e-dca3-f46a-5189", "rowText": "rain is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","246e-dd6e-6e09-988a","f704-bbf0-c1f5-b8ba","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "246e-dd6e-6e09-988a", "rowText": "colder ; cooler means lower in temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f704-bbf0-c1f5-b8ba", "rowText": "sleet is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","246e-dd6e-6e09-988a","8083-d6d0-9cba-da83","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "246e-dd6e-6e09-988a", "rowText": "colder ; cooler means lower in temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8083-d6d0-9cba-da83", "rowText": "snow is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","9ff8-543c-2f35-5d3f","cb4c-5229-e5b9-6408","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "cb4c-5229-e5b9-6408", "rowText": "hail is a kind of precipitation ; ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","9ff8-543c-2f35-5d3f","da1e-dca3-f46a-5189","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "da1e-dca3-f46a-5189", "rowText": "rain is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","9ff8-543c-2f35-5d3f","f704-bbf0-c1f5-b8ba","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f704-bbf0-c1f5-b8ba", "rowText": "sleet is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","9ff8-543c-2f35-5d3f","8083-d6d0-9cba-da83","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8083-d6d0-9cba-da83", "rowText": "snow is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","63df-d3d9-56dc-161a","cb4c-5229-e5b9-6408","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "63df-d3d9-56dc-161a", "rowText": "warm means medium heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "cb4c-5229-e5b9-6408", "rowText": "hail is a kind of precipitation ; ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","63df-d3d9-56dc-161a","da1e-dca3-f46a-5189","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "63df-d3d9-56dc-161a", "rowText": "warm means medium heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "da1e-dca3-f46a-5189", "rowText": "rain is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","63df-d3d9-56dc-161a","f704-bbf0-c1f5-b8ba","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "63df-d3d9-56dc-161a", "rowText": "warm means medium heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f704-bbf0-c1f5-b8ba", "rowText": "sleet is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","63df-d3d9-56dc-161a","8083-d6d0-9cba-da83","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "63df-d3d9-56dc-161a", "rowText": "warm means medium heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8083-d6d0-9cba-da83", "rowText": "snow is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","3c5b-8471-16d4-f1b2","cb4c-5229-e5b9-6408","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "3c5b-8471-16d4-f1b2", "rowText": "warmer means greater ; higher in temperature ; warmth", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "cb4c-5229-e5b9-6408", "rowText": "hail is a kind of precipitation ; ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","3c5b-8471-16d4-f1b2","da1e-dca3-f46a-5189","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "3c5b-8471-16d4-f1b2", "rowText": "warmer means greater ; higher in temperature ; warmth", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "da1e-dca3-f46a-5189", "rowText": "rain is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","3c5b-8471-16d4-f1b2","f704-bbf0-c1f5-b8ba","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "3c5b-8471-16d4-f1b2", "rowText": "warmer means greater ; higher in temperature ; warmth", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f704-bbf0-c1f5-b8ba", "rowText": "sleet is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","3c5b-8471-16d4-f1b2","8083-d6d0-9cba-da83","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "3c5b-8471-16d4-f1b2", "rowText": "warmer means greater ; higher in temperature ; warmth", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8083-d6d0-9cba-da83", "rowText": "snow is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","0994-2334-3ae5-92d1","cb4c-5229-e5b9-6408","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0994-2334-3ae5-92d1", "rowText": "moderate means medium in temperature ; warmth", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "cb4c-5229-e5b9-6408", "rowText": "hail is a kind of precipitation ; ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","0994-2334-3ae5-92d1","da1e-dca3-f46a-5189","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0994-2334-3ae5-92d1", "rowText": "moderate means medium in temperature ; warmth", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "da1e-dca3-f46a-5189", "rowText": "rain is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","0994-2334-3ae5-92d1","f704-bbf0-c1f5-b8ba","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0994-2334-3ae5-92d1", "rowText": "moderate means medium in temperature ; warmth", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f704-bbf0-c1f5-b8ba", "rowText": "sleet is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["f992-5698-76aa-c6de","0994-2334-3ae5-92d1","8083-d6d0-9cba-da83","ad14-7992-4190-1c30","33cb-429a-ce86-2d79","18c4-e5f9-2e96-516d","75e5-d0aa-9512-f33c","33f0-39de-0983-aad8","15e8-30e1-6311-03de","1a23-b7e4-5ac6-60c3","5e47-e0b9-a06f-d37b","950c-7489-5659-db44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0994-2334-3ae5-92d1", "rowText": "moderate means medium in temperature ; warmth", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8083-d6d0-9cba-da83", "rowText": "snow is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "ad14-7992-4190-1c30", "rowText": "front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "18c4-e5f9-2e96-516d", "rowText": "windy means high wind speeds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "75e5-d0aa-9512-f33c", "rowText": "sky conditions are a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "15e8-30e1-6311-03de", "rowText": "wind direction is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1a23-b7e4-5ac6-60c3", "rowText": "wind speed is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "950c-7489-5659-db44", "rowText": "temperature is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		}
+	]
+}
+]}
+

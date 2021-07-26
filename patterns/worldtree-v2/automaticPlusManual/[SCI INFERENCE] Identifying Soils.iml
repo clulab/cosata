@@ -1,0 +1,69 @@
+// Automatically converted pattern
+inferencepattern SCI_INFERENCE_Identifying_Soils
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ACTION: feeling is when an living thing senses through touch     (e58b-6fd8-4321-1a69) [ DEFINITION_NAME:"feel", AGENT_OBJECT:"live thing", ACTION2:"sense", BY_THROUGH_HOW:"touch" ]
+	//        HINTROW touching is when a body part makes contact with the surface of an object     (7c06-acbe-198f-0202) [ DEFINITION_NAME:"touch", AGENT_OBJECT:"body part", ACTION2:"make contact with", OBJECT_PROPERTY:"surface", WHEN_WHERE:"of object" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow0 = [TABLE:"ACTION"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow0 = [TABLE:"ACTION"]
+
+	// GROUNDING       KINDOF: smooth is a kind of texture     (be7f-0242-d76f-3be0) [ HYPONYM:"smooth", HYPERNYM:"texture" ]
+	//        HINTROW rough is a kind of texture     (4639-8ac3-5232-3850) [ HYPONYM:"rough", HYPERNYM:"texture" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "smooth", HYPERNYM: "texture"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "smooth", HYPERNYM: "texture"]
+
+	// GROUNDING       PROP-THINGS: sandy soil is gritty in texture     (5674-7f01-075a-a0c2) [ ADJ:"sandy", THING:"soil", VALUE:"gritty", ATTRIBUTE:"in texture" ]
+	//        HINTROW soil with high percentage of clay is smooth in texture     (6e25-87ba-ebe7-b432) [ THING:"soil with high percentage of clay", VALUE:"smooth", ATTRIBUTE:"in texture" ]
+	//row autoRow2 = [TABLE:"PROP-THINGS", THING: "soil", ATTRIBUTE: "in texture"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"PROP-THINGS", THING: "soil", ATTRIBUTE: "in texture"]
+
+	// CENTRAL         CAUSE: the composition of the soil causes the texture of the soil to be different     (dce5-de3a-ff65-422c) [ CONDITION_AGENT_OBJECT:"compose of soil", RESULT_AGENT:"texture of soil", RESULT_VERB:"be differ" ]
+	//row autoRow3 = [UUID:"dce5-de3a-ff65-422c", CONDITION_AGENT_OBJECT: "compose of soil", RESULT_AGENT: "texture of soil", RESULT_VERB: "be differ"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"dce5-de3a-ff65-422c", CONDITION_AGENT_OBJECT: "compose of soil", RESULT_AGENT: "texture of soil", RESULT_VERB: "be differ"]
+
+	// CENTRAL         PROP-GENERIC: texture is a property of surfaces ; materials ; objects and includes ordered values of smooth ; rough     (936a-31ea-b049-fee7) [ X:"texture", Y:"surface;material;object", ORDERED_UNORDERED:"order", VALUES:"smooth;rough" ]
+	//row autoRow4 = [UUID:"936a-31ea-b049-fee7", X: "texture", Y: "surface", ORDERED_UNORDERED: "order", VALUES: "smooth"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"936a-31ea-b049-fee7", X: "texture", Y: "surface", ORDERED_UNORDERED: "order", VALUES: "smooth"]
+
+	// CENTRAL         AFFORDANCES: the properties of something can be used to identify ; used to describe that something     (8661-5700-67ef-4ac8) [ ACTOR_THING:"property", PROPERTY_OBJECT:"of something", VERB:"use identify;use describe", PATIENT:"that something" ]
+	//row autoRow5 = [UUID:"8661-5700-67ef-4ac8", ACTOR_THING: "property", PROPERTY_OBJECT: "of something", VERB: "use identify", PATIENT: "that something"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"8661-5700-67ef-4ac8", ACTOR_THING: "property", PROPERTY_OBJECT: "of something", VERB: "use identify", PATIENT: "that something"]
+
+	// CENTRAL         PROP-THINGS: different types of soil have different textures     (023a-cb3f-47ab-8682) [ ADJ:"differ", THING:"type of soil", VALUE:"differ", ATTRIBUTE:"texture" ]
+	//row autoRow6 = [UUID:"023a-cb3f-47ab-8682", ADJ: "differ", THING: "type of soil", VALUE: "differ", ATTRIBUTE: "texture"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"023a-cb3f-47ab-8682", ADJ: "differ", THING: "type of soil", VALUE: "differ", ATTRIBUTE: "texture"]
+
+	// CENTRAL        (OPTIONAL) AFFORDANCES: the texture of an object can sometimes be told by looking at the object     (bac8-51e2-f03a-e1c1) [ ACTOR_THING:"texture", PROPERTY_OBJECT:"of object", QUANTIFIER:"sometimes", VERB:"be tell", BY_THROUGH_HOW:"look at object" ]
+	//row *autoRow7 = [UUID:"bac8-51e2-f03a-e1c1", ACTOR_THING: "texture", PROPERTY_OBJECT: "of object", QUANTIFIER: "sometimes", VERB: "be tell", BY_THROUGH_HOW: "look at object"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"bac8-51e2-f03a-e1c1", ACTOR_THING: "texture", PROPERTY_OBJECT: "of object", QUANTIFIER: "sometimes", VERB: "be tell", BY_THROUGH_HOW: "look at object"]
+
+	// CENTRAL         KINDOF: texture is a kind of physical property     (24d2-c4a2-766f-4c36) [ HYPONYM:"texture", SCOPE1:"physical", HYPERNYM:"property" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"24d2-c4a2-766f-4c36", HYPONYM: "texture", SCOPE1: "physical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"24d2-c4a2-766f-4c36", HYPONYM: "texture", SCOPE1: "physical", HYPERNYM: "property"]
+
+	// CENTRAL        (OPTIONAL) USEDFOR: touch can be used for detecting texture     (df67-2c42-2ea5-500d) [ AGENT_OBJECT:"touch", QUALIFIER:"be", FOR_PURPOSE:"detect", PATIENT:"texture" ]
+	//row *autoRow9 = [UUID:"df67-2c42-2ea5-500d", AGENT_OBJECT: "touch", QUALIFIER: "be", FOR_PURPOSE: "detect", PATIENT: "texture"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"df67-2c42-2ea5-500d", AGENT_OBJECT: "touch", QUALIFIER: "be", FOR_PURPOSE: "detect", PATIENT: "texture"]
+
+	// LEXGLUE         SYNONYMY: touching something means feeling that something     (6722-33ad-ff6e-30b3) [ ACTION1:"touch", Y1:"something", ACTION2:"feel", Y2:"that something" ]
+	//row autoRow10 = [UUID:"6722-33ad-ff6e-30b3", ACTION1: "touch", Y1: "something", ACTION2: "feel", Y2: "that something"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"6722-33ad-ff6e-30b3", ACTION1: "touch", Y1: "something", ACTION2: "feel", Y2: "that something"]
+
+	// LEXGLUE         SYNONYMY: texture means how an object feels     (6c86-9d15-6ab9-f4c3) [ X1:"texture", X2:"object feel" ]
+	//row autoRow11 = [UUID:"6c86-9d15-6ab9-f4c3", X1: "texture", X2: "object feel"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"6c86-9d15-6ab9-f4c3", X1: "texture", X2: "object feel"]
+
+	// LEXGLUE         SYNONYMY: sandy means made of a high amount of sand     (7ce0-ec07-7578-ac41) [ X1:"sandy", X2:"make of high amount of sand" ]
+	//row autoRow12 = [UUID:"7ce0-ec07-7578-ac41", X1: "sandy", X2: "make of high amount of sand"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"7ce0-ec07-7578-ac41", X1: "sandy", X2: "make of high amount of sand"]
+
+endinferencepattern

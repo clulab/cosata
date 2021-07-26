@@ -1,0 +1,66 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Locomotion_Controlled_by_Nervous
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a bird is a kind of animal     (e26b-b21d-d4a3-25fc) [ HYPONYM:"bird", HYPERNYM:"animal" ]
+	//        HINTROW a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: flying is a kind of locomotion     (566c-4ada-2bb1-a49e) [ HYPONYM:"fly", HYPERNYM:"locomotion" ]
+	//        HINTROW walking is a kind of motion     (8848-4ca5-92b5-6607) [ HYPONYM:"walk", HYPERNYM:"move" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow1 = [TABLE:"KINDOF"]
+
+	// CENTRAL         AFFORDANCES: the brain can control animal body through the nervous system     (90b2-edef-d99f-687c) [ ACTOR_THING:"brain", VERB:"control", PATIENT:"animal body", BY_THROUGH_HOW:"nervous system" ]
+	//row autoRow2 = [UUID:"90b2-edef-d99f-687c", ACTOR_THING: "brain", VERB: "control", PATIENT: "animal body", BY_THROUGH_HOW: "nervous system"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"90b2-edef-d99f-687c", ACTOR_THING: "brain", VERB: "control", PATIENT: "animal body", BY_THROUGH_HOW: "nervous system"]
+
+	// CENTRAL         ACTION: muscular movement helps animals move     (eab1-bd74-10b3-e71c) [ AGENT_OBJECT:"muscular move", ACTION2:"help", OBJECT_PROPERTY:"animal move" ]
+	//row autoRow3 = [UUID:"eab1-bd74-10b3-e71c", AGENT_OBJECT: "muscular move", ACTION2: "help", OBJECT_PROPERTY: "animal move"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"eab1-bd74-10b3-e71c", AGENT_OBJECT: "muscular move", ACTION2: "help", OBJECT_PROPERTY: "animal move"]
+
+	// CENTRAL         USEDFOR: the nervous system is used for controlling the body     (94a0-d90c-b39c-7263) [ AGENT_OBJECT:"nervous system", FOR_PURPOSE:"control", PATIENT:"body" ]
+	//row autoRow4 = [UUID:"94a0-d90c-b39c-7263", AGENT_OBJECT: "nervous system", FOR_PURPOSE: "control", PATIENT: "body"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"94a0-d90c-b39c-7263", AGENT_OBJECT: "nervous system", FOR_PURPOSE: "control", PATIENT: "body"]
+
+	// CENTRAL         MADEOF: skeletal system is made of bones     (1868-9bad-b9cc-1302) [ OBJECT:"skeletal system", MATERIAL:"bone" ]
+	//row autoRow5 = [UUID:"1868-9bad-b9cc-1302", OBJECT: "skeletal system", MATERIAL: "bone"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"1868-9bad-b9cc-1302", OBJECT: "skeletal system", MATERIAL: "bone"]
+
+	// CENTRAL         CONTAINS: the muscular system contains muscles     (0685-babe-a257-9fbe) [ ADJ:"muscular", OBJECT_AGENT:"system", WHAT_IT_CONTAINS:"muscle" ]
+	//row autoRow6 = [UUID:"0685-babe-a257-9fbe", ADJ: "muscular", OBJECT_AGENT: "system", WHAT_IT_CONTAINS: "muscle"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"0685-babe-a257-9fbe", ADJ: "muscular", OBJECT_AGENT: "system", WHAT_IT_CONTAINS: "muscle"]
+
+	// CENTRAL         KINDOF: the muscular system is a kind of body ; organ system     (5a16-c4db-72e5-13ff) [ HYPONYM:"muscular system", SCOPE1:"body;organ", HYPERNYM:"system" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"5a16-c4db-72e5-13ff", HYPONYM: "muscular system", SCOPE1: "body", HYPERNYM: "system"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"5a16-c4db-72e5-13ff", HYPONYM: "muscular system", SCOPE1: "body", HYPERNYM: "system"]
+
+	// CENTRAL         KINDOF: the nervous system is a kind of body ; organ system     (0fda-acea-84f6-b616) [ HYPONYM:"nervous system", SCOPE1:"body;organ", HYPERNYM:"system" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"0fda-acea-84f6-b616", HYPONYM: "nervous system", SCOPE1: "body", HYPERNYM: "system"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"0fda-acea-84f6-b616", HYPONYM: "nervous system", SCOPE1: "body", HYPERNYM: "system"]
+
+	// CENTRAL         KINDOF: the skeletal system is a kind of body system     (3e34-7133-f645-504b) [ HYPONYM:"skeletal system", SCOPE1:"body", HYPERNYM:"system" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"3e34-7133-f645-504b", HYPONYM: "skeletal system", SCOPE1: "body", HYPERNYM: "system"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"3e34-7133-f645-504b", HYPONYM: "skeletal system", SCOPE1: "body", HYPERNYM: "system"]
+
+	// CENTRAL         ACTION: muscles push ; pull bones to move the bones     (e044-428c-b438-7117) [ AGENT_OBJECT:"muscle", ACTION2:"push;pull", OBJECT_PROPERTY:"bone", FOR_PURPOSE:"move bone" ]
+	//row autoRow10 = [UUID:"e044-428c-b438-7117", AGENT_OBJECT: "muscle", ACTION2: "push", OBJECT_PROPERTY: "bone", FOR_PURPOSE: "move bone"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"e044-428c-b438-7117", AGENT_OBJECT: "muscle", ACTION2: "push", OBJECT_PROPERTY: "bone", FOR_PURPOSE: "move bone"]
+
+	// LEXGLUE         SYNONYMY: locomotion means movement     (92aa-5e02-478d-dab9) [ X1:"locomotion", X2:"move" ]
+	//row autoRow11 = [UUID:"92aa-5e02-478d-dab9", X1: "locomotion", X2: "move"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"92aa-5e02-478d-dab9", X1: "locomotion", X2: "move"]
+
+endinferencepattern

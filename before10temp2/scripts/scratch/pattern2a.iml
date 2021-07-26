@@ -1,0 +1,115 @@
+// Automatically converted pattern
+inferencepattern CEL_CYCLES_Daylight_by_Season
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         CAUSE: the Earth being tilted on its axis causes (one side of the Earth;  one hemisphere) to receive less energy from the Sun than the other side 
+	row autoRow0 = [UUID:"31d9-98d7-6a10-9053", RESULT_VERB: "receive", RESULT_PATIENT: "energy", CONDITION_AGENT_OBJECT: "earth", CONDITION_VERB: "tilt", SCOPE1: "axis", RESULT_AGENT: "hemisphere"]
+
+	// CENTRAL         CAUSE: the Earth revolving around the Sun causes the seasons (to change;  to occur) on its axis 
+	row autoRow1 = [UUID:"1cca-1ac1-5bea-5cf6", RESULT_VERB: "change", RESULT_PATIENT: "axis", CONDITION_AGENT_OBJECT: "earth", CONDITION_VERB: "revolve", CONDITION_PATIENT: "sun", RESULT_AGENT: "season"]
+
+
+	// CENTRALSW      (OPTIONAL) DURING: the summer solstice is on June 21st in the northern hemisphere 
+	//        HINTROW the winter solstice is on December 21st in the northern hemisphere 
+	//        HINTROW the winter solstice is on June 21st in the southern hemisphere 
+	row autoRow2 = [TABLE:"DURING", EVENT: <var_0>, TIME: <var_2>, SCOPE: "in" + <var_1> + "hemisphere"]
+	//row autoRow2 = [TABLE:"DURING", EVENT: <var_0>, TIME: <var_2>, SCOPE: "in" + <var_1>]
+	//row autoRow2 = [TABLE:"DURING", EVENT: <var_0>, TIME: <var_2>, SCOPE: <var_1>]
+	//row autoRow2 = [TABLE:"DURING", EVENT: <var_0>, TIME: <var_2>, SCOPE: <var_1> + "hemisphere"]
+
+/*		
+	// CENTRAL         CAUSE: Earth's tilt on its rotating axis causes seasons (to change;  to occur) 
+	row autoRow3 = [UUID:"66df-2200-f730-17c3", RESULT_VERB: "change", CONDITION_AGENT_OBJECT: "tilt", SCOPE1: "axis", RESULT_AGENT: "season"]
+
+	// CENTRALSW       CAUSE: the Earth being tilted on its rotating axis causes seasons 
+	//        HINTROW Earth's tilt on its rotating axis causes seasons (to change;  to occur) 
+	//        HINTROW the Earth revolving around the Sun causes the seasons (to change;  to occur) on its axis 
+	//        HINTROW Earth orbiting the Sun causes seasons to change 
+	row autoRow4 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "earth", CONDITION_VERB: "tilt", SCOPE1: "axis", RESULT_AGENT: "season"]
+
+	// CENTRALSW       IFTHEN: when a hemisphere is tilted towards the sun , that hemisphere receives more direct sunlight 
+	//        HINTROW when a hemisphere is tilted away from the sun , that hemisphere receives less direct sunlight 
+	row autoRow5 = [TABLE:"IFTHEN", ACTOR_AGENT_PROCESS2: "hemisphere", THING: "hemisphere", ACTION3: "receive", ADJ_QUANTIFIER3: <var_4>, OBJECT_PROPERTY3: "sunlight", ACTION1: "tilt", OBJECT_PATIENT1: "sun"]
+*/
+
+	// CENTRALSW       DURING: winter in the Northern Hemisphere is during the summer in the Southern Hemisphere 
+	//        HINTROW the winter in the Southern Hemisphere is during the summer in the Northern Hemisphere 
+	row autoRow6 = [TABLE:"DURING", EVENT: "winter", SCOPE_QUANTIFIER: "in" + <var_1> + "hemisphere", TIME: "summer", SCOPE: "hemisphere"]
+
+	// GROUNDING       DURING: December is during the winter in the northern hemisphere 
+	//        HINTROW January is during the winter in the northern hemisphere 
+	//        HINTROW June is during the summer in the northern hemisphere 
+	//        HINTROW August is during the winter in the southern hemisphere 
+	//        HINTROW June is during the winter in the southern hemisphere 
+	//        HINTROW December is during the summer in the southern hemisphere 
+	row autoRow7 = [TABLE:"DURING", TIME: "winter", SCOPE: "in" + <var_1> + "hemisphere"]
+	
+/*	
+
+	// CENTRALSW       PROP-QUANTITY-DATE: the amount of daylight is greatest on the summer solstice 
+	//        HINTROW the amount of daylight is least on the winter solstice 
+	row autoRow8 = [TABLE:"PROP-QUANTITY-DATE", THING: "daylight", QUANTITY: <var_6>, DATE: <var_0>]
+
+	// CENTRALSW       ACTION: the equator receives the most direct sunlight throughout the year 
+	//        HINTROW the poles receive the least direct sunlight throughout the year 
+	row autoRow9 = [TABLE:"ACTION", OBJECT_PROPERTY: "sunlight", ACTION2: "receive"]
+
+	// CENTRALSW       ACTION: summer is when a hemisphere is tilted towards the sun 
+	//        HINTROW winter is when a hemisphere is tilted away from the sun 
+	row autoRow10 = [TABLE:"ACTION", DEFINITION_NAME: <var_0>, OBJECT_PROPERTY: <var_5>, WHEN_WHERE: "sun", AGENT_OBJECT: "hemisphere", ACTION2: "tilt"]
+
+	// CENTRAL         ACTION: the Earth rotates on its tilted axis 
+	row autoRow11 = [UUID:"395b-4954-311f-4749", OBJECT_PROPERTY: "tilt", AGENT_OBJECT: "earth", ACTION2: "on rotate"]
+
+	// CENTRALSW       PROP-QUANTITY-DATE: the amount of daylight is greatest in the summer 
+	//        HINTROW the amount of daylight is least in the winter 
+	row autoRow12 = [TABLE:"PROP-QUANTITY-DATE", THING: "daylight", QUANTITY: <var_6>, DATE: <var_0>]
+
+	// CENTRAL         PROP-THINGS: the equator has a consistant number of daylight hours 
+	row autoRow13 = [UUID:"20f3-7580-e057-ce54", ATTRIBUTE: "daylight"]
+
+	// CENTRAL        (OPTIONAL) SOURCEOF: the sun is the source of solar energy called sunlight 
+	row autoRow14 = [UUID:"1ed3-919d-4a4c-1be7", AGENT: "sun", WHAT_IT_PROVIDES: "energy", NAME: "sunlight"]
+
+	// CENTRALSW       IFTHEN: when the season changes , the amount of daylight will change 
+	//        HINTROW when the seasons change (from summer to fall;  from summer to winter) , the amount of daylight will decrease 
+	row autoRow15 = [TABLE:"IFTHEN", ADJ_QUANTITY2: "amount", ACTOR_AGENT_PROCESS2: "daylight", THING: "season", ACTION3: "change", ACTION1: "change"]
+
+	// CENTRAL         ACTION: the Earth revolves around the sun 
+	row autoRow16 = [UUID:"5471-05b0-00bd-1669", OBJECT_PROPERTY: "sun", AGENT_OBJECT: "earth", ACTION2: "around"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: when sunlight strikes something , that something receives sunlight 
+	row autoRow17 = [UUID:"6155-a8e8-a1ba-9d58", THING: "sunlight", ACTION3: "receive", OBJECT_PROPERTY3: "sunlight"]
+
+	// GROUNDING       KINDOF: June is a kind of month 
+	//        HINTROW December is a kind of month 
+	row autoRow18 = [TABLE:"KINDOF", HYPONYM: <var_2>]
+
+	// GROUNDING       KINDOF: summer is a kind of season 
+	//        HINTROW winter is a kind of season 
+	//        HINTROW spring is a kind of season 
+	//        HINTROW fall is a kind of season 
+	row autoRow19 = [TABLE:"KINDOF", HYPONYM: <var_0>, HYPERNYM: "season"]
+
+	// CENTRAL         KINDOF: sunlight is a kind of solar energy 
+	row autoRow20 = [UUID:"59d6-9954-ef5e-12b2", HYPONYM: "sunlight", HYPERNYM: "energy"]
+
+	// CENTRAL         KINDOF: solar energy is a kind of energy 
+	row autoRow21 = [UUID:"4849-d977-c75a-e8fb", HYPONYM: "solar energy", HYPERNYM: "energy"]
+
+	// GROUNDING       SUBDIVISION-COUNTRY: (New York;  New York State) is a state located in the United States of America 
+	//        HINTROW Alaska is a state located in the United States of America 
+	row autoRow22 = [TABLE:"SUBDIVISION-COUNTRY", SUBDIVISION: <var_7>, TYPE_OF_SUBDIVISION: "state", COUNTRY: "unite state"]
+
+	// GROUNDING       PROP-COUNTRY-HEMISPHERE: United States is located in the northern hemisphere 
+	//        HINTROW United Kingdom is located in the northern hemisphere 
+	row autoRow23 = [TABLE:"PROP-COUNTRY-HEMISPHERE", COUNTRY: "unite state", HEMISPHERE_North_South_equatorial_region: "hemisphere"]
+*/
+
+endinferencepattern

@@ -1,0 +1,65 @@
+// Automatically converted pattern
+inferencepattern OTHER_HIST_Invention_of_Telescope
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a moon is a kind of celestial object ; body     (e2ec-1655-c1fd-cb58) [ HYPONYM:"moon", SCOPE1:"celestial", HYPERNYM:"object;body" ]
+	//        HINTROW a planet is a kind of celestial object ; body     (22a2-1029-702e-a29a) [ HYPONYM:"planet", SCOPE1:"celestial", HYPERNYM:"object;body" ]
+	//        HINTROW a star is a kind of celestial object ; celestial body     (dbe8-e776-f804-99a0) [ HYPONYM:"star", HYPERNYM:"celestial object;celestial body" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "moon", SCOPE1: "celestial", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "moon", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: Jupiter is a kind of planet     (b772-8846-82c7-f2d8) [ HYPONYM:"jupiter", HYPERNYM:"planet" ]
+	//        HINTROW Mercury is a kind of planet     (106b-d671-313e-b596) [ HYPONYM:"mercury", HYPERNYM:"planet" ]
+	//        HINTROW Mars is a kind of inner planet     (e82e-f2df-c57f-d876) [ HYPONYM:"mar", HYPERNYM:"inner planet" ]
+	//        HINTROW Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "planet"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "planet"]
+
+	// CENTRAL         HISTORY: Galileo Galilei improved the telescope to make better observations of celestial bodies     (ad67-ffcd-38f2-d5b1) [ WHO:"galileo galilei", DID:"improve", WHAT:"telescope", FOR_PURPOSE:"make well observation of celestial body" ]
+	//  Notes: 34b1-1886-e578-7fe0->ad67-ffcd-38f2-d5b1
+	//row autoRow2 = [UUID:"ad67-ffcd-38f2-d5b1", WHO: "galileo galilei", DID: "improve", WHAT: "telescope", FOR_PURPOSE: "make well observation of celestial body"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"ad67-ffcd-38f2-d5b1", WHO: "galileo galilei", DID: "improve", WHAT: "telescope", FOR_PURPOSE: "make well observation of celestial body"]
+
+	// CENTRAL         USEDFOR: optical tools are used for observing materials up close ; in greater detail     (a611-902d-1bd3-06f7) [ AGENT_OBJECT:"optical tool", FOR_PURPOSE:"observe", PATIENT:"material", SCOPE2:"up close;in great detail" ]
+	//row autoRow3 = [UUID:"a611-902d-1bd3-06f7", AGENT_OBJECT: "optical tool", FOR_PURPOSE: "observe", PATIENT: "material", SCOPE2: "in great detail"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"a611-902d-1bd3-06f7", AGENT_OBJECT: "optical tool", FOR_PURPOSE: "observe", PATIENT: "material", SCOPE2: "in great detail"]
+
+	// CENTRAL         KINDOF: a telescope is a kind of optical instrument for observing celestial objects ; observing the sky     (55a5-70f3-961c-a142) [ HYPONYM:"telescope", SCOPE1:"optical", HYPERNYM:"instrument", FOR_PURPOSE:"observe celestial object;observe sky" ]
+	//row autoRow4 = [UUID:"55a5-70f3-961c-a142", HYPONYM: "telescope", SCOPE1: "optical", HYPERNYM: "instrument", FOR_PURPOSE: "observe celestial object"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"55a5-70f3-961c-a142", HYPONYM: "telescope", SCOPE1: "optical", HYPERNYM: "instrument", FOR_PURPOSE: "observe celestial object"]
+
+	// CENTRAL         USEDFOR: a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers     (4383-694e-b4d4-cd5d) [ AGENT_OBJECT:"telescope", FOR_PURPOSE:"observe", PATIENT:"star;planet;moon;distant object;sky;celestial object", AGENT_THING_WHO_USES:"astronomer" ]
+	//row autoRow5 = [UUID:"4383-694e-b4d4-cd5d", AGENT_OBJECT: "telescope", FOR_PURPOSE: "observe", PATIENT: "distant object", AGENT_THING_WHO_USES: "astronomer"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"4383-694e-b4d4-cd5d", AGENT_OBJECT: "telescope", FOR_PURPOSE: "observe", PATIENT: "distant object", AGENT_THING_WHO_USES: "astronomer"]
+
+	// CENTRAL         REQUIRES: detailed observation of celestial objects requires a telescope     (44f4-634f-79d8-75d7) [ OBJECT_AGENT_PROCESS:"detail observation", SCOPE1:"of celestial object", VERB_REQUIRES:"require", OBJECT:"telescope" ]
+	//row autoRow6 = [UUID:"44f4-634f-79d8-75d7", OBJECT_AGENT_PROCESS: "detail observation", SCOPE1: "of celestial object", VERB_REQUIRES: "require", OBJECT: "telescope"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"44f4-634f-79d8-75d7", OBJECT_AGENT_PROCESS: "detail observation", SCOPE1: "of celestial object", VERB_REQUIRES: "require", OBJECT: "telescope"]
+
+	// CENTRAL         ACTION: inventing a tool allows ; enables that tool to be used     (efcb-faab-cd79-cd07) [ ACTION1:"invent", AGENT_OBJECT:"tool", ACTION2:"allow;enable", OBJECT_PROPERTY:"that tool be use" ]
+	//row autoRow7 = [UUID:"efcb-faab-cd79-cd07", ACTION1: "invent", AGENT_OBJECT: "tool", ACTION2: "allow", OBJECT_PROPERTY: "that tool be use"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"efcb-faab-cd79-cd07", ACTION1: "invent", AGENT_OBJECT: "tool", ACTION2: "allow", OBJECT_PROPERTY: "that tool be use"]
+
+	// CENTRAL         ACTION: moons orbit planets     (f6bf-c93d-b9ba-1302) [ AGENT_OBJECT:"moon", ACTION2:"orbit", OBJECT_PROPERTY:"planet" ]
+	//row autoRow8 = [UUID:"f6bf-c93d-b9ba-1302", AGENT_OBJECT: "moon", ACTION2: "orbit", OBJECT_PROPERTY: "planet"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f6bf-c93d-b9ba-1302", AGENT_OBJECT: "moon", ACTION2: "orbit", OBJECT_PROPERTY: "planet"]
+
+	// CENTRAL        (OPTIONAL) USEDFOR: a computer is used for communication ; finding information     (eb81-1c0b-6039-ee96) [ AGENT_OBJECT:"computer", FOR_PURPOSE:"communicate;find information" ]
+	//row *autoRow9 = [UUID:"eb81-1c0b-6039-ee96", AGENT_OBJECT: "computer", FOR_PURPOSE: "find information"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"eb81-1c0b-6039-ee96", AGENT_OBJECT: "computer", FOR_PURPOSE: "find information"]
+
+	// LEXGLUE         SYNONYMY: instrument means tool     (a0d5-68ec-fccc-fd82) [ X1:"instrument", X2:"tool" ]
+	//row autoRow10 = [UUID:"a0d5-68ec-fccc-fd82", X1: "instrument", X2: "tool"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"a0d5-68ec-fccc-fd82", X1: "instrument", X2: "tool"]
+
+	// LEXGLUE         SYNONYMY: to make means to invent     (83be-648d-f63f-3270) [ ACTION1:"make", ACTION2:"invent" ]
+	//row autoRow11 = [UUID:"83be-648d-f63f-3270", ACTION1: "make", ACTION2: "invent"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"83be-648d-f63f-3270", ACTION1: "make", ACTION2: "invent"]
+
+endinferencepattern

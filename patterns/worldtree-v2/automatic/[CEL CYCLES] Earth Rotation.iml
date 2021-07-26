@@ -1,0 +1,102 @@
+// Automatically converted pattern
+inferencepattern CEL_CYCLES_Earth_Rotation
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CAUSE: the Earth rotating on its axis causes the Sun to appear to move across the sky during the day     (73fa-1e22-26a8-1a7c) [ CONDITION_AGENT_OBJECT:"earth", CONDITION_VERB:"rotate", SCOPE1:"on axis", RESULT_AGENT:"sun", RESULT_VERB:"appear move", RESULT_PATIENT:"across sky", DURATION2:"during day" ]
+	//        HINTROW the Earth rotating on its axis causes stars ; the Moon to appear to move across the sky at night     (49f5-727d-92b5-03aa) [ CONDITION_AGENT_OBJECT:"earth", CONDITION_VERB:"rotate", SCOPE1:"on axis", RESULT_AGENT:"star;moon", RESULT_VERB:"appear move", RESULT_PATIENT:"across sky", DURATION2:"at night" ]
+	//row autoRow0 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "earth", CONDITION_VERB: "rotate", SCOPE1: "on axis", RESULT_AGENT: "sun", RESULT_VERB: "appear move", RESULT_PATIENT: "across sky", DURATION2: *"POS:IN"+"day"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "earth", CONDITION_VERB: "rotate", SCOPE1: "on axis", RESULT_VERB: "appear move", RESULT_PATIENT: "across sky", DURATION2: *"POS:IN"+"day"]
+
+	// CENTRAL         IFTHEN: if a human is on a rotating planet then other celestial bodies will appear to move from that human 's perspective due to the rotation of that planet     (825b-a440-75bd-3001) [ THING:"human", OBJECT_PROPERTY1:"on rotate planet", ADJ_QUANTITY2:"other", ACTOR_AGENT_PROCESS2:"celestial body", ACTION3:"appear move", ADJ_QUANTIFIER3:"from human perspective", BY_THROUGH_HOW:"rotate of planet" ]
+	//row autoRow1 = [UUID:"825b-a440-75bd-3001", THING: "human", OBJECT_PROPERTY1: "on rotate planet", ADJ_QUANTITY2: "other", ACTOR_AGENT_PROCESS2: "celestial body", ACTION3: "appear move", ADJ_QUANTIFIER3: "from human perspective", BY_THROUGH_HOW: "rotate of planet"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"825b-a440-75bd-3001", THING: "human", OBJECT_PROPERTY1: "on rotate planet", ADJ_QUANTITY2: "other", ACTOR_AGENT_PROCESS2: "celestial body", ACTION3: "appear move", ADJ_QUANTIFIER3: "from human perspective", BY_THROUGH_HOW: "rotate of planet"]
+
+	// CENTRAL        (OPTIONAL) COUPLEDRELATIONSHIP: as the rotation speed of a planet increases , the length of day and night will decrease on that planet     (7778-56a7-1a1e-24cf) [ QUANTITY_MEASURE1:"rotate speed", AGENT_ATTRIBUTE1:"of planet", CHANGE1:"increase", QUANTITY_MEASURE2:"length", AGENT_ATTRIBUTE2:"of day night", CHANGE2:"decrease", SCOPE2B:"on planet" ]
+	//row *autoRow2 = [UUID:"7778-56a7-1a1e-24cf", QUANTITY_MEASURE1: "rotate speed", AGENT_ATTRIBUTE1: "of planet", CHANGE1: "increase", QUANTITY_MEASURE2: "length", AGENT_ATTRIBUTE2: "of day night", CHANGE2: "decrease", SCOPE2B: "on planet"] //OVER-CONSTR.
+	row *autoRow2 = [UUID:"7778-56a7-1a1e-24cf", QUANTITY_MEASURE1: "rotate speed", AGENT_ATTRIBUTE1: "of planet", CHANGE1: "increase", QUANTITY_MEASURE2: "length", AGENT_ATTRIBUTE2: "of day night", CHANGE2: "decrease", SCOPE2B: "on planet"]
+
+	// CENTRAL         CAUSE: Earth 's angle of tilt causes the length of day and night to vary     (d1e5-99a8-b08b-6e3d) [ CONDITION_AGENT_OBJECT:"earth angle of tilt", RESULT_AGENT:"length of day night", RESULT_VERB:"vary" ]
+	//row autoRow3 = [UUID:"d1e5-99a8-b08b-6e3d", CONDITION_AGENT_OBJECT: "earth angle of tilt", RESULT_AGENT: "length of day night", RESULT_VERB: "vary"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"d1e5-99a8-b08b-6e3d", CONDITION_AGENT_OBJECT: "earth angle of tilt", RESULT_AGENT: "length of day night", RESULT_VERB: "vary"]
+
+	// CENTRAL         FREQUENCY: Earth rotating on its axis occurs once per day     (38a3-88df-f958-0049) [ AGENT_OCCURRENCE:"earth", VERB:"rotate", OBJECT:"on axis", FREQUENCY:"one", TIME_UNIT:"day" ]
+	//row autoRow4 = [UUID:"38a3-88df-f958-0049", AGENT_OCCURRENCE: "earth", VERB: "rotate", OBJECT: "on axis", FREQUENCY: "one", TIME_UNIT: "day"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"38a3-88df-f958-0049", AGENT_OCCURRENCE: "earth", VERB: "rotate", OBJECT: "on axis", FREQUENCY: "one", TIME_UNIT: "day"]
+
+	// CENTRAL         PROP-ORBITAL-ROT: a complete rotation of the Earth on Earth 's axis ; itself takes 1 ; one day     (d047-b416-20a3-5fca) [ REVOLUTION_ROTATION:"rotate", WHAT_S_MOVING:"earth", CENTER_POINT:"earth axis", HOW_LONG_IT_TAKES:"1;one", UNITS:"day" ]
+	//row autoRow5 = [UUID:"d047-b416-20a3-5fca", REVOLUTION_ROTATION: "rotate", WHAT_S_MOVING: "earth", CENTER_POINT: "earth axis", HOW_LONG_IT_TAKES: "1", UNITS: "day"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"d047-b416-20a3-5fca", REVOLUTION_ROTATION: "rotate", WHAT_S_MOVING: "earth", CENTER_POINT: "earth axis", HOW_LONG_IT_TAKES: "1", UNITS: "day"]
+
+	// CENTRAL         CAUSE: a planet rotating causes cycles of day and night on that planet     (7959-4428-d766-0494) [ CONDITION_AGENT_OBJECT:"planet", CONDITION_VERB:"rotate", RESULT_AGENT:"cycle of day night", SCOPE2:"on planet" ]
+	//row autoRow6 = [UUID:"7959-4428-d766-0494", CONDITION_AGENT_OBJECT: "planet", CONDITION_VERB: "rotate", RESULT_AGENT: "cycle of day night", SCOPE2: "on planet"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"7959-4428-d766-0494", CONDITION_AGENT_OBJECT: "planet", CONDITION_VERB: "rotate", RESULT_AGENT: "cycle of day night", SCOPE2: "on planet"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: the Sun rising and setting causes cycles of day and night     (aacf-3442-3b46-b964) [ CONDITION_AGENT_OBJECT:"sun", CONDITION_VERB:"rise set", RESULT_AGENT:"cycle of day night" ]
+	//row *autoRow7 = [UUID:"aacf-3442-3b46-b964", CONDITION_AGENT_OBJECT: "sun", CONDITION_VERB: "rise set", RESULT_AGENT: "cycle of day night"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"aacf-3442-3b46-b964", CONDITION_AGENT_OBJECT: "sun", CONDITION_VERB: "rise set", RESULT_AGENT: "cycle of day night"]
+
+	// CENTRAL         CONVERSIONS: 1 day is equal to 24 hours     (7bde-6b21-5c29-4e15) [ QUANTITY1:"1", UNIT1:"day", QUANTITY2:"24", UNIT2:"hour" ]
+	//row autoRow8 = [UUID:"7bde-6b21-5c29-4e15", QUANTITY1: "1", UNIT1: "day", QUANTITY2: "24", UNIT2: "hour"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"7bde-6b21-5c29-4e15", QUANTITY1: "1", UNIT1: "day", QUANTITY2: "24", UNIT2: "hour"]
+
+	// CENTRAL         FREQUENCY: cycles of day and night occur once per day     (a972-0cbb-3c14-b098) [ AGENT_OCCURRENCE:"cycle of day night", FREQUENCY:"one", TIME_UNIT:"day" ]
+	//row autoRow9 = [UUID:"a972-0cbb-3c14-b098", AGENT_OCCURRENCE: "cycle of day night", FREQUENCY: "one", TIME_UNIT: "day"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"a972-0cbb-3c14-b098", AGENT_OCCURRENCE: "cycle of day night", FREQUENCY: "one", TIME_UNIT: "day"]
+
+	// CENTRAL         ACTION: the Earth rotates on its tilted axis     (395b-4954-311f-4749) [ AGENT_OBJECT:"earth", ACTION2:"rotate on", OBJECT_PROPERTY:"tilt axis" ]
+	//row autoRow10 = [UUID:"395b-4954-311f-4749", AGENT_OBJECT: "earth", ACTION2: "rotate on", OBJECT_PROPERTY: "tilt axis"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"395b-4954-311f-4749", AGENT_OBJECT: "earth", ACTION2: "rotate on", OBJECT_PROPERTY: "tilt axis"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: Earth 's rotation causes time zones     (84b9-66c3-4d48-75e1) [ CONDITION_AGENT_OBJECT:"earth rotate", RESULT_AGENT:"time zone" ]
+	//row *autoRow11 = [UUID:"84b9-66c3-4d48-75e1", CONDITION_AGENT_OBJECT: "earth rotate", RESULT_AGENT: "time zone"] //OVER-CONSTR.
+	row *autoRow11 = [UUID:"84b9-66c3-4d48-75e1", CONDITION_AGENT_OBJECT: "earth rotate", RESULT_AGENT: "time zone"]
+
+	// CENTRAL        (OPTIONAL) ACTION: the sun rises in the east     (5be6-58b4-ec52-40b2) [ AGENT_OBJECT:"sun", ACTION2:"rise", WHEN_WHERE:"in east" ]
+	//row *autoRow12 = [UUID:"5be6-58b4-ec52-40b2", AGENT_OBJECT: "sun", ACTION2: "rise", WHEN_WHERE: "in east"] //OVER-CONSTR.
+	row *autoRow12 = [UUID:"5be6-58b4-ec52-40b2", AGENT_OBJECT: "sun", ACTION2: "rise", WHEN_WHERE: "in east"]
+
+	// CENTRAL        (OPTIONAL) ACTION: the sun sets in the west     (e565-87e6-6f00-1598) [ AGENT_OBJECT:"sun", ACTION2:"set", WHEN_WHERE:"in west" ]
+	//row *autoRow13 = [UUID:"e565-87e6-6f00-1598", AGENT_OBJECT: "sun", ACTION2: "set", WHEN_WHERE: "in west"] //OVER-CONSTR.
+	row *autoRow13 = [UUID:"e565-87e6-6f00-1598", AGENT_OBJECT: "sun", ACTION2: "set", WHEN_WHERE: "in west"]
+
+	// CENTRAL         KINDOF: Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//  Notes: Peripheral central
+	//row autoRow14 = [UUID:"e473-7297-61c1-56fa", HYPONYM: "earth", HYPERNYM: "planet"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"e473-7297-61c1-56fa", HYPONYM: "earth", HYPERNYM: "planet"]
+
+	// CENTRAL         KINDOF: rotation is a kind of motion     (f603-3c96-a570-1918) [ HYPONYM:"rotate", HYPERNYM:"move" ]
+	//row autoRow15 = [UUID:"f603-3c96-a570-1918", HYPONYM: "rotate", HYPERNYM: "move"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"f603-3c96-a570-1918", HYPONYM: "rotate", HYPERNYM: "move"]
+
+	// CENTRAL         KINDOF: the Sun is a kind of star     (af26-8083-b908-7d3b) [ HYPONYM:"sun", HYPERNYM:"star" ]
+	//  Notes: Peripheral central
+	//row autoRow16 = [UUID:"af26-8083-b908-7d3b", HYPONYM: "sun", HYPERNYM: "star"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"af26-8083-b908-7d3b", HYPONYM: "sun", HYPERNYM: "star"]
+
+	// CENTRAL        (OPTIONAL) ACTION: diurnal motion is when objects in the sky appear to move due to Earth 's rotation on its axis     (c697-5766-b5be-4c74) [ DEFINITION_NAME:"diurnal move", AGENT_OBJECT:"object", SCOPE1:"in sky", ACTION2:"appear", OBJECT_PROPERTY:"move", HOW:"earth rotate on axis" ]
+	//row *autoRow17 = [UUID:"c697-5766-b5be-4c74", DEFINITION_NAME: "diurnal move", AGENT_OBJECT: "object", SCOPE1: "in sky", ACTION2: "appear", OBJECT_PROPERTY: "move", HOW: "earth rotate on axis"] //OVER-CONSTR.
+	row *autoRow17 = [UUID:"c697-5766-b5be-4c74", DEFINITION_NAME: "diurnal move", AGENT_OBJECT: "object", SCOPE1: "in sky", ACTION2: "appear", OBJECT_PROPERTY: "move", HOW: "earth rotate on axis"]
+
+	// CENTRAL        (OPTIONAL) ACTION: the North Star does not move every night in the sky in the Northern Hemisphere     (a7ec-4506-0e8a-ce2e) [ AGENT_OBJECT:"north star", QUANITIFIER:"doe not", ACTION2:"move", OBJECT_PROPERTY:"night", WHEN_WHERE:"in sky", SCOPE2:"in northern hemisphere" ]
+	//row *autoRow18 = [UUID:"a7ec-4506-0e8a-ce2e", AGENT_OBJECT: "north star", QUANITIFIER: "doe not", ACTION2: "move", OBJECT_PROPERTY: "night", WHEN_WHERE: "in sky", SCOPE2: "in northern hemisphere"] //OVER-CONSTR.
+	row *autoRow18 = [UUID:"a7ec-4506-0e8a-ce2e", AGENT_OBJECT: "north star", QUANITIFIER: "doe not", ACTION2: "move", OBJECT_PROPERTY: "night", WHEN_WHERE: "in sky", SCOPE2: "in northern hemisphere"]
+
+	// CENTRAL         KINDOF: a motion is a kind of event ; action     (e901-c400-086c-8302) [ HYPONYM:"move", HYPERNYM:"event;action" ]
+	//  Notes: peripheral central
+	//row autoRow19 = [UUID:"e901-c400-086c-8302", HYPONYM: "move", HYPERNYM: "event"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"e901-c400-086c-8302", HYPONYM: "move", HYPERNYM: "event"]
+
+	// LEXGLUE         SYNONYMY: rotate means turn     (ae29-0f1b-9895-50a5) [ ACTION1:"rotate", ACTION2:"turn" ]
+	//        HINTROW spin means rotate     (ebd1-9bd4-eefa-1227) [ X1:"spin", X2:"rotate" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow20 = [UUID:"ae29-0f1b-9895-50a5"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow20 = [UUID:"ae29-0f1b-9895-50a5"]
+
+endinferencepattern

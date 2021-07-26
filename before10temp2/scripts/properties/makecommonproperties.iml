@@ -1,0 +1,49 @@
+// IML
+
+inferencepattern giveCommonSubstanceProperties
+        // Plain text description
+        description = "Fill in common properties of an object"
+
+        // Requirements
+        require instance substance1 = [KINDOF:"substance"]		
+        musthave (substance1."material" == <formName>)
+        musthaveoromit ((lowerTemp != "") || (upperTemp != ""))
+        
+        // Constants
+
+        // Row definitions        
+        row prop = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME:<materialName>, STATEOFMATTER:<SOM>, FORM_NAME:<formName>, ABOVE_BELOW:<aboveBelowBetween>, LOWER_BOUND:<*lowerTemp>, UPPER_BOUND:<*upperTemp>, UNITS:<units>]        
+
+        // Code        
+
+        // Step 1: Set state of matter, and "cannonical" material (substance) name, while keeping lay material name as materialName
+        substance1."state of matter" = <SOM>
+        substance1."material" = <materialName>
+        substance1."materialName" = <formName>
+
+        //## DEBUG
+        println ("ABC123")
+	if (<upperTemp> != "") then
+		generateRow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"freezing point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<upperTemp>, UNITS:<units>])
+	endif
+
+        // Step 2: Set "default" temperature
+        var defaultTemp = 0.0
+        if (<aboveBelowBetween> == "above") then            
+            // Set default temperature to 1 degree above the boiling point
+            defaultTemp = <lowerTemp> + 1.0            
+        endif        
+        if (<aboveBelowBetween> == "below") then            
+            // Set default temperature to 1 degree below the freezing point
+            defaultTemp = <upperTemp> - 1.0            
+        endif
+        if (<aboveBelowBetween> == "between") then        
+            // Set default temperature to the middle of the melting point range
+            var delta = <upperTemp> - <lowerTemp>
+            defaultTemp = <lowerTemp> + (delta / 2.0)
+        endif
+        substance1."temperature" = defaultTemp
+
+        addExplanationText("Standardized material name from form name (" + formName + ") to (" + materialName + ") and added State of Matter (" + SOM + ") and default temperature (" + defaultTemp + ")")
+
+endinferencepattern

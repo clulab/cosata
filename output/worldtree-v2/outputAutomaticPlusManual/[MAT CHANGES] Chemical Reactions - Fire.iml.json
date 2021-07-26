@@ -1,0 +1,1496 @@
+{"patternMatches": [
+{
+	"patternName":"MAT_CHANGES_Chemical_Reactions_Fire",
+	"matches":[
+		{
+		"uuids": ["615c-9023-3957-0501","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","d4d7-5043-c289-bcf0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "d4d7-5043-c289-bcf0", "rowText": "a glowing splint can be used for identifying a gas", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","f283-05a6-5573-1d12"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "f283-05a6-5573-1d12", "rowText": "oxygen can cause a glowing splint to burst into flame", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31","2f15-1978-bedd-7e41"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2f15-1978-bedd-7e41", "rowText": "putting out a fire stops the burning of that fire", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["615c-9023-3957-0501","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "615c-9023-3957-0501", "rowText": "lighting a candle causes that candle to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","50c2-119a-8445-c8b7","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "50c2-119a-8445-c8b7", "rowText": "dry wood easily burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","1cee-5a44-7f15-d8c5","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1cee-5a44-7f15-d8c5", "rowText": "wood burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","7aff-2493-b367-3958","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7aff-2493-b367-3958", "rowText": "paper burns", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6566-d617-944b-130c","c7c6-7be0-9270-7269","204f-bd48-cf69-828a","7b9c-c856-86f0-f11e","6cf1-9d92-5a26-93fd","bccb-923d-9495-c7af","4dc5-13bf-3c46-af74","891f-4f5c-91a2-bd31"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6566-d617-944b-130c", "rowText": "lighting a match causes that match to burn", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c7c6-7be0-9270-7269", "rowText": "small stars burn for billions of years", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "204f-bd48-cf69-828a", "rowText": "a fire requires oxygen to burn", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "7b9c-c856-86f0-f11e", "rowText": "as the amount of oxygen exposed to a fire increases the fire will burn longer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6cf1-9d92-5a26-93fd", "rowText": "fire is a kind of chemical reaction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "bccb-923d-9495-c7af", "rowText": "a flame are a part of a fire", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4dc5-13bf-3c46-af74", "rowText": "fire causes burning", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		}
+	]
+}
+]}
+

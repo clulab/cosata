@@ -1,0 +1,61 @@
+// Automatically converted pattern
+inferencepattern OTHER_Light_Bulb_UsedFor
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         IFTHEN: if something is in a dark place , then that something will not reflect enough light to be seen     (ed1e-84aa-5845-7f94) [ THING:"something", OBJECT_PROPERTY1:"in dark place", ACTOR_AGENT_PROCESS2:"that something", QUANTIFIER3:"not", ACTION3:"reflect", ADJ_QUANTIFIER3:"enough", OBJECT_PROPERTY3:"light", PURPOSE:"be see" ]
+	//row autoRow0 = [UUID:"ed1e-84aa-5845-7f94", THING: "something", OBJECT_PROPERTY1: "in dark place", ACTOR_AGENT_PROCESS2: "that something", QUANTIFIER3: "not", ACTION3: "reflect", ADJ_QUANTIFIER3: "enough", OBJECT_PROPERTY3: "light", PURPOSE: "be see"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"ed1e-84aa-5845-7f94", THING: "something", OBJECT_PROPERTY1: "in dark place", ACTOR_AGENT_PROCESS2: "that something", QUANTIFIER3: "not", ACTION3: "reflect", ADJ_QUANTIFIER3: "enough", OBJECT_PROPERTY3: "light", PURPOSE: "be see"]
+
+	// CENTRAL         KINDOF: a light bulb is a kind of tool for seeing in the dark     (b939-e20d-de35-8401) [ HYPONYM:"light bulb", HYPERNYM:"tool", FOR_PURPOSE:"see in dark" ]
+	//  Notes: peripheral
+	//row autoRow1 = [UUID:"b939-e20d-de35-8401", HYPONYM: "light bulb", HYPERNYM: "tool", FOR_PURPOSE: "see in dark"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"b939-e20d-de35-8401", HYPONYM: "light bulb", HYPERNYM: "tool", FOR_PURPOSE: "see in dark"]
+
+	// CENTRAL         USEDFOR: a light bulb is used for seeing in the dark     (242f-83db-8289-87e9) [ ACTION:"light", AGENT_OBJECT:"bulb", FOR_PURPOSE:"see", SCOPE2:"in dark" ]
+	//row autoRow2 = [UUID:"242f-83db-8289-87e9", ACTION: "light", AGENT_OBJECT: "bulb", FOR_PURPOSE: "see", SCOPE2: "in dark"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"242f-83db-8289-87e9", ACTION: "light", AGENT_OBJECT: "bulb", FOR_PURPOSE: "see", SCOPE2: "in dark"]
+
+	// CENTRAL        (OPTIONAL) USEDFOR: eyes are used for seeing by animals by sensing light     (e47e-e5e2-c6d2-61ed) [ AGENT_OBJECT:"eye", FOR_PURPOSE:"see", AGENT_THING_WHO_USES:"animal", BY_THROUGH_HOW:"sense light" ]
+	//row *autoRow3 = [UUID:"e47e-e5e2-c6d2-61ed", AGENT_OBJECT: "eye", FOR_PURPOSE: "see", AGENT_THING_WHO_USES: "animal", BY_THROUGH_HOW: "sense light"] //OVER-CONSTR.
+	row *autoRow3 = [UUID:"e47e-e5e2-c6d2-61ed", AGENT_OBJECT: "eye", FOR_PURPOSE: "see", AGENT_THING_WHO_USES: "animal", BY_THROUGH_HOW: "sense light"]
+
+	// CENTRAL         IFTHEN: if an object reflects light toward the eye then that object can be seen     (ae74-32dc-4291-fb82) [ THING:"object", ACTION1:"reflect", OBJECT_PATIENT1:"light", SCOPE1B:"toward eye", ACTOR_AGENT_PROCESS2:"that object", ACTION3:"see" ]
+	//row autoRow4 = [UUID:"ae74-32dc-4291-fb82", THING: "object", ACTION1: "reflect", OBJECT_PATIENT1: "light", SCOPE1B: "toward eye", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "see"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"ae74-32dc-4291-fb82", THING: "object", ACTION1: "reflect", OBJECT_PATIENT1: "light", SCOPE1B: "toward eye", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "see"]
+
+	// CENTRAL         ATTRIBUTE-VALUE-RANGE: dark means a low amount of light     (eb6b-ac77-0835-6afe) [ THING:"dark", VALUE:"low amount", ATTRIBUTE:"light" ]
+	//row autoRow5 = [UUID:"eb6b-ac77-0835-6afe", THING: "dark", VALUE: "low amount", ATTRIBUTE: "light"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"eb6b-ac77-0835-6afe", THING: "dark", VALUE: "low amount", ATTRIBUTE: "light"]
+
+	// CENTRAL         ACTION: inventing a tool allows ; enables that tool to be used     (efcb-faab-cd79-cd07) [ ACTION1:"invent", AGENT_OBJECT:"tool", ACTION2:"allow;enable", OBJECT_PROPERTY:"that tool be use" ]
+	//row autoRow6 = [UUID:"efcb-faab-cd79-cd07", ACTION1: "invent", AGENT_OBJECT: "tool", ACTION2: "allow", OBJECT_PROPERTY: "that tool be use"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"efcb-faab-cd79-cd07", ACTION1: "invent", AGENT_OBJECT: "tool", ACTION2: "allow", OBJECT_PROPERTY: "that tool be use"]
+
+	// CENTRAL         REQUIRES: reading requires seeing     (09ac-6563-7f9f-67ca) [ ACTION1:"read", VERB_REQUIRES:"require", ACTION2:"see" ]
+	//row autoRow7 = [UUID:"09ac-6563-7f9f-67ca", ACTION1: "read", VERB_REQUIRES: "require", ACTION2: "see"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"09ac-6563-7f9f-67ca", ACTION1: "read", VERB_REQUIRES: "require", ACTION2: "see"]
+
+	// CENTRAL         KINDOF: reading is a kind of activity     (3d84-54ff-cea1-4765) [ HYPONYM:"read", HYPERNYM:"activity" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"3d84-54ff-cea1-4765", HYPONYM: "read", HYPERNYM: "activity"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"3d84-54ff-cea1-4765", HYPONYM: "read", HYPERNYM: "activity"]
+
+	// CENTRAL         REQUIRES: seeing requires light     (e5ab-6c07-c15d-90f2) [ ACTION1:"see", VERB_REQUIRES:"require", OBJECT:"light" ]
+	//row autoRow9 = [UUID:"e5ab-6c07-c15d-90f2", ACTION1: "see", VERB_REQUIRES: "require", OBJECT: "light"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"e5ab-6c07-c15d-90f2", ACTION1: "see", VERB_REQUIRES: "require", OBJECT: "light"]
+
+	// CENTRAL         SOURCEOF: a light bulb generates visible light when it is turned on     (f8bb-cff7-129e-84d7) [ AGENT:"light bulb", VERB_SOURCEOF_PROVIDE_ETC:"generate", WHAT_IT_PROVIDES:"visible light", SCOPE:"be turn" ]
+	//row autoRow10 = [UUID:"f8bb-cff7-129e-84d7", AGENT: "light bulb", VERB_SOURCEOF_PROVIDE_ETC: "generate", WHAT_IT_PROVIDES: "visible light", SCOPE: "be turn"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"f8bb-cff7-129e-84d7", AGENT: "light bulb", VERB_SOURCEOF_PROVIDE_ETC: "generate", WHAT_IT_PROVIDES: "visible light", SCOPE: "be turn"]
+
+	// LEXGLUE         SYNONYMY: instrument means tool     (a0d5-68ec-fccc-fd82) [ X1:"instrument", X2:"tool" ]
+	//row autoRow11 = [UUID:"a0d5-68ec-fccc-fd82", X1: "instrument", X2: "tool"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"a0d5-68ec-fccc-fd82", X1: "instrument", X2: "tool"]
+
+endinferencepattern

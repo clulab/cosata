@@ -1,0 +1,70 @@
+// Automatically converted pattern
+inferencepattern EARTH_GEO_Rock_Formation_Sedimentary
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       FORMEDBY: sedimentary rocks are formed by sediment ; materials that settle compacting ; cementing together     (8069-7f81-d181-7a04) [ OBJECT:"sedimentary rock", AGENT_PROCESS:"sediment;material settle", VERB:"compact;cement", SCOPE:"together" ]
+	//        HINTROW sedimentary rocks are formed by deposition ; cementation     (9413-02dc-6401-f7c4) [ OBJECT:"sedimentary rock", AGENT_PROCESS:"deposition;cementation" ]
+	//row autoRow0 = [TABLE:"FORMEDBY", OBJECT: "sedimentary rock", AGENT_PROCESS: "material"+*"POS:VB", VERB: "compact"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"FORMEDBY", OBJECT: "sedimentary rock"]
+
+	// GROUNDING       KINDOF: sandstone is a kind of sedimentary rock     (77b8-2e5a-f47d-fda3) [ HYPONYM:"sandstone", SCOPE1:"sedimentary", HYPERNYM:"rock" ]
+	//        HINTROW limestone is a kind of sedimentary rock     (f5b2-aca4-88b1-e3a4) [ HYPONYM:"limestone", SCOPE1:"sedimentary", HYPERNYM:"rock" ]
+	//row autoRow1 = [TABLE:"KINDOF", SCOPE1: "sedimentary", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", SCOPE1: "sedimentary", HYPERNYM: "rock"]
+
+	// GROUNDING       KINDOF: sand is a kind of sediment     (af21-14b2-7513-a570) [ HYPONYM:"sand", HYPERNYM:"sediment" ]
+	//        HINTROW phosphate is a kind of sediment     (6f11-eeed-063c-85b1) [ HYPONYM:"phosphate", HYPERNYM:"sediment" ]
+	//  Notes: sediment examples
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "sediment"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "sediment"]
+
+	// GROUNDING       MADEOF: sandstones are made of sand     (0ec8-fdcb-9b14-976c) [ OBJECT:"sandstone", MATERIAL:"sand" ]
+	//  Notes: sedimentary rock X is made of sediment Y
+	//row autoRow3 = [TABLE:"MADEOF", OBJECT: "sandstone", MATERIAL: "sand"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"MADEOF", OBJECT: "sandstone", MATERIAL: "sand"]
+
+	// CENTRAL         CHANGE: weathering ; mechanical weathering means breaking down rocks ; surface materials from a larger whole into smaller pieces by weather ; mechanical means     (791e-1c71-7a1d-d10a) [ PROCESS_NAME:"weather;mechanical weather", VERB:"break", WHAT:"rock;surface material", FROM:"large whole", INTO:"small piece", BY_THROUGH_HOW:"weather;mechanical mean" ]
+	//row autoRow4 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as rocks are buried deeper below other rocks , the pressure ; heat on that rock will increase     (0bab-0fad-ce84-76bb) [ AGENT_ATTRIBUTE1:"rock", ACTION1:"be bury", CHANGE1:"deep", SCOPE1B:"below other rock", AGENT_ATTRIBUTE2:"pressure;heat", SCOPE2A:"on rock", CHANGE2:"increase" ]
+	//row autoRow5 = [UUID:"0bab-0fad-ce84-76bb", AGENT_ATTRIBUTE1: "rock", ACTION1: "be bury", CHANGE1: "deep", SCOPE1B: "below other rock", AGENT_ATTRIBUTE2: "pressure", SCOPE2A: "on rock", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"0bab-0fad-ce84-76bb", AGENT_ATTRIBUTE1: "rock", ACTION1: "be bury", CHANGE1: "deep", SCOPE1B: "below other rock", AGENT_ATTRIBUTE2: "pressure", SCOPE2A: "on rock", CHANGE2: "increase"]
+
+	// CENTRAL         CHANGE: extreme heat and pressure compact sediments into sedimentary rocks     (71ba-ef2d-fb5f-33fc) [ ADJ_QUANTIFIER:"extreme", ACTOR_WHO:"heat pressure", VERB:"compact", FROM:"sediment", INTO:"sedimentary rock" ]
+	//  Notes: 3f61-74b3-1327-f313->71ba-ef2d-fb5f-33fc
+	//row autoRow6 = [UUID:"71ba-ef2d-fb5f-33fc", ADJ_QUANTIFIER: "extreme", ACTOR_WHO: "heat pressure", VERB: "compact", FROM: "sediment", INTO: "sedimentary rock"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"71ba-ef2d-fb5f-33fc", ADJ_QUANTIFIER: "extreme", ACTOR_WHO: "heat pressure", VERB: "compact", FROM: "sediment", INTO: "sedimentary rock"]
+
+	// CENTRAL         PROCESSSTAGES: the formation of sedimentary rock is a sequential process, with stages of weathering, erosion, deposition,burying, compaction     (7869-3ab9-42c8-7c02) [ PROCESS_NAME:"form of sedimentary rock", SEQUENTIAL_CYCLICAL:"sequential", STAGES:"weather erode deposition bury compaction" ]
+	//row autoRow7 = [UUID:"7869-3ab9-42c8-7c02", PROCESS_NAME: "form of sedimentary rock", SEQUENTIAL_CYCLICAL: "sequential", STAGES: "weather erode deposition bury compaction"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"7869-3ab9-42c8-7c02", PROCESS_NAME: "form of sedimentary rock", SEQUENTIAL_CYCLICAL: "sequential", STAGES: "weather erode deposition bury compaction"]
+
+	// CENTRAL         FORMEDBY: sedimentary rocks are formed in layers     (33e2-6f52-c8c1-df67) [ OBJECT:"sedimentary rock", AGENT_PROCESS:"in layer" ]
+	//row autoRow8 = [UUID:"33e2-6f52-c8c1-df67", OBJECT: "sedimentary rock", AGENT_PROCESS: "in layer"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"33e2-6f52-c8c1-df67", OBJECT: "sedimentary rock", AGENT_PROCESS: "in layer"]
+
+	// CENTRAL         MADEOF: sedimentary rocks are made of small particles     (07cd-40e2-cfed-90ab) [ OBJECT:"sedimentary rock", VALUE:"small", MATERIAL:"particle" ]
+	//row autoRow9 = [UUID:"07cd-40e2-cfed-90ab", OBJECT: "sedimentary rock", VALUE: "small", MATERIAL: "particle"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"07cd-40e2-cfed-90ab", OBJECT: "sedimentary rock", VALUE: "small", MATERIAL: "particle"]
+
+	// CENTRAL         FORMEDBY: sediment is formed by rocks weathering     (5645-74d9-19c8-9dc4) [ OBJECT:"sediment", AGENT_PROCESS:"rock", VERB:"weather" ]
+	//row autoRow10 = [UUID:"5645-74d9-19c8-9dc4", OBJECT: "sediment", AGENT_PROCESS: "rock", VERB: "weather"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"5645-74d9-19c8-9dc4", OBJECT: "sediment", AGENT_PROCESS: "rock", VERB: "weather"]
+
+	// CENTRAL         KINDOF: sedimentary rock is a kind of rock     (68cb-62b0-32a3-30e2) [ HYPONYM:"sedimentary rock", HYPERNYM:"rock" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"68cb-62b0-32a3-30e2", HYPONYM: "sedimentary rock", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"68cb-62b0-32a3-30e2", HYPONYM: "sedimentary rock", HYPERNYM: "rock"]
+
+	// LEXGLUE         SYNONYMY: compressed rock means sedimentary rock     (4e6f-08b4-802f-d9c1) [ X1:"compress rock", X2:"sedimentary rock" ]
+	//row autoRow12 = [UUID:"4e6f-08b4-802f-d9c1", X1: "compress rock", X2: "sedimentary rock"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"4e6f-08b4-802f-d9c1", X1: "compress rock", X2: "sedimentary rock"]
+
+endinferencepattern

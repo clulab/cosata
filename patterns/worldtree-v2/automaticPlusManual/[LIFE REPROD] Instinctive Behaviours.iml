@@ -1,0 +1,59 @@
+// Automatically converted pattern
+inferencepattern LIFE_REPROD_Instinctive_Behaviours
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW      (OPTIONAL) EXAMPLES: An example of an instinctive behavior is a baby bird pecking at its shell to hatch     (5c37-d156-8278-962c) [ AGENT_OBJECT1:"instinct behavior", AGENT_OBJECT2:"baby bird", VERB2:"peck at", AGENT_OBJECT3:"shell", FOR_PURPOSE:"hatch" ]
+	//        HINTROW An example of an inherited behavior is a bird building a nest     (f7ca-cfe9-d8b4-11a4) [ AGENT_OBJECT1:"inherit behavior", AGENT_OBJECT2:"bird", VERB2:"build", AGENT_OBJECT3:"nest" ]
+	//row *autoRow0 = [TABLE:"EXAMPLES", AGENT_OBJECT1: <instinct_0>+"behavior"] //OVER-CONSTR.
+	row *autoRow0 = [TABLE:"EXAMPLES", AGENT_OBJECT1: <instinct_0>+"behavior"]
+
+	// CENTRALSW       EXAMPLES: An example of migration is birds flying south in the winter     (2ad2-04a7-e3e7-916a) [ AGENT_OBJECT1:"migrate", AGENT_OBJECT2:"bird", VERB2:"fly", AGENT_OBJECT3:"south", SCOPE:"in winter" ]
+	//        HINTROW An example of a reproductive behavior is salmon returning to their birthplace to lay their eggs     (d86f-f0eb-8cd4-b579) [ AGENT_OBJECT1:"reproductive behavior", AGENT_OBJECT2:"salmon", VERB2:"return", AGENT_OBJECT3:"birthplace", FOR_PURPOSE:"lie egg" ]
+	//        HINTROW An example of hibernation is a frog burying itself in mud     (24a1-6da8-dc81-accd) [ AGENT_OBJECT1:"hibernation", AGENT_OBJECT2:"frog", VERB2:"bury", SCOPE:"in mud" ]
+	//row autoRow1 = [TABLE:"EXAMPLES", AGENT_OBJECT2: <bird_1>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"EXAMPLES", AGENT_OBJECT2: <bird_1>]
+
+	// CENTRALSW       PROP-INHERITEDLEARNED: migrating is an instinctive behavior     (7386-ad73-8eef-4980) [ ACTION:"migrate", INHERITED_LEARNED:"instinct" ]
+	//        HINTROW reproductive behavior is an inherited characteristic     (a616-023f-d122-f2f3) [ AGENT:"reproductive behavior", INHERITED_LEARNED:"inherit" ]
+	//        HINTROW hibernation is an inherited behavior     (7ded-f79f-1ff4-efe2) [ ACTION:"hibernation", INHERITED_LEARNED:"inherit" ]
+	//row autoRow2 = [TABLE:"PROP-INHERITEDLEARNED", INHERITED_LEARNED: <instinct_0>] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"PROP-INHERITEDLEARNED", INHERITED_LEARNED: <instinct_0>]
+
+	// GROUNDING       KINDOF: a bird is a kind of animal     (e26b-b21d-d4a3-25fc) [ HYPONYM:"bird", HYPERNYM:"animal" ]
+	//        HINTROW salmon is a kind of animal     (b050-c9a7-f762-fe5a) [ HYPONYM:"salmon", HYPERNYM:"animal" ]
+	//        HINTROW a frog is a kind of animal     (9e89-73fd-66d5-18e2) [ HYPONYM:"frog", HYPERNYM:"animal" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: <bird_1>, HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: <bird_1>, HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: migration is a kind of behavior     (fcee-e796-d013-02ae) [ HYPONYM:"migrate", HYPERNYM:"behavior" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "migrate", HYPERNYM: "behavior"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "migrate", HYPERNYM: "behavior"]
+
+	// CENTRAL        (OPTIONAL) TRANSFER: migration is when animals move themselves from a cooler climate to a warmer climate for the winter     (8cce-a771-334c-a119) [ PROCESS_NAME:"migrate", ACTOR_WHO:"animal", VERB:"move", SOURCE:"cool climate", DESTINATION:"warm climate", SCOPE:"for winter" ]
+	//row *autoRow5 = [UUID:"8cce-a771-334c-a119", PROCESS_NAME: "migrate", ACTOR_WHO: "animal", VERB: "move", SOURCE: "cool climate", DESTINATION: "warm climate", SCOPE: "for winter"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"8cce-a771-334c-a119", PROCESS_NAME: "migrate", ACTOR_WHO: "animal", VERB: "move", SOURCE: "cool climate", DESTINATION: "warm climate", SCOPE: "for winter"]
+
+	// CENTRAL         ACTION: an animal knows how to do instinctive behaviors when it is born     (277a-fd34-e20b-0e05) [ AGENT_OBJECT:"animal", ACTION2:"know do", OBJECT_PROPERTY:"instinct behavior", WHEN_WHERE:"be birth" ]
+	//row autoRow6 = [UUID:"277a-fd34-e20b-0e05", AGENT_OBJECT: "animal", ACTION2: "know do", OBJECT_PROPERTY: <instinct_0>+"behavior", WHEN_WHERE: "be birth"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"277a-fd34-e20b-0e05", AGENT_OBJECT: "animal", ACTION2: "know do", OBJECT_PROPERTY: <instinct_0>+"behavior", WHEN_WHERE: "be birth"]
+
+	// CENTRAL         KINDOF: an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation     (fdb9-edf0-6759-5f09) [ HYPONYM:"instinct behavior", HYPERNYM:"inherit characteristic;behavioral adapt" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"fdb9-edf0-6759-5f09", HYPONYM: <instinct_0>+"behavior", HYPERNYM: "inherit characteristic"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"fdb9-edf0-6759-5f09", HYPONYM: <instinct_0>+"behavior", HYPERNYM: "inherit characteristic"]
+
+	// CENTRAL        (OPTIONAL) USEDFOR: hibernation is used for conserving energy ; resources by some animals     (de27-24b6-09fb-9efc) [ AGENT_OBJECT:"hibernation", FOR_PURPOSE:"conserve", PATIENT:"energy;resource", AGENT_THING_WHO_USES:"animal" ]
+	//row *autoRow8 = [UUID:"de27-24b6-09fb-9efc", AGENT_OBJECT: "hibernation", FOR_PURPOSE: "conserve", PATIENT: "energy", AGENT_THING_WHO_USES: "animal"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"de27-24b6-09fb-9efc", AGENT_OBJECT: "hibernation", FOR_PURPOSE: "conserve", PATIENT: "energy", AGENT_THING_WHO_USES: "animal"]
+
+	// LEXGLUE         SYNONYMY: animal instinct means instinctive behavior     (a0d1-5016-59b4-faaa) [ X1:"animal instinct", X2:"instinct behavior" ]
+	//row autoRow9 = [UUID:"a0d1-5016-59b4-faaa", X1: "animal"+<instinct_0>, X2: <instinct_0>+"behavior"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"a0d1-5016-59b4-faaa", X1: "animal"+<instinct_0>, X2: <instinct_0>+"behavior"]
+
+endinferencepattern

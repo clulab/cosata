@@ -1,0 +1,35 @@
+{"patternMatches": [
+{
+	"patternName":"MAT_CHEM_Organic_Molecules_Properties",
+	"matches":[
+		{
+		"uuids": ["4bc4-153f-1e76-5bb4","4af3-2008-2732-2547","d6cd-1a0c-a91b-726d","2ae6-3458-f1d9-a724","b575-c6e9-ca7e-c8c1","6bb0-ea31-6fee-5e77","d227-791c-6134-8fba","f457-6be6-2383-4c64","f25a-54b9-3641-f7e4","6129-95b7-29b6-b458","5041-52ea-f8a3-b6d3","da2d-6850-c952-aaf1","93e8-b9fd-8d3a-5601","19dc-32da-d19f-7fce"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4bc4-153f-1e76-5bb4", "rowText": "organic compounds mainly are made of carbon ; hydrogen ; oxygen ; nitrogen", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4af3-2008-2732-2547", "rowText": "sugar is made of carbon, hydrogen, oxygen", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "d6cd-1a0c-a91b-726d", "rowText": "a carbohydrate is a kind of compound", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2ae6-3458-f1d9-a724", "rowText": "carbon is a kind of element", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b575-c6e9-ca7e-c8c1", "rowText": "carbon ; hydrogen ; nitrogen ; oxygen are the most common elements in organic compounds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "6bb0-ea31-6fee-5e77", "rowText": "a compound is made of two or more elements chemically combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d227-791c-6134-8fba", "rowText": "a molecule is made of atoms chemically combined ; bonded", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "f457-6be6-2383-4c64", "rowText": "carbon has the property of catenation to form a carbon chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f25a-54b9-3641-f7e4", "rowText": "a molecule is the smallest particle ; unit that has the properties of a compound", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6129-95b7-29b6-b458", "rowText": "organic compounds contain hydrogen", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "5041-52ea-f8a3-b6d3", "rowText": "organic compounds do not contain potassium", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da2d-6850-c952-aaf1", "rowText": "organisms are made of organic compounds", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "93e8-b9fd-8d3a-5601", "rowText": "carbohydrates are made of sugars", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "19dc-32da-d19f-7fce", "rowText": "organic is similar to of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"hydrogen_0", "value":"hydrogen" },
+			{ "name":"oxygen_1", "value":"oxygen" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"hydrogen_0", "value":"hydrogen" },
+			{ "name":"oxygen_1", "value":"oxygen" }
+		]
+		}
+	]
+}
+]}
+

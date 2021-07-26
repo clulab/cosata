@@ -1,0 +1,88 @@
+// Automatically converted pattern
+inferencepattern CEL_FEATURES_Definition_Moons
+
+	// Plain text description
+	description = "NOTE: Implication that what planet a moon/celestial body orbits is one of it's properties. ; add property table for names of moons and where they orbit? (as a grounding row here -- e.g. phobos is a moon of mars)"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-ORBITAL-ROT: a complete revolution ; orbit of Phobos around Mars takes 8 ; eight hours     (70c9-28e1-6837-cb64) [ REVOLUTION_ROTATION:"revolve;orbit", WHAT_S_MOVING:"phobos", CENTER_POINT:"mar", HOW_LONG_IT_TAKES:"8;eight", UNITS:"hour" ]
+	//        HINTROW a complete revolution ; orbit of the moon around the Earth takes 1 ; one month     (9baa-2f01-60c7-64fa) [ REVOLUTION_ROTATION:"revolve;orbit", WHAT_S_MOVING:"moon", CENTER_POINT:"earth", HOW_LONG_IT_TAKES:"1;one", UNITS:"month" ]
+	//  Notes: orbital period
+	//row autoRow0 = [TABLE:"PROP-ORBITAL-ROT", REVOLUTION_ROTATION: "revolve", WHAT_S_MOVING: <phobos_0>, CENTER_POINT: <mar_4>, HOW_LONG_IT_TAKES: <_1>, UNITS: <hour_3>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-ORBITAL-ROT", REVOLUTION_ROTATION: "revolve", WHAT_S_MOVING: <phobos_0>, CENTER_POINT: <mar_4>, HOW_LONG_IT_TAKES: <_1>, UNITS: <hour_3>]
+
+	// CENTRALSW       PROP-ORBITAL-ROT: a complete rotation of Phobos on its axis takes 8 ; eight hours     (f392-222a-fb23-70a9) [ REVOLUTION_ROTATION:"rotate", WHAT_S_MOVING:"phobos", CENTER_POINT:"axis", HOW_LONG_IT_TAKES:"8;eight", UNITS:"hour" ]
+	//        HINTROW a complete rotation of the moon takes 1 ; one month     (23ed-359d-1127-b8e9) [ REVOLUTION_ROTATION:"rotate", WHAT_S_MOVING:"moon", HOW_LONG_IT_TAKES:"1;one", UNITS:"month" ]
+	//  Notes: rotation period
+	//row autoRow1 = [TABLE:"PROP-ORBITAL-ROT", REVOLUTION_ROTATION: "rotate", WHAT_S_MOVING: <phobos_0>, CENTER_POINT: "axis", HOW_LONG_IT_TAKES: <_1>, UNITS: <hour_3>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-ORBITAL-ROT", REVOLUTION_ROTATION: "rotate", WHAT_S_MOVING: <phobos_0>, HOW_LONG_IT_TAKES: <_1>, UNITS: <hour_3>]
+
+	// CENTRALSW       ACTION: classifying means grouping objects ; materials by their properties     (69c1-2991-2421-ce63) [ DEFINITION_NAME:"classify", ACTION2:"group", OBJECT_PROPERTY:"object;material", HOW:"property" ]
+	//        HINTROW classifying is when one sorts something by kind ; type     (0d00-93f4-5616-0efc) [ DEFINITION_NAME:"classify", AGENT_OBJECT:"one", ACTION2:"sort", OBJECT_PROPERTY:"something", HOW:"kind;type" ]
+	//row autoRow2 = [TABLE:"ACTION", DEFINITION_NAME: "classify"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"ACTION", DEFINITION_NAME: "classify"]
+
+	// CENTRALSW       ACTION: Phobos orbits Mars     (43dd-df8a-c133-a741) [ AGENT_OBJECT:"phobos", ACTION2:"orbit", OBJECT_PROPERTY:"mar" ]
+	//        HINTROW the moon orbits the Earth     (a6a9-3e1b-7e02-ce06) [ AGENT_OBJECT:"moon", ACTION2:"orbit", OBJECT_PROPERTY:"earth" ]
+	//row autoRow3 = [TABLE:"ACTION", AGENT_OBJECT: <phobos_0>, ACTION2: "orbit", OBJECT_PROPERTY: <mar_4>] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"ACTION", AGENT_OBJECT: <phobos_0>, ACTION2: "orbit", OBJECT_PROPERTY: <mar_4>]
+
+	// CENTRALSW       KINDOF: a moon is a kind of celestial object ; body     (e2ec-1655-c1fd-cb58) [ HYPONYM:"moon", SCOPE1:"celestial", HYPERNYM:"object;body" ]
+	//        HINTROW a moon is a kind of satellite     (a0cd-50c8-3696-fc4b) [ HYPONYM:"moon", HYPERNYM:"satellite" ]
+	//  Notes: peripheral central
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "moon"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "moon"]
+
+	// GROUNDING       KINDOF: Mars is a kind of planet     (1fb6-af63-74de-86fd) [ HYPONYM:"mar", HYPERNYM:"planet" ]
+	//        HINTROW Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPONYM: <mar_4>, HYPERNYM: "planet"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPONYM: <mar_4>, HYPERNYM: "planet"]
+
+	// GROUNDING       KINDOF: Phobos is a kind of moon     (9204-e312-1986-baf9) [ HYPONYM:"phobos", HYPERNYM:"moon" ]
+	//        HINTROW the Moon is a kind of moon     (343e-7241-0aa2-1221) [ HYPONYM:"moon", HYPERNYM:"moon" ]
+	//row autoRow6 = [TABLE:"KINDOF", HYPONYM: <phobos_0>, HYPERNYM: "moon"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPONYM: <phobos_0>, HYPERNYM: "moon"]
+
+	// CENTRAL         LOCATIONS: a moon is located in space     (1404-0cc1-191d-35bd) [ THING_PROCESS:"moon", LOCATION:"space" ]
+	//row autoRow7 = [UUID:"1404-0cc1-191d-35bd", THING_PROCESS: "moon", LOCATION: "space"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"1404-0cc1-191d-35bd", THING_PROCESS: "moon", LOCATION: "space"]
+
+	// CENTRAL        (OPTIONAL) COMPARISON: a planet 's moon is smaller than that planet     (3e43-6c70-96a7-964f) [ ADJ:"planet", THING:"moon", ACTION1:"be", COMPARISON:"small", THING_COMPARED:"planet" ]
+	//  Notes: 3f74-37d4-8002-21b5->3e43-6c70-96a7-964f
+	//row *autoRow8 = [UUID:"3e43-6c70-96a7-964f", ADJ: "planet", THING: "moon", ACTION1: "be", COMPARISON: "small", THING_COMPARED: "planet"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"3e43-6c70-96a7-964f", ADJ: "planet", THING: "moon", ACTION1: "be", COMPARISON: "small", THING_COMPARED: "planet"]
+
+	// CENTRAL         ACTION: the moon rotates on its axis     (e202-3f7d-7259-9efa) [ AGENT_OBJECT:"moon", ACTION2:"rotate on", OBJECT_PROPERTY:"axis" ]
+	//row autoRow9 = [UUID:"e202-3f7d-7259-9efa", AGENT_OBJECT: "moon", ACTION2: "rotate on", OBJECT_PROPERTY: "axis"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"e202-3f7d-7259-9efa", AGENT_OBJECT: "moon", ACTION2: "rotate on", OBJECT_PROPERTY: "axis"]
+
+	// CENTRAL         KINDOF: a planet is a kind of celestial object ; body     (22a2-1029-702e-a29a) [ HYPONYM:"planet", SCOPE1:"celestial", HYPERNYM:"object;body" ]
+	//  Notes: peripheral central
+	//row autoRow10 = [UUID:"22a2-1029-702e-a29a", HYPONYM: "planet", SCOPE1: "celestial", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"22a2-1029-702e-a29a", HYPONYM: "planet", SCOPE1: "celestial", HYPERNYM: "object"]
+
+	// CENTRAL         ACTION: moons orbit planets     (f6bf-c93d-b9ba-1302) [ AGENT_OBJECT:"moon", ACTION2:"orbit", OBJECT_PROPERTY:"planet" ]
+	//row autoRow11 = [UUID:"f6bf-c93d-b9ba-1302", AGENT_OBJECT: "moon", ACTION2: "orbit", OBJECT_PROPERTY: "planet"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"f6bf-c93d-b9ba-1302", AGENT_OBJECT: "moon", ACTION2: "orbit", OBJECT_PROPERTY: "planet"]
+
+	// CENTRAL         KINDOF: orbit is a kind of characteristic     (3805-d6f6-27c6-a859) [ HYPONYM:"orbit", HYPERNYM:"characteristic" ]
+	//  Notes: peripheral central
+	//row autoRow12 = [UUID:"3805-d6f6-27c6-a859", HYPONYM: "orbit", HYPERNYM: "characteristic"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"3805-d6f6-27c6-a859", HYPONYM: "orbit", HYPERNYM: "characteristic"]
+
+	// CENTRAL         PROP-THINGS: the moon 's orbit is elliptical     (aab2-df49-cb6f-dcbb) [ THING:"moon orbit", VALUE:"elliptical" ]
+	//row autoRow13 = [UUID:"aab2-df49-cb6f-dcbb", THING: "moon orbit", VALUE: "elliptical"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"aab2-df49-cb6f-dcbb", THING: "moon orbit", VALUE: "elliptical"]
+
+	// CENTRAL         PROP-THINGS: moons are large ; solid ; spherical     (9ad4-226c-5d97-86e1) [ THING:"moon", VALUE:"large;solid;spherical" ]
+	//row autoRow14 = [UUID:"9ad4-226c-5d97-86e1", THING: "moon", VALUE: "large"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"9ad4-226c-5d97-86e1", THING: "moon", VALUE: "large"]
+
+	// LEXGLUE         SYNONYMY: grouping means putting ; placing in different groups     (ba30-2a8a-fe88-bca0) [ ACTION1:"group", ACTION2:"putt;place", Y2:"in differ group" ]
+	//row autoRow15 = [UUID:"ba30-2a8a-fe88-bca0", ACTION1: "group", ACTION2: "putt", Y2: "in differ group"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"ba30-2a8a-fe88-bca0", ACTION1: "group", ACTION2: "putt", Y2: "in differ group"]
+
+endinferencepattern

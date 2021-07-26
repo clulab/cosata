@@ -1,0 +1,61 @@
+// Automatically converted pattern
+inferencepattern LIFE_INTERDEP_Producers_Definition
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       SOURCEOF: a producer is a source of energy for consumers     (b19d-b086-7090-2115) [ AGENT:"producer", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"energy", AGENT_IT_PROVIDES_THING_TO:"consumer" ]
+	//        HINTROW a producer is a source of sugar ; food energy in an ecosystem     (35d8-b64d-a726-96c8) [ AGENT:"producer", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"sugar;food energy", SCOPE:"in ecosystem" ]
+	//        HINTROW producers are a source of food resource for primary consumers     (59e6-3a73-ee21-701d) [ AGENT:"producer", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"food resource", AGENT_IT_PROVIDES_THING_TO:"primary consumer" ]
+	//row autoRow0 = [TABLE:"SOURCEOF", AGENT: "producer", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"SOURCEOF", AGENT: "producer", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy"]
+
+	// CENTRALSW       PROCESSROLES: In the food chain process a green plant has the role of producer ; primary producer     (e4b0-75b1-e5ea-4189) [ PROCESS_NAME:"food chain", ACTOR_COMMON_EXAMPLE:"green plant", ROLE:"producer;primary producer" ]
+	//        HINTROW In the food chain process some types of plankton have the role of producer     (d9fb-1dc4-4305-980c) [ PROCESS_NAME:"food chain", ACTOR_COMMON_EXAMPLE:"type of plankton", ROLE:"producer" ]
+	//row autoRow1 = [TABLE:"PROCESSROLES", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "green plant", ROLE: *"POS:JJ"+"producer"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROCESSROLES", PROCESS_NAME: "food chain", ROLE: *"POS:JJ"+"producer"]
+
+	// GROUNDING       KINDOF: green plants are a kind of producer     (f812-4338-e44b-e685) [ HYPONYM:"green plant", HYPERNYM:"producer" ]
+	//        HINTROW green marine algae are a kind of producer     (f216-9e38-7dc7-a6d1) [ HYPONYM:"green marine alga", HYPERNYM:"producer" ]
+	//        HINTROW a diatom is a kind of producer     (f36b-4742-f196-9090) [ HYPONYM:"diatom", HYPERNYM:"producer" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "green plant", HYPERNYM: "producer"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "producer"]
+
+	// GROUNDING      (OPTIONAL) KINDOF: algae is a kind of plant     (65ae-2928-0696-d8a9) [ HYPONYM:"alga", HYPERNYM:"plant" ]
+	//row *autoRow3 = [TABLE:"KINDOF", HYPONYM: "alga", HYPERNYM: "plant"] //OVER-CONSTR.
+	row *autoRow3 = [TABLE:"KINDOF", HYPONYM: "alga", HYPERNYM: "plant"]
+
+	// CENTRAL         CHANGE: photosynthesis means producers ; green plants convert from carbon dioxide and water and solar energy into carbohydrates and food and oxygen for themselves     (0962-4a47-4e17-ce97) [ PROCESS_NAME:"photosynthesis", ACTOR_WHO:"producer;green plant", VERB:"convert", FROM:"carbon dioxide water solar energy", INTO:"carbohydrate food oxygen" ]
+	//row autoRow4 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"]
+
+	// CENTRAL         SOURCEOF: green plants provide food for themselves ; animals ; consumers by performing photosynthesis     (694b-d9ec-8c65-5a6a) [ ADJ:"green", AGENT:"plant", VERB_SOURCEOF_PROVIDE_ETC:"provide", WHAT_IT_PROVIDES:"food", AGENT_IT_PROVIDES_THING_TO:";animal;consumer", BY_THROUGH_HOW:"perform photosynthesis" ]
+	//row autoRow5 = [UUID:"694b-d9ec-8c65-5a6a", ADJ: "green", AGENT: "plant", VERB_SOURCEOF_PROVIDE_ETC: "provide", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "animal", BY_THROUGH_HOW: "perform photosynthesis"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"694b-d9ec-8c65-5a6a", ADJ: "green", AGENT: "plant", VERB_SOURCEOF_PROVIDE_ETC: "provide", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "animal", BY_THROUGH_HOW: "perform photosynthesis"]
+
+	// CENTRAL         TRANSFER: producers pass materials they use through the food chain     (a905-da2f-aa41-2d41) [ ACTOR_WHO:"producer", VERB:"pass", WHAT:"material use", DESTINATION:"food chain" ]
+	//row autoRow6 = [UUID:"a905-da2f-aa41-2d41", ACTOR_WHO: "producer", VERB: "pass", WHAT: "material use", DESTINATION: "food chain"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"a905-da2f-aa41-2d41", ACTOR_WHO: "producer", VERB: "pass", WHAT: "material use", DESTINATION: "food chain"]
+
+	// CENTRAL         KINDOF: producer is a kind of role in the food chain process ; in an ecosystem     (3bad-691a-15c4-44f6) [ HYPONYM:"producer", HYPERNYM:"role", SCOPE2:"in food chain process;in ecosystem" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"3bad-691a-15c4-44f6", HYPONYM: "producer", HYPERNYM: "role", SCOPE2: "in food chain process"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3bad-691a-15c4-44f6", HYPONYM: "producer", HYPERNYM: "role", SCOPE2: "in food chain process"]
+
+	// CENTRAL         ACTION: a producer produces its own food     (606d-9382-a8e0-7000) [ AGENT_OBJECT:"producer", ACTION2:"produce", OBJECT_PROPERTY:"own food" ]
+	//row autoRow8 = [UUID:"606d-9382-a8e0-7000", AGENT_OBJECT: "producer", ACTION2: "produce", OBJECT_PROPERTY: "own food"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"606d-9382-a8e0-7000", AGENT_OBJECT: "producer", ACTION2: "produce", OBJECT_PROPERTY: "own food"]
+
+	// CENTRAL         SOURCEOF: photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates     (a9fc-ec58-9496-d635) [ AGENT:"photosynthesis", VERB_SOURCEOF_PROVIDE_ETC:"be source of;make", WHAT_IT_PROVIDES:"food;energy", AGENT_IT_PROVIDES_THING_TO:"plant", BY_THROUGH_HOW:"convert carbon dioxide water sunlight into carbohydrate" ]
+	//row autoRow9 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"]
+
+	// CENTRAL         REQUIRES: a plant requires sunlight for photosynthesis     (619e-a5d1-b505-4f69) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"sunlight", FOR_PURPOSE:"photosynthesis" ]
+	//row autoRow10 = [UUID:"619e-a5d1-b505-4f69", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "photosynthesis"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"619e-a5d1-b505-4f69", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "photosynthesis"]
+
+endinferencepattern

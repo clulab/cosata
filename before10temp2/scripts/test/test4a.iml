@@ -1,0 +1,509 @@
+// Imports
+import "notes.iml"
+
+// function
+function test()
+        var a = 10
+endfunction
+
+// Changing states of matter
+inferencepattern stateOfMatter
+        // Plain text description
+        description = "A substance changing it's state of matter"
+
+		// Requirements
+		require instance substance1 = [KINDOF:"substance"]		
+		//shouldhave substance1 (substance1."state of matter" != "")
+		//shouldhave substance1 (substance1."temperature" != "")
+		//musthave substance1 (substance1."state of matter" == <SOM1>)		
+		shouldhave (substance1."state of matter" != "")
+		shouldhave (substance1."temperature" != "")
+		musthave (substance1."state of matter" == <SOM1>)
+		//musthave (x.y.z == <SOM1>)				
+		
+		
+		//require instance test2 = [KINDOF:"animal"]
+		//musthave test2 (test2."test" != "")
+		//musthave test2 (test2."temperature" != "")
+
+		
+        // Constants
+        const <a> = "blah"
+        const <b> = "blah 1 2 3"
+
+        // Row definitions
+
+        // e.g. solid/liquid/gas is a kind of state of matter
+        row som1 = [TABLE:"KINDOF", HYPONYM:<SOM1>, HYPERNYM:"state of matter"]
+        row som2 = [TABLE:"KINDOF", HYPONYM:<SOM2>, HYPERNYM:"state of matter"]
+
+        // e.g. melting/boiling/freezing is a kind of change of state
+        row cos  = [TABLE:"KINDOF", HYPONYM:<ChangeOfState>, HYPERNYM:"change of state"]
+
+        // e.g. state of matter is a property of a substance
+        row somprop = [TABLE:"PROP-GENERIC", PROPERTY:"state of matter", OBJECT:<obj>]
+        
+        // e.g. a boiling point is a kind of phase transition point
+        row point = [TABLE:"KINDOF", HYPONYM:<PhaseTransitionPoint>, HYPERNYM:"phase transition point"]
+
+        // e.g. melting means (matter; a substance) changes from a solid to a liquid by increasing heat energy
+        row change = [TABLE:"CHANGE", PROCESS_NAME:<ChangeOfState>, PROPERTY:"state of matter", OBJECT:<obj>, FROM:<SOM1>, INTO:<SOM2>, BY_THROUGH_HOW:<incDec> + "heat energy"]
+
+        // e.g. melting occurs when the temperature of a substance is increased above the substance's melting point, and below it's boiling point
+        //row thresh = [TABLE:"CONDITION-VEC", EVENT:<ChangeOfState>, VALUE:<PhaseTransitionPoint>]
+        row thresh = [TABLE:"CONDITION-VEC", EVENT:<ChangeOfState>, OBJECT:<obj>, INCREASED_DECREASED:<tempDir>, ABOVE_BELOW1:<aboveBelow>, VALUE1:<PhaseTransitionPoint>, ABOVE_BELOW2:<*aboveBelow2>, VALUE2:<*PhaseTransitionPoint2>]
+		//row point = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME:<materialName>, STATEOFMATTER:<SOM>, LOWER_BOUND:<*lowerPoint>, UPPER_BOUND:<*upperPoint>, UNITS:<units>]
+        
+        // e.g. heating means the (temperature; heat energy) of an (object; substance) is increased
+        row heatcool = [TABLE:"CHANGE-VEC-PROP", PROCESS_NAME:<heatingOrCooling>, PROPERTY:"heat energy", INCREASED_DECREASED:<incDec>]
+
+        //## test
+		//row point = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME:<materialName>, STATEOFMATTER:<SOM2>, LOWER_BOUND:<*lowerPoint>, UPPER_BOUND:<*upperPoint>, UNITS:<units>]
+		row point = [TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", PHASEPOINT:<PhaseTransitionPoint>, MATERIAL_NAME:<materialName>, TEMPERATURE:<pointTemp>, UNITS:<units>]
+        
+        // Code
+		//if (object1."temperature" CHANGE [direction:<tempDir> threshold:<PhaseTransitionPoint>]) then
+		//if (object1."temperature" CHANGE [direction:<tempDir> threshold:<minPoint>]) then
+		
+		//if ((object1."temperature" CHANGE [direction:<tempDir> threshold:<minPoint>]) && (1 == 1)) then
+		//if ((1 == 1) && (2 == 2)) then						
+		
+		printInstances
+		println("SOM1 = " + <SOM1>)		
+		//if (object1."temperature" CHANGE [direction:<tempDir> threshold:<minPoint>]) then
+		if ((substance1."temperature" CHANGE [direction:<tempDir> threshold:<pointTemp>]) && (substance1."state of matter" == <SOM1>)) then
+			println("Old state of matter was " + <SOM1>)
+			printInstances
+			
+			substance1."state of matter" = <SOM2>
+			
+			println("Changed state of matter to " + <SOM2>)
+			printInstances
+		endif
+        
+        /*
+        activate:
+			instance substance = [TABLE:"KINDOF", HYPONYM:<substance>, HYPERNYM:"substance"]
+			// if temperature 'increases above', 'decreases below', etc, substance's phase transition point
+			if (substance.temperature direction:<tempDir> thresholdSide:<aboveBelow> threshold:<PhaseTransitionPoint>) {
+				// Was (before phase change): substance.stateOfMatter = <SOM1>
+				was:
+					substance.stateOfMatter = <SOM2>
+				
+				// Now (after phase change): substance.stateOfMatter = <SOM2>
+				now:
+					substance.stateOfMatter = <SOM2>
+					
+			}
+		*/
+		// Note: different temporal modes: 
+		// 		discrete change (was/now)
+		//		incremental step (step / eventually)
+		
+		// Note: instances
+		// Must create instances of things (e.g. instance <x> is a KINDOF animal) so that those things (e.g. <X>) can have property values (e.g. tempreature, life stage, color,etc)
+		// Thoughts: instances can be made/asserted in rules, or added in a console or in the 'simulation construction' phase
+
+endinferencepattern
+
+
+
+
+// A substance in a state of matter
+inferencepattern substanceInSOM
+        // Plain text description 
+        description = "A material/substance in a given state of matter"
+
+		// Requirements
+		require instance substance = [KINDOF:"substance"]		
+		musthave substance (substance."material" == <materialName>)
+		
+        // Constants
+
+        // Row definitions
+        row som = [TABLE:"KINDOF", HYPONYM:<SOM>, HYPERNYM:"state of matter"]
+        row propSomTemp = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME:<materialName>, STATEOFMATTER:<SOM>]
+
+        // Code
+        
+
+endinferencepattern
+
+
+inferencepattern compositeX
+        // Plain text description
+        description = "A composite inference pattern test"
+
+		// Requirements
+		require instance sub1 = [KINDOF:"substance"]
+		//shouldhave (sub1."state of matter" != "")
+		//shouldhave (sub1."temperature" != "")
+		//musthave (sub1."state of matter" == <SOM1>)
+		
+		
+		//require instance test2 = [KINDOF:"animal"]
+		//musthave test2 (test2."test" != "")
+		//musthave test2 (test2."temperature" != "")
+		
+		// Composite requirements
+		/*
+		infpat x = stateOfMatter
+		infpat y = substanceInSOM
+		
+		rowequiv x.som1 = y.som
+		
+		instmap sub1 = x.substance1
+		*/
+		
+
+		
+        // Constants
+
+        // Row definitions
+
+		// Code
+
+
+endinferencepattern
+
+
+
+inferencepattern compositeTest
+        // Plain text description
+        description = "A composite inference pattern test"
+
+		// Requirements
+		require instance sub1 = [KINDOF:"substance"]
+		//require instance sub2 = [KINDOF:"substance"]
+		//require instance extra = [KINDOF:"substance"]
+		shouldhave (sub1."state of matter" != "")
+		//shouldhave (sub1."temperature" != "")
+		//musthave (sub1."state of matter" == <SOM1>)
+		
+		//musthave (extra."state of matter" == sub2."state of matter")	//## test
+		//musthave (extra."state of matter" == "gas")	//## test
+		
+		//require instance test2 = [KINDOF:"animal"]
+		//musthave test2 (test2."test" != "")
+		//musthave test2 (test2."temperature" != "")
+		
+		// Composite requirements
+		
+		infpat x = stateOfMatter
+		infpat y = substanceInSOM
+		
+		rowequiv x.som1 = y.som
+		
+		instmap sub1 = x.substance1
+		instmap sub1 = y.substance				
+		//instmap sub2 = x.substance2
+		
+
+		
+        // Constants
+
+        // Row definitions
+        //row test = [TABLE:"KINDOF", HYPONYM:<X>, HYPERNYM:"device"]
+
+		// Code
+
+
+endinferencepattern
+
+
+inferencepattern ChangeOfStateWithSubstanceFrom
+        // Plain text description
+        description = "Composite: A change of state, with a substance in the state of matter being changed FROM a given state."
+
+		// Requirements
+		require instance sub1 = [KINDOF:"substance"]
+		shouldhave (sub1."state of matter" != "")
+		//shouldhave (sub1."temperature" != "")
+		//musthave (sub1."state of matter" == <SOM1>)
+		
+		//musthave (extra."state of matter" == sub2."state of matter")	//## test
+		//musthave (extra."state of matter" == "gas")	//## test
+		
+		//require instance test2 = [KINDOF:"animal"]
+		//musthave test2 (test2."test" != "")
+		//musthave test2 (test2."temperature" != "")
+		
+		// Composite requirements
+		
+		infpat x = stateOfMatter
+		infpat y = substanceInSOM
+		
+		rowequiv x.som1 = y.som
+		
+		instmap sub1 = x.substance1
+		instmap sub1 = y.substance				
+
+			
+        // Constants
+
+        // Row definitions
+        //row test = [TABLE:"KINDOF", HYPONYM:<X>, HYPERNYM:"device"]
+
+		// Code
+
+
+endinferencepattern
+
+
+inferencepattern ChangeOfStateWithSubstanceTo
+        // Plain text description
+        description = "Composite: A change of state, with a substance in the state of matter being changed TO a given state."
+
+		// Requirements
+		require instance sub1 = [KINDOF:"substance"]
+		shouldhave (sub1."state of matter" != "")
+		//shouldhave (sub1."temperature" != "")
+		//musthave (sub1."state of matter" == <SOM1>)
+		
+		//musthave (extra."state of matter" == sub2."state of matter")	//## test
+		//musthave (extra."state of matter" == "gas")	//## test
+		
+		//require instance test2 = [KINDOF:"animal"]
+		//musthave test2 (test2."test" != "")
+		//musthave test2 (test2."temperature" != "")
+		
+		// Composite requirements
+		
+		infpat x = stateOfMatter
+		infpat y = substanceInSOM
+		
+		rowequiv x.som2 = y.som
+		
+		instmap sub1 = x.substance1
+		instmap sub1 = y.substance				
+
+			
+        // Constants
+
+        // Row definitions
+        //row test = [TABLE:"KINDOF", HYPONYM:<X>, HYPERNYM:"device"]
+
+		// Code
+
+
+endinferencepattern
+
+
+inferencepattern ChangeOfStateWithSubstanceFromTo
+        // Plain text description
+        description = "Composite: A change of state, with a substance in the state of matter being changed FROM a given state, TO a given state."
+
+		// Requirements
+		require instance sub1 = [KINDOF:"substance"]
+		shouldhave (sub1."state of matter" != "")
+		
+		// Composite requirements
+		
+		
+		infpat infFrom = ChangeOfStateWithSubstanceFrom
+		infpat infTo = ChangeOfStateWithSubstanceTo
+		
+		
+		rowequiv infFrom.x.stateOfMatter = infTo.x.stateOfMatter			// Must be the same ChangeOfState pattern within the 'from' and 'two' blocks
+				
+		instmap sub1 = infFrom.sub1
+		instmap sub1 = infTo.sub1
+		
+
+			
+        // Constants
+
+        // Row definitions        
+
+		// Code
+
+
+endinferencepattern
+
+
+/*
+ * Heat energy
+ */
+
+inferencepattern sourceofHeatEnergy
+        // Plain text description
+        description = "Something being a source of heat energy"
+
+        // Constants
+
+        // Row definitions
+        row source = [TABLE:"SOURCEOF", AGENT:<agent>, WHAT_IT_PROVIDES:"heat energy"]
+
+        // Code
+
+endinferencepattern
+
+
+inferencepattern heatingCoolingDevice
+        // Plain text description
+        description = "Something is a heating or cooling device"
+
+        // Constants
+
+        // Row definitions
+        // e.g. a stove is a king of heating device
+        row som = [TABLE:"KINDOF", HYPONYM:<devicename>, HYPERNYM:<heatingOrCoolingDevice>]
+
+        // e.g. heating devices are used for heating objects
+        row usedfor = [TABLE:"USEDFOR", AGENT_OBJECT:<heatingOrCoolingDevice>, FOR_PURPOSE:<heatingOrCooling>, PATIENT:<obj>]
+
+        // e.g. heating means the (temperature; heat energy) of an (object; substance) is increased
+        row change = [TABLE:"CHANGE-VEC-PROP", PROCESS_NAME:<heatingOrCooling>, PROPERTY:<tempHeatEnergy>, INCREASED_DECREASED:<incDec>]
+
+
+        // Code
+
+endinferencepattern
+
+
+
+/*
+ * Physical changes
+ */ 
+inferencepattern shapeVolumeSOM
+        // Plain text description
+        description = ""
+
+        // Constants
+
+        // Row definitions
+        row som = [TABLE:"KINDOF", HYPONYM:<SOM>, HYPERNYM:"state of matter"]
+        row propSomTemp = [TABLE:"PROP-STATESOFMATTER-TEMPS", STATEOFMATTER:<SOM>]
+
+
+        // Code
+
+endinferencepattern
+
+
+/*
+ * Phase transition points
+ * (Generating automatically from PROP-STATESOFMATTER-TEMPS
+ */ 
+// TODO: Also generate rows for FORM_NAME (e.g. ice) as welll as MATERIAL_NAME (e.g. water) for robustness? 
+inferencepattern PhaseTransitionPointGen
+		// Plain text description
+		description = "Populates phase transition points (boiling, freezing, melting, condensation points) table from information in PROP-STATESOFMATTER-TEMPS"
+		
+		// Row definitions
+		row point = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME:<materialName>, STATEOFMATTER:<SOM>, LOWER_BOUND:<*lowerPoint>, UPPER_BOUND:<*upperPoint>, UNITS:<units>]
+						
+		// Code
+		if ((<*lowerPoint> != "") || (<*upperPoint> != "")) then
+			if (<SOM> == "solid") then
+				generaterow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"freezing point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<*upperPoint>, UNITS:<units>])
+				generaterow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"melting point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<*upperPoint>, UNITS:<units>])
+			endif
+			if (<SOM> == "liquid") then
+				generaterow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"freezing point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<*lowerPoint>, UNITS:<units>])
+				generaterow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"melting point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<*lowerPoint>, UNITS:<units>])
+				generaterow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"boiling point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<*upperPoint>, UNITS:<units>])
+				generaterow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"condensation point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<*upperPoint>, UNITS:<units>])			
+			endif
+			if (<SOM> == "gas") then
+				generaterow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"boiling point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<*lowerPoint>, UNITS:<units>])
+				generaterow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"condensation point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<*lowerPoint>, UNITS:<units>])
+			endif	
+		else
+			println ("Either or both of lowerPoint and/or upperPoint must be populated for this pattern to engage.")
+		endif
+		
+		/*
+		// test of checking for empty variables
+		if (<*lowerPoint> != "") then
+			println("lowerpoint not empty! '" + <*lowerPoint> + "'")
+		else 
+			println("lowerpoint is empty! '" + <*lowerPoint> + "'")
+		endif
+		*/
+
+endinferencepattern
+
+/*
+ * Supporting inference patterns
+ */ 
+
+// Taxonomic traversal
+// If X is a kind of Y, and Y is a kind of Z, then X is a kind of Z
+inferencepattern taxonomicTraversal
+        // Plain text description
+        description = "Taxonomic traversal (If X is a kind of Y, and Y is a kind of Z, then X is a kind of Z)"
+
+        // Constants
+
+        // Row definitions
+        row upper = [TABLE:"KINDOF", HYPONYM:<x>, HYPERNYM:<y>]
+        row lower = [TABLE:"KINDOF", HYPONYM:<y>, HYPERNYM:<z>]
+
+        // Code
+        generaterow([TABLE:"KINDOF", HYPONYM:<x>, FILL_IS:"is", FILL_A_KIND_OF:"a kind of", HYPERNYM:<z>])
+
+endinferencepattern
+
+
+
+
+// main
+//main:
+        //var b = 20
+        instance obj1 = [KINDOF:"substance"]
+        obj1."material" = "water"
+        obj1."state of matter" = "solid"		
+		//object1."temperature" = "-10"
+		obj1."temperature" = "10"						
+		
+        instance obj2 = [KINDOF:"substance"]
+        obj2."state of matter" = "liquid"
+
+        instance obj3 = [KINDOF:"substance"]
+        obj3."state of matter" = "gas"
+
+        instance obj4 = [KINDOF:"substance"]
+        obj4."state of matter" = "gas"
+		
+		
+        instance test1 = [KINDOF:"animal"]
+        test1."temperature" = "10"
+
+        instance test11 = [KINDOF:"animal"]
+        test11."color" = "white"
+		test11."temperature" = "20"
+		
+
+		printInstances
+		//if (a == 10) then
+		//if (object1."state of matter" CHANGE [from:"solid" to:"liquid"]) then
+		//if (object1."state of matter" CHANGE [from:"solid" to:<SOM2>]) then
+		/*
+		if (obj1."temperature" CHANGE [direction:<tempDir> threshold:<PhaseTransitionPoint>]) then					
+			printInstances
+		endif
+		*/
+
+		// Populate inference pattern instance matches
+		populateInfPatMatches
+
+		// Export inference patterns and tablestore
+		exportInfPatHTML("infpattern_out.html")
+		exportTableStoreHTML("tablestore_export.html")
+		
+		// Execution examples
+		println ("BEFORE")
+		printInstances
+		
+		//executePattern(stateOfMatter, 0, [substance1->obj1])
+		
+		executePattern(compositeTest, 0, [sub1->obj1, sub2->obj3, extra->obj4])
+		//executePattern(compositeTest, 0, [sub1->obj1, sub2->obj3])				
+		
+		
+		println ("AFTER")
+		printInstances		
+		
+		//executePattern(stateOfMatter, 0)
+		

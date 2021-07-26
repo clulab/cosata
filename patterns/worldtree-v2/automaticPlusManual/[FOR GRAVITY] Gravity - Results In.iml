@@ -1,0 +1,74 @@
+// Automatically converted pattern
+inferencepattern FOR_GRAVITY_Gravity_Results_In
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CAUSE: gravity ; gravitational force causes objects that have mass ; substances to be pulled down ; to fall on a planet     (9773-5df7-84db-74b3) [ CONDITION_AGENT_OBJECT:"gravity;gravitational force", RESULT_AGENT:"object have mass;substance", RESULT_VERB:"be pull;fall", SCOPE2:"on planet" ]
+	//        HINTROW gravity pulls objects towards planets     (8025-2d3b-7ecb-0aff) [ AGENT_OBJECT:"gravity", ACTION:"pull object", DIRECTION:"towards", PATIENT:"planet" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow0 = [TABLE:"CAUSE"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow0 = [TABLE:"CAUSE"]
+
+	// CENTRALSW       LOCATIONS: the ground is at the bottom of an area     (bdbf-34c0-8ec2-7e7a) [ THING_PROCESS:"grind", LOCATION:"bottom of area" ]
+	//        HINTROW the floor is at the bottom of a room     (4584-32b2-fcfb-5c0d) [ THING_PROCESS:"floor", LOCATION:"bottom of room" ]
+	//row autoRow1 = [TABLE:"LOCATIONS", LOCATION: "bottom of"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"LOCATIONS", LOCATION: "bottom of"+*"POS:NN"]
+
+	// GROUNDING       KINDOF: a pencil is a kind of object     (e729-2ae7-04b3-9240) [ HYPONYM:"pencil", HYPERNYM:"object" ]
+	//        HINTROW marble is a kind of object ; material     (1d1c-a940-405e-dd50) [ HYPONYM:"marble", HYPERNYM:"object;material" ]
+	//        HINTROW an eraser is a kind of object     (a0e5-9acc-3c53-825c) [ HYPONYM:"eraser", HYPERNYM:"object" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: a room is a kind of object     (260e-fab8-c411-4312) [ HYPONYM:"room", HYPERNYM:"object" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "room", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "room", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: the floor is a kind of object     (785d-6676-9d5d-78b2) [ HYPONYM:"floor", HYPERNYM:"object" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "floor", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "floor", HYPERNYM: "object"]
+
+	// CENTRAL         DURING: gravity accelerates an object while that object falls by pulling on it     (da91-6ca9-5baa-5614) [ AGENT:"gravity", EVENT:"accelerate object", TIME:"object fall", SCOPE:"by pull on" ]
+	//row autoRow5 = [UUID:"da91-6ca9-5baa-5614", AGENT: "gravity", EVENT: "accelerate object", TIME: "object fall", SCOPE: "by pull on"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"da91-6ca9-5baa-5614", AGENT: "gravity", EVENT: "accelerate object", TIME: "object fall", SCOPE: "by pull on"]
+
+	// CENTRAL         TRANSFER: motion is when moves an object ; something to a direction     (d067-f0ea-b5ff-d34e) [ PROCESS_NAME:"move", VERB:"move;move", WHAT:"object;something", DESTINATION:"direction" ]
+	//row autoRow6 = [UUID:"d067-f0ea-b5ff-d34e", PROCESS_NAME: "move", VERB: "move", WHAT: "object", DESTINATION: "direction"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"d067-f0ea-b5ff-d34e", PROCESS_NAME: "move", VERB: "move", WHAT: "object", DESTINATION: "direction"]
+
+	// CENTRAL         CAUSE: dropping something causes that something to fall     (3d1b-c195-8dca-4587) [ CONDITION_VERB:"drop", CONDITION_PATIENT:"something", RESULT_AGENT:"that something", RESULT_VERB:"fall" ]
+	//row autoRow7 = [UUID:"3d1b-c195-8dca-4587", CONDITION_VERB: "drop", CONDITION_PATIENT: "something", RESULT_AGENT: "that something", RESULT_VERB: "fall"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3d1b-c195-8dca-4587", CONDITION_VERB: "drop", CONDITION_PATIENT: "something", RESULT_AGENT: "that something", RESULT_VERB: "fall"]
+
+	// CENTRAL         CHANGE-VEC: falling means moving downward     (2522-2f06-9dd6-6bf1) [ PROCESS_NAME_ACTION:"fall", ACTION:"move", DIRECTION:"downward" ]
+	//row autoRow8 = [UUID:"2522-2f06-9dd6-6bf1", PROCESS_NAME_ACTION: "fall", ACTION: "move", DIRECTION: "downward"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"2522-2f06-9dd6-6bf1", PROCESS_NAME_ACTION: "fall", ACTION: "move", DIRECTION: "downward"]
+
+	// CENTRAL         KINDOF: gravity is a kind of force     (1271-8178-87cf-045c) [ HYPONYM:"gravity", HYPERNYM:"force" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"1271-8178-87cf-045c", HYPONYM: "gravity", HYPERNYM: "force"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"1271-8178-87cf-045c", HYPONYM: "gravity", HYPERNYM: "force"]
+
+	// CENTRAL         CAUSE: gravity causes orbits     (828a-1af1-a7bd-61e8) [ CONDITION_AGENT_OBJECT:"gravity", RESULT_AGENT:"orbit" ]
+	//row autoRow10 = [UUID:"828a-1af1-a7bd-61e8", CONDITION_AGENT_OBJECT: "gravity", RESULT_AGENT: "orbit"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"828a-1af1-a7bd-61e8", CONDITION_AGENT_OBJECT: "gravity", RESULT_AGENT: "orbit"]
+
+	// LEXGLUE         SYNONYMY: ground means floor     (5105-d3dc-d7ed-6fa3) [ X1:"grind", X2:"floor" ]
+	//row autoRow11 = [UUID:"5105-d3dc-d7ed-6fa3", X1: "grind", X2: "floor"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"5105-d3dc-d7ed-6fa3", X1: "grind", X2: "floor"]
+
+	// LEXGLUE         SYNONYMY: to drop means to fall     (4331-2b1f-b2b3-343c) [ ACTION1:"drop", ACTION2:"fall" ]
+	//row autoRow12 = [UUID:"4331-2b1f-b2b3-343c", ACTION1: "drop", ACTION2: "fall"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"4331-2b1f-b2b3-343c", ACTION1: "drop", ACTION2: "fall"]
+
+	// LEXGLUE         SYNONYMY: the bottom is the lowest part of something     (55a5-73d4-c1b1-e55b) [ X1:"bottom", X2:"low part of something" ]
+	//row autoRow13 = [UUID:"55a5-73d4-c1b1-e55b", X1: "bottom", X2: "low part of something"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"55a5-73d4-c1b1-e55b", X1: "bottom", X2: "low part of something"]
+
+endinferencepattern

@@ -1,0 +1,54 @@
+// Automatically converted pattern
+inferencepattern MAT_MEAS_Measuring_Microscopic_Things
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       USEDFOR: a microscope is used to see small things ; microscopic things ; specimens by scientists by making them appear bigger     (e15b-3e85-4d7a-42ea) [ AGENT_OBJECT:"microscope", FOR_PURPOSE:"see", PATIENT:"small thing;microscopic thing;specimen", AGENT_THING_WHO_USES:"scientist", BY_THROUGH_HOW:"make appear big" ]
+	//        HINTROW an electron microscope is used for seeing very small objects by making them appear bigger     (7f26-bdb8-7b40-b225) [ AGENT_OBJECT:"electron microscope", FOR_PURPOSE:"see", PATIENT:"very small object", BY_THROUGH_HOW:"make appear big" ]
+	//        HINTROW magnifying glass is used to see small things by making objects appear bigger     (f2e4-3457-4480-2a9e) [ AGENT_OBJECT:"magnify glass", FOR_PURPOSE:"see", PATIENT:"small thing", BY_THROUGH_HOW:"make object appear big" ]
+	//row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT: <microscope_0>, FOR_PURPOSE: "see", PATIENT: "small"+<thing_1>, AGENT_THING_WHO_USES: "scientist", BY_THROUGH_HOW: "make appear big"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT: <microscope_0>, FOR_PURPOSE: "see", PATIENT: "small"+<thing_1>, BY_THROUGH_HOW: "make appear big"]
+
+	// CENTRALSW       PROP-THINGS: a cell is very small     (c22d-d40d-4d02-796e) [ THING:"cell", MAGNITUDE:"very", VALUE:"small" ]
+	//        HINTROW bacteria is small ; microscopic in size     (dda0-d5ba-63eb-7efa) [ THING:"bacterium", VALUE:"small;microscopic", ATTRIBUTE:"in size" ]
+	//        HINTROW a fingerprint is small in size     (39c0-522a-11a2-3a53) [ THING:"fingerprint", VALUE:"small", ATTRIBUTE:"in size" ]
+	//  Notes: small-sized examples
+	//row autoRow1 = [TABLE:"PROP-THINGS", VALUE: "small"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-THINGS", VALUE: "small"]
+
+	// GROUNDING       KINDOF: a microscope is a kind of tool for observing small things     (28d0-868d-1eee-0150) [ HYPONYM:"microscope", HYPERNYM:"tool", FOR_PURPOSE:"observe small thing" ]
+	//        HINTROW a magnifying glass is a kind of tool for observing small things     (685f-4657-44af-cee7) [ HYPONYM:"magnify glass", HYPERNYM:"tool", FOR_PURPOSE:"observe small thing" ]
+	//  Notes: instruments for magnifying
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <microscope_0>, HYPERNYM: "tool", FOR_PURPOSE: "observe small"+<thing_1>] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <microscope_0>, HYPERNYM: "tool", FOR_PURPOSE: "observe small"+<thing_1>]
+
+	// GROUNDING       KINDOF: a cell is a kind of object     (8370-394e-7d79-4c14) [ HYPONYM:"cell", HYPERNYM:"object" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "cell", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "cell", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: a plant cell is a kind of cell     (816a-0510-1046-441e) [ HYPONYM:"plant cell", HYPERNYM:"cell" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "plant cell", HYPERNYM: "cell"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "plant cell", HYPERNYM: "cell"]
+
+	// CENTRAL         PROP-GENERIC: size is a property of objects and includes ordered values of microscopic ; tiny ; small ; medium ; large     (02eb-d26b-a00c-c559) [ X:"size", Y:"object", ORDERED_UNORDERED:"order", VALUES:"microscopic;tiny;small;medium;large" ]
+	//row autoRow5 = [UUID:"02eb-d26b-a00c-c559", X: "size", Y: "object", ORDERED_UNORDERED: "order", VALUES: "microscopic"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"02eb-d26b-a00c-c559", X: "size", Y: "object", ORDERED_UNORDERED: "order", VALUES: "microscopic"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the size of an object appears larger , that object will be seen ; be observed more easily ; better     (4aa6-0eac-9f6d-0d0b) [ QUANTITY_MEASURE1:"size", AGENT_ATTRIBUTE1:"of object", ACTION1:"appear", CHANGE1:"large", AGENT_ATTRIBUTE2:"that object", ACTION2:"be see;be observe", CHANGE2:"much easy;well" ]
+	//row autoRow6 = [UUID:"4aa6-0eac-9f6d-0d0b", QUANTITY_MEASURE1: "size", AGENT_ATTRIBUTE1: "of object", ACTION1: "appear", CHANGE1: "large", AGENT_ATTRIBUTE2: "that object", ACTION2: "be see", CHANGE2: "much easy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4aa6-0eac-9f6d-0d0b", QUANTITY_MEASURE1: "size", AGENT_ATTRIBUTE1: "of object", ACTION1: "appear", CHANGE1: "large", AGENT_ATTRIBUTE2: "that object", ACTION2: "be see", CHANGE2: "much easy"]
+
+	// CENTRAL        (OPTIONAL) ACTION: scientists make observations     (6987-1a5d-58e9-399d) [ AGENT_OBJECT:"scientist", ACTION2:"make", OBJECT_PROPERTY:"observation" ]
+	//row *autoRow7 = [UUID:"6987-1a5d-58e9-399d", AGENT_OBJECT: "scientist", ACTION2: "make", OBJECT_PROPERTY: "observation"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"6987-1a5d-58e9-399d", AGENT_OBJECT: "scientist", ACTION2: "make", OBJECT_PROPERTY: "observation"]
+
+	// LEXGLUE         SYNONYMY: observe means see     (3d19-51ab-7f0c-7a14) [ ACTION1:"observe", ACTION2:"see" ]
+	//row autoRow8 = [UUID:"3d19-51ab-7f0c-7a14", ACTION1: "observe", ACTION2: "see"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"3d19-51ab-7f0c-7a14", ACTION1: "observe", ACTION2: "see"]
+
+endinferencepattern

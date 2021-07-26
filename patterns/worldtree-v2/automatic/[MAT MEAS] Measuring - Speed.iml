@@ -1,0 +1,55 @@
+// Automatically converted pattern
+inferencepattern MAT_MEAS_Measuring_Speed
+
+	// Plain text description
+	description = "should we put time/distance together in one row?"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       USEDFOR: a meter stick is used to measure distance ; height ; length     (48c0-261e-72f5-c101) [ AGENT_OBJECT:"meter stick", FOR_PURPOSE:"measure", PATIENT:"distance;height;length" ]
+	//        HINTROW a centimeter is used for measuring short lengths ; short distances     (6a16-9fca-b59e-5353) [ AGENT_OBJECT:"centimeter", FOR_PURPOSE:"measure", PATIENT:"short length;short distance" ]
+	//        HINTROW a tape measure is used to measure length ; distance     (1f6a-7744-7f91-26b5) [ AGENT_OBJECT:"tape measure", FOR_PURPOSE:"measure", PATIENT:"length;distance" ]
+	//row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT: "meter stick", FOR_PURPOSE: "measure", PATIENT: <distance_0>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"USEDFOR", FOR_PURPOSE: "measure", PATIENT: <distance_0>]
+
+	// CENTRALSW       USEDFOR: a stopwatch is used to measure time     (91bf-d72e-f4e5-1526) [ AGENT_OBJECT:"stopwatch", FOR_PURPOSE:"measure", PATIENT:"time" ]
+	//        HINTROW a watch ; clock ; stopwatch is used for measuring time     (563d-53cc-0a8a-e8da) [ AGENT_OBJECT:"watch;clock;stopwatch", FOR_PURPOSE:"measure", PATIENT:"time" ]
+	//  Notes: instruments for measuring time
+	//row autoRow1 = [TABLE:"USEDFOR", FOR_PURPOSE: "measure", PATIENT: "time"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"USEDFOR", FOR_PURPOSE: "measure", PATIENT: "time"]
+
+	// GROUNDING       KINDOF: a meter stick is a kind of tool for measuring length ; measuring distance     (1958-4336-80f2-90bd) [ HYPONYM:"meter stick", HYPERNYM:"tool", FOR_PURPOSE:"measure length;measure distance" ]
+	//        HINTROW a ruler is a kind of tool for measuring length     (a429-ec06-2e2a-f6f9) [ HYPONYM:"ruler", HYPERNYM:"tool", FOR_PURPOSE:"measure length" ]
+	//        HINTROW a tape measure is a kind of tool for measuring distance ; measuring length     (89ff-54de-77cf-9d13) [ HYPONYM:"tape measure", HYPERNYM:"tool", FOR_PURPOSE:"measure distance;measure length" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "meter stick", HYPERNYM: "tool", FOR_PURPOSE: "measure"+<distance_0>] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "tool", FOR_PURPOSE: "measure"+<distance_0>]
+
+	// GROUNDING       KINDOF: a calculator is a kind of tool     (1c02-45a8-ac3d-d3e5) [ HYPONYM:"calculator", HYPERNYM:"tool" ]
+	//        HINTROW a stopwatch is a kind of tool for measuring time     (ba0a-4b3e-ff60-ec49) [ HYPONYM:"stopwatch", HYPERNYM:"tool", FOR_PURPOSE:"measure time" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "tool"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "tool"]
+
+	// GROUNDING       KINDOF: a tool is a kind of object     (75de-7e0e-d204-6ec0) [ HYPONYM:"tool", HYPERNYM:"object" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "tool", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "tool", HYPERNYM: "object"]
+
+	// CENTRAL         MEASUREMENTS: speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time     (b753-a285-8304-024a) [ MEASURE:"speed", QUANTITY_ADJ:"measure of", ATTRIBUTE:"distance travel", AGENT:"by object", SCOPE:"over time;divide by time;per unit of time" ]
+	//  Notes: The most important point for speed
+	//row autoRow5 = [UUID:"b753-a285-8304-024a", MEASURE: "speed", QUANTITY_ADJ: "measure of", ATTRIBUTE: <distance_0>+"travel", AGENT: "by object", SCOPE: "per unit of time"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"b753-a285-8304-024a", MEASURE: "speed", QUANTITY_ADJ: "measure of", ATTRIBUTE: <distance_0>+"travel", AGENT: "by object", SCOPE: "per unit of time"]
+
+	// CENTRAL         USEDFOR: a calculator is used for adding ; subtracting ; multiplying ; dividing     (61e6-58a6-0d23-51c3) [ AGENT_OBJECT:"calculator", FOR_PURPOSE:"add;subtract;multiply;divide" ]
+	//row autoRow6 = [UUID:"61e6-58a6-0d23-51c3", AGENT_OBJECT: "calculator", FOR_PURPOSE: "add"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"61e6-58a6-0d23-51c3", AGENT_OBJECT: "calculator", FOR_PURPOSE: "add"]
+
+	// CENTRAL         REQUIRES: calculating speed requires knowing distance travelled     (98dd-55cb-7cfa-5e19) [ ACTION1:"calculate", OBJECT_AGENT_PROCESS:"speed", VERB_REQUIRES:"require", ACTION2:"know", OBJECT:"distance travel" ]
+	//row autoRow7 = [UUID:"98dd-55cb-7cfa-5e19", ACTION1: "calculate", OBJECT_AGENT_PROCESS: "speed", VERB_REQUIRES: "require", ACTION2: "know", OBJECT: <distance_0>+"travel"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"98dd-55cb-7cfa-5e19", ACTION1: "calculate", OBJECT_AGENT_PROCESS: "speed", VERB_REQUIRES: "require", ACTION2: "know", OBJECT: <distance_0>+"travel"]
+
+	// CENTRAL         MEASUREMENTS: velocity is a measure of a speed in a direction     (9b53-8b62-61f9-9e1a) [ MEASURE:"velocity", QUANTITY_ADJ:"measure of", ATTRIBUTE:"speed in direction" ]
+	//row autoRow8 = [UUID:"9b53-8b62-61f9-9e1a", MEASURE: "velocity", QUANTITY_ADJ: "measure of", ATTRIBUTE: "speed in direction"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"9b53-8b62-61f9-9e1a", MEASURE: "velocity", QUANTITY_ADJ: "measure of", ATTRIBUTE: "speed in direction"]
+
+endinferencepattern

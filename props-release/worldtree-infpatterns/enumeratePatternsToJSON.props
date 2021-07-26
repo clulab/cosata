@@ -1,0 +1,46 @@
+# Example properties file for EnumeratePatternsToJSON
+# CoSaTa
+
+#
+#   Old (delete me before release)
+#
+
+
+#
+#   Input and Output Paths
+#
+# Tablestore
+tablestoreIndex = /home/peter/github/Synchronicity/annotation/tablestore/tableindex.txt
+
+# Manual patterns
+#IMLInputPath = patterns/worldtree-v2/manual/
+#IMLOutputPath = output/worldtree-v2/outputManual/
+
+# Automatic patterns
+#IMLInputPath = patterns/worldtree-v2/automatic/
+#IMLOutputPath = output/worldtree-v2/outputAutomatic/
+
+# Automatic + Manual patterns
+IMLInputPath = patterns/worldtree-v2/automaticPlusManual/
+IMLOutputPath = output/worldtree-v2/outputAutomaticPlusManual/
+
+
+#
+#   Parameters
+#
+
+# Maximum number of enumerated solutions per pattern
+maxMatches = 10000
+
+# Number of threads to use for the outer loop of the solver (i.e. number of patterns to evaluate in parallel)
+numThreads = 24
+
+#
+#   Additional exports
+#
+
+# Export a human-readable HTML log of inference pattern solutions (limited to a certain number, to keep the log size small)
+exportInfPatHTML = true
+
+# Export a copy of the tablestore in HTML format
+exportTableStoreHTML = true

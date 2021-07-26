@@ -1,0 +1,71 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Pollution_Energy_Conservation
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       EXAMPLES: An example of using less energy is turning off the light when leaving a room     (2d8c-3f6b-25ae-5de1) [ VERB1:"use", AGENT_OBJECT1:"little energy", VERB2:"turn", AGENT_OBJECT3:"light", SCOPE:"leave room" ]
+	//        HINTROW An example of using less water is turning off the faucet when brushing teeth     (74ec-cccd-aeaf-f733) [ VERB1:"use", AGENT_OBJECT1:"little water", VERB2:"turn", AGENT_OBJECT3:"faucet", SCOPE:"brush tooth" ]
+	//        HINTROW An example of conservation is turning off the water while brushing teeth     (661c-7af5-8c9a-80e9) [ AGENT_OBJECT1:"conserve", VERB2:"turn", AGENT_OBJECT3:"water", SCOPE:"while brush tooth" ]
+	//        HINTROW An example of conservation is not using fossil fuel     (1c25-34e6-67f5-e7a6) [ AGENT_OBJECT1:"conserve", VERB2:"not use", AGENT_OBJECT3:"fossil fuel" ]
+	//        HINTROW An example of conservation is avoiding waste     (393b-f9b6-0519-c483) [ AGENT_OBJECT1:"conserve", VERB2:"avoid", AGENT_OBJECT3:"waste" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow0 = [TABLE:"EXAMPLES"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow0 = [TABLE:"EXAMPLES"]
+
+	// CENTRALSW       USEDFOR: conserving water can be used for survival in a dry environment     (d7fb-3cde-4016-edb4) [ ACTION:"conserve", AGENT_OBJECT:"water", QUALIFIER:"be", FOR_PURPOSE:"survive", SCOPE2:"in spin-dry environment" ]
+	//  Notes: conserve X resource can be USED FOR, missing e.g. conserving electricity can be used for 
+	//row autoRow1 = [TABLE:"USEDFOR", ACTION: "conserve", AGENT_OBJECT: "water", QUALIFIER: "be", FOR_PURPOSE: "survive", SCOPE2: "in spin-dry environment"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"USEDFOR", ACTION: "conserve", AGENT_OBJECT: "water", QUALIFIER: "be", FOR_PURPOSE: "survive", SCOPE2: "in spin-dry environment"]
+
+	// GROUNDING       KINDOF: a fossil fuel is a kind of natural resource     (488c-1538-f56c-cd87) [ HYPONYM:"fossil fuel", SCOPE1:"nature", HYPERNYM:"resource" ]
+	//        HINTROW water is a kind of natural resource     (1c04-5228-7c5d-ab8a) [ HYPONYM:"water", HYPERNYM:"nature resource" ]
+	//        HINTROW trees are a kind of natural resource     (b4d7-903b-7d1b-fed0) [ HYPONYM:"tree", HYPERNYM:"nature resource" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow2 = [TABLE:"KINDOF"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "resource"]
+
+	// GROUNDING      (OPTIONAL) KINDOF: human is a kind of organism     (d043-a668-7b2c-fc6f) [ HYPONYM:"human", HYPERNYM:"organism" ]
+	//row *autoRow3 = [TABLE:"KINDOF", HYPONYM: "human", HYPERNYM: "organism"] //OVER-CONSTR.
+	row *autoRow3 = [TABLE:"KINDOF", HYPONYM: "human", HYPERNYM: "organism"]
+
+	// GROUNDING       KINDOF: light is a kind of energy     (f742-384b-744c-10a9) [ HYPONYM:"light", HYPERNYM:"energy" ]
+	//        HINTROW electrical energy is a kind of energy     (b5ca-9f64-d6d6-6783) [ HYPONYM:"electric energy", HYPERNYM:"energy" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "energy"]
+
+	// CENTRAL         IFTHEN: when available resources decrease in an environment , organisms have to conserve those resources     (c989-b804-971a-ebd4) [ ADJ_QUANTITY1:"available", THING:"resource", ACTION1:"decrease", SCOPE1B:"in environment", ACTOR_AGENT_PROCESS2:"organism", ACTION3:"conserve", OBJECT_PROPERTY3:"resource" ]
+	//row autoRow5 = [UUID:"c989-b804-971a-ebd4", ADJ_QUANTITY1: "available", THING: "resource", ACTION1: "decrease", SCOPE1B: "in environment", ACTOR_AGENT_PROCESS2: "organism", ACTION3: "conserve", OBJECT_PROPERTY3: "resource"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"c989-b804-971a-ebd4", ADJ_QUANTITY1: "available", THING: "resource", ACTION1: "decrease", SCOPE1B: "in environment", ACTOR_AGENT_PROCESS2: "organism", ACTION3: "conserve", OBJECT_PROPERTY3: "resource"]
+
+	// CENTRAL         AFFECT: conserving resources has a positive impact on the environment     (3891-6bf5-33a7-0c5e) [ VERB:"conserve", OBJECT_PROPERTY:"resource", POSITIVE_NEGATIVE:"positive", PATIENT:"environment" ]
+	//row autoRow6 = [UUID:"3891-6bf5-33a7-0c5e", VERB: "conserve", OBJECT_PROPERTY: "resource", POSITIVE_NEGATIVE: "positive", PATIENT: "environment"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3891-6bf5-33a7-0c5e", VERB: "conserve", OBJECT_PROPERTY: "resource", POSITIVE_NEGATIVE: "positive", PATIENT: "environment"]
+
+	// CENTRAL         ACTION: conservation is often conserving natural resources     (1b2f-e95c-68f1-e31e) [ ACTION1:"conserve", ADJ:"often", ACTION2:"conserve", OBJECT_PROPERTY:"nature resource" ]
+	//row autoRow7 = [UUID:"1b2f-e95c-68f1-e31e", ACTION1: "conserve", ADJ: "often", ACTION2: "conserve", OBJECT_PROPERTY: "nature resource"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"1b2f-e95c-68f1-e31e", ACTION1: "conserve", ADJ: "often", ACTION2: "conserve", OBJECT_PROPERTY: "nature resource"]
+
+	// CENTRAL         USEDFOR: resources sometimes are used for energy     (9109-c77c-e952-4935) [ AGENT_OBJECT:"resource", QUALIFIER:"sometimes", FOR_PURPOSE:"energy" ]
+	//row autoRow8 = [UUID:"9109-c77c-e952-4935", AGENT_OBJECT: "resource", QUALIFIER: "sometimes", FOR_PURPOSE: "energy"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"9109-c77c-e952-4935", AGENT_OBJECT: "resource", QUALIFIER: "sometimes", FOR_PURPOSE: "energy"]
+
+	// CENTRAL         PROP-ENVIRONMENTATTRIB: a dry environment is low in availability of water     (f92e-c721-2ec3-30f2) [ ENVIRONMENT:"spin-dry", VALUE:"low", PROPERTY:"availability of water" ]
+	//row autoRow9 = [UUID:"f92e-c721-2ec3-30f2", ENVIRONMENT: "spin-dry", VALUE: "low", PROPERTY: "availability of water"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"f92e-c721-2ec3-30f2", ENVIRONMENT: "spin-dry", VALUE: "low", PROPERTY: "availability of water"]
+
+	// CENTRAL        (OPTIONAL) PROP-ENVIRONMENTATTRIB: a desert environment is low in availability of water ; availability of food     (38b2-29c9-81cd-f86a) [ ENVIRONMENT:"desert", VALUE:"low", PROPERTY:"availability of water;availability of food" ]
+	//  Notes: 0e2f-97e3-fb4f-3886->38b2-29c9-81cd-f86a
+	//row *autoRow10 = [UUID:"38b2-29c9-81cd-f86a", ENVIRONMENT: "desert", VALUE: "low", PROPERTY: "availability of water"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"38b2-29c9-81cd-f86a", ENVIRONMENT: "desert", VALUE: "low", PROPERTY: "availability of water"]
+
+	// LEXGLUE         SYNONYMY: using less of a resource means conserving that resource     (9130-a03b-85d4-9a10) [ ACTION1:"use", Y1:"little of resource", ACTION2:"conserve", Y2:"that resource" ]
+	//row autoRow11 = [UUID:"9130-a03b-85d4-9a10", ACTION1: "use", Y1: "little of resource", ACTION2: "conserve", Y2: "that resource"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"9130-a03b-85d4-9a10", ACTION1: "use", Y1: "little of resource", ACTION2: "conserve", Y2: "that resource"]
+
+endinferencepattern

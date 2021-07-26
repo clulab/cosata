@@ -1,0 +1,60 @@
+// Automatically converted pattern
+inferencepattern ENG_LIGHT_Refraction_Rainbows
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: air is a kind of medium for light     (ac9a-6d31-d96f-51cd) [ HYPONYM:"air", HYPERNYM:"medium", FOR_PURPOSE:"light" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "air", HYPERNYM: "medium", FOR_PURPOSE: "light"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "air", HYPERNYM: "medium", FOR_PURPOSE: "light"]
+
+	// GROUNDING       KINDOF: water is a kind of medium for light     (1505-53ee-1d64-b11d) [ HYPONYM:"water", HYPERNYM:"medium", FOR_PURPOSE:"light" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "water", HYPERNYM: "medium", FOR_PURPOSE: "light"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "water", HYPERNYM: "medium", FOR_PURPOSE: "light"]
+
+	// GROUNDING       KINDOF: rain is a kind of water     (214a-9ca3-2983-aa79) [ HYPONYM:"rain", HYPERNYM:"water" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "rain", HYPERNYM: "water"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "rain", HYPERNYM: "water"]
+
+	// CENTRAL         KINDOF: sunlight is a kind of light     (49dc-4526-46f9-5b32) [ HYPONYM:"sunlight", HYPERNYM:"light" ]
+	//  Notes: peripheral
+	//row autoRow3 = [UUID:"49dc-4526-46f9-5b32", HYPONYM: "sunlight", HYPERNYM: "light"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"49dc-4526-46f9-5b32", HYPONYM: "sunlight", HYPERNYM: "light"]
+
+	// CENTRAL         CAUSE: refracting sunlight ; light causes sunlight ; light to split into different colors     (b743-7732-00bc-dc06) [ CONDITION_VERB:"refract", CONDITION_PATIENT:"sunlight;light", RESULT_AGENT:"sunlight;light;light", RESULT_VERB:"split", RESULT_PATIENT:"into differ color" ]
+	//row autoRow4 = [UUID:"b743-7732-00bc-dc06", CONDITION_VERB: "refract", CONDITION_PATIENT: "sunlight", RESULT_AGENT: "sunlight", RESULT_VERB: "split", RESULT_PATIENT: "into differ color"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"b743-7732-00bc-dc06", CONDITION_VERB: "refract", CONDITION_PATIENT: "sunlight", RESULT_AGENT: "sunlight", RESULT_VERB: "split", RESULT_PATIENT: "into differ color"]
+
+	// CENTRAL         MADEOF: the rainbow is made of all different colors in visible light     (f5f9-0163-0873-51ba) [ OBJECT:"rainbow", VALUE:"differ", MATERIAL:"color", SCOPE:"in visible light" ]
+	//row autoRow5 = [UUID:"f5f9-0163-0873-51ba", OBJECT: "rainbow", VALUE: "differ", MATERIAL: "color", SCOPE: "in visible light"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"f5f9-0163-0873-51ba", OBJECT: "rainbow", VALUE: "differ", MATERIAL: "color", SCOPE: "in visible light"]
+
+	// CENTRAL         MADEOF: visible light is made of lights of different colors including violet, blue, green, yellow, orange, red light     (34f3-92ba-d499-92d5) [ OBJECT:"visible light", MATERIAL:"light of differ color", SCOPE:"include violet blue green yellow orange red light" ]
+	//row autoRow6 = [UUID:"34f3-92ba-d499-92d5", OBJECT: "visible light", MATERIAL: "light of differ color", SCOPE: "include violet blue green yellow orange red light"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"34f3-92ba-d499-92d5", OBJECT: "visible light", MATERIAL: "light of differ color", SCOPE: "include violet blue green yellow orange red light"]
+
+	// CENTRAL         MADEOF: sunlight is made of ultraviolet, infrared, and visible light     (78fa-2af9-0a4b-0688) [ OBJECT:"sunlight", MATERIAL:"ultraviolet infrare visible light" ]
+	//row autoRow7 = [UUID:"78fa-2af9-0a4b-0688", OBJECT: "sunlight", MATERIAL: "ultraviolet infrare visible light"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"78fa-2af9-0a4b-0688", OBJECT: "sunlight", MATERIAL: "ultraviolet infrare visible light"]
+
+	// CENTRAL         CAUSE: sunlight and rain can cause a rainbow     (5a4c-b508-a1b7-4639) [ CONDITION_AGENT_OBJECT:"sunlight rain", RESULT_AGENT:"rainbow" ]
+	//row autoRow8 = [UUID:"5a4c-b508-a1b7-4639", CONDITION_AGENT_OBJECT: "sunlight rain", RESULT_AGENT: "rainbow"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"5a4c-b508-a1b7-4639", CONDITION_AGENT_OBJECT: "sunlight rain", RESULT_AGENT: "rainbow"]
+
+	// CENTRAL         FORMEDBY: a rainbow is formed by refraction of light by separating light ; splitting light into all different colors     (c7a2-2ef3-cee5-a093) [ OBJECT:"rainbow", VERB:"refract", PATIENT:"of light", BY_THROUGH_HOW:"separate light;split light", SCOPE:"into differ color" ]
+	//row autoRow9 = [UUID:"c7a2-2ef3-cee5-a093", OBJECT: "rainbow", VERB: "refract", PATIENT: "of light", BY_THROUGH_HOW: "separate light", SCOPE: "into differ color"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"c7a2-2ef3-cee5-a093", OBJECT: "rainbow", VERB: "refract", PATIENT: "of light", BY_THROUGH_HOW: "separate light", SCOPE: "into differ color"]
+
+	// CENTRAL         TRANSFER: refraction is when light passes from one medium to another medium     (888c-d0df-12df-c3b6) [ PROCESS_NAME:"refract", ACTOR_WHO:"light", VERB:"pass", SOURCE:"one medium", DESTINATION:"medium" ]
+	//row autoRow10 = [UUID:"888c-d0df-12df-c3b6", PROCESS_NAME: "refract", ACTOR_WHO: "light", VERB: "pass", SOURCE: "one medium", DESTINATION: "medium"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"888c-d0df-12df-c3b6", PROCESS_NAME: "refract", ACTOR_WHO: "light", VERB: "pass", SOURCE: "one medium", DESTINATION: "medium"]
+
+	// CENTRAL         CHANGE: refraction is when light bends     (dc5d-599a-9815-c89b) [ PROCESS_NAME:"refract", ACTOR_WHO:"light", VERB:"bend" ]
+	//row autoRow11 = [UUID:"dc5d-599a-9815-c89b", PROCESS_NAME: "refract", ACTOR_WHO: "light", VERB: "bend"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"dc5d-599a-9815-c89b", PROCESS_NAME: "refract", ACTOR_WHO: "light", VERB: "bend"]
+
+endinferencepattern

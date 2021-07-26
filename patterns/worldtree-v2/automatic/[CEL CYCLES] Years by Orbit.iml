@@ -1,0 +1,70 @@
+// Automatically converted pattern
+inferencepattern CEL_CYCLES_Years_by_Orbit
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW      (OPTIONAL) COMPARISON: Neptune has the longest solar year ; planetary year in the solar system     (7c64-997c-96de-8e57) [ THING:"neptune", ACTION1:"have", COMPARISON:"long", WHAT:"solar year;planetary year", SCOPE2:"in solar system" ]
+	//        HINTROW Mercury has the shortest solar year ; planetary year in the solar system     (138c-781d-b80c-20b9) [ THING:"mercury", ACTION1:"have", COMPARISON:"short", WHAT:"solar year;planetary year", SCOPE2:"in solar system" ]
+	//  Notes: 3826-acbb-7fcc-73e9->7c64-997c-96de-8e57;cc64-1623-3dc4-b81c->138c-781d-b80c-20b9
+	//row *autoRow0 = [TABLE:"COMPARISON", ACTION1: "have", WHAT: "solar year", SCOPE2: "in solar system"] //OVER-CONSTR.
+	row *autoRow0 = [TABLE:"COMPARISON", ACTION1: "have", WHAT: "solar year", SCOPE2: "in solar system"]
+
+	// CENTRALSW       PROP-REL-DIST: Earth is the planet that is third closest to the Sun     (a352-bde5-b854-f460) [ OBJECT_AGENT:"earth", CLASS:"planet", RELATIVE_DISTANCE:"3 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Mercury is the planet that is first closest to the Sun     (c3ef-1aeb-c9fd-2b71) [ OBJECT_AGENT:"mercury", CLASS:"planet", RELATIVE_DISTANCE:"﻿1 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Venus is the planet that is second closest to the Sun     (859f-86f6-8ed6-3885) [ OBJECT_AGENT:"venus", CLASS:"planet", RELATIVE_DISTANCE:"2 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Neptune is the planet that is eighth closest to the Sun     (397b-d199-32b2-6e1f) [ OBJECT_AGENT:"neptune", CLASS:"planet", RELATIVE_DISTANCE:"8 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Mars is the planet that is fourth closest to the Sun     (4b45-65e4-b5c2-85c9) [ OBJECT_AGENT:"mar", CLASS:"planet", RELATIVE_DISTANCE:"4 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Jupiter is the planet that is fifth closest to the Sun     (393c-5d80-c259-3ee9) [ OBJECT_AGENT:"jupiter", CLASS:"planet", RELATIVE_DISTANCE:"5 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Saturn is the planet that is sixth closest to the Sun     (ffc8-4214-81e1-3903) [ OBJECT_AGENT:"saturn", CLASS:"planet", RELATIVE_DISTANCE:"6 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Uranus is the planet that is seventh closest to the Sun     (10d4-66aa-afc0-5c09) [ OBJECT_AGENT:"uranus", CLASS:"planet", RELATIVE_DISTANCE:"7 close", TO_REFERENCE_POINT:"sun" ]
+	//row autoRow1 = [TABLE:"PROP-REL-DIST", OBJECT_AGENT: <earth_0>, CLASS: "planet", RELATIVE_DISTANCE: *"POS:JJ"+"close", TO_REFERENCE_POINT: "sun"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-REL-DIST", OBJECT_AGENT: <earth_0>, CLASS: "planet", RELATIVE_DISTANCE: *"POS:JJ"+"close", TO_REFERENCE_POINT: "sun"]
+
+	// CENTRALSW      (OPTIONAL) ATTRIBUTE-VALUE-RANGE: closer means lower ; less ; a decrease in distance     (04ee-408f-6c7a-54fc) [ THING:"close", VALUE:"low;little;decrease", ATTRIBUTE:"distance" ]
+	//        HINTROW furthest ; farthest means greatest ; most ; highest in distance     (3d48-21e9-c4e5-6491) [ THING:"far;far", VALUE:"great;much;high", ATTRIBUTE:"distance" ]
+	//row *autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "distance"] //OVER-CONSTR.
+	row *autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "distance"]
+
+	// GROUNDING       KINDOF: Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//        HINTROW Jupiter is a kind of planet     (b772-8846-82c7-f2d8) [ HYPONYM:"jupiter", HYPERNYM:"planet" ]
+	//        HINTROW Mars is a kind of planet     (1fb6-af63-74de-86fd) [ HYPONYM:"mar", HYPERNYM:"planet" ]
+	//        HINTROW Mercury is a kind of planet     (106b-d671-313e-b596) [ HYPONYM:"mercury", HYPERNYM:"planet" ]
+	//        HINTROW Neptune is a kind of planet in the solar system     (9803-3975-7c41-48b6) [ HYPONYM:"neptune", HYPERNYM:"planet", SCOPE2:"in solar system" ]
+	//        HINTROW Venus is a kind of planet     (73aa-f84a-b42e-53b3) [ HYPONYM:"venus", HYPERNYM:"planet" ]
+	//        HINTROW Uranus is a kind of planet     (7bc0-9f19-77c2-4fcf) [ HYPONYM:"uranus", HYPERNYM:"planet" ]
+	//        HINTROW Saturn is a kind of planet     (65b3-1a89-cdd6-22b0) [ HYPONYM:"saturn", HYPERNYM:"planet" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: <earth_0>, HYPERNYM: "planet"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: <earth_0>, HYPERNYM: "planet"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the distance of a planet from the star it orbits increases , the length of a planetary year on that planet will increase     (6151-6bc0-5815-c639) [ QUANTITY_MEASURE1:"distance", AGENT_ATTRIBUTE1:"of planet", SCOPE1A:"from star", ACTION1:"orbit", CHANGE1:"increase", QUANTITY_MEASURE2:"length of", AGENT_ATTRIBUTE2:"planetary year", PATIENT2:"on planet", CHANGE2:"increase" ]
+	//row autoRow4 = [UUID:"6151-6bc0-5815-c639", QUANTITY_MEASURE1: "distance", AGENT_ATTRIBUTE1: "of planet", SCOPE1A: "from star", ACTION1: "orbit", CHANGE1: "increase", QUANTITY_MEASURE2: "length of", AGENT_ATTRIBUTE2: "planetary year", PATIENT2: "on planet", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"6151-6bc0-5815-c639", QUANTITY_MEASURE1: "distance", AGENT_ATTRIBUTE1: "of planet", SCOPE1A: "from star", ACTION1: "orbit", CHANGE1: "increase", QUANTITY_MEASURE2: "length of", AGENT_ATTRIBUTE2: "planetary year", PATIENT2: "on planet", CHANGE2: "increase"]
+
+	// CENTRAL         PROP-ORBITAL-ROT: a complete revolution ; orbit of a planet around its star takes 1 ; one planetary year     (b107-d162-bbc9-c5d8) [ REVOLUTION_ROTATION:"revolve;orbit", WHAT_S_MOVING:"planet", CENTER_POINT:"star", HOW_LONG_IT_TAKES:"1;one", UNITS:"planetary year" ]
+	//  Notes: d364-be1b-68cb-d734->b107-d162-bbc9-c5d8
+	//row autoRow5 = [UUID:"b107-d162-bbc9-c5d8", REVOLUTION_ROTATION: "revolve", WHAT_S_MOVING: "planet", CENTER_POINT: "star", HOW_LONG_IT_TAKES: "1", UNITS: "planetary year"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"b107-d162-bbc9-c5d8", REVOLUTION_ROTATION: "revolve", WHAT_S_MOVING: "planet", CENTER_POINT: "star", HOW_LONG_IT_TAKES: "1", UNITS: "planetary year"]
+
+	// CENTRAL         CAUSE: a planet 's distance from the star causes the length of a planetary year     (b4c6-2b18-f3a5-5096) [ CONDITION_AGENT_OBJECT:"planet distance", SCOPE1:"from star", RESULT_AGENT:"length of planetary year" ]
+	//row autoRow6 = [UUID:"b4c6-2b18-f3a5-5096", CONDITION_AGENT_OBJECT: "planet distance", SCOPE1: "from star", RESULT_AGENT: "length of planetary year"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"b4c6-2b18-f3a5-5096", CONDITION_AGENT_OBJECT: "planet distance", SCOPE1: "from star", RESULT_AGENT: "length of planetary year"]
+
+	// CENTRAL         ACTION: planets in the solar system orbit the Sun     (4f0f-94ba-06b4-84be) [ AGENT_OBJECT:"planet", SCOPE1:"in solar system", ACTION2:"orbit", OBJECT_PROPERTY:"sun" ]
+	//row autoRow7 = [UUID:"4f0f-94ba-06b4-84be", AGENT_OBJECT: "planet", SCOPE1: "in solar system", ACTION2: "orbit", OBJECT_PROPERTY: "sun"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4f0f-94ba-06b4-84be", AGENT_OBJECT: "planet", SCOPE1: "in solar system", ACTION2: "orbit", OBJECT_PROPERTY: "sun"]
+
+	// CENTRAL         ACTION: planets orbit stars     (e35c-e251-2993-ac25) [ AGENT_OBJECT:"planet", ACTION2:"orbit", OBJECT_PROPERTY:"star" ]
+	//row autoRow8 = [UUID:"e35c-e251-2993-ac25", AGENT_OBJECT: "planet", ACTION2: "orbit", OBJECT_PROPERTY: "star"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"e35c-e251-2993-ac25", AGENT_OBJECT: "planet", ACTION2: "orbit", OBJECT_PROPERTY: "star"]
+
+	// CENTRAL         KINDOF: the Sun is a kind of star     (af26-8083-b908-7d3b) [ HYPONYM:"sun", HYPERNYM:"star" ]
+	//  Notes: peripheral central
+	//row autoRow9 = [UUID:"af26-8083-b908-7d3b", HYPONYM: "sun", HYPERNYM: "star"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"af26-8083-b908-7d3b", HYPONYM: "sun", HYPERNYM: "star"]
+
+endinferencepattern

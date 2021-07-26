@@ -1,0 +1,72 @@
+// Automatically converted pattern
+inferencepattern MAT_ENVEFF_Temperature_Effect_on_Particles
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as the temperature of a substance increases , the molecules in that substance will move faster ; farther apart     (ff5e-e6c0-718e-0d9f) [ QUANTITY_MEASURE1:"temperature of", AGENT_ATTRIBUTE1:"substance", CHANGE1:"increase", AGENT_ATTRIBUTE2:"molecule", SCOPE2A:"in substance", ACTION2:"move", CHANGE2:"fast;far apart" ]
+	//        HINTROW as temperature increases , the speed of molecules will increase     (cdd1-71f3-c023-bdd0) [ QUANTITY_MEASURE1:"temperature", CHANGE1:"increase", QUANTITY_MEASURE2:"speed", AGENT_ATTRIBUTE2:"of molecule", CHANGE2:"increase" ]
+	//        HINTROW as the heat of matter increases , the average molecular speed of the matter will increases     (2cf0-fb0f-f13b-457b) [ QUANTITY_MEASURE1:"heat", AGENT_ATTRIBUTE1:"of matt", CHANGE1:"increase", QUANTITY_MEASURE2:"average molecular speed", AGENT_ATTRIBUTE2:"of matt", CHANGE2:"increase" ]
+	//  Notes: temperature increase --> speed increase
+	//row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: *"POS:NN"+"of", AGENT_ATTRIBUTE1: "substance", CHANGE1: "increase", SCOPE2A: *"POS:IN"+"substance", ACTION2: "move", CHANGE2: "fast"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", CHANGE1: "increase"]
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as the amount of heat energy of a substance ; of an object increases , the amount of kinetic energy will increase     (78f8-736c-2e89-8a68) [ QUANTITY_MEASURE1:"amount of", AGENT_ATTRIBUTE1:"heat energy of substance;of object", CHANGE1:"increase", QUANTITY_MEASURE2:"amount of", AGENT_ATTRIBUTE2:"kinetic energy", CHANGE2:"increase" ]
+	//        HINTROW as the temperature increases , the kinetic energy of the molecules will increase     (d148-e8f6-c895-1843) [ QUANTITY_MEASURE1:"temperature", CHANGE1:"increase", QUANTITY_MEASURE2:"kinetic energy", AGENT_ATTRIBUTE2:"of molecule", CHANGE2:"increase" ]
+	//  Notes: heat energy increase --> kinetic energy increase
+	//row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "heat"+<energy_1>+"of substance", CHANGE1: "increase", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: <kinetic_0>+<energy_1>, CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: *"POS:NN"+"of", CHANGE1: "increase", QUANTITY_MEASURE2: *"POS:NN"+"of", AGENT_ATTRIBUTE2: <kinetic_0>+<energy_1>, CHANGE2: "increase"]
+
+	// CENTRALSW       MEASUREMENTS: temperature is a measure of kinetic energy of molecules     (4be1-14fa-5a9c-0444) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"kinetic energy of", AGENT:"molecule" ]
+	//        HINTROW temperature is a measure of heat energy     (d753-423d-5ce7-53ce) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"heat energy" ]
+	//row autoRow2 = [TABLE:"MEASUREMENTS", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: <kinetic_0>+<energy_1>+"of", AGENT: "molecule"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"MEASUREMENTS", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: <kinetic_0>+<energy_1>+"of"]
+
+	// GROUNDING       KINDOF: water is a kind of liquid at room temperature     (3961-d09c-4b9a-a6f7) [ HYPONYM:"water", HYPERNYM:"liquid", SCOPE2:"at room temperature" ]
+	//        HINTROW milk is a kind of liquid at room temperature     (0412-1219-6683-82d1) [ HYPONYM:"milk", HYPERNYM:"liquid", SCOPE2:"at room temperature" ]
+	//        HINTROW alcohol is a kind of liquid     (a9db-8f34-d2e1-50f7) [ HYPONYM:"alcohol", HYPERNYM:"liquid" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "liquid"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "liquid"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the temperature of a substance ; an object decreases , the molecules in that substance will move slower ; closer     (78b6-ba50-67ba-3bd4) [ QUANTITY_MEASURE1:"temperature of", AGENT_ATTRIBUTE1:"substance;object", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"molecule", SCOPE2A:"in substance", ACTION2:"move", CHANGE2:"slow;close" ]
+	//  Notes: temperature decrease --> speed decrease
+	//row autoRow4 = [UUID:"78b6-ba50-67ba-3bd4", QUANTITY_MEASURE1: "temperature of", AGENT_ATTRIBUTE1: "substance", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "molecule", SCOPE2A: "in substance", ACTION2: "move", CHANGE2: "slow"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"78b6-ba50-67ba-3bd4", QUANTITY_MEASURE1: "temperature of", AGENT_ATTRIBUTE1: "substance", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "molecule", SCOPE2A: "in substance", ACTION2: "move", CHANGE2: "slow"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the amount of heat energy of a substance ; of an object decreases , the amount of kinetic energy will decrease     (9707-5248-1082-77ee) [ QUANTITY_MEASURE1:"amount of", AGENT_ATTRIBUTE1:"heat energy of substance;of object", CHANGE1:"decrease", QUANTITY_MEASURE2:"amount of", AGENT_ATTRIBUTE2:"kinetic energy", CHANGE2:"decrease" ]
+	//  Notes: temperature decrease --> kinetic energy decrease
+	//row autoRow5 = [UUID:"9707-5248-1082-77ee", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "heat"+<energy_1>+"of substance", CHANGE1: "decrease", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: <kinetic_0>+<energy_1>, CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"9707-5248-1082-77ee", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "heat"+<energy_1>+"of substance", CHANGE1: "decrease", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: <kinetic_0>+<energy_1>, CHANGE2: "decrease"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the kinetic energy of particles increases , the particles will move faster     (9d60-abde-137b-c45f) [ QUANTITY_MEASURE1:"kinetic energy", AGENT_ATTRIBUTE1:"of particle", CHANGE1:"increase", AGENT_ATTRIBUTE2:"particle", ACTION2:"move", CHANGE2:"fast" ]
+	//  Notes: kinetic energy increase --> speed increase
+	//row autoRow6 = [UUID:"9d60-abde-137b-c45f", QUANTITY_MEASURE1: <kinetic_0>+<energy_1>, AGENT_ATTRIBUTE1: "of particle", CHANGE1: "increase", AGENT_ATTRIBUTE2: "particle", ACTION2: "move", CHANGE2: "fast"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"9d60-abde-137b-c45f", QUANTITY_MEASURE1: <kinetic_0>+<energy_1>, AGENT_ATTRIBUTE1: "of particle", CHANGE1: "increase", AGENT_ATTRIBUTE2: "particle", ACTION2: "move", CHANGE2: "fast"]
+
+	// CENTRAL         MEASUREMENTS: speed is a measure of how fast an object is moving     (87c6-f5c1-2d8f-e14a) [ MEASURE:"speed", QUANTITY_ADJ:"measure of", ATTRIBUTE:"fast", AGENT:"object", ACTION:"be move" ]
+	//row autoRow7 = [UUID:"87c6-f5c1-2d8f-e14a", MEASURE: "speed", QUANTITY_ADJ: "measure of", ATTRIBUTE: "fast", AGENT: "object", ACTION: "be move"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"87c6-f5c1-2d8f-e14a", MEASURE: "speed", QUANTITY_ADJ: "measure of", ATTRIBUTE: "fast", AGENT: "object", ACTION: "be move"]
+
+	// CENTRAL         KINDOF: a liquid is a kind of substance     (3f2b-87bb-f73a-3e5d) [ HYPONYM:"liquid", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"3f2b-87bb-f73a-3e5d", HYPONYM: "liquid", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"3f2b-87bb-f73a-3e5d", HYPONYM: "liquid", HYPERNYM: "substance"]
+
+	// CENTRAL         KINDOF: a molecule is a kind of particle     (b4bc-365c-d4d5-8fdc) [ HYPONYM:"molecule", HYPERNYM:"particle" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"b4bc-365c-d4d5-8fdc", HYPONYM: "molecule", HYPERNYM: "particle"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"b4bc-365c-d4d5-8fdc", HYPONYM: "molecule", HYPERNYM: "particle"]
+
+	// CENTRAL         MADEOF: matter is made of molecules     (e2d6-bafd-aaaa-efd3) [ OBJECT:"matt", MATERIAL:"molecule" ]
+	//row autoRow10 = [UUID:"e2d6-bafd-aaaa-efd3", OBJECT: "matt", MATERIAL: "molecule"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"e2d6-bafd-aaaa-efd3", OBJECT: "matt", MATERIAL: "molecule"]
+
+	// CENTRAL         MADEOF: substances are made of matter     (3395-b5a2-ae2d-39c2) [ OBJECT:"substance", MATERIAL:"matt" ]
+	//row autoRow11 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"]
+
+endinferencepattern

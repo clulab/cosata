@@ -1,0 +1,53 @@
+// Automatically converted pattern
+inferencepattern EARTH_OUTER_Ozone_Layer_Protects_Life
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "human", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "human", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "animal", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "animal", HYPERNYM: "organism"]
+
+	// CENTRAL         CHANGE: the breakdown of ozone is when ozone absorbing ultraviolet light changes ozone into oxygen     (7dbf-cb65-4ad5-84ca) [ PROCESS_NAME:"breakdown of ozone", ACTOR_WHO:"ozone absorb ultraviolet light", VERB:"change", FROM:"ozone", INTO:"oxygen" ]
+	//  Notes: 077d-369c-6259-3dcd->7dbf-cb65-4ad5-84ca
+	//row autoRow2 = [UUID:"7dbf-cb65-4ad5-84ca", PROCESS_NAME: "breakdown of ozone", ACTOR_WHO: "ozone absorb ultraviolet light", VERB: "change", FROM: "ozone", INTO: "oxygen"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"7dbf-cb65-4ad5-84ca", PROCESS_NAME: "breakdown of ozone", ACTOR_WHO: "ozone absorb ultraviolet light", VERB: "change", FROM: "ozone", INTO: "oxygen"]
+
+	// CENTRAL         AFFECT: being exposed to the ultraviolet light has a negative impact on living organisms     (9f87-a87e-a40b-c997) [ VERB:"be expose", OBJECT_PROPERTY:"ultraviolet light", POSITIVE_NEGATIVE:"negative", PATIENT:"live organism" ]
+	//row autoRow3 = [UUID:"9f87-a87e-a40b-c997", VERB: "be expose", OBJECT_PROPERTY: "ultraviolet light", POSITIVE_NEGATIVE: "negative", PATIENT: "live organism"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"9f87-a87e-a40b-c997", VERB: "be expose", OBJECT_PROPERTY: "ultraviolet light", POSITIVE_NEGATIVE: "negative", PATIENT: "live organism"]
+
+	// CENTRAL         CHANGE-VEC: negative impacts on organisms ; species will decrease the population of the organisms ; the species     (83f9-1f31-2097-7a80) [ ADJ:"negative", AGENT_OBJECT:"impact", SCOPE1:"on organism;species", DIRECTION:"decrease", PATIENT:"population", SCOPE2:"of organism;species" ]
+	//  Notes: 4c89-1538-021d-96b2->83f9-1f31-2097-7a80
+	//row autoRow4 = [UUID:"83f9-1f31-2097-7a80", ADJ: "negative", AGENT_OBJECT: "impact", SCOPE1: "on organism", DIRECTION: "decrease", PATIENT: "population", SCOPE2: "of organism"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"83f9-1f31-2097-7a80", ADJ: "negative", AGENT_OBJECT: "impact", SCOPE1: "on organism", DIRECTION: "decrease", PATIENT: "population", SCOPE2: "of organism"]
+
+	// CENTRAL         ACTION: ozone absorbs harmful ultraviolet rays from the Sun     (ea15-eb51-e38e-a2c3) [ AGENT_OBJECT:"ozone", ACTION2:"absorb", OBJECT_PROPERTY:"harm ultraviolet ray", SCOPE2:"from sun" ]
+	//row autoRow5 = [UUID:"ea15-eb51-e38e-a2c3", AGENT_OBJECT: "ozone", ACTION2: "absorb", OBJECT_PROPERTY: "harm ultraviolet ray", SCOPE2: "from sun"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"ea15-eb51-e38e-a2c3", AGENT_OBJECT: "ozone", ACTION2: "absorb", OBJECT_PROPERTY: "harm ultraviolet ray", SCOPE2: "from sun"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: harming an organism can cause that organism to die     (ebf1-9fe9-324d-b205) [ CONDITION_VERB:"harm", CONDITION_PATIENT:"organism", RESULT_AGENT:"that organism", RESULT_VERB:"die" ]
+	//row *autoRow6 = [UUID:"ebf1-9fe9-324d-b205", CONDITION_VERB: "harm", CONDITION_PATIENT: "organism", RESULT_AGENT: "that organism", RESULT_VERB: "die"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"ebf1-9fe9-324d-b205", CONDITION_VERB: "harm", CONDITION_PATIENT: "organism", RESULT_AGENT: "that organism", RESULT_VERB: "die"]
+
+	// CENTRAL         AFFECT: harming something has a negative impact on ; effect on that something     (57d4-79ba-a97d-0f9a) [ VERB:"harm", OBJECT_PROPERTY:"something", POSITIVE_NEGATIVE:"negative", PATIENT:"something" ]
+	//row autoRow7 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"]
+
+	// CENTRAL         LOCATIONS: ozone is located in stratosphere in the atmosphere     (2ccd-8354-db20-a5da) [ THING_PROCESS:"ozone", LOCATION:"stratosphere", SCOPE:"in atmosphere" ]
+	//row autoRow8 = [UUID:"2ccd-8354-db20-a5da", THING_PROCESS: "ozone", LOCATION: "stratosphere", SCOPE: "in atmosphere"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"2ccd-8354-db20-a5da", THING_PROCESS: "ozone", LOCATION: "stratosphere", SCOPE: "in atmosphere"]
+
+	// CENTRAL         CONTAINS: sunlight contains ultraviolet light     (f1ae-4d95-7b44-91f9) [ OBJECT_AGENT:"sunlight", WHAT_IT_CONTAINS:"ultraviolet light" ]
+	//row autoRow9 = [UUID:"f1ae-4d95-7b44-91f9", OBJECT_AGENT: "sunlight", WHAT_IT_CONTAINS: "ultraviolet light"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"f1ae-4d95-7b44-91f9", OBJECT_AGENT: "sunlight", WHAT_IT_CONTAINS: "ultraviolet light"]
+
+endinferencepattern

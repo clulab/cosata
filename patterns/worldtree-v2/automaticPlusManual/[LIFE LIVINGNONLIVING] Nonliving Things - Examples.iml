@@ -1,0 +1,41 @@
+// Automatically converted pattern
+inferencepattern LIFE_LIVINGNONLIVING_Nonliving_Things_Examples
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: a bicycle is a kind of nonliving thing     (0af7-85dc-151c-8b69) [ HYPONYM:"bicycle", HYPERNYM:"nonliving thing" ]
+	//        HINTROW light is a kind of nonliving thing     (c035-787b-ecbc-b968) [ HYPONYM:"light", SCOPE1:"nonliving", HYPERNYM:"thing" ]
+	//        HINTROW rock is a kind of nonliving thing     (af33-4409-5f16-cd4c) [ HYPONYM:"rock", SCOPE1:"nonliving", HYPERNYM:"thing" ]
+	//        HINTROW soil is a kind of nonliving thing     (ea61-1f68-79b7-f09f) [ HYPONYM:"soil", HYPERNYM:"nonliving thing" ]
+	//        HINTROW water is a kind of nonliving thing     (2e1a-7f43-2f56-54a8) [ HYPONYM:"water", SCOPE1:"nonliving", HYPERNYM:"thing" ]
+	//        HINTROW air is a kind of nonliving thing     (e085-b4bf-5fc4-2955) [ HYPONYM:"air", HYPERNYM:"nonliving thing" ]
+	//  Notes: nonliving thing examples
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "nonliving thing"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "nonliving thing"]
+
+	// GROUNDING      (OPTIONAL) KINDOF: sunlight is a kind of light     (49dc-4526-46f9-5b32) [ HYPONYM:"sunlight", HYPERNYM:"light" ]
+	//        HINTROW visible light is a kind of light     (c29f-a259-6f77-8880) [ HYPONYM:"visible light", HYPERNYM:"light" ]
+	//row *autoRow1 = [TABLE:"KINDOF", HYPERNYM: "light"] //OVER-CONSTR.
+	row *autoRow1 = [TABLE:"KINDOF", HYPERNYM: "light"]
+
+	// CENTRAL         CONTAINS: an ecosystem contains nonliving things     (8635-6b8d-0003-dc16) [ OBJECT_AGENT:"ecosystem", WHAT_IT_CONTAINS:"nonliving thing" ]
+	//row autoRow2 = [UUID:"8635-6b8d-0003-dc16", OBJECT_AGENT: "ecosystem", WHAT_IT_CONTAINS: "nonliving thing"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"8635-6b8d-0003-dc16", OBJECT_AGENT: "ecosystem", WHAT_IT_CONTAINS: "nonliving thing"]
+
+	// CENTRAL         MADEOF: nonliving things are not made of cells     (0771-81b9-a81c-a57c) [ OBJECT:"nonliving thing", QUALIFIER:"be not", MATERIAL:"cell" ]
+	//row autoRow3 = [UUID:"0771-81b9-a81c-a57c", OBJECT: "nonliving thing", QUALIFIER: "be not", MATERIAL: "cell"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"0771-81b9-a81c-a57c", OBJECT: "nonliving thing", QUALIFIER: "be not", MATERIAL: "cell"]
+
+	// LEXGLUE         SYNONYMY: abiotic means nonliving     (1bc6-7869-9e8a-2334) [ X1:"abiotic", X2:"nonliving" ]
+	//        HINTROW nonliving means not living     (5ce7-4fed-f926-472e) [ X1:"nonliving", ACTION2:"not live" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow4 = [UUID:"1bc6-7869-9e8a-2334"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow4 = [UUID:"1bc6-7869-9e8a-2334"]
+
+endinferencepattern

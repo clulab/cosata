@@ -1,0 +1,102 @@
+// Automatically converted pattern
+inferencepattern ENG_SOUND_Sounds_Travel_Speed_in_Different_Media
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: air is a kind of gas     (70ac-58d8-10b4-1313) [ HYPONYM:"air", HYPERNYM:"gas" ]
+	//  Notes: SOM of the medium
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "air", HYPERNYM: "gas"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "air", HYPERNYM: "gas"]
+
+	// GROUNDING       KINDOF: air is a kind of medium     (3122-8ae5-a9d0-83a8) [ HYPONYM:"air", HYPERNYM:"medium" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "air", HYPERNYM: "medium"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "air", HYPERNYM: "medium"]
+
+	// GROUNDING       KINDOF: glass is a kind of medium     (c88e-8192-4808-1ed6) [ HYPONYM:"glass", HYPERNYM:"medium" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "glass", HYPERNYM: "medium"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "glass", HYPERNYM: "medium"]
+
+	// GROUNDING       KINDOF: glass is a kind of solid at room temperature     (a021-1daa-802b-93c7) [ HYPONYM:"glass", HYPERNYM:"solid", SCOPE2:"at room temperature" ]
+	//  Notes: SOM of the medium
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "glass", HYPERNYM: "solid", SCOPE2: "at room temperature"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "glass", HYPERNYM: "solid", SCOPE2: "at room temperature"]
+
+	// CENTRAL         KINDOF: sound is a kind of energy     (1980-256d-b685-846c) [ HYPONYM:"sound", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"1980-256d-b685-846c", HYPONYM: "sound", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"1980-256d-b685-846c", HYPONYM: "sound", HYPERNYM: "energy"]
+
+	// CENTRAL         KINDOF: sound is a kind of air vibration     (c73c-b25a-5409-a480) [ HYPONYM:"sound", SCOPE1:"air", HYPERNYM:"vibrate" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"c73c-b25a-5409-a480", HYPONYM: "sound", SCOPE1: "air", HYPERNYM: "vibrate"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"c73c-b25a-5409-a480", HYPONYM: "sound", SCOPE1: "air", HYPERNYM: "vibrate"]
+
+	// CENTRAL         COMPARISON: particles in a liquid are closer together than particles in a gas     (f4ce-2fa7-0e7d-8065) [ THING:"particle", SCOPE1:"in liquid", ACTION1:"be", COMPARISON:"close", SCOPE2:"together", THING_COMPARED:"particle", SCOPE:"in gas" ]
+	//  Notes: c828-419d-e4c7-8df6->f4ce-2fa7-0e7d-8065
+	//row autoRow6 = [UUID:"f4ce-2fa7-0e7d-8065", THING: "particle", SCOPE1: "in liquid", ACTION1: "be", COMPARISON: "close", SCOPE2: "together", THING_COMPARED: "particle", SCOPE: "in gas"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"f4ce-2fa7-0e7d-8065", THING: "particle", SCOPE1: "in liquid", ACTION1: "be", COMPARISON: "close", SCOPE2: "together", THING_COMPARED: "particle", SCOPE: "in gas"]
+
+	// CENTRAL         COMPARISON: particles in a solid are closer together than particles in a liquid     (3029-78ca-6899-d72f) [ THING:"particle", SCOPE1:"in solid", ACTION1:"be", COMPARISON:"close", SCOPE2:"together", THING_COMPARED:"particle", SCOPE:"in liquid" ]
+	//  Notes: 3bbb-8bc7-62c8-44a0->3029-78ca-6899-d72f
+	//row autoRow7 = [UUID:"3029-78ca-6899-d72f", THING: "particle", SCOPE1: "in solid", ACTION1: "be", COMPARISON: "close", SCOPE2: "together", THING_COMPARED: "particle", SCOPE: "in liquid"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3029-78ca-6899-d72f", THING: "particle", SCOPE1: "in solid", ACTION1: "be", COMPARISON: "close", SCOPE2: "together", THING_COMPARED: "particle", SCOPE: "in liquid"]
+
+	// CENTRAL         AFFORDANCES: sound can travel through air by vibrating air     (f672-4bbb-6fff-373c) [ ACTOR_THING:"sound", VERB:"travel", PATIENT:"through air", BY_THROUGH_HOW:"vibrate air" ]
+	//row autoRow8 = [UUID:"f672-4bbb-6fff-373c", ACTOR_THING: "sound", VERB: "travel", PATIENT: "through air", BY_THROUGH_HOW: "vibrate air"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f672-4bbb-6fff-373c", ACTOR_THING: "sound", VERB: "travel", PATIENT: "through air", BY_THROUGH_HOW: "vibrate air"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the distance between molecules decreases , the speed of the sound will increase     (aaba-f425-4c78-0fa5) [ QUANTITY_MEASURE1:"distance between", AGENT_ATTRIBUTE1:"molecule", CHANGE1:"decrease", QUANTITY_MEASURE2:"speed of", AGENT_ATTRIBUTE2:"sound", CHANGE2:"increase" ]
+	//row autoRow9 = [UUID:"aaba-f425-4c78-0fa5", QUANTITY_MEASURE1: "distance between", AGENT_ATTRIBUTE1: "molecule", CHANGE1: "decrease", QUANTITY_MEASURE2: "speed of", AGENT_ATTRIBUTE2: "sound", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"aaba-f425-4c78-0fa5", QUANTITY_MEASURE1: "distance between", AGENT_ATTRIBUTE1: "molecule", CHANGE1: "decrease", QUANTITY_MEASURE2: "speed of", AGENT_ATTRIBUTE2: "sound", CHANGE2: "increase"]
+
+	// CENTRAL         CHANGE: the type of material through which sound passes changes the speed at which sound travels     (35de-03a6-5a5e-50e6) [ ADJ_QUANTIFIER:"type of", ACTOR_WHO:"material", QUANTIFIER_SCOPE:"through sound pass", VERB:"change", WHAT:"speed", SCOPE:"at sound travel" ]
+	//row autoRow10 = [UUID:"35de-03a6-5a5e-50e6", ADJ_QUANTIFIER: "type of", ACTOR_WHO: "material", QUANTIFIER_SCOPE: "through sound pass", VERB: "change", WHAT: "speed", SCOPE: "at sound travel"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"35de-03a6-5a5e-50e6", ADJ_QUANTIFIER: "type of", ACTOR_WHO: "material", QUANTIFIER_SCOPE: "through sound pass", VERB: "change", WHAT: "speed", SCOPE: "at sound travel"]
+
+	// CENTRAL         SYNONYMY: media ; medium means the material something travel through     (4c92-b6ee-0385-22fc) [ X1:"medium;medium", X2:"material something travel through" ]
+	//row autoRow11 = [UUID:"4c92-b6ee-0385-22fc", X1: "medium", X2: "material something travel through"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"4c92-b6ee-0385-22fc", X1: "medium", X2: "material something travel through"]
+
+	// CENTRAL         COMPARISON: sound travels fastest through solid     (814a-01e6-cbf5-bad6) [ THING:"sound", ACTION1:"travel", COMPARISON:"fast", SCOPE2:"through solid" ]
+	//  Notes: f9ec-e385-00dd-f987->814a-01e6-cbf5-bad6
+	//row autoRow12 = [UUID:"814a-01e6-cbf5-bad6", THING: "sound", ACTION1: "travel", COMPARISON: "fast", SCOPE2: "through solid"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"814a-01e6-cbf5-bad6", THING: "sound", ACTION1: "travel", COMPARISON: "fast", SCOPE2: "through solid"]
+
+	// CENTRAL         COMPARISON: sound travels slowest through gas     (7062-c249-9802-2f3f) [ THING:"sound", ACTION1:"travel", COMPARISON:"slow", SCOPE2:"through gas" ]
+	//  Notes: 48c8-ab22-893a-e784->7062-c249-9802-2f3f
+	//row autoRow13 = [UUID:"7062-c249-9802-2f3f", THING: "sound", ACTION1: "travel", COMPARISON: "slow", SCOPE2: "through gas"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"7062-c249-9802-2f3f", THING: "sound", ACTION1: "travel", COMPARISON: "slow", SCOPE2: "through gas"]
+
+	// CENTRAL         KINDOF: sound wave is a kind of wave     (c0fe-e47e-44b2-66e7) [ HYPONYM:"sound wave", HYPERNYM:"wave" ]
+	//  Notes: peripheral
+	//row autoRow14 = [UUID:"c0fe-e47e-44b2-66e7", HYPONYM: "sound wave", HYPERNYM: "wave"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"c0fe-e47e-44b2-66e7", HYPONYM: "sound wave", HYPERNYM: "wave"]
+
+	// CENTRAL         ACTION: waves travel differently in different media     (3373-bc25-1f17-1ebd) [ AGENT_OBJECT:"wave", ACTION2:"travel", OBJECT_PROPERTY:"differ", WHEN_WHERE:"in differ medium" ]
+	//row autoRow15 = [UUID:"3373-bc25-1f17-1ebd", AGENT_OBJECT: "wave", ACTION2: "travel", OBJECT_PROPERTY: "differ", WHEN_WHERE: "in differ medium"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"3373-bc25-1f17-1ebd", AGENT_OBJECT: "wave", ACTION2: "travel", OBJECT_PROPERTY: "differ", WHEN_WHERE: "in differ medium"]
+
+	// CENTRAL         KINDOF: a molecule is a kind of particle     (b4bc-365c-d4d5-8fdc) [ HYPONYM:"molecule", HYPERNYM:"particle" ]
+	//  Notes: peripheral
+	//row autoRow16 = [UUID:"b4bc-365c-d4d5-8fdc", HYPONYM: "molecule", HYPERNYM: "particle"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"b4bc-365c-d4d5-8fdc", HYPONYM: "molecule", HYPERNYM: "particle"]
+
+	// CENTRAL         MADEOF: substances are made of molecules     (1f87-3d79-4268-86d2) [ OBJECT:"substance", MATERIAL:"molecule" ]
+	//  Notes: peripheral
+	//row autoRow17 = [UUID:"1f87-3d79-4268-86d2", OBJECT: "substance", MATERIAL: "molecule"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"1f87-3d79-4268-86d2", OBJECT: "substance", MATERIAL: "molecule"]
+
+	// LEXGLUE         SYNONYMY: material means substance     (efac-0ec0-58dc-8f9e) [ X1:"material", X2:"substance" ]
+	//row autoRow18 = [UUID:"efac-0ec0-58dc-8f9e", X1: "material", X2: "substance"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"efac-0ec0-58dc-8f9e", X1: "material", X2: "substance"]
+
+	// LEXGLUE         SYNONYMY: to change means to have an effect     (e6a3-b433-9d25-fd98) [ ACTION1:"change", ACTION2:"have", Y2:"effect" ]
+	//row autoRow19 = [UUID:"e6a3-b433-9d25-fd98", ACTION1: "change", ACTION2: "have", Y2: "effect"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"e6a3-b433-9d25-fd98", ACTION1: "change", ACTION2: "have", Y2: "effect"]
+
+endinferencepattern

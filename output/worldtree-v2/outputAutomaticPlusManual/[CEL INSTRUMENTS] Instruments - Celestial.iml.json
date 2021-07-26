@@ -1,0 +1,1460 @@
+{"patternMatches": [
+{
+	"patternName":"CEL_INSTRUMENTS_Instruments_Celestial",
+	"matches":[
+		{
+		"uuids": ["dbe8-e776-f804-99a0","af26-8083-b908-7d3b","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "dbe8-e776-f804-99a0", "rowText": "a star is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "af26-8083-b908-7d3b", "rowText": "the Sun is a kind of star", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"sun" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"Sun" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["dbe8-e776-f804-99a0","80e2-7167-491e-2ab8","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "dbe8-e776-f804-99a0", "rowText": "a star is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "80e2-7167-491e-2ab8", "rowText": "Proxima Centauri is a kind of star", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"proxima centauri" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"Proxima Centauri" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["dbe8-e776-f804-99a0","1663-afe5-7612-6934","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "dbe8-e776-f804-99a0", "rowText": "a star is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "1663-afe5-7612-6934", "rowText": "main-sequences stars are a kind of star", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"main-sequences star" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"main-sequences stars" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["dbe8-e776-f804-99a0","1663-afe5-7612-6934","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "dbe8-e776-f804-99a0", "rowText": "a star is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "1663-afe5-7612-6934", "rowText": "main-sequences stars are a kind of star", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"main sequence star" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"main sequences stars" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["dbe8-e776-f804-99a0","a49f-2765-8b70-2b6e","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "dbe8-e776-f804-99a0", "rowText": "a star is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "a49f-2765-8b70-2b6e", "rowText": "a white dwarf is a kind of star", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"white dwarf" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"white dwarf" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["50fe-e0b2-8acf-6f7c","e473-7297-61c1-56fa","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "50fe-e0b2-8acf-6f7c", "rowText": "a planet is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "e473-7297-61c1-56fa", "rowText": "Earth is a kind of planet", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"earth" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Earth" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["50fe-e0b2-8acf-6f7c","b772-8846-82c7-f2d8","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "50fe-e0b2-8acf-6f7c", "rowText": "a planet is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "b772-8846-82c7-f2d8", "rowText": "Jupiter is a kind of planet", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"jupiter" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Jupiter" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["50fe-e0b2-8acf-6f7c","1fb6-af63-74de-86fd","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "50fe-e0b2-8acf-6f7c", "rowText": "a planet is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "1fb6-af63-74de-86fd", "rowText": "Mars is a kind of planet", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"mar" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Mars" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["50fe-e0b2-8acf-6f7c","106b-d671-313e-b596","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "50fe-e0b2-8acf-6f7c", "rowText": "a planet is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "106b-d671-313e-b596", "rowText": "Mercury is a kind of planet", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"mercury" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Mercury" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["50fe-e0b2-8acf-6f7c","9803-3975-7c41-48b6","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "50fe-e0b2-8acf-6f7c", "rowText": "a planet is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "9803-3975-7c41-48b6", "rowText": "Neptune is a kind of planet in the solar system", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"neptune" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Neptune" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["50fe-e0b2-8acf-6f7c","73aa-f84a-b42e-53b3","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "50fe-e0b2-8acf-6f7c", "rowText": "a planet is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "73aa-f84a-b42e-53b3", "rowText": "Venus is a kind of planet", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"venus" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Venus" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["50fe-e0b2-8acf-6f7c","7bc0-9f19-77c2-4fcf","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "50fe-e0b2-8acf-6f7c", "rowText": "a planet is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "7bc0-9f19-77c2-4fcf", "rowText": "Uranus is a kind of planet", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"uranus" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Uranus" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["50fe-e0b2-8acf-6f7c","65b3-1a89-cdd6-22b0","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "50fe-e0b2-8acf-6f7c", "rowText": "a planet is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "65b3-1a89-cdd6-22b0", "rowText": "Saturn is a kind of planet", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"saturn" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Saturn" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["5491-9457-39e4-2a7a","9204-e312-1986-baf9","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "5491-9457-39e4-2a7a", "rowText": "a moon is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "9204-e312-1986-baf9", "rowText": "Phobos is a kind of moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"phobos" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"Phobos" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["5491-9457-39e4-2a7a","343e-7241-0aa2-1221","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "5491-9457-39e4-2a7a", "rowText": "a moon is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "343e-7241-0aa2-1221", "rowText": "the Moon is a kind of moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"moon" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"Moon" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-954838","9204-e312-1986-baf9","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "TEMPGEN-954838", "rowText": "moon is a kind of celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "9204-e312-1986-baf9", "rowText": "Phobos is a kind of moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"phobos" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"Phobos" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-954838","343e-7241-0aa2-1221","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "TEMPGEN-954838", "rowText": "moon is a kind of celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "343e-7241-0aa2-1221", "rowText": "the Moon is a kind of moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"moon" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"Moon" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["dbe8-e776-f804-99a0","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "dbe8-e776-f804-99a0", "rowText": "a star is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["50fe-e0b2-8acf-6f7c","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "50fe-e0b2-8acf-6f7c", "rowText": "a planet is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["5491-9457-39e4-2a7a","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "5491-9457-39e4-2a7a", "rowText": "a moon is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-954838","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "TEMPGEN-954838", "rowText": "moon is a kind of celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["e473-7297-61c1-56fa","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "e473-7297-61c1-56fa", "rowText": "Earth is a kind of planet", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"earth" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Earth" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["b772-8846-82c7-f2d8","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "b772-8846-82c7-f2d8", "rowText": "Jupiter is a kind of planet", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"jupiter" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Jupiter" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["1fb6-af63-74de-86fd","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "1fb6-af63-74de-86fd", "rowText": "Mars is a kind of planet", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"mar" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Mars" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["106b-d671-313e-b596","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "106b-d671-313e-b596", "rowText": "Mercury is a kind of planet", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"mercury" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Mercury" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["9803-3975-7c41-48b6","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "9803-3975-7c41-48b6", "rowText": "Neptune is a kind of planet in the solar system", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"neptune" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Neptune" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["dbe8-e776-f804-99a0","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "dbe8-e776-f804-99a0", "rowText": "a star is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"star" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"star" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["af26-8083-b908-7d3b","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "af26-8083-b908-7d3b", "rowText": "the Sun is a kind of star", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"sun" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"Sun" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["73aa-f84a-b42e-53b3","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "73aa-f84a-b42e-53b3", "rowText": "Venus is a kind of planet", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"venus" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Venus" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["83c7-6836-72bb-6ea4","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "83c7-6836-72bb-6ea4", "rowText": "a nebula is a kind of celestial body ; celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"nebula" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"nebula" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["7bc0-9f19-77c2-4fcf","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "7bc0-9f19-77c2-4fcf", "rowText": "Uranus is a kind of planet", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"uranus" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Uranus" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["b4db-2e88-d470-81a1","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "b4db-2e88-d470-81a1", "rowText": "a galaxy is a kind of celestial body ; celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"galaxy" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"galaxy" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["80e2-7167-491e-2ab8","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "80e2-7167-491e-2ab8", "rowText": "Proxima Centauri is a kind of star", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"proxima centauri" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"Proxima Centauri" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["0120-bc66-b54d-9958","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "0120-bc66-b54d-9958", "rowText": "an asteroid is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"asteroid" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"asteroid" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["65b3-1a89-cdd6-22b0","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "65b3-1a89-cdd6-22b0", "rowText": "Saturn is a kind of planet", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"saturn" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"Saturn" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["1663-afe5-7612-6934","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "1663-afe5-7612-6934", "rowText": "main-sequences stars are a kind of star", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"main-sequences star" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"stars" },
+			{ "name":"celestialObjectName", "value":"main-sequences stars" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["1663-afe5-7612-6934","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "1663-afe5-7612-6934", "rowText": "main-sequences stars are a kind of star", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"main sequence star" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"stars" },
+			{ "name":"celestialObjectName", "value":"main sequences stars" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["a49f-2765-8b70-2b6e","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "a49f-2765-8b70-2b6e", "rowText": "a white dwarf is a kind of star", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"white dwarf" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"white dwarf" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["0606-2d42-19a4-b9bb","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "0606-2d42-19a4-b9bb", "rowText": "a quasar is a kind of distant celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"quasar" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"quasar" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["9204-e312-1986-baf9","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "9204-e312-1986-baf9", "rowText": "Phobos is a kind of moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"phobos" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"Phobos" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["343e-7241-0aa2-1221","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "343e-7241-0aa2-1221", "rowText": "the Moon is a kind of moon", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"moon" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"Moon" },
+			{ "name":"celestialObjectName", "value":"Moon" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["50fe-e0b2-8acf-6f7c","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "50fe-e0b2-8acf-6f7c", "rowText": "a planet is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"planet" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"planet" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["5491-9457-39e4-2a7a","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "5491-9457-39e4-2a7a", "rowText": "a moon is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"moon" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"moon" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-948600","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-948600", "rowText": "earth is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"earth" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"earth" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-950062","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-950062", "rowText": "jupiter is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"jupiter" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"jupiter" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-950532","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-950532", "rowText": "mercury is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"mercury" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"mercury" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-951015","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-951015", "rowText": "neptune is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"neptune" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"neptune" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-952783","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-952783", "rowText": "sun is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"sun" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"sun" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-953110","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-953110", "rowText": "venus is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"venus" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"venus" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-953942","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-953942", "rowText": "uranus is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"uranus" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"uranus" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-954019","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-954019", "rowText": "milky way is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"milky way" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"milky way" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-954024","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-954024", "rowText": "proxima centauri is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"proxima centaurus" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"proxima centauri" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-954092","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-954092", "rowText": "saturn is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"saturn" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"saturn" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-954105","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-954105", "rowText": "main-sequences star is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"main-sequences star" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"main-sequences star" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-954105","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-954105", "rowText": "main-sequences star is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"main sequence star" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"main sequences star" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-954118","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-954118", "rowText": "white dwarf is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"white dwarf" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"white dwarf" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-954156","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-954156", "rowText": "spiral galaxy is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"spiral galaxy" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"spiral galaxy" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-954168","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-954168", "rowText": "elliptical galaxy is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"elliptical galaxy" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"elliptical galaxy" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-954182","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-954182", "rowText": "irregular galaxy is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"irregular galaxy" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"irregular galaxy" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-954814","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-954814", "rowText": "phobos is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"phobo" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"phobos" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-954891","4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "TEMPGEN-954891", "rowText": "andromeda galaxy is a kind of celestial object", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"andromeda galaxy" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"andromeda galaxy" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"star" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"stars" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"planet" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"planets" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"moon" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"moons" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"distant object" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"distant objects" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"sky" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"sky" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		},
+		{
+		"uuids": ["4383-694e-b4d4-cd5d","55a5-70f3-961c-a142","dd7d-0d6d-91f5-1a83"],
+		"slots": [
+			{"rowSlotName": "autoRow0a", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow0b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4383-694e-b4d4-cd5d", "rowText": "a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "55a5-70f3-961c-a142", "rowText": "a telescope is a kind of optical instrument for observing celestial objects ; observing the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "dd7d-0d6d-91f5-1a83", "rowText": "the sky is similar to space", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"celestial object" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0a", "value":"" },
+			{ "name":"autoRow0b", "value":"" },
+			{ "name":"celestialObject", "value":"celestial objects" },
+			{ "name":"celestialObjectName", "value":"" },
+			{ "name":"instrumentName", "value":"telescope" }
+		]
+		}
+	]
+}
+]}
+

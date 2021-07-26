@@ -1,0 +1,54 @@
+// Automatically converted pattern
+inferencepattern SAF_EQUIP_Lab_Safe_Equipment
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: safety goggles are a kind of safety gear     (d308-2f92-6950-1fea) [ HYPONYM:"safety goggle", SCOPE1:"safety", HYPERNYM:"gear" ]
+	//        HINTROW laboratory apron ; laboratory coat is a kind of safety gear for protecting a person during an experiment     (0025-3e37-acf0-467a) [ HYPONYM:"laboratory apron;laboratory coat", SCOPE1:"safety", HYPERNYM:"gear", FOR_PURPOSE:"protect person", SCOPE2:"during experiment" ]
+	//  Notes: safety gears
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "safety goggle", SCOPE1: "safety", HYPERNYM: "gear"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", SCOPE1: "safety", HYPERNYM: "gear"]
+
+	// CENTRAL         KINDOF: wearing safety goggles is a kind of safe practice in a laboratory     (ab25-5770-3344-605e) [ HYPONYM:"wear safety goggle", SCOPE1:"safe", HYPERNYM:"practice", SCOPE2:"in laboratory" ]
+	//row autoRow1 = [UUID:"ab25-5770-3344-605e", HYPONYM: "wear safety goggle", SCOPE1: "safe", HYPERNYM: "practice", SCOPE2: "in laboratory"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"ab25-5770-3344-605e", HYPONYM: "wear safety goggle", SCOPE1: "safe", HYPERNYM: "practice", SCOPE2: "in laboratory"]
+
+	// CENTRAL         USEDFOR: safety goggles are used for protecting the eyes during experiments     (4ffd-30e8-918c-9a42) [ AGENT_OBJECT:"safety goggle", FOR_PURPOSE:"protect", PATIENT:"eye", SCOPE2:"during experiment" ]
+	//row autoRow2 = [UUID:"4ffd-30e8-918c-9a42", AGENT_OBJECT: "safety goggle", FOR_PURPOSE: "protect", PATIENT: "eye", SCOPE2: "during experiment"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"4ffd-30e8-918c-9a42", AGENT_OBJECT: "safety goggle", FOR_PURPOSE: "protect", PATIENT: "eye", SCOPE2: "during experiment"]
+
+	// CENTRAL         CAUSE: chemical splashing can cause harm to humans ; to the eyes     (891a-752f-b9c8-25e1) [ CONDITION_AGENT_OBJECT:"chemical", CONDITION_VERB:"splash", RESULT_VERB:"harm", RESULT_PATIENT:"human;eye" ]
+	//row autoRow3 = [UUID:"891a-752f-b9c8-25e1", CONDITION_AGENT_OBJECT: "chemical", CONDITION_VERB: "splash", RESULT_VERB: "harm", RESULT_PATIENT: "human"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"891a-752f-b9c8-25e1", CONDITION_AGENT_OBJECT: "chemical", CONDITION_VERB: "splash", RESULT_VERB: "harm", RESULT_PATIENT: "human"]
+
+	// CENTRAL         DURING: chemical splashing sometimes occurs during experiments     (69e9-672f-1f1c-84a1) [ EVENT:"chemical splash", SCOPE_QUANTIFIER:"sometimes", TIME:"experiment" ]
+	//row autoRow4 = [UUID:"69e9-672f-1f1c-84a1", EVENT: "chemical splash", SCOPE_QUANTIFIER: "sometimes", TIME: "experiment"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"69e9-672f-1f1c-84a1", EVENT: "chemical splash", SCOPE_QUANTIFIER: "sometimes", TIME: "experiment"]
+
+	// CENTRAL         KINDOF: a student is a kind of human     (3ed8-5fde-3b7b-6513) [ HYPONYM:"student", HYPERNYM:"human" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"3ed8-5fde-3b7b-6513", HYPONYM: "student", HYPERNYM: "human"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"3ed8-5fde-3b7b-6513", HYPONYM: "student", HYPERNYM: "human"]
+
+	// CENTRAL         OPPOSITES: safe is the opposite of unsafe ; harm ; danger     (fd2d-7763-c40b-59a9) [ THING_PROPERTY1:"safe", THING_PROPERTY2:"unsafe;harm;danger" ]
+	//row autoRow6 = [UUID:"fd2d-7763-c40b-59a9", THING_PROPERTY1: "safe", THING_PROPERTY2: "unsafe"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"fd2d-7763-c40b-59a9", THING_PROPERTY1: "safe", THING_PROPERTY2: "unsafe"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: something dangerous can cause harm     (70a1-9e7d-18aa-7495) [ CONDITION_AGENT_OBJECT:"something danger", RESULT_AGENT:"harm" ]
+	//row *autoRow7 = [UUID:"70a1-9e7d-18aa-7495", CONDITION_AGENT_OBJECT: "something danger", RESULT_AGENT: "harm"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"70a1-9e7d-18aa-7495", CONDITION_AGENT_OBJECT: "something danger", RESULT_AGENT: "harm"]
+
+	// LEXGLUE         SYNONYMY: protecting something means preventing harm to that something     (360a-b24c-3306-9b73) [ ACTION1:"protect", Y1:"something", ACTION2:"prevent harm", Y2:"something" ]
+	//row autoRow8 = [UUID:"360a-b24c-3306-9b73", ACTION1: "protect", Y1: "something", ACTION2: "prevent harm", Y2: "something"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"360a-b24c-3306-9b73", ACTION1: "protect", Y1: "something", ACTION2: "prevent harm", Y2: "something"]
+
+	// LEXGLUE         SYNONYMY: to put on means to wear     (5a57-e1e0-4c65-262d) [ ACTION1:"put", ACTION2:"wear" ]
+	//row autoRow9 = [UUID:"5a57-e1e0-4c65-262d", ACTION1: "put", ACTION2: "wear"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"5a57-e1e0-4c65-262d", ACTION1: "put", ACTION2: "wear"]
+
+endinferencepattern

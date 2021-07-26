@@ -1,0 +1,93 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Sight
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PARTOF: eyes are a part of a human for seeing     (ff3b-674b-328e-5e4f) [ PART:"eye", WHOLE:"human", FOR_PURPOSE:"see" ]
+	//        HINTROW eyes are usually part of an animal for seeing     (e0eb-f67a-6f99-b25b) [ PART:"eye", QUANTIFIER1:"be usually", WHOLE:"animal", FOR_PURPOSE:"see" ]
+	//row autoRow0 = [TABLE:"PARTOF", PART: "eye", FOR_PURPOSE: "see"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PARTOF", PART: "eye", FOR_PURPOSE: "see"]
+
+	// GROUNDING       KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "human", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "human", HYPERNYM: "animal"]
+
+	// CENTRAL         USEDFOR: eyes are used for seeing by animals by sensing light     (e47e-e5e2-c6d2-61ed) [ AGENT_OBJECT:"eye", FOR_PURPOSE:"see", AGENT_THING_WHO_USES:"animal", BY_THROUGH_HOW:"sense light" ]
+	//row autoRow2 = [UUID:"e47e-e5e2-c6d2-61ed", AGENT_OBJECT: "eye", FOR_PURPOSE: "see", AGENT_THING_WHO_USES: "animal", BY_THROUGH_HOW: "sense light"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"e47e-e5e2-c6d2-61ed", AGENT_OBJECT: "eye", FOR_PURPOSE: "see", AGENT_THING_WHO_USES: "animal", BY_THROUGH_HOW: "sense light"]
+
+	// CENTRAL         AFFORDANCES: eyes can sense ; detect light energy for seeing     (fdba-70d0-fcc6-e529) [ ACTOR_THING:"eye", VERB:"sense;detect", PATIENT:"light energy", FOR_PURPOSE:"see" ]
+	//row autoRow3 = [UUID:"fdba-70d0-fcc6-e529", ACTOR_THING: "eye", VERB: "sense", PATIENT: "light energy", FOR_PURPOSE: "see"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"fdba-70d0-fcc6-e529", ACTOR_THING: "eye", VERB: "sense", PATIENT: "light energy", FOR_PURPOSE: "see"]
+
+	// CENTRAL         IFTHEN: if an object reflects light toward the eye then that object can be seen     (ae74-32dc-4291-fb82) [ THING:"object", ACTION1:"reflect", OBJECT_PATIENT1:"light", SCOPE1B:"toward eye", ACTOR_AGENT_PROCESS2:"that object", ACTION3:"see" ]
+	//row autoRow4 = [UUID:"ae74-32dc-4291-fb82", THING: "object", ACTION1: "reflect", OBJECT_PATIENT1: "light", SCOPE1B: "toward eye", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "see"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"ae74-32dc-4291-fb82", THING: "object", ACTION1: "reflect", OBJECT_PATIENT1: "light", SCOPE1B: "toward eye", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "see"]
+
+	// CENTRAL         KINDOF: sight is a kind of sense     (39ca-a831-8d1a-babd) [ HYPONYM:"sight", HYPERNYM:"sense" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"39ca-a831-8d1a-babd", HYPONYM: "sight", HYPERNYM: "sense"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"39ca-a831-8d1a-babd", HYPONYM: "sight", HYPERNYM: "sense"]
+
+	// CENTRAL         REQUIRES: seeing requires light     (e5ab-6c07-c15d-90f2) [ ACTION1:"see", VERB_REQUIRES:"require", OBJECT:"light" ]
+	//row autoRow6 = [UUID:"e5ab-6c07-c15d-90f2", ACTION1: "see", VERB_REQUIRES: "require", OBJECT: "light"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"e5ab-6c07-c15d-90f2", ACTION1: "see", VERB_REQUIRES: "require", OBJECT: "light"]
+
+	// CENTRAL        (OPTIONAL) REQUIRES: determining often requires measuring ; observing     (fc75-dfcd-e46e-e318) [ ACTION1:"determine", QUANTIFIER:"often", VERB_REQUIRES:"require", ACTION2:"measure;observe" ]
+	//row *autoRow7 = [UUID:"fc75-dfcd-e46e-e318", ACTION1: "determine", QUANTIFIER: "often", VERB_REQUIRES: "require", ACTION2: "measure"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"fc75-dfcd-e46e-e318", ACTION1: "determine", QUANTIFIER: "often", VERB_REQUIRES: "require", ACTION2: "measure"]
+
+	// CENTRAL         PARTOF: the eyes are part of the head used for seeing     (2173-1dd1-fdbb-cf94) [ PART:"eye", WHOLE:"head", FOR_PURPOSE:"see" ]
+	//row autoRow8 = [UUID:"2173-1dd1-fdbb-cf94", PART: "eye", WHOLE: "head", FOR_PURPOSE: "see"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"2173-1dd1-fdbb-cf94", PART: "eye", WHOLE: "head", FOR_PURPOSE: "see"]
+
+	// CENTRAL         CONTAINS: the nervous system contains nerves     (4695-199f-eeab-4611) [ ADJ:"nervous", OBJECT_AGENT:"system", WHAT_IT_CONTAINS:"nerve" ]
+	//row autoRow9 = [UUID:"4695-199f-eeab-4611", ADJ: "nervous", OBJECT_AGENT: "system", WHAT_IT_CONTAINS: "nerve"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"4695-199f-eeab-4611", ADJ: "nervous", OBJECT_AGENT: "system", WHAT_IT_CONTAINS: "nerve"]
+
+	// CENTRAL         ACTION: light enters the eye through the pupil     (be64-4c22-3323-47e2) [ AGENT_OBJECT:"light", ACTION2:"enter", OBJECT_PROPERTY:"eye", BY_THROUGH_HOW:"pupil" ]
+	//row autoRow10 = [UUID:"be64-4c22-3323-47e2", AGENT_OBJECT: "light", ACTION2: "enter", OBJECT_PROPERTY: "eye", BY_THROUGH_HOW: "pupil"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"be64-4c22-3323-47e2", AGENT_OBJECT: "light", ACTION2: "enter", OBJECT_PROPERTY: "eye", BY_THROUGH_HOW: "pupil"]
+
+	// CENTRAL        (OPTIONAL) ACTION: nerve cells conduct messages in the body     (2284-9674-843e-f9f2) [ AGENT_OBJECT:"nerve cell", ACTION2:"conduct", OBJECT_PROPERTY:"message", WHEN_WHERE:"in body" ]
+	//row *autoRow11 = [UUID:"2284-9674-843e-f9f2", AGENT_OBJECT: "nerve cell", ACTION2: "conduct", OBJECT_PROPERTY: "message", WHEN_WHERE: "in body"] //OVER-CONSTR.
+	row *autoRow11 = [UUID:"2284-9674-843e-f9f2", AGENT_OBJECT: "nerve cell", ACTION2: "conduct", OBJECT_PROPERTY: "message", WHEN_WHERE: "in body"]
+
+	// CENTRAL         TRANSFER: nerves carry messages from sensory organs to the brain     (096f-3e0e-0cee-53cc) [ ACTOR_WHO:"nerve", VERB:"carry", WHAT:"message", SOURCE:"sensory organ", DESTINATION:"brain" ]
+	//row autoRow12 = [UUID:"096f-3e0e-0cee-53cc", ACTOR_WHO: "nerve", VERB: "carry", WHAT: "message", SOURCE: "sensory organ", DESTINATION: "brain"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"096f-3e0e-0cee-53cc", ACTOR_WHO: "nerve", VERB: "carry", WHAT: "message", SOURCE: "sensory organ", DESTINATION: "brain"]
+
+	// CENTRAL         USEDFOR: seeing is used for sensing visual things     (627d-87b0-4a4a-7cad) [ AGENT_OBJECT:"see", FOR_PURPOSE:"sense", PATIENT:"visual thing" ]
+	//row autoRow13 = [UUID:"627d-87b0-4a4a-7cad", AGENT_OBJECT: "see", FOR_PURPOSE: "sense", PATIENT: "visual thing"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"627d-87b0-4a4a-7cad", AGENT_OBJECT: "see", FOR_PURPOSE: "sense", PATIENT: "visual thing"]
+
+	// CENTRAL         USEDFOR: sensory organs are used for sensing     (9bdd-4aab-178f-0873) [ AGENT_OBJECT:"sensory organ", FOR_PURPOSE:"sense" ]
+	//row autoRow14 = [UUID:"9bdd-4aab-178f-0873", AGENT_OBJECT: "sensory organ", FOR_PURPOSE: "sense"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"9bdd-4aab-178f-0873", AGENT_OBJECT: "sensory organ", FOR_PURPOSE: "sense"]
+
+	// CENTRAL         PARTOF: a retina is part of an eye for sensing light     (b526-c089-192f-6567) [ PART:"retina", QUANTIFIER1:"be", WHOLE:"eye", FOR_PURPOSE:"sense light" ]
+	//row autoRow15 = [UUID:"b526-c089-192f-6567", PART: "retina", QUANTIFIER1: "be", WHOLE: "eye", FOR_PURPOSE: "sense light"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"b526-c089-192f-6567", PART: "retina", QUANTIFIER1: "be", WHOLE: "eye", FOR_PURPOSE: "sense light"]
+
+	// CENTRAL         IFTHEN: when light enters the eye through the pupil , that light falls on the retina     (62fc-9a63-27db-7b46) [ THING:"light", ACTION1:"enter", OBJECT_PATIENT1:"eye", SCOPE1B:"through pupil", ACTOR_AGENT_PROCESS2:"light", ACTION3:"fall on", OBJECT_PROPERTY3:"retina" ]
+	//row autoRow16 = [UUID:"62fc-9a63-27db-7b46", THING: "light", ACTION1: "enter", OBJECT_PATIENT1: "eye", SCOPE1B: "through pupil", ACTOR_AGENT_PROCESS2: "light", ACTION3: "fall on", OBJECT_PROPERTY3: "retina"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"62fc-9a63-27db-7b46", THING: "light", ACTION1: "enter", OBJECT_PATIENT1: "eye", SCOPE1B: "through pupil", ACTOR_AGENT_PROCESS2: "light", ACTION3: "fall on", OBJECT_PROPERTY3: "retina"]
+
+	// LEXGLUE         SYNONYMY: sight means to see     (a6d5-5b11-21f7-80bd) [ X1:"sight", ACTION2:"see" ]
+	//row autoRow17 = [UUID:"a6d5-5b11-21f7-80bd", X1: "sight", ACTION2: "see"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"a6d5-5b11-21f7-80bd", X1: "sight", ACTION2: "see"]
+
+	// LEXGLUE         SYNONYMY: visible means able to be seen     (be45-3cb8-edbc-dd56) [ X1:"visible", ACTION2:"able be see" ]
+	//row autoRow18 = [UUID:"be45-3cb8-edbc-dd56", X1: "visible", ACTION2: "able be see"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"be45-3cb8-edbc-dd56", X1: "visible", ACTION2: "able be see"]
+
+	// LEXGLUE         SYNONYMY: sight means vision     (9150-2d08-9c54-5af3) [ X1:"sight", X2:"vision" ]
+	//row autoRow19 = [UUID:"9150-2d08-9c54-5af3", X1: "sight", X2: "vision"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"9150-2d08-9c54-5af3", X1: "sight", X2: "vision"]
+
+endinferencepattern

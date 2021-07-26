@@ -1,0 +1,88 @@
+// Automatically converted pattern
+inferencepattern CEL_DISTANCES_Heat_from_Sun_by_Distance
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as the distance from the sun increases , the temperature of the planet will decrease     (8b4a-4514-151c-a7b4) [ QUANTITY_MEASURE1:"distance from", AGENT_ATTRIBUTE1:"sun", CHANGE1:"increase", QUANTITY_MEASURE2:"temperature of", AGENT_ATTRIBUTE2:"planet", CHANGE2:"decrease" ]
+	//  Notes: the opposite condition can be populated 
+	//row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "distance from", AGENT_ATTRIBUTE1: "sun", CHANGE1: "increase", QUANTITY_MEASURE2: "temperature of", AGENT_ATTRIBUTE2: "planet", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "distance from", AGENT_ATTRIBUTE1: "sun", CHANGE1: "increase", QUANTITY_MEASURE2: "temperature of", AGENT_ATTRIBUTE2: "planet", CHANGE2: "decrease"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: cold means low in temperature     (cf2a-6257-0c5c-7445) [ THING:"cold", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//        HINTROW hot means high in heat energy ; temperature     (9ff8-543c-2f35-5d3f) [ THING:"hot", VALUE:"high", ATTRIBUTE:"heat energy;temperature" ]
+	//row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "temperature"]
+
+	// CENTRALSW      (OPTIONAL) CHANGE: boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy     (a0b2-a45f-01e1-4bf4) [ PROCESS_NAME:"boil;evaporate", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"gas", BY_THROUGH_HOW:"increase heat energy" ]
+	//        HINTROW melting means matter ; a substance changes from a solid into a liquid by increasing heat energy     (6abc-4443-f672-9a97) [ PROCESS_NAME:"melt", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"solid", INTO:"liquid", BY_THROUGH_HOW:"increase heat energy" ]
+	//row *autoRow2 = [TABLE:"CHANGE", ACTOR_WHO: "matt", VERB: "change", BY_THROUGH_HOW: "increase heat energy"] //OVER-CONSTR.
+	row *autoRow2 = [TABLE:"CHANGE", ACTOR_WHO: "matt", VERB: "change", BY_THROUGH_HOW: "increase heat energy"]
+
+	// GROUNDING       KINDOF: a planet is a kind of celestial object ; body     (22a2-1029-702e-a29a) [ HYPONYM:"planet", SCOPE1:"celestial", HYPERNYM:"object;body" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "planet", SCOPE1: "celestial", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "planet", SCOPE1: "celestial", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: a star is a kind of celestial object ; celestial body     (dbe8-e776-f804-99a0) [ HYPONYM:"star", HYPERNYM:"celestial object;celestial body" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "star", HYPERNYM: "celestial object"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "star", HYPERNYM: "celestial object"]
+
+	// GROUNDING       KINDOF: Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//        HINTROW Mars is a kind of planet     (1fb6-af63-74de-86fd) [ HYPONYM:"mar", HYPERNYM:"planet" ]
+	//        HINTROW Mercury is a kind of planet     (106b-d671-313e-b596) [ HYPONYM:"mercury", HYPERNYM:"planet" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPONYM: "earth", HYPERNYM: "planet"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "planet"]
+
+	// GROUNDING       KINDOF: the Sun is a kind of star     (af26-8083-b908-7d3b) [ HYPONYM:"sun", HYPERNYM:"star" ]
+	//row autoRow6 = [TABLE:"KINDOF", HYPONYM: "sun", HYPERNYM: "star"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPONYM: "sun", HYPERNYM: "star"]
+
+	// GROUNDING       KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//row autoRow7 = [TABLE:"KINDOF", HYPONYM: "water", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow7 = [TABLE:"KINDOF", HYPONYM: "water", HYPERNYM: "substance"]
+
+	// CENTRAL         TRANSFER: the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight     (a3c3-47f1-32ba-5c7f) [ ACTOR_WHO:"sun", VERB:"transfer", WHAT:"solar energy;light energy;heat energy", DESTINATION:"planet;earth", BY_THROUGH_HOW:"sunlight" ]
+	//row autoRow8 = [UUID:"a3c3-47f1-32ba-5c7f", ACTOR_WHO: "sun", VERB: "transfer", WHAT: "solar energy", DESTINATION: "planet", BY_THROUGH_HOW: "sunlight"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"a3c3-47f1-32ba-5c7f", ACTOR_WHO: "sun", VERB: "transfer", WHAT: "solar energy", DESTINATION: "planet", BY_THROUGH_HOW: "sunlight"]
+
+	// CENTRAL         CAUSE: the distance between the Sun and Earth causes liquid water to be able to exist on Earth     (0285-a0b4-8c82-afce) [ CONDITION_AGENT_OBJECT:"distance", SCOPE1:"between sun earth", RESULT_AGENT:"liquid water", RESULT_VERB:"be able exist", SCOPE2:"on earth" ]
+	//row autoRow9 = [UUID:"0285-a0b4-8c82-afce", CONDITION_AGENT_OBJECT: "distance", SCOPE1: "between sun earth", RESULT_AGENT: "liquid water", RESULT_VERB: "be able exist", SCOPE2: "on earth"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"0285-a0b4-8c82-afce", CONDITION_AGENT_OBJECT: "distance", SCOPE1: "between sun earth", RESULT_AGENT: "liquid water", RESULT_VERB: "be able exist", SCOPE2: "on earth"]
+
+	// CENTRAL         IFTHEN: if an object ; a substance ; a location absorbs solar energy then that object ; that substance will increase in temperature     (9554-47d7-c095-1df7) [ THING:"object;substance;locate", ACTION1:"absorb", OBJECT_PATIENT1:"solar energy", ACTOR_AGENT_PROCESS2:"that object;that substance", ACTION3:"increase", OBJECT_PROPERTY3:"in temperature" ]
+	//row autoRow10 = [UUID:"9554-47d7-c095-1df7", THING: "object", ACTION1: "absorb", OBJECT_PATIENT1: "solar energy", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "increase", OBJECT_PROPERTY3: "in temperature"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"9554-47d7-c095-1df7", THING: "object", ACTION1: "absorb", OBJECT_PATIENT1: "solar energy", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "increase", OBJECT_PROPERTY3: "in temperature"]
+
+	// CENTRAL         CAUSE: absorbing sunlight causes objects to heat     (dcbe-9523-4529-c54e) [ CONDITION_VERB:"absorb", CONDITION_PATIENT:"sunlight", RESULT_AGENT:"object", RESULT_VERB:"heat" ]
+	//row autoRow11 = [UUID:"dcbe-9523-4529-c54e", CONDITION_VERB: "absorb", CONDITION_PATIENT: "sunlight", RESULT_AGENT: "object", RESULT_VERB: "heat"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"dcbe-9523-4529-c54e", CONDITION_VERB: "absorb", CONDITION_PATIENT: "sunlight", RESULT_AGENT: "object", RESULT_VERB: "heat"]
+
+	// CENTRAL         SOURCEOF: the sun is a source of radiation ; heat called sunlight     (d247-b029-3aab-0950) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"radiation;heat", NAME:"sunlight" ]
+	//row autoRow12 = [UUID:"d247-b029-3aab-0950", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "radiation", NAME: "sunlight"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"d247-b029-3aab-0950", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "radiation", NAME: "sunlight"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of heat energy     (d753-423d-5ce7-53ce) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"heat energy" ]
+	//row autoRow13 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"]
+
+	// CENTRAL         ACTION: a source of something emits ; produces ; generates ; provides that something     (b877-a58b-f75a-3998) [ AGENT_OBJECT:"source of something", ACTION2:"emit;produce;generate;provide", OBJECT_PROPERTY:"that something" ]
+	//row autoRow14 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"]
+
+	// CENTRAL         SOURCEOF: sunlight produces heat     (2889-3edc-095a-6d6b) [ AGENT:"sunlight", VERB_SOURCEOF_PROVIDE_ETC:"produce", WHAT_IT_PROVIDES:"heat" ]
+	//row autoRow15 = [UUID:"2889-3edc-095a-6d6b", AGENT: "sunlight", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "heat"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"2889-3edc-095a-6d6b", AGENT: "sunlight", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "heat"]
+
+	// LEXGLUE         SYNONYMY: adding heat means increasing temperature     (7d37-b81d-0cf3-9ae0) [ ACTION1:"add", Y1:"heat", ACTION2:"increase", Y2:"temperature" ]
+	//row autoRow16 = [UUID:"7d37-b81d-0cf3-9ae0", ACTION1: "add", Y1: "heat", ACTION2: "increase", Y2: "temperature"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"7d37-b81d-0cf3-9ae0", ACTION1: "add", Y1: "heat", ACTION2: "increase", Y2: "temperature"]
+
+	// LEXGLUE         OPPOSITES: an increase is the opposite of a decrease     (bfdf-b468-ee22-1b60) [ THING_PROPERTY1:"increase", THING_PROPERTY2:"decrease" ]
+	//row autoRow17 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"]
+
+endinferencepattern

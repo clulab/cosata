@@ -1,0 +1,66 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Sun_Gives_energy_to_Earth
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       SOURCEOF: the sun is a source of radiation ; heat called sunlight     (d247-b029-3aab-0950) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"radiation;heat", NAME:"sunlight" ]
+	//        HINTROW the sun is a source of light ; light energy called sunlight     (a538-175f-9223-d117) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"light;light energy", NAME:"sunlight" ]
+	//row autoRow0 = [TABLE:"SOURCEOF", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "heat", NAME: "sunlight"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"SOURCEOF", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "heat", NAME: "sunlight"]
+
+	// GROUNDING       KINDOF: an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//        HINTROW a lake is a kind of body of water     (5d6a-544c-b296-832e) [ HYPONYM:"lake", HYPERNYM:"body of water" ]
+	//        HINTROW a pool is a kind of body of water     (7ebb-7a94-af1e-9fa9) [ HYPONYM:"pool", HYPERNYM:"body of water" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "body of water"]
+
+	// CENTRAL         KINDOF: sunlight is a kind of solar energy     (59d6-9954-ef5e-12b2) [ HYPONYM:"sunlight", HYPERNYM:"solar energy" ]
+	//  Notes: peripheral
+	//row autoRow2 = [UUID:"59d6-9954-ef5e-12b2", HYPONYM: "sunlight", HYPERNYM: "solar energy"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"59d6-9954-ef5e-12b2", HYPONYM: "sunlight", HYPERNYM: "solar energy"]
+
+	// CENTRAL         TRANSFER: the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight     (a3c3-47f1-32ba-5c7f) [ ACTOR_WHO:"sun", VERB:"transfer", WHAT:"solar energy;light energy;heat energy", DESTINATION:"planet;earth", BY_THROUGH_HOW:"sunlight" ]
+	//row autoRow3 = [UUID:"a3c3-47f1-32ba-5c7f", ACTOR_WHO: "sun", VERB: "transfer", WHAT: "solar energy", DESTINATION: "planet", BY_THROUGH_HOW: "sunlight"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"a3c3-47f1-32ba-5c7f", ACTOR_WHO: "sun", VERB: "transfer", WHAT: "solar energy", DESTINATION: "planet", BY_THROUGH_HOW: "sunlight"]
+
+	// CENTRAL         SOURCEOF: the sun is the source of energy for physical cycles on Earth     (bbf1-262a-c774-3f47) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"energy", AGENT_IT_PROVIDES_THING_TO:"physical cycle", SCOPE:"on earth" ]
+	//  Notes: energy for physical cycle
+	//row autoRow4 = [UUID:"bbf1-262a-c774-3f47", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "physical cycle", SCOPE: "on earth"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"bbf1-262a-c774-3f47", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "physical cycle", SCOPE: "on earth"]
+
+	// CENTRAL         SOURCEOF: the sun is the source of energy for life on Earth     (2d69-ee53-599f-9438) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"energy", AGENT_IT_PROVIDES_THING_TO:"life", SCOPE:"on earth" ]
+	//  Notes: energy for life
+	//row autoRow5 = [UUID:"2d69-ee53-599f-9438", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "life", SCOPE: "on earth"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"2d69-ee53-599f-9438", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "life", SCOPE: "on earth"]
+
+	// CENTRAL         EXAMPLES: An example of a physical cycle is the water cycle     (cfea-1ba2-549b-7d10) [ AGENT_OBJECT1:"physical cycle", AGENT_OBJECT2:"water cycle" ]
+	//row autoRow6 = [UUID:"cfea-1ba2-549b-7d10", AGENT_OBJECT1: "physical cycle", AGENT_OBJECT2: "water cycle"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"cfea-1ba2-549b-7d10", AGENT_OBJECT1: "physical cycle", AGENT_OBJECT2: "water cycle"]
+
+	// CENTRAL         ACTION: water absorbs solar energy in the water cycle     (3cac-554a-3149-cd7b) [ AGENT_OBJECT:"water", ACTION2:"absorb", OBJECT_PROPERTY:"solar energy", WHEN_WHERE:"in water cycle" ]
+	//row autoRow7 = [UUID:"3cac-554a-3149-cd7b", AGENT_OBJECT: "water", ACTION2: "absorb", OBJECT_PROPERTY: "solar energy", WHEN_WHERE: "in water cycle"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3cac-554a-3149-cd7b", AGENT_OBJECT: "water", ACTION2: "absorb", OBJECT_PROPERTY: "solar energy", WHEN_WHERE: "in water cycle"]
+
+	// CENTRAL         TRANSFER: energy flows in an ecosystem through food chains     (3825-51d0-5d33-2303) [ ACTOR_WHO:"energy", VERB:"flow", WHAT:"in ecosystem", BY_THROUGH_HOW:"food chain" ]
+	//  Notes: energy flow from the sun through the food chain
+	//row autoRow8 = [UUID:"3825-51d0-5d33-2303", ACTOR_WHO: "energy", VERB: "flow", WHAT: "in ecosystem", BY_THROUGH_HOW: "food chain"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"3825-51d0-5d33-2303", ACTOR_WHO: "energy", VERB: "flow", WHAT: "in ecosystem", BY_THROUGH_HOW: "food chain"]
+
+	// CENTRAL         LOCATIONS: the water cycle occurs on Earth     (0a6a-f5dd-7c73-ed64) [ THING_PROCESS:"water cycle", LOCATION:"earth" ]
+	//row autoRow9 = [UUID:"0a6a-f5dd-7c73-ed64", THING_PROCESS: "water cycle", LOCATION: "earth"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"0a6a-f5dd-7c73-ed64", THING_PROCESS: "water cycle", LOCATION: "earth"]
+
+	// LEXGLUE         SYNONYMY: radiation means radiant energy     (e7e8-9711-1051-9165) [ X1:"radiation", X2:"radiant energy" ]
+	//row autoRow10 = [UUID:"e7e8-9711-1051-9165", X1: "radiation", X2: "radiant energy"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"e7e8-9711-1051-9165", X1: "radiation", X2: "radiant energy"]
+
+	// LEXGLUE         SYNONYMY: solar radiation means solar energy     (ef29-744a-92a8-f884) [ X1:"solar radiation", X2:"solar energy" ]
+	//row autoRow11 = [UUID:"ef29-744a-92a8-f884", X1: "solar radiation", X2: "solar energy"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"ef29-744a-92a8-f884", X1: "solar radiation", X2: "solar energy"]
+
+endinferencepattern

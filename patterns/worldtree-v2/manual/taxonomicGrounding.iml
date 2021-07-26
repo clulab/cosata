@@ -1,0 +1,35 @@
+inferencepattern taxonomicTraversal
+    
+    row row1 = [TABLE:"KINDOF", HYPONYM:<x>, HYPERNYM: <y>]
+    row row2 = [TABLE:"KINDOF", HYPONYM:<y>, HYPERNYM: <z>]
+        
+endinferencepattern
+
+
+inferencepattern partOfKindOf1
+    
+    row row1 = [TABLE:"KINDOF", HYPONYM:<x>, HYPERNYM: <y>]
+    row row2 = [TABLE:"PARTOF", PART:<y>, WHOLE: <z>]
+        
+endinferencepattern
+
+inferencepattern partOfKindOf2
+    
+    row row1 = [TABLE:"KINDOF", HYPONYM:<x>, HYPERNYM: <y>]
+    row row2 = [TABLE:"PARTOF", PART:<z>, WHOLE: <y>]
+        
+endinferencepattern
+
+inferencepattern partOfKindOf3
+    
+    row row1 = [TABLE:"KINDOF", HYPONYM:<x>, HYPERNYM: <y>]
+    row row2 = [TABLE:"PARTOF", PART:<x>, WHOLE: <z>]
+        
+endinferencepattern
+
+inferencepattern partOfKindOf4
+    
+    row row1 = [TABLE:"KINDOF", HYPONYM:<x>, HYPERNYM: <y>]
+    row row2 = [TABLE:"PARTOF", PART:<z>, WHOLE: <x>]
+        
+endinferencepattern

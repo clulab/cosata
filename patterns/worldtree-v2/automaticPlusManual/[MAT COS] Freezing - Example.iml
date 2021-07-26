@@ -1,0 +1,83 @@
+// Automatically converted pattern
+inferencepattern MAT_COS_Freezing_Example
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE: desublimation ; deposition means matter ; a substance changes from a gas into a solid by decreasing heat energy     (3002-4c80-039d-2114) [ PROCESS_NAME:"desublimation;deposition", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"gas", INTO:"solid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//        HINTROW freezing means matter ; a substance changes from a liquid into a solid by decreasing heat energy     (f03c-decc-030f-b860) [ PROCESS_NAME:"freeze", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"solid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//row autoRow0 = [TABLE:"CHANGE", ACTOR_WHO: "matt", VERB: "change", INTO: "solid", BY_THROUGH_HOW: "decrease heat energy"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CHANGE", ACTOR_WHO: "matt", VERB: "change", INTO: "solid", BY_THROUGH_HOW: "decrease heat energy"]
+
+	// CENTRALSW       CHANGE-VEC: cooling ; colder means removing ; reducing ; decreasing heat ; temperature     (3a9b-81b5-1a3a-40a0) [ PROCESS_NAME_ACTION:"cool;cold", DIRECTION:"remove;reduce;decrease", PATIENT:"heat;temperature" ]
+	//        HINTROW cooling means temperature decreases     (b71d-3add-69c0-1d03) [ PROCESS_NAME_ACTION:"cool", AGENT_OBJECT:"temperature", DIRECTION:"decrease" ]
+	//row autoRow1 = [TABLE:"CHANGE-VEC", PROCESS_NAME_ACTION: <cold_0>, DIRECTION: "decrease", PATIENT: "heat"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CHANGE-VEC", PROCESS_NAME_ACTION: <cold_0>, DIRECTION: "decrease"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: colder ; cooler means lower in temperature     (246e-dd6e-6e09-988a) [ THING:"cold;cool", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//        HINTROW cold means low in temperature     (cf2a-6257-0c5c-7445) [ THING:"cold", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: <cold_0>, VALUE: "low", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: <cold_0>, VALUE: "low", ATTRIBUTE: "temperature"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C     (e474-2a11-6e7b-ae8b) [ MATERIAL_NAME:"water", STATEOFMATTER:"gas", FORM_NAME:"water vapor;steam", LOWER_BOUND:"373;212;100", UPPER_BOUND:"100000000000", UNITS:"k;f;c" ]
+	//row autoRow3 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C     (4a5a-9115-28a9-b97b) [ MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice", LOWER_BOUND:"0;-459;-273;459;273", UPPER_BOUND:"273;32;0", UNITS:"k;f;c" ]
+	//row autoRow4 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as altitude increases , the temperature of the air will decrease in the troposphere     (335f-491e-b6bf-7684) [ QUANTITY_MEASURE1:"altitude", CHANGE1:"increase", QUANTITY_MEASURE2:"temperature", AGENT_ATTRIBUTE2:"of air", CHANGE2:"decrease", SCOPE2B:"in troposphere" ]
+	//row autoRow5 = [UUID:"335f-491e-b6bf-7684", QUANTITY_MEASURE1: "altitude", CHANGE1: "increase", QUANTITY_MEASURE2: "temperature", AGENT_ATTRIBUTE2: "of air", CHANGE2: "decrease", SCOPE2B: "in troposphere"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"335f-491e-b6bf-7684", QUANTITY_MEASURE1: "altitude", CHANGE1: "increase", QUANTITY_MEASURE2: "temperature", AGENT_ATTRIBUTE2: "of air", CHANGE2: "decrease", SCOPE2B: "in troposphere"]
+
+	// CENTRAL         EXAMPLES: An example of moisture is water vapor in the atmosphere     (e7b5-57e9-5c3c-fe3e) [ AGENT_OBJECT1:"moisture", AGENT_OBJECT2:"water vapor", SCOPE:"in atmosphere" ]
+	//  Notes: water vapor in the air
+	//row autoRow6 = [UUID:"e7b5-57e9-5c3c-fe3e", AGENT_OBJECT1: "moisture", AGENT_OBJECT2: "water vapor", SCOPE: "in atmosphere"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"e7b5-57e9-5c3c-fe3e", AGENT_OBJECT1: "moisture", AGENT_OBJECT2: "water vapor", SCOPE: "in atmosphere"]
+
+	// CENTRAL         LOCATIONS: sometimes ice crystals are found in the atmosphere     (260c-597a-b511-72d7) [ QUANTIFIER:"sometimes", THING_PROCESS:"ice crystal", LOCATION:"atmosphere" ]
+	//  Notes: ice crystals in the air
+	//row autoRow7 = [UUID:"260c-597a-b511-72d7", QUANTIFIER: "sometimes", THING_PROCESS: "ice crystal", LOCATION: "atmosphere"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"260c-597a-b511-72d7", QUANTIFIER: "sometimes", THING_PROCESS: "ice crystal", LOCATION: "atmosphere"]
+
+	// CENTRAL         CONTAINS: troposphere contains almost all the water vapor     (218d-6a24-24db-a9dc) [ OBJECT_AGENT:"troposphere", QUANTITY_RANGE:"almost", WHAT_IT_CONTAINS:"water vapor" ]
+	//row autoRow8 = [UUID:"218d-6a24-24db-a9dc", OBJECT_AGENT: "troposphere", QUANTITY_RANGE: "almost", WHAT_IT_CONTAINS: "water vapor"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"218d-6a24-24db-a9dc", OBJECT_AGENT: "troposphere", QUANTITY_RANGE: "almost", WHAT_IT_CONTAINS: "water vapor"]
+
+	// CENTRAL        (OPTIONAL) ACTION: a plane travels through the atmosphere     (7c13-177b-1402-1e61) [ AGENT_OBJECT:"plane", ACTION2:"travel", WHEN_WHERE:"through atmosphere" ]
+	//  Notes: for plane has ice crystals on the window questions
+	//row *autoRow9 = [UUID:"7c13-177b-1402-1e61", AGENT_OBJECT: "plane", ACTION2: "travel", WHEN_WHERE: "through atmosphere"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"7c13-177b-1402-1e61", AGENT_OBJECT: "plane", ACTION2: "travel", WHEN_WHERE: "through atmosphere"]
+
+	// CENTRAL         SUBDIVISION-GENERICSPATIAL: the troposphere is a lower layer of Earth 's atmosphere     (24f8-3e5d-4744-4f42) [ SUBDIVISION:"troposphere", ADJ:"low", TYPE_OF_SUBDIVISION:"layer", WHOLE:"earth atmosphere" ]
+	//row autoRow10 = [UUID:"24f8-3e5d-4744-4f42", SUBDIVISION: "troposphere", ADJ: "low", TYPE_OF_SUBDIVISION: "layer", WHOLE: "earth atmosphere"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"24f8-3e5d-4744-4f42", SUBDIVISION: "troposphere", ADJ: "low", TYPE_OF_SUBDIVISION: "layer", WHOLE: "earth atmosphere"]
+
+	// CENTRAL         MEASUREMENTS: humidity is the amount of water vapor ; moisture in the air ; in the atmosphere     (1c42-416a-fc92-2b03) [ MEASURE:"humidity", QUANTITY_ADJ:"amount of", ATTRIBUTE:"water vapor;moisture", SCOPE:"in air;in atmosphere" ]
+	//row autoRow11 = [UUID:"1c42-416a-fc92-2b03", MEASURE: "humidity", QUANTITY_ADJ: "amount of", ATTRIBUTE: "water vapor", SCOPE: "in air"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"1c42-416a-fc92-2b03", MEASURE: "humidity", QUANTITY_ADJ: "amount of", ATTRIBUTE: "water vapor", SCOPE: "in air"]
+
+	// CENTRAL        (OPTIONAL) USEDFOR: a freezer is used for cooling things     (4ef7-13ee-3d35-8a37) [ AGENT_OBJECT:"freezer", FOR_PURPOSE:"cool", PATIENT:"thing" ]
+	//  Notes: for freezer questions, e.g. put water in a tray and put try into the freezer
+	//row *autoRow12 = [UUID:"4ef7-13ee-3d35-8a37", AGENT_OBJECT: "freezer", FOR_PURPOSE: "cool", PATIENT: "thing"] //OVER-CONSTR.
+	row *autoRow12 = [UUID:"4ef7-13ee-3d35-8a37", AGENT_OBJECT: "freezer", FOR_PURPOSE: "cool", PATIENT: "thing"]
+
+	// CENTRAL        (OPTIONAL) PROP-THINGS: a freezer ; refrigerator is cool ; cold in temperature     (a7e7-4c34-fac1-a502) [ THING:"freezer;refrigerator", VALUE:"cool;cold", ATTRIBUTE:"in temperature" ]
+	//  Notes: for freezer questions, e.g put the water in the freezer
+	//row *autoRow13 = [UUID:"a7e7-4c34-fac1-a502", THING: "freezer", VALUE: <cold_0>, ATTRIBUTE: "in temperature"] //OVER-CONSTR.
+	row *autoRow13 = [UUID:"a7e7-4c34-fac1-a502", THING: "freezer", VALUE: <cold_0>, ATTRIBUTE: "in temperature"]
+
+	// LEXGLUE         SYNONYMY: ice crystals means ice     (7d2c-48ac-99ed-8384) [ X1:"ice crystal", X2:"ice" ]
+	//row autoRow14 = [UUID:"7d2c-48ac-99ed-8384", X1: "ice crystal", X2: "ice"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"7d2c-48ac-99ed-8384", X1: "ice crystal", X2: "ice"]
+
+	// LEXGLUE         SYNONYMY: moisture means liquid ; liquid water     (bffa-0cd0-0745-6d03) [ X1:"moisture", X2:"liquid;liquid water" ]
+	//row autoRow15 = [UUID:"bffa-0cd0-0745-6d03", X1: "moisture", X2: "liquid water"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"bffa-0cd0-0745-6d03", X1: "moisture", X2: "liquid water"]
+
+endinferencepattern

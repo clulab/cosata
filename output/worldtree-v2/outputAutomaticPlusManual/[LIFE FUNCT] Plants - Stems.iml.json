@@ -1,0 +1,1174 @@
+{"patternMatches": [
+{
+	"patternName":"LIFE_FUNCT_Plants_Stems",
+	"matches":[
+		{
+		"uuids": ["65ae-2928-0696-d8a9","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "65ae-2928-0696-d8a9", "rowText": "algae is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["00a7-56fc-3c22-e6f2","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "00a7-56fc-3c22-e6f2", "rowText": "an apple tree is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["7881-6f75-7de9-2722","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7881-6f75-7de9-2722", "rowText": "a bean plant is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["311e-8d88-cde2-860d","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "311e-8d88-cde2-860d", "rowText": "a bush is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["aadb-cb93-3373-eefa","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "aadb-cb93-3373-eefa", "rowText": "a cactus is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["44b1-c2ab-2e0d-e5e5","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "44b1-c2ab-2e0d-e5e5", "rowText": "corn is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["281b-9541-e1c7-6c92","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "281b-9541-e1c7-6c92", "rowText": "crops are a kind of edible plant for eating", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["9a85-698e-680e-5033","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9a85-698e-680e-5033", "rowText": "a fern is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["e337-f5c8-75aa-81b6","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "e337-f5c8-75aa-81b6", "rowText": "a flower is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["9d2f-b39b-3921-a54c","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9d2f-b39b-3921-a54c", "rowText": "grass is a kind of green plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["b7fe-a475-0233-e760","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b7fe-a475-0233-e760", "rowText": "an ivy plant is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ea5f-42f2-93e0-9520","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ea5f-42f2-93e0-9520", "rowText": "a leaf is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["9cf1-bc5a-d350-5541","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9cf1-bc5a-d350-5541", "rowText": "a lemon tree is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ab88-7ab1-d6b7-0e6c","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ab88-7ab1-d6b7-0e6c", "rowText": "a marsh willow herb is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["3952-6327-2a73-a103","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3952-6327-2a73-a103", "rowText": "moss is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["bac2-9c22-0662-4dcd","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bac2-9c22-0662-4dcd", "rowText": "peas are a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["c21a-0408-2a29-4b82","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c21a-0408-2a29-4b82", "rowText": "phytoplankton is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["58d5-0388-b85d-eb4e","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "58d5-0388-b85d-eb4e", "rowText": "sea grass is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["5e64-f4ff-d256-f740","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5e64-f4ff-d256-f740", "rowText": "seaweed is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["2c17-469f-2296-dbee","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2c17-469f-2296-dbee", "rowText": "a seed is a kind of young plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["0ce1-6d50-d5df-3d0e","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0ce1-6d50-d5df-3d0e", "rowText": "a seedling is a kind of young plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ea39-7f33-70ff-69ca","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ea39-7f33-70ff-69ca", "rowText": "a shrub is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["000b-8380-fb97-aee5","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "000b-8380-fb97-aee5", "rowText": "a sunflower is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["929a-8430-6ff0-efa2","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "929a-8430-6ff0-efa2", "rowText": "a tomato plant is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["0d3a-8739-9f42-5e1c","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0d3a-8739-9f42-5e1c", "rowText": "a tree is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["6755-3424-c45b-3c9c","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6755-3424-c45b-3c9c", "rowText": "a vegetable is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["174d-d121-be75-8515","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "174d-d121-be75-8515", "rowText": "a vine is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["1869-0d26-040c-9a3d","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1869-0d26-040c-9a3d", "rowText": "a water lily is a kind of green plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["9ebc-df4f-9e45-4e81","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9ebc-df4f-9e45-4e81", "rowText": "weed is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["0bfb-28c1-017f-39ce","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0bfb-28c1-017f-39ce", "rowText": "snapdragon is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["6f54-6eb9-a5c9-0519","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6f54-6eb9-a5c9-0519", "rowText": "a legume is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2166892","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2166892", "rowText": "acacia is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2166912","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2166912", "rowText": "acorn is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2167488","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2167488", "rowText": "black-eyed susan wildflower is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2167649","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2167649", "rowText": "buckeye tree is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2168511","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2168511", "rowText": "daisy is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2168522","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2168522", "rowText": "dandelion is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2170895","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2170895", "rowText": "maple tree is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2171319","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2171319", "rowText": "morning glory is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2171755","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2171755", "rowText": "oak is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2171851","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2171851", "rowText": "onion is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2171897","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2171897", "rowText": "orange tree is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2172047","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2172047", "rowText": "palm tree is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2172118","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2172118", "rowText": "peach tree is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2172152","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2172152", "rowText": "pea is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2172199","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2172199", "rowText": "pecan tree is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2172339","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2172339", "rowText": "pine tree is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2172930","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2172930", "rowText": "redwood tree is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2173154","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2173154", "rowText": "rise is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2174753","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2174753", "rowText": "wildflower is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2175040","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2175040", "rowText": "fir tree is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2176671","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2176671", "rowText": "bean is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-2176677","6de6-2fbd-0113-0492","26c3-eec4-e1d0-fac5","085c-28bf-bb51-79e6","d534-dac5-f81f-1e26","e448-3228-b949-a107","5740-86a7-4529-25cd","317e-c441-1f21-0244","5708-ce9b-2605-1881","e1d3-5fb3-b1c4-5332","4cdf-2f38-c2ff-daa9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-2176677", "rowText": "soybean is a kind of plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6de6-2fbd-0113-0492", "rowText": "transporting is a kind of function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "26c3-eec4-e1d0-fac5", "rowText": "a plant is a kind of organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d534-dac5-f81f-1e26", "rowText": "a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "e448-3228-b949-a107", "rowText": "a plant stem is the vehicle for transporting water and food from roots to the rest of the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5740-86a7-4529-25cd", "rowText": "a stem is often a part of plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "317e-c441-1f21-0244", "rowText": "a stem is a source of support for a plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5708-ce9b-2605-1881", "rowText": "a stem is used to store water by some plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e1d3-5fb3-b1c4-5332", "rowText": "specialized tissues at the ends of plant stems are used for growing taller by plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4cdf-2f38-c2ff-daa9", "rowText": "special tissues in plants transport food ; water ; minerals throughout the plant", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		}
+	]
+}
+]}
+

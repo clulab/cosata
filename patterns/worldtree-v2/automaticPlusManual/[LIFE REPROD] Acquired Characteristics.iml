@@ -1,0 +1,72 @@
+// Automatically converted pattern
+inferencepattern LIFE_REPROD_Acquired_Characteristics
+
+	// Plain text description
+	description = ""
+
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a dog is a kind of animal     (c963-24b2-f50d-a21d) [ HYPONYM:"dog", HYPERNYM:"animal" ]
+	//        HINTROW a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+    // Heavy enumeration
+    // TODO: Abstract to any kind of living thing?
+	row *autoRow0 = [TABLE:"KINDOF", HYPONYM:<organismName>, HYPERNYM: "animal"]
+
+    // CENTRALSW       PROP-INHERITEDLEARNED: skills are learned characteristics ; behaviors     (856a-1ef6-dd1f-154b) [ AGENT:"skill", INHERITED_LEARNED:"learn" ]
+	//row autoRow7 = [TABLE:"PROP-INHERITEDLEARNED", AGENT: "skill", INHERITED_LEARNED: "learn"] //OVER-CONSTR.
+	row autoRow7 = [TABLE:"PROP-INHERITEDLEARNED", AGENT: <thingLearned>, INHERITED_LEARNED: "learn" || "acquired"]
+
+	// CENTRAL         EXAMPLES: An example of following orders is coming when called     (eb2e-2ea1-4876-dc3f) [ VERB1:"follow", AGENT_OBJECT1:"order", VERB2:"come", SCOPE:"call" ]
+	//row autoRow2 = [UUID:"eb2e-2ea1-4876-dc3f", VERB1: "follow", AGENT_OBJECT1: "order", VERB2: "come", SCOPE: "call"] //OVER-CONSTR.
+	//row autoRow2 = [UUID:"eb2e-2ea1-4876-dc3f", VERB1: "follow", AGENT_OBJECT1: "order", VERB2: "come", SCOPE: "call"]
+
+	// CENTRAL         ACTION: an organism 's environment affects that organism 's acquired characteristics     (298a-b710-adc5-7d76) [ ADJ:"organism", AGENT_OBJECT:"environment", ACTION2:"affect", OBJECT_PROPERTY:"that organism acquire characteristic" ]
+	//  Notes: CORE: environment affects acquired characteristics
+	//row autoRow3 = [UUID:"298a-b710-adc5-7d76", ADJ: "organism", AGENT_OBJECT: "environment", ACTION2: "affect", OBJECT_PROPERTY: "that organism acquire characteristic"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"298a-b710-adc5-7d76", ADJ: "organism", AGENT_OBJECT: "environment", ACTION2: "affect", OBJECT_PROPERTY: "that organism acquire characteristic"]
+
+	// CENTRAL         IFTHEN: if an animal is trained to do something then that something is a learned behavior     (b7e0-eb77-1c54-4642) [ THING:"animal", ACTION1:"train", OBJECT_PROPERTY1:"do something", ACTOR_AGENT_PROCESS2:"that something", OBJECT_PROPERTY3:"learn behavior" ]
+	//row autoRow4 = [UUID:"b7e0-eb77-1c54-4642", THING: "animal", ACTION1: "train", OBJECT_PROPERTY1: "do something", ACTOR_AGENT_PROCESS2: "that something", OBJECT_PROPERTY3: "learn behavior"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"b7e0-eb77-1c54-4642", THING: "animal", ACTION1: "train", OBJECT_PROPERTY1: "do something", ACTOR_AGENT_PROCESS2: "that something", OBJECT_PROPERTY3: "learn behavior"]
+
+	// CENTRAL         DURING: learned behaviors are learned over the lifetime of the animal     (fc8a-8ded-3124-9e6e) [ AGENT:"learn behavior", EVENT:"be learn", TIME:"lifetime", SCOPE:"of animal" ]
+	//  Notes: CORE
+	//row autoRow5 = [UUID:"fc8a-8ded-3124-9e6e", AGENT: "learn behavior", EVENT: "be learn", TIME: "lifetime", SCOPE: "of animal"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"fc8a-8ded-3124-9e6e", AGENT: "learn behavior", EVENT: "be learn", TIME: "lifetime", SCOPE: "of animal"]
+
+	// CENTRAL         KINDOF: a learned characteristic is a kind of acquired characteristic     (ef15-b075-f83c-0d12) [ HYPONYM:"learn characteristic", HYPERNYM:"acquire characteristic" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"ef15-b075-f83c-0d12", HYPONYM: "learn characteristic", HYPERNYM: "acquire characteristic"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"ef15-b075-f83c-0d12", HYPONYM: "learn characteristic", HYPERNYM: "acquire characteristic"]
+
+	// CENTRAL        (OPTIONAL) REQUIRES: skills often require practice     (5069-1790-ca7c-968d) [ OBJECT_AGENT_PROCESS:"skill", QUANTIFIER:"often", VERB_REQUIRES:"require", ACTION2:"practice" ]
+	//row *autoRow8 = [UUID:"5069-1790-ca7c-968d", OBJECT_AGENT_PROCESS: "skill", QUANTIFIER: "often", VERB_REQUIRES: "require", ACTION2: "practice"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"5069-1790-ca7c-968d", OBJECT_AGENT_PROCESS: "skill", QUANTIFIER: "often", VERB_REQUIRES: "require", ACTION2: "practice"]
+
+	// LEXGLUE         SYNONYMY: following an order means performing an action on command     (4717-6dc2-b3fe-7eb4) [ ACTION1:"follow", Y1:"order", ACTION2:"perform", Y2:"action on command" ]
+	//row autoRow9 = [UUID:"4717-6dc2-b3fe-7eb4", ACTION1: "follow", Y1: "order", ACTION2: "perform", Y2: "action on command"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"4717-6dc2-b3fe-7eb4", ACTION1: "follow", Y1: "order", ACTION2: "perform", Y2: "action on command"]
+
+	// LEXGLUE         OPPOSITES: inherited characteristics are the opposite of learned characteristics ; acquired characteristics     (1ad3-28d4-f347-46a4) [ THING_PROPERTY1:"inherit characteristic", THING_PROPERTY2:"learn characteristic;acquire characteristic" ]
+	//row autoRow10 = [UUID:"1ad3-28d4-f347-46a4", THING_PROPERTY1: "inherit characteristic", THING_PROPERTY2: "learn characteristic"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"1ad3-28d4-f347-46a4", THING_PROPERTY1: "inherit characteristic", THING_PROPERTY2: "learn characteristic"]
+
+endinferencepattern
+
+inferencepattern ExampleKindOf
+
+	// Requirements
+
+    // Either Rows 1A or 1B can be populated, but not both
+    musthaveoromit(<autoRow1A> == "" || <autoRow1B> == "")
+
+	// GROUNDING       KINDOF: hunting ; scavenging is a kind of skill     (dc9f-1fff-15e4-352a) [ HYPONYM:"hunt;scavenge", HYPERNYM:"skill" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "hunt", HYPERNYM: "skill"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: <specificThingLearned>, HYPERNYM: <thingLearned>]
+
+    row *autoRow1A = [TABLE:"EXAMPLES", AGENT_OBJECT1: <specificThingLearned>]
+    row *autoRow1B = [TABLE:"EXAMPLES", AGENT_OBJECT1: <thingLearned>]
+
+endinferencepattern

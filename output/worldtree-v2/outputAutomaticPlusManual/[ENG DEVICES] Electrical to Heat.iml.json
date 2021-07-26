@@ -1,0 +1,1473 @@
+{"patternMatches": [
+{
+	"patternName":"ENG_DEVICES_Electrical_to_Heat",
+	"matches":[
+		{
+		"uuids": ["d259-7bf2-a54b-5195","3d34-b43e-8a7e-07fd","5e4d-6ae2-e556-9200","b5ca-9f64-d6d6-6783","5657-c6bc-e6cd-ae38"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d259-7bf2-a54b-5195", "rowText": "an electric fan is a kind of electrical device for cooling ; ventilation", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"deviceName", "value":"electric fan" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"deviceName", "value":"electric fan" }
+		]
+		},
+		{
+		"uuids": ["106a-0379-0b23-ab7d","3d34-b43e-8a7e-07fd","5e4d-6ae2-e556-9200","b5ca-9f64-d6d6-6783","5657-c6bc-e6cd-ae38"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "106a-0379-0b23-ab7d", "rowText": "an electric toothbrush is a kind of electric device", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"deviceName", "value":"electric toothbrush" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"deviceName", "value":"electric toothbrush" }
+		]
+		},
+		{
+		"uuids": ["2728-2bde-6c00-9dd0","3d34-b43e-8a7e-07fd","5e4d-6ae2-e556-9200","b5ca-9f64-d6d6-6783","5657-c6bc-e6cd-ae38"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2728-2bde-6c00-9dd0", "rowText": "a hand dryer is a kind of electrical device for drying hair", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"deviceName", "value":"hand dry" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"deviceName", "value":"hand dryer" }
+		]
+		},
+		{
+		"uuids": ["a2e1-8d32-c994-cd9c","3d34-b43e-8a7e-07fd","5e4d-6ae2-e556-9200","b5ca-9f64-d6d6-6783","5657-c6bc-e6cd-ae38"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a2e1-8d32-c994-cd9c", "rowText": "a telephone is a kind of electrical device for communication", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"deviceName", "value":"telephone" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"deviceName", "value":"telephone" }
+		]
+		},
+		{
+		"uuids": ["d90c-e983-10c6-9669","3d34-b43e-8a7e-07fd","5e4d-6ae2-e556-9200","b5ca-9f64-d6d6-6783","5657-c6bc-e6cd-ae38"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d90c-e983-10c6-9669", "rowText": "an electric motor is a kind of electrical device", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"deviceName", "value":"electric motor" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"deviceName", "value":"electric motor" }
+		]
+		},
+		{
+		"uuids": ["dc50-7ca8-698c-e81b","3d34-b43e-8a7e-07fd","5e4d-6ae2-e556-9200","b5ca-9f64-d6d6-6783","5657-c6bc-e6cd-ae38"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "dc50-7ca8-698c-e81b", "rowText": "an oven is a kind of electrical device", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"deviceName", "value":"oven" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"deviceName", "value":"oven" }
+		]
+		},
+		{
+		"uuids": ["3d34-b43e-8a7e-07fd","5e4d-6ae2-e556-9200","b5ca-9f64-d6d6-6783","5657-c6bc-e6cd-ae38"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"" }
+		]
+		}
+	]
+},
+{
+	"patternName":"ThingOrDeviceProducesEnergyType",
+	"matches":[
+		{
+		"uuids": ["2728-2bde-6c00-9dd0","2e43-a74f-bca2-5d7f","9e7d-986e-6af1-5ac1"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2728-2bde-6c00-9dd0", "rowText": "a hand dryer is a kind of electrical device for drying hair", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2e43-a74f-bca2-5d7f", "rowText": "a hand dryer produces heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"deviceName", "value":"hand dry" },
+			{ "name":"energyKind", "value":"heat" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"deviceName", "value":"hand dryer" },
+			{ "name":"energyKind", "value":"heat" }
+		]
+		},
+		{
+		"uuids": ["dc50-7ca8-698c-e81b","926d-355a-9b2c-c5d1","9e7d-986e-6af1-5ac1"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "dc50-7ca8-698c-e81b", "rowText": "an oven is a kind of electrical device", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "926d-355a-9b2c-c5d1", "rowText": "an oven is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"deviceName", "value":"oven" },
+			{ "name":"energyKind", "value":"heat" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"deviceName", "value":"oven" },
+			{ "name":"energyKind", "value":"heat" }
+		]
+		},
+		{
+		"uuids": ["c6c3-2053-aaf7-86fe","b5ca-9f64-d6d6-6783"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"battery" },
+			{ "name":"energyKind", "value":"electric energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"battery" },
+			{ "name":"energyKind", "value":"electrical energy" }
+		]
+		},
+		{
+		"uuids": ["887f-3af4-3e07-807d","f742-384b-744c-10a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "887f-3af4-3e07-807d", "rowText": "a candle is a source of light when it is burned", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"candle" },
+			{ "name":"energyKind", "value":"light" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"candle" },
+			{ "name":"energyKind", "value":"light" }
+		]
+		},
+		{
+		"uuids": ["4aa8-45fb-6589-f574","9e7d-986e-6af1-5ac1"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4aa8-45fb-6589-f574", "rowText": "a car engine is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"car engine" },
+			{ "name":"energyKind", "value":"heat" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"car engine" },
+			{ "name":"energyKind", "value":"heat" }
+		]
+		},
+		{
+		"uuids": ["647c-26b4-292b-4c96","b5ca-9f64-d6d6-6783"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "647c-26b4-292b-4c96", "rowText": "a complete electrical circuit is a source of electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"electric circuit" },
+			{ "name":"energyKind", "value":"electric energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"electrical circuit" },
+			{ "name":"energyKind", "value":"electrical energy" }
+		]
+		},
+		{
+		"uuids": ["891f-4f5c-91a2-bd31","9e7d-986e-6af1-5ac1"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"fire" },
+			{ "name":"energyKind", "value":"heat" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"fire" },
+			{ "name":"energyKind", "value":"heat" }
+		]
+		},
+		{
+		"uuids": ["891f-4f5c-91a2-bd31","f742-384b-744c-10a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"fire" },
+			{ "name":"energyKind", "value":"light" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"fire" },
+			{ "name":"energyKind", "value":"light" }
+		]
+		},
+		{
+		"uuids": ["0e96-d216-e3de-ce65","f742-384b-744c-10a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"flashlight" },
+			{ "name":"energyKind", "value":"light" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"flashlight" },
+			{ "name":"energyKind", "value":"light" }
+		]
+		},
+		{
+		"uuids": ["3301-3fc5-5e6e-a711","TEMPGEN-1261152"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3301-3fc5-5e6e-a711", "rowText": "flowers are a source of fruit", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1261152", "rowText": "fruit is a kind of chemical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"flower" },
+			{ "name":"energyKind", "value":"fruit" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"flowers" },
+			{ "name":"energyKind", "value":"fruit" }
+		]
+		},
+		{
+		"uuids": ["3301-3fc5-5e6e-a711","TEMPGEN-1278477"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3301-3fc5-5e6e-a711", "rowText": "flowers are a source of fruit", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1278477", "rowText": "fruit is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"flower" },
+			{ "name":"energyKind", "value":"fruit" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"flowers" },
+			{ "name":"energyKind", "value":"fruit" }
+		]
+		},
+		{
+		"uuids": ["3301-3fc5-5e6e-a711","TEMPGEN-1278485"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3301-3fc5-5e6e-a711", "rowText": "flowers are a source of fruit", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1278485", "rowText": "fruit is a kind of potential energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"flower" },
+			{ "name":"energyKind", "value":"fruit" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"flowers" },
+			{ "name":"energyKind", "value":"fruit" }
+		]
+		},
+		{
+		"uuids": ["694b-d9ec-8c65-5a6a","c457-baf0-ed17-9213"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "694b-d9ec-8c65-5a6a", "rowText": "green plants provide food for themselves ; animals ; consumers by performing photosynthesis", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c457-baf0-ed17-9213", "rowText": "food is a kind of chemical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plant" },
+			{ "name":"energyKind", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plants" },
+			{ "name":"energyKind", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["694b-d9ec-8c65-5a6a","TEMPGEN-1260848"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "694b-d9ec-8c65-5a6a", "rowText": "green plants provide food for themselves ; animals ; consumers by performing photosynthesis", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1260848", "rowText": "food is a kind of potential energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plant" },
+			{ "name":"energyKind", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plants" },
+			{ "name":"energyKind", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["694b-d9ec-8c65-5a6a","TEMPGEN-1260853"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "694b-d9ec-8c65-5a6a", "rowText": "green plants provide food for themselves ; animals ; consumers by performing photosynthesis", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1260853", "rowText": "food is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plant" },
+			{ "name":"energyKind", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plants" },
+			{ "name":"energyKind", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["2e43-a74f-bca2-5d7f","9e7d-986e-6af1-5ac1"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2e43-a74f-bca2-5d7f", "rowText": "a hand dryer produces heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"hand dry" },
+			{ "name":"energyKind", "value":"heat" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"hand dryer" },
+			{ "name":"energyKind", "value":"heat" }
+		]
+		},
+		{
+		"uuids": ["945f-acde-29f3-d573","9e7d-986e-6af1-5ac1"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "945f-acde-29f3-d573", "rowText": "a hot plate is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"hot plate" },
+			{ "name":"energyKind", "value":"heat" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"hot plate" },
+			{ "name":"energyKind", "value":"heat" }
+		]
+		},
+		{
+		"uuids": ["bdf8-fbda-ff94-54f5","9e7d-986e-6af1-5ac1"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bdf8-fbda-ff94-54f5", "rowText": "a hot substance is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"substance" },
+			{ "name":"energyKind", "value":"heat" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"substance" },
+			{ "name":"energyKind", "value":"heat" }
+		]
+		},
+		{
+		"uuids": ["8f2c-46a2-91be-8eae","TEMPGEN-1266377"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "8f2c-46a2-91be-8eae", "rowText": "lightning is the source of thunder", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1266377", "rowText": "thunder is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"lightning" },
+			{ "name":"energyKind", "value":"thunder" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"lightning" },
+			{ "name":"energyKind", "value":"thunder" }
+		]
+		},
+		{
+		"uuids": ["8f2c-46a2-91be-8eae","TEMPGEN-1266387"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "8f2c-46a2-91be-8eae", "rowText": "lightning is the source of thunder", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1266387", "rowText": "thunder is a kind of sound energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"lightning" },
+			{ "name":"energyKind", "value":"thunder" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"lightning" },
+			{ "name":"energyKind", "value":"thunder" }
+		]
+		},
+		{
+		"uuids": ["9f23-854a-7dc0-c22e","8f4b-dcdb-2be5-9423"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9f23-854a-7dc0-c22e", "rowText": "motion is a source of kinetic energy in an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"move" },
+			{ "name":"energyKind", "value":"kinetic energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"motion" },
+			{ "name":"energyKind", "value":"kinetic energy" }
+		]
+		},
+		{
+		"uuids": ["9f23-854a-7dc0-c22e","TEMPGEN-1269288"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9f23-854a-7dc0-c22e", "rowText": "motion is a source of kinetic energy in an object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1269288", "rowText": "kinetic energy is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"move" },
+			{ "name":"energyKind", "value":"kinetic energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"motion" },
+			{ "name":"energyKind", "value":"kinetic energy" }
+		]
+		},
+		{
+		"uuids": ["f6ad-39ca-e8e1-b1d7","1980-256d-b685-846c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f6ad-39ca-e8e1-b1d7", "rowText": "musical instruments make sound when they are played", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1980-256d-b685-846c", "rowText": "sound is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"musical instrument" },
+			{ "name":"energyKind", "value":"sound" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"musical instruments" },
+			{ "name":"energyKind", "value":"sound" }
+		]
+		},
+		{
+		"uuids": ["f6ad-39ca-e8e1-b1d7","7726-d9fd-f431-db04"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f6ad-39ca-e8e1-b1d7", "rowText": "musical instruments make sound when they are played", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "7726-d9fd-f431-db04", "rowText": "sound is a kind of sound energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"musical instrument" },
+			{ "name":"energyKind", "value":"sound" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"musical instruments" },
+			{ "name":"energyKind", "value":"sound" }
+		]
+		},
+		{
+		"uuids": ["c491-9f0f-8947-cd1b","9e7d-986e-6af1-5ac1"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c491-9f0f-8947-cd1b", "rowText": "natural gas is a source of heat by burning", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"nature gas" },
+			{ "name":"energyKind", "value":"heat" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"natural gas" },
+			{ "name":"energyKind", "value":"heat" }
+		]
+		},
+		{
+		"uuids": ["926d-355a-9b2c-c5d1","9e7d-986e-6af1-5ac1"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "926d-355a-9b2c-c5d1", "rowText": "an oven is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"oven" },
+			{ "name":"energyKind", "value":"heat" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"oven" },
+			{ "name":"energyKind", "value":"heat" }
+		]
+		},
+		{
+		"uuids": ["a9fc-ec58-9496-d635","c457-baf0-ed17-9213"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "a9fc-ec58-9496-d635", "rowText": "photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c457-baf0-ed17-9213", "rowText": "food is a kind of chemical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"photosynthesis" },
+			{ "name":"energyKind", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"photosynthesis" },
+			{ "name":"energyKind", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["a9fc-ec58-9496-d635","TEMPGEN-1260848"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "a9fc-ec58-9496-d635", "rowText": "photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1260848", "rowText": "food is a kind of potential energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"photosynthesis" },
+			{ "name":"energyKind", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"photosynthesis" },
+			{ "name":"energyKind", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["a9fc-ec58-9496-d635","TEMPGEN-1260853"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "a9fc-ec58-9496-d635", "rowText": "photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1260853", "rowText": "food is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"photosynthesis" },
+			{ "name":"energyKind", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"photosynthesis" },
+			{ "name":"energyKind", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["cfb3-f3ae-f0d8-b6ca","TEMPGEN-1261152"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cfb3-f3ae-f0d8-b6ca", "rowText": "plants are the source of fruit", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1261152", "rowText": "fruit is a kind of chemical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plant" },
+			{ "name":"energyKind", "value":"fruit" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plants" },
+			{ "name":"energyKind", "value":"fruit" }
+		]
+		},
+		{
+		"uuids": ["cfb3-f3ae-f0d8-b6ca","TEMPGEN-1278477"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cfb3-f3ae-f0d8-b6ca", "rowText": "plants are the source of fruit", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1278477", "rowText": "fruit is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plant" },
+			{ "name":"energyKind", "value":"fruit" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plants" },
+			{ "name":"energyKind", "value":"fruit" }
+		]
+		},
+		{
+		"uuids": ["cfb3-f3ae-f0d8-b6ca","TEMPGEN-1278485"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cfb3-f3ae-f0d8-b6ca", "rowText": "plants are the source of fruit", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1278485", "rowText": "fruit is a kind of potential energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plant" },
+			{ "name":"energyKind", "value":"fruit" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plants" },
+			{ "name":"energyKind", "value":"fruit" }
+		]
+		},
+		{
+		"uuids": ["bef6-e915-46ee-d0dd","TEMPGEN-1268303"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bef6-e915-46ee-d0dd", "rowText": "plants are the source of spices", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1268303", "rowText": "spice is a kind of chemical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plant" },
+			{ "name":"energyKind", "value":"spice" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plants" },
+			{ "name":"energyKind", "value":"spices" }
+		]
+		},
+		{
+		"uuids": ["bef6-e915-46ee-d0dd","TEMPGEN-1284883"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bef6-e915-46ee-d0dd", "rowText": "plants are the source of spices", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1284883", "rowText": "spice is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plant" },
+			{ "name":"energyKind", "value":"spice" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plants" },
+			{ "name":"energyKind", "value":"spices" }
+		]
+		},
+		{
+		"uuids": ["bef6-e915-46ee-d0dd","TEMPGEN-1284887"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bef6-e915-46ee-d0dd", "rowText": "plants are the source of spices", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1284887", "rowText": "spice is a kind of potential energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plant" },
+			{ "name":"energyKind", "value":"spice" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plants" },
+			{ "name":"energyKind", "value":"spices" }
+		]
+		},
+		{
+		"uuids": ["41f9-05ef-9272-1100","9e7d-986e-6af1-5ac1"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "41f9-05ef-9272-1100", "rowText": "a radiator is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"radiator" },
+			{ "name":"energyKind", "value":"heat" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"radiator" },
+			{ "name":"energyKind", "value":"heat" }
+		]
+		},
+		{
+		"uuids": ["55b7-97a0-0554-156d","9e7d-986e-6af1-5ac1"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "55b7-97a0-0554-156d", "rowText": "a hot ; warm something is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"something" },
+			{ "name":"energyKind", "value":"heat" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"something" },
+			{ "name":"energyKind", "value":"heat" }
+		]
+		},
+		{
+		"uuids": ["d567-d49e-293e-95bf","f742-384b-744c-10a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d567-d49e-293e-95bf", "rowText": "a star is a source of light ; light energy through nuclear reactions", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"star" },
+			{ "name":"energyKind", "value":"light" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"star" },
+			{ "name":"energyKind", "value":"light" }
+		]
+		},
+		{
+		"uuids": ["d59b-bac8-e191-05be","9e7d-986e-6af1-5ac1"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d59b-bac8-e191-05be", "rowText": "a stove generates heat for cooking usually", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"stave" },
+			{ "name":"energyKind", "value":"heat" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"stove" },
+			{ "name":"energyKind", "value":"heat" }
+		]
+		},
+		{
+		"uuids": ["a538-175f-9223-d117","f742-384b-744c-10a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "a538-175f-9223-d117", "rowText": "the sun is a source of light ; light energy called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"sun" },
+			{ "name":"energyKind", "value":"light" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"sun" },
+			{ "name":"energyKind", "value":"light" }
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","9e7d-986e-6af1-5ac1"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"sun" },
+			{ "name":"energyKind", "value":"heat" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"sun" },
+			{ "name":"energyKind", "value":"heat" }
+		]
+		},
+		{
+		"uuids": ["1ed3-919d-4a4c-1be7","4849-d977-c75a-e8fb"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4849-d977-c75a-e8fb", "rowText": "solar energy is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"sun" },
+			{ "name":"energyKind", "value":"solar energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"sun" },
+			{ "name":"energyKind", "value":"solar energy" }
+		]
+		},
+		{
+		"uuids": ["1ed3-919d-4a4c-1be7","89b7-8583-941a-df9d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "89b7-8583-941a-df9d", "rowText": "solar energy is a kind of heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"sun" },
+			{ "name":"energyKind", "value":"solar energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"sun" },
+			{ "name":"energyKind", "value":"solar energy" }
+		]
+		},
+		{
+		"uuids": ["2889-3edc-095a-6d6b","9e7d-986e-6af1-5ac1"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2889-3edc-095a-6d6b", "rowText": "sunlight produces heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"sunlight" },
+			{ "name":"energyKind", "value":"heat" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"sunlight" },
+			{ "name":"energyKind", "value":"heat" }
+		]
+		},
+		{
+		"uuids": ["b02a-dae3-93ce-c2b7","c457-baf0-ed17-9213"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b02a-dae3-93ce-c2b7", "rowText": "a tree is a source of shelter ; food for birds ; animals in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c457-baf0-ed17-9213", "rowText": "food is a kind of chemical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"tree" },
+			{ "name":"energyKind", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"tree" },
+			{ "name":"energyKind", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["b02a-dae3-93ce-c2b7","TEMPGEN-1260848"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b02a-dae3-93ce-c2b7", "rowText": "a tree is a source of shelter ; food for birds ; animals in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1260848", "rowText": "food is a kind of potential energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"tree" },
+			{ "name":"energyKind", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"tree" },
+			{ "name":"energyKind", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["b02a-dae3-93ce-c2b7","TEMPGEN-1260853"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b02a-dae3-93ce-c2b7", "rowText": "a tree is a source of shelter ; food for birds ; animals in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1260853", "rowText": "food is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"tree" },
+			{ "name":"energyKind", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"tree" },
+			{ "name":"energyKind", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["35d8-b64d-a726-96c8","TEMPGEN-1266125"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "35d8-b64d-a726-96c8", "rowText": "a producer is a source of sugar ; food energy in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1266125", "rowText": "sugar is a kind of chemical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"producer" },
+			{ "name":"energyKind", "value":"sugar" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"producer" },
+			{ "name":"energyKind", "value":"sugar" }
+		]
+		},
+		{
+		"uuids": ["35d8-b64d-a726-96c8","TEMPGEN-1283194"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "35d8-b64d-a726-96c8", "rowText": "a producer is a source of sugar ; food energy in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1283194", "rowText": "sugar is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"producer" },
+			{ "name":"energyKind", "value":"sugar" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"producer" },
+			{ "name":"energyKind", "value":"sugar" }
+		]
+		},
+		{
+		"uuids": ["35d8-b64d-a726-96c8","TEMPGEN-1283201"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "35d8-b64d-a726-96c8", "rowText": "a producer is a source of sugar ; food energy in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1283201", "rowText": "sugar is a kind of potential energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"producer" },
+			{ "name":"energyKind", "value":"sugar" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"producer" },
+			{ "name":"energyKind", "value":"sugar" }
+		]
+		},
+		{
+		"uuids": ["130f-5baf-16d0-3283","c457-baf0-ed17-9213"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "130f-5baf-16d0-3283", "rowText": "green algae are a source of food for fungi in a lichen", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c457-baf0-ed17-9213", "rowText": "food is a kind of chemical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"green alga" },
+			{ "name":"energyKind", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"green algae" },
+			{ "name":"energyKind", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["130f-5baf-16d0-3283","TEMPGEN-1260848"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "130f-5baf-16d0-3283", "rowText": "green algae are a source of food for fungi in a lichen", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1260848", "rowText": "food is a kind of potential energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"green alga" },
+			{ "name":"energyKind", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"green algae" },
+			{ "name":"energyKind", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["130f-5baf-16d0-3283","TEMPGEN-1260853"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "130f-5baf-16d0-3283", "rowText": "green algae are a source of food for fungi in a lichen", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1260853", "rowText": "food is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"green alga" },
+			{ "name":"energyKind", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"green algae" },
+			{ "name":"energyKind", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["cd91-ad1d-4230-cb44","b043-79cc-a77e-e968"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cd91-ad1d-4230-cb44", "rowText": "gasoline is a source of chemical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "b043-79cc-a77e-e968", "rowText": "chemical energy is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"gasoline" },
+			{ "name":"energyKind", "value":"chemical energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"gasoline" },
+			{ "name":"energyKind", "value":"chemical energy" }
+		]
+		},
+		{
+		"uuids": ["cd91-ad1d-4230-cb44","306b-fdd7-ee4f-c35e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cd91-ad1d-4230-cb44", "rowText": "gasoline is a source of chemical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "306b-fdd7-ee4f-c35e", "rowText": "chemical energy is a kind of potential energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"gasoline" },
+			{ "name":"energyKind", "value":"chemical energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"gasoline" },
+			{ "name":"energyKind", "value":"chemical energy" }
+		]
+		},
+		{
+		"uuids": ["5bf0-3338-61b5-5235","c457-baf0-ed17-9213"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5bf0-3338-61b5-5235", "rowText": "the mother is a source of food for an embryo through the placenta", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c457-baf0-ed17-9213", "rowText": "food is a kind of chemical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"mother" },
+			{ "name":"energyKind", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"mother" },
+			{ "name":"energyKind", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["5bf0-3338-61b5-5235","TEMPGEN-1260848"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5bf0-3338-61b5-5235", "rowText": "the mother is a source of food for an embryo through the placenta", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1260848", "rowText": "food is a kind of potential energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"mother" },
+			{ "name":"energyKind", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"mother" },
+			{ "name":"energyKind", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["5bf0-3338-61b5-5235","TEMPGEN-1260853"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5bf0-3338-61b5-5235", "rowText": "the mother is a source of food for an embryo through the placenta", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1260853", "rowText": "food is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"mother" },
+			{ "name":"energyKind", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"mother" },
+			{ "name":"energyKind", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["c681-db5c-096f-bade","9e7d-986e-6af1-5ac1"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "c681-db5c-096f-bade", "rowText": "the body of a mammal is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"body of mammal" },
+			{ "name":"energyKind", "value":"heat" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"body of mammal" },
+			{ "name":"energyKind", "value":"heat" }
+		]
+		},
+		{
+		"uuids": ["6f04-f08d-2b7e-a7f4","1980-256d-b685-846c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6f04-f08d-2b7e-a7f4", "rowText": "vibrations are a source of sound", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1980-256d-b685-846c", "rowText": "sound is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"vibration" },
+			{ "name":"energyKind", "value":"sound" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"vibrations" },
+			{ "name":"energyKind", "value":"sound" }
+		]
+		},
+		{
+		"uuids": ["6f04-f08d-2b7e-a7f4","7726-d9fd-f431-db04"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "6f04-f08d-2b7e-a7f4", "rowText": "vibrations are a source of sound", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "7726-d9fd-f431-db04", "rowText": "sound is a kind of sound energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"vibration" },
+			{ "name":"energyKind", "value":"sound" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"vibrations" },
+			{ "name":"energyKind", "value":"sound" }
+		]
+		},
+		{
+		"uuids": ["9b9c-7fab-8dbe-d990","1980-256d-b685-846c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9b9c-7fab-8dbe-d990", "rowText": "a bell ringing is a source of sound", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1980-256d-b685-846c", "rowText": "sound is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"bell" },
+			{ "name":"energyKind", "value":"sound" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"bell" },
+			{ "name":"energyKind", "value":"sound" }
+		]
+		},
+		{
+		"uuids": ["9b9c-7fab-8dbe-d990","7726-d9fd-f431-db04"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9b9c-7fab-8dbe-d990", "rowText": "a bell ringing is a source of sound", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "7726-d9fd-f431-db04", "rowText": "sound is a kind of sound energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"bell" },
+			{ "name":"energyKind", "value":"sound" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"bell" },
+			{ "name":"energyKind", "value":"sound" }
+		]
+		},
+		{
+		"uuids": ["37c3-538a-6459-6572","1980-256d-b685-846c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37c3-538a-6459-6572", "rowText": "a person speaking is a source of sound", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1980-256d-b685-846c", "rowText": "sound is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"person" },
+			{ "name":"energyKind", "value":"sound" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"person" },
+			{ "name":"energyKind", "value":"sound" }
+		]
+		},
+		{
+		"uuids": ["37c3-538a-6459-6572","7726-d9fd-f431-db04"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "37c3-538a-6459-6572", "rowText": "a person speaking is a source of sound", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "7726-d9fd-f431-db04", "rowText": "sound is a kind of sound energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"person" },
+			{ "name":"energyKind", "value":"sound" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"person" },
+			{ "name":"energyKind", "value":"sound" }
+		]
+		},
+		{
+		"uuids": ["cdb0-4611-65bb-d1e8","1980-256d-b685-846c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cdb0-4611-65bb-d1e8", "rowText": "train whistle is a source of sound", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1980-256d-b685-846c", "rowText": "sound is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"train whistle" },
+			{ "name":"energyKind", "value":"sound" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"train whistle" },
+			{ "name":"energyKind", "value":"sound" }
+		]
+		},
+		{
+		"uuids": ["cdb0-4611-65bb-d1e8","7726-d9fd-f431-db04"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cdb0-4611-65bb-d1e8", "rowText": "train whistle is a source of sound", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "7726-d9fd-f431-db04", "rowText": "sound is a kind of sound energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"train whistle" },
+			{ "name":"energyKind", "value":"sound" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"train whistle" },
+			{ "name":"energyKind", "value":"sound" }
+		]
+		},
+		{
+		"uuids": ["ab7d-6b17-3441-a6cf","b043-79cc-a77e-e968"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ab7d-6b17-3441-a6cf", "rowText": "ATP supplies chemical energy for organisms to move", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "b043-79cc-a77e-e968", "rowText": "chemical energy is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"atp" },
+			{ "name":"energyKind", "value":"chemical energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"ATP" },
+			{ "name":"energyKind", "value":"chemical energy" }
+		]
+		},
+		{
+		"uuids": ["ab7d-6b17-3441-a6cf","306b-fdd7-ee4f-c35e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ab7d-6b17-3441-a6cf", "rowText": "ATP supplies chemical energy for organisms to move", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "306b-fdd7-ee4f-c35e", "rowText": "chemical energy is a kind of potential energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"atp" },
+			{ "name":"energyKind", "value":"chemical energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"ATP" },
+			{ "name":"energyKind", "value":"chemical energy" }
+		]
+		},
+		{
+		"uuids": ["f8bb-cff7-129e-84d7","TEMPGEN-1269442"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f8bb-cff7-129e-84d7", "rowText": "a light bulb generates visible light when it is turned on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1269442", "rowText": "visible light is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"light bulb" },
+			{ "name":"energyKind", "value":"visible light" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"light bulb" },
+			{ "name":"energyKind", "value":"visible light" }
+		]
+		},
+		{
+		"uuids": ["ef7d-a3f3-6200-ea1d","TEMPGEN-1259023"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ef7d-a3f3-6200-ea1d", "rowText": "a coal mine is a source of coal under the ground", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1259023", "rowText": "coal is a kind of energy source", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "1"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"coal mine" },
+			{ "name":"energyKind", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"coal mine" },
+			{ "name":"energyKind", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["8507-acd7-51e8-31a1","TEMPGEN-1269403"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "8507-acd7-51e8-31a1", "rowText": "oil is a source of gasoline", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1269403", "rowText": "gasoline is a kind of energy source", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "1"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"oil" },
+			{ "name":"energyKind", "value":"gasoline" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"oil" },
+			{ "name":"energyKind", "value":"gasoline" }
+		]
+		},
+		{
+		"uuids": ["4915-3ab4-00ec-853a","3352-8265-75b0-3355"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4915-3ab4-00ec-853a", "rowText": "plants are a source of biofuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3352-8265-75b0-3355", "rowText": "a biofuel is a kind of alternative energy resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "1"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plant" },
+			{ "name":"energyKind", "value":"biofuel" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plants" },
+			{ "name":"energyKind", "value":"biofuel" }
+		]
+		},
+		{
+		"uuids": ["4915-3ab4-00ec-853a","TEMPGEN-1270315"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4915-3ab4-00ec-853a", "rowText": "plants are a source of biofuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "TEMPGEN-1270315", "rowText": "biofuel is a kind of energy source", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "1"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plant" },
+			{ "name":"energyKind", "value":"biofuel" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plants" },
+			{ "name":"energyKind", "value":"biofuel" }
+		]
+		},
+		{
+		"uuids": ["ab6a-8f83-cf72-6f4f","c844-5280-4695-c6c6"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ab6a-8f83-cf72-6f4f", "rowText": "a hydroelectric plant produces hydropower", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c844-5280-4695-c6c6", "rowText": "hydropower is a kind of alternative energy resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "1"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plant" },
+			{ "name":"energyKind", "value":"hydropower" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"deviceName", "value":"plant" },
+			{ "name":"energyKind", "value":"hydropower" }
+		]
+		}
+	]
+}
+]}
+

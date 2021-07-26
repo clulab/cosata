@@ -1,0 +1,51 @@
+// Automatically converted pattern
+inferencepattern FOR_VELOCITY_Definition_Velocity
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: close means low in distance     (cf37-a1ef-e60b-f8e7) [ THING:"close", VALUE:"low", ATTRIBUTE:"distance" ]
+	//        HINTROW far means great in distance     (94b7-fbe6-74cf-eba2) [ THING:"far", VALUE:"great", ATTRIBUTE:"distance" ]
+	//row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "distance"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "distance"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: faster means an increase ; higher in speed     (dcd4-5303-c509-88ec) [ THING:"fast", VALUE:"increase;high", ATTRIBUTE:"speed" ]
+	//        HINTROW slowest means lowest in speed     (1a27-8414-0bd8-35d1) [ THING:"slow", VALUE:"low", ATTRIBUTE:"speed" ]
+	//row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "speed"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "speed"]
+
+	// CENTRALSW       KINDOF: north ; northward is a kind of direction     (ed71-4003-23bd-6b98) [ HYPONYM:"north;northward", HYPERNYM:"direction" ]
+	//        HINTROW south ; southward is a kind of direction     (34c2-c483-57d1-543e) [ HYPONYM:"south;southward", HYPERNYM:"direction" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "direction"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "direction"]
+
+	// GROUNDING       KINDOF: a car is a kind of object     (fe6e-84fa-d289-aee9) [ HYPONYM:"car", HYPERNYM:"object" ]
+	//        HINTROW a toy car is a kind of object     (4f86-9f32-f5ab-f744) [ HYPONYM:"toy car", HYPERNYM:"object" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// CENTRAL         MEASUREMENTS: speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time     (b753-a285-8304-024a) [ MEASURE:"speed", QUANTITY_ADJ:"measure of", ATTRIBUTE:"distance travel", AGENT:"by object", SCOPE:"over time;divide by time;per unit of time" ]
+	//row autoRow4 = [UUID:"b753-a285-8304-024a", MEASURE: "speed", QUANTITY_ADJ: "measure of", ATTRIBUTE: "distance travel", AGENT: "by object", SCOPE: "per unit of time"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"b753-a285-8304-024a", MEASURE: "speed", QUANTITY_ADJ: "measure of", ATTRIBUTE: "distance travel", AGENT: "by object", SCOPE: "per unit of time"]
+
+	// CENTRAL         MEASUREMENTS: velocity is a measure of a speed in a direction     (9b53-8b62-61f9-9e1a) [ MEASURE:"velocity", QUANTITY_ADJ:"measure of", ATTRIBUTE:"speed in direction" ]
+	//row autoRow5 = [UUID:"9b53-8b62-61f9-9e1a", MEASURE: "velocity", QUANTITY_ADJ: "measure of", ATTRIBUTE: "speed in direction"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"9b53-8b62-61f9-9e1a", MEASURE: "velocity", QUANTITY_ADJ: "measure of", ATTRIBUTE: "speed in direction"]
+
+	// CENTRAL         REQUIRES: calculating speed requires knowing distance travelled     (98dd-55cb-7cfa-5e19) [ ACTION1:"calculate", OBJECT_AGENT_PROCESS:"speed", VERB_REQUIRES:"require", ACTION2:"know", OBJECT:"distance travel" ]
+	//row autoRow6 = [UUID:"98dd-55cb-7cfa-5e19", ACTION1: "calculate", OBJECT_AGENT_PROCESS: "speed", VERB_REQUIRES: "require", ACTION2: "know", OBJECT: "distance travel"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"98dd-55cb-7cfa-5e19", ACTION1: "calculate", OBJECT_AGENT_PROCESS: "speed", VERB_REQUIRES: "require", ACTION2: "know", OBJECT: "distance travel"]
+
+	// LEXGLUE         SYNONYMY: m/s means meters per second     (2596-5b2d-29ed-5dac) [ X1:"m/s", X2:"meter per 2" ]
+	//row autoRow7 = [UUID:"2596-5b2d-29ed-5dac", X1: "m/s", X2: "meter per 2"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"2596-5b2d-29ed-5dac", X1: "m/s", X2: "meter per 2"]
+
+	// LEXGLUE         SYNONYMY: motion ; movement means moving ; to move     (d8a3-10bb-9aea-178a) [ X1:"move;move", ACTION2:"move;move" ]
+	//row autoRow8 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"]
+
+endinferencepattern

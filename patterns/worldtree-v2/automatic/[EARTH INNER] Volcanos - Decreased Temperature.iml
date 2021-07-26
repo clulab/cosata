@@ -1,0 +1,82 @@
+// Automatically converted pattern
+inferencepattern EARTH_INNER_Volcanos_Decreased_Temperature
+
+	// Plain text description
+	description = "potentially can be split into other categories"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//        HINTROW an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: <plant_0>, HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: <plant_0>, HYPERNYM: "organism"]
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: <plant_0>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: <plant_0>]
+
+	// CENTRAL         TRANSFER: the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight     (a3c3-47f1-32ba-5c7f) [ ACTOR_WHO:"sun", VERB:"transfer", WHAT:"solar energy;light energy;heat energy", DESTINATION:"planet;earth", BY_THROUGH_HOW:"sunlight" ]
+	//row autoRow2 = [UUID:"a3c3-47f1-32ba-5c7f", ACTOR_WHO: "sun", VERB: "transfer", WHAT: "solar energy", DESTINATION: "planet", BY_THROUGH_HOW: "sunlight"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"a3c3-47f1-32ba-5c7f", ACTOR_WHO: "sun", VERB: "transfer", WHAT: "solar energy", DESTINATION: "planet", BY_THROUGH_HOW: "sunlight"]
+
+	// CENTRAL         ACTION: an erupting volcano releases sulfur gas and ash into the atmosphere     (b071-dc6e-dcc4-c885) [ ADJ:"erupt", AGENT_OBJECT:"volcano", ACTION2:"release", OBJECT_PROPERTY:"sulfur gas ash", WHEN_WHERE:"into atmosphere" ]
+	//row autoRow3 = [UUID:"b071-dc6e-dcc4-c885", ADJ: "erupt", AGENT_OBJECT: "volcano", ACTION2: "release", OBJECT_PROPERTY: "sulfur gas ash", WHEN_WHERE: "into atmosphere"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"b071-dc6e-dcc4-c885", ADJ: "erupt", AGENT_OBJECT: "volcano", ACTION2: "release", OBJECT_PROPERTY: "sulfur gas ash", WHEN_WHERE: "into atmosphere"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the amount of solar energy decreases on Earth , the temperature on Earth will decrease     (8480-ef3c-4b12-ea60) [ QUANTITY_MEASURE1:"amount of", AGENT_ATTRIBUTE1:"solar energy", CHANGE1:"decrease", SCOPE1B:"on earth", AGENT_ATTRIBUTE2:"temperature", SCOPE2A:"on earth", CHANGE2:"decrease" ]
+	//row autoRow4 = [UUID:"8480-ef3c-4b12-ea60", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "solar energy", CHANGE1: "decrease", SCOPE1B: "on earth", AGENT_ATTRIBUTE2: "temperature", SCOPE2A: "on earth", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"8480-ef3c-4b12-ea60", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "solar energy", CHANGE1: "decrease", SCOPE1B: "on earth", AGENT_ATTRIBUTE2: "temperature", SCOPE2A: "on earth", CHANGE2: "decrease"]
+
+	// CENTRAL         AFFORDANCES: smoke from volcanic eruptions can disrupt sunlight from reaching Earth 's surface     (7608-3e56-1c0a-e0c4) [ ACTOR_THING:"smoke", PROPERTY_OBJECT:"from volcano eruption", VERB:"disrupt", PATIENT:"sunlight from reach earth surface" ]
+	//row autoRow5 = [UUID:"7608-3e56-1c0a-e0c4", ACTOR_THING: "smoke", PROPERTY_OBJECT: "from volcano eruption", VERB: "disrupt", PATIENT: "sunlight from reach earth surface"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"7608-3e56-1c0a-e0c4", ACTOR_THING: "smoke", PROPERTY_OBJECT: "from volcano eruption", VERB: "disrupt", PATIENT: "sunlight from reach earth surface"]
+
+	// CENTRAL         CHANGE-VEC: volcanic ash in the atmosphere decreases the temperature by blocking the sun     (6e50-f578-2839-75ac) [ AGENT_OBJECT:"volcano ash", SCOPE1:"in atmosphere", DIRECTION:"decrease", PATIENT:"temperature", BY_THROUGH_HOW:"block sun" ]
+	//row autoRow6 = [UUID:"6e50-f578-2839-75ac", AGENT_OBJECT: "volcano ash", SCOPE1: "in atmosphere", DIRECTION: "decrease", PATIENT: "temperature", BY_THROUGH_HOW: "block sun"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"6e50-f578-2839-75ac", AGENT_OBJECT: "volcano ash", SCOPE1: "in atmosphere", DIRECTION: "decrease", PATIENT: "temperature", BY_THROUGH_HOW: "block sun"]
+
+	// CENTRAL         CHANGE: a volcano changes the environment around it by covering the environment in ash     (949b-2b44-b811-5b81) [ ACTOR_WHO:"volcano", VERB:"change", WHAT:"environment around", BY_THROUGH_HOW:"cover environment in ash" ]
+	//row autoRow7 = [UUID:"949b-2b44-b811-5b81", ACTOR_WHO: "volcano", VERB: "change", WHAT: "environment around", BY_THROUGH_HOW: "cover environment in ash"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"949b-2b44-b811-5b81", ACTOR_WHO: "volcano", VERB: "change", WHAT: "environment around", BY_THROUGH_HOW: "cover environment in ash"]
+
+	// CENTRAL         AFFECT: cold temperatures usually have a negative impact on organisms     (cf66-dfc6-48d2-57ce) [ ACTOR_WHO:"cold temperature", QUALIFIER1:"usually", POSITIVE_NEGATIVE:"negative", PATIENT:"organism" ]
+	//row autoRow8 = [UUID:"cf66-dfc6-48d2-57ce", ACTOR_WHO: "cold temperature", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"cf66-dfc6-48d2-57ce", ACTOR_WHO: "cold temperature", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism"]
+
+	// CENTRAL         CHANGE-VEC: negative impacts on organisms ; species will decrease the population of the organisms ; the species     (83f9-1f31-2097-7a80) [ ADJ:"negative", AGENT_OBJECT:"impact", SCOPE1:"on organism;species", DIRECTION:"decrease", PATIENT:"population", SCOPE2:"of organism;species" ]
+	//  Notes: 4c89-1538-021d-96b2->83f9-1f31-2097-7a80
+	//row autoRow9 = [UUID:"83f9-1f31-2097-7a80", ADJ: "negative", AGENT_OBJECT: "impact", SCOPE1: "on organism", DIRECTION: "decrease", PATIENT: "population", SCOPE2: "of organism"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"83f9-1f31-2097-7a80", ADJ: "negative", AGENT_OBJECT: "impact", SCOPE1: "on organism", DIRECTION: "decrease", PATIENT: "population", SCOPE2: "of organism"]
+
+	// CENTRAL         CHANGE-VEC: disrupting something from reaching something else decreases the availability of that something     (94dc-5cdd-f109-b702) [ ACTION:"disrupt something from reach something else", DIRECTION:"decrease", PATIENT:"availability of something" ]
+	//row autoRow10 = [UUID:"94dc-5cdd-f109-b702", ACTION: "disrupt something from reach something else", DIRECTION: "decrease", PATIENT: "availability of something"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"94dc-5cdd-f109-b702", ACTION: "disrupt something from reach something else", DIRECTION: "decrease", PATIENT: "availability of something"]
+
+	// CENTRAL         LOCATIONS: organisms are located on the surface of the Earth     (7ec6-6743-f258-1df3) [ THING_PROCESS:"organism", LOCATION:"surface", SCOPE:"of earth" ]
+	//row autoRow11 = [UUID:"7ec6-6743-f258-1df3", THING_PROCESS: "organism", LOCATION: "surface", SCOPE: "of earth"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"7ec6-6743-f258-1df3", THING_PROCESS: "organism", LOCATION: "surface", SCOPE: "of earth"]
+
+	// CENTRAL         IFTHEN: if a living thing becomes too cold then that living thing will die     (d662-f8eb-acab-099f) [ THING:"live thing", ACTION1:"become", ADJ_QUANTITY1A:"too", OBJECT_PROPERTY1:"cold", ACTOR_AGENT_PROCESS2:"that live thing", ACTION3:"die" ]
+	//row autoRow12 = [UUID:"d662-f8eb-acab-099f", THING: "live thing", ACTION1: "become", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "that live thing", ACTION3: "die"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"d662-f8eb-acab-099f", THING: "live thing", ACTION1: "become", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "that live thing", ACTION3: "die"]
+
+	// LEXGLUE         SYNONYMY: species means a group of like organisms     (2171-5edd-a3d0-f2c2) [ X1:"species", X2:"group of like organism" ]
+	//row autoRow13 = [UUID:"2171-5edd-a3d0-f2c2", X1: "species", X2: "group of like organism"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"2171-5edd-a3d0-f2c2", X1: "species", X2: "group of like organism"]
+
+	// LEXGLUE         SYNONYMY: temperature drop means become colder     (43bb-2d2b-dd45-1c67) [ X1:"temperature", ACTION1:"drop", ACTION2:"become", Y2:"cold" ]
+	//row autoRow14 = [UUID:"43bb-2d2b-dd45-1c67", X1: "temperature", ACTION1: "drop", ACTION2: "become", Y2: "cold"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"43bb-2d2b-dd45-1c67", X1: "temperature", ACTION1: "drop", ACTION2: "become", Y2: "cold"]
+
+	// LEXGLUE         SYNONYMY: temperature drop means temperature decrease     (b47e-30f2-aa9b-999f) [ X1:"temperature", ACTION1:"drop", X2:"temperature", ACTION2:"decrease" ]
+	//row autoRow15 = [UUID:"b47e-30f2-aa9b-999f", X1: "temperature", ACTION1: "drop", X2: "temperature", ACTION2: "decrease"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"b47e-30f2-aa9b-999f", X1: "temperature", ACTION1: "drop", X2: "temperature", ACTION2: "decrease"]
+
+	// LEXGLUE         SYNONYMY: an organism is a living thing     (87a0-dd02-dd6d-ee60) [ X1:"organism", X2:"live thing" ]
+	//row autoRow16 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"]
+
+endinferencepattern

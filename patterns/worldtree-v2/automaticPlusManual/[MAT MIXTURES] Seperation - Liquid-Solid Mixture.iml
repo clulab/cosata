@@ -1,0 +1,53 @@
+// Automatically converted pattern
+inferencepattern MAT_MIXTURES_Seperation_Liquid_Solid_Mixture
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: a filter is a kind of tool for separating liquid from solid particles     (f349-c742-9e3b-e235) [ HYPONYM:"filter", HYPERNYM:"tool", FOR_PURPOSE:"separate liquid from solid particle" ]
+	//        HINTROW a sifter is a kind of tool for separating mixtures     (bb8f-9e8f-0b8b-d4c1) [ HYPONYM:"sifter", HYPERNYM:"tool", FOR_PURPOSE:"separate mixture" ]
+	//  Notes: tools for separation
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "filter", HYPERNYM: "tool", FOR_PURPOSE: "separate liquid from solid particle"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "tool", FOR_PURPOSE: "separate"+*"POS:NN"+*"POS:IN"+*"POS:JJ"+*"POS:NN"]
+
+	// CENTRALSW       USEDFOR: a filter is used for separating liquid from solid particles     (0d7e-4532-27b4-43c9) [ AGENT_OBJECT:"filter", FOR_PURPOSE:"separate", PATIENT:"liquid", SCOPE2:"from solid particle" ]
+	//        HINTROW filtration can be used for separating a mixture of a liquid and a solid     (49ec-9e7f-a4cc-459a) [ ACTION:"filtration", QUALIFIER:"be", FOR_PURPOSE:"separate", PATIENT:"mixture", SCOPE2:"of liquid solid" ]
+	//        HINTROW evaporation can be used for separating a mixture of a liquid and a solid     (4384-a78c-52f2-e2ff) [ ACTION:"evaporate", QUALIFIER:"be", FOR_PURPOSE:"separate", PATIENT:"mixture", SCOPE2:"of liquid solid" ]
+	//        HINTROW a sifter is used for separating mixtures     (6c0c-f513-3f7d-0aba) [ AGENT_OBJECT:"sifter", FOR_PURPOSE:"separate", PATIENT:"mixture" ]
+	//  Notes: way to separate liquid/solid mixture
+	//row autoRow1 = [TABLE:"USEDFOR", AGENT_OBJECT: "filter", FOR_PURPOSE: "separate", PATIENT: "liquid", SCOPE2: "from solid particle"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"USEDFOR", FOR_PURPOSE: "separate"]
+
+	// GROUNDING       KINDOF: water is a kind of liquid at room temperature     (3961-d09c-4b9a-a6f7) [ HYPONYM:"water", HYPERNYM:"liquid", SCOPE2:"at room temperature" ]
+	//        HINTROW alcohol is a kind of liquid     (a9db-8f34-d2e1-50f7) [ HYPONYM:"alcohol", HYPERNYM:"liquid" ]
+	//        HINTROW dew is a kind of liquid     (06f4-8004-6e6f-4eab) [ HYPONYM:"dew", HYPERNYM:"liquid" ]
+	//  Notes: liquid substance
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "liquid"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "liquid"]
+
+	// GROUNDING       KINDOF: an ice cube is a kind of solid     (a1a9-97db-a771-1c2b) [ HYPONYM:"ice cube", HYPERNYM:"solid" ]
+	//        HINTROW an eraser is a kind of solid     (0164-3d03-ab81-9b9a) [ HYPONYM:"eraser", HYPERNYM:"solid" ]
+	//        HINTROW gold is a kind of solid     (41ff-4240-13ce-27e0) [ HYPONYM:"gold", HYPERNYM:"solid" ]
+	//  Notes: solid substance
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "solid"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "solid"]
+
+	// CENTRAL         FORMEDBY: an mixture is formed by two or more substances combined together physically     (9247-2bc4-e950-d3dd) [ OBJECT:"mixture", AGENT_PROCESS:"two much substance", VERB:"combine together", SCOPE:"physically" ]
+	//row autoRow4 = [UUID:"9247-2bc4-e950-d3dd", OBJECT: "mixture", AGENT_PROCESS: "two much substance", VERB: "combine together", SCOPE: "physically"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"9247-2bc4-e950-d3dd", OBJECT: "mixture", AGENT_PROCESS: "two much substance", VERB: "combine together", SCOPE: "physically"]
+
+	// CENTRAL         KINDOF: a liquid is a kind of substance     (3f2b-87bb-f73a-3e5d) [ HYPONYM:"liquid", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"3f2b-87bb-f73a-3e5d", HYPONYM: "liquid", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"3f2b-87bb-f73a-3e5d", HYPONYM: "liquid", HYPERNYM: "substance"]
+
+	// CENTRAL         KINDOF: a solid is a kind of substance     (ba9b-b2e3-d362-1dd0) [ HYPONYM:"solid", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"ba9b-b2e3-d362-1dd0", HYPONYM: "solid", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"ba9b-b2e3-d362-1dd0", HYPONYM: "solid", HYPERNYM: "substance"]
+
+endinferencepattern

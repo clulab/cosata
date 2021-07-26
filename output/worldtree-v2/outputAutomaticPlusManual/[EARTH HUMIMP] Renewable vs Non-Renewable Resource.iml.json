@@ -1,0 +1,1629 @@
+{"patternMatches": [
+{
+	"patternName":"EARTH_HUMIMP_RenewableNonRenewableResource_Renewable",
+	"matches":[
+		{
+		"uuids": ["0da1-2296-dfe8-6873","044f-98c1-07d1-2e57","185e-29ab-4975-8d8b","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "185e-29ab-4975-8d8b", "rowText": "wind is a source of energy", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wind" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wind" }
+		]
+		},
+		{
+		"uuids": ["1af4-c273-5b80-34e6","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "1af4-c273-5b80-34e6", "rowText": "soil is a renewable resource for growing plants", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"soil" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"soil" }
+		]
+		},
+		{
+		"uuids": ["df02-656d-260a-04d5","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "df02-656d-260a-04d5", "rowText": "water is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"water" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"water" }
+		]
+		},
+		{
+		"uuids": ["2146-8319-8af6-a8e3","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "2146-8319-8af6-a8e3", "rowText": "alternative fuel is usually a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"alternative fuel" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"alternative fuel" }
+		]
+		},
+		{
+		"uuids": ["f5c3-d141-1a8b-80c9","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"solar energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"solar energy" }
+		]
+		},
+		{
+		"uuids": ["27d4-eb24-0630-19ed","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "27d4-eb24-0630-19ed", "rowText": "trees are a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"tree" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"trees" }
+		]
+		},
+		{
+		"uuids": ["0da1-2296-dfe8-6873","044f-98c1-07d1-2e57","185e-29ab-4975-8d8b","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "185e-29ab-4975-8d8b", "rowText": "wind is a source of energy", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wind" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wind" }
+		]
+		},
+		{
+		"uuids": ["0da1-2296-dfe8-6873","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wind" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wind" }
+		]
+		},
+		{
+		"uuids": ["0da1-2296-dfe8-6873","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wind energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wind energy" }
+		]
+		},
+		{
+		"uuids": ["55b1-a769-b2b4-d023","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "55b1-a769-b2b4-d023", "rowText": "wood is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wood" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wood" }
+		]
+		},
+		{
+		"uuids": ["4567-015f-debe-b7f4","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "4567-015f-debe-b7f4", "rowText": "biomass is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"biomass" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"biomass" }
+		]
+		},
+		{
+		"uuids": ["9d65-2cd1-cfde-9967","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "9d65-2cd1-cfde-9967", "rowText": "tidal energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"tidal energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"tidal energy" }
+		]
+		},
+		{
+		"uuids": ["7d8a-10b3-8aaa-c02d","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "7d8a-10b3-8aaa-c02d", "rowText": "vegetable oil is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"vegetable oil" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"vegetable oil" }
+		]
+		},
+		{
+		"uuids": ["be42-bfb1-ed75-4dbf","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "be42-bfb1-ed75-4dbf", "rowText": "wave energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wave energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wave energy" }
+		]
+		},
+		{
+		"uuids": ["3dd5-171b-5cd8-bf0d","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "3dd5-171b-5cd8-bf0d", "rowText": "geothermal energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"geothermal energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"geothermal energy" }
+		]
+		},
+		{
+		"uuids": ["2c3f-03b0-b87f-c09a","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "2c3f-03b0-b87f-c09a", "rowText": "animals are a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"animal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"animals" }
+		]
+		},
+		{
+		"uuids": ["ee9c-1f5d-0cf9-67c9","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "ee9c-1f5d-0cf9-67c9", "rowText": "hydroelectric power is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"hydroelectric power" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"hydroelectric power" }
+		]
+		},
+		{
+		"uuids": ["1af4-c273-5b80-34e6","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "1af4-c273-5b80-34e6", "rowText": "soil is a renewable resource for growing plants", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"soil" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"soil" }
+		]
+		},
+		{
+		"uuids": ["df02-656d-260a-04d5","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "df02-656d-260a-04d5", "rowText": "water is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"water" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"water" }
+		]
+		},
+		{
+		"uuids": ["2146-8319-8af6-a8e3","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "2146-8319-8af6-a8e3", "rowText": "alternative fuel is usually a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"alternative fuel" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"alternative fuel" }
+		]
+		},
+		{
+		"uuids": ["f5c3-d141-1a8b-80c9","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"solar energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"solar energy" }
+		]
+		},
+		{
+		"uuids": ["27d4-eb24-0630-19ed","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "27d4-eb24-0630-19ed", "rowText": "trees are a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"tree" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"trees" }
+		]
+		},
+		{
+		"uuids": ["0da1-2296-dfe8-6873","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wind" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wind" }
+		]
+		},
+		{
+		"uuids": ["0da1-2296-dfe8-6873","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wind energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wind energy" }
+		]
+		},
+		{
+		"uuids": ["55b1-a769-b2b4-d023","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "55b1-a769-b2b4-d023", "rowText": "wood is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wood" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wood" }
+		]
+		},
+		{
+		"uuids": ["4567-015f-debe-b7f4","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "4567-015f-debe-b7f4", "rowText": "biomass is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"biomass" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"biomass" }
+		]
+		},
+		{
+		"uuids": ["9d65-2cd1-cfde-9967","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "9d65-2cd1-cfde-9967", "rowText": "tidal energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"tidal energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"tidal energy" }
+		]
+		},
+		{
+		"uuids": ["7d8a-10b3-8aaa-c02d","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "7d8a-10b3-8aaa-c02d", "rowText": "vegetable oil is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"vegetable oil" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"vegetable oil" }
+		]
+		},
+		{
+		"uuids": ["be42-bfb1-ed75-4dbf","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "be42-bfb1-ed75-4dbf", "rowText": "wave energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wave energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"wave energy" }
+		]
+		},
+		{
+		"uuids": ["3dd5-171b-5cd8-bf0d","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "3dd5-171b-5cd8-bf0d", "rowText": "geothermal energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"geothermal energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"geothermal energy" }
+		]
+		},
+		{
+		"uuids": ["2c3f-03b0-b87f-c09a","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "2c3f-03b0-b87f-c09a", "rowText": "animals are a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"animal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"animals" }
+		]
+		},
+		{
+		"uuids": ["ee9c-1f5d-0cf9-67c9","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "ee9c-1f5d-0cf9-67c9", "rowText": "hydroelectric power is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"hydroelectric power" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"hydroelectric power" }
+		]
+		}
+	]
+},
+{
+	"patternName":"EARTH_HUMIMP_RenewableNonRenewableResource_NonRenewable",
+	"matches":[
+		{
+		"uuids": ["8c18-c36b-a89a-60ec","1456-98fe-3171-af46","044f-98c1-07d1-2e57","124d-89c9-c195-2ea9","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8c18-c36b-a89a-60ec", "rowText": "oil is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "124d-89c9-c195-2ea9", "rowText": "oil is a source of energy", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"oil" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"oil" }
+		]
+		},
+		{
+		"uuids": ["9e1f-a1a8-643b-0b8c","1456-98fe-3171-af46","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9e1f-a1a8-643b-0b8c", "rowText": "metal is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"metal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"metal" }
+		]
+		},
+		{
+		"uuids": ["06f5-8cbc-7ae5-111f","1456-98fe-3171-af46","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "06f5-8cbc-7ae5-111f", "rowText": "plastic is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"plastic" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"plastic" }
+		]
+		},
+		{
+		"uuids": ["0b4c-355e-1cca-d698","1456-98fe-3171-af46","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0b4c-355e-1cca-d698", "rowText": "fossil fuels are a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"fossil fuel" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"fossil fuels" }
+		]
+		},
+		{
+		"uuids": ["982b-08d3-f40e-289f","1456-98fe-3171-af46","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "982b-08d3-f40e-289f", "rowText": "aluminum is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"aluminum" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"aluminum" }
+		]
+		},
+		{
+		"uuids": ["77f9-749f-9394-ae34","1456-98fe-3171-af46","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["4cbb-5f96-4d29-b4f5","1456-98fe-3171-af46","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4cbb-5f96-4d29-b4f5", "rowText": "natural gas is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["8c18-c36b-a89a-60ec","1456-98fe-3171-af46","044f-98c1-07d1-2e57","124d-89c9-c195-2ea9","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8c18-c36b-a89a-60ec", "rowText": "oil is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "124d-89c9-c195-2ea9", "rowText": "oil is a source of energy", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"oil" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"oil" }
+		]
+		},
+		{
+		"uuids": ["8c18-c36b-a89a-60ec","1456-98fe-3171-af46","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8c18-c36b-a89a-60ec", "rowText": "oil is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"oil" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"oil" }
+		]
+		},
+		{
+		"uuids": ["8d24-c370-d9f6-efec","1456-98fe-3171-af46","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8d24-c370-d9f6-efec", "rowText": "minerals are a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"mineral" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"minerals" }
+		]
+		},
+		{
+		"uuids": ["45a4-97a7-5902-490d","1456-98fe-3171-af46","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "45a4-97a7-5902-490d", "rowText": "groundwater is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"groundwater" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"groundwater" }
+		]
+		},
+		{
+		"uuids": ["e094-f38a-c2c7-8407","1456-98fe-3171-af46","044f-98c1-07d1-2e57","a979-cbd2-fb2d-175e","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "e094-f38a-c2c7-8407", "rowText": "chemical energy is usually a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"chemical energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"chemical energy" }
+		]
+		},
+		{
+		"uuids": ["9e1f-a1a8-643b-0b8c","1456-98fe-3171-af46","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9e1f-a1a8-643b-0b8c", "rowText": "metal is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"metal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"metal" }
+		]
+		},
+		{
+		"uuids": ["06f5-8cbc-7ae5-111f","1456-98fe-3171-af46","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "06f5-8cbc-7ae5-111f", "rowText": "plastic is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"plastic" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"plastic" }
+		]
+		},
+		{
+		"uuids": ["0b4c-355e-1cca-d698","1456-98fe-3171-af46","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0b4c-355e-1cca-d698", "rowText": "fossil fuels are a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"fossil fuel" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"fossil fuels" }
+		]
+		},
+		{
+		"uuids": ["982b-08d3-f40e-289f","1456-98fe-3171-af46","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "982b-08d3-f40e-289f", "rowText": "aluminum is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"aluminum" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"aluminum" }
+		]
+		},
+		{
+		"uuids": ["77f9-749f-9394-ae34","1456-98fe-3171-af46","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["4cbb-5f96-4d29-b4f5","1456-98fe-3171-af46","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4cbb-5f96-4d29-b4f5", "rowText": "natural gas is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["8c18-c36b-a89a-60ec","1456-98fe-3171-af46","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8c18-c36b-a89a-60ec", "rowText": "oil is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"oil" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"oil" }
+		]
+		},
+		{
+		"uuids": ["8d24-c370-d9f6-efec","1456-98fe-3171-af46","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8d24-c370-d9f6-efec", "rowText": "minerals are a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"mineral" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"minerals" }
+		]
+		},
+		{
+		"uuids": ["45a4-97a7-5902-490d","1456-98fe-3171-af46","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "45a4-97a7-5902-490d", "rowText": "groundwater is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"groundwater" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"groundwater" }
+		]
+		},
+		{
+		"uuids": ["e094-f38a-c2c7-8407","1456-98fe-3171-af46","044f-98c1-07d1-2e57","9997-39e4-b71d-1e0d","9cc5-f9fc-8ca8-2fe1","87e4-0553-c70e-56fa","f2d6-29ba-1070-12fd"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "e094-f38a-c2c7-8407", "rowText": "chemical energy is usually a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "1456-98fe-3171-af46", "rowText": "nonrenewable resources forming occurs over a period of 300000000 years which is considered a very long time to a human", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9997-39e4-b71d-1e0d", "rowText": "renewable resources are replenished more quickly than they are used", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9cc5-f9fc-8ca8-2fe1", "rowText": "renewable resources can slow the depletion of nonrenewable resources", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "87e4-0553-c70e-56fa", "rowText": "nonrenewable resources will eventually be depleted", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2d6-29ba-1070-12fd", "rowText": "deplete is similar to decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"chemical energy" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow8A", "value":"" },
+			{ "name":"autoRow8B", "value":"" },
+			{ "name":"resourceName", "value":"chemical energy" }
+		]
+		}
+	]
+},
+{
+	"patternName":"EnergyConnection1A",
+	"matches":[
+		{
+		"uuids": ["27d4-eb24-0630-19ed","044f-98c1-07d1-2e57","b02a-dae3-93ce-c2b7","c457-baf0-ed17-9213","5753-2812-04c2-af70"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "27d4-eb24-0630-19ed", "rowText": "trees are a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "b02a-dae3-93ce-c2b7", "rowText": "a tree is a source of shelter ; food for birds ; animals in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9A", "uuid": "c457-baf0-ed17-9213", "rowText": "food is a kind of chemical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9B", "uuid": "5753-2812-04c2-af70", "rowText": "food is a source of energy for animals ; plants", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"resourceName", "value":"tree" },
+			{ "name":"thingProvided", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"resourceName", "value":"trees" },
+			{ "name":"thingProvided", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["27d4-eb24-0630-19ed","044f-98c1-07d1-2e57","b02a-dae3-93ce-c2b7","TEMPGEN-2458221","5753-2812-04c2-af70"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "27d4-eb24-0630-19ed", "rowText": "trees are a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "b02a-dae3-93ce-c2b7", "rowText": "a tree is a source of shelter ; food for birds ; animals in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9A", "uuid": "TEMPGEN-2458221", "rowText": "food is a kind of potential energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9B", "uuid": "5753-2812-04c2-af70", "rowText": "food is a source of energy for animals ; plants", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"resourceName", "value":"tree" },
+			{ "name":"thingProvided", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"resourceName", "value":"trees" },
+			{ "name":"thingProvided", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["27d4-eb24-0630-19ed","044f-98c1-07d1-2e57","b02a-dae3-93ce-c2b7","TEMPGEN-2458222","5753-2812-04c2-af70"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "27d4-eb24-0630-19ed", "rowText": "trees are a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "b02a-dae3-93ce-c2b7", "rowText": "a tree is a source of shelter ; food for birds ; animals in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9A", "uuid": "TEMPGEN-2458222", "rowText": "food is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9B", "uuid": "5753-2812-04c2-af70", "rowText": "food is a source of energy for animals ; plants", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"resourceName", "value":"tree" },
+			{ "name":"thingProvided", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"resourceName", "value":"trees" },
+			{ "name":"thingProvided", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["27d4-eb24-0630-19ed","044f-98c1-07d1-2e57","b02a-dae3-93ce-c2b7","c457-baf0-ed17-9213"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "27d4-eb24-0630-19ed", "rowText": "trees are a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "b02a-dae3-93ce-c2b7", "rowText": "a tree is a source of shelter ; food for birds ; animals in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9A", "uuid": "c457-baf0-ed17-9213", "rowText": "food is a kind of chemical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9B", "value":"" },
+			{ "name":"resourceName", "value":"tree" },
+			{ "name":"thingProvided", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9B", "value":"" },
+			{ "name":"resourceName", "value":"trees" },
+			{ "name":"thingProvided", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["27d4-eb24-0630-19ed","044f-98c1-07d1-2e57","b02a-dae3-93ce-c2b7","TEMPGEN-2458221"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "27d4-eb24-0630-19ed", "rowText": "trees are a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "b02a-dae3-93ce-c2b7", "rowText": "a tree is a source of shelter ; food for birds ; animals in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9A", "uuid": "TEMPGEN-2458221", "rowText": "food is a kind of potential energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9B", "value":"" },
+			{ "name":"resourceName", "value":"tree" },
+			{ "name":"thingProvided", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9B", "value":"" },
+			{ "name":"resourceName", "value":"trees" },
+			{ "name":"thingProvided", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["27d4-eb24-0630-19ed","044f-98c1-07d1-2e57","b02a-dae3-93ce-c2b7","TEMPGEN-2458222"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "27d4-eb24-0630-19ed", "rowText": "trees are a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "b02a-dae3-93ce-c2b7", "rowText": "a tree is a source of shelter ; food for birds ; animals in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9A", "uuid": "TEMPGEN-2458222", "rowText": "food is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9B", "value":"" },
+			{ "name":"resourceName", "value":"tree" },
+			{ "name":"thingProvided", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9B", "value":"" },
+			{ "name":"resourceName", "value":"trees" },
+			{ "name":"thingProvided", "value":"food" }
+		]
+		}
+	]
+},
+{
+	"patternName":"EnergyConnection1B",
+	"matches":[
+		{
+		"uuids": ["27d4-eb24-0630-19ed","044f-98c1-07d1-2e57","b02a-dae3-93ce-c2b7","c457-baf0-ed17-9213","5753-2812-04c2-af70"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "27d4-eb24-0630-19ed", "rowText": "trees are a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "b02a-dae3-93ce-c2b7", "rowText": "a tree is a source of shelter ; food for birds ; animals in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9A", "uuid": "c457-baf0-ed17-9213", "rowText": "food is a kind of chemical energy", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9B", "uuid": "5753-2812-04c2-af70", "rowText": "food is a source of energy for animals ; plants", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"resourceName", "value":"tree" },
+			{ "name":"thingProvided", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"resourceName", "value":"trees" },
+			{ "name":"thingProvided", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["27d4-eb24-0630-19ed","044f-98c1-07d1-2e57","b02a-dae3-93ce-c2b7","TEMPGEN-2458221","5753-2812-04c2-af70"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "27d4-eb24-0630-19ed", "rowText": "trees are a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "b02a-dae3-93ce-c2b7", "rowText": "a tree is a source of shelter ; food for birds ; animals in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9A", "uuid": "TEMPGEN-2458221", "rowText": "food is a kind of potential energy", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9B", "uuid": "5753-2812-04c2-af70", "rowText": "food is a source of energy for animals ; plants", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"resourceName", "value":"tree" },
+			{ "name":"thingProvided", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"resourceName", "value":"trees" },
+			{ "name":"thingProvided", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["27d4-eb24-0630-19ed","044f-98c1-07d1-2e57","b02a-dae3-93ce-c2b7","TEMPGEN-2458222","5753-2812-04c2-af70"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "27d4-eb24-0630-19ed", "rowText": "trees are a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "b02a-dae3-93ce-c2b7", "rowText": "a tree is a source of shelter ; food for birds ; animals in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9A", "uuid": "TEMPGEN-2458222", "rowText": "food is a kind of energy", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9B", "uuid": "5753-2812-04c2-af70", "rowText": "food is a source of energy for animals ; plants", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"resourceName", "value":"tree" },
+			{ "name":"thingProvided", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"resourceName", "value":"trees" },
+			{ "name":"thingProvided", "value":"food" }
+		]
+		},
+		{
+		"uuids": ["1af4-c273-5b80-34e6","044f-98c1-07d1-2e57","6758-0732-1458-ec8b","31c6-d095-6939-21a9"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "1af4-c273-5b80-34e6", "rowText": "soil is a renewable resource for growing plants", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "6758-0732-1458-ec8b", "rowText": "soil provides nutrients for plants", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9B", "uuid": "31c6-d095-6939-21a9", "rowText": "nutrients are a source of energy for living things", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9A", "value":"" },
+			{ "name":"resourceName", "value":"soil" },
+			{ "name":"thingProvided", "value":"nutrient" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9A", "value":"" },
+			{ "name":"resourceName", "value":"soil" },
+			{ "name":"thingProvided", "value":"nutrients" }
+		]
+		},
+		{
+		"uuids": ["27d4-eb24-0630-19ed","044f-98c1-07d1-2e57","b02a-dae3-93ce-c2b7","5753-2812-04c2-af70"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "27d4-eb24-0630-19ed", "rowText": "trees are a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "b02a-dae3-93ce-c2b7", "rowText": "a tree is a source of shelter ; food for birds ; animals in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9B", "uuid": "5753-2812-04c2-af70", "rowText": "food is a source of energy for animals ; plants", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9A", "value":"" },
+			{ "name":"resourceName", "value":"tree" },
+			{ "name":"thingProvided", "value":"food" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9A", "value":"" },
+			{ "name":"resourceName", "value":"trees" },
+			{ "name":"thingProvided", "value":"food" }
+		]
+		}
+	]
+},
+{
+	"patternName":"EnergyConnection1C",
+	"matches":[
+		{
+		"uuids": ["f5c3-d141-1a8b-80c9","044f-98c1-07d1-2e57","3c69-24d0-2ef2-5007","5657-c6bc-e6cd-ae38"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "3c69-24d0-2ef2-5007", "rowText": "solar energy is a source of electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8A", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"resourceName", "value":"solar energy" },
+			{ "name":"thingProvided", "value":"electric" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"resourceName", "value":"solar energy" },
+			{ "name":"thingProvided", "value":"electricity" }
+		]
+		}
+	]
+},
+{
+	"patternName":"EnergyConnection2A",
+	"matches":[
+
+	]
+},
+{
+	"patternName":"EnergyConnection2B",
+	"matches":[
+
+	]
+}
+]}
+

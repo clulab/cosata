@@ -1,0 +1,88 @@
+// Automatically converted pattern
+inferencepattern LIFE_ENVADP_Animals_Adaptation_for_Hunting_Moving_Fast
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: tuna is a kind of fish     (402e-1817-1d04-e00f) [ HYPONYM:"tuna", HYPERNYM:"fish" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "tuna", HYPERNYM: "fish"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "tuna", HYPERNYM: "fish"]
+
+	// GROUNDING       KINDOF: a fish is a kind of animal     (9526-aecc-22b2-4b6a) [ HYPONYM:"fish", HYPERNYM:"animal" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "fish", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "fish", HYPERNYM: "animal"]
+
+	// CENTRAL         AFFECT: physical adaptation has a positive impact on the population ; the survival ; the reproduction of a species ; of individual organisms     (5d54-ce98-822d-70e0) [ ACTOR_WHO:"physical adapt", POSITIVE_NEGATIVE:"positive", PATIENT:"population;survive;reproduce", SCOPE:"of species;of individual organism" ]
+	//  Notes: fd4a-ee63-d305-515c->5d54-ce98-822d-70e0,4283-7393-990d-fdb7
+	//row autoRow2 = [UUID:"5d54-ce98-822d-70e0", ACTOR_WHO: "physical adapt", POSITIVE_NEGATIVE: "positive", PATIENT: "population", SCOPE: "of individual organism"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"5d54-ce98-822d-70e0", ACTOR_WHO: "physical adapt", POSITIVE_NEGATIVE: "positive", PATIENT: "population", SCOPE: "of individual organism"]
+
+	// CENTRAL         ACTION: adaptation is when an organism develops a trait over time for survival     (c6fe-fa08-c304-093d) [ DEFINITION_NAME:"adapt", AGENT_OBJECT:"organism", ACTION2:"develop", OBJECT_PROPERTY:"trait", WHEN_WHERE:"over time", FOR_PURPOSE:"survive" ]
+	//row autoRow3 = [UUID:"c6fe-fa08-c304-093d", DEFINITION_NAME: "adapt", AGENT_OBJECT: "organism", ACTION2: "develop", OBJECT_PROPERTY: "trait", WHEN_WHERE: "over time", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"c6fe-fa08-c304-093d", DEFINITION_NAME: "adapt", AGENT_OBJECT: "organism", ACTION2: "develop", OBJECT_PROPERTY: "trait", WHEN_WHERE: "over time", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         ACTION: hunting is when an animal kills another animal to eat that animal     (e1e4-0797-e545-e336) [ DEFINITION_NAME:"hunt", AGENT_OBJECT:"animal", ACTION2:"kill", OBJECT_PROPERTY:"animal", FOR_PURPOSE:"eat that animal" ]
+	//row autoRow4 = [UUID:"e1e4-0797-e545-e336", DEFINITION_NAME: "hunt", AGENT_OBJECT: "animal", ACTION2: "kill", OBJECT_PROPERTY: "animal", FOR_PURPOSE: "eat that animal"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"e1e4-0797-e545-e336", DEFINITION_NAME: "hunt", AGENT_OBJECT: "animal", ACTION2: "kill", OBJECT_PROPERTY: "animal", FOR_PURPOSE: "eat that animal"]
+
+	// CENTRAL         ACTION: some predators move quickly to catch prey     (07b2-9ecc-9cbf-916e) [ AGENT_OBJECT:"predator", ACTION2:"move", HOW:"quickly", FOR_PURPOSE:"catch prey" ]
+	//  Notes: speed adaptation
+	//row autoRow5 = [UUID:"07b2-9ecc-9cbf-916e", AGENT_OBJECT: "predator", ACTION2: "move", HOW: "quickly", FOR_PURPOSE: "catch prey"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"07b2-9ecc-9cbf-916e", AGENT_OBJECT: "predator", ACTION2: "move", HOW: "quickly", FOR_PURPOSE: "catch prey"]
+
+	// CENTRAL         ACTION: a predator eats other animals for food     (9bdc-0291-3f7e-751d) [ AGENT_OBJECT:"predator", ACTION2:"eat", OBJECT_PROPERTY:"other animal", FOR_PURPOSE:"food" ]
+	//row autoRow6 = [UUID:"9bdc-0291-3f7e-751d", AGENT_OBJECT: "predator", ACTION2: "eat", OBJECT_PROPERTY: "other animal", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"9bdc-0291-3f7e-751d", AGENT_OBJECT: "predator", ACTION2: "eat", OBJECT_PROPERTY: "other animal", FOR_PURPOSE: "food"]
+
+	// CENTRAL         PARTOF: fins are a part of aquatic animals used for moving through water     (dba6-6a33-ccd7-4653) [ PART:"fin", WHOLE:"aquatic animal", FOR_PURPOSE:"move through water" ]
+	//row autoRow7 = [UUID:"dba6-6a33-ccd7-4653", PART: "fin", WHOLE: "aquatic animal", FOR_PURPOSE: "move through water"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"dba6-6a33-ccd7-4653", PART: "fin", WHOLE: "aquatic animal", FOR_PURPOSE: "move through water"]
+
+	// CENTRAL         AFFORDANCES: large fins can be used to move quickly through water     (c46f-1a47-b825-6df0) [ ACTOR_THING:"large fin", VERB:"use move quickly", SCOPE:"through water" ]
+	//row autoRow8 = [UUID:"c46f-1a47-b825-6df0", ACTOR_THING: "large fin", VERB: "use move quickly", SCOPE: "through water"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"c46f-1a47-b825-6df0", ACTOR_THING: "large fin", VERB: "use move quickly", SCOPE: "through water"]
+
+	// CENTRAL         KINDOF: prey is a kind of food for predators     (d719-81ad-03ff-57f0) [ HYPONYM:"prey", HYPERNYM:"food", FOR_PURPOSE:"predator" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"d719-81ad-03ff-57f0", HYPONYM: "prey", HYPERNYM: "food", FOR_PURPOSE: "predator"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"d719-81ad-03ff-57f0", HYPONYM: "prey", HYPERNYM: "food", FOR_PURPOSE: "predator"]
+
+	// CENTRAL         CONSUMERS-EATING: predators eat prey     (fb00-41ad-f198-b5ac) [ ORGANISM1:"predator", EATS_CONSUMES:"eat", ORGANISM2:"prey" ]
+	//row autoRow10 = [UUID:"fb00-41ad-f198-b5ac", ORGANISM1: "predator", EATS_CONSUMES: "eat", ORGANISM2: "prey"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"fb00-41ad-f198-b5ac", ORGANISM1: "predator", EATS_CONSUMES: "eat", ORGANISM2: "prey"]
+
+	// CENTRAL         CONSUMERS-EATING: tuna eat fish     (4134-b88a-654b-1cf3) [ ORGANISM1:"tuna", EATS_CONSUMES:"eat", ORGANISM2:"fish" ]
+	//  Notes: the example of X eating Y
+	//row autoRow11 = [UUID:"4134-b88a-654b-1cf3", ORGANISM1: "tuna", EATS_CONSUMES: "eat", ORGANISM2: "fish"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"4134-b88a-654b-1cf3", ORGANISM1: "tuna", EATS_CONSUMES: "eat", ORGANISM2: "fish"]
+
+	// CENTRAL         KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"]
+
+	// CENTRAL         AFFECT: an adaptation ; an ability has a positive impact on an animal 's ; living thing 's survival ; health ; ability to reproduce     (b48d-28f4-b020-de9f) [ OBJECT_PROPERTY:"adapt;ability", POSITIVE_NEGATIVE:"positive", ADJ:"animal;live thing", PATIENT:"survive;health;ability reproduce" ]
+	//row autoRow13 = [UUID:"b48d-28f4-b020-de9f", OBJECT_PROPERTY: "adapt", POSITIVE_NEGATIVE: "positive", ADJ: "live thing", PATIENT: "ability reproduce"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"b48d-28f4-b020-de9f", OBJECT_PROPERTY: "adapt", POSITIVE_NEGATIVE: "positive", ADJ: "live thing", PATIENT: "ability reproduce"]
+
+	// CENTRAL         EXAMPLES: An example of an adaptation is moving fast     (9ee9-6353-1bca-2fa5) [ AGENT_OBJECT1:"adapt", VERB2:"move", AGENT_OBJECT3:"fast" ]
+	//row autoRow14 = [UUID:"9ee9-6353-1bca-2fa5", AGENT_OBJECT1: "adapt", VERB2: "move", AGENT_OBJECT3: "fast"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"9ee9-6353-1bca-2fa5", AGENT_OBJECT1: "adapt", VERB2: "move", AGENT_OBJECT3: "fast"]
+
+	// CENTRAL         IFTHEN: if an organism 's prey moves quickly then that organism may need to move quickly to catch its prey     (8fd4-1c07-b659-3ae7) [ ADJ_QUANTITY1:"organism", THING:"prey", ACTION1:"move quickly", ACTOR_AGENT_PROCESS2:"that organism", ACTION3:"need move", OBJECT_PROPERTY3:"quickly", PURPOSE:"catch prey" ]
+	//row autoRow15 = [UUID:"8fd4-1c07-b659-3ae7", ADJ_QUANTITY1: "organism", THING: "prey", ACTION1: "move quickly", ACTOR_AGENT_PROCESS2: "that organism", ACTION3: "need move", OBJECT_PROPERTY3: "quickly", PURPOSE: "catch prey"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"8fd4-1c07-b659-3ae7", ADJ_QUANTITY1: "organism", THING: "prey", ACTION1: "move quickly", ACTOR_AGENT_PROCESS2: "that organism", ACTION3: "need move", OBJECT_PROPERTY3: "quickly", PURPOSE: "catch prey"]
+
+	// CENTRAL         REQUIRES: eating prey requires catching prey     (69cc-d300-368f-169b) [ ACTION1:"eat", OBJECT_AGENT_PROCESS:"prey", VERB_REQUIRES:"require", ACTION2:"catch", OBJECT:"prey" ]
+	//row autoRow16 = [UUID:"69cc-d300-368f-169b", ACTION1: "eat", OBJECT_AGENT_PROCESS: "prey", VERB_REQUIRES: "require", ACTION2: "catch", OBJECT: "prey"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"69cc-d300-368f-169b", ACTION1: "eat", OBJECT_AGENT_PROCESS: "prey", VERB_REQUIRES: "require", ACTION2: "catch", OBJECT: "prey"]
+
+	// LEXGLUE         SYNONYMY: eating an animal ; a plant means killing that animal ; that plant     (785b-6d16-8fc8-ee28) [ ACTION1:"eat", Y1:"animal;plant", ACTION2:"kill", Y2:"that animal;plant" ]
+	//row autoRow17 = [UUID:"785b-6d16-8fc8-ee28", ACTION1: "eat", Y1: "animal", ACTION2: "kill", Y2: "that animal"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"785b-6d16-8fc8-ee28", ACTION1: "eat", Y1: "animal", ACTION2: "kill", Y2: "that animal"]
+
+endinferencepattern

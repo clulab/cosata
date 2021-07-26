@@ -1,0 +1,521 @@
+{"patternMatches": [
+{
+	"patternName":"CEL_TIDES_Tides_by_Gravity",
+	"matches":[
+		{
+		"uuids": ["5095-dfd3-1847-a4a0","8317-e088-279b-ba21","9d4d-3bfb-e0e2-d068","ddca-37d6-9e7b-d216","5491-9457-39e4-2a7a","91b9-6388-d5b8-58b6","cc3c-b438-6a44-57f6","7c75-71b3-613b-1ebe","abe7-8ef7-d11e-25ca","1db8-7615-aa61-9575","a6ed-d678-af19-2281","782a-53e7-c1c7-aae0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5095-dfd3-1847-a4a0", "rowText": "as the gravitational pull of the moon on the Earth increases , the size of the tides on Earth increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8317-e088-279b-ba21", "rowText": "high tide is a stage in the tide cycle process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d4d-3bfb-e0e2-d068", "rowText": "as distance from an object decreases , the pull of gravity on that object increases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ddca-37d6-9e7b-d216", "rowText": "the gravitational pull of the Moon on Earth 's oceans causes the tides", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4A", "uuid": "5491-9457-39e4-2a7a", "rowText": "a moon is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "cc3c-b438-6a44-57f6", "rowText": "the tide cycle occurs regularly twice per day", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7c75-71b3-613b-1ebe", "rowText": "a tide is a kind of natural event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "abe7-8ef7-d11e-25ca", "rowText": "the tide is when ocean levels periodically rise ; fall", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1db8-7615-aa61-9575", "rowText": "rise is similar to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a6ed-d678-af19-2281", "rowText": "gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "782a-53e7-c1c7-aae0", "rowText": "an increase is a kind of change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialBody", "value":"moon" },
+			{ "name":"incDec", "value":"increase" },
+			{ "name":"incDec1", "value":"decrease" },
+			{ "name":"incDecGravPull", "value":"increase" },
+			{ "name":"incDecTideSize", "value":"increase" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"high tide" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialBody", "value":"moon" },
+			{ "name":"incDec", "value":"increases" },
+			{ "name":"incDec1", "value":"decreases" },
+			{ "name":"incDecGravPull", "value":"increases" },
+			{ "name":"incDecTideSize", "value":"increases" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"high tides" }
+		]
+		},
+		{
+		"uuids": ["5095-dfd3-1847-a4a0","8317-e088-279b-ba21","9d4d-3bfb-e0e2-d068","ddca-37d6-9e7b-d216","TEMPGEN-1424763","91b9-6388-d5b8-58b6","cc3c-b438-6a44-57f6","7c75-71b3-613b-1ebe","abe7-8ef7-d11e-25ca","1db8-7615-aa61-9575","a6ed-d678-af19-2281","782a-53e7-c1c7-aae0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5095-dfd3-1847-a4a0", "rowText": "as the gravitational pull of the moon on the Earth increases , the size of the tides on Earth increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8317-e088-279b-ba21", "rowText": "high tide is a stage in the tide cycle process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d4d-3bfb-e0e2-d068", "rowText": "as distance from an object decreases , the pull of gravity on that object increases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ddca-37d6-9e7b-d216", "rowText": "the gravitational pull of the Moon on Earth 's oceans causes the tides", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4A", "uuid": "TEMPGEN-1424763", "rowText": "moon is a kind of celestial body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "cc3c-b438-6a44-57f6", "rowText": "the tide cycle occurs regularly twice per day", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7c75-71b3-613b-1ebe", "rowText": "a tide is a kind of natural event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "abe7-8ef7-d11e-25ca", "rowText": "the tide is when ocean levels periodically rise ; fall", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1db8-7615-aa61-9575", "rowText": "rise is similar to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a6ed-d678-af19-2281", "rowText": "gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "782a-53e7-c1c7-aae0", "rowText": "an increase is a kind of change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialBody", "value":"moon" },
+			{ "name":"incDec", "value":"increase" },
+			{ "name":"incDec1", "value":"decrease" },
+			{ "name":"incDecGravPull", "value":"increase" },
+			{ "name":"incDecTideSize", "value":"increase" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"high tide" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialBody", "value":"moon" },
+			{ "name":"incDec", "value":"increases" },
+			{ "name":"incDec1", "value":"decreases" },
+			{ "name":"incDecGravPull", "value":"increases" },
+			{ "name":"incDecTideSize", "value":"increases" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"high tides" }
+		]
+		},
+		{
+		"uuids": ["5095-dfd3-1847-a4a0","568b-892b-0284-5037","9d4d-3bfb-e0e2-d068","ddca-37d6-9e7b-d216","5491-9457-39e4-2a7a","91b9-6388-d5b8-58b6","cc3c-b438-6a44-57f6","7c75-71b3-613b-1ebe","abe7-8ef7-d11e-25ca","1db8-7615-aa61-9575","a6ed-d678-af19-2281","782a-53e7-c1c7-aae0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5095-dfd3-1847-a4a0", "rowText": "as the gravitational pull of the moon on the Earth increases , the size of the tides on Earth increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "568b-892b-0284-5037", "rowText": "low tide is a stage in the tide cycle process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d4d-3bfb-e0e2-d068", "rowText": "as distance from an object decreases , the pull of gravity on that object increases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ddca-37d6-9e7b-d216", "rowText": "the gravitational pull of the Moon on Earth 's oceans causes the tides", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4A", "uuid": "5491-9457-39e4-2a7a", "rowText": "a moon is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "cc3c-b438-6a44-57f6", "rowText": "the tide cycle occurs regularly twice per day", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7c75-71b3-613b-1ebe", "rowText": "a tide is a kind of natural event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "abe7-8ef7-d11e-25ca", "rowText": "the tide is when ocean levels periodically rise ; fall", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1db8-7615-aa61-9575", "rowText": "rise is similar to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a6ed-d678-af19-2281", "rowText": "gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "782a-53e7-c1c7-aae0", "rowText": "an increase is a kind of change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialBody", "value":"moon" },
+			{ "name":"incDec", "value":"increase" },
+			{ "name":"incDec1", "value":"decrease" },
+			{ "name":"incDecGravPull", "value":"increase" },
+			{ "name":"incDecTideSize", "value":"increase" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"low tide" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialBody", "value":"moon" },
+			{ "name":"incDec", "value":"increases" },
+			{ "name":"incDec1", "value":"decreases" },
+			{ "name":"incDecGravPull", "value":"increases" },
+			{ "name":"incDecTideSize", "value":"increases" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"low tides" }
+		]
+		},
+		{
+		"uuids": ["5095-dfd3-1847-a4a0","568b-892b-0284-5037","9d4d-3bfb-e0e2-d068","ddca-37d6-9e7b-d216","TEMPGEN-1424763","91b9-6388-d5b8-58b6","cc3c-b438-6a44-57f6","7c75-71b3-613b-1ebe","abe7-8ef7-d11e-25ca","1db8-7615-aa61-9575","a6ed-d678-af19-2281","782a-53e7-c1c7-aae0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5095-dfd3-1847-a4a0", "rowText": "as the gravitational pull of the moon on the Earth increases , the size of the tides on Earth increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "568b-892b-0284-5037", "rowText": "low tide is a stage in the tide cycle process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d4d-3bfb-e0e2-d068", "rowText": "as distance from an object decreases , the pull of gravity on that object increases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ddca-37d6-9e7b-d216", "rowText": "the gravitational pull of the Moon on Earth 's oceans causes the tides", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4A", "uuid": "TEMPGEN-1424763", "rowText": "moon is a kind of celestial body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "cc3c-b438-6a44-57f6", "rowText": "the tide cycle occurs regularly twice per day", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7c75-71b3-613b-1ebe", "rowText": "a tide is a kind of natural event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "abe7-8ef7-d11e-25ca", "rowText": "the tide is when ocean levels periodically rise ; fall", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1db8-7615-aa61-9575", "rowText": "rise is similar to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a6ed-d678-af19-2281", "rowText": "gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "782a-53e7-c1c7-aae0", "rowText": "an increase is a kind of change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"celestialBody", "value":"moon" },
+			{ "name":"incDec", "value":"increase" },
+			{ "name":"incDec1", "value":"decrease" },
+			{ "name":"incDecGravPull", "value":"increase" },
+			{ "name":"incDecTideSize", "value":"increase" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"low tide" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"celestialBody", "value":"moon" },
+			{ "name":"incDec", "value":"increases" },
+			{ "name":"incDec1", "value":"decreases" },
+			{ "name":"incDecGravPull", "value":"increases" },
+			{ "name":"incDecTideSize", "value":"increases" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"low tides" }
+		]
+		},
+		{
+		"uuids": ["8317-e088-279b-ba21","9d4d-3bfb-e0e2-d068","ddca-37d6-9e7b-d216","5491-9457-39e4-2a7a","91b9-6388-d5b8-58b6","cc3c-b438-6a44-57f6","7c75-71b3-613b-1ebe","abe7-8ef7-d11e-25ca","1db8-7615-aa61-9575","a6ed-d678-af19-2281","782a-53e7-c1c7-aae0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8317-e088-279b-ba21", "rowText": "high tide is a stage in the tide cycle process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d4d-3bfb-e0e2-d068", "rowText": "as distance from an object decreases , the pull of gravity on that object increases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ddca-37d6-9e7b-d216", "rowText": "the gravitational pull of the Moon on Earth 's oceans causes the tides", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4A", "uuid": "5491-9457-39e4-2a7a", "rowText": "a moon is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "cc3c-b438-6a44-57f6", "rowText": "the tide cycle occurs regularly twice per day", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7c75-71b3-613b-1ebe", "rowText": "a tide is a kind of natural event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "abe7-8ef7-d11e-25ca", "rowText": "the tide is when ocean levels periodically rise ; fall", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1db8-7615-aa61-9575", "rowText": "rise is similar to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a6ed-d678-af19-2281", "rowText": "gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "782a-53e7-c1c7-aae0", "rowText": "an increase is a kind of change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"moon" },
+			{ "name":"incDec", "value":"increase" },
+			{ "name":"incDec1", "value":"decrease" },
+			{ "name":"incDecGravPull", "value":"increase" },
+			{ "name":"incDecTideSize", "value":"increase" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"high tide" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"Moon" },
+			{ "name":"incDec", "value":"increases" },
+			{ "name":"incDec1", "value":"decreases" },
+			{ "name":"incDecGravPull", "value":"increases" },
+			{ "name":"incDecTideSize", "value":"increases" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"high tide" }
+		]
+		},
+		{
+		"uuids": ["8317-e088-279b-ba21","9d4d-3bfb-e0e2-d068","ddca-37d6-9e7b-d216","TEMPGEN-1424763","91b9-6388-d5b8-58b6","cc3c-b438-6a44-57f6","7c75-71b3-613b-1ebe","abe7-8ef7-d11e-25ca","1db8-7615-aa61-9575","a6ed-d678-af19-2281","782a-53e7-c1c7-aae0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8317-e088-279b-ba21", "rowText": "high tide is a stage in the tide cycle process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d4d-3bfb-e0e2-d068", "rowText": "as distance from an object decreases , the pull of gravity on that object increases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ddca-37d6-9e7b-d216", "rowText": "the gravitational pull of the Moon on Earth 's oceans causes the tides", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4A", "uuid": "TEMPGEN-1424763", "rowText": "moon is a kind of celestial body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "cc3c-b438-6a44-57f6", "rowText": "the tide cycle occurs regularly twice per day", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7c75-71b3-613b-1ebe", "rowText": "a tide is a kind of natural event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "abe7-8ef7-d11e-25ca", "rowText": "the tide is when ocean levels periodically rise ; fall", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1db8-7615-aa61-9575", "rowText": "rise is similar to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a6ed-d678-af19-2281", "rowText": "gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "782a-53e7-c1c7-aae0", "rowText": "an increase is a kind of change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"moon" },
+			{ "name":"incDec", "value":"increase" },
+			{ "name":"incDec1", "value":"decrease" },
+			{ "name":"incDecGravPull", "value":"increase" },
+			{ "name":"incDecTideSize", "value":"increase" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"high tide" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"Moon" },
+			{ "name":"incDec", "value":"increases" },
+			{ "name":"incDec1", "value":"decreases" },
+			{ "name":"incDecGravPull", "value":"increases" },
+			{ "name":"incDecTideSize", "value":"increases" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"high tide" }
+		]
+		},
+		{
+		"uuids": ["8317-e088-279b-ba21","9d4d-3bfb-e0e2-d068","b75d-4ff4-3225-6e84","TEMPGEN-1421162","91b9-6388-d5b8-58b6","cc3c-b438-6a44-57f6","7c75-71b3-613b-1ebe","abe7-8ef7-d11e-25ca","1db8-7615-aa61-9575","a6ed-d678-af19-2281","782a-53e7-c1c7-aae0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8317-e088-279b-ba21", "rowText": "high tide is a stage in the tide cycle process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d4d-3bfb-e0e2-d068", "rowText": "as distance from an object decreases , the pull of gravity on that object increases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b75d-4ff4-3225-6e84", "rowText": "the gravitational pull of the Sun on Earth 's oceans causes the tides", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4A", "uuid": "TEMPGEN-1421162", "rowText": "sun is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "cc3c-b438-6a44-57f6", "rowText": "the tide cycle occurs regularly twice per day", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7c75-71b3-613b-1ebe", "rowText": "a tide is a kind of natural event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "abe7-8ef7-d11e-25ca", "rowText": "the tide is when ocean levels periodically rise ; fall", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1db8-7615-aa61-9575", "rowText": "rise is similar to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a6ed-d678-af19-2281", "rowText": "gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "782a-53e7-c1c7-aae0", "rowText": "an increase is a kind of change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"sun" },
+			{ "name":"incDec", "value":"increase" },
+			{ "name":"incDec1", "value":"decrease" },
+			{ "name":"incDecGravPull", "value":"increase" },
+			{ "name":"incDecTideSize", "value":"increase" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"high tide" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"Sun" },
+			{ "name":"incDec", "value":"increases" },
+			{ "name":"incDec1", "value":"decreases" },
+			{ "name":"incDecGravPull", "value":"increases" },
+			{ "name":"incDecTideSize", "value":"increases" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"high tide" }
+		]
+		},
+		{
+		"uuids": ["8317-e088-279b-ba21","9d4d-3bfb-e0e2-d068","b75d-4ff4-3225-6e84","TEMPGEN-1421166","91b9-6388-d5b8-58b6","cc3c-b438-6a44-57f6","7c75-71b3-613b-1ebe","abe7-8ef7-d11e-25ca","1db8-7615-aa61-9575","a6ed-d678-af19-2281","782a-53e7-c1c7-aae0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8317-e088-279b-ba21", "rowText": "high tide is a stage in the tide cycle process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d4d-3bfb-e0e2-d068", "rowText": "as distance from an object decreases , the pull of gravity on that object increases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b75d-4ff4-3225-6e84", "rowText": "the gravitational pull of the Sun on Earth 's oceans causes the tides", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4A", "uuid": "TEMPGEN-1421166", "rowText": "sun is a kind of celestial body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "cc3c-b438-6a44-57f6", "rowText": "the tide cycle occurs regularly twice per day", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7c75-71b3-613b-1ebe", "rowText": "a tide is a kind of natural event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "abe7-8ef7-d11e-25ca", "rowText": "the tide is when ocean levels periodically rise ; fall", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1db8-7615-aa61-9575", "rowText": "rise is similar to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a6ed-d678-af19-2281", "rowText": "gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "782a-53e7-c1c7-aae0", "rowText": "an increase is a kind of change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"sun" },
+			{ "name":"incDec", "value":"increase" },
+			{ "name":"incDec1", "value":"decrease" },
+			{ "name":"incDecGravPull", "value":"increase" },
+			{ "name":"incDecTideSize", "value":"increase" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"high tide" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"Sun" },
+			{ "name":"incDec", "value":"increases" },
+			{ "name":"incDec1", "value":"decreases" },
+			{ "name":"incDecGravPull", "value":"increases" },
+			{ "name":"incDecTideSize", "value":"increases" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"high tide" }
+		]
+		},
+		{
+		"uuids": ["568b-892b-0284-5037","9d4d-3bfb-e0e2-d068","ddca-37d6-9e7b-d216","5491-9457-39e4-2a7a","91b9-6388-d5b8-58b6","cc3c-b438-6a44-57f6","7c75-71b3-613b-1ebe","abe7-8ef7-d11e-25ca","1db8-7615-aa61-9575","a6ed-d678-af19-2281","782a-53e7-c1c7-aae0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "568b-892b-0284-5037", "rowText": "low tide is a stage in the tide cycle process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d4d-3bfb-e0e2-d068", "rowText": "as distance from an object decreases , the pull of gravity on that object increases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ddca-37d6-9e7b-d216", "rowText": "the gravitational pull of the Moon on Earth 's oceans causes the tides", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4A", "uuid": "5491-9457-39e4-2a7a", "rowText": "a moon is a kind of celestial object ; celestial body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "cc3c-b438-6a44-57f6", "rowText": "the tide cycle occurs regularly twice per day", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7c75-71b3-613b-1ebe", "rowText": "a tide is a kind of natural event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "abe7-8ef7-d11e-25ca", "rowText": "the tide is when ocean levels periodically rise ; fall", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1db8-7615-aa61-9575", "rowText": "rise is similar to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a6ed-d678-af19-2281", "rowText": "gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "782a-53e7-c1c7-aae0", "rowText": "an increase is a kind of change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"moon" },
+			{ "name":"incDec", "value":"increase" },
+			{ "name":"incDec1", "value":"decrease" },
+			{ "name":"incDecGravPull", "value":"increase" },
+			{ "name":"incDecTideSize", "value":"increase" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"low tide" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"Moon" },
+			{ "name":"incDec", "value":"increases" },
+			{ "name":"incDec1", "value":"decreases" },
+			{ "name":"incDecGravPull", "value":"increases" },
+			{ "name":"incDecTideSize", "value":"increases" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"low tide" }
+		]
+		},
+		{
+		"uuids": ["568b-892b-0284-5037","9d4d-3bfb-e0e2-d068","ddca-37d6-9e7b-d216","TEMPGEN-1424763","91b9-6388-d5b8-58b6","cc3c-b438-6a44-57f6","7c75-71b3-613b-1ebe","abe7-8ef7-d11e-25ca","1db8-7615-aa61-9575","a6ed-d678-af19-2281","782a-53e7-c1c7-aae0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "568b-892b-0284-5037", "rowText": "low tide is a stage in the tide cycle process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d4d-3bfb-e0e2-d068", "rowText": "as distance from an object decreases , the pull of gravity on that object increases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ddca-37d6-9e7b-d216", "rowText": "the gravitational pull of the Moon on Earth 's oceans causes the tides", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4A", "uuid": "TEMPGEN-1424763", "rowText": "moon is a kind of celestial body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "cc3c-b438-6a44-57f6", "rowText": "the tide cycle occurs regularly twice per day", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7c75-71b3-613b-1ebe", "rowText": "a tide is a kind of natural event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "abe7-8ef7-d11e-25ca", "rowText": "the tide is when ocean levels periodically rise ; fall", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1db8-7615-aa61-9575", "rowText": "rise is similar to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a6ed-d678-af19-2281", "rowText": "gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "782a-53e7-c1c7-aae0", "rowText": "an increase is a kind of change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"moon" },
+			{ "name":"incDec", "value":"increase" },
+			{ "name":"incDec1", "value":"decrease" },
+			{ "name":"incDecGravPull", "value":"increase" },
+			{ "name":"incDecTideSize", "value":"increase" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"low tide" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"Moon" },
+			{ "name":"incDec", "value":"increases" },
+			{ "name":"incDec1", "value":"decreases" },
+			{ "name":"incDecGravPull", "value":"increases" },
+			{ "name":"incDecTideSize", "value":"increases" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"low tide" }
+		]
+		},
+		{
+		"uuids": ["568b-892b-0284-5037","9d4d-3bfb-e0e2-d068","b75d-4ff4-3225-6e84","TEMPGEN-1421162","91b9-6388-d5b8-58b6","cc3c-b438-6a44-57f6","7c75-71b3-613b-1ebe","abe7-8ef7-d11e-25ca","1db8-7615-aa61-9575","a6ed-d678-af19-2281","782a-53e7-c1c7-aae0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "568b-892b-0284-5037", "rowText": "low tide is a stage in the tide cycle process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d4d-3bfb-e0e2-d068", "rowText": "as distance from an object decreases , the pull of gravity on that object increases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b75d-4ff4-3225-6e84", "rowText": "the gravitational pull of the Sun on Earth 's oceans causes the tides", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4A", "uuid": "TEMPGEN-1421162", "rowText": "sun is a kind of celestial object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "cc3c-b438-6a44-57f6", "rowText": "the tide cycle occurs regularly twice per day", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7c75-71b3-613b-1ebe", "rowText": "a tide is a kind of natural event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "abe7-8ef7-d11e-25ca", "rowText": "the tide is when ocean levels periodically rise ; fall", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1db8-7615-aa61-9575", "rowText": "rise is similar to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a6ed-d678-af19-2281", "rowText": "gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "782a-53e7-c1c7-aae0", "rowText": "an increase is a kind of change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"sun" },
+			{ "name":"incDec", "value":"increase" },
+			{ "name":"incDec1", "value":"decrease" },
+			{ "name":"incDecGravPull", "value":"increase" },
+			{ "name":"incDecTideSize", "value":"increase" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"low tide" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"Sun" },
+			{ "name":"incDec", "value":"increases" },
+			{ "name":"incDec1", "value":"decreases" },
+			{ "name":"incDecGravPull", "value":"increases" },
+			{ "name":"incDecTideSize", "value":"increases" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"low tide" }
+		]
+		},
+		{
+		"uuids": ["568b-892b-0284-5037","9d4d-3bfb-e0e2-d068","b75d-4ff4-3225-6e84","TEMPGEN-1421166","91b9-6388-d5b8-58b6","cc3c-b438-6a44-57f6","7c75-71b3-613b-1ebe","abe7-8ef7-d11e-25ca","1db8-7615-aa61-9575","a6ed-d678-af19-2281","782a-53e7-c1c7-aae0"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "568b-892b-0284-5037", "rowText": "low tide is a stage in the tide cycle process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d4d-3bfb-e0e2-d068", "rowText": "as distance from an object decreases , the pull of gravity on that object increases", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b75d-4ff4-3225-6e84", "rowText": "the gravitational pull of the Sun on Earth 's oceans causes the tides", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4A", "uuid": "TEMPGEN-1421166", "rowText": "sun is a kind of celestial body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "91b9-6388-d5b8-58b6", "rowText": "distance is a property of space and includes ordered values of close ; far", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "cc3c-b438-6a44-57f6", "rowText": "the tide cycle occurs regularly twice per day", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7c75-71b3-613b-1ebe", "rowText": "a tide is a kind of natural event", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "abe7-8ef7-d11e-25ca", "rowText": "the tide is when ocean levels periodically rise ; fall", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1db8-7615-aa61-9575", "rowText": "rise is similar to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a6ed-d678-af19-2281", "rowText": "gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "782a-53e7-c1c7-aae0", "rowText": "an increase is a kind of change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"sun" },
+			{ "name":"incDec", "value":"increase" },
+			{ "name":"incDec1", "value":"decrease" },
+			{ "name":"incDecGravPull", "value":"increase" },
+			{ "name":"incDecTideSize", "value":"increase" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"low tide" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"celestialBody", "value":"Sun" },
+			{ "name":"incDec", "value":"increases" },
+			{ "name":"incDec1", "value":"decreases" },
+			{ "name":"incDecGravPull", "value":"increases" },
+			{ "name":"incDecTideSize", "value":"increases" },
+			{ "name":"riseFall", "value":"rise" },
+			{ "name":"tideStage", "value":"low tide" }
+		]
+		}
+	]
+},
+{
+	"patternName":"SpringTide",
+	"matches":[
+		{
+		"uuids": ["0740-308a-85e1-af19","38a0-db1a-ac8d-276b"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "0740-308a-85e1-af19", "rowText": "spring tides occur during a full moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "38a0-db1a-ac8d-276b", "rowText": "spring tide is similar to high tide", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"moonPhase", "value":"full" },
+			{ "name":"tideType", "value":"spring" },
+			{ "name":"tideType2", "value":"high" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"moonPhase", "value":"full" },
+			{ "name":"tideType", "value":"spring" },
+			{ "name":"tideType2", "value":"high" }
+		]
+		},
+		{
+		"uuids": ["21da-2d01-19be-dc98","38a0-db1a-ac8d-276b"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "21da-2d01-19be-dc98", "rowText": "spring tides occur during a new moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "38a0-db1a-ac8d-276b", "rowText": "spring tide is similar to high tide", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"moonPhase", "value":"new" },
+			{ "name":"tideType", "value":"spring" },
+			{ "name":"tideType2", "value":"high" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"moonPhase", "value":"new" },
+			{ "name":"tideType", "value":"spring" },
+			{ "name":"tideType2", "value":"high" }
+		]
+		},
+		{
+		"uuids": ["0740-308a-85e1-af19"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "0740-308a-85e1-af19", "rowText": "spring tides occur during a full moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"moonPhase", "value":"full" },
+			{ "name":"tideType", "value":"spring" },
+			{ "name":"tideType2", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"moonPhase", "value":"full" },
+			{ "name":"tideType", "value":"spring" },
+			{ "name":"tideType2", "value":"" }
+		]
+		},
+		{
+		"uuids": ["21da-2d01-19be-dc98"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "21da-2d01-19be-dc98", "rowText": "spring tides occur during a new moon", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"moonPhase", "value":"new" },
+			{ "name":"tideType", "value":"spring" },
+			{ "name":"tideType2", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"moonPhase", "value":"new" },
+			{ "name":"tideType", "value":"spring" },
+			{ "name":"tideType2", "value":"" }
+		]
+		}
+	]
+}
+]}
+

@@ -1,0 +1,74 @@
+// Automatically converted pattern
+inferencepattern ENG_LIGHT_Seeing_Light
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: dark means a low amount of light     (eb6b-ac77-0835-6afe) [ THING:"dark", VALUE:"low amount", ATTRIBUTE:"light" ]
+	//        HINTROW bright means a lot of light     (56a9-dbc0-3e13-141a) [ THING:"bright", VALUE:"lot", ATTRIBUTE:"light" ]
+	//row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "dark", ATTRIBUTE: "light"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "light"]
+
+	// GROUNDING       KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//        HINTROW a bird is a kind of animal     (e26b-b21d-d4a3-25fc) [ HYPONYM:"bird", HYPERNYM:"animal" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// CENTRAL         IFTHEN: if something is in a dark place , then that something will not reflect enough light to be seen     (ed1e-84aa-5845-7f94) [ THING:"something", OBJECT_PROPERTY1:"in dark place", ACTOR_AGENT_PROCESS2:"that something", QUANTIFIER3:"not", ACTION3:"reflect", ADJ_QUANTIFIER3:"enough", OBJECT_PROPERTY3:"light", PURPOSE:"be see" ]
+	//row autoRow2 = [UUID:"ed1e-84aa-5845-7f94", THING: "something", OBJECT_PROPERTY1: "in dark place", ACTOR_AGENT_PROCESS2: "that something", QUANTIFIER3: "not", ACTION3: "reflect", ADJ_QUANTIFIER3: "enough", OBJECT_PROPERTY3: "light", PURPOSE: "be see"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"ed1e-84aa-5845-7f94", THING: "something", OBJECT_PROPERTY1: "in dark place", ACTOR_AGENT_PROCESS2: "that something", QUANTIFIER3: "not", ACTION3: "reflect", ADJ_QUANTIFIER3: "enough", OBJECT_PROPERTY3: "light", PURPOSE: "be see"]
+
+	// CENTRAL         IFTHEN: if something is outside during the day , then that something will reflect enough light to be seen     (3207-2b53-4ad7-f154) [ THING:"something", OBJECT_PROPERTY1:"outside during day", ACTOR_AGENT_PROCESS2:"that something", ACTION3:"reflect", ADJ_QUANTIFIER3:"enough", OBJECT_PROPERTY3:"light", PURPOSE:"be see" ]
+	//row autoRow3 = [UUID:"3207-2b53-4ad7-f154", THING: "something", OBJECT_PROPERTY1: "outside during day", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "reflect", ADJ_QUANTIFIER3: "enough", OBJECT_PROPERTY3: "light", PURPOSE: "be see"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"3207-2b53-4ad7-f154", THING: "something", OBJECT_PROPERTY1: "outside during day", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "reflect", ADJ_QUANTIFIER3: "enough", OBJECT_PROPERTY3: "light", PURPOSE: "be see"]
+
+	// CENTRAL         CAUSE: light reflecting off of an object causes that object to be visible to the observer     (6315-d70b-bc57-16c8) [ CONDITION_AGENT_OBJECT:"light", CONDITION_VERB:"reflect", CONDITION_PATIENT:"off of object", RESULT_AGENT:"that object", RESULT_VERB:"be visible", RESULT_PATIENT:"observer" ]
+	//row autoRow4 = [UUID:"6315-d70b-bc57-16c8", CONDITION_AGENT_OBJECT: "light", CONDITION_VERB: "reflect", CONDITION_PATIENT: "off of object", RESULT_AGENT: "that object", RESULT_VERB: "be visible", RESULT_PATIENT: "observer"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"6315-d70b-bc57-16c8", CONDITION_AGENT_OBJECT: "light", CONDITION_VERB: "reflect", CONDITION_PATIENT: "off of object", RESULT_AGENT: "that object", RESULT_VERB: "be visible", RESULT_PATIENT: "observer"]
+
+	// CENTRAL         IFTHEN: if an object reflects light toward the eye then that object can be seen     (ae74-32dc-4291-fb82) [ THING:"object", ACTION1:"reflect", OBJECT_PATIENT1:"light", SCOPE1B:"toward eye", ACTOR_AGENT_PROCESS2:"that object", ACTION3:"see" ]
+	//row autoRow5 = [UUID:"ae74-32dc-4291-fb82", THING: "object", ACTION1: "reflect", OBJECT_PATIENT1: "light", SCOPE1B: "toward eye", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "see"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"ae74-32dc-4291-fb82", THING: "object", ACTION1: "reflect", OBJECT_PATIENT1: "light", SCOPE1B: "toward eye", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "see"]
+
+	// CENTRAL         PARTOF: eyes are usually part of an animal for seeing     (e0eb-f67a-6f99-b25b) [ PART:"eye", QUANTIFIER1:"be usually", WHOLE:"animal", FOR_PURPOSE:"see" ]
+	//row autoRow6 = [UUID:"e0eb-f67a-6f99-b25b", PART: "eye", QUANTIFIER1: "be usually", WHOLE: "animal", FOR_PURPOSE: "see"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"e0eb-f67a-6f99-b25b", PART: "eye", QUANTIFIER1: "be usually", WHOLE: "animal", FOR_PURPOSE: "see"]
+
+	// CENTRAL         IFTHEN: if an object reflects more light then that object is more easily seen     (9141-2292-7be5-c8b7) [ THING:"object", ACTION1:"reflect", ADJ_QUANTITY1A:"much", OBJECT_PATIENT1:"light", ACTOR_AGENT_PROCESS2:"that object", ADJ_QUANTIFIER3:"much", OBJECT_PROPERTY3:"easy see" ]
+	//row autoRow7 = [UUID:"9141-2292-7be5-c8b7", THING: "object", ACTION1: "reflect", ADJ_QUANTITY1A: "much", OBJECT_PATIENT1: "light", ACTOR_AGENT_PROCESS2: "that object", ADJ_QUANTIFIER3: "much", OBJECT_PROPERTY3: "easy see"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"9141-2292-7be5-c8b7", THING: "object", ACTION1: "reflect", ADJ_QUANTITY1A: "much", OBJECT_PATIENT1: "light", ACTOR_AGENT_PROCESS2: "that object", ADJ_QUANTIFIER3: "much", OBJECT_PROPERTY3: "easy see"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+	// CENTRAL         DURING: daylight occurs during the day     (c354-58fd-8d25-d949) [ AGENT:"daylight", TIME:"day" ]
+	//  Notes: 4ad3-64a8-4c4a-f568->c354-58fd-8d25-d949
+	//row autoRow9 = [UUID:"c354-58fd-8d25-d949", AGENT: "daylight", TIME: "day"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"c354-58fd-8d25-d949", AGENT: "daylight", TIME: "day"]
+
+	// CENTRAL        (OPTIONAL) AFFORDANCES: sunlight can shine through a window     (1f7b-30af-4177-e9d5) [ ACTOR_THING:"sunlight", VERB:"shine", SCOPE:"through window" ]
+	//  Notes: the reason that we can see through the window
+	//row *autoRow10 = [UUID:"1f7b-30af-4177-e9d5", ACTOR_THING: "sunlight", VERB: "shine", SCOPE: "through window"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"1f7b-30af-4177-e9d5", ACTOR_THING: "sunlight", VERB: "shine", SCOPE: "through window"]
+
+	// CENTRAL         KINDOF: sight is a kind of sense     (39ca-a831-8d1a-babd) [ HYPONYM:"sight", HYPERNYM:"sense" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"39ca-a831-8d1a-babd", HYPONYM: "sight", HYPERNYM: "sense"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"39ca-a831-8d1a-babd", HYPONYM: "sight", HYPERNYM: "sense"]
+
+	// CENTRAL         KINDOF: sunlight is a kind of light     (49dc-4526-46f9-5b32) [ HYPONYM:"sunlight", HYPERNYM:"light" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"49dc-4526-46f9-5b32", HYPONYM: "sunlight", HYPERNYM: "light"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"49dc-4526-46f9-5b32", HYPONYM: "sunlight", HYPERNYM: "light"]
+
+	// LEXGLUE         SYNONYMY: daylight means sunlight     (81a9-8f8a-02ee-4dbc) [ X1:"daylight", X2:"sunlight" ]
+	//row autoRow13 = [UUID:"81a9-8f8a-02ee-4dbc", X1: "daylight", X2: "sunlight"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"81a9-8f8a-02ee-4dbc", X1: "daylight", X2: "sunlight"]
+
+endinferencepattern

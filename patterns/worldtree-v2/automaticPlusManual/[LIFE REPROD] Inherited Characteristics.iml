@@ -1,0 +1,67 @@
+// Automatically converted pattern
+inferencepattern LIFE_REPROD_Inherited_Characteristics
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+    // Row 2 and 2A should either both be populated, or both be unpopulated
+	musthaveoromit(((<autoRow2> != "") && (<autoRow2A> != "")) || ((<autoRow2> == "") && (<autoRow2A> == "")))
+	
+	// Row Definitions
+
+	// CENTRALSW       PROP-INHERITEDLEARNED: the color of ; coloration of fur is an inherited characteristic     (29be-69ad-17f4-11f0) [ ATTRIBUTE_QUANTITY:"color of;coloration of", AGENT:"fur", INHERITED_LEARNED:"inherit" ]
+	//        HINTROW eye color is an inherited characteristic     (1763-9f64-7941-cb50) [ AGENT:"eye color", INHERITED_LEARNED:"inherit" ]
+	//        HINTROW curly hair is an inherited characteristic     (96e0-40fd-6189-dc8f) [ AGENT:"curly hair", INHERITED_LEARNED:"inherit" ]
+	//        HINTROW freckles are an inherited characteristic     (cfdf-d0cc-a5c3-d5c1) [ AGENT:"freckle", INHERITED_LEARNED:"inherit" ]
+	//        HINTROW height is an inherited characteristic     (78a9-0629-0526-4b03) [ AGENT:"height", INHERITED_LEARNED:"inherit" ]
+	//        HINTROW reproductive behavior is an inherited characteristic     (a616-023f-d122-f2f3) [ AGENT:"reproductive behavior", INHERITED_LEARNED:"inherit" ]
+	//row autoRow0 = [TABLE:"PROP-INHERITEDLEARNED", ATTRIBUTE_QUANTITY: "color of", INHERITED_LEARNED: "inherit"] //OVER-CONSTR.
+
+	//### row autoRow0 = [TABLE:"PROP-INHERITEDLEARNED", ATTRIBUTE_QUANTITY:<*attribute>, AGENT:<~part>, INHERITED_LEARNED: "inherit"]
+    row autoRow0 = [TABLE:"PROP-INHERITEDLEARNED", AGENT:<~part>, INHERITED_LEARNED: "inherit"]
+
+	// CENTRALSW       PROP-INHERITEDLEARNED: the colors of parts of an organism are inherited characteristics     (102a-fa79-43cd-e9a4) [ ATTRIBUTE_QUANTITY:"color of", AGENT:"part", SCOPE:"of organism", INHERITED_LEARNED:"inherit" ]
+	//        HINTROW the thickness of the parts of an organism is an inherited characteristic     (1d43-ce6e-b5c5-c568) [ ATTRIBUTE_QUANTITY:"thickness", AGENT:"part", SCOPE:"of organism", INHERITED_LEARNED:"inherit" ]
+	//        HINTROW the shape of body parts is an inherited characteristic     (c390-00e1-36dd-2ae2) [ ATTRIBUTE_QUANTITY:"shape", AGENT:"body part", INHERITED_LEARNED:"inherit" ]
+	//        HINTROW the number of body parts of an organism is an inherited characteristic     (b4e7-dad7-cb84-1e31) [ ATTRIBUTE_QUANTITY:"numb", AGENT:"body part", SCOPE:"of organism", INHERITED_LEARNED:"inherit" ]
+	//        HINTROW the size of an organism is an inherited characteristic     (e8ec-4518-aa04-2498) [ ATTRIBUTE_QUANTITY:"size", AGENT:"organism", INHERITED_LEARNED:"inherit" ]
+	//row autoRow1 = [TABLE:"PROP-INHERITEDLEARNED", ATTRIBUTE_QUANTITY: "color of", SCOPE: "of"+*"POS:NN", INHERITED_LEARNED: "inherit"] //OVER-CONSTR.
+	//row autoRow1 = [TABLE:"PROP-INHERITEDLEARNED", INHERITED_LEARNED: "inherit"]
+
+	// CENTRALSW       PARTOF: fur is often part of an animal     (2f86-693e-7175-9932) [ PART:"fur", QUANTIFIER1:"be often", WHOLE:"animal" ]
+	//        HINTROW eyes are usually part of an animal for seeing     (e0eb-f67a-6f99-b25b) [ PART:"eye", QUANTIFIER1:"be usually", WHOLE:"animal", FOR_PURPOSE:"see" ]
+	//        HINTROW eyes are a part of a human for seeing     (ff3b-674b-328e-5e4f) [ PART:"eye", WHOLE:"human", FOR_PURPOSE:"see" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow2 = [TABLE:"PARTOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+
+    // Both of these below should be populated simultaneously
+	row *autoRow2 = [TABLE:"PARTOF", PART:<part>, WHOLE:<livingThing>]
+	row *autoRow2A = [TABLE:"KINDOF", HYPONYM:<livingThing>, HYPERNYM:"living thing"]
+
+	// CENTRAL         ACTION: genes are able to determine the inherited characteristics of a living thing     (c566-22fd-4845-1df2) [ AGENT_OBJECT:"gene", QUANITIFIER:"be able", ACTION2:"determine", OBJECT_PROPERTY:"inherit characteristic", SCOPE2:"of live thing" ]
+	//row autoRow3 = [UUID:"c566-22fd-4845-1df2", AGENT_OBJECT: "gene", QUANITIFIER: "be able", ACTION2: "determine", OBJECT_PROPERTY: "inherit characteristic", SCOPE2: "of live thing"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"c566-22fd-4845-1df2", AGENT_OBJECT: "gene", QUANITIFIER: "be able", ACTION2: "determine", OBJECT_PROPERTY: "inherit characteristic", SCOPE2: "of live thing"]
+
+	// CENTRAL         VEHICLE: genes is a vehicle for passing inherited characteristics from parent to offspring     (42cf-e041-f00a-7e84) [ ACTOR_WHO:"gene", VERB:"pass", WHAT:"inherit characteristic", SOURCE:"parent", DESTINATION:"offspring" ]
+	//row autoRow4 = [UUID:"42cf-e041-f00a-7e84", ACTOR_WHO: "gene", VERB: "pass", WHAT: "inherit characteristic", SOURCE: "parent", DESTINATION: "offspring"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"42cf-e041-f00a-7e84", ACTOR_WHO: "gene", VERB: "pass", WHAT: "inherit characteristic", SOURCE: "parent", DESTINATION: "offspring"]
+
+	// CENTRAL         TRANSFER: inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA     (ee78-0795-be47-6ad8) [ PROCESS_NAME:"inherit", ACTOR_WHO:"inherit characteristic", VERB:"be copy;be pass", SOURCE:"parent", DESTINATION:"offspring", BY_THROUGH_HOW:"genetic;dna" ]
+	//row autoRow5 = [UUID:"ee78-0795-be47-6ad8", PROCESS_NAME: "inherit", ACTOR_WHO: "inherit characteristic", VERB: "be copy", SOURCE: "parent", DESTINATION: "offspring", BY_THROUGH_HOW: "genetic"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"ee78-0795-be47-6ad8", PROCESS_NAME: "inherit", ACTOR_WHO: "inherit characteristic", VERB: "be copy", SOURCE: "parent", DESTINATION: "offspring", BY_THROUGH_HOW: "genetic"]
+
+	// CENTRAL        (OPTIONAL) ACTION: an organism 's environment affects that organism 's acquired characteristics     (298a-b710-adc5-7d76) [ ADJ:"organism", AGENT_OBJECT:"environment", ACTION2:"affect", OBJECT_PROPERTY:"that organism acquire characteristic" ]
+	//row *autoRow6 = [UUID:"298a-b710-adc5-7d76", ADJ: "organism", AGENT_OBJECT: "environment", ACTION2: "affect", OBJECT_PROPERTY: "that organism acquire characteristic"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"298a-b710-adc5-7d76", ADJ: "organism", AGENT_OBJECT: "environment", ACTION2: "affect", OBJECT_PROPERTY: "that organism acquire characteristic"]
+
+	// LEXGLUE         SYNONYMY: an organism is a living thing     (87a0-dd02-dd6d-ee60) [ X1:"organism", X2:"live thing" ]
+	//row autoRow7 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"]
+
+	// LEXGLUE         SYNONYMY: coloration means a thing 's color     (b756-83bc-074d-62a2) [ X1:"coloration", X2:"thing color" ]
+	//row autoRow8 = [UUID:"b756-83bc-074d-62a2", X1: "coloration", X2: "thing color"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"b756-83bc-074d-62a2", X1: "coloration", X2: "thing color"]
+
+endinferencepattern

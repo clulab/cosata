@@ -1,0 +1,82 @@
+// Automatically converted pattern
+inferencepattern LIFE_ENVADP_Animals_Sense_X_with_Y
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       USEDFOR: eyes are used for seeing by animals by sensing light     (e47e-e5e2-c6d2-61ed) [ AGENT_OBJECT:"eye", FOR_PURPOSE:"see", AGENT_THING_WHO_USES:"animal", BY_THROUGH_HOW:"sense light" ]
+	//        HINTROW whiskers are used for feeling by animals     (a57e-6830-a887-2134) [ AGENT_OBJECT:"whisker", FOR_PURPOSE:"feel", AGENT_THING_WHO_USES:"animal" ]
+	//  Notes: organ X is used for sensing
+	//row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT: <eye_0>, FOR_PURPOSE: <see_1>, AGENT_THING_WHO_USES: "animal"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT: <eye_0>, FOR_PURPOSE: <see_1>, AGENT_THING_WHO_USES: "animal"]
+
+	// CENTRALSW       REQUIRES: a plant ; living thing requires food for survival     (3796-e9f2-e94c-634d) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"food", FOR_PURPOSE:"survive" ]
+	//        HINTROW an animal ; living thing requires nutrients for survival     (80de-489f-48b2-16f4) [ OBJECT_AGENT_PROCESS:"animal;live thing", VERB_REQUIRES:"require", OBJECT:"nutrient", FOR_PURPOSE:"survive" ]
+	//row autoRow1 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "food", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", FOR_PURPOSE: "survive"]
+
+	// CENTRALSW       USEDFOR: hearing is used for sensing sound by animals     (372c-c52a-b8f0-bc43) [ ACTION:"hear", FOR_PURPOSE:"sense", PATIENT:"sound", AGENT_THING_WHO_USES:"animal" ]
+	//        HINTROW seeing is used for sensing visual things     (627d-87b0-4a4a-7cad) [ AGENT_OBJECT:"see", FOR_PURPOSE:"sense", PATIENT:"visual thing" ]
+	//  Notes: hearing/seeing/touch
+	//row autoRow2 = [TABLE:"USEDFOR", ACTION: "hear", FOR_PURPOSE: "sense", AGENT_THING_WHO_USES: "animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"USEDFOR", FOR_PURPOSE: "sense"]
+
+	// CENTRALSW       PARTOF: eyes are a part of a human for seeing     (ff3b-674b-328e-5e4f) [ PART:"eye", WHOLE:"human", FOR_PURPOSE:"see" ]
+	//        HINTROW whiskers are a part of some fish for feeling     (28be-f4f5-1057-562f) [ PART:"whisker", QUANTIFIER1:"be", WHOLE:"fish", FOR_PURPOSE:"feel" ]
+	//  Notes: organ X is part of the animal for sensing
+	//row autoRow3 = [TABLE:"PARTOF", PART: <eye_0>, WHOLE: <human_2>, FOR_PURPOSE: <see_1>] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"PARTOF", PART: <eye_0>, WHOLE: <human_2>, FOR_PURPOSE: <see_1>]
+
+	// CENTRALSW       REQUIRES: finding something requires sensing that something     (beb5-0b99-d9ac-b8e5) [ ACTION1:"find", OBJECT_AGENT_PROCESS:"something", VERB_REQUIRES:"require", ACTION2:"sense", OBJECT:"something" ]
+	//        HINTROW avoiding something requires sensing that something     (fa93-f445-a40f-4a9f) [ ACTION1:"avoid", OBJECT_AGENT_PROCESS:"something", VERB_REQUIRES:"require", ACTION2:"sense", OBJECT:"something" ]
+	//  Notes: X requires SENSING
+	//row autoRow4 = [TABLE:"REQUIRES", ACTION1: "find", OBJECT_AGENT_PROCESS: "something", VERB_REQUIRES: "require", ACTION2: "sense", OBJECT: "something"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "something", VERB_REQUIRES: "require", ACTION2: "sense", OBJECT: "something"]
+
+	// GROUNDING       KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//        HINTROW a fish is a kind of animal     (9526-aecc-22b2-4b6a) [ HYPONYM:"fish", HYPERNYM:"animal" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPONYM: <human_2>, HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPONYM: <human_2>, HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: hearing is a kind of sense     (e3f1-e16c-dd80-32ea) [ HYPONYM:"hear", HYPERNYM:"sense" ]
+	//        HINTROW sight is a kind of sense     (39ca-a831-8d1a-babd) [ HYPONYM:"sight", HYPERNYM:"sense" ]
+	//        HINTROW touch is a kind of sense     (e0fe-14d9-9d28-87bb) [ HYPONYM:"touch", HYPERNYM:"sense" ]
+	//row autoRow6 = [TABLE:"KINDOF", HYPONYM: "hear", HYPERNYM: "sense"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPERNYM: "sense"]
+
+	// GROUNDING       KINDOF: a stout beardfish is a kind of fish     (2223-80a8-8d8c-0183) [ HYPONYM:"stout beardfish", HYPERNYM:"fish" ]
+	//        HINTROW a goldfish is a kind of fish     (502a-ad74-1aed-3da5) [ HYPONYM:"goldfish", HYPERNYM:"fish" ]
+	//row autoRow7 = [TABLE:"KINDOF", HYPERNYM: "fish"] //OVER-CONSTR.
+	row autoRow7 = [TABLE:"KINDOF", HYPERNYM: "fish"]
+
+	// CENTRAL         AFFECT: better senses have a positive impact on an animal 's survival ; health ; ability to reproduce     (d954-4918-c024-b087) [ OBJECT_PROPERTY:"well sense", POSITIVE_NEGATIVE:"positive", ADJ:"animal", PATIENT:"survive;health;ability reproduce" ]
+	//row autoRow8 = [UUID:"d954-4918-c024-b087", OBJECT_PROPERTY: "well sense", POSITIVE_NEGATIVE: "positive", ADJ: "animal", PATIENT: "ability reproduce"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"d954-4918-c024-b087", OBJECT_PROPERTY: "well sense", POSITIVE_NEGATIVE: "positive", ADJ: "animal", PATIENT: "ability reproduce"]
+
+	// CENTRAL         USEDFOR: eating ; taking in food is used to get nutrients ; energy by animals ; living things     (4842-3518-d7ab-f670) [ ACTION:"eat;take", AGENT_OBJECT:"food", FOR_PURPOSE:"get", PATIENT:"nutrient;energy", AGENT_THING_WHO_USES:"animal;live thing" ]
+	//row autoRow9 = [UUID:"4842-3518-d7ab-f670", ACTION: "eat", AGENT_OBJECT: "food", FOR_PURPOSE: "get", PATIENT: "nutrient", AGENT_THING_WHO_USES: "live thing"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"4842-3518-d7ab-f670", ACTION: "eat", AGENT_OBJECT: "food", FOR_PURPOSE: "get", PATIENT: "nutrient", AGENT_THING_WHO_USES: "live thing"]
+
+	// CENTRAL         ACTION: feeling is when an living thing senses through touch     (e58b-6fd8-4321-1a69) [ DEFINITION_NAME:"feel", AGENT_OBJECT:"live thing", ACTION2:"sense", BY_THROUGH_HOW:"touch" ]
+	//row autoRow10 = [UUID:"e58b-6fd8-4321-1a69", DEFINITION_NAME: "feel", AGENT_OBJECT: "live thing", ACTION2: "sense", BY_THROUGH_HOW: "touch"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"e58b-6fd8-4321-1a69", DEFINITION_NAME: "feel", AGENT_OBJECT: "live thing", ACTION2: "sense", BY_THROUGH_HOW: "touch"]
+
+	// CENTRAL         AFFECT: sensing food has a positive impact on finding food     (b583-a2ff-a3f7-83e9) [ VERB:"sense", OBJECT_PROPERTY:"food", POSITIVE_NEGATIVE:"positive", PATIENT:"find food" ]
+	//row autoRow11 = [UUID:"b583-a2ff-a3f7-83e9", VERB: "sense", OBJECT_PROPERTY: "food", POSITIVE_NEGATIVE: "positive", PATIENT: "find food"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"b583-a2ff-a3f7-83e9", VERB: "sense", OBJECT_PROPERTY: "food", POSITIVE_NEGATIVE: "positive", PATIENT: "find food"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+	// CENTRAL         USEDFOR: sensory organs are used for sensing     (9bdd-4aab-178f-0873) [ AGENT_OBJECT:"sensory organ", FOR_PURPOSE:"sense" ]
+	//  Notes: general sensing idea
+	//row autoRow13 = [UUID:"9bdd-4aab-178f-0873", AGENT_OBJECT: "sensory organ", FOR_PURPOSE: "sense"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"9bdd-4aab-178f-0873", AGENT_OBJECT: "sensory organ", FOR_PURPOSE: "sense"]
+
+endinferencepattern

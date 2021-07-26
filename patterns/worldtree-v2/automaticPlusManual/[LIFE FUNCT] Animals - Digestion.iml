@@ -1,0 +1,107 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Digestion
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       REQUIRES: an animal needs to eat food for nutrients     (7d29-0a2c-6959-b1dd) [ OBJECT_AGENT_PROCESS:"animal", VERB_REQUIRES:"need", ACTION2:"eat", OBJECT:"food", FOR_PURPOSE:"nutrient" ]
+	//        HINTROW an animal requires enough nutrients to maintain good health ; survive     (7db0-1827-aaaa-cc30) [ OBJECT_AGENT_PROCESS:"animal", VERB_REQUIRES:"require", QUANTITY_VALUE:"enough", OBJECT:"nutrient", FOR_PURPOSE:"maintain good health;survive" ]
+	//        HINTROW an animal ; living thing requires nutrients for survival     (80de-489f-48b2-16f4) [ OBJECT_AGENT_PROCESS:"animal;live thing", VERB_REQUIRES:"require", OBJECT:"nutrient", FOR_PURPOSE:"survive" ]
+	//row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "animal"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "animal"]
+
+	// CENTRALSW       CONTAINS: food contains nutrients for living things     (a4c9-5ade-9cc2-f3f0) [ OBJECT_AGENT:"food", WHAT_IT_CONTAINS:"nutrient", FOR_PURPOSE:"live thing" ]
+	//        HINTROW food contains carbohydrates     (d11d-a195-7042-efcc) [ OBJECT_AGENT:"food", WHAT_IT_CONTAINS:"carbohydrate" ]
+	//  Notes: Good->a4c9-5ade-9cc2-f3f0
+	//row autoRow1 = [TABLE:"CONTAINS", OBJECT_AGENT: "food", WHAT_IT_CONTAINS: "nutrient"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CONTAINS", OBJECT_AGENT: "food"]
+
+	// CENTRALSW       KINDOF: the digestive system is a kind of body ; human system     (9a31-6857-9a85-8828) [ HYPONYM:"digestive system", SCOPE1:"body;human", HYPERNYM:"system" ]
+	//        HINTROW the digestive system is a kind of body ; organ system     (4531-d267-4fd6-50e5) [ HYPONYM:"digestive system", SCOPE1:"body;organ", HYPERNYM:"system" ]
+	//  Notes: peripheral
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "digestive system", SCOPE1: "body", HYPERNYM: "system"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "digestive system", SCOPE1: "body", HYPERNYM: "system"]
+
+	// CENTRALSW       PARTOF: the colon is a part of the digestive system     (7ae6-a693-1563-5bac) [ PART:"colon", WHOLE:"digestive system" ]
+	//        HINTROW the esophagus is a part of the digestive system     (00f8-d40c-40bb-d78a) [ PART:"esophagus", WHOLE:"digestive system" ]
+	//        HINTROW the intestines are a part of the digestive system     (1a59-b031-9090-8933) [ PART:"intestine", WHOLE:"digestive system" ]
+	//        HINTROW the mouth is a part of the digestive system used for eating     (4677-279f-1c3b-2333) [ PART:"mouth", WHOLE:"digestive system", FOR_PURPOSE:"eat" ]
+	//        HINTROW the stomach is a part of the digestive system     (89e6-524b-d877-7386) [ PART:"stomach", WHOLE:"digestive system" ]
+	//        HINTROW the liver is a part of the digestive system     (3bf2-b31e-b15c-fd05) [ PART:"live", WHOLE:"digestive system" ]
+	//        HINTROW the pancreas is a part of the digestive system     (3b6f-b409-0853-c5e6) [ PART:"pancreas", WHOLE:"digestive system" ]
+	//        HINTROW the small intestine is a part of the digestive system     (f653-454d-6b95-5714) [ PART:"small intestine", QUANTIFIER1:"be", WHOLE:"digestive system" ]
+	//  Notes: organs in digestive system
+	//row autoRow3 = [TABLE:"PARTOF", WHOLE: "digestive system"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"PARTOF", WHOLE: "digestive system"]
+
+	// GROUNDING       KINDOF: digestion is a kind of bodily process     (c06c-630c-c3ed-e7a0) [ HYPONYM:"digest", SCOPE1:"bodily", HYPERNYM:"process" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "digest", SCOPE1: "bodily", HYPERNYM: "process"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "digest", SCOPE1: "bodily", HYPERNYM: "process"]
+
+	// GROUNDING       KINDOF: the stomach is a kind of organ     (6e76-34eb-601f-9783) [ HYPONYM:"stomach", HYPERNYM:"organ" ]
+	//        HINTROW the small intestine is a kind of organ     (83a9-87e2-2bd1-de6a) [ HYPONYM:"small intestine", HYPERNYM:"organ" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPONYM: "stomach", HYPERNYM: "organ"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPONYM: "stomach", HYPERNYM: "organ"]
+
+	// CENTRAL         LOCATIONS: the breaking down of food into simple substances occurs in the digestive system     (46e9-7c6d-a71b-e151) [ THING_PROCESS:"break down of food into simple substance", LOCATION:"digestive system" ]
+	//row autoRow6 = [UUID:"46e9-7c6d-a71b-e151", THING_PROCESS: "break down of food into simple substance", LOCATION: "digestive system"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"46e9-7c6d-a71b-e151", THING_PROCESS: "break down of food into simple substance", LOCATION: "digestive system"]
+
+	// CENTRAL         PARTOF: a small intestine is a part of a human 's ; animal 's digestive system for the digestion of proteins     (8df9-e442-bb72-474f) [ PART:"small intestine", QUANTIFIER2:"human;animal", WHOLE:"digestive system", FOR_PURPOSE:"digest of protein" ]
+	//  Notes: organs that digest proteins
+	//row autoRow7 = [UUID:"8df9-e442-bb72-474f", PART: "small intestine", QUANTIFIER2: "human", WHOLE: "digestive system", FOR_PURPOSE: "digest of protein"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"8df9-e442-bb72-474f", PART: "small intestine", QUANTIFIER2: "human", WHOLE: "digestive system", FOR_PURPOSE: "digest of protein"]
+
+	// CENTRAL         TRANSFER: eating ; digestion is when an organism takes in nutrients from food into itself by eating     (244b-03a0-929e-0095) [ PROCESS_NAME:"eat;digest", ACTOR_WHO:"organism", VERB:"take in", WHAT:"nutrient", SOURCE:"food", BY_THROUGH_HOW:"eat" ]
+	//row autoRow8 = [UUID:"244b-03a0-929e-0095", PROCESS_NAME: "eat", ACTOR_WHO: "organism", VERB: "take in", WHAT: "nutrient", SOURCE: "food", BY_THROUGH_HOW: "eat"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"244b-03a0-929e-0095", PROCESS_NAME: "eat", ACTOR_WHO: "organism", VERB: "take in", WHAT: "nutrient", SOURCE: "food", BY_THROUGH_HOW: "eat"]
+
+	// CENTRAL         PARTOF: a stomach is a part of a human 's ; animal 's digestive system for the digestion of proteins     (2205-7909-1511-8ae9) [ PART:"stomach", QUANTIFIER2:"human;animal", WHOLE:"digestive system", FOR_PURPOSE:"digest of protein" ]
+	//  Notes: orgains that digest proteins
+	//row autoRow9 = [UUID:"2205-7909-1511-8ae9", PART: "stomach", QUANTIFIER2: "human", WHOLE: "digestive system", FOR_PURPOSE: "digest of protein"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"2205-7909-1511-8ae9", PART: "stomach", QUANTIFIER2: "human", WHOLE: "digestive system", FOR_PURPOSE: "digest of protein"]
+
+	// CENTRAL         CHANGE: the digestive system breaks down food into nutrients for the body     (c154-aa1a-96fe-291c) [ ACTOR_WHO:"digestive system", VERB:"break down", FROM:"food", INTO:"nutrient", FOR_PURPOSE:"body" ]
+	//row autoRow10 = [UUID:"c154-aa1a-96fe-291c", ACTOR_WHO: "digestive system", VERB: "break down", FROM: "food", INTO: "nutrient", FOR_PURPOSE: "body"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"c154-aa1a-96fe-291c", ACTOR_WHO: "digestive system", VERB: "break down", FROM: "food", INTO: "nutrient", FOR_PURPOSE: "body"]
+
+	// CENTRAL         LOCATIONS: digestion of proteins occurs in the stomach ; small intestine     (b413-75e0-a44f-d6b3) [ THING_PROCESS:"digest of protein", LOCATION:"stomach;small intestine" ]
+	//row autoRow11 = [UUID:"b413-75e0-a44f-d6b3", THING_PROCESS: "digest of protein", LOCATION: "small intestine"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"b413-75e0-a44f-d6b3", THING_PROCESS: "digest of protein", LOCATION: "small intestine"]
+
+	// CENTRAL        (OPTIONAL) AFFORDANCES: bacteria can help digest food in humans     (df29-0616-310f-2dfb) [ ACTOR_THING:"bacterium", VERB:"help digest", PATIENT:"food", SCOPE:"in human" ]
+	//row *autoRow12 = [UUID:"df29-0616-310f-2dfb", ACTOR_THING: "bacterium", VERB: "help digest", PATIENT: "food", SCOPE: "in human"] //OVER-CONSTR.
+	row *autoRow12 = [UUID:"df29-0616-310f-2dfb", ACTOR_THING: "bacterium", VERB: "help digest", PATIENT: "food", SCOPE: "in human"]
+
+	// CENTRAL         ACTION: digestion is when food is absorbed into the blood stream     (c3ab-8259-53c3-28eb) [ DEFINITION_NAME:"digest", AGENT_OBJECT:"food", ACTION2:"be absorb", OBJECT_PROPERTY:"into blood stream" ]
+	//  Notes: step n: absorbing nutrients into the blood stream
+	//row autoRow13 = [UUID:"c3ab-8259-53c3-28eb", DEFINITION_NAME: "digest", AGENT_OBJECT: "food", ACTION2: "be absorb", OBJECT_PROPERTY: "into blood stream"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"c3ab-8259-53c3-28eb", DEFINITION_NAME: "digest", AGENT_OBJECT: "food", ACTION2: "be absorb", OBJECT_PROPERTY: "into blood stream"]
+
+	// CENTRAL         ACTION: digestion is when stomach acid breaks down food     (0323-62a6-1a45-17a9) [ DEFINITION_NAME:"digest", ADJ:"stomach", AGENT_OBJECT:"acid", ACTION2:"break down", OBJECT_PROPERTY:"food" ]
+	//  Notes: step A: breaking down food
+	//row autoRow14 = [UUID:"0323-62a6-1a45-17a9", DEFINITION_NAME: "digest", ADJ: "stomach", AGENT_OBJECT: "acid", ACTION2: "break down", OBJECT_PROPERTY: "food"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"0323-62a6-1a45-17a9", DEFINITION_NAME: "digest", ADJ: "stomach", AGENT_OBJECT: "acid", ACTION2: "break down", OBJECT_PROPERTY: "food"]
+
+	// CENTRAL         ACTION: the digestive system digests food for the body     (af05-e5d3-92da-de30) [ AGENT_OBJECT:"digestive system", ACTION2:"digest", OBJECT_PROPERTY:"food", FOR_PURPOSE:"body" ]
+	//row autoRow15 = [UUID:"af05-e5d3-92da-de30", AGENT_OBJECT: "digestive system", ACTION2: "digest", OBJECT_PROPERTY: "food", FOR_PURPOSE: "body"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"af05-e5d3-92da-de30", AGENT_OBJECT: "digestive system", ACTION2: "digest", OBJECT_PROPERTY: "food", FOR_PURPOSE: "body"]
+
+	// CENTRAL         PARTOF: a body system is a part of the body ; an animal     (9d58-09eb-11bc-2be6) [ PART:"body system", WHOLE:"body;animal" ]
+	//row autoRow16 = [UUID:"9d58-09eb-11bc-2be6", PART: "body system", WHOLE: "body"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"9d58-09eb-11bc-2be6", PART: "body system", WHOLE: "body"]
+
+	// CENTRAL         KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//  Notes: peripheral
+	//row autoRow17 = [UUID:"4253-4b9e-1e5f-1742", HYPONYM: "human", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"4253-4b9e-1e5f-1742", HYPONYM: "human", HYPERNYM: "animal"]
+
+	// CENTRAL         MADEOF: an organ system is made of different parts of the body working together     (6b71-a4bc-f32c-e206) [ OBJECT:"organ system", VALUE:"differ", MATERIAL:"part of body", SCOPE:"work together" ]
+	//row autoRow18 = [UUID:"6b71-a4bc-f32c-e206", OBJECT: "organ system", VALUE: "differ", MATERIAL: "part of body", SCOPE: "work together"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"6b71-a4bc-f32c-e206", OBJECT: "organ system", VALUE: "differ", MATERIAL: "part of body", SCOPE: "work together"]
+
+endinferencepattern

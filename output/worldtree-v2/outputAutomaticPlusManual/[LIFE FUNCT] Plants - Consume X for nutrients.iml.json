@@ -1,0 +1,128 @@
+{"patternMatches": [
+{
+	"patternName":"LIFE_FUNCT_Plants_Consume_X_for_nutrients",
+	"matches":[
+		{
+		"uuids": ["2271-a22d-930a-7662","564d-448d-05b5-998e","0962-4a47-4e17-ce97","a9fc-ec58-9496-d635","d7c1-cdfd-2de5-6b7d","085c-28bf-bb51-79e6","1ed3-919d-4a4c-1be7","3cff-4d77-9e27-7dc5","ddcc-3b71-b14e-97d1","6758-0732-1458-ec8b","7fac-c053-0547-dfab","ca61-050e-2c77-6cda","1af4-c273-5b80-34e6"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2271-a22d-930a-7662", "rowText": "a protein is a kind of nutrient", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "564d-448d-05b5-998e", "rowText": "iron is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0962-4a47-4e17-ce97", "rowText": "photosynthesis means producers ; green plants convert from carbon dioxide and water and solar energy into carbohydrates and food and oxygen for themselves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a9fc-ec58-9496-d635", "rowText": "photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7c1-cdfd-2de5-6b7d", "rowText": "plant uptake is when plants absorb nutrients ; water from soil into themselves through their roots", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cff-4d77-9e27-7dc5", "rowText": "carbon dioxide can be found in the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ddcc-3b71-b14e-97d1", "rowText": "soil contains nutrients for plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6758-0732-1458-ec8b", "rowText": "soil provides nutrients for plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7fac-c053-0547-dfab", "rowText": "mineral nutrients can be found in soil", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ca61-050e-2c77-6cda", "rowText": "some minerals are nutrients", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1af4-c273-5b80-34e6", "rowText": "soil is a renewable resource for growing plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["aed2-c2ce-7d6c-ef26","564d-448d-05b5-998e","0962-4a47-4e17-ce97","a9fc-ec58-9496-d635","d7c1-cdfd-2de5-6b7d","085c-28bf-bb51-79e6","1ed3-919d-4a4c-1be7","3cff-4d77-9e27-7dc5","ddcc-3b71-b14e-97d1","6758-0732-1458-ec8b","7fac-c053-0547-dfab","ca61-050e-2c77-6cda","1af4-c273-5b80-34e6"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "aed2-c2ce-7d6c-ef26", "rowText": "nitrogen is a kind of nutrient for plant growth", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "564d-448d-05b5-998e", "rowText": "iron is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0962-4a47-4e17-ce97", "rowText": "photosynthesis means producers ; green plants convert from carbon dioxide and water and solar energy into carbohydrates and food and oxygen for themselves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a9fc-ec58-9496-d635", "rowText": "photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7c1-cdfd-2de5-6b7d", "rowText": "plant uptake is when plants absorb nutrients ; water from soil into themselves through their roots", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cff-4d77-9e27-7dc5", "rowText": "carbon dioxide can be found in the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ddcc-3b71-b14e-97d1", "rowText": "soil contains nutrients for plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6758-0732-1458-ec8b", "rowText": "soil provides nutrients for plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7fac-c053-0547-dfab", "rowText": "mineral nutrients can be found in soil", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ca61-050e-2c77-6cda", "rowText": "some minerals are nutrients", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1af4-c273-5b80-34e6", "rowText": "soil is a renewable resource for growing plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d4a1-1e84-0f46-d29a","564d-448d-05b5-998e","0962-4a47-4e17-ce97","a9fc-ec58-9496-d635","d7c1-cdfd-2de5-6b7d","085c-28bf-bb51-79e6","1ed3-919d-4a4c-1be7","3cff-4d77-9e27-7dc5","ddcc-3b71-b14e-97d1","6758-0732-1458-ec8b","7fac-c053-0547-dfab","ca61-050e-2c77-6cda","1af4-c273-5b80-34e6"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d4a1-1e84-0f46-d29a", "rowText": "mineral nutrient is a kind of nutrient", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "564d-448d-05b5-998e", "rowText": "iron is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0962-4a47-4e17-ce97", "rowText": "photosynthesis means producers ; green plants convert from carbon dioxide and water and solar energy into carbohydrates and food and oxygen for themselves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a9fc-ec58-9496-d635", "rowText": "photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7c1-cdfd-2de5-6b7d", "rowText": "plant uptake is when plants absorb nutrients ; water from soil into themselves through their roots", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cff-4d77-9e27-7dc5", "rowText": "carbon dioxide can be found in the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ddcc-3b71-b14e-97d1", "rowText": "soil contains nutrients for plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6758-0732-1458-ec8b", "rowText": "soil provides nutrients for plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7fac-c053-0547-dfab", "rowText": "mineral nutrients can be found in soil", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ca61-050e-2c77-6cda", "rowText": "some minerals are nutrients", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1af4-c273-5b80-34e6", "rowText": "soil is a renewable resource for growing plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-201167","564d-448d-05b5-998e","0962-4a47-4e17-ce97","a9fc-ec58-9496-d635","d7c1-cdfd-2de5-6b7d","085c-28bf-bb51-79e6","1ed3-919d-4a4c-1be7","3cff-4d77-9e27-7dc5","ddcc-3b71-b14e-97d1","6758-0732-1458-ec8b","7fac-c053-0547-dfab","ca61-050e-2c77-6cda","1af4-c273-5b80-34e6"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-201167", "rowText": "activator is a kind of nutrient", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "564d-448d-05b5-998e", "rowText": "iron is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0962-4a47-4e17-ce97", "rowText": "photosynthesis means producers ; green plants convert from carbon dioxide and water and solar energy into carbohydrates and food and oxygen for themselves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a9fc-ec58-9496-d635", "rowText": "photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7c1-cdfd-2de5-6b7d", "rowText": "plant uptake is when plants absorb nutrients ; water from soil into themselves through their roots", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cff-4d77-9e27-7dc5", "rowText": "carbon dioxide can be found in the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ddcc-3b71-b14e-97d1", "rowText": "soil contains nutrients for plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6758-0732-1458-ec8b", "rowText": "soil provides nutrients for plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7fac-c053-0547-dfab", "rowText": "mineral nutrients can be found in soil", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ca61-050e-2c77-6cda", "rowText": "some minerals are nutrients", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1af4-c273-5b80-34e6", "rowText": "soil is a renewable resource for growing plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-237343","564d-448d-05b5-998e","0962-4a47-4e17-ce97","a9fc-ec58-9496-d635","d7c1-cdfd-2de5-6b7d","085c-28bf-bb51-79e6","1ed3-919d-4a4c-1be7","3cff-4d77-9e27-7dc5","ddcc-3b71-b14e-97d1","6758-0732-1458-ec8b","7fac-c053-0547-dfab","ca61-050e-2c77-6cda","1af4-c273-5b80-34e6"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-237343", "rowText": "tissue plasminogen activator is a kind of nutrient", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "564d-448d-05b5-998e", "rowText": "iron is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0962-4a47-4e17-ce97", "rowText": "photosynthesis means producers ; green plants convert from carbon dioxide and water and solar energy into carbohydrates and food and oxygen for themselves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a9fc-ec58-9496-d635", "rowText": "photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7c1-cdfd-2de5-6b7d", "rowText": "plant uptake is when plants absorb nutrients ; water from soil into themselves through their roots", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "085c-28bf-bb51-79e6", "rowText": "a plant ; living thing requires nutrients to grow", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cff-4d77-9e27-7dc5", "rowText": "carbon dioxide can be found in the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ddcc-3b71-b14e-97d1", "rowText": "soil contains nutrients for plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6758-0732-1458-ec8b", "rowText": "soil provides nutrients for plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7fac-c053-0547-dfab", "rowText": "mineral nutrients can be found in soil", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ca61-050e-2c77-6cda", "rowText": "some minerals are nutrients", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "1af4-c273-5b80-34e6", "rowText": "soil is a renewable resource for growing plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		}
+	]
+}
+]}
+

@@ -1,0 +1,74 @@
+// Automatically converted pattern
+inferencepattern ENG_WAVES_Waves_Frequencies_and_Wavelength
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: sound wave is a kind of wave     (c0fe-e47e-44b2-66e7) [ HYPONYM:"sound wave", HYPERNYM:"wave" ]
+	//        HINTROW light is a kind of wave     (7830-1dcb-42c6-d8dc) [ HYPONYM:"light", HYPERNYM:"wave" ]
+	//        HINTROW electromagnetic wave is a kind of wave     (13eb-ea19-5bae-123e) [ HYPONYM:"electromagnetic wave", HYPERNYM:"wave" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "sound wave", HYPERNYM: "wave"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: *"POS:JJ"+"wave", HYPERNYM: "wave"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the wavelength ; frequency of a wave changes , the speed of the wave in the same medium will usually stay the same     (1e57-ef38-54af-14f2) [ AGENT_ATTRIBUTE1:"wavelength;frequency", SCOPE1A:"of wave", CHANGE1:"change", QUANTITY_MEASURE2:"speed of", AGENT_ATTRIBUTE2:"wave", SCOPE2A:"in same medium", QUALIFIER2:"usually", CHANGE2:"stay same" ]
+	//  Notes: wavelength and frequency do not affect speed 
+	//row autoRow1 = [UUID:"1e57-ef38-54af-14f2", AGENT_ATTRIBUTE1: "wavelength", SCOPE1A: "of wave", CHANGE1: "change", QUANTITY_MEASURE2: "speed of", AGENT_ATTRIBUTE2: "wave", SCOPE2A: "in same medium", QUALIFIER2: "usually", CHANGE2: "stay same"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"1e57-ef38-54af-14f2", AGENT_ATTRIBUTE1: "wavelength", SCOPE1A: "of wave", CHANGE1: "change", QUANTITY_MEASURE2: "speed of", AGENT_ATTRIBUTE2: "wave", SCOPE2A: "in same medium", QUALIFIER2: "usually", CHANGE2: "stay same"]
+
+	// CENTRAL         PROP-THINGS: a short wavelength has low ; little distance before it repeats     (854b-0236-4e0a-359d) [ ADJ:"short", THING:"wavelength", VALUE:"low;little", ATTRIBUTE:"distance", SCOPE_RELATIVETO:"before repeat" ]
+	//row autoRow2 = [UUID:"854b-0236-4e0a-359d", ADJ: "short", THING: "wavelength", VALUE: "low", ATTRIBUTE: "distance", SCOPE_RELATIVETO: "before repeat"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"854b-0236-4e0a-359d", ADJ: "short", THING: "wavelength", VALUE: "low", ATTRIBUTE: "distance", SCOPE_RELATIVETO: "before repeat"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the frequency of a sound increases , the wavelength of that sound decreases     (ae22-e1f3-9605-1f39) [ QUANTITY_MEASURE1:"frequency", AGENT_ATTRIBUTE1:"of sound", CHANGE1:"increase", QUANTITY_MEASURE2:"wavelength", AGENT_ATTRIBUTE2:"of sound", CHANGE2:"decrease" ]
+	//  Notes: sound wave
+	//row autoRow3 = [UUID:"ae22-e1f3-9605-1f39", QUANTITY_MEASURE1: "frequency", AGENT_ATTRIBUTE1: "of sound", CHANGE1: "increase", QUANTITY_MEASURE2: "wavelength", AGENT_ATTRIBUTE2: "of sound", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"ae22-e1f3-9605-1f39", QUANTITY_MEASURE1: "frequency", AGENT_ATTRIBUTE1: "of sound", CHANGE1: "increase", QUANTITY_MEASURE2: "wavelength", AGENT_ATTRIBUTE2: "of sound", CHANGE2: "decrease"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the wavelength of a wave increases , the frequency of the wave will decrease     (9d5e-3c7b-1544-1550) [ AGENT_ATTRIBUTE1:"wavelength", SCOPE1A:"of wave", CHANGE1:"increase", QUANTITY_MEASURE2:"frequency of", AGENT_ATTRIBUTE2:"wave", CHANGE2:"decrease" ]
+	//  Notes: wavelength up, frequency down
+	//row autoRow4 = [UUID:"9d5e-3c7b-1544-1550", AGENT_ATTRIBUTE1: "wavelength", SCOPE1A: "of wave", CHANGE1: "increase", QUANTITY_MEASURE2: "frequency of", AGENT_ATTRIBUTE2: "wave", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"9d5e-3c7b-1544-1550", AGENT_ATTRIBUTE1: "wavelength", SCOPE1A: "of wave", CHANGE1: "increase", QUANTITY_MEASURE2: "frequency of", AGENT_ATTRIBUTE2: "wave", CHANGE2: "decrease"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the frequency of a wave increases , the energy of the wave will increase     (eb81-410b-b688-32b1) [ QUANTITY_MEASURE1:"frequency of", AGENT_ATTRIBUTE1:"wave", CHANGE1:"increase", QUANTITY_MEASURE2:"energy of", AGENT_ATTRIBUTE2:"wave", CHANGE2:"increase" ]
+	//row autoRow5 = [UUID:"eb81-410b-b688-32b1", QUANTITY_MEASURE1: "frequency of", AGENT_ATTRIBUTE1: "wave", CHANGE1: "increase", QUANTITY_MEASURE2: "energy of", AGENT_ATTRIBUTE2: "wave", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"eb81-410b-b688-32b1", QUANTITY_MEASURE1: "frequency of", AGENT_ATTRIBUTE1: "wave", CHANGE1: "increase", QUANTITY_MEASURE2: "energy of", AGENT_ATTRIBUTE2: "wave", CHANGE2: "increase"]
+
+	// CENTRAL         PROP-GENERIC: frequency is a property of a wave ; a particel of light ; an event     (6758-2fe3-2711-02aa) [ X:"frequency", Y:"wave;particel of light;event" ]
+	//row autoRow6 = [UUID:"6758-2fe3-2711-02aa", X: "frequency", Y: "particel of light"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"6758-2fe3-2711-02aa", X: "frequency", Y: "particel of light"]
+
+	// CENTRAL        (OPTIONAL) PROP-THINGS: high-frequency sound waves have low ; short wavelengths     (c106-d344-8728-cf3c) [ ADJ:"high-frequency;high frequency", THING:"sound wave;sound wave", VALUE:"low;short", ATTRIBUTE:"wavelength" ]
+	//  Notes: sound wave
+	//row *autoRow7 = [UUID:"c106-d344-8728-cf3c", ADJ: "high frequency", THING: "sound wave", VALUE: "low", ATTRIBUTE: "wavelength"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"c106-d344-8728-cf3c", ADJ: "high frequency", THING: "sound wave", VALUE: "low", ATTRIBUTE: "wavelength"]
+
+	// CENTRAL         PROP-GENERIC: wavelength is a property of wave     (4bfe-b3d1-e09b-dfa8) [ X:"wavelength", Y:"wave" ]
+	//row autoRow8 = [UUID:"4bfe-b3d1-e09b-dfa8", X: "wavelength", Y: "wave"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"4bfe-b3d1-e09b-dfa8", X: "wavelength", Y: "wave"]
+
+	// CENTRAL         PROP-GENERIC: speed is a property of an object and includes values of slow ; fast     (1bc3-eb48-01fa-14c2) [ X:"speed", Y:"object", VALUES:"slow;fast" ]
+	//row autoRow9 = [UUID:"1bc3-eb48-01fa-14c2", X: "speed", Y: "object", VALUES: "slow"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"1bc3-eb48-01fa-14c2", X: "speed", Y: "object", VALUES: "slow"]
+
+	// CENTRAL        (OPTIONAL) UNIT: angstrom ( Å ) is a metric unit used for measuring wavelength ; interatomic distance ; length ; distance     (204e-3747-f760-35b4) [ UNIT:"angstrom", ABBREVIATION:"å", PROPERTY:"wavelength;interatomic distance;length;distance" ]
+	//row *autoRow10 = [UUID:"204e-3747-f760-35b4", UNIT: "angstrom", ABBREVIATION: "å", PROPERTY: "interatomic distance"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"204e-3747-f760-35b4", UNIT: "angstrom", ABBREVIATION: "å", PROPERTY: "interatomic distance"]
+
+	// CENTRAL         PROP-THINGS: different types of light have different wavelengths     (a98b-a949-e175-63c5) [ ADJ:"differ type of", THING:"light", VALUE:"differ", ATTRIBUTE:"wavelength" ]
+	//row autoRow11 = [UUID:"a98b-a949-e175-63c5", ADJ: "differ type of", THING: "light", VALUE: "differ", ATTRIBUTE: "wavelength"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"a98b-a949-e175-63c5", ADJ: "differ type of", THING: "light", VALUE: "differ", ATTRIBUTE: "wavelength"]
+
+	// CENTRAL        (OPTIONAL) AFFORDANCES: the properties of something can be used to identify ; used to describe that something     (8661-5700-67ef-4ac8) [ ACTOR_THING:"property", PROPERTY_OBJECT:"of something", VERB:"use identify;use describe", PATIENT:"that something" ]
+	//row *autoRow12 = [UUID:"8661-5700-67ef-4ac8", ACTOR_THING: "property", PROPERTY_OBJECT: "of something", VERB: "use identify", PATIENT: "that something"] //OVER-CONSTR.
+	row *autoRow12 = [UUID:"8661-5700-67ef-4ac8", ACTOR_THING: "property", PROPERTY_OBJECT: "of something", VERB: "use identify", PATIENT: "that something"]
+
+	// CENTRAL         CHANGE: the Doppler Effect is when the distance from the wave source changes the frequency of the waves     (44df-5a0a-23f4-7a7b) [ PROCESS_NAME:"doppler effect", ACTOR_WHO:"distance", QUANTIFIER_SCOPE:"from wave source", VERB:"change", WHAT:"frequency", SCOPE:"of wave" ]
+	//  Notes: 0274-48f7-7423-92c7->44df-5a0a-23f4-7a7b
+	//row autoRow13 = [UUID:"44df-5a0a-23f4-7a7b", PROCESS_NAME: "doppler effect", ACTOR_WHO: "distance", QUANTIFIER_SCOPE: "from wave source", VERB: "change", WHAT: "frequency", SCOPE: "of wave"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"44df-5a0a-23f4-7a7b", PROCESS_NAME: "doppler effect", ACTOR_WHO: "distance", QUANTIFIER_SCOPE: "from wave source", VERB: "change", WHAT: "frequency", SCOPE: "of wave"]
+
+endinferencepattern

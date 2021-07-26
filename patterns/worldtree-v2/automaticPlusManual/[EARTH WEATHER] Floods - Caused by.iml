@@ -1,0 +1,93 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Floods_Caused_by
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: rain is a kind of precipitation     (da1e-dca3-f46a-5189) [ HYPONYM:"rain", HYPERNYM:"precipitation" ]
+	//        HINTROW hail is a kind of precipitation ; ice     (cb4c-5229-e5b9-6408) [ HYPONYM:"hail", HYPERNYM:"precipitation;ice" ]
+	//        HINTROW snow is a kind of precipitation     (8083-d6d0-9cba-da83) [ HYPONYM:"snow", HYPERNYM:"precipitation" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: <rain_0>, HYPERNYM: "precipitation"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: <rain_0>, HYPERNYM: "precipitation"]
+
+	// GROUNDING       KINDOF: rain is a kind of water     (214a-9ca3-2983-aa79) [ HYPONYM:"rain", HYPERNYM:"water" ]
+	//        HINTROW hail is a kind of precipitation ; ice     (cb4c-5229-e5b9-6408) [ HYPONYM:"hail", HYPERNYM:"precipitation;ice" ]
+	//        HINTROW snow is a kind of ice     (c2a0-5b9e-4796-94a2) [ HYPONYM:"snow", HYPERNYM:"ice" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: <rain_0>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: <rain_0>]
+
+	// GROUNDING       KINDOF: a river is a kind of flowing ; moving body of water     (9885-6337-f26c-cfbd) [ HYPONYM:"river", SCOPE1:"flow;move", HYPERNYM:"body of water" ]
+	//        HINTROW a bay is a kind of body of water     (0596-e537-4cc3-192c) [ HYPONYM:"bay", HYPERNYM:"body of water" ]
+	//        HINTROW a lake is a kind of body of water     (5d6a-544c-b296-832e) [ HYPONYM:"lake", HYPERNYM:"body of water" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "body of water"]
+
+	// CENTRAL         IFTHEN: if the surface sediment is not porous , then the surface sediment will not absorb enough water to prevent flooding     (47c2-1e73-e39a-4801) [ THING:"surface sediment", ACTION1:"be", ADJ_QUANTITY1A:"not", OBJECT_PROPERTY1:"porous", ACTOR_AGENT_PROCESS2:"surface sediment", ACTION3:"absorb", ADJ_QUANTIFIER3:"enough", OBJECT_PROPERTY3:"water", PURPOSE:"prevent flood" ]
+	//  Notes: land floods
+	//row autoRow3 = [UUID:"47c2-1e73-e39a-4801", THING: "surface sediment", ACTION1: "be", ADJ_QUANTITY1A: "not", OBJECT_PROPERTY1: "porous", ACTOR_AGENT_PROCESS2: "surface sediment", ACTION3: "absorb", ADJ_QUANTIFIER3: "enough", OBJECT_PROPERTY3: "water", PURPOSE: "prevent flood"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"47c2-1e73-e39a-4801", THING: "surface sediment", ACTION1: "be", ADJ_QUANTITY1A: "not", OBJECT_PROPERTY1: "porous", ACTOR_AGENT_PROCESS2: "surface sediment", ACTION3: "absorb", ADJ_QUANTIFIER3: "enough", OBJECT_PROPERTY3: "water", PURPOSE: "prevent flood"]
+
+	// CENTRAL        (OPTIONAL) COUPLEDRELATIONSHIP: as the surface sediments become more porous , the amount of water aborbed by the surface sediments will increase     (dd7a-6b66-20c8-8526) [ AGENT_ATTRIBUTE1:"surface sediment", ACTION1:"become", CHANGE1:"much porous", QUANTITY_MEASURE2:"amount of", AGENT_ATTRIBUTE2:"water", ACTION2:"aborb by", PATIENT2:"surface sediment", CHANGE2:"increase" ]
+	//row *autoRow4 = [UUID:"dd7a-6b66-20c8-8526", AGENT_ATTRIBUTE1: "surface sediment", ACTION1: "become", CHANGE1: "much porous", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "water", ACTION2: "aborb by", PATIENT2: "surface sediment", CHANGE2: "increase"] //OVER-CONSTR.
+	row *autoRow4 = [UUID:"dd7a-6b66-20c8-8526", AGENT_ATTRIBUTE1: "surface sediment", ACTION1: "become", CHANGE1: "much porous", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "water", ACTION2: "aborb by", PATIENT2: "surface sediment", CHANGE2: "increase"]
+
+	// CENTRAL         CAUSE: surface sediment that is not porous can cause flooding     (8fa0-f7d5-c157-253c) [ CONDITION_AGENT_OBJECT:"surface sediment", SCOPE1:"be not porous", RESULT_AGENT:"flood" ]
+	//row autoRow5 = [UUID:"8fa0-f7d5-c157-253c", CONDITION_AGENT_OBJECT: "surface sediment", SCOPE1: "be not porous", RESULT_AGENT: "flood"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"8fa0-f7d5-c157-253c", CONDITION_AGENT_OBJECT: "surface sediment", SCOPE1: "be not porous", RESULT_AGENT: "flood"]
+
+	// CENTRAL         CAUSE: high precipitation causes high runoff     (b44a-2633-fa90-c8c1) [ CONDITION_AGENT_OBJECT:"high precipitation", RESULT_AGENT:"high runoff" ]
+	//row autoRow6 = [UUID:"b44a-2633-fa90-c8c1", CONDITION_AGENT_OBJECT: "high precipitation", RESULT_AGENT: "high runoff"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"b44a-2633-fa90-c8c1", CONDITION_AGENT_OBJECT: "high precipitation", RESULT_AGENT: "high runoff"]
+
+	// CENTRAL         CAUSE: high runoff causes flooding     (1a0c-201c-df07-2304) [ CONDITION_AGENT_OBJECT:"high runoff", RESULT_AGENT:"flood" ]
+	//row autoRow7 = [UUID:"1a0c-201c-df07-2304", CONDITION_AGENT_OBJECT: "high runoff", RESULT_AGENT: "flood"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"1a0c-201c-df07-2304", CONDITION_AGENT_OBJECT: "high runoff", RESULT_AGENT: "flood"]
+
+	// CENTRAL         CAUSE: low infiltration causes flooding     (2215-81de-b171-464b) [ CONDITION_AGENT_OBJECT:"low infiltration", RESULT_AGENT:"flood" ]
+	//row autoRow8 = [UUID:"2215-81de-b171-464b", CONDITION_AGENT_OBJECT: "low infiltration", RESULT_AGENT: "flood"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"2215-81de-b171-464b", CONDITION_AGENT_OBJECT: "low infiltration", RESULT_AGENT: "flood"]
+
+	// CENTRAL         AFFORDANCES: surface sediments can absorb some rain     (61d7-3524-783b-5fee) [ ACTOR_THING:"surface sediment", VERB:"absorb", PATIENT:"rain" ]
+	//  Notes: 777f-2bb6-3890-189b->61d7-3524-783b-5fee
+	//row autoRow9 = [UUID:"61d7-3524-783b-5fee", ACTOR_THING: "surface sediment", VERB: "absorb", PATIENT: <rain_0>] //OVER-CONSTR.
+	row autoRow9 = [UUID:"61d7-3524-783b-5fee", ACTOR_THING: "surface sediment", VERB: "absorb", PATIENT: <rain_0>]
+
+	// CENTRAL         KINDOF: flooding is a kind of event     (9624-fa54-97b8-7dd6) [ HYPONYM:"flood", HYPERNYM:"event" ]
+	//row autoRow10 = [UUID:"9624-fa54-97b8-7dd6", HYPONYM: "flood", HYPERNYM: "event"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"9624-fa54-97b8-7dd6", HYPONYM: "flood", HYPERNYM: "event"]
+
+	// CENTRAL         CAUSE: heavy rains cause flooding     (6757-76c5-8bf9-33b8) [ CONDITION_AGENT_OBJECT:"heavy rain", RESULT_VERB:"flood" ]
+	//  Notes: heavy rain --> flooding
+	//row autoRow11 = [UUID:"6757-76c5-8bf9-33b8", CONDITION_AGENT_OBJECT: "heavy"+<rain_0>, RESULT_VERB: "flood"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"6757-76c5-8bf9-33b8", CONDITION_AGENT_OBJECT: "heavy"+<rain_0>, RESULT_VERB: "flood"]
+
+	// CENTRAL         IFTHEN: when a body of water receives more water than it can hold , a flood occurs     (6a1a-d4cc-de02-eac6) [ THING:"body of water", ACTION1:"receive", ADJ_QUANTITY1A:"much", OBJECT_PATIENT1:"water", SCOPE1B:"than hold", ACTOR_AGENT_PROCESS2:"flood", ACTION3:"occur" ]
+	//  Notes: body of water overfloods
+	//row autoRow12 = [UUID:"6a1a-d4cc-de02-eac6", THING: "body of water", ACTION1: "receive", ADJ_QUANTITY1A: "much", OBJECT_PATIENT1: "water", SCOPE1B: "than hold", ACTOR_AGENT_PROCESS2: "flood", ACTION3: "occur"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"6a1a-d4cc-de02-eac6", THING: "body of water", ACTION1: "receive", ADJ_QUANTITY1A: "much", OBJECT_PATIENT1: "water", SCOPE1B: "than hold", ACTOR_AGENT_PROCESS2: "flood", ACTION3: "occur"]
+
+	// CENTRAL        (OPTIONAL) ACTION: wetlands absorb flood water     (8a01-c359-b776-7a2d) [ AGENT_OBJECT:"wetland", ACTION2:"absorb", OBJECT_PROPERTY:"flood water" ]
+	//row *autoRow13 = [UUID:"8a01-c359-b776-7a2d", AGENT_OBJECT: "wetland", ACTION2: "absorb", OBJECT_PROPERTY: "flood water"] //OVER-CONSTR.
+	row *autoRow13 = [UUID:"8a01-c359-b776-7a2d", AGENT_OBJECT: "wetland", ACTION2: "absorb", OBJECT_PROPERTY: "flood water"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: ocean water level rising causes seawater to flood coastal area     (f51c-f742-b97c-792e) [ CONDITION_AGENT_OBJECT:"ocean water level", CONDITION_VERB:"rise", RESULT_AGENT:"sea water", RESULT_VERB:"flood", RESULT_PATIENT:"coastal area" ]
+	//row *autoRow14 = [UUID:"f51c-f742-b97c-792e", CONDITION_AGENT_OBJECT: "ocean water level", CONDITION_VERB: "rise", RESULT_AGENT: "sea water", RESULT_VERB: "flood", RESULT_PATIENT: "coastal area"] //OVER-CONSTR.
+	row *autoRow14 = [UUID:"f51c-f742-b97c-792e", CONDITION_AGENT_OBJECT: "ocean water level", CONDITION_VERB: "rise", RESULT_AGENT: "sea water", RESULT_VERB: "flood", RESULT_PATIENT: "coastal area"]
+
+	// CENTRAL         IFTHEN: when a river floods , that river deposits soil ; sediment in flood plains     (2107-bbdb-3936-d0cb) [ THING:"river", ACTION1:"flood", ACTOR_AGENT_PROCESS2:"that river", ACTION3:"deposit", OBJECT_PROPERTY3:"soil;sediment", SCOPE4:"in flood plain" ]
+	//row autoRow15 = [UUID:"2107-bbdb-3936-d0cb", THING: "river", ACTION1: "flood", ACTOR_AGENT_PROCESS2: "that river", ACTION3: "deposit", OBJECT_PROPERTY3: "soil", SCOPE4: "in flood plain"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"2107-bbdb-3936-d0cb", THING: "river", ACTION1: "flood", ACTOR_AGENT_PROCESS2: "that river", ACTION3: "deposit", OBJECT_PROPERTY3: "soil", SCOPE4: "in flood plain"]
+
+	// CENTRAL         CAUSE: storms ; rain cause bodies of water to increase amount of water they contain     (c1bf-db54-7c40-a799) [ CONDITION_AGENT_OBJECT:"storm;rain", RESULT_AGENT:"body of water", RESULT_VERB:"increase", RESULT_PATIENT:"amount of water contain" ]
+	//row autoRow16 = [UUID:"c1bf-db54-7c40-a799", CONDITION_AGENT_OBJECT: <rain_0>, RESULT_AGENT: "body of water", RESULT_VERB: "increase", RESULT_PATIENT: "amount of water contain"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"c1bf-db54-7c40-a799", CONDITION_AGENT_OBJECT: <rain_0>, RESULT_AGENT: "body of water", RESULT_VERB: "increase", RESULT_PATIENT: "amount of water contain"]
+
+	// LEXGLUE         OPPOSITES: an increase is the opposite of a decrease     (bfdf-b468-ee22-1b60) [ THING_PROPERTY1:"increase", THING_PROPERTY2:"decrease" ]
+	//row autoRow17 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"]
+
+endinferencepattern

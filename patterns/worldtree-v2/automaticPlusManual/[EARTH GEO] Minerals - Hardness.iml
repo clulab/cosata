@@ -1,0 +1,93 @@
+// Automatically converted pattern
+inferencepattern EARTH_GEO_Minerals_Hardness
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       IFTHEN: if a mineral can be scratched by a fingernail then that mineral is soft     (2863-93fe-ff62-7b41) [ THING:"mineral", QUANTIFIER1:"be", ACTION1:"scratch by", OBJECT_PATIENT1:"fingernail", ACTOR_AGENT_PROCESS2:"that mineral", OBJECT_PROPERTY3:"soft" ]
+	//        HINTROW if one mineral can scratch another mineral then that other mineral is softer than that one mineral     (2523-8171-1306-a08f) [ THING:"one mineral", ACTION1:"scratch", OBJECT_PATIENT1:"mineral", ACTOR_AGENT_PROCESS2:"that other mineral", OBJECT_PROPERTY3:"soft", SCOPE4:"than one mineral" ]
+	//row autoRow0 = [TABLE:"IFTHEN", THING: "mineral", ACTION1: "scratch"+*"POS:IN", ACTOR_AGENT_PROCESS2: "that mineral", OBJECT_PROPERTY3: "soft"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"IFTHEN", THING: "mineral", ACTION1: "scratch"+*"POS:IN", ACTOR_AGENT_PROCESS2: "that mineral", OBJECT_PROPERTY3: "soft"]
+
+	// GROUNDING       KINDOF: mica is a kind of mineral     (d332-396d-4f4f-cda0) [ HYPONYM:"mica", HYPERNYM:"mineral" ]
+	//        HINTROW gold is a kind of mineral     (5c41-c4f8-7ec9-93a5) [ HYPONYM:"gold", HYPERNYM:"mineral" ]
+	//  Notes: X is a kind of mineral
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: <mica_0>, HYPERNYM: "mineral"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: <mica_0>, HYPERNYM: "mineral"]
+
+	// GROUNDING       KINDOF: quartz is a kind of mineral     (fe8b-fc9f-5401-dc19) [ HYPONYM:"quartz", HYPERNYM:"mineral" ]
+	//        HINTROW diamond is a kind of mineral     (7e9a-fec3-cac8-51bb) [ HYPONYM:"diamond", HYPERNYM:"mineral" ]
+	//  Notes: hard mineral examples
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <quartz_1>, HYPERNYM: "mineral"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <quartz_1>, HYPERNYM: "mineral"]
+
+	// GROUNDING       PROP-HARDNESS: mica is soft     (2e56-4666-451b-5894) [ OBJECT:"mica", HARD_SOFT:"soft" ]
+	//        HINTROW gold is soft     (a080-8e02-49a6-9707) [ OBJECT:"gold", HARD_SOFT:"soft" ]
+	//  Notes: soft minerals
+	//row autoRow3 = [TABLE:"PROP-HARDNESS", OBJECT: <mica_0>, HARD_SOFT: "soft"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"PROP-HARDNESS", OBJECT: <mica_0>, HARD_SOFT: "soft"]
+
+	// GROUNDING       PROP-HARDNESS: quartz is hard     (5925-533c-7bb7-4954) [ OBJECT:"quartz", HARD_SOFT:"hard" ]
+	//        HINTROW diamond is hard     (63a1-8273-80bd-cf40) [ OBJECT:"diamond", HARD_SOFT:"hard" ]
+	//  Notes: hard minerals
+	//row autoRow4 = [TABLE:"PROP-HARDNESS", OBJECT: <quartz_1>, HARD_SOFT: "hard"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"PROP-HARDNESS", OBJECT: <quartz_1>, HARD_SOFT: "hard"]
+
+	// CENTRAL         PROP-GENERIC: hardness is a property of a material ; an object and includes ordered values of malleable ; rigid     (72e2-6cde-7faa-4d2b) [ X:"hardness", Y:"material;object", ORDERED_UNORDERED:"order", VALUES:"malleable;rigid" ]
+	//row autoRow5 = [UUID:"72e2-6cde-7faa-4d2b", X: "hardness", Y: "material", ORDERED_UNORDERED: "order", VALUES: "malleable"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"72e2-6cde-7faa-4d2b", X: "hardness", Y: "material", ORDERED_UNORDERED: "order", VALUES: "malleable"]
+
+	// CENTRAL         USEDFOR: a streak plate can be used to determine the hardness of a mineral     (cd93-2714-3e29-9def) [ AGENT_OBJECT:"streak plate", FOR_PURPOSE:"determine", PATIENT:"hardness", SCOPE2:"of mineral" ]
+	//row autoRow6 = [UUID:"cd93-2714-3e29-9def", AGENT_OBJECT: "streak plate", FOR_PURPOSE: "determine", PATIENT: "hardness", SCOPE2: "of mineral"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"cd93-2714-3e29-9def", AGENT_OBJECT: "streak plate", FOR_PURPOSE: "determine", PATIENT: "hardness", SCOPE2: "of mineral"]
+
+	// CENTRAL        (OPTIONAL) ACTION: classifying means grouping objects ; materials by their properties     (69c1-2991-2421-ce63) [ DEFINITION_NAME:"classify", ACTION2:"group", OBJECT_PROPERTY:"object;material", HOW:"property" ]
+	//row *autoRow7 = [UUID:"69c1-2991-2421-ce63", DEFINITION_NAME: "classify", ACTION2: "group", OBJECT_PROPERTY: "object", HOW: "property"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"69c1-2991-2421-ce63", DEFINITION_NAME: "classify", ACTION2: "group", OBJECT_PROPERTY: "object", HOW: "property"]
+
+	// CENTRAL         MEASUREMENTS: hardness is a measure of a mineral 's ability to resist scratching     (a6b1-8a48-8882-cdfd) [ MEASURE:"hardness", QUANTITY_ADJ:"measure of", ATTRIBUTE:"mineral ability resist scratch" ]
+	//row autoRow8 = [UUID:"a6b1-8a48-8882-cdfd", MEASURE: "hardness", QUANTITY_ADJ: "measure of", ATTRIBUTE: "mineral ability resist scratch"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"a6b1-8a48-8882-cdfd", MEASURE: "hardness", QUANTITY_ADJ: "measure of", ATTRIBUTE: "mineral ability resist scratch"]
+
+	// CENTRAL         REQUIRES: measuring the hardness of minerals requires scratching those materials     (757d-cd70-0857-0d35) [ ACTION1:"measure", OBJECT_AGENT_PROCESS:"hardness", SCOPE1:"of mineral", VERB_REQUIRES:"require", ACTION2:"scratch", OBJECT:"material" ]
+	//row autoRow9 = [UUID:"757d-cd70-0857-0d35", ACTION1: "measure", OBJECT_AGENT_PROCESS: "hardness", SCOPE1: "of mineral", VERB_REQUIRES: "require", ACTION2: "scratch", OBJECT: "material"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"757d-cd70-0857-0d35", ACTION1: "measure", OBJECT_AGENT_PROCESS: "hardness", SCOPE1: "of mineral", VERB_REQUIRES: "require", ACTION2: "scratch", OBJECT: "material"]
+
+	// CENTRAL         IFTHEN: if a material scratches easily then that material has low hardness     (0d14-a620-1810-48a3) [ THING:"material", ACTION1:"scratch easy", ACTOR_AGENT_PROCESS2:"that material", ADJ_QUANTIFIER3:"low", OBJECT_PROPERTY3:"hardness" ]
+	//row autoRow10 = [UUID:"0d14-a620-1810-48a3", THING: "material", ACTION1: "scratch easy", ACTOR_AGENT_PROCESS2: "that material", ADJ_QUANTIFIER3: "low", OBJECT_PROPERTY3: "hardness"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"0d14-a620-1810-48a3", THING: "material", ACTION1: "scratch easy", ACTOR_AGENT_PROCESS2: "that material", ADJ_QUANTIFIER3: "low", OBJECT_PROPERTY3: "hardness"]
+
+	// CENTRAL         AFFORDANCES: the properties of something can be used to identify ; used to describe that something     (8661-5700-67ef-4ac8) [ ACTOR_THING:"property", PROPERTY_OBJECT:"of something", VERB:"use identify;use describe", PATIENT:"that something" ]
+	//row autoRow11 = [UUID:"8661-5700-67ef-4ac8", ACTOR_THING: "property", PROPERTY_OBJECT: "of something", VERB: "use identify", PATIENT: "that something"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"8661-5700-67ef-4ac8", ACTOR_THING: "property", PROPERTY_OBJECT: "of something", VERB: "use identify", PATIENT: "that something"]
+
+	// CENTRAL         USEDFOR: hardness can be used to identify minerals     (2bc5-2931-e694-ba1a) [ AGENT_OBJECT:"hardness", FOR_PURPOSE:"identify", PATIENT:"mineral" ]
+	//row autoRow12 = [UUID:"2bc5-2931-e694-ba1a", AGENT_OBJECT: "hardness", FOR_PURPOSE: "identify", PATIENT: "mineral"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"2bc5-2931-e694-ba1a", AGENT_OBJECT: "hardness", FOR_PURPOSE: "identify", PATIENT: "mineral"]
+
+	// CENTRAL         USEDFOR: the properties of something are used for describing that something     (33f0-39de-0983-aad8) [ AGENT_OBJECT:"property", SCOPE1:"of something", FOR_PURPOSE:"describe", PATIENT:"that something" ]
+	//row autoRow13 = [UUID:"33f0-39de-0983-aad8", AGENT_OBJECT: "property", SCOPE1: "of something", FOR_PURPOSE: "describe", PATIENT: "that something"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"33f0-39de-0983-aad8", AGENT_OBJECT: "property", SCOPE1: "of something", FOR_PURPOSE: "describe", PATIENT: "that something"]
+
+	// CENTRAL         KINDOF: a mineral is a kind of solid ; natural material     (f294-6f62-2e34-4af0) [ HYPONYM:"mineral", SCOPE1:"solid;nature", HYPERNYM:"material" ]
+	//row autoRow14 = [UUID:"f294-6f62-2e34-4af0", HYPONYM: "mineral", SCOPE1: "solid", HYPERNYM: "material"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"f294-6f62-2e34-4af0", HYPONYM: "mineral", SCOPE1: "solid", HYPERNYM: "material"]
+
+	// CENTRAL         KINDOF: a mineral is a kind of object     (8435-aecd-2348-6182) [ HYPONYM:"mineral", HYPERNYM:"object" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"8435-aecd-2348-6182", HYPONYM: "mineral", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"8435-aecd-2348-6182", HYPONYM: "mineral", HYPERNYM: "object"]
+
+	// CENTRAL         IFTHEN: if something is soft , then that something is malleable     (2ac5-c14f-0f63-8b01) [ THING:"something", ADJ_QUANTITY1A:"soft", ACTOR_AGENT_PROCESS2:"that something", ADJ_QUANTIFIER3:"malleable" ]
+	//row autoRow16 = [UUID:"2ac5-c14f-0f63-8b01", THING: "something", ADJ_QUANTITY1A: "soft", ACTOR_AGENT_PROCESS2: "that something", ADJ_QUANTIFIER3: "malleable"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"2ac5-c14f-0f63-8b01", THING: "something", ADJ_QUANTITY1A: "soft", ACTOR_AGENT_PROCESS2: "that something", ADJ_QUANTIFIER3: "malleable"]
+
+	// LEXGLUE         KINDOF: soft is a kind of hardness     (0654-00a0-45fb-b306) [ HYPONYM:"soft", HYPERNYM:"hardness" ]
+	//row autoRow17 = [UUID:"0654-00a0-45fb-b306", HYPONYM: "soft", HYPERNYM: "hardness"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"0654-00a0-45fb-b306", HYPONYM: "soft", HYPERNYM: "hardness"]
+
+endinferencepattern

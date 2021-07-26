@@ -1,0 +1,71 @@
+// Automatically converted pattern
+inferencepattern ENG_POTENTIALKINETIC_Definition_Potential_Energy
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as the mass of an object increases , the potential energy of that object will increase     (2c99-ccff-7520-2b6e) [ QUANTITY_MEASURE1:"mass of", AGENT_ATTRIBUTE1:"object", CHANGE1:"increase", QUANTITY_MEASURE2:"potential energy of", AGENT_ATTRIBUTE2:"object", CHANGE2:"increase" ]
+	//        HINTROW as the altitude of an object increases , the potential energy of the object will increase     (8b15-345a-c7ea-b574) [ QUANTITY_MEASURE1:"altitude of", AGENT_ATTRIBUTE1:"object", CHANGE1:"increase", QUANTITY_MEASURE2:"potential energy of", AGENT_ATTRIBUTE2:"object", CHANGE2:"increase" ]
+	//row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "mass of", AGENT_ATTRIBUTE1: "object", CHANGE1: "increase", QUANTITY_MEASURE2: "potential energy of", AGENT_ATTRIBUTE2: "object", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: *"POS:NN"+"of", AGENT_ATTRIBUTE1: "object", CHANGE1: "increase", QUANTITY_MEASURE2: "potential energy of", AGENT_ATTRIBUTE2: "object", CHANGE2: "increase"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: high means great in altitude     (8887-e704-c02a-b51a) [ THING:"high", VALUE:"great", ATTRIBUTE:"altitude" ]
+	//        HINTROW higher means greater ; above in value ; amount ; number     (ecca-9a1d-3074-cd00) [ THING:"high", VALUE:"great;above", ATTRIBUTE:"value;amount;numb" ]
+	//        HINTROW highest means largest ; greatest ; most in height     (6ae1-28fc-3259-5aa5) [ THING:"high", VALUE:"large;great;much", ATTRIBUTE:"height" ]
+	//row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "high"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "high"]
+
+	// GROUNDING       KINDOF: height is a kind of position     (93e7-26bc-363f-b089) [ HYPONYM:"height", HYPERNYM:"position" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "height", HYPERNYM: "position"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "height", HYPERNYM: "position"]
+
+	// GROUNDING       KINDOF: shelf is a kind of object     (3c21-ce3a-a5a7-db40) [ HYPONYM:"shelf", HYPERNYM:"object" ]
+	//        HINTROW a ball is a kind of object     (5650-b213-46ea-d9dd) [ HYPONYM:"ball", HYPERNYM:"object" ]
+	//        HINTROW a box is a kind of object     (1d87-b214-3eab-4a4e) [ HYPONYM:"box", HYPERNYM:"object" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// GROUNDING      (OPTIONAL) KINDOF: timing ; multiplying is a kind of calculating     (de97-2b1d-0459-b676) [ HYPONYM:"time;multiply", HYPERNYM:"calculate" ]
+	//        HINTROW adding is a kind of calculating     (4ece-78ff-5449-998b) [ HYPONYM:"add", HYPERNYM:"calculate" ]
+	//  Notes: for estimating the amount of energy
+	//row *autoRow4 = [TABLE:"KINDOF", HYPERNYM: "calculate"] //OVER-CONSTR.
+	row *autoRow4 = [TABLE:"KINDOF", HYPERNYM: "calculate"]
+
+	// CENTRAL         MEASUREMENTS: potential energy is a measure of the energy of an object due to position relative to other objects     (b7c8-a816-2ceb-d787) [ MEASURE:"potential energy", QUANTITY_ADJ:"measure of", ATTRIBUTE:"energy of", AGENT:"object", SCOPE:"due position relative other object" ]
+	//row autoRow5 = [UUID:"b7c8-a816-2ceb-d787", MEASURE: "potential energy", QUANTITY_ADJ: "measure of", ATTRIBUTE: "energy of", AGENT: "object", SCOPE: "due position relative other object"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"b7c8-a816-2ceb-d787", MEASURE: "potential energy", QUANTITY_ADJ: "measure of", ATTRIBUTE: "energy of", AGENT: "object", SCOPE: "due position relative other object"]
+
+	// CENTRAL         MEASUREMENTS: height is a measure of length from the top of an object to the bottom of an object     (833b-2c13-d01b-2ac2) [ MEASURE:"height", QUANTITY_ADJ:"measure of", ATTRIBUTE:"length", FROM:"from top of object", TO:"bottom of object" ]
+	//row autoRow6 = [UUID:"833b-2c13-d01b-2ac2", MEASURE: "height", QUANTITY_ADJ: "measure of", ATTRIBUTE: "length", FROM: "from top of object", TO: "bottom of object"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"833b-2c13-d01b-2ac2", MEASURE: "height", QUANTITY_ADJ: "measure of", ATTRIBUTE: "length", FROM: "from top of object", TO: "bottom of object"]
+
+	// CENTRAL         MEASUREMENTS: gravitational potential energy is a measure of the product of weight and height     (d528-c628-11e3-be54) [ MEASURE:"gravitational potential energy", QUANTITY_ADJ:"measure of", ATTRIBUTE:"product of", AGENT:"weight height" ]
+	//row autoRow7 = [UUID:"d528-c628-11e3-be54", MEASURE: "gravitational potential energy", QUANTITY_ADJ: "measure of", ATTRIBUTE: "product of", AGENT: "weight height"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"d528-c628-11e3-be54", MEASURE: "gravitational potential energy", QUANTITY_ADJ: "measure of", ATTRIBUTE: "product of", AGENT: "weight height"]
+
+	// CENTRAL         KINDOF: gravitational potential energy is a kind of potential energy     (a688-a05d-d396-e7c1) [ HYPONYM:"gravitational potential energy", HYPERNYM:"potential energy" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"a688-a05d-d396-e7c1", HYPONYM: "gravitational potential energy", HYPERNYM: "potential energy"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"a688-a05d-d396-e7c1", HYPONYM: "gravitational potential energy", HYPERNYM: "potential energy"]
+
+	// CENTRAL         PROP-GENERIC: mass is a property of objects ; matter     (bbf0-3d09-563f-196b) [ X:"mass", Y:"object;matt" ]
+	//row autoRow9 = [UUID:"bbf0-3d09-563f-196b", X: "mass", Y: "object"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"bbf0-3d09-563f-196b", X: "mass", Y: "object"]
+
+	// CENTRAL         KINDOF: potential energy is a kind of energy     (f17e-69ee-218e-972f) [ HYPONYM:"potential energy", HYPERNYM:"energy" ]
+	//row autoRow10 = [UUID:"f17e-69ee-218e-972f", HYPONYM: "potential energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"f17e-69ee-218e-972f", HYPONYM: "potential energy", HYPERNYM: "energy"]
+
+	// LEXGLUE         SYNONYMY: rising means moving upward     (02da-ef7f-1c81-fe6d) [ ACTION1:"rise", ACTION2:"move upward" ]
+	//row autoRow11 = [UUID:"02da-ef7f-1c81-fe6d", ACTION1: "rise", ACTION2: "move upward"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"02da-ef7f-1c81-fe6d", ACTION1: "rise", ACTION2: "move upward"]
+
+	// LEXGLUE         SYNONYMY: drop somthing is similar to move something     (0c5b-d96c-dada-d1eb) [ ACTION1:"drop", Y1:"somthing", ACTION2:"move", Y2:"something" ]
+	//row autoRow12 = [UUID:"0c5b-d96c-dada-d1eb", ACTION1: "drop", Y1: "somthing", ACTION2: "move", Y2: "something"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"0c5b-d96c-dada-d1eb", ACTION1: "drop", Y1: "somthing", ACTION2: "move", Y2: "something"]
+
+endinferencepattern

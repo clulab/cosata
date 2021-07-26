@@ -1,0 +1,61 @@
+// Automatically converted pattern
+inferencepattern SAF_PROC_Multiple_Plugs_in_one_outlet_is_dangerous
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         CAUSE: completing a circuit causes electricity ; electric current to flow through that circuit     (e215-a276-5a10-38a1) [ CONDITION_VERB:"complete", CONDITION_PATIENT:"circuit", RESULT_AGENT:"electric;electric current", RESULT_VERB:"flow", SCOPE2:"through circuit" ]
+	//row autoRow0 = [UUID:"e215-a276-5a10-38a1", CONDITION_VERB: "complete", CONDITION_PATIENT: "circuit", RESULT_AGENT: "electric current", RESULT_VERB: "flow", SCOPE2: "through circuit"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"e215-a276-5a10-38a1", CONDITION_VERB: "complete", CONDITION_PATIENT: "circuit", RESULT_AGENT: "electric current", RESULT_VERB: "flow", SCOPE2: "through circuit"]
+
+	// CENTRAL         IFTHEN: if electricity flows through ; is transferred through the body of an animal then that animal is electrocuted     (cf3b-d6fc-6b3d-87d4) [ THING:"electric", ACTION1:"flow through;be transfer through", OBJECT_PATIENT1:"body", OBJECT_PROPERTY1:"of animal", ACTOR_AGENT_PROCESS2:"that animal", ACTION3:"electrocute" ]
+	//row autoRow1 = [UUID:"cf3b-d6fc-6b3d-87d4", THING: "electric", ACTION1: "be transfer through", OBJECT_PATIENT1: "body", OBJECT_PROPERTY1: "of animal", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "electrocute"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"cf3b-d6fc-6b3d-87d4", THING: "electric", ACTION1: "be transfer through", OBJECT_PATIENT1: "body", OBJECT_PROPERTY1: "of animal", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "electrocute"]
+
+	// CENTRAL         PROP-THINGS: plugging many appliances into one outlet is dangerous     (25b0-7443-ab60-3f06) [ THING:"plug many appliance into one outlet", VALUE:"danger" ]
+	//row autoRow2 = [UUID:"25b0-7443-ab60-3f06", THING: "plug many appliance into one outlet", VALUE: "danger"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"25b0-7443-ab60-3f06", THING: "plug many appliance into one outlet", VALUE: "danger"]
+
+	// CENTRAL         IFTHEN: when an electrical conductor is plugged into an outlet , a circuit is completed     (b6b5-6397-aa43-e453) [ THING:"electric conduct", ACTION1:"plug into", ADJ_QUANTITY1A:"outlet", ACTOR_AGENT_PROCESS2:"circuit", ACTION3:"complete" ]
+	//row autoRow3 = [UUID:"b6b5-6397-aa43-e453", THING: "electric conduct", ACTION1: "plug into", ADJ_QUANTITY1A: "outlet", ACTOR_AGENT_PROCESS2: "circuit", ACTION3: "complete"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"b6b5-6397-aa43-e453", THING: "electric conduct", ACTION1: "plug into", ADJ_QUANTITY1A: "outlet", ACTOR_AGENT_PROCESS2: "circuit", ACTION3: "complete"]
+
+	// CENTRAL        (OPTIONAL) REQUIRES: operating electrical appliances requires electricity     (4497-3566-1187-4d3b) [ ACTION1:"operate", OBJECT_AGENT_PROCESS:"electric appliance", VERB_REQUIRES:"require", OBJECT:"electric" ]
+	//row *autoRow4 = [UUID:"4497-3566-1187-4d3b", ACTION1: "operate", OBJECT_AGENT_PROCESS: "electric appliance", VERB_REQUIRES: "require", OBJECT: "electric"] //OVER-CONSTR.
+	row *autoRow4 = [UUID:"4497-3566-1187-4d3b", ACTION1: "operate", OBJECT_AGENT_PROCESS: "electric appliance", VERB_REQUIRES: "require", OBJECT: "electric"]
+
+	// CENTRAL         SOURCEOF: an electric outlet is a source of electricity     (bf36-2974-94ee-2412) [ ADJ:"electric", AGENT:"outlet", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"electric" ]
+	//row autoRow5 = [UUID:"bf36-2974-94ee-2412", ADJ: "electric", AGENT: "outlet", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "electric"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"bf36-2974-94ee-2412", ADJ: "electric", AGENT: "outlet", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "electric"]
+
+	// CENTRAL         CAUSE: electrocution causes harm to an organism     (7409-4a52-a23a-0c5c) [ CONDITION_AGENT_OBJECT:"electrocute", RESULT_VERB:"harm", RESULT_PATIENT:"organism" ]
+	//row autoRow6 = [UUID:"7409-4a52-a23a-0c5c", CONDITION_AGENT_OBJECT: "electrocute", RESULT_VERB: "harm", RESULT_PATIENT: "organism"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"7409-4a52-a23a-0c5c", CONDITION_AGENT_OBJECT: "electrocute", RESULT_VERB: "harm", RESULT_PATIENT: "organism"]
+
+	// CENTRAL         OPPOSITES: safe is the opposite of unsafe ; harm ; danger     (fd2d-7763-c40b-59a9) [ THING_PROPERTY1:"safe", THING_PROPERTY2:"unsafe;harm;danger" ]
+	//row autoRow7 = [UUID:"fd2d-7763-c40b-59a9", THING_PROPERTY1: "safe", THING_PROPERTY2: "unsafe"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"fd2d-7763-c40b-59a9", THING_PROPERTY1: "safe", THING_PROPERTY2: "unsafe"]
+
+	// CENTRAL         CAUSE: something dangerous can cause harm     (70a1-9e7d-18aa-7495) [ CONDITION_AGENT_OBJECT:"something danger", RESULT_AGENT:"harm" ]
+	//row autoRow8 = [UUID:"70a1-9e7d-18aa-7495", CONDITION_AGENT_OBJECT: "something danger", RESULT_AGENT: "harm"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"70a1-9e7d-18aa-7495", CONDITION_AGENT_OBJECT: "something danger", RESULT_AGENT: "harm"]
+
+	// CENTRAL         KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"4253-4b9e-1e5f-1742", HYPONYM: "human", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"4253-4b9e-1e5f-1742", HYPONYM: "human", HYPERNYM: "animal"]
+
+	// CENTRAL         KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"]
+
+	// LEXGLUE         SYNONYMY: to protect means to make safe     (578b-10b3-d171-7b7c) [ ACTION1:"protect", ACTION2:"make safe" ]
+	//row autoRow11 = [UUID:"578b-10b3-d171-7b7c", ACTION1: "protect", ACTION2: "make safe"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"578b-10b3-d171-7b7c", ACTION1: "protect", ACTION2: "make safe"]
+
+endinferencepattern

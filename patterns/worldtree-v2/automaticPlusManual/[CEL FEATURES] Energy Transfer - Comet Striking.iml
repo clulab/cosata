@@ -1,0 +1,73 @@
+// Automatically converted pattern
+inferencepattern CEL_FEATURES_Energy_Transfer_Comet_Striking
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       MADEOF: a comet is often made of ice     (ba0f-5df6-2599-9eef) [ OBJECT:"comet", QUALIFIER:"be often", MATERIAL:"ice" ]
+	//        HINTROW a comet is made of ice, gases, and dust     (1e83-a2f6-f1a7-08d0) [ OBJECT:"comet", MATERIAL:"ice gas dust" ]
+	//row autoRow0 = [TABLE:"MADEOF", OBJECT: "comet", MATERIAL: "ice"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"MADEOF", OBJECT: "comet", MATERIAL: "ice"]
+
+	// GROUNDING       KINDOF: Shoemaker-Levy is a kind of comet     (c904-9c12-2199-85e9) [ HYPONYM:"shoemaker-levy;shoemaker levy", HYPERNYM:"comet" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "shoemaker levy", HYPERNYM: "comet"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "shoemaker levy", HYPERNYM: "comet"]
+
+	// GROUNDING       KINDOF: Mars is a kind of planet     (1fb6-af63-74de-86fd) [ HYPONYM:"mar", HYPERNYM:"planet" ]
+	//        HINTROW Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "planet"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "planet"]
+
+	// CENTRAL         EXAMPLES: An example of net decrease in kinetic energy is a comet striking a planet     (9306-4548-1473-330d) [ AGENT_OBJECT1:"net decrease", SCOPE1:"in kinetic energy", AGENT_OBJECT2:"comet", VERB2:"strike", AGENT_OBJECT3:"planet" ]
+	//row autoRow3 = [UUID:"9306-4548-1473-330d", AGENT_OBJECT1: "net decrease", SCOPE1: "in kinetic energy", AGENT_OBJECT2: "comet", VERB2: "strike", AGENT_OBJECT3: "planet"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"9306-4548-1473-330d", AGENT_OBJECT1: "net decrease", SCOPE1: "in kinetic energy", AGENT_OBJECT2: "comet", VERB2: "strike", AGENT_OBJECT3: "planet"]
+
+	// CENTRAL         CHANGE: comet striking a planet converts kinetic energy into thermal energy     (75f1-4abc-3fc1-e959) [ ACTOR_WHO:"comet strike planet", VERB:"convert", FROM:"kinetic energy", INTO:"thermal energy" ]
+	//row autoRow4 = [UUID:"75f1-4abc-3fc1-e959", ACTOR_WHO: "comet strike planet", VERB: "convert", FROM: "kinetic energy", INTO: "thermal energy"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"75f1-4abc-3fc1-e959", ACTOR_WHO: "comet strike planet", VERB: "convert", FROM: "kinetic energy", INTO: "thermal energy"]
+
+	// CENTRAL        (OPTIONAL) CHANGE: energy transformation means one kind of energy changes into another kind of energy     (3d34-b43e-8a7e-07fd) [ PROCESS_NAME:"energy transformation", ACTOR_WHO:"one kind of energy", VERB:"change", INTO:"kind of energy" ]
+	//row *autoRow5 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"]
+
+	// CENTRAL         CHANGE: moving changes potential energy ; stored energy into kinetic energy and heat energy     (48d9-21f5-7bf4-c99e) [ ACTOR_WHO:"move", VERB:"change", FROM:"potential energy;store energy", INTO:"kinetic energy heat energy" ]
+	//row autoRow6 = [UUID:"48d9-21f5-7bf4-c99e", ACTOR_WHO: "move", VERB: "change", FROM: "potential energy", INTO: "kinetic energy heat energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"48d9-21f5-7bf4-c99e", ACTOR_WHO: "move", VERB: "change", FROM: "potential energy", INTO: "kinetic energy heat energy"]
+
+	// CENTRAL         KINDOF: a comet is a kind of celestial object     (4ce6-e825-a484-607d) [ HYPONYM:"comet", SCOPE1:"celestial", HYPERNYM:"object" ]
+	//  Notes: explanatory central
+	//row autoRow7 = [UUID:"4ce6-e825-a484-607d", HYPONYM: "comet", SCOPE1: "celestial", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4ce6-e825-a484-607d", HYPONYM: "comet", SCOPE1: "celestial", HYPERNYM: "object"]
+
+	// CENTRAL         SYNONYMY: heat energy is synonymous with thermal energy     (ae86-c631-e4ad-1669) [ X1:"heat energy", X2:"thermal energy" ]
+	//row autoRow8 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"]
+
+	// CENTRAL         KINDOF: kinetic energy is a kind of mechanical energy     (8f4b-dcdb-2be5-9423) [ HYPONYM:"kinetic energy", HYPERNYM:"mechanical energy" ]
+	//  Notes: explanatory central
+	//row autoRow9 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"]
+
+	// CENTRAL         KINDOF: striking is a kind of movement     (5534-d473-11a7-6cf6) [ HYPONYM:"strike", HYPERNYM:"move" ]
+	//  Notes: explanatory central
+	//row autoRow10 = [UUID:"5534-d473-11a7-6cf6", HYPONYM: "strike", HYPERNYM: "move"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"5534-d473-11a7-6cf6", HYPONYM: "strike", HYPERNYM: "move"]
+
+	// CENTRAL         KINDOF: heat is a kind of energy     (9e7d-986e-6af1-5ac1) [ HYPONYM:"heat", HYPERNYM:"energy" ]
+	//  Notes: peripheral central
+	//row autoRow11 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"]
+
+	// LEXGLUE         SYNONYMY: to convert means to change     (72a6-1822-575b-e849) [ ACTION1:"convert", ACTION2:"change" ]
+	//row autoRow12 = [UUID:"72a6-1822-575b-e849", ACTION1: "convert", ACTION2: "change"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"72a6-1822-575b-e849", ACTION1: "convert", ACTION2: "change"]
+
+	// LEXGLUE         SYNONYMY: heat means heat energy     (4710-c993-7a19-bef2) [ X1:"heat", X2:"heat energy" ]
+	//row autoRow13 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"]
+
+endinferencepattern

@@ -1,0 +1,93 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Plant_Seed_Dispersal
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       EXAMPLES: An example of seed dispersal is is an animal hiding ; gathering ; burying seeds     (7119-02f2-0acf-3280) [ AGENT_OBJECT1:"seed dispersal", AGENT_OBJECT2:"be animal", VERB2:"hide;gather;bury", AGENT_OBJECT3:"seed" ]
+	//        HINTROW An example of seed dispersal is animals eating ; excreting seeds     (3e4c-9c36-623e-f00e) [ AGENT_OBJECT1:"seed dispersal", AGENT_OBJECT2:"animal", VERB2:"eat;excrete", AGENT_OBJECT3:"seed" ]
+	//row autoRow0 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "seed dispersal", AGENT_OBJECT2: "be animal", AGENT_OBJECT3: "seed"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "seed dispersal", AGENT_OBJECT2: *"POS:VB"+"animal", AGENT_OBJECT3: "seed"]
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "tree", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "tree", HYPERNYM: "plant"]
+
+	// GROUNDING       KINDOF: a squirrel is a kind of animal     (b5dc-c66c-4d4e-031d) [ HYPONYM:"squirrel", HYPERNYM:"animal" ]
+	//        HINTROW a bird is a kind of animal     (e26b-b21d-d4a3-25fc) [ HYPONYM:"bird", HYPERNYM:"animal" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: nuts are a kind of fruit     (8160-3018-c7df-ea68) [ HYPONYM:"nut", HYPERNYM:"fruit" ]
+	//        HINTROW a berry is a kind of fruit     (0d28-7059-bcd4-0859) [ HYPONYM:"berry", HYPERNYM:"fruit" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "fruit"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "fruit"]
+
+	// GROUNDING       CONSUMERS-EATING: birds sometimes eat berries ; seeds     (a6aa-97ee-2e4a-a9ad) [ ORGANISM1:"bird", QUANTIFIER:"sometimes", EATS_CONSUMES:"eat", ORGANISM2:"berry;seed" ]
+	//        HINTROW squirrels eat edible plants ; fruit     (de30-46f9-f287-cf05) [ ORGANISM1:"squirrel", EATS_CONSUMES:"eat", ORGANISM2:"edible plant;fruit" ]
+	//row autoRow4 = [TABLE:"CONSUMERS-EATING", EATS_CONSUMES: "eat", ORGANISM2: "seed"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"CONSUMERS-EATING", EATS_CONSUMES: "eat", ORGANISM2: "seed"]
+
+	// CENTRAL         TRANSFER: seed dispersal is when the seeds of a plant are moved ; are carried ; are spread ; are dropped ;  from the parent plant to another area ; new environment     (dbc7-1c37-35fd-e1f8) [ PROCESS_NAME:"seed dispersal", ACTOR_WHO:"seed of plant", VERB:"be move;be carry;be spread;be drop", SOURCE:"parent plant", DESTINATION:"area;new environment" ]
+	//row autoRow5 = [UUID:"dbc7-1c37-35fd-e1f8", PROCESS_NAME: "seed dispersal", ACTOR_WHO: "seed of plant", VERB: "be move", SOURCE: "parent plant", DESTINATION: "new environment"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"dbc7-1c37-35fd-e1f8", PROCESS_NAME: "seed dispersal", ACTOR_WHO: "seed of plant", VERB: "be move", SOURCE: "parent plant", DESTINATION: "new environment"]
+
+	// CENTRAL         AFFECT: seed dispersal has a positive impact on a plant ; a plant 's reproduction     (2337-f998-9a82-5444) [ OBJECT_PROPERTY:"seed dispersal", POSITIVE_NEGATIVE:"positive", PATIENT:"plant;plant reproduce" ]
+	//row autoRow6 = [UUID:"2337-f998-9a82-5444", OBJECT_PROPERTY: "seed dispersal", POSITIVE_NEGATIVE: "positive", PATIENT: "plant reproduce"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"2337-f998-9a82-5444", OBJECT_PROPERTY: "seed dispersal", POSITIVE_NEGATIVE: "positive", PATIENT: "plant reproduce"]
+
+	// CENTRAL         VEHICLE: seed dispersers are a vehicle for spreading the seeds of a plant     (419c-cd03-a464-39af) [ ACTOR_WHO:"seed disperser", VERB:"spread", WHAT:"seed of plant" ]
+	//row autoRow7 = [UUID:"419c-cd03-a464-39af", ACTOR_WHO: "seed disperser", VERB: "spread", WHAT: "seed of plant"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"419c-cd03-a464-39af", ACTOR_WHO: "seed disperser", VERB: "spread", WHAT: "seed of plant"]
+
+	// CENTRAL         REQUIRES: plant reproduction ; seed production requires pollination     (7b88-0a72-7d90-ea1d) [ OBJECT_AGENT_PROCESS:"plant reproduce;seed production", VERB_REQUIRES:"require", OBJECT:"pollination" ]
+	//row autoRow8 = [UUID:"7b88-0a72-7d90-ea1d", OBJECT_AGENT_PROCESS: "plant reproduce", VERB_REQUIRES: "require", OBJECT: "pollination"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"7b88-0a72-7d90-ea1d", OBJECT_AGENT_PROCESS: "plant reproduce", VERB_REQUIRES: "require", OBJECT: "pollination"]
+
+	// CENTRAL         AFFECT: helping something has a positive impact on that something     (b5b8-ce64-6568-4a6c) [ VERB:"help", OBJECT_PROPERTY:"something", POSITIVE_NEGATIVE:"positive", PATIENT:"something" ]
+	//row autoRow9 = [UUID:"b5b8-ce64-6568-4a6c", VERB: "help", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "positive", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"b5b8-ce64-6568-4a6c", VERB: "help", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "positive", PATIENT: "something"]
+
+	// CENTRAL         REQUIRES: plant requires seed dispersal for reproduction     (c814-78ab-6951-9f93) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"seed dispersal", FOR_PURPOSE:"reproduce" ]
+	//row autoRow10 = [UUID:"c814-78ab-6951-9f93", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "seed dispersal", FOR_PURPOSE: "reproduce"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"c814-78ab-6951-9f93", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "seed dispersal", FOR_PURPOSE: "reproduce"]
+
+	// CENTRAL         KINDOF: seed dispersal is a kind of method of sexual reproduction     (c622-c235-6b65-181f) [ HYPONYM:"seed dispersal", HYPERNYM:"method of sexual reproduce" ]
+	//row autoRow11 = [UUID:"c622-c235-6b65-181f", HYPONYM: "seed dispersal", HYPERNYM: "method of sexual reproduce"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"c622-c235-6b65-181f", HYPONYM: "seed dispersal", HYPERNYM: "method of sexual reproduce"]
+
+	// CENTRAL         PROCESSSTAGES-ORDERS: In the flowering plant life cycle , seed dispersal can follow fruiting     (55ae-b45b-9705-01ac) [ PROCESS_NAME:"flower plant life cycle", STAGEAFTER_STAGE:"seed dispersal", FOLLOWS_PARTOF:"follow", STAGEBEFORE:"fruit" ]
+	//row autoRow12 = [UUID:"55ae-b45b-9705-01ac", PROCESS_NAME: "flower plant life cycle", STAGEAFTER_STAGE: "seed dispersal", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "fruit"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"55ae-b45b-9705-01ac", PROCESS_NAME: "flower plant life cycle", STAGEAFTER_STAGE: "seed dispersal", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "fruit"]
+
+	// CENTRAL         CHANGE-VEC: positive impacts on organisms ; species will increase the population of the organisms ; the species     (68b5-2680-afb6-e02a) [ ADJ:"positive", AGENT_OBJECT:"impact", SCOPE1:"on organism;species", DIRECTION:"increase", PATIENT:"population", SCOPE2:"of organism;species" ]
+	//row autoRow13 = [UUID:"68b5-2680-afb6-e02a", ADJ: "positive", AGENT_OBJECT: "impact", SCOPE1: "on organism", DIRECTION: "increase", PATIENT: "population", SCOPE2: "of organism"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"68b5-2680-afb6-e02a", ADJ: "positive", AGENT_OBJECT: "impact", SCOPE1: "on organism", DIRECTION: "increase", PATIENT: "population", SCOPE2: "of organism"]
+
+	// CENTRAL        (OPTIONAL) PROCESSROLES: In the tree reproduction process a squirrel has the role of seed disperser     (e6a9-507a-d37b-db63) [ PROCESS_NAME:"tree reproduce", ACTOR_COMMON_EXAMPLE:"squirrel", ROLE:"seed disperser" ]
+	//  Notes: seed disperser
+	//row *autoRow14 = [UUID:"e6a9-507a-d37b-db63", PROCESS_NAME: "tree reproduce", ACTOR_COMMON_EXAMPLE: "squirrel", ROLE: "seed disperser"] //OVER-CONSTR.
+	row *autoRow14 = [UUID:"e6a9-507a-d37b-db63", PROCESS_NAME: "tree reproduce", ACTOR_COMMON_EXAMPLE: "squirrel", ROLE: "seed disperser"]
+
+	// CENTRAL        (OPTIONAL) ACTION: a disperser disperses     (1f01-c949-a5e3-ab0c) [ AGENT_OBJECT:"disperser", ACTION2:"disperse" ]
+	//row *autoRow15 = [UUID:"1f01-c949-a5e3-ab0c", AGENT_OBJECT: "disperser", ACTION2: "disperse"] //OVER-CONSTR.
+	row *autoRow15 = [UUID:"1f01-c949-a5e3-ab0c", AGENT_OBJECT: "disperser", ACTION2: "disperse"]
+
+	// CENTRAL         IFTHEN: if seeds stick to the fur of an animal then that seed will be transported by the animal     (a529-d2e9-6c62-5e4a) [ THING:"seed", ACTION1:"stick", OBJECT_PATIENT1:"fur", OBJECT_PROPERTY1:"of animal", ACTOR_AGENT_PROCESS2:"that seed", ACTION3:"transport", BY_THROUGH_HOW:"animal" ]
+	//row autoRow16 = [UUID:"a529-d2e9-6c62-5e4a", THING: "seed", ACTION1: "stick", OBJECT_PATIENT1: "fur", OBJECT_PROPERTY1: "of animal", ACTOR_AGENT_PROCESS2: "that seed", ACTION3: "transport", BY_THROUGH_HOW: "animal"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"a529-d2e9-6c62-5e4a", THING: "seed", ACTION1: "stick", OBJECT_PATIENT1: "fur", OBJECT_PROPERTY1: "of animal", ACTOR_AGENT_PROCESS2: "that seed", ACTION3: "transport", BY_THROUGH_HOW: "animal"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: seeds sprouting causes plants to grow     (3ed4-657f-7748-220b) [ CONDITION_AGENT_OBJECT:"seed", CONDITION_VERB:"sprout", RESULT_AGENT:"plant", RESULT_VERB:"grow" ]
+	//row *autoRow17 = [UUID:"3ed4-657f-7748-220b", CONDITION_AGENT_OBJECT: "seed", CONDITION_VERB: "sprout", RESULT_AGENT: "plant", RESULT_VERB: "grow"] //OVER-CONSTR.
+	row *autoRow17 = [UUID:"3ed4-657f-7748-220b", CONDITION_AGENT_OBJECT: "seed", CONDITION_VERB: "sprout", RESULT_AGENT: "plant", RESULT_VERB: "grow"]
+
+	// CENTRAL         CONTAINS: fruit contains seeds     (ef49-c852-8727-d2dd) [ OBJECT_AGENT:"fruit", WHAT_IT_CONTAINS:"seed" ]
+	//  Notes: seeds in fruit
+	//row autoRow18 = [UUID:"ef49-c852-8727-d2dd", OBJECT_AGENT: "fruit", WHAT_IT_CONTAINS: "seed"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"ef49-c852-8727-d2dd", OBJECT_AGENT: "fruit", WHAT_IT_CONTAINS: "seed"]
+
+endinferencepattern

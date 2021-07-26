@@ -1,0 +1,94 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Nutrients_by_Farming
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-THINGS: fertile soil is high in quality     (b7eb-7a34-8336-c669) [ ADJ:"fertile", THING:"soil", VALUE:"high", ATTRIBUTE:"in quality" ]
+	//        HINTROW high quality ; rich ; good soil has a high number of nutrients ; amount of nitrogen     (3dad-38fc-471b-0aed) [ ADJ:"high quality;rich;good", THING:"soil", VALUE:"high", ATTRIBUTE:"numb of nutrient;amount of nitrogen" ]
+	//        HINTROW fertile topsoil ; soil is high in organic matter level     (b3cc-50aa-1151-1e69) [ ADJ:"fertile", THING:"topsoil;soil", VALUE:"high", ATTRIBUTE:"in organic matt level" ]
+	//row autoRow0 = [TABLE:"PROP-THINGS", THING: "soil", ATTRIBUTE: "in quality"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-THINGS", THING: "soil", ATTRIBUTE: "in"+*"POS:NN"]
+
+	// CENTRALSW       PROP-THINGS: low quality soil has a small ; a low number of nutrients     (9474-6b36-90b1-4a89) [ ADJ:"low quality", THING:"soil", VALUE:"small;low", ATTRIBUTE:"numb of nutrient" ]
+	//        HINTROW infertile soil is low in quality     (198b-a912-6c6c-5887) [ ADJ:"infertile", THING:"soil", VALUE:"low", ATTRIBUTE:"in quality" ]
+	//row autoRow1 = [TABLE:"PROP-THINGS", ADJ: *"POS:JJ"+"quality", THING: "soil", ATTRIBUTE: *"POS:NN"+"of nutrient"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-THINGS", THING: "soil", ATTRIBUTE: *"POS:NN"+*"POS:IN"+"nutrient"]
+
+	// GROUNDING       KINDOF: corn is a kind of crop     (a75a-0651-9b8b-f087) [ HYPONYM:"corn", HYPERNYM:"crop" ]
+	//        HINTROW tomato is a kind of crop     (5f53-cf5f-449b-4ca6) [ HYPONYM:"tomato", HYPERNYM:"crop" ]
+	//        HINTROW fruit trees are a kind of crop     (59c5-767d-fe82-f747) [ HYPONYM:"fruit tree", HYPERNYM:"crop" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "crop"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "crop"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the amount of nutrients in soil decreases , the crop production will decrease     (eb15-cc8e-ef64-27eb) [ QUANTITY_MEASURE1:"amount of", AGENT_ATTRIBUTE1:"nutrient", SCOPE1A:"in soil", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"crop production", CHANGE2:"decrease" ]
+	//row autoRow3 = [UUID:"eb15-cc8e-ef64-27eb", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "nutrient", SCOPE1A: "in soil", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "crop production", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"eb15-cc8e-ef64-27eb", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "nutrient", SCOPE1A: "in soil", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "crop production", CHANGE2: "decrease"]
+
+	// CENTRAL         CAUSE: crops ; farming cause nutrients in the soil to decrease     (7dcd-a12c-54b1-a787) [ CONDITION_AGENT_OBJECT:"crop;farm", RESULT_AGENT:"nutrient in soil", RESULT_VERB:"decrease" ]
+	//row autoRow4 = [UUID:"7dcd-a12c-54b1-a787", CONDITION_AGENT_OBJECT: "crop", RESULT_AGENT: "nutrient in soil", RESULT_VERB: "decrease"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"7dcd-a12c-54b1-a787", CONDITION_AGENT_OBJECT: "crop", RESULT_AGENT: "nutrient in soil", RESULT_VERB: "decrease"]
+
+	// CENTRAL         AFFECT: crop rotation has a positive impact on soil quality     (025a-3b8a-b5f2-f320) [ VERB:"crop rotate", POSITIVE_NEGATIVE:"positive", PATIENT:"soil quality" ]
+	//row autoRow5 = [UUID:"025a-3b8a-b5f2-f320", VERB: "crop rotate", POSITIVE_NEGATIVE: "positive", PATIENT: "soil quality"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"025a-3b8a-b5f2-f320", VERB: "crop rotate", POSITIVE_NEGATIVE: "positive", PATIENT: "soil quality"]
+
+	// CENTRAL         AFFECT: crops growing well has a positive impact on a farmer 's livelihood     (e9be-b235-ac20-1a20) [ ACTOR_WHO:"crop", VERB:"grow good", POSITIVE_NEGATIVE:"positive", ADJ:"farmer", PATIENT:"livelihood" ]
+	//row autoRow6 = [UUID:"e9be-b235-ac20-1a20", ACTOR_WHO: "crop", VERB: "grow good", POSITIVE_NEGATIVE: "positive", ADJ: "farmer", PATIENT: "livelihood"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"e9be-b235-ac20-1a20", ACTOR_WHO: "crop", VERB: "grow good", POSITIVE_NEGATIVE: "positive", ADJ: "farmer", PATIENT: "livelihood"]
+
+	// CENTRAL         ACTION: crop rotation is when different crops are planted on a field in different years     (3f22-4f93-27fe-9ff0) [ DEFINITION_NAME:"crop rotate", ADJ:"differ", AGENT_OBJECT:"crop", ACTION2:"be plant", OBJECT_PROPERTY:"on field", WHEN_WHERE:"in differ year" ]
+	//row autoRow7 = [UUID:"3f22-4f93-27fe-9ff0", DEFINITION_NAME: "crop rotate", ADJ: "differ", AGENT_OBJECT: "crop", ACTION2: "be plant", OBJECT_PROPERTY: "on field", WHEN_WHERE: "in differ year"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3f22-4f93-27fe-9ff0", DEFINITION_NAME: "crop rotate", ADJ: "differ", AGENT_OBJECT: "crop", ACTION2: "be plant", OBJECT_PROPERTY: "on field", WHEN_WHERE: "in differ year"]
+
+	// CENTRAL         REQUIRES: a plant ; living thing requires nutrients to grow     (085c-28bf-bb51-79e6) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"nutrient", FOR_PURPOSE:"grow" ]
+	//row autoRow8 = [UUID:"085c-28bf-bb51-79e6", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"085c-28bf-bb51-79e6", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "grow"]
+
+	// CENTRAL         KINDOF: crops are a kind of edible plant for eating     (281b-9541-e1c7-6c92) [ HYPONYM:"crop", SCOPE1:"edible", HYPERNYM:"plant", FOR_PURPOSE:"eat" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"281b-9541-e1c7-6c92", HYPONYM: "crop", SCOPE1: "edible", HYPERNYM: "plant", FOR_PURPOSE: "eat"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"281b-9541-e1c7-6c92", HYPONYM: "crop", SCOPE1: "edible", HYPERNYM: "plant", FOR_PURPOSE: "eat"]
+
+	// CENTRAL         ACTION: farming is when a human plants crops for food     (e9e1-2164-9acf-637a) [ DEFINITION_NAME:"farm", AGENT_OBJECT:"human", ACTION2:"plant", OBJECT_PROPERTY:"crop", FOR_PURPOSE:"food" ]
+	//row autoRow10 = [UUID:"e9e1-2164-9acf-637a", DEFINITION_NAME: "farm", AGENT_OBJECT: "human", ACTION2: "plant", OBJECT_PROPERTY: "crop", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"e9e1-2164-9acf-637a", DEFINITION_NAME: "farm", AGENT_OBJECT: "human", ACTION2: "plant", OBJECT_PROPERTY: "crop", FOR_PURPOSE: "food"]
+
+	// CENTRAL         ACTION: a farmer farms crops ; plants for food     (4499-c264-9f56-7549) [ AGENT_OBJECT:"farmer", ACTION2:"farm", OBJECT_PROPERTY:"crop;plant", FOR_PURPOSE:"food" ]
+	//row autoRow11 = [UUID:"4499-c264-9f56-7549", AGENT_OBJECT: "farmer", ACTION2: "farm", OBJECT_PROPERTY: "crop", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"4499-c264-9f56-7549", AGENT_OBJECT: "farmer", ACTION2: "farm", OBJECT_PROPERTY: "crop", FOR_PURPOSE: "food"]
+
+	// CENTRAL         KINDOF: a crop is a kind of food     (afdc-23b1-2d30-e520) [ HYPONYM:"crop", HYPERNYM:"food" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"afdc-23b1-2d30-e520", HYPONYM: "crop", HYPERNYM: "food"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"afdc-23b1-2d30-e520", HYPONYM: "crop", HYPERNYM: "food"]
+
+	// CENTRAL         CONTAINS: soil contains nutrients for plants     (ddcc-3b71-b14e-97d1) [ OBJECT_AGENT:"soil", WHAT_IT_CONTAINS:"nutrient", FOR_PURPOSE:"plant" ]
+	//row autoRow13 = [UUID:"ddcc-3b71-b14e-97d1", OBJECT_AGENT: "soil", WHAT_IT_CONTAINS: "nutrient", FOR_PURPOSE: "plant"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"ddcc-3b71-b14e-97d1", OBJECT_AGENT: "soil", WHAT_IT_CONTAINS: "nutrient", FOR_PURPOSE: "plant"]
+
+	// CENTRAL         PROP-RESOURCES-RENEWABLE: soil is a renewable resource for growing plants     (1af4-c273-5b80-34e6) [ RESOURCE:"soil", REWABLE_NONRENEWABLE:"renewable", FOR_PURPOSE:"grow plant" ]
+	//row autoRow14 = [UUID:"1af4-c273-5b80-34e6", RESOURCE: "soil", REWABLE_NONRENEWABLE: "renewable", FOR_PURPOSE: "grow plant"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"1af4-c273-5b80-34e6", RESOURCE: "soil", REWABLE_NONRENEWABLE: "renewable", FOR_PURPOSE: "grow plant"]
+
+	// CENTRAL         TRANSFER: plant uptake is when plants absorb nutrients ; water from soil into themselves through their roots     (d7c1-cdfd-2de5-6b7d) [ PROCESS_NAME:"plant uptake", ACTOR_WHO:"plant", VERB:"absorb", WHAT:"nutrient;water", SOURCE:"soil", BY_THROUGH_HOW:"root" ]
+	//row autoRow15 = [UUID:"d7c1-cdfd-2de5-6b7d", PROCESS_NAME: "plant uptake", ACTOR_WHO: "plant", VERB: "absorb", WHAT: "nutrient", SOURCE: "soil", BY_THROUGH_HOW: "root"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"d7c1-cdfd-2de5-6b7d", PROCESS_NAME: "plant uptake", ACTOR_WHO: "plant", VERB: "absorb", WHAT: "nutrient", SOURCE: "soil", BY_THROUGH_HOW: "root"]
+
+	// LEXGLUE         SYNONYMY: planting crops is synonymous with growing crops     (beca-88a5-c80c-50bd) [ ACTION1:"plant", Y1:"crop", ACTION2:"grow", Y2:"crop" ]
+	//row autoRow16 = [UUID:"beca-88a5-c80c-50bd", ACTION1: "plant", Y1: "crop", ACTION2: "grow", Y2: "crop"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"beca-88a5-c80c-50bd", ACTION1: "plant", Y1: "crop", ACTION2: "grow", Y2: "crop"]
+
+	// LEXGLUE         SYNONYMY: soil fertility means the ability of soil to sustain plant growth     (2137-7934-4c51-573e) [ X1:"soil fertility", X2:"ability of soil sustain plant grow" ]
+	//row autoRow17 = [UUID:"2137-7934-4c51-573e", X1: "soil fertility", X2: "ability of soil sustain plant grow"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"2137-7934-4c51-573e", X1: "soil fertility", X2: "ability of soil sustain plant grow"]
+
+	// LEXGLUE         OPPOSITES: an increase is the opposite of a decrease     (bfdf-b468-ee22-1b60) [ THING_PROPERTY1:"increase", THING_PROPERTY2:"decrease" ]
+	//row autoRow18 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"]
+
+endinferencepattern

@@ -1,0 +1,60 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Wind_Erosion_Result_in
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a sand dune is a kind of land formation     (c4a5-aa15-26ae-c951) [ HYPONYM:"sand dune", HYPERNYM:"land form" ]
+	//        HINTROW an arch is a kind of land formation     (0c28-b3cd-bb77-d385) [ HYPONYM:"arch", HYPERNYM:"land form" ]
+	//  Notes: landforms by wind erosion
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "sand dune", HYPERNYM: "land form"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "sand dune", HYPERNYM: "land form"]
+
+	// CENTRAL         CHANGE: weathering ; mechanical weathering means breaking down rocks ; surface materials from a larger whole into smaller pieces by weather ; mechanical means     (791e-1c71-7a1d-d10a) [ PROCESS_NAME:"weather;mechanical weather", VERB:"break", WHAT:"rock;surface material", FROM:"large whole", INTO:"small piece", BY_THROUGH_HOW:"weather;mechanical mean" ]
+	//row autoRow1 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"]
+
+	// CENTRAL         TRANSFER: erosion is when wind ; moving water transports sediments from one place to another place for a long distance     (86b7-c266-fd6c-3286) [ PROCESS_NAME:"erode", ACTOR_WHO:"wind;move water", VERB:"transport;transport", WHAT:"sediment", SOURCE:"one place", DESTINATION:"place", SCOPE:"for long distance" ]
+	//  Notes: 4bf3-ee38-89b1-156f->86b7-c266-fd6c-3286
+	//row autoRow2 = [UUID:"86b7-c266-fd6c-3286", PROCESS_NAME: "erode", ACTOR_WHO: "move water", VERB: "transport", WHAT: "sediment", SOURCE: "one place", DESTINATION: "place", SCOPE: "for long distance"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"86b7-c266-fd6c-3286", PROCESS_NAME: "erode", ACTOR_WHO: "move water", VERB: "transport", WHAT: "sediment", SOURCE: "one place", DESTINATION: "place", SCOPE: "for long distance"]
+
+	// CENTRAL         FORMEDBY: sand dunes ; arches are formed by the wind transporting and depositing sand     (fb26-f5aa-51d2-7866) [ OBJECT:"sand dune;arch", AGENT_PROCESS:"wind", VERB:"transportation deposition", PATIENT:"sand" ]
+	//row autoRow3 = [UUID:"fb26-f5aa-51d2-7866", OBJECT: "sand dune", AGENT_PROCESS: "wind", VERB: "transportation deposition", PATIENT: "sand"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"fb26-f5aa-51d2-7866", OBJECT: "sand dune", AGENT_PROCESS: "wind", VERB: "transportation deposition", PATIENT: "sand"]
+
+	// CENTRAL         FORMEDBY: sediment is formed by rocks weathering     (5645-74d9-19c8-9dc4) [ OBJECT:"sediment", AGENT_PROCESS:"rock", VERB:"weather" ]
+	//row autoRow4 = [UUID:"5645-74d9-19c8-9dc4", OBJECT: "sediment", AGENT_PROCESS: "rock", VERB: "weather"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"5645-74d9-19c8-9dc4", OBJECT: "sediment", AGENT_PROCESS: "rock", VERB: "weather"]
+
+	// CENTRAL         KINDOF: erosion is a kind of physical weathering     (78b9-5f14-6214-4c2b) [ HYPONYM:"erode", HYPERNYM:"physical weather" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"78b9-5f14-6214-4c2b", HYPONYM: "erode", HYPERNYM: "physical weather"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"78b9-5f14-6214-4c2b", HYPONYM: "erode", HYPERNYM: "physical weather"]
+
+	// CENTRAL         MADEOF: sand dunes are made of sand     (6424-1a31-0f40-5b1b) [ OBJECT:"sand dune", MATERIAL:"sand" ]
+	//row autoRow6 = [UUID:"6424-1a31-0f40-5b1b", OBJECT: "sand dune", MATERIAL: "sand"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"6424-1a31-0f40-5b1b", OBJECT: "sand dune", MATERIAL: "sand"]
+
+	// CENTRAL         KINDOF: sand is a kind of sediment     (af21-14b2-7513-a570) [ HYPONYM:"sand", HYPERNYM:"sediment" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"af21-14b2-7513-a570", HYPONYM: "sand", HYPERNYM: "sediment"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"af21-14b2-7513-a570", HYPONYM: "sand", HYPERNYM: "sediment"]
+
+	// CENTRAL         CAUSE: wind and rain ; storms cause erosion     (a4ff-959e-a3ef-5a67) [ CONDITION_AGENT_OBJECT:"wind rain;storm", RESULT_AGENT:"erode" ]
+	//row autoRow8 = [UUID:"a4ff-959e-a3ef-5a67", CONDITION_AGENT_OBJECT: "wind rain", RESULT_AGENT: "erode"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"a4ff-959e-a3ef-5a67", CONDITION_AGENT_OBJECT: "wind rain", RESULT_AGENT: "erode"]
+
+	// CENTRAL         CHANGE: erosion ; weathering changes the Earth 's surface     (4267-93f0-e703-47f2) [ ACTOR_WHO:"erode;weather", VERB:"change;change", WHAT:"earth surface" ]
+	//row autoRow9 = [UUID:"4267-93f0-e703-47f2", ACTOR_WHO: "erode", VERB: "change", WHAT: "earth surface"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"4267-93f0-e703-47f2", ACTOR_WHO: "erode", VERB: "change", WHAT: "earth surface"]
+
+	// CENTRAL         TRANSFER: deposition is when moving water ; wind moves ; deposits an object ; sediment from one location to a different location     (e1fb-b791-3945-02db) [ PROCESS_NAME:"deposition", ACTOR_WHO:"move water;wind", VERB:"move;move;deposit", WHAT:"object;sediment", SOURCE:"one locate", DESTINATION:"differ locate" ]
+	//row autoRow10 = [UUID:"e1fb-b791-3945-02db", PROCESS_NAME: "deposition", ACTOR_WHO: "move water", VERB: "move", WHAT: "object", SOURCE: "one locate", DESTINATION: "differ locate"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"e1fb-b791-3945-02db", PROCESS_NAME: "deposition", ACTOR_WHO: "move water", VERB: "move", WHAT: "object", SOURCE: "one locate", DESTINATION: "differ locate"]
+
+endinferencepattern

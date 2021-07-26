@@ -1,0 +1,69 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Origin_Clouds
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       LOCATIONS: clouds are located in the atmosphere     (3b17-133a-867e-177e) [ THING_PROCESS:"cloud", LOCATION:"atmosphere" ]
+	//        HINTROW clouds are usually found in the sky     (c345-0f27-1027-c29b) [ THING_PROCESS:"cloud", LOCATION:"sky" ]
+	//row autoRow0 = [TABLE:"LOCATIONS", THING_PROCESS: "cloud", LOCATION: "atmosphere"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"LOCATIONS", THING_PROCESS: "cloud"]
+
+	// CENTRAL         CHANGE: condensing means matter ; a substance changes from a gas into a liquid by decreasing heat energy     (2aba-39fa-3a07-5ee4) [ PROCESS_NAME:"condense", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"gas", INTO:"liquid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//row autoRow1 = [UUID:"2aba-39fa-3a07-5ee4", PROCESS_NAME: "condense", ACTOR_WHO: "matt", VERB: "change", FROM: "gas", INTO: "liquid", BY_THROUGH_HOW: "decrease heat energy"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"2aba-39fa-3a07-5ee4", PROCESS_NAME: "condense", ACTOR_WHO: "matt", VERB: "change", FROM: "gas", INTO: "liquid", BY_THROUGH_HOW: "decrease heat energy"]
+
+	// CENTRAL         CHANGE: boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy     (a0b2-a45f-01e1-4bf4) [ PROCESS_NAME:"boil;evaporate", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"gas", BY_THROUGH_HOW:"increase heat energy" ]
+	//row autoRow2 = [UUID:"a0b2-a45f-01e1-4bf4", PROCESS_NAME: "boil", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "gas", BY_THROUGH_HOW: "increase heat energy"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"a0b2-a45f-01e1-4bf4", PROCESS_NAME: "boil", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "gas", BY_THROUGH_HOW: "increase heat energy"]
+
+	// CENTRAL         FORMEDBY: clouds are formed by water vapor rising into colder regions of the atmosphere and condensing     (3c3a-0eac-88e6-b000) [ OBJECT:"cloud", AGENT_PROCESS:"water vapor", VERB:"rise into cold region of atmosphere condense" ]
+	//row autoRow3 = [UUID:"3c3a-0eac-88e6-b000", OBJECT: "cloud", AGENT_PROCESS: "water vapor", VERB: "rise into cold region of atmosphere condense"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"3c3a-0eac-88e6-b000", OBJECT: "cloud", AGENT_PROCESS: "water vapor", VERB: "rise into cold region of atmosphere condense"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C     (e474-2a11-6e7b-ae8b) [ MATERIAL_NAME:"water", STATEOFMATTER:"gas", FORM_NAME:"water vapor;steam", LOWER_BOUND:"373;212;100", UPPER_BOUND:"100000000000", UNITS:"k;f;c" ]
+	//row autoRow4 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as altitude increases , the temperature of the air will decrease in the troposphere     (335f-491e-b6bf-7684) [ QUANTITY_MEASURE1:"altitude", CHANGE1:"increase", QUANTITY_MEASURE2:"temperature", AGENT_ATTRIBUTE2:"of air", CHANGE2:"decrease", SCOPE2B:"in troposphere" ]
+	//row autoRow5 = [UUID:"335f-491e-b6bf-7684", QUANTITY_MEASURE1: "altitude", CHANGE1: "increase", QUANTITY_MEASURE2: "temperature", AGENT_ATTRIBUTE2: "of air", CHANGE2: "decrease", SCOPE2B: "in troposphere"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"335f-491e-b6bf-7684", QUANTITY_MEASURE1: "altitude", CHANGE1: "increase", QUANTITY_MEASURE2: "temperature", AGENT_ATTRIBUTE2: "of air", CHANGE2: "decrease", SCOPE2B: "in troposphere"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//row autoRow6 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"]
+
+	// CENTRAL        (OPTIONAL) LOCATIONS: cirrus clouds are found in high-altitude area     (0670-0443-2b3b-0ff5) [ THING_PROCESS:"cirrus cloud", LOCATION:"high-altitude area;high altitude area" ]
+	//row *autoRow7 = [UUID:"0670-0443-2b3b-0ff5", THING_PROCESS: "cirrus cloud", LOCATION: "high altitude area"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"0670-0443-2b3b-0ff5", THING_PROCESS: "cirrus cloud", LOCATION: "high altitude area"]
+
+	// CENTRAL        (OPTIONAL) MADEOF: cirrus clouds are made of ice crystals     (1b1a-b18a-58a9-bd2c) [ OBJECT:"cirrus cloud", MATERIAL:"ice crystal" ]
+	//row *autoRow8 = [UUID:"1b1a-b18a-58a9-bd2c", OBJECT: "cirrus cloud", MATERIAL: "ice crystal"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"1b1a-b18a-58a9-bd2c", OBJECT: "cirrus cloud", MATERIAL: "ice crystal"]
+
+	// CENTRAL         CONTAINS: troposphere contains almost all the water vapor     (218d-6a24-24db-a9dc) [ OBJECT_AGENT:"troposphere", QUANTITY_RANGE:"almost", WHAT_IT_CONTAINS:"water vapor" ]
+	//row autoRow9 = [UUID:"218d-6a24-24db-a9dc", OBJECT_AGENT: "troposphere", QUANTITY_RANGE: "almost", WHAT_IT_CONTAINS: "water vapor"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"218d-6a24-24db-a9dc", OBJECT_AGENT: "troposphere", QUANTITY_RANGE: "almost", WHAT_IT_CONTAINS: "water vapor"]
+
+	// CENTRAL         SUBDIVISION-GENERICSPATIAL: the troposphere is a lower layer of Earth 's atmosphere     (24f8-3e5d-4744-4f42) [ SUBDIVISION:"troposphere", ADJ:"low", TYPE_OF_SUBDIVISION:"layer", WHOLE:"earth atmosphere" ]
+	//row autoRow10 = [UUID:"24f8-3e5d-4744-4f42", SUBDIVISION: "troposphere", ADJ: "low", TYPE_OF_SUBDIVISION: "layer", WHOLE: "earth atmosphere"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"24f8-3e5d-4744-4f42", SUBDIVISION: "troposphere", ADJ: "low", TYPE_OF_SUBDIVISION: "layer", WHOLE: "earth atmosphere"]
+
+	// CENTRAL         MADEOF: substances are made of matter     (3395-b5a2-ae2d-39c2) [ OBJECT:"substance", MATERIAL:"matt" ]
+	//row autoRow11 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"]
+
+	// CENTRAL         KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"81b7-0a58-5b0b-0bbf", HYPONYM: "water", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"81b7-0a58-5b0b-0bbf", HYPONYM: "water", HYPERNYM: "substance"]
+
+	// CENTRAL         CAUSE: condensation causes clouds to form     (a460-8744-e774-6fe2) [ CONDITION_AGENT_OBJECT:"condense", RESULT_AGENT:"cloud", RESULT_VERB:"form" ]
+	//row autoRow13 = [UUID:"a460-8744-e774-6fe2", CONDITION_AGENT_OBJECT: "condense", RESULT_AGENT: "cloud", RESULT_VERB: "form"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"a460-8744-e774-6fe2", CONDITION_AGENT_OBJECT: "condense", RESULT_AGENT: "cloud", RESULT_VERB: "form"]
+
+endinferencepattern

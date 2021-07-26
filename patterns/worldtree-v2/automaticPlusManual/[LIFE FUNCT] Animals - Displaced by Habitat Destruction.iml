@@ -1,0 +1,85 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Displaced_by_Habitat_Destruction
+
+	// Plain text description
+	description = "animals move to find new habitat"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CAUSE: humans moving in an environment usually causes native species to lose their habitats     (bebb-ed5a-4b7a-235d) [ CONDITION_AGENT_OBJECT:"human", CONDITION_VERB:"move", SCOPE1:"in environment", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS:"usually", RESULT_AGENT:"native species", RESULT_VERB:"lose", RESULT_PATIENT:"habitat" ]
+	//        HINTROW strong wind can cause destruction of a habitat     (bba1-b6e5-3a4b-3b65) [ CONDITION_AGENT_OBJECT:"strong wind", RESULT_AGENT:"destruction of habitat" ]
+	//        HINTROW fire causes harm to trees ; to forests ; to living things     (8341-4d61-aa1c-ffbd) [ CONDITION_AGENT_OBJECT:"fire", RESULT_VERB:"harm", RESULT_PATIENT:"tree;forest;live thing" ]
+	//        HINTROW human waste often causes harm to an environment     (b7b3-2705-8edd-318a) [ CONDITION_AGENT_OBJECT:"human waste", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS:"often", RESULT_VERB:"harm", RESULT_PATIENT:"environment" ]
+	//        HINTROW humans discarding waste in an environment causes harm to that environment     (330a-482c-2f0d-0d81) [ CONDITION_AGENT_OBJECT:"human", CONDITION_VERB:"discard", CONDITION_PATIENT:"waste", SCOPE1:"in environment", RESULT_AGENT:"harm", RESULT_PATIENT:"that environment" ]
+	//  Notes: destruction of the habitats
+//WARNING! Slot with no constraints.
+//	//row autoRow0 = [TABLE:"CAUSE"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow0 = [TABLE:"CAUSE"]
+
+	// GROUNDING       KINDOF: a forest is a kind of environment     (b5d1-0f14-f32e-c6b4) [ HYPONYM:"forest", HYPERNYM:"environment" ]
+	//        HINTROW a beach is a kind of habitat ; environment     (2913-c482-da7e-b2f6) [ HYPONYM:"beach", HYPERNYM:"habitat;environment" ]
+	//        HINTROW a body of water is a kind of environment     (3f9d-8b3a-54b5-6a3c) [ HYPONYM:"body of water", HYPERNYM:"environment" ]
+	//        HINTROW a field is a kind of environment     (2a18-601d-51f0-3abc) [ HYPONYM:"field", HYPERNYM:"environment" ]
+	//  Notes: habitat examples
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "environment"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "environment"]
+
+	// GROUNDING       KINDOF: a tree is a kind of habitat     (3f80-84ba-b8e7-ef97) [ HYPONYM:"tree", HYPERNYM:"habitat" ]
+	//        HINTROW a field is a kind of habitat     (1368-2e1b-eb74-f182) [ HYPONYM:"field", HYPERNYM:"habitat" ]
+	//        HINTROW a wetland is a kind of habitat     (a841-6cf9-a034-f5a7) [ HYPONYM:"wetland", HYPERNYM:"habitat" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "habitat"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "habitat"]
+
+	// CENTRAL         ACTION: animals ; living things live and feed in their habitats ; near their habitats     (3e03-880a-9209-2d6c) [ AGENT_OBJECT:"animal;live thing", ACTION2:"live fee", WHEN_WHERE:"in habitat;near habitat" ]
+	//  Notes: animal lives in their habitat (premise)
+	//row autoRow3 = [UUID:"3e03-880a-9209-2d6c", AGENT_OBJECT: "live thing", ACTION2: "live fee", WHEN_WHERE: "in habitat"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"3e03-880a-9209-2d6c", AGENT_OBJECT: "live thing", ACTION2: "live fee", WHEN_WHERE: "in habitat"]
+
+	// CENTRAL         IFTHEN: if a habitat is destroyed then that habitat can not support animals     (7dad-ddaa-4996-88bd) [ THING:"habitat", ACTION1:"destroy", ACTOR_AGENT_PROCESS2:"that habitat", QUANTIFIER3:"not", ACTION3:"support animal" ]
+	//  Notes: habitat destroyed --> can't support animal
+	//row autoRow4 = [UUID:"7dad-ddaa-4996-88bd", THING: "habitat", ACTION1: "destroy", ACTOR_AGENT_PROCESS2: "that habitat", QUANTIFIER3: "not", ACTION3: "support animal"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"7dad-ddaa-4996-88bd", THING: "habitat", ACTION1: "destroy", ACTOR_AGENT_PROCESS2: "that habitat", QUANTIFIER3: "not", ACTION3: "support animal"]
+
+	// CENTRAL         IFTHEN: if a habitat can no longer support animals then those animals will move to another area     (6a9e-f4d8-755c-81d3) [ THING:"habitat", QUANTIFIER1:"no long", ACTION1:"support", OBJECT_PATIENT1:"animal", ACTOR_AGENT_PROCESS2:"animal", ACTION3:"move", SCOPE4:"area" ]
+	//  Notes: can't support animal --> animal will move
+	//row autoRow5 = [UUID:"6a9e-f4d8-755c-81d3", THING: "habitat", QUANTIFIER1: "no long", ACTION1: "support", OBJECT_PATIENT1: "animal", ACTOR_AGENT_PROCESS2: "animal", ACTION3: "move", SCOPE4: "area"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"6a9e-f4d8-755c-81d3", THING: "habitat", QUANTIFIER1: "no long", ACTION1: "support", OBJECT_PATIENT1: "animal", ACTOR_AGENT_PROCESS2: "animal", ACTION3: "move", SCOPE4: "area"]
+
+	// CENTRAL         AFFECT: destroying animal habitats has a negative impact on an ecosystem     (59fd-422e-5b6f-40aa) [ VERB:"destroy", OBJECT_PROPERTY:"animal habitat", POSITIVE_NEGATIVE:"negative", PATIENT:"ecosystem" ]
+	//row autoRow6 = [UUID:"59fd-422e-5b6f-40aa", VERB: "destroy", OBJECT_PROPERTY: "animal habitat", POSITIVE_NEGATIVE: "negative", PATIENT: "ecosystem"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"59fd-422e-5b6f-40aa", VERB: "destroy", OBJECT_PROPERTY: "animal habitat", POSITIVE_NEGATIVE: "negative", PATIENT: "ecosystem"]
+
+	// CENTRAL         CHANGE-VEC: negative impacts on organisms ; species will decrease the population of the organisms ; the species     (83f9-1f31-2097-7a80) [ ADJ:"negative", AGENT_OBJECT:"impact", SCOPE1:"on organism;species", DIRECTION:"decrease", PATIENT:"population", SCOPE2:"of organism;species" ]
+	//  Notes: 4c89-1538-021d-96b2->83f9-1f31-2097-7a80
+	//row autoRow7 = [UUID:"83f9-1f31-2097-7a80", ADJ: "negative", AGENT_OBJECT: "impact", SCOPE1: "on organism", DIRECTION: "decrease", PATIENT: "population", SCOPE2: "of organism"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"83f9-1f31-2097-7a80", ADJ: "negative", AGENT_OBJECT: "impact", SCOPE1: "on organism", DIRECTION: "decrease", PATIENT: "population", SCOPE2: "of organism"]
+
+	// CENTRAL         CONTAINS: a forest contains lots of plants ; trees     (a54a-a04c-71eb-ba0a) [ OBJECT_AGENT:"forest", QUANTITY_RANGE:"lot of", WHAT_IT_CONTAINS:"plant;tree" ]
+	//row autoRow8 = [UUID:"a54a-a04c-71eb-ba0a", OBJECT_AGENT: "forest", QUANTITY_RANGE: "lot of", WHAT_IT_CONTAINS: "plant"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"a54a-a04c-71eb-ba0a", OBJECT_AGENT: "forest", QUANTITY_RANGE: "lot of", WHAT_IT_CONTAINS: "plant"]
+
+	// CENTRAL         CAUSE: habitat destruction causes animals to move to find shelter in another habitat     (9fa0-9f6a-3b04-00f8) [ CONDITION_AGENT_OBJECT:"habitat destruction", RESULT_AGENT:"animal", RESULT_VERB:"move", FOR_PURPOSE:"find shelter", SCOPE2:"in habitat" ]
+	//  Notes: habitat destruction --> move for new shelters
+	//row autoRow9 = [UUID:"9fa0-9f6a-3b04-00f8", CONDITION_AGENT_OBJECT: "habitat destruction", RESULT_AGENT: "animal", RESULT_VERB: "move", FOR_PURPOSE: "find shelter", SCOPE2: "in habitat"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"9fa0-9f6a-3b04-00f8", CONDITION_AGENT_OBJECT: "habitat destruction", RESULT_AGENT: "animal", RESULT_VERB: "move", FOR_PURPOSE: "find shelter", SCOPE2: "in habitat"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if humans disturb animals in a location then those animals will move to a different location     (de1f-14bd-20e6-5573) [ THING:"human", ACTION1:"disturb", OBJECT_PATIENT1:"animal", SCOPE1B:"in locate", ACTOR_AGENT_PROCESS2:"animal", ACTION3:"move", OBJECT_PROPERTY3:"differ locate" ]
+	//row *autoRow10 = [UUID:"de1f-14bd-20e6-5573", THING: "human", ACTION1: "disturb", OBJECT_PATIENT1: "animal", SCOPE1B: "in locate", ACTOR_AGENT_PROCESS2: "animal", ACTION3: "move", OBJECT_PROPERTY3: "differ locate"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"de1f-14bd-20e6-5573", THING: "human", ACTION1: "disturb", OBJECT_PATIENT1: "animal", SCOPE1B: "in locate", ACTOR_AGENT_PROCESS2: "animal", ACTION3: "move", OBJECT_PROPERTY3: "differ locate"]
+
+	// LEXGLUE         SYNONYMY: habitat is similar to environment     (1800-f69c-1283-7d49) [ X1:"habitat", X2:"environment" ]
+	//row autoRow11 = [UUID:"1800-f69c-1283-7d49", X1: "habitat", X2: "environment"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"1800-f69c-1283-7d49", X1: "habitat", X2: "environment"]
+
+	// LEXGLUE         SYNONYMY: removing forests means removing animal habitats     (aaa1-6683-9d15-9829) [ ACTION1:"remove", Y1:"forest", ACTION2:"remove", Y2:"animal habitat" ]
+	//row autoRow12 = [UUID:"aaa1-6683-9d15-9829", ACTION1: "remove", Y1: "forest", ACTION2: "remove", Y2: "animal habitat"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"aaa1-6683-9d15-9829", ACTION1: "remove", Y1: "forest", ACTION2: "remove", Y2: "animal habitat"]
+
+	// LEXGLUE         SYNONYMY: woodland means forest     (75b7-e55a-c950-379a) [ X1:"woodland", X2:"forest" ]
+	//row autoRow13 = [UUID:"75b7-e55a-c950-379a", X1: "woodland", X2: "forest"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"75b7-e55a-c950-379a", X1: "woodland", X2: "forest"]
+
+endinferencepattern

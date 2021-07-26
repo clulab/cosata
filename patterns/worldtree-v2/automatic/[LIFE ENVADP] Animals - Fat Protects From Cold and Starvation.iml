@@ -1,0 +1,89 @@
+// Automatically converted pattern
+inferencepattern LIFE_ENVADP_Animals_Fat_Protects_From_Cold_and_Starvation
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       REQUIRES: an animal usually requires a warm body temperature for survival     (b08a-c1bc-23ee-1815) [ OBJECT_AGENT_PROCESS:"animal", QUANTIFIER:"usually", VERB_REQUIRES:"require", OBJECT:"warm body temperature", FOR_PURPOSE:"survive" ]
+	//        HINTROW an animal requires warmth for survival     (2280-1ce3-3320-9547) [ OBJECT_AGENT_PROCESS:"animal", VERB_REQUIRES:"require", OBJECT:"warmth", FOR_PURPOSE:"survive" ]
+	//row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "animal", QUANTIFIER: "usually", VERB_REQUIRES: "require", OBJECT: "warm"+*"POS:NN"+"temperature", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", FOR_PURPOSE: "survive"]
+
+	// CENTRALSW       PARTOF: layers of fat are often a part of animals that live in cold climates     (4188-9584-ffec-75e5) [ PART:"layer of fat", QUANTIFIER1:"be often", WHOLE:"animal", SCOPE:"live in cold climate" ]
+	//        HINTROW blubber is often a part of sea mammals for keeping warm by providing thermal insulation     (e069-66e7-52de-03e7) [ PART:"blubber", QUANTIFIER1:"be often", WHOLE:"sea mammal", FOR_PURPOSE:"keep warm", BY_THROUGH_HOW:"provide thermal insulation" ]
+	//row autoRow1 = [TABLE:"PARTOF", QUANTIFIER1: "be often", SCOPE: *"POS:VB"+*"POS:IN"+"cold"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PARTOF", QUANTIFIER1: "be often"]
+
+	// GROUNDING       KINDOF: a bear is a kind of animal     (5639-8136-4788-3ee6) [ HYPONYM:"bear", HYPERNYM:"animal" ]
+	//        HINTROW a seal is a kind of animal     (999d-78fd-e16b-a8b6) [ HYPONYM:"seal", HYPERNYM:"animal" ]
+	//        HINTROW a walrus is a kind of animal     (3555-ef6c-50f4-74be) [ HYPONYM:"walrus", HYPERNYM:"animal" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: a seal is a kind of sea mammal     (27c2-eb52-d6ef-b092) [ HYPONYM:"seal", SCOPE1:"sea", HYPERNYM:"mammal" ]
+	//        HINTROW a walrus is a kind of sea mammal     (4df6-1a70-4364-cd87) [ HYPONYM:"walrus", SCOPE1:"sea", HYPERNYM:"mammal" ]
+	//row autoRow3 = [TABLE:"KINDOF", SCOPE1: "sea", HYPERNYM: "mammal"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", SCOPE1: "sea", HYPERNYM: "mammal"]
+
+	// GROUNDING       KINDOF: a polar bear is a kind of bear     (cef3-cbfc-0564-ae29) [ HYPONYM:"polar bear", HYPERNYM:"bear" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "polar bear", HYPERNYM: "bear"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "polar bear", HYPERNYM: "bear"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//row autoRow5 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+	// CENTRAL         IFTHEN: if a living thing becomes too cold then that living thing will die     (d662-f8eb-acab-099f) [ THING:"live thing", ACTION1:"become", ADJ_QUANTITY1A:"too", OBJECT_PROPERTY1:"cold", ACTOR_AGENT_PROCESS2:"that live thing", ACTION3:"die" ]
+	//row autoRow6 = [UUID:"d662-f8eb-acab-099f", THING: "live thing", ACTION1: "become", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "that live thing", ACTION3: "die"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"d662-f8eb-acab-099f", THING: "live thing", ACTION1: "become", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "that live thing", ACTION3: "die"]
+
+	// CENTRAL         IFTHEN: if the environmental temperature ; air temperature is too cold then an animal ; a living thing in that environment may become cold     (2460-c937-4e53-293a) [ THING:"environment temperature;air temperature", ADJ_QUANTITY1A:"too", OBJECT_PROPERTY1:"cold", ACTOR_AGENT_PROCESS2:"animal;live thing", PROPERTY_SCOPE:"in that environment", OBJECT_PROPERTY3:"cold" ]
+	//row autoRow7 = [UUID:"2460-c937-4e53-293a", THING: "environment temperature", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "live thing", PROPERTY_SCOPE: "in that environment", OBJECT_PROPERTY3: "cold"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"2460-c937-4e53-293a", THING: "environment temperature", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "live thing", PROPERTY_SCOPE: "in that environment", OBJECT_PROPERTY3: "cold"]
+
+	// CENTRAL         OPPOSITES: keeping warm is the opposite of becoming cold     (7747-5d53-fc0d-16f3) [ VERB1:"keep", THING_PROPERTY1:"warm", VERB2:"become", THING_PROPERTY2:"cold" ]
+	//row autoRow8 = [UUID:"7747-5d53-fc0d-16f3", VERB1: "keep", THING_PROPERTY1: "warm", VERB2: "become", THING_PROPERTY2: "cold"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"7747-5d53-fc0d-16f3", VERB1: "keep", THING_PROPERTY1: "warm", VERB2: "become", THING_PROPERTY2: "cold"]
+
+	// CENTRAL         ACTION: adaptation is when an organism develops a trait over time for survival     (c6fe-fa08-c304-093d) [ DEFINITION_NAME:"adapt", AGENT_OBJECT:"organism", ACTION2:"develop", OBJECT_PROPERTY:"trait", WHEN_WHERE:"over time", FOR_PURPOSE:"survive" ]
+	//row autoRow9 = [UUID:"c6fe-fa08-c304-093d", DEFINITION_NAME: "adapt", AGENT_OBJECT: "organism", ACTION2: "develop", OBJECT_PROPERTY: "trait", WHEN_WHERE: "over time", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"c6fe-fa08-c304-093d", DEFINITION_NAME: "adapt", AGENT_OBJECT: "organism", ACTION2: "develop", OBJECT_PROPERTY: "trait", WHEN_WHERE: "over time", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         USEDFOR: adaptations are used for survival     (ce2e-f178-dc1d-ad3c) [ AGENT_OBJECT:"adaptation", FOR_PURPOSE:"survive" ]
+	//row autoRow10 = [UUID:"ce2e-f178-dc1d-ad3c", AGENT_OBJECT: "adaptation", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"ce2e-f178-dc1d-ad3c", AGENT_OBJECT: "adaptation", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         PROP-THINGS: cold environments usually have little food for animals     (aa49-4312-5751-0a4e) [ ADJ:"cold", THING:"environment", QUALIFIER1:"usually", VALUE:"little", ATTRIBUTE:"food", PURPOSE:"animal" ]
+	//row autoRow11 = [UUID:"aa49-4312-5751-0a4e", ADJ: "cold", THING: "environment", QUALIFIER1: "usually", VALUE: "little", ATTRIBUTE: "food", PURPOSE: "animal"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"aa49-4312-5751-0a4e", ADJ: "cold", THING: "environment", QUALIFIER1: "usually", VALUE: "little", ATTRIBUTE: "food", PURPOSE: "animal"]
+
+	// CENTRAL         AFFORDANCES: an animal can survive in an environment with little food by storing fat     (affa-2d72-5000-4e10) [ ACTOR_THING:"animal", VERB:"survive", PATIENT:"in environment with little food", BY_THROUGH_HOW:"store fat" ]
+	//row autoRow12 = [UUID:"affa-2d72-5000-4e10", ACTOR_THING: "animal", VERB: "survive", PATIENT: "in environment with little food", BY_THROUGH_HOW: "store fat"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"affa-2d72-5000-4e10", ACTOR_THING: "animal", VERB: "survive", PATIENT: "in environment with little food", BY_THROUGH_HOW: "store fat"]
+
+	// CENTRAL         KINDOF: blubber is a kind of fat     (e1b6-ff98-c47b-fd5a) [ HYPONYM:"blubber", HYPERNYM:"fat" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"e1b6-ff98-c47b-fd5a", HYPONYM: "blubber", HYPERNYM: "fat"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"e1b6-ff98-c47b-fd5a", HYPONYM: "blubber", HYPERNYM: "fat"]
+
+	// CENTRAL         USEDFOR: fat is used to keep animals warm     (493d-cec9-f090-4547) [ AGENT_OBJECT:"fat", FOR_PURPOSE:"keep animal warm" ]
+	//row autoRow14 = [UUID:"493d-cec9-f090-4547", AGENT_OBJECT: "fat", FOR_PURPOSE: "keep animal warm"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"493d-cec9-f090-4547", AGENT_OBJECT: "fat", FOR_PURPOSE: "keep animal warm"]
+
+	// CENTRAL         HABITAT: polar bears live in cold environments     (544b-b9d9-1ef5-42c4) [ SUBSPECIES:"polar", ORGANISM:"bear", HABITAT:"cold environment" ]
+	//row autoRow15 = [UUID:"544b-b9d9-1ef5-42c4", SUBSPECIES: "polar", ORGANISM: "bear", HABITAT: "cold environment"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"544b-b9d9-1ef5-42c4", SUBSPECIES: "polar", ORGANISM: "bear", HABITAT: "cold environment"]
+
+	// CENTRAL         PROP-ENVIRONMENTATTRIB: the arctic environment usually is cold in temperature from being at a northern lattitude     (346e-7cc2-f910-5df4) [ ENVIRONMENT:"arctic", QUALIFIER:"usually", VALUE:"cold", PROPERTY:"temperature", WHY:"be at northern lattitude" ]
+	//row autoRow16 = [UUID:"346e-7cc2-f910-5df4", ENVIRONMENT: "arctic", QUALIFIER: "usually", VALUE: "cold", PROPERTY: "temperature", WHY: "be at northern lattitude"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"346e-7cc2-f910-5df4", ENVIRONMENT: "arctic", QUALIFIER: "usually", VALUE: "cold", PROPERTY: "temperature", WHY: "be at northern lattitude"]
+
+	// LEXGLUE         SYNONYMY: a part of something means a characteristic of something     (e6ee-3492-89ae-73d8) [ X1:"part of something", X2:"characteristic of something" ]
+	//row autoRow17 = [UUID:"e6ee-3492-89ae-73d8", X1: "part of something", X2: "characteristic of something"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"e6ee-3492-89ae-73d8", X1: "part of something", X2: "characteristic of something"]
+
+endinferencepattern

@@ -1,0 +1,60 @@
+// Automatically converted pattern
+inferencepattern ENG_POTENTIALKINETIC_Kinetic_Energy_Temperature
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a liquid is a kind of substance     (3f2b-87bb-f73a-3e5d) [ HYPONYM:"liquid", HYPERNYM:"substance" ]
+	//        HINTROW gas is a kind of substance     (6c6f-b690-6b57-aab6) [ HYPONYM:"gas", HYPERNYM:"substance" ]
+	//        HINTROW water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//        HINTROW a solid is a kind of substance     (ba9b-b2e3-d362-1dd0) [ HYPONYM:"solid", HYPERNYM:"substance" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "substance"]
+
+	// GROUNDING       KINDOF: liquid is a kind of state of matter     (f7e9-c6f8-892b-3496) [ HYPONYM:"liquid", HYPERNYM:"state of matt" ]
+	//        HINTROW solid is a kind of state of matter     (cf49-1b7a-89f0-41f5) [ HYPONYM:"solid", HYPERNYM:"state of matt" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "state of matt"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the temperature increases , the kinetic energy of the molecules will increase     (d148-e8f6-c895-1843) [ QUANTITY_MEASURE1:"temperature", CHANGE1:"increase", QUANTITY_MEASURE2:"kinetic energy", AGENT_ATTRIBUTE2:"of molecule", CHANGE2:"increase" ]
+	//row autoRow2 = [UUID:"d148-e8f6-c895-1843", QUANTITY_MEASURE1: "temperature", CHANGE1: "increase", QUANTITY_MEASURE2: "kinetic energy", AGENT_ATTRIBUTE2: "of molecule", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"d148-e8f6-c895-1843", QUANTITY_MEASURE1: "temperature", CHANGE1: "increase", QUANTITY_MEASURE2: "kinetic energy", AGENT_ATTRIBUTE2: "of molecule", CHANGE2: "increase"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of kinetic energy of molecules     (4be1-14fa-5a9c-0444) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"kinetic energy of", AGENT:"molecule" ]
+	//row autoRow3 = [UUID:"4be1-14fa-5a9c-0444", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "kinetic energy of", AGENT: "molecule"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"4be1-14fa-5a9c-0444", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "kinetic energy of", AGENT: "molecule"]
+
+	// CENTRAL         MADEOF: matter ; materials ; substances are made of atoms ; particles     (1758-a1b7-4083-9e99) [ OBJECT:"matt;material;substance", MATERIAL:"atom;particle" ]
+	//row autoRow4 = [UUID:"1758-a1b7-4083-9e99", OBJECT: "matt", MATERIAL: "atom"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"1758-a1b7-4083-9e99", OBJECT: "matt", MATERIAL: "atom"]
+
+	// CENTRAL         KINDOF: a molecule is a kind of particle     (b4bc-365c-d4d5-8fdc) [ HYPONYM:"molecule", HYPERNYM:"particle" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"b4bc-365c-d4d5-8fdc", HYPONYM: "molecule", HYPERNYM: "particle"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"b4bc-365c-d4d5-8fdc", HYPONYM: "molecule", HYPERNYM: "particle"]
+
+	// CENTRAL         MADEOF: substances are made of matter     (3395-b5a2-ae2d-39c2) [ OBJECT:"substance", MATERIAL:"matt" ]
+	//row autoRow6 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"]
+
+	// CENTRAL         ATTRIBUTE-VALUE-RANGE: warmer means greater ; higher in temperature ; warmth     (3c5b-8471-16d4-f1b2) [ THING:"warm", VALUE:"great;high", ATTRIBUTE:"temperature;warmth" ]
+	//row autoRow7 = [UUID:"3c5b-8471-16d4-f1b2", THING: "warm", VALUE: "great", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3c5b-8471-16d4-f1b2", THING: "warm", VALUE: "great", ATTRIBUTE: "temperature"]
+
+	// CENTRAL         PROP-THINGS: particles in a liquid have more kinetic energy than particles in a solid     (261f-49cc-683a-a8e4) [ THING:"particle in liquid", VALUE:"much", ATTRIBUTE:"kinetic energy", SCOPE_RELATIVETO:"than particle in solid" ]
+	//row autoRow8 = [UUID:"261f-49cc-683a-a8e4", THING: "particle in liquid", VALUE: "much", ATTRIBUTE: "kinetic energy", SCOPE_RELATIVETO: "than particle in solid"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"261f-49cc-683a-a8e4", THING: "particle in liquid", VALUE: "much", ATTRIBUTE: "kinetic energy", SCOPE_RELATIVETO: "than particle in solid"]
+
+	// CENTRAL         PROP-THINGS: particles in a gas have more kinetic energy than particles in a liquid     (ca8b-bc08-0c42-61cb) [ THING:"particle in gas", VALUE:"much", ATTRIBUTE:"kinetic energy", SCOPE_RELATIVETO:"than particle in liquid" ]
+	//row autoRow9 = [UUID:"ca8b-bc08-0c42-61cb", THING: "particle in gas", VALUE: "much", ATTRIBUTE: "kinetic energy", SCOPE_RELATIVETO: "than particle in liquid"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"ca8b-bc08-0c42-61cb", THING: "particle in gas", VALUE: "much", ATTRIBUTE: "kinetic energy", SCOPE_RELATIVETO: "than particle in liquid"]
+
+	// LEXGLUE         SYNONYMY: sample is similar to small amount of substance ; matter ; material     (09c2-3e04-4343-223d) [ X1:"sample", X2:"small amount of", Y2:"substance;matt;material" ]
+	//row autoRow10 = [UUID:"09c2-3e04-4343-223d", X1: "sample", X2: "small amount of", Y2: "substance"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"09c2-3e04-4343-223d", X1: "sample", X2: "small amount of", Y2: "substance"]
+
+endinferencepattern

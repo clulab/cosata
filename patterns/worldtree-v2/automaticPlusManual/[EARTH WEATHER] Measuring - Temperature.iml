@@ -1,0 +1,46 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Measuring_Temperature
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       UNIT: degrees fahrenheit ( F ) is a imperial unit used for measuring temperature generally used for values between -450 and 50000000     (461f-00e5-56fe-dd2c) [ UNIT:"degree fahrenheit", ABBREVIATION:"f", PROPERTY:"temperature", LOWERBOUND:"-450;450", UPPERBOUND:"50000000" ]
+	//        HINTROW degrees celsius ( C ) is a metric unit used for measuring temperature generally used for values between -273 and 50000000     (93f5-b0bb-73b5-8b40) [ UNIT:"degree celsius", ABBREVIATION:"c", PROPERTY:"temperature", LOWERBOUND:"-273;273", UPPERBOUND:"50000000" ]
+	//row autoRow0 = [TABLE:"UNIT", UNIT: "degree"+*"POS:NN", PROPERTY: "temperature", UPPERBOUND: "50000000"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"UNIT", UNIT: "degree"+*"POS:NN", PROPERTY: "temperature", UPPERBOUND: "50000000"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: hot means high in heat energy ; temperature     (9ff8-543c-2f35-5d3f) [ THING:"hot", VALUE:"high", ATTRIBUTE:"heat energy;temperature" ]
+	//        HINTROW warm means medium heat energy ; temperature     (63df-d3d9-56dc-161a) [ THING:"warm", VALUE:"medium;medium", ATTRIBUTE:"heat energy;temperature" ]
+	//row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "hot", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "hot", ATTRIBUTE: "heat energy"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: cold means low in temperature     (cf2a-6257-0c5c-7445) [ THING:"cold", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//        HINTROW colder ; cooler means lower in temperature     (246e-dd6e-6e09-988a) [ THING:"cold;cool", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "cold", VALUE: "low", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "cold", VALUE: "low", ATTRIBUTE: "temperature"]
+
+	// CENTRAL         PROP-GENERIC: temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot     (4084-f2bc-52cf-0f74) [ X:"temperature;heat energy", Y:"object;weather", ORDERED_UNORDERED:"order", VALUES:"cold;cool;warm;hot" ]
+	//row autoRow3 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"]
+
+	// CENTRAL         KINDOF: a thermometer is a kind of instrument for measuring temperature     (1296-2edb-a443-10d1) [ HYPONYM:"thermometer", HYPERNYM:"instrument", FOR_PURPOSE:"measure temperature" ]
+	//row autoRow4 = [UUID:"1296-2edb-a443-10d1", HYPONYM: "thermometer", HYPERNYM: "instrument", FOR_PURPOSE: "measure temperature"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"1296-2edb-a443-10d1", HYPONYM: "thermometer", HYPERNYM: "instrument", FOR_PURPOSE: "measure temperature"]
+
+	// CENTRAL         USEDFOR: a thermometer is used to measure temperature     (8346-8315-1f24-a5be) [ AGENT_OBJECT:"thermometer", FOR_PURPOSE:"measure", PATIENT:"temperature" ]
+	//row autoRow5 = [UUID:"8346-8315-1f24-a5be", AGENT_OBJECT: "thermometer", FOR_PURPOSE: "measure", PATIENT: "temperature"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"8346-8315-1f24-a5be", AGENT_OBJECT: "thermometer", FOR_PURPOSE: "measure", PATIENT: "temperature"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of heat energy     (d753-423d-5ce7-53ce) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"heat energy" ]
+	//row autoRow6 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"]
+
+	// CENTRAL         PROP-GENERIC: temperature is a property of weather     (950c-7489-5659-db44) [ X:"temperature", Y:"weather" ]
+	//row autoRow7 = [UUID:"950c-7489-5659-db44", X: "temperature", Y: "weather"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"950c-7489-5659-db44", X: "temperature", Y: "weather"]
+
+endinferencepattern

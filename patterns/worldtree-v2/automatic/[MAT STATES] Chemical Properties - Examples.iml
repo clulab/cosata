@@ -1,0 +1,61 @@
+// Automatically converted pattern
+inferencepattern MAT_STATES_Chemical_Properties_Examples
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-GENERIC: combustibility is a property of matter and includes ordered values of combustible ; incombustible     (0e0f-42a2-11e2-d4e3) [ X:"combustibility", Y:"matt", ORDERED_UNORDERED:"order", VALUES:"combustible;incombustible" ]
+	//        HINTROW flammability is a property of matter and includes values of flammable ; inflammable     (459f-ac72-bd1f-2be3) [ X:"flammability", Y:"matt", VALUES:"flammable;inflammable" ]
+	//row autoRow0 = [TABLE:"PROP-GENERIC", X: <combustibility_0>, Y: "matt"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-GENERIC", X: <combustibility_0>, Y: "matt"]
+
+	// GROUNDING       KINDOF: combustibility is a kind of chemical property     (aef8-bb04-9f18-8bdd) [ HYPONYM:"combustibility", SCOPE1:"chemical", HYPERNYM:"property" ]
+	//        HINTROW flammability is a kind of chemical property     (6583-a76d-4f3f-b4f0) [ HYPONYM:"flammability", SCOPE1:"chemical", HYPERNYM:"property" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: <combustibility_0>, SCOPE1: "chemical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: <combustibility_0>, SCOPE1: "chemical", HYPERNYM: "property"]
+
+	// GROUNDING       KINDOF: gas is a kind of material     (481d-d730-fc26-caa0) [ HYPONYM:"gas", HYPERNYM:"material" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "gas", HYPERNYM: "material"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "gas", HYPERNYM: "material"]
+
+	// CENTRAL         CAUSE: a chemical reaction producing a lot of gas and heat in a short time causes an explosion     (ff67-212d-6df3-beec) [ PROCESS_NAME:"chemical react", CONDITION_VERB:"produce", CONDITION_PATIENT:"lot of gas heat", DURATION1:"in short time", RESULT_AGENT:"explosion" ]
+	//row autoRow3 = [UUID:"ff67-212d-6df3-beec", PROCESS_NAME: "chemical react", CONDITION_VERB: "produce", CONDITION_PATIENT: "lot of gas heat", DURATION1: "in short time", RESULT_AGENT: "explosion"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"ff67-212d-6df3-beec", PROCESS_NAME: "chemical react", CONDITION_VERB: "produce", CONDITION_PATIENT: "lot of gas heat", DURATION1: "in short time", RESULT_AGENT: "explosion"]
+
+	// CENTRAL         EXAMPLES: An example of a chemical property is how a material reacts chemically     (c8e1-3a3e-2e83-fbbc) [ AGENT_OBJECT1:"chemical property", AGENT_OBJECT2:"material", VERB2:"react", AGENT_OBJECT3:"chemically" ]
+	//row autoRow4 = [UUID:"c8e1-3a3e-2e83-fbbc", AGENT_OBJECT1: "chemical property", AGENT_OBJECT2: "material", VERB2: "react", AGENT_OBJECT3: "chemically"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"c8e1-3a3e-2e83-fbbc", AGENT_OBJECT1: "chemical property", AGENT_OBJECT2: "material", VERB2: "react", AGENT_OBJECT3: "chemically"]
+
+	// CENTRAL         KINDOF: hydrogen is a kind of gas at room temperature     (bcb9-f1d4-4c6d-cb70) [ HYPONYM:"hydrogen", HYPERNYM:"gas", SCOPE2:"at room temperature" ]
+	//row autoRow5 = [UUID:"bcb9-f1d4-4c6d-cb70", HYPONYM: "hydrogen", HYPERNYM: "gas", SCOPE2: "at room temperature"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"bcb9-f1d4-4c6d-cb70", HYPONYM: "hydrogen", HYPERNYM: "gas", SCOPE2: "at room temperature"]
+
+	// CENTRAL         EXAMPLES: An example of combustion is explosion     (c214-1316-7875-9617) [ AGENT_OBJECT1:"combust", AGENT_OBJECT2:"explosion" ]
+	//row autoRow6 = [UUID:"c214-1316-7875-9617", AGENT_OBJECT1: "combust", AGENT_OBJECT2: "explosion"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"c214-1316-7875-9617", AGENT_OBJECT1: "combust", AGENT_OBJECT2: "explosion"]
+
+	// CENTRAL         MADEOF: substances are made of matter     (3395-b5a2-ae2d-39c2) [ OBJECT:"substance", MATERIAL:"matt" ]
+	//row autoRow7 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"]
+
+	// LEXGLUE         OPPOSITES: a chemical property is the opposite of a physical property     (56a9-96f3-6c09-ee0c) [ THING_PROPERTY1:"chemical property", THING_PROPERTY2:"physical property" ]
+	//row autoRow8 = [UUID:"56a9-96f3-6c09-ee0c", THING_PROPERTY1: "chemical property", THING_PROPERTY2: "physical property"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"56a9-96f3-6c09-ee0c", THING_PROPERTY1: "chemical property", THING_PROPERTY2: "physical property"]
+
+	// LEXGLUE         SYNONYMY: combustibility means the ability of combustion     (536e-544a-fe84-10e3) [ X1:"combustibility", X2:"ability of combust" ]
+	//row autoRow9 = [UUID:"536e-544a-fe84-10e3", X1: <combustibility_0>, X2: "ability of combust"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"536e-544a-fe84-10e3", X1: <combustibility_0>, X2: "ability of combust"]
+
+	// LEXGLUE         SYNONYMY: exploding is similar to explosion     (04b8-cf01-a0da-975f) [ ACTION1:"explode", X2:"explosion" ]
+	//row autoRow10 = [UUID:"04b8-cf01-a0da-975f", ACTION1: "explode", X2: "explosion"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"04b8-cf01-a0da-975f", ACTION1: "explode", X2: "explosion"]
+
+	// LEXGLUE         SYNONYMY: material means substance     (efac-0ec0-58dc-8f9e) [ X1:"material", X2:"substance" ]
+	//row autoRow11 = [UUID:"efac-0ec0-58dc-8f9e", X1: "material", X2: "substance"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"efac-0ec0-58dc-8f9e", X1: "material", X2: "substance"]
+
+endinferencepattern

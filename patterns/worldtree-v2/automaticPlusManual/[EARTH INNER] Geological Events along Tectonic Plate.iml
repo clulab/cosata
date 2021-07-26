@@ -1,0 +1,76 @@
+// Automatically converted pattern
+inferencepattern EARTH_INNER_Geological_Events_along_Tectonic_Plate
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       USEDFOR: a seismograph is used for measuring the size of an earthquake     (eb11-ce60-5982-6b34) [ AGENT_OBJECT:"seismograph", FOR_PURPOSE:"measure", PATIENT:"size of earthquake" ]
+	//        HINTROW a seismograph is used to measure the earthquake waves     (8bf7-a710-1eb8-44a6) [ AGENT_OBJECT:"seismograph", FOR_PURPOSE:"measure", PATIENT:"earthquake wave" ]
+	//        HINTROW a seismometer is used to measure the strength or magnitude of an earthquake     (0b41-0bce-3131-bd88) [ AGENT_OBJECT:"seismometer", FOR_PURPOSE:"measure", PATIENT:"strength magnitude of earthquake" ]
+	//row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT: "seismograph", FOR_PURPOSE: "measure", PATIENT: "size of earthquake"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"USEDFOR", FOR_PURPOSE: "measure", PATIENT: "size of earthquake"]
+
+	// GROUNDING       KINDOF: an earthquake is a kind of natural ; geological event     (8129-78ea-abe4-f382) [ HYPONYM:"earthquake", SCOPE1:"nature;geological", HYPERNYM:"event" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "earthquake", SCOPE1: "nature", HYPERNYM: "event"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "earthquake", SCOPE1: "nature", HYPERNYM: "event"]
+
+	// GROUNDING       KINDOF: a volcano eruption is a kind of geological event     (560c-c53b-6854-d927) [ HYPONYM:"volcano erupt", SCOPE1:"geological", HYPERNYM:"event" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "volcano erupt", SCOPE1: "geological", HYPERNYM: "event"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "volcano erupt", SCOPE1: "geological", HYPERNYM: "event"]
+
+	// GROUNDING       LOCATIONS: California is located on the boundary of two tectonic plates     (0245-f84d-7190-9208) [ THING_PROCESS:"california", LOCATION:"boundary", SCOPE:"of two tectonic plate" ]
+	//  Notes: Places on the boundary
+	//row autoRow3 = [TABLE:"LOCATIONS", THING_PROCESS: "california", LOCATION: "boundary", SCOPE: "of two tectonic plate"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"LOCATIONS", THING_PROCESS: "california", LOCATION: "boundary", SCOPE: "of two tectonic plate"]
+
+	// GROUNDING       LOCATIONS: Massachusetts is not located on the boundary of two tectonic plates     (f1e8-deb1-0995-3aed) [ THING_PROCESS:"massachusetts", LOCATION:"boundary", SCOPE:"of two tectonic plate" ]
+	//  Notes: Places NOT on the boundary
+	//row autoRow4 = [TABLE:"LOCATIONS", THING_PROCESS: "massachusetts", LOCATION: "boundary", SCOPE: "of two tectonic plate"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"LOCATIONS", THING_PROCESS: "massachusetts", LOCATION: "boundary", SCOPE: "of two tectonic plate"]
+
+	// CENTRAL         DURATIONS: an earthquake usually occurs over a period of 10 to 30 seconds     (e18f-5f8a-04fd-76f7) [ EVENT:"earthquake", QUANTIFIER:"usually", LOWERBOUND:"10", UPPERBOUND:"30", DURATIONUNIT:"second" ]
+	//row autoRow5 = [UUID:"e18f-5f8a-04fd-76f7", EVENT: "earthquake", QUANTIFIER: "usually", LOWERBOUND: "10", UPPERBOUND: "30", DURATIONUNIT: "second"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"e18f-5f8a-04fd-76f7", EVENT: "earthquake", QUANTIFIER: "usually", LOWERBOUND: "10", UPPERBOUND: "30", DURATIONUNIT: "second"]
+
+	// CENTRAL         CAUSE: tectonic plates being pushed together causes earthquakes     (2b70-ecb7-15fb-441c) [ CONDITION_AGENT_OBJECT:"tectonic plate", CONDITION_VERB:"be push together", RESULT_AGENT:"earthquake" ]
+	//row autoRow6 = [UUID:"2b70-ecb7-15fb-441c", CONDITION_AGENT_OBJECT: "tectonic plate", CONDITION_VERB: "be push together", RESULT_AGENT: "earthquake"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"2b70-ecb7-15fb-441c", CONDITION_AGENT_OBJECT: "tectonic plate", CONDITION_VERB: "be push together", RESULT_AGENT: "earthquake"]
+
+	// CENTRAL         CAUSE: faulting of rock in Earth 's crust causes earthquakes     (892d-1a0a-d040-bd9e) [ CONDITION_VERB:"fault", CONDITION_PATIENT:"of rock", SCOPE1:"in earth crust", RESULT_AGENT:"earthquake" ]
+	//row autoRow7 = [UUID:"892d-1a0a-d040-bd9e", CONDITION_VERB: "fault", CONDITION_PATIENT: "of rock", SCOPE1: "in earth crust", RESULT_AGENT: "earthquake"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"892d-1a0a-d040-bd9e", CONDITION_VERB: "fault", CONDITION_PATIENT: "of rock", SCOPE1: "in earth crust", RESULT_AGENT: "earthquake"]
+
+	// CENTRAL         KINDOF: a seismograph is a kind of tool for measuring the size of an earthquake     (0ad1-f529-32a2-a01d) [ HYPONYM:"seismograph", HYPERNYM:"tool", FOR_PURPOSE:"measure size of earthquake" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"0ad1-f529-32a2-a01d", HYPONYM: "seismograph", HYPERNYM: "tool", FOR_PURPOSE: "measure size of earthquake"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"0ad1-f529-32a2-a01d", HYPONYM: "seismograph", HYPERNYM: "tool", FOR_PURPOSE: "measure size of earthquake"]
+
+	// CENTRAL         LOCATIONS: earthquakes are most common along tectonic plate boundaries     (ddc4-d38f-a1dc-4e3e) [ THING_PROCESS:"earthquake", LOCATION:"along tectonic plate boundary" ]
+	//row autoRow9 = [UUID:"ddc4-d38f-a1dc-4e3e", THING_PROCESS: "earthquake", LOCATION: "along tectonic plate boundary"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"ddc4-d38f-a1dc-4e3e", THING_PROCESS: "earthquake", LOCATION: "along tectonic plate boundary"]
+
+	// CENTRAL         FORMEDBY: volcanoes are formed by converging boundaries of tectonic plates     (385d-0fa8-4890-0123) [ OBJECT:"volcano", AGENT_PROCESS:"converge boundary", VERB:"of tectonic plate" ]
+	//row autoRow10 = [UUID:"385d-0fa8-4890-0123", OBJECT: "volcano", AGENT_PROCESS: "converge boundary", VERB: "of tectonic plate"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"385d-0fa8-4890-0123", OBJECT: "volcano", AGENT_PROCESS: "converge boundary", VERB: "of tectonic plate"]
+
+	// CENTRAL         LOCATIONS: active volcanoes are most common along tectonic plate boundaries     (d400-75e8-66a2-508b) [ THING_PROCESS:"active volcano", LOCATION:"along tectonic plate boundary" ]
+	//row autoRow11 = [UUID:"d400-75e8-66a2-508b", THING_PROCESS: "active volcano", LOCATION: "along tectonic plate boundary"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"d400-75e8-66a2-508b", THING_PROCESS: "active volcano", LOCATION: "along tectonic plate boundary"]
+
+	// CENTRAL         ACTION: tectonic plates meets at their boundaries     (849e-ad80-f6e8-3b29) [ AGENT_OBJECT:"tectonic plate", ACTION2:"meet", OBJECT_PROPERTY:"at boundary" ]
+	//row autoRow12 = [UUID:"849e-ad80-f6e8-3b29", AGENT_OBJECT: "tectonic plate", ACTION2: "meet", OBJECT_PROPERTY: "at boundary"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"849e-ad80-f6e8-3b29", AGENT_OBJECT: "tectonic plate", ACTION2: "meet", OBJECT_PROPERTY: "at boundary"]
+
+	// CENTRAL         LOCATIONS: the collision of tectonic plates are found at the convergent boundaries ; the converging boundaries     (d413-e616-05e3-a766) [ THING_PROCESS:"collision of tectonic plate", LOCATION:"convergent boundary;converge boundary" ]
+	//row autoRow13 = [UUID:"d413-e616-05e3-a766", THING_PROCESS: "collision of tectonic plate", LOCATION: "convergent boundary"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"d413-e616-05e3-a766", THING_PROCESS: "collision of tectonic plate", LOCATION: "convergent boundary"]
+
+	// LEXGLUE         SYNONYMY: to cause the formation of means to form     (b7ab-4872-8563-4b31) [ ACTION1:"cause", Y1:"form of", ACTION2:"form" ]
+	//row autoRow14 = [UUID:"b7ab-4872-8563-4b31", ACTION1: "cause", Y1: "form of", ACTION2: "form"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"b7ab-4872-8563-4b31", ACTION1: "cause", Y1: "form of", ACTION2: "form"]
+
+endinferencepattern

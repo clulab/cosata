@@ -1,0 +1,72 @@
+// Automatically converted pattern
+inferencepattern LIFE_INTERDEP_Consumer_vs_Producer
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROCESSROLES: In the food chain process an animal has the role of consumer which eats producers ; other animals for food     (a4f8-5748-0846-cb45) [ PROCESS_NAME:"food chain", ACTOR_COMMON_EXAMPLE:"animal", ROLE:"consumer", VERBS:"eat", PATIENT:"producer;other animal", FOR_PURPOSE:"food" ]
+	//        HINTROW In the food chain process herbivores have the role of primary consumer which eats producers for food     (18e1-c8ad-e980-2db1) [ PROCESS_NAME:"food chain", ACTOR_COMMON_EXAMPLE:"herbivore", ROLE:"primary consumer", VERBS:"eat", PATIENT:"producer", FOR_PURPOSE:"food" ]
+	//  Notes: Consumer in the food chain
+	//row autoRow0 = [TABLE:"PROCESSROLES", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "animal", ROLE: "consumer", VERBS: "eat", PATIENT: "other animal", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROCESSROLES", PROCESS_NAME: "food chain", ROLE: "consumer", VERBS: "eat", PATIENT: "producer", FOR_PURPOSE: "food"]
+
+	// CENTRALSW       PROCESSROLES: In the food chain process a green plant has the role of producer ; primary producer     (e4b0-75b1-e5ea-4189) [ PROCESS_NAME:"food chain", ACTOR_COMMON_EXAMPLE:"green plant", ROLE:"producer;primary producer" ]
+	//        HINTROW In the food chain process some types of plankton have the role of producer     (d9fb-1dc4-4305-980c) [ PROCESS_NAME:"food chain", ACTOR_COMMON_EXAMPLE:"type of plankton", ROLE:"producer" ]
+	//  Notes: Producers in food chain
+	//row autoRow1 = [TABLE:"PROCESSROLES", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "green plant", ROLE: "primary producer"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROCESSROLES", PROCESS_NAME: "food chain", ROLE: *"POS:JJ"+"producer"]
+
+	// GROUNDING       KINDOF: a rabbit is a kind of animal     (44d7-fef6-90ef-75aa) [ HYPONYM:"rabbit", HYPERNYM:"animal" ]
+	//        HINTROW a bird is a kind of animal     (e26b-b21d-d4a3-25fc) [ HYPONYM:"bird", HYPERNYM:"animal" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: grass is a kind of green plant     (9d2f-b39b-3921-a54c) [ HYPONYM:"grass", SCOPE1:"green", HYPERNYM:"plant" ]
+	//        HINTROW a water lily is a kind of green plant     (1869-0d26-040c-9a3d) [ HYPONYM:"water lily", SCOPE1:"green", HYPERNYM:"plant" ]
+	//row autoRow3 = [TABLE:"KINDOF", SCOPE1: "green", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", SCOPE1: "green", HYPERNYM: "plant"]
+
+	// CENTRAL         USEDFOR: eating ; taking in food is used to get nutrients ; energy by animals ; living things     (4842-3518-d7ab-f670) [ ACTION:"eat;take", AGENT_OBJECT:"food", FOR_PURPOSE:"get", PATIENT:"nutrient;energy", AGENT_THING_WHO_USES:"animal;live thing" ]
+	//row autoRow4 = [UUID:"4842-3518-d7ab-f670", ACTION: "eat", AGENT_OBJECT: "food", FOR_PURPOSE: "get", PATIENT: "nutrient", AGENT_THING_WHO_USES: "live thing"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4842-3518-d7ab-f670", ACTION: "eat", AGENT_OBJECT: "food", FOR_PURPOSE: "get", PATIENT: "nutrient", AGENT_THING_WHO_USES: "live thing"]
+
+	// CENTRAL         SOURCEOF: green plants provide food for themselves ; animals ; consumers by performing photosynthesis     (694b-d9ec-8c65-5a6a) [ ADJ:"green", AGENT:"plant", VERB_SOURCEOF_PROVIDE_ETC:"provide", WHAT_IT_PROVIDES:"food", AGENT_IT_PROVIDES_THING_TO:";animal;consumer", BY_THROUGH_HOW:"perform photosynthesis" ]
+	//row autoRow5 = [UUID:"694b-d9ec-8c65-5a6a", ADJ: "green", AGENT: "plant", VERB_SOURCEOF_PROVIDE_ETC: "provide", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "animal", BY_THROUGH_HOW: "perform photosynthesis"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"694b-d9ec-8c65-5a6a", ADJ: "green", AGENT: "plant", VERB_SOURCEOF_PROVIDE_ETC: "provide", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "animal", BY_THROUGH_HOW: "perform photosynthesis"]
+
+	// CENTRAL         SOURCEOF: producers are a source of food resource for primary consumers     (59e6-3a73-ee21-701d) [ AGENT:"producer", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"food resource", AGENT_IT_PROVIDES_THING_TO:"primary consumer" ]
+	//  Notes: f1be-edf7-571a-be6f->59e6-3a73-ee21-701d
+	//row autoRow6 = [UUID:"59e6-3a73-ee21-701d", AGENT: "producer", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food resource", AGENT_IT_PROVIDES_THING_TO: "primary consumer"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"59e6-3a73-ee21-701d", AGENT: "producer", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food resource", AGENT_IT_PROVIDES_THING_TO: "primary consumer"]
+
+	// CENTRAL         ACTION: a consumer can not produce its own food     (6bf8-4a05-d7b7-8bc0) [ AGENT_OBJECT:"consumer", QUANITIFIER:"not", ACTION2:"product", OBJECT_PROPERTY:"own food" ]
+	//row autoRow7 = [UUID:"6bf8-4a05-d7b7-8bc0", AGENT_OBJECT: "consumer", QUANITIFIER: "not", ACTION2: "product", OBJECT_PROPERTY: "own food"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"6bf8-4a05-d7b7-8bc0", AGENT_OBJECT: "consumer", QUANITIFIER: "not", ACTION2: "product", OBJECT_PROPERTY: "own food"]
+
+	// CENTRAL         ACTION: a producer produces its own food     (606d-9382-a8e0-7000) [ AGENT_OBJECT:"producer", ACTION2:"produce", OBJECT_PROPERTY:"own food" ]
+	//row autoRow8 = [UUID:"606d-9382-a8e0-7000", AGENT_OBJECT: "producer", ACTION2: "produce", OBJECT_PROPERTY: "own food"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"606d-9382-a8e0-7000", AGENT_OBJECT: "producer", ACTION2: "produce", OBJECT_PROPERTY: "own food"]
+
+	// CENTRAL         KINDOF: an animal is a kind of consumer     (c799-dee0-451a-dd60) [ HYPONYM:"animal", HYPERNYM:"consumer" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"c799-dee0-451a-dd60", HYPONYM: "animal", HYPERNYM: "consumer"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"c799-dee0-451a-dd60", HYPONYM: "animal", HYPERNYM: "consumer"]
+
+	// CENTRAL         CONSUMERS-EATING: consumers eat other organisms     (10c2-8847-99e1-057b) [ ORGANISM1:"consumer", EATS_CONSUMES:"eat", ORGANISM2:"other organism" ]
+	//row autoRow10 = [UUID:"10c2-8847-99e1-057b", ORGANISM1: "consumer", EATS_CONSUMES: "eat", ORGANISM2: "other organism"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"10c2-8847-99e1-057b", ORGANISM1: "consumer", EATS_CONSUMES: "eat", ORGANISM2: "other organism"]
+
+	// CENTRAL         KINDOF: green plants are a kind of producer     (f812-4338-e44b-e685) [ HYPONYM:"green plant", HYPERNYM:"producer" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"f812-4338-e44b-e685", HYPONYM: "green plant", HYPERNYM: "producer"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"f812-4338-e44b-e685", HYPONYM: "green plant", HYPERNYM: "producer"]
+
+	// LEXGLUE         SYNONYMY: herbivore means first-level consumer     (5706-62c6-1f2a-6e18) [ X1:"herbivore", X2:"first-level consumer;﻿1 level consumer" ]
+	//row autoRow12 = [UUID:"5706-62c6-1f2a-6e18", X1: "herbivore", X2: "﻿1 level consumer"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"5706-62c6-1f2a-6e18", X1: "herbivore", X2: "﻿1 level consumer"]
+
+endinferencepattern

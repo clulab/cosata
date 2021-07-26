@@ -1,0 +1,58 @@
+// Automatically converted pattern
+inferencepattern CEL_SPACEEX_Spacesuit_Protection
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: sunlight is a kind of light     (49dc-4526-46f9-5b32) [ HYPONYM:"sunlight", HYPERNYM:"light" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "sunlight", HYPERNYM: "light"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "sunlight", HYPERNYM: "light"]
+
+	// CENTRAL         AFFECT: being exposed to the ultraviolet light has a negative impact on living organisms     (9f87-a87e-a40b-c997) [ VERB:"be expose", OBJECT_PROPERTY:"ultraviolet light", POSITIVE_NEGATIVE:"negative", PATIENT:"live organism" ]
+	//row autoRow1 = [UUID:"9f87-a87e-a40b-c997", VERB: "be expose", OBJECT_PROPERTY: "ultraviolet light", POSITIVE_NEGATIVE: "negative", PATIENT: "live organism"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"9f87-a87e-a40b-c997", VERB: "be expose", OBJECT_PROPERTY: "ultraviolet light", POSITIVE_NEGATIVE: "negative", PATIENT: "live organism"]
+
+	// CENTRAL         HABITAT: astronauts live in the space station in space     (90b2-0a49-2264-8c1b) [ ORGANISM:"astronaut", HABITAT:"space station", SCOPE:"in space" ]
+	//  Notes: 405c-f763-c8f0-13b2->90b2-0a49-2264-8c1b
+	//row autoRow2 = [UUID:"90b2-0a49-2264-8c1b", ORGANISM: "astronaut", HABITAT: "space station", SCOPE: "in space"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"90b2-0a49-2264-8c1b", ORGANISM: "astronaut", HABITAT: "space station", SCOPE: "in space"]
+
+	// CENTRAL        (OPTIONAL) REQUIRES: astronauts require preserved food for extended flights     (e9e6-3be1-0f75-2810) [ OBJECT_AGENT_PROCESS:"astronaut", VERB_REQUIRES:"require", OBJECT:"preserve food", FOR_PURPOSE:"extend flight" ]
+	//row *autoRow3 = [UUID:"e9e6-3be1-0f75-2810", OBJECT_AGENT_PROCESS: "astronaut", VERB_REQUIRES: "require", OBJECT: "preserve food", FOR_PURPOSE: "extend flight"] //OVER-CONSTR.
+	row *autoRow3 = [UUID:"e9e6-3be1-0f75-2810", OBJECT_AGENT_PROCESS: "astronaut", VERB_REQUIRES: "require", OBJECT: "preserve food", FOR_PURPOSE: "extend flight"]
+
+	// CENTRAL         ACTION: spacesuit protects astronauts from intense sunlight     (2838-7453-ea4f-807a) [ AGENT_OBJECT:"spacesuit", ACTION2:"protect", OBJECT_PROPERTY:"astronaut", SCOPE2:"from intense sunlight" ]
+	//row autoRow4 = [UUID:"2838-7453-ea4f-807a", AGENT_OBJECT: "spacesuit", ACTION2: "protect", OBJECT_PROPERTY: "astronaut", SCOPE2: "from intense sunlight"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"2838-7453-ea4f-807a", AGENT_OBJECT: "spacesuit", ACTION2: "protect", OBJECT_PROPERTY: "astronaut", SCOPE2: "from intense sunlight"]
+
+	// CENTRAL         ACTION: astronauts wear spacesuits in space     (7cd0-bb1c-4d97-45b4) [ AGENT_OBJECT:"astronaut", ACTION2:"wear", OBJECT_PROPERTY:"spacesuit", WHEN_WHERE:"in space" ]
+	//row autoRow5 = [UUID:"7cd0-bb1c-4d97-45b4", AGENT_OBJECT: "astronaut", ACTION2: "wear", OBJECT_PROPERTY: "spacesuit", WHEN_WHERE: "in space"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"7cd0-bb1c-4d97-45b4", AGENT_OBJECT: "astronaut", ACTION2: "wear", OBJECT_PROPERTY: "spacesuit", WHEN_WHERE: "in space"]
+
+	// CENTRAL         KINDOF: an astronaut is a kind of human     (3fa8-8bfe-8270-9fe3) [ HYPONYM:"astronaut", HYPERNYM:"human" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"3fa8-8bfe-8270-9fe3", HYPONYM: "astronaut", HYPERNYM: "human"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3fa8-8bfe-8270-9fe3", HYPONYM: "astronaut", HYPERNYM: "human"]
+
+	// CENTRAL         KINDOF: human is a kind of organism     (d043-a668-7b2c-fc6f) [ HYPONYM:"human", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"d043-a668-7b2c-fc6f", HYPONYM: "human", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"d043-a668-7b2c-fc6f", HYPONYM: "human", HYPERNYM: "organism"]
+
+	// CENTRAL         MADEOF: sunlight is made of ultraviolet, infrared, and visible light     (78fa-2af9-0a4b-0688) [ OBJECT:"sunlight", MATERIAL:"ultraviolet infrare visible light" ]
+	//row autoRow8 = [UUID:"78fa-2af9-0a4b-0688", OBJECT: "sunlight", MATERIAL: "ultraviolet infrare visible light"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"78fa-2af9-0a4b-0688", OBJECT: "sunlight", MATERIAL: "ultraviolet infrare visible light"]
+
+	// CENTRAL        (OPTIONAL) CONTAINS: spacesuit backpacks contain oxygen     (3842-f52d-cf34-b6b7) [ OBJECT_AGENT:"spacesuit backpack", WHAT_IT_CONTAINS:"oxygen" ]
+	//row *autoRow9 = [UUID:"3842-f52d-cf34-b6b7", OBJECT_AGENT: "spacesuit backpack", WHAT_IT_CONTAINS: "oxygen"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"3842-f52d-cf34-b6b7", OBJECT_AGENT: "spacesuit backpack", WHAT_IT_CONTAINS: "oxygen"]
+
+	// LEXGLUE         OPPOSITES: reflecting light ; sound is the opposite of absorbing light ; sound     (9f3b-6ec5-eb1c-178d) [ VERB1:"reflect", THING_PROPERTY1:"light;sound", VERB2:"absorb", THING_PROPERTY2:"light;sound" ]
+	//row autoRow10 = [UUID:"9f3b-6ec5-eb1c-178d", VERB1: "reflect", THING_PROPERTY1: "light", VERB2: "absorb", THING_PROPERTY2: "light"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"9f3b-6ec5-eb1c-178d", VERB1: "reflect", THING_PROPERTY1: "light", VERB2: "absorb", THING_PROPERTY2: "light"]
+
+endinferencepattern

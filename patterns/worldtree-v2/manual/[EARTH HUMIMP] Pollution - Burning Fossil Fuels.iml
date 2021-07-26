@@ -1,0 +1,64 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Pollution_Burning_Fossil_Fuels
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       USEDFOR: coal is used to produce electricity by burning in coal-fire power stations     (b47d-ee7e-9ebb-f9db) [ AGENT_OBJECT:"coal", FOR_PURPOSE:"product", PATIENT:"electric", BY_THROUGH_HOW:"burn", SCOPE2:"in coal-fire power station;in coal fire power station" ]
+	//        HINTROW natural gas is used for generating electricity by burning in a power plant     (bd63-e63d-6604-125c) [ AGENT_OBJECT:"nature gas", FOR_PURPOSE:"generate", PATIENT:"electric", BY_THROUGH_HOW:"burn", SCOPE2:"in power plant" ]
+	//        HINTROW oil is used for producing electricity     (06de-ca22-f447-d929) [ AGENT_OBJECT:"oil", FOR_PURPOSE:"produce", PATIENT:"electric" ]
+	//  Notes: fossil fuel --> electricity
+	//row autoRow0 = [TABLE:"USEDFOR", PATIENT: "electric"] //OVER-CONSTR.
+	row *autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT:<fossilFuelName>]
+
+	// CENTRALSW       SOURCEOF: burning coal is a source of air pollution     (5ea5-d64d-d43e-4ef8) [ ACTION:"burn", OBJECT_PATIENT:"coal", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"air pollute" ]
+	//        HINTROW burning gasoline ; oil is a source of air pollution     (86ae-9fcc-40d0-77ab) [ ACTION:"burn", OBJECT_PATIENT:"gasoline;oil", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"air pollute" ]
+	//        HINTROW burning natural gas is a source of air pollution     (3fdc-68e4-e076-d381) [ ACTION:"burn", OBJECT_PATIENT:"nature gas", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"air pollute" ]
+	//row autoRow1 = [TABLE:"SOURCEOF", ACTION: "burn", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "air pollute"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"SOURCEOF", OBJECT_PATIENT:<fossilFuelName> || "fossil fuel", ACTION: "burn", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "air pollute"]
+
+	// CENTRALSW       USEDFOR: coal is used for generating heat by burning     (7599-58ef-3f3c-3428) [ AGENT_OBJECT:"coal", FOR_PURPOSE:"generate", PATIENT:"heat", BY_THROUGH_HOW:"burn" ]
+	//        HINTROW natural gas is used for generating heat by burning in a furnace ; in a stove     (9f86-6ae1-8a59-fef8) [ AGENT_OBJECT:"nature gas", FOR_PURPOSE:"generate", PATIENT:"heat", BY_THROUGH_HOW:"burn", SCOPE2:"in furnace;in stave" ]
+	//  Notes: fossil fuel --> heat
+	//row autoRow2 = [TABLE:"USEDFOR", FOR_PURPOSE: "generate", PATIENT: "heat", BY_THROUGH_HOW: "burn"] //OVER-CONSTR.
+	row *autoRow2 = [TABLE:"USEDFOR", AGENT_OBJECT:<fossilFuelName>, BY_THROUGH_HOW: "burn"]  // FOR_PURPOSE: "generate", PATIENT: "heat",
+
+	// CENTRALSW       REQUIRES: using coal requires burning coal     (27e9-ab90-81ed-4957) [ ACTION1:"use", OBJECT_AGENT_PROCESS:"coal", VERB_REQUIRES:"require", ACTION2:"burn", OBJECT:"coal" ]
+	//        HINTROW using the fuel requires burning the fuel     (4084-fc3a-3d6f-6346) [ ACTION1:"use", OBJECT_AGENT_PROCESS:"fuel", VERB_REQUIRES:"require", ACTION2:"burn", OBJECT:"fuel" ]
+	//row autoRow3 = [TABLE:"REQUIRES", ACTION1: "use", VERB_REQUIRES: "require", ACTION2: "burn"] //OVER-CONSTR.
+	row *autoRow3 = [TABLE:"REQUIRES", ACTION1: "use", OBJECT_AGENT_PROCESS:<fossilFuelName>, VERB_REQUIRES: "require", ACTION2: "burn"]
+
+	// GROUNDING       KINDOF: coal is a kind of fossil fuel     (cab1-f3c3-59de-b682) [ HYPONYM:"coal", HYPERNYM:"fossil fuel" ]
+	//        HINTROW oil is a kind of fossil fuel     (3092-233a-f999-2512) [ HYPONYM:"oil", SCOPE1:"fossil", HYPERNYM:"fuel" ]
+	//        HINTROW petroleum is a kind of fossil fuel     (88c2-bbdf-af6c-6742) [ HYPONYM:"petroleum", SCOPE1:"fossil", HYPERNYM:"fuel" ]
+	//        HINTROW natural gas is a kind of fossil fuel     (2355-0cfa-86f8-5767) [ HYPONYM:"nature gas", HYPERNYM:"fossil fuel" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow4 = [TABLE:"KINDOF"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: <fossilFuelName>, HYPERNYM: "fossil fuel"]
+
+	// CENTRAL         CAUSE: air pollution causes a slow change in ecosystem     (45e3-d495-cac5-11a0) [ CONDITION_AGENT_OBJECT:"air pollute", RESULT_AGENT:"slow change", RESULT_PATIENT:"in ecosystem" ]
+	//row autoRow5 = [UUID:"45e3-d495-cac5-11a0", CONDITION_AGENT_OBJECT: "air pollute", RESULT_AGENT: "slow change", RESULT_PATIENT: "in ecosystem"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"45e3-d495-cac5-11a0", CONDITION_AGENT_OBJECT: "air pollute", RESULT_AGENT: "slow change", RESULT_PATIENT: "in ecosystem"]
+
+	// CENTRAL         AFFECT: pollution has a negative impact on the environment ; air quality ; water quality ; society     (d116-6f25-b3ac-7d88) [ ACTOR_WHO:"pollute", POSITIVE_NEGATIVE:"negative", PATIENT:"environment;air quality;water quality;society" ]
+	//row autoRow6 = [UUID:"d116-6f25-b3ac-7d88", ACTOR_WHO: "pollute", POSITIVE_NEGATIVE: "negative", PATIENT: "air quality"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"d116-6f25-b3ac-7d88", ACTOR_WHO: "pollute", POSITIVE_NEGATIVE: "negative", PATIENT: "air quality"]
+
+	// CENTRAL         CAUSE: fossil fuels burning causes pollution     (46e6-9074-4802-bd21) [ CONDITION_AGENT_OBJECT:"fossil fuel", CONDITION_VERB:"burn", RESULT_AGENT:"pollute" ]
+	//row autoRow7 = [UUID:"46e6-9074-4802-bd21", CONDITION_AGENT_OBJECT: "fossil fuel", CONDITION_VERB: "burn", RESULT_AGENT: "pollute"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"46e6-9074-4802-bd21", CONDITION_AGENT_OBJECT: "fossil fuel", CONDITION_VERB: "burn", RESULT_AGENT: "pollute"]
+
+	// CENTRAL         ACTION: a source of something emits ; produces ; generates ; provides that something     (b877-a58b-f75a-3998) [ AGENT_OBJECT:"source of something", ACTION2:"emit;produce;generate;provide", OBJECT_PROPERTY:"that something" ]
+	//row autoRow8 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"]
+
+	// CENTRAL         KINDOF: fossil fuels are a kind of energy resource     (20ac-3022-d732-df85) [ HYPONYM:"fossil fuel", SCOPE1:"energy", HYPERNYM:"resource" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"20ac-3022-d732-df85", HYPONYM: "fossil fuel", SCOPE1: "energy", HYPERNYM: "resource"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"20ac-3022-d732-df85", HYPONYM: "fossil fuel", SCOPE1: "energy", HYPERNYM: "resource"]
+
+endinferencepattern

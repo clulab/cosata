@@ -1,0 +1,101 @@
+// Automatically converted pattern
+inferencepattern MAT_PROPMATERIAL_Magnetic_Attraction
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-MAGNETISM: soft iron ; iron is always ferromagnetic ; magnetic     (8e64-7c6e-2572-2438) [ MATERIAL:"soft iron;iron", QUALIFIER:"always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC:"ferromagnetic;magnetic" ]
+	//        HINTROW cobalt is always ferromagnetic ; magnetic     (f0be-8ee2-3dc9-c516) [ MATERIAL:"cobalt", QUALIFIER:"always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC:"ferromagnetic;magnetic" ]
+	//        HINTROW nickel is always ferromagnetic ; magnetic     (b647-16b3-9341-d4de) [ MATERIAL:"nickel", QUALIFIER:"always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC:"ferromagnetic;magnetic" ]
+	//        HINTROW steel ; carbon steel is always ferromagnetic ; magnetic     (794a-7ac4-5e27-9d39) [ MATERIAL:"steel;carbon steel", QUALIFIER:"always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC:"ferromagnetic;magnetic" ]
+	//  Notes: metal X is magnetic
+	//row autoRow0 = [TABLE:"PROP-MAGNETISM", QUALIFIER: "always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC: "ferromagnetic"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-MAGNETISM", QUALIFIER: "always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC: "ferromagnetic"]
+
+	// CENTRALSW       CONTAINS: ferrous metals contain iron     (7114-deda-e0a0-d3e9) [ ADJ:"ferrous", OBJECT_AGENT:"metal", WHAT_IT_CONTAINS:"iron" ]
+	//        HINTROW rocks often contain large amounts of metal     (f853-8175-3c98-28c5) [ OBJECT_AGENT:"rock", QUANTIFIER:"often", QUANTITY_RANGE:"large amount of", WHAT_IT_CONTAINS:"metal" ]
+	//  Notes: something contain X
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"CONTAINS"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow1 = [TABLE:"CONTAINS"]
+
+	// CENTRALSW       PROP-MAGNETISM: copper is always nonmagnetic     (dc80-6330-427e-36ff) [ MATERIAL:"copper", QUALIFIER:"always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC:"nonmagnetic" ]
+	//        HINTROW aluminum is always nonmagnetic     (7cc7-9198-9358-fdf5) [ MATERIAL:"aluminum", QUALIFIER:"always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC:"nonmagnetic" ]
+	//  Notes: metal Z is nonmagnetic
+	//row autoRow2 = [TABLE:"PROP-MAGNETISM", MATERIAL: <copper_0>, QUALIFIER: "always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC: "nonmagnetic"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"PROP-MAGNETISM", MATERIAL: <copper_0>, QUALIFIER: "always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC: "nonmagnetic"]
+
+	// GROUNDING       MADEOF: a paper clip is often made of magnetic metals ; ferromagnetic metals     (4e29-cc71-c464-bcb5) [ OBJECT:"paper clip", QUALIFIER:"be often", MATERIAL:"magnetic metal;ferromagnetic metal" ]
+	//        HINTROW iron nails are made of iron     (b9dd-961e-269e-aa5d) [ OBJECT:"iron nail", MATERIAL:"iron" ]
+	//        HINTROW nails are often made of iron     (1141-2506-451f-587c) [ OBJECT:"nail", QUALIFIER:"be often", MATERIAL:"iron" ]
+	//  Notes: Object Y is made of X
+//WARNING! Slot with no constraints.
+//	//row autoRow3 = [TABLE:"MADEOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow3 = [TABLE:"MADEOF"]
+
+	// GROUNDING       KINDOF: a paper clip is a kind of object     (a5e7-8257-cf9d-c8ef) [ HYPONYM:"paper clip", HYPERNYM:"object" ]
+	//        HINTROW a rock is a kind of object     (7c8b-3728-1d36-f922) [ HYPONYM:"rock", HYPERNYM:"object" ]
+	//        HINTROW a nail is a kind of object     (b3d3-c3da-3c51-659e) [ HYPONYM:"nail", HYPERNYM:"object" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: copper is a kind of metal     (9cea-7fba-e1c5-f8b3) [ HYPONYM:"copper", HYPERNYM:"metal" ]
+	//        HINTROW aluminum is a kind of metal     (a580-1b9e-6ec9-a275) [ HYPONYM:"aluminum", HYPERNYM:"metal" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPONYM: <copper_0>, HYPERNYM: "metal"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPONYM: <copper_0>, HYPERNYM: "metal"]
+
+	// GROUNDING       KINDOF: iron is a kind of metal     (de4c-ca36-c336-540f) [ HYPONYM:"iron", HYPERNYM:"metal" ]
+	//        HINTROW steel is a kind of metal     (d49f-dde6-0083-0a5b) [ HYPONYM:"steel", HYPERNYM:"metal" ]
+	//        HINTROW nickel is a kind of metal     (b9cc-677a-5ae7-0e65) [ HYPONYM:"nickel", HYPERNYM:"metal" ]
+	//row autoRow6 = [TABLE:"KINDOF", HYPERNYM: "metal"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPERNYM: "metal"]
+
+	// CENTRAL         PROP-GENERIC: magnetism is a property of materials ; objects and includes ordered values of nonmagnetic ; magnetic     (4a27-3046-0e5d-9891) [ X:"magnetism", Y:"material;object", ORDERED_UNORDERED:"order", VALUES:"nonmagnetic;magnetic" ]
+	//row autoRow7 = [UUID:"4a27-3046-0e5d-9891", X: "magnetism", Y: "material", ORDERED_UNORDERED: "order", VALUES: "nonmagnetic"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4a27-3046-0e5d-9891", X: "magnetism", Y: "material", ORDERED_UNORDERED: "order", VALUES: "nonmagnetic"]
+
+	// CENTRAL         IFTHEN: if something contains a large amount of magnetic material then that something will attract magnets     (95f7-f635-f0ef-b67c) [ THING:"something", ACTION1:"contain", ADJ_QUANTITY1A:"large amount of", OBJECT_PATIENT1:"magnetic material", ACTOR_AGENT_PROCESS2:"that something", ACTION3:"attract", OBJECT_PROPERTY3:"magnet" ]
+	//row autoRow8 = [UUID:"95f7-f635-f0ef-b67c", THING: "something", ACTION1: "contain", ADJ_QUANTITY1A: "large amount of", OBJECT_PATIENT1: "magnetic material", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "attract", OBJECT_PROPERTY3: "magnet"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"95f7-f635-f0ef-b67c", THING: "something", ACTION1: "contain", ADJ_QUANTITY1A: "large amount of", OBJECT_PATIENT1: "magnetic material", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "attract", OBJECT_PROPERTY3: "magnet"]
+
+	// CENTRAL         ACTION: a magnet attracts magnetic metals ; ferromagnetic metals through magnetism     (178a-9dd1-8569-86f1) [ AGENT_OBJECT:"magnet", ACTION2:"attract", OBJECT_PROPERTY:"magnetic metal;ferromagnetic metal", HOW:"magnetism" ]
+	//row autoRow9 = [UUID:"178a-9dd1-8569-86f1", AGENT_OBJECT: "magnet", ACTION2: "attract", OBJECT_PROPERTY: "magnetic metal", HOW: "magnetism"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"178a-9dd1-8569-86f1", AGENT_OBJECT: "magnet", ACTION2: "attract", OBJECT_PROPERTY: "magnetic metal", HOW: "magnetism"]
+
+	// CENTRAL         ACTION: magnetic attraction pulls two objects together     (39b0-792c-8e27-6758) [ ADJ:"magnetic", AGENT_OBJECT:"attraction", ACTION2:"pull", OBJECT_PROPERTY:"two object", WHEN_WHERE:"together" ]
+	//row autoRow10 = [UUID:"39b0-792c-8e27-6758", ADJ: "magnetic", AGENT_OBJECT: "attraction", ACTION2: "pull", OBJECT_PROPERTY: "two object", WHEN_WHERE: "together"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"39b0-792c-8e27-6758", ADJ: "magnetic", AGENT_OBJECT: "attraction", ACTION2: "pull", OBJECT_PROPERTY: "two object", WHEN_WHERE: "together"]
+
+	// CENTRAL         ACTION: a magnet will not attract nonmagnetic metals ; nonmagnetic materials     (23a8-e177-f667-e30f) [ AGENT_OBJECT:"magnet", ACTION2:"not attract", OBJECT_PROPERTY:"nonmagnetic metal;nonmagnetic material" ]
+	//row autoRow11 = [UUID:"23a8-e177-f667-e30f", AGENT_OBJECT: "magnet", ACTION2: "not attract", OBJECT_PROPERTY: "nonmagnetic metal"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"23a8-e177-f667-e30f", AGENT_OBJECT: "magnet", ACTION2: "not attract", OBJECT_PROPERTY: "nonmagnetic metal"]
+
+	// CENTRAL         IFTHEN: if something is made of something ; a material then that something contains that something ; that material     (fec7-efec-ee12-537e) [ THING:"something", ACTION1:"make of", OBJECT_PROPERTY1:"something;material", ACTOR_AGENT_PROCESS2:"that something", ACTION3:"contain", OBJECT_PROPERTY3:"that something;that material" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"fec7-efec-ee12-537e", THING: "something", ACTION1: "make of", OBJECT_PROPERTY1: "something", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "contain", OBJECT_PROPERTY3: "that something"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"fec7-efec-ee12-537e", THING: "something", ACTION1: "make of", OBJECT_PROPERTY1: "something", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "contain", OBJECT_PROPERTY3: "that something"]
+
+	// CENTRAL         KINDOF: magnetism is a kind of physical property     (68c8-0c77-7fa9-5633) [ HYPONYM:"magnetism", SCOPE1:"physical", HYPERNYM:"property" ]
+	//row autoRow13 = [UUID:"68c8-0c77-7fa9-5633", HYPONYM: "magnetism", SCOPE1: "physical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"68c8-0c77-7fa9-5633", HYPONYM: "magnetism", SCOPE1: "physical", HYPERNYM: "property"]
+
+	// CENTRAL         IFTHEN: if a magnet is attracted to a metal then that magnet will stick to that metal     (99b9-04cf-f952-473a) [ THING:"magnet", ACTION1:"attract", OBJECT_PATIENT1:"metal", ACTOR_AGENT_PROCESS2:"that magnet", ACTION3:"stick", OBJECT_PROPERTY3:"metal" ]
+	//row autoRow14 = [UUID:"99b9-04cf-f952-473a", THING: "magnet", ACTION1: "attract", OBJECT_PATIENT1: "metal", ACTOR_AGENT_PROCESS2: "that magnet", ACTION3: "stick", OBJECT_PROPERTY3: "metal"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"99b9-04cf-f952-473a", THING: "magnet", ACTION1: "attract", OBJECT_PATIENT1: "metal", ACTOR_AGENT_PROCESS2: "that magnet", ACTION3: "stick", OBJECT_PROPERTY3: "metal"]
+
+	// CENTRAL         KINDOF: metal is a kind of material     (95c4-ec5e-bce9-afd8) [ HYPONYM:"metal", HYPERNYM:"material" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"95c4-ec5e-bce9-afd8", HYPONYM: "metal", HYPERNYM: "material"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"95c4-ec5e-bce9-afd8", HYPONYM: "metal", HYPERNYM: "material"]
+
+	// CENTRAL         PROP-MAGNETISM: metal is sometimes magnetic     (47eb-c4e4-e924-7160) [ MATERIAL:"metal", QUALIFIER:"sometimes", MAGNETIC_NONMAGNETIC_FERROMAGNETIC:"magnetic" ]
+	//row autoRow16 = [UUID:"47eb-c4e4-e924-7160", MATERIAL: "metal", QUALIFIER: "sometimes", MAGNETIC_NONMAGNETIC_FERROMAGNETIC: "magnetic"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"47eb-c4e4-e924-7160", MATERIAL: "metal", QUALIFIER: "sometimes", MAGNETIC_NONMAGNETIC_FERROMAGNETIC: "magnetic"]
+
+endinferencepattern

@@ -1,0 +1,64 @@
+// Automatically converted pattern
+inferencepattern OTHER_HIST_Droughts_effect_on_Farming
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       AFFECT: the decrease of something required by an organism has a negative impact on that organism 's survival ; that organism 's ability     (f346-e8eb-6338-4e34) [ ACTOR_WHO:"decrease", OBJECT_PROPERTY:"of something require by organism", POSITIVE_NEGATIVE:"negative", PATIENT:"organism survive;organism ability" ]
+	//        HINTROW a required resource being low in availability has a negative impact on the something that requires that resource     (09f9-ddfd-fa69-b278) [ ACTOR_WHO:"require resource", VERB:"be low in availability", POSITIVE_NEGATIVE:"negative", PATIENT:"something require that resource" ]
+	//row autoRow0 = [TABLE:"AFFECT", POSITIVE_NEGATIVE: "negative"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"AFFECT", POSITIVE_NEGATIVE: "negative"]
+
+	// GROUNDING       KINDOF: crops are a kind of edible plant for eating     (281b-9541-e1c7-6c92) [ HYPONYM:"crop", SCOPE1:"edible", HYPERNYM:"plant", FOR_PURPOSE:"eat" ]
+	//        HINTROW a marsh willow herb is a kind of plant     (ab88-7ab1-d6b7-0e6c) [ HYPONYM:"marsh willow herb", HYPERNYM:"plant" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "crop", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// CENTRAL         IFTHEN: if a plant ; crop requires less water then that plant ; crop will survive in a drought     (7751-b1fd-0582-4f2a) [ THING:"plant;crop", ACTION1:"require", ADJ_QUANTITY1A:"little", OBJECT_PATIENT1:"water", ACTOR_AGENT_PROCESS2:"plant;crop", ACTION3:"survive", SCOPE4:"in drought" ]
+	//row autoRow2 = [UUID:"7751-b1fd-0582-4f2a", THING: "plant", ACTION1: "require", ADJ_QUANTITY1A: "little", OBJECT_PATIENT1: "water", ACTOR_AGENT_PROCESS2: "plant", ACTION3: "survive", SCOPE4: "in drought"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"7751-b1fd-0582-4f2a", THING: "plant", ACTION1: "require", ADJ_QUANTITY1A: "little", OBJECT_PATIENT1: "water", ACTOR_AGENT_PROCESS2: "plant", ACTION3: "survive", SCOPE4: "in drought"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as dryness increases in an environment , the available water in that environment will decrease     (2999-5991-d180-65c1) [ QUANTITY_MEASURE1:"dryness", CHANGE1:"increase", SCOPE1B:"in environment", QUANTITY_MEASURE2:"available water", SCOPE2A:"in that environment", CHANGE2:"decrease" ]
+	//row autoRow3 = [UUID:"2999-5991-d180-65c1", QUANTITY_MEASURE1: "dryness", CHANGE1: "increase", SCOPE1B: "in environment", QUANTITY_MEASURE2: "available water", SCOPE2A: "in that environment", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"2999-5991-d180-65c1", QUANTITY_MEASURE1: "dryness", CHANGE1: "increase", SCOPE1B: "in environment", QUANTITY_MEASURE2: "available water", SCOPE2A: "in that environment", CHANGE2: "decrease"]
+
+	// CENTRAL         REQUIRES: a plants ; living things require water for survival ; to grow     (f3ed-dedc-2aad-109c) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"water", FOR_PURPOSE:"survive;grow" ]
+	//row autoRow4 = [UUID:"f3ed-dedc-2aad-109c", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "water", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"f3ed-dedc-2aad-109c", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "water", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as available water decreases , the population of plants will decrease     (c815-1f8a-8ea2-6492) [ QUANTITY_MEASURE1:"available water", CHANGE1:"decrease", QUANTITY_MEASURE2:"population", AGENT_ATTRIBUTE2:"of plant", CHANGE2:"decrease" ]
+	//row autoRow5 = [UUID:"c815-1f8a-8ea2-6492", QUANTITY_MEASURE1: "available water", CHANGE1: "decrease", QUANTITY_MEASURE2: "population", AGENT_ATTRIBUTE2: "of plant", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"c815-1f8a-8ea2-6492", QUANTITY_MEASURE1: "available water", CHANGE1: "decrease", QUANTITY_MEASURE2: "population", AGENT_ATTRIBUTE2: "of plant", CHANGE2: "decrease"]
+
+	// CENTRAL         CHANGE-VEC: drought is when available water decreases in an environment     (3492-2519-a7cc-d552) [ PROCESS_NAME_ACTION:"drought", AGENT_OBJECT:"available water", DIRECTION:"decrease", SCOPE2:"in environment" ]
+	//row autoRow6 = [UUID:"3492-2519-a7cc-d552", PROCESS_NAME_ACTION: "drought", AGENT_OBJECT: "available water", DIRECTION: "decrease", SCOPE2: "in environment"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3492-2519-a7cc-d552", PROCESS_NAME_ACTION: "drought", AGENT_OBJECT: "available water", DIRECTION: "decrease", SCOPE2: "in environment"]
+
+	// CENTRAL         ACTION: a farmer farms crops ; plants for food     (4499-c264-9f56-7549) [ AGENT_OBJECT:"farmer", ACTION2:"farm", OBJECT_PROPERTY:"crop;plant", FOR_PURPOSE:"food" ]
+	//row autoRow7 = [UUID:"4499-c264-9f56-7549", AGENT_OBJECT: "farmer", ACTION2: "farm", OBJECT_PROPERTY: "crop", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4499-c264-9f56-7549", AGENT_OBJECT: "farmer", ACTION2: "farm", OBJECT_PROPERTY: "crop", FOR_PURPOSE: "food"]
+
+	// CENTRAL         KINDOF: a drought is a kind of natural event     (f997-a1ce-5dd5-9716) [ HYPONYM:"drought", SCOPE1:"nature", HYPERNYM:"event" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"f997-a1ce-5dd5-9716", HYPONYM: "drought", SCOPE1: "nature", HYPERNYM: "event"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f997-a1ce-5dd5-9716", HYPONYM: "drought", SCOPE1: "nature", HYPERNYM: "event"]
+
+	// CENTRAL         KINDOF: a plant is a kind of living thing     (2e89-d8e8-a8fb-9acc) [ HYPONYM:"plant", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"2e89-d8e8-a8fb-9acc", HYPONYM: "plant", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"2e89-d8e8-a8fb-9acc", HYPONYM: "plant", HYPERNYM: "live thing"]
+
+	// CENTRAL         KINDOF: water is a kind of natural resource     (1c04-5228-7c5d-ab8a) [ HYPONYM:"water", HYPERNYM:"nature resource" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"1c04-5228-7c5d-ab8a", HYPONYM: "water", HYPERNYM: "nature resource"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"1c04-5228-7c5d-ab8a", HYPONYM: "water", HYPERNYM: "nature resource"]
+
+	// LEXGLUE         SYNONYMY: an organism is a living thing     (87a0-dd02-dd6d-ee60) [ X1:"organism", X2:"live thing" ]
+	//row autoRow11 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"]
+
+endinferencepattern

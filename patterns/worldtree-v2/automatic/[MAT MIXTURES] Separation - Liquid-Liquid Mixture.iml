@@ -1,0 +1,65 @@
+// Automatically converted pattern
+inferencepattern MAT_MIXTURES_Separation_Liquid_Liquid_Mixture
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       ACTION: sodium chloride dissolves in water when they are combined     (6d0b-5a2b-14b5-805d) [ AGENT_OBJECT:"sodium chloride", ACTION2:"dissolve in", OBJECT_PROPERTY:"water", WHEN_WHERE:"be combine" ]
+	//        HINTROW sugar dissolves in water when they are combined     (78d4-18c9-9484-0154) [ AGENT_OBJECT:"sugar", ACTION2:"dissolve in", OBJECT_PROPERTY:"water", WHEN_WHERE:"be combine" ]
+	//  Notes: solution example
+	//row autoRow0 = [TABLE:"ACTION", ACTION2: "dissolve in", OBJECT_PROPERTY: "water", WHEN_WHERE: "be combine"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ACTION", ACTION2: "dissolve in", OBJECT_PROPERTY: "water", WHEN_WHERE: "be combine"]
+
+	// GROUNDING       KINDOF: sugar is a kind of pure substance     (826e-4bd3-1390-0182) [ HYPONYM:"sugar", SCOPE1:"pure", HYPERNYM:"substance" ]
+	//        HINTROW salt is a kind of pure substance     (1fd0-279c-ed27-afca) [ HYPONYM:"salt", SCOPE1:"pure", HYPERNYM:"substance" ]
+	//  Notes: solute substance examples
+	//row autoRow1 = [TABLE:"KINDOF", SCOPE1: "pure", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", SCOPE1: "pure", HYPERNYM: "substance"]
+
+	// GROUNDING       KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//  Notes: solvent examples
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "water", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "water", HYPERNYM: "substance"]
+
+	// CENTRAL         USEDFOR: evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate     (317c-5ea4-8f0c-5be5) [ ACTION:"evaporate;boil", QUALIFIER:"be", FOR_PURPOSE:"separate", PATIENT:"solution", BY_THROUGH_HOW:"allow solvent evaporate" ]
+	//row autoRow3 = [UUID:"317c-5ea4-8f0c-5be5", ACTION: "evaporate", QUALIFIER: "be", FOR_PURPOSE: "separate", PATIENT: "solution", BY_THROUGH_HOW: "allow solvent evaporate"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"317c-5ea4-8f0c-5be5", ACTION: "evaporate", QUALIFIER: "be", FOR_PURPOSE: "separate", PATIENT: "solution", BY_THROUGH_HOW: "allow solvent evaporate"]
+
+	// CENTRAL         MADEOF: a solution is made of one substance dissolved in another substance     (f688-9579-bfb6-61d1) [ OBJECT:"solution", MATERIAL:"one substance dissolve in substance" ]
+	//row autoRow4 = [UUID:"f688-9579-bfb6-61d1", OBJECT: "solution", MATERIAL: "one substance dissolve in substance"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"f688-9579-bfb6-61d1", OBJECT: "solution", MATERIAL: "one substance dissolve in substance"]
+
+	// CENTRAL         ACTION: a solute can be dissolved in a solvent when they are combined     (7c08-85f6-fae2-8190) [ AGENT_OBJECT:"solute", QUANITIFIER:"be", ACTION2:"dissolve in", OBJECT_PROPERTY:"solvent", WHEN_WHERE:"be combine" ]
+	//row autoRow5 = [UUID:"7c08-85f6-fae2-8190", AGENT_OBJECT: "solute", QUANITIFIER: "be", ACTION2: "dissolve in", OBJECT_PROPERTY: "solvent", WHEN_WHERE: "be combine"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"7c08-85f6-fae2-8190", AGENT_OBJECT: "solute", QUANITIFIER: "be", ACTION2: "dissolve in", OBJECT_PROPERTY: "solvent", WHEN_WHERE: "be combine"]
+
+	// CENTRAL         PROP-MAT-PURITY-MIXTURE: a solution is a mixture     (d2e9-11e9-5d56-acb0) [ THING:"solution", MIXTURE_PURE_SUBSTANCE:"mixture" ]
+	//  Notes: 4c81-b2de-2121-602a->d2e9-11e9-5d56-acb0
+	//row autoRow6 = [UUID:"d2e9-11e9-5d56-acb0", THING: "solution", MIXTURE_PURE_SUBSTANCE: "mixture"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"d2e9-11e9-5d56-acb0", THING: "solution", MIXTURE_PURE_SUBSTANCE: "mixture"]
+
+	// CENTRAL        (OPTIONAL) FORMEDBY: an mixture is formed by two or more substances combined together physically     (9247-2bc4-e950-d3dd) [ OBJECT:"mixture", AGENT_PROCESS:"two much substance", VERB:"combine together", SCOPE:"physically" ]
+	//row *autoRow7 = [UUID:"9247-2bc4-e950-d3dd", OBJECT: "mixture", AGENT_PROCESS: "two much substance", VERB: "combine together", SCOPE: "physically"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"9247-2bc4-e950-d3dd", OBJECT: "mixture", AGENT_PROCESS: "two much substance", VERB: "combine together", SCOPE: "physically"]
+
+	// CENTRAL         KINDOF: solution is a kind of liquid     (7fae-fd07-1d25-28ad) [ HYPONYM:"solution", HYPERNYM:"liquid" ]
+	//row autoRow8 = [UUID:"7fae-fd07-1d25-28ad", HYPONYM: "solution", HYPERNYM: "liquid"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"7fae-fd07-1d25-28ad", HYPONYM: "solution", HYPERNYM: "liquid"]
+
+	// CENTRAL        (OPTIONAL) ACTION: dissolving is when the solute spread evenly through the solvent     (364c-916c-57f0-8607) [ DEFINITION_NAME:"dissolve", AGENT_OBJECT:"solute", ACTION2:"spread", OBJECT_PROPERTY:"evenly", WHEN_WHERE:"through solvent" ]
+	//row *autoRow9 = [UUID:"364c-916c-57f0-8607", DEFINITION_NAME: "dissolve", AGENT_OBJECT: "solute", ACTION2: "spread", OBJECT_PROPERTY: "evenly", WHEN_WHERE: "through solvent"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"364c-916c-57f0-8607", DEFINITION_NAME: "dissolve", AGENT_OBJECT: "solute", ACTION2: "spread", OBJECT_PROPERTY: "evenly", WHEN_WHERE: "through solvent"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: dissolving a substance in water causes the water to taste like that substance     (735a-963c-130f-059c) [ CONDITION_VERB:"dissolve", CONDITION_PATIENT:"substance", SCOPE1:"in water", RESULT_AGENT:"water", RESULT_VERB:"taste", RESULT_PATIENT:"like substance" ]
+	//row *autoRow10 = [UUID:"735a-963c-130f-059c", CONDITION_VERB: "dissolve", CONDITION_PATIENT: "substance", SCOPE1: "in water", RESULT_AGENT: "water", RESULT_VERB: "taste", RESULT_PATIENT: "like substance"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"735a-963c-130f-059c", CONDITION_VERB: "dissolve", CONDITION_PATIENT: "substance", SCOPE1: "in water", RESULT_AGENT: "water", RESULT_VERB: "taste", RESULT_PATIENT: "like substance"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: when one substance is dissolved in another substance then the molecules of that other substance exist in solution     (340e-90d3-2c17-f434) [ ADJ_QUANTITY1:"one", THING:"substance", ACTION1:"dissolve in", OBJECT_PATIENT1:"substance", ADJ_QUANTITY2:"molecule of", ACTOR_AGENT_PROCESS2:"other substance", ACTION3:"exist", OBJECT_PROPERTY3:"in solution" ]
+	//row *autoRow11 = [UUID:"340e-90d3-2c17-f434", ADJ_QUANTITY1: "one", THING: "substance", ACTION1: "dissolve in", OBJECT_PATIENT1: "substance", ADJ_QUANTITY2: "molecule of", ACTOR_AGENT_PROCESS2: "other substance", ACTION3: "exist", OBJECT_PROPERTY3: "in solution"] //OVER-CONSTR.
+	row *autoRow11 = [UUID:"340e-90d3-2c17-f434", ADJ_QUANTITY1: "one", THING: "substance", ACTION1: "dissolve in", OBJECT_PATIENT1: "substance", ADJ_QUANTITY2: "molecule of", ACTOR_AGENT_PROCESS2: "other substance", ACTION3: "exist", OBJECT_PROPERTY3: "in solution"]
+
+endinferencepattern

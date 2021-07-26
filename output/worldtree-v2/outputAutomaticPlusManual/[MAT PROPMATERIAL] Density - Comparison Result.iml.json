@@ -1,0 +1,44 @@
+{"patternMatches": [
+{
+	"patternName":"MAT_PROPMATERIAL_Density_Comparison_Result",
+	"matches":[
+		{
+		"uuids": ["54ff-9d51-da43-e4f9","4b8b-1f9b-9227-55b4","9470-ce58-a3b8-9f1f","1758-a1b7-4083-9e99","3f2b-87bb-f73a-3e5d","ba9b-b2e3-d362-1dd0","a081-932e-1f21-c78c"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "54ff-9d51-da43-e4f9", "rowText": "denser liquids ; particles in liquids ; materials settle below liquids or particles in liquids ; materials that are less dense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4b8b-1f9b-9227-55b4", "rowText": "less dense liquids ; particles in liquids ; materials float liquids ; particiles in liquids ; materials that are more dense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9470-ce58-a3b8-9f1f", "rowText": "ice is a kind of water phase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1758-a1b7-4083-9e99", "rowText": "matter ; materials ; substances are made of atoms ; particles", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ba9b-b2e3-d362-1dd0", "rowText": "a solid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a081-932e-1f21-c78c", "rowText": "if an object in a fluid is more dense than that fluid then that object will sink in that fluid because of gravity", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["54ff-9d51-da43-e4f9","4b8b-1f9b-9227-55b4","9470-ce58-a3b8-9f1f","1758-a1b7-4083-9e99","3f2b-87bb-f73a-3e5d","ba9b-b2e3-d362-1dd0"],
+		"slots": [
+			{"rowSlotName": "autoRow3", "uuid": "54ff-9d51-da43-e4f9", "rowText": "denser liquids ; particles in liquids ; materials settle below liquids or particles in liquids ; materials that are less dense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4b8b-1f9b-9227-55b4", "rowText": "less dense liquids ; particles in liquids ; materials float liquids ; particiles in liquids ; materials that are more dense", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "9470-ce58-a3b8-9f1f", "rowText": "ice is a kind of water phase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "1758-a1b7-4083-9e99", "rowText": "matter ; materials ; substances are made of atoms ; particles", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3f2b-87bb-f73a-3e5d", "rowText": "a liquid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ba9b-b2e3-d362-1dd0", "rowText": "a solid is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" }
+		]
+		}
+	]
+}
+]}
+

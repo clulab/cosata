@@ -1,0 +1,536 @@
+{"patternMatches": [
+{
+	"patternName":"MAT_CHANGES_Gas_Containers_Behaviours",
+	"matches":[
+		{
+		"uuids": ["02c3-9c98-38d9-3711","70ac-58d8-10b4-1313","511c-d022-b296-0c49","762f-5f24-90ad-ff00","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "70ac-58d8-10b4-1313", "rowText": "air is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "511c-d022-b296-0c49", "rowText": "a balloon is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "762f-5f24-90ad-ff00", "rowText": "a balloon is highly flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"balloon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"balloon" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","70ac-58d8-10b4-1313","cccd-e81f-c177-7b89","d8cd-c383-3563-057f","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "70ac-58d8-10b4-1313", "rowText": "air is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cccd-e81f-c177-7b89", "rowText": "a beach ball is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d8cd-c383-3563-057f", "rowText": "a beach ball is flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","96ff-31bb-ea13-9aff","511c-d022-b296-0c49","762f-5f24-90ad-ff00","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "96ff-31bb-ea13-9aff", "rowText": "carbon dioxide is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "511c-d022-b296-0c49", "rowText": "a balloon is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "762f-5f24-90ad-ff00", "rowText": "a balloon is highly flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"balloon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"balloon" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","96ff-31bb-ea13-9aff","cccd-e81f-c177-7b89","d8cd-c383-3563-057f","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "96ff-31bb-ea13-9aff", "rowText": "carbon dioxide is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cccd-e81f-c177-7b89", "rowText": "a beach ball is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d8cd-c383-3563-057f", "rowText": "a beach ball is flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","1a38-d031-a283-b5aa","511c-d022-b296-0c49","762f-5f24-90ad-ff00","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1a38-d031-a283-b5aa", "rowText": "carbon monoxide is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "511c-d022-b296-0c49", "rowText": "a balloon is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "762f-5f24-90ad-ff00", "rowText": "a balloon is highly flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"balloon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"balloon" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","1a38-d031-a283-b5aa","cccd-e81f-c177-7b89","d8cd-c383-3563-057f","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1a38-d031-a283-b5aa", "rowText": "carbon monoxide is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cccd-e81f-c177-7b89", "rowText": "a beach ball is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d8cd-c383-3563-057f", "rowText": "a beach ball is flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","a4e7-1e7b-d533-2a7f","511c-d022-b296-0c49","762f-5f24-90ad-ff00","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a4e7-1e7b-d533-2a7f", "rowText": "helium is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "511c-d022-b296-0c49", "rowText": "a balloon is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "762f-5f24-90ad-ff00", "rowText": "a balloon is highly flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"balloon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"balloon" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","a4e7-1e7b-d533-2a7f","cccd-e81f-c177-7b89","d8cd-c383-3563-057f","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a4e7-1e7b-d533-2a7f", "rowText": "helium is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cccd-e81f-c177-7b89", "rowText": "a beach ball is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d8cd-c383-3563-057f", "rowText": "a beach ball is flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","bcb9-f1d4-4c6d-cb70","511c-d022-b296-0c49","762f-5f24-90ad-ff00","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bcb9-f1d4-4c6d-cb70", "rowText": "hydrogen is a kind of gas at room temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "511c-d022-b296-0c49", "rowText": "a balloon is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "762f-5f24-90ad-ff00", "rowText": "a balloon is highly flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"balloon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"balloon" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","bcb9-f1d4-4c6d-cb70","cccd-e81f-c177-7b89","d8cd-c383-3563-057f","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bcb9-f1d4-4c6d-cb70", "rowText": "hydrogen is a kind of gas at room temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cccd-e81f-c177-7b89", "rowText": "a beach ball is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d8cd-c383-3563-057f", "rowText": "a beach ball is flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","8005-4f1a-6744-1a05","511c-d022-b296-0c49","762f-5f24-90ad-ff00","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8005-4f1a-6744-1a05", "rowText": "nitrogen is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "511c-d022-b296-0c49", "rowText": "a balloon is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "762f-5f24-90ad-ff00", "rowText": "a balloon is highly flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"balloon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"balloon" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","8005-4f1a-6744-1a05","cccd-e81f-c177-7b89","d8cd-c383-3563-057f","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8005-4f1a-6744-1a05", "rowText": "nitrogen is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cccd-e81f-c177-7b89", "rowText": "a beach ball is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d8cd-c383-3563-057f", "rowText": "a beach ball is flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","16b7-673f-bc0d-ed99","511c-d022-b296-0c49","762f-5f24-90ad-ff00","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "16b7-673f-bc0d-ed99", "rowText": "oxygen is a kind of gas at room temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "511c-d022-b296-0c49", "rowText": "a balloon is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "762f-5f24-90ad-ff00", "rowText": "a balloon is highly flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"balloon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"balloon" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","16b7-673f-bc0d-ed99","cccd-e81f-c177-7b89","d8cd-c383-3563-057f","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "16b7-673f-bc0d-ed99", "rowText": "oxygen is a kind of gas at room temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cccd-e81f-c177-7b89", "rowText": "a beach ball is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d8cd-c383-3563-057f", "rowText": "a beach ball is flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","f2a5-90e6-9cfa-b646","511c-d022-b296-0c49","762f-5f24-90ad-ff00","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f2a5-90e6-9cfa-b646", "rowText": "steam is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "511c-d022-b296-0c49", "rowText": "a balloon is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "762f-5f24-90ad-ff00", "rowText": "a balloon is highly flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"balloon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"balloon" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","f2a5-90e6-9cfa-b646","cccd-e81f-c177-7b89","d8cd-c383-3563-057f","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f2a5-90e6-9cfa-b646", "rowText": "steam is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cccd-e81f-c177-7b89", "rowText": "a beach ball is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d8cd-c383-3563-057f", "rowText": "a beach ball is flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","eca6-0601-beb4-d425","511c-d022-b296-0c49","762f-5f24-90ad-ff00","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "eca6-0601-beb4-d425", "rowText": "propane ; C_{3}H_{8} is a kind of gas at room temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "511c-d022-b296-0c49", "rowText": "a balloon is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "762f-5f24-90ad-ff00", "rowText": "a balloon is highly flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"balloon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"balloon" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","eca6-0601-beb4-d425","cccd-e81f-c177-7b89","d8cd-c383-3563-057f","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "eca6-0601-beb4-d425", "rowText": "propane ; C_{3}H_{8} is a kind of gas at room temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cccd-e81f-c177-7b89", "rowText": "a beach ball is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d8cd-c383-3563-057f", "rowText": "a beach ball is flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","7e95-aa4d-92bd-7c26","511c-d022-b296-0c49","762f-5f24-90ad-ff00","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7e95-aa4d-92bd-7c26", "rowText": "argon is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "511c-d022-b296-0c49", "rowText": "a balloon is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "762f-5f24-90ad-ff00", "rowText": "a balloon is highly flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"balloon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"balloon" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","7e95-aa4d-92bd-7c26","cccd-e81f-c177-7b89","d8cd-c383-3563-057f","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7e95-aa4d-92bd-7c26", "rowText": "argon is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cccd-e81f-c177-7b89", "rowText": "a beach ball is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d8cd-c383-3563-057f", "rowText": "a beach ball is flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","0fbb-6a9d-3bae-1f22","511c-d022-b296-0c49","762f-5f24-90ad-ff00","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "0fbb-6a9d-3bae-1f22", "rowText": "chlorine is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "511c-d022-b296-0c49", "rowText": "a balloon is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "762f-5f24-90ad-ff00", "rowText": "a balloon is highly flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"balloon" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"balloon" }
+		]
+		},
+		{
+		"uuids": ["02c3-9c98-38d9-3711","0fbb-6a9d-3bae-1f22","cccd-e81f-c177-7b89","d8cd-c383-3563-057f","5364-1d90-a262-32e7","7223-ce74-ece2-36f8","f926-954b-1f50-2b3b","77a9-72bb-f1d8-77ff","42dd-0aaa-7736-eea9","aa73-331e-e970-c934","490c-5be7-2ff7-4bf2","6c6f-b690-6b57-aab6","6fee-d9ae-ebb5-586b"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "02c3-9c98-38d9-3711", "rowText": "matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "0fbb-6a9d-3bae-1f22", "rowText": "chlorine is a kind of gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cccd-e81f-c177-7b89", "rowText": "a beach ball is a kind of container", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d8cd-c383-3563-057f", "rowText": "a beach ball is flexible", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5364-1d90-a262-32e7", "rowText": "variability of shape ; variability of volume is a property of matter and includes values of variable ; definite", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7223-ce74-ece2-36f8", "rowText": "when a gas in an open container evaporates ; boils , that gas spreads out into the air", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f926-954b-1f50-2b3b", "rowText": "variability of shape ; variability of volume is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "77a9-72bb-f1d8-77ff", "rowText": "Matter in the gas phase has variable shape", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "42dd-0aaa-7736-eea9", "rowText": "Matter in the gas phase has variable volume", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "490c-5be7-2ff7-4bf2", "rowText": "a container contains objects ; material ; substances", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "6c6f-b690-6b57-aab6", "rowText": "gas is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "6fee-d9ae-ebb5-586b", "rowText": "indefinite means variable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"balloon_0", "value":"beach ball" }
+		]
+		}
+	]
+}
+]}
+

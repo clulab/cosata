@@ -1,0 +1,79 @@
+// NOTE: This IML has been edited from it's original state
+
+// Automatically converted pattern
+inferencepattern CEL_DISTANCES_Lightyears_as_Units
+
+	// Plain text description
+	description = "the constraint should be on light year"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-REL-DIST: the stars in the night sky are very far away from the Earth     (c14b-4971-7d32-d1d3) [ OBJECT_AGENT:"star", WHERE:"in night sky", RELATIVE_DISTANCE:"very far away", TO_REFERENCE_POINT:"earth" ]
+	//        HINTROW galaxies are located millions of light years from Earth     (f0be-4fd0-0aa2-8c07) [ THING_PROCESS:"galaxy", LOCATION:"million of light year from earth" ]
+	//        HINTROW galaxies are usually thousands of light years in diameter     (9327-bd92-ab15-a766) [ THING:"galaxy", QUALIFIER2:"usually", MAGNITUDE:"thousand of", VALUE:"light year", ATTRIBUTE:"in diameter" ]
+	//        HINTROW stars are located light years apart from each other     (21d4-1e30-ebeb-1963) [ THING_PROCESS:"star", LOCATION:"light year", SCOPE:"apart from other" ]
+	//        HINTROW the Andromeda galaxy is the galaxy that is 2.5 million light years to the Earth     (0239-6af2-d042-caf6) [ OBJECT_AGENT:"andromeda galaxy", CLASS:"galaxy", RELATIVE_DISTANCE:"2.5 million light year", TO_REFERENCE_POINT:"earth" ]
+	//  Notes: celestial bodies that use light years as units -- breakout to X dist Y
+//WARNING! Slot with no constraints.
+//	//row autoRow0 = [TABLE:"PROP-REL-DIST"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+	row autoRow0 = [TABLE:"PROP-REL-DIST", OBJECT_AGENT:<thing1>, TO_REFERENCE_POINT:<thing2>]
+
+	// GROUNDING       KINDOF: the Milky Way is a kind of galaxy     (bb53-e6b9-76fc-c48d) [ HYPONYM:"milky way", HYPERNYM:"galaxy" ]
+	//        HINTROW the Andromeda galaxy is a kind of galaxy     (a316-4d0b-8ec7-eb80) [ HYPONYM:"andromeda galaxy", HYPERNYM:"galaxy" ]
+	//  Notes: Specific to galaxies
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "milky way", HYPERNYM: "galaxy"] //OVER-CONSTR.
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "milky way", HYPERNYM: "galaxy"]
+
+	// GROUNDING       KINDOF: a star is a kind of celestial object ; celestial body     (dbe8-e776-f804-99a0) [ HYPONYM:"star", HYPERNYM:"celestial object;celestial body" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "star", HYPERNYM: "celestial object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <thing1>, HYPERNYM: "celestial object"]
+    row autoRow2a = [TABLE:"KINDOF", HYPONYM: <thing2>, HYPERNYM: "celestial object"]
+
+	// GROUNDING       KINDOF: the Sun is a kind of star     (af26-8083-b908-7d3b) [ HYPONYM:"sun", HYPERNYM:"star" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "sun", HYPERNYM: "star"] //OVER-CONSTR.
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "sun", HYPERNYM: "star"]
+
+	// CENTRAL         UNIT: light years ( ly ) are a astronomy unit used for measuring length ; distance generally used for values between 1 and 27000000000     (b0ba-81fa-58f4-a81b) [ UNIT:"light year", ABBREVIATION:"ly", PROPERTY:"length;distance", LOWERBOUND:"1", UPPERBOUND:"27000000000" ]
+	//row autoRow4 = [UUID:"b0ba-81fa-58f4-a81b", UNIT: "light year", ABBREVIATION: "ly", PROPERTY: "length", LOWERBOUND: "1", UPPERBOUND: "27000000000"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"b0ba-81fa-58f4-a81b", UNIT: "light year", ABBREVIATION: "ly", PROPERTY: "length", LOWERBOUND: "1", UPPERBOUND: "27000000000"]
+
+	// CENTRAL         PROP-GENERIC: distance is a property of space and includes ordered values of close ; far     (91b9-6388-d5b8-58b6) [ X:"distance", Y:"space", ORDERED_UNORDERED:"order", VALUES:"close;far" ]
+	//row autoRow5 = [UUID:"91b9-6388-d5b8-58b6", X: "distance", Y: "space", ORDERED_UNORDERED: "order", VALUES: "close"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"91b9-6388-d5b8-58b6", X: "distance", Y: "space", ORDERED_UNORDERED: "order", VALUES: "close"]
+
+	// CENTRAL         MEASUREMENTS: light year is a measure of the distance light travels in one year     (8529-317a-ba9f-b990) [ MEASURE:"light year", QUANTITY_ADJ:"measure of", ATTRIBUTE:"distance", AGENT:"light", ACTION:"travel", SCOPE:"in one year" ]
+	//row autoRow6 = [UUID:"8529-317a-ba9f-b990", MEASURE: "light year", QUANTITY_ADJ: "measure of", ATTRIBUTE: "distance", AGENT: "light", ACTION: "travel", SCOPE: "in one year"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"8529-317a-ba9f-b990", MEASURE: "light year", QUANTITY_ADJ: "measure of", ATTRIBUTE: "distance", AGENT: "light", ACTION: "travel", SCOPE: "in one year"]
+
+	// CENTRAL        (OPTIONAL) LOCATIONS: the Sun is located near the edge of the Milky Way Galaxy     (ad66-c566-2728-864f) [ THING_PROCESS:"sun", LOCATION:"near edge", SCOPE:"of milky way galaxy" ]
+	//  Notes: needed when it's about the diameter of the galaxy
+	//row *autoRow7 = [UUID:"ad66-c566-2728-864f", THING_PROCESS: "sun", LOCATION: "near edge", SCOPE: "of milky way galaxy"] //OVER-CONSTR.
+	//row *autoRow7 = [UUID:"ad66-c566-2728-864f", THING_PROCESS: "sun", LOCATION: "near edge", SCOPE: "of milky way galaxy"]
+
+	// CENTRAL        (OPTIONAL) MEASUREMENTS: diameter is a measure of length through the center of a circle     (8c47-06f1-9f0f-10c4) [ MEASURE:"diameter", QUANTITY_ADJ:"measure of", ATTRIBUTE:"length", AGENT:"through center of circle" ]
+	//  Notes: needed when it is about the diameter of galaxies
+	//row *autoRow8 = [UUID:"8c47-06f1-9f0f-10c4", MEASURE: "diameter", QUANTITY_ADJ: "measure of", ATTRIBUTE: "length", AGENT: "through center of circle"] //OVER-CONSTR.
+	//row *autoRow8 = [UUID:"8c47-06f1-9f0f-10c4", MEASURE: "diameter", QUANTITY_ADJ: "measure of", ATTRIBUTE: "length", AGENT: "through center of circle"]
+
+	// CENTRAL         KINDOF: years are a kind of unit for measuring time     (406d-464a-cfa5-7b67) [ HYPONYM:"year", HYPERNYM:"unit", FOR_PURPOSE:"measure time" ]
+	//  Notes: peripheral central
+	//row autoRow9 = [UUID:"406d-464a-cfa5-7b67", HYPONYM: "year", HYPERNYM: "unit", FOR_PURPOSE: "measure time"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"406d-464a-cfa5-7b67", HYPONYM: "year", HYPERNYM: "unit", FOR_PURPOSE: "measure time"]
+
+	// CENTRAL         USEDFOR: a light-year is used for describing long distances     (42f0-a182-922d-511a) [ AGENT_OBJECT:"light-year;light year", FOR_PURPOSE:"describe", PATIENT:"long distance" ]
+	//row autoRow10 = [UUID:"42f0-a182-922d-511a", AGENT_OBJECT: "light year", FOR_PURPOSE: "describe", PATIENT: "long distance"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"42f0-a182-922d-511a", AGENT_OBJECT: "light year", FOR_PURPOSE: "describe", PATIENT: "long distance"]
+
+	// CENTRAL        (OPTIONAL) MADEOF: a galaxy is made of stars     (220e-8d69-4cdf-e5e8) [ OBJECT:"galaxy", MATERIAL:"star" ]
+	//  Notes: Specific
+	//row *autoRow11 = [UUID:"220e-8d69-4cdf-e5e8", OBJECT: "galaxy", MATERIAL: "star"] //OVER-CONSTR.
+	//row *autoRow11 = [UUID:"220e-8d69-4cdf-e5e8", OBJECT: "galaxy", MATERIAL: "star"]
+
+	// LEXGLUE         SYNONYMY: characteristic means property     (b605-9c58-598d-817e) [ X1:"characteristic", X2:"property" ]
+	//row autoRow12 = [UUID:"b605-9c58-598d-817e", X1: "characteristic", X2: "property"] //OVER-CONSTR.
+	//row autoRow12 = [UUID:"b605-9c58-598d-817e", X1: "characteristic", X2: "property"]
+
+endinferencepattern

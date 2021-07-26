@@ -1,0 +1,82 @@
+// Automatically converted pattern
+inferencepattern ENG_INTERACTIONEM_Sun_Heats_things
+
+	// Plain text description
+	description = "the ice cube made of ice row is needed when it's ice melting on the sidewalk"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       IFTHEN: if an object ; something is in the sunlight then that object ; that something will absorb solar energy     (e00a-03fe-d978-1a27) [ THING:"object;something", OBJECT_PROPERTY1:"in sunlight", ACTOR_AGENT_PROCESS2:"that object;that something", ACTION3:"absorb", OBJECT_PROPERTY3:"solar energy" ]
+	//        HINTROW if something is outside during the day then that something will receive sunlight     (c12d-b29a-5073-54ab) [ THING:"something", OBJECT_PROPERTY1:"outside during day", ACTOR_AGENT_PROCESS2:"that something", ACTION3:"receive", OBJECT_PROPERTY3:"sunlight" ]
+	//row autoRow0 = [TABLE:"IFTHEN", THING: "object", OBJECT_PROPERTY1: "in"+*"POS:NN", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "absorb", OBJECT_PROPERTY3: "solar energy"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"IFTHEN", ACTOR_AGENT_PROCESS2: "that object"]
+
+	// CENTRALSW       CHANGE-VEC: heating means adding heat     (9469-8559-7f35-1bbd) [ PROCESS_NAME_ACTION:"heat", DIRECTION:"add", PATIENT:"heat" ]
+	//        HINTROW heat means temperature increases     (7afc-2bcd-13a5-2d35) [ PROCESS_NAME_ACTION:"heat", AGENT_OBJECT:"temperature", DIRECTION:"increase" ]
+	//        HINTROW warm ; becoming warm means heat is added     (39ec-9974-829d-ba5e) [ PROCESS_NAME_ACTION:"warm;become warm", AGENT_OBJECT:"heat", DIRECTION:"add" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"CHANGE-VEC"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow1 = [TABLE:"CHANGE-VEC"]
+
+	// CENTRALSW       LOCATIONS: a sidewalk is located outside     (e6ce-9a90-4900-9861) [ THING_PROCESS:"sidewalk", LOCATION:"outside" ]
+	//        HINTROW usually a body of water is located outside     (f4ba-23a8-463c-21fe) [ QUANTIFIER:"usually", THING_PROCESS:"body of water", LOCATION:"outside" ]
+	//        HINTROW playground is located outside     (742b-5bfd-9404-9120) [ THING_PROCESS:"playground", LOCATION:"outside" ]
+	//row autoRow2 = [TABLE:"LOCATIONS", THING_PROCESS: <sidewalk_0>, LOCATION: "outside"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"LOCATIONS", THING_PROCESS: <sidewalk_0>, LOCATION: "outside"]
+
+	// CENTRALSW      (OPTIONAL) CHANGE: boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy     (a0b2-a45f-01e1-4bf4) [ PROCESS_NAME:"boil;evaporate", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"gas", BY_THROUGH_HOW:"increase heat energy" ]
+	//        HINTROW melting means matter ; a substance changes from a solid into a liquid by increasing heat energy     (6abc-4443-f672-9a97) [ PROCESS_NAME:"melt", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"solid", INTO:"liquid", BY_THROUGH_HOW:"increase heat energy" ]
+	//row *autoRow3 = [TABLE:"CHANGE", PROCESS_NAME: "evaporate", ACTOR_WHO: "matt", VERB: "change", BY_THROUGH_HOW: "increase heat energy"] //OVER-CONSTR.
+	row *autoRow3 = [TABLE:"CHANGE", ACTOR_WHO: "matt", VERB: "change", BY_THROUGH_HOW: "increase heat energy"]
+
+	// CENTRALSW      (OPTIONAL) PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//        HINTROW water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C     (4a5a-9115-28a9-b97b) [ MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice", LOWER_BOUND:"0;-459;-273;459;273", UPPER_BOUND:"273;32;0", UNITS:"k;f;c" ]
+	//        HINTROW water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C     (e474-2a11-6e7b-ae8b) [ MATERIAL_NAME:"water", STATEOFMATTER:"gas", FORM_NAME:"water vapor;steam", LOWER_BOUND:"373;212;100", UPPER_BOUND:"100000000000", UNITS:"k;f;c" ]
+	//row *autoRow4 = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME: "water", FORM_NAME: *"POS:JJ"+"water", UNITS: "k"] //OVER-CONSTR.
+	row *autoRow4 = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME: "water", UNITS: "k"]
+
+	// GROUNDING       KINDOF: a puddle is a kind of body of water     (65d3-05bf-28db-3f1a) [ HYPONYM:"puddle", HYPERNYM:"body of water" ]
+	//        HINTROW an ice cube is a kind of object     (d5e1-2384-26cc-edb9) [ HYPONYM:"ice cube", HYPERNYM:"object" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow5 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow5 = [TABLE:"KINDOF"]
+
+	// GROUNDING       KINDOF: the sidewalk is a kind of object     (ce7e-f24a-8088-35e6) [ HYPONYM:"sidewalk", HYPERNYM:"object" ]
+	//        HINTROW water is a kind of object     (533c-79f7-8267-e271) [ HYPONYM:"water", HYPERNYM:"object" ]
+	//        HINTROW a playground is a kind of object     (881b-acaf-36c8-25ae) [ HYPONYM:"playground", HYPERNYM:"object" ]
+	//row autoRow6 = [TABLE:"KINDOF", HYPONYM: <sidewalk_0>, HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPONYM: <sidewalk_0>, HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//row autoRow7 = [TABLE:"KINDOF", HYPONYM: "water", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow7 = [TABLE:"KINDOF", HYPONYM: "water", HYPERNYM: "substance"]
+
+	// CENTRAL         IFTHEN: if an object ; a substance ; a location absorbs solar energy then that object ; that substance will increase in temperature     (9554-47d7-c095-1df7) [ THING:"object;substance;locate", ACTION1:"absorb", OBJECT_PATIENT1:"solar energy", ACTOR_AGENT_PROCESS2:"that object;that substance", ACTION3:"increase", OBJECT_PROPERTY3:"in temperature" ]
+	//row autoRow8 = [UUID:"9554-47d7-c095-1df7", THING: "object", ACTION1: "absorb", OBJECT_PATIENT1: "solar energy", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "increase", OBJECT_PROPERTY3: "in temperature"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"9554-47d7-c095-1df7", THING: "object", ACTION1: "absorb", OBJECT_PATIENT1: "solar energy", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "increase", OBJECT_PROPERTY3: "in temperature"]
+
+	// CENTRAL         CAUSE: the Sun causes water to evaporate more quickly by adding heat     (824e-1bf6-29b5-9624) [ CONDITION_AGENT_OBJECT:"sun", RESULT_AGENT:"water", RESULT_VERB:"evaporate much quickly", RESULT_PATIENT:"by add heat" ]
+	//row autoRow9 = [UUID:"824e-1bf6-29b5-9624", CONDITION_AGENT_OBJECT: "sun", RESULT_AGENT: "water", RESULT_VERB: "evaporate much quickly", RESULT_PATIENT: "by add heat"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"824e-1bf6-29b5-9624", CONDITION_AGENT_OBJECT: "sun", RESULT_AGENT: "water", RESULT_VERB: "evaporate much quickly", RESULT_PATIENT: "by add heat"]
+
+	// CENTRAL         CAUSE: absorbing sunlight causes objects to heat     (dcbe-9523-4529-c54e) [ CONDITION_VERB:"absorb", CONDITION_PATIENT:"sunlight", RESULT_AGENT:"object", RESULT_VERB:"heat" ]
+	//row autoRow10 = [UUID:"dcbe-9523-4529-c54e", CONDITION_VERB: "absorb", CONDITION_PATIENT: "sunlight", RESULT_AGENT: "object", RESULT_VERB: "heat"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"dcbe-9523-4529-c54e", CONDITION_VERB: "absorb", CONDITION_PATIENT: "sunlight", RESULT_AGENT: "object", RESULT_VERB: "heat"]
+
+	// CENTRAL         SOURCEOF: the sun is the source of solar energy called sunlight     (1ed3-919d-4a4c-1be7) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"solar energy", NAME:"sunlight" ]
+	//row autoRow11 = [UUID:"1ed3-919d-4a4c-1be7", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "solar energy", NAME: "sunlight"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"1ed3-919d-4a4c-1be7", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "solar energy", NAME: "sunlight"]
+
+	// CENTRAL        (OPTIONAL) MADEOF: ice cube is made of ice     (2c7a-314b-2dd8-2290) [ OBJECT:"ice cube", MATERIAL:"ice" ]
+	//row *autoRow12 = [UUID:"2c7a-314b-2dd8-2290", OBJECT: "ice cube", MATERIAL: "ice"] //OVER-CONSTR.
+	row *autoRow12 = [UUID:"2c7a-314b-2dd8-2290", OBJECT: "ice cube", MATERIAL: "ice"]
+
+	// LEXGLUE         SYNONYMY: receiving sunlight is synonymous with absorbing sunlight     (141a-5c36-0fac-52ac) [ ACTION1:"receive", Y1:"sunlight", ACTION2:"absorb", Y2:"sunlight" ]
+	//row autoRow13 = [UUID:"141a-5c36-0fac-52ac", ACTION1: "receive", Y1: "sunlight", ACTION2: "absorb", Y2: "sunlight"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"141a-5c36-0fac-52ac", ACTION1: "receive", Y1: "sunlight", ACTION2: "absorb", Y2: "sunlight"]
+
+endinferencepattern

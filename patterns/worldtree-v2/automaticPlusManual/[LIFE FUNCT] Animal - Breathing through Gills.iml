@@ -1,0 +1,108 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animal_Breathing_through_Gills
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a fish is a kind of aquatic animal     (a94e-e849-c066-fecd) [ HYPONYM:"fish", HYPERNYM:"aquatic animal" ]
+	//        HINTROW a salamander is a kind of aquatic animal     (2452-4ec6-cebd-d341) [ HYPONYM:"salamander", SCOPE1:"aquatic", HYPERNYM:"animal" ]
+	//        HINTROW a frog is a kind of aquatic animal     (59c6-0fc8-f645-a67b) [ HYPONYM:"frog", HYPERNYM:"aquatic animal" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "aquatic animal"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "aquatic animal"]
+
+	// GROUNDING       KINDOF: breathing is a kind of process     (daf3-3001-4bea-9034) [ HYPONYM:"breathe", HYPERNYM:"process" ]
+	//        HINTROW breathing is a kind of function     (dc43-d733-c6bc-1b6f) [ HYPONYM:"breathe", HYPERNYM:"function" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "breathe"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "breathe"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//row autoRow2 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+	// CENTRAL         REQUIRES: an animal ; bacterium requires oxygen for survival ; to breathe     (f59c-9a1b-f57b-d689) [ OBJECT_AGENT_PROCESS:"animal;bacterium", VERB_REQUIRES:"require", OBJECT:"oxygen", FOR_PURPOSE:"survive;breathe" ]
+	//row autoRow3 = [UUID:"f59c-9a1b-f57b-d689", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "oxygen", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"f59c-9a1b-f57b-d689", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "oxygen", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         PARTOF: gills are a part of a fish used for breathing water     (686d-e4be-a123-314f) [ PART:"gill", WHOLE:"fish", FOR_PURPOSE:"breathe water" ]
+	//row autoRow4 = [UUID:"686d-e4be-a123-314f", PART: "gill", WHOLE: "fish", FOR_PURPOSE: "breathe water"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"686d-e4be-a123-314f", PART: "gill", WHOLE: "fish", FOR_PURPOSE: "breathe water"]
+
+	// CENTRAL         ACTION: the respiratory system takes in oxygen from the air     (a8c6-3b66-4842-24bc) [ AGENT_OBJECT:"respiratory system", ACTION2:"take in", OBJECT_PROPERTY:"oxygen", WHEN_WHERE:"from air" ]
+	//row autoRow5 = [UUID:"a8c6-3b66-4842-24bc", AGENT_OBJECT: "respiratory system", ACTION2: "take in", OBJECT_PROPERTY: "oxygen", WHEN_WHERE: "from air"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"a8c6-3b66-4842-24bc", AGENT_OBJECT: "respiratory system", ACTION2: "take in", OBJECT_PROPERTY: "oxygen", WHEN_WHERE: "from air"]
+
+	// CENTRAL         PROCESSROLES: In the cellular respiration ; animal respiration process carbon dioxide is a waste product     (3f31-824e-6866-4db7) [ PROCESS_NAME:"cellular respiration;animal respiration", ACTOR_COMMON_EXAMPLE:"carbon dioxide", ROLE:"waste product" ]
+	//row autoRow6 = [UUID:"3f31-824e-6866-4db7", PROCESS_NAME: "cellular respiration", ACTOR_COMMON_EXAMPLE: "carbon dioxide", ROLE: "waste product"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3f31-824e-6866-4db7", PROCESS_NAME: "cellular respiration", ACTOR_COMMON_EXAMPLE: "carbon dioxide", ROLE: "waste product"]
+
+	// CENTRAL         REQUIRES: an animal requires energy to move     (838c-30bf-9b24-714b) [ OBJECT_AGENT_PROCESS:"animal", VERB_REQUIRES:"require", OBJECT:"energy", FOR_PURPOSE:"move" ]
+	//row autoRow7 = [UUID:"838c-30bf-9b24-714b", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "energy", FOR_PURPOSE: "move"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"838c-30bf-9b24-714b", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "energy", FOR_PURPOSE: "move"]
+
+	// CENTRAL         USEDFOR: gills are used for breathing water by aquatic animals     (743b-9053-1b87-b6ae) [ AGENT_OBJECT:"gill", FOR_PURPOSE:"breathe", PATIENT:"water", AGENT_THING_WHO_USES:"aquatic animal" ]
+	//row autoRow8 = [UUID:"743b-9053-1b87-b6ae", AGENT_OBJECT: "gill", FOR_PURPOSE: "breathe", PATIENT: "water", AGENT_THING_WHO_USES: "aquatic animal"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"743b-9053-1b87-b6ae", AGENT_OBJECT: "gill", FOR_PURPOSE: "breathe", PATIENT: "water", AGENT_THING_WHO_USES: "aquatic animal"]
+
+	// CENTRAL         ACTION: respiration releases energy     (fbfd-cbb8-22fa-0fde) [ AGENT_OBJECT:"respiration", ACTION2:"release", OBJECT_PROPERTY:"energy" ]
+	//row autoRow9 = [UUID:"fbfd-cbb8-22fa-0fde", AGENT_OBJECT: "respiration", ACTION2: "release", OBJECT_PROPERTY: "energy"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"fbfd-cbb8-22fa-0fde", AGENT_OBJECT: "respiration", ACTION2: "release", OBJECT_PROPERTY: "energy"]
+
+	// CENTRAL         ACTION: the respiratory system performs respiration     (d69f-a53c-a0d5-7861) [ AGENT_OBJECT:"respiratory system", ACTION2:"perform", OBJECT_PROPERTY:"respiration" ]
+	//row autoRow10 = [UUID:"d69f-a53c-a0d5-7861", AGENT_OBJECT: "respiratory system", ACTION2: "perform", OBJECT_PROPERTY: "respiration"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"d69f-a53c-a0d5-7861", AGENT_OBJECT: "respiratory system", ACTION2: "perform", OBJECT_PROPERTY: "respiration"]
+
+	// CENTRAL         PROCESSROLES: In the cellular respiration process heat is a by-product in animals     (c96d-cca7-312a-be2c) [ PROCESS_NAME:"cellular respiration", ACTOR_COMMON_EXAMPLE:"heat", ROLE:"by-product;by product", SCOPE:"in animal" ]
+	//row autoRow11 = [UUID:"c96d-cca7-312a-be2c", PROCESS_NAME: "cellular respiration", ACTOR_COMMON_EXAMPLE: "heat", ROLE: "by product", SCOPE: "in animal"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"c96d-cca7-312a-be2c", PROCESS_NAME: "cellular respiration", ACTOR_COMMON_EXAMPLE: "heat", ROLE: "by product", SCOPE: "in animal"]
+
+	// CENTRAL         CHANGE: breathing is when animals convert oxygen into carbon dioxide     (4106-cc86-22ec-615e) [ PROCESS_NAME:"breathe", ACTOR_WHO:"animal", VERB:"convert", FROM:"oxygen", INTO:"carbon dioxide" ]
+	//row autoRow12 = [UUID:"4106-cc86-22ec-615e", PROCESS_NAME: "breathe", ACTOR_WHO: "animal", VERB: "convert", FROM: "oxygen", INTO: "carbon dioxide"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"4106-cc86-22ec-615e", PROCESS_NAME: "breathe", ACTOR_WHO: "animal", VERB: "convert", FROM: "oxygen", INTO: "carbon dioxide"]
+
+	// CENTRAL         REQUIRES: living things require respiration to use energy     (995d-01f9-c9a9-9896) [ OBJECT_AGENT_PROCESS:"live thing", VERB_REQUIRES:"require", OBJECT:"respiration", FOR_PURPOSE:"use energy" ]
+	//row autoRow13 = [UUID:"995d-01f9-c9a9-9896", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "respiration", FOR_PURPOSE: "use energy"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"995d-01f9-c9a9-9896", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "respiration", FOR_PURPOSE: "use energy"]
+
+	// CENTRAL         KINDOF: an aquatic animal is a kind of animal     (b80f-f372-967d-6ac4) [ HYPONYM:"aquatic animal", HYPERNYM:"animal" ]
+	//  Notes: peripheral
+	//row autoRow14 = [UUID:"b80f-f372-967d-6ac4", HYPONYM: "aquatic animal", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"b80f-f372-967d-6ac4", HYPONYM: "aquatic animal", HYPERNYM: "animal"]
+
+	// CENTRAL         HABITAT: aquatic animals ; plants live in bodies of water     (a13a-1bd4-3d64-f3db) [ SUBSPECIES:"aquatic", ORGANISM:"animal;plant", HABITAT:"body of water" ]
+	//row autoRow15 = [UUID:"a13a-1bd4-3d64-f3db", SUBSPECIES: "aquatic", ORGANISM: "animal", HABITAT: "body of water"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"a13a-1bd4-3d64-f3db", SUBSPECIES: "aquatic", ORGANISM: "animal", HABITAT: "body of water"]
+
+	// CENTRAL         CHANGE: breathing is when a gill converts from oxygen in water into oxygen in blood     (571a-0a31-ad7b-e097) [ PROCESS_NAME:"breathe", ACTOR_WHO:"gill", VERB:"convert", FROM:"oxygen in water", INTO:"oxygen in blood" ]
+	//row autoRow16 = [UUID:"571a-0a31-ad7b-e097", PROCESS_NAME: "breathe", ACTOR_WHO: "gill", VERB: "convert", FROM: "oxygen in water", INTO: "oxygen in blood"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"571a-0a31-ad7b-e097", PROCESS_NAME: "breathe", ACTOR_WHO: "gill", VERB: "convert", FROM: "oxygen in water", INTO: "oxygen in blood"]
+
+	// CENTRAL         KINDOF: gills are a kind of adaptation for getting oxygen underwater     (9f02-a641-79a9-d4ec) [ HYPONYM:"gill", HYPERNYM:"adapt", FOR_PURPOSE:"get oxygen", SCOPE2:"underwater" ]
+	//  Notes: peripheral
+	//row autoRow17 = [UUID:"9f02-a641-79a9-d4ec", HYPONYM: "gill", HYPERNYM: "adapt", FOR_PURPOSE: "get oxygen", SCOPE2: "underwater"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"9f02-a641-79a9-d4ec", HYPONYM: "gill", HYPERNYM: "adapt", FOR_PURPOSE: "get oxygen", SCOPE2: "underwater"]
+
+	// CENTRAL         CONTAINS: water contains dissolved oxygen     (f32e-0424-d7c1-e558) [ OBJECT_AGENT:"water", WHAT_IT_CONTAINS:"dissolve oxygen" ]
+	//row autoRow18 = [UUID:"f32e-0424-d7c1-e558", OBJECT_AGENT: "water", WHAT_IT_CONTAINS: "dissolve oxygen"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"f32e-0424-d7c1-e558", OBJECT_AGENT: "water", WHAT_IT_CONTAINS: "dissolve oxygen"]
+
+	// CENTRAL        (OPTIONAL) ACTION: young amphibians breathe through gills     (359d-9e24-9685-50ca) [ ADJ:"young", AGENT_OBJECT:"amphibian", ACTION2:"breathe", BY_THROUGH_HOW:"gill" ]
+	//row *autoRow19 = [UUID:"359d-9e24-9685-50ca", ADJ: "young", AGENT_OBJECT: "amphibian", ACTION2: "breathe", BY_THROUGH_HOW: "gill"] //OVER-CONSTR.
+	row *autoRow19 = [UUID:"359d-9e24-9685-50ca", ADJ: "young", AGENT_OBJECT: "amphibian", ACTION2: "breathe", BY_THROUGH_HOW: "gill"]
+
+	// CENTRAL         ACTION: all animals breathe     (e5c6-c007-ec45-6843) [ AGENT_OBJECT:"animal", ACTION2:"breathe" ]
+	//row autoRow20 = [UUID:"e5c6-c007-ec45-6843", AGENT_OBJECT: "animal", ACTION2: "breathe"] //OVER-CONSTR.
+	row autoRow20 = [UUID:"e5c6-c007-ec45-6843", AGENT_OBJECT: "animal", ACTION2: "breathe"]
+
+	// LEXGLUE         SYNONYMY: an organism is a living thing     (87a0-dd02-dd6d-ee60) [ X1:"organism", X2:"live thing" ]
+	//row autoRow21 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"] //OVER-CONSTR.
+	row autoRow21 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"]
+
+	// LEXGLUE         SYNONYMY: to breathe in means to absorb air     (2047-3ee7-a047-0dd9) [ ACTION1:"breathe in", ACTION2:"absorb", Y2:"air" ]
+	//row autoRow22 = [UUID:"2047-3ee7-a047-0dd9", ACTION1: "breathe in", ACTION2: "absorb", Y2: "air"] //OVER-CONSTR.
+	row autoRow22 = [UUID:"2047-3ee7-a047-0dd9", ACTION1: "breathe in", ACTION2: "absorb", Y2: "air"]
+
+endinferencepattern

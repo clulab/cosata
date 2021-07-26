@@ -1,0 +1,80 @@
+
+inferencepattern test_or
+    
+    //row testor1 = [TABLE:"CHANGE", INTO:"electricity"]
+    
+    /*
+    // Doesn't work
+    row testor2 = [TABLE:"CHANGE", FROM:<x>, INTO:"electrical energy"]
+    
+    row testor3 = [TABLE:"CHANGE", FROM:<x>, INTO:"electricity" || "electrical energy"]
+    //row testor3 = [TABLE:"CHANGE", FROM:<x>, INTO:"electricity"]
+    */
+    
+    /*
+    // Works
+    row testor5 = [TABLE:"CHANGE", INTO:<x> + "energy" || <x> + "rock"]
+    
+    row testor6 = [TABLE:"CHANGE", INTO:<x> + "energy" || <x> + "rock"]
+    */
+
+    /*
+    row testOr7 = [TABLE:"CHANGE", INTO:<x> + "energy" || <x> + "rock"]
+    
+    row testOr8 = [TABLE:"CHANGE", FROM:<x> + "energy" || <x> + "rock"]
+    */
+    
+    /*
+    // Seems to work
+    row testOrA = [TABLE:"TEST-OR", SUBJECT:<col> + <anim>, OBJECT:<x> + "dog" || <x> + "giraffe"]
+    row testOrB = [TABLE:"TEST-OR", SUBJECT:<col> + <anim>, OBJECT:<x> + "dog" || <x> + <y>]    
+    */
+
+    /*
+    // Seems to work
+    row testOrA = [TABLE:"TEST-OR", SUBJECT:<col2> + <y>] //, OBJECT:<x> + "dog" || <x> + "giraffe"]
+    row testOrB = [TABLE:"TEST-OR", SUBJECT:<col> + <anim>, OBJECT:"white" + <y> || "blue" + <y>]    
+    */
+
+    /*
+    // Strange case (with an variable that only ever appears in one OR option) -- just checking (seems to work)    
+    row testOrA = [TABLE:"TEST-OR", SUBJECT:<col2> + <y>] //, OBJECT:<x> + "dog" || <x> + "giraffe"]
+    row testOrB = [TABLE:"TEST-OR", SUBJECT:<col> + <anim>, OBJECT:"white" + <y> || "blue" + <y1>]    
+    */
+    
+    /*
+    // Entirely lexical OR -- seems to work
+    row testOrA = [TABLE:"TEST-OR", SUBJECT:<col2> + <anim>] //, OBJECT:<x> + "dog" || <x> + "giraffe"]
+    row testOrB = [TABLE:"TEST-OR", SUBJECT:<col> + <anim>, OBJECT:"white rabbit" || "orange giraffe"]    
+    */
+
+    /*
+    // Entirely lexical OR with 3 options -- seems to work
+    row testOrA = [TABLE:"TEST-OR", SUBJECT:<col2> + <anim>] //, OBJECT:<x> + "dog" || <x> + "giraffe"]
+    row testOrB = [TABLE:"TEST-OR", SUBJECT:<col> + <anim>, OBJECT:"white rabbit" || "orange giraffe" || "brown bear"]    
+    */
+
+    /*
+    // OR options on two rows -- seems to work
+    row testOrA = [TABLE:"TEST-OR", SUBJECT:"red" + <anim1> || <col2> + <anim>] //, OBJECT:<x> + "dog" || <x> + "giraffe"]
+    row testOrB = [TABLE:"TEST-OR", SUBJECT:<col> + <anim>, OBJECT:"white rabbit" || "orange giraffe" || "brown bear"]    
+    // A can be a "red" any animal, or an animal that matches B in name 
+    */
+
+    /*
+    // Multiple OR options on the same row -- seems to work
+    row testOrA = [TABLE:"TEST-OR", SUBJECT:<col> + <anim2>] //, OBJECT:<x> + "dog" || <x> + "giraffe"]
+    row testOrB = [TABLE:"TEST-OR", SUBJECT:<col> + "cat" || <col> + "rabbit", OBJECT:"white" + <anim> || "orange" + <anim>]        
+    // B(subject) can be a cat or a rabbit, B(object) can be white or orange
+    */
+    
+	// Double variable	
+	row autoRow1A = [TABLE:"TEST-OR", SUBJECT:<vehicle>, VERB:"kind of", OBJECT: <vehicleType>]
+	
+	row autoRow0 = [TABLE:"TEST-OR", SUBJECT: <enginePart>, VERB:"part of", OBJECT:<vehicleType> || <vehicle>]
+    
+	row autoRow1B = [TABLE:"TEST-OR", SUBJECT:<vehicleType>, VERB:"kind of", OBJECT: "vehicle"]
+
+    
+    
+endinferencepattern

@@ -1,0 +1,31 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Organs_X_part_of_System_Y
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PARTOF: the lungs are a part of the respiratory system     (abc0-1f2b-3484-cf27) [ PART:"lung", QUANTIFIER1:"be", WHOLE:"respiratory system" ]
+	//        HINTROW the brain is a part of the central nervous system     (9adf-5c73-e94c-f250) [ PART:"brain", QUANTIFIER1:"be", WHOLE:"central nervous system" ]
+	//        HINTROW the intestines are a part of the digestive system     (1a59-b031-9090-8933) [ PART:"intestine", WHOLE:"digestive system" ]
+	//        HINTROW the stomach is a part of the digestive system     (89e6-524b-d877-7386) [ PART:"stomach", WHOLE:"digestive system" ]
+	//        HINTROW the heart is a part of the circulatory system     (aac5-9b7d-012e-9bac) [ PART:"heart", QUANTIFIER1:"be", WHOLE:"circulatory system" ]
+	//        HINTROW the skin is a part of the integumentary system     (1d47-e53f-f83b-45a8) [ PART:"skin", WHOLE:"integumentary system" ]
+	//  Notes: organ X is a part of system Y
+	//row autoRow0 = [TABLE:"PARTOF", PART: <lung_0>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PARTOF", PART: <lung_0>]
+
+	// CENTRALSW       KINDOF: a lung is a kind of organ for breathing air     (e7d7-9393-dfc8-98bf) [ HYPONYM:"lung", HYPERNYM:"organ", FOR_PURPOSE:"breathe air" ]
+	//        HINTROW a brain is a kind of internal organ     (8e1c-a4f8-3938-b891) [ HYPONYM:"brain", SCOPE1:"internal", HYPERNYM:"organ" ]
+	//        HINTROW the small intestine is a kind of organ     (83a9-87e2-2bd1-de6a) [ HYPONYM:"small intestine", HYPERNYM:"organ" ]
+	//        HINTROW the stomach is a kind of organ     (6e76-34eb-601f-9783) [ HYPONYM:"stomach", HYPERNYM:"organ" ]
+	//        HINTROW a heart is a kind of organ     (9078-ba6c-fdad-d876) [ HYPONYM:"heart", HYPERNYM:"organ" ]
+	//        HINTROW skin is a kind of organ     (9c97-5684-21f1-8494) [ HYPONYM:"skin", HYPERNYM:"organ" ]
+	//  Notes: X is a kind of organ
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: <lung_0>, HYPERNYM: "organ"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: <lung_0>, HYPERNYM: "organ"]
+
+endinferencepattern

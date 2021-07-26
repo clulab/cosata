@@ -1,0 +1,1464 @@
+{"patternMatches": [
+{
+	"patternName":"LIFE_REPROD_Instinctive_Behaviours",
+	"matches":[
+		{
+		"uuids": ["5c37-d156-8278-962c","d86f-f0eb-8cd4-b579","7386-ad73-8eef-4980","b050-c9a7-f762-fe5a","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d86f-f0eb-8cd4-b579", "rowText": "An example of a reproductive behavior is salmon returning to their birthplace to lay their eggs", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b050-c9a7-f762-fe5a", "rowText": "salmon is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","f7ca-cfe9-d8b4-11a4","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f7ca-cfe9-d8b4-11a4", "rowText": "An example of an inherited behavior is a bird building a nest", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","24a1-6da8-dc81-accd","7386-ad73-8eef-4980","9e89-73fd-66d5-18e2","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "24a1-6da8-dc81-accd", "rowText": "An example of hibernation is a frog burying itself in mud", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9e89-73fd-66d5-18e2", "rowText": "a frog is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","4ba7-d894-3b98-2b11","7386-ad73-8eef-4980","a328-84da-ecad-102f","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4ba7-d894-3b98-2b11", "rowText": "An example of hunting is an otter cracking open clams with a rock", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a328-84da-ecad-102f", "rowText": "an otter is a kind of aquatic animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","2ad2-04a7-e3e7-916a","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "2ad2-04a7-e3e7-916a", "rowText": "An example of migration is birds flying south in the winter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"bird_1", "value":"birds" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","1bbc-5bee-916f-6a8c","7386-ad73-8eef-4980","b749-39eb-d9be-228a","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1bbc-5bee-916f-6a8c", "rowText": "An example of light traveling faster than sound is people seeing the lightnings before hear the thunder", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b749-39eb-d9be-228a", "rowText": "a person is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"bird_1", "value":"person" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"bird_1", "value":"people" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","b02c-8f78-137e-ce65","7386-ad73-8eef-4980","4253-4b9e-1e5f-1742","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b02c-8f78-137e-ce65", "rowText": "An example of changing an ecosystem is humans constructing a housing development in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"bird_1", "value":"human" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"bird_1", "value":"humans" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","d86f-f0eb-8cd4-b579","7386-ad73-8eef-4980","b050-c9a7-f762-fe5a","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d86f-f0eb-8cd4-b579", "rowText": "An example of a reproductive behavior is salmon returning to their birthplace to lay their eggs", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b050-c9a7-f762-fe5a", "rowText": "salmon is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","d86f-f0eb-8cd4-b579","7386-ad73-8eef-4980","b050-c9a7-f762-fe5a","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d86f-f0eb-8cd4-b579", "rowText": "An example of a reproductive behavior is salmon returning to their birthplace to lay their eggs", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b050-c9a7-f762-fe5a", "rowText": "salmon is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","f7ca-cfe9-d8b4-11a4","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f7ca-cfe9-d8b4-11a4", "rowText": "An example of an inherited behavior is a bird building a nest", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","f7ca-cfe9-d8b4-11a4","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f7ca-cfe9-d8b4-11a4", "rowText": "An example of an inherited behavior is a bird building a nest", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","24a1-6da8-dc81-accd","7386-ad73-8eef-4980","9e89-73fd-66d5-18e2","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "24a1-6da8-dc81-accd", "rowText": "An example of hibernation is a frog burying itself in mud", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9e89-73fd-66d5-18e2", "rowText": "a frog is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","24a1-6da8-dc81-accd","7386-ad73-8eef-4980","9e89-73fd-66d5-18e2","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "24a1-6da8-dc81-accd", "rowText": "An example of hibernation is a frog burying itself in mud", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9e89-73fd-66d5-18e2", "rowText": "a frog is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","4ba7-d894-3b98-2b11","7386-ad73-8eef-4980","a328-84da-ecad-102f","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4ba7-d894-3b98-2b11", "rowText": "An example of hunting is an otter cracking open clams with a rock", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a328-84da-ecad-102f", "rowText": "an otter is a kind of aquatic animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","4ba7-d894-3b98-2b11","7386-ad73-8eef-4980","a328-84da-ecad-102f","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4ba7-d894-3b98-2b11", "rowText": "An example of hunting is an otter cracking open clams with a rock", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a328-84da-ecad-102f", "rowText": "an otter is a kind of aquatic animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","2ad2-04a7-e3e7-916a","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "2ad2-04a7-e3e7-916a", "rowText": "An example of migration is birds flying south in the winter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"birds" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","2ad2-04a7-e3e7-916a","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "2ad2-04a7-e3e7-916a", "rowText": "An example of migration is birds flying south in the winter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"birds" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","1bbc-5bee-916f-6a8c","7386-ad73-8eef-4980","b749-39eb-d9be-228a","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1bbc-5bee-916f-6a8c", "rowText": "An example of light traveling faster than sound is people seeing the lightnings before hear the thunder", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b749-39eb-d9be-228a", "rowText": "a person is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"person" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"people" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","1bbc-5bee-916f-6a8c","7386-ad73-8eef-4980","b749-39eb-d9be-228a","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1bbc-5bee-916f-6a8c", "rowText": "An example of light traveling faster than sound is people seeing the lightnings before hear the thunder", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b749-39eb-d9be-228a", "rowText": "a person is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"person" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"people" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","b02c-8f78-137e-ce65","7386-ad73-8eef-4980","4253-4b9e-1e5f-1742","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b02c-8f78-137e-ce65", "rowText": "An example of changing an ecosystem is humans constructing a housing development in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"human" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"humans" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","b02c-8f78-137e-ce65","7386-ad73-8eef-4980","4253-4b9e-1e5f-1742","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b02c-8f78-137e-ce65", "rowText": "An example of changing an ecosystem is humans constructing a housing development in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"human" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"humans" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["d86f-f0eb-8cd4-b579","7386-ad73-8eef-4980","b050-c9a7-f762-fe5a","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d86f-f0eb-8cd4-b579", "rowText": "An example of a reproductive behavior is salmon returning to their birthplace to lay their eggs", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b050-c9a7-f762-fe5a", "rowText": "salmon is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["f7ca-cfe9-d8b4-11a4","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f7ca-cfe9-d8b4-11a4", "rowText": "An example of an inherited behavior is a bird building a nest", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["24a1-6da8-dc81-accd","7386-ad73-8eef-4980","9e89-73fd-66d5-18e2","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "24a1-6da8-dc81-accd", "rowText": "An example of hibernation is a frog burying itself in mud", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9e89-73fd-66d5-18e2", "rowText": "a frog is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["4ba7-d894-3b98-2b11","7386-ad73-8eef-4980","a328-84da-ecad-102f","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4ba7-d894-3b98-2b11", "rowText": "An example of hunting is an otter cracking open clams with a rock", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a328-84da-ecad-102f", "rowText": "an otter is a kind of aquatic animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["2ad2-04a7-e3e7-916a","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "2ad2-04a7-e3e7-916a", "rowText": "An example of migration is birds flying south in the winter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"bird_1", "value":"birds" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["1bbc-5bee-916f-6a8c","7386-ad73-8eef-4980","b749-39eb-d9be-228a","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1bbc-5bee-916f-6a8c", "rowText": "An example of light traveling faster than sound is people seeing the lightnings before hear the thunder", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b749-39eb-d9be-228a", "rowText": "a person is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"bird_1", "value":"person" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"bird_1", "value":"people" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["b02c-8f78-137e-ce65","7386-ad73-8eef-4980","4253-4b9e-1e5f-1742","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b02c-8f78-137e-ce65", "rowText": "An example of changing an ecosystem is humans constructing a housing development in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"bird_1", "value":"human" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"bird_1", "value":"humans" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","d86f-f0eb-8cd4-b579","7386-ad73-8eef-4980","b050-c9a7-f762-fe5a","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d86f-f0eb-8cd4-b579", "rowText": "An example of a reproductive behavior is salmon returning to their birthplace to lay their eggs", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b050-c9a7-f762-fe5a", "rowText": "salmon is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","f7ca-cfe9-d8b4-11a4","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f7ca-cfe9-d8b4-11a4", "rowText": "An example of an inherited behavior is a bird building a nest", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","24a1-6da8-dc81-accd","7386-ad73-8eef-4980","9e89-73fd-66d5-18e2","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "24a1-6da8-dc81-accd", "rowText": "An example of hibernation is a frog burying itself in mud", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9e89-73fd-66d5-18e2", "rowText": "a frog is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","4ba7-d894-3b98-2b11","7386-ad73-8eef-4980","a328-84da-ecad-102f","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4ba7-d894-3b98-2b11", "rowText": "An example of hunting is an otter cracking open clams with a rock", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a328-84da-ecad-102f", "rowText": "an otter is a kind of aquatic animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","2ad2-04a7-e3e7-916a","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "2ad2-04a7-e3e7-916a", "rowText": "An example of migration is birds flying south in the winter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"birds" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","1bbc-5bee-916f-6a8c","7386-ad73-8eef-4980","b749-39eb-d9be-228a","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1bbc-5bee-916f-6a8c", "rowText": "An example of light traveling faster than sound is people seeing the lightnings before hear the thunder", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b749-39eb-d9be-228a", "rowText": "a person is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"person" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"people" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["5c37-d156-8278-962c","b02c-8f78-137e-ce65","7386-ad73-8eef-4980","4253-4b9e-1e5f-1742","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5c37-d156-8278-962c", "rowText": "An example of an instinctive behavior is a baby bird pecking at its shell to hatch", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b02c-8f78-137e-ce65", "rowText": "An example of changing an ecosystem is humans constructing a housing development in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"human" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"humans" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["d86f-f0eb-8cd4-b579","7386-ad73-8eef-4980","b050-c9a7-f762-fe5a","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d86f-f0eb-8cd4-b579", "rowText": "An example of a reproductive behavior is salmon returning to their birthplace to lay their eggs", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b050-c9a7-f762-fe5a", "rowText": "salmon is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["d86f-f0eb-8cd4-b579","7386-ad73-8eef-4980","b050-c9a7-f762-fe5a","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d86f-f0eb-8cd4-b579", "rowText": "An example of a reproductive behavior is salmon returning to their birthplace to lay their eggs", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b050-c9a7-f762-fe5a", "rowText": "salmon is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["f7ca-cfe9-d8b4-11a4","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f7ca-cfe9-d8b4-11a4", "rowText": "An example of an inherited behavior is a bird building a nest", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["f7ca-cfe9-d8b4-11a4","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f7ca-cfe9-d8b4-11a4", "rowText": "An example of an inherited behavior is a bird building a nest", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["24a1-6da8-dc81-accd","7386-ad73-8eef-4980","9e89-73fd-66d5-18e2","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "24a1-6da8-dc81-accd", "rowText": "An example of hibernation is a frog burying itself in mud", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9e89-73fd-66d5-18e2", "rowText": "a frog is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["24a1-6da8-dc81-accd","7386-ad73-8eef-4980","9e89-73fd-66d5-18e2","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "24a1-6da8-dc81-accd", "rowText": "An example of hibernation is a frog burying itself in mud", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9e89-73fd-66d5-18e2", "rowText": "a frog is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["4ba7-d894-3b98-2b11","7386-ad73-8eef-4980","a328-84da-ecad-102f","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4ba7-d894-3b98-2b11", "rowText": "An example of hunting is an otter cracking open clams with a rock", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a328-84da-ecad-102f", "rowText": "an otter is a kind of aquatic animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["4ba7-d894-3b98-2b11","7386-ad73-8eef-4980","a328-84da-ecad-102f","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4ba7-d894-3b98-2b11", "rowText": "An example of hunting is an otter cracking open clams with a rock", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a328-84da-ecad-102f", "rowText": "an otter is a kind of aquatic animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["2ad2-04a7-e3e7-916a","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "2ad2-04a7-e3e7-916a", "rowText": "An example of migration is birds flying south in the winter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"birds" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["2ad2-04a7-e3e7-916a","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "2ad2-04a7-e3e7-916a", "rowText": "An example of migration is birds flying south in the winter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"birds" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["1bbc-5bee-916f-6a8c","7386-ad73-8eef-4980","b749-39eb-d9be-228a","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1bbc-5bee-916f-6a8c", "rowText": "An example of light traveling faster than sound is people seeing the lightnings before hear the thunder", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b749-39eb-d9be-228a", "rowText": "a person is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"person" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"people" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["1bbc-5bee-916f-6a8c","7386-ad73-8eef-4980","b749-39eb-d9be-228a","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1bbc-5bee-916f-6a8c", "rowText": "An example of light traveling faster than sound is people seeing the lightnings before hear the thunder", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b749-39eb-d9be-228a", "rowText": "a person is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"person" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"people" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["b02c-8f78-137e-ce65","7386-ad73-8eef-4980","4253-4b9e-1e5f-1742","fcee-e796-d013-02ae","8cce-a771-334c-a119","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b02c-8f78-137e-ce65", "rowText": "An example of changing an ecosystem is humans constructing a housing development in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8cce-a771-334c-a119", "rowText": "migration is when animals move themselves from a cooler climate to a warmer climate for the winter", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"human" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"humans" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["b02c-8f78-137e-ce65","7386-ad73-8eef-4980","4253-4b9e-1e5f-1742","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","de27-24b6-09fb-9efc","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b02c-8f78-137e-ce65", "rowText": "An example of changing an ecosystem is humans constructing a housing development in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "de27-24b6-09fb-9efc", "rowText": "hibernation is used for conserving energy ; resources by some animals", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"human" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"bird_1", "value":"humans" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["d86f-f0eb-8cd4-b579","7386-ad73-8eef-4980","b050-c9a7-f762-fe5a","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d86f-f0eb-8cd4-b579", "rowText": "An example of a reproductive behavior is salmon returning to their birthplace to lay their eggs", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b050-c9a7-f762-fe5a", "rowText": "salmon is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"salmon" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["f7ca-cfe9-d8b4-11a4","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f7ca-cfe9-d8b4-11a4", "rowText": "An example of an inherited behavior is a bird building a nest", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["24a1-6da8-dc81-accd","7386-ad73-8eef-4980","9e89-73fd-66d5-18e2","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "24a1-6da8-dc81-accd", "rowText": "An example of hibernation is a frog burying itself in mud", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9e89-73fd-66d5-18e2", "rowText": "a frog is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"frog" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["4ba7-d894-3b98-2b11","7386-ad73-8eef-4980","a328-84da-ecad-102f","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4ba7-d894-3b98-2b11", "rowText": "An example of hunting is an otter cracking open clams with a rock", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a328-84da-ecad-102f", "rowText": "an otter is a kind of aquatic animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"otter" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["2ad2-04a7-e3e7-916a","7386-ad73-8eef-4980","e26b-b21d-d4a3-25fc","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "2ad2-04a7-e3e7-916a", "rowText": "An example of migration is birds flying south in the winter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"bird" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"birds" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["1bbc-5bee-916f-6a8c","7386-ad73-8eef-4980","b749-39eb-d9be-228a","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1bbc-5bee-916f-6a8c", "rowText": "An example of light traveling faster than sound is people seeing the lightnings before hear the thunder", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "b749-39eb-d9be-228a", "rowText": "a person is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"person" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"people" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		},
+		{
+		"uuids": ["b02c-8f78-137e-ce65","7386-ad73-8eef-4980","4253-4b9e-1e5f-1742","fcee-e796-d013-02ae","277a-fd34-e20b-0e05","fdb9-edf0-6759-5f09","a0d1-5016-59b4-faaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b02c-8f78-137e-ce65", "rowText": "An example of changing an ecosystem is humans constructing a housing development in an ecosystem", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7386-ad73-8eef-4980", "rowText": "migrating is an instinctive behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "fcee-e796-d013-02ae", "rowText": "migration is a kind of behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "277a-fd34-e20b-0e05", "rowText": "an animal knows how to do instinctive behaviors when it is born", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fdb9-edf0-6759-5f09", "rowText": "an instinctive behavior is a kind of inherited characteristic ; behavioral adaptation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "a0d1-5016-59b4-faaa", "rowText": "animal instinct means instinctive behavior", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"human" },
+			{ "name":"instinct_0", "value":"instinct" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"bird_1", "value":"humans" },
+			{ "name":"instinct_0", "value":"instinctive" }
+		]
+		}
+	]
+}
+]}
+

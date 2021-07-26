@@ -1,0 +1,1382 @@
+{"patternMatches": [
+{
+	"patternName":"EARTH_HUMIMP_Pollution_Burning_Fossil_Fuels",
+	"matches":[
+		{
+		"uuids": ["7599-58ef-3f3c-3428","82b9-31d9-285c-ed0b","7599-58ef-3f3c-3428","27e9-ab90-81ed-4957","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "82b9-31d9-285c-ed0b", "rowText": "burning fossil fuels is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "27e9-ab90-81ed-4957", "rowText": "using coal requires burning coal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["7599-58ef-3f3c-3428","5ea5-d64d-d43e-4ef8","7599-58ef-3f3c-3428","27e9-ab90-81ed-4957","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "27e9-ab90-81ed-4957", "rowText": "using coal requires burning coal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["7599-58ef-3f3c-3428","5ea5-d64d-d43e-4ef8","b47d-ee7e-9ebb-f9db","27e9-ab90-81ed-4957","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "27e9-ab90-81ed-4957", "rowText": "using coal requires burning coal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["b47d-ee7e-9ebb-f9db","82b9-31d9-285c-ed0b","7599-58ef-3f3c-3428","27e9-ab90-81ed-4957","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "82b9-31d9-285c-ed0b", "rowText": "burning fossil fuels is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "27e9-ab90-81ed-4957", "rowText": "using coal requires burning coal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["b47d-ee7e-9ebb-f9db","5ea5-d64d-d43e-4ef8","7599-58ef-3f3c-3428","27e9-ab90-81ed-4957","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "27e9-ab90-81ed-4957", "rowText": "using coal requires burning coal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["b47d-ee7e-9ebb-f9db","5ea5-d64d-d43e-4ef8","b47d-ee7e-9ebb-f9db","27e9-ab90-81ed-4957","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "27e9-ab90-81ed-4957", "rowText": "using coal requires burning coal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["7599-58ef-3f3c-3428","5ea5-d64d-d43e-4ef8","7599-58ef-3f3c-3428","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["7599-58ef-3f3c-3428","5ea5-d64d-d43e-4ef8","b47d-ee7e-9ebb-f9db","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["7599-58ef-3f3c-3428","5ea5-d64d-d43e-4ef8","27e9-ab90-81ed-4957","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "27e9-ab90-81ed-4957", "rowText": "using coal requires burning coal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["b47d-ee7e-9ebb-f9db","5ea5-d64d-d43e-4ef8","7599-58ef-3f3c-3428","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["b47d-ee7e-9ebb-f9db","5ea5-d64d-d43e-4ef8","b47d-ee7e-9ebb-f9db","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["b47d-ee7e-9ebb-f9db","5ea5-d64d-d43e-4ef8","27e9-ab90-81ed-4957","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "27e9-ab90-81ed-4957", "rowText": "using coal requires burning coal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["9f86-6ae1-8a59-fef8","3fdc-68e4-e076-d381","9f86-6ae1-8a59-fef8","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["9f86-6ae1-8a59-fef8","3fdc-68e4-e076-d381","bd63-e63d-6604-125c","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "bd63-e63d-6604-125c", "rowText": "natural gas is used for generating electricity by burning in a power plant", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["9f86-6ae1-8a59-fef8","3fdc-68e4-e076-d381","0331-acb0-62fe-f352","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0331-acb0-62fe-f352", "rowText": "natural gas is used for cooking food by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["9f86-6ae1-8a59-fef8","3fdc-68e4-e076-d381","56e7-2bed-6272-00f4","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "56e7-2bed-6272-00f4", "rowText": "natural gas is used for heating building by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["9f86-6ae1-8a59-fef8","82b9-31d9-285c-ed0b","9f86-6ae1-8a59-fef8","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "82b9-31d9-285c-ed0b", "rowText": "burning fossil fuels is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["bd63-e63d-6604-125c","3fdc-68e4-e076-d381","9f86-6ae1-8a59-fef8","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bd63-e63d-6604-125c", "rowText": "natural gas is used for generating electricity by burning in a power plant", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["bd63-e63d-6604-125c","3fdc-68e4-e076-d381","bd63-e63d-6604-125c","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bd63-e63d-6604-125c", "rowText": "natural gas is used for generating electricity by burning in a power plant", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "bd63-e63d-6604-125c", "rowText": "natural gas is used for generating electricity by burning in a power plant", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["bd63-e63d-6604-125c","3fdc-68e4-e076-d381","0331-acb0-62fe-f352","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bd63-e63d-6604-125c", "rowText": "natural gas is used for generating electricity by burning in a power plant", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0331-acb0-62fe-f352", "rowText": "natural gas is used for cooking food by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["bd63-e63d-6604-125c","3fdc-68e4-e076-d381","56e7-2bed-6272-00f4","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bd63-e63d-6604-125c", "rowText": "natural gas is used for generating electricity by burning in a power plant", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "56e7-2bed-6272-00f4", "rowText": "natural gas is used for heating building by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["bd63-e63d-6604-125c","82b9-31d9-285c-ed0b","9f86-6ae1-8a59-fef8","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bd63-e63d-6604-125c", "rowText": "natural gas is used for generating electricity by burning in a power plant", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "82b9-31d9-285c-ed0b", "rowText": "burning fossil fuels is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["0331-acb0-62fe-f352","3fdc-68e4-e076-d381","9f86-6ae1-8a59-fef8","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0331-acb0-62fe-f352", "rowText": "natural gas is used for cooking food by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["0331-acb0-62fe-f352","3fdc-68e4-e076-d381","bd63-e63d-6604-125c","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0331-acb0-62fe-f352", "rowText": "natural gas is used for cooking food by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "bd63-e63d-6604-125c", "rowText": "natural gas is used for generating electricity by burning in a power plant", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["0331-acb0-62fe-f352","3fdc-68e4-e076-d381","0331-acb0-62fe-f352","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0331-acb0-62fe-f352", "rowText": "natural gas is used for cooking food by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0331-acb0-62fe-f352", "rowText": "natural gas is used for cooking food by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["0331-acb0-62fe-f352","3fdc-68e4-e076-d381","56e7-2bed-6272-00f4","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0331-acb0-62fe-f352", "rowText": "natural gas is used for cooking food by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "56e7-2bed-6272-00f4", "rowText": "natural gas is used for heating building by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["0331-acb0-62fe-f352","82b9-31d9-285c-ed0b","9f86-6ae1-8a59-fef8","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0331-acb0-62fe-f352", "rowText": "natural gas is used for cooking food by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "82b9-31d9-285c-ed0b", "rowText": "burning fossil fuels is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["56e7-2bed-6272-00f4","3fdc-68e4-e076-d381","9f86-6ae1-8a59-fef8","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "56e7-2bed-6272-00f4", "rowText": "natural gas is used for heating building by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["56e7-2bed-6272-00f4","3fdc-68e4-e076-d381","bd63-e63d-6604-125c","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "56e7-2bed-6272-00f4", "rowText": "natural gas is used for heating building by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "bd63-e63d-6604-125c", "rowText": "natural gas is used for generating electricity by burning in a power plant", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["56e7-2bed-6272-00f4","3fdc-68e4-e076-d381","0331-acb0-62fe-f352","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "56e7-2bed-6272-00f4", "rowText": "natural gas is used for heating building by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0331-acb0-62fe-f352", "rowText": "natural gas is used for cooking food by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["56e7-2bed-6272-00f4","3fdc-68e4-e076-d381","56e7-2bed-6272-00f4","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "56e7-2bed-6272-00f4", "rowText": "natural gas is used for heating building by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "56e7-2bed-6272-00f4", "rowText": "natural gas is used for heating building by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["56e7-2bed-6272-00f4","82b9-31d9-285c-ed0b","9f86-6ae1-8a59-fef8","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "56e7-2bed-6272-00f4", "rowText": "natural gas is used for heating building by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "82b9-31d9-285c-ed0b", "rowText": "burning fossil fuels is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["82b9-31d9-285c-ed0b","7599-58ef-3f3c-3428","27e9-ab90-81ed-4957","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "82b9-31d9-285c-ed0b", "rowText": "burning fossil fuels is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "27e9-ab90-81ed-4957", "rowText": "using coal requires burning coal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["82b9-31d9-285c-ed0b","b47d-ee7e-9ebb-f9db","27e9-ab90-81ed-4957","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "82b9-31d9-285c-ed0b", "rowText": "burning fossil fuels is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "27e9-ab90-81ed-4957", "rowText": "using coal requires burning coal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["5ea5-d64d-d43e-4ef8","7599-58ef-3f3c-3428","27e9-ab90-81ed-4957","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "27e9-ab90-81ed-4957", "rowText": "using coal requires burning coal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["5ea5-d64d-d43e-4ef8","b47d-ee7e-9ebb-f9db","27e9-ab90-81ed-4957","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "27e9-ab90-81ed-4957", "rowText": "using coal requires burning coal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["7599-58ef-3f3c-3428","5ea5-d64d-d43e-4ef8","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["b47d-ee7e-9ebb-f9db","5ea5-d64d-d43e-4ef8","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["9f86-6ae1-8a59-fef8","3fdc-68e4-e076-d381","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["bd63-e63d-6604-125c","3fdc-68e4-e076-d381","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bd63-e63d-6604-125c", "rowText": "natural gas is used for generating electricity by burning in a power plant", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["0331-acb0-62fe-f352","3fdc-68e4-e076-d381","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0331-acb0-62fe-f352", "rowText": "natural gas is used for cooking food by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["56e7-2bed-6272-00f4","3fdc-68e4-e076-d381","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "56e7-2bed-6272-00f4", "rowText": "natural gas is used for heating building by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["3fdc-68e4-e076-d381","9f86-6ae1-8a59-fef8","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["3fdc-68e4-e076-d381","bd63-e63d-6604-125c","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "bd63-e63d-6604-125c", "rowText": "natural gas is used for generating electricity by burning in a power plant", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["3fdc-68e4-e076-d381","0331-acb0-62fe-f352","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0331-acb0-62fe-f352", "rowText": "natural gas is used for cooking food by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["3fdc-68e4-e076-d381","56e7-2bed-6272-00f4","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "56e7-2bed-6272-00f4", "rowText": "natural gas is used for heating building by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["82b9-31d9-285c-ed0b","9f86-6ae1-8a59-fef8","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "82b9-31d9-285c-ed0b", "rowText": "burning fossil fuels is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9f86-6ae1-8a59-fef8", "rowText": "natural gas is used for generating heat by burning in a furnace ; in a stove", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["82b9-31d9-285c-ed0b","bd63-e63d-6604-125c","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "82b9-31d9-285c-ed0b", "rowText": "burning fossil fuels is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "bd63-e63d-6604-125c", "rowText": "natural gas is used for generating electricity by burning in a power plant", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["82b9-31d9-285c-ed0b","0331-acb0-62fe-f352","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "82b9-31d9-285c-ed0b", "rowText": "burning fossil fuels is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0331-acb0-62fe-f352", "rowText": "natural gas is used for cooking food by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["82b9-31d9-285c-ed0b","56e7-2bed-6272-00f4","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "82b9-31d9-285c-ed0b", "rowText": "burning fossil fuels is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "56e7-2bed-6272-00f4", "rowText": "natural gas is used for heating building by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["82b9-31d9-285c-ed0b","27e9-ab90-81ed-4957","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "82b9-31d9-285c-ed0b", "rowText": "burning fossil fuels is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "27e9-ab90-81ed-4957", "rowText": "using coal requires burning coal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["5ea5-d64d-d43e-4ef8","7599-58ef-3f3c-3428","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7599-58ef-3f3c-3428", "rowText": "coal is used for generating heat by burning", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["5ea5-d64d-d43e-4ef8","b47d-ee7e-9ebb-f9db","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "b47d-ee7e-9ebb-f9db", "rowText": "coal is used to produce electricity by burning in coal-fire power stations", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["5ea5-d64d-d43e-4ef8","27e9-ab90-81ed-4957","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "27e9-ab90-81ed-4957", "rowText": "using coal requires burning coal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["3fdc-68e4-e076-d381","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3fdc-68e4-e076-d381", "rowText": "burning natural gas is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["82b9-31d9-285c-ed0b","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "82b9-31d9-285c-ed0b", "rowText": "burning fossil fuels is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		},
+		{
+		"uuids": ["82b9-31d9-285c-ed0b","2355-0cfa-86f8-5767","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "82b9-31d9-285c-ed0b", "rowText": "burning fossil fuels is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2355-0cfa-86f8-5767", "rowText": "natural gas is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"nature gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"natural gas" }
+		]
+		},
+		{
+		"uuids": ["5ea5-d64d-d43e-4ef8","cab1-f3c3-59de-b682","45e3-d495-cac5-11a0","d116-6f25-b3ac-7d88","46e6-9074-4802-bd21","b877-a58b-f75a-3998","20ac-3022-d732-df85"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ea5-d64d-d43e-4ef8", "rowText": "burning coal is a source of air pollution", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cab1-f3c3-59de-b682", "rowText": "coal is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "45e3-d495-cac5-11a0", "rowText": "air pollution causes a slow change in ecosystem", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d116-6f25-b3ac-7d88", "rowText": "pollution has a negative impact on the environment ; air quality ; water quality ; society", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "46e6-9074-4802-bd21", "rowText": "fossil fuels burning causes pollution", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "20ac-3022-d732-df85", "rowText": "fossil fuels are a kind of energy resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"fossilFuelName", "value":"coal" }
+		]
+		}
+	]
+}
+]}
+

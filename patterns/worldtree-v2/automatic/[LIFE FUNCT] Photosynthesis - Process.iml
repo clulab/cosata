@@ -1,0 +1,85 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Photosynthesis_Process
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW a bean plant is a kind of plant     (7881-6f75-7de9-2722) [ HYPONYM:"bean plant", HYPERNYM:"plant" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// CENTRAL         SOURCEOF: plants are a source of oxygen through photosynthesis     (a908-944e-04aa-71bc) [ AGENT:"plant", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"oxygen", BY_THROUGH_HOW:"photosynthesis" ]
+	//row autoRow1 = [UUID:"a908-944e-04aa-71bc", AGENT: "plant", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "oxygen", BY_THROUGH_HOW: "photosynthesis"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"a908-944e-04aa-71bc", AGENT: "plant", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "oxygen", BY_THROUGH_HOW: "photosynthesis"]
+
+	// CENTRAL        (OPTIONAL) KINDOF: photosynthesis is a kind of chemical process     (7309-3070-fa70-cad9) [ HYPONYM:"photosynthesis", SCOPE1:"chemical", HYPERNYM:"process" ]
+	//  Notes: peripheral
+	//row *autoRow2 = [UUID:"7309-3070-fa70-cad9", HYPONYM: "photosynthesis", SCOPE1: "chemical", HYPERNYM: "process"] //OVER-CONSTR.
+	row *autoRow2 = [UUID:"7309-3070-fa70-cad9", HYPONYM: "photosynthesis", SCOPE1: "chemical", HYPERNYM: "process"]
+
+	// CENTRAL         PROCESSROLES: In the photosynthesis process carbon dioxide ; water ; sunlight has the role of raw material     (93b8-fdb5-f003-dedb) [ PROCESS_NAME:"photosynthesis", ACTOR_COMMON_EXAMPLE:"carbon dioxide;water;sunlight", ROLE:"raw material" ]
+	//row autoRow3 = [UUID:"93b8-fdb5-f003-dedb", PROCESS_NAME: "photosynthesis", ACTOR_COMMON_EXAMPLE: "carbon dioxide", ROLE: "raw material"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"93b8-fdb5-f003-dedb", PROCESS_NAME: "photosynthesis", ACTOR_COMMON_EXAMPLE: "carbon dioxide", ROLE: "raw material"]
+
+	// CENTRAL         ACTION: a plant absorbs carbon dioxide from the air to perform photosynthesis     (7b20-0992-8ec1-c73c) [ AGENT_OBJECT:"plant", ACTION2:"absorb", OBJECT_PROPERTY:"carbon dioxide", WHEN_WHERE:"from air", FOR_PURPOSE:"perform photosynthesis" ]
+	//row autoRow4 = [UUID:"7b20-0992-8ec1-c73c", AGENT_OBJECT: "plant", ACTION2: "absorb", OBJECT_PROPERTY: "carbon dioxide", WHEN_WHERE: "from air", FOR_PURPOSE: "perform photosynthesis"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"7b20-0992-8ec1-c73c", AGENT_OBJECT: "plant", ACTION2: "absorb", OBJECT_PROPERTY: "carbon dioxide", WHEN_WHERE: "from air", FOR_PURPOSE: "perform photosynthesis"]
+
+	// CENTRAL         MADEOF: carbohydrates are made of sugars     (93e8-b9fd-8d3a-5601) [ OBJECT:"carbohydrate", MATERIAL:"sugar" ]
+	//row autoRow5 = [UUID:"93e8-b9fd-8d3a-5601", OBJECT: "carbohydrate", MATERIAL: "sugar"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"93e8-b9fd-8d3a-5601", OBJECT: "carbohydrate", MATERIAL: "sugar"]
+
+	// CENTRAL         CHANGE: photosynthesis means producers ; green plants convert from carbon dioxide and water and solar energy into carbohydrates and food and oxygen for themselves     (0962-4a47-4e17-ce97) [ PROCESS_NAME:"photosynthesis", ACTOR_WHO:"producer;green plant", VERB:"convert", FROM:"carbon dioxide water solar energy", INTO:"carbohydrate food oxygen" ]
+	//row autoRow6 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"]
+
+	// CENTRAL         SOURCEOF: photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates     (a9fc-ec58-9496-d635) [ AGENT:"photosynthesis", VERB_SOURCEOF_PROVIDE_ETC:"be source of;make", WHAT_IT_PROVIDES:"food;energy", AGENT_IT_PROVIDES_THING_TO:"plant", BY_THROUGH_HOW:"convert carbon dioxide water sunlight into carbohydrate" ]
+	//row autoRow7 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"]
+
+	// CENTRAL         SOURCEOF: the sun is the source of solar energy called sunlight     (1ed3-919d-4a4c-1be7) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"solar energy", NAME:"sunlight" ]
+	//row autoRow8 = [UUID:"1ed3-919d-4a4c-1be7", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "solar energy", NAME: "sunlight"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"1ed3-919d-4a4c-1be7", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "solar energy", NAME: "sunlight"]
+
+	// CENTRAL         SOURCEOF: green plants provide food for themselves ; animals ; consumers by performing photosynthesis     (694b-d9ec-8c65-5a6a) [ ADJ:"green", AGENT:"plant", VERB_SOURCEOF_PROVIDE_ETC:"provide", WHAT_IT_PROVIDES:"food", AGENT_IT_PROVIDES_THING_TO:";animal;consumer", BY_THROUGH_HOW:"perform photosynthesis" ]
+	//row autoRow9 = [UUID:"694b-d9ec-8c65-5a6a", ADJ: "green", AGENT: "plant", VERB_SOURCEOF_PROVIDE_ETC: "provide", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "animal", BY_THROUGH_HOW: "perform photosynthesis"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"694b-d9ec-8c65-5a6a", ADJ: "green", AGENT: "plant", VERB_SOURCEOF_PROVIDE_ETC: "provide", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "animal", BY_THROUGH_HOW: "perform photosynthesis"]
+
+	// CENTRAL         REQUIRES: a plant ; living thing requires food for survival     (3796-e9f2-e94c-634d) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"food", FOR_PURPOSE:"survive" ]
+	//row autoRow10 = [UUID:"3796-e9f2-e94c-634d", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "food", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"3796-e9f2-e94c-634d", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "food", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         REQUIRES: a plant requires sunlight for photosynthesis     (619e-a5d1-b505-4f69) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"sunlight", FOR_PURPOSE:"photosynthesis" ]
+	//row autoRow11 = [UUID:"619e-a5d1-b505-4f69", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "photosynthesis"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"619e-a5d1-b505-4f69", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "photosynthesis"]
+
+	// CENTRAL         SOURCEOF: food is a source of energy for animals ; plants     (5753-2812-04c2-af70) [ AGENT:"food", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"energy", AGENT_IT_PROVIDES_THING_TO:"animal;plant" ]
+	//row autoRow12 = [UUID:"5753-2812-04c2-af70", AGENT: "food", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "animal"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"5753-2812-04c2-af70", AGENT: "food", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "animal"]
+
+	// CENTRAL         REQUIRES: a plant requires photosynthesis to grow ; survive     (fe74-c2b4-98c2-9496) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"photosynthesis", FOR_PURPOSE:"grow;survive" ]
+	//row autoRow13 = [UUID:"fe74-c2b4-98c2-9496", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "photosynthesis", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"fe74-c2b4-98c2-9496", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "photosynthesis", FOR_PURPOSE: "grow"]
+
+	// CENTRAL         IFTHEN: if something is a raw material in a process then that something is required for that process     (2851-a2b0-f5df-dae7) [ THING:"something", ADJ_QUANTITY1A:"raw", OBJECT_PATIENT1:"material", OBJECT_PROPERTY1:"in process", ACTOR_AGENT_PROCESS2:"that something", ACTION3:"require", PURPOSE:"process" ]
+	//row autoRow14 = [UUID:"2851-a2b0-f5df-dae7", THING: "something", ADJ_QUANTITY1A: "raw", OBJECT_PATIENT1: "material", OBJECT_PROPERTY1: "in process", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "require", PURPOSE: "process"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"2851-a2b0-f5df-dae7", THING: "something", ADJ_QUANTITY1A: "raw", OBJECT_PATIENT1: "material", OBJECT_PROPERTY1: "in process", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "require", PURPOSE: "process"]
+
+	// LEXGLUE         SYNONYMY: sunlight means solar energy     (6759-5ee2-140f-df48) [ X1:"sunlight", X2:"solar energy" ]
+	//row autoRow15 = [UUID:"6759-5ee2-140f-df48", X1: "sunlight", X2: "solar energy"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"6759-5ee2-140f-df48", X1: "sunlight", X2: "solar energy"]
+
+	// LEXGLUE         SYNONYMY: absorbing something from the air means removing that something from Earth 's atmosphere     (d8c7-2c45-02f6-ba6c) [ ACTION1:"absorb", Y1:"something from air", ACTION2:"remove", Y2:"that something from earth atmosphere" ]
+	//row autoRow16 = [UUID:"d8c7-2c45-02f6-ba6c", ACTION1: "absorb", Y1: "something from air", ACTION2: "remove", Y2: "that something from earth atmosphere"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"d8c7-2c45-02f6-ba6c", ACTION1: "absorb", Y1: "something from air", ACTION2: "remove", Y2: "that something from earth atmosphere"]
+
+	// LEXGLUE         SYNONYMY: photosynthesizing means performing photosynthesis     (cefb-90ef-b740-0cfb) [ ACTION1:"photosynthesize", ACTION2:"perform", Y2:"photosynthesis" ]
+	//row autoRow17 = [UUID:"cefb-90ef-b740-0cfb", ACTION1: "photosynthesize", ACTION2: "perform", Y2: "photosynthesis"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"cefb-90ef-b740-0cfb", ACTION1: "photosynthesize", ACTION2: "perform", Y2: "photosynthesis"]
+
+endinferencepattern

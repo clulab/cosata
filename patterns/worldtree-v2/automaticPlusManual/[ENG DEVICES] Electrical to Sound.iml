@@ -1,0 +1,60 @@
+// Automatically converted pattern
+inferencepattern ENG_DEVICES_Electrical_to_Sound
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       REQUIRES: electric devices require electrical energy to function     (0584-393a-7b86-9c70) [ OBJECT_AGENT_PROCESS:"electric device", VERB_REQUIRES:"require", OBJECT:"electric energy", FOR_PURPOSE:"function" ]
+	//        HINTROW an electrical device requires electricity to turn on     (4ba9-2d5a-0284-2882) [ OBJECT_AGENT_PROCESS:"electric device", VERB_REQUIRES:"require", OBJECT:"electric", FOR_PURPOSE:"turn" ]
+	//row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "electric device", VERB_REQUIRES: "require", OBJECT: "electric"+<energy_0>, FOR_PURPOSE: "function"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "electric device", VERB_REQUIRES: "require", OBJECT: "electric"+<energy_0>]
+
+	// CENTRALSW       CHANGE: a doorbell converts electrical energy ; electricity into sound energy     (c334-b118-4a5a-13dc) [ ACTOR_WHO:"doorbell", VERB:"convert", FROM:"electric energy;electric", INTO:"sound energy" ]
+	//        HINTROW electrical devices convert from electrical energy ; electricity into other forms of energy     (5e4d-6ae2-e556-9200) [ ACTOR_WHO:"electric device", VERB:"convert", FROM:"electric energy;electric", INTO:"other form of energy" ]
+	//        HINTROW a fan converts electrical energy into mechanical energy ; heat energy ; sound energy     (b560-68a2-6ddb-ce23) [ ACTOR_WHO:"fan", VERB:"convert", FROM:"electric energy", INTO:"mechanical energy;heat energy;sound energy" ]
+	//  Notes: d201-bf2c-27ec-14a0->5e4d-6ae2-e556-9200,e58b-3217-6a20-dde2,3144-f8f2-43a4-8712,ff35-14d7-c71b-fe72,8229-9677-683e-24d5
+	//row autoRow1 = [TABLE:"CHANGE", VERB: "convert", FROM: "electric"+<energy_0>, INTO: "sound"+<energy_0>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CHANGE", VERB: "convert", FROM: "electric"+<energy_0>, INTO: *"POS:JJ"+<energy_0>]
+
+	// CENTRALSW       KINDOF: a doorbell is a kind of electric device     (ac96-5db5-366c-b342) [ HYPONYM:"doorbell", SCOPE1:"electric", HYPERNYM:"device" ]
+	//        HINTROW an electric fan is a kind of electrical device for cooling ; ventilation     (d259-7bf2-a54b-5195) [ HYPONYM:"electric fan", HYPERNYM:"electric device", FOR_PURPOSE:"cool;ventilation" ]
+	//        HINTROW a radio is a kind of electrical device     (e58b-3217-6a20-dde2) [ HYPONYM:"radio", SCOPE1:"electric", HYPERNYM:"device" ]
+	//row autoRow2 = [TABLE:"KINDOF", SCOPE1: "electric", HYPERNYM: "device"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "device"]
+
+	// CENTRAL         CAUSE: closing an electric circuit causes an electrical device to function     (b668-73fc-5f73-b444) [ CONDITION_VERB:"close", CONDITION_PATIENT:"electric circuit", RESULT_AGENT:"electric device", RESULT_VERB:"function" ]
+	//row autoRow3 = [UUID:"b668-73fc-5f73-b444", CONDITION_VERB: "close", CONDITION_PATIENT: "electric circuit", RESULT_AGENT: "electric device", RESULT_VERB: "function"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"b668-73fc-5f73-b444", CONDITION_VERB: "close", CONDITION_PATIENT: "electric circuit", RESULT_AGENT: "electric device", RESULT_VERB: "function"]
+
+	// CENTRAL         KINDOF: converting is a kind of function     (2396-35fe-f677-c8fb) [ HYPONYM:"convert", HYPERNYM:"function" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"2396-35fe-f677-c8fb", HYPONYM: "convert", HYPERNYM: "function"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"2396-35fe-f677-c8fb", HYPONYM: "convert", HYPERNYM: "function"]
+
+	// CENTRAL         VEHICLE: an electric circuit is a vehicle for moving electrical energy from the source to the electrical device     (8d19-d76d-4c8e-bc04) [ ACTOR_WHO:"electric circuit", VERB:"move", WHAT:"electric energy", SOURCE:"source", DESTINATION:"electric device" ]
+	//row autoRow5 = [UUID:"8d19-d76d-4c8e-bc04", ACTOR_WHO: "electric circuit", VERB: "move", WHAT: "electric"+<energy_0>, SOURCE: "source", DESTINATION: "electric device"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"8d19-d76d-4c8e-bc04", ACTOR_WHO: "electric circuit", VERB: "move", WHAT: "electric"+<energy_0>, SOURCE: "source", DESTINATION: "electric device"]
+
+	// CENTRAL        (OPTIONAL) CONTAINS: a radio contains a speaker     (8229-9677-683e-24d5) [ OBJECT_AGENT:"radio", WHAT_IT_CONTAINS:"speaker" ]
+	//row *autoRow6 = [UUID:"8229-9677-683e-24d5", OBJECT_AGENT: "radio", WHAT_IT_CONTAINS: "speaker"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"8229-9677-683e-24d5", OBJECT_AGENT: "radio", WHAT_IT_CONTAINS: "speaker"]
+
+	// CENTRAL         KINDOF: electrical energy is a kind of energy     (b5ca-9f64-d6d6-6783) [ HYPONYM:"electric energy", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"b5ca-9f64-d6d6-6783", HYPONYM: "electric"+<energy_0>, HYPERNYM: <energy_0>] //OVER-CONSTR.
+	row autoRow7 = [UUID:"b5ca-9f64-d6d6-6783", HYPONYM: "electric"+<energy_0>, HYPERNYM: <energy_0>]
+
+	// CENTRAL         CHANGE: energy transformation means one kind of energy changes into another kind of energy     (3d34-b43e-8a7e-07fd) [ PROCESS_NAME:"energy transformation", ACTOR_WHO:"one kind of energy", VERB:"change", INTO:"kind of energy" ]
+	//row autoRow8 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: <energy_0>+"transformation", ACTOR_WHO: "one kind of"+<energy_0>, VERB: "change", INTO: "kind of"+<energy_0>] //OVER-CONSTR.
+	row autoRow8 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: <energy_0>+"transformation", ACTOR_WHO: "one kind of"+<energy_0>, VERB: "change", INTO: "kind of"+<energy_0>]
+
+	// CENTRAL         KINDOF: sound is a kind of energy     (1980-256d-b685-846c) [ HYPONYM:"sound", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"1980-256d-b685-846c", HYPONYM: "sound", HYPERNYM: <energy_0>] //OVER-CONSTR.
+	row autoRow9 = [UUID:"1980-256d-b685-846c", HYPONYM: "sound", HYPERNYM: <energy_0>]
+
+endinferencepattern

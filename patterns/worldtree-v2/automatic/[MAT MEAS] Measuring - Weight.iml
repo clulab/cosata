@@ -1,0 +1,57 @@
+// Automatically converted pattern
+inferencepattern MAT_MEAS_Measuring_Weight
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       UNIT: grams ( g ) are a metric unit used for measuring mass ; weight generally used for values between 1 and 2000     (3ad2-62a6-57f5-df68) [ UNIT:"gram", ABBREVIATION:"g", PROPERTY:"mass;weight", LOWERBOUND:"1", UPPERBOUND:"2000" ]
+	//        HINTROW kilograms ( kg ) are a metric ; SI unit used for measuring mass ; weight generally used for values between 1 and 50000000     (7a26-9d80-a88f-94fa) [ UNIT:"kilogram", ABBREVIATION:"kg", PROPERTY:"mass;weight", LOWERBOUND:"1", UPPERBOUND:"50000000" ]
+	//        HINTROW pounds ( lb ) are a imperial unit used for measuring mass ; weight generally used for values between 1 and 50000000     (68fe-16bc-d67a-41b9) [ UNIT:"pound", ABBREVIATION:"lb", PROPERTY:"mass;weight", LOWERBOUND:"1", UPPERBOUND:"50000000" ]
+	//        HINTROW tonnes ( t ) are a imperial unit used for measuring mass ; weight generally used for values between 1 and 50000000     (1456-f51f-a4cd-2dfb) [ UNIT:"tonne", ABBREVIATION:"t", PROPERTY:"mass;weight", LOWERBOUND:"1", UPPERBOUND:"50000000" ]
+	//        HINTROW ounces ( oz ) are a imperial unit used for measuring weight generally used for values between 1 and 16     (0fb6-3ecf-eb41-0b84) [ UNIT:"ounce", ABBREVIATION:"oz", PROPERTY:"weight", LOWERBOUND:"1", UPPERBOUND:"16" ]
+	//  Notes: units for measuring weight
+	//row autoRow0 = [TABLE:"UNIT", PROPERTY: "mass", LOWERBOUND: "1"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"UNIT", PROPERTY: "weight", LOWERBOUND: "1"]
+
+	// CENTRALSW       USEDFOR: a scale is used for measuring weight     (af64-6dc9-a2bb-291d) [ AGENT_OBJECT:"scale", FOR_PURPOSE:"measure", PATIENT:"weight" ]
+	//        HINTROW a balance is used for measuring mass ; weight of an object ; of a substance     (5c76-a005-e9c2-354a) [ AGENT_OBJECT:"balance", FOR_PURPOSE:"measure", PATIENT:"mass;weight", SCOPE2:"of object;of substance" ]
+	//  Notes: instruments
+	//row autoRow1 = [TABLE:"USEDFOR", FOR_PURPOSE: "measure", PATIENT: "weight"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"USEDFOR", FOR_PURPOSE: "measure", PATIENT: "weight"]
+
+	// GROUNDING       KINDOF: a living thing is a kind of object     (4eac-892f-ecd2-6e0d) [ HYPONYM:"live thing", HYPERNYM:"object" ]
+	//        HINTROW an anchor is a kind of object     (8b86-e8d3-5b44-048e) [ HYPONYM:"anchor", HYPERNYM:"object" ]
+	//        HINTROW a ball is a kind of object     (5650-b213-46ea-d9dd) [ HYPONYM:"ball", HYPERNYM:"object" ]
+	//        HINTROW a battery is a kind of object     (7149-5022-cd2c-b375) [ HYPONYM:"battery", HYPERNYM:"object" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// CENTRAL         MEASUREMENTS: weight is a measure of the force of the gravity on the mass of an object     (c03f-fad3-ae99-57e3) [ MEASURE:"weight", QUANTITY_ADJ:"measure of", ATTRIBUTE:"force of gravity on", AGENT:"mass", SCOPE:"of object" ]
+	//row autoRow3 = [UUID:"c03f-fad3-ae99-57e3", MEASURE: "weight", QUANTITY_ADJ: "measure of", ATTRIBUTE: "force of gravity on", AGENT: "mass", SCOPE: "of object"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"c03f-fad3-ae99-57e3", MEASURE: "weight", QUANTITY_ADJ: "measure of", ATTRIBUTE: "force of gravity on", AGENT: "mass", SCOPE: "of object"]
+
+	// CENTRAL         KINDOF: weight is a kind of property     (5720-208c-fea0-628e) [ HYPONYM:"weight", HYPERNYM:"property" ]
+	//row autoRow4 = [UUID:"5720-208c-fea0-628e", HYPONYM: "weight", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"5720-208c-fea0-628e", HYPONYM: "weight", HYPERNYM: "property"]
+
+	// CENTRAL         PROP-GENERIC: weight is a property of objects ; matter     (ca64-cc38-3e22-c1c1) [ X:"weight", Y:"object;matt" ]
+	//row autoRow5 = [UUID:"ca64-cc38-3e22-c1c1", X: "weight", Y: "object"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"ca64-cc38-3e22-c1c1", X: "weight", Y: "object"]
+
+	// CENTRAL         REQUIRES: determining often requires measuring ; observing     (fc75-dfcd-e46e-e318) [ ACTION1:"determine", QUANTIFIER:"often", VERB_REQUIRES:"require", ACTION2:"measure;observe" ]
+	//row autoRow6 = [UUID:"fc75-dfcd-e46e-e318", ACTION1: "determine", QUANTIFIER: "often", VERB_REQUIRES: "require", ACTION2: "measure"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"fc75-dfcd-e46e-e318", ACTION1: "determine", QUANTIFIER: "often", VERB_REQUIRES: "require", ACTION2: "measure"]
+
+	// CENTRAL         REQUIRES: measuring sometimes requires recording ; learning an amount     (5c04-1a15-876c-ebc2) [ ACTION1:"measure", QUANTIFIER:"sometimes", VERB_REQUIRES:"require", ACTION2:"record;learn", OBJECT:"amount" ]
+	//row autoRow7 = [UUID:"5c04-1a15-876c-ebc2", ACTION1: "measure", QUANTIFIER: "sometimes", VERB_REQUIRES: "require", ACTION2: "record", OBJECT: "amount"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"5c04-1a15-876c-ebc2", ACTION1: "measure", QUANTIFIER: "sometimes", VERB_REQUIRES: "require", ACTION2: "record", OBJECT: "amount"]
+
+	// LEXGLUE         SYNONYMY: weight means the force of gravity acting on an object     (bd42-1e2a-7899-2200) [ X1:"weight", X2:"force of gravity", ACTION2:"act", Y2:"on object" ]
+	//row autoRow8 = [UUID:"bd42-1e2a-7899-2200", X1: "weight", X2: "force of gravity", ACTION2: "act", Y2: "on object"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"bd42-1e2a-7899-2200", X1: "weight", X2: "force of gravity", ACTION2: "act", Y2: "on object"]
+
+endinferencepattern

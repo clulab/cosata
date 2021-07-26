@@ -1,0 +1,84 @@
+// Automatically converted pattern
+inferencepattern ENG_LIGHT_Light_Color_affects_Reflection
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ACTION: a white object reflects all visible light     (902d-2137-8776-7a13) [ ADJ:"white", AGENT_OBJECT:"object", ACTION2:"reflect", OBJECT_PROPERTY:"visible light" ]
+	//        HINTROW black objects absorb the most amount of sunlight     (8ecf-536f-d882-ff06) [ ADJ:"black", THING:"object", ACTION1:"absorb", COMPARISON:"much", WHAT:"amount of sunlight" ]
+	//  Notes: 8481-946f-035e-3aad->8ecf-536f-d882-ff06
+//WARNING! Slot with no constraints.
+//	//row autoRow0 = [TABLE:"ACTION"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow0 = [TABLE:"ACTION"]
+
+	// CENTRALSW       IFTHEN: if an object is white then that object reflects all visible light     (fa97-a5e3-1896-c2e5) [ THING:"object", OBJECT_PROPERTY1:"white", ACTOR_AGENT_PROCESS2:"that object", ACTION3:"reflect", OBJECT_PROPERTY3:"visible light" ]
+	//        HINTROW if an object is black then that object absorbs all visible light ; heat     (f2f7-cd7a-78d2-7f0b) [ THING:"object", OBJECT_PROPERTY1:"black", ACTOR_AGENT_PROCESS2:"that object", ACTION3:"absorb", OBJECT_PROPERTY3:"visible light;heat" ]
+	//row autoRow1 = [TABLE:"IFTHEN", THING: "object", OBJECT_PROPERTY1: <white_0>, ACTOR_AGENT_PROCESS2: "that object", ACTION3: "reflect", OBJECT_PROPERTY3: "visible light"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"IFTHEN", THING: "object", OBJECT_PROPERTY1: <white_0>, ACTOR_AGENT_PROCESS2: "that object", OBJECT_PROPERTY3: "visible light"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: dark means dark in color     (520f-4fa4-acef-f45f) [ THING:"dark", VALUE:"dark", ATTRIBUTE:"color" ]
+	//        HINTROW bright means bright ; light in color     (b5e2-521d-a85b-cf14) [ THING:"bright", VALUE:"bright;light", ATTRIBUTE:"color" ]
+	//row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "dark", VALUE: "dark", ATTRIBUTE: "color"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "color"]
+
+	// CENTRALSW       PROP-THINGS: white is light in color     (a720-b74f-a817-0f4f) [ THING:"white", VALUE:"light", ATTRIBUTE:"in color" ]
+	//        HINTROW black is dark in color     (1138-b559-9aba-78e5) [ THING:"black", VALUE:"dark", ATTRIBUTE:"in color" ]
+	//        HINTROW brown is dark in color     (1bc8-eef9-c1b6-843f) [ THING:"brown", VALUE:"dark", ATTRIBUTE:"in color" ]
+	//  Notes: light/dark in color
+	//row autoRow3 = [TABLE:"PROP-THINGS", THING: <white_0>, VALUE: "light", ATTRIBUTE: "in color"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"PROP-THINGS", ATTRIBUTE: "in color"]
+
+	// GROUNDING       KINDOF: a shirt is a kind of article of clothing     (9eef-20c5-1709-cdf3) [ HYPONYM:"shirt", HYPERNYM:"article of clothe" ]
+	//        HINTROW a sweater is a kind of article of clothing     (6c81-44cd-0b96-eddb) [ HYPONYM:"sweater", HYPERNYM:"article of clothe" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "article of clothe"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "article of clothe"]
+
+	// GROUNDING       KINDOF: an article of clothing is a kind of object     (3d61-550e-57ae-b045) [ HYPONYM:"article of clothe", HYPERNYM:"object" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPONYM: "article of clothe", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPONYM: "article of clothe", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: white is a kind of color     (12c9-e2b2-25cd-65c6) [ HYPONYM:"white", HYPERNYM:"color" ]
+	//        HINTROW black is a kind of color     (7892-f43a-8f12-2a8d) [ HYPONYM:"black", HYPERNYM:"color" ]
+	//  Notes: peripheral
+	//row autoRow6 = [TABLE:"KINDOF", HYPONYM: <white_0>, HYPERNYM: "color"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPONYM: <white_0>, HYPERNYM: "color"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as lightness in color of an object increases , the ability of that object to reflect light will increase     (1bf4-ea57-b77d-dd0b) [ QUANTITY_MEASURE1:"light in color", AGENT_ATTRIBUTE1:"of object", CHANGE1:"increase", QUANTITY_MEASURE2:"ability", AGENT_ATTRIBUTE2:"of object", ACTION2:"reflect", PATIENT2:"light", CHANGE2:"increase" ]
+	//row autoRow7 = [UUID:"1bf4-ea57-b77d-dd0b", QUANTITY_MEASURE1: "light in color", AGENT_ATTRIBUTE1: "of object", CHANGE1: "increase", QUANTITY_MEASURE2: "ability", AGENT_ATTRIBUTE2: "of object", ACTION2: "reflect", PATIENT2: "light", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"1bf4-ea57-b77d-dd0b", QUANTITY_MEASURE1: "light in color", AGENT_ATTRIBUTE1: "of object", CHANGE1: "increase", QUANTITY_MEASURE2: "ability", AGENT_ATTRIBUTE2: "of object", ACTION2: "reflect", PATIENT2: "light", CHANGE2: "increase"]
+
+	// CENTRAL         CAUSE: light reflecting off of an object causes that object to be visible to the observer     (6315-d70b-bc57-16c8) [ CONDITION_AGENT_OBJECT:"light", CONDITION_VERB:"reflect", CONDITION_PATIENT:"off of object", RESULT_AGENT:"that object", RESULT_VERB:"be visible", RESULT_PATIENT:"observer" ]
+	//row autoRow8 = [UUID:"6315-d70b-bc57-16c8", CONDITION_AGENT_OBJECT: "light", CONDITION_VERB: "reflect", CONDITION_PATIENT: "off of object", RESULT_AGENT: "that object", RESULT_VERB: "be visible", RESULT_PATIENT: "observer"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"6315-d70b-bc57-16c8", CONDITION_AGENT_OBJECT: "light", CONDITION_VERB: "reflect", CONDITION_PATIENT: "off of object", RESULT_AGENT: "that object", RESULT_VERB: "be visible", RESULT_PATIENT: "observer"]
+
+	// CENTRAL         IFTHEN: if an object ; a substance ; a location absorbs solar energy then that object ; that substance will increase in temperature     (9554-47d7-c095-1df7) [ THING:"object;substance;locate", ACTION1:"absorb", OBJECT_PATIENT1:"solar energy", ACTOR_AGENT_PROCESS2:"that object;that substance", ACTION3:"increase", OBJECT_PROPERTY3:"in temperature" ]
+	//row autoRow9 = [UUID:"9554-47d7-c095-1df7", THING: "object", ACTION1: "absorb", OBJECT_PATIENT1: "solar energy", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "increase", OBJECT_PROPERTY3: "in temperature"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"9554-47d7-c095-1df7", THING: "object", ACTION1: "absorb", OBJECT_PATIENT1: "solar energy", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "increase", OBJECT_PROPERTY3: "in temperature"]
+
+	// CENTRAL         ACTION: darker objects absorb more light than light colored objects     (6964-670b-e8d3-728c) [ ADJ:"dark", AGENT_OBJECT:"object", ACTION2:"absorb", OBJECT_PROPERTY:"much light", SCOPE2:"than light color object" ]
+	//row autoRow10 = [UUID:"6964-670b-e8d3-728c", ADJ: "dark", AGENT_OBJECT: "object", ACTION2: "absorb", OBJECT_PROPERTY: "much light", SCOPE2: "than light color object"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"6964-670b-e8d3-728c", ADJ: "dark", AGENT_OBJECT: "object", ACTION2: "absorb", OBJECT_PROPERTY: "much light", SCOPE2: "than light color object"]
+
+	// CENTRAL        (OPTIONAL) PROP-GENERIC: color is a property of an object ; a material     (5c52-4f26-3883-a4ef) [ X:"color", Y:"object;material" ]
+	//row *autoRow11 = [UUID:"5c52-4f26-3883-a4ef", X: "color", Y: "object"] //OVER-CONSTR.
+	row *autoRow11 = [UUID:"5c52-4f26-3883-a4ef", X: "color", Y: "object"]
+
+	// CENTRAL         KINDOF: sunlight is a kind of light     (49dc-4526-46f9-5b32) [ HYPONYM:"sunlight", HYPERNYM:"light" ]
+	//row autoRow12 = [UUID:"49dc-4526-46f9-5b32", HYPONYM: "sunlight", HYPERNYM: "light"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"49dc-4526-46f9-5b32", HYPONYM: "sunlight", HYPERNYM: "light"]
+
+	// CENTRAL         COMPARISON: summer has the most sunlight     (564e-eb72-a12b-dbaa) [ THING:"summer", ACTION1:"have", COMPARISON:"much", WHAT:"sunlight" ]
+	//  Notes: a0de-6074-3154-0632->564e-eb72-a12b-dbaa
+	//row autoRow13 = [UUID:"564e-eb72-a12b-dbaa", THING: "summer", ACTION1: "have", COMPARISON: "much", WHAT: "sunlight"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"564e-eb72-a12b-dbaa", THING: "summer", ACTION1: "have", COMPARISON: "much", WHAT: "sunlight"]
+
+	// LEXGLUE         OPPOSITES: dark is the opposite of light     (f487-43a6-3837-b86b) [ THING_PROPERTY1:"dark", THING_PROPERTY2:"light" ]
+	//row autoRow14 = [UUID:"f487-43a6-3837-b86b", THING_PROPERTY1: "dark", THING_PROPERTY2: "light"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"f487-43a6-3837-b86b", THING_PROPERTY1: "dark", THING_PROPERTY2: "light"]
+
+endinferencepattern

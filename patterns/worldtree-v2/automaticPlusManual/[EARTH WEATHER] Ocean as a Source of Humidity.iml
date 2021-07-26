@@ -1,0 +1,82 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Ocean_as_a_Source_of_Humidity
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: dry means low in amount of water ; wetness ; moisture     (5554-6d9d-779d-d5f5) [ THING:"spin-dry", VALUE:"low", ATTRIBUTE:"amount of water;wet;moisture" ]
+	//        HINTROW drier means lower in amount of water ; wetness ; moisture     (3cfa-bd2a-6867-18ba) [ THING:"dry", VALUE:"low", ATTRIBUTE:"amount of water;wet;moisture" ]
+	//  Notes: dry attribute value
+	//row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", VALUE: "low", ATTRIBUTE: "amount of water"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", VALUE: "low", ATTRIBUTE: "amount of water"]
+
+	// CENTRALSW       PROP-GENERIC: humidity is a property of weather and include ordered values of dry ; humid     (33cb-429a-ce86-2d79) [ X:"humidity", Y:"weather", ORDERED_UNORDERED:"order", VALUES:"spin-dry;humid" ]
+	//        HINTROW moisture is a property of air mass and includes ordered values of dry ; humid     (fa3b-1528-2b6e-4d28) [ X:"moisture", Y:"air mass", ORDERED_UNORDERED:"order", VALUES:"spin-dry;humid" ]
+	//row autoRow1 = [TABLE:"PROP-GENERIC", ORDERED_UNORDERED: "order", VALUES: "spin-dry"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-GENERIC", ORDERED_UNORDERED: "order", VALUES: "spin-dry"]
+
+	// CENTRAL        (OPTIONAL) CHANGE: boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy     (a0b2-a45f-01e1-4bf4) [ PROCESS_NAME:"boil;evaporate", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"gas", BY_THROUGH_HOW:"increase heat energy" ]
+	//row *autoRow2 = [UUID:"a0b2-a45f-01e1-4bf4", PROCESS_NAME: "boil", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "gas", BY_THROUGH_HOW: "increase heat energy"] //OVER-CONSTR.
+	row *autoRow2 = [UUID:"a0b2-a45f-01e1-4bf4", PROCESS_NAME: "boil", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "gas", BY_THROUGH_HOW: "increase heat energy"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase     (e5d8-c324-b947-ba63) [ QUANTITY_MEASURE1:"amount of", AGENT_ATTRIBUTE1:"water", SCOPE1A:"in body of water", CHANGE1:"increase", QUANTITY_MEASURE2:"amount of", AGENT_ATTRIBUTE2:"water", ACTION2:"evaporate from", PATIENT2:"body of water", CHANGE2:"increase" ]
+	//row autoRow3 = [UUID:"e5d8-c324-b947-ba63", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "water", SCOPE1A: "in body of water", CHANGE1: "increase", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "water", ACTION2: "evaporate from", PATIENT2: "body of water", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"e5d8-c324-b947-ba63", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "water", SCOPE1A: "in body of water", CHANGE1: "increase", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "water", ACTION2: "evaporate from", PATIENT2: "body of water", CHANGE2: "increase"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the surface area of a body of water increases , evaporation of that body of water will increase     (11a7-2581-9122-ab66) [ QUANTITY_MEASURE1:"surface area", AGENT_ATTRIBUTE1:"of body of water", CHANGE1:"increase", QUANTITY_MEASURE2:"evaporate", AGENT_ATTRIBUTE2:"of body of water", CHANGE2:"increase" ]
+	//row autoRow4 = [UUID:"11a7-2581-9122-ab66", QUANTITY_MEASURE1: "surface area", AGENT_ATTRIBUTE1: "of body of water", CHANGE1: "increase", QUANTITY_MEASURE2: "evaporate", AGENT_ATTRIBUTE2: "of body of water", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"11a7-2581-9122-ab66", QUANTITY_MEASURE1: "surface area", AGENT_ATTRIBUTE1: "of body of water", CHANGE1: "increase", QUANTITY_MEASURE2: "evaporate", AGENT_ATTRIBUTE2: "of body of water", CHANGE2: "increase"]
+
+	// CENTRAL         MEASUREMENTS: humidity is the amount of water vapor ; moisture in the air ; in the atmosphere     (1c42-416a-fc92-2b03) [ MEASURE:"humidity", QUANTITY_ADJ:"amount of", ATTRIBUTE:"water vapor;moisture", SCOPE:"in air;in atmosphere" ]
+	//row autoRow5 = [UUID:"1c42-416a-fc92-2b03", MEASURE: "humidity", QUANTITY_ADJ: "amount of", ATTRIBUTE: "water vapor", SCOPE: "in air"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"1c42-416a-fc92-2b03", MEASURE: "humidity", QUANTITY_ADJ: "amount of", ATTRIBUTE: "water vapor", SCOPE: "in air"]
+
+	// CENTRAL         EXAMPLES: An example of moisture is water vapor in the atmosphere     (e7b5-57e9-5c3c-fe3e) [ AGENT_OBJECT1:"moisture", AGENT_OBJECT2:"water vapor", SCOPE:"in atmosphere" ]
+	//row autoRow6 = [UUID:"e7b5-57e9-5c3c-fe3e", AGENT_OBJECT1: "moisture", AGENT_OBJECT2: "water vapor", SCOPE: "in atmosphere"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"e7b5-57e9-5c3c-fe3e", AGENT_OBJECT1: "moisture", AGENT_OBJECT2: "water vapor", SCOPE: "in atmosphere"]
+
+	// CENTRAL        (OPTIONAL) SUBDIVISION-GENERICSPATIAL: a coast is where land meets the edge of a body of water     (8d65-5a72-dae4-fb86) [ SUBDIVISION:"coast", TYPE_OF_SUBDIVISION:"land", PART:"edge of", WHOLE:"body of water" ]
+	//row *autoRow7 = [UUID:"8d65-5a72-dae4-fb86", SUBDIVISION: "coast", TYPE_OF_SUBDIVISION: "land", PART: "edge of", WHOLE: "body of water"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"8d65-5a72-dae4-fb86", SUBDIVISION: "coast", TYPE_OF_SUBDIVISION: "land", PART: "edge of", WHOLE: "body of water"]
+
+	// CENTRAL         SOURCEOF: oceans are the source of most of water vapor in the atmosphere     (264c-58db-a41c-9483) [ AGENT:"ocean", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"much of water vapor", SCOPE:"in atmosphere" ]
+	//row autoRow8 = [UUID:"264c-58db-a41c-9483", AGENT: "ocean", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "much of water vapor", SCOPE: "in atmosphere"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"264c-58db-a41c-9483", AGENT: "ocean", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "much of water vapor", SCOPE: "in atmosphere"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as distance from water decreases , humidity will increase     (b9e7-6612-b3bc-264a) [ QUANTITY_MEASURE1:"distance", SCOPE1A:"from water", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"humidity", CHANGE2:"increase" ]
+	//row autoRow9 = [UUID:"b9e7-6612-b3bc-264a", QUANTITY_MEASURE1: "distance", SCOPE1A: "from water", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "humidity", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"b9e7-6612-b3bc-264a", QUANTITY_MEASURE1: "distance", SCOPE1A: "from water", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "humidity", CHANGE2: "increase"]
+
+	// CENTRAL         KINDOF: an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"466a-2c15-ac54-8361", HYPONYM: "ocean", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"466a-2c15-ac54-8361", HYPONYM: "ocean", HYPERNYM: "body of water"]
+
+	// CENTRAL         KINDOF: humidity is a kind of water vapor     (06e7-3920-6321-983c) [ HYPONYM:"humidity", HYPERNYM:"water vapor" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"06e7-3920-6321-983c", HYPONYM: "humidity", HYPERNYM: "water vapor"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"06e7-3920-6321-983c", HYPONYM: "humidity", HYPERNYM: "water vapor"]
+
+	// CENTRAL         KINDOF: an ocean is a kind of habitat     (5260-aeae-75d8-609f) [ HYPONYM:"ocean", HYPERNYM:"habitat" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"5260-aeae-75d8-609f", HYPONYM: "ocean", HYPERNYM: "habitat"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"5260-aeae-75d8-609f", HYPONYM: "ocean", HYPERNYM: "habitat"]
+
+	// CENTRAL         ATTRIBUTE-VALUE-RANGE: moist means high in moisture     (4765-ccbd-4fbb-78b8) [ THING:"moist", VALUE:"high", ATTRIBUTE:"moisture" ]
+	//  Notes: moist attribute value
+	//row autoRow13 = [UUID:"4765-ccbd-4fbb-78b8", THING: "moist", VALUE: "high", ATTRIBUTE: "moisture"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"4765-ccbd-4fbb-78b8", THING: "moist", VALUE: "high", ATTRIBUTE: "moisture"]
+
+	// LEXGLUE        (OPTIONAL) SYNONYMY: a coast is a coastal area     (03ab-a8e4-e46d-24a6) [ X1:"coast", X2:"coastal area" ]
+	//row *autoRow14 = [UUID:"03ab-a8e4-e46d-24a6", X1: "coast", X2: "coastal area"] //OVER-CONSTR.
+	row *autoRow14 = [UUID:"03ab-a8e4-e46d-24a6", X1: "coast", X2: "coastal area"]
+
+	// LEXGLUE         SYNONYMY: moist means humid     (9736-3e2b-eeb0-9a01) [ X1:"moist", X2:"humid" ]
+	//row autoRow15 = [UUID:"9736-3e2b-eeb0-9a01", X1: "moist", X2: "humid"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"9736-3e2b-eeb0-9a01", X1: "moist", X2: "humid"]
+
+endinferencepattern

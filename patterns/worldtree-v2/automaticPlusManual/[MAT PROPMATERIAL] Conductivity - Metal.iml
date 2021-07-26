@@ -1,0 +1,97 @@
+// Automatically converted pattern
+inferencepattern MAT_PROPMATERIAL_Conductivity_Metal
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE: a light bulb converts electrical energy ; electricity into light energy ; light energy and heat energy     (0259-62d6-90d1-5285) [ ACTOR_WHO:"light bulb", VERB:"convert", FROM:"electric energy;electric", INTO:"light energy;light energy heat energy" ]
+	//        HINTROW a doorbell converts electrical energy ; electricity into sound energy     (c334-b118-4a5a-13dc) [ ACTOR_WHO:"doorbell", VERB:"convert", FROM:"electric energy;electric", INTO:"sound energy" ]
+	//        HINTROW electrical devices convert from electrical energy ; electricity into other forms of energy     (5e4d-6ae2-e556-9200) [ ACTOR_WHO:"electric device", VERB:"convert", FROM:"electric energy;electric", INTO:"other form of energy" ]
+	//        HINTROW an incandescent light bulb converts electrical energy ; electricity into light energy and heat energy by sending electricity through a filament     (536f-f053-aca7-9bed) [ ADJ_QUANTIFIER:"incandescent", ACTOR_WHO:"light bulb", VERB:"convert", FROM:"electric energy;electric", INTO:"light energy heat energy", BY_THROUGH_HOW:"send electric through filament" ]
+	//        HINTROW a heating element converts electrical energy ; electricity into heat energy for heating     (a4f3-2cdc-e2e8-292d) [ ACTOR_WHO:"heat element", VERB:"convert", FROM:"electric energy;electric", INTO:"heat energy", FOR_PURPOSE:"heat" ]
+	//  Notes: d201-bf2c-27ec-14a0->5e4d-6ae2-e556-9200,e58b-3217-6a20-dde2,3144-f8f2-43a4-8712,ff35-14d7-c71b-fe72,8229-9677-683e-24d5examples of X converts electrical energy to Y energy
+	//row autoRow0 = [TABLE:"CHANGE", VERB: "convert", FROM: "electric energy", INTO: *"POS:JJ"+"energy"+*"POS:NN"+"energy"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CHANGE", VERB: "convert", FROM: "electric energy", INTO: *"POS:JJ"+"energy"+*"POS:NN"+"energy"]
+
+	// GROUNDING       KINDOF: an electric toothbrush is a kind of electric device     (106a-0379-0b23-ab7d) [ HYPONYM:"electric toothbrush", HYPERNYM:"electric device" ]
+	//        HINTROW a doorbell is a kind of electric device     (ac96-5db5-366c-b342) [ HYPONYM:"doorbell", SCOPE1:"electric", HYPERNYM:"device" ]
+	//        HINTROW a light bulb is a kind of electrical device     (00a4-b16a-aa4d-893d) [ HYPONYM:"light bulb", SCOPE1:"electric", HYPERNYM:"device" ]
+	//        HINTROW a flashlight is a kind of electrical device     (130a-ea4e-6de1-a4af) [ HYPONYM:"flashlight", SCOPE1:"electric", HYPERNYM:"device" ]
+	//  Notes: electrical device
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "electric"+*"POS:NN", HYPERNYM: "electric device"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "electric device"]
+
+	// GROUNDING       KINDOF: aluminum is a kind of metal     (a580-1b9e-6ec9-a275) [ HYPONYM:"aluminum", HYPERNYM:"metal" ]
+	//        HINTROW copper is a kind of metal     (9cea-7fba-e1c5-f8b3) [ HYPONYM:"copper", HYPERNYM:"metal" ]
+	//        HINTROW iron is a kind of metal     (de4c-ca36-c336-540f) [ HYPONYM:"iron", HYPERNYM:"metal" ]
+	//  Notes: metal examples
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "metal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "metal"]
+
+	// GROUNDING       KINDOF: electrical energy is a kind of energy     (b5ca-9f64-d6d6-6783) [ HYPONYM:"electric energy", HYPERNYM:"energy" ]
+	//  Notes: electrical energy
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "electric energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "electric energy", HYPERNYM: "energy"]
+
+	// GROUNDING       KINDOF: sound is a kind of energy     (1980-256d-b685-846c) [ HYPONYM:"sound", HYPERNYM:"energy" ]
+	//        HINTROW light is a kind of energy     (f742-384b-744c-10a9) [ HYPONYM:"light", HYPERNYM:"energy" ]
+	//        HINTROW heat is a kind of energy     (9e7d-986e-6af1-5ac1) [ HYPONYM:"heat", HYPERNYM:"energy" ]
+	//  Notes: Y energy examples
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "energy"]
+
+	// CENTRAL        (OPTIONAL) VEHICLE: an electric circuit is a vehicle for moving electrical energy from the source to the electrical device     (8d19-d76d-4c8e-bc04) [ ACTOR_WHO:"electric circuit", VERB:"move", WHAT:"electric energy", SOURCE:"source", DESTINATION:"electric device" ]
+	//row *autoRow5 = [UUID:"8d19-d76d-4c8e-bc04", ACTOR_WHO: "electric circuit", VERB: "move", WHAT: "electric energy", SOURCE: "source", DESTINATION: "electric device"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"8d19-d76d-4c8e-bc04", ACTOR_WHO: "electric circuit", VERB: "move", WHAT: "electric energy", SOURCE: "source", DESTINATION: "electric device"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: closing an electric circuit causes an electrical device to function     (b668-73fc-5f73-b444) [ CONDITION_VERB:"close", CONDITION_PATIENT:"electric circuit", RESULT_AGENT:"electric device", RESULT_VERB:"function" ]
+	//row *autoRow6 = [UUID:"b668-73fc-5f73-b444", CONDITION_VERB: "close", CONDITION_PATIENT: "electric circuit", RESULT_AGENT: "electric device", RESULT_VERB: "function"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"b668-73fc-5f73-b444", CONDITION_VERB: "close", CONDITION_PATIENT: "electric circuit", RESULT_AGENT: "electric device", RESULT_VERB: "function"]
+
+	// CENTRAL         TRANSFER: electrical conduction is when metals ; electrical conductors conduct electricity through a wire ; electrical conductor ; metal     (22ce-038b-ff4f-c5ba) [ PROCESS_NAME:"electric conduction", ACTOR_WHO:"metal;electric conductor", VERB:"conduct", WHAT:"electric", BY_THROUGH_HOW:"wire;electric conduct;metal" ]
+	//row autoRow7 = [UUID:"22ce-038b-ff4f-c5ba", PROCESS_NAME: "electric conduction", ACTOR_WHO: "electric conductor", VERB: "conduct", WHAT: "electric", BY_THROUGH_HOW: "electric conduct"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"22ce-038b-ff4f-c5ba", PROCESS_NAME: "electric conduction", ACTOR_WHO: "electric conductor", VERB: "conduct", WHAT: "electric", BY_THROUGH_HOW: "electric conduct"]
+
+	// CENTRAL         VEHICLE: An electrical conductor is a vehicle for the flow of electricity     (5661-379f-7e61-6d32) [ ACTOR_WHO:"electric conduct", VERB:"flow", WHAT:"electric" ]
+	//row autoRow8 = [UUID:"5661-379f-7e61-6d32", ACTOR_WHO: "electric conduct", VERB: "flow", WHAT: "electric"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"5661-379f-7e61-6d32", ACTOR_WHO: "electric conduct", VERB: "flow", WHAT: "electric"]
+
+	// CENTRAL        (OPTIONAL) REQUIRES: electric devices require electrical energy to function     (0584-393a-7b86-9c70) [ OBJECT_AGENT_PROCESS:"electric device", VERB_REQUIRES:"require", OBJECT:"electric energy", FOR_PURPOSE:"function" ]
+	//row *autoRow9 = [UUID:"0584-393a-7b86-9c70", OBJECT_AGENT_PROCESS: "electric device", VERB_REQUIRES: "require", OBJECT: "electric energy", FOR_PURPOSE: "function"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"0584-393a-7b86-9c70", OBJECT_AGENT_PROCESS: "electric device", VERB_REQUIRES: "require", OBJECT: "electric energy", FOR_PURPOSE: "function"]
+
+	// CENTRAL         USEDFOR: electricity is used as an energy source by electrical devices     (b8fe-4fe5-0eae-a038) [ AGENT_OBJECT:"electric", FOR_PURPOSE:"energy source", AGENT_THING_WHO_USES:"electric device" ]
+	//row autoRow10 = [UUID:"b8fe-4fe5-0eae-a038", AGENT_OBJECT: "electric", FOR_PURPOSE: "energy source", AGENT_THING_WHO_USES: "electric device"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"b8fe-4fe5-0eae-a038", AGENT_OBJECT: "electric", FOR_PURPOSE: "energy source", AGENT_THING_WHO_USES: "electric device"]
+
+	// CENTRAL         KINDOF: conductivity is a kind of physical property     (c41d-9ce9-3d44-e24a) [ HYPONYM:"conduct", SCOPE1:"physical", HYPERNYM:"property" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"c41d-9ce9-3d44-e24a", HYPONYM: "conduct", SCOPE1: "physical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"c41d-9ce9-3d44-e24a", HYPONYM: "conduct", SCOPE1: "physical", HYPERNYM: "property"]
+
+	// CENTRAL         IFTHEN: if an object is made of a material then that object has the properties of that material     (1e4c-46e8-996c-f2f7) [ THING:"object", OBJECT_PROPERTY1:"make of material", ACTOR_AGENT_PROCESS2:"that object", OBJECT_PROPERTY3:"property of material" ]
+	//row autoRow12 = [UUID:"1e4c-46e8-996c-f2f7", THING: "object", OBJECT_PROPERTY1: "make of material", ACTOR_AGENT_PROCESS2: "that object", OBJECT_PROPERTY3: "property of material"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"1e4c-46e8-996c-f2f7", THING: "object", OBJECT_PROPERTY1: "make of material", ACTOR_AGENT_PROCESS2: "that object", OBJECT_PROPERTY3: "property of material"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: when an electrical conductor is plugged into an outlet , a circuit is completed     (b6b5-6397-aa43-e453) [ THING:"electric conduct", ACTION1:"plug into", ADJ_QUANTITY1A:"outlet", ACTOR_AGENT_PROCESS2:"circuit", ACTION3:"complete" ]
+	//row *autoRow13 = [UUID:"b6b5-6397-aa43-e453", THING: "electric conduct", ACTION1: "plug into", ADJ_QUANTITY1A: "outlet", ACTOR_AGENT_PROCESS2: "circuit", ACTION3: "complete"] //OVER-CONSTR.
+	row *autoRow13 = [UUID:"b6b5-6397-aa43-e453", THING: "electric conduct", ACTION1: "plug into", ADJ_QUANTITY1A: "outlet", ACTOR_AGENT_PROCESS2: "circuit", ACTION3: "complete"]
+
+	// CENTRAL         PROP-GENERIC: conductivity is a property of a material ; substance     (d681-3158-6a99-253a) [ X:"conduct", Y:"material;substance" ]
+	//row autoRow14 = [UUID:"d681-3158-6a99-253a", X: "conduct", Y: "material"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"d681-3158-6a99-253a", X: "conduct", Y: "material"]
+
+	// CENTRAL         KINDOF: metal is a kind of material     (95c4-ec5e-bce9-afd8) [ HYPONYM:"metal", HYPERNYM:"material" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"95c4-ec5e-bce9-afd8", HYPONYM: "metal", HYPERNYM: "material"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"95c4-ec5e-bce9-afd8", HYPONYM: "metal", HYPERNYM: "material"]
+
+	// CENTRAL         PROP-CONDUCTIVITY: metal is an electrical ; electrical energy conductor     (23bf-e586-9387-c883) [ OBJECT_AGENT:"metal", KIND_OF_CONDUCTIVITY:"electric;electric energy", CONDUCTOR_INSULATOR:"conduct" ]
+	//row autoRow16 = [UUID:"23bf-e586-9387-c883", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "electric energy", CONDUCTOR_INSULATOR: "conduct"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"23bf-e586-9387-c883", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "electric energy", CONDUCTOR_INSULATOR: "conduct"]
+
+endinferencepattern

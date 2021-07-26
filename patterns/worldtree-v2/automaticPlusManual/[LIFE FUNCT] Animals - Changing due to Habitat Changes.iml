@@ -1,0 +1,58 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Changing_due_to_Habitat_Changes
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       REQUIRES: a plant ; living thing requires food for survival     (3796-e9f2-e94c-634d) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"food", FOR_PURPOSE:"survive" ]
+	//        HINTROW an animal ; living thing requires nutrients for survival     (80de-489f-48b2-16f4) [ OBJECT_AGENT_PROCESS:"animal;live thing", VERB_REQUIRES:"require", OBJECT:"nutrient", FOR_PURPOSE:"survive" ]
+	//        HINTROW a plant ; living thing requires nutrients to grow     (085c-28bf-bb51-79e6) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"nutrient", FOR_PURPOSE:"grow" ]
+	//        HINTROW a plants ; living things require water for survival ; to grow     (f3ed-dedc-2aad-109c) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"water", FOR_PURPOSE:"survive;grow" ]
+	//        HINTROW animals ; living things require water for survival     (732f-cb0b-50b4-ad0d) [ OBJECT_AGENT_PROCESS:"animal;live thing", VERB_REQUIRES:"require", OBJECT:"water", FOR_PURPOSE:"survive" ]
+	//row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require"]
+
+	// CENTRALSW       KINDOF: food is a kind of resource     (6cf8-4a91-b857-9203) [ HYPONYM:"food", HYPERNYM:"resource" ]
+	//        HINTROW water is a kind of natural resource     (1c04-5228-7c5d-ab8a) [ HYPONYM:"water", HYPERNYM:"nature resource" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "resource"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "resource"]
+
+	// GROUNDING       KINDOF: a bird is a kind of animal     (e26b-b21d-d4a3-25fc) [ HYPONYM:"bird", HYPERNYM:"animal" ]
+	//        HINTROW an amphibian is a kind of animal     (3740-c11d-832c-96f2) [ HYPONYM:"amphibian", HYPERNYM:"animal" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// CENTRAL         CAUSE: competition may cause animals to fight ; to make threatening sounds ; to act aggressively towards members of their own species     (3ede-004b-8b5a-d9eb) [ CONDITION_AGENT_OBJECT:"competition", RESULT_AGENT:"animal", RESULT_VERB:"fight;make threaten sound;act aggressively", SCOPE2:"towards member of own species" ]
+	//row autoRow3 = [UUID:"3ede-004b-8b5a-d9eb", CONDITION_AGENT_OBJECT: "competition", RESULT_AGENT: "animal", RESULT_VERB: "make threaten sound", SCOPE2: "towards member of own species"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"3ede-004b-8b5a-d9eb", CONDITION_AGENT_OBJECT: "competition", RESULT_AGENT: "animal", RESULT_VERB: "make threaten sound", SCOPE2: "towards member of own species"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as a resource required by an organism decreases , the competition among organisms that require that resource will increase     (a80b-a0a8-a270-b66f) [ AGENT_ATTRIBUTE1:"resource", SCOPE1A:"require by organism", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"competition", SCOPE2A:"among organism require that resource", CHANGE2:"increase" ]
+	//row autoRow4 = [UUID:"a80b-a0a8-a270-b66f", AGENT_ATTRIBUTE1: "resource", SCOPE1A: "require by organism", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "competition", SCOPE2A: "among organism require that resource", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"a80b-a0a8-a270-b66f", AGENT_ATTRIBUTE1: "resource", SCOPE1A: "require by organism", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "competition", SCOPE2A: "among organism require that resource", CHANGE2: "increase"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the population of prey decreases , competition between predators will increase     (4215-2fa0-919f-fb85) [ QUANTITY_MEASURE1:"population", AGENT_ATTRIBUTE1:"of prey", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"competition", SCOPE2A:"between predator", CHANGE2:"increase" ]
+	//row autoRow5 = [UUID:"4215-2fa0-919f-fb85", QUANTITY_MEASURE1: "population", AGENT_ATTRIBUTE1: "of prey", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "competition", SCOPE2A: "between predator", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"4215-2fa0-919f-fb85", QUANTITY_MEASURE1: "population", AGENT_ATTRIBUTE1: "of prey", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "competition", SCOPE2A: "between predator", CHANGE2: "increase"]
+
+	// CENTRAL         ACTION: a predator eats other animals for food     (9bdc-0291-3f7e-751d) [ AGENT_OBJECT:"predator", ACTION2:"eat", OBJECT_PROPERTY:"other animal", FOR_PURPOSE:"food" ]
+	//row autoRow6 = [UUID:"9bdc-0291-3f7e-751d", AGENT_OBJECT: "predator", ACTION2: "eat", OBJECT_PROPERTY: "other animal", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"9bdc-0291-3f7e-751d", AGENT_OBJECT: "predator", ACTION2: "eat", OBJECT_PROPERTY: "other animal", FOR_PURPOSE: "food"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//row autoRow7 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+	// CENTRAL         KINDOF: an increase is a kind of change     (782a-53e7-c1c7-aae0) [ HYPONYM:"increase", HYPERNYM:"change" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"782a-53e7-c1c7-aae0", HYPONYM: "increase", HYPERNYM: "change"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"782a-53e7-c1c7-aae0", HYPONYM: "increase", HYPERNYM: "change"]
+
+	// CENTRAL         CONSUMERS-EATING: predators eat prey     (fb00-41ad-f198-b5ac) [ ORGANISM1:"predator", EATS_CONSUMES:"eat", ORGANISM2:"prey" ]
+	//row autoRow9 = [UUID:"fb00-41ad-f198-b5ac", ORGANISM1: "predator", EATS_CONSUMES: "eat", ORGANISM2: "prey"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"fb00-41ad-f198-b5ac", ORGANISM1: "predator", EATS_CONSUMES: "eat", ORGANISM2: "prey"]
+
+endinferencepattern

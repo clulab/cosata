@@ -1,0 +1,912 @@
+{"patternMatches": [
+{
+	"patternName":"EARTH_WEATHER_Ocean_as_a_Source_of_Humidity",
+	"matches":[
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","33cb-429a-ce86-2d79","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","fa3b-1528-2b6e-4d28","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","33cb-429a-ce86-2d79","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","fa3b-1528-2b6e-4d28","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","33cb-429a-ce86-2d79","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","33cb-429a-ce86-2d79","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","33cb-429a-ce86-2d79","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","fa3b-1528-2b6e-4d28","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","fa3b-1528-2b6e-4d28","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","fa3b-1528-2b6e-4d28","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","33cb-429a-ce86-2d79","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","33cb-429a-ce86-2d79","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","33cb-429a-ce86-2d79","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","fa3b-1528-2b6e-4d28","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","fa3b-1528-2b6e-4d28","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","fa3b-1528-2b6e-4d28","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","33cb-429a-ce86-2d79","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","33cb-429a-ce86-2d79","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","33cb-429a-ce86-2d79","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","fa3b-1528-2b6e-4d28","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","fa3b-1528-2b6e-4d28","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","fa3b-1528-2b6e-4d28","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","33cb-429a-ce86-2d79","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","33cb-429a-ce86-2d79","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","33cb-429a-ce86-2d79","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","fa3b-1528-2b6e-4d28","a0b2-a45f-01e1-4bf4","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","fa3b-1528-2b6e-4d28","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","8d65-5a72-dae4-fb86","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8d65-5a72-dae4-fb86", "rowText": "a coast is where land meets the edge of a body of water", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","fa3b-1528-2b6e-4d28","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","03ab-a8e4-e46d-24a6","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "03ab-a8e4-e46d-24a6", "rowText": "a coast is a coastal area", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","33cb-429a-ce86-2d79","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","fa3b-1528-2b6e-4d28","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","33cb-429a-ce86-2d79","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","fa3b-1528-2b6e-4d28","e5d8-c324-b947-ba63","11a7-2581-9122-ab66","1c42-416a-fc92-2b03","e7b5-57e9-5c3c-fe3e","264c-58db-a41c-9483","b9e7-6612-b3bc-264a","466a-2c15-ac54-8361","06e7-3920-6321-983c","5260-aeae-75d8-609f","4765-ccbd-4fbb-78b8","9736-3e2b-eeb0-9a01"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e5d8-c324-b947-ba63", "rowText": "as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "11a7-2581-9122-ab66", "rowText": "as the surface area of a body of water increases , evaporation of that body of water will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "06e7-3920-6321-983c", "rowText": "humidity is a kind of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5260-aeae-75d8-609f", "rowText": "an ocean is a kind of habitat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4765-ccbd-4fbb-78b8", "rowText": "moist means high in moisture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "9736-3e2b-eeb0-9a01", "rowText": "moist means humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow14", "value":"" },
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		}
+	]
+}
+]}
+

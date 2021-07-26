@@ -1,0 +1,61 @@
+// Automatically converted pattern
+inferencepattern CEL_FEATURES_Life_Stage_Stellar
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       STAGE-IN-PROCESS: a main sequence star is a stage in the life cycle process of stars     (ea3b-d3ec-8f10-547a) [ STAGE:"main sequence star", PROCESS:"life cycle", SCOPE:"of star" ]
+	//        HINTROW a white dwarf is a stage in the life cycle process of stars     (aa6c-9346-a3b2-ca69) [ STAGE:"white dwarf", PROCESS:"life cycle", SCOPE:"of star" ]
+	//        HINTROW a planetary nebula is a stage in the life cycle process of stars     (c176-88e8-b50c-94de) [ STAGE:"planetary nebula", PROCESS:"life cycle", SCOPE:"of star" ]
+	//        HINTROW a red giant is a stage in the life cycle process of stars     (6676-f074-fec7-b8a7) [ STAGE:"red giant", PROCESS:"life cycle", SCOPE:"of star" ]
+	//row autoRow0 = [TABLE:"STAGE-IN-PROCESS", STAGE: "main sequence star", PROCESS: "life cycle", SCOPE: "of star"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"STAGE-IN-PROCESS", PROCESS: "life cycle", SCOPE: "of star"]
+
+	// CENTRALSW       PROCESSSTAGES: the life cycle of a massive star is a sequential process, with stages of birth, main sequence star, red giant, supernova     (5867-9ea2-8add-60d3) [ PROCESS_NAME:"life cycle of massive star", SEQUENTIAL_CYCLICAL:"sequential", STAGES:"birth main sequence star red giant supernova" ]
+	//        HINTROW the life cycle of a mid-sized star is a sequential process, with stages of birth, main sequence star, red giant, white dwarf     (127a-ad1f-21d3-e42a) [ PROCESS_NAME:"life cycle of mid-sized star;life cycle of mid size star", SEQUENTIAL_CYCLICAL:"sequential", STAGES:"birth main sequence star red giant white dwarf" ]
+	//row autoRow1 = [TABLE:"PROCESSSTAGES", PROCESS_NAME: "life cycle of"+*"POS:JJ"+"star", SEQUENTIAL_CYCLICAL: "sequential", STAGES: "birth main sequence star red giant"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROCESSSTAGES", PROCESS_NAME: "life cycle of"+*"POS:JJ"+"star", SEQUENTIAL_CYCLICAL: "sequential", STAGES: "birth main sequence star red giant"+*"POS:NN"]
+
+	// GROUNDING       KINDOF: Alpha Mensae is a kind of main sequence star     (21f4-c237-6aa4-4de9) [ HYPONYM:"alpha mensae", HYPERNYM:"main sequence star" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "alpha mensae", HYPERNYM: "main sequence star"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "alpha mensae", HYPERNYM: "main sequence star"]
+
+	// GROUNDING       KINDOF: the sun is a kind of yellow dwarf     (9a65-934e-c26e-f453) [ HYPONYM:"sun", HYPERNYM:"yellow dwarf" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "sun", HYPERNYM: "yellow dwarf"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "sun", HYPERNYM: "yellow dwarf"]
+
+	// GROUNDING       KINDOF: a star is a kind of celestial object ; celestial body     (dbe8-e776-f804-99a0) [ HYPONYM:"star", HYPERNYM:"celestial object;celestial body" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "star", HYPERNYM: "celestial object"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "star", HYPERNYM: "celestial object"]
+
+	// CENTRAL         ACTION: stars spend most of their life cycle in the main sequence stage     (4dcb-e3c0-5556-bb8c) [ AGENT_OBJECT:"star", ACTION2:"spend", OBJECT_PROPERTY:"much of life cycle", WHEN_WHERE:"in main sequence stage" ]
+	//row autoRow5 = [UUID:"4dcb-e3c0-5556-bb8c", AGENT_OBJECT: "star", ACTION2: "spend", OBJECT_PROPERTY: "much of life cycle", WHEN_WHERE: "in main sequence stage"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"4dcb-e3c0-5556-bb8c", AGENT_OBJECT: "star", ACTION2: "spend", OBJECT_PROPERTY: "much of life cycle", WHEN_WHERE: "in main sequence stage"]
+
+	// CENTRAL         CHANGE: stars change type during their life cycles     (7371-ffed-8403-0337) [ ACTOR_WHO:"star", VERB:"change", WHAT:"type", SCOPE:"during life cycle" ]
+	//  Notes: 76bf-a390-118e-daa4->7371-ffed-8403-0337
+	//row autoRow6 = [UUID:"7371-ffed-8403-0337", ACTOR_WHO: "star", VERB: "change", WHAT: "type", SCOPE: "during life cycle"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"7371-ffed-8403-0337", ACTOR_WHO: "star", VERB: "change", WHAT: "type", SCOPE: "during life cycle"]
+
+	// CENTRAL         CAUSE: nuclear fusion causes star formation     (bd14-3e52-3df9-f7f9) [ CONDITION_AGENT_OBJECT:"nuclear fusion", RESULT_AGENT:"star form" ]
+	//row autoRow7 = [UUID:"bd14-3e52-3df9-f7f9", CONDITION_AGENT_OBJECT: "nuclear fusion", RESULT_AGENT: "star form"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"bd14-3e52-3df9-f7f9", CONDITION_AGENT_OBJECT: "nuclear fusion", RESULT_AGENT: "star form"]
+
+	// CENTRAL         KINDOF: a yellow dwarf is a kind of main-sequence star     (452a-f8c6-36f5-dadc) [ HYPONYM:"yellow dwarf", HYPERNYM:"main-sequence star;main sequence star" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"452a-f8c6-36f5-dadc", HYPONYM: "yellow dwarf", HYPERNYM: "main sequence star"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"452a-f8c6-36f5-dadc", HYPONYM: "yellow dwarf", HYPERNYM: "main sequence star"]
+
+	// CENTRAL         ACTION: a star 's mass determines the star 's type     (23b2-6887-354c-8c29) [ AGENT_OBJECT:"star mass", ACTION2:"determine", OBJECT_PROPERTY:"star type" ]
+	//row autoRow9 = [UUID:"23b2-6887-354c-8c29", AGENT_OBJECT: "star mass", ACTION2: "determine", OBJECT_PROPERTY: "star type"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"23b2-6887-354c-8c29", AGENT_OBJECT: "star mass", ACTION2: "determine", OBJECT_PROPERTY: "star type"]
+
+	// LEXGLUE         SYNONYMY: emit means produce     (9ecf-063e-892a-c7fa) [ ACTION1:"emit", ACTION2:"product" ]
+	//row autoRow10 = [UUID:"9ecf-063e-892a-c7fa", ACTION1: "emit", ACTION2: "product"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"9ecf-063e-892a-c7fa", ACTION1: "emit", ACTION2: "product"]
+
+endinferencepattern

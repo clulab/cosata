@@ -1,0 +1,34 @@
+// deviceuse.iml
+/*
+ * Device Use
+ */
+
+inferencepattern deviceRequirements_directName
+        // Plain text description
+        description = "A device has requirements for use"
+
+        // Constants
+
+        // Row definitions
+        row deviceRow = [TABLE:"KINDOF", HYPONYM:<device>, HYPERNYM:<deviceType> + "device"]
+        row requires = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS:<deviceType> + "device", RELATION:<rel>, OBJECT:<whatIsRequired>, FOR_PURPOSE:"function"]
+        row source = [TABLE:"SOURCEOF", AGENT:<agentSource>, WHAT_IT_PROVIDES:<whatIsRequired>]
+
+        // Code
+
+endinferencepattern
+
+inferencepattern deviceRequirements_indirectName
+        // Plain text description
+        description = "A device has requirements for use"
+
+        // Constants
+
+        // Row definitions
+        row deviceRow = [TABLE:"KINDOF", HYPONYM:<device>, HYPERNYM:<deviceType> + "device"]
+        row requires = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS:<deviceType> + "device", RELATION:<rel>, OBJECT:<whatIsRequired>, FOR_PURPOSE:"function"]
+        row source = [TABLE:"SOURCEOF", AGENT:<agentSource>, WHAT_IT_PROVIDES:<whatIsRequiredEnergy>, NAME:<whatIsRequired>]
+
+        // Code
+
+endinferencepattern

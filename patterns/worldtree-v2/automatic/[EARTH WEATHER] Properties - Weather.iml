@@ -1,0 +1,98 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Properties_Weather
+
+	// Plain text description
+	description = "grounding roles are the examples for the properties"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ACTION: a warm front is when warm air mass rises and passes over ; collides a cold air mass     (f992-5698-76aa-c6de) [ DEFINITION_NAME:"warm front", ADJ:"warm", AGENT_OBJECT:"air mass", ACTION2:"rise pass over;collide", OBJECT_PROPERTY:"cold air mass" ]
+	//        HINTROW a cold front is when a cooler air mass moves into contact with an area of warmer air     (d7b0-6601-25df-12d7) [ DEFINITION_NAME:"cold front", ADJ:"cool", AGENT_OBJECT:"air mass", ACTION2:"move into contact with", OBJECT_PROPERTY:"area of warm air" ]
+	//  Notes: front
+	//row autoRow0 = [TABLE:"ACTION", DEFINITION_NAME: "warm front", ADJ: "warm", AGENT_OBJECT: "air mass", OBJECT_PROPERTY: "cold"+*"POS:NN"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ACTION", DEFINITION_NAME: "warm front", AGENT_OBJECT: "air mass", OBJECT_PROPERTY: "cold"+*"POS:NN"+*"POS:NN"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: cloudy means the presence of clouds in the sky     (0d83-db1e-d92b-0bf0) [ THING:"cloudy", VALUE:"presence", ATTRIBUTE:"cloud", SCOPE:"in sky" ]
+	//        HINTROW clear weather means sunny ; not cloudy ; not rainy weather     (9038-72cb-9b3b-4af6) [ THING:"clear weather", VALUE:"sunny;not cloudy;not rain", ATTRIBUTE:"weather" ]
+	//  Notes: sky condition attribute
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: hot means high in heat energy ; temperature     (9ff8-543c-2f35-5d3f) [ THING:"hot", VALUE:"high", ATTRIBUTE:"heat energy;temperature" ]
+	//        HINTROW cold means low in temperature     (cf2a-6257-0c5c-7445) [ THING:"cold", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//  Notes: temperature attribute
+	//row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "temperature"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: dry means low in amount of water ; wetness ; moisture     (5554-6d9d-779d-d5f5) [ THING:"spin-dry", VALUE:"low", ATTRIBUTE:"amount of water;wet;moisture" ]
+	//        HINTROW moist means high in moisture     (4765-ccbd-4fbb-78b8) [ THING:"moist", VALUE:"high", ATTRIBUTE:"moisture" ]
+	//  Notes: humidity attribute
+//WARNING! Slot with no constraints.
+//	//row autoRow3 = [TABLE:"ATTRIBUTE-VALUE-RANGE"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow3 = [TABLE:"ATTRIBUTE-VALUE-RANGE"]
+
+	// GROUNDING       KINDOF: cloudy is a kind of sky condition     (dc51-e065-7c35-28b0) [ HYPONYM:"cloudy", HYPERNYM:"sky condition" ]
+	//        HINTROW sunny is a kind of weather     (16da-5361-a2eb-9264) [ HYPONYM:"sunny", HYPERNYM:"weather" ]
+	//        HINTROW rainy is a kind of weather     (9d3a-47fc-7df1-dad0) [ HYPONYM:"rain", HYPERNYM:"weather" ]
+	//  Notes: sky condition example
+//WARNING! Slot with no constraints.
+//	//row autoRow4 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow4 = [TABLE:"KINDOF"]
+
+	// GROUNDING       KINDOF: rain is a kind of precipitation     (da1e-dca3-f46a-5189) [ HYPONYM:"rain", HYPERNYM:"precipitation" ]
+	//        HINTROW hail is a kind of precipitation ; ice     (cb4c-5229-e5b9-6408) [ HYPONYM:"hail", HYPERNYM:"precipitation;ice" ]
+	//        HINTROW snow is a kind of precipitation     (8083-d6d0-9cba-da83) [ HYPONYM:"snow", HYPERNYM:"precipitation" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "precipitation"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "precipitation"]
+
+	// CENTRAL         PROP-GENERIC: front is a property of weather and includes unordered values of warm front ; cold front ; stationary front ; occluded front     (ad14-7992-4190-1c30) [ X:"front", Y:"weather", ORDERED_UNORDERED:"unordered", VALUES:"warm front;cold front;stationary front;occlude front" ]
+	//  Notes: front property
+	//row autoRow6 = [UUID:"ad14-7992-4190-1c30", X: "front", Y: "weather", ORDERED_UNORDERED: "unordered", VALUES: "warm front"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"ad14-7992-4190-1c30", X: "front", Y: "weather", ORDERED_UNORDERED: "unordered", VALUES: "warm front"]
+
+	// CENTRAL         PROP-GENERIC: humidity is a property of weather and include ordered values of dry ; humid     (33cb-429a-ce86-2d79) [ X:"humidity", Y:"weather", ORDERED_UNORDERED:"order", VALUES:"spin-dry;humid" ]
+	//  Notes: humidity property
+	//row autoRow7 = [UUID:"33cb-429a-ce86-2d79", X: "humidity", Y: "weather", ORDERED_UNORDERED: "order", VALUES: "spin-dry"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"33cb-429a-ce86-2d79", X: "humidity", Y: "weather", ORDERED_UNORDERED: "order", VALUES: "spin-dry"]
+
+	// CENTRAL         ATTRIBUTE-VALUE-RANGE: windy means high wind speeds     (18c4-e5f9-2e96-516d) [ THING:"windy", VALUE:"high", ATTRIBUTE:"wind speed" ]
+	//  Notes: wind speed attribute
+	//row autoRow8 = [UUID:"18c4-e5f9-2e96-516d", THING: "windy", VALUE: "high", ATTRIBUTE: "wind speed"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"18c4-e5f9-2e96-516d", THING: "windy", VALUE: "high", ATTRIBUTE: "wind speed"]
+
+	// CENTRAL         PROP-GENERIC: sky conditions are a property of weather     (75e5-d0aa-9512-f33c) [ X:"sky condition", Y:"weather" ]
+	//  Notes: sky conditions property
+	//row autoRow9 = [UUID:"75e5-d0aa-9512-f33c", X: "sky condition", Y: "weather"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"75e5-d0aa-9512-f33c", X: "sky condition", Y: "weather"]
+
+	// CENTRAL         USEDFOR: the properties of something are used for describing that something     (33f0-39de-0983-aad8) [ AGENT_OBJECT:"property", SCOPE1:"of something", FOR_PURPOSE:"describe", PATIENT:"that something" ]
+	//row autoRow10 = [UUID:"33f0-39de-0983-aad8", AGENT_OBJECT: "property", SCOPE1: "of something", FOR_PURPOSE: "describe", PATIENT: "that something"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"33f0-39de-0983-aad8", AGENT_OBJECT: "property", SCOPE1: "of something", FOR_PURPOSE: "describe", PATIENT: "that something"]
+
+	// CENTRAL         PROP-GENERIC: wind direction is a property of weather     (15e8-30e1-6311-03de) [ X:"wind direction", Y:"weather" ]
+	//  Notes: wind direction
+	//row autoRow11 = [UUID:"15e8-30e1-6311-03de", X: "wind direction", Y: "weather"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"15e8-30e1-6311-03de", X: "wind direction", Y: "weather"]
+
+	// CENTRAL         PROP-GENERIC: wind speed is a property of weather     (1a23-b7e4-5ac6-60c3) [ X:"wind speed", Y:"weather" ]
+	//  Notes: wind speed
+	//row autoRow12 = [UUID:"1a23-b7e4-5ac6-60c3", X: "wind speed", Y: "weather"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"1a23-b7e4-5ac6-60c3", X: "wind speed", Y: "weather"]
+
+	// CENTRAL         PROP-GENERIC: precipitation is a property of weather     (5e47-e0b9-a06f-d37b) [ X:"precipitation", Y:"weather" ]
+	//  Notes: precipitation
+	//row autoRow13 = [UUID:"5e47-e0b9-a06f-d37b", X: "precipitation", Y: "weather"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"5e47-e0b9-a06f-d37b", X: "precipitation", Y: "weather"]
+
+	// CENTRAL         PROP-GENERIC: temperature is a property of weather     (950c-7489-5659-db44) [ X:"temperature", Y:"weather" ]
+	//  Notes: temperature
+	//row autoRow14 = [UUID:"950c-7489-5659-db44", X: "temperature", Y: "weather"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"950c-7489-5659-db44", X: "temperature", Y: "weather"]
+
+endinferencepattern

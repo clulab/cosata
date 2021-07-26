@@ -1,0 +1,48 @@
+// Automatically converted pattern
+inferencepattern MAT_PROPMATERIAL_Definition_Hardness
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a rock is a kind of object     (7c8b-3728-1d36-f922) [ HYPONYM:"rock", HYPERNYM:"object" ]
+	//        HINTROW a bone is a kind of object     (d09f-6496-18ea-cf28) [ HYPONYM:"bone", HYPERNYM:"object" ]
+	//  Notes: hard object examples
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: <rock_0>, HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: <rock_0>, HYPERNYM: "object"]
+
+	// GROUNDING       PROP-HARDNESS: a cushion is soft     (4ff7-4d81-11f0-5105) [ OBJECT:"cushion", HARD_SOFT:"soft" ]
+	//        HINTROW down is soft     (8af1-27da-0fa3-eab5) [ OBJECT:"down", HARD_SOFT:"soft" ]
+	//  Notes: Y is soft
+	//row autoRow1 = [TABLE:"PROP-HARDNESS", HARD_SOFT: "soft"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-HARDNESS", HARD_SOFT: "soft"]
+
+	// GROUNDING       PROP-HARDNESS: rock is hard     (c86b-2598-26a1-c878) [ OBJECT:"rock", HARD_SOFT:"hard" ]
+	//        HINTROW bone is hard     (6c5d-e42d-a164-2888) [ OBJECT:"bone", HARD_SOFT:"hard" ]
+	//  Notes: object is hard
+	//row autoRow2 = [TABLE:"PROP-HARDNESS", OBJECT: <rock_0>, HARD_SOFT: "hard"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"PROP-HARDNESS", OBJECT: <rock_0>, HARD_SOFT: "hard"]
+
+	// CENTRAL         PROP-GENERIC: hardness is a property of a material ; an object and includes ordered values of malleable ; rigid     (72e2-6cde-7faa-4d2b) [ X:"hardness", Y:"material;object", ORDERED_UNORDERED:"order", VALUES:"malleable;rigid" ]
+	//row autoRow3 = [UUID:"72e2-6cde-7faa-4d2b", X: "hardness", Y: "material", ORDERED_UNORDERED: "order", VALUES: "malleable"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"72e2-6cde-7faa-4d2b", X: "hardness", Y: "material", ORDERED_UNORDERED: "order", VALUES: "malleable"]
+
+	// CENTRAL         KINDOF: hardness is a kind of physical property     (8f5b-2268-5b61-a070) [ HYPONYM:"hardness", SCOPE1:"physical", HYPERNYM:"property" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"8f5b-2268-5b61-a070", HYPONYM: "hardness", SCOPE1: "physical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"8f5b-2268-5b61-a070", HYPONYM: "hardness", SCOPE1: "physical", HYPERNYM: "property"]
+
+	// CENTRAL         KINDOF: a cushion is a kind of object     (4da3-61dc-91ef-b4ad) [ HYPONYM:"cushion", HYPERNYM:"object" ]
+	//        HINTROW a feather is a kind of object     (d3d9-7c8a-6e70-77f0) [ HYPONYM:"feather", HYPERNYM:"object" ]
+	//  Notes: object examples
+	//row autoRow5 = [UUID:"4da3-61dc-91ef-b4ad", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"4da3-61dc-91ef-b4ad", HYPERNYM: "object"]
+
+	// LEXGLUE         KINDOF: down is a kind of small feather     (58f2-80ea-9592-38a4) [ HYPONYM:"down", HYPERNYM:"small feather" ]
+	//row autoRow6 = [UUID:"58f2-80ea-9592-38a4", HYPONYM: "down", HYPERNYM: "small feather"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"58f2-80ea-9592-38a4", HYPONYM: "down", HYPERNYM: "small feather"]
+
+endinferencepattern

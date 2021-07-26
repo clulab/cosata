@@ -1,0 +1,34 @@
+// Automatically converted pattern
+inferencepattern MAT_PROPO_World_Knowlege_Objects_have_Mass
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       MADEOF: objects are made of materials ; substances ; matter     (80a3-454d-e8e0-3de2) [ OBJECT:"object", MATERIAL:"material;substance;matt" ]
+	//        HINTROW materials are made of matter     (4cf8-b1e2-9544-c98c) [ OBJECT:"material", MATERIAL:"matt" ]
+	//        HINTROW substances are made of matter     (3395-b5a2-ae2d-39c2) [ OBJECT:"substance", MATERIAL:"matt" ]
+	//row autoRow0 = [TABLE:"MADEOF", OBJECT: "object", MATERIAL: <substance_0>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"MADEOF", MATERIAL: <substance_0>]
+
+	// GROUNDING       KINDOF: oil is a kind of substance ; matter     (2806-8957-c846-253b) [ HYPONYM:"oil", HYPERNYM:"substance;matt" ]
+	//        HINTROW air is a kind of matter     (0b2c-f8af-7823-d253) [ HYPONYM:"air", HYPERNYM:"matt" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: <substance_0>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: <substance_0>]
+
+	// CENTRAL         MEASUREMENTS: mass is a measure of the amount of matter in an object     (6dd3-883b-2639-04d5) [ MEASURE:"mass", QUANTITY_ADJ:"measure of", ATTRIBUTE:"amount of matt in", AGENT:"object" ]
+	//row autoRow2 = [UUID:"6dd3-883b-2639-04d5", MEASURE: "mass", QUANTITY_ADJ: "measure of", ATTRIBUTE: "amount of matt in", AGENT: "object"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"6dd3-883b-2639-04d5", MEASURE: "mass", QUANTITY_ADJ: "measure of", ATTRIBUTE: "amount of matt in", AGENT: "object"]
+
+	// CENTRAL        (OPTIONAL) COUPLEDRELATIONSHIP: as state of matter changes , mass will not change     (8bd9-8220-2cc9-9876) [ AGENT_ATTRIBUTE1:"state of matt", CHANGE1:"change", QUANTITY_MEASURE2:"mass", QUALIFIER2:"not", CHANGE2:"change" ]
+	//row *autoRow3 = [UUID:"8bd9-8220-2cc9-9876", AGENT_ATTRIBUTE1: "state of matt", CHANGE1: "change", QUANTITY_MEASURE2: "mass", QUALIFIER2: "not", CHANGE2: "change"] //OVER-CONSTR.
+	row *autoRow3 = [UUID:"8bd9-8220-2cc9-9876", AGENT_ATTRIBUTE1: "state of matt", CHANGE1: "change", QUANTITY_MEASURE2: "mass", QUALIFIER2: "not", CHANGE2: "change"]
+
+	// CENTRAL         PROP-GENERIC: mass is a property of objects ; matter     (bbf0-3d09-563f-196b) [ X:"mass", Y:"object;matt" ]
+	//row autoRow4 = [UUID:"bbf0-3d09-563f-196b", X: "mass", Y: "object"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"bbf0-3d09-563f-196b", X: "mass", Y: "object"]
+
+endinferencepattern

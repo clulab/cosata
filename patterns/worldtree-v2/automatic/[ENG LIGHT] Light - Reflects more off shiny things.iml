@@ -1,0 +1,83 @@
+// Automatically converted pattern
+inferencepattern ENG_LIGHT_Light_Reflects_more_off_shiny_things
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       TRANSFER: reflection is when light is reflected from one object ; one place to another object ; another place     (264f-5a85-6765-8c90) [ PROCESS_NAME:"reflect", ACTOR_WHO:"light", VERB:"be reflect", SOURCE:"one object;one place", DESTINATION:"object;place" ]
+	//        HINTROW reflection is when particles bounce off a surface     (48d0-c4ad-8ef9-5fd2) [ PROCESS_NAME:"reflect", ACTOR_WHO:"particle", VERB:"bounce", SOURCE:"surface" ]
+	//row autoRow0 = [TABLE:"TRANSFER", PROCESS_NAME: "reflect", ACTOR_WHO: "light", VERB: *"POS:VB"+"reflect", SOURCE: *"POS:CD"+"object", DESTINATION: "object"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"TRANSFER", PROCESS_NAME: "reflect"]
+
+	// CENTRALSW       PROP-MAT-OPACITY: a mirror is reflective in opacity     (6bcb-607b-500c-ba61) [ THING:"mirror", TRANSLUCENT_TRANSPARENT_OPAQUE_REFLECTIVE:"reflect" ]
+	//        HINTROW metals are reflective in opacity     (7a5b-a89f-6e3e-879a) [ THING:"metal", TRANSLUCENT_TRANSPARENT_OPAQUE_REFLECTIVE:"reflect" ]
+	//row autoRow1 = [TABLE:"PROP-MAT-OPACITY", THING: <mirror_0>, TRANSLUCENT_TRANSPARENT_OPAQUE_REFLECTIVE: "reflect"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-MAT-OPACITY", THING: <mirror_0>, TRANSLUCENT_TRANSPARENT_OPAQUE_REFLECTIVE: "reflect"]
+
+	// GROUNDING       KINDOF: a mirror is a kind of reflective object     (4478-dd94-9b15-a346) [ HYPONYM:"mirror", SCOPE1:"reflect", HYPERNYM:"object" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <mirror_0>, SCOPE1: "reflect", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <mirror_0>, SCOPE1: "reflect", HYPERNYM: "object"]
+
+	// GROUNDING       PROP-THINGS: a mirror has a shiny surface     (733b-ce8a-669c-e222) [ THING:"mirror", VALUE:"shiny", ATTRIBUTE:"surface" ]
+	//        HINTROW polished metal has shiny surface     (52dd-6925-0dd5-c344) [ ADJ:"polish", THING:"metal", VALUE:"shiny", ATTRIBUTE:"surface" ]
+	//row autoRow3 = [TABLE:"PROP-THINGS", THING: <mirror_0>, VALUE: "shiny", ATTRIBUTE: "surface"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"PROP-THINGS", THING: <mirror_0>, VALUE: "shiny", ATTRIBUTE: "surface"]
+
+	// CENTRAL         WAVES: reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence     (c2d6-e332-6199-27ac) [ PROCESS:"reflect", ACTION:"bounce", OBJECT:"surface", DIRECTION:"opposite" ]
+	//row autoRow4 = [UUID:"c2d6-e332-6199-27ac", PROCESS: "reflect", ACTION: "bounce", OBJECT: "surface", DIRECTION: "opposite"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"c2d6-e332-6199-27ac", PROCESS: "reflect", ACTION: "bounce", OBJECT: "surface", DIRECTION: "opposite"]
+
+	// CENTRAL         USEDFOR: eyes are used for seeing by animals by sensing light     (e47e-e5e2-c6d2-61ed) [ AGENT_OBJECT:"eye", FOR_PURPOSE:"see", AGENT_THING_WHO_USES:"animal", BY_THROUGH_HOW:"sense light" ]
+	//row autoRow5 = [UUID:"e47e-e5e2-c6d2-61ed", AGENT_OBJECT: "eye", FOR_PURPOSE: "see", AGENT_THING_WHO_USES: "animal", BY_THROUGH_HOW: "sense light"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"e47e-e5e2-c6d2-61ed", AGENT_OBJECT: "eye", FOR_PURPOSE: "see", AGENT_THING_WHO_USES: "animal", BY_THROUGH_HOW: "sense light"]
+
+	// CENTRAL         IFTHEN: if an object reflects light toward the eye then that object can be seen     (ae74-32dc-4291-fb82) [ THING:"object", ACTION1:"reflect", OBJECT_PATIENT1:"light", SCOPE1B:"toward eye", ACTOR_AGENT_PROCESS2:"that object", ACTION3:"see" ]
+	//row autoRow6 = [UUID:"ae74-32dc-4291-fb82", THING: "object", ACTION1: "reflect", OBJECT_PATIENT1: "light", SCOPE1B: "toward eye", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "see"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"ae74-32dc-4291-fb82", THING: "object", ACTION1: "reflect", OBJECT_PATIENT1: "light", SCOPE1B: "toward eye", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "see"]
+
+	// CENTRAL         IFTHEN: when light hits a reflective object , that light bounces off that object     (bf46-dc46-bf5c-abf5) [ THING:"light", ACTION1:"hit", ADJ_QUANTITY1A:"reflect", OBJECT_PATIENT1:"object", ACTOR_AGENT_PROCESS2:"light", ACTION3:"bounce off", OBJECT_PROPERTY3:"object" ]
+	//row autoRow7 = [UUID:"bf46-dc46-bf5c-abf5", THING: "light", ACTION1: "hit", ADJ_QUANTITY1A: "reflect", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "light", ACTION3: "bounce off", OBJECT_PROPERTY3: "object"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"bf46-dc46-bf5c-abf5", THING: "light", ACTION1: "hit", ADJ_QUANTITY1A: "reflect", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "light", ACTION3: "bounce off", OBJECT_PROPERTY3: "object"]
+
+	// CENTRAL         AFFORDANCES: eyes can sense ; detect light energy for seeing     (fdba-70d0-fcc6-e529) [ ACTOR_THING:"eye", VERB:"sense;detect", PATIENT:"light energy", FOR_PURPOSE:"see" ]
+	//row autoRow8 = [UUID:"fdba-70d0-fcc6-e529", ACTOR_THING: "eye", VERB: "sense", PATIENT: "light energy", FOR_PURPOSE: "see"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"fdba-70d0-fcc6-e529", ACTOR_THING: "eye", VERB: "sense", PATIENT: "light energy", FOR_PURPOSE: "see"]
+
+	// CENTRAL         ACTION: shiny things ; objects reflect light     (2827-1a44-52ad-a63e) [ ADJ:"shiny", AGENT_OBJECT:"thing;object", ACTION2:"reflect", OBJECT_PROPERTY:"light" ]
+	//row autoRow9 = [UUID:"2827-1a44-52ad-a63e", ADJ: "shiny", AGENT_OBJECT: "thing", ACTION2: "reflect", OBJECT_PROPERTY: "light"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"2827-1a44-52ad-a63e", ADJ: "shiny", AGENT_OBJECT: "thing", ACTION2: "reflect", OBJECT_PROPERTY: "light"]
+
+	// CENTRAL         KINDOF: light is a kind of wave     (7830-1dcb-42c6-d8dc) [ HYPONYM:"light", HYPERNYM:"wave" ]
+	//row autoRow10 = [UUID:"7830-1dcb-42c6-d8dc", HYPONYM: "light", HYPERNYM: "wave"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"7830-1dcb-42c6-d8dc", HYPONYM: "light", HYPERNYM: "wave"]
+
+	// CENTRAL        (OPTIONAL) ACTION: a mirror reflects light     (4a90-d4de-70aa-2e38) [ AGENT_OBJECT:"mirror", ACTION2:"reflect", OBJECT_PROPERTY:"light" ]
+	//row *autoRow11 = [UUID:"4a90-d4de-70aa-2e38", AGENT_OBJECT: <mirror_0>, ACTION2: "reflect", OBJECT_PROPERTY: "light"] //OVER-CONSTR.
+	row *autoRow11 = [UUID:"4a90-d4de-70aa-2e38", AGENT_OBJECT: <mirror_0>, ACTION2: "reflect", OBJECT_PROPERTY: "light"]
+
+	// CENTRAL        (OPTIONAL) USEDFOR: a mirror is used for reflecting light     (b913-a040-66e7-599a) [ AGENT_OBJECT:"mirror", FOR_PURPOSE:"reflect", PATIENT:"light" ]
+	//row *autoRow12 = [UUID:"b913-a040-66e7-599a", AGENT_OBJECT: <mirror_0>, FOR_PURPOSE: "reflect", PATIENT: "light"] //OVER-CONSTR.
+	row *autoRow12 = [UUID:"b913-a040-66e7-599a", AGENT_OBJECT: <mirror_0>, FOR_PURPOSE: "reflect", PATIENT: "light"]
+
+	// CENTRAL        (OPTIONAL) FORMEDBY: an image in a mirror is formed by reflecting light     (c272-f462-6ab4-8499) [ OBJECT:"image in mirror", VERB:"reflect", PATIENT:"light" ]
+	//row *autoRow13 = [UUID:"c272-f462-6ab4-8499", OBJECT: "image in"+<mirror_0>, VERB: "reflect", PATIENT: "light"] //OVER-CONSTR.
+	row *autoRow13 = [UUID:"c272-f462-6ab4-8499", OBJECT: "image in"+<mirror_0>, VERB: "reflect", PATIENT: "light"]
+
+	// CENTRAL         KINDOF: sight is a kind of sense     (39ca-a831-8d1a-babd) [ HYPONYM:"sight", HYPERNYM:"sense" ]
+	//  Notes: peripheral
+	//row autoRow14 = [UUID:"39ca-a831-8d1a-babd", HYPONYM: "sight", HYPERNYM: "sense"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"39ca-a831-8d1a-babd", HYPONYM: "sight", HYPERNYM: "sense"]
+
+	// LEXGLUE         SYNONYMY: metallic is similar to shiny     (5c9f-a48a-692d-9500) [ X1:"metallic", X2:"shiny" ]
+	//row autoRow15 = [UUID:"5c9f-a48a-692d-9500", X1: "metallic", X2: "shiny"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"5c9f-a48a-692d-9500", X1: "metallic", X2: "shiny"]
+
+	// LEXGLUE         SYNONYMY: sight means to see     (a6d5-5b11-21f7-80bd) [ X1:"sight", ACTION2:"see" ]
+	//row autoRow16 = [UUID:"a6d5-5b11-21f7-80bd", X1: "sight", ACTION2: "see"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"a6d5-5b11-21f7-80bd", X1: "sight", ACTION2: "see"]
+
+endinferencepattern

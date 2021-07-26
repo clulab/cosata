@@ -1,0 +1,53 @@
+// NOTE: This IML has been edited from it's original state
+
+// Automatically converted pattern
+inferencepattern CEL_GRAVPULL_Weight_by_Mass
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       COMPARISON: a dwarf planet usually is much smaller in size ; in mass than other planets     (f560-c57a-5c13-8468) [ THING:"dwarf planet", QUALIFIER:"usually", ACTION1:"be", COMPARISON:"much small", ATTRIBUTE:"in size;in mass", THING_COMPARED:"other planet" ]
+	//        HINTROW a planet 's moon is smaller than that planet     (3e43-6c70-96a7-964f) [ ADJ:"planet", THING:"moon", ACTION1:"be", COMPARISON:"small", THING_COMPARED:"planet" ]
+	//  Notes: 447e-1243-6d4e-e9e1->f560-c57a-5c13-8468;3f74-37d4-8002-21b5->3e43-6c70-96a7-964f
+	//row autoRow0 = [TABLE:"COMPARISON", THING: *"POS:NN"+"planet", ACTION1: "be", ATTRIBUTE: *"POS:IN"+"mass", THING_COMPARED: *"POS:JJ"+"planet"] //OVER-CONSTR.
+	row *autoRow0 = [TABLE:"COMPARISON", THING:<thing>, ACTION1: "be", THING_COMPARED: *"POS:JJ"+<celestialBody>]
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as mass of a planet ; of a celestial body increases , the force of gravity on that planet will increase     (cecf-144a-6959-4a28) [ QUANTITY_MEASURE1:"mass", AGENT_ATTRIBUTE1:"of planet;of celestial body", CHANGE1:"increase;increase", QUANTITY_MEASURE2:"force of gravity", SCOPE2A:"on planet", CHANGE2:"increase" ]
+	//        HINTROW as the mass of a planet ; of a celestial object decreases , the surface gravity of that planet ; of that celestial object weakens     (17dc-2a01-aa3d-259f) [ QUANTITY_MEASURE1:"mass", AGENT_ATTRIBUTE1:"of planet;of celestial object", CHANGE1:"decrease", QUANTITY_MEASURE2:"surface gravity", AGENT_ATTRIBUTE2:"of planet;of celestial object", CHANGE2:"weaken" ]
+	//row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "mass", AGENT_ATTRIBUTE1: "of planet", CHANGE1: "increase", QUANTITY_MEASURE2: "force of gravity", SCOPE2A: "on planet", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "mass", AGENT_ATTRIBUTE1: "of" + <celestialBody>, QUANTITY_MEASURE2: "force of gravity"]
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as the force of gravity changes , the weight of the object will change     (8f79-ed30-77bc-7b48) [ AGENT_ATTRIBUTE1:"force", SCOPE1A:"of gravity", CHANGE1:"change", QUANTITY_MEASURE2:"weight of", AGENT_ATTRIBUTE2:"object", CHANGE2:"change" ]
+	//        HINTROW as the force of gravity decreases , the weight of the object will decrease     (793c-8c0d-fc63-02ed) [ AGENT_ATTRIBUTE1:"force", SCOPE1A:"of gravity", CHANGE1:"decrease", QUANTITY_MEASURE2:"weight of", AGENT_ATTRIBUTE2:"object", CHANGE2:"decrease" ]
+	//        HINTROW as the force of gravity increases , the weight of objects will increase     (b23c-a7ea-8693-4a44) [ QUANTITY_MEASURE1:"force of gravity", CHANGE1:"increase", QUANTITY_MEASURE2:"weight", AGENT_ATTRIBUTE2:"of object", CHANGE2:"increase" ]
+	//row autoRow2 = [TABLE:"COUPLEDRELATIONSHIP", AGENT_ATTRIBUTE1: "force", SCOPE1A: "of gravity", QUANTITY_MEASURE2: "weight of", AGENT_ATTRIBUTE2: "object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"COUPLEDRELATIONSHIP", AGENT_ATTRIBUTE1:"force of gravity", QUANTITY_MEASURE2: "weight"+*"POS:IN", AGENT_ATTRIBUTE2: *"POS:IN" + "object"]
+
+	// GROUNDING       KINDOF: Pluto is a kind of dwarf planet     (1230-534f-c1fb-8a2a) [ HYPONYM:"pluto", HYPERNYM:"dwarf planet" ]
+	//        HINTROW the Moon is a kind of moon     (343e-7241-0aa2-1221) [ HYPONYM:"moon", HYPERNYM:"moon" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow3 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow3 = [TABLE:"KINDOF"]
+
+	// GROUNDING       KINDOF: Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "earth", HYPERNYM: "planet"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: <celestialBodyName>, HYPERNYM: <celestialBody>]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as distance from an object decreases , the pull of gravity on that object increases     (9d4d-3bfb-e0e2-d068) [ QUANTITY_MEASURE1:"distance", SCOPE1A:"from object", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"pull of gravity", SCOPE2A:"on object", CHANGE2:"increase" ]
+	//row autoRow5 = [UUID:"9d4d-3bfb-e0e2-d068", QUANTITY_MEASURE1: "distance", SCOPE1A: "from object", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "pull of gravity", SCOPE2A: "on object", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"9d4d-3bfb-e0e2-d068", QUANTITY_MEASURE1: "distance", SCOPE1A: "from object", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "pull of gravity", SCOPE2A: "on object", CHANGE2: "increase"]
+
+	// CENTRAL         MEASUREMENTS: weight is a measure of the force of the gravity on the mass of an object     (c03f-fad3-ae99-57e3) [ MEASURE:"weight", QUANTITY_ADJ:"measure of", ATTRIBUTE:"force of gravity on", AGENT:"mass", SCOPE:"of object" ]
+	//row autoRow6 = [UUID:"c03f-fad3-ae99-57e3", MEASURE: "weight", QUANTITY_ADJ: "measure of", ATTRIBUTE: "force of gravity on", AGENT: "mass", SCOPE: "of object"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"c03f-fad3-ae99-57e3", MEASURE: "weight", QUANTITY_ADJ: "measure of", ATTRIBUTE: "force of gravity on", AGENT: "mass", SCOPE: "of object"]
+
+	// LEXGLUE         OPPOSITES: an increase is the opposite of a decrease     (bfdf-b468-ee22-1b60) [ THING_PROPERTY1:"increase", THING_PROPERTY2:"decrease" ]
+	//row autoRow7 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"bfdf-b468-ee22-1b60", THING_PROPERTY1: "increase", THING_PROPERTY2: "decrease"]
+
+endinferencepattern

@@ -1,0 +1,104 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Sun_Causes_Evaporation_in_Water_Cycle
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//        HINTROW a bay is a kind of body of water     (0596-e537-4cc3-192c) [ HYPONYM:"bay", HYPERNYM:"body of water" ]
+	//        HINTROW a river is a kind of flowing ; moving body of water     (9885-6337-f26c-cfbd) [ HYPONYM:"river", SCOPE1:"flow;move", HYPERNYM:"body of water" ]
+	//        HINTROW a puddle is a kind of body of water     (65d3-05bf-28db-3f1a) [ HYPONYM:"puddle", HYPERNYM:"body of water" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "ocean", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "body of water"]
+
+	// CENTRAL         KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow1 = [UUID:"81b7-0a58-5b0b-0bbf", HYPONYM: "water", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"81b7-0a58-5b0b-0bbf", HYPONYM: "water", HYPERNYM: "substance"]
+
+	// CENTRAL         CHANGE: boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy     (a0b2-a45f-01e1-4bf4) [ PROCESS_NAME:"boil;evaporate", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"gas", BY_THROUGH_HOW:"increase heat energy" ]
+	//row autoRow2 = [UUID:"a0b2-a45f-01e1-4bf4", PROCESS_NAME: "boil", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "gas", BY_THROUGH_HOW: "increase heat energy"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"a0b2-a45f-01e1-4bf4", PROCESS_NAME: "boil", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "gas", BY_THROUGH_HOW: "increase heat energy"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C     (e474-2a11-6e7b-ae8b) [ MATERIAL_NAME:"water", STATEOFMATTER:"gas", FORM_NAME:"water vapor;steam", LOWER_BOUND:"373;212;100", UPPER_BOUND:"100000000000", UNITS:"k;f;c" ]
+	//row autoRow3 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of heat energy     (d753-423d-5ce7-53ce) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"heat energy" ]
+	//row autoRow4 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"]
+
+	// CENTRAL         KINDOF: heat is a kind of energy     (9e7d-986e-6af1-5ac1) [ HYPONYM:"heat", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"]
+
+	// CENTRAL         IFTHEN: if an object ; a substance ; a location absorbs solar energy then that object ; that substance will increase in temperature     (9554-47d7-c095-1df7) [ THING:"object;substance;locate", ACTION1:"absorb", OBJECT_PATIENT1:"solar energy", ACTOR_AGENT_PROCESS2:"that object;that substance", ACTION3:"increase", OBJECT_PROPERTY3:"in temperature" ]
+	//row autoRow6 = [UUID:"9554-47d7-c095-1df7", THING: "object", ACTION1: "absorb", OBJECT_PATIENT1: "solar energy", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "increase", OBJECT_PROPERTY3: "in temperature"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"9554-47d7-c095-1df7", THING: "object", ACTION1: "absorb", OBJECT_PATIENT1: "solar energy", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "increase", OBJECT_PROPERTY3: "in temperature"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//row autoRow7 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"]
+
+	// CENTRAL         STAGE-IN-PROCESS: evaporation is a stage in the water cycle process     (d013-ec1c-88f4-fae9) [ STAGE:"evaporate", PROCESS:"water cycle" ]
+	//row autoRow8 = [UUID:"d013-ec1c-88f4-fae9", STAGE: "evaporate", PROCESS: "water cycle"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"d013-ec1c-88f4-fae9", STAGE: "evaporate", PROCESS: "water cycle"]
+
+	// CENTRAL         TRANSFER: the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight     (a3c3-47f1-32ba-5c7f) [ ACTOR_WHO:"sun", VERB:"transfer", WHAT:"solar energy;light energy;heat energy", DESTINATION:"planet;earth", BY_THROUGH_HOW:"sunlight" ]
+	//row autoRow9 = [UUID:"a3c3-47f1-32ba-5c7f", ACTOR_WHO: "sun", VERB: "transfer", WHAT: "solar energy", DESTINATION: "planet", BY_THROUGH_HOW: "sunlight"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"a3c3-47f1-32ba-5c7f", ACTOR_WHO: "sun", VERB: "transfer", WHAT: "solar energy", DESTINATION: "planet", BY_THROUGH_HOW: "sunlight"]
+
+	// CENTRAL         SOURCEOF: the sun is the source of energy for physical cycles on Earth     (bbf1-262a-c774-3f47) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"energy", AGENT_IT_PROVIDES_THING_TO:"physical cycle", SCOPE:"on earth" ]
+	//row autoRow10 = [UUID:"bbf1-262a-c774-3f47", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "physical cycle", SCOPE: "on earth"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"bbf1-262a-c774-3f47", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "physical cycle", SCOPE: "on earth"]
+
+	// CENTRAL         ACTION: evaporation is when water is drawn back up into the air in the water cycle     (68ad-c11b-2981-9be0) [ DEFINITION_NAME:"evaporate", AGENT_OBJECT:"water", ACTION2:"be draw back up into", OBJECT_PROPERTY:"air", WHEN_WHERE:"in water cycle" ]
+	//row autoRow11 = [UUID:"68ad-c11b-2981-9be0", DEFINITION_NAME: "evaporate", AGENT_OBJECT: "water", ACTION2: "be draw back up into", OBJECT_PROPERTY: "air", WHEN_WHERE: "in water cycle"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"68ad-c11b-2981-9be0", DEFINITION_NAME: "evaporate", AGENT_OBJECT: "water", ACTION2: "be draw back up into", OBJECT_PROPERTY: "air", WHEN_WHERE: "in water cycle"]
+
+	// CENTRAL         EXAMPLES: An example of a physical cycle is the water cycle     (cfea-1ba2-549b-7d10) [ AGENT_OBJECT1:"physical cycle", AGENT_OBJECT2:"water cycle" ]
+	//row autoRow12 = [UUID:"cfea-1ba2-549b-7d10", AGENT_OBJECT1: "physical cycle", AGENT_OBJECT2: "water cycle"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"cfea-1ba2-549b-7d10", AGENT_OBJECT1: "physical cycle", AGENT_OBJECT2: "water cycle"]
+
+	// CENTRAL         CONTAINS: a body of water contains water     (b927-5436-1d17-c396) [ OBJECT_AGENT:"body of water", WHAT_IT_CONTAINS:"water" ]
+	//row autoRow13 = [UUID:"b927-5436-1d17-c396", OBJECT_AGENT: "body of water", WHAT_IT_CONTAINS: "water"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"b927-5436-1d17-c396", OBJECT_AGENT: "body of water", WHAT_IT_CONTAINS: "water"]
+
+	// CENTRAL        (OPTIONAL) CONTAINS: oceans contain most of earth 's water     (c0ad-4856-2d41-4fa9) [ OBJECT_AGENT:"ocean", QUANTITY_RANGE:"much of", WHAT_IT_CONTAINS:"earth water" ]
+	//row *autoRow14 = [UUID:"c0ad-4856-2d41-4fa9", OBJECT_AGENT: "ocean", QUANTITY_RANGE: "much of", WHAT_IT_CONTAINS: "earth water"] //OVER-CONSTR.
+	row *autoRow14 = [UUID:"c0ad-4856-2d41-4fa9", OBJECT_AGENT: "ocean", QUANTITY_RANGE: "much of", WHAT_IT_CONTAINS: "earth water"]
+
+	// CENTRAL         ACTION: water absorbs solar energy in the water cycle     (3cac-554a-3149-cd7b) [ AGENT_OBJECT:"water", ACTION2:"absorb", OBJECT_PROPERTY:"solar energy", WHEN_WHERE:"in water cycle" ]
+	//row autoRow15 = [UUID:"3cac-554a-3149-cd7b", AGENT_OBJECT: "water", ACTION2: "absorb", OBJECT_PROPERTY: "solar energy", WHEN_WHERE: "in water cycle"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"3cac-554a-3149-cd7b", AGENT_OBJECT: "water", ACTION2: "absorb", OBJECT_PROPERTY: "solar energy", WHEN_WHERE: "in water cycle"]
+
+	// CENTRAL         LOCATIONS: the water cycle occurs on Earth     (0a6a-f5dd-7c73-ed64) [ THING_PROCESS:"water cycle", LOCATION:"earth" ]
+	//row autoRow16 = [UUID:"0a6a-f5dd-7c73-ed64", THING_PROCESS: "water cycle", LOCATION: "earth"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"0a6a-f5dd-7c73-ed64", THING_PROCESS: "water cycle", LOCATION: "earth"]
+
+	// CENTRAL         SOURCEOF: the sun is a source of radiation ; heat called sunlight     (d247-b029-3aab-0950) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"radiation;heat", NAME:"sunlight" ]
+	//row autoRow17 = [UUID:"d247-b029-3aab-0950", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "radiation", NAME: "sunlight"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"d247-b029-3aab-0950", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "radiation", NAME: "sunlight"]
+
+	// CENTRAL         PROCESSROLES: In the water cycle the sun has the role of causing evaporation     (4907-4612-ac7a-9987) [ PROCESS_NAME:"water cycle", ACTOR_COMMON_EXAMPLE:"sun", ROLE:"cause evaporate" ]
+	//row autoRow18 = [UUID:"4907-4612-ac7a-9987", PROCESS_NAME: "water cycle", ACTOR_COMMON_EXAMPLE: "sun", ROLE: "cause evaporate"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"4907-4612-ac7a-9987", PROCESS_NAME: "water cycle", ACTOR_COMMON_EXAMPLE: "sun", ROLE: "cause evaporate"]
+
+	// LEXGLUE         SYNONYMY: to add means to increase     (7ef3-7d2a-dd0a-7953) [ ACTION1:"add", ACTION2:"increase" ]
+	//row autoRow19 = [UUID:"7ef3-7d2a-dd0a-7953", ACTION1: "add", ACTION2: "increase"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"7ef3-7d2a-dd0a-7953", ACTION1: "add", ACTION2: "increase"]
+
+	// LEXGLUE         CHANGE-VEC: heat means temperature increases     (7afc-2bcd-13a5-2d35) [ PROCESS_NAME_ACTION:"heat", AGENT_OBJECT:"temperature", DIRECTION:"increase" ]
+	//row autoRow20 = [UUID:"7afc-2bcd-13a5-2d35", PROCESS_NAME_ACTION: "heat", AGENT_OBJECT: "temperature", DIRECTION: "increase"] //OVER-CONSTR.
+	row autoRow20 = [UUID:"7afc-2bcd-13a5-2d35", PROCESS_NAME_ACTION: "heat", AGENT_OBJECT: "temperature", DIRECTION: "increase"]
+
+	// LEXGLUE         SYNONYMY: solar radiation means solar energy     (ef29-744a-92a8-f884) [ X1:"solar radiation", X2:"solar energy" ]
+	//row autoRow21 = [UUID:"ef29-744a-92a8-f884", X1: "solar radiation", X2: "solar energy"] //OVER-CONSTR.
+	row autoRow21 = [UUID:"ef29-744a-92a8-f884", X1: "solar radiation", X2: "solar energy"]
+
+endinferencepattern

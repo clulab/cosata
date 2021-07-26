@@ -1,0 +1,55 @@
+// Automatically converted pattern
+inferencepattern MAT_MEAS_Measuring_Mass
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       UNIT: kilograms ( kg ) are a metric ; SI unit used for measuring mass ; weight generally used for values between 1 and 50000000     (7a26-9d80-a88f-94fa) [ UNIT:"kilogram", ABBREVIATION:"kg", PROPERTY:"mass;weight", LOWERBOUND:"1", UPPERBOUND:"50000000" ]
+	//        HINTROW grams ( g ) are a metric unit used for measuring mass ; weight generally used for values between 1 and 2000     (3ad2-62a6-57f5-df68) [ UNIT:"gram", ABBREVIATION:"g", PROPERTY:"mass;weight", LOWERBOUND:"1", UPPERBOUND:"2000" ]
+	//        HINTROW pounds ( lb ) are a imperial unit used for measuring mass ; weight generally used for values between 1 and 50000000     (68fe-16bc-d67a-41b9) [ UNIT:"pound", ABBREVIATION:"lb", PROPERTY:"mass;weight", LOWERBOUND:"1", UPPERBOUND:"50000000" ]
+	//        HINTROW tonnes ( t ) are a imperial unit used for measuring mass ; weight generally used for values between 1 and 50000000     (1456-f51f-a4cd-2dfb) [ UNIT:"tonne", ABBREVIATION:"t", PROPERTY:"mass;weight", LOWERBOUND:"1", UPPERBOUND:"50000000" ]
+	//        HINTROW ounces ( oz ) are a imperial unit used for measuring weight generally used for values between 1 and 16     (0fb6-3ecf-eb41-0b84) [ UNIT:"ounce", ABBREVIATION:"oz", PROPERTY:"weight", LOWERBOUND:"1", UPPERBOUND:"16" ]
+	//row autoRow0 = [TABLE:"UNIT", PROPERTY: <mass_0>, LOWERBOUND: "1"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"UNIT", PROPERTY: <mass_0>, LOWERBOUND: "1"]
+
+	// CENTRALSW       USEDFOR: a balance is used for measuring mass ; weight of an object ; of a substance     (5c76-a005-e9c2-354a) [ AGENT_OBJECT:"balance", FOR_PURPOSE:"measure", PATIENT:"mass;weight", SCOPE2:"of object;of substance" ]
+	//        HINTROW a scale is used for measuring weight     (af64-6dc9-a2bb-291d) [ AGENT_OBJECT:"scale", FOR_PURPOSE:"measure", PATIENT:"weight" ]
+	//row autoRow1 = [TABLE:"USEDFOR", AGENT_OBJECT: "balance", FOR_PURPOSE: "measure", PATIENT: <mass_0>, SCOPE2: "of object"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"USEDFOR", FOR_PURPOSE: "measure", PATIENT: <mass_0>]
+
+	// GROUNDING       KINDOF: a rock is a kind of object     (7c8b-3728-1d36-f922) [ HYPONYM:"rock", HYPERNYM:"object" ]
+	//        HINTROW a fruit is a kind of object     (16ce-a772-1577-f0e3) [ HYPONYM:"fruit", HYPERNYM:"object" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// CENTRAL         KINDOF: a balance is a kind of instrument for measuring mass ; measuring weight     (fad5-a6d6-cfd6-b9ed) [ HYPONYM:"balance", HYPERNYM:"instrument", FOR_PURPOSE:"measure mass;measure weight" ]
+	//  Notes: kind of rows, has a better place in USEDFOR table
+	//row autoRow3 = [UUID:"fad5-a6d6-cfd6-b9ed", HYPONYM: "balance", HYPERNYM: "instrument", FOR_PURPOSE: "measure"+<mass_0>] //OVER-CONSTR.
+	row autoRow3 = [UUID:"fad5-a6d6-cfd6-b9ed", HYPONYM: "balance", HYPERNYM: "instrument", FOR_PURPOSE: "measure"+<mass_0>]
+
+	// CENTRAL         REQUIRES: determining often requires measuring ; observing     (fc75-dfcd-e46e-e318) [ ACTION1:"determine", QUANTIFIER:"often", VERB_REQUIRES:"require", ACTION2:"measure;observe" ]
+	//row autoRow4 = [UUID:"fc75-dfcd-e46e-e318", ACTION1: "determine", QUANTIFIER: "often", VERB_REQUIRES: "require", ACTION2: "measure"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"fc75-dfcd-e46e-e318", ACTION1: "determine", QUANTIFIER: "often", VERB_REQUIRES: "require", ACTION2: "measure"]
+
+	// CENTRAL         PROP-GENERIC: mass is a property of objects ; matter     (bbf0-3d09-563f-196b) [ X:"mass", Y:"object;matt" ]
+	//  Notes: core
+	//row autoRow5 = [UUID:"bbf0-3d09-563f-196b", X: <mass_0>, Y: "object"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"bbf0-3d09-563f-196b", X: <mass_0>, Y: "object"]
+
+	// CENTRAL         PROP-THINGS: mass ; weight are the same on Earth     (8ce7-4471-f7fa-5b61) [ THING:"mass;weight", VALUE:"same", SCOPE_RELATIVETO:"on earth" ]
+	//row autoRow6 = [UUID:"8ce7-4471-f7fa-5b61", THING: <mass_0>, VALUE: "same", SCOPE_RELATIVETO: "on earth"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"8ce7-4471-f7fa-5b61", THING: <mass_0>, VALUE: "same", SCOPE_RELATIVETO: "on earth"]
+
+	// LEXGLUE         SYNONYMY: instrument means tool     (a0d5-68ec-fccc-fd82) [ X1:"instrument", X2:"tool" ]
+	//row autoRow7 = [UUID:"a0d5-68ec-fccc-fd82", X1: "instrument", X2: "tool"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"a0d5-68ec-fccc-fd82", X1: "instrument", X2: "tool"]
+
+	// LEXGLUE         SYNONYMY: weight means the force of gravity acting on an object     (bd42-1e2a-7899-2200) [ X1:"weight", X2:"force of gravity", ACTION2:"act", Y2:"on object" ]
+	//row autoRow8 = [UUID:"bd42-1e2a-7899-2200", X1: "weight", X2: "force of gravity", ACTION2: "act", Y2: "on object"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"bd42-1e2a-7899-2200", X1: "weight", X2: "force of gravity", ACTION2: "act", Y2: "on object"]
+
+endinferencepattern

@@ -1,0 +1,260 @@
+{"patternMatches": [
+{
+	"patternName":"LIFE_INTERDEP_Herbivores",
+	"matches":[
+		{
+		"uuids": ["7579-be94-da2b-b793","dfcb-6cbb-85ac-9195","18e1-c8ad-e980-2db1","afb3-0848-efcb-4bbb","2590-d8b5-881d-7252","c709-83dd-975c-b05d","57e4-c7f7-0031-fb0a","9842-70ea-d82e-01bf","5706-62c6-1f2a-6e18"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7579-be94-da2b-b793", "rowText": "a cow is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "dfcb-6cbb-85ac-9195", "rowText": "a cow is a kind of herbivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "18e1-c8ad-e980-2db1", "rowText": "In the food chain process herbivores have the role of primary consumer which eats producers for food", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "afb3-0848-efcb-4bbb", "rowText": "the skull of an animal can be used to determine if that animal was a carnivore or an herbivore", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2590-d8b5-881d-7252", "rowText": "as the population of plants decreases , the population of herbivores will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "57e4-c7f7-0031-fb0a", "rowText": "herbivores only eat plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9842-70ea-d82e-01bf", "rowText": "many animals are herbivores", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5706-62c6-1f2a-6e18", "rowText": "herbivore means first-level consumer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"rabbit_0", "value":"cow" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"rabbit_0", "value":"cow" }
+		]
+		},
+		{
+		"uuids": ["8cd7-84f7-76a1-1ba5","3958-4821-2eca-d3a9","18e1-c8ad-e980-2db1","afb3-0848-efcb-4bbb","2590-d8b5-881d-7252","c709-83dd-975c-b05d","57e4-c7f7-0031-fb0a","9842-70ea-d82e-01bf","5706-62c6-1f2a-6e18"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8cd7-84f7-76a1-1ba5", "rowText": "a deer is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3958-4821-2eca-d3a9", "rowText": "a deer is a kind of herbivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "18e1-c8ad-e980-2db1", "rowText": "In the food chain process herbivores have the role of primary consumer which eats producers for food", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "afb3-0848-efcb-4bbb", "rowText": "the skull of an animal can be used to determine if that animal was a carnivore or an herbivore", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2590-d8b5-881d-7252", "rowText": "as the population of plants decreases , the population of herbivores will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "57e4-c7f7-0031-fb0a", "rowText": "herbivores only eat plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9842-70ea-d82e-01bf", "rowText": "many animals are herbivores", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5706-62c6-1f2a-6e18", "rowText": "herbivore means first-level consumer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"rabbit_0", "value":"deer" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"rabbit_0", "value":"deer" }
+		]
+		},
+		{
+		"uuids": ["14f6-6249-15eb-7158","42c7-56d1-1a8e-e2b6","18e1-c8ad-e980-2db1","afb3-0848-efcb-4bbb","2590-d8b5-881d-7252","c709-83dd-975c-b05d","57e4-c7f7-0031-fb0a","9842-70ea-d82e-01bf","5706-62c6-1f2a-6e18"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "14f6-6249-15eb-7158", "rowText": "a horse is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "42c7-56d1-1a8e-e2b6", "rowText": "a horse is a kind of herbivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "18e1-c8ad-e980-2db1", "rowText": "In the food chain process herbivores have the role of primary consumer which eats producers for food", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "afb3-0848-efcb-4bbb", "rowText": "the skull of an animal can be used to determine if that animal was a carnivore or an herbivore", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2590-d8b5-881d-7252", "rowText": "as the population of plants decreases , the population of herbivores will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "57e4-c7f7-0031-fb0a", "rowText": "herbivores only eat plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9842-70ea-d82e-01bf", "rowText": "many animals are herbivores", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5706-62c6-1f2a-6e18", "rowText": "herbivore means first-level consumer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"rabbit_0", "value":"horse" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"rabbit_0", "value":"horse" }
+		]
+		},
+		{
+		"uuids": ["782f-7770-b8be-f40e","b063-0f0c-d332-f233","18e1-c8ad-e980-2db1","afb3-0848-efcb-4bbb","2590-d8b5-881d-7252","c709-83dd-975c-b05d","57e4-c7f7-0031-fb0a","9842-70ea-d82e-01bf","5706-62c6-1f2a-6e18"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "782f-7770-b8be-f40e", "rowText": "a mouse is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b063-0f0c-d332-f233", "rowText": "a mouse is a kind of herbivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "18e1-c8ad-e980-2db1", "rowText": "In the food chain process herbivores have the role of primary consumer which eats producers for food", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "afb3-0848-efcb-4bbb", "rowText": "the skull of an animal can be used to determine if that animal was a carnivore or an herbivore", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2590-d8b5-881d-7252", "rowText": "as the population of plants decreases , the population of herbivores will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "57e4-c7f7-0031-fb0a", "rowText": "herbivores only eat plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9842-70ea-d82e-01bf", "rowText": "many animals are herbivores", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5706-62c6-1f2a-6e18", "rowText": "herbivore means first-level consumer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"rabbit_0", "value":"mouse" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"rabbit_0", "value":"mouse" }
+		]
+		},
+		{
+		"uuids": ["44d7-fef6-90ef-75aa","d825-1694-54c8-7842","18e1-c8ad-e980-2db1","afb3-0848-efcb-4bbb","2590-d8b5-881d-7252","c709-83dd-975c-b05d","57e4-c7f7-0031-fb0a","9842-70ea-d82e-01bf","5706-62c6-1f2a-6e18"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "44d7-fef6-90ef-75aa", "rowText": "a rabbit is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d825-1694-54c8-7842", "rowText": "a rabbit is a kind of herbivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "18e1-c8ad-e980-2db1", "rowText": "In the food chain process herbivores have the role of primary consumer which eats producers for food", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "afb3-0848-efcb-4bbb", "rowText": "the skull of an animal can be used to determine if that animal was a carnivore or an herbivore", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2590-d8b5-881d-7252", "rowText": "as the population of plants decreases , the population of herbivores will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "57e4-c7f7-0031-fb0a", "rowText": "herbivores only eat plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9842-70ea-d82e-01bf", "rowText": "many animals are herbivores", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5706-62c6-1f2a-6e18", "rowText": "herbivore means first-level consumer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"rabbit_0", "value":"rabbit" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"rabbit_0", "value":"rabbit" }
+		]
+		},
+		{
+		"uuids": ["b5dc-c66c-4d4e-031d","917a-13e0-ccdc-3673","18e1-c8ad-e980-2db1","afb3-0848-efcb-4bbb","2590-d8b5-881d-7252","c709-83dd-975c-b05d","57e4-c7f7-0031-fb0a","9842-70ea-d82e-01bf","5706-62c6-1f2a-6e18"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b5dc-c66c-4d4e-031d", "rowText": "a squirrel is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "917a-13e0-ccdc-3673", "rowText": "a squirrel is a kind of herbivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "18e1-c8ad-e980-2db1", "rowText": "In the food chain process herbivores have the role of primary consumer which eats producers for food", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "afb3-0848-efcb-4bbb", "rowText": "the skull of an animal can be used to determine if that animal was a carnivore or an herbivore", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2590-d8b5-881d-7252", "rowText": "as the population of plants decreases , the population of herbivores will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "57e4-c7f7-0031-fb0a", "rowText": "herbivores only eat plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9842-70ea-d82e-01bf", "rowText": "many animals are herbivores", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5706-62c6-1f2a-6e18", "rowText": "herbivore means first-level consumer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"rabbit_0", "value":"squirrel" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"rabbit_0", "value":"squirrel" }
+		]
+		},
+		{
+		"uuids": ["7579-be94-da2b-b793","dfcb-6cbb-85ac-9195","18e1-c8ad-e980-2db1","2590-d8b5-881d-7252","c709-83dd-975c-b05d","57e4-c7f7-0031-fb0a","9842-70ea-d82e-01bf","5706-62c6-1f2a-6e18"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7579-be94-da2b-b793", "rowText": "a cow is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "dfcb-6cbb-85ac-9195", "rowText": "a cow is a kind of herbivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "18e1-c8ad-e980-2db1", "rowText": "In the food chain process herbivores have the role of primary consumer which eats producers for food", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2590-d8b5-881d-7252", "rowText": "as the population of plants decreases , the population of herbivores will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "57e4-c7f7-0031-fb0a", "rowText": "herbivores only eat plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9842-70ea-d82e-01bf", "rowText": "many animals are herbivores", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5706-62c6-1f2a-6e18", "rowText": "herbivore means first-level consumer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"rabbit_0", "value":"cow" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"rabbit_0", "value":"cow" }
+		]
+		},
+		{
+		"uuids": ["8cd7-84f7-76a1-1ba5","3958-4821-2eca-d3a9","18e1-c8ad-e980-2db1","2590-d8b5-881d-7252","c709-83dd-975c-b05d","57e4-c7f7-0031-fb0a","9842-70ea-d82e-01bf","5706-62c6-1f2a-6e18"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8cd7-84f7-76a1-1ba5", "rowText": "a deer is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3958-4821-2eca-d3a9", "rowText": "a deer is a kind of herbivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "18e1-c8ad-e980-2db1", "rowText": "In the food chain process herbivores have the role of primary consumer which eats producers for food", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2590-d8b5-881d-7252", "rowText": "as the population of plants decreases , the population of herbivores will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "57e4-c7f7-0031-fb0a", "rowText": "herbivores only eat plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9842-70ea-d82e-01bf", "rowText": "many animals are herbivores", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5706-62c6-1f2a-6e18", "rowText": "herbivore means first-level consumer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"rabbit_0", "value":"deer" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"rabbit_0", "value":"deer" }
+		]
+		},
+		{
+		"uuids": ["14f6-6249-15eb-7158","42c7-56d1-1a8e-e2b6","18e1-c8ad-e980-2db1","2590-d8b5-881d-7252","c709-83dd-975c-b05d","57e4-c7f7-0031-fb0a","9842-70ea-d82e-01bf","5706-62c6-1f2a-6e18"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "14f6-6249-15eb-7158", "rowText": "a horse is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "42c7-56d1-1a8e-e2b6", "rowText": "a horse is a kind of herbivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "18e1-c8ad-e980-2db1", "rowText": "In the food chain process herbivores have the role of primary consumer which eats producers for food", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2590-d8b5-881d-7252", "rowText": "as the population of plants decreases , the population of herbivores will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "57e4-c7f7-0031-fb0a", "rowText": "herbivores only eat plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9842-70ea-d82e-01bf", "rowText": "many animals are herbivores", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5706-62c6-1f2a-6e18", "rowText": "herbivore means first-level consumer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"rabbit_0", "value":"horse" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"rabbit_0", "value":"horse" }
+		]
+		},
+		{
+		"uuids": ["782f-7770-b8be-f40e","b063-0f0c-d332-f233","18e1-c8ad-e980-2db1","2590-d8b5-881d-7252","c709-83dd-975c-b05d","57e4-c7f7-0031-fb0a","9842-70ea-d82e-01bf","5706-62c6-1f2a-6e18"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "782f-7770-b8be-f40e", "rowText": "a mouse is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b063-0f0c-d332-f233", "rowText": "a mouse is a kind of herbivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "18e1-c8ad-e980-2db1", "rowText": "In the food chain process herbivores have the role of primary consumer which eats producers for food", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2590-d8b5-881d-7252", "rowText": "as the population of plants decreases , the population of herbivores will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "57e4-c7f7-0031-fb0a", "rowText": "herbivores only eat plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9842-70ea-d82e-01bf", "rowText": "many animals are herbivores", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5706-62c6-1f2a-6e18", "rowText": "herbivore means first-level consumer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"rabbit_0", "value":"mouse" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"rabbit_0", "value":"mouse" }
+		]
+		},
+		{
+		"uuids": ["44d7-fef6-90ef-75aa","d825-1694-54c8-7842","18e1-c8ad-e980-2db1","2590-d8b5-881d-7252","c709-83dd-975c-b05d","57e4-c7f7-0031-fb0a","9842-70ea-d82e-01bf","5706-62c6-1f2a-6e18"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "44d7-fef6-90ef-75aa", "rowText": "a rabbit is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d825-1694-54c8-7842", "rowText": "a rabbit is a kind of herbivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "18e1-c8ad-e980-2db1", "rowText": "In the food chain process herbivores have the role of primary consumer which eats producers for food", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2590-d8b5-881d-7252", "rowText": "as the population of plants decreases , the population of herbivores will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "57e4-c7f7-0031-fb0a", "rowText": "herbivores only eat plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9842-70ea-d82e-01bf", "rowText": "many animals are herbivores", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5706-62c6-1f2a-6e18", "rowText": "herbivore means first-level consumer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"rabbit_0", "value":"rabbit" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"rabbit_0", "value":"rabbit" }
+		]
+		},
+		{
+		"uuids": ["b5dc-c66c-4d4e-031d","917a-13e0-ccdc-3673","18e1-c8ad-e980-2db1","2590-d8b5-881d-7252","c709-83dd-975c-b05d","57e4-c7f7-0031-fb0a","9842-70ea-d82e-01bf","5706-62c6-1f2a-6e18"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b5dc-c66c-4d4e-031d", "rowText": "a squirrel is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "917a-13e0-ccdc-3673", "rowText": "a squirrel is a kind of herbivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "18e1-c8ad-e980-2db1", "rowText": "In the food chain process herbivores have the role of primary consumer which eats producers for food", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "2590-d8b5-881d-7252", "rowText": "as the population of plants decreases , the population of herbivores will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "57e4-c7f7-0031-fb0a", "rowText": "herbivores only eat plants", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9842-70ea-d82e-01bf", "rowText": "many animals are herbivores", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5706-62c6-1f2a-6e18", "rowText": "herbivore means first-level consumer", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"rabbit_0", "value":"squirrel" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"rabbit_0", "value":"squirrel" }
+		]
+		}
+	]
+}
+]}
+

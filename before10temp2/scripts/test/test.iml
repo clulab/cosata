@@ -1,0 +1,132 @@
+// function
+function test()
+	var a = 10
+endfunction
+
+// Changing states of matter
+inferencepattern stateOfMatter	
+	// Plain text description
+	description = "A substance changing it's state of matter"
+		
+	// Constants
+	const <a> = "blah"
+	const <b> = "blah 1 2 3"
+	
+	// Row definitions
+	
+	// e.g. solid/liquid/gas is a kind of state of matter
+	row som1 = [TABLE:"KINDOF", HYPONYM:<SOM1>, HYPERNYM:"state of matter"]
+	row som2 = [TABLE:"KINDOF", HYPONYM:<SOM2>, HYPERNYM:"state of matter"]
+	
+	// e.g. melting/boiling/freezing is a kind of change of state
+	row cos  = [TABLE:"KINDOF", HYPONYM:<ChangeOfState>, HYPERNYM:"change of state"]
+
+	// e.g. a boiling point is a kind of phase transition point
+	row point = [TABLE:"KINDOF", HYPONYM:<PhaseTransitonPoint>, HYPERNYM:"phase transition point"]
+	
+	// e.g. melting means (matter; a substance) changes from a solid to a liquid by increasing heat energy
+	row change = [TABLE:"CHANGE", PROCESS_NAME:<ChangeOfState>, FROM:<SOM1>, INTO:<SOM2>, BY_THROUGH_HOW:<incDec> + "heat energy"]	
+	
+	// e.g. melting occurs when the temperature of a substance is increased above the substance's melting point, and below it's boiling point
+	row thresh = [TABLE:"CONDITION-VEC", EVENT:<ChangeOfState>, VALUE:<PhaseTransitonPoint>]
+	
+	// e.g. heating means the (temperature; heat energy) of an (object; substance) is increased
+	row tempincdec = [TABLE:"CHANGE-VEC-PROP", PROCESS_NAME:<heatingOrCooling>, PROPERTY:"heat energy", INCREASED_DECREASED:<incDec>]
+	
+	
+	// Code/Rules
+
+	
+endinferencepattern
+
+
+// A substance in a state of matter
+inferencepattern substanceInSOM
+	// Plain text description 
+	description = "A material/substance in a given state of matter"
+	
+	// Constants
+	
+	// Row definitions
+	row som = [TABLE:"KINDOF", HYPONYM:<SOM>, HYPERNYM:"state of matter"]
+	row propSomTemp = [TABLE:"PROP-STATESOFMATTER-TEMPS", STATEOFMATTER:<SOM>]
+	
+	// Code
+
+endinferencepattern
+
+
+
+
+/*
+ * Heat energy
+ */
+
+inferencepattern sourceofHeatEnergy
+	// Plain text description
+	description = "Something being a source of heat energy"
+	
+	// Constants
+	
+	// Row definitions
+	row source = [TABLE:"SOURCEOF", AGENT:<agent>, WHAT_IT_PROVIDES:"heat energy"]
+	
+	// Code
+	
+endinferencepattern
+
+
+
+/*
+ * Physical changes
+ */ 
+inferencepattern shapeVolumeSOM
+	// Plain text description
+	description = ""
+	
+	// Constants
+	
+	// Row definitions
+	// State of matter (e.g. solid is a kind of state of matter)
+	row som = [TABLE:"KINDOF", HYPONYM:<SOM>, HYPERNYM:"state of matter"]
+	
+	// Shape
+	row propSomShape = [TABLE:"PROP-STATESOFMATTER-TEMPS", STATEOFMATTER:<SOM>]
+	
+	// Volume
+
+	
+	// Code
+	
+endinferencepattern
+
+
+
+/*
+ * Supporting inference patterns
+ */ 
+
+// Taxonomic traversal
+// If X is a kind of Y, and Y is a kind of Z, then X is a kind of Z
+inferencepattern taxonomicTraversal
+	// Plain text description
+	description = "Taxonomic traversal (If X is a kind of Y, and Y is a kind of Z, then X is a kind of Z)"
+
+	// Constants
+	
+	// Row definitions	
+	row upper = [TABLE:"KINDOF", HYPONYM:<x>, HYPERNYM:<y>]
+	row lower = [TABLE:"KINDOF", HYPONYM:<y>, HYPERNYM:<z>]
+	
+	// Code
+	generaterow([TABLE:"KINDOF", HYPONYM:<x>, HYPERNYM:<z>])
+	
+endinferencepattern
+
+
+
+
+// main
+main:	
+	var b = 20	
+	

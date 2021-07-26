@@ -1,0 +1,71 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Organisms_Require_Water
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//        HINTROW an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "organism"]
+
+	// GROUNDING       KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//        HINTROW an alligator is a kind of aquatic animal     (5086-b21f-9f0a-e67d) [ HYPONYM:"alligator", SCOPE1:"aquatic", HYPERNYM:"animal" ]
+	//        HINTROW a bear is a kind of animal     (5639-8136-4788-3ee6) [ HYPONYM:"bear", HYPERNYM:"animal" ]
+	//        HINTROW a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW a lemon tree is a kind of plant     (9cf1-bc5a-d350-5541) [ HYPONYM:"lemon tree", HYPERNYM:"plant" ]
+	//        HINTROW a bush is a kind of plant     (311e-8d88-cde2-860d) [ HYPONYM:"bush", HYPERNYM:"plant" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow1 = [TABLE:"KINDOF"]
+
+	// CENTRAL         CAUSE: the distance between the Sun and Earth causes liquid water to be able to exist on Earth     (0285-a0b4-8c82-afce) [ CONDITION_AGENT_OBJECT:"distance", SCOPE1:"between sun earth", RESULT_AGENT:"liquid water", RESULT_VERB:"be able exist", SCOPE2:"on earth" ]
+	//row autoRow2 = [UUID:"0285-a0b4-8c82-afce", CONDITION_AGENT_OBJECT: "distance", SCOPE1: "between sun earth", RESULT_AGENT: "liquid water", RESULT_VERB: "be able exist", SCOPE2: "on earth"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"0285-a0b4-8c82-afce", CONDITION_AGENT_OBJECT: "distance", SCOPE1: "between sun earth", RESULT_AGENT: "liquid water", RESULT_VERB: "be able exist", SCOPE2: "on earth"]
+
+	// CENTRAL         IFTHEN: if a planet contains liquid water , then life can develop on that planet     (d2cd-2d28-92a1-8b86) [ THING:"planet", ACTION1:"contain", OBJECT_PATIENT1:"liquid water", ACTOR_AGENT_PROCESS2:"life", ACTION3:"develop", SCOPE4:"on planet" ]
+	//row autoRow3 = [UUID:"d2cd-2d28-92a1-8b86", THING: "planet", ACTION1: "contain", OBJECT_PATIENT1: "liquid water", ACTOR_AGENT_PROCESS2: "life", ACTION3: "develop", SCOPE4: "on planet"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"d2cd-2d28-92a1-8b86", THING: "planet", ACTION1: "contain", OBJECT_PATIENT1: "liquid water", ACTOR_AGENT_PROCESS2: "life", ACTION3: "develop", SCOPE4: "on planet"]
+
+	// CENTRAL         REQUIRES: organisms require liquid water to survive     (3338-5ddb-6fa9-7e2c) [ OBJECT_AGENT_PROCESS:"organism", VERB_REQUIRES:"require", OBJECT:"liquid water", FOR_PURPOSE:"survive" ]
+	//row autoRow4 = [UUID:"3338-5ddb-6fa9-7e2c", OBJECT_AGENT_PROCESS: "organism", VERB_REQUIRES: "require", OBJECT: "liquid water", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3338-5ddb-6fa9-7e2c", OBJECT_AGENT_PROCESS: "organism", VERB_REQUIRES: "require", OBJECT: "liquid water", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         KINDOF: water is a kind of liquid at room temperature     (3961-d09c-4b9a-a6f7) [ HYPONYM:"water", HYPERNYM:"liquid", SCOPE2:"at room temperature" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"3961-d09c-4b9a-a6f7", HYPONYM: "water", HYPERNYM: "liquid", SCOPE2: "at room temperature"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"3961-d09c-4b9a-a6f7", HYPONYM: "water", HYPERNYM: "liquid", SCOPE2: "at room temperature"]
+
+	// CENTRAL         KINDOF: water is a kind of natural resource     (1c04-5228-7c5d-ab8a) [ HYPONYM:"water", HYPERNYM:"nature resource" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"1c04-5228-7c5d-ab8a", HYPONYM: "water", HYPERNYM: "nature resource"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"1c04-5228-7c5d-ab8a", HYPONYM: "water", HYPERNYM: "nature resource"]
+
+	// CENTRAL         KINDOF: Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"e473-7297-61c1-56fa", HYPONYM: "earth", HYPERNYM: "planet"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"e473-7297-61c1-56fa", HYPONYM: "earth", HYPERNYM: "planet"]
+
+	// CENTRAL         KINDOF: the Sun is a kind of star     (af26-8083-b908-7d3b) [ HYPONYM:"sun", HYPERNYM:"star" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"af26-8083-b908-7d3b", HYPONYM: "sun", HYPERNYM: "star"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"af26-8083-b908-7d3b", HYPONYM: "sun", HYPERNYM: "star"]
+
+	// CENTRAL         KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//row autoRow9 = [UUID:"81b7-0a58-5b0b-0bbf", HYPONYM: "water", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"81b7-0a58-5b0b-0bbf", HYPONYM: "water", HYPERNYM: "substance"]
+
+	// CENTRAL         ACTION: water exists in liquid ; solid ; gas state on Earth     (e7e6-0a8e-4db4-7402) [ AGENT_OBJECT:"water", ACTION2:"exist in", OBJECT_PROPERTY:"liquid;solid;gas state", WHEN_WHERE:"on earth" ]
+	//row autoRow10 = [UUID:"e7e6-0a8e-4db4-7402", AGENT_OBJECT: "water", ACTION2: "exist in", OBJECT_PROPERTY: "gas state", WHEN_WHERE: "on earth"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"e7e6-0a8e-4db4-7402", AGENT_OBJECT: "water", ACTION2: "exist in", OBJECT_PROPERTY: "gas state", WHEN_WHERE: "on earth"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//row autoRow11 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"]
+
+endinferencepattern

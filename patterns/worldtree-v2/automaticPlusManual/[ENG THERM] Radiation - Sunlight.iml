@@ -1,0 +1,67 @@
+// Automatically converted pattern
+inferencepattern ENG_THERM_Radiation_Sunlight
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       TRANSFER: radiation is when electromagnetic waves transfers heat and light energy     (eebe-c5b0-1dea-3414) [ PROCESS_NAME:"radiation", ACTOR_WHO:"electromagnetic wave", VERB:"transfer", WHAT:"heat light energy" ]
+	//        HINTROW radiation is when heat is transferred through waves ; particles     (1d10-2a0a-bf2e-7622) [ PROCESS_NAME:"radiation", ACTOR_WHO:"heat", VERB:"be transfer", BY_THROUGH_HOW:"wave;particle" ]
+	//row autoRow0 = [TABLE:"TRANSFER", PROCESS_NAME: "radiation", ACTOR_WHO: "electromagnetic"+*"POS:NN", VERB: "transfer", WHAT: "heat light energy"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"TRANSFER", PROCESS_NAME: "radiation", VERB: "transfer"]
+
+	// CENTRALSW       KINDOF: light is a kind of electromagnetic radiation     (f5bd-f09f-df33-571f) [ HYPONYM:"light", SCOPE1:"electromagnetic", HYPERNYM:"radiation" ]
+	//        HINTROW light is a kind of wave     (7830-1dcb-42c6-d8dc) [ HYPONYM:"light", HYPERNYM:"wave" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "light"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "light"]
+
+	// CENTRAL         TRANSFER: the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight     (a3c3-47f1-32ba-5c7f) [ ACTOR_WHO:"sun", VERB:"transfer", WHAT:"solar energy;light energy;heat energy", DESTINATION:"planet;earth", BY_THROUGH_HOW:"sunlight" ]
+	//row autoRow2 = [UUID:"a3c3-47f1-32ba-5c7f", ACTOR_WHO: "sun", VERB: "transfer", WHAT: "solar energy", DESTINATION: "planet", BY_THROUGH_HOW: "sunlight"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"a3c3-47f1-32ba-5c7f", ACTOR_WHO: "sun", VERB: "transfer", WHAT: "solar energy", DESTINATION: "planet", BY_THROUGH_HOW: "sunlight"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if heat is transferred to an object , then the object will get hot     (5a0e-924d-c180-98d7) [ THING:"heat", ACTION1:"transfer", OBJECT_PATIENT1:"object", ACTOR_AGENT_PROCESS2:"object", ACTION3:"get", OBJECT_PROPERTY3:"hot" ]
+	//row *autoRow3 = [UUID:"5a0e-924d-c180-98d7", THING: "heat", ACTION1: "transfer", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "object", ACTION3: "get", OBJECT_PROPERTY3: "hot"] //OVER-CONSTR.
+	row *autoRow3 = [UUID:"5a0e-924d-c180-98d7", THING: "heat", ACTION1: "transfer", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "object", ACTION3: "get", OBJECT_PROPERTY3: "hot"]
+
+	// CENTRAL         SOURCEOF: the sun is a source of radiation ; heat called sunlight     (d247-b029-3aab-0950) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"radiation;heat", NAME:"sunlight" ]
+	//row autoRow4 = [UUID:"d247-b029-3aab-0950", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "radiation", NAME: "sunlight"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"d247-b029-3aab-0950", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "radiation", NAME: "sunlight"]
+
+	// CENTRAL         ACTION: electromagnetic energy travels as electromagnetic waves     (863a-bc6c-8c03-249c) [ AGENT_OBJECT:"electromagnetic energy", ACTION2:"travel", OBJECT_PROPERTY:"a electromagnetic wave" ]
+	//row autoRow5 = [UUID:"863a-bc6c-8c03-249c", AGENT_OBJECT: "electromagnetic energy", ACTION2: "travel", OBJECT_PROPERTY: "a electromagnetic wave"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"863a-bc6c-8c03-249c", AGENT_OBJECT: "electromagnetic energy", ACTION2: "travel", OBJECT_PROPERTY: "a electromagnetic wave"]
+
+	// CENTRAL         AFFORDANCES: radiation can affect objects that are not touching     (3274-5890-ead5-c376) [ ACTOR_THING:"radiation", VERB:"affect", PATIENT:"object", SCOPE:"be not touch" ]
+	//row autoRow6 = [UUID:"3274-5890-ead5-c376", ACTOR_THING: "radiation", VERB: "affect", PATIENT: "object", SCOPE: "be not touch"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3274-5890-ead5-c376", ACTOR_THING: "radiation", VERB: "affect", PATIENT: "object", SCOPE: "be not touch"]
+
+	// CENTRAL        (OPTIONAL) AFFORDANCES: sunlight can shine through a window     (1f7b-30af-4177-e9d5) [ ACTOR_THING:"sunlight", VERB:"shine", SCOPE:"through window" ]
+	//row *autoRow7 = [UUID:"1f7b-30af-4177-e9d5", ACTOR_THING: "sunlight", VERB: "shine", SCOPE: "through window"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"1f7b-30af-4177-e9d5", ACTOR_THING: "sunlight", VERB: "shine", SCOPE: "through window"]
+
+	// CENTRAL         KINDOF: electromagnetic wave is a kind of wave     (13eb-ea19-5bae-123e) [ HYPONYM:"electromagnetic wave", HYPERNYM:"wave" ]
+	//row autoRow8 = [UUID:"13eb-ea19-5bae-123e", HYPONYM: "electromagnetic wave", HYPERNYM: "wave"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"13eb-ea19-5bae-123e", HYPONYM: "electromagnetic wave", HYPERNYM: "wave"]
+
+	// CENTRAL         KINDOF: heat is a kind of energy     (9e7d-986e-6af1-5ac1) [ HYPONYM:"heat", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"]
+
+	// CENTRAL         KINDOF: sunlight is a kind of light     (49dc-4526-46f9-5b32) [ HYPONYM:"sunlight", HYPERNYM:"light" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"49dc-4526-46f9-5b32", HYPONYM: "sunlight", HYPERNYM: "light"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"49dc-4526-46f9-5b32", HYPONYM: "sunlight", HYPERNYM: "light"]
+
+	// CENTRAL         ATTRIBUTE-VALUE-RANGE: hot means high in heat energy ; temperature     (9ff8-543c-2f35-5d3f) [ THING:"hot", VALUE:"high", ATTRIBUTE:"heat energy;temperature" ]
+	//row autoRow11 = [UUID:"9ff8-543c-2f35-5d3f", THING: "hot", VALUE: "high", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"9ff8-543c-2f35-5d3f", THING: "hot", VALUE: "high", ATTRIBUTE: "heat energy"]
+
+	// LEXGLUE         SYNONYMY: electromagnetic radiation means electromagnetic energy     (71fe-7f84-ac6f-b391) [ X1:"electromagnetic radiation", X2:"electromagnetic energy" ]
+	//row autoRow12 = [UUID:"71fe-7f84-ac6f-b391", X1: "electromagnetic radiation", X2: "electromagnetic energy"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"71fe-7f84-ac6f-b391", X1: "electromagnetic radiation", X2: "electromagnetic energy"]
+
+endinferencepattern

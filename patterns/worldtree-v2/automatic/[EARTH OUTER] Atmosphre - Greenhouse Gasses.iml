@@ -1,0 +1,50 @@
+// Automatically converted pattern
+inferencepattern EARTH_OUTER_Atmosphre_Greenhouse_Gasses
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       MADEOF: the Earth 's atmosphere is made of 0 to 4 percent hydrogen ; water vapor by volume     (7051-de21-70b0-8c49) [ QUANTIFIER:"earth", OBJECT:"atmosphere", VALUE:"0 4 percent", MATERIAL:"hydrogen;water vapor", SCOPE:"by volume" ]
+	//        HINTROW the Earth 's atmosphere is made of .036 percent carbon dioxide by volume     (b110-974a-3fbc-a21a) [ QUANTIFIER:"earth", OBJECT:"atmosphere", VALUE:".036 percent", MATERIAL:"carbon dioxide", SCOPE:"by volume" ]
+	//row autoRow0 = [TABLE:"MADEOF", QUANTIFIER: "earth", OBJECT: "atmosphere", MATERIAL: <water_0>+<vapor_1>, SCOPE: "by volume"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"MADEOF", QUANTIFIER: "earth", OBJECT: "atmosphere", MATERIAL: <water_0>+<vapor_1>, SCOPE: "by volume"]
+
+	// GROUNDING       KINDOF: water vapor is a kind of greenhouse gas     (dc5f-51cc-0c46-18df) [ HYPONYM:"water vapor", HYPERNYM:"greenhouse gas" ]
+	//        HINTROW carbon dioxide is a kind of greenhouse gas     (c707-5698-3407-a884) [ HYPONYM:"carbon dioxide", HYPERNYM:"greenhouse gas" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: <water_0>+<vapor_1>, HYPERNYM: "greenhouse gas"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: <water_0>+<vapor_1>, HYPERNYM: "greenhouse gas"]
+
+	// CENTRAL         CHANGE-VEC: greenhouse gases absorbing infrared radation increases the temperature of the atmosphere     (244e-0024-b731-9ef5) [ AGENT_OBJECT:"greenhouse gas", ACTION:"absorb infrared radation", DIRECTION:"increase", PATIENT:"temperature", SCOPE2:"of atmosphere" ]
+	//  Notes: f36d-2454-17e6-5c90->244e-0024-b731-9ef5,f058-dc42-3994-4b33,d753-423d-5ce7-53ce
+	//row autoRow2 = [UUID:"244e-0024-b731-9ef5", AGENT_OBJECT: "greenhouse gas", ACTION: "absorb infrared radation", DIRECTION: "increase", PATIENT: "temperature", SCOPE2: "of atmosphere"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"244e-0024-b731-9ef5", AGENT_OBJECT: "greenhouse gas", ACTION: "absorb infrared radation", DIRECTION: "increase", PATIENT: "temperature", SCOPE2: "of atmosphere"]
+
+	// CENTRAL         PROP-THINGS: water vapor is the largest amount of greenhouse gas in the atmosphere     (9d62-f0d6-f0a5-6846) [ THING:"water vapor", VALUE:"large amount of", ATTRIBUTE:"greenhouse gas", SCOPE_RELATIVETO:"in atmosphere" ]
+	//row autoRow3 = [UUID:"9d62-f0d6-f0a5-6846", THING: <water_0>+<vapor_1>, VALUE: "large amount of", ATTRIBUTE: "greenhouse gas", SCOPE_RELATIVETO: "in atmosphere"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"9d62-f0d6-f0a5-6846", THING: <water_0>+<vapor_1>, VALUE: "large amount of", ATTRIBUTE: "greenhouse gas", SCOPE_RELATIVETO: "in atmosphere"]
+
+	// CENTRAL         IFTHEN: if greenhouse gases are absent , then the atmosphere will be cooler     (3489-a424-c6b0-568a) [ THING:"greenhouse gas", ADJ_QUANTITY1A:"absent", ACTOR_AGENT_PROCESS2:"atmosphere", ADJ_QUANTIFIER3:"cool" ]
+	//row autoRow4 = [UUID:"3489-a424-c6b0-568a", THING: "greenhouse gas", ADJ_QUANTITY1A: "absent", ACTOR_AGENT_PROCESS2: "atmosphere", ADJ_QUANTIFIER3: "cool"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3489-a424-c6b0-568a", THING: "greenhouse gas", ADJ_QUANTITY1A: "absent", ACTOR_AGENT_PROCESS2: "atmosphere", ADJ_QUANTIFIER3: "cool"]
+
+	// CENTRAL         PARTOF: greenhouse gases are a part of the atmosphere     (7d84-2263-9ae5-822c) [ PART:"greenhouse gas", QUANTIFIER1:"be", WHOLE:"atmosphere" ]
+	//row autoRow5 = [UUID:"7d84-2263-9ae5-822c", PART: "greenhouse gas", QUANTIFIER1: "be", WHOLE: "atmosphere"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"7d84-2263-9ae5-822c", PART: "greenhouse gas", QUANTIFIER1: "be", WHOLE: "atmosphere"]
+
+	// CENTRAL         ACTION: the greenhouse effect is when carbon in the air heats a planet 's atmosphere     (b8bd-0f06-439a-5721) [ DEFINITION_NAME:"greenhouse effect", AGENT_OBJECT:"carbon", SCOPE1:"in air", ACTION2:"heat", OBJECT_PROPERTY:"planet atmosphere" ]
+	//row autoRow6 = [UUID:"b8bd-0f06-439a-5721", DEFINITION_NAME: "greenhouse effect", AGENT_OBJECT: "carbon", SCOPE1: "in air", ACTION2: "heat", OBJECT_PROPERTY: "planet atmosphere"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"b8bd-0f06-439a-5721", DEFINITION_NAME: "greenhouse effect", AGENT_OBJECT: "carbon", SCOPE1: "in air", ACTION2: "heat", OBJECT_PROPERTY: "planet atmosphere"]
+
+	// CENTRAL         AFFORDANCES: carbon dioxide can trap solar energy     (7d5e-daf7-f39b-de15) [ ACTOR_THING:"carbon dioxide", VERB:"trap", PATIENT:"solar energy" ]
+	//row autoRow7 = [UUID:"7d5e-daf7-f39b-de15", ACTOR_THING: "carbon dioxide", VERB: "trap", PATIENT: "solar energy"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"7d5e-daf7-f39b-de15", ACTOR_THING: "carbon dioxide", VERB: "trap", PATIENT: "solar energy"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the amount of carbon dioxide in the atmosphere increases , the temperature of the planet ; the atmosphere will increase     (7ab2-0e60-962b-f6ab) [ QUANTITY_MEASURE1:"amount of", AGENT_ATTRIBUTE1:"carbon dioxide", SCOPE1A:"in atmosphere", CHANGE1:"increase", QUANTITY_MEASURE2:"temperature of", AGENT_ATTRIBUTE2:"planet;atmosphere", CHANGE2:"increase" ]
+	//row autoRow8 = [UUID:"7ab2-0e60-962b-f6ab", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "carbon dioxide", SCOPE1A: "in atmosphere", CHANGE1: "increase", QUANTITY_MEASURE2: "temperature of", AGENT_ATTRIBUTE2: "planet", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"7ab2-0e60-962b-f6ab", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "carbon dioxide", SCOPE1A: "in atmosphere", CHANGE1: "increase", QUANTITY_MEASURE2: "temperature of", AGENT_ATTRIBUTE2: "planet", CHANGE2: "increase"]
+
+endinferencepattern

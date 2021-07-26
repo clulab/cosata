@@ -1,0 +1,89 @@
+// Automatically converted pattern
+inferencepattern CEL_CYCLES_Weather_by_Season
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CAUSE: the Earth being tilted on its rotating axis causes seasons     (0b7b-cf23-e64f-4200) [ CONDITION_AGENT_OBJECT:"earth", CONDITION_VERB:"be tilt", SCOPE1:"on rotate axis", RESULT_AGENT:"season" ]
+	//        HINTROW Earth 's tilt on its rotating axis causes seasons to change ; to occur     (66df-2200-f730-17c3) [ CONDITION_AGENT_OBJECT:"earth tilt", SCOPE1:"on rotate axis", RESULT_AGENT:"season", RESULT_VERB:"change;occur" ]
+	//row autoRow0 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "earth", SCOPE1: "on rotate axis", RESULT_AGENT: "season"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "earth", SCOPE1: "on rotate axis", RESULT_AGENT: "season"]
+
+	// CENTRALSW       PROP-QUANTITY-DATE: the amount of daylight is greatest on the summer solstice     (551a-ecdb-38e6-4b09) [ THING:"amount of daylight", QUANTITY:"great", DATE:"summer solstice" ]
+	//        HINTROW the amount of daylight is greatest in the summer     (3d48-ef4c-bf06-a0c5) [ THING:"amount of daylight", QUANTITY:"great", DATE:"summer" ]
+	//  Notes: greatest amount of daylight is in season X
+	//row autoRow1 = [TABLE:"PROP-QUANTITY-DATE", THING: "amount of daylight", QUANTITY: "great", DATE: "summer solstice"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-QUANTITY-DATE", THING: "amount of daylight", QUANTITY: "great", DATE: "summer"+*"POS:NN"]
+
+	// CENTRALSW       PROP-QUANTITY-DATE: the amount of daylight is least on the winter solstice     (5307-2d90-79a8-14af) [ THING:"amount of daylight", QUANTITY:"little", DATE:"winter solstice" ]
+	//        HINTROW the amount of daylight is least in the winter     (b695-f668-1dec-659c) [ THING:"amount of daylight", QUANTITY:"little", DATE:"winter" ]
+	//  Notes: least amount of daylight in season X
+	//row autoRow2 = [TABLE:"PROP-QUANTITY-DATE", THING: "amount of daylight", QUANTITY: "little", DATE: "winter solstice"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"PROP-QUANTITY-DATE", THING: "amount of daylight", QUANTITY: "little", DATE: "winter"+*"POS:NN"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: hot means high in heat energy ; temperature     (9ff8-543c-2f35-5d3f) [ THING:"hot", VALUE:"high", ATTRIBUTE:"heat energy;temperature" ]
+	//        HINTROW cold means low in temperature     (cf2a-6257-0c5c-7445) [ THING:"cold", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//row autoRow3 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "hot", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "temperature"]
+
+	// GROUNDING       DURING: December is during the summer in the southern hemisphere     (bd19-8646-deb7-e368) [ EVENT:"december", TIME:"summer", SCOPE:"in southern hemisphere" ]
+	//        HINTROW June is during the summer in the northern hemisphere     (b789-c5df-3b5c-272b) [ EVENT:"june", TIME:"summer", SCOPE:"in northern hemisphere" ]
+	//  Notes: month X is summer in Y hemisphere
+	//row autoRow4 = [TABLE:"DURING", EVENT: "december", TIME: "summer", SCOPE: "in"+<southern_0>+"hemisphere"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"DURING", TIME: "summer", SCOPE: "in"+<southern_0>+"hemisphere"]
+
+	// GROUNDING       DURING: December is during the winter in the northern hemisphere     (39e2-fb06-b946-62df) [ EVENT:"december", TIME:"winter", SCOPE:"in northern hemisphere" ]
+	//        HINTROW January is during the winter in the northern hemisphere     (13ac-fd63-feca-f384) [ EVENT:"january", TIME:"winter", SCOPE:"in northern hemisphere" ]
+	//        HINTROW June is during the winter in the southern hemisphere     (fc7f-85ca-56d1-d7d5) [ EVENT:"june", TIME:"winter", SCOPE:"in southern hemisphere" ]
+	//  Notes: month X is winter in Y hemisphere 
+	//row autoRow5 = [TABLE:"DURING", EVENT: "december", TIME: "winter", SCOPE: "in"+<northern_1>+"hemisphere"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"DURING", TIME: "winter", SCOPE: "in"+<northern_1>+"hemisphere"]
+
+	// GROUNDING       PROP-COUNTRY-HEMISPHERE: North America is located in the northern hemisphere     (8de6-172d-d05a-08e4) [ COUNTRY:"north america", HEMISPHERE_NORTH_SOUTH_EQUATORIAL_REGION:"northern hemisphere" ]
+	//        HINTROW United States is located in the northern hemisphere     (cfd8-43a2-1452-0ffb) [ COUNTRY:"unite state", HEMISPHERE_NORTH_SOUTH_EQUATORIAL_REGION:"northern hemisphere" ]
+	//row autoRow6 = [TABLE:"PROP-COUNTRY-HEMISPHERE", COUNTRY: *"POS:NN"+"america", HEMISPHERE_NORTH_SOUTH_EQUATORIAL_REGION: <northern_1>+"hemisphere"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"PROP-COUNTRY-HEMISPHERE", HEMISPHERE_NORTH_SOUTH_EQUATORIAL_REGION: <northern_1>+"hemisphere"]
+
+	// GROUNDING       PROP-COUNTRY-HEMISPHERE: South America is located in the southern hemisphere     (8986-ef32-a436-6a0d) [ COUNTRY:"south america", HEMISPHERE_NORTH_SOUTH_EQUATORIAL_REGION:"southern hemisphere" ]
+	//        HINTROW Australia is located in the southern hemisphere     (29df-8026-1450-8ff3) [ COUNTRY:"australia", HEMISPHERE_NORTH_SOUTH_EQUATORIAL_REGION:"southern hemisphere" ]
+	//row autoRow7 = [TABLE:"PROP-COUNTRY-HEMISPHERE", COUNTRY: *"POS:NN"+"america", HEMISPHERE_NORTH_SOUTH_EQUATORIAL_REGION: <southern_0>+"hemisphere"] //OVER-CONSTR.
+	row autoRow7 = [TABLE:"PROP-COUNTRY-HEMISPHERE", HEMISPHERE_NORTH_SOUTH_EQUATORIAL_REGION: <southern_0>+"hemisphere"]
+
+	// GROUNDING       KINDOF: summer is a kind of season     (3f3f-f2cb-ae3d-f238) [ HYPONYM:"summer", HYPERNYM:"season" ]
+	//        HINTROW spring is a kind of season     (af84-b2e1-3d77-58f9) [ HYPONYM:"spring", HYPERNYM:"season" ]
+	//        HINTROW Autumn is a kind of season     (2526-2b72-2cb0-0beb) [ HYPONYM:"autumn", HYPERNYM:"season" ]
+	//        HINTROW winter is a kind of season     (633c-3fd4-7320-00cf) [ HYPONYM:"winter", HYPERNYM:"season" ]
+	//row autoRow8 = [TABLE:"KINDOF", HYPERNYM: "season"] //OVER-CONSTR.
+	row autoRow8 = [TABLE:"KINDOF", HYPERNYM: "season"]
+
+	// CENTRAL         DURING: the winter in the Northern Hemisphere is during the summer in the Southern Hemisphere     (5510-64d4-c9fc-9719) [ EVENT:"winter", SCOPE_QUANTIFIER:"in northern hemisphere", TIME:"summer", SCOPE:"in southern hemisphere" ]
+	//row autoRow9 = [UUID:"5510-64d4-c9fc-9719", EVENT: "winter", SCOPE_QUANTIFIER: "in"+<northern_1>+"hemisphere", TIME: "summer", SCOPE: "in"+<southern_0>+"hemisphere"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"5510-64d4-c9fc-9719", EVENT: "winter", SCOPE_QUANTIFIER: "in"+<northern_1>+"hemisphere", TIME: "summer", SCOPE: "in"+<southern_0>+"hemisphere"]
+
+	// CENTRAL         DURING: the winter in the Southern Hemisphere is during the summer in the Northern Hemisphere     (7b97-d2e2-7317-c84c) [ EVENT:"winter", SCOPE_QUANTIFIER:"in southern hemisphere", TIME:"summer", SCOPE:"in northern hemisphere" ]
+	//row autoRow10 = [UUID:"7b97-d2e2-7317-c84c", EVENT: "winter", SCOPE_QUANTIFIER: "in"+<southern_0>+"hemisphere", TIME: "summer", SCOPE: "in"+<northern_1>+"hemisphere"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"7b97-d2e2-7317-c84c", EVENT: "winter", SCOPE_QUANTIFIER: "in"+<southern_0>+"hemisphere", TIME: "summer", SCOPE: "in"+<northern_1>+"hemisphere"]
+
+	// CENTRAL         ACTION: summer is when a hemisphere is tilted towards the sun     (5949-8ca0-0ddf-811b) [ DEFINITION_NAME:"summer", AGENT_OBJECT:"hemisphere", ACTION2:"be tilt", OBJECT_PROPERTY:"towards", WHEN_WHERE:"sun" ]
+	//row autoRow11 = [UUID:"5949-8ca0-0ddf-811b", DEFINITION_NAME: "summer", AGENT_OBJECT: "hemisphere", ACTION2: "be tilt", OBJECT_PROPERTY: "towards", WHEN_WHERE: "sun"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"5949-8ca0-0ddf-811b", DEFINITION_NAME: "summer", AGENT_OBJECT: "hemisphere", ACTION2: "be tilt", OBJECT_PROPERTY: "towards", WHEN_WHERE: "sun"]
+
+	// CENTRAL         ACTION: winter is when a hemisphere is tilted away from the sun     (9a54-fdc1-b863-633a) [ DEFINITION_NAME:"winter", AGENT_OBJECT:"hemisphere", ACTION2:"be tilt", OBJECT_PROPERTY:"away", WHEN_WHERE:"from sun" ]
+	//row autoRow12 = [UUID:"9a54-fdc1-b863-633a", DEFINITION_NAME: "winter", AGENT_OBJECT: "hemisphere", ACTION2: "be tilt", OBJECT_PROPERTY: "away", WHEN_WHERE: "from sun"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"9a54-fdc1-b863-633a", DEFINITION_NAME: "winter", AGENT_OBJECT: "hemisphere", ACTION2: "be tilt", OBJECT_PROPERTY: "away", WHEN_WHERE: "from sun"]
+
+	// CENTRAL         PROP-THINGS: summer has hot temperatures ; weather     (a6b9-8323-ab01-cfe7) [ THING:"summer", VALUE:"hot", ATTRIBUTE:"temperature;weather" ]
+	//  Notes: Summer temperature
+	//row autoRow13 = [UUID:"a6b9-8323-ab01-cfe7", THING: "summer", VALUE: "hot", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"a6b9-8323-ab01-cfe7", THING: "summer", VALUE: "hot", ATTRIBUTE: "temperature"]
+
+	// CENTRAL         PROP-THINGS: winter has cold temperatures ; weather     (9939-7d13-b72f-2674) [ THING:"winter", VALUE:"cold", ATTRIBUTE:"temperature;weather" ]
+	//  Notes: Winter temperature
+	//row autoRow14 = [UUID:"9939-7d13-b72f-2674", THING: "winter", VALUE: "cold", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"9939-7d13-b72f-2674", THING: "winter", VALUE: "cold", ATTRIBUTE: "temperature"]
+
+endinferencepattern

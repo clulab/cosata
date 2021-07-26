@@ -1,0 +1,77 @@
+// Automatically converted pattern
+inferencepattern EARTH_GEO_Classifying_Rocks
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: limestone is a kind of sedimentary rock     (f5b2-aca4-88b1-e3a4) [ HYPONYM:"limestone", SCOPE1:"sedimentary", HYPERNYM:"rock" ]
+	//        HINTROW sandstone is a kind of sedimentary rock     (77b8-2e5a-f47d-fda3) [ HYPONYM:"sandstone", SCOPE1:"sedimentary", HYPERNYM:"rock" ]
+	//row autoRow0 = [TABLE:"KINDOF", SCOPE1: "sedimentary", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", SCOPE1: "sedimentary", HYPERNYM: "rock"]
+
+	// GROUNDING       KINDOF: marble is a kind of metamorphic rock     (41e6-0974-2590-1700) [ HYPONYM:"marble", HYPERNYM:"metamorphic rock" ]
+	//        HINTROW a quartzite is a kind of metamorphic rock     (b0a5-78a8-bcbc-00e8) [ HYPONYM:"quartzite", HYPERNYM:"metamorphic rock" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "metamorphic rock"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "metamorphic rock"]
+
+	// GROUNDING       KINDOF: granite is a kind of igneous rock     (65b7-dcc0-e9d7-6b54) [ HYPONYM:"granite", SCOPE1:"igneous", HYPERNYM:"rock" ]
+	//        HINTROW pumice is a kind of igneous rock     (236b-7456-aa80-d1b2) [ HYPONYM:"pumice", HYPERNYM:"igneous rock" ]
+	//row autoRow2 = [TABLE:"KINDOF", SCOPE1: "igneous", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "rock"]
+
+	// CENTRAL         CHANGE: exposure to extreme heat and pressure changes ; metamorphoses sedimentary ; igneous rock into metamorphic rock     (a029-482a-dd71-9829) [ PROCESS_NAME:"exposure", ADJ_QUANTIFIER:"extreme", ACTOR_WHO:"heat pressure", VERB:"change;metamorphosis", WHAT:"sedimentary;igneous", FROM:"rock", INTO:"metamorphic rock" ]
+	//  Notes: formation of metamorphic rock
+	//row autoRow3 = [UUID:"a029-482a-dd71-9829", PROCESS_NAME: "exposure", ADJ_QUANTIFIER: "extreme", ACTOR_WHO: "heat pressure", VERB: "change", WHAT: "sedimentary", FROM: "rock", INTO: "metamorphic rock"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"a029-482a-dd71-9829", PROCESS_NAME: "exposure", ADJ_QUANTIFIER: "extreme", ACTOR_WHO: "heat pressure", VERB: "change", WHAT: "sedimentary", FROM: "rock", INTO: "metamorphic rock"]
+
+	// CENTRAL         CHANGE: extreme heat and pressure compact sediments into sedimentary rocks     (71ba-ef2d-fb5f-33fc) [ ADJ_QUANTIFIER:"extreme", ACTOR_WHO:"heat pressure", VERB:"compact", FROM:"sediment", INTO:"sedimentary rock" ]
+	//  Notes: 3f61-74b3-1327-f313->71ba-ef2d-fb5f-33fcformation of sedimentary rock
+	//row autoRow4 = [UUID:"71ba-ef2d-fb5f-33fc", ADJ_QUANTIFIER: "extreme", ACTOR_WHO: "heat pressure", VERB: "compact", FROM: "sediment", INTO: "sedimentary rock"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"71ba-ef2d-fb5f-33fc", ADJ_QUANTIFIER: "extreme", ACTOR_WHO: "heat pressure", VERB: "compact", FROM: "sediment", INTO: "sedimentary rock"]
+
+	// CENTRAL         PROP-GENERIC: class is a property of a rock and includes values of sedimentary ; metamorphic ; igneous     (ac6e-0804-8e8f-2943) [ X:"class", Y:"rock", VALUES:"sedimentary;metamorphic;igneous" ]
+	//row autoRow5 = [UUID:"ac6e-0804-8e8f-2943", X: "class", Y: "rock", VALUES: "sedimentary"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"ac6e-0804-8e8f-2943", X: "class", Y: "rock", VALUES: "sedimentary"]
+
+	// CENTRAL        (OPTIONAL) COUPLEDRELATIONSHIP: as the class of a rock changes , the mass of the rock will stay the same     (54d6-181d-90c7-10d5) [ QUANTITY_MEASURE1:"class of", AGENT_ATTRIBUTE1:"rock", CHANGE1:"change", QUANTITY_MEASURE2:"mass of", AGENT_ATTRIBUTE2:"rock", CHANGE2:"stay same" ]
+	//row *autoRow6 = [UUID:"54d6-181d-90c7-10d5", QUANTITY_MEASURE1: "class of", AGENT_ATTRIBUTE1: "rock", CHANGE1: "change", QUANTITY_MEASURE2: "mass of", AGENT_ATTRIBUTE2: "rock", CHANGE2: "stay same"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"54d6-181d-90c7-10d5", QUANTITY_MEASURE1: "class of", AGENT_ATTRIBUTE1: "rock", CHANGE1: "change", QUANTITY_MEASURE2: "mass of", AGENT_ATTRIBUTE2: "rock", CHANGE2: "stay same"]
+
+	// CENTRAL         ACTION: classifying means grouping objects ; materials by their properties     (69c1-2991-2421-ce63) [ DEFINITION_NAME:"classify", ACTION2:"group", OBJECT_PROPERTY:"object;material", HOW:"property" ]
+	//row autoRow7 = [UUID:"69c1-2991-2421-ce63", DEFINITION_NAME: "classify", ACTION2: "group", OBJECT_PROPERTY: "object", HOW: "property"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"69c1-2991-2421-ce63", DEFINITION_NAME: "classify", ACTION2: "group", OBJECT_PROPERTY: "object", HOW: "property"]
+
+	// CENTRAL         FORMEDBY: different classes of rocks are formed by different methods     (2869-d2ab-bfe7-d8af) [ OBJECT:"differ class of rock", AGENT_PROCESS:"differ method" ]
+	//row autoRow8 = [UUID:"2869-d2ab-bfe7-d8af", OBJECT: "differ class of rock", AGENT_PROCESS: "differ method"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"2869-d2ab-bfe7-d8af", OBJECT: "differ class of rock", AGENT_PROCESS: "differ method"]
+
+	// CENTRAL         MEASUREMENTS: class is a measure of how a rock is formed     (7bb2-b9de-1f81-ba85) [ MEASURE:"class", QUANTITY_ADJ:"measure of", AGENT:"rock", ACTION:"be form" ]
+	//row autoRow9 = [UUID:"7bb2-b9de-1f81-ba85", MEASURE: "class", QUANTITY_ADJ: "measure of", AGENT: "rock", ACTION: "be form"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"7bb2-b9de-1f81-ba85", MEASURE: "class", QUANTITY_ADJ: "measure of", AGENT: "rock", ACTION: "be form"]
+
+	// CENTRAL         ACTION: classifying is when one sorts something by kind ; type     (0d00-93f4-5616-0efc) [ DEFINITION_NAME:"classify", AGENT_OBJECT:"one", ACTION2:"sort", OBJECT_PROPERTY:"something", HOW:"kind;type" ]
+	//row autoRow10 = [UUID:"0d00-93f4-5616-0efc", DEFINITION_NAME: "classify", AGENT_OBJECT: "one", ACTION2: "sort", OBJECT_PROPERTY: "something", HOW: "kind"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"0d00-93f4-5616-0efc", DEFINITION_NAME: "classify", AGENT_OBJECT: "one", ACTION2: "sort", OBJECT_PROPERTY: "something", HOW: "kind"]
+
+	// CENTRAL         USEDFOR: the origin of rocks can be used to classify rocks     (13bf-8e7c-2585-a556) [ AGENT_OBJECT:"origin of rock", FOR_PURPOSE:"classify", PATIENT:"rock" ]
+	//row autoRow11 = [UUID:"13bf-8e7c-2585-a556", AGENT_OBJECT: "origin of rock", FOR_PURPOSE: "classify", PATIENT: "rock"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"13bf-8e7c-2585-a556", AGENT_OBJECT: "origin of rock", FOR_PURPOSE: "classify", PATIENT: "rock"]
+
+	// CENTRAL         FORMEDBY: igneous rocks ; minerals are formed by magma ; lava cooling ; crystallizing     (d9aa-4785-cdb4-ac25) [ OBJECT:"igneous rock;mineral", AGENT_PROCESS:"magma;lava", VERB:"cool;crystallize" ]
+	//  Notes: formation of igneous rock
+	//row autoRow12 = [UUID:"d9aa-4785-cdb4-ac25", OBJECT: "igneous rock", AGENT_PROCESS: "magma", VERB: "cool"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"d9aa-4785-cdb4-ac25", OBJECT: "igneous rock", AGENT_PROCESS: "magma", VERB: "cool"]
+
+	// CENTRAL         PROP-GENERIC: the origin is a property of rocks     (79b4-1fcc-aea6-a878) [ X:"origin", Y:"rock" ]
+	//row autoRow13 = [UUID:"79b4-1fcc-aea6-a878", X: "origin", Y: "rock"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"79b4-1fcc-aea6-a878", X: "origin", Y: "rock"]
+
+	// LEXGLUE         SYNONYMY: the origin of the rocks means the way the rocks are formed     (eb4e-1916-1113-3195) [ X1:"origin of rock", X2:"way rock be form" ]
+	//row autoRow14 = [UUID:"eb4e-1916-1113-3195", X1: "origin of rock", X2: "way rock be form"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"eb4e-1916-1113-3195", X1: "origin of rock", X2: "way rock be form"]
+
+endinferencepattern

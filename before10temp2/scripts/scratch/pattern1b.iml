@@ -1,0 +1,160 @@
+// Automatically converted pattern
+inferencepattern LIFEENVADPAnimalsHuntWithX
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+    
+    // CENTRAL         ACTION: a predator eats other animals for food    
+    //row autoRow3 = [UUID:"9bdc-0291-3f7e-751d", AGENT_OBJECT:"predator", ACTION2:"eat", OBJECT_PROPERTY:"animal", FOR_PURPOSE:"food"]
+    
+    
+	// CENTRALSW       USEDFOR: claws are used to catch prey by some predators
+	//row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT:<varName7>, FOR_PURPOSE:<vb> + "prey", AGENT_THING_WHO_USES:"predator"]			// Example of using a variable to match multi-word expressions
+	row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT:<varName7>, FOR_PURPOSE:"prey", AGENT_THING_WHO_USES:"predator"]			// Example of relaxed constraint
+	//row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT:<varName7>, FOR_PURPOSE:="prey", AGENT_THING_WHO_USES:"predator"]				// Example of strict constraint
+
+	// CENTRAL         ACTION: hunting is when an animal kills another animal to eat that animal
+	row autoRow1 = [UUID:"e1e4-0797-e545-e336", AGENT_OBJECT:"animal", ACTION2:"kill", OBJECT_PROPERTY:"animal", FOR_PURPOSE:"eat animal"]
+
+	// CENTRALSW       PARTOF: a claw sometimes is a part of a predator
+	//        HINTROW a claw is often part of a bird
+	row autoRow2 = [TABLE:"PARTOF", PART:<varName7>, WHOLE:"predator"]
+
+	// CENTRAL         ACTION: a predator eats other animals for food
+	//row autoRow3 = [UUID:"9bdc-0291-3f7e-751d", AGENT_OBJECT:"predator", ACTION2:"eat", OBJECT_PROPERTY:<other> + "animal", FOR_PURPOSE:"food"]
+	row autoRow3 = [UUID:"9bdc-0291-3f7e-751d", AGENT_OBJECT:"predator", ACTION2:"eat", OBJECT_PROPERTY:"animal", FOR_PURPOSE:"food"]
+
+	// CENTRAL         KINDOF: prey is a kind of food for predators
+	row autoRow4 = [UUID:"d719-81ad-03ff-57f0", HYPONYM:"prey", HYPERNYM:"food", FOR_PURPOSE:"predator"]
+
+	// GROUNDING       XIVORE: an hawk is a kind of predator
+	//        HINTROW a hawk is a kind of bird
+	// PJ NOTE: Should autopopulate that if X eats Y and X and Y are animals than X is a predator (and possibly also that Y is a prey of X). 
+	// This constraint removes quite a few possibilities. 
+	row autoRow5 = [TABLE:"XIVORE", ANIMAL:<pred>, XIVORE:"predator"]
+
+	// CENTRAL         CONSUMERS-EATING: predators eat prey
+	row autoRow6 = [UUID:"fb00-41ad-f198-b5ac", ORGANISM1:"predator", EATS_CONSUMES:"eat", ORGANISM2:"prey"]
+
+	// CENTRAL         CONSUMERS-EATING: hawks ; eagles eat snakes ; lizards ; rats ; rabbits ; mice
+	//row autoRow7 = [UUID:"d28f-0727-460f-5ab6", ORGANISM1:<pred>, EATS_CONSUMES:"eat", ORGANISM2:<prey>]
+	row autoRow7 = [TABLE:"CONSUMERS-EATING", ORGANISM1:<pred>, EATS_CONSUMES:"eat", ORGANISM2:<prey>]
+
+	// CENTRAL         ACTION: a predator usually kills its prey to eat it
+	row autoRow8 = [UUID:"952c-f654-fec2-8b06", AGENT_OBJECT:"predator", ACTION2:"kill", OBJECT_PROPERTY:"prey", FOR_PURPOSE:"eat"]
+	
+	// GROUNDING       KINDOF: a hawk is a kind of animal
+	//        HINTROW an eagle is a kind of animal
+	row autoRow9 = [TABLE:"KINDOF", HYPONYM:<pred>, HYPERNYM:"animal"]
+
+	// GROUNDING       KINDOF: a snake is a kind of animal
+	//        HINTROW a lizard is a kind of animal
+	//        HINTROW a rabbit is a kind of animal
+	//        HINTROW a mouse is a kind of animal
+	row autoRow10 = [TABLE:"KINDOF", HYPONYM:<prey>, HYPERNYM:"animal"]
+    
+	
+endinferencepattern
+
+
+// Automatically converted pattern
+inferencepattern LIFEFUNCTPlantSeedDispersal
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+	// CENTRAL         TRANSFER: seed dispersal is when the seeds of a plant are moved ; are carried ; are spread ; are dropped ; from the parent plant to another area
+	row autoRow0 = [UUID:"dbc7-1c37-35fd-e1f8", PROCESS_NAME:"seed dispersal", ACTOR_WHO:"plant", VERB:"spread", SOURCE:"plant"]
+
+	// CENTRAL         AFFECT: seed dispersal has a positive impact on a plant ; a plant 's reproduction
+	row autoRow1 = [UUID:"2337-f998-9a82-5444", OBJECT_PROPERTY:"seed dispersal", POSITIVE_NEGATIVE:"positive", PATIENT:"plant"]
+
+	// CENTRAL         VEHICLE: seed dispersers are a vehicle for spreading the seeds of a plant
+	row autoRow2 = [UUID:"419c-cd03-a464-39af", ACTOR_WHO:"seed", VERB:"spread", WHAT:"plant"]
+
+	// CENTRAL         REQUIRES: plant reproduction ; seed production requires pollination
+	row autoRow3 = [UUID:"7b88-0a72-7d90-ea1d", OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require"]
+
+	// CENTRALSW       EXAMPLES: An example of seed dispersal is is an animal hiding ; gathering ; burying seeds
+	//        HINTROW An example of seed dispersal is animals eating ; excreting seeds
+	row autoRow4 = [TABLE:"EXAMPLES", AGENT_OBJECT1:"seed dispersal", AGENT_OBJECT3:"seed"]
+
+	// CENTRAL        (OPTIONAL) AFFECT: helping something has a positive impact on that something
+	row autoRow5 = [UUID:"b5b8-ce64-6568-4a6c", POSITIVE_NEGATIVE:"positive"]
+
+	// CENTRAL         REQUIRES: plant requires seed dispersal for reproduction
+	row autoRow6 = [UUID:"c814-78ab-6951-9f93", OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"seed dispersal", FOR_PURPOSE:"reproduce"]
+
+	// CENTRAL         KINDOF: seed dispersal is a kind of method of sexual reproduction
+	row autoRow7 = [UUID:"c622-c235-6b65-181f", HYPONYM:"seed dispersal", HYPERNYM:"reproduce"]
+
+	// CENTRAL         PROCESSSTAGES-ORDERS: In the flowering plant life cycle , seed dispersal can follow fruiting
+	row autoRow8 = [UUID:"55ae-b45b-9705-01ac", PROCESS_NAME:"plant", STAGEAFTER_STAGE:"seed dispersal"]
+
+	// GROUNDING       KINDOF: a tree is a kind of plant
+	//row autoRow9 = [TABLE:"KINDOF", HYPERNYM:"plant"]
+	row autoRow9 = [TABLE:"KINDOF", HYPERNYM:="plant"]			// Strict
+	//row autoRow9 = [TABLE:"KINDOF", HYPERNYM:=<type> + "plant"]		// Semi-strict, requires a word infront of plant -- e.g. "tropical plant"
+	//row autoRow9 = [TABLE:"KINDOF", HYPERNYM:=<*planttype> + "plant"]	// Even less strict -- e.g. "(optional tropical) plant"
+
+endinferencepattern
+
+
+// Automatically converted pattern
+inferencepattern LIFEFUNCTAnimalsEatXToGetNutrients
+	// Note, pattern has issues (not clear what it's trying to convey, or why each instance has 3 enumerations of animals (1 herb, 1 omni, 1 carnivore) present. 
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+	// CENTRAL         USEDFOR: eating ; taking in food is used to get nutrients ; energy by animals ; living things
+	row autoRow0 = [UUID:"4842-3518-d7ab-f670", ACTION:"eat", AGENT_OBJECT:"food", PATIENT:"nutrient", AGENT_THING_WHO_USES:"animal"]
+
+	// CENTRAL         TRANSFER: eating ; digestion is when an organism takes in nutrients from food into itself by eating
+	row autoRow1 = [UUID:"244b-03a0-929e-0095", PROCESS_NAME:"eat", ACTOR_WHO:"organism", VERB:"take", WHAT:"nutrient", SOURCE:"food", BY_THROUGH_HOW:"eat"]
+
+	// CENTRAL         REQUIRES: an animal needs to eat food for nutrients
+	row autoRow2 = [UUID:"7d29-0a2c-6959-b1dd", OBJECT_AGENT_PROCESS:"animal", ACTION2:"eat", OBJECT:"food", FOR_PURPOSE:"nutrient"]
+
+	// CENTRAL         CONSUMERS-EATING: predators ; carnivores ; omnivores eat other animals
+	row autoRow3 = [UUID:"20a3-dcb5-8ce4-ae5c", ORGANISM1:"predator", EATS_CONSUMES:"eat", ORGANISM2:"animal"]
+
+	// CENTRAL         CONTAINS: a food contains nutrients for living things
+	row autoRow4 = [UUID:"Good", OBJECT_AGENT:"food", WHAT_IT_CONTAINS:"nutrient", FOR_PURPOSE:"live thing"]
+
+	// CENTRAL         IFTHEN: if an animal eats particles then that animal is a carnivore or omnivore or predator
+	row autoRow5 = [UUID:"dcb0-11ec-8b50-ceb3", THING:"animal", ACTION1:"eat", ACTOR_AGENT_PROCESS2:"animal", OBJECT_PROPERTY3:"predator"]
+
+	// CENTRAL         KINDOF: prey is a kind of food for predators
+	row autoRow6 = [UUID:"d719-81ad-03ff-57f0", HYPONYM:"prey", HYPERNYM:"food", FOR_PURPOSE:"predator"]
+
+	// GROUNDING       XIVORE: a cat is a kind of carnivore
+	//        HINTROW an eagle is a kind of carnivore
+	row autoRow7 = [TABLE:"XIVORE", XIVORE:"carnivore"]
+
+	// GROUNDING       XIVORE: a turtle is a kind of omnivore
+	row autoRow8 = [TABLE:"XIVORE", XIVORE:"omnivore"]
+
+	// CENTRALSW       KINDOF: an animal is a kind of organism
+	//        HINTROW a plant is a kind of organism
+	row autoRow9 = [TABLE:"KINDOF", HYPONYM:"animal", HYPERNYM:"organism"]
+
+	// CENTRALSW       CONSUMERS-EATING: predators eat prey
+	//        HINTROW carnivores only eat animals
+	//        HINTROW omnivores eat plants ; animals
+	//        HINTROW herbivores only eat plants
+	row autoRow10 = [TABLE:"CONSUMERS-EATING", ORGANISM1:"predator", EATS_CONSUMES:"eat", ORGANISM2:"prey"]
+
+	// GROUNDING       XIVORE: a cow is a kind of herbivore
+	//        HINTROW a squirrel is a kind of herbivore
+	//        HINTROW a rabbit is a kind of herbivore
+	row autoRow11 = [TABLE:"XIVORE"]
+
+endinferencepattern

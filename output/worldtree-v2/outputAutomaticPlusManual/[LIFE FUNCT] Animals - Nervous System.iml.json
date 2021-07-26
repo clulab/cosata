@@ -1,0 +1,101 @@
+{"patternMatches": [
+{
+	"patternName":"LIFE_FUNCT_Animals_Nervous_System",
+	"matches":[
+		{
+		"uuids": ["9adf-5c73-e94c-f250","aa4b-35f5-0dc1-afbe","8e1c-a4f8-3938-b891","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","0fda-acea-84f6-b616","9d58-09eb-11bc-2be6","4695-199f-eeab-4611","dfb4-3faa-969c-ae6f","6b71-a4bc-f32c-e206","2284-9674-843e-f9f2","096f-3e0e-0cee-53cc","237f-6af4-e400-19c9","cdba-a39e-8a33-7324","6206-bd50-4980-0cf3","f64e-1b60-6e48-9b5a","90b2-edef-d99f-687c","356b-17e1-59ba-230b","94a0-d90c-b39c-7263","c9cb-0243-c4c6-d4e8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9adf-5c73-e94c-f250", "rowText": "the brain is a part of the central nervous system", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "aa4b-35f5-0dc1-afbe", "rowText": "a brain is a part of an animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "8e1c-a4f8-3938-b891", "rowText": "a brain is a kind of internal organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "0fda-acea-84f6-b616", "rowText": "the nervous system is a kind of body ; organ system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9d58-09eb-11bc-2be6", "rowText": "a body system is a part of the body ; an animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4695-199f-eeab-4611", "rowText": "the nervous system contains nerves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "dfb4-3faa-969c-ae6f", "rowText": "a neuron is a kind of nervous system cell", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6b71-a4bc-f32c-e206", "rowText": "an organ system is made of different parts of the body working together", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2284-9674-843e-f9f2", "rowText": "nerve cells conduct messages in the body", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "096f-3e0e-0cee-53cc", "rowText": "nerves carry messages from sensory organs to the brain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "237f-6af4-e400-19c9", "rowText": "the neuron is the smallest functional unit ; structural unit of the nervous system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "cdba-a39e-8a33-7324", "rowText": "nerves are made of nerve cells", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "6206-bd50-4980-0cf3", "rowText": "nerves can be used to feel heat and pressure on the skin", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "f64e-1b60-6e48-9b5a", "rowText": "nervous system is an electrical ; electric conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "90b2-edef-d99f-687c", "rowText": "the brain can control animal body through the nervous system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "356b-17e1-59ba-230b", "rowText": "the nervous system is a part of the body of an animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "94a0-d90c-b39c-7263", "rowText": "the nervous system is used for controlling the body", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "c9cb-0243-c4c6-d4e8", "rowText": "the nervous system sends observations in the form of electrical signals to the rest of the body", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"brain_0", "value":"brain" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"brain_0", "value":"brain" }
+		]
+		},
+		{
+		"uuids": ["9adf-5c73-e94c-f250","b29a-9bdd-4596-0296","8e1c-a4f8-3938-b891","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","0fda-acea-84f6-b616","9d58-09eb-11bc-2be6","4695-199f-eeab-4611","dfb4-3faa-969c-ae6f","6b71-a4bc-f32c-e206","2284-9674-843e-f9f2","096f-3e0e-0cee-53cc","237f-6af4-e400-19c9","cdba-a39e-8a33-7324","6206-bd50-4980-0cf3","f64e-1b60-6e48-9b5a","90b2-edef-d99f-687c","356b-17e1-59ba-230b","94a0-d90c-b39c-7263","c9cb-0243-c4c6-d4e8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9adf-5c73-e94c-f250", "rowText": "the brain is a part of the central nervous system", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b29a-9bdd-4596-0296", "rowText": "the brain is a part of the body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "8e1c-a4f8-3938-b891", "rowText": "a brain is a kind of internal organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "0fda-acea-84f6-b616", "rowText": "the nervous system is a kind of body ; organ system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9d58-09eb-11bc-2be6", "rowText": "a body system is a part of the body ; an animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4695-199f-eeab-4611", "rowText": "the nervous system contains nerves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "dfb4-3faa-969c-ae6f", "rowText": "a neuron is a kind of nervous system cell", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6b71-a4bc-f32c-e206", "rowText": "an organ system is made of different parts of the body working together", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2284-9674-843e-f9f2", "rowText": "nerve cells conduct messages in the body", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "096f-3e0e-0cee-53cc", "rowText": "nerves carry messages from sensory organs to the brain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "237f-6af4-e400-19c9", "rowText": "the neuron is the smallest functional unit ; structural unit of the nervous system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "cdba-a39e-8a33-7324", "rowText": "nerves are made of nerve cells", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "6206-bd50-4980-0cf3", "rowText": "nerves can be used to feel heat and pressure on the skin", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "f64e-1b60-6e48-9b5a", "rowText": "nervous system is an electrical ; electric conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "90b2-edef-d99f-687c", "rowText": "the brain can control animal body through the nervous system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "356b-17e1-59ba-230b", "rowText": "the nervous system is a part of the body of an animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "94a0-d90c-b39c-7263", "rowText": "the nervous system is used for controlling the body", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "c9cb-0243-c4c6-d4e8", "rowText": "the nervous system sends observations in the form of electrical signals to the rest of the body", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"brain_0", "value":"brain" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"brain_0", "value":"brain" }
+		]
+		},
+		{
+		"uuids": ["9adf-5c73-e94c-f250","9adf-5c73-e94c-f250","8e1c-a4f8-3938-b891","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","0fda-acea-84f6-b616","9d58-09eb-11bc-2be6","4695-199f-eeab-4611","dfb4-3faa-969c-ae6f","6b71-a4bc-f32c-e206","2284-9674-843e-f9f2","096f-3e0e-0cee-53cc","237f-6af4-e400-19c9","cdba-a39e-8a33-7324","6206-bd50-4980-0cf3","f64e-1b60-6e48-9b5a","90b2-edef-d99f-687c","356b-17e1-59ba-230b","94a0-d90c-b39c-7263","c9cb-0243-c4c6-d4e8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9adf-5c73-e94c-f250", "rowText": "the brain is a part of the central nervous system", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9adf-5c73-e94c-f250", "rowText": "the brain is a part of the central nervous system", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "8e1c-a4f8-3938-b891", "rowText": "a brain is a kind of internal organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "0fda-acea-84f6-b616", "rowText": "the nervous system is a kind of body ; organ system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9d58-09eb-11bc-2be6", "rowText": "a body system is a part of the body ; an animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4695-199f-eeab-4611", "rowText": "the nervous system contains nerves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "dfb4-3faa-969c-ae6f", "rowText": "a neuron is a kind of nervous system cell", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6b71-a4bc-f32c-e206", "rowText": "an organ system is made of different parts of the body working together", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "2284-9674-843e-f9f2", "rowText": "nerve cells conduct messages in the body", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "096f-3e0e-0cee-53cc", "rowText": "nerves carry messages from sensory organs to the brain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "237f-6af4-e400-19c9", "rowText": "the neuron is the smallest functional unit ; structural unit of the nervous system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "cdba-a39e-8a33-7324", "rowText": "nerves are made of nerve cells", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "6206-bd50-4980-0cf3", "rowText": "nerves can be used to feel heat and pressure on the skin", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "f64e-1b60-6e48-9b5a", "rowText": "nervous system is an electrical ; electric conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "90b2-edef-d99f-687c", "rowText": "the brain can control animal body through the nervous system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "356b-17e1-59ba-230b", "rowText": "the nervous system is a part of the body of an animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "94a0-d90c-b39c-7263", "rowText": "the nervous system is used for controlling the body", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "c9cb-0243-c4c6-d4e8", "rowText": "the nervous system sends observations in the form of electrical signals to the rest of the body", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"brain_0", "value":"brain" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"brain_0", "value":"brain" }
+		]
+		}
+	]
+}
+]}
+

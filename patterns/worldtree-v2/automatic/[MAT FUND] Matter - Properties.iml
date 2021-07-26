@@ -1,0 +1,50 @@
+// Automatically converted pattern
+inferencepattern MAT_FUND_Matter_Properties
+
+	// Plain text description
+	description = "spacial model?"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       MADEOF: materials are made of matter     (4cf8-b1e2-9544-c98c) [ OBJECT:"material", MATERIAL:"matt" ]
+	//        HINTROW objects are made of materials ; substances ; matter     (80a3-454d-e8e0-3de2) [ OBJECT:"object", MATERIAL:"material;substance;matt" ]
+	//        HINTROW substances are made of matter     (3395-b5a2-ae2d-39c2) [ OBJECT:"substance", MATERIAL:"matt" ]
+	//  Notes: X is made of matter
+	//row autoRow0 = [TABLE:"MADEOF", MATERIAL: "matt"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"MADEOF", MATERIAL: "matt"]
+
+	// CENTRALSW       PROP-GENERIC: volume is a property of matter     (866b-5e77-f131-2b80) [ X:"volume", Y:"matt" ]
+	//        HINTROW mass is a property of objects ; matter     (bbf0-3d09-563f-196b) [ X:"mass", Y:"object;matt" ]
+	//        HINTROW color is a property of an object ; a material     (5c52-4f26-3883-a4ef) [ X:"color", Y:"object;material" ]
+	//        HINTROW composition is a property of an object ; matter     (1d88-121f-5fd2-6ed8) [ X:"compose", Y:"object;matt" ]
+	//  Notes: property examples
+	//row autoRow1 = [TABLE:"PROP-GENERIC", Y: "matt"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-GENERIC", Y: "matt"]
+
+	// GROUNDING       KINDOF: salt is a kind of pure substance     (1fd0-279c-ed27-afca) [ HYPONYM:"salt", SCOPE1:"pure", HYPERNYM:"substance" ]
+	//        HINTROW the air is a kind of substance     (3ed6-1fa7-1a63-34a0) [ HYPONYM:"air", HYPERNYM:"substance" ]
+	//        HINTROW water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//  Notes: substance examples
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "substance"]
+
+	// GROUNDING       KINDOF: a needle is a kind of object     (7b15-d12e-457b-2d61) [ HYPONYM:"needle", HYPERNYM:"object" ]
+	//        HINTROW an anchor is a kind of object     (8b86-e8d3-5b44-048e) [ HYPONYM:"anchor", HYPERNYM:"object" ]
+	//  Notes: object examples
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: metal is a kind of material     (95c4-ec5e-bce9-afd8) [ HYPONYM:"metal", HYPERNYM:"material" ]
+	//        HINTROW cloth is a kind of material     (8e54-4d09-bc9f-bdd1) [ HYPONYM:"cloth", HYPERNYM:"material" ]
+	//        HINTROW fiber is a kind of material     (04a7-76c0-16a3-fbb0) [ HYPONYM:"fiber", HYPERNYM:"material" ]
+	//  Notes: material examples
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "material"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "material"]
+
+	// CENTRAL         USEDFOR: the properties of something are used for describing that something     (33f0-39de-0983-aad8) [ AGENT_OBJECT:"property", SCOPE1:"of something", FOR_PURPOSE:"describe", PATIENT:"that something" ]
+	//row autoRow5 = [UUID:"33f0-39de-0983-aad8", AGENT_OBJECT: "property", SCOPE1: "of something", FOR_PURPOSE: "describe", PATIENT: "that something"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"33f0-39de-0983-aad8", AGENT_OBJECT: "property", SCOPE1: "of something", FOR_PURPOSE: "describe", PATIENT: "that something"]
+
+endinferencepattern

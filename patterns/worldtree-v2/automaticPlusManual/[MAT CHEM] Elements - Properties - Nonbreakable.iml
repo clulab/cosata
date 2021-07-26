@@ -1,0 +1,44 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Elements_Properties_Nonbreakable
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: gold is a kind of element     (eb57-77f3-768e-3665) [ HYPONYM:"gold", HYPERNYM:"element" ]
+	//        HINTROW copper is a kind of element     (6cfd-e59f-1413-76ff) [ HYPONYM:"copper", HYPERNYM:"element" ]
+	//        HINTROW helium is a kind of element     (e377-7e6c-08ee-0af6) [ HYPONYM:"helium", HYPERNYM:"element" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "element"]
+
+	// CENTRAL         AFFORDANCES: an element cannot be decomposed into two or more different substances by simple chemical methods     (5030-d273-97df-4bda) [ ACTOR_THING:"element", VERB:"be decompose into", PATIENT:"two much differ substance", BY_THROUGH_HOW:"simple chemical method" ]
+	//row autoRow1 = [UUID:"5030-d273-97df-4bda", ACTOR_THING: "element", VERB: "be decompose into", PATIENT: "two much differ substance", BY_THROUGH_HOW: "simple chemical method"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"5030-d273-97df-4bda", ACTOR_THING: "element", VERB: "be decompose into", PATIENT: "two much differ substance", BY_THROUGH_HOW: "simple chemical method"]
+
+	// CENTRAL         PROP-MAT-PURITY-MIXTURE: elements are pure substances     (7c4a-208c-2aa4-7679) [ THING:"element", MIXTURE_PURE_SUBSTANCE:"pure substance" ]
+	//  Notes: 4706-54ea-c8d6-bedd->7c4a-208c-2aa4-7679
+	//row autoRow2 = [UUID:"7c4a-208c-2aa4-7679", THING: "element", MIXTURE_PURE_SUBSTANCE: "pure substance"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"7c4a-208c-2aa4-7679", THING: "element", MIXTURE_PURE_SUBSTANCE: "pure substance"]
+
+	// CENTRAL         COMPARISON: the atom is the smallest unit ; particle that has the properties of an element     (9059-174e-fc66-fd7a) [ THING:"atom", ACTION1:"be", COMPARISON:"small", WHAT:"unit;particle", SCOPE2:"have property of element" ]
+	//  Notes: 3b8b-8c35-53cf-354f->9059-174e-fc66-fd7a
+	//row autoRow3 = [UUID:"9059-174e-fc66-fd7a", THING: "atom", ACTION1: "be", COMPARISON: "small", WHAT: "unit", SCOPE2: "have property of element"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"9059-174e-fc66-fd7a", THING: "atom", ACTION1: "be", COMPARISON: "small", WHAT: "unit", SCOPE2: "have property of element"]
+
+	// CENTRAL         MADEOF: matter ; materials ; substances are made of atoms ; particles     (1758-a1b7-4083-9e99) [ OBJECT:"matt;material;substance", MATERIAL:"atom;particle" ]
+	//row autoRow4 = [UUID:"1758-a1b7-4083-9e99", OBJECT: "matt", MATERIAL: "atom"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"1758-a1b7-4083-9e99", OBJECT: "matt", MATERIAL: "atom"]
+
+	// CENTRAL         KINDOF: an element is a kind of substance     (23cf-7316-0c95-9643) [ HYPONYM:"element", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"23cf-7316-0c95-9643", HYPONYM: "element", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"23cf-7316-0c95-9643", HYPONYM: "element", HYPERNYM: "substance"]
+
+	// LEXGLUE         SYNONYMY: decomposing is similar to separating     (dbc8-ff8d-a632-45b1) [ ACTION1:"decompose", ACTION2:"separate" ]
+	//row autoRow6 = [UUID:"dbc8-ff8d-a632-45b1", ACTION1: "decompose", ACTION2: "separate"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"dbc8-ff8d-a632-45b1", ACTION1: "decompose", ACTION2: "separate"]
+
+endinferencepattern

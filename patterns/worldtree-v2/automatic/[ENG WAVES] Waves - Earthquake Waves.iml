@@ -1,0 +1,72 @@
+// Automatically converted pattern
+inferencepattern ENG_WAVES_Waves_Earthquake_Waves
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       USEDFOR: a seismograph is used to measure the earthquake waves     (8bf7-a710-1eb8-44a6) [ AGENT_OBJECT:"seismograph", FOR_PURPOSE:"measure", PATIENT:"earthquake wave" ]
+	//        HINTROW a seismometer is used to measure the strength or magnitude of an earthquake     (0b41-0bce-3131-bd88) [ AGENT_OBJECT:"seismometer", FOR_PURPOSE:"measure", PATIENT:"strength magnitude of earthquake" ]
+	//        HINTROW a seismograph is used for measuring the size of an earthquake     (eb11-ce60-5982-6b34) [ AGENT_OBJECT:"seismograph", FOR_PURPOSE:"measure", PATIENT:"size of earthquake" ]
+	//row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT: "seismograph", FOR_PURPOSE: "measure", PATIENT: "earthquake wave"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"USEDFOR", FOR_PURPOSE: "measure", PATIENT: "earthquake wave"]
+
+	// CENTRAL        (OPTIONAL) DURATIONS: an earthquake usually occurs over a period of 10 to 30 seconds     (e18f-5f8a-04fd-76f7) [ EVENT:"earthquake", QUANTIFIER:"usually", LOWERBOUND:"10", UPPERBOUND:"30", DURATIONUNIT:"second" ]
+	//row *autoRow1 = [UUID:"e18f-5f8a-04fd-76f7", EVENT: "earthquake", QUANTIFIER: "usually", LOWERBOUND: "10", UPPERBOUND: "30", DURATIONUNIT: "second"] //OVER-CONSTR.
+	row *autoRow1 = [UUID:"e18f-5f8a-04fd-76f7", EVENT: "earthquake", QUANTIFIER: "usually", LOWERBOUND: "10", UPPERBOUND: "30", DURATIONUNIT: "second"]
+
+	// CENTRAL         IFTHEN: if a seismograph has different readings , then the wave it measured travel differently     (eb49-1570-c36b-f401) [ THING:"seismograph", ACTION1:"have", ADJ_QUANTITY1A:"differ", OBJECT_PATIENT1:"reading", ACTOR_AGENT_PROCESS2:"wave", PROPERTY_SCOPE:"measure", ACTION3:"travel", OBJECT_PROPERTY3:"differ" ]
+	//row autoRow2 = [UUID:"eb49-1570-c36b-f401", THING: "seismograph", ACTION1: "have", ADJ_QUANTITY1A: "differ", OBJECT_PATIENT1: "reading", ACTOR_AGENT_PROCESS2: "wave", PROPERTY_SCOPE: "measure", ACTION3: "travel", OBJECT_PROPERTY3: "differ"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"eb49-1570-c36b-f401", THING: "seismograph", ACTION1: "have", ADJ_QUANTITY1A: "differ", OBJECT_PATIENT1: "reading", ACTOR_AGENT_PROCESS2: "wave", PROPERTY_SCOPE: "measure", ACTION3: "travel", OBJECT_PROPERTY3: "differ"]
+
+	// CENTRAL         IFTHEN: when an earthquake passes from the crust to the mantle , the wave of the earthquake changes speed     (5da0-c311-01df-1a63) [ THING:"earthquake", ACTION1:"pass", SCOPE1B:"from crust mantle", ACTOR_AGENT_PROCESS2:"wave", PROPERTY_SCOPE:"of earthquake", ACTION3:"change", OBJECT_PROPERTY3:"speed" ]
+	//row autoRow3 = [UUID:"5da0-c311-01df-1a63", THING: "earthquake", ACTION1: "pass", SCOPE1B: "from crust mantle", ACTOR_AGENT_PROCESS2: "wave", PROPERTY_SCOPE: "of earthquake", ACTION3: "change", OBJECT_PROPERTY3: "speed"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"5da0-c311-01df-1a63", THING: "earthquake", ACTION1: "pass", SCOPE1B: "from crust mantle", ACTOR_AGENT_PROCESS2: "wave", PROPERTY_SCOPE: "of earthquake", ACTION3: "change", OBJECT_PROPERTY3: "speed"]
+
+	// CENTRAL         FORMEDBY: a wave is formed by the vibration of the source spreading around from the source     (b304-630d-e68f-17cb) [ OBJECT:"wave", AGENT_PROCESS:"vibrate of source", VERB:"spread around", SCOPE:"from source" ]
+	//row autoRow4 = [UUID:"b304-630d-e68f-17cb", OBJECT: "wave", AGENT_PROCESS: "vibrate of source", VERB: "spread around", SCOPE: "from source"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"b304-630d-e68f-17cb", OBJECT: "wave", AGENT_PROCESS: "vibrate of source", VERB: "spread around", SCOPE: "from source"]
+
+	// CENTRAL         ACTION: waves travel differently in different media     (3373-bc25-1f17-1ebd) [ AGENT_OBJECT:"wave", ACTION2:"travel", OBJECT_PROPERTY:"differ", WHEN_WHERE:"in differ medium" ]
+	//row autoRow5 = [UUID:"3373-bc25-1f17-1ebd", AGENT_OBJECT: "wave", ACTION2: "travel", OBJECT_PROPERTY: "differ", WHEN_WHERE: "in differ medium"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"3373-bc25-1f17-1ebd", AGENT_OBJECT: "wave", ACTION2: "travel", OBJECT_PROPERTY: "differ", WHEN_WHERE: "in differ medium"]
+
+	// CENTRAL         PROP-GENERIC: frequency is a property of a wave ; a particel of light ; an event     (6758-2fe3-2711-02aa) [ X:"frequency", Y:"wave;particel of light;event" ]
+	//row autoRow6 = [UUID:"6758-2fe3-2711-02aa", X: "frequency", Y: "particel of light"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"6758-2fe3-2711-02aa", X: "frequency", Y: "particel of light"]
+
+	// CENTRAL         KINDOF: earthquake is a kind of vibration of the ground     (cd30-cf78-99fb-180d) [ HYPONYM:"earthquake", HYPERNYM:"vibrate", SCOPE2:"of grind" ]
+	//row autoRow7 = [UUID:"cd30-cf78-99fb-180d", HYPONYM: "earthquake", HYPERNYM: "vibrate", SCOPE2: "of grind"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"cd30-cf78-99fb-180d", HYPONYM: "earthquake", HYPERNYM: "vibrate", SCOPE2: "of grind"]
+
+	// CENTRAL         SOURCEOF: earthquake is a source of seismic waves     (1d48-ec76-865c-7447) [ AGENT:"earthquake", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"seismic wave" ]
+	//  Notes: 1455-f30e-b38e-85d1->1d48-ec76-865c-7447
+	//row autoRow8 = [UUID:"1d48-ec76-865c-7447", AGENT: "earthquake", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "seismic wave"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"1d48-ec76-865c-7447", AGENT: "earthquake", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "seismic wave"]
+
+	// CENTRAL         KINDOF: an earthquake is a kind of natural ; geological event     (8129-78ea-abe4-f382) [ HYPONYM:"earthquake", SCOPE1:"nature;geological", HYPERNYM:"event" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"8129-78ea-abe4-f382", HYPONYM: "earthquake", SCOPE1: "nature", HYPERNYM: "event"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"8129-78ea-abe4-f382", HYPONYM: "earthquake", SCOPE1: "nature", HYPERNYM: "event"]
+
+	// CENTRAL         KINDOF: an earthquake wave is a kind of wave     (927c-ab48-9218-4257) [ HYPONYM:"earthquake wave", HYPERNYM:"wave" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"927c-ab48-9218-4257", HYPONYM: "earthquake wave", HYPERNYM: "wave"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"927c-ab48-9218-4257", HYPONYM: "earthquake wave", HYPERNYM: "wave"]
+
+	// CENTRAL         PROP-GENERIC: wavelength is a property of wave     (4bfe-b3d1-e09b-dfa8) [ X:"wavelength", Y:"wave" ]
+	//row autoRow11 = [UUID:"4bfe-b3d1-e09b-dfa8", X: "wavelength", Y: "wave"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"4bfe-b3d1-e09b-dfa8", X: "wavelength", Y: "wave"]
+
+	// CENTRAL         TRANSFER: all waves transfer ; transmit energy from one place to another     (082d-7372-40ca-7de4) [ ACTOR_WHO:"wave", VERB:"transfer;transmit", WHAT:"energy", SOURCE:"one place" ]
+	//row autoRow12 = [UUID:"082d-7372-40ca-7de4", ACTOR_WHO: "wave", VERB: "transfer", WHAT: "energy", SOURCE: "one place"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"082d-7372-40ca-7de4", ACTOR_WHO: "wave", VERB: "transfer", WHAT: "energy", SOURCE: "one place"]
+
+	// LEXGLUE         SYNONYMY: a vibration is similar to a wave     (9072-0c5d-d333-d1ce) [ X1:"vibrate", X2:"wave" ]
+	//row autoRow13 = [UUID:"9072-0c5d-d333-d1ce", X1: "vibrate", X2: "wave"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"9072-0c5d-d333-d1ce", X1: "vibrate", X2: "wave"]
+
+endinferencepattern

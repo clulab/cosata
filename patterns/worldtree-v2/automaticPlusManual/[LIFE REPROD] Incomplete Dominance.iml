@@ -1,0 +1,111 @@
+// Automatically converted pattern
+inferencepattern LIFE_REPROD_Incomplete_Dominance
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-DOMRECESS-TRAIT: black fur is a dominant trait in guinea pig     (7a88-cff4-5a86-4681) [ ADJ:"black", THING:"fur", DOMINANT_RECESSIVE:"dominant", SCOPE_RELATIVETO:"in guinea pig" ]
+	//        HINTROW red flower is a dominant trait in snapdragon plant     (765a-a03c-5124-ca3b) [ ADJ:"red", THING:"flower", DOMINANT_RECESSIVE:"dominant", SCOPE_RELATIVETO:"in snapdragon plant" ]
+	//        HINTROW black fur is a dominant trait in mouse     (d28d-b53a-922b-9e44) [ ADJ:"black", THING:"fur", DOMINANT_RECESSIVE:"dominant", SCOPE_RELATIVETO:"in mouse" ]
+	//  Notes: 7be4-25b4-2559-ed15->765a-a03c-5124-ca3b;9bac-b9c0-4582-d454->d28d-b53a-922b-9e44;3920-323c-f169-dcf1->7a88-cff4-5a86-4681dominant trait in organism X
+	//row autoRow0 = [TABLE:"PROP-DOMRECESS-TRAIT", ADJ: <black_3>, THING: <fur_0>, DOMINANT_RECESSIVE: "dominant", SCOPE_RELATIVETO: "in"+<guinea_1>+<pig_2>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-DOMRECESS-TRAIT", ADJ: <black_3>, THING: <fur_0>, DOMINANT_RECESSIVE: "dominant", SCOPE_RELATIVETO: "in"+<guinea_1>+<pig_2>]
+
+	// CENTRALSW       PROP-DOMRECESS-TRAIT: white fur is a recessive trait in guinea pig     (b0f1-dcbf-644a-6d0a) [ ADJ:"white", THING:"fur", DOMINANT_RECESSIVE:"recessive", SCOPE_RELATIVETO:"in guinea pig" ]
+	//        HINTROW white flower is a recessive trait in snapdragon plant     (4198-a43f-ed87-8810) [ ADJ:"white", THING:"flower", DOMINANT_RECESSIVE:"recessive", SCOPE_RELATIVETO:"in snapdragon plant" ]
+	//        HINTROW white fur is a recessive trait in mouse     (eeb3-9ad7-6803-4e0d) [ ADJ:"white", THING:"fur", DOMINANT_RECESSIVE:"recessive", SCOPE_RELATIVETO:"in mouse" ]
+	//  Notes: f848-a9e1-aeb1-465f->4198-a43f-ed87-8810;e4e2-9529-e18c-5bfe->b0f1-dcbf-644a-6d0a;ed7c-dcac-bed2-2bf8->eeb3-9ad7-6803-4e0drecessive trait in organism X
+	//row autoRow1 = [TABLE:"PROP-DOMRECESS-TRAIT", ADJ: "white", THING: <fur_0>, DOMINANT_RECESSIVE: "recessive", SCOPE_RELATIVETO: "in"+<guinea_1>+<pig_2>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-DOMRECESS-TRAIT", ADJ: "white", THING: <fur_0>, DOMINANT_RECESSIVE: "recessive", SCOPE_RELATIVETO: "in"+<guinea_1>+<pig_2>]
+
+	// CENTRALSW       PROP-INHERITEDLEARNED: the color of ; coloration of fur is an inherited characteristic     (29be-69ad-17f4-11f0) [ ATTRIBUTE_QUANTITY:"color of;coloration of", AGENT:"fur", INHERITED_LEARNED:"inherit" ]
+	//        HINTROW the colors of parts of an organism are inherited characteristics     (102a-fa79-43cd-e9a4) [ ATTRIBUTE_QUANTITY:"color of", AGENT:"part", SCOPE:"of organism", INHERITED_LEARNED:"inherit" ]
+	//row autoRow2 = [TABLE:"PROP-INHERITEDLEARNED", ATTRIBUTE_QUANTITY: "color of", INHERITED_LEARNED: "inherit"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"PROP-INHERITEDLEARNED", ATTRIBUTE_QUANTITY: "color of", INHERITED_LEARNED: "inherit"]
+
+	// CENTRALSW       PROP-THINGS: gray is a combination of black and white     (33ee-cd38-fb7f-73fc) [ ADJ:"gray", VALUE:"combination", SCOPE_RELATIVETO:"of black white" ]
+	//        HINTROW pink is a combination of red and white     (41f5-ae57-3596-38a9) [ THING:"pink", ATTRIBUTE:"combination", SCOPE_RELATIVETO:"of red white" ]
+	//  Notes: color X is a combination of color Y and Z
+	//row autoRow3 = [TABLE:"PROP-THINGS", VALUE: "combination", SCOPE_RELATIVETO: "of"+<black_3>+"white"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"PROP-THINGS", SCOPE_RELATIVETO: "of"+<black_3>+"white"]
+
+	// GROUNDING       KINDOF: guinea pig is a kind of animal     (0e01-7b7a-deee-6f56) [ HYPONYM:"guinea pig", HYPERNYM:"animal" ]
+	//        HINTROW snapdragon is a kind of plant     (0bfb-28c1-017f-39ce) [ HYPONYM:"snapdragon", HYPERNYM:"plant" ]
+	//        HINTROW a mouse is a kind of animal     (782f-7770-b8be-f40e) [ HYPONYM:"mouse", HYPERNYM:"animal" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: <guinea_1>+<pig_2>, HYPERNYM: <animal_4>] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: <guinea_1>+<pig_2>, HYPERNYM: <animal_4>]
+
+	// GROUNDING       KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//        HINTROW a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPONYM: <animal_4>, HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPONYM: <animal_4>, HYPERNYM: "organism"]
+
+	// GROUNDING       KINDOF: black is a kind of color     (7892-f43a-8f12-2a8d) [ HYPONYM:"black", HYPERNYM:"color" ]
+	//        HINTROW red is a kind of color     (c118-527e-6211-a80e) [ HYPONYM:"red", HYPERNYM:"color" ]
+	//  Notes: color Y column
+	//row autoRow6 = [TABLE:"KINDOF", HYPONYM: <black_3>, HYPERNYM: "color"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPONYM: <black_3>, HYPERNYM: "color"]
+
+	// GROUNDING       KINDOF: pink is a kind of color     (ba6b-2114-c011-3b87) [ HYPONYM:"pink", HYPERNYM:"color" ]
+	//  Notes: color X column
+	//row autoRow7 = [TABLE:"KINDOF", HYPONYM: "pink", HYPERNYM: "color"] //OVER-CONSTR.
+	row autoRow7 = [TABLE:"KINDOF", HYPONYM: "pink", HYPERNYM: "color"]
+
+	// GROUNDING       KINDOF: white is a kind of color     (12c9-e2b2-25cd-65c6) [ HYPONYM:"white", HYPERNYM:"color" ]
+	//  Notes: color Z column
+	//row autoRow8 = [TABLE:"KINDOF", HYPONYM: "white", HYPERNYM: "color"] //OVER-CONSTR.
+	row autoRow8 = [TABLE:"KINDOF", HYPONYM: "white", HYPERNYM: "color"]
+
+	// CENTRAL         ACTION: incomplete dominance is when offspring exhibit a combination of a property caused by the genes of its parents     (4fc9-5989-d008-dd3e) [ DEFINITION_NAME:"incomplete dominance", AGENT_OBJECT:"offspring", ACTION2:"exhibit", OBJECT_PROPERTY:"combination", SCOPE2:"of property cause by gene of parent" ]
+	//row autoRow9 = [UUID:"4fc9-5989-d008-dd3e", DEFINITION_NAME: "incomplete dominance", AGENT_OBJECT: "offspring", ACTION2: "exhibit", OBJECT_PROPERTY: "combination", SCOPE2: "of property cause by gene of parent"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"4fc9-5989-d008-dd3e", DEFINITION_NAME: "incomplete dominance", AGENT_OBJECT: "offspring", ACTION2: "exhibit", OBJECT_PROPERTY: "combination", SCOPE2: "of property cause by gene of parent"]
+
+	// CENTRAL         IFTHEN: if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 25% probability of being homozygous recessive     (b0f7-0b94-dd72-578c) [ ADJ_QUANTITY1:"heterozygous", THING:"dominant organism", ACTION1:"cross;breed with", ADJ_QUANTITY1A:"heterozygous", OBJECT_PATIENT1:"dominant organism", ACTOR_AGENT_PROCESS2:"offspring", ACTION3:"have", ADJ_QUANTIFIER3:"25 % probability of", OBJECT_PROPERTY3:"be homozygous recessive" ]
+	//  Notes: hetero dominant x hetero dominant --> 25% recessive
+	//row autoRow10 = [UUID:"b0f7-0b94-dd72-578c", ADJ_QUANTITY1: "heterozygous", THING: "dominant organism", ACTION1: "breed with", ADJ_QUANTITY1A: "heterozygous", OBJECT_PATIENT1: "dominant organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "25 % probability of", OBJECT_PROPERTY3: "be homozygous recessive"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"b0f7-0b94-dd72-578c", ADJ_QUANTITY1: "heterozygous", THING: "dominant organism", ACTION1: "breed with", ADJ_QUANTITY1A: "heterozygous", OBJECT_PATIENT1: "dominant organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "25 % probability of", OBJECT_PROPERTY3: "be homozygous recessive"]
+
+	// CENTRAL         CONTAINS: a heterozygous organism contains both dominant and recessive genes     (bf6d-30bb-f14c-54bb) [ ADJ:"heterozygous", OBJECT_AGENT:"organism", WHAT_IT_CONTAINS:"dominant recessive gene" ]
+	//row autoRow11 = [UUID:"bf6d-30bb-f14c-54bb", ADJ: "heterozygous", OBJECT_AGENT: "organism", WHAT_IT_CONTAINS: "dominant recessive gene"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"bf6d-30bb-f14c-54bb", ADJ: "heterozygous", OBJECT_AGENT: "organism", WHAT_IT_CONTAINS: "dominant recessive gene"]
+
+	// CENTRAL         IFTHEN: if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 25% probability of being homozygous dominant     (c789-7d60-5d0e-bc67) [ ADJ_QUANTITY1:"heterozygous", THING:"dominant organism", ACTION1:"cross;breed with", ADJ_QUANTITY1A:"heterozygous", OBJECT_PATIENT1:"dominant organism", ACTOR_AGENT_PROCESS2:"offspring", ACTION3:"have", ADJ_QUANTIFIER3:"25 % probability of", OBJECT_PROPERTY3:"be homozygous dominant" ]
+	//  Notes: hetero dominant x hetero dominant --> 25% pure dominant
+	//row autoRow12 = [UUID:"c789-7d60-5d0e-bc67", ADJ_QUANTITY1: "heterozygous", THING: "dominant organism", ACTION1: "breed with", ADJ_QUANTITY1A: "heterozygous", OBJECT_PATIENT1: "dominant organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "25 % probability of", OBJECT_PROPERTY3: "be homozygous dominant"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"c789-7d60-5d0e-bc67", ADJ_QUANTITY1: "heterozygous", THING: "dominant organism", ACTION1: "breed with", ADJ_QUANTITY1A: "heterozygous", OBJECT_PATIENT1: "dominant organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "25 % probability of", OBJECT_PROPERTY3: "be homozygous dominant"]
+
+	// CENTRAL         IFTHEN: if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 75% probability of having dominant trait     (ee4a-b456-7903-e43d) [ ADJ_QUANTITY1:"heterozygous", THING:"dominant organism", ACTION1:"cross;breed with", ADJ_QUANTITY1A:"heterozygous", OBJECT_PATIENT1:"dominant organism", ACTOR_AGENT_PROCESS2:"offspring", ACTION3:"have", ADJ_QUANTIFIER3:"75 % probability of", OBJECT_PROPERTY3:"have dominant trait" ]
+	//  Notes: hetero dominant x hetero dominant --> 75% dominant
+	//row autoRow13 = [UUID:"ee4a-b456-7903-e43d", ADJ_QUANTITY1: "heterozygous", THING: "dominant organism", ACTION1: "breed with", ADJ_QUANTITY1A: "heterozygous", OBJECT_PATIENT1: "dominant organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "75 % probability of", OBJECT_PROPERTY3: "have dominant trait"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"ee4a-b456-7903-e43d", ADJ_QUANTITY1: "heterozygous", THING: "dominant organism", ACTION1: "breed with", ADJ_QUANTITY1A: "heterozygous", OBJECT_PATIENT1: "dominant organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "75 % probability of", OBJECT_PROPERTY3: "have dominant trait"]
+
+	// CENTRAL         CONTAINS: a homozygous dominant organism contains only dominant genes     (acda-b7a0-d62c-ff9b) [ ADJ:"homozygous dominant", OBJECT_AGENT:"organism", QUANTITY_RANGE:"only", WHAT_IT_CONTAINS:"dominant gene" ]
+	//row autoRow14 = [UUID:"acda-b7a0-d62c-ff9b", ADJ: "homozygous dominant", OBJECT_AGENT: "organism", QUANTITY_RANGE: "only", WHAT_IT_CONTAINS: "dominant gene"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"acda-b7a0-d62c-ff9b", ADJ: "homozygous dominant", OBJECT_AGENT: "organism", QUANTITY_RANGE: "only", WHAT_IT_CONTAINS: "dominant gene"]
+
+	// CENTRAL         CONTAINS: a homozygous recessive organism contains only recessive genes     (0df9-78d7-51d9-6e54) [ ADJ:"homozygous recessive", OBJECT_AGENT:"organism", QUANTITY_RANGE:"only", WHAT_IT_CONTAINS:"recessive gene" ]
+	//row autoRow15 = [UUID:"0df9-78d7-51d9-6e54", ADJ: "homozygous recessive", OBJECT_AGENT: "organism", QUANTITY_RANGE: "only", WHAT_IT_CONTAINS: "recessive gene"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"0df9-78d7-51d9-6e54", ADJ: "homozygous recessive", OBJECT_AGENT: "organism", QUANTITY_RANGE: "only", WHAT_IT_CONTAINS: "recessive gene"]
+
+	// CENTRAL         IFTHEN: if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 50% probability of being heterozygous dominant     (2299-0633-182b-92f3) [ ADJ_QUANTITY1:"heterozygous", THING:"dominant organism", ACTION1:"cross;breed with", ADJ_QUANTITY1A:"heterozygous", OBJECT_PATIENT1:"dominant organism", ACTOR_AGENT_PROCESS2:"offspring", ACTION3:"have", ADJ_QUANTIFIER3:"50 % probability of", OBJECT_PROPERTY3:"be heterozygous dominant" ]
+	//  Notes: hetero dominant x hetero dominant --> 50% hetero dominant
+	//row autoRow16 = [UUID:"2299-0633-182b-92f3", ADJ_QUANTITY1: "heterozygous", THING: "dominant organism", ACTION1: "breed with", ADJ_QUANTITY1A: "heterozygous", OBJECT_PATIENT1: "dominant organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "50 % probability of", OBJECT_PROPERTY3: "be heterozygous dominant"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"2299-0633-182b-92f3", ADJ_QUANTITY1: "heterozygous", THING: "dominant organism", ACTION1: "breed with", ADJ_QUANTITY1A: "heterozygous", OBJECT_PATIENT1: "dominant organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "50 % probability of", OBJECT_PROPERTY3: "be heterozygous dominant"]
+
+	// CENTRAL         IFTHEN: if both a dominant and recessive gene are present , the dominant trait will be visible ; expressed     (9d19-224c-847b-a622) [ ADJ_QUANTITY1:"dominant recessive", THING:"gene", OBJECT_PROPERTY1:"present", ADJ_QUANTITY2:"dominant", ACTOR_AGENT_PROCESS2:"trait", OBJECT_PROPERTY3:"visible;express" ]
+	//row autoRow17 = [UUID:"9d19-224c-847b-a622", ADJ_QUANTITY1: "dominant recessive", THING: "gene", OBJECT_PROPERTY1: "present", ADJ_QUANTITY2: "dominant", ACTOR_AGENT_PROCESS2: "trait", OBJECT_PROPERTY3: "visible"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"9d19-224c-847b-a622", ADJ_QUANTITY1: "dominant recessive", THING: "gene", OBJECT_PROPERTY1: "present", ADJ_QUANTITY2: "dominant", ACTOR_AGENT_PROCESS2: "trait", OBJECT_PROPERTY3: "visible"]
+
+	// CENTRAL         IFTHEN: if both dominant genes are present , then the dominant trait will be visible ; expressed     (f00a-7d92-6e19-784a) [ ADJ_QUANTITY1:"dominant", THING:"gene", ACTION1:"present", ADJ_QUANTITY2:"dominant", ACTOR_AGENT_PROCESS2:"trait", OBJECT_PROPERTY3:"visible;express" ]
+	//row autoRow18 = [UUID:"f00a-7d92-6e19-784a", ADJ_QUANTITY1: "dominant", THING: "gene", ACTION1: "present", ADJ_QUANTITY2: "dominant", ACTOR_AGENT_PROCESS2: "trait", OBJECT_PROPERTY3: "visible"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"f00a-7d92-6e19-784a", ADJ_QUANTITY1: "dominant", THING: "gene", ACTION1: "present", ADJ_QUANTITY2: "dominant", ACTOR_AGENT_PROCESS2: "trait", OBJECT_PROPERTY3: "visible"]
+
+	// CENTRAL         IFTHEN: if both recessive genes are present , then the recessive trait will be visible ; expressed     (b3f6-5f19-c2eb-85e9) [ ADJ_QUANTITY1:"recessive", THING:"gene", ACTION1:"present", ADJ_QUANTITY2:"recessive", ACTOR_AGENT_PROCESS2:"trait", OBJECT_PROPERTY3:"visible;express" ]
+	//row autoRow19 = [UUID:"b3f6-5f19-c2eb-85e9", ADJ_QUANTITY1: "recessive", THING: "gene", ACTION1: "present", ADJ_QUANTITY2: "recessive", ACTOR_AGENT_PROCESS2: "trait", OBJECT_PROPERTY3: "visible"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"b3f6-5f19-c2eb-85e9", ADJ_QUANTITY1: "recessive", THING: "gene", ACTION1: "present", ADJ_QUANTITY2: "recessive", ACTOR_AGENT_PROCESS2: "trait", OBJECT_PROPERTY3: "visible"]
+
+endinferencepattern

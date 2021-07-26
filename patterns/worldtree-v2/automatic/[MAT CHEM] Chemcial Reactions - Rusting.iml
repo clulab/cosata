@@ -1,0 +1,51 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Chemcial_Reactions_Rusting
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: rust is a kind of compound     (e681-bc7a-64fa-b7a6) [ HYPONYM:"rust", HYPERNYM:"compound" ]
+	//        HINTROW rust is a kind of substance     (5d6b-b4b0-a77a-6df4) [ HYPONYM:"rust", HYPERNYM:"substance" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "rust"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "rust"]
+
+	// CENTRALSW       MADEOF: iron nails are made of iron     (b9dd-961e-269e-aa5d) [ OBJECT:"iron nail", MATERIAL:"iron" ]
+	//        HINTROW nails are often made of iron     (1141-2506-451f-587c) [ OBJECT:"nail", QUALIFIER:"be often", MATERIAL:"iron" ]
+	//row autoRow1 = [TABLE:"MADEOF", OBJECT: "iron"+*"POS:NN", MATERIAL: "iron"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"MADEOF", MATERIAL: "iron"]
+
+	// GROUNDING       KINDOF: iron is a kind of metal     (de4c-ca36-c336-540f) [ HYPONYM:"iron", HYPERNYM:"metal" ]
+	//        HINTROW aluminum is a kind of metal     (a580-1b9e-6ec9-a275) [ HYPONYM:"aluminum", HYPERNYM:"metal" ]
+	//        HINTROW copper is a kind of metal     (9cea-7fba-e1c5-f8b3) [ HYPONYM:"copper", HYPERNYM:"metal" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "metal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "metal"]
+
+	// CENTRAL         CAUSE: chemical reactions cause new substances ; different substances to form     (3dca-07f2-1404-d404) [ CONDITION_AGENT_OBJECT:"chemical reaction", RESULT_AGENT:"new substance;differ substance", RESULT_VERB:"form" ]
+	//row autoRow3 = [UUID:"3dca-07f2-1404-d404", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "new substance", RESULT_VERB: "form"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"3dca-07f2-1404-d404", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "new substance", RESULT_VERB: "form"]
+
+	// CENTRAL         ACTION: iron in contact with water and oxygen will rust     (6d3e-e79a-9d08-519b) [ AGENT_OBJECT:"iron", SCOPE1:"in contact with water oxygen", ACTION2:"rust" ]
+	//row autoRow4 = [UUID:"6d3e-e79a-9d08-519b", AGENT_OBJECT: "iron", SCOPE1: "in contact with water oxygen", ACTION2: "rust"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"6d3e-e79a-9d08-519b", AGENT_OBJECT: "iron", SCOPE1: "in contact with water oxygen", ACTION2: "rust"]
+
+	// CENTRAL         KINDOF: rust forming is a kind of chemical change     (3fb1-78ec-77f8-d713) [ HYPONYM:"rust form", SCOPE1:"chemical", HYPERNYM:"change" ]
+	//row autoRow5 = [UUID:"3fb1-78ec-77f8-d713", HYPONYM: "rust form", SCOPE1: "chemical", HYPERNYM: "change"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"3fb1-78ec-77f8-d713", HYPONYM: "rust form", SCOPE1: "chemical", HYPERNYM: "change"]
+
+	// CENTRAL         IFTHEN: when a metal rusts , that metal becomes orange ; flaky on the surface     (3899-1343-500e-b48e) [ THING:"metal", ACTION1:"rust", ACTOR_AGENT_PROCESS2:"metal", ACTION3:"become", ADJ_QUANTIFIER3:"orange;flaky", OBJECT_PROPERTY3:"on surface" ]
+	//row autoRow6 = [UUID:"3899-1343-500e-b48e", THING: "metal", ACTION1: "rust", ACTOR_AGENT_PROCESS2: "metal", ACTION3: "become", ADJ_QUANTIFIER3: "orange", OBJECT_PROPERTY3: "on surface"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3899-1343-500e-b48e", THING: "metal", ACTION1: "rust", ACTOR_AGENT_PROCESS2: "metal", ACTION3: "become", ADJ_QUANTIFIER3: "orange", OBJECT_PROPERTY3: "on surface"]
+
+	// CENTRAL         CAUSE: chemical reactions cause chemical change     (0f0d-2cc5-fcc1-3c1f) [ CONDITION_AGENT_OBJECT:"chemical reaction", RESULT_AGENT:"chemical change" ]
+	//row autoRow7 = [UUID:"0f0d-2cc5-fcc1-3c1f", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "chemical change"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"0f0d-2cc5-fcc1-3c1f", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "chemical change"]
+
+	// CENTRAL         ACTION: metal rusts     (988e-84e2-f0b3-0538) [ AGENT_OBJECT:"metal", ACTION2:"rust" ]
+	//row autoRow8 = [UUID:"988e-84e2-f0b3-0538", AGENT_OBJECT: "metal", ACTION2: "rust"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"988e-84e2-f0b3-0538", AGENT_OBJECT: "metal", ACTION2: "rust"]
+
+endinferencepattern

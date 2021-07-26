@@ -1,0 +1,1726 @@
+{"patternMatches": [
+{
+	"patternName":"MAT_COS_Change_of_State_Generic",
+	"matches":[
+		{
+		"uuids": ["a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","73e5-00b0-22fd-e34e","08c0-16d0-2d6d-8df7","ae9d-5e74-afa3-d031","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","edd3-cea2-f046-e76f","f7e9-c6f8-892b-3496","aa73-331e-e970-c934","TEMPGEN-418952","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "73e5-00b0-22fd-e34e", "rowText": "boiling point means temperature at which a liquid boils ; above which a liquid boils", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "ae9d-5e74-afa3-d031", "rowText": "boiling is when liquids are heated above their boiling point", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-418952", "rowText": "boil is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"at" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"changeOfStateName", "value":"boil" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"boil point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"at" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"changeOfStateName", "value":"boiling" },
+			{ "name":"heatCool", "value":"heated" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"boiling point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		]
+		},
+		{
+		"uuids": ["a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","73e5-00b0-22fd-e34e","08c0-16d0-2d6d-8df7","ae9d-5e74-afa3-d031","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","edd3-cea2-f046-e76f","f7e9-c6f8-892b-3496","aa73-331e-e970-c934","TEMPGEN-418952","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "73e5-00b0-22fd-e34e", "rowText": "boiling point means temperature at which a liquid boils ; above which a liquid boils", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "ae9d-5e74-afa3-d031", "rowText": "boiling is when liquids are heated above their boiling point", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-418952", "rowText": "boil is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"above" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"changeOfStateName", "value":"boil" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"boil point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"above" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"changeOfStateName", "value":"boiling" },
+			{ "name":"heatCool", "value":"heated" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"boiling point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		]
+		},
+		{
+		"uuids": ["6abc-4443-f672-9a97","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","fa8f-6c8e-1364-1b72","08c0-16d0-2d6d-8df7","8cbb-8bf8-bfbd-681e","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","fae9-3cca-92cd-bf20","cf49-1b7a-89f0-41f5","f7e9-c6f8-892b-3496","36f6-e94f-8780-1897","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6abc-4443-f672-9a97", "rowText": "melting means matter ; a substance changes from a solid into a liquid by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "fa8f-6c8e-1364-1b72", "rowText": "melting point means temperature at which a solid melts ; above which a solid melts", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8cbb-8bf8-bfbd-681e", "rowText": "melting is when solids are heated above their melting point", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "fae9-3cca-92cd-bf20", "rowText": "melting is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "36f6-e94f-8780-1897", "rowText": "melting is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"at" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"melt point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"at" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"heatCool", "value":"heated" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"melting point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["6abc-4443-f672-9a97","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","fa8f-6c8e-1364-1b72","08c0-16d0-2d6d-8df7","8cbb-8bf8-bfbd-681e","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","fae9-3cca-92cd-bf20","cf49-1b7a-89f0-41f5","f7e9-c6f8-892b-3496","36f6-e94f-8780-1897","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6abc-4443-f672-9a97", "rowText": "melting means matter ; a substance changes from a solid into a liquid by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "fa8f-6c8e-1364-1b72", "rowText": "melting point means temperature at which a solid melts ; above which a solid melts", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8cbb-8bf8-bfbd-681e", "rowText": "melting is when solids are heated above their melting point", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "fae9-3cca-92cd-bf20", "rowText": "melting is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "36f6-e94f-8780-1897", "rowText": "melting is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"above" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"melt point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"above" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"heatCool", "value":"heated" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"melting point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["6abc-4443-f672-9a97","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","fa8f-6c8e-1364-1b72","08c0-16d0-2d6d-8df7","8cbb-8bf8-bfbd-681e","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","fae9-3cca-92cd-bf20","cf49-1b7a-89f0-41f5","f7e9-c6f8-892b-3496","TEMPGEN-426215","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6abc-4443-f672-9a97", "rowText": "melting means matter ; a substance changes from a solid into a liquid by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "fa8f-6c8e-1364-1b72", "rowText": "melting point means temperature at which a solid melts ; above which a solid melts", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8cbb-8bf8-bfbd-681e", "rowText": "melting is when solids are heated above their melting point", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "fae9-3cca-92cd-bf20", "rowText": "melting is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-426215", "rowText": "melt is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"at" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"melt point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"at" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"heatCool", "value":"heated" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"melting point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["6abc-4443-f672-9a97","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","fa8f-6c8e-1364-1b72","08c0-16d0-2d6d-8df7","8cbb-8bf8-bfbd-681e","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","fae9-3cca-92cd-bf20","cf49-1b7a-89f0-41f5","f7e9-c6f8-892b-3496","TEMPGEN-426215","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6abc-4443-f672-9a97", "rowText": "melting means matter ; a substance changes from a solid into a liquid by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "fa8f-6c8e-1364-1b72", "rowText": "melting point means temperature at which a solid melts ; above which a solid melts", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8cbb-8bf8-bfbd-681e", "rowText": "melting is when solids are heated above their melting point", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "fae9-3cca-92cd-bf20", "rowText": "melting is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-426215", "rowText": "melt is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"above" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"melt point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"above" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"heatCool", "value":"heated" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"melting point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","73e5-00b0-22fd-e34e","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","edd3-cea2-f046-e76f","f7e9-c6f8-892b-3496","aa73-331e-e970-c934","TEMPGEN-418952","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "73e5-00b0-22fd-e34e", "rowText": "boiling point means temperature at which a liquid boils ; above which a liquid boils", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-418952", "rowText": "boil is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"at" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"boil" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"boil point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"at" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"boiling" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"boiling point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		]
+		},
+		{
+		"uuids": ["a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","73e5-00b0-22fd-e34e","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","edd3-cea2-f046-e76f","f7e9-c6f8-892b-3496","aa73-331e-e970-c934","TEMPGEN-418952","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "73e5-00b0-22fd-e34e", "rowText": "boiling point means temperature at which a liquid boils ; above which a liquid boils", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-418952", "rowText": "boil is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"above" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"boil" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"boil point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"above" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"boiling" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"boiling point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		]
+		},
+		{
+		"uuids": ["a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","ae9d-5e74-afa3-d031","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","edd3-cea2-f046-e76f","f7e9-c6f8-892b-3496","aa73-331e-e970-c934","TEMPGEN-418952","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "ae9d-5e74-afa3-d031", "rowText": "boiling is when liquids are heated above their boiling point", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-418952", "rowText": "boil is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"changeOfStateName", "value":"boil" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"boil point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"changeOfStateName", "value":"boiling" },
+			{ "name":"heatCool", "value":"heated" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"boiling point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		]
+		},
+		{
+		"uuids": ["a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","ae9d-5e74-afa3-d031","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","edd3-cea2-f046-e76f","f7e9-c6f8-892b-3496","aa73-331e-e970-c934","TEMPGEN-418952","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "ae9d-5e74-afa3-d031", "rowText": "boiling is when liquids are heated above their boiling point", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-418952", "rowText": "boil is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"above boil" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"changeOfStateName", "value":"boil" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"above boiling" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"changeOfStateName", "value":"boiling" },
+			{ "name":"heatCool", "value":"heated" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		]
+		},
+		{
+		"uuids": ["6abc-4443-f672-9a97","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","fa8f-6c8e-1364-1b72","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","fae9-3cca-92cd-bf20","cf49-1b7a-89f0-41f5","f7e9-c6f8-892b-3496","36f6-e94f-8780-1897","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6abc-4443-f672-9a97", "rowText": "melting means matter ; a substance changes from a solid into a liquid by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "fa8f-6c8e-1364-1b72", "rowText": "melting point means temperature at which a solid melts ; above which a solid melts", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "fae9-3cca-92cd-bf20", "rowText": "melting is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "36f6-e94f-8780-1897", "rowText": "melting is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"at" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"melt point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"at" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"melting point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["6abc-4443-f672-9a97","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","fa8f-6c8e-1364-1b72","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","fae9-3cca-92cd-bf20","cf49-1b7a-89f0-41f5","f7e9-c6f8-892b-3496","36f6-e94f-8780-1897","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6abc-4443-f672-9a97", "rowText": "melting means matter ; a substance changes from a solid into a liquid by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "fa8f-6c8e-1364-1b72", "rowText": "melting point means temperature at which a solid melts ; above which a solid melts", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "fae9-3cca-92cd-bf20", "rowText": "melting is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "36f6-e94f-8780-1897", "rowText": "melting is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"above" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"melt point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"above" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"melting point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["6abc-4443-f672-9a97","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","fa8f-6c8e-1364-1b72","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","fae9-3cca-92cd-bf20","cf49-1b7a-89f0-41f5","f7e9-c6f8-892b-3496","TEMPGEN-426215","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6abc-4443-f672-9a97", "rowText": "melting means matter ; a substance changes from a solid into a liquid by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "fa8f-6c8e-1364-1b72", "rowText": "melting point means temperature at which a solid melts ; above which a solid melts", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "fae9-3cca-92cd-bf20", "rowText": "melting is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-426215", "rowText": "melt is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"at" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"melt point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"at" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"melting point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["6abc-4443-f672-9a97","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","fa8f-6c8e-1364-1b72","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","fae9-3cca-92cd-bf20","cf49-1b7a-89f0-41f5","f7e9-c6f8-892b-3496","TEMPGEN-426215","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6abc-4443-f672-9a97", "rowText": "melting means matter ; a substance changes from a solid into a liquid by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "fa8f-6c8e-1364-1b72", "rowText": "melting point means temperature at which a solid melts ; above which a solid melts", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "fae9-3cca-92cd-bf20", "rowText": "melting is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-426215", "rowText": "melt is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"above" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"melt point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"above" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"melting point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["6abc-4443-f672-9a97","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","8cbb-8bf8-bfbd-681e","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","fae9-3cca-92cd-bf20","cf49-1b7a-89f0-41f5","f7e9-c6f8-892b-3496","36f6-e94f-8780-1897","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6abc-4443-f672-9a97", "rowText": "melting means matter ; a substance changes from a solid into a liquid by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8cbb-8bf8-bfbd-681e", "rowText": "melting is when solids are heated above their melting point", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "fae9-3cca-92cd-bf20", "rowText": "melting is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "36f6-e94f-8780-1897", "rowText": "melting is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"melt point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"heatCool", "value":"heated" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"melting point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["6abc-4443-f672-9a97","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","8cbb-8bf8-bfbd-681e","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","fae9-3cca-92cd-bf20","cf49-1b7a-89f0-41f5","f7e9-c6f8-892b-3496","36f6-e94f-8780-1897","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6abc-4443-f672-9a97", "rowText": "melting means matter ; a substance changes from a solid into a liquid by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8cbb-8bf8-bfbd-681e", "rowText": "melting is when solids are heated above their melting point", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "fae9-3cca-92cd-bf20", "rowText": "melting is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "36f6-e94f-8780-1897", "rowText": "melting is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"above melt" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"above melting" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"heatCool", "value":"heated" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["6abc-4443-f672-9a97","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","8cbb-8bf8-bfbd-681e","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","fae9-3cca-92cd-bf20","cf49-1b7a-89f0-41f5","f7e9-c6f8-892b-3496","TEMPGEN-426215","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6abc-4443-f672-9a97", "rowText": "melting means matter ; a substance changes from a solid into a liquid by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8cbb-8bf8-bfbd-681e", "rowText": "melting is when solids are heated above their melting point", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "fae9-3cca-92cd-bf20", "rowText": "melting is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-426215", "rowText": "melt is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"melt point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"above" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"heatCool", "value":"heated" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"melting point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["6abc-4443-f672-9a97","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","8cbb-8bf8-bfbd-681e","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","fae9-3cca-92cd-bf20","cf49-1b7a-89f0-41f5","f7e9-c6f8-892b-3496","TEMPGEN-426215","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6abc-4443-f672-9a97", "rowText": "melting means matter ; a substance changes from a solid into a liquid by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "8cbb-8bf8-bfbd-681e", "rowText": "melting is when solids are heated above their melting point", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "fae9-3cca-92cd-bf20", "rowText": "melting is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-426215", "rowText": "melt is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"above melt" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"above melting" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"heatCool", "value":"heated" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"point" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["f03c-decc-030f-b860","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","bb18-f19f-69ba-8bc6","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","eebb-a341-23c6-8447","f7e9-c6f8-892b-3496","cf49-1b7a-89f0-41f5","TEMPGEN-422716","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f03c-decc-030f-b860", "rowText": "freezing means matter ; a substance changes from a liquid into a solid by decreasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "bb18-f19f-69ba-8bc6", "rowText": "freezing point means temperature at which a liquid freezes ; below which a liquid freezes", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "eebb-a341-23c6-8447", "rowText": "freezing is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-422716", "rowText": "freeze is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"at" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"freeze" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decrease" },
+			{ "name":"phaseTransitionPoint", "value":"freeze point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"solid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"at" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"freezing" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decreasing" },
+			{ "name":"phaseTransitionPoint", "value":"freezing point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"solid" }
+		]
+		},
+		{
+		"uuids": ["f03c-decc-030f-b860","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","bb18-f19f-69ba-8bc6","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","eebb-a341-23c6-8447","f7e9-c6f8-892b-3496","cf49-1b7a-89f0-41f5","TEMPGEN-422716","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f03c-decc-030f-b860", "rowText": "freezing means matter ; a substance changes from a liquid into a solid by decreasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "bb18-f19f-69ba-8bc6", "rowText": "freezing point means temperature at which a liquid freezes ; below which a liquid freezes", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "eebb-a341-23c6-8447", "rowText": "freezing is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-422716", "rowText": "freeze is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"below" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"freeze" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decrease" },
+			{ "name":"phaseTransitionPoint", "value":"freeze point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"solid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"below" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"freezing" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decreasing" },
+			{ "name":"phaseTransitionPoint", "value":"freezing point" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"solid" }
+		]
+		},
+		{
+		"uuids": ["a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","edd3-cea2-f046-e76f","f7e9-c6f8-892b-3496","aa73-331e-e970-c934","TEMPGEN-418952","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-418952", "rowText": "boil is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"boil" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"boiling" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		]
+		},
+		{
+		"uuids": ["a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","4a2c-c349-a627-edc5","f7e9-c6f8-892b-3496","aa73-331e-e970-c934","bfeb-fb56-8937-91c9","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4a2c-c349-a627-edc5", "rowText": "evaporating is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "bfeb-fb56-8937-91c9", "rowText": "evaporation is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"evaporate" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"evaporation" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		]
+		},
+		{
+		"uuids": ["a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","4a2c-c349-a627-edc5","f7e9-c6f8-892b-3496","aa73-331e-e970-c934","TEMPGEN-421929","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "4a2c-c349-a627-edc5", "rowText": "evaporating is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-421929", "rowText": "evaporate is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"evaporate" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"evaporation" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		]
+		},
+		{
+		"uuids": ["6abc-4443-f672-9a97","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","fae9-3cca-92cd-bf20","cf49-1b7a-89f0-41f5","f7e9-c6f8-892b-3496","36f6-e94f-8780-1897","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6abc-4443-f672-9a97", "rowText": "melting means matter ; a substance changes from a solid into a liquid by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "fae9-3cca-92cd-bf20", "rowText": "melting is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "36f6-e94f-8780-1897", "rowText": "melting is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["6abc-4443-f672-9a97","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","fae9-3cca-92cd-bf20","cf49-1b7a-89f0-41f5","f7e9-c6f8-892b-3496","TEMPGEN-426215","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6abc-4443-f672-9a97", "rowText": "melting means matter ; a substance changes from a solid into a liquid by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "fae9-3cca-92cd-bf20", "rowText": "melting is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-426215", "rowText": "melt is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["f03c-decc-030f-b860","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","eebb-a341-23c6-8447","f7e9-c6f8-892b-3496","cf49-1b7a-89f0-41f5","TEMPGEN-422716","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f03c-decc-030f-b860", "rowText": "freezing means matter ; a substance changes from a liquid into a solid by decreasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "eebb-a341-23c6-8447", "rowText": "freezing is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-422716", "rowText": "freeze is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"freeze" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decrease" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"solid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"freezing" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decreasing" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"liquid" },
+			{ "name":"stateOfMatterTo", "value":"solid" }
+		]
+		},
+		{
+		"uuids": ["2aba-39fa-3a07-5ee4","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","e2ac-16b6-eb78-880e","aa73-331e-e970-c934","f7e9-c6f8-892b-3496","672f-0cc0-73d8-ae50","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2aba-39fa-3a07-5ee4", "rowText": "condensing means matter ; a substance changes from a gas into a liquid by decreasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "e2ac-16b6-eb78-880e", "rowText": "condensing is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "672f-0cc0-73d8-ae50", "rowText": "condensing is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"condense" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decrease" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"gas" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"condensing" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decreasing" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"gas" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["2aba-39fa-3a07-5ee4","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","e2ac-16b6-eb78-880e","aa73-331e-e970-c934","f7e9-c6f8-892b-3496","7faf-cb37-05f2-3e08","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2aba-39fa-3a07-5ee4", "rowText": "condensing means matter ; a substance changes from a gas into a liquid by decreasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "e2ac-16b6-eb78-880e", "rowText": "condensing is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "7faf-cb37-05f2-3e08", "rowText": "condensation is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"condense" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decrease" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"gas" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"condensing" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decreasing" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"gas" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["2aba-39fa-3a07-5ee4","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","e2ac-16b6-eb78-880e","aa73-331e-e970-c934","f7e9-c6f8-892b-3496","TEMPGEN-434074","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2aba-39fa-3a07-5ee4", "rowText": "condensing means matter ; a substance changes from a gas into a liquid by decreasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "e2ac-16b6-eb78-880e", "rowText": "condensing is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-434074", "rowText": "condense is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"condense" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decrease" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"gas" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"condensing" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decreasing" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"gas" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["2c44-c2fa-bff1-5946","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","e2ac-16b6-eb78-880e","aa73-331e-e970-c934","f7e9-c6f8-892b-3496","672f-0cc0-73d8-ae50","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2c44-c2fa-bff1-5946", "rowText": "condensation is when matter ; a substance changes from a gas into a liquid by decreasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "e2ac-16b6-eb78-880e", "rowText": "condensing is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "672f-0cc0-73d8-ae50", "rowText": "condensing is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"condense" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decrease" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"gas" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"condensation" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decreasing" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"gas" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["2c44-c2fa-bff1-5946","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","e2ac-16b6-eb78-880e","aa73-331e-e970-c934","f7e9-c6f8-892b-3496","7faf-cb37-05f2-3e08","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2c44-c2fa-bff1-5946", "rowText": "condensation is when matter ; a substance changes from a gas into a liquid by decreasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "e2ac-16b6-eb78-880e", "rowText": "condensing is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "7faf-cb37-05f2-3e08", "rowText": "condensation is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"condense" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decrease" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"gas" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"condensation" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decreasing" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"gas" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["2c44-c2fa-bff1-5946","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","e2ac-16b6-eb78-880e","aa73-331e-e970-c934","f7e9-c6f8-892b-3496","TEMPGEN-434074","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2c44-c2fa-bff1-5946", "rowText": "condensation is when matter ; a substance changes from a gas into a liquid by decreasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "e2ac-16b6-eb78-880e", "rowText": "condensing is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-434074", "rowText": "condense is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"condense" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decrease" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"gas" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"condensation" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decreasing" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"gas" },
+			{ "name":"stateOfMatterTo", "value":"liquid" }
+		]
+		},
+		{
+		"uuids": ["1613-c8b2-f818-85be","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","1721-3bf5-93e8-fa22","cf49-1b7a-89f0-41f5","aa73-331e-e970-c934","TEMPGEN-434152","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1613-c8b2-f818-85be", "rowText": "sublimation means matter ; a substance changes from a solid into a gas by increasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1721-3bf5-93e8-fa22", "rowText": "sublimation is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-434152", "rowText": "sublimation is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"sublimation" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increase" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"sublimation" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"increasing" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"solid" },
+			{ "name":"stateOfMatterTo", "value":"gas" }
+		]
+		},
+		{
+		"uuids": ["3002-4c80-039d-2114","72bd-5535-598e-82e8","4084-f2bc-52cf-0f74","08c0-16d0-2d6d-8df7","7909-f63c-46d1-01a2","d753-423d-5ce7-53ce","7532-01eb-475e-acbd","8125-bd69-c454-cf63","aa73-331e-e970-c934","cf49-1b7a-89f0-41f5","TEMPGEN-434227","b6d6-89d9-43a5-fd91"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3002-4c80-039d-2114", "rowText": "desublimation ; deposition means matter ; a substance changes from a gas into a solid by decreasing heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4084-f2bc-52cf-0f74", "rowText": "temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "08c0-16d0-2d6d-8df7", "rowText": "phase changes change the arrangement of molecules in a substance ; in a sample", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7909-f63c-46d1-01a2", "rowText": "heat energy can change the state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d753-423d-5ce7-53ce", "rowText": "temperature is a measure of heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7532-01eb-475e-acbd", "rowText": "state of matter is a kind of physical property", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "8125-bd69-c454-cf63", "rowText": "desublimation is a kind of phase change", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14a", "uuid": "aa73-331e-e970-c934", "rowText": "gas is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14b", "uuid": "cf49-1b7a-89f0-41f5", "rowText": "solid is a kind of state of matter", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "TEMPGEN-434227", "rowText": "desublimation is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "b6d6-89d9-43a5-fd91", "rowText": "a phase change is a kind of physical change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"desublimation" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decrease" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"gas" },
+			{ "name":"stateOfMatterTo", "value":"solid" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"aboveBelow1", "value":"" },
+			{ "name":"aboveBelow2", "value":"" },
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"changeOfStateName", "value":"desublimation" },
+			{ "name":"heatCool", "value":"heat" },
+			{ "name":"increaseDecrease", "value":"decreasing" },
+			{ "name":"phaseTransitionPoint", "value":"" },
+			{ "name":"stateOfMatterFrom", "value":"gas" },
+			{ "name":"stateOfMatterTo", "value":"solid" }
+		]
+		}
+	]
+},
+{
+	"patternName":"ChangeOfState_SubstancePhaseChangePoints_1",
+	"matches":[
+		{
+		"uuids": ["81b7-0a58-5b0b-0bbf","e474-2a11-6e7b-ae8b","a10a-a44b-4ab6-225f"],
+		"slots": [
+			{"rowSlotName": "autoRow20", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5a", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "a10a-a44b-4ab6-225f", "rowText": "the boiling point of water is 212F ; 100C ; 373K", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"boil" },
+			{ "name":"stateOfMatterTo", "value":"gas" },
+			{ "name":"substanceName", "value":"water" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"boiling" },
+			{ "name":"stateOfMatterTo", "value":"gas" },
+			{ "name":"substanceName", "value":"water" }
+		]
+		},
+		{
+		"uuids": ["81b7-0a58-5b0b-0bbf","e474-2a11-6e7b-ae8b","cdc9-5a05-7bcd-607f"],
+		"slots": [
+			{"rowSlotName": "autoRow20", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5a", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "cdc9-5a05-7bcd-607f", "rowText": "the freezing point of water ; melting point of water is 32F ; 0C ; 273K", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"freeze" },
+			{ "name":"stateOfMatterTo", "value":"gas" },
+			{ "name":"substanceName", "value":"water" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"freezing" },
+			{ "name":"stateOfMatterTo", "value":"gas" },
+			{ "name":"substanceName", "value":"water" }
+		]
+		},
+		{
+		"uuids": ["81b7-0a58-5b0b-0bbf","e474-2a11-6e7b-ae8b","cdc9-5a05-7bcd-607f"],
+		"slots": [
+			{"rowSlotName": "autoRow20", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5a", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "cdc9-5a05-7bcd-607f", "rowText": "the freezing point of water ; melting point of water is 32F ; 0C ; 273K", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"stateOfMatterTo", "value":"gas" },
+			{ "name":"substanceName", "value":"water" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"stateOfMatterTo", "value":"gas" },
+			{ "name":"substanceName", "value":"water" }
+		]
+		},
+		{
+		"uuids": ["81b7-0a58-5b0b-0bbf","4a5d-ae1d-5ba6-8f8d","a10a-a44b-4ab6-225f"],
+		"slots": [
+			{"rowSlotName": "autoRow20", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5a", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "a10a-a44b-4ab6-225f", "rowText": "the boiling point of water is 212F ; 100C ; 373K", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"boil" },
+			{ "name":"stateOfMatterTo", "value":"liquid" },
+			{ "name":"substanceName", "value":"water" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"boiling" },
+			{ "name":"stateOfMatterTo", "value":"liquid" },
+			{ "name":"substanceName", "value":"water" }
+		]
+		},
+		{
+		"uuids": ["81b7-0a58-5b0b-0bbf","4a5d-ae1d-5ba6-8f8d","cdc9-5a05-7bcd-607f"],
+		"slots": [
+			{"rowSlotName": "autoRow20", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5a", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "cdc9-5a05-7bcd-607f", "rowText": "the freezing point of water ; melting point of water is 32F ; 0C ; 273K", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"freeze" },
+			{ "name":"stateOfMatterTo", "value":"liquid" },
+			{ "name":"substanceName", "value":"water" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"freezing" },
+			{ "name":"stateOfMatterTo", "value":"liquid" },
+			{ "name":"substanceName", "value":"water" }
+		]
+		},
+		{
+		"uuids": ["81b7-0a58-5b0b-0bbf","4a5d-ae1d-5ba6-8f8d","cdc9-5a05-7bcd-607f"],
+		"slots": [
+			{"rowSlotName": "autoRow20", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5a", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "cdc9-5a05-7bcd-607f", "rowText": "the freezing point of water ; melting point of water is 32F ; 0C ; 273K", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"stateOfMatterTo", "value":"liquid" },
+			{ "name":"substanceName", "value":"water" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"stateOfMatterTo", "value":"liquid" },
+			{ "name":"substanceName", "value":"water" }
+		]
+		},
+		{
+		"uuids": ["81b7-0a58-5b0b-0bbf","4a5a-9115-28a9-b97b","a10a-a44b-4ab6-225f"],
+		"slots": [
+			{"rowSlotName": "autoRow20", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5a", "uuid": "4a5a-9115-28a9-b97b", "rowText": "water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "a10a-a44b-4ab6-225f", "rowText": "the boiling point of water is 212F ; 100C ; 373K", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"boil" },
+			{ "name":"stateOfMatterTo", "value":"solid" },
+			{ "name":"substanceName", "value":"water" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"boiling" },
+			{ "name":"stateOfMatterTo", "value":"solid" },
+			{ "name":"substanceName", "value":"water" }
+		]
+		},
+		{
+		"uuids": ["81b7-0a58-5b0b-0bbf","4a5a-9115-28a9-b97b","cdc9-5a05-7bcd-607f"],
+		"slots": [
+			{"rowSlotName": "autoRow20", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5a", "uuid": "4a5a-9115-28a9-b97b", "rowText": "water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "cdc9-5a05-7bcd-607f", "rowText": "the freezing point of water ; melting point of water is 32F ; 0C ; 273K", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"freeze" },
+			{ "name":"stateOfMatterTo", "value":"solid" },
+			{ "name":"substanceName", "value":"water" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"freezing" },
+			{ "name":"stateOfMatterTo", "value":"solid" },
+			{ "name":"substanceName", "value":"water" }
+		]
+		},
+		{
+		"uuids": ["81b7-0a58-5b0b-0bbf","4a5a-9115-28a9-b97b","cdc9-5a05-7bcd-607f"],
+		"slots": [
+			{"rowSlotName": "autoRow20", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5a", "uuid": "4a5a-9115-28a9-b97b", "rowText": "water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "cdc9-5a05-7bcd-607f", "rowText": "the freezing point of water ; melting point of water is 32F ; 0C ; 273K", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"melt" },
+			{ "name":"stateOfMatterTo", "value":"solid" },
+			{ "name":"substanceName", "value":"water" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"melting" },
+			{ "name":"stateOfMatterTo", "value":"solid" },
+			{ "name":"substanceName", "value":"water" }
+		]
+		},
+		{
+		"uuids": ["81b7-0a58-5b0b-0bbf","e474-2a11-6e7b-ae8b"],
+		"slots": [
+			{"rowSlotName": "autoRow20", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5a", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow19", "value":"" },
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"" },
+			{ "name":"stateOfMatterTo", "value":"gas" },
+			{ "name":"substanceName", "value":"water" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow19", "value":"" },
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"" },
+			{ "name":"stateOfMatterTo", "value":"gas" },
+			{ "name":"substanceName", "value":"water" }
+		]
+		},
+		{
+		"uuids": ["81b7-0a58-5b0b-0bbf","4a5d-ae1d-5ba6-8f8d"],
+		"slots": [
+			{"rowSlotName": "autoRow20", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5a", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow19", "value":"" },
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"" },
+			{ "name":"stateOfMatterTo", "value":"liquid" },
+			{ "name":"substanceName", "value":"water" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow19", "value":"" },
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"" },
+			{ "name":"stateOfMatterTo", "value":"liquid" },
+			{ "name":"substanceName", "value":"water" }
+		]
+		},
+		{
+		"uuids": ["81b7-0a58-5b0b-0bbf","4a5a-9115-28a9-b97b"],
+		"slots": [
+			{"rowSlotName": "autoRow20", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5a", "uuid": "4a5a-9115-28a9-b97b", "rowText": "water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5b", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow19", "value":"" },
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"" },
+			{ "name":"stateOfMatterTo", "value":"solid" },
+			{ "name":"substanceName", "value":"water" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow19", "value":"" },
+			{ "name":"autoRow5b", "value":"" },
+			{ "name":"changeOfStateName", "value":"" },
+			{ "name":"stateOfMatterTo", "value":"solid" },
+			{ "name":"substanceName", "value":"water" }
+		]
+		}
+	]
+},
+{
+	"patternName":"ChangeOfState_SubstancePhaseChangePoints_2",
+	"matches":[
+		{
+		"uuids": ["TEMPGEN-382577","4a5a-9115-28a9-b97b"],
+		"slots": [
+			{"rowSlotName": "autoRow20", "uuid": "TEMPGEN-382577", "rowText": "ice is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5b", "uuid": "4a5a-9115-28a9-b97b", "rowText": "water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow19", "value":"" },
+			{ "name":"changeOfStateName", "value":"" },
+			{ "name":"stateOfMatterTo", "value":"solid" },
+			{ "name":"substanceName", "value":"ice" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow19", "value":"" },
+			{ "name":"changeOfStateName", "value":"" },
+			{ "name":"stateOfMatterTo", "value":"solid" },
+			{ "name":"substanceName", "value":"ice" }
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-392397","e474-2a11-6e7b-ae8b"],
+		"slots": [
+			{"rowSlotName": "autoRow20", "uuid": "TEMPGEN-392397", "rowText": "steam is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5b", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow19", "value":"" },
+			{ "name":"changeOfStateName", "value":"" },
+			{ "name":"stateOfMatterTo", "value":"gas" },
+			{ "name":"substanceName", "value":"steam" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow19", "value":"" },
+			{ "name":"changeOfStateName", "value":"" },
+			{ "name":"stateOfMatterTo", "value":"gas" },
+			{ "name":"substanceName", "value":"steam" }
+		]
+		}
+	]
+}
+]}
+

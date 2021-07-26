@@ -1,0 +1,48 @@
+// Automatically converted pattern
+inferencepattern ENG_FORMS_Energy_Examples_of
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         KINDOF: kinetic energy is a kind of mechanical energy     (8f4b-dcdb-2be5-9423) [ HYPONYM:"kinetic energy", HYPERNYM:"mechanical energy" ]
+	//  Notes: peripheral
+	//row autoRow0 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"]
+
+	// CENTRAL         KINDOF: chemical energy is a kind of energy     (b043-79cc-a77e-e968) [ HYPONYM:"chemical energy", HYPERNYM:"energy" ]
+	//row autoRow1 = [UUID:"b043-79cc-a77e-e968", HYPONYM: "chemical energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"b043-79cc-a77e-e968", HYPONYM: "chemical energy", HYPERNYM: "energy"]
+
+	// CENTRAL         KINDOF: electrical energy is a kind of energy     (b5ca-9f64-d6d6-6783) [ HYPONYM:"electric energy", HYPERNYM:"energy" ]
+	//row autoRow2 = [UUID:"b5ca-9f64-d6d6-6783", HYPONYM: "electric energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"b5ca-9f64-d6d6-6783", HYPONYM: "electric energy", HYPERNYM: "energy"]
+
+	// CENTRAL         KINDOF: heat is a kind of energy     (9e7d-986e-6af1-5ac1) [ HYPONYM:"heat", HYPERNYM:"energy" ]
+	//row autoRow3 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"]
+
+	// CENTRAL         KINDOF: light is a kind of energy     (f742-384b-744c-10a9) [ HYPONYM:"light", HYPERNYM:"energy" ]
+	//row autoRow4 = [UUID:"f742-384b-744c-10a9", HYPONYM: "light", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"f742-384b-744c-10a9", HYPONYM: "light", HYPERNYM: "energy"]
+
+	// CENTRAL         KINDOF: mechanical energy is a kind of energy     (3144-f8f2-43a4-8712) [ HYPONYM:"mechanical energy", HYPERNYM:"energy" ]
+	//row autoRow5 = [UUID:"3144-f8f2-43a4-8712", HYPONYM: "mechanical energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"3144-f8f2-43a4-8712", HYPONYM: "mechanical energy", HYPERNYM: "energy"]
+
+	// CENTRAL         KINDOF: solar energy is a kind of energy     (4849-d977-c75a-e8fb) [ HYPONYM:"solar energy", HYPERNYM:"energy" ]
+	//row autoRow6 = [UUID:"4849-d977-c75a-e8fb", HYPONYM: "solar energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4849-d977-c75a-e8fb", HYPONYM: "solar energy", HYPERNYM: "energy"]
+
+	// CENTRAL         KINDOF: sound is a kind of energy     (1980-256d-b685-846c) [ HYPONYM:"sound", HYPERNYM:"energy" ]
+	//row autoRow7 = [UUID:"1980-256d-b685-846c", HYPONYM: "sound", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"1980-256d-b685-846c", HYPONYM: "sound", HYPERNYM: "energy"]
+
+	// LEXGLUE         SYNONYMY: electricity means electrical energy     (5657-c6bc-e6cd-ae38) [ X1:"electric", X2:"electric energy" ]
+	//row autoRow8 = [UUID:"5657-c6bc-e6cd-ae38", X1: "electric", X2: "electric energy"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"5657-c6bc-e6cd-ae38", X1: "electric", X2: "electric energy"]
+
+endinferencepattern

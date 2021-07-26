@@ -1,0 +1,50 @@
+{"patternMatches": [
+{
+	"patternName":"MAT_PROPO_Rough_Things_Examples",
+	"matches":[
+		{
+		"uuids": ["a67b-fecc-2c14-cefb","7ab6-d0b1-eac4-a2a9","936a-31ea-b049-fee7","bac8-51e2-f03a-e1c1","df67-2c42-2ea5-500d","eb92-b0cd-c257-9bcf","4639-8ac3-5232-3850","be7f-0242-d76f-3be0","6c86-9d15-6ab9-f4c3"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "a67b-fecc-2c14-cefb", "rowText": "a rough surface is a part of sandpaper", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7ab6-d0b1-eac4-a2a9", "rowText": "a sheet of sandpaper is a kind of object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "936a-31ea-b049-fee7", "rowText": "texture is a property of surfaces ; materials ; objects and includes ordered values of smooth ; rough", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bac8-51e2-f03a-e1c1", "rowText": "the texture of an object can sometimes be told by looking at the object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "df67-2c42-2ea5-500d", "rowText": "touch can be used for detecting texture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "eb92-b0cd-c257-9bcf", "rowText": "a surface is a part of an object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4639-8ac3-5232-3850", "rowText": "rough is a kind of texture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "be7f-0242-d76f-3be0", "rowText": "smooth is a kind of texture", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c86-9d15-6ab9-f4c3", "rowText": "texture means how an object feels", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"sandpaper_0", "value":"sandpaper" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"sandpaper_0", "value":"sandpaper" }
+		]
+		},
+		{
+		"uuids": ["a67b-fecc-2c14-cefb","7ab6-d0b1-eac4-a2a9","936a-31ea-b049-fee7","bac8-51e2-f03a-e1c1","df67-2c42-2ea5-500d","eb92-b0cd-c257-9bcf","4639-8ac3-5232-3850","6c86-9d15-6ab9-f4c3"],
+		"slots": [
+			{"rowSlotName": "autoRow1", "uuid": "a67b-fecc-2c14-cefb", "rowText": "a rough surface is a part of sandpaper", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7ab6-d0b1-eac4-a2a9", "rowText": "a sheet of sandpaper is a kind of object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "936a-31ea-b049-fee7", "rowText": "texture is a property of surfaces ; materials ; objects and includes ordered values of smooth ; rough", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bac8-51e2-f03a-e1c1", "rowText": "the texture of an object can sometimes be told by looking at the object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "df67-2c42-2ea5-500d", "rowText": "touch can be used for detecting texture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "eb92-b0cd-c257-9bcf", "rowText": "a surface is a part of an object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4639-8ac3-5232-3850", "rowText": "rough is a kind of texture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6c86-9d15-6ab9-f4c3", "rowText": "texture means how an object feels", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"sandpaper_0", "value":"sandpaper" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow8", "value":"" },
+			{ "name":"sandpaper_0", "value":"sandpaper" }
+		]
+		}
+	]
+}
+]}
+

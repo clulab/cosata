@@ -1,0 +1,59 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Landslide
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a mountain ; mountain range is a kind of environment     (2fcb-3708-8590-8eee) [ HYPONYM:"mountain;mountain range", HYPERNYM:"environment" ]
+	//        HINTROW a field is a kind of environment     (2a18-601d-51f0-3abc) [ HYPONYM:"field", HYPERNYM:"environment" ]
+	//  Notes: peripheral
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "environment"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "environment"]
+
+	// GROUNDING       KINDOF: rain is a kind of water     (214a-9ca3-2983-aa79) [ HYPONYM:"rain", HYPERNYM:"water" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "rain", HYPERNYM: "water"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "rain", HYPERNYM: "water"]
+
+	// CENTRAL         TRANSFER: a landslide is when water ; gravity rapidly moves rocks ; soil downhill especially after a rain storm     (14a5-1229-3653-681c) [ PROCESS_NAME:"landslide", ACTOR_WHO:"water;gravity", VERB:"rapid move", WHAT:"rock;soil", DESTINATION:"downhill", SCOPE:"especially after rain storm" ]
+	//row autoRow2 = [UUID:"14a5-1229-3653-681c", PROCESS_NAME: "landslide", ACTOR_WHO: "water", VERB: "rapid move", WHAT: "rock", DESTINATION: "downhill", SCOPE: "especially after rain storm"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"14a5-1229-3653-681c", PROCESS_NAME: "landslide", ACTOR_WHO: "water", VERB: "rapid move", WHAT: "rock", DESTINATION: "downhill", SCOPE: "especially after rain storm"]
+
+	// CENTRAL         LOCATIONS: landslides often occur on mountains     (368d-e93c-2b60-3348) [ THING_PROCESS:"landslide", LOCATION:"on mountain" ]
+	//row autoRow3 = [UUID:"368d-e93c-2b60-3348", THING_PROCESS: "landslide", LOCATION: "on mountain"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"368d-e93c-2b60-3348", THING_PROCESS: "landslide", LOCATION: "on mountain"]
+
+	// CENTRAL         CAUSE: erosion ; storms can cause a landslide     (ad27-ad14-2ed7-2b55) [ CONDITION_AGENT_OBJECT:"erode;storm", RESULT_AGENT:"landslide" ]
+	//row autoRow4 = [UUID:"ad27-ad14-2ed7-2b55", CONDITION_AGENT_OBJECT: "erode", RESULT_AGENT: "landslide"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"ad27-ad14-2ed7-2b55", CONDITION_AGENT_OBJECT: "erode", RESULT_AGENT: "landslide"]
+
+	// CENTRAL         KINDOF: a landslide is a kind of natural event     (17c2-1a0b-fa3f-63cb) [ HYPONYM:"landslide", SCOPE1:"nature", HYPERNYM:"event" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"17c2-1a0b-fa3f-63cb", HYPONYM: "landslide", SCOPE1: "nature", HYPERNYM: "event"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"17c2-1a0b-fa3f-63cb", HYPONYM: "landslide", SCOPE1: "nature", HYPERNYM: "event"]
+
+	// CENTRAL         TRANSFER: soil erosion is when wind ; moving water ; gravity moves soil from fields ; environments     (4c93-e1e3-546a-8cfa) [ PROCESS_NAME:"soil erode", ACTOR_WHO:"wind;move water;gravity", VERB:"move;move", WHAT:"soil", SOURCE:"field;environment" ]
+	//row autoRow6 = [UUID:"4c93-e1e3-546a-8cfa", PROCESS_NAME: "soil erode", ACTOR_WHO: "move water", VERB: "move", WHAT: "soil", SOURCE: "field"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4c93-e1e3-546a-8cfa", PROCESS_NAME: "soil erode", ACTOR_WHO: "move water", VERB: "move", WHAT: "soil", SOURCE: "field"]
+
+	// CENTRAL         PROCESSROLES: In the erosion process roots of plants are an inhibitor     (d54f-e502-fa51-788d) [ PROCESS_NAME:"erode", ACTOR_COMMON_EXAMPLE:"root of plant", ROLE:"inhibit" ]
+	//row autoRow7 = [UUID:"d54f-e502-fa51-788d", PROCESS_NAME: "erode", ACTOR_COMMON_EXAMPLE: "root of plant", ROLE: "inhibit"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"d54f-e502-fa51-788d", PROCESS_NAME: "erode", ACTOR_COMMON_EXAMPLE: "root of plant", ROLE: "inhibit"]
+
+	// CENTRAL         CHANGE-VEC: terraces decrease ; reduce soil erosion on a slope     (0d31-d7e8-8d61-aea5) [ AGENT_OBJECT:"terrace", DIRECTION:"decrease;reduce", PATIENT:"soil erode", SCOPE2:"on slope" ]
+	//  Notes: 2f69-06ad-27b9-22ef->0d31-d7e8-8d61-aea5
+	//row autoRow8 = [UUID:"0d31-d7e8-8d61-aea5", AGENT_OBJECT: "terrace", DIRECTION: "decrease", PATIENT: "soil erode", SCOPE2: "on slope"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"0d31-d7e8-8d61-aea5", AGENT_OBJECT: "terrace", DIRECTION: "decrease", PATIENT: "soil erode", SCOPE2: "on slope"]
+
+	// CENTRAL         ACTION: water flows down a slope     (9d72-710b-d88f-44ef) [ AGENT_OBJECT:"water", ACTION2:"flow", OBJECT_PROPERTY:"slope" ]
+	//row autoRow9 = [UUID:"9d72-710b-d88f-44ef", AGENT_OBJECT: "water", ACTION2: "flow", OBJECT_PROPERTY: "slope"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"9d72-710b-d88f-44ef", AGENT_OBJECT: "water", ACTION2: "flow", OBJECT_PROPERTY: "slope"]
+
+	// CENTRAL         PARTOF: a slope is a part of a mountain ; hill     (0048-8141-197d-cf0c) [ PART:"slope", QUANTIFIER1:"be", WHOLE:"mountain;hill" ]
+	//row autoRow10 = [UUID:"0048-8141-197d-cf0c", PART: "slope", QUANTIFIER1: "be", WHOLE: "mountain"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"0048-8141-197d-cf0c", PART: "slope", QUANTIFIER1: "be", WHOLE: "mountain"]
+
+endinferencepattern

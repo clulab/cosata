@@ -1,0 +1,43 @@
+// Automatically converted pattern
+inferencepattern MAT_CHANGES_Chemical_Seperation_From_Energy
+
+	// Plain text description
+	description = "questions do not seem to have a lot of this kind of questions"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         AFFORDANCES: a compound can be chemically separated into the elements that it is made of     (8414-575d-6515-9ade) [ ACTOR_THING:"compound", QUANTIFIER:"chemically", VERB:"separate", SCOPE:"into element that be make of" ]
+	//row autoRow0 = [UUID:"8414-575d-6515-9ade", ACTOR_THING: "compound", QUANTIFIER: "chemically", VERB: "separate", SCOPE: "into element that be make of"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"8414-575d-6515-9ade", ACTOR_THING: "compound", QUANTIFIER: "chemically", VERB: "separate", SCOPE: "into element that be make of"]
+
+	// CENTRAL         KINDOF: oxygen is a kind of element     (936b-92a1-0e96-0846) [ HYPONYM:"oxygen", HYPERNYM:"element" ]
+	//row autoRow1 = [UUID:"936b-92a1-0e96-0846", HYPONYM: "oxygen", HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"936b-92a1-0e96-0846", HYPONYM: "oxygen", HYPERNYM: "element"]
+
+	// CENTRAL         KINDOF: water is a kind of compound     (9c5e-a6ea-6e77-4f1e) [ HYPONYM:"water", HYPERNYM:"compound" ]
+	//row autoRow2 = [UUID:"9c5e-a6ea-6e77-4f1e", HYPONYM: "water", HYPERNYM: "compound"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"9c5e-a6ea-6e77-4f1e", HYPONYM: "water", HYPERNYM: "compound"]
+
+	// CENTRAL         MADEOF: water is made of hydrogen and oxygen     (d3bf-21a7-2800-5223) [ OBJECT:"water", MATERIAL:"hydrogen oxygen" ]
+	//row autoRow3 = [UUID:"d3bf-21a7-2800-5223", OBJECT: "water", MATERIAL: "hydrogen oxygen"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"d3bf-21a7-2800-5223", OBJECT: "water", MATERIAL: "hydrogen oxygen"]
+
+	// CENTRAL         KINDOF: hydrogen is a kind of element     (f861-f54e-3435-b0e6) [ HYPONYM:"hydrogen", HYPERNYM:"element" ]
+	//row autoRow4 = [UUID:"f861-f54e-3435-b0e6", HYPONYM: "hydrogen", HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"f861-f54e-3435-b0e6", HYPONYM: "hydrogen", HYPERNYM: "element"]
+
+	// CENTRAL         MADEOF: a compound is made of two or more elements chemically combined     (6bb0-ea31-6fee-5e77) [ OBJECT:"compound", VALUE:"two much", MATERIAL:"element", BY_THROUGH_HOW:"chemically combine" ]
+	//row autoRow5 = [UUID:"6bb0-ea31-6fee-5e77", OBJECT: "compound", VALUE: "two much", MATERIAL: "element", BY_THROUGH_HOW: "chemically combine"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"6bb0-ea31-6fee-5e77", OBJECT: "compound", VALUE: "two much", MATERIAL: "element", BY_THROUGH_HOW: "chemically combine"]
+
+	// CENTRAL         EXAMPLES: An example of a chemical change is electrical energy breaking down a compound     (3ad2-9672-21b6-16b9) [ AGENT_OBJECT1:"chemical change", AGENT_OBJECT2:"electric energy", VERB2:"break", AGENT_OBJECT3:"compound" ]
+	//row autoRow6 = [UUID:"3ad2-9672-21b6-16b9", AGENT_OBJECT1: "chemical change", AGENT_OBJECT2: "electric energy", VERB2: "break", AGENT_OBJECT3: "compound"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3ad2-9672-21b6-16b9", AGENT_OBJECT1: "chemical change", AGENT_OBJECT2: "electric energy", VERB2: "break", AGENT_OBJECT3: "compound"]
+
+	// CENTRAL         CHANGE: electrolysis of water is when water is decomposed into oxygen and hydrogen by passing electric current through water     (cc77-e071-37ce-4b95) [ PROCESS_NAME:"electrolysis of water", ACTOR_WHO:"water", VERB:"be decompose", INTO:"oxygen hydrogen", BY_THROUGH_HOW:"pass electric current through water" ]
+	//row autoRow7 = [UUID:"cc77-e071-37ce-4b95", PROCESS_NAME: "electrolysis of water", ACTOR_WHO: "water", VERB: "be decompose", INTO: "oxygen hydrogen", BY_THROUGH_HOW: "pass electric current through water"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"cc77-e071-37ce-4b95", PROCESS_NAME: "electrolysis of water", ACTOR_WHO: "water", VERB: "be decompose", INTO: "oxygen hydrogen", BY_THROUGH_HOW: "pass electric current through water"]
+
+endinferencepattern

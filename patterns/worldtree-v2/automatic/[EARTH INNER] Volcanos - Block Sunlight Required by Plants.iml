@@ -1,0 +1,83 @@
+// Automatically converted pattern
+inferencepattern EARTH_INNER_Volcanos_Block_Sunlight_Required_by_Plants
+
+	// Plain text description
+	description = "potentially can be split into other categories"
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a lemon tree is a kind of plant     (9cf1-bc5a-d350-5541) [ HYPONYM:"lemon tree", HYPERNYM:"plant" ]
+	//        HINTROW an apple tree is a kind of plant     (00a7-56fc-3c22-e6f2) [ HYPONYM:"apple tree", HYPERNYM:"plant" ]
+	//        HINTROW a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// CENTRAL         TRANSFER: the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight     (a3c3-47f1-32ba-5c7f) [ ACTOR_WHO:"sun", VERB:"transfer", WHAT:"solar energy;light energy;heat energy", DESTINATION:"planet;earth", BY_THROUGH_HOW:"sunlight" ]
+	//  Notes: Sun is the source of the sunlight
+	//row autoRow1 = [UUID:"a3c3-47f1-32ba-5c7f", ACTOR_WHO: "sun", VERB: "transfer", WHAT: "solar energy", DESTINATION: "planet", BY_THROUGH_HOW: "sunlight"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"a3c3-47f1-32ba-5c7f", ACTOR_WHO: "sun", VERB: "transfer", WHAT: "solar energy", DESTINATION: "planet", BY_THROUGH_HOW: "sunlight"]
+
+	// CENTRAL         ACTION: an erupting volcano releases sulfur gas and ash into the atmosphere     (b071-dc6e-dcc4-c885) [ ADJ:"erupt", AGENT_OBJECT:"volcano", ACTION2:"release", OBJECT_PROPERTY:"sulfur gas ash", WHEN_WHERE:"into atmosphere" ]
+	//row autoRow2 = [UUID:"b071-dc6e-dcc4-c885", ADJ: "erupt", AGENT_OBJECT: "volcano", ACTION2: "release", OBJECT_PROPERTY: "sulfur gas ash", WHEN_WHERE: "into atmosphere"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"b071-dc6e-dcc4-c885", ADJ: "erupt", AGENT_OBJECT: "volcano", ACTION2: "release", OBJECT_PROPERTY: "sulfur gas ash", WHEN_WHERE: "into atmosphere"]
+
+	// CENTRAL         AFFORDANCES: smoke from volcanic eruptions can disrupt sunlight from reaching Earth 's surface     (7608-3e56-1c0a-e0c4) [ ACTOR_THING:"smoke", PROPERTY_OBJECT:"from volcano eruption", VERB:"disrupt", PATIENT:"sunlight from reach earth surface" ]
+	//  Notes: smokes blocking the sunlight
+	//row autoRow3 = [UUID:"7608-3e56-1c0a-e0c4", ACTOR_THING: "smoke", PROPERTY_OBJECT: "from volcano eruption", VERB: "disrupt", PATIENT: "sunlight from reach earth surface"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"7608-3e56-1c0a-e0c4", ACTOR_THING: "smoke", PROPERTY_OBJECT: "from volcano eruption", VERB: "disrupt", PATIENT: "sunlight from reach earth surface"]
+
+	// CENTRAL         CHANGE: a volcano changes the environment around it by covering the environment in ash     (949b-2b44-b811-5b81) [ ACTOR_WHO:"volcano", VERB:"change", WHAT:"environment around", BY_THROUGH_HOW:"cover environment in ash" ]
+	//row autoRow4 = [UUID:"949b-2b44-b811-5b81", ACTOR_WHO: "volcano", VERB: "change", WHAT: "environment around", BY_THROUGH_HOW: "cover environment in ash"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"949b-2b44-b811-5b81", ACTOR_WHO: "volcano", VERB: "change", WHAT: "environment around", BY_THROUGH_HOW: "cover environment in ash"]
+
+	// CENTRAL         CHANGE-VEC: disrupting something from reaching something else decreases the availability of that something     (94dc-5cdd-f109-b702) [ ACTION:"disrupt something from reach something else", DIRECTION:"decrease", PATIENT:"availability of something" ]
+	//  Notes: disrupting means decreasing the availability
+	//row autoRow5 = [UUID:"94dc-5cdd-f109-b702", ACTION: "disrupt something from reach something else", DIRECTION: "decrease", PATIENT: "availability of something"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"94dc-5cdd-f109-b702", ACTION: "disrupt something from reach something else", DIRECTION: "decrease", PATIENT: "availability of something"]
+
+	// CENTRAL         CHANGE-VEC: volcanic ash in the atmosphere decreases the temperature by blocking the sun     (6e50-f578-2839-75ac) [ AGENT_OBJECT:"volcano ash", SCOPE1:"in atmosphere", DIRECTION:"decrease", PATIENT:"temperature", BY_THROUGH_HOW:"block sun" ]
+	//row autoRow6 = [UUID:"6e50-f578-2839-75ac", AGENT_OBJECT: "volcano ash", SCOPE1: "in atmosphere", DIRECTION: "decrease", PATIENT: "temperature", BY_THROUGH_HOW: "block sun"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"6e50-f578-2839-75ac", AGENT_OBJECT: "volcano ash", SCOPE1: "in atmosphere", DIRECTION: "decrease", PATIENT: "temperature", BY_THROUGH_HOW: "block sun"]
+
+	// CENTRAL         ACTION: volcanic eruption destroys the ecosystem around it     (e54b-0888-f3da-2bc4) [ AGENT_OBJECT:"volcano erupt", ACTION2:"destroy", OBJECT_PROPERTY:"ecosystem", WHEN_WHERE:"around" ]
+	//row autoRow7 = [UUID:"e54b-0888-f3da-2bc4", AGENT_OBJECT: "volcano erupt", ACTION2: "destroy", OBJECT_PROPERTY: "ecosystem", WHEN_WHERE: "around"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"e54b-0888-f3da-2bc4", AGENT_OBJECT: "volcano erupt", ACTION2: "destroy", OBJECT_PROPERTY: "ecosystem", WHEN_WHERE: "around"]
+
+	// CENTRAL         LOCATIONS: organisms are located on the surface of the Earth     (7ec6-6743-f258-1df3) [ THING_PROCESS:"organism", LOCATION:"surface", SCOPE:"of earth" ]
+	//row autoRow8 = [UUID:"7ec6-6743-f258-1df3", THING_PROCESS: "organism", LOCATION: "surface", SCOPE: "of earth"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"7ec6-6743-f258-1df3", THING_PROCESS: "organism", LOCATION: "surface", SCOPE: "of earth"]
+
+	// CENTRAL         KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"]
+
+	// CENTRAL         REQUIRES: a plant requires photosynthesis to grow ; survive     (fe74-c2b4-98c2-9496) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"photosynthesis", FOR_PURPOSE:"grow;survive" ]
+	//  Notes: photosynthesis for plant growth
+	//row autoRow10 = [UUID:"fe74-c2b4-98c2-9496", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "photosynthesis", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"fe74-c2b4-98c2-9496", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "photosynthesis", FOR_PURPOSE: "grow"]
+
+	// CENTRAL         REQUIRES: a plant requires sunlight for photosynthesis     (619e-a5d1-b505-4f69) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"sunlight", FOR_PURPOSE:"photosynthesis" ]
+	//  Notes: sunlight for photosynthesis
+	//row autoRow11 = [UUID:"619e-a5d1-b505-4f69", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "photosynthesis"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"619e-a5d1-b505-4f69", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "photosynthesis"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as a resource required by an organism decreases , the population of that organisms will decrease     (e174-c646-c985-0f67) [ AGENT_ATTRIBUTE1:"resource", SCOPE1A:"require by organism", CHANGE1:"decrease", QUANTITY_MEASURE2:"population of", AGENT_ATTRIBUTE2:"organism", CHANGE2:"decrease" ]
+	//row autoRow12 = [UUID:"e174-c646-c985-0f67", AGENT_ATTRIBUTE1: "resource", SCOPE1A: "require by organism", CHANGE1: "decrease", QUANTITY_MEASURE2: "population of", AGENT_ATTRIBUTE2: "organism", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"e174-c646-c985-0f67", AGENT_ATTRIBUTE1: "resource", SCOPE1A: "require by organism", CHANGE1: "decrease", QUANTITY_MEASURE2: "population of", AGENT_ATTRIBUTE2: "organism", CHANGE2: "decrease"]
+
+	// CENTRAL         ACTION: clouds ; dusts block visible light     (50b3-4849-c938-c284) [ AGENT_OBJECT:"cloud;dust", ACTION2:"block;block", OBJECT_PROPERTY:"visible light" ]
+	//row autoRow13 = [UUID:"50b3-4849-c938-c284", AGENT_OBJECT: "cloud", ACTION2: "block", OBJECT_PROPERTY: "visible light"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"50b3-4849-c938-c284", AGENT_OBJECT: "cloud", ACTION2: "block", OBJECT_PROPERTY: "visible light"]
+
+	// CENTRAL         IFTHEN: if sunlight is blocked from an area then that area lacks sunlight     (7001-a06c-e3fe-2d35) [ THING:"sunlight", ACTION1:"block from", OBJECT_PATIENT1:"area", ACTOR_AGENT_PROCESS2:"that area", ACTION3:"lack", OBJECT_PROPERTY3:"sunlight" ]
+	//row autoRow14 = [UUID:"7001-a06c-e3fe-2d35", THING: "sunlight", ACTION1: "block from", OBJECT_PATIENT1: "area", ACTOR_AGENT_PROCESS2: "that area", ACTION3: "lack", OBJECT_PROPERTY3: "sunlight"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"7001-a06c-e3fe-2d35", THING: "sunlight", ACTION1: "block from", OBJECT_PATIENT1: "area", ACTOR_AGENT_PROCESS2: "that area", ACTION3: "lack", OBJECT_PROPERTY3: "sunlight"]
+
+	// LEXGLUE         SYNONYMY: lack is similar to low ; little     (c477-accc-502e-618d) [ X1:"lack", X2:"low;little" ]
+	//row autoRow15 = [UUID:"c477-accc-502e-618d", X1: "lack", X2: "low"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"c477-accc-502e-618d", X1: "lack", X2: "low"]
+
+endinferencepattern

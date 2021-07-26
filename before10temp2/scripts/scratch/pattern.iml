@@ -1,0 +1,45 @@
+// Automatically converted pattern
+inferencepattern EARTHHUMIMPGlaciersTraces
+	// Plain text description
+	description = "e.g. what can be used as an evidence for a glacier once existed at some place"
+
+	// Requirements
+
+	// Row Definitions
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C
+	//row autoRow0 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice"]
+    row autoRow0 = [UUID:"4a5a-9115-28a9-b97b"]
+
+	// CENTRAL         CONTAINS: Earth contains glaciers and ice cap
+	//row autoRow1 = [UUID:"5962-c3e3-67cc-829b", OBJECT_AGENT:"earth", WHAT_IT_CONTAINS:"ice"]
+    row autoRow1 = [UUID:"5962-c3e3-67cc-829b"]
+
+	// CENTRAL        (OPTIONAL) ACTION: glaciers cover 10% of land on Earth
+	//row autoRow2 = [UUID:"8b49-0dfa-e6e0-48c1", AGENT_OBJECT:"glacier", WHEN_WHERE:"earth"]
+    row autoRow2 = [UUID:"8b49-0dfa-e6e0-48c1"]
+
+	// CENTRAL        (OPTIONAL) PROP-THINGS: ice is cold in temperature
+	row autoRow3 = [UUID:"d495-a1f3-29eb-04fe", THING:"ice"]
+
+	// CENTRALSW       FORMEDBY: U-shaped valley is formed by glaciers
+	//        HINTROW the Great Lakes were formed by glaciers moving over the ground
+	//        HINTROW a kettle is formed when chunks of ice left by glaciers melt
+	//        HINTROW sometimes piles of rock are formed by melting glaciers depositing rocks
+	//        HINTROW boulders ; sand ; gravel are formed by glaciers melting sometimes
+	//        HINTROW a glacier causes mechanical weathering
+	//        HINTROW glaciers moving cause scratches in rocks
+	row autoRow4 = [TABLE:"FORMEDBY", AGENT_PROCESS:"glacier"]
+
+	// CENTRAL         MADEOF: a glacier is made of ice
+	row autoRow5 = [UUID:"b901-aa66-c858-54e7", OBJECT:"glacier", MATERIAL:"ice"]
+
+	// CENTRAL         ACTION: a glacier moves slowly
+	row autoRow6 = [UUID:"cfd6-1d2a-381a-2ff1", AGENT_OBJECT:"glacier"]
+
+	// GROUNDING       KINDOF: ice is a kind of solid
+	row autoRow7 = [TABLE:"KINDOF", HYPONYM:"ice", HYPERNYM:"solid"]
+
+	// LEXGLUE         SYNONYMY: fresh water means freshwater
+	//## row autoRow8 = [UUID:"1fc0-1a1e-2e4e-6bc7", X:"water"]
+
+endinferencepattern

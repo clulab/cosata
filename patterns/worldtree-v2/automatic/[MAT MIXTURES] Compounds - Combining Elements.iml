@@ -1,0 +1,66 @@
+// Automatically converted pattern
+inferencepattern MAT_MIXTURES_Compounds_Combining_Elements
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       MADEOF: sodium chloride is always made of chemically combined chlorine and sodium     (44d0-0720-a568-afe0) [ OBJECT:"sodium chloride", QUALIFIER:"be always", VALUE:"chemically combine", MATERIAL:"chlorine sodium" ]
+	//        HINTROW a hydrocarbon molecule is made of hydrogen and carbon chemically combined     (cd58-1219-7d4f-71dc) [ OBJECT:"hydrocarbon molecule", MATERIAL:"hydrogen carbon", BY_THROUGH_HOW:"chemically combine" ]
+	//        HINTROW water is made of hydrogen and oxygen     (d3bf-21a7-2800-5223) [ OBJECT:"water", MATERIAL:"hydrogen oxygen" ]
+	//        HINTROW iron oxide ; rust ; Fe2O3 is made of iron and oxygen     (8d45-f6e2-c035-067b) [ OBJECT:"iron oxide;rust;fe2o3", MATERIAL:"iron oxygen" ]
+	//  Notes: compound components examples (X is madeof Y and Z)
+	//row autoRow0 = [TABLE:"MADEOF", OBJECT: <sodium_1>+*"POS:NN", MATERIAL: <chlorine_0>+<sodium_1>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"MADEOF", MATERIAL: <chlorine_0>+<sodium_1>]
+
+	// GROUNDING       KINDOF: sodium chloride is a kind of chemical compound     (5efe-966e-a1a6-df5e) [ HYPONYM:"sodium chloride", SCOPE1:"chemical", HYPERNYM:"compound" ]
+	//        HINTROW sodium bicarbonate is a kind of compound     (da29-c8b5-65dd-233e) [ HYPONYM:"sodium bicarbonate", HYPERNYM:"compound" ]
+	//        HINTROW water is a kind of compound     (9c5e-a6ea-6e77-4f1e) [ HYPONYM:"water", HYPERNYM:"compound" ]
+	//  Notes: compound examples
+	//row autoRow1 = [TABLE:"KINDOF", SCOPE1: "chemical", HYPERNYM: "compound"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "compound"]
+
+	// GROUNDING      (OPTIONAL) KINDOF: fire is a kind of chemical reaction     (6cf1-9d92-5a26-93fd) [ HYPONYM:"fire", HYPERNYM:"chemical react" ]
+	//        HINTROW photosynthesis is a kind of chemical reaction     (58c7-fc06-9312-d110) [ HYPONYM:"photosynthesis", HYPERNYM:"chemical react" ]
+	//row *autoRow2 = [TABLE:"KINDOF", HYPERNYM: "chemical react"] //OVER-CONSTR.
+	row *autoRow2 = [TABLE:"KINDOF", HYPERNYM: "chemical react"]
+
+	// GROUNDING       KINDOF: chlorine is a kind of element     (d176-e42a-2654-8d3c) [ HYPONYM:"chlorine", HYPERNYM:"element" ]
+	//        HINTROW hydrogen is a kind of element     (f861-f54e-3435-b0e6) [ HYPONYM:"hydrogen", HYPERNYM:"element" ]
+	//        HINTROW iron is a kind of element     (bb4d-ea33-08e1-7106) [ HYPONYM:"iron", HYPERNYM:"element" ]
+	//  Notes: Y is a kind of element
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: <chlorine_0>, HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: <chlorine_0>, HYPERNYM: "element"]
+
+	// GROUNDING       KINDOF: sodium is a kind of element     (0192-47c6-a615-1984) [ HYPONYM:"sodium", HYPERNYM:"element" ]
+	//        HINTROW carbon is a kind of element     (2ae6-3458-f1d9-a724) [ HYPONYM:"carbon", HYPERNYM:"element" ]
+	//        HINTROW oxygen is a kind of element     (936b-92a1-0e96-0846) [ HYPONYM:"oxygen", HYPERNYM:"element" ]
+	//  Notes: Z is a kind of element
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: <sodium_1>, HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: <sodium_1>, HYPERNYM: "element"]
+
+	// CENTRAL         CAUSE: combining ; mixing two substances chemically causes chemical reactions     (37e1-5b9e-00a1-5e21) [ CONDITION_VERB:"combine;mix", CONDITION_PATIENT:"two substance", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS:"chemically", RESULT_AGENT:"chemical reaction" ]
+	//row autoRow5 = [UUID:"37e1-5b9e-00a1-5e21", CONDITION_VERB: "combine", CONDITION_PATIENT: "two substance", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "chemically", RESULT_AGENT: "chemical reaction"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"37e1-5b9e-00a1-5e21", CONDITION_VERB: "combine", CONDITION_PATIENT: "two substance", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "chemically", RESULT_AGENT: "chemical reaction"]
+
+	// CENTRAL         CAUSE: chemical reactions cause new substances ; different substances to form     (3dca-07f2-1404-d404) [ CONDITION_AGENT_OBJECT:"chemical reaction", RESULT_AGENT:"new substance;differ substance", RESULT_VERB:"form" ]
+	//row autoRow6 = [UUID:"3dca-07f2-1404-d404", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "new substance", RESULT_VERB: "form"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3dca-07f2-1404-d404", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "new substance", RESULT_VERB: "form"]
+
+	// CENTRAL         MADEOF: a compound is made of two or more elements chemically combined     (6bb0-ea31-6fee-5e77) [ OBJECT:"compound", VALUE:"two much", MATERIAL:"element", BY_THROUGH_HOW:"chemically combine" ]
+	//row autoRow7 = [UUID:"6bb0-ea31-6fee-5e77", OBJECT: "compound", VALUE: "two much", MATERIAL: "element", BY_THROUGH_HOW: "chemically combine"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"6bb0-ea31-6fee-5e77", OBJECT: "compound", VALUE: "two much", MATERIAL: "element", BY_THROUGH_HOW: "chemically combine"]
+
+	// CENTRAL        (OPTIONAL) CONTAINS: chemical compounds contain chemical bonds between atoms ; between elements     (880b-ae92-483a-c9fa) [ ADJ:"chemical", OBJECT_AGENT:"compound", WHAT_IT_CONTAINS:"chemical bond", SCOPE:"between atom;between element" ]
+	//row *autoRow8 = [UUID:"880b-ae92-483a-c9fa", ADJ: "chemical", OBJECT_AGENT: "compound", WHAT_IT_CONTAINS: "chemical bond", SCOPE: "between atom"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"880b-ae92-483a-c9fa", ADJ: "chemical", OBJECT_AGENT: "compound", WHAT_IT_CONTAINS: "chemical bond", SCOPE: "between atom"]
+
+	// CENTRAL         KINDOF: a compound is a kind of substance     (fcf2-562c-5997-2086) [ HYPONYM:"compound", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"fcf2-562c-5997-2086", HYPONYM: "compound", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"fcf2-562c-5997-2086", HYPONYM: "compound", HYPERNYM: "substance"]
+
+endinferencepattern

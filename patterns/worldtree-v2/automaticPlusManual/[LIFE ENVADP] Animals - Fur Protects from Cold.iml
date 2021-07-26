@@ -1,0 +1,67 @@
+// Automatically converted pattern
+inferencepattern LIFE_ENVADP_Animals_Fur_Protects_from_Cold
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       REQUIRES: an animal usually requires a warm body temperature for survival     (b08a-c1bc-23ee-1815) [ OBJECT_AGENT_PROCESS:"animal", QUANTIFIER:"usually", VERB_REQUIRES:"require", OBJECT:"warm body temperature", FOR_PURPOSE:"survive" ]
+	//        HINTROW an animal requires warmth for survival     (2280-1ce3-3320-9547) [ OBJECT_AGENT_PROCESS:"animal", VERB_REQUIRES:"require", OBJECT:"warmth", FOR_PURPOSE:"survive" ]
+	//row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "warm"+*"POS:NN"+"temperature", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", FOR_PURPOSE: "survive"]
+
+	// GROUNDING       KINDOF: a seal is a kind of animal     (999d-78fd-e16b-a8b6) [ HYPONYM:"seal", HYPERNYM:"animal" ]
+	//        HINTROW a bear is a kind of animal     (5639-8136-4788-3ee6) [ HYPONYM:"bear", HYPERNYM:"animal" ]
+	//        HINTROW a rabbit is a kind of animal     (44d7-fef6-90ef-75aa) [ HYPONYM:"rabbit", HYPERNYM:"animal" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// CENTRAL         IFTHEN: if a living thing becomes too cold then that living thing will die     (d662-f8eb-acab-099f) [ THING:"live thing", ACTION1:"become", ADJ_QUANTITY1A:"too", OBJECT_PROPERTY1:"cold", ACTOR_AGENT_PROCESS2:"that live thing", ACTION3:"die" ]
+	//row autoRow2 = [UUID:"d662-f8eb-acab-099f", THING: "live thing", ACTION1: "become", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "that live thing", ACTION3: "die"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"d662-f8eb-acab-099f", THING: "live thing", ACTION1: "become", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "that live thing", ACTION3: "die"]
+
+	// CENTRAL         IFTHEN: if the environmental temperature ; air temperature is too cold then an animal ; a living thing in that environment may become cold     (2460-c937-4e53-293a) [ THING:"environment temperature;air temperature", ADJ_QUANTITY1A:"too", OBJECT_PROPERTY1:"cold", ACTOR_AGENT_PROCESS2:"animal;live thing", PROPERTY_SCOPE:"in that environment", OBJECT_PROPERTY3:"cold" ]
+	//row autoRow3 = [UUID:"2460-c937-4e53-293a", THING: "environment temperature", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "live thing", PROPERTY_SCOPE: "in that environment", OBJECT_PROPERTY3: "cold"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"2460-c937-4e53-293a", THING: "environment temperature", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "live thing", PROPERTY_SCOPE: "in that environment", OBJECT_PROPERTY3: "cold"]
+
+	// CENTRAL         EXAMPLES: An example of a seasonal change is an animal growing thick fur for keeping warm in the winter     (7adb-e986-7c30-64d9) [ AGENT_OBJECT1:"season change", AGENT_OBJECT2:"animal", VERB2:"grow", AGENT_OBJECT3:"thick fur", FOR_PURPOSE:"keep warm", SCOPE:"in winter" ]
+	//row autoRow4 = [UUID:"7adb-e986-7c30-64d9", AGENT_OBJECT1: "season change", AGENT_OBJECT2: "animal", VERB2: "grow", AGENT_OBJECT3: "thick fur", FOR_PURPOSE: "keep warm", SCOPE: "in winter"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"7adb-e986-7c30-64d9", AGENT_OBJECT1: "season change", AGENT_OBJECT2: "animal", VERB2: "grow", AGENT_OBJECT3: "thick fur", FOR_PURPOSE: "keep warm", SCOPE: "in winter"]
+
+	// CENTRAL         CHANGE-VEC: some animals' fur grows thicker for staying warm in the winter     (84a3-fb47-5416-db66) [ ADJ:"animal", AGENT_OBJECT:"fur", DIRECTION:"grow thick", FOR_PURPOSE:"stay warm", SCOPE2:"in winter" ]
+	//row autoRow5 = [UUID:"84a3-fb47-5416-db66", ADJ: "animal", AGENT_OBJECT: "fur", DIRECTION: "grow thick", FOR_PURPOSE: "stay warm", SCOPE2: "in winter"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"84a3-fb47-5416-db66", ADJ: "animal", AGENT_OBJECT: "fur", DIRECTION: "grow thick", FOR_PURPOSE: "stay warm", SCOPE2: "in winter"]
+
+	// CENTRAL         PROP-THINGS: Antarctica is extremely cold in temperature     (1f8f-10cc-81af-b835) [ THING:"antarctica", MAGNITUDE:"extremely", VALUE:"cold", ATTRIBUTE:"in temperature" ]
+	//row autoRow6 = [UUID:"1f8f-10cc-81af-b835", THING: "antarctica", MAGNITUDE: "extremely", VALUE: "cold", ATTRIBUTE: "in temperature"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"1f8f-10cc-81af-b835", THING: "antarctica", MAGNITUDE: "extremely", VALUE: "cold", ATTRIBUTE: "in temperature"]
+
+	// CENTRAL         PROP-THINGS: winter has cold temperatures ; weather     (9939-7d13-b72f-2674) [ THING:"winter", VALUE:"cold", ATTRIBUTE:"temperature;weather" ]
+	//row autoRow7 = [UUID:"9939-7d13-b72f-2674", THING: "winter", VALUE: "cold", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"9939-7d13-b72f-2674", THING: "winter", VALUE: "cold", ATTRIBUTE: "temperature"]
+
+	// CENTRAL         PARTOF: hair ; fur is a part of skin for protection ; keeping warm     (c72d-59a5-2ef3-0271) [ PART:"hair;fur", QUANTIFIER1:"be", WHOLE:"skin", FOR_PURPOSE:"protect;keep warm" ]
+	//row autoRow8 = [UUID:"c72d-59a5-2ef3-0271", PART: "hair", QUANTIFIER1: "be", WHOLE: "skin", FOR_PURPOSE: "keep warm"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"c72d-59a5-2ef3-0271", PART: "hair", QUANTIFIER1: "be", WHOLE: "skin", FOR_PURPOSE: "keep warm"]
+
+	// CENTRAL         PARTOF: fur is often part of an animal     (2f86-693e-7175-9932) [ PART:"fur", QUANTIFIER1:"be often", WHOLE:"animal" ]
+	//row autoRow9 = [UUID:"2f86-693e-7175-9932", PART: "fur", QUANTIFIER1: "be often", WHOLE: "animal"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"2f86-693e-7175-9932", PART: "fur", QUANTIFIER1: "be often", WHOLE: "animal"]
+
+	// CENTRAL         PROP-ENVIRONMENTATTRIB: the arctic environment usually is cold in temperature from being at a northern lattitude     (346e-7cc2-f910-5df4) [ ENVIRONMENT:"arctic", QUALIFIER:"usually", VALUE:"cold", PROPERTY:"temperature", WHY:"be at northern lattitude" ]
+	//row autoRow10 = [UUID:"346e-7cc2-f910-5df4", ENVIRONMENT: "arctic", QUALIFIER: "usually", VALUE: "cold", PROPERTY: "temperature", WHY: "be at northern lattitude"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"346e-7cc2-f910-5df4", ENVIRONMENT: "arctic", QUALIFIER: "usually", VALUE: "cold", PROPERTY: "temperature", WHY: "be at northern lattitude"]
+
+	// CENTRAL         KINDOF: winter is a kind of season     (633c-3fd4-7320-00cf) [ HYPONYM:"winter", HYPERNYM:"season" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"633c-3fd4-7320-00cf", HYPONYM: "winter", HYPERNYM: "season"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"633c-3fd4-7320-00cf", HYPONYM: "winter", HYPERNYM: "season"]
+
+	// LEXGLUE         OPPOSITES: keeping warm is the opposite of becoming cold     (7747-5d53-fc0d-16f3) [ VERB1:"keep", THING_PROPERTY1:"warm", VERB2:"become", THING_PROPERTY2:"cold" ]
+	//row autoRow12 = [UUID:"7747-5d53-fc0d-16f3", VERB1: "keep", THING_PROPERTY1: "warm", VERB2: "become", THING_PROPERTY2: "cold"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"7747-5d53-fc0d-16f3", VERB1: "keep", THING_PROPERTY1: "warm", VERB2: "become", THING_PROPERTY2: "cold"]
+
+endinferencepattern

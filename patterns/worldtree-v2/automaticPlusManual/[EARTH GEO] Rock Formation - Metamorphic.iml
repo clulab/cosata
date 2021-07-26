@@ -1,0 +1,101 @@
+// Automatically converted pattern
+inferencepattern EARTH_GEO_Rock_Formation_Metamorphic
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a quartzite is a kind of metamorphic rock     (b0a5-78a8-bcbc-00e8) [ HYPONYM:"quartzite", HYPERNYM:"metamorphic rock" ]
+	//        HINTROW gneiss is a kind of metamorphic rock     (508b-2d8b-6d54-a8f3) [ HYPONYM:"gneiss", HYPERNYM:"metamorphic rock" ]
+	//        HINTROW marble is a kind of metamorphic rock     (41e6-0974-2590-1700) [ HYPONYM:"marble", HYPERNYM:"metamorphic rock" ]
+	//        Hint Words: metamorphic rock
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "metamorphic rock"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "metamorphic rock"]
+
+	// GROUNDING       KINDOF: basalt is a kind of igneous rock     (a5c0-d9cf-135e-ad06) [ HYPONYM:"basalt", HYPERNYM:"igneous rock" ]
+	//        HINTROW granite is a kind of igneous rock     (65b7-dcc0-e9d7-6b54) [ HYPONYM:"granite", SCOPE1:"igneous", HYPERNYM:"rock" ]
+	//        HINTROW pumice is a kind of igneous rock     (236b-7456-aa80-d1b2) [ HYPONYM:"pumice", HYPERNYM:"igneous rock" ]
+	//        HINTROW gabbro is a kind of igneous rock     (86e7-a2ad-2a5d-b263) [ HYPONYM:"gabbro", HYPERNYM:"igneous rock" ]
+	//        Hint Words: igneous rocks
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "igneous rock"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "igneous rock"]
+
+	// GROUNDING       KINDOF: limestone is a kind of sedimentary rock     (f5b2-aca4-88b1-e3a4) [ HYPONYM:"limestone", SCOPE1:"sedimentary", HYPERNYM:"rock" ]
+	//        HINTROW sandstone is a kind of sedimentary rock     (77b8-2e5a-f47d-fda3) [ HYPONYM:"sandstone", SCOPE1:"sedimentary", HYPERNYM:"rock" ]
+	//        HINTROW shale is a kind of sedimentary rock     (77dc-05da-a205-2af9) [ HYPONYM:"shale", HYPERNYM:"sedimentary rock" ]
+	//        Hint Words: sedimentary rocks
+	//row autoRow2 = [TABLE:"KINDOF", SCOPE1: "sedimentary", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "rock"]
+
+	// CENTRAL         CHANGE: exposure to extreme heat and pressure changes ; metamorphoses sedimentary ; igneous rock into metamorphic rock     (a029-482a-dd71-9829) [ PROCESS_NAME:"exposure", ADJ_QUANTIFIER:"extreme", ACTOR_WHO:"heat pressure", VERB:"change;metamorphosis", WHAT:"sedimentary;igneous", FROM:"rock", INTO:"metamorphic rock" ]
+	//row autoRow3 = [UUID:"a029-482a-dd71-9829", PROCESS_NAME: "exposure", ADJ_QUANTIFIER: "extreme", ACTOR_WHO: "heat pressure", VERB: "change", WHAT: "sedimentary", FROM: "rock", INTO: "metamorphic rock"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"a029-482a-dd71-9829", PROCESS_NAME: "exposure", ADJ_QUANTIFIER: "extreme", ACTOR_WHO: "heat pressure", VERB: "change", WHAT: "sedimentary", FROM: "rock", INTO: "metamorphic rock"]
+
+	// CENTRAL         CHANGE: formation in the rock cycle means an old class of rocks changes into a new class of rocks     (3179-e5c7-2920-6db8) [ PROCESS_NAME:"form in rock cycle", ACTOR_WHO:"old class of rock", VERB:"change", INTO:"new class of rock" ]
+	//row autoRow4 = [UUID:"3179-e5c7-2920-6db8", PROCESS_NAME: "form in rock cycle", ACTOR_WHO: "old class of rock", VERB: "change", INTO: "new class of rock"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3179-e5c7-2920-6db8", PROCESS_NAME: "form in rock cycle", ACTOR_WHO: "old class of rock", VERB: "change", INTO: "new class of rock"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as rocks are buried deeper below other rocks , the pressure ; heat on that rock will increase     (0bab-0fad-ce84-76bb) [ AGENT_ATTRIBUTE1:"rock", ACTION1:"be bury", CHANGE1:"deep", SCOPE1B:"below other rock", AGENT_ATTRIBUTE2:"pressure;heat", SCOPE2A:"on rock", CHANGE2:"increase" ]
+	//row autoRow5 = [UUID:"0bab-0fad-ce84-76bb", AGENT_ATTRIBUTE1: "rock", ACTION1: "be bury", CHANGE1: "deep", SCOPE1B: "below other rock", AGENT_ATTRIBUTE2: "pressure", SCOPE2A: "on rock", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"0bab-0fad-ce84-76bb", AGENT_ATTRIBUTE1: "rock", ACTION1: "be bury", CHANGE1: "deep", SCOPE1B: "below other rock", AGENT_ATTRIBUTE2: "pressure", SCOPE2A: "on rock", CHANGE2: "increase"]
+
+	// CENTRAL         PROP-GENERIC: class is a property of a rock and includes values of sedimentary ; metamorphic ; igneous     (ac6e-0804-8e8f-2943) [ X:"class", Y:"rock", VALUES:"sedimentary;metamorphic;igneous" ]
+	//row autoRow6 = [UUID:"ac6e-0804-8e8f-2943", X: "class", Y: "rock", VALUES: "sedimentary"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"ac6e-0804-8e8f-2943", X: "class", Y: "rock", VALUES: "sedimentary"]
+
+	// CENTRAL         FORMEDBY: metamorphic rocks are formed by rocks being exposed to extreme heat and pressure     (3e93-0ac5-8049-440f) [ OBJECT:"metamorphic rock", AGENT_PROCESS:"rock", VERB:"be expose", PATIENT:"extreme heat pressure" ]
+	//row autoRow7 = [UUID:"3e93-0ac5-8049-440f", OBJECT: "metamorphic rock", AGENT_PROCESS: "rock", VERB: "be expose", PATIENT: "extreme heat pressure"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3e93-0ac5-8049-440f", OBJECT: "metamorphic rock", AGENT_PROCESS: "rock", VERB: "be expose", PATIENT: "extreme heat pressure"]
+
+	// CENTRAL         PROCESSSTAGES: the formation of metamorphic rock is a sequential process, with stages of rock being compacted, heated, recrystallized     (56b9-06de-d82b-67b2) [ PROCESS_NAME:"form of metamorphic rock", SEQUENTIAL_CYCLICAL:"sequential", STAGES:"rock be compact heat recrystallize" ]
+	//row autoRow8 = [UUID:"56b9-06de-d82b-67b2", PROCESS_NAME: "form of metamorphic rock", SEQUENTIAL_CYCLICAL: "sequential", STAGES: "rock be compact heat recrystallize"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"56b9-06de-d82b-67b2", PROCESS_NAME: "form of metamorphic rock", SEQUENTIAL_CYCLICAL: "sequential", STAGES: "rock be compact heat recrystallize"]
+
+	// CENTRAL         STAGE-IN-PROCESS: recrystallization is a stage in the formation process of metamorphic rocks only     (bba6-a8d2-48c2-fbc2) [ STAGE:"recrystallization", PROCESS:"form", SCOPE:"of metamorphic rock", QUANTIFIER2:"only" ]
+	//  Notes: 7bef-98f1-a3f7-b896->bba6-a8d2-48c2-fbc2
+	//row autoRow9 = [UUID:"bba6-a8d2-48c2-fbc2", STAGE: "recrystallization", PROCESS: "form", SCOPE: "of metamorphic rock", QUANTIFIER2: "only"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"bba6-a8d2-48c2-fbc2", STAGE: "recrystallization", PROCESS: "form", SCOPE: "of metamorphic rock", QUANTIFIER2: "only"]
+
+	// CENTRAL        (OPTIONAL) PROP-THINGS: the heat ; pressure is extreme ; intense deep below Earth 's crust     (4d0b-4f9f-5201-fff3) [ THING:"heat;pressure", VALUE:"extreme;intense", SCOPE_RELATIVETO:"deep below earth crust" ]
+	//row *autoRow10 = [UUID:"4d0b-4f9f-5201-fff3", THING: "heat", VALUE: "extreme", SCOPE_RELATIVETO: "deep below earth crust"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"4d0b-4f9f-5201-fff3", THING: "heat", VALUE: "extreme", SCOPE_RELATIVETO: "deep below earth crust"]
+
+	// CENTRAL         ATTRIBUTE-VALUE-RANGE: underground means buried deep below other rocks     (a4fc-3a91-f430-5229) [ THING:"underground", VALUE:"bury deep", ATTRIBUTE:"below other rock" ]
+	//row autoRow11 = [UUID:"a4fc-3a91-f430-5229", THING: "underground", VALUE: "bury deep", ATTRIBUTE: "below other rock"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"a4fc-3a91-f430-5229", THING: "underground", VALUE: "bury deep", ATTRIBUTE: "below other rock"]
+
+	// CENTRAL         FORMEDBY: different classes of rocks are formed by different methods     (2869-d2ab-bfe7-d8af) [ OBJECT:"differ class of rock", AGENT_PROCESS:"differ method" ]
+	//row autoRow12 = [UUID:"2869-d2ab-bfe7-d8af", OBJECT: "differ class of rock", AGENT_PROCESS: "differ method"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"2869-d2ab-bfe7-d8af", OBJECT: "differ class of rock", AGENT_PROCESS: "differ method"]
+
+	// CENTRAL        (OPTIONAL) ATTRIBUTE-VALUE-RANGE: extreme means very high in value     (b8d9-4ead-699d-2b5e) [ THING:"extreme", VALUE:"very high", ATTRIBUTE:"value" ]
+	//row *autoRow13 = [UUID:"b8d9-4ead-699d-2b5e", THING: "extreme", VALUE: "very high", ATTRIBUTE: "value"] //OVER-CONSTR.
+	row *autoRow13 = [UUID:"b8d9-4ead-699d-2b5e", THING: "extreme", VALUE: "very high", ATTRIBUTE: "value"]
+
+	// CENTRAL         KINDOF: igneous rock is a kind of rock     (075f-d7cb-993c-ade1) [ HYPONYM:"igneous rock", HYPERNYM:"rock" ]
+	//  Notes: peripheral
+	//row autoRow14 = [UUID:"075f-d7cb-993c-ade1", HYPONYM: "igneous rock", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"075f-d7cb-993c-ade1", HYPONYM: "igneous rock", HYPERNYM: "rock"]
+
+	// CENTRAL         KINDOF: metamorphic is a kind of rock     (28e0-0efa-52fc-4134) [ HYPONYM:"metamorphic", HYPERNYM:"rock" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"28e0-0efa-52fc-4134", HYPONYM: "metamorphic", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"28e0-0efa-52fc-4134", HYPONYM: "metamorphic", HYPERNYM: "rock"]
+
+	// CENTRAL         KINDOF: sedimentary rock is a kind of rock     (68cb-62b0-32a3-30e2) [ HYPONYM:"sedimentary rock", HYPERNYM:"rock" ]
+	//  Notes: peripheral
+	//row autoRow16 = [UUID:"68cb-62b0-32a3-30e2", HYPONYM: "sedimentary rock", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"68cb-62b0-32a3-30e2", HYPONYM: "sedimentary rock", HYPERNYM: "rock"]
+
+	// LEXGLUE         SYNONYMY: to change into means to form     (e156-6d5a-88c7-4edc) [ ACTION1:"change into", ACTION2:"form" ]
+	//row autoRow17 = [UUID:"e156-6d5a-88c7-4edc", ACTION1: "change into", ACTION2: "form"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"e156-6d5a-88c7-4edc", ACTION1: "change into", ACTION2: "form"]
+
+	// LEXGLUE         SYNONYMY: form means kind     (7c96-f704-e51e-1678) [ X1:"form", X2:"kind" ]
+	//row autoRow18 = [UUID:"7c96-f704-e51e-1678", X1: "form", X2: "kind"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"7c96-f704-e51e-1678", X1: "form", X2: "kind"]
+
+endinferencepattern

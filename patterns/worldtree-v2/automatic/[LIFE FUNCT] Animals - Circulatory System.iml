@@ -1,0 +1,41 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Circulatory_System
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PARTOF: blood is a part of the circulatory system     (e576-3be7-5e76-3b07) [ PART:"blood", QUANTIFIER1:"be", WHOLE:"circulatory system" ]
+	//        HINTROW capillaries are a part of the circulatory system     (a5e5-31e1-9bd6-aecd) [ PART:"capillary", WHOLE:"circulatory system" ]
+	//        HINTROW veins ; arteries are a part of the circulatory system     (ca03-b6ef-ae27-1535) [ PART:"vein;artery", WHOLE:"circulatory system" ]
+	//        HINTROW the heart is a part of the circulatory system     (aac5-9b7d-012e-9bac) [ PART:"heart", QUANTIFIER1:"be", WHOLE:"circulatory system" ]
+	//  Notes: spatial model
+	//row autoRow0 = [TABLE:"PARTOF", WHOLE: "circulatory system"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PARTOF", WHOLE: "circulatory system"]
+
+	// CENTRAL         TRANSFER: the circulatory system absorbs ; carries food ; substances from the digestive systems to the rest of the body     (fb66-e5c3-a56f-dac9) [ ACTOR_WHO:"circulatory system", VERB:"absorb;carry", WHAT:"food;substance", SOURCE:"digestive system", DESTINATION:"rest of body" ]
+	//  Notes: ea27-c3fc-7c64-eeb2->fb66-e5c3-a56f-dac9X system does Y
+	//row autoRow1 = [UUID:"fb66-e5c3-a56f-dac9", ACTOR_WHO: "circulatory system", VERB: "absorb", WHAT: "food", SOURCE: "digestive system", DESTINATION: "rest of body"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"fb66-e5c3-a56f-dac9", ACTOR_WHO: "circulatory system", VERB: "absorb", WHAT: "food", SOURCE: "digestive system", DESTINATION: "rest of body"]
+
+	// CENTRAL         KINDOF: the circulatory system is a kind of human ; organ ; body system     (2ffa-2399-dfe2-4856) [ HYPONYM:"circulatory system", SCOPE1:"human;organ;body", HYPERNYM:"system" ]
+	//  Notes: peripheral
+	//row autoRow2 = [UUID:"2ffa-2399-dfe2-4856", HYPONYM: "circulatory system", SCOPE1: "human", HYPERNYM: "system"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"2ffa-2399-dfe2-4856", HYPONYM: "circulatory system", SCOPE1: "human", HYPERNYM: "system"]
+
+	// CENTRAL         PARTOF: a body system is a part of the body ; an animal     (9d58-09eb-11bc-2be6) [ PART:"body system", WHOLE:"body;animal" ]
+	//row autoRow3 = [UUID:"9d58-09eb-11bc-2be6", PART: "body system", WHOLE: "body"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"9d58-09eb-11bc-2be6", PART: "body system", WHOLE: "body"]
+
+	// LEXGLUE         SYNONYMY: to transfer is similar to transport     (2195-1c32-9287-b22e) [ ACTION1:"transfer", ACTION2:"transport" ]
+	//row autoRow4 = [UUID:"2195-1c32-9287-b22e", ACTION1: "transfer", ACTION2: "transport"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"2195-1c32-9287-b22e", ACTION1: "transfer", ACTION2: "transport"]
+
+	// LEXGLUE         SYNONYMY: distributing is similar to carrying     (9f20-ae68-5f17-258a) [ ACTION1:"distribute", ACTION2:"carry" ]
+	//row autoRow5 = [UUID:"9f20-ae68-5f17-258a", ACTION1: "distribute", ACTION2: "carry"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"9f20-ae68-5f17-258a", ACTION1: "distribute", ACTION2: "carry"]
+
+endinferencepattern

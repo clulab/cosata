@@ -1,0 +1,74 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Cell_Theory_Things_are_made_of_cells
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: an apple tree is a kind of plant     (00a7-56fc-3c22-e6f2) [ HYPONYM:"apple tree", HYPERNYM:"plant" ]
+	//        HINTROW a lemon tree is a kind of plant     (9cf1-bc5a-d350-5541) [ HYPONYM:"lemon tree", HYPERNYM:"plant" ]
+	//        HINTROW a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// GROUNDING       KINDOF: a goldfish is a kind of fish     (502a-ad74-1aed-3da5) [ HYPONYM:"goldfish", HYPERNYM:"fish" ]
+	//        HINTROW tuna is a kind of fish     (402e-1817-1d04-e00f) [ HYPONYM:"tuna", HYPERNYM:"fish" ]
+	//        HINTROW trout is a kind of fish     (ac16-c85f-55f1-0725) [ HYPONYM:"trout", HYPERNYM:"fish" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "fish"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "fish"]
+
+	// GROUNDING       KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//        HINTROW a cat is a kind of animal     (1700-a363-df25-ad34) [ HYPONYM:"cat", HYPERNYM:"animal" ]
+	//        HINTROW a bat is a kind of animal     (7ca2-740e-37f4-0a9e) [ HYPONYM:"bat", HYPERNYM:"animal" ]
+	//        HINTROW a fish is a kind of animal     (9526-aecc-22b2-4b6a) [ HYPONYM:"fish", HYPERNYM:"animal" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// CENTRAL         MADEOF: all living things are made of cells according to the cell theory     (1e00-1b04-66ee-0a91) [ OBJECT:"live thing", MATERIAL:"cell", SCOPE:"accord cell theory" ]
+	//row autoRow3 = [UUID:"1e00-1b04-66ee-0a91", OBJECT: "live thing", MATERIAL: "cell", SCOPE: "accord cell theory"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"1e00-1b04-66ee-0a91", OBJECT: "live thing", MATERIAL: "cell", SCOPE: "accord cell theory"]
+
+	// CENTRAL         KINDOF: a multicellular organism is a kind of living thing     (a92e-cb62-22ee-5ddf) [ HYPONYM:"multicellular organism", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"a92e-cb62-22ee-5ddf", HYPONYM: "multicellular organism", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"a92e-cb62-22ee-5ddf", HYPONYM: "multicellular organism", HYPERNYM: "live thing"]
+
+	// CENTRAL         MADEOF: a multicellular organism is made of many cells     (b500-c807-29eb-78d5) [ OBJECT:"multicellular organism", VALUE:"many", MATERIAL:"cell" ]
+	//row autoRow5 = [UUID:"b500-c807-29eb-78d5", OBJECT: "multicellular organism", VALUE: "many", MATERIAL: "cell"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"b500-c807-29eb-78d5", OBJECT: "multicellular organism", VALUE: "many", MATERIAL: "cell"]
+
+	// CENTRAL         MADEOF: a living thing is made of cells     (6f96-e0e9-ed70-4dbc) [ OBJECT:"live thing", MATERIAL:"cell" ]
+	//row autoRow6 = [UUID:"6f96-e0e9-ed70-4dbc", OBJECT: "live thing", MATERIAL: "cell"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"6f96-e0e9-ed70-4dbc", OBJECT: "live thing", MATERIAL: "cell"]
+
+	// CENTRAL         KINDOF: a plant is a kind of living thing     (2e89-d8e8-a8fb-9acc) [ HYPONYM:"plant", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"2e89-d8e8-a8fb-9acc", HYPONYM: "plant", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"2e89-d8e8-a8fb-9acc", HYPONYM: "plant", HYPERNYM: "live thing"]
+
+	// CENTRAL         KINDOF: a single-celled organism is a kind of living thing     (429b-b860-9460-60c7) [ HYPONYM:"single-celled organism;single cell organism", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"429b-b860-9460-60c7", HYPONYM: "single cell organism", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"429b-b860-9460-60c7", HYPONYM: "single cell organism", HYPERNYM: "live thing"]
+
+	// CENTRAL         MADEOF: a single-celled organism is made of only one cell     (eae6-6cb1-797a-dd95) [ OBJECT:"single-celled organism;single cell organism", VALUE:"only one", MATERIAL:"cell" ]
+	//row autoRow9 = [UUID:"eae6-6cb1-797a-dd95", OBJECT: "single cell organism", VALUE: "only one", MATERIAL: "cell"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"eae6-6cb1-797a-dd95", OBJECT: "single cell organism", VALUE: "only one", MATERIAL: "cell"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+	// CENTRAL        (OPTIONAL) MADEOF: nonliving things are not made of cells     (0771-81b9-a81c-a57c) [ OBJECT:"nonliving thing", QUALIFIER:"be not", MATERIAL:"cell" ]
+	//row *autoRow11 = [UUID:"0771-81b9-a81c-a57c", OBJECT: "nonliving thing", QUALIFIER: "be not", MATERIAL: "cell"] //OVER-CONSTR.
+	row *autoRow11 = [UUID:"0771-81b9-a81c-a57c", OBJECT: "nonliving thing", QUALIFIER: "be not", MATERIAL: "cell"]
+
+	// LEXGLUE         SYNONYMY: an organism is a living thing     (87a0-dd02-dd6d-ee60) [ X1:"organism", X2:"live thing" ]
+	//row autoRow12 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"]
+
+endinferencepattern

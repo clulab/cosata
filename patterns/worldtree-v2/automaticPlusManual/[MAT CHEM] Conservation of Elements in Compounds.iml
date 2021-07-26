@@ -1,0 +1,76 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Conservation_of_Elements_in_Compounds
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       MADEOF: iron oxide ; rust ; Fe2O3 is made of iron and oxygen     (8d45-f6e2-c035-067b) [ OBJECT:"iron oxide;rust;fe2o3", MATERIAL:"iron oxygen" ]
+	//        HINTROW water is made of hydrogen and oxygen     (d3bf-21a7-2800-5223) [ OBJECT:"water", MATERIAL:"hydrogen oxygen" ]
+	//  Notes: X is made of Y and Z
+	//row autoRow0 = [TABLE:"MADEOF", OBJECT: <iron_0>+*"POS:NN", MATERIAL: <iron_0>+"oxygen"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"MADEOF", OBJECT: <rust_1>, MATERIAL: <iron_0>+"oxygen"]
+
+	// CENTRALSW       KINDOF: iron is a kind of element     (bb4d-ea33-08e1-7106) [ HYPONYM:"iron", HYPERNYM:"element" ]
+	//        HINTROW hydrogen is a kind of element     (f861-f54e-3435-b0e6) [ HYPONYM:"hydrogen", HYPERNYM:"element" ]
+	//  Notes: Y column
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: <iron_0>, HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: <iron_0>, HYPERNYM: "element"]
+
+	// CENTRALSW       KINDOF: rust is a kind of substance     (5d6b-b4b0-a77a-6df4) [ HYPONYM:"rust", HYPERNYM:"substance" ]
+	//        HINTROW water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//  Notes: X column
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <rust_1>, HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <rust_1>, HYPERNYM: "substance"]
+
+	// CENTRAL         CAUSE: chemical reactions do not cause the total number of atoms to change     (defb-227b-b6fd-608f) [ CONDITION_AGENT_OBJECT:"chemical reaction", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS:"do not", RESULT_AGENT:"total numb of atom", RESULT_VERB:"change" ]
+	//  Notes: atom number stays the same
+	//row autoRow3 = [UUID:"defb-227b-b6fd-608f", CONDITION_AGENT_OBJECT: "chemical reaction", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "do not", RESULT_AGENT: "total numb of atom", RESULT_VERB: "change"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"defb-227b-b6fd-608f", CONDITION_AGENT_OBJECT: "chemical reaction", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "do not", RESULT_AGENT: "total numb of atom", RESULT_VERB: "change"]
+
+	// CENTRAL         CAUSE: chemical reactions cause new substances ; different substances to form     (3dca-07f2-1404-d404) [ CONDITION_AGENT_OBJECT:"chemical reaction", RESULT_AGENT:"new substance;differ substance", RESULT_VERB:"form" ]
+	//  Notes: chemical reaction --> new  substance
+	//row autoRow4 = [UUID:"3dca-07f2-1404-d404", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "new substance", RESULT_VERB: "form"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3dca-07f2-1404-d404", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "new substance", RESULT_VERB: "form"]
+
+	// CENTRAL         ACTION: iron in contact with water and oxygen will rust     (6d3e-e79a-9d08-519b) [ AGENT_OBJECT:"iron", SCOPE1:"in contact with water oxygen", ACTION2:"rust" ]
+	//  Notes: example of a chemical reaction
+	//row autoRow5 = [UUID:"6d3e-e79a-9d08-519b", AGENT_OBJECT: <iron_0>, SCOPE1: "in contact with water oxygen", ACTION2: <rust_1>] //OVER-CONSTR.
+	row autoRow5 = [UUID:"6d3e-e79a-9d08-519b", AGENT_OBJECT: <iron_0>, SCOPE1: "in contact with water oxygen", ACTION2: <rust_1>]
+
+	// CENTRAL         ACTION: the elements in the chemical reaction stays the same after the reaction     (d91c-b6ac-564d-fdc3) [ AGENT_OBJECT:"element", SCOPE1:"in chemical react", ACTION2:"stay", OBJECT_PROPERTY:"same", WHEN_WHERE:"after react" ]
+	//  Notes: elements number stays the same
+	//row autoRow6 = [UUID:"d91c-b6ac-564d-fdc3", AGENT_OBJECT: "element", SCOPE1: "in chemical react", ACTION2: "stay", OBJECT_PROPERTY: "same", WHEN_WHERE: "after react"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"d91c-b6ac-564d-fdc3", AGENT_OBJECT: "element", SCOPE1: "in chemical react", ACTION2: "stay", OBJECT_PROPERTY: "same", WHEN_WHERE: "after react"]
+
+	// CENTRAL         KINDOF: rust forming is a kind of chemical change     (3fb1-78ec-77f8-d713) [ HYPONYM:"rust form", SCOPE1:"chemical", HYPERNYM:"change" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"3fb1-78ec-77f8-d713", HYPONYM: <rust_1>+"form", SCOPE1: "chemical", HYPERNYM: "change"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3fb1-78ec-77f8-d713", HYPONYM: <rust_1>+"form", SCOPE1: "chemical", HYPERNYM: "change"]
+
+	// CENTRAL         CAUSE: chemical reactions cause chemical change     (0f0d-2cc5-fcc1-3c1f) [ CONDITION_AGENT_OBJECT:"chemical reaction", RESULT_AGENT:"chemical change" ]
+	//row autoRow8 = [UUID:"0f0d-2cc5-fcc1-3c1f", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "chemical change"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"0f0d-2cc5-fcc1-3c1f", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "chemical change"]
+
+	// CENTRAL         KINDOF: oxygen is a kind of element     (936b-92a1-0e96-0846) [ HYPONYM:"oxygen", HYPERNYM:"element" ]
+	//  Notes: Z column
+	//row autoRow9 = [UUID:"936b-92a1-0e96-0846", HYPONYM: "oxygen", HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"936b-92a1-0e96-0846", HYPONYM: "oxygen", HYPERNYM: "element"]
+
+	// CENTRAL         MADEOF: substances are made of molecules     (1f87-3d79-4268-86d2) [ OBJECT:"substance", MATERIAL:"molecule" ]
+	//row autoRow10 = [UUID:"1f87-3d79-4268-86d2", OBJECT: "substance", MATERIAL: "molecule"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"1f87-3d79-4268-86d2", OBJECT: "substance", MATERIAL: "molecule"]
+
+	// CENTRAL         ACTION: metal rusts     (988e-84e2-f0b3-0538) [ AGENT_OBJECT:"metal", ACTION2:"rust" ]
+	//row autoRow11 = [UUID:"988e-84e2-f0b3-0538", AGENT_OBJECT: "metal", ACTION2: <rust_1>] //OVER-CONSTR.
+	row autoRow11 = [UUID:"988e-84e2-f0b3-0538", AGENT_OBJECT: "metal", ACTION2: <rust_1>]
+
+	// CENTRAL         KINDOF: iron is a kind of metal     (de4c-ca36-c336-540f) [ HYPONYM:"iron", HYPERNYM:"metal" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"de4c-ca36-c336-540f", HYPONYM: <iron_0>, HYPERNYM: "metal"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"de4c-ca36-c336-540f", HYPONYM: <iron_0>, HYPERNYM: "metal"]
+
+endinferencepattern

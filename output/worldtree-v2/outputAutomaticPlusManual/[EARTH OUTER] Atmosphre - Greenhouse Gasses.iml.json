@@ -1,0 +1,30 @@
+{"patternMatches": [
+{
+	"patternName":"EARTH_OUTER_Atmosphre_Greenhouse_Gasses",
+	"matches":[
+		{
+		"uuids": ["7051-de21-70b0-8c49","dc5f-51cc-0c46-18df","244e-0024-b731-9ef5","9d62-f0d6-f0a5-6846","3489-a424-c6b0-568a","7d84-2263-9ae5-822c","b8bd-0f06-439a-5721","7d5e-daf7-f39b-de15","7ab2-0e60-962b-f6ab"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7051-de21-70b0-8c49", "rowText": "the Earth 's atmosphere is made of 0 to 4 percent hydrogen ; water vapor by volume", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "dc5f-51cc-0c46-18df", "rowText": "water vapor is a kind of greenhouse gas", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "244e-0024-b731-9ef5", "rowText": "greenhouse gases absorbing infrared radation increases the temperature of the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d62-f0d6-f0a5-6846", "rowText": "water vapor is the largest amount of greenhouse gas in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3489-a424-c6b0-568a", "rowText": "if greenhouse gases are absent , then the atmosphere will be cooler", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7d84-2263-9ae5-822c", "rowText": "greenhouse gases are a part of the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "b8bd-0f06-439a-5721", "rowText": "the greenhouse effect is when carbon in the air heats a planet 's atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7d5e-daf7-f39b-de15", "rowText": "carbon dioxide can trap solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7ab2-0e60-962b-f6ab", "rowText": "as the amount of carbon dioxide in the atmosphere increases , the temperature of the planet ; the atmosphere will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"vapor_1", "value":"vapor" },
+			{ "name":"water_0", "value":"water" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"vapor_1", "value":"vapor" },
+			{ "name":"water_0", "value":"water" }
+		]
+		}
+	]
+}
+]}
+

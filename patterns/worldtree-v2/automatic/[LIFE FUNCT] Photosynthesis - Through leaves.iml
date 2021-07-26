@@ -1,0 +1,87 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Photosynthesis_Through_leaves
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PARTOF: a leaf is a part of a green plant     (ecf3-617e-32df-416b) [ PART:"leaf", WHOLE:"green plant" ]
+	//        HINTROW a leaf is a part of a tree     (7f97-3a19-456e-8fdc) [ PART:"leaf", QUANTIFIER1:"be", WHOLE:"tree" ]
+	//row autoRow0 = [TABLE:"PARTOF", PART: "leaf", WHOLE: "green plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PARTOF", PART: "leaf"]
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW a lemon tree is a kind of plant     (9cf1-bc5a-d350-5541) [ HYPONYM:"lemon tree", HYPERNYM:"plant" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// CENTRAL         CHANGE: photosynthesis means producers ; green plants convert from carbon dioxide and water and solar energy into carbohydrates and food and oxygen for themselves     (0962-4a47-4e17-ce97) [ PROCESS_NAME:"photosynthesis", ACTOR_WHO:"producer;green plant", VERB:"convert", FROM:"carbon dioxide water solar energy", INTO:"carbohydrate food oxygen" ]
+	//row autoRow2 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"]
+
+	// CENTRAL         SOURCEOF: photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates     (a9fc-ec58-9496-d635) [ AGENT:"photosynthesis", VERB_SOURCEOF_PROVIDE_ETC:"be source of;make", WHAT_IT_PROVIDES:"food;energy", AGENT_IT_PROVIDES_THING_TO:"plant", BY_THROUGH_HOW:"convert carbon dioxide water sunlight into carbohydrate" ]
+	//row autoRow3 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as flatness of a leaf increases , the amount of sunlight that leaf can absorb will increase     (4b24-4db5-ec89-d94c) [ QUANTITY_MEASURE1:"flatness", AGENT_ATTRIBUTE1:"of leaf", CHANGE1:"increase", QUANTITY_MEASURE2:"amount", AGENT_ATTRIBUTE2:"of sunlight", SCOPE2A:"that leaf absorb", CHANGE2:"increase" ]
+	//row autoRow4 = [UUID:"4b24-4db5-ec89-d94c", QUANTITY_MEASURE1: "flatness", AGENT_ATTRIBUTE1: "of leaf", CHANGE1: "increase", QUANTITY_MEASURE2: "amount", AGENT_ATTRIBUTE2: "of sunlight", SCOPE2A: "that leaf absorb", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4b24-4db5-ec89-d94c", QUANTITY_MEASURE1: "flatness", AGENT_ATTRIBUTE1: "of leaf", CHANGE1: "increase", QUANTITY_MEASURE2: "amount", AGENT_ATTRIBUTE2: "of sunlight", SCOPE2A: "that leaf absorb", CHANGE2: "increase"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the size of a leaf increases , the amount of sunlight absorbed by that leaf will increase     (1dab-d0e6-0b3a-1f75) [ QUANTITY_MEASURE1:"size", AGENT_ATTRIBUTE1:"of leaf", CHANGE1:"increase", QUANTITY_MEASURE2:"amount of", AGENT_ATTRIBUTE2:"sunlight", ACTION2:"absorb", PATIENT2:"by leaf", CHANGE2:"increase" ]
+	//row autoRow5 = [UUID:"1dab-d0e6-0b3a-1f75", QUANTITY_MEASURE1: "size", AGENT_ATTRIBUTE1: "of leaf", CHANGE1: "increase", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "sunlight", ACTION2: "absorb", PATIENT2: "by leaf", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"1dab-d0e6-0b3a-1f75", QUANTITY_MEASURE1: "size", AGENT_ATTRIBUTE1: "of leaf", CHANGE1: "increase", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "sunlight", ACTION2: "absorb", PATIENT2: "by leaf", CHANGE2: "increase"]
+
+	// CENTRAL         ACTION: a leaf absorbs sunlight to perform photosynthesis     (0514-7919-c1bf-6188) [ AGENT_OBJECT:"leaf", ACTION2:"absorb", OBJECT_PROPERTY:"sunlight", FOR_PURPOSE:"perform photosynthesis" ]
+	//row autoRow6 = [UUID:"0514-7919-c1bf-6188", AGENT_OBJECT: "leaf", ACTION2: "absorb", OBJECT_PROPERTY: "sunlight", FOR_PURPOSE: "perform photosynthesis"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"0514-7919-c1bf-6188", AGENT_OBJECT: "leaf", ACTION2: "absorb", OBJECT_PROPERTY: "sunlight", FOR_PURPOSE: "perform photosynthesis"]
+
+	// CENTRAL         KINDOF: large leaves are a kind of adaptation for absorbing sunlight     (0fef-e04d-dcf6-d43a) [ HYPONYM:"large leaf", HYPERNYM:"adapt", FOR_PURPOSE:"absorb sunlight" ]
+	//row autoRow7 = [UUID:"0fef-e04d-dcf6-d43a", HYPONYM: "large leaf", HYPERNYM: "adapt", FOR_PURPOSE: "absorb sunlight"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"0fef-e04d-dcf6-d43a", HYPONYM: "large leaf", HYPERNYM: "adapt", FOR_PURPOSE: "absorb sunlight"]
+
+	// CENTRAL         REQUIRES: a plant requires sunlight for photosynthesis     (619e-a5d1-b505-4f69) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"sunlight", FOR_PURPOSE:"photosynthesis" ]
+	//row autoRow8 = [UUID:"619e-a5d1-b505-4f69", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "photosynthesis"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"619e-a5d1-b505-4f69", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "photosynthesis"]
+
+	// CENTRAL         ACTION: a leaf performs photosynthesis ; gas exchange     (8958-fc28-d9ce-a1d6) [ AGENT_OBJECT:"leaf", ACTION2:"perform", OBJECT_PROPERTY:"photosynthesis;gas exchange" ]
+	//row autoRow9 = [UUID:"8958-fc28-d9ce-a1d6", AGENT_OBJECT: "leaf", ACTION2: "perform", OBJECT_PROPERTY: "gas exchange"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"8958-fc28-d9ce-a1d6", AGENT_OBJECT: "leaf", ACTION2: "perform", OBJECT_PROPERTY: "gas exchange"]
+
+	// CENTRAL         KINDOF: carbon dioxide is a kind of gas     (96ff-31bb-ea13-9aff) [ HYPONYM:"carbon dioxide", HYPERNYM:"gas" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"96ff-31bb-ea13-9aff", HYPONYM: "carbon dioxide", HYPERNYM: "gas"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"96ff-31bb-ea13-9aff", HYPONYM: "carbon dioxide", HYPERNYM: "gas"]
+
+	// CENTRAL         LOCATIONS: carbon dioxide can be found in the air     (3cff-4d77-9e27-7dc5) [ THING_PROCESS:"carbon dioxide", LOCATION:"air" ]
+	//row autoRow11 = [UUID:"3cff-4d77-9e27-7dc5", THING_PROCESS: "carbon dioxide", LOCATION: "air"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"3cff-4d77-9e27-7dc5", THING_PROCESS: "carbon dioxide", LOCATION: "air"]
+
+	// CENTRAL        (OPTIONAL) PROP-THINGS: a leaf is often green in color     (c904-3dbd-0d11-2f34) [ THING:"leaf", QUALIFIER2:"often", VALUE:"green", ATTRIBUTE:"in color" ]
+	//row *autoRow12 = [UUID:"c904-3dbd-0d11-2f34", THING: "leaf", QUALIFIER2: "often", VALUE: "green", ATTRIBUTE: "in color"] //OVER-CONSTR.
+	row *autoRow12 = [UUID:"c904-3dbd-0d11-2f34", THING: "leaf", QUALIFIER2: "often", VALUE: "green", ATTRIBUTE: "in color"]
+
+	// CENTRAL         LOCATIONS: most chloroplasts are found in the leaves of a plant     (962d-0077-a672-6f9a) [ QUANTIFIER:"much", THING_PROCESS:"chloroplast", LOCATION:"leaf", SCOPE:"of plant" ]
+	//row autoRow13 = [UUID:"962d-0077-a672-6f9a", QUANTIFIER: "much", THING_PROCESS: "chloroplast", LOCATION: "leaf", SCOPE: "of plant"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"962d-0077-a672-6f9a", QUANTIFIER: "much", THING_PROCESS: "chloroplast", LOCATION: "leaf", SCOPE: "of plant"]
+
+	// CENTRAL         USEDFOR: chlorophyll is used for absorbing light energy by plants     (26fe-ab70-b4a4-fe79) [ AGENT_OBJECT:"chlorophyll", FOR_PURPOSE:"absorb", PATIENT:"light energy", AGENT_THING_WHO_USES:"plant" ]
+	//row autoRow14 = [UUID:"26fe-ab70-b4a4-fe79", AGENT_OBJECT: "chlorophyll", FOR_PURPOSE: "absorb", PATIENT: "light energy", AGENT_THING_WHO_USES: "plant"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"26fe-ab70-b4a4-fe79", AGENT_OBJECT: "chlorophyll", FOR_PURPOSE: "absorb", PATIENT: "light energy", AGENT_THING_WHO_USES: "plant"]
+
+	// CENTRAL         CONTAINS: a chloroplast contains chlorophyll     (e856-9caa-346e-b925) [ OBJECT_AGENT:"chloroplast", WHAT_IT_CONTAINS:"chlorophyll" ]
+	//row autoRow15 = [UUID:"e856-9caa-346e-b925", OBJECT_AGENT: "chloroplast", WHAT_IT_CONTAINS: "chlorophyll"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"e856-9caa-346e-b925", OBJECT_AGENT: "chloroplast", WHAT_IT_CONTAINS: "chlorophyll"]
+
+	// CENTRAL         KINDOF: oxygen is a kind of gas at room temperature     (16b7-673f-bc0d-ed99) [ HYPONYM:"oxygen", HYPERNYM:"gas", SCOPE2:"at room temperature" ]
+	//  Notes: peripheral
+	//row autoRow16 = [UUID:"16b7-673f-bc0d-ed99", HYPONYM: "oxygen", HYPERNYM: "gas", SCOPE2: "at room temperature"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"16b7-673f-bc0d-ed99", HYPONYM: "oxygen", HYPERNYM: "gas", SCOPE2: "at room temperature"]
+
+	// CENTRAL         REQUIRES: a plant requires photosynthesis to grow ; survive     (fe74-c2b4-98c2-9496) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"photosynthesis", FOR_PURPOSE:"grow;survive" ]
+	//row autoRow17 = [UUID:"fe74-c2b4-98c2-9496", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "photosynthesis", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"fe74-c2b4-98c2-9496", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "photosynthesis", FOR_PURPOSE: "grow"]
+
+endinferencepattern

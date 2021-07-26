@@ -1,0 +1,124 @@
+// Automatically converted pattern
+inferencepattern CEL_SIZES_Brightness_by_Size
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as the size of a light source increases , that light will appear brighter     (ef6d-b9d2-a18b-5c8b) [ QUANTITY_MEASURE1:"size of", AGENT_ATTRIBUTE1:"light source", CHANGE1:"increase", AGENT_ATTRIBUTE2:"light", ACTION2:"appear", CHANGE2:"bright" ]
+	//        HINTROW as the size of a light source decreases , that light will appear dimmer     (b395-4159-cc89-126b) [ QUANTITY_MEASURE1:"size of", AGENT_ATTRIBUTE1:"light source", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"light", ACTION2:"appear", CHANGE2:"dim" ]
+	//  Notes: the opposite condition can be populated in the tablestore
+	//row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "size of", AGENT_ATTRIBUTE1: "light source", CHANGE1: "increase", AGENT_ATTRIBUTE2: "light", ACTION2: "appear", CHANGE2: <bright_0>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "size of", AGENT_ATTRIBUTE1: "light source", AGENT_ATTRIBUTE2: "light", ACTION2: "appear", CHANGE2: <bright_0a>]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: larger means greater ; higher ; more ; increase in size     (8b56-35cc-d534-8cad) [ THING:"large", VALUE:"great;high;much;increase", ATTRIBUTE:"size" ]
+	//        HINTROW largest means greatest in size     (a183-80da-46fa-bfa6) [ THING:"large", VALUE:"great", ATTRIBUTE:"size" ]
+	//  Notes: "smaller means.." can be included when the size/brightness relationship is populated.
+	//row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "large", VALUE: "great", ATTRIBUTE: "size"] //OVER-CONSTR.
+    //## No explicit links for this one currently (e.g. as distance decreases, size appears to increase/get larger). 
+	//## row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "large", VALUE: "great", ATTRIBUTE: "size"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: brighter means higher ; greater in brightness     (72aa-c401-72cf-ded5) [ THING:"bright", VALUE:"high;great", ATTRIBUTE:"brightness" ]
+	//        HINTROW dimmer means less bright     (e70f-e13e-37af-1fda) [ THING:"dim", VALUE:"little", ATTRIBUTE:"bright" ]
+	//row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: <bright_0>, ATTRIBUTE: "brightness"] //OVER-CONSTR.
+	row autoRow2a = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: <bright_0a>]
+    row autoRow2b = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: <bright_0b>]
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as the source of light becomes closer , that source of light will appear brighter     (64ae-b298-6b34-a19d) [ QUANTITY_MEASURE1:"source", AGENT_ATTRIBUTE1:"of light", ACTION1:"become", CHANGE1:"close", QUANTITY_MEASURE2:"source", AGENT_ATTRIBUTE2:"of light", ACTION2:"appear", CHANGE2:"bright" ]
+	//        HINTROW as the source of light becomes farther , that source of light will appear dimmer     (247f-1076-f052-4a42) [ QUANTITY_MEASURE1:"source", AGENT_ATTRIBUTE1:"of light", ACTION1:"become", CHANGE1:"far", QUANTITY_MEASURE2:"source", AGENT_ATTRIBUTE2:"of light", ACTION2:"appear", CHANGE2:"dim" ]
+	//row autoRow3 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "source", AGENT_ATTRIBUTE1: "of light", ACTION1: "become", QUANTITY_MEASURE2: "source", AGENT_ATTRIBUTE2: "of light", ACTION2: "appear", CHANGE2: <bright_0>] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "source", AGENT_ATTRIBUTE1: "of light", ACTION1: "become", QUANTITY_MEASURE2: "source", AGENT_ATTRIBUTE2: "of light", ACTION2: "appear", CHANGE2: <bright_0b>]
+
+
+	// CENTRAL         MEASUREMENTS: apparent magnitude is a measure of the brightness of a celestial object ; celestial body as observed on Earth     (1bae-622f-4093-d6da) [ MEASURE:"apparent magnitude", QUANTITY_ADJ:"measure of", ATTRIBUTE:"brightness of", AGENT:"celestial object;celestial body", SCOPE:"a observe on earth" ]
+	//row autoRow6 = [UUID:"1bae-622f-4093-d6da", MEASURE: "apparent magnitude", QUANTITY_ADJ: "measure of", ATTRIBUTE: "brightness of", AGENT: "celestial object", SCOPE: "a observe on earth"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"1bae-622f-4093-d6da", MEASURE: "apparent magnitude", QUANTITY_ADJ: "measure of", ATTRIBUTE: "brightness of", AGENT: "celestial object", SCOPE: "a observe on earth"]
+
+	// CENTRAL         COMPARISON: the Sun is the largest celestial body in the solar system     (13af-148e-6de8-60de) [ THING:"sun", ACTION1:"be", COMPARISON:"large", WHAT:"celestial body", SCOPE2:"in solar system" ]
+	//  Notes: b22e-a262-859f-aa35->13af-148e-6de8-60de
+	//row autoRow7 = [UUID:"13af-148e-6de8-60de", THING: "sun", ACTION1: "be", COMPARISON: "large", WHAT: "celestial body", SCOPE2: "in solar system"] //OVER-CONSTR.
+	//row autoRow7 = [UUID:"13af-148e-6de8-60de", THING: "sun", ACTION1: "be", COMPARISON: "large", WHAT: "celestial body", SCOPE2: "in solar system"]
+
+	// CENTRAL         PROP-GENERIC: brightness is a property of a light source and includes values of bright ; dim     (2980-ded2-b96d-7722) [ X:"brightness", Y:"light source", VALUES:"bright;dim" ]
+	//row autoRow11 = [UUID:"2980-ded2-b96d-7722", X: "brightness", Y: "light source", VALUES: <bright_0>] //OVER-CONSTR.
+	row autoRow11 = [UUID:"2980-ded2-b96d-7722", X: "brightness", Y: "light source", VALUES: <bright_0>]
+
+	// LEXGLUE         OPPOSITES: dimmer is the opposite of brighter     (67b1-cfae-5a8e-a28c) [ THING_PROPERTY1:"dim", THING_PROPERTY2:"bright" ]
+	//row autoRow16 = [UUID:"67b1-cfae-5a8e-a28c", THING_PROPERTY1: "dim", THING_PROPERTY2: <bright_0>] //OVER-CONSTR.
+	row autoRow16 = [UUID:"67b1-cfae-5a8e-a28c", THING_PROPERTY1: "dim", THING_PROPERTY2: <bright_0>]
+
+	// LEXGLUE         OPPOSITES: far is the opposite of close     (769f-6117-1272-9b62) [ THING_PROPERTY1:"far", THING_PROPERTY2:"close" ]
+	//row autoRow17 = [UUID:"769f-6117-1272-9b62", THING_PROPERTY1: "far", THING_PROPERTY2: "close"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"769f-6117-1272-9b62", THING_PROPERTY1: "far", THING_PROPERTY2: "close"]
+
+endinferencepattern
+
+inferencepattern sunBrightness
+    // Star-specific
+	// GROUNDING       KINDOF: the Sun is a kind of star     (af26-8083-b908-7d3b) [ HYPONYM:"sun", HYPERNYM:"star" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPONYM: "sun", HYPERNYM: "star"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPONYM: <starName>, HYPERNYM: <star>]
+
+	// CENTRAL         KINDOF: a star is a kind of celestial object ; celestial body     (dbe8-e776-f804-99a0) [ HYPONYM:"star", HYPERNYM:"celestial object;celestial body" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"dbe8-e776-f804-99a0", HYPONYM: "star", HYPERNYM: "celestial object"] //OVER-CONSTR.
+	row autoRow10 = [TABLE:"KINDOF", HYPONYM: <star>, HYPERNYM: "celestial" + *"object" + *"body"]
+
+    // CENTRAL         SOURCEOF: a star is a source of light ; light energy through nuclear reactions     (d567-d49e-293e-95bf) [ AGENT:"star", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"light;light energy", BY_THROUGH_HOW:"nuclear reaction" ]
+	//row autoRow8 = [UUID:"d567-d49e-293e-95bf", AGENT: "star", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "light energy", BY_THROUGH_HOW: "nuclear reaction"] //OVER-CONSTR.
+	row autoRow8 = [TABLE:"SOURCEOF", AGENT: <star>, VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "light energy"]
+
+
+    // Generic
+
+	// CENTRAL         ACTION: a source of something emits ; produces ; generates ; provides that something     (b877-a58b-f75a-3998) [ AGENT_OBJECT:"source of something", ACTION2:"emit;produce;generate;provide", OBJECT_PROPERTY:"that something" ]
+	//row autoRow14 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"]
+
+	// CENTRAL         PROP-GENERIC: brightness is a property of a light source and includes values of bright ; dim     (2980-ded2-b96d-7722) [ X:"brightness", Y:"light source", VALUES:"bright;dim" ]
+	//row autoRow11 = [UUID:"2980-ded2-b96d-7722", X: "brightness", Y: "light source", VALUES: <bright_0>] //OVER-CONSTR.
+	row autoRow11 = [TABLE:"PROP-GENERIC", X: "brightness", Y: "light source", VALUES: <bright_0>]
+
+endinferencepattern
+
+inferencepattern planetBrightness
+
+    // Planet-specific
+	// GROUNDING       KINDOF: Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "earth", HYPERNYM: "planet"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "earth", HYPERNYM: "planet"]
+
+	// CENTRAL         ACTION: planets reflect the light of the sun     (e5f7-f7b8-e54c-8df9) [ AGENT_OBJECT:"planet", ACTION2:"reflect", OBJECT_PROPERTY:"light", SCOPE2:"of sun" ]
+	//row autoRow12 = [UUID:"e5f7-f7b8-e54c-8df9", AGENT_OBJECT: "planet", ACTION2: "reflect", OBJECT_PROPERTY: "light", SCOPE2: "of sun"] //OVER-CONSTR.
+	row autoRow12 = [TABLE:"ACTION", AGENT_OBJECT: <planet>, ACTION2: "reflect", OBJECT_PROPERTY: "light", SCOPE2: "of " + <sunName>]
+    row autoRow12A = [TABLE:"KINDOF", HYPONYM: <sunName>, HYPERNYM: "star"]
+    row autoRow12B = [TABLE:"KINDOF", HYPONYM: <sunName>, HYPERNYM: "celestial" + *"object" + *"body"]
+
+	// CENTRAL         KINDOF: a planet is a kind of celestial object ; body     (22a2-1029-702e-a29a) [ HYPONYM:"planet", SCOPE1:"celestial", HYPERNYM:"object;body" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"22a2-1029-702e-a29a", HYPONYM: "planet", SCOPE1: "celestial", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow15 = [TABLE:"KINDOF", HYPONYM: <planet>,  HYPERNYM: "celestial" + *"object" + *"body"]
+
+	// CENTRAL        (OPTIONAL) ACTION: planets in the solar system orbit the Sun     (4f0f-94ba-06b4-84be) [ AGENT_OBJECT:"planet", SCOPE1:"in solar system", ACTION2:"orbit", OBJECT_PROPERTY:"sun" ]
+	//row *autoRow9 = [UUID:"4f0f-94ba-06b4-84be", AGENT_OBJECT: "planet", SCOPE1: "in solar system", ACTION2: "orbit", OBJECT_PROPERTY: "sun"] //OVER-CONSTR.
+	row *autoRow9 = [TABLE:"ACTION", AGENT_OBJECT: <planet>, SCOPE1: "in solar system", ACTION2: "orbit", OBJECT_PROPERTY: <star>]
+
+	// CENTRAL        (OPTIONAL) ACTION: planets orbit stars     (e35c-e251-2993-ac25) [ AGENT_OBJECT:"planet", ACTION2:"orbit", OBJECT_PROPERTY:"star" ]
+	//row *autoRow13 = [UUID:"e35c-e251-2993-ac25", AGENT_OBJECT: "planet", ACTION2: "orbit", OBJECT_PROPERTY: "star"] //OVER-CONSTR.
+	row *autoRow13 = [TABLE:"ACTION", AGENT_OBJECT: <planet>, ACTION2: "orbit", OBJECT_PROPERTY: "star"]
+
+
+    // Generic
+
+	// CENTRAL         ACTION: a source of something emits ; produces ; generates ; provides that something     (b877-a58b-f75a-3998) [ AGENT_OBJECT:"source of something", ACTION2:"emit;produce;generate;provide", OBJECT_PROPERTY:"that something" ]
+	//row autoRow14 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"]
+
+	// CENTRAL         PROP-GENERIC: brightness is a property of a light source and includes values of bright ; dim     (2980-ded2-b96d-7722) [ X:"brightness", Y:"light source", VALUES:"bright;dim" ]
+	//row autoRow11 = [UUID:"2980-ded2-b96d-7722", X: "brightness", Y: "light source", VALUES: <bright_0>] //OVER-CONSTR.
+	row autoRow11 = [TABLE:"PROP-GENERIC", X: "brightness", Y: "light source", VALUES: <bright_0>]
+
+endinferencepattern

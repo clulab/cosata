@@ -1,0 +1,71 @@
+// Automatically converted pattern
+inferencepattern MAT_CHANGES_Gas_Containers_Behaviours
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ACTION: matter with variable volume and shape assumes ; expands to fill ; takes the shape and size of its entire container     (02c3-9c98-38d9-3711) [ AGENT_OBJECT:"matt", SCOPE1:"with variable volume shape", ACTION2:"assume;expand fill;take", OBJECT_PROPERTY:"shape size", WHEN_WHERE:"of entire container" ]
+	//        HINTROW matter with variable shape changes shape in different container     (2fcc-e1b8-1198-9d11) [ ACTOR_WHO:"matt", QUANTIFIER_SCOPE:"with variable shape", VERB:"change", WHAT:"shape", SCOPE:"in differ container" ]
+	//  Notes: a8e7-194e-68a5-34e0->2fcc-e1b8-1198-9d11
+	//row autoRow0 = [TABLE:"ACTION", AGENT_OBJECT: "matt", SCOPE1: *"POS:IN"+"variable volume shape", OBJECT_PROPERTY: "shape"+*"POS:NN", WHEN_WHERE: "of"+*"POS:JJ"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ACTION", SCOPE1: *"POS:IN"+"variable volume shape"]
+
+	// GROUNDING       KINDOF: carbon dioxide is a kind of gas     (96ff-31bb-ea13-9aff) [ HYPONYM:"carbon dioxide", HYPERNYM:"gas" ]
+	//        HINTROW air is a kind of gas     (70ac-58d8-10b4-1313) [ HYPONYM:"air", HYPERNYM:"gas" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "gas"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "gas"]
+
+	// GROUNDING       KINDOF: a balloon is a kind of container     (511c-d022-b296-0c49) [ HYPONYM:"balloon", HYPERNYM:"container" ]
+	//        HINTROW a beach ball is a kind of container     (cccd-e81f-c177-7b89) [ HYPONYM:"beach ball", HYPERNYM:"container" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <balloon_0>, HYPERNYM: "container"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <balloon_0>, HYPERNYM: "container"]
+
+	// GROUNDING       PROP-FLEX-RIGIDITY: a balloon is highly flexible     (762f-5f24-90ad-ff00) [ OBJECT:"balloon", MAGNITUDE:"highly", FLEXIBLE_RIGID:"flexible" ]
+	//        HINTROW a beach ball is flexible     (d8cd-c383-3563-057f) [ OBJECT:"beach ball", FLEXIBLE_RIGID:"flexible" ]
+	//row autoRow3 = [TABLE:"PROP-FLEX-RIGIDITY", OBJECT: <balloon_0>, FLEXIBLE_RIGID: "flexible"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"PROP-FLEX-RIGIDITY", OBJECT: <balloon_0>, FLEXIBLE_RIGID: "flexible"]
+
+	// CENTRAL         PROP-GENERIC: variability of shape ; variability of volume is a property of matter and includes values of variable ; definite     (5364-1d90-a262-32e7) [ X:"variable of shape;variable of volume", Y:"matt", VALUES:"variable;definite" ]
+	//row autoRow4 = [UUID:"5364-1d90-a262-32e7", X: "variable of shape", Y: "matt", VALUES: "variable"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"5364-1d90-a262-32e7", X: "variable of shape", Y: "matt", VALUES: "variable"]
+
+	// CENTRAL         IFTHEN: when a gas in an open container evaporates ; boils , that gas spreads out into the air     (7223-ce74-ece2-36f8) [ THING:"gas", SCOPE1A:"in open container", ACTION1:"evaporate;boil", ACTOR_AGENT_PROCESS2:"that gas", ACTION3:"spread", SCOPE4:"into air" ]
+	//row autoRow5 = [UUID:"7223-ce74-ece2-36f8", THING: "gas", SCOPE1A: "in open container", ACTION1: "evaporate", ACTOR_AGENT_PROCESS2: "that gas", ACTION3: "spread", SCOPE4: "into air"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"7223-ce74-ece2-36f8", THING: "gas", SCOPE1A: "in open container", ACTION1: "evaporate", ACTOR_AGENT_PROCESS2: "that gas", ACTION3: "spread", SCOPE4: "into air"]
+
+	// CENTRAL         KINDOF: variability of shape ; variability of volume is a kind of physical property     (f926-954b-1f50-2b3b) [ HYPONYM:"variable of shape;variable of volume", SCOPE1:"physical", HYPERNYM:"property" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"f926-954b-1f50-2b3b", HYPONYM: "variable of shape", SCOPE1: "physical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"f926-954b-1f50-2b3b", HYPONYM: "variable of shape", SCOPE1: "physical", HYPERNYM: "property"]
+
+	// CENTRAL         PROP-STATESOFMATTER-SHAPEVOL: Matter in the gas phase has variable shape     (77a9-72bb-f1d8-77ff) [ PHASE:"gas", VALUE:"variable", ATTRIBUTE:"shape" ]
+	//row autoRow7 = [UUID:"77a9-72bb-f1d8-77ff", PHASE: "gas", VALUE: "variable", ATTRIBUTE: "shape"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"77a9-72bb-f1d8-77ff", PHASE: "gas", VALUE: "variable", ATTRIBUTE: "shape"]
+
+	// CENTRAL         PROP-STATESOFMATTER-SHAPEVOL: Matter in the gas phase has variable volume     (42dd-0aaa-7736-eea9) [ PHASE:"gas", VALUE:"variable", ATTRIBUTE:"volume" ]
+	//row autoRow8 = [UUID:"42dd-0aaa-7736-eea9", PHASE: "gas", VALUE: "variable", ATTRIBUTE: "volume"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"42dd-0aaa-7736-eea9", PHASE: "gas", VALUE: "variable", ATTRIBUTE: "volume"]
+
+	// CENTRAL         KINDOF: gas is a kind of state of matter     (aa73-331e-e970-c934) [ HYPONYM:"gas", HYPERNYM:"state of matt" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"aa73-331e-e970-c934", HYPONYM: "gas", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"aa73-331e-e970-c934", HYPONYM: "gas", HYPERNYM: "state of matt"]
+
+	// CENTRAL         ACTION: a container contains objects ; material ; substances     (490c-5be7-2ff7-4bf2) [ AGENT_OBJECT:"container", ACTION2:"contain", OBJECT_PROPERTY:"object;material;substance" ]
+	//row autoRow10 = [UUID:"490c-5be7-2ff7-4bf2", AGENT_OBJECT: "container", ACTION2: "contain", OBJECT_PROPERTY: "object"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"490c-5be7-2ff7-4bf2", AGENT_OBJECT: "container", ACTION2: "contain", OBJECT_PROPERTY: "object"]
+
+	// CENTRAL         KINDOF: gas is a kind of substance     (6c6f-b690-6b57-aab6) [ HYPONYM:"gas", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"6c6f-b690-6b57-aab6", HYPONYM: "gas", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"6c6f-b690-6b57-aab6", HYPONYM: "gas", HYPERNYM: "substance"]
+
+	// LEXGLUE         SYNONYMY: indefinite means variable     (6fee-d9ae-ebb5-586b) [ X1:"indefinite", X2:"variable" ]
+	//row autoRow12 = [UUID:"6fee-d9ae-ebb5-586b", X1: "indefinite", X2: "variable"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"6fee-d9ae-ebb5-586b", X1: "indefinite", X2: "variable"]
+
+endinferencepattern

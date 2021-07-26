@@ -1,0 +1,492 @@
+{"patternMatches": [
+{
+	"patternName":"LIFE_REPROD_Alleles",
+	"matches":[
+		{
+		"uuids": ["ec30-7220-5517-49b1","1763-9f64-7941-cb50","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1763-9f64-7941-cb50", "rowText": "eye color is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","c390-00e1-36dd-2ae2","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c390-00e1-36dd-2ae2", "rowText": "the shape of body parts is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","96e0-40fd-6189-dc8f","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "96e0-40fd-6189-dc8f", "rowText": "curly hair is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","29be-69ad-17f4-11f0","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "29be-69ad-17f4-11f0", "rowText": "the color of ; coloration of fur is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","78a9-0629-0526-4b03","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "78a9-0629-0526-4b03", "rowText": "height is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","cfdf-d0cc-a5c3-d5c1","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "cfdf-d0cc-a5c3-d5c1", "rowText": "freckles are an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","102a-fa79-43cd-e9a4","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "102a-fa79-43cd-e9a4", "rowText": "the colors of parts of an organism are inherited characteristics", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","b32d-db8e-41c0-13c8","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b32d-db8e-41c0-13c8", "rowText": "the length of body parts is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","a616-023f-d122-f2f3","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a616-023f-d122-f2f3", "rowText": "reproductive behavior is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","7bed-ba1b-4cde-f393","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7bed-ba1b-4cde-f393", "rowText": "the type of seed of a plant is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","1d43-ce6e-b5c5-c568","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1d43-ce6e-b5c5-c568", "rowText": "the thickness of the parts of an organism is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","7ded-f79f-1ff4-efe2","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7ded-f79f-1ff4-efe2", "rowText": "hibernation is an inherited behavior", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","b4e7-dad7-cb84-1e31","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b4e7-dad7-cb84-1e31", "rowText": "the number of body parts of an organism is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","5d64-faba-9abd-fd70","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5d64-faba-9abd-fd70", "rowText": "senses are an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","e8ec-4518-aa04-2498","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "e8ec-4518-aa04-2498", "rowText": "the size of an organism is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","6436-ff22-8a35-44b1","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6436-ff22-8a35-44b1", "rowText": "the diet of an animal is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","bc35-76af-1eae-89fd","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-76af-1eae-89fd", "rowText": "sound of voice is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","710b-668d-7cf4-e34a","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "710b-668d-7cf4-e34a", "rowText": "species is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","2aff-1db5-28ee-898f","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "2aff-1db5-28ee-898f", "rowText": "a spider spinning a web is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","073a-7112-f53b-18fc","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "073a-7112-f53b-18fc", "rowText": "blood type is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","54cb-0bcd-362b-51d6","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "54cb-0bcd-362b-51d6", "rowText": "the growth of antler is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["ec30-7220-5517-49b1","88bb-ac12-ed4e-764b","c566-22fd-4845-1df2","88f6-2447-45c5-9275","ee78-0795-be47-6ad8","757e-8aeb-8783-5f7f","3e07-973f-a338-f284","bb63-bcc5-0cd8-72db","4253-4b9e-1e5f-1742","4b1c-487f-db88-a697","b5af-096a-4c9b-b9c8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ec30-7220-5517-49b1", "rowText": "an allele can be a dominant gene", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "88bb-ac12-ed4e-764b", "rowText": "animals building a shelter is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "88f6-2447-45c5-9275", "rowText": "if the offspring of two parents have both dominant and recessive trait , then the parents have different alleles for that trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "757e-8aeb-8783-5f7f", "rowText": "alleles are found at the same place on a chromosome", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3e07-973f-a338-f284", "rowText": "alleles can determine the inherited characteristics of animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "4253-4b9e-1e5f-1742", "rowText": "a human is a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "4b1c-487f-db88-a697", "rowText": "an allele is a kind of gene", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b5af-096a-4c9b-b9c8", "rowText": "an allele is formed by mutation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		}
+	]
+}
+]}
+

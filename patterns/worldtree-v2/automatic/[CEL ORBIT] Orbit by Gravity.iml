@@ -1,0 +1,124 @@
+// Automatically converted pattern
+inferencepattern CEL_ORBIT_Orbit_by_Gravity
+
+	// Plain text description
+	description = "break down into two patterns. planets orbit the star and satellites orbit planet"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ACTION: the Earth revolves around the sun     (5471-05b0-00bd-1669) [ AGENT_OBJECT:"earth", ACTION2:"revolve around", OBJECT_PROPERTY:"sun" ]
+	//  Notes: planet X orbits star(can be populated)
+	//row autoRow0 = [TABLE:"ACTION", AGENT_OBJECT: "earth", ACTION2: "revolve around", OBJECT_PROPERTY: "sun"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ACTION", AGENT_OBJECT: "earth", ACTION2: "revolve around", OBJECT_PROPERTY: "sun"]
+
+	// CENTRALSW       ACTION: moons orbit planets     (f6bf-c93d-b9ba-1302) [ AGENT_OBJECT:"moon", ACTION2:"orbit", OBJECT_PROPERTY:"planet" ]
+	//        HINTROW a satellite orbits a planet     (6a7c-945a-f6fc-9043) [ AGENT_OBJECT:"satellite", ACTION2:"orbit", OBJECT_PROPERTY:"planet" ]
+	//row autoRow1 = [TABLE:"ACTION", AGENT_OBJECT: "moon", ACTION2: "orbit", OBJECT_PROPERTY: "planet"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"ACTION", ACTION2: "orbit", OBJECT_PROPERTY: "planet"]
+
+	// CENTRALSW       ACTION: the moon orbits the Earth     (a6a9-3e1b-7e02-ce06) [ AGENT_OBJECT:"moon", ACTION2:"orbit", OBJECT_PROPERTY:"earth" ]
+	//        HINTROW Phobos orbits Mars     (43dd-df8a-c133-a741) [ AGENT_OBJECT:"phobos", ACTION2:"orbit", OBJECT_PROPERTY:"mar" ]
+	//  Notes: moon Y orbits planet
+	//row autoRow2 = [TABLE:"ACTION", AGENT_OBJECT: "moon", ACTION2: "orbit", OBJECT_PROPERTY: "earth"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"ACTION", ACTION2: "orbit"]
+
+	// GROUNDING       KINDOF: a moon is a kind of celestial object ; body     (e2ec-1655-c1fd-cb58) [ HYPONYM:"moon", SCOPE1:"celestial", HYPERNYM:"object;body" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "moon", SCOPE1: "celestial", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "moon", SCOPE1: "celestial", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: a planet is a kind of celestial object ; body     (22a2-1029-702e-a29a) [ HYPONYM:"planet", SCOPE1:"celestial", HYPERNYM:"object;body" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "planet", SCOPE1: "celestial", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "planet", SCOPE1: "celestial", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: a star is a kind of celestial object ; celestial body     (dbe8-e776-f804-99a0) [ HYPONYM:"star", HYPERNYM:"celestial object;celestial body" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPONYM: "star", HYPERNYM: "celestial object"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPONYM: "star", HYPERNYM: "celestial object"]
+
+	// GROUNDING       KINDOF: Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//        HINTROW Mars is a kind of planet     (1fb6-af63-74de-86fd) [ HYPONYM:"mar", HYPERNYM:"planet" ]
+	//        HINTROW Uranus is a kind of planet     (7bc0-9f19-77c2-4fcf) [ HYPONYM:"uranus", HYPERNYM:"planet" ]
+	//row autoRow6 = [TABLE:"KINDOF", HYPERNYM: "planet"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPERNYM: "planet"]
+
+	// GROUNDING       KINDOF: gravity is a kind of force     (1271-8178-87cf-045c) [ HYPONYM:"gravity", HYPERNYM:"force" ]
+	//row autoRow7 = [TABLE:"KINDOF", HYPONYM: "gravity", HYPERNYM: "force"] //OVER-CONSTR.
+	row autoRow7 = [TABLE:"KINDOF", HYPONYM: "gravity", HYPERNYM: "force"]
+
+	// GROUNDING       KINDOF: the Moon is a kind of moon     (343e-7241-0aa2-1221) [ HYPONYM:"moon", HYPERNYM:"moon" ]
+	//        HINTROW Phobos is a kind of moon     (9204-e312-1986-baf9) [ HYPONYM:"phobos", HYPERNYM:"moon" ]
+	//row autoRow8 = [TABLE:"KINDOF", HYPONYM: "moon", HYPERNYM: "moon"] //OVER-CONSTR.
+	row autoRow8 = [TABLE:"KINDOF", HYPERNYM: "moon"]
+
+	// GROUNDING       KINDOF: the Sun is a kind of star     (af26-8083-b908-7d3b) [ HYPONYM:"sun", HYPERNYM:"star" ]
+	//row autoRow9 = [TABLE:"KINDOF", HYPONYM: "sun", HYPERNYM: "star"] //OVER-CONSTR.
+	row autoRow9 = [TABLE:"KINDOF", HYPONYM: "sun", HYPERNYM: "star"]
+
+	// CENTRAL         ACTION: celestial bodies move in orbits in space around other celestial bodies     (7324-4a13-8c67-9d8b) [ AGENT_OBJECT:"celestial body", ACTION2:"move", OBJECT_PROPERTY:"in orbit", WHEN_WHERE:"in space", SCOPE2:"around other celestial body" ]
+	//row autoRow10 = [UUID:"7324-4a13-8c67-9d8b", AGENT_OBJECT: "celestial body", ACTION2: "move", OBJECT_PROPERTY: "in orbit", WHEN_WHERE: "in space", SCOPE2: "around other celestial body"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"7324-4a13-8c67-9d8b", AGENT_OBJECT: "celestial body", ACTION2: "move", OBJECT_PROPERTY: "in orbit", WHEN_WHERE: "in space", SCOPE2: "around other celestial body"]
+
+	// CENTRAL         ACTION: a revolution occurs when something revolves around something else     (3678-1c03-c983-ba31) [ DEFINITION_NAME:"revolve", AGENT_OBJECT:"something", ACTION2:"revolve around", OBJECT_PROPERTY:"something else" ]
+	//row autoRow11 = [UUID:"3678-1c03-c983-ba31", DEFINITION_NAME: "revolve", AGENT_OBJECT: "something", ACTION2: "revolve around", OBJECT_PROPERTY: "something else"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"3678-1c03-c983-ba31", DEFINITION_NAME: "revolve", AGENT_OBJECT: "something", ACTION2: "revolve around", OBJECT_PROPERTY: "something else"]
+
+	// CENTRAL         ACTION: planets in the solar system orbit the Sun     (4f0f-94ba-06b4-84be) [ AGENT_OBJECT:"planet", SCOPE1:"in solar system", ACTION2:"orbit", OBJECT_PROPERTY:"sun" ]
+	//row autoRow12 = [UUID:"4f0f-94ba-06b4-84be", AGENT_OBJECT: "planet", SCOPE1: "in solar system", ACTION2: "orbit", OBJECT_PROPERTY: "sun"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"4f0f-94ba-06b4-84be", AGENT_OBJECT: "planet", SCOPE1: "in solar system", ACTION2: "orbit", OBJECT_PROPERTY: "sun"]
+
+	// CENTRAL        (OPTIONAL) PROP-ORBITAL-ROT: a complete revolution ; orbit of the Earth around the sun takes 1 ; one year ; solar year ; Earth year     (e682-f47d-cc9c-a67c) [ REVOLUTION_ROTATION:"revolve;orbit", WHAT_S_MOVING:"earth", CENTER_POINT:"sun", HOW_LONG_IT_TAKES:"1;one", UNITS:"year;solar year;earth year" ]
+	//row *autoRow13 = [UUID:"e682-f47d-cc9c-a67c", REVOLUTION_ROTATION: "revolve", WHAT_S_MOVING: "earth", CENTER_POINT: "sun", HOW_LONG_IT_TAKES: "1", UNITS: "solar year"] //OVER-CONSTR.
+	row *autoRow13 = [UUID:"e682-f47d-cc9c-a67c", REVOLUTION_ROTATION: "revolve", WHAT_S_MOVING: "earth", CENTER_POINT: "sun", HOW_LONG_IT_TAKES: "1", UNITS: "solar year"]
+
+	// CENTRAL         PROP-THINGS: planetary orbits are mostly elliptical     (a2fc-541c-f662-8ef1) [ THING:"planetary orbit", QUALIFIER2:"mostly", VALUE:"elliptical" ]
+	//row autoRow14 = [UUID:"a2fc-541c-f662-8ef1", THING: "planetary orbit", QUALIFIER2: "mostly", VALUE: "elliptical"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"a2fc-541c-f662-8ef1", THING: "planetary orbit", QUALIFIER2: "mostly", VALUE: "elliptical"]
+
+	// CENTRAL        (OPTIONAL) CONTAINS: the asteroid belt contains asteroids     (1c96-585a-f6fa-597c) [ OBJECT_AGENT:"asteroid belt", WHAT_IT_CONTAINS:"asteroid" ]
+	//  Notes: if asteroid belt is in the question then this row is needed
+	//row *autoRow15 = [UUID:"1c96-585a-f6fa-597c", OBJECT_AGENT: "asteroid belt", WHAT_IT_CONTAINS: "asteroid"] //OVER-CONSTR.
+	row *autoRow15 = [UUID:"1c96-585a-f6fa-597c", OBJECT_AGENT: "asteroid belt", WHAT_IT_CONTAINS: "asteroid"]
+
+	// CENTRAL        (OPTIONAL) ACTION: the asteroid belt orbits the sun     (cc3e-7951-f80d-9519) [ AGENT_OBJECT:"asteroid belt", ACTION2:"orbit", OBJECT_PROPERTY:"sun" ]
+	//  Notes: asteroid orbits the Sun
+	//row *autoRow16 = [UUID:"cc3e-7951-f80d-9519", AGENT_OBJECT: "asteroid belt", ACTION2: "orbit", OBJECT_PROPERTY: "sun"] //OVER-CONSTR.
+	row *autoRow16 = [UUID:"cc3e-7951-f80d-9519", AGENT_OBJECT: "asteroid belt", ACTION2: "orbit", OBJECT_PROPERTY: "sun"]
+
+	// CENTRAL         CAUSE: gravity causes orbits     (828a-1af1-a7bd-61e8) [ CONDITION_AGENT_OBJECT:"gravity", RESULT_AGENT:"orbit" ]
+	//row autoRow17 = [UUID:"828a-1af1-a7bd-61e8", CONDITION_AGENT_OBJECT: "gravity", RESULT_AGENT: "orbit"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"828a-1af1-a7bd-61e8", CONDITION_AGENT_OBJECT: "gravity", RESULT_AGENT: "orbit"]
+
+	// CENTRAL         ACTION: planets orbit stars     (e35c-e251-2993-ac25) [ AGENT_OBJECT:"planet", ACTION2:"orbit", OBJECT_PROPERTY:"star" ]
+	//row autoRow18 = [UUID:"e35c-e251-2993-ac25", AGENT_OBJECT: "planet", ACTION2: "orbit", OBJECT_PROPERTY: "star"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"e35c-e251-2993-ac25", AGENT_OBJECT: "planet", ACTION2: "orbit", OBJECT_PROPERTY: "star"]
+
+	// CENTRAL         PROP-THINGS: the moon 's orbit is elliptical     (aab2-df49-cb6f-dcbb) [ THING:"moon orbit", VALUE:"elliptical" ]
+	//row autoRow19 = [UUID:"aab2-df49-cb6f-dcbb", THING: "moon orbit", VALUE: "elliptical"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"aab2-df49-cb6f-dcbb", THING: "moon orbit", VALUE: "elliptical"]
+
+	// CENTRAL         CONVERSIONS: 1 year is equal to 12 months     (6237-63a3-810f-6aa1) [ QUANTITY1:"1", UNIT1:"year", QUANTITY2:"12", UNIT2:"month" ]
+	//row autoRow20 = [UUID:"6237-63a3-810f-6aa1", QUANTITY1: "1", UNIT1: "year", QUANTITY2: "12", UNIT2: "month"] //OVER-CONSTR.
+	row autoRow20 = [UUID:"6237-63a3-810f-6aa1", QUANTITY1: "1", UNIT1: "year", QUANTITY2: "12", UNIT2: "month"]
+
+	// CENTRAL        (OPTIONAL) PROP-ORBITAL-ROT: a complete revolution ; orbit of the moon around the Earth takes 1 ; one month     (9baa-2f01-60c7-64fa) [ REVOLUTION_ROTATION:"revolve;orbit", WHAT_S_MOVING:"moon", CENTER_POINT:"earth", HOW_LONG_IT_TAKES:"1;one", UNITS:"month" ]
+	//row *autoRow21 = [UUID:"9baa-2f01-60c7-64fa", REVOLUTION_ROTATION: "revolve", WHAT_S_MOVING: "moon", CENTER_POINT: "earth", HOW_LONG_IT_TAKES: "1", UNITS: "month"] //OVER-CONSTR.
+	row *autoRow21 = [UUID:"9baa-2f01-60c7-64fa", REVOLUTION_ROTATION: "revolve", WHAT_S_MOVING: "moon", CENTER_POINT: "earth", HOW_LONG_IT_TAKES: "1", UNITS: "month"]
+
+	// LEXGLUE         SYNONYMY: revolving around something means orbiting that something     (3dd5-2225-75cc-e350) [ ACTION1:"revolve", Y1:"around something", ACTION2:"orbit", Y2:"that something" ]
+	//row autoRow22 = [UUID:"3dd5-2225-75cc-e350", ACTION1: "revolve", Y1: "around something", ACTION2: "orbit", Y2: "that something"] //OVER-CONSTR.
+	row autoRow22 = [UUID:"3dd5-2225-75cc-e350", ACTION1: "revolve", Y1: "around something", ACTION2: "orbit", Y2: "that something"]
+
+	// LEXGLUE         SYNONYMY: gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction     (a6ed-d678-af19-2281) [ X1:"gravity", X2:"gravitational pull;gravitational energy;gravitational force;gravitational attraction" ]
+	//row autoRow23 = [UUID:"a6ed-d678-af19-2281", X1: "gravity", X2: "gravitational pull"] //OVER-CONSTR.
+	row autoRow23 = [UUID:"a6ed-d678-af19-2281", X1: "gravity", X2: "gravitational pull"]
+
+	// LEXGLUE         SYNONYMY: orbit means orbital path     (3b4e-37fa-74e3-24e3) [ X1:"orbit", X2:"orbital path" ]
+	//row autoRow24 = [UUID:"3b4e-37fa-74e3-24e3", X1: "orbit", X2: "orbital path"] //OVER-CONSTR.
+	row autoRow24 = [UUID:"3b4e-37fa-74e3-24e3", X1: "orbit", X2: "orbital path"]
+
+	// LEXGLUE         SYNONYMY: to remain means to stay the same     (bd6d-bd54-cd46-7e74) [ ACTION1:"remain", ACTION2:"stay same" ]
+	//row autoRow25 = [UUID:"bd6d-bd54-cd46-7e74", ACTION1: "remain", ACTION2: "stay same"] //OVER-CONSTR.
+	row autoRow25 = [UUID:"bd6d-bd54-cd46-7e74", ACTION1: "remain", ACTION2: "stay same"]
+
+endinferencepattern

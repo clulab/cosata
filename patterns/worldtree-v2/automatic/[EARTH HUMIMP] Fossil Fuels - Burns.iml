@@ -1,0 +1,69 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Fossil_Fuels_Burns
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: heat is a kind of energy     (9e7d-986e-6af1-5ac1) [ HYPONYM:"heat", HYPERNYM:"energy" ]
+	//        HINTROW light is a kind of energy     (f742-384b-744c-10a9) [ HYPONYM:"light", HYPERNYM:"energy" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "heat", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "heat", HYPERNYM: "energy"]
+
+	// GROUNDING       KINDOF: oil is a kind of fossil fuel     (3092-233a-f999-2512) [ HYPONYM:"oil", SCOPE1:"fossil", HYPERNYM:"fuel" ]
+	//        HINTROW coal is a kind of fossil fuel     (cab1-f3c3-59de-b682) [ HYPONYM:"coal", HYPERNYM:"fossil fuel" ]
+	//        HINTROW natural gas is a kind of fossil fuel     (2355-0cfa-86f8-5767) [ HYPONYM:"nature gas", HYPERNYM:"fossil fuel" ]
+	//        HINTROW petroleum is a kind of fossil fuel     (88c2-bbdf-af6c-6742) [ HYPONYM:"petroleum", SCOPE1:"fossil", HYPERNYM:"fuel" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "fuel"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "fuel"]
+
+	// CENTRAL         REQUIRES: a fire requires oxygen to burn     (204f-bd48-cf69-828a) [ OBJECT_AGENT_PROCESS:"fire", VERB_REQUIRES:"require", OBJECT:"oxygen", FOR_PURPOSE:"burn" ]
+	//row autoRow2 = [UUID:"204f-bd48-cf69-828a", OBJECT_AGENT_PROCESS: "fire", VERB_REQUIRES: "require", OBJECT: "oxygen", FOR_PURPOSE: "burn"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"204f-bd48-cf69-828a", OBJECT_AGENT_PROCESS: "fire", VERB_REQUIRES: "require", OBJECT: "oxygen", FOR_PURPOSE: "burn"]
+
+	// CENTRAL         SOURCEOF: fire gives off light ; heat ; smoke     (891f-4f5c-91a2-bd31) [ AGENT:"fire", VERB_SOURCEOF_PROVIDE_ETC:"give", WHAT_IT_PROVIDES:"light;heat;smoke" ]
+	//row autoRow3 = [UUID:"891f-4f5c-91a2-bd31", AGENT: "fire", VERB_SOURCEOF_PROVIDE_ETC: "give", WHAT_IT_PROVIDES: "light"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"891f-4f5c-91a2-bd31", AGENT: "fire", VERB_SOURCEOF_PROVIDE_ETC: "give", WHAT_IT_PROVIDES: "light"]
+
+	// CENTRAL         REQUIRES: using the fuel requires burning the fuel     (4084-fc3a-3d6f-6346) [ ACTION1:"use", OBJECT_AGENT_PROCESS:"fuel", VERB_REQUIRES:"require", ACTION2:"burn", OBJECT:"fuel" ]
+	//row autoRow4 = [UUID:"4084-fc3a-3d6f-6346", ACTION1: "use", OBJECT_AGENT_PROCESS: "fuel", VERB_REQUIRES: "require", ACTION2: "burn", OBJECT: "fuel"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4084-fc3a-3d6f-6346", ACTION1: "use", OBJECT_AGENT_PROCESS: "fuel", VERB_REQUIRES: "require", ACTION2: "burn", OBJECT: "fuel"]
+
+	// CENTRAL         CAUSE: fire causes burning     (4dc5-13bf-3c46-af74) [ CONDITION_AGENT_OBJECT:"fire", RESULT_VERB:"burn" ]
+	//row autoRow5 = [UUID:"4dc5-13bf-3c46-af74", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "burn"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"4dc5-13bf-3c46-af74", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "burn"]
+
+	// CENTRAL         KINDOF: fire is a kind of chemical reaction     (6cf1-9d92-5a26-93fd) [ HYPONYM:"fire", HYPERNYM:"chemical react" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"6cf1-9d92-5a26-93fd", HYPONYM: "fire", HYPERNYM: "chemical react"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"6cf1-9d92-5a26-93fd", HYPONYM: "fire", HYPERNYM: "chemical react"]
+
+	// CENTRAL         KINDOF: combustion is a kind of exergonic reaction     (6411-2171-d003-b448) [ HYPONYM:"combust", HYPERNYM:"exergonic react" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"6411-2171-d003-b448", HYPONYM: "combust", HYPERNYM: "exergonic react"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"6411-2171-d003-b448", HYPONYM: "combust", HYPERNYM: "exergonic react"]
+
+	// CENTRAL         SOURCEOF: exergonic chemical reactions only release energy     (b1b6-f4cf-0de7-efeb) [ AGENT:"exergonic chemical reaction", QUALIFIER:"only", VERB_SOURCEOF_PROVIDE_ETC:"release", WHAT_IT_PROVIDES:"energy" ]
+	//row autoRow8 = [UUID:"b1b6-f4cf-0de7-efeb", AGENT: "exergonic chemical reaction", QUALIFIER: "only", VERB_SOURCEOF_PROVIDE_ETC: "release", WHAT_IT_PROVIDES: "energy"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"b1b6-f4cf-0de7-efeb", AGENT: "exergonic chemical reaction", QUALIFIER: "only", VERB_SOURCEOF_PROVIDE_ETC: "release", WHAT_IT_PROVIDES: "energy"]
+
+	// CENTRAL         CHANGE: combustion means fire converts chemical energy into light energy and heat energy     (941b-2c2b-0aae-ee3a) [ PROCESS_NAME:"combust", ACTOR_WHO:"fire", VERB:"convert", FROM:"chemical energy", INTO:"light energy heat energy" ]
+	//row autoRow9 = [UUID:"941b-2c2b-0aae-ee3a", PROCESS_NAME: "combust", ACTOR_WHO: "fire", VERB: "convert", FROM: "chemical energy", INTO: "light energy heat energy"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"941b-2c2b-0aae-ee3a", PROCESS_NAME: "combust", ACTOR_WHO: "fire", VERB: "convert", FROM: "chemical energy", INTO: "light energy heat energy"]
+
+	// LEXGLUE         SYNONYMY: to give off means to be the source of     (c273-104b-3c47-f637) [ ACTION1:"give", ACTION2:"be source of" ]
+	//row autoRow10 = [UUID:"c273-104b-3c47-f637", ACTION1: "give", ACTION2: "be source of"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"c273-104b-3c47-f637", ACTION1: "give", ACTION2: "be source of"]
+
+	// LEXGLUE         SYNONYMY: heat energy is synonymous with thermal energy     (ae86-c631-e4ad-1669) [ X1:"heat energy", X2:"thermal energy" ]
+	//row autoRow11 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"]
+
+	// LEXGLUE         SYNONYMY: heat means heat energy     (4710-c993-7a19-bef2) [ X1:"heat", X2:"heat energy" ]
+	//row autoRow12 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"]
+
+endinferencepattern

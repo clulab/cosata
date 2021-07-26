@@ -1,0 +1,344 @@
+/*
+ * States of Matter
+ * Changing states of matter
+ */
+
+// Imports
+import "../energy/heatenergy.iml"
+
+
+// Changing states of matter
+inferencepattern changeStateOfMatter
+        // Plain text description
+        description = "A substance changing it's state of matter"
+
+		// Requirements
+		require instance substance1 = [KINDOF:"substance"]		
+		shouldhave (substance1."state of matter" != "")
+		shouldhave (substance1."temperature" != "")
+		musthave (substance1."state of matter" == <SOM1>)
+
+
+        // Row definitions
+
+        // e.g. solid/liquid/gas is a kind of state of matter
+        row som1 = [TABLE:"KINDOF", HYPONYM:<SOM1>, HYPERNYM:"state of matter"]
+        row som2 = [TABLE:"KINDOF", HYPONYM:<SOM2>, HYPERNYM:"state of matter"]
+
+        // e.g. melting/boiling/freezing is a kind of change of state
+        row cos  = [TABLE:"KINDOF", HYPONYM:<ChangeOfState>, HYPERNYM:"change of state"]
+
+        // e.g. state of matter is a property of a substance
+        row somprop = [TABLE:"PROP-GENERIC", PROPERTY:"state of matter", OBJECT:<obj>]
+        
+        // e.g. a boiling point is a kind of phase transition point
+        row point = [TABLE:"KINDOF", HYPONYM:<PhaseTransitionPoint>, HYPERNYM:"phase transition point"]
+
+        // e.g. melting means (matter; a substance) changes from a solid to a liquid by increasing heat energy
+        row change = [TABLE:"CHANGE", PROCESS_NAME:<ChangeOfState>, PROPERTY:"state of matter", OBJECT:<obj>, FROM:<SOM1>, INTO:<SOM2>, BY_THROUGH_HOW:<incDec> + "heat energy"]
+
+        // e.g. melting occurs when the temperature of a substance is increased above the substance's melting point, and below it's boiling point
+        //row thresh = [TABLE:"CONDITION-VEC", EVENT:<ChangeOfState>, VALUE:<PhaseTransitionPoint>]
+        row thresh = [TABLE:"CONDITION-VEC", EVENT:<ChangeOfState>, OBJECT:<obj>, INCREASED_DECREASED:<tempDir>, ABOVE_BELOW1:<aboveBelow>, VALUE1:<PhaseTransitionPoint>, ABOVE_BELOW2:<*aboveBelow2>, VALUE2:<*PhaseTransitionPoint2>]
+		//row point = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME:<materialName>, STATEOFMATTER:<SOM>, LOWER_BOUND:<*lowerPoint>, UPPER_BOUND:<*upperPoint>, UNITS:<units>]
+        
+        // e.g. heating means the (temperature; heat energy) of an (object; substance) is increased
+        row heatcool = [TABLE:"CHANGE-VEC-PROP", PROCESS_NAME:<heatingOrCooling>, PROPERTY:"heat energy", INCREASED_DECREASED:<incDec>]
+
+        //## test
+		//row point1 = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME:<materialName>, STATEOFMATTER:<SOM2>, LOWER_BOUND:<*lowerPoint>, UPPER_BOUND:<*upperPoint>, UNITS:<units>]
+		//row point1 = [TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", PHASEPOINT:<PhaseTransitionPoint>, MATERIAL_NAME:<materialName>, TEMPERATURE:<pointTemp>, UNITS:<units>]
+        
+        // Code
+
+endinferencepattern
+
+
+
+
+// A substance in a state of matter
+inferencepattern substanceInSOM
+        // Plain text description 
+        description = "A material/substance in a given state of matter"
+
+		// Requirements
+		require instance substance = [KINDOF:"substance"]		
+		musthave (substance."material" == <materialName>)
+		
+        // Constants
+
+        // Row definitions
+        row som = [TABLE:"KINDOF", HYPONYM:<SOM>, HYPERNYM:"state of matter"]
+        row propSomTemp = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME:<materialName>, FORM_NAME:<formName>, STATEOFMATTER:<SOM>]
+        //row somHasPoint = [TABLE:"PROP-STATESOFMATTER-PAIRED-PHASEPOINTS", STATEOFMATTER:<SOM>, PHASEPOINT:<PhaseTransitionPoint>]
+        //row point1 = [TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", PHASEPOINT:<PhaseTransitionPoint>, MATERIAL_NAME:<materialName>, TEMPERATURE:<pointTemp>, UNITS:<units>]
+
+        // Code
+        
+
+endinferencepattern
+
+
+inferencepattern substanceInSOMWithPhaseTransitionPoint
+        // Plain text description
+        description = "A material/substance in a given state of matter"
+
+		// Requirements
+		require instance substance = [KINDOF:"substance"]
+		musthave (substance."material" == <materialName>)
+
+        // Constants
+		infpat subSOM = substanceInSOM
+
+		instmap substance = subSOM.substance
+
+
+        // Row definitions
+        //row som = [TABLE:"KINDOF", HYPONYM:<SOM>, HYPERNYM:"state of matter"]
+        //row propSomTemp = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME:<materialName>, STATEOFMATTER:<SOM>]
+        row somHasPoint = [TABLE:"PROP-STATESOFMATTER-PAIRED-PHASEPOINTS", STATEOFMATTER:<SOM>, PHASEPOINT:<PhaseTransitionPoint>]
+        row point1 = [TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", PHASEPOINT:<PhaseTransitionPoint>, MATERIAL_NAME:<materialName>, TEMPERATURE:<pointTemp>, UNITS:<units>]
+
+
+        // Additional constraints
+        //## Note, these row-variable constraints should have their own command that filter them from the list of possibilities.
+        musthaveoromit(<SOM> == subSOM.<SOM>)
+        musthaveoromit(<materialName> == subSOM.<materialName>)
+
+        // Code
+
+endinferencepattern
+
+
+inferencepattern compositeTest
+        // Plain text description
+        description = "A composite inference pattern test"
+
+		// Requirements
+		require instance sub1 = [KINDOF:"substance"]
+		shouldhave (sub1."state of matter" != "")
+
+		// Composite requirements
+		infpat x = changeStateOfMatter
+		infpat y = substanceInSOM
+		
+		rowequiv x.som1 = y.som
+		
+		instmap sub1 = x.substance1
+		instmap sub1 = y.substance				
+
+        // Additional constraints
+        //## Note, these row-variable constraints should have their own command that filter them from the list of possibilities.
+        musthave(x.<PhaseTransitionPoint> == y.<PhaseTransitionPoint>)
+
+        // Row definitions
+
+		// Code
+
+
+endinferencepattern
+
+
+
+/*
+ * Generators (that primarily automatically generate rows from other rows)
+ */
+
+/*
+ * Phase transition points
+ * (Generating automatically from PROP-STATESOFMATTER-TEMPS
+ */ 
+// TODO: Also generate rows for FORM_NAME (e.g. ice) as welll as MATERIAL_NAME (e.g. water) for robustness? 
+inferencepattern PhaseTransitionPointGen
+		// Plain text description
+		description = "Populates phase transition points (boiling, freezing, melting, condensation points) table from information in PROP-STATESOFMATTER-TEMPS"
+		executionmode = "AUTOREGEN"
+		
+		// Row definitions
+		row point = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME:<materialName>, STATEOFMATTER:<SOM>, LOWER_BOUND:<*lowerPoint>, UPPER_BOUND:<*upperPoint>, UNITS:<units>]
+						
+		// Code
+		if ((<lowerPoint> != "") || (<upperPoint> != "")) then
+			if (<SOM> == "solid") then
+				generateRow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"freezing point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<upperPoint>, UNITS:<units>])
+				generateRow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"melting point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<upperPoint>, UNITS:<units>])
+			endif
+			if (<SOM> == "liquid") then
+				generateRow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"freezing point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<lowerPoint>, UNITS:<units>])
+				generateRow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"melting point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<lowerPoint>, UNITS:<units>])
+				generateRow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"boiling point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<upperPoint>, UNITS:<units>])
+				generateRow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"condensation point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<upperPoint>, UNITS:<units>])			
+			endif
+			if (<SOM> == "gas") then
+				generateRow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"boiling point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<lowerPoint>, UNITS:<units>])
+				generateRow([TABLE:"PROP-STATESOFMATTER-PHASETRANSPOINTS", FILL_THE:"the", PHASEPOINT:"condensation point", FILL_OF:"of", MATERIAL_NAME:<materialName>, FILL_IS: "is", TEMPERATURE:<lowerPoint>, UNITS:<units>])
+			endif	
+		else
+			println ("Either or both of lowerPoint and/or upperPoint must be populated for this pattern to engage.")
+		endif
+
+endinferencepattern
+
+
+
+/*
+ * Composite Patterns (pieces)
+ */ 
+
+inferencepattern ChangeOfStateWithSubstanceFrom
+        // Plain text description
+        description = "Composite: A change of state, with a substance in the state of matter being changed FROM a given state."
+
+		// Requirements
+		require instance sub1 = [KINDOF:"substance"]
+		shouldhave (sub1."state of matter" != "")
+
+		// Composite requirements		
+        infpat COS = changeStateOfMatter
+        infpat fromSOM = substanceInSOMWithPhaseTransitionPoint
+
+        rowequiv COS.som1 = fromSOM.subSOM.som		
+
+        // Instance mapping
+		instmap sub1 = COS.substance1
+		instmap sub1 = fromSOM.substance		
+
+        // Row definitions
+
+        // Additional constraints
+        musthaveoromit(COS.<PhaseTransitionPoint> == fromSOM.<PhaseTransitionPoint>)
+        musthave(sub1."state of matter" == COS.<SOM1>)
+        musthave(sub1."temperature" CHANGE [direction:COS.<tempDir> threshold:fromSOM.<pointTemp>])        
+
+        // Code
+		if ((sub1."temperature" CHANGE [direction:COS.<tempDir> threshold:fromSOM.<pointTemp>]) && (sub1."state of matter" == COS.<SOM1>)) then
+
+			println("Old state of matter was " + COS.<SOM1>)
+			printInstances
+
+			sub1."state of matter" = COS.<SOM2>
+
+			println("Changed state of matter to " + COS.<SOM2>)
+			printInstances
+
+            addExplanationText("Substance (" + sub1."name" + ") made of (" + sub1."material" + ") is within the temperature range to change to a (" + COS.<SOM2> + ").")
+		endif
+
+endinferencepattern
+
+
+//## Needs to be updated to reflect how the From and FromTo scripts function
+inferencepattern ChangeOfStateWithSubstanceTo
+        // Plain text description
+        description = "(NEEDS TO BE UPDATED)Composite: A change of state, with a substance in the state of matter being changed TO a given state."
+
+		// Requirements
+		require instance sub1 = [KINDOF:"substance"]
+		shouldhave (sub1."state of matter" != "")
+
+		// Composite requirements
+		infpat x = changeStateOfMatter
+		infpat y = substanceInSOM
+		
+		rowequiv x.som2 = y.som
+		
+		instmap sub1 = x.substance1
+		instmap sub1 = y.substance				
+
+        // Additional constraints
+        //## Note, these row-variable constraints should have their own command that filter them from the list of possibilities.
+        musthave(x.<PhaseTransitionPoint> == y.<PhaseTransitionPoint>)
+
+        // Row definitions
+
+		// Code
+
+
+endinferencepattern
+
+
+/*
+ * Composite Patterns (full)
+ */ 
+
+inferencepattern ChangeOfStateWithSubstanceFromTo
+        // Plain text description
+        description = "Composite: A change of state, with a substance in the state of matter being changed FROM a given state, TO a given state."
+        patterndescription = "change state of substance from " + COS.<SOM1> + " to " + COS.<SOM2>
+
+		// Requirements
+		require instance sub1 = [KINDOF:"substance"]
+		shouldhave (sub1."state of matter" != "")
+		
+		// Composite requirements
+		infpat COS = changeStateOfMatter
+        infpat fromSOM = substanceInSOMWithPhaseTransitionPoint
+        infpat toSOM = substanceInSOM
+
+        rowequiv COS.som1 = fromSOM.subSOM.som
+		rowequiv COS.som2 = toSOM.som
+
+		instmap sub1 = COS.substance1
+		instmap sub1 = fromSOM.substance
+		instmap sub1 = toSOM.substance
+
+        // Additional constraints
+        //## Note, these row-variable constraints should have their own command that filter them from the list of possibilities.
+        musthaveoromit(COS.<PhaseTransitionPoint> == fromSOM.<PhaseTransitionPoint>)
+        musthave(sub1."state of matter" == COS.<SOM1>)
+        musthave(sub1."temperature" CHANGE [direction:COS.<tempDir> threshold:fromSOM.<pointTemp>])
+        musthaveoromit(fromSOM.<materialName> == toSOM.<materialName>)
+
+        // Row definitions        
+
+		// Code
+
+		// TODO: Fix CHANGE to run this
+		println("SOM1 = " + COS.<SOM1>)
+
+		if ((sub1."temperature" CHANGE [direction:COS.<tempDir> threshold:fromSOM.<pointTemp>]) && (sub1."state of matter" == COS.<SOM1>)) then
+
+			println("Old state of matter was " + COS.<SOM1>)
+			printInstances
+
+			sub1."state of matter" = COS.<SOM2>
+            sub1."materialName" = toSOM.<formName>
+			println("Changed state of matter to " + COS.<SOM2>)
+			printInstances
+
+            addExplanationText("Substance (" + sub1."name" + ") made of (" + sub1."material" + ") is within the temperature range to change to a (" + COS.<SOM2> + ").")
+		endif
+
+
+
+
+endinferencepattern
+
+
+inferencepattern ChangeOfStateWithHeatCoolSource
+        // Plain text description
+        description = "Composite: A change of state, with a source of heating/cooling to increase/decrease heat energy. "
+
+		// Requirements
+		require instance sub1 = [KINDOF:"substance"]
+		shouldhave (sub1."state of matter" != "")
+		
+		// Composite requirements
+		infpat cosfromto = ChangeOfStateWithSubstanceFromTo
+		//infpat heatcool = heatingCoolingDevice
+		
+		//rowequiv cos.heatcool = heatcool.heatcoolchange
+		
+		instmap sub1 = cosfromto.sub1
+
+        // Row definitions
+        row heatingCoolingRow = [TABLE:"ACTION-ACTIVE", AGENT:<agent>, ACTION:<heatingOrCooling>, PATIENT:<object>]
+
+        musthaveoromit(<heatingOrCooling> == cosfromto.COS.heatingOrCooling)
+        musthave(<object> == sub1."name")
+
+		// Code
+
+
+endinferencepattern
+

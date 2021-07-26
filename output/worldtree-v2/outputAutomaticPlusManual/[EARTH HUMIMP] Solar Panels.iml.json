@@ -1,0 +1,1984 @@
+{"patternMatches": [
+{
+	"patternName":"EARTH_HUMIMP_Power_Generators_RenewableNonRenewable",
+	"matches":[
+		{
+		"uuids": ["0584-393a-7b86-9c70","bc35-178c-432b-77f5","1aa9-530e-351f-2c08","1ed3-919d-4a4c-1be7","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1aa9-530e-351f-2c08", "rowText": "solar panels are a kind of power supplies", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"sun" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","bc35-178c-432b-77f5","1aa9-530e-351f-2c08","1ed3-919d-4a4c-1be7","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1aa9-530e-351f-2c08", "rowText": "solar panels are a kind of power supplies", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"sun" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","bc35-178c-432b-77f5","1aa9-530e-351f-2c08","1ed3-919d-4a4c-1be7","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1aa9-530e-351f-2c08", "rowText": "solar panels are a kind of power supplies", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"sun" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","bc35-178c-432b-77f5","1aa9-530e-351f-2c08","1ed3-919d-4a4c-1be7","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1aa9-530e-351f-2c08", "rowText": "solar panels are a kind of power supplies", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"sun" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","bc35-178c-432b-77f5","1aa9-530e-351f-2c08","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1aa9-530e-351f-2c08", "rowText": "solar panels are a kind of power supplies", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","bc35-178c-432b-77f5","1aa9-530e-351f-2c08","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1aa9-530e-351f-2c08", "rowText": "solar panels are a kind of power supplies", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","bc35-178c-432b-77f5","1ed3-919d-4a4c-1be7","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"sun" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","bc35-178c-432b-77f5","1ed3-919d-4a4c-1be7","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"sun" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","66e0-20b6-da6c-8421","1ed3-919d-4a4c-1be7","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"deviceName", "value":"solar cell" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"deviceName", "value":"solar cells" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"sun" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","66e0-20b6-da6c-8421","1ed3-919d-4a4c-1be7","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"deviceName", "value":"solar cell" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"deviceName", "value":"solar cells" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"sun" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","bc35-178c-432b-77f5","1aa9-530e-351f-2c08","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1aa9-530e-351f-2c08", "rowText": "solar panels are a kind of power supplies", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","bc35-178c-432b-77f5","1aa9-530e-351f-2c08","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1aa9-530e-351f-2c08", "rowText": "solar panels are a kind of power supplies", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","bc35-178c-432b-77f5","1ed3-919d-4a4c-1be7","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"sun" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","bc35-178c-432b-77f5","1ed3-919d-4a4c-1be7","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1ed3-919d-4a4c-1be7", "rowText": "the sun is the source of solar energy called sunlight", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"sun" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"sunlight" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"sun" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","bc35-178c-432b-77f5","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","bc35-178c-432b-77f5","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","d68e-b9c5-62d5-f63e","0da1-2296-dfe8-6873","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d68e-b9c5-62d5-f63e", "rowText": "a windmill converts wind ; wind energy into electrical energy ; electricity primarily by using mechanical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","d68e-b9c5-62d5-f63e","0da1-2296-dfe8-6873","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d68e-b9c5-62d5-f63e", "rowText": "a windmill converts wind ; wind energy into electrical energy ; electricity primarily by using mechanical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","d68e-b9c5-62d5-f63e","0da1-2296-dfe8-6873","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d68e-b9c5-62d5-f63e", "rowText": "a windmill converts wind ; wind energy into electrical energy ; electricity primarily by using mechanical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","d68e-b9c5-62d5-f63e","0da1-2296-dfe8-6873","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d68e-b9c5-62d5-f63e", "rowText": "a windmill converts wind ; wind energy into electrical energy ; electricity primarily by using mechanical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","e83b-d62e-d528-3e9f","e094-f38a-c2c7-8407","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e094-f38a-c2c7-8407", "rowText": "chemical energy is usually a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"battery" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"battery" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","7304-b7d4-acdd-7486","4567-015f-debe-b7f4","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7304-b7d4-acdd-7486", "rowText": "microbial fuel cells convert chemical energy ; biomass into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "4567-015f-debe-b7f4", "rowText": "biomass is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"microbial fuel cell" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"biomass" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"microbial fuel cells" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"biomass" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","7304-b7d4-acdd-7486","e094-f38a-c2c7-8407","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7304-b7d4-acdd-7486", "rowText": "microbial fuel cells convert chemical energy ; biomass into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e094-f38a-c2c7-8407", "rowText": "chemical energy is usually a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"microbial fuel cell" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"microbial fuel cells" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","b1ec-8df3-25d3-01d4","9d65-2cd1-cfde-9967","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b1ec-8df3-25d3-01d4", "rowText": "a tidal generator ; a tidal power plant converts tidal energy ; wave energy into electricity ; electric energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d65-2cd1-cfde-9967", "rowText": "tidal energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal generator" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"tidal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal generator" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"tidal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","b1ec-8df3-25d3-01d4","9d65-2cd1-cfde-9967","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b1ec-8df3-25d3-01d4", "rowText": "a tidal generator ; a tidal power plant converts tidal energy ; wave energy into electricity ; electric energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d65-2cd1-cfde-9967", "rowText": "tidal energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal power plant" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"tidal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal power plant" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"tidal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","b1ec-8df3-25d3-01d4","be42-bfb1-ed75-4dbf","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b1ec-8df3-25d3-01d4", "rowText": "a tidal generator ; a tidal power plant converts tidal energy ; wave energy into electricity ; electric energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "be42-bfb1-ed75-4dbf", "rowText": "wave energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal generator" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wave energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal generator" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wave energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","b1ec-8df3-25d3-01d4","be42-bfb1-ed75-4dbf","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b1ec-8df3-25d3-01d4", "rowText": "a tidal generator ; a tidal power plant converts tidal energy ; wave energy into electricity ; electric energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "be42-bfb1-ed75-4dbf", "rowText": "wave energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal power plant" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wave energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal power plant" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wave energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","536c-2d19-0c19-8690","3dd5-171b-5cd8-bf0d","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "536c-2d19-0c19-8690", "rowText": "a geothermal power plant converts geothermal energy into electricity ; electric energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "3dd5-171b-5cd8-bf0d", "rowText": "geothermal energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"geothermal power plant" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"geothermal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"geothermal power plant" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"geothermal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","635a-5126-9cf1-4fe4","e094-f38a-c2c7-8407","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "635a-5126-9cf1-4fe4", "rowText": "a coal power plant ; a fossil fuel power plant ; a natural gas power plant converts an energy source from chemical energy into electricity ; electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e094-f38a-c2c7-8407", "rowText": "chemical energy is usually a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"coal power plant" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"coal power plant" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","635a-5126-9cf1-4fe4","e094-f38a-c2c7-8407","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "635a-5126-9cf1-4fe4", "rowText": "a coal power plant ; a fossil fuel power plant ; a natural gas power plant converts an energy source from chemical energy into electricity ; electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e094-f38a-c2c7-8407", "rowText": "chemical energy is usually a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"fossil fuel power plant" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"fossil fuel power plant" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","635a-5126-9cf1-4fe4","e094-f38a-c2c7-8407","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "635a-5126-9cf1-4fe4", "rowText": "a coal power plant ; a fossil fuel power plant ; a natural gas power plant converts an energy source from chemical energy into electricity ; electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e094-f38a-c2c7-8407", "rowText": "chemical energy is usually a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"nature gas power plant" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"natural gas power plant" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","4ba0-cce5-f474-424a","77f9-749f-9394-ae34","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4ba0-cce5-f474-424a", "rowText": "a coal power plant converts an energy source from coal into electricity ; electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"coal power plant" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"coal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"coal power plant" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"coal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","c5a4-2b32-95ad-bc14","0b4c-355e-1cca-d698","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c5a4-2b32-95ad-bc14", "rowText": "a fossil fuel power plant converts an energy source from fossil fuels into electricity ; electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "0b4c-355e-1cca-d698", "rowText": "fossil fuels are a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"fossil fuel power plant" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"fossil fuel" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"fossil fuel power plant" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"fossil fuels" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","51e6-e28b-9682-34e4","4cbb-5f96-4d29-b4f5","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "51e6-e28b-9682-34e4", "rowText": "a natural gas power plant converts an energy source from natural gas into electricity ; electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "4cbb-5f96-4d29-b4f5", "rowText": "natural gas is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"nature gas power plant" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"nature gas" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"natural gas power plant" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"natural gas" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","66e0-20b6-da6c-8421","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar cell" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar cells" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["0584-393a-7b86-9c70","66e0-20b6-da6c-8421","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0584-393a-7b86-9c70", "rowText": "electric devices require electrical energy to function", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "66e0-20b6-da6c-8421", "rowText": "solar cells convert solar energy into electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar cell" },
+			{ "name":"electricalEnergy", "value":"electric energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar cells" },
+			{ "name":"electricalEnergy", "value":"electrical energy" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","bc35-178c-432b-77f5","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","bc35-178c-432b-77f5","f5c3-d141-1a8b-80c9","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc35-178c-432b-77f5", "rowText": "a solar panel converts sunlight ; solar energy into electrical energy ; electricity", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"solar panel" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","d68e-b9c5-62d5-f63e","0da1-2296-dfe8-6873","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d68e-b9c5-62d5-f63e", "rowText": "a windmill converts wind ; wind energy into electrical energy ; electricity primarily by using mechanical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","d68e-b9c5-62d5-f63e","0da1-2296-dfe8-6873","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d68e-b9c5-62d5-f63e", "rowText": "a windmill converts wind ; wind energy into electrical energy ; electricity primarily by using mechanical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","d68e-b9c5-62d5-f63e","0da1-2296-dfe8-6873","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d68e-b9c5-62d5-f63e", "rowText": "a windmill converts wind ; wind energy into electrical energy ; electricity primarily by using mechanical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","d68e-b9c5-62d5-f63e","0da1-2296-dfe8-6873","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d68e-b9c5-62d5-f63e", "rowText": "a windmill converts wind ; wind energy into electrical energy ; electricity primarily by using mechanical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"windmill" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wind energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","b1ec-8df3-25d3-01d4","9d65-2cd1-cfde-9967","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b1ec-8df3-25d3-01d4", "rowText": "a tidal generator ; a tidal power plant converts tidal energy ; wave energy into electricity ; electric energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d65-2cd1-cfde-9967", "rowText": "tidal energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal generator" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"tidal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal generator" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"tidal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","b1ec-8df3-25d3-01d4","9d65-2cd1-cfde-9967","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b1ec-8df3-25d3-01d4", "rowText": "a tidal generator ; a tidal power plant converts tidal energy ; wave energy into electricity ; electric energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9d65-2cd1-cfde-9967", "rowText": "tidal energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal power plant" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"tidal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal power plant" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"tidal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","b1ec-8df3-25d3-01d4","be42-bfb1-ed75-4dbf","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b1ec-8df3-25d3-01d4", "rowText": "a tidal generator ; a tidal power plant converts tidal energy ; wave energy into electricity ; electric energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "be42-bfb1-ed75-4dbf", "rowText": "wave energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal generator" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wave energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal generator" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wave energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","b1ec-8df3-25d3-01d4","be42-bfb1-ed75-4dbf","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b1ec-8df3-25d3-01d4", "rowText": "a tidal generator ; a tidal power plant converts tidal energy ; wave energy into electricity ; electric energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "be42-bfb1-ed75-4dbf", "rowText": "wave energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal power plant" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wave energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"tidal power plant" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"wave energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","536c-2d19-0c19-8690","3dd5-171b-5cd8-bf0d","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "536c-2d19-0c19-8690", "rowText": "a geothermal power plant converts geothermal energy into electricity ; electric energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "3dd5-171b-5cd8-bf0d", "rowText": "geothermal energy is a renewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"geothermal power plant" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"geothermal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"geothermal power plant" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"geothermal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","635a-5126-9cf1-4fe4","e094-f38a-c2c7-8407","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "635a-5126-9cf1-4fe4", "rowText": "a coal power plant ; a fossil fuel power plant ; a natural gas power plant converts an energy source from chemical energy into electricity ; electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e094-f38a-c2c7-8407", "rowText": "chemical energy is usually a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"coal power plant" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"coal power plant" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","635a-5126-9cf1-4fe4","e094-f38a-c2c7-8407","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "635a-5126-9cf1-4fe4", "rowText": "a coal power plant ; a fossil fuel power plant ; a natural gas power plant converts an energy source from chemical energy into electricity ; electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e094-f38a-c2c7-8407", "rowText": "chemical energy is usually a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"fossil fuel power plant" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"fossil fuel power plant" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","635a-5126-9cf1-4fe4","e094-f38a-c2c7-8407","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "635a-5126-9cf1-4fe4", "rowText": "a coal power plant ; a fossil fuel power plant ; a natural gas power plant converts an energy source from chemical energy into electricity ; electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e094-f38a-c2c7-8407", "rowText": "chemical energy is usually a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"nature gas power plant" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"natural gas power plant" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","4ba0-cce5-f474-424a","77f9-749f-9394-ae34","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "4ba0-cce5-f474-424a", "rowText": "a coal power plant converts an energy source from coal into electricity ; electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"coal power plant" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"coal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"coal power plant" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"coal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","c5a4-2b32-95ad-bc14","0b4c-355e-1cca-d698","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c5a4-2b32-95ad-bc14", "rowText": "a fossil fuel power plant converts an energy source from fossil fuels into electricity ; electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "0b4c-355e-1cca-d698", "rowText": "fossil fuels are a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"fossil fuel power plant" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"fossil fuel" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"fossil fuel power plant" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"fossil fuels" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		},
+		{
+		"uuids": ["4ba9-2d5a-0284-2882","51e6-e28b-9682-34e4","4cbb-5f96-4d29-b4f5","a979-cbd2-fb2d-175e"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "51e6-e28b-9682-34e4", "rowText": "a natural gas power plant converts an energy source from natural gas into electricity ; electrical energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "4cbb-5f96-4d29-b4f5", "rowText": "natural gas is a nonrenewable resource", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "a979-cbd2-fb2d-175e", "rowText": "as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"nature gas power plant" },
+			{ "name":"electricalEnergy", "value":"electric" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"nature gas" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow13", "value":"" },
+			{ "name":"autoRow5", "value":"" },
+			{ "name":"deviceName", "value":"natural gas power plant" },
+			{ "name":"electricalEnergy", "value":"electricity" },
+			{ "name":"energySourceAltName", "value":"" },
+			{ "name":"energySourceBefore", "value":"natural gas" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" },
+			{ "name":"sourceName", "value":"" }
+		]
+		}
+	]
+},
+{
+	"patternName":"PoweringElectricDevices",
+	"matches":[
+		{
+		"uuids": ["0692-6be2-8fb9-41e9","b8fe-4fe5-0eae-a038","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b8fe-4fe5-0eae-a038", "rowText": "electricity is used as an energy source by electrical devices", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"electricDeviceName", "value":"battery-operated device" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"electricDeviceName", "value":"battery-operated device" }
+		]
+		},
+		{
+		"uuids": ["0692-6be2-8fb9-41e9","b8fe-4fe5-0eae-a038","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b8fe-4fe5-0eae-a038", "rowText": "electricity is used as an energy source by electrical devices", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"electricDeviceName", "value":"battery operate device" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"electricDeviceName", "value":"battery operated device" }
+		]
+		},
+		{
+		"uuids": ["ac96-5db5-366c-b342","b8fe-4fe5-0eae-a038","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "ac96-5db5-366c-b342", "rowText": "a doorbell is a kind of electric device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b8fe-4fe5-0eae-a038", "rowText": "electricity is used as an energy source by electrical devices", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"electricDeviceName", "value":"doorbell" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"electricDeviceName", "value":"doorbell" }
+		]
+		},
+		{
+		"uuids": ["130a-ea4e-6de1-a4af","b8fe-4fe5-0eae-a038","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "130a-ea4e-6de1-a4af", "rowText": "a flashlight is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b8fe-4fe5-0eae-a038", "rowText": "electricity is used as an energy source by electrical devices", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"electricDeviceName", "value":"flashlight" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"electricDeviceName", "value":"flashlight" }
+		]
+		},
+		{
+		"uuids": ["53c2-3d92-5b32-6e64","b8fe-4fe5-0eae-a038","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "53c2-3d92-5b32-6e64", "rowText": "household appliances are a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b8fe-4fe5-0eae-a038", "rowText": "electricity is used as an energy source by electrical devices", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"electricDeviceName", "value":"household appliance" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"electricDeviceName", "value":"household appliances" }
+		]
+		},
+		{
+		"uuids": ["00a4-b16a-aa4d-893d","b8fe-4fe5-0eae-a038","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "00a4-b16a-aa4d-893d", "rowText": "a light bulb is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b8fe-4fe5-0eae-a038", "rowText": "electricity is used as an energy source by electrical devices", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"electricDeviceName", "value":"light bulb" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"electricDeviceName", "value":"light bulb" }
+		]
+		},
+		{
+		"uuids": ["e58b-3217-6a20-dde2","b8fe-4fe5-0eae-a038","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "e58b-3217-6a20-dde2", "rowText": "a radio is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b8fe-4fe5-0eae-a038", "rowText": "electricity is used as an energy source by electrical devices", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"electricDeviceName", "value":"radio" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"electricDeviceName", "value":"radio" }
+		]
+		},
+		{
+		"uuids": ["89ae-f520-fdbf-4c54","b8fe-4fe5-0eae-a038","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "89ae-f520-fdbf-4c54", "rowText": "an television set is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b8fe-4fe5-0eae-a038", "rowText": "electricity is used as an energy source by electrical devices", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"electricDeviceName", "value":"television set" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"electricDeviceName", "value":"television set" }
+		]
+		},
+		{
+		"uuids": ["50a8-996b-b8bf-e107","b8fe-4fe5-0eae-a038","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "50a8-996b-b8bf-e107", "rowText": "a toaster is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b8fe-4fe5-0eae-a038", "rowText": "electricity is used as an energy source by electrical devices", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"electricDeviceName", "value":"toaster" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"electricDeviceName", "value":"toaster" }
+		]
+		},
+		{
+		"uuids": ["43df-97a4-a812-de66","b8fe-4fe5-0eae-a038","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "43df-97a4-a812-de66", "rowText": "an electric stove is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b8fe-4fe5-0eae-a038", "rowText": "electricity is used as an energy source by electrical devices", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"electricDeviceName", "value":"electric stave" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"electricDeviceName", "value":"electric stove" }
+		]
+		},
+		{
+		"uuids": ["0692-6be2-8fb9-41e9","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"battery-operated device" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"battery-operated device" }
+		]
+		},
+		{
+		"uuids": ["0692-6be2-8fb9-41e9","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"battery operate device" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"battery operated device" }
+		]
+		},
+		{
+		"uuids": ["ac96-5db5-366c-b342","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "ac96-5db5-366c-b342", "rowText": "a doorbell is a kind of electric device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"doorbell" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"doorbell" }
+		]
+		},
+		{
+		"uuids": ["130a-ea4e-6de1-a4af","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "130a-ea4e-6de1-a4af", "rowText": "a flashlight is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"flashlight" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"flashlight" }
+		]
+		},
+		{
+		"uuids": ["53c2-3d92-5b32-6e64","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "53c2-3d92-5b32-6e64", "rowText": "household appliances are a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"household appliance" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"household appliances" }
+		]
+		},
+		{
+		"uuids": ["00a4-b16a-aa4d-893d","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "00a4-b16a-aa4d-893d", "rowText": "a light bulb is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"light bulb" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"light bulb" }
+		]
+		},
+		{
+		"uuids": ["e58b-3217-6a20-dde2","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "e58b-3217-6a20-dde2", "rowText": "a radio is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"radio" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"radio" }
+		]
+		},
+		{
+		"uuids": ["89ae-f520-fdbf-4c54","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "89ae-f520-fdbf-4c54", "rowText": "an television set is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"television set" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"television set" }
+		]
+		},
+		{
+		"uuids": ["50a8-996b-b8bf-e107","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "50a8-996b-b8bf-e107", "rowText": "a toaster is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"toaster" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"toaster" }
+		]
+		},
+		{
+		"uuids": ["43df-97a4-a812-de66","044f-98c1-07d1-2e57","acf6-d100-2553-e4ac","3a7a-4175-a1b7-db73"],
+		"slots": [
+			{"rowSlotName": "autoRow2", "uuid": "43df-97a4-a812-de66", "rowText": "an electric stove is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "044f-98c1-07d1-2e57", "rowText": "an energy source is a kind of resource", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "acf6-d100-2553-e4ac", "rowText": "to provide something means to be the source of that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "3a7a-4175-a1b7-db73", "rowText": "to power means to provide energy for", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"electric stave" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"electricDeviceName", "value":"electric stove" }
+		]
+		}
+	]
+},
+{
+	"patternName":"SolarPanelSpecific",
+	"matches":[
+		{
+		"uuids": ["4ec0-b548-a2c5-73c1","432f-babd-5745-f060","1aa9-530e-351f-2c08","6759-5ee2-140f-df48","673d-b928-1d98-7e31","b19d-499c-1f30-c429","59d6-9954-ef5e-12b2","4849-d977-c75a-e8fb"],
+		"slots": [
+			{"rowSlotName": "autoRow11", "uuid": "4ec0-b548-a2c5-73c1", "rowText": "solar cells often are made of silicon", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "432f-babd-5745-f060", "rowText": "a solar panel is made of solar cells", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1aa9-530e-351f-2c08", "rowText": "solar panels are a kind of power supplies", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "6759-5ee2-140f-df48", "rowText": "sunlight means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "673d-b928-1d98-7e31", "rowText": "solar cell is similar to photovoltaic cell", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "b19d-499c-1f30-c429", "rowText": "solar power means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4849-d977-c75a-e8fb", "rowText": "solar energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		}
+	]
+}
+]}
+

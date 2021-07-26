@@ -1,0 +1,118 @@
+// FLAGS: READY
+// QID: MDSA_2009_4_30
+// Question: Stars are organized into patterns called constellations. One constellation is named Leo. Which statement best explains why Leo appears in different areas of the sky throughout the year? (A) Earth revolves around the sun. (B) The sun revolves around Earth. (C) The constellations revolve around Earth. (D) Earth revolves around the constellations.
+
+// FLAGS: INPROGRESS
+// QID: NYSEDREGENTS_2014_4_9
+// Question: A student removes an ice cube tray from the freezer and places it on a table. The ice cubes are solid and cold. The student forgets to put the ice cube tray back into the freezer. The next day, the ice cubes should be (A) liquid and warmer (B) solid and warmer (C) liquid and colder (D) solid and colder
+
+// Test script
+
+// Includes
+import "../scienceimports.iml"
+import "../processtest.iml"
+
+println ("TEST")
+
+/*
+var a = 1
+while (a < 10) 
+    println("while loop iteration " + a)
+    a = a + 1
+endwhile
+*/
+
+populateInfPatMatches
+
+/*
+var total = 0
+var a = 0
+while (1 == 1) 
+    println("while loop iteration a = " + a)
+    a = a + 1
+
+    var b = 0
+    while (1 == 1) 
+        println("while loop iteration b = " + b)
+        b = b + 1
+        total = total + 1
+        if (b >= 5) then
+            exit(3)
+            break            
+        endif
+    endwhile
+    
+    if (a >= 4) then
+        break
+    endif
+
+endwhile
+println("Total: " + total)
+*/
+
+
+exportTableStoreHTML("tablestore_export1234.html")
+
+// Main
+//#qreference# obj1 = ice cube
+instance obj1 = [KINDOF:"substance"]
+obj1."name" = "test object 1"
+obj1."material" = "water"
+obj1."state of matter" = "solid"
+obj1."temperature" = "-10"
+//obj1."temperature" = "10"
+
+//#qreference# obj2 = more *galaxies* called
+//#qreference# obj2 = *galaxies* are
+//#qreference# obj2 = likely 
+//#qreference# obj2 = these
+//#qreference# obj2 = considered
+//#qreference# obj2 = Local Group
+//#qreference# obj2 = attracted
+//#qreference# obj2 = gravity
+
+//#qreference# obj2 = liquid
+instance obj2 = [KINDOF:"substance"]
+obj2."name" = "test object 2"
+obj2."state of matter" = "liquid"
+obj2."temperature" = 20
+
+
+//#qreference# outside = table
+instance outside = [KINDOF:"environment"]
+outside."name" = "outside environment"
+outside."temperature" = "25"
+
+
+// Set that object1 and object2 are touching
+generateRow([TABLE:"SPATIAL", THING1:"test object 1", FILL_IS:"is", SPATIALRELATION:"touching", THING2:"test object 2"])
+
+// Set that object1 is in environment outside
+generateRow([TABLE:"SPATIAL", THING1:"test object 1", FILL_IS:"is", SPATIALRELATION:"located", THING2:"outside environment"])
+
+
+printInstances
+
+// Populate inference pattern instance matches
+populateInfPatMatches
+
+// Export inference patterns and tablestore
+//exportInfPatHTML("infpattern_out.html")
+//exportTableStoreHTML("tablestore_export.html")
+
+// Execution examples
+//println ("BEFORE")
+printInstances
+
+
+
+// Step 1: Heat up substance a bit
+while (meetsRequirements(ChangeOfStateWithSubstanceFromTo, "46eea", [sub1->obj1]) == 0)
+    executePattern(heatTransferEnvironmentObject, "c4aa2", [object1->obj1, environment1->outside], temporalblocks=[step])
+endwhile
+
+// Step 2: When the substance reaches a phase transition point, change the state of matter
+executePattern(ChangeOfStateWithSubstanceFromTo, "46eea", [sub1->obj1])
+printInstances
+
+

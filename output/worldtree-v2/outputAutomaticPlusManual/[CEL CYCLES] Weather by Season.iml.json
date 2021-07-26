@@ -1,0 +1,314 @@
+{"patternMatches": [
+{
+	"patternName":"CEL_CYCLES_Weather_by_Season",
+	"matches":[
+		{
+		"uuids": ["0b7b-cf23-e64f-4200","5510-64d4-c9fc-9719","7b97-d2e2-7317-c84c","bd19-8646-deb7-e368","39e2-fb06-b946-62df","a00a-f7dd-a348-2d99","a1ad-2fd3-e7aa-c2a5","551a-ecdb-38e6-4b09","5307-2d90-79a8-14af","5949-8ca0-0ddf-811b","9a54-fdc1-b863-633a","9ff8-543c-2f35-5d3f","3f3f-f2cb-ae3d-f238","a6b9-8323-ab01-cfe7","9939-7d13-b72f-2674"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0b7b-cf23-e64f-4200", "rowText": "the Earth being tilted on its rotating axis causes seasons", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5510-64d4-c9fc-9719", "rowText": "the winter in the Northern Hemisphere is during the summer in the Southern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7b97-d2e2-7317-c84c", "rowText": "the winter in the Southern Hemisphere is during the summer in the Northern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "bd19-8646-deb7-e368", "rowText": "December is during the summer in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "39e2-fb06-b946-62df", "rowText": "December is during the winter in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "a00a-f7dd-a348-2d99", "rowText": "France is located in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "a1ad-2fd3-e7aa-c2a5", "rowText": "Mayotte (France) is located in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "551a-ecdb-38e6-4b09", "rowText": "the amount of daylight is greatest on the summer solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5307-2d90-79a8-14af", "rowText": "the amount of daylight is least on the winter solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "5949-8ca0-0ddf-811b", "rowText": "summer is when a hemisphere is tilted towards the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "9a54-fdc1-b863-633a", "rowText": "winter is when a hemisphere is tilted away from the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "3f3f-f2cb-ae3d-f238", "rowText": "summer is a kind of season", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "a6b9-8323-ab01-cfe7", "rowText": "summer has hot temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "9939-7d13-b72f-2674", "rowText": "winter has cold temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"america_3", "value":"france" },
+			{ "name":"december_0", "value":"december" },
+			{ "name":"northern_2", "value":"northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"southern" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"america_3", "value":"France" },
+			{ "name":"december_0", "value":"December" },
+			{ "name":"northern_2", "value":"Northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"Southern" }
+		]
+		},
+		{
+		"uuids": ["0b7b-cf23-e64f-4200","5510-64d4-c9fc-9719","7b97-d2e2-7317-c84c","bd19-8646-deb7-e368","39e2-fb06-b946-62df","a00a-f7dd-a348-2d99","7ecf-727c-ed77-d848","551a-ecdb-38e6-4b09","5307-2d90-79a8-14af","5949-8ca0-0ddf-811b","9a54-fdc1-b863-633a","9ff8-543c-2f35-5d3f","3f3f-f2cb-ae3d-f238","a6b9-8323-ab01-cfe7","9939-7d13-b72f-2674"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0b7b-cf23-e64f-4200", "rowText": "the Earth being tilted on its rotating axis causes seasons", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5510-64d4-c9fc-9719", "rowText": "the winter in the Northern Hemisphere is during the summer in the Southern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7b97-d2e2-7317-c84c", "rowText": "the winter in the Southern Hemisphere is during the summer in the Northern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "bd19-8646-deb7-e368", "rowText": "December is during the summer in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "39e2-fb06-b946-62df", "rowText": "December is during the winter in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "a00a-f7dd-a348-2d99", "rowText": "France is located in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "7ecf-727c-ed77-d848", "rowText": "Mayotte (France) is located in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "551a-ecdb-38e6-4b09", "rowText": "the amount of daylight is greatest on the summer solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5307-2d90-79a8-14af", "rowText": "the amount of daylight is least on the winter solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "5949-8ca0-0ddf-811b", "rowText": "summer is when a hemisphere is tilted towards the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "9a54-fdc1-b863-633a", "rowText": "winter is when a hemisphere is tilted away from the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "3f3f-f2cb-ae3d-f238", "rowText": "summer is a kind of season", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "a6b9-8323-ab01-cfe7", "rowText": "summer has hot temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "9939-7d13-b72f-2674", "rowText": "winter has cold temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"america_3", "value":"france" },
+			{ "name":"december_0", "value":"december" },
+			{ "name":"northern_2", "value":"northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"southern" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"america_3", "value":"France" },
+			{ "name":"december_0", "value":"December" },
+			{ "name":"northern_2", "value":"Northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"Southern" }
+		]
+		},
+		{
+		"uuids": ["0b7b-cf23-e64f-4200","5510-64d4-c9fc-9719","7b97-d2e2-7317-c84c","bd19-8646-deb7-e368","39e2-fb06-b946-62df","4973-71de-0381-de3f","bb0f-d314-23b2-c929","551a-ecdb-38e6-4b09","5307-2d90-79a8-14af","5949-8ca0-0ddf-811b","9a54-fdc1-b863-633a","9ff8-543c-2f35-5d3f","3f3f-f2cb-ae3d-f238","a6b9-8323-ab01-cfe7","9939-7d13-b72f-2674"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0b7b-cf23-e64f-4200", "rowText": "the Earth being tilted on its rotating axis causes seasons", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5510-64d4-c9fc-9719", "rowText": "the winter in the Northern Hemisphere is during the summer in the Southern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7b97-d2e2-7317-c84c", "rowText": "the winter in the Southern Hemisphere is during the summer in the Northern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "bd19-8646-deb7-e368", "rowText": "December is during the summer in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "39e2-fb06-b946-62df", "rowText": "December is during the winter in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "4973-71de-0381-de3f", "rowText": "Cayman Islands (UK) is located in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "bb0f-d314-23b2-c929", "rowText": "Falkland Islands (UK) is located in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "551a-ecdb-38e6-4b09", "rowText": "the amount of daylight is greatest on the summer solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5307-2d90-79a8-14af", "rowText": "the amount of daylight is least on the winter solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "5949-8ca0-0ddf-811b", "rowText": "summer is when a hemisphere is tilted towards the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "9a54-fdc1-b863-633a", "rowText": "winter is when a hemisphere is tilted away from the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "3f3f-f2cb-ae3d-f238", "rowText": "summer is a kind of season", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "a6b9-8323-ab01-cfe7", "rowText": "summer has hot temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "9939-7d13-b72f-2674", "rowText": "winter has cold temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"america_3", "value":"island uk" },
+			{ "name":"december_0", "value":"december" },
+			{ "name":"northern_2", "value":"northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"southern" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"america_3", "value":"Islands UK" },
+			{ "name":"december_0", "value":"December" },
+			{ "name":"northern_2", "value":"Northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"Southern" }
+		]
+		},
+		{
+		"uuids": ["0b7b-cf23-e64f-4200","5510-64d4-c9fc-9719","7b97-d2e2-7317-c84c","bd19-8646-deb7-e368","39e2-fb06-b946-62df","2dca-284c-06fd-e8a6","a1ad-2fd3-e7aa-c2a5","551a-ecdb-38e6-4b09","5307-2d90-79a8-14af","5949-8ca0-0ddf-811b","9a54-fdc1-b863-633a","9ff8-543c-2f35-5d3f","3f3f-f2cb-ae3d-f238","a6b9-8323-ab01-cfe7","9939-7d13-b72f-2674"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0b7b-cf23-e64f-4200", "rowText": "the Earth being tilted on its rotating axis causes seasons", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5510-64d4-c9fc-9719", "rowText": "the winter in the Northern Hemisphere is during the summer in the Southern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7b97-d2e2-7317-c84c", "rowText": "the winter in the Southern Hemisphere is during the summer in the Northern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "bd19-8646-deb7-e368", "rowText": "December is during the summer in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "39e2-fb06-b946-62df", "rowText": "December is during the winter in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2dca-284c-06fd-e8a6", "rowText": "Guadeloupe (France) is located in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "a1ad-2fd3-e7aa-c2a5", "rowText": "Mayotte (France) is located in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "551a-ecdb-38e6-4b09", "rowText": "the amount of daylight is greatest on the summer solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5307-2d90-79a8-14af", "rowText": "the amount of daylight is least on the winter solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "5949-8ca0-0ddf-811b", "rowText": "summer is when a hemisphere is tilted towards the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "9a54-fdc1-b863-633a", "rowText": "winter is when a hemisphere is tilted away from the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "3f3f-f2cb-ae3d-f238", "rowText": "summer is a kind of season", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "a6b9-8323-ab01-cfe7", "rowText": "summer has hot temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "9939-7d13-b72f-2674", "rowText": "winter has cold temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"america_3", "value":"france" },
+			{ "name":"december_0", "value":"december" },
+			{ "name":"northern_2", "value":"northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"southern" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"america_3", "value":"France" },
+			{ "name":"december_0", "value":"December" },
+			{ "name":"northern_2", "value":"Northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"Southern" }
+		]
+		},
+		{
+		"uuids": ["0b7b-cf23-e64f-4200","5510-64d4-c9fc-9719","7b97-d2e2-7317-c84c","bd19-8646-deb7-e368","39e2-fb06-b946-62df","2dca-284c-06fd-e8a6","7ecf-727c-ed77-d848","551a-ecdb-38e6-4b09","5307-2d90-79a8-14af","5949-8ca0-0ddf-811b","9a54-fdc1-b863-633a","9ff8-543c-2f35-5d3f","3f3f-f2cb-ae3d-f238","a6b9-8323-ab01-cfe7","9939-7d13-b72f-2674"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0b7b-cf23-e64f-4200", "rowText": "the Earth being tilted on its rotating axis causes seasons", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5510-64d4-c9fc-9719", "rowText": "the winter in the Northern Hemisphere is during the summer in the Southern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7b97-d2e2-7317-c84c", "rowText": "the winter in the Southern Hemisphere is during the summer in the Northern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "bd19-8646-deb7-e368", "rowText": "December is during the summer in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "39e2-fb06-b946-62df", "rowText": "December is during the winter in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2dca-284c-06fd-e8a6", "rowText": "Guadeloupe (France) is located in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "7ecf-727c-ed77-d848", "rowText": "Mayotte (France) is located in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "551a-ecdb-38e6-4b09", "rowText": "the amount of daylight is greatest on the summer solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5307-2d90-79a8-14af", "rowText": "the amount of daylight is least on the winter solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "5949-8ca0-0ddf-811b", "rowText": "summer is when a hemisphere is tilted towards the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "9a54-fdc1-b863-633a", "rowText": "winter is when a hemisphere is tilted away from the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "3f3f-f2cb-ae3d-f238", "rowText": "summer is a kind of season", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "a6b9-8323-ab01-cfe7", "rowText": "summer has hot temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "9939-7d13-b72f-2674", "rowText": "winter has cold temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"america_3", "value":"france" },
+			{ "name":"december_0", "value":"december" },
+			{ "name":"northern_2", "value":"northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"southern" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"america_3", "value":"France" },
+			{ "name":"december_0", "value":"December" },
+			{ "name":"northern_2", "value":"Northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"Southern" }
+		]
+		},
+		{
+		"uuids": ["0b7b-cf23-e64f-4200","5510-64d4-c9fc-9719","7b97-d2e2-7317-c84c","bd19-8646-deb7-e368","39e2-fb06-b946-62df","d683-e74e-6a7d-63ee","a1ad-2fd3-e7aa-c2a5","551a-ecdb-38e6-4b09","5307-2d90-79a8-14af","5949-8ca0-0ddf-811b","9a54-fdc1-b863-633a","9ff8-543c-2f35-5d3f","3f3f-f2cb-ae3d-f238","a6b9-8323-ab01-cfe7","9939-7d13-b72f-2674"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0b7b-cf23-e64f-4200", "rowText": "the Earth being tilted on its rotating axis causes seasons", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5510-64d4-c9fc-9719", "rowText": "the winter in the Northern Hemisphere is during the summer in the Southern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7b97-d2e2-7317-c84c", "rowText": "the winter in the Southern Hemisphere is during the summer in the Northern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "bd19-8646-deb7-e368", "rowText": "December is during the summer in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "39e2-fb06-b946-62df", "rowText": "December is during the winter in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "d683-e74e-6a7d-63ee", "rowText": "Martinique (France) is located in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "a1ad-2fd3-e7aa-c2a5", "rowText": "Mayotte (France) is located in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "551a-ecdb-38e6-4b09", "rowText": "the amount of daylight is greatest on the summer solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5307-2d90-79a8-14af", "rowText": "the amount of daylight is least on the winter solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "5949-8ca0-0ddf-811b", "rowText": "summer is when a hemisphere is tilted towards the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "9a54-fdc1-b863-633a", "rowText": "winter is when a hemisphere is tilted away from the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "3f3f-f2cb-ae3d-f238", "rowText": "summer is a kind of season", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "a6b9-8323-ab01-cfe7", "rowText": "summer has hot temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "9939-7d13-b72f-2674", "rowText": "winter has cold temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"america_3", "value":"france" },
+			{ "name":"december_0", "value":"december" },
+			{ "name":"northern_2", "value":"northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"southern" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"america_3", "value":"France" },
+			{ "name":"december_0", "value":"December" },
+			{ "name":"northern_2", "value":"Northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"Southern" }
+		]
+		},
+		{
+		"uuids": ["0b7b-cf23-e64f-4200","5510-64d4-c9fc-9719","7b97-d2e2-7317-c84c","bd19-8646-deb7-e368","39e2-fb06-b946-62df","d683-e74e-6a7d-63ee","7ecf-727c-ed77-d848","551a-ecdb-38e6-4b09","5307-2d90-79a8-14af","5949-8ca0-0ddf-811b","9a54-fdc1-b863-633a","9ff8-543c-2f35-5d3f","3f3f-f2cb-ae3d-f238","a6b9-8323-ab01-cfe7","9939-7d13-b72f-2674"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0b7b-cf23-e64f-4200", "rowText": "the Earth being tilted on its rotating axis causes seasons", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5510-64d4-c9fc-9719", "rowText": "the winter in the Northern Hemisphere is during the summer in the Southern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7b97-d2e2-7317-c84c", "rowText": "the winter in the Southern Hemisphere is during the summer in the Northern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "bd19-8646-deb7-e368", "rowText": "December is during the summer in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "39e2-fb06-b946-62df", "rowText": "December is during the winter in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "d683-e74e-6a7d-63ee", "rowText": "Martinique (France) is located in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "7ecf-727c-ed77-d848", "rowText": "Mayotte (France) is located in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "551a-ecdb-38e6-4b09", "rowText": "the amount of daylight is greatest on the summer solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5307-2d90-79a8-14af", "rowText": "the amount of daylight is least on the winter solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "5949-8ca0-0ddf-811b", "rowText": "summer is when a hemisphere is tilted towards the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "9a54-fdc1-b863-633a", "rowText": "winter is when a hemisphere is tilted away from the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "3f3f-f2cb-ae3d-f238", "rowText": "summer is a kind of season", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "a6b9-8323-ab01-cfe7", "rowText": "summer has hot temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "9939-7d13-b72f-2674", "rowText": "winter has cold temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"america_3", "value":"france" },
+			{ "name":"december_0", "value":"december" },
+			{ "name":"northern_2", "value":"northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"southern" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"america_3", "value":"France" },
+			{ "name":"december_0", "value":"December" },
+			{ "name":"northern_2", "value":"Northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"Southern" }
+		]
+		},
+		{
+		"uuids": ["0b7b-cf23-e64f-4200","5510-64d4-c9fc-9719","7b97-d2e2-7317-c84c","bd19-8646-deb7-e368","39e2-fb06-b946-62df","cf90-582c-6769-2d0a","9075-db62-8736-1e1d","551a-ecdb-38e6-4b09","5307-2d90-79a8-14af","5949-8ca0-0ddf-811b","9a54-fdc1-b863-633a","9ff8-543c-2f35-5d3f","3f3f-f2cb-ae3d-f238","a6b9-8323-ab01-cfe7","9939-7d13-b72f-2674"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0b7b-cf23-e64f-4200", "rowText": "the Earth being tilted on its rotating axis causes seasons", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5510-64d4-c9fc-9719", "rowText": "the winter in the Northern Hemisphere is during the summer in the Southern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7b97-d2e2-7317-c84c", "rowText": "the winter in the Southern Hemisphere is during the summer in the Northern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "bd19-8646-deb7-e368", "rowText": "December is during the summer in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "39e2-fb06-b946-62df", "rowText": "December is during the winter in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "cf90-582c-6769-2d0a", "rowText": "The North Pole is located in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "9075-db62-8736-1e1d", "rowText": "The South Pole is located in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "551a-ecdb-38e6-4b09", "rowText": "the amount of daylight is greatest on the summer solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5307-2d90-79a8-14af", "rowText": "the amount of daylight is least on the winter solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "5949-8ca0-0ddf-811b", "rowText": "summer is when a hemisphere is tilted towards the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "9a54-fdc1-b863-633a", "rowText": "winter is when a hemisphere is tilted away from the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "3f3f-f2cb-ae3d-f238", "rowText": "summer is a kind of season", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "a6b9-8323-ab01-cfe7", "rowText": "summer has hot temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "9939-7d13-b72f-2674", "rowText": "winter has cold temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"america_3", "value":"pole" },
+			{ "name":"december_0", "value":"december" },
+			{ "name":"northern_2", "value":"northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"southern" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"america_3", "value":"Pole" },
+			{ "name":"december_0", "value":"December" },
+			{ "name":"northern_2", "value":"Northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"Southern" }
+		]
+		},
+		{
+		"uuids": ["0b7b-cf23-e64f-4200","5510-64d4-c9fc-9719","7b97-d2e2-7317-c84c","bd19-8646-deb7-e368","39e2-fb06-b946-62df","8de6-172d-d05a-08e4","8986-ef32-a436-6a0d","551a-ecdb-38e6-4b09","5307-2d90-79a8-14af","5949-8ca0-0ddf-811b","9a54-fdc1-b863-633a","9ff8-543c-2f35-5d3f","3f3f-f2cb-ae3d-f238","a6b9-8323-ab01-cfe7","9939-7d13-b72f-2674"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0b7b-cf23-e64f-4200", "rowText": "the Earth being tilted on its rotating axis causes seasons", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5510-64d4-c9fc-9719", "rowText": "the winter in the Northern Hemisphere is during the summer in the Southern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7b97-d2e2-7317-c84c", "rowText": "the winter in the Southern Hemisphere is during the summer in the Northern Hemisphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "bd19-8646-deb7-e368", "rowText": "December is during the summer in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "39e2-fb06-b946-62df", "rowText": "December is during the winter in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "8de6-172d-d05a-08e4", "rowText": "North America is located in the northern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "8986-ef32-a436-6a0d", "rowText": "South America is located in the southern hemisphere", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "551a-ecdb-38e6-4b09", "rowText": "the amount of daylight is greatest on the summer solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "5307-2d90-79a8-14af", "rowText": "the amount of daylight is least on the winter solstice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "5949-8ca0-0ddf-811b", "rowText": "summer is when a hemisphere is tilted towards the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "9a54-fdc1-b863-633a", "rowText": "winter is when a hemisphere is tilted away from the sun", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "3f3f-f2cb-ae3d-f238", "rowText": "summer is a kind of season", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "a6b9-8323-ab01-cfe7", "rowText": "summer has hot temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "9939-7d13-b72f-2674", "rowText": "winter has cold temperatures ; weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"america_3", "value":"america" },
+			{ "name":"december_0", "value":"december" },
+			{ "name":"northern_2", "value":"northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"southern" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"america_3", "value":"America" },
+			{ "name":"december_0", "value":"December" },
+			{ "name":"northern_2", "value":"Northern" },
+			{ "name":"solstice_4", "value":"solstice" },
+			{ "name":"southern_1", "value":"Southern" }
+		]
+		}
+	]
+}
+]}
+

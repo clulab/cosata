@@ -1,0 +1,95 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Acid_Rain
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a body of water is a kind of environment     (3f9d-8b3a-54b5-6a3c) [ HYPONYM:"body of water", HYPERNYM:"environment" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "body of water", HYPERNYM: "environment"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "body of water", HYPERNYM: "environment"]
+
+	// GROUNDING       KINDOF: an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//        HINTROW a bay is a kind of body of water     (0596-e537-4cc3-192c) [ HYPONYM:"bay", HYPERNYM:"body of water" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "ocean", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "body of water"]
+
+	// GROUNDING       KINDOF: coal is a kind of fossil fuel     (cab1-f3c3-59de-b682) [ HYPONYM:"coal", HYPERNYM:"fossil fuel" ]
+	//        HINTROW oil is a kind of fossil fuel     (3092-233a-f999-2512) [ HYPONYM:"oil", SCOPE1:"fossil", HYPERNYM:"fuel" ]
+	//  Notes: X is a kind of fossil fuels
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "coal", HYPERNYM: "fossil fuel"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "coal", HYPERNYM: "fossil fuel"]
+
+	// GROUNDING       KINDOF: sulfur dioxide is a kind of pollutant     (e3d4-7d0a-33ae-17db) [ HYPONYM:"sulfur dioxide", HYPERNYM:"pollutant" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "sulfur dioxide", HYPERNYM: "pollutant"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "sulfur dioxide", HYPERNYM: "pollutant"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: gases from burning coal and oil dissolving in water in the atmosphere causes acid rain     (90e6-d564-d603-ce58) [ CONDITION_AGENT_OBJECT:"gas from burn coal oil", CONDITION_VERB:"dissolve in", CONDITION_PATIENT:"water in atmosphere", RESULT_AGENT:"acid rain" ]
+	//row *autoRow4 = [UUID:"90e6-d564-d603-ce58", CONDITION_AGENT_OBJECT: "gas from burn coal oil", CONDITION_VERB: "dissolve in", CONDITION_PATIENT: "water in atmosphere", RESULT_AGENT: "acid rain"] //OVER-CONSTR.
+	row *autoRow4 = [UUID:"90e6-d564-d603-ce58", CONDITION_AGENT_OBJECT: "gas from burn coal oil", CONDITION_VERB: "dissolve in", CONDITION_PATIENT: "water in atmosphere", RESULT_AGENT: "acid rain"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the amount of sulfur gas in the atmosphere increases , the pH of rain will decrease     (3148-e494-1210-32aa) [ QUANTITY_MEASURE1:"amount", AGENT_ATTRIBUTE1:"of sulfur gas", SCOPE1A:"in atmosphere", CHANGE1:"increase", QUANTITY_MEASURE2:"ph", AGENT_ATTRIBUTE2:"of rain", CHANGE2:"decrease" ]
+	//  Notes: SO2 --> decreasing pH of the rain water
+	//row autoRow5 = [UUID:"3148-e494-1210-32aa", QUANTITY_MEASURE1: "amount", AGENT_ATTRIBUTE1: "of sulfur gas", SCOPE1A: "in atmosphere", CHANGE1: "increase", QUANTITY_MEASURE2: "ph", AGENT_ATTRIBUTE2: "of rain", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"3148-e494-1210-32aa", QUANTITY_MEASURE1: "amount", AGENT_ATTRIBUTE1: "of sulfur gas", SCOPE1A: "in atmosphere", CHANGE1: "increase", QUANTITY_MEASURE2: "ph", AGENT_ATTRIBUTE2: "of rain", CHANGE2: "decrease"]
+
+	// CENTRAL         SOURCEOF: burning fossil fuels releases sulfur dioxide into the atmosphere     (ed8d-bde2-25a7-6d34) [ ACTION:"burn", OBJECT_PATIENT:"fossil fuel", VERB_SOURCEOF_PROVIDE_ETC:"release", WHAT_IT_PROVIDES:"sulfur dioxide", SCOPE:"into atmosphere" ]
+	//  Notes: doing X --> SO2
+	//row autoRow6 = [UUID:"ed8d-bde2-25a7-6d34", ACTION: "burn", OBJECT_PATIENT: "fossil fuel", VERB_SOURCEOF_PROVIDE_ETC: "release", WHAT_IT_PROVIDES: "sulfur dioxide", SCOPE: "into atmosphere"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"ed8d-bde2-25a7-6d34", ACTION: "burn", OBJECT_PATIENT: "fossil fuel", VERB_SOURCEOF_PROVIDE_ETC: "release", WHAT_IT_PROVIDES: "sulfur dioxide", SCOPE: "into atmosphere"]
+
+	// CENTRAL         AFFECT: pollution has a negative impact on the environment ; air quality ; water quality ; society     (d116-6f25-b3ac-7d88) [ ACTOR_WHO:"pollute", POSITIVE_NEGATIVE:"negative", PATIENT:"environment;air quality;water quality;society" ]
+	//row autoRow7 = [UUID:"d116-6f25-b3ac-7d88", ACTOR_WHO: "pollute", POSITIVE_NEGATIVE: "negative", PATIENT: "air quality"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"d116-6f25-b3ac-7d88", ACTOR_WHO: "pollute", POSITIVE_NEGATIVE: "negative", PATIENT: "air quality"]
+
+	// CENTRAL         AFFECT: acid rain has a negative impact on water quality     (8c01-39ba-c26c-f060) [ OBJECT_PROPERTY:"acid rain", POSITIVE_NEGATIVE:"negative", PATIENT:"water quality" ]
+	//row autoRow8 = [UUID:"8c01-39ba-c26c-f060", OBJECT_PROPERTY: "acid rain", POSITIVE_NEGATIVE: "negative", PATIENT: "water quality"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"8c01-39ba-c26c-f060", OBJECT_PROPERTY: "acid rain", POSITIVE_NEGATIVE: "negative", PATIENT: "water quality"]
+
+	// CENTRAL         MEASUREMENTS: pH is a measure of acidity of a substance ranging from 0 to 14     (9083-5c1f-6f3f-8673) [ MEASURE:"ph", QUANTITY_ADJ:"measure of", ATTRIBUTE:"acidity of", AGENT:"substance", SCOPE:"range from 0 14" ]
+	//row autoRow9 = [UUID:"9083-5c1f-6f3f-8673", MEASURE: "ph", QUANTITY_ADJ: "measure of", ATTRIBUTE: "acidity of", AGENT: "substance", SCOPE: "range from 0 14"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"9083-5c1f-6f3f-8673", MEASURE: "ph", QUANTITY_ADJ: "measure of", ATTRIBUTE: "acidity of", AGENT: "substance", SCOPE: "range from 0 14"]
+
+	// CENTRAL         AFFECT: the temperature ; pH of a body of water has an impact on the health of a body of water     (faf0-8d6f-e670-231d) [ ACTOR_WHO:"temperature;ph", OBJECT_PROPERTY:"of body of water", PATIENT:"health", SCOPE:"of body of water" ]
+	//row autoRow10 = [UUID:"faf0-8d6f-e670-231d", ACTOR_WHO: "temperature", OBJECT_PROPERTY: "of body of water", PATIENT: "health", SCOPE: "of body of water"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"faf0-8d6f-e670-231d", ACTOR_WHO: "temperature", OBJECT_PROPERTY: "of body of water", PATIENT: "health", SCOPE: "of body of water"]
+
+	// CENTRAL         CAUSE: emitting sulfur dioxide causes acid rain     (a80a-0d0f-170f-9bd4) [ CONDITION_VERB:"emit", CONDITION_PATIENT:"sulfur dioxide", RESULT_AGENT:"acid rain" ]
+	//  Notes: SO2 --> acid rain
+	//row autoRow11 = [UUID:"a80a-0d0f-170f-9bd4", CONDITION_VERB: "emit", CONDITION_PATIENT: "sulfur dioxide", RESULT_AGENT: "acid rain"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"a80a-0d0f-170f-9bd4", CONDITION_VERB: "emit", CONDITION_PATIENT: "sulfur dioxide", RESULT_AGENT: "acid rain"]
+
+	// CENTRAL         FORMEDBY: sulfur dioxide is formed by the combustion of fossil fuels     (d4ac-e69f-474a-08ed) [ OBJECT:"sulfur dioxide", AGENT_PROCESS:"combust of fossil fuel" ]
+	//  Notes: how SO2 is formed
+	//row autoRow12 = [UUID:"d4ac-e69f-474a-08ed", OBJECT: "sulfur dioxide", AGENT_PROCESS: "combust of fossil fuel"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"d4ac-e69f-474a-08ed", OBJECT: "sulfur dioxide", AGENT_PROCESS: "combust of fossil fuel"]
+
+	// CENTRAL         ACTION: water pollution is when humans pollute the environment with pollutants     (3547-7689-fb87-ee96) [ DEFINITION_NAME:"water pollute", AGENT_OBJECT:"human", ACTION2:"pollute", OBJECT_PROPERTY:"environment", HOW:"pollutant" ]
+	//row autoRow13 = [UUID:"3547-7689-fb87-ee96", DEFINITION_NAME: "water pollute", AGENT_OBJECT: "human", ACTION2: "pollute", OBJECT_PROPERTY: "environment", HOW: "pollutant"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"3547-7689-fb87-ee96", DEFINITION_NAME: "water pollute", AGENT_OBJECT: "human", ACTION2: "pollute", OBJECT_PROPERTY: "environment", HOW: "pollutant"]
+
+	// CENTRAL         CAUSE: acid rain causes water pollution     (75ea-1f13-1604-da58) [ CONDITION_AGENT_OBJECT:"acid rain", RESULT_AGENT:"water pollute" ]
+	//  Notes: acid rain --> water pollution
+	//row autoRow14 = [UUID:"75ea-1f13-1604-da58", CONDITION_AGENT_OBJECT: "acid rain", RESULT_AGENT: "water pollute"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"75ea-1f13-1604-da58", CONDITION_AGENT_OBJECT: "acid rain", RESULT_AGENT: "water pollute"]
+
+	// CENTRAL         CHANGE-VEC: acid rain will increase the acidity of the ocean     (e1ac-5476-f575-13cf) [ AGENT_OBJECT:"acid rain", DIRECTION:"increase", QUANTITY:"acidity of", PATIENT:"ocean" ]
+	//row autoRow15 = [UUID:"e1ac-5476-f575-13cf", AGENT_OBJECT: "acid rain", DIRECTION: "increase", QUANTITY: "acidity of", PATIENT: "ocean"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"e1ac-5476-f575-13cf", AGENT_OBJECT: "acid rain", DIRECTION: "increase", QUANTITY: "acidity of", PATIENT: "ocean"]
+
+	// CENTRAL         ATTRIBUTE-VALUE-RANGE: acidic means low ; 0 to 6 in pH     (eca0-3a93-b9b2-b40a) [ THING:"acidic", VALUE:"low;0 6", ATTRIBUTE:"ph" ]
+	//row autoRow16 = [UUID:"eca0-3a93-b9b2-b40a", THING: "acidic", VALUE: "0 6", ATTRIBUTE: "ph"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"eca0-3a93-b9b2-b40a", THING: "acidic", VALUE: "0 6", ATTRIBUTE: "ph"]
+
+	// CENTRAL         CONTAINS: acidic rainwater contains acid     (1632-1fa8-8c28-5669) [ ADJ:"acidic", OBJECT_AGENT:"rainwater", WHAT_IT_CONTAINS:"acid" ]
+	//row autoRow17 = [UUID:"1632-1fa8-8c28-5669", ADJ: "acidic", OBJECT_AGENT: "rainwater", WHAT_IT_CONTAINS: "acid"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"1632-1fa8-8c28-5669", ADJ: "acidic", OBJECT_AGENT: "rainwater", WHAT_IT_CONTAINS: "acid"]
+
+	// CENTRAL        (OPTIONAL) PARTOF: oceans are a part of the hydrosphere on earth     (f608-e2e9-5ab0-265f) [ PART:"ocean", QUANTIFIER1:"be", WHOLE:"hydrosphere", SCOPE:"on earth" ]
+	//row *autoRow18 = [UUID:"f608-e2e9-5ab0-265f", PART: "ocean", QUANTIFIER1: "be", WHOLE: "hydrosphere", SCOPE: "on earth"] //OVER-CONSTR.
+	row *autoRow18 = [UUID:"f608-e2e9-5ab0-265f", PART: "ocean", QUANTIFIER1: "be", WHOLE: "hydrosphere", SCOPE: "on earth"]
+
+endinferencepattern

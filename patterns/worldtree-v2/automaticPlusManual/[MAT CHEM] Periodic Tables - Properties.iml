@@ -1,0 +1,92 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Periodic_Tables_Properties
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHEM-PERIODIC-TAB-LOC: alkali metals are found at the left side ; first column on the periodic table of elements     (e848-8af0-e3c9-352f) [ ELEMENTS:"alkali metal", LOCATION:"leave side;﻿1 column" ]
+	//        HINTROW lithium ; sodium ; potassium ; rubidium ; caesium ; francium belongs to alkali metals , group 1 on the periodic table     (1b97-cdfe-55ae-ac9d) [ ELEMENTS:"lithium;sodium;potassium;rubidium;caesium;francium", FAMILY:"alkali metal", GROUP:"group 1" ]
+	//        HINTROW Calcium ; Beryllium ; Strontium ; Radium ; Barium ; Magnesium belongs to alkaline earth metal family , group 2 on the periodic table     (74db-af44-c803-040e) [ ELEMENTS:"calcium;beryllium;strontium;radium;barium;magnesium", FAMILY:"alkaline earth metal family", GROUP:"group 2" ]
+	//        HINTROW helium ; neon ; argon ; krypton ; xenon ; radon belongs to noble gases family , group 18 on the periodic table     (6c1d-31a9-db5a-6b07) [ ELEMENTS:"helium;neon;argon;krypton;xenon;radon", FAMILY:"noble gas family", GROUP:"group 18" ]
+	//        HINTROW oxygen ; selenium ; sulfur ; tellurium ; polonium belongs to oxygen family , group 16 on the periodic table     (83f3-71f5-10e2-cb64) [ ELEMENTS:"oxygen;selenium;sulfur;tellurium;polonium", FAMILY:"oxygen family", GROUP:"group 16" ]
+	//        HINTROW nitrogen ; arsenic ; phosphorus ; antimony belongs to nitrogen family , group 15 on the periodic table     (ee5c-bc13-caa0-1e9d) [ ELEMENTS:"nitrogen;arsenic;phosphorus;antimony", FAMILY:"nitrogen family", GROUP:"group 15" ]
+	//        HINTROW noble gases are found at the rightmost side on the periodic table of elements     (1580-85ca-7cae-41e1) [ ELEMENTS:"noble gas", LOCATION:"rightmost side" ]
+	//  Notes: ebfa-700d-5a8b-e82c->1580-85ca-7cae-41e1;acd8-430e-0f25-eb3f->74db-af44-c803-040e;7ac9-22e1-e8a1-a46a->1b97-cdfe-55ae-ac9d;91bc-715d-ce27-7ad2->e848-8af0-e3c9-352f;e34f-af69-18ca-eda2->6c1d-31a9-db5a-6b07;089a-894c-36b3-2c2e->ee5c-bc13-caa0-1e9d;45eb-9c1a-5697-147e->83f3-71f5-10e2-cb64
+//WARNING! Slot with no constraints.
+//	//row autoRow0 = [TABLE:"CHEM-PERIODIC-TAB-LOC"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow0 = [TABLE:"CHEM-PERIODIC-TAB-LOC"]
+
+	// CENTRALSW       ACTION: elements on the left side of the periodic table form ions by losing electrons     (1442-95b3-8f9b-5821) [ AGENT_OBJECT:"element", SCOPE1:"on leave side of periodic table", ACTION2:"form", OBJECT_PROPERTY:"ion", HOW:"lose electron" ]
+	//        HINTROW elements on the right side of the periodic table form ions by gaining electrons     (24cc-1bc6-f02a-0211) [ AGENT_OBJECT:"element", SCOPE1:"on right side of periodic table", ACTION2:"form", OBJECT_PROPERTY:"ion", HOW:"gain electron" ]
+	//row autoRow1 = [TABLE:"ACTION", AGENT_OBJECT: "element", SCOPE1: "on"+<leave_0>+"side of periodic table", ACTION2: "form", OBJECT_PROPERTY: "ion", HOW: *"POS:VB"+"electron"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"ACTION", AGENT_OBJECT: "element", SCOPE1: "on"+<leave_0>+"side of periodic table", ACTION2: "form", OBJECT_PROPERTY: "ion", HOW: *"POS:VB"+"electron"]
+
+	// CENTRALSW       CHEM-PERIODIC-TAB-LOC: the most reactive metals are found at the column at the far left side on the periodic table of elements     (3721-0fa4-2132-da7a) [ QUALIFIER:"much", ELEMENTS:"reactive metal", LOCATION:"column", SCOPE:"at far leave side" ]
+	//        HINTROW the most reactive nonmetals are located on the second column from the right side of the periodic table     (2a12-6288-e817-c752) [ QUANTIFIER:"much", THING_PROCESS:"reactive nonmetal", LOCATION:"2 column from right side", SCOPE:"of periodic table" ]
+	//  Notes: be3a-9ae1-e667-dedb->3721-0fa4-2132-da7a
+	//row autoRow2 = [TABLE:"CHEM-PERIODIC-TAB-LOC", QUALIFIER: "much", ELEMENTS: *"POS:JJ"+"metal", SCOPE: *"POS:IN"+*"POS:JJ"+<leave_0>+"side"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"CHEM-PERIODIC-TAB-LOC", QUALIFIER: "much", SCOPE: *"POS:IN"+*"POS:JJ"+<leave_0>+"side"]
+
+	// CENTRALSW       CHEM-PERIODIC-TAB-LOC: metals are found at the left side on the periodic table of elements     (63a1-d74d-3a46-09f1) [ ELEMENTS:"metal", LOCATION:"leave side" ]
+	//        HINTROW nonmetals are found to the right of the zigzag line on the periodic table of elements     (e55f-85e0-088b-8717) [ ELEMENTS:"nonmetal", LOCATION:"right", SCOPE:"of zigzag line" ]
+	//        HINTROW gases are found to the right of the zigzag line on the periodic table of elements     (59b8-3f62-8cdd-abf3) [ ELEMENTS:"gas", LOCATION:"right", SCOPE:"of zigzag line" ]
+	//  Notes: f434-f2ef-7871-b6bb->e55f-85e0-088b-8717;2de1-f304-5a8b-ea02->63a1-d74d-3a46-09f1;74ad-7858-294f-0220->59b8-3f62-8cdd-abf3
+	//row autoRow3 = [TABLE:"CHEM-PERIODIC-TAB-LOC", ELEMENTS: "metal", LOCATION: <leave_0>+"side"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"CHEM-PERIODIC-TAB-LOC", LOCATION: <leave_0>+"side"]
+
+	// GROUNDING       KINDOF: the nitrogen family is a kind of group in periodic table     (d2a8-f687-bf07-978a) [ HYPONYM:"nitrogen family", HYPERNYM:"group", SCOPE2:"in periodic table" ]
+	//        HINTROW the oxygen family is a kind of group in the periodic table     (a4ab-d12b-ea22-7f96) [ HYPONYM:"oxygen family", HYPERNYM:"group", SCOPE2:"in periodic table" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: *"POS:NN"+"family", HYPERNYM: "group", SCOPE2: "in periodic table"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: *"POS:NN"+"family", HYPERNYM: "group", SCOPE2: "in periodic table"]
+
+	// GROUNDING       PROP-CHEM-ELEMSYMB: The chemical symbol for nitrogen is N     (2300-ec30-c22e-59ad) [ CHEMICAL:"nitrogen", SYMBOL:"n" ]
+	//        HINTROW The chemical symbol for phosphorus is P     (91f3-3b25-20ab-8891) [ CHEMICAL:"phosphorus", SYMBOL:"p" ]
+	//  Notes: 71cc-42aa-1768-1a3f->91f3-3b25-20ab-8891;b841-935a-46ce-b3c9->2300-ec30-c22e-59ad
+//WARNING! Slot with no constraints.
+//	//row autoRow5 = [TABLE:"PROP-CHEM-ELEMSYMB"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow5 = [TABLE:"PROP-CHEM-ELEMSYMB"]
+
+	// CENTRAL         COMPARISON: the elements from group 18 ; from noble gas family are the least reactive elements in the periodic table     (61ea-1dfb-63f2-ae5e) [ THING:"element", SCOPE1:"from group 18;from noble gas family", ACTION1:"be", COMPARISON:"little reactive", WHAT:"element", SCOPE2:"in periodic table" ]
+	//  Notes: 04a0-dc9c-cb8c-f3d9->61ea-1dfb-63f2-ae5e,4689-f4b8-39d2-b74f
+	//row autoRow6 = [UUID:"61ea-1dfb-63f2-ae5e", THING: "element", SCOPE1: "from noble gas family", ACTION1: "be", COMPARISON: "little reactive", WHAT: "element", SCOPE2: "in periodic table"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"61ea-1dfb-63f2-ae5e", THING: "element", SCOPE1: "from noble gas family", ACTION1: "be", COMPARISON: "little reactive", WHAT: "element", SCOPE2: "in periodic table"]
+
+	// CENTRAL         CHANGE-VEC: the atomic number of elements increases by 1 from left to right on a row on the periodic table     (e767-5de5-f2c6-84af) [ AGENT_OBJECT:"atomic numb", SCOPE1:"of element", DIRECTION:"increase", QUANTITY:"by 1", SCOPE2:"from leave right on row on periodic table" ]
+	//row autoRow7 = [UUID:"e767-5de5-f2c6-84af", AGENT_OBJECT: "atomic numb", SCOPE1: "of element", DIRECTION: "increase", QUANTITY: "by 1", SCOPE2: "from"+<leave_0>+"right on row on periodic table"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"e767-5de5-f2c6-84af", AGENT_OBJECT: "atomic numb", SCOPE1: "of element", DIRECTION: "increase", QUANTITY: "by 1", SCOPE2: "from"+<leave_0>+"right on row on periodic table"]
+
+	// CENTRAL         ACTION: the order of the elements in periodic table is determined by the atomic number of the elements     (b54e-51b6-ea89-e7cc) [ AGENT_OBJECT:"order of element", SCOPE1:"in periodic table", ACTION2:"be determine by", OBJECT_PROPERTY:"atomic numb", SCOPE2:"of element" ]
+	//row autoRow8 = [UUID:"b54e-51b6-ea89-e7cc", AGENT_OBJECT: "order of element", SCOPE1: "in periodic table", ACTION2: "be determine by", OBJECT_PROPERTY: "atomic numb", SCOPE2: "of element"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"b54e-51b6-ea89-e7cc", AGENT_OBJECT: "order of element", SCOPE1: "in periodic table", ACTION2: "be determine by", OBJECT_PROPERTY: "atomic numb", SCOPE2: "of element"]
+
+	// CENTRAL         PROP-THINGS: the periodic table is systematically organized according to the structure of the atoms of the elements     (164b-feea-a717-7f89) [ THING:"periodic table", MAGNITUDE:"systematically", VALUE:"organize", SCOPE_RELATIVETO:"accord structure of atom of element" ]
+	//row autoRow9 = [UUID:"164b-feea-a717-7f89", THING: "periodic table", MAGNITUDE: "systematically", VALUE: "organize", SCOPE_RELATIVETO: "accord structure of atom of element"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"164b-feea-a717-7f89", THING: "periodic table", MAGNITUDE: "systematically", VALUE: "organize", SCOPE_RELATIVETO: "accord structure of atom of element"]
+
+	// CENTRAL         IFTHEN: if the elements are in the same family , then the elements will share the same number of valence electrons     (ecba-b67f-03a0-1140) [ THING:"element", SCOPE1B:"in same family", ACTOR_AGENT_PROCESS2:"element", ACTION3:"share", ADJ_QUANTIFIER3:"same", OBJECT_PROPERTY3:"numb of valence electron" ]
+	//row autoRow10 = [UUID:"ecba-b67f-03a0-1140", THING: "element", SCOPE1B: "in same family", ACTOR_AGENT_PROCESS2: "element", ACTION3: "share", ADJ_QUANTIFIER3: "same", OBJECT_PROPERTY3: "numb of valence electron"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"ecba-b67f-03a0-1140", THING: "element", SCOPE1B: "in same family", ACTOR_AGENT_PROCESS2: "element", ACTION3: "share", ADJ_QUANTIFIER3: "same", OBJECT_PROPERTY3: "numb of valence electron"]
+
+	// CENTRAL         PROP-THINGS: the majority of the elements on the periodic table are metals     (46bd-4faf-246c-c6b7) [ THING:"majority of element on periodic table", VALUE:"metal" ]
+	//row autoRow11 = [UUID:"46bd-4faf-246c-c6b7", THING: "majority of element on periodic table", VALUE: "metal"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"46bd-4faf-246c-c6b7", THING: "majority of element on periodic table", VALUE: "metal"]
+
+	// CENTRAL         PROP-THINGS: the periodic table is arranged in rows and columns     (56fd-5772-9a2a-1399) [ THING:"periodic table", VALUE:"arrange", ATTRIBUTE:"in row column" ]
+	//row autoRow12 = [UUID:"56fd-5772-9a2a-1399", THING: "periodic table", VALUE: "arrange", ATTRIBUTE: "in row column"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"56fd-5772-9a2a-1399", THING: "periodic table", VALUE: "arrange", ATTRIBUTE: "in row column"]
+
+	// LEXGLUE         SYNONYMY: a group ; family in the periodic table means a column in the periodic table     (ff4a-4e48-578c-07fb) [ X1:"group;family", Y1:"in periodic table", X2:"column", Y2:"in periodic table" ]
+	//row autoRow13 = [UUID:"ff4a-4e48-578c-07fb", X1: "group", Y1: "in periodic table", X2: "column", Y2: "in periodic table"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"ff4a-4e48-578c-07fb", X1: "group", Y1: "in periodic table", X2: "column", Y2: "in periodic table"]
+
+	// LEXGLUE         SYNONYMY: a period in the periodic table means a row in the periodic table     (0106-185f-a411-ebcc) [ X1:"period", Y1:"in periodic table", X2:"row", Y2:"in periodic table" ]
+	//row autoRow14 = [UUID:"0106-185f-a411-ebcc", X1: "period", Y1: "in periodic table", X2: "row", Y2: "in periodic table"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"0106-185f-a411-ebcc", X1: "period", Y1: "in periodic table", X2: "row", Y2: "in periodic table"]
+
+endinferencepattern

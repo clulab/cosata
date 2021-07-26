@@ -1,0 +1,129 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Habitat_Destruction_Water_Pollution
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+    // The animal
+
+/*
+	// GROUNDING       KINDOF: an amphibian is a kind of animal     (3740-c11d-832c-96f2) [ HYPONYM:"amphibian", HYPERNYM:"animal" ]
+	//        HINTROW an aquatic animal is a kind of animal     (b80f-f372-967d-6ac4) [ HYPONYM:"aquatic animal", HYPERNYM:"animal" ]
+	//  Notes: subspecies X is a kind of animal
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	// row autoRow3 = [TABLE:"KINDOF", HYPONYM: <amphibian_0>, HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: a frog is a kind of amphibian     (37e7-fd9e-4591-1258) [ HYPONYM:"frog", HYPERNYM:"amphibian" ]
+	//        HINTROW a salamander is a kind of amphibian     (92a5-2060-cfc0-1d19) [ HYPONYM:"salamander", HYPERNYM:"amphibian" ]
+	//        HINTROW a fish is a kind of aquatic animal     (a94e-e849-c066-fecd) [ HYPONYM:"fish", HYPERNYM:"aquatic animal" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow4 = [TABLE:"KINDOF"] //OVER-CONSTR.
+	// row autoRow4 = [TABLE:"KINDOF", HYPERNYM: <amphibian_0>]
+
+
+	// CENTRAL         KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"] //OVER-CONSTR.
+	// row autoRow7 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"]
+*/
+
+    // The habitat/body of water
+
+	// CENTRALSW       HABITAT: some frogs live in ponds     (2718-11ce-e9ef-b665) [ ORGANISM:"frog", HABITAT:"pond" ]
+	//        HINTROW a fish lives in water     (6e0c-4bc9-7e10-351a) [ ORGANISM:"fish", HABITAT:"water" ]
+	//        HINTROW a tadpole lives in water     (1d82-f584-7ea3-52d7) [ ORGANISM:"tadpole", HABITAT:"water" ]
+	//  Notes: animal X lives in water
+//WARNING! Slot with no constraints.
+//	//row autoRow0 = [TABLE:"HABITAT"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+	row autoRow0 = [TABLE:"HABITAT", ORGANISM:<organismName>, HABITAT:<habitatName> || "water"]
+
+	// CENTRAL         KINDOF: a body of water is a kind of environment     (3f9d-8b3a-54b5-6a3c) [ HYPONYM:"body of water", HYPERNYM:"environment" ]
+	//row autoRow2 = [UUID:"3f9d-8b3a-54b5-6a3c", HYPONYM: "body of water", HYPERNYM: "environment"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"3f9d-8b3a-54b5-6a3c", HYPONYM: "body of water", HYPERNYM: "environment"]
+
+	// GROUNDING       KINDOF: a pond is a kind of body of water     (2a41-7224-fbc2-ba94) [ HYPONYM:"pond", HYPERNYM:"body of water" ]
+	//        HINTROW an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPONYM:<habitatName>, HYPERNYM: "body of water"]
+
+	// GROUNDING       KINDOF: a pond is a kind of habitat     (9f21-978a-56e9-2a20) [ HYPONYM:"pond", HYPERNYM:"habitat" ]
+	//        HINTROW an ocean is a kind of habitat     (5260-aeae-75d8-609f) [ HYPONYM:"ocean", HYPERNYM:"habitat" ]
+	//        HINTROW a wetland is a kind of habitat     (a841-6cf9-a034-f5a7) [ HYPONYM:"wetland", HYPERNYM:"habitat" ]
+	//row autoRow6 = [TABLE:"KINDOF", HYPERNYM: "habitat"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPONYM:<habitatName>, HYPERNYM: "habitat"]
+
+
+    // The cause of pollution
+
+	// CENTRALSW       CAUSE: acid rain causes water pollution     (75ea-1f13-1604-da58) [ CONDITION_AGENT_OBJECT:"acid rain", RESULT_AGENT:"water pollute" ]
+	//        HINTROW runoff from a cropland causes water pollution     (fb41-0702-939a-040a) [ CONDITION_AGENT_OBJECT:"runoff", SCOPE1:"from cropland", RESULT_AGENT:"water pollute" ]
+	//        HINTROW littering causes land pollution ; water pollution     (0abb-a967-e963-6e9e) [ CONDITION_VERB:"litter", RESULT_AGENT:"land pollute;water pollute" ]
+	//  Notes: X causes water pollution
+	//row autoRow1 = [TABLE:"CAUSE", RESULT_AGENT: *"POS:NN"+"pollute"] //OVER-CONSTR.
+	row *autoRow1A = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT:<pollutionCause>, RESULT_AGENT: "water pollute"]
+    row *autoRow1B= [TABLE:"CAUSE", CONDITION_VERB:<pollutionCause>, RESULT_AGENT: "water pollute"]
+
+	// CENTRAL        (OPTIONAL) AFFECT: acid rain has a negative impact on water quality     (8c01-39ba-c26c-f060) [ OBJECT_PROPERTY:"acid rain", POSITIVE_NEGATIVE:"negative", PATIENT:"water quality" ]
+	//row *autoRow13 = [UUID:"8c01-39ba-c26c-f060", OBJECT_PROPERTY: "acid rain", POSITIVE_NEGATIVE: "negative", PATIENT: "water quality"] //OVER-CONSTR.
+	row *autoRow13 = [TABLE:"AFFECT", OBJECT_PROPERTY: <pollutionCause>, POSITIVE_NEGATIVE: "negative", PATIENT: "water quality"]
+
+
+    // Core
+
+
+	// CENTRAL         AFFECT: harming something has a negative impact on ; effect on that something     (57d4-79ba-a97d-0f9a) [ VERB:"harm", OBJECT_PROPERTY:"something", POSITIVE_NEGATIVE:"negative", PATIENT:"something" ]
+	//row autoRow8 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"]
+
+	// CENTRAL         CAUSE: harming an animal species causes that animal 's population to decrease     (458c-0ba5-e5dd-00b8) [ CONDITION_VERB:"harm", CONDITION_PATIENT:"animal species", RESULT_AGENT:"that animal population", RESULT_VERB:"decrease" ]
+	//row autoRow9 = [UUID:"458c-0ba5-e5dd-00b8", CONDITION_VERB: "harm", CONDITION_PATIENT: "animal species", RESULT_AGENT: "that animal population", RESULT_VERB: "decrease"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"458c-0ba5-e5dd-00b8", CONDITION_VERB: "harm", CONDITION_PATIENT: "animal species", RESULT_AGENT: "that animal population", RESULT_VERB: "decrease"]
+
+	// CENTRAL         AFFECT: humans changing ecosystems ; environments usually has a negative impact on an ecosystem ; organisms living in an ecosystem     (f4dc-5030-6255-a1f8) [ ACTOR_WHO:"human", VERB:"change", OBJECT_PROPERTY:"ecosystem;environment", QUALIFIER1:"usually", POSITIVE_NEGATIVE:"negative", PATIENT:"ecosystem;organism live in ecosystem" ]
+	//row autoRow10 = [UUID:"f4dc-5030-6255-a1f8", ACTOR_WHO: "human", VERB: "change", OBJECT_PROPERTY: "ecosystem", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"f4dc-5030-6255-a1f8", ACTOR_WHO: "human", VERB: "change", OBJECT_PROPERTY: "ecosystem", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"]
+
+	// CENTRAL         IFTHEN: if an animal 's ; organisms habitat no longer exists ; ceases to exist then that animal ; that organism will die     (54f0-f2ea-baa5-7a2f) [ ADJ_QUANTITY1:"animal;organism", THING:"habitat", ACTION1:"no long exist;cease exist", ACTOR_AGENT_PROCESS2:"that animal;that organism", ACTION3:"die" ]
+	//row autoRow11 = [UUID:"54f0-f2ea-baa5-7a2f", ADJ_QUANTITY1: "animal", THING: "habitat", ACTION1: "no long exist", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "die"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"54f0-f2ea-baa5-7a2f", ADJ_QUANTITY1: "animal", THING: "habitat", ACTION1: "no long exist", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "die"]
+
+	// CENTRAL         ACTION: animals ; living things live and feed in their habitats ; near their habitats     (3e03-880a-9209-2d6c) [ AGENT_OBJECT:"animal;live thing", ACTION2:"live fee", WHEN_WHERE:"in habitat;near habitat" ]
+	//row autoRow12 = [UUID:"3e03-880a-9209-2d6c", AGENT_OBJECT: "live thing", ACTION2: "live fee", WHEN_WHERE: "in habitat"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"3e03-880a-9209-2d6c", AGENT_OBJECT: "live thing", ACTION2: "live fee", WHEN_WHERE: "in habitat"]
+
+	// CENTRAL         KINDOF: an ecosystem is a kind of habitat     (9156-3212-805b-fd3d) [ HYPONYM:"ecosystem", HYPERNYM:"habitat" ]
+	//  Notes: peripheral
+	//row autoRow14 = [UUID:"9156-3212-805b-fd3d", HYPONYM: "ecosystem", HYPERNYM: "habitat"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"9156-3212-805b-fd3d", HYPONYM: "ecosystem", HYPERNYM: "habitat"]
+
+	// CENTRAL         LOCATIONS: organisms can be found in their habitats     (d119-be00-3406-f858) [ THING_PROCESS:"organism", LOCATION:"habitat" ]
+	//row autoRow15 = [UUID:"d119-be00-3406-f858", THING_PROCESS: "organism", LOCATION: "habitat"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"d119-be00-3406-f858", THING_PROCESS: "organism", LOCATION: "habitat"]
+
+	// CENTRAL         ACTION: water pollution destroys the habitats of aquatic animals ; of amphibians     (ff41-5c35-dfa9-3308) [ AGENT_OBJECT:"water pollute", ACTION2:"destroy", OBJECT_PROPERTY:"habitat", SCOPE2:"of aquatic animal;of amphibian" ]
+	//  Notes: water pollution destroys the habitat
+	//row autoRow16 = [UUID:"ff41-5c35-dfa9-3308", AGENT_OBJECT: "water pollute", ACTION2: "destroy", OBJECT_PROPERTY: "habitat", SCOPE2: "of aquatic animal"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"ff41-5c35-dfa9-3308", AGENT_OBJECT: "water pollute", ACTION2: "destroy", OBJECT_PROPERTY: "habitat", SCOPE2: "of"+<amphibian_0>]
+
+	// LEXGLUE         SYNONYMY: an organism is a living thing     (87a0-dd02-dd6d-ee60) [ X1:"organism", X2:"live thing" ]
+	//row autoRow17 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"]
+
+	// LEXGLUE         SYNONYMY: an environment is similar to an ecosystem     (c1d3-4ab4-b443-aac3) [ X1:"environment", X2:"ecosystem" ]
+	//row autoRow18 = [UUID:"c1d3-4ab4-b443-aac3", X1: "environment", X2: "ecosystem"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"c1d3-4ab4-b443-aac3", X1: "environment", X2: "ecosystem"]
+
+	// LEXGLUE         SYNONYMY: habitat is similar to environment     (1800-f69c-1283-7d49) [ X1:"habitat", X2:"environment" ]
+	//row autoRow19 = [UUID:"1800-f69c-1283-7d49", X1: "habitat", X2: "environment"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"1800-f69c-1283-7d49", X1: "habitat", X2: "environment"]
+
+	// LEXGLUE         CHANGE: killing means changing a living thing from alive to dead by harming     (ba9c-311b-f2d0-caa9) [ PROCESS_NAME:"kill", VERB:"change", WHAT:"live thing", FROM:"alive", INTO:"dead", BY_THROUGH_HOW:"harm" ]
+	//row autoRow20 = [UUID:"ba9c-311b-f2d0-caa9", PROCESS_NAME: "kill", VERB: "change", WHAT: "live thing", FROM: "alive", INTO: "dead", BY_THROUGH_HOW: "harm"] //OVER-CONSTR.
+	row autoRow20 = [UUID:"ba9c-311b-f2d0-caa9", PROCESS_NAME: "kill", VERB: "change", WHAT: "live thing", FROM: "alive", INTO: "dead", BY_THROUGH_HOW: "harm"]
+
+endinferencepattern

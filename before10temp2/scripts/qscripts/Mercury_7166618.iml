@@ -1,0 +1,96 @@
+// QID: Mercury_7166618
+// Question: The Milky Way is a part of 30 or more galaxies called the Local Group. Which would be the most likely reason these galaxies are considered to be part of the Local Group? (A) They are all the same type of galaxy. (B) They all have the same number of stars. (C) They are all attracted to each other by gravity. (D) They can all be seen without the aid of a telescope.
+
+// Test script
+
+// Includes
+import "../scienceimports.iml"
+import "../processtest.iml"
+
+println ("TEST")
+
+exportTableStoreHTML("tablestore_export1234.html")
+
+// Main
+//#qreference# obj1 = Milky Way
+instance obj1 = [KINDOF:"substance"]
+obj1."name" = "test object 1"
+obj1."material" = "water"
+obj1."state of matter" = "solid"
+obj1."temperature" = "-10"
+//obj1."temperature" = "10"
+
+//#qreference# obj2 = galaxies
+instance obj2 = [KINDOF:"substance"]
+obj2."name" = "test object 2"
+obj2."state of matter" = "liquid"
+obj2."temperature" = 20
+
+/*
+instance obj3 = [KINDOF:"substance"]
+obj3."state of matter" = "gas"
+
+instance obj4 = [KINDOF:"substance"]
+obj4."state of matter" = "gas"
+
+
+instance test1 = [KINDOF:"animal"]
+test1."temperature" = "10"
+
+instance test11 = [KINDOF:"animal"]
+test11."color" = "white"
+test11."temperature" = "20"
+*/
+
+
+instance outside = [KINDOF:"environment"]
+outside."name" = "outside environment"
+outside."temperature" = "25"
+
+
+// Set that object1 and object2 are touching
+generateRow([TABLE:"SPATIAL", THING1:"test object 1", FILL_IS:"is", SPATIALRELATION:"touching", THING2:"test object 2"])
+
+// Set that object1 is in environment outside
+generateRow([TABLE:"SPATIAL", THING1:"test object 1", FILL_IS:"is", SPATIALRELATION:"located", THING2:"outside environment"])
+
+
+printInstances
+
+// Populate inference pattern instance matches
+populateInfPatMatches
+
+// Export inference patterns and tablestore
+exportInfPatHTML("infpattern_out.html")
+exportTableStoreHTML("tablestore_export.html")
+
+// Execution examples
+println ("BEFORE")
+printInstances
+
+
+
+// Step 1: Heat up substance a bit
+
+executePattern(heatTransferEnvironmentObject, "c4aa2", [object1->obj1, environment1->outside], temporalblocks=[step])
+executePattern(heatTransferEnvironmentObject, "c4aa2", [object1->obj1, environment1->outside], temporalblocks=[step])
+executePattern(heatTransferEnvironmentObject, "c4aa2", [object1->obj1, environment1->outside], temporalblocks=[step])
+executePattern(heatTransferEnvironmentObject, "c4aa2", [object1->obj1, environment1->outside], temporalblocks=[step])
+
+populateInfPatMatches
+exportInfPatHTML("infpattern_out1.html")
+
+// Step 2: When the substance reaches a phase transition point, change the state of matter
+println ("EXECUTING PATTERN")
+executePattern(ChangeOfStateWithSubstanceFromTo, "46eea", [sub1->obj1])
+println ("FINISHED EXECUTING PATTERN")
+
+//populateInfPatMatches
+exportInfPatHTML("infpattern_out2.html")
+exportTableStoreHTML("tablestore_export.html")
+
+// Step 3:
+
+//populateInfPatMatches
+printInstances
+

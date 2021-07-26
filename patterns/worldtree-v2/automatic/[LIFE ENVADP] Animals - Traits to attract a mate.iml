@@ -1,0 +1,96 @@
+// Automatically converted pattern
+inferencepattern LIFE_ENVADP_Animals_Traits_to_attract_a_mate
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       PARTOF: a belly is a part of an animal     (9974-cfaa-480e-5c6e) [ PART:"belly", WHOLE:"animal" ]
+	//        HINTROW feathers are a part of a bird     (4bd2-7739-d5e2-99a1) [ PART:"feather", QUANTIFIER1:"be", WHOLE:"bird" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow0 = [TABLE:"PARTOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow0 = [TABLE:"PARTOF"]
+
+	// GROUNDING       KINDOF: a fish is a kind of animal     (9526-aecc-22b2-4b6a) [ HYPONYM:"fish", HYPERNYM:"animal" ]
+	//        HINTROW a bird is a kind of animal     (e26b-b21d-d4a3-25fc) [ HYPONYM:"bird", HYPERNYM:"animal" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: orange is a kind of color     (103a-3db0-f4b2-d7a7) [ HYPONYM:"orange", HYPERNYM:"color" ]
+	//        HINTROW speckled is a kind of color pattern     (5c77-2dc4-7ebe-7cbe) [ HYPONYM:"speckle", SCOPE1:"color", HYPERNYM:"pattern" ]
+	//        HINTROW spotted is a kind of color pattern     (ca03-f52b-b637-957b) [ HYPONYM:"spot", SCOPE1:"color", HYPERNYM:"pattern" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "color"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "color"]
+
+	// GROUNDING       KINDOF: trout is a kind of fish     (ac16-c85f-55f1-0725) [ HYPONYM:"trout", HYPERNYM:"fish" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "trout", HYPERNYM: "fish"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "trout", HYPERNYM: "fish"]
+
+	// CENTRAL         AFFECT: an adaptation ; an ability has a positive impact on an animal 's ; living thing 's survival ; health ; ability to reproduce     (b48d-28f4-b020-de9f) [ OBJECT_PROPERTY:"adapt;ability", POSITIVE_NEGATIVE:"positive", ADJ:"animal;live thing", PATIENT:"survive;health;ability reproduce" ]
+	//row autoRow4 = [UUID:"b48d-28f4-b020-de9f", OBJECT_PROPERTY: "adapt", POSITIVE_NEGATIVE: "positive", ADJ: "live thing", PATIENT: "ability reproduce"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"b48d-28f4-b020-de9f", OBJECT_PROPERTY: "adapt", POSITIVE_NEGATIVE: "positive", ADJ: "live thing", PATIENT: "ability reproduce"]
+
+	// CENTRAL         STAGE-IN-PROCESS: fertilization is a stage in the sexual reproduction process     (7062-9b88-0291-7a17) [ STAGE:"fertilization", PROCESS:"sexual reproduce" ]
+	//row autoRow5 = [UUID:"7062-9b88-0291-7a17", STAGE: "fertilization", PROCESS: "sexual reproduce"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"7062-9b88-0291-7a17", STAGE: "fertilization", PROCESS: "sexual reproduce"]
+
+	// CENTRAL         REQUIRES: an animal needs to attract a mate to reproduce     (b625-36df-d6d8-0b4a) [ OBJECT_AGENT_PROCESS:"animal", VERB_REQUIRES:"need", ACTION2:"attract", OBJECT:"mate", FOR_PURPOSE:"reproduce" ]
+	//row autoRow6 = [UUID:"b625-36df-d6d8-0b4a", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "need", ACTION2: "attract", OBJECT: "mate", FOR_PURPOSE: "reproduce"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"b625-36df-d6d8-0b4a", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "need", ACTION2: "attract", OBJECT: "mate", FOR_PURPOSE: "reproduce"]
+
+	// CENTRAL         REQUIRES: an animal requires a mate to fertilize an egg     (a6ee-d241-3491-07d4) [ OBJECT_AGENT_PROCESS:"animal", VERB_REQUIRES:"require", OBJECT:"mate", FOR_PURPOSE:"fertilize egg" ]
+	//row autoRow7 = [UUID:"a6ee-d241-3491-07d4", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "mate", FOR_PURPOSE: "fertilize egg"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"a6ee-d241-3491-07d4", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "mate", FOR_PURPOSE: "fertilize egg"]
+
+	// CENTRAL         USEDFOR: coloration is used to find a mate by some animals     (566f-8e4a-7d9c-2034) [ AGENT_OBJECT:"coloration", FOR_PURPOSE:"find", PATIENT:"mate", AGENT_THING_WHO_USES:"animal" ]
+	//        Hint Words: traits
+	//  Notes: coloration
+	//row autoRow8 = [UUID:"566f-8e4a-7d9c-2034", AGENT_OBJECT: "coloration", FOR_PURPOSE: "find", PATIENT: "mate", AGENT_THING_WHO_USES: "animal"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"566f-8e4a-7d9c-2034", AGENT_OBJECT: "coloration", FOR_PURPOSE: "find", PATIENT: "mate", AGENT_THING_WHO_USES: "animal"]
+
+	// CENTRAL         ACTION: fertilization is when an egg cell becomes fertilized     (57d1-ae47-ec81-5c03) [ DEFINITION_NAME:"fertilization", AGENT_OBJECT:"egg cell", ACTION2:"become fertilize" ]
+	//row autoRow9 = [UUID:"57d1-ae47-ec81-5c03", DEFINITION_NAME: "fertilization", AGENT_OBJECT: "egg cell", ACTION2: "become fertilize"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"57d1-ae47-ec81-5c03", DEFINITION_NAME: "fertilization", AGENT_OBJECT: "egg cell", ACTION2: "become fertilize"]
+
+	// CENTRAL        (OPTIONAL) AFFECT: helping something has a positive impact on that something     (b5b8-ce64-6568-4a6c) [ VERB:"help", OBJECT_PROPERTY:"something", POSITIVE_NEGATIVE:"positive", PATIENT:"something" ]
+	//row *autoRow10 = [UUID:"b5b8-ce64-6568-4a6c", VERB: "help", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "positive", PATIENT: "something"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"b5b8-ce64-6568-4a6c", VERB: "help", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "positive", PATIENT: "something"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+	// CENTRAL         REQUIRES: animals require fertilization to reproduce     (c4ff-15ca-a4ab-4ffb) [ OBJECT_AGENT_PROCESS:"animal", VERB_REQUIRES:"require", OBJECT:"fertilization", FOR_PURPOSE:"reproduce" ]
+	//row autoRow12 = [UUID:"c4ff-15ca-a4ab-4ffb", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "fertilization", FOR_PURPOSE: "reproduce"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"c4ff-15ca-a4ab-4ffb", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "fertilization", FOR_PURPOSE: "reproduce"]
+
+	// CENTRAL        (OPTIONAL) PROP-INHERITEDLEARNED: the colors of parts of an organism are inherited characteristics     (102a-fa79-43cd-e9a4) [ ATTRIBUTE_QUANTITY:"color of", AGENT:"part", SCOPE:"of organism", INHERITED_LEARNED:"inherit" ]
+	//row *autoRow13 = [UUID:"102a-fa79-43cd-e9a4", ATTRIBUTE_QUANTITY: "color of", AGENT: "part", SCOPE: "of organism", INHERITED_LEARNED: "inherit"] //OVER-CONSTR.
+	row *autoRow13 = [UUID:"102a-fa79-43cd-e9a4", ATTRIBUTE_QUANTITY: "color of", AGENT: "part", SCOPE: "of organism", INHERITED_LEARNED: "inherit"]
+
+	// CENTRAL         ACTION: animals reproduce sexually     (f6a5-58cd-2531-d0ae) [ AGENT_OBJECT:"animal", ACTION2:"reproduce", HOW:"sexually" ]
+	//row autoRow14 = [UUID:"f6a5-58cd-2531-d0ae", AGENT_OBJECT: "animal", ACTION2: "reproduce", HOW: "sexually"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"f6a5-58cd-2531-d0ae", AGENT_OBJECT: "animal", ACTION2: "reproduce", HOW: "sexually"]
+
+	// CENTRAL         SOURCEOF: reproduction produces ; produce offspring     (a6ff-574e-11c6-a86c) [ AGENT:"reproduce", VERB_SOURCEOF_PROVIDE_ETC:"produce;product", WHAT_IT_PROVIDES:"offspring" ]
+	//row autoRow15 = [UUID:"a6ff-574e-11c6-a86c", AGENT: "reproduce", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "offspring"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"a6ff-574e-11c6-a86c", AGENT: "reproduce", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "offspring"]
+
+	// LEXGLUE         SYNONYMY: attract a mate means find a mate     (f25a-4bc3-30c4-ec0b) [ ACTION1:"attract", Y1:"mate", ACTION2:"find", Y2:"mate" ]
+	//row autoRow16 = [UUID:"f25a-4bc3-30c4-ec0b", ACTION1: "attract", Y1: "mate", ACTION2: "find", Y2: "mate"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"f25a-4bc3-30c4-ec0b", ACTION1: "attract", Y1: "mate", ACTION2: "find", Y2: "mate"]
+
+	// LEXGLUE         SYNONYMY: coloration means a pattern of colors     (ec67-fb28-a332-b260) [ X1:"coloration", X2:"pattern of color" ]
+	//row autoRow17 = [UUID:"ec67-fb28-a332-b260", X1: "coloration", X2: "pattern of color"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"ec67-fb28-a332-b260", X1: "coloration", X2: "pattern of color"]
+
+	// LEXGLUE         SYNONYMY: to attract females ; males means to attract mates     (070c-358a-2c80-f586) [ ACTION1:"attract", Y1:"female;male", ACTION2:"attract mate" ]
+	//row autoRow18 = [UUID:"070c-358a-2c80-f586", ACTION1: "attract", Y1: "female", ACTION2: "attract mate"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"070c-358a-2c80-f586", ACTION1: "attract", Y1: "female", ACTION2: "attract mate"]
+
+endinferencepattern

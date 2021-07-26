@@ -1,0 +1,48 @@
+// Automatically converted pattern
+inferencepattern MAT_MIXTURES_Seperation_Solid_Solid_Mixture
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: gold is a kind of solid     (41ff-4240-13ce-27e0) [ HYPONYM:"gold", HYPERNYM:"solid" ]
+	//        HINTROW ice is a kind of solid     (7ef1-c28b-22e3-3edc) [ HYPONYM:"ice", HYPERNYM:"solid" ]
+	//  Notes: solid Y examples
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "solid"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "solid"]
+
+	// GROUNDING       KINDOF: salt is a kind of solid     (a104-d8c9-efec-46be) [ HYPONYM:"salt", HYPERNYM:"solid" ]
+	//        HINTROW sugar is a kind of solid     (d061-b761-db46-512d) [ HYPONYM:"sugar", HYPERNYM:"solid" ]
+	//  Notes: solid Z substance
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "solid"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "solid"]
+
+	// CENTRAL         USEDFOR: a sieve can be used for separating a mixture of different sized solids     (b82b-6d71-bf8c-5e9c) [ AGENT_OBJECT:"sieve", QUALIFIER:"be", FOR_PURPOSE:"separate", PATIENT:"mixture", SCOPE2:"of differ size solid" ]
+	//row autoRow2 = [UUID:"b82b-6d71-bf8c-5e9c", AGENT_OBJECT: "sieve", QUALIFIER: "be", FOR_PURPOSE: "separate", PATIENT: "mixture", SCOPE2: "of differ size solid"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"b82b-6d71-bf8c-5e9c", AGENT_OBJECT: "sieve", QUALIFIER: "be", FOR_PURPOSE: "separate", PATIENT: "mixture", SCOPE2: "of differ size solid"]
+
+	// CENTRAL         KINDOF: a sifter is a kind of tool for separating mixtures     (bb8f-9e8f-0b8b-d4c1) [ HYPONYM:"sifter", HYPERNYM:"tool", FOR_PURPOSE:"separate mixture" ]
+	//row autoRow3 = [UUID:"bb8f-9e8f-0b8b-d4c1", HYPONYM: "sifter", HYPERNYM: "tool", FOR_PURPOSE: "separate mixture"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"bb8f-9e8f-0b8b-d4c1", HYPONYM: "sifter", HYPERNYM: "tool", FOR_PURPOSE: "separate mixture"]
+
+	// CENTRAL         KINDOF: a solid is a kind of substance     (ba9b-b2e3-d362-1dd0) [ HYPONYM:"solid", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"ba9b-b2e3-d362-1dd0", HYPONYM: "solid", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"ba9b-b2e3-d362-1dd0", HYPONYM: "solid", HYPERNYM: "substance"]
+
+	// CENTRAL         FORMEDBY: an mixture is formed by two or more substances combined together physically     (9247-2bc4-e950-d3dd) [ OBJECT:"mixture", AGENT_PROCESS:"two much substance", VERB:"combine together", SCOPE:"physically" ]
+	//row autoRow5 = [UUID:"9247-2bc4-e950-d3dd", OBJECT: "mixture", AGENT_PROCESS: "two much substance", VERB: "combine together", SCOPE: "physically"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"9247-2bc4-e950-d3dd", OBJECT: "mixture", AGENT_PROCESS: "two much substance", VERB: "combine together", SCOPE: "physically"]
+
+	// CENTRAL         ACTION: a mixture of solids can be separated easily     (1a3c-9605-5763-6a09) [ AGENT_OBJECT:"mixture", SCOPE1:"of solid", ACTION2:"be", OBJECT_PROPERTY:"separate", SCOPE2:"easy" ]
+	//row autoRow6 = [UUID:"1a3c-9605-5763-6a09", AGENT_OBJECT: "mixture", SCOPE1: "of solid", ACTION2: "be", OBJECT_PROPERTY: "separate", SCOPE2: "easy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"1a3c-9605-5763-6a09", AGENT_OBJECT: "mixture", SCOPE1: "of solid", ACTION2: "be", OBJECT_PROPERTY: "separate", SCOPE2: "easy"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if two substances together form a mixture then those substances can be separated from one another by physical changes     (9710-6959-2c34-d204) [ THING:"two substance", SCOPE1A:"together", ACTION1:"form", OBJECT_PATIENT1:"mixture", ACTOR_AGENT_PROCESS2:"substance", ACTION3:"separate", OBJECT_PROPERTY3:"from one" ]
+	//row *autoRow7 = [UUID:"9710-6959-2c34-d204", THING: "two substance", SCOPE1A: "together", ACTION1: "form", OBJECT_PATIENT1: "mixture", ACTOR_AGENT_PROCESS2: "substance", ACTION3: "separate", OBJECT_PROPERTY3: "from one"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"9710-6959-2c34-d204", THING: "two substance", SCOPE1A: "together", ACTION1: "form", OBJECT_PATIENT1: "mixture", ACTOR_AGENT_PROCESS2: "substance", ACTION3: "separate", OBJECT_PROPERTY3: "from one"]
+
+endinferencepattern

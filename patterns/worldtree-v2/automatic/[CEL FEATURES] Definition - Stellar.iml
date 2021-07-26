@@ -1,0 +1,104 @@
+// Automatically converted pattern
+inferencepattern CEL_FEATURES_Definition_Stellar
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CAUSE: nuclear reactions in stars causes stars to produce light ; energy ; nuclear energy     (9bc8-f1da-ee78-f8e5) [ CONDITION_AGENT_OBJECT:"nuclear reaction", SCOPE1:"in star", RESULT_AGENT:"star", RESULT_VERB:"product", RESULT_PATIENT:"light;energy;nuclear energy" ]
+	//        HINTROW nuclear fusion causes star formation     (bd14-3e52-3df9-f7f9) [ CONDITION_AGENT_OBJECT:"nuclear fusion", RESULT_AGENT:"star form" ]
+	//row autoRow0 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "nuclear reaction", SCOPE1: "in star", RESULT_AGENT: "star", RESULT_PATIENT: "nuclear energy"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "nuclear reaction", RESULT_AGENT: "star"]
+
+	// GROUNDING       KINDOF: Alpha Mensae is a kind of main sequence star     (21f4-c237-6aa4-4de9) [ HYPONYM:"alpha mensae", HYPERNYM:"main sequence star" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "alpha mensae", HYPERNYM: "main sequence star"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "alpha mensae", HYPERNYM: "main sequence star"]
+
+	// GROUNDING       KINDOF: a yellow dwarf is a kind of main-sequence star     (452a-f8c6-36f5-dadc) [ HYPONYM:"yellow dwarf", HYPERNYM:"main-sequence star;main sequence star" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "yellow dwarf", HYPERNYM: "main sequence star"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "yellow dwarf", HYPERNYM: "main sequence star"]
+
+	// GROUNDING       KINDOF: the sun is a kind of yellow dwarf     (9a65-934e-c26e-f453) [ HYPONYM:"sun", HYPERNYM:"yellow dwarf" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "sun", HYPERNYM: "yellow dwarf"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "sun", HYPERNYM: "yellow dwarf"]
+
+	// CENTRAL         ACTION: stars spend most of their life cycle in the main sequence stage     (4dcb-e3c0-5556-bb8c) [ AGENT_OBJECT:"star", ACTION2:"spend", OBJECT_PROPERTY:"much of life cycle", WHEN_WHERE:"in main sequence stage" ]
+	//row autoRow4 = [UUID:"4dcb-e3c0-5556-bb8c", AGENT_OBJECT: "star", ACTION2: "spend", OBJECT_PROPERTY: "much of life cycle", WHEN_WHERE: "in main sequence stage"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4dcb-e3c0-5556-bb8c", AGENT_OBJECT: "star", ACTION2: "spend", OBJECT_PROPERTY: "much of life cycle", WHEN_WHERE: "in main sequence stage"]
+
+	// CENTRAL        (OPTIONAL) COMPARISON: the Sun is the largest celestial body in the solar system     (13af-148e-6de8-60de) [ THING:"sun", ACTION1:"be", COMPARISON:"large", WHAT:"celestial body", SCOPE2:"in solar system" ]
+	//  Notes: b22e-a262-859f-aa35->13af-148e-6de8-60de
+	//row *autoRow5 = [UUID:"13af-148e-6de8-60de", THING: "sun", ACTION1: "be", COMPARISON: "large", WHAT: "celestial body", SCOPE2: "in solar system"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"13af-148e-6de8-60de", THING: "sun", ACTION1: "be", COMPARISON: "large", WHAT: "celestial body", SCOPE2: "in solar system"]
+
+	// CENTRAL         CHANGE: stars change type during their life cycles     (7371-ffed-8403-0337) [ ACTOR_WHO:"star", VERB:"change", WHAT:"type", SCOPE:"during life cycle" ]
+	//  Notes: 76bf-a390-118e-daa4->7371-ffed-8403-0337
+	//row autoRow6 = [UUID:"7371-ffed-8403-0337", ACTOR_WHO: "star", VERB: "change", WHAT: "type", SCOPE: "during life cycle"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"7371-ffed-8403-0337", ACTOR_WHO: "star", VERB: "change", WHAT: "type", SCOPE: "during life cycle"]
+
+	// CENTRAL         KINDOF: a star is a kind of celestial object ; celestial body     (dbe8-e776-f804-99a0) [ HYPONYM:"star", HYPERNYM:"celestial object;celestial body" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"dbe8-e776-f804-99a0", HYPONYM: "star", HYPERNYM: "celestial object"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"dbe8-e776-f804-99a0", HYPONYM: "star", HYPERNYM: "celestial object"]
+
+	// CENTRAL         CAUSE: a star 's surface temperature causes the star 's color     (96fa-0fe3-5abf-3fbb) [ CONDITION_AGENT_OBJECT:"star surface temperature", RESULT_AGENT:"star color" ]
+	//row autoRow8 = [UUID:"96fa-0fe3-5abf-3fbb", CONDITION_AGENT_OBJECT: "star surface temperature", RESULT_AGENT: "star color"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"96fa-0fe3-5abf-3fbb", CONDITION_AGENT_OBJECT: "star surface temperature", RESULT_AGENT: "star color"]
+
+	// CENTRAL         AFFORDANCES: stars can be classified by temperature ; color ; chemical composition ; brightness     (942a-e7da-a555-3f97) [ ACTOR_THING:"star", VERB:"classify", BY_THROUGH_HOW:"temperature;color;chemical compose;brightness" ]
+	//row autoRow9 = [UUID:"942a-e7da-a555-3f97", ACTOR_THING: "star", VERB: "classify", BY_THROUGH_HOW: "chemical compose"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"942a-e7da-a555-3f97", ACTOR_THING: "star", VERB: "classify", BY_THROUGH_HOW: "chemical compose"]
+
+	// CENTRAL         COMPARISON: a star usually is larger than a planet     (d0a0-c566-15b4-8a30) [ THING:"star", QUALIFIER:"usually", ACTION1:"be", COMPARISON:"large", THING_COMPARED:"planet" ]
+	//  Notes: 2fa6-223b-ad1e-c3a8->d0a0-c566-15b4-8a30
+	//row autoRow10 = [UUID:"d0a0-c566-15b4-8a30", THING: "star", QUALIFIER: "usually", ACTION1: "be", COMPARISON: "large", THING_COMPARED: "planet"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"d0a0-c566-15b4-8a30", THING: "star", QUALIFIER: "usually", ACTION1: "be", COMPARISON: "large", THING_COMPARED: "planet"]
+
+	// CENTRAL         SOURCEOF: a star produces light and heat     (8369-8669-0725-2c00) [ AGENT:"star", VERB_SOURCEOF_PROVIDE_ETC:"produce", WHAT_IT_PROVIDES:"light heat" ]
+	//row autoRow11 = [UUID:"8369-8669-0725-2c00", AGENT: "star", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "light heat"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"8369-8669-0725-2c00", AGENT: "star", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "light heat"]
+
+	// CENTRAL         COMPARISON: stars are the hottest object     (8782-84b4-1ade-fcc8) [ THING:"star", ACTION1:"be", COMPARISON:"hot", WHAT:"object" ]
+	//  Notes: 9ec4-cf33-e33d-d108->8782-84b4-1ade-fcc8
+	//row autoRow12 = [UUID:"8782-84b4-1ade-fcc8", THING: "star", ACTION1: "be", COMPARISON: "hot", WHAT: "object"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"8782-84b4-1ade-fcc8", THING: "star", ACTION1: "be", COMPARISON: "hot", WHAT: "object"]
+
+	// CENTRAL         SOURCEOF: a star is a source of light ; light energy through nuclear reactions     (d567-d49e-293e-95bf) [ AGENT:"star", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"light;light energy", BY_THROUGH_HOW:"nuclear reaction" ]
+	//  Notes: 2e9d-a602-afd7-3e47->d567-d49e-293e-95bf
+	//row autoRow13 = [UUID:"d567-d49e-293e-95bf", AGENT: "star", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "light energy", BY_THROUGH_HOW: "nuclear reaction"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"d567-d49e-293e-95bf", AGENT: "star", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "light energy", BY_THROUGH_HOW: "nuclear reaction"]
+
+	// CENTRAL         PROP-THINGS: stars generally have the same chemical composition     (7cec-d42c-3f57-38c1) [ THING:"star", QUALIFIER1:"generally", VALUE:"same", ATTRIBUTE:"chemical compose" ]
+	//row autoRow14 = [UUID:"7cec-d42c-3f57-38c1", THING: "star", QUALIFIER1: "generally", VALUE: "same", ATTRIBUTE: "chemical compose"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"7cec-d42c-3f57-38c1", THING: "star", QUALIFIER1: "generally", VALUE: "same", ATTRIBUTE: "chemical compose"]
+
+	// CENTRAL         ACTION: a star 's mass determines the star 's type     (23b2-6887-354c-8c29) [ AGENT_OBJECT:"star mass", ACTION2:"determine", OBJECT_PROPERTY:"star type" ]
+	//row autoRow15 = [UUID:"23b2-6887-354c-8c29", AGENT_OBJECT: "star mass", ACTION2: "determine", OBJECT_PROPERTY: "star type"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"23b2-6887-354c-8c29", AGENT_OBJECT: "star mass", ACTION2: "determine", OBJECT_PROPERTY: "star type"]
+
+	// CENTRAL         ACTION: small stars burn for billions of years     (c7c6-7be0-9270-7269) [ ADJ:"small", AGENT_OBJECT:"star", ACTION2:"burn", SCOPE2:"for billion of year" ]
+	//row autoRow16 = [UUID:"c7c6-7be0-9270-7269", ADJ: "small", AGENT_OBJECT: "star", ACTION2: "burn", SCOPE2: "for billion of year"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"c7c6-7be0-9270-7269", ADJ: "small", AGENT_OBJECT: "star", ACTION2: "burn", SCOPE2: "for billion of year"]
+
+	// CENTRAL         PROP-THINGS: main-sequence stars are generally yellow in color     (c88f-1e14-3187-b5cc) [ THING:"main-sequence star;main sequence star", QUALIFIER2:"generally", VALUE:"yellow", ATTRIBUTE:"in color" ]
+	//row autoRow17 = [UUID:"c88f-1e14-3187-b5cc", THING: "main sequence star", QUALIFIER2: "generally", VALUE: "yellow", ATTRIBUTE: "in color"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"c88f-1e14-3187-b5cc", THING: "main sequence star", QUALIFIER2: "generally", VALUE: "yellow", ATTRIBUTE: "in color"]
+
+	// CENTRAL         SOURCEOF: nuclear fusion in a star 's core generates energy for stars to burn ; shine     (07c6-6564-4fda-1489) [ AGENT:"nuclear fusion", OBJECT_PATIENT:"in star core", VERB_SOURCEOF_PROVIDE_ETC:"generate", WHAT_IT_PROVIDES:"energy", AGENT_IT_PROVIDES_THING_TO:"star", FOR_PURPOSE:"burn;shine" ]
+	//  Notes: 8311-5fc6-4f54-102c->07c6-6564-4fda-1489
+	//row autoRow18 = [UUID:"07c6-6564-4fda-1489", AGENT: "nuclear fusion", OBJECT_PATIENT: "in star core", VERB_SOURCEOF_PROVIDE_ETC: "generate", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "star", FOR_PURPOSE: "burn"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"07c6-6564-4fda-1489", AGENT: "nuclear fusion", OBJECT_PATIENT: "in star core", VERB_SOURCEOF_PROVIDE_ETC: "generate", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "star", FOR_PURPOSE: "burn"]
+
+	// CENTRAL         CHANGE: nuclear fusion converts hydrogen into helium     (be6c-78e9-7762-22e3) [ PROCESS_NAME:"nuclear fusion", VERB:"convert", FROM:"hydrogen", INTO:"helium" ]
+	//  Notes: 9918-37ee-ef72-cd4a->be6c-78e9-7762-22e3
+	//row autoRow19 = [UUID:"be6c-78e9-7762-22e3", PROCESS_NAME: "nuclear fusion", VERB: "convert", FROM: "hydrogen", INTO: "helium"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"be6c-78e9-7762-22e3", PROCESS_NAME: "nuclear fusion", VERB: "convert", FROM: "hydrogen", INTO: "helium"]
+
+	// LEXGLUE         SYNONYMY: emit means produce     (9ecf-063e-892a-c7fa) [ ACTION1:"emit", ACTION2:"product" ]
+	//row autoRow20 = [UUID:"9ecf-063e-892a-c7fa", ACTION1: "emit", ACTION2: "product"] //OVER-CONSTR.
+	row autoRow20 = [UUID:"9ecf-063e-892a-c7fa", ACTION1: "emit", ACTION2: "product"]
+
+endinferencepattern

@@ -1,0 +1,78 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Weathering_Caused_by_Bio_Acid
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       SOURCEOF: lichens can produce acid to break down rocks     (81ca-fe22-8614-a33e) [ AGENT:"lichen", VERB_SOURCEOF_PROVIDE_ETC:"product", WHAT_IT_PROVIDES:"acid", FOR_PURPOSE:"break rock" ]
+	//        HINTROW plants can produce acid     (377c-8f0e-4f6f-aaa7) [ AGENT:"plant", VERB_SOURCEOF_PROVIDE_ETC:"product", WHAT_IT_PROVIDES:"acid" ]
+	//row autoRow0 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "product", WHAT_IT_PROVIDES: "acid"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "product", WHAT_IT_PROVIDES: "acid"]
+
+	// CENTRALSW       CAUSE: acid can cause rocks to weather by chemical reaction     (31e7-1ab4-8e27-937e) [ CONDITION_AGENT_OBJECT:"acid", RESULT_AGENT:"rock", RESULT_VERB:"weather", SCOPE2:"by chemical react" ]
+	//        HINTROW acid produced by some trees can change the soil chemistry     (daf9-3b53-ab99-f645) [ ACTOR_WHO:"acid", QUANTIFIER_SCOPE:"produce by tree", VERB:"change", WHAT:"soil chemistry" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"CAUSE"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow1 = [TABLE:"CAUSE"]
+
+	// GROUNDING       KINDOF: a boulder is a kind of large rock     (93f5-d52b-1446-d912) [ HYPONYM:"boulder", SCOPE1:"large", HYPERNYM:"rock" ]
+	//        HINTROW bedrock is a kind of rock     (e9d6-4c3d-84ba-0cd0) [ HYPONYM:"bedrock", HYPERNYM:"rock" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "rock"]
+
+	// GROUNDING       KINDOF: a fungus is a kind of organism     (0d71-4b21-e0a6-450b) [ HYPONYM:"fungus", HYPERNYM:"organism" ]
+	//        HINTROW an algae is a kind of organism     (28d3-fb60-bdd3-d10c) [ HYPONYM:"alga", HYPERNYM:"organism" ]
+	//        HINTROW a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "organism"]
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW algae is a kind of plant     (65ae-2928-0696-d8a9) [ HYPONYM:"alga", HYPERNYM:"plant" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// CENTRAL         MADEOF: a lichen is made of fungi and green algae in a symbiotic relationship     (ef7b-e31b-e0e1-a111) [ OBJECT:"lichen", MATERIAL:"fungus green alga", SCOPE:"in symbiotic relationship" ]
+	//row autoRow5 = [UUID:"ef7b-e31b-e0e1-a111", OBJECT: "lichen", MATERIAL: "fungus green alga", SCOPE: "in symbiotic relationship"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"ef7b-e31b-e0e1-a111", OBJECT: "lichen", MATERIAL: "fungus green alga", SCOPE: "in symbiotic relationship"]
+
+	// CENTRAL         KINDOF: a change in soil chemistry is a kind of chemical weathering     (f2a2-282f-5f27-b1a8) [ HYPONYM:"change in soil chemistry", HYPERNYM:"chemical weather" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"f2a2-282f-5f27-b1a8", HYPONYM: "change in soil chemistry", HYPERNYM: "chemical weather"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"f2a2-282f-5f27-b1a8", HYPONYM: "change in soil chemistry", HYPERNYM: "chemical weather"]
+
+	// CENTRAL        (OPTIONAL) MADEOF: a symbiotic organism is made of two or more organisms in a symbiotic relationship     (e18d-5411-b779-abaa) [ OBJECT:"symbiotic organism", VALUE:"two much", MATERIAL:"organism", SCOPE:"in symbiotic relationship" ]
+	//row *autoRow7 = [UUID:"e18d-5411-b779-abaa", OBJECT: "symbiotic organism", VALUE: "two much", MATERIAL: "organism", SCOPE: "in symbiotic relationship"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"e18d-5411-b779-abaa", OBJECT: "symbiotic organism", VALUE: "two much", MATERIAL: "organism", SCOPE: "in symbiotic relationship"]
+
+	// CENTRAL         KINDOF: changing the iron in soil is a kind of chemical change     (edc2-b03d-db5a-b89e) [ HYPONYM:"change iron in soil", HYPERNYM:"chemical change" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"edc2-b03d-db5a-b89e", HYPONYM: "change iron in soil", HYPERNYM: "chemical change"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"edc2-b03d-db5a-b89e", HYPONYM: "change iron in soil", HYPERNYM: "chemical change"]
+
+	// CENTRAL         CAUSE: chemical weathering causes iron in rock to oxidize     (5688-4c81-2fd0-6e31) [ CONDITION_AGENT_OBJECT:"chemical weather", RESULT_AGENT:"iron in rock", RESULT_VERB:"oxidize" ]
+	//row autoRow9 = [UUID:"5688-4c81-2fd0-6e31", CONDITION_AGENT_OBJECT: "chemical weather", RESULT_AGENT: "iron in rock", RESULT_VERB: "oxidize"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"5688-4c81-2fd0-6e31", CONDITION_AGENT_OBJECT: "chemical weather", RESULT_AGENT: "iron in rock", RESULT_VERB: "oxidize"]
+
+	// CENTRAL         CAUSE: organic weathering means organisms cause the weathering of rocks     (0223-a72d-8089-aca2) [ PROCESS_NAME:"organic weather", CONDITION_AGENT_OBJECT:"organism", RESULT_AGENT:"weather of rock" ]
+	//row autoRow10 = [UUID:"0223-a72d-8089-aca2", PROCESS_NAME: "organic weather", CONDITION_AGENT_OBJECT: "organism", RESULT_AGENT: "weather of rock"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"0223-a72d-8089-aca2", PROCESS_NAME: "organic weather", CONDITION_AGENT_OBJECT: "organism", RESULT_AGENT: "weather of rock"]
+
+	// CENTRAL         CAUSE: chemical weathering means chemical reaction causes the weathering of rocks     (a135-6a9e-497e-b96c) [ PROCESS_NAME:"chemical weather", CONDITION_AGENT_OBJECT:"chemical react", RESULT_AGENT:"weather of rock" ]
+	//row autoRow11 = [UUID:"a135-6a9e-497e-b96c", PROCESS_NAME: "chemical weather", CONDITION_AGENT_OBJECT: "chemical react", RESULT_AGENT: "weather of rock"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"a135-6a9e-497e-b96c", PROCESS_NAME: "chemical weather", CONDITION_AGENT_OBJECT: "chemical react", RESULT_AGENT: "weather of rock"]
+
+	// CENTRAL         CAUSE: moss causes chemical weathering     (27e5-8e3a-e2ab-8918) [ CONDITION_AGENT_OBJECT:"moss", RESULT_AGENT:"chemical weather" ]
+	//row autoRow12 = [UUID:"27e5-8e3a-e2ab-8918", CONDITION_AGENT_OBJECT: "moss", RESULT_AGENT: "chemical weather"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"27e5-8e3a-e2ab-8918", CONDITION_AGENT_OBJECT: "moss", RESULT_AGENT: "chemical weather"]
+
+	// CENTRAL         KINDOF: chemical weathering is a kind of weathering     (43fa-1bf5-c428-cfa5) [ HYPONYM:"chemical weather", HYPERNYM:"weather" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"43fa-1bf5-c428-cfa5", HYPONYM: "chemical weather", HYPERNYM: "weather"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"43fa-1bf5-c428-cfa5", HYPONYM: "chemical weather", HYPERNYM: "weather"]
+
+endinferencepattern

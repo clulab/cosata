@@ -1,0 +1,65 @@
+// Automatically converted pattern
+inferencepattern EARTH_INNER_Earthquakes_Result_in
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CAUSE: earthquakes folding rock layers causes older rock to be on top of younger rock     (3bbf-bcf5-c798-f7e7) [ CONDITION_AGENT_OBJECT:"earthquake", CONDITION_VERB:"fold", CONDITION_PATIENT:"rock layer", RESULT_AGENT:"old rock", RESULT_VERB:"be on top of", RESULT_PATIENT:"young rock" ]
+	//        HINTROW earthquakes cause rock layers to fold on top of each other     (72a7-76e4-7f5d-03ab) [ CONDITION_AGENT_OBJECT:"earthquake", RESULT_AGENT:"rock layer", RESULT_VERB:"fold", SCOPE2:"on top of other" ]
+	//  Notes: A: rock layers changed
+	//row autoRow0 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "earthquake", RESULT_VERB: "be"+*"POS:IN"+*"POS:NN"+"of"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "earthquake"]
+
+	// GROUNDING       KINDOF: an earthquake is a kind of natural ; geological event     (8129-78ea-abe4-f382) [ HYPONYM:"earthquake", SCOPE1:"nature;geological", HYPERNYM:"event" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "earthquake", SCOPE1: "nature", HYPERNYM: "event"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "earthquake", SCOPE1: "nature", HYPERNYM: "event"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the ability of a building to move with land increases , the likelihood of that building collapsing decreases during an earthquake     (5b09-f056-de97-ef2c) [ QUANTITY_MEASURE1:"ability", AGENT_ATTRIBUTE1:"of build", ACTION1:"move", PATIENT1:"with land", CHANGE1:"increase", QUANTITY_MEASURE2:"likelihood", AGENT_ATTRIBUTE2:"of build", ACTION2:"collapse", CHANGE2:"decrease", SCOPE2B:"during earthquake" ]
+	//row autoRow2 = [UUID:"5b09-f056-de97-ef2c", QUANTITY_MEASURE1: "ability", AGENT_ATTRIBUTE1: "of build", ACTION1: "move", PATIENT1: "with land", CHANGE1: "increase", QUANTITY_MEASURE2: "likelihood", AGENT_ATTRIBUTE2: "of build", ACTION2: "collapse", CHANGE2: "decrease", SCOPE2B: "during earthquake"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"5b09-f056-de97-ef2c", QUANTITY_MEASURE1: "ability", AGENT_ATTRIBUTE1: "of build", ACTION1: "move", PATIENT1: "with land", CHANGE1: "increase", QUANTITY_MEASURE2: "likelihood", AGENT_ATTRIBUTE2: "of build", ACTION2: "collapse", CHANGE2: "decrease", SCOPE2B: "during earthquake"]
+
+	// CENTRAL         DURATIONS: an earthquake usually occurs over a period of 10 to 30 seconds     (e18f-5f8a-04fd-76f7) [ EVENT:"earthquake", QUANTIFIER:"usually", LOWERBOUND:"10", UPPERBOUND:"30", DURATIONUNIT:"second" ]
+	//row autoRow3 = [UUID:"e18f-5f8a-04fd-76f7", EVENT: "earthquake", QUANTIFIER: "usually", LOWERBOUND: "10", UPPERBOUND: "30", DURATIONUNIT: "second"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"e18f-5f8a-04fd-76f7", EVENT: "earthquake", QUANTIFIER: "usually", LOWERBOUND: "10", UPPERBOUND: "30", DURATIONUNIT: "second"]
+
+	// CENTRAL         CAUSE: tectonic plates being pushed together causes earthquakes     (2b70-ecb7-15fb-441c) [ CONDITION_AGENT_OBJECT:"tectonic plate", CONDITION_VERB:"be push together", RESULT_AGENT:"earthquake" ]
+	//row autoRow4 = [UUID:"2b70-ecb7-15fb-441c", CONDITION_AGENT_OBJECT: "tectonic plate", CONDITION_VERB: "be push together", RESULT_AGENT: "earthquake"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"2b70-ecb7-15fb-441c", CONDITION_AGENT_OBJECT: "tectonic plate", CONDITION_VERB: "be push together", RESULT_AGENT: "earthquake"]
+
+	// CENTRAL         LOCATIONS: the collision of tectonic plates are found at the convergent boundaries ; the converging boundaries     (d413-e616-05e3-a766) [ THING_PROCESS:"collision of tectonic plate", LOCATION:"convergent boundary;converge boundary" ]
+	//row autoRow5 = [UUID:"d413-e616-05e3-a766", THING_PROCESS: "collision of tectonic plate", LOCATION: "convergent boundary"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"d413-e616-05e3-a766", THING_PROCESS: "collision of tectonic plate", LOCATION: "convergent boundary"]
+
+	// CENTRAL         CAUSE: an earthquake causes the ground to shake     (457d-1a26-5f9e-04e6) [ CONDITION_AGENT_OBJECT:"earthquake", RESULT_AGENT:"grind", RESULT_VERB:"shake" ]
+	//  Notes: B: the ground is shaken
+	//row autoRow6 = [UUID:"457d-1a26-5f9e-04e6", CONDITION_AGENT_OBJECT: "earthquake", RESULT_AGENT: "grind", RESULT_VERB: "shake"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"457d-1a26-5f9e-04e6", CONDITION_AGENT_OBJECT: "earthquake", RESULT_AGENT: "grind", RESULT_VERB: "shake"]
+
+	// CENTRAL         CHANGE: an earthquake changes Earth 's surface quickly     (d08c-6817-560e-4660) [ ACTOR_WHO:"earthquake", VERB:"change", WHAT:"earth surface", SCOPE:"quickly" ]
+	//  Notes: C: change the surface of the ground
+	//row autoRow7 = [UUID:"d08c-6817-560e-4660", ACTOR_WHO: "earthquake", VERB: "change", WHAT: "earth surface", SCOPE: "quickly"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"d08c-6817-560e-4660", ACTOR_WHO: "earthquake", VERB: "change", WHAT: "earth surface", SCOPE: "quickly"]
+
+	// CENTRAL         SOURCEOF: earthquake is a source of seismic waves     (1d48-ec76-865c-7447) [ AGENT:"earthquake", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"seismic wave" ]
+	//  Notes: 1455-f30e-b38e-85d1->1d48-ec76-865c-7447D: cause seismic waves
+	//row autoRow8 = [UUID:"1d48-ec76-865c-7447", AGENT: "earthquake", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "seismic wave"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"1d48-ec76-865c-7447", AGENT: "earthquake", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "seismic wave"]
+
+	// CENTRAL         FORMEDBY: mountains are formed by earthquakes ; volcanoes ; plate tectonics     (97d0-5256-918b-cee7) [ OBJECT:"mountain", AGENT_PROCESS:"earthquake;volcano;plate tectonic" ]
+	//  Notes: E: forms mountains
+	//row autoRow9 = [UUID:"97d0-5256-918b-cee7", OBJECT: "mountain", AGENT_PROCESS: "plate tectonic"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"97d0-5256-918b-cee7", OBJECT: "mountain", AGENT_PROCESS: "plate tectonic"]
+
+	// CENTRAL         LOCATIONS: earthquakes are most common along tectonic plate boundaries     (ddc4-d38f-a1dc-4e3e) [ THING_PROCESS:"earthquake", LOCATION:"along tectonic plate boundary" ]
+	//row autoRow10 = [UUID:"ddc4-d38f-a1dc-4e3e", THING_PROCESS: "earthquake", LOCATION: "along tectonic plate boundary"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"ddc4-d38f-a1dc-4e3e", THING_PROCESS: "earthquake", LOCATION: "along tectonic plate boundary"]
+
+	// LEXGLUE         SYNONYMY: to cause the formation of means to form     (b7ab-4872-8563-4b31) [ ACTION1:"cause", Y1:"form of", ACTION2:"form" ]
+	//row autoRow11 = [UUID:"b7ab-4872-8563-4b31", ACTION1: "cause", Y1: "form of", ACTION2: "form"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"b7ab-4872-8563-4b31", ACTION1: "cause", Y1: "form of", ACTION2: "form"]
+
+endinferencepattern

@@ -1,0 +1,64 @@
+// Automatically converted pattern
+inferencepattern MAT_COS_Temperatures_in_Different_States
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: colder ; cooler means lower in temperature     (246e-dd6e-6e09-988a) [ THING:"cold;cool", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//        HINTROW cold means low in temperature     (cf2a-6257-0c5c-7445) [ THING:"cold", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "cold", VALUE: "low", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "cold", VALUE: "low", ATTRIBUTE: "temperature"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: warmer means greater ; higher in temperature ; warmth     (3c5b-8471-16d4-f1b2) [ THING:"warm", VALUE:"great;high", ATTRIBUTE:"temperature;warmth" ]
+	//        HINTROW warm means medium heat energy ; temperature     (63df-d3d9-56dc-161a) [ THING:"warm", VALUE:"medium;medium", ATTRIBUTE:"heat energy;temperature" ]
+	//        HINTROW hot means high in heat energy ; temperature     (9ff8-543c-2f35-5d3f) [ THING:"hot", VALUE:"high", ATTRIBUTE:"heat energy;temperature" ]
+	//row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "temperature"]
+
+	// CENTRALSW       MADEOF: a glacier is made of ice     (b901-aa66-c858-54e7) [ OBJECT:"glacier", MATERIAL:"ice" ]
+	//        HINTROW sleet is made of ice     (2dfb-6788-d488-9db9) [ OBJECT:"sleet", MATERIAL:"ice" ]
+	//        HINTROW ice cube is made of ice     (2c7a-314b-2dd8-2290) [ OBJECT:"ice cube", MATERIAL:"ice" ]
+	//row autoRow2 = [TABLE:"MADEOF", MATERIAL: "ice"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"MADEOF", MATERIAL: "ice"]
+
+	// GROUNDING       KINDOF: a stream is a kind of moving body of water     (c71c-f0da-3930-67f0) [ HYPONYM:"stream", SCOPE1:"move", HYPERNYM:"body of water" ]
+	//        HINTROW a bay is a kind of body of water     (0596-e537-4cc3-192c) [ HYPONYM:"bay", HYPERNYM:"body of water" ]
+	//        HINTROW a lake is a kind of body of water     (5d6a-544c-b296-832e) [ HYPONYM:"lake", HYPERNYM:"body of water" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "body of water"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C     (e474-2a11-6e7b-ae8b) [ MATERIAL_NAME:"water", STATEOFMATTER:"gas", FORM_NAME:"water vapor;steam", LOWER_BOUND:"373;212;100", UPPER_BOUND:"100000000000", UNITS:"k;f;c" ]
+	//row autoRow4 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C     (4a5a-9115-28a9-b97b) [ MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice", LOWER_BOUND:"0;-459;-273;459;273", UPPER_BOUND:"273;32;0", UNITS:"k;f;c" ]
+	//row autoRow5 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//row autoRow6 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"]
+
+	// CENTRAL         COMPARISON: ice is colder in temperature than water     (3b5c-1ef3-7358-a156) [ THING:"ice", ACTION1:"be", COMPARISON:"cold", ATTRIBUTE:"in temperature", THING_COMPARED:"water" ]
+	//  Notes: 7452-6f05-2e80-f10f->3b5c-1ef3-7358-a156
+	//row autoRow7 = [UUID:"3b5c-1ef3-7358-a156", THING: "ice", ACTION1: "be", COMPARISON: "cold", ATTRIBUTE: "in temperature", THING_COMPARED: "water"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3b5c-1ef3-7358-a156", THING: "ice", ACTION1: "be", COMPARISON: "cold", ATTRIBUTE: "in temperature", THING_COMPARED: "water"]
+
+	// CENTRAL         COMPARISON: water is colder in temperature than steam     (85a6-050d-9582-c753) [ THING:"water", ACTION1:"be", COMPARISON:"cold", ATTRIBUTE:"in temperature", THING_COMPARED:"steam" ]
+	//  Notes: bf5f-731f-c1a8-0a2e->85a6-050d-9582-c753
+	//row autoRow8 = [UUID:"85a6-050d-9582-c753", THING: "water", ACTION1: "be", COMPARISON: "cold", ATTRIBUTE: "in temperature", THING_COMPARED: "steam"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"85a6-050d-9582-c753", THING: "water", ACTION1: "be", COMPARISON: "cold", ATTRIBUTE: "in temperature", THING_COMPARED: "steam"]
+
+	// CENTRAL         CONTAINS: a body of water contains water     (b927-5436-1d17-c396) [ OBJECT_AGENT:"body of water", WHAT_IT_CONTAINS:"water" ]
+	//row autoRow9 = [UUID:"b927-5436-1d17-c396", OBJECT_AGENT: "body of water", WHAT_IT_CONTAINS: "water"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"b927-5436-1d17-c396", OBJECT_AGENT: "body of water", WHAT_IT_CONTAINS: "water"]
+
+	// LEXGLUE         OPPOSITES: warm is the opposite of cool     (3e23-b8b4-9343-5c4f) [ THING_PROPERTY1:"warm", THING_PROPERTY2:"cool" ]
+	//row autoRow10 = [UUID:"3e23-b8b4-9343-5c4f", THING_PROPERTY1: "warm", THING_PROPERTY2: "cool"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"3e23-b8b4-9343-5c4f", THING_PROPERTY1: "warm", THING_PROPERTY2: "cool"]
+
+endinferencepattern

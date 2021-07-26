@@ -1,0 +1,67 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Weathering_Caused_by_Ice_Wedging
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         CHANGE: weathering ; mechanical weathering means breaking down rocks ; surface materials from a larger whole into smaller pieces by weather ; mechanical means     (791e-1c71-7a1d-d10a) [ PROCESS_NAME:"weather;mechanical weather", VERB:"break", WHAT:"rock;surface material", FROM:"large whole", INTO:"small piece", BY_THROUGH_HOW:"weather;mechanical mean" ]
+	//row autoRow0 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"]
+
+	// CENTRAL         CHANGE: freezing means matter ; a substance changes from a liquid into a solid by decreasing heat energy     (f03c-decc-030f-b860) [ PROCESS_NAME:"freeze", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"solid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//row autoRow1 = [UUID:"f03c-decc-030f-b860", PROCESS_NAME: "freeze", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "solid", BY_THROUGH_HOW: "decrease heat energy"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"f03c-decc-030f-b860", PROCESS_NAME: "freeze", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "solid", BY_THROUGH_HOW: "decrease heat energy"]
+
+	// CENTRAL         CAUSE: ice wedging is when ice causes rocks to crack by expanding in openings     (a7ea-1134-ae5c-b085) [ PROCESS_NAME:"ice wedge", CONDITION_AGENT_OBJECT:"ice", RESULT_AGENT:"rock", RESULT_VERB:"crack", SCOPE2:"by expand in opening" ]
+	//row autoRow2 = [UUID:"a7ea-1134-ae5c-b085", PROCESS_NAME: "ice wedge", CONDITION_AGENT_OBJECT: "ice", RESULT_AGENT: "rock", RESULT_VERB: "crack", SCOPE2: "by expand in opening"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"a7ea-1134-ae5c-b085", PROCESS_NAME: "ice wedge", CONDITION_AGENT_OBJECT: "ice", RESULT_AGENT: "rock", RESULT_VERB: "crack", SCOPE2: "by expand in opening"]
+
+	// CENTRAL         PROP-GENERIC: temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot     (4084-f2bc-52cf-0f74) [ X:"temperature;heat energy", Y:"object;weather", ORDERED_UNORDERED:"order", VALUES:"cold;cool;warm;hot" ]
+	//row autoRow3 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"]
+
+	// CENTRAL         CHANGE: break down means change from a whole into pieces     (400d-d80d-09a3-3206) [ PROCESS_NAME:"break", VERB:"change", FROM:"whole", INTO:"piece" ]
+	//row autoRow4 = [UUID:"400d-d80d-09a3-3206", PROCESS_NAME: "break", VERB: "change", FROM: "whole", INTO: "piece"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"400d-d80d-09a3-3206", PROCESS_NAME: "break", VERB: "change", FROM: "whole", INTO: "piece"]
+
+	// CENTRAL         CAUSE: cycles of freezing and thawing water cause ice wedging     (4730-e0f3-6d20-0e0e) [ CONDITION_AGENT_OBJECT:"cycle of", CONDITION_VERB:"freeze thaw", CONDITION_PATIENT:"water", RESULT_VERB:"ice wedge" ]
+	//row autoRow5 = [UUID:"4730-e0f3-6d20-0e0e", CONDITION_AGENT_OBJECT: "cycle of", CONDITION_VERB: "freeze thaw", CONDITION_PATIENT: "water", RESULT_VERB: "ice wedge"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"4730-e0f3-6d20-0e0e", CONDITION_AGENT_OBJECT: "cycle of", CONDITION_VERB: "freeze thaw", CONDITION_PATIENT: "water", RESULT_VERB: "ice wedge"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C     (4a5a-9115-28a9-b97b) [ MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice", LOWER_BOUND:"0;-459;-273;459;273", UPPER_BOUND:"273;32;0", UNITS:"k;f;c" ]
+	//row autoRow6 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//row autoRow7 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"]
+
+	// CENTRAL         KINDOF: ice wedging is a kind of mechanical weathering     (b525-3c38-249c-23da) [ HYPONYM:"ice wedge", HYPERNYM:"mechanical weather" ]
+	//row autoRow8 = [UUID:"b525-3c38-249c-23da", HYPONYM: "ice wedge", HYPERNYM: "mechanical weather"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"b525-3c38-249c-23da", HYPONYM: "ice wedge", HYPERNYM: "mechanical weather"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of heat energy     (d753-423d-5ce7-53ce) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"heat energy" ]
+	//row autoRow9 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"]
+
+	// CENTRAL         IFTHEN: when water freezes , that water expands     (2946-6e9f-c2f8-2575) [ THING:"water", ACTION1:"freeze", ACTOR_AGENT_PROCESS2:"that water", ACTION3:"expand" ]
+	//row autoRow10 = [UUID:"2946-6e9f-c2f8-2575", THING: "water", ACTION1: "freeze", ACTOR_AGENT_PROCESS2: "that water", ACTION3: "expand"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"2946-6e9f-c2f8-2575", THING: "water", ACTION1: "freeze", ACTOR_AGENT_PROCESS2: "that water", ACTION3: "expand"]
+
+	// CENTRAL         INSTANCES: water expanding when it freezes is a physical property of water     (37ef-5fd6-ee65-4c27) [ INSTANCE:"water expand freeze", ADJ:"physical", CLASS:"property", SCOPE:"of water" ]
+	//row autoRow11 = [UUID:"37ef-5fd6-ee65-4c27", INSTANCE: "water expand freeze", ADJ: "physical", CLASS: "property", SCOPE: "of water"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"37ef-5fd6-ee65-4c27", INSTANCE: "water expand freeze", ADJ: "physical", CLASS: "property", SCOPE: "of water"]
+
+	// LEXGLUE         SYNONYMY: ice wedging is similar to ice fracturing     (dbb7-52eb-4b0c-2fb3) [ X1:"ice wedge", X2:"ice fracture" ]
+	//row autoRow12 = [UUID:"dbb7-52eb-4b0c-2fb3", X1: "ice wedge", X2: "ice fracture"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"dbb7-52eb-4b0c-2fb3", X1: "ice wedge", X2: "ice fracture"]
+
+	// LEXGLUE         SYNONYMY: fractured is similar to cracked     (97aa-03d4-6123-59e7) [ X1:"fracture", X2:"crack" ]
+	//row autoRow13 = [UUID:"97aa-03d4-6123-59e7", X1: "fracture", X2: "crack"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"97aa-03d4-6123-59e7", X1: "fracture", X2: "crack"]
+
+endinferencepattern

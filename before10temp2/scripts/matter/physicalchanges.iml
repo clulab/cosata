@@ -1,0 +1,19 @@
+/*
+ * Physical changes
+ */ 
+ 
+// TODO
+inferencepattern shapeVolumeSOM
+        // Plain text description
+        description = ""
+
+        // Constants
+
+        // Row definitions
+        row som = [TABLE:"KINDOF", HYPONYM:<SOM>, HYPERNYM:"state of matter"]
+        row propSomTemp = [TABLE:"PROP-STATESOFMATTER-TEMPS", STATEOFMATTER:<SOM>]
+
+
+        // Code
+
+endinferencepattern

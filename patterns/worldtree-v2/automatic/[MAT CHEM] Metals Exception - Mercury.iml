@@ -1,0 +1,45 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Metals_Exception_Mercury
+
+	// Plain text description
+	description = "Mercury is special in metals"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         INSTANCES: a metal is usually a solid at room temperature     (6b13-b027-dc64-b855) [ INSTANCE:"metal", QUANTIFIER:"usually", CLASS:"solid", SCOPE:"at room temperature" ]
+	//row autoRow0 = [UUID:"6b13-b027-dc64-b855", INSTANCE: "metal", QUANTIFIER: "usually", CLASS: "solid", SCOPE: "at room temperature"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"6b13-b027-dc64-b855", INSTANCE: "metal", QUANTIFIER: "usually", CLASS: "solid", SCOPE: "at room temperature"]
+
+	// CENTRAL         KINDOF: state of matter is a kind of physical property     (7532-01eb-475e-acbd) [ HYPONYM:"state of matt", SCOPE1:"physical", HYPERNYM:"property" ]
+	//  Notes: peripheral
+	//row autoRow1 = [UUID:"7532-01eb-475e-acbd", HYPONYM: "state of matt", SCOPE1: "physical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"7532-01eb-475e-acbd", HYPONYM: "state of matt", SCOPE1: "physical", HYPERNYM: "property"]
+
+	// CENTRAL         PROP-THINGS: elements in the same group on the Periodic Table of Elements have similar properties     (8424-e5dd-a2c7-77a3) [ THING:"element in same group on periodic table of element", VALUE:"similar", ATTRIBUTE:"property" ]
+	//row autoRow2 = [UUID:"8424-e5dd-a2c7-77a3", THING: "element in same group on periodic table of element", VALUE: "similar", ATTRIBUTE: "property"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"8424-e5dd-a2c7-77a3", THING: "element in same group on periodic table of element", VALUE: "similar", ATTRIBUTE: "property"]
+
+	// CENTRAL         KINDOF: solid is a kind of state of matter     (cf49-1b7a-89f0-41f5) [ HYPONYM:"solid", HYPERNYM:"state of matt" ]
+	//row autoRow3 = [UUID:"cf49-1b7a-89f0-41f5", HYPONYM: "solid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"cf49-1b7a-89f0-41f5", HYPONYM: "solid", HYPERNYM: "state of matt"]
+
+	// CENTRAL         KINDOF: liquid is a kind of state of matter     (f7e9-c6f8-892b-3496) [ HYPONYM:"liquid", HYPERNYM:"state of matt" ]
+	//row autoRow4 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"]
+
+	// CENTRAL         KINDOF: mercury is a kind of metal     (47da-6ed5-8af9-eceb) [ HYPONYM:"mercury", HYPERNYM:"metal" ]
+	//row autoRow5 = [UUID:"47da-6ed5-8af9-eceb", HYPONYM: "mercury", HYPERNYM: "metal"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"47da-6ed5-8af9-eceb", HYPONYM: "mercury", HYPERNYM: "metal"]
+
+	// CENTRAL         PROP-THINGS: mercury is liquid at room temperature     (18b8-a895-6156-d9dc) [ THING:"mercury", VALUE:"liquid", SCOPE_RELATIVETO:"at room temperature" ]
+	//row autoRow6 = [UUID:"18b8-a895-6156-d9dc", THING: "mercury", VALUE: "liquid", SCOPE_RELATIVETO: "at room temperature"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"18b8-a895-6156-d9dc", THING: "mercury", VALUE: "liquid", SCOPE_RELATIVETO: "at room temperature"]
+
+	// CENTRAL         KINDOF: a metal is a kind of element     (45fd-c59e-5a62-43ce) [ HYPONYM:"metal", HYPERNYM:"element" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"45fd-c59e-5a62-43ce", HYPONYM: "metal", HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"45fd-c59e-5a62-43ce", HYPONYM: "metal", HYPERNYM: "element"]
+
+endinferencepattern

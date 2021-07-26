@@ -1,0 +1,60 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Definition_Erosion
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: erosion is a kind of process     (7fff-260d-92e0-8f87) [ HYPONYM:"erode", HYPERNYM:"process" ]
+	//        HINTROW soil erosion is a kind of slow ; natural process     (11c8-fdbb-e0de-c7b7) [ HYPONYM:"soil erode", SCOPE1:"slow;nature", HYPERNYM:"process" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "erode", HYPERNYM: "process"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "erode", HYPERNYM: "process"]
+
+	// GROUNDING       KINDOF: a river is a kind of flowing ; moving body of water     (9885-6337-f26c-cfbd) [ HYPONYM:"river", SCOPE1:"flow;move", HYPERNYM:"body of water" ]
+	//        HINTROW a stream is a kind of moving body of water     (c71c-f0da-3930-67f0) [ HYPONYM:"stream", SCOPE1:"move", HYPERNYM:"body of water" ]
+	//row autoRow1 = [TABLE:"KINDOF", SCOPE1: "move", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", SCOPE1: "move", HYPERNYM: "body of water"]
+
+	// GROUNDING       KINDOF: soil erosion is a kind of erosion     (309b-26ad-fece-db07) [ HYPONYM:"soil erode", HYPERNYM:"erode" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "soil erode", HYPERNYM: "erode"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "soil erode", HYPERNYM: "erode"]
+
+	// GROUNDING       KINDOF: weathering is a kind of erosion     (1272-6781-b4fb-96ab) [ HYPONYM:"weather", HYPERNYM:"erode" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "weather", HYPERNYM: "erode"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "weather", HYPERNYM: "erode"]
+
+	// CENTRAL         CHANGE: weathering ; mechanical weathering means breaking down rocks ; surface materials from a larger whole into smaller pieces by weather ; mechanical means     (791e-1c71-7a1d-d10a) [ PROCESS_NAME:"weather;mechanical weather", VERB:"break", WHAT:"rock;surface material", FROM:"large whole", INTO:"small piece", BY_THROUGH_HOW:"weather;mechanical mean" ]
+	//row autoRow4 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"]
+
+	// CENTRAL         TRANSFER: erosion is when wind ; moving water transports sediments from one place to another place for a long distance     (86b7-c266-fd6c-3286) [ PROCESS_NAME:"erode", ACTOR_WHO:"wind;move water", VERB:"transport;transport", WHAT:"sediment", SOURCE:"one place", DESTINATION:"place", SCOPE:"for long distance" ]
+	//  Notes: 4bf3-ee38-89b1-156f->86b7-c266-fd6c-3286
+	//row autoRow5 = [UUID:"86b7-c266-fd6c-3286", PROCESS_NAME: "erode", ACTOR_WHO: "move water", VERB: "transport", WHAT: "sediment", SOURCE: "one place", DESTINATION: "place", SCOPE: "for long distance"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"86b7-c266-fd6c-3286", PROCESS_NAME: "erode", ACTOR_WHO: "move water", VERB: "transport", WHAT: "sediment", SOURCE: "one place", DESTINATION: "place", SCOPE: "for long distance"]
+
+	// CENTRAL         CAUSE: water causes soil and rock erosion     (0d14-c53e-d23c-17d9) [ CONDITION_AGENT_OBJECT:"water", RESULT_AGENT:"soil rock erode" ]
+	//row autoRow6 = [UUID:"0d14-c53e-d23c-17d9", CONDITION_AGENT_OBJECT: "water", RESULT_AGENT: "soil rock erode"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"0d14-c53e-d23c-17d9", CONDITION_AGENT_OBJECT: "water", RESULT_AGENT: "soil rock erode"]
+
+	// CENTRAL         CHANGE: erosion ; weathering changes the Earth 's surface     (4267-93f0-e703-47f2) [ ACTOR_WHO:"erode;weather", VERB:"change;change", WHAT:"earth surface" ]
+	//row autoRow7 = [UUID:"4267-93f0-e703-47f2", ACTOR_WHO: "erode", VERB: "change", WHAT: "earth surface"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4267-93f0-e703-47f2", ACTOR_WHO: "erode", VERB: "change", WHAT: "earth surface"]
+
+	// CENTRAL         KINDOF: erosion is a kind of destructive force     (818d-694a-356a-68bb) [ HYPONYM:"erode", HYPERNYM:"destructive force" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"818d-694a-356a-68bb", HYPONYM: "erode", HYPERNYM: "destructive force"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"818d-694a-356a-68bb", HYPONYM: "erode", HYPERNYM: "destructive force"]
+
+	// CENTRAL         KINDOF: erosion is a kind of physical weathering     (78b9-5f14-6214-4c2b) [ HYPONYM:"erode", HYPERNYM:"physical weather" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"78b9-5f14-6214-4c2b", HYPONYM: "erode", HYPERNYM: "physical weather"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"78b9-5f14-6214-4c2b", HYPONYM: "erode", HYPERNYM: "physical weather"]
+
+	// CENTRAL         DURATIONS: weathering ; erosion usually occurs over a period of many years which is considered a long time     (3823-1fac-a50b-665f) [ EVENT:"weather;erode", QUANTIFIER:"usually", LOWERBOUND:"many", DURATIONUNIT:"year", MAGNITUDE:"long", ATTRIBUTE:"time" ]
+	//row autoRow10 = [UUID:"3823-1fac-a50b-665f", EVENT: "weather", QUANTIFIER: "usually", LOWERBOUND: "many", DURATIONUNIT: "year", MAGNITUDE: "long", ATTRIBUTE: "time"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"3823-1fac-a50b-665f", EVENT: "weather", QUANTIFIER: "usually", LOWERBOUND: "many", DURATIONUNIT: "year", MAGNITUDE: "long", ATTRIBUTE: "time"]
+
+endinferencepattern

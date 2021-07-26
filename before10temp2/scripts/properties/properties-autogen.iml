@@ -1,0 +1,42 @@
+// IML
+
+/*
+ * Supporting functions
+ */ 
+
+
+// Taxonomic traversal
+// If X is a kind of Y, and Y is a kind of Z, then X is a kind of Z
+inferencepattern propFillingTempsSpecific
+        // Plain text description
+        description = "Fill properties (if X is a kind of Y, then X should have the same properties as Y)"
+        executionmode = "AUTOREGEN"
+
+        // Constants
+
+        // Row definitions
+        row kindof = [TABLE:"KINDOF", HYPONYM:<x>, HYPERNYM:<y>]        
+        row propRow = [TABLE:"PROP-TEMPS-SPECIFIC", PROPERTY:<prop>, AGENT_OBJECT_LOCATION:<y>, QUALIFIER:<qualifier>, VALUE:<value>, UNIT:<unit>]
+
+        // Code
+        generateRow([TABLE:"PROP-TEMPS-SPECIFIC", FILL_THE:"the", PROPERTY:<prop>, FILL_OF:"of", AGENT_OBJECT_LOCATION:<x>, FILL_IS:"is", QUALIFIER:<qualifier>, VALUE:<value>, UNIT:<unit>])
+
+endinferencepattern
+
+
+
+inferencepattern propFillingLocations
+        // Plain text description
+        description = "Fill properties (if X is a kind of Y, then X should have the same properties as Y)"
+        executionmode = "AUTOREGEN"
+
+        // Constants
+
+        // Row definitions
+        row kindof = [TABLE:"KINDOF", HYPONYM:<x>, HYPERNYM:<y>]        
+        row propRow = [TABLE:"PROP-LOCATIONS", PROPERTY:<prop>, AGENT_OBJECT:<y>, VALUE:<value>, QUALIFIER:<qualifier>]
+
+        // Code
+        generateRow([TABLE:"PROP-LOCATIONS", FILL_THE:"the", PROPERTY:"location", FILL_OF_A:"of a", AGENT_OBJECT:<x>, FILL_IS:"is", QUALIFIER:<qualifier>, FILL_IN_A_THE:"in a", VALUE:<value>])
+
+endinferencepattern

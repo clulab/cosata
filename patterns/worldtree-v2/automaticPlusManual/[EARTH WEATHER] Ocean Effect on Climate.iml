@@ -1,0 +1,60 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Ocean_Effect_on_Climate
+
+	// Plain text description
+	description = "general concept of ocean affecting climate"
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: hurricane is a kind of severe weather     (bbdd-d876-94cd-c5c1) [ HYPONYM:"hurricane", HYPERNYM:"severe weather" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "hurricane", HYPERNYM: "severe weather"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "hurricane", HYPERNYM: "severe weather"]
+
+	// CENTRAL         MEASUREMENTS: climate is the usual kind of weather in a location over a period of time     (1dba-dc42-8ca9-0ab2) [ MEASURE:"climate", QUANTITY_ADJ:"usual kind of", ATTRIBUTE:"weather", SCOPE:"in locate over period of time" ]
+	//row autoRow1 = [UUID:"1dba-dc42-8ca9-0ab2", MEASURE: "climate", QUANTITY_ADJ: "usual kind of", ATTRIBUTE: "weather", SCOPE: "in locate over period of time"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"1dba-dc42-8ca9-0ab2", MEASURE: "climate", QUANTITY_ADJ: "usual kind of", ATTRIBUTE: "weather", SCOPE: "in locate over period of time"]
+
+	// CENTRAL         CHANGE: ocean currents change the world climate by transferring heat to and from various regions     (4c25-60d5-fb41-8bbc) [ ACTOR_WHO:"ocean current", VERB:"change", WHAT:"world climate", BY_THROUGH_HOW:"transfer heat from various region" ]
+	//row autoRow2 = [UUID:"4c25-60d5-fb41-8bbc", ACTOR_WHO: "ocean current", VERB: "change", WHAT: "world climate", BY_THROUGH_HOW: "transfer heat from various region"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"4c25-60d5-fb41-8bbc", ACTOR_WHO: "ocean current", VERB: "change", WHAT: "world climate", BY_THROUGH_HOW: "transfer heat from various region"]
+
+	// CENTRAL         PROP-GENERIC: temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot     (4084-f2bc-52cf-0f74) [ X:"temperature;heat energy", Y:"object;weather", ORDERED_UNORDERED:"order", VALUES:"cold;cool;warm;hot" ]
+	//row autoRow3 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"]
+
+	// CENTRAL        (OPTIONAL) SUBDIVISION-GENERICSPATIAL: a coast is where land meets the edge of a body of water     (8d65-5a72-dae4-fb86) [ SUBDIVISION:"coast", TYPE_OF_SUBDIVISION:"land", PART:"edge of", WHOLE:"body of water" ]
+	//row *autoRow4 = [UUID:"8d65-5a72-dae4-fb86", SUBDIVISION: "coast", TYPE_OF_SUBDIVISION: "land", PART: "edge of", WHOLE: "body of water"] //OVER-CONSTR.
+	row *autoRow4 = [UUID:"8d65-5a72-dae4-fb86", SUBDIVISION: "coast", TYPE_OF_SUBDIVISION: "land", PART: "edge of", WHOLE: "body of water"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the temperature of the ocean increases , the strength of the hurricane will increase     (c358-d481-25a5-0d1e) [ QUANTITY_MEASURE1:"temperature", AGENT_ATTRIBUTE1:"of ocean", CHANGE1:"increase", QUANTITY_MEASURE2:"strength", AGENT_ATTRIBUTE2:"of hurricane", CHANGE2:"increase" ]
+	//  Notes: affect hurricane
+	//row autoRow5 = [UUID:"c358-d481-25a5-0d1e", QUANTITY_MEASURE1: "temperature", AGENT_ATTRIBUTE1: "of ocean", CHANGE1: "increase", QUANTITY_MEASURE2: "strength", AGENT_ATTRIBUTE2: "of hurricane", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"c358-d481-25a5-0d1e", QUANTITY_MEASURE1: "temperature", AGENT_ATTRIBUTE1: "of ocean", CHANGE1: "increase", QUANTITY_MEASURE2: "strength", AGENT_ATTRIBUTE2: "of hurricane", CHANGE2: "increase"]
+
+	// CENTRAL         PROP-GENERIC: humidity is a property of weather and include ordered values of dry ; humid     (33cb-429a-ce86-2d79) [ X:"humidity", Y:"weather", ORDERED_UNORDERED:"order", VALUES:"spin-dry;humid" ]
+	//row autoRow6 = [UUID:"33cb-429a-ce86-2d79", X: "humidity", Y: "weather", ORDERED_UNORDERED: "order", VALUES: "spin-dry"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"33cb-429a-ce86-2d79", X: "humidity", Y: "weather", ORDERED_UNORDERED: "order", VALUES: "spin-dry"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as distance from water decreases , humidity will increase     (b9e7-6612-b3bc-264a) [ QUANTITY_MEASURE1:"distance", SCOPE1A:"from water", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"humidity", CHANGE2:"increase" ]
+	//  Notes: affect Humidity
+	//row autoRow7 = [UUID:"b9e7-6612-b3bc-264a", QUANTITY_MEASURE1: "distance", SCOPE1A: "from water", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "humidity", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"b9e7-6612-b3bc-264a", QUANTITY_MEASURE1: "distance", SCOPE1A: "from water", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "humidity", CHANGE2: "increase"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as distance to an ocean decreases , the temperature will decrease     (9bcc-b632-9e13-d930) [ QUANTITY_MEASURE1:"distance", SCOPE1A:"ocean", CHANGE1:"decrease", QUANTITY_MEASURE2:"temperature", CHANGE2:"decrease" ]
+	//  Notes: affect Temperature
+	//row autoRow8 = [UUID:"9bcc-b632-9e13-d930", QUANTITY_MEASURE1: "distance", SCOPE1A: "ocean", CHANGE1: "decrease", QUANTITY_MEASURE2: "temperature", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"9bcc-b632-9e13-d930", QUANTITY_MEASURE1: "distance", SCOPE1A: "ocean", CHANGE1: "decrease", QUANTITY_MEASURE2: "temperature", CHANGE2: "decrease"]
+
+	// CENTRAL         ACTION: oceans regulate the temperature of nearby land     (5a94-7eb8-8140-f2b4) [ AGENT_OBJECT:"ocean", ACTION2:"regulate", OBJECT_PROPERTY:"temperature", SCOPE2:"of nearby land" ]
+	//  Notes: affect Temperature
+	//row autoRow9 = [UUID:"5a94-7eb8-8140-f2b4", AGENT_OBJECT: "ocean", ACTION2: "regulate", OBJECT_PROPERTY: "temperature", SCOPE2: "of nearby land"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"5a94-7eb8-8140-f2b4", AGENT_OBJECT: "ocean", ACTION2: "regulate", OBJECT_PROPERTY: "temperature", SCOPE2: "of nearby land"]
+
+	// CENTRAL         KINDOF: an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"466a-2c15-ac54-8361", HYPONYM: "ocean", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"466a-2c15-ac54-8361", HYPONYM: "ocean", HYPERNYM: "body of water"]
+
+endinferencepattern

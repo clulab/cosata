@@ -1,0 +1,84 @@
+// Automatically converted pattern
+inferencepattern MAT_COS_Freezing_Change_in_Shape
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE-VEC: cooling means temperature decreases     (b71d-3add-69c0-1d03) [ PROCESS_NAME_ACTION:"cool", AGENT_OBJECT:"temperature", DIRECTION:"decrease" ]
+	//        HINTROW cooling ; colder means removing ; reducing ; decreasing heat ; temperature     (3a9b-81b5-1a3a-40a0) [ PROCESS_NAME_ACTION:"cool;cold", DIRECTION:"remove;reduce;decrease", PATIENT:"heat;temperature" ]
+	//row autoRow0 = [TABLE:"CHANGE-VEC", PROCESS_NAME_ACTION: "cool", DIRECTION: "decrease"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CHANGE-VEC", PROCESS_NAME_ACTION: "cool", DIRECTION: "decrease"]
+
+	// GROUNDING      (OPTIONAL) KINDOF: water is a kind of liquid at room temperature     (3961-d09c-4b9a-a6f7) [ HYPONYM:"water", HYPERNYM:"liquid", SCOPE2:"at room temperature" ]
+	//        HINTROW milk is a kind of liquid at room temperature     (0412-1219-6683-82d1) [ HYPONYM:"milk", HYPERNYM:"liquid", SCOPE2:"at room temperature" ]
+	//        HINTROW a beverage is a kind of liquid     (c06c-117e-c8e2-2750) [ HYPONYM:"beverage", HYPERNYM:"liquid" ]
+	//row *autoRow1 = [TABLE:"KINDOF", HYPONYM: "water", HYPERNYM: "liquid"] //OVER-CONSTR.
+	row *autoRow1 = [TABLE:"KINDOF", HYPERNYM: "liquid"]
+
+	// CENTRAL         CHANGE: freezing means matter ; a substance changes from a liquid into a solid by decreasing heat energy     (f03c-decc-030f-b860) [ PROCESS_NAME:"freeze", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"solid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//row autoRow2 = [UUID:"f03c-decc-030f-b860", PROCESS_NAME: "freeze", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "solid", BY_THROUGH_HOW: "decrease heat energy"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"f03c-decc-030f-b860", PROCESS_NAME: "freeze", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "solid", BY_THROUGH_HOW: "decrease heat energy"]
+
+	// CENTRAL         PROP-GENERIC: variability of shape ; variability of volume is a property of matter and includes values of variable ; definite     (5364-1d90-a262-32e7) [ X:"variable of shape;variable of volume", Y:"matt", VALUES:"variable;definite" ]
+	//row autoRow3 = [UUID:"5364-1d90-a262-32e7", X: "variable of shape", Y: "matt", VALUES: "variable"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"5364-1d90-a262-32e7", X: "variable of shape", Y: "matt", VALUES: "variable"]
+
+	// CENTRAL         CHANGE: a phase change is when matter ; a substance changes from one state of matter into another state of matter     (72bd-5535-598e-82e8) [ PROCESS_NAME:"phase change", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"one state of matt", INTO:"state of matt" ]
+	//row autoRow4 = [UUID:"72bd-5535-598e-82e8", PROCESS_NAME: "phase change", ACTOR_WHO: "matt", VERB: "change", FROM: "one state of matt", INTO: "state of matt"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"72bd-5535-598e-82e8", PROCESS_NAME: "phase change", ACTOR_WHO: "matt", VERB: "change", FROM: "one state of matt", INTO: "state of matt"]
+
+	// CENTRAL         CHANGE: definite shape means the shape of an object stays the same when moved to different spot     (31fa-7a0b-11b1-c0fa) [ PROCESS_NAME:"definite shape", ACTOR_WHO:"shape", QUANTIFIER_SCOPE:"of object", VERB:"stay", WHAT:"same", SCOPE:"move differ spot" ]
+	//row autoRow5 = [UUID:"31fa-7a0b-11b1-c0fa", PROCESS_NAME: "definite shape", ACTOR_WHO: "shape", QUANTIFIER_SCOPE: "of object", VERB: "stay", WHAT: "same", SCOPE: "move differ spot"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"31fa-7a0b-11b1-c0fa", PROCESS_NAME: "definite shape", ACTOR_WHO: "shape", QUANTIFIER_SCOPE: "of object", VERB: "stay", WHAT: "same", SCOPE: "move differ spot"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C     (4a5a-9115-28a9-b97b) [ MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice", LOWER_BOUND:"0;-459;-273;459;273", UPPER_BOUND:"273;32;0", UNITS:"k;f;c" ]
+	//row autoRow6 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"]
+
+	// CENTRAL         PROP-STATESOFMATTER-SHAPEVOL: Matter in the liquid phase has variable shape     (5458-220e-3046-62d2) [ PHASE:"liquid", VALUE:"variable", ATTRIBUTE:"shape" ]
+	//row autoRow7 = [UUID:"5458-220e-3046-62d2", PHASE: "liquid", VALUE: "variable", ATTRIBUTE: "shape"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"5458-220e-3046-62d2", PHASE: "liquid", VALUE: "variable", ATTRIBUTE: "shape"]
+
+	// CENTRAL         PROP-STATESOFMATTER-SHAPEVOL: Matter in the solid phase has definite shape     (d068-9891-46a3-e999) [ PHASE:"solid", VALUE:"definite", ATTRIBUTE:"shape" ]
+	//row autoRow8 = [UUID:"d068-9891-46a3-e999", PHASE: "solid", VALUE: "definite", ATTRIBUTE: "shape"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"d068-9891-46a3-e999", PHASE: "solid", VALUE: "definite", ATTRIBUTE: "shape"]
+
+	// CENTRAL         IFTHEN: if something is definite in shape then that something will not change shape easily     (4fb5-dbc8-4e35-105d) [ THING:"something", ACTION1:"definite", OBJECT_PROPERTY1:"in shape", ACTOR_AGENT_PROCESS2:"that something", ACTION3:"not change", OBJECT_PROPERTY3:"shape", SCOPE4:"easy" ]
+	//row autoRow9 = [UUID:"4fb5-dbc8-4e35-105d", THING: "something", ACTION1: "definite", OBJECT_PROPERTY1: "in shape", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "not change", OBJECT_PROPERTY3: "shape", SCOPE4: "easy"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"4fb5-dbc8-4e35-105d", THING: "something", ACTION1: "definite", OBJECT_PROPERTY1: "in shape", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "not change", OBJECT_PROPERTY3: "shape", SCOPE4: "easy"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//row autoRow10 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"]
+
+	// CENTRAL         CAUSE: liquid water cooling causes that liquid water to freeze     (7948-8683-12e0-690e) [ CONDITION_AGENT_OBJECT:"liquid water", CONDITION_VERB:"cool", RESULT_AGENT:"that liquid water", RESULT_VERB:"freeze" ]
+	//row autoRow11 = [UUID:"7948-8683-12e0-690e", CONDITION_AGENT_OBJECT: "liquid water", CONDITION_VERB: "cool", RESULT_AGENT: "that liquid water", RESULT_VERB: "freeze"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"7948-8683-12e0-690e", CONDITION_AGENT_OBJECT: "liquid water", CONDITION_VERB: "cool", RESULT_AGENT: "that liquid water", RESULT_VERB: "freeze"]
+
+	// CENTRAL         CAUSE: freezing causes a solid to form     (a1a8-b11b-e127-8797) [ CONDITION_VERB:"freeze", RESULT_AGENT:"solid", RESULT_VERB:"form" ]
+	//row autoRow12 = [UUID:"a1a8-b11b-e127-8797", CONDITION_VERB: "freeze", RESULT_AGENT: "solid", RESULT_VERB: "form"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"a1a8-b11b-e127-8797", CONDITION_VERB: "freeze", RESULT_AGENT: "solid", RESULT_VERB: "form"]
+
+	// CENTRAL         KINDOF: liquid is a kind of state of matter     (f7e9-c6f8-892b-3496) [ HYPONYM:"liquid", HYPERNYM:"state of matt" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"]
+
+	// CENTRAL         KINDOF: solid is a kind of state of matter     (cf49-1b7a-89f0-41f5) [ HYPONYM:"solid", HYPERNYM:"state of matt" ]
+	//  Notes: peripheral
+	//row autoRow14 = [UUID:"cf49-1b7a-89f0-41f5", HYPONYM: "solid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"cf49-1b7a-89f0-41f5", HYPONYM: "solid", HYPERNYM: "state of matt"]
+
+	// LEXGLUE         SYNONYMY: to change into means to form     (e156-6d5a-88c7-4edc) [ ACTION1:"change into", ACTION2:"form" ]
+	//row autoRow15 = [UUID:"e156-6d5a-88c7-4edc", ACTION1: "change into", ACTION2: "form"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"e156-6d5a-88c7-4edc", ACTION1: "change into", ACTION2: "form"]
+
+	// LEXGLUE         OPPOSITES: definite is the opposite of variable     (b3e1-3703-6490-1530) [ THING_PROPERTY1:"definite", THING_PROPERTY2:"variable" ]
+	//row autoRow16 = [UUID:"b3e1-3703-6490-1530", THING_PROPERTY1: "definite", THING_PROPERTY2: "variable"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"b3e1-3703-6490-1530", THING_PROPERTY1: "definite", THING_PROPERTY2: "variable"]
+
+endinferencepattern

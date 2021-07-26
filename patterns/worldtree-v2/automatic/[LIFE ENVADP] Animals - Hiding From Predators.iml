@@ -1,0 +1,73 @@
+// Automatically converted pattern
+inferencepattern LIFE_ENVADP_Animals_Hiding_From_Predators
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CONSUMERS-EATING: hawks ; eagles eat snakes ; lizards ; rats ; rabbits ; mice     (d28f-0727-460f-5ab6) [ ORGANISM1:"hawk;eagle", EATS_CONSUMES:"eat", ORGANISM2:"snake;lizard;rat;rabbit;mouse" ]
+	//        HINTROW eagles eat rabbits     (5ac6-9dc1-9a19-3eaa) [ ORGANISM1:"eagle", EATS_CONSUMES:"eat", ORGANISM2:"rabbit" ]
+	//row autoRow0 = [TABLE:"CONSUMERS-EATING", EATS_CONSUMES: "eat", ORGANISM2: <mouse_0>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CONSUMERS-EATING", EATS_CONSUMES: "eat", ORGANISM2: <mouse_0>]
+
+	// CENTRALSW       USEDFOR: living underground can be used for hiding from predators     (384c-ef0b-e148-70c7) [ ACTION:"live underground", QUALIFIER:"be", FOR_PURPOSE:"hide", PATIENT:"from predator" ]
+	//        HINTROW ink is used for hiding from predators by octopuses     (abfc-b22e-6516-5cd4) [ AGENT_OBJECT:"ink", FOR_PURPOSE:"hide", PATIENT:"from predator", AGENT_THING_WHO_USES:"octopus" ]
+	//        HINTROW camouflage is used for protection ; hiding by prey ; animals against predators ; from predators     (ac8a-77b3-7190-7751) [ ACTION:"camouflage", FOR_PURPOSE:"protect;hide", AGENT_THING_WHO_USES:"prey;animal", SCOPE2:"against predator;from predator" ]
+	//row autoRow1 = [TABLE:"USEDFOR", QUALIFIER: "be", FOR_PURPOSE: "hide", PATIENT: "from predator"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"USEDFOR", FOR_PURPOSE: "hide"]
+
+	// CENTRALSW       HABITAT: mice live in in holes under the ground in fields ; in forests     (4bab-ef45-71e4-0f19) [ ORGANISM:"mouse", HABITAT:"in hole under grind", SCOPE:"in field;in forest" ]
+	//        HINTROW some rabbits live underground in the forest     (22a5-e62f-1151-60f2) [ ORGANISM:"rabbit", HABITAT:"underground", SCOPE:"in forest" ]
+	//row autoRow2 = [TABLE:"HABITAT", ORGANISM: <mouse_0>, SCOPE: "in forest"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"HABITAT", ORGANISM: <mouse_0>, SCOPE: "in forest"]
+
+	// GROUNDING       KINDOF: a hawk is a kind of animal     (78d2-c53f-0244-23c2) [ HYPONYM:"hawk", HYPERNYM:"animal" ]
+	//        HINTROW an octopus is a kind of animal     (d0f6-3d4b-e8bf-dcf4) [ HYPONYM:"octopus", HYPERNYM:"animal" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+	// CENTRAL         KINDOF: hiding is a kind of protection against predators ; from predators     (19da-4665-c208-b9ae) [ HYPONYM:"hide", HYPERNYM:"protect", SCOPE2:"against predator;from predator" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"19da-4665-c208-b9ae", HYPONYM: "hide", HYPERNYM: "protect", SCOPE2: "against predator"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"19da-4665-c208-b9ae", HYPONYM: "hide", HYPERNYM: "protect", SCOPE2: "against predator"]
+
+	// CENTRAL         USEDFOR: hiding can be used for avoiding predators     (bf07-ffd0-f0cf-8f16) [ AGENT_OBJECT:"hide", QUALIFIER:"be", FOR_PURPOSE:"avoid", PATIENT:"predator" ]
+	//row autoRow6 = [UUID:"bf07-ffd0-f0cf-8f16", AGENT_OBJECT: "hide", QUALIFIER: "be", FOR_PURPOSE: "avoid", PATIENT: "predator"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"bf07-ffd0-f0cf-8f16", AGENT_OBJECT: "hide", QUALIFIER: "be", FOR_PURPOSE: "avoid", PATIENT: "predator"]
+
+	// CENTRAL         CHANGE-VEC: hiding means visibility ; ability to be seen decreases for camouflage     (60e9-1f2b-145c-00bd) [ PROCESS_NAME_ACTION:"hide", AGENT_OBJECT:"visibility;ability be see", DIRECTION:"decrease;decrease", FOR_PURPOSE:"camouflage" ]
+	//row autoRow7 = [UUID:"60e9-1f2b-145c-00bd", PROCESS_NAME_ACTION: "hide", AGENT_OBJECT: "ability be see", DIRECTION: "decrease", FOR_PURPOSE: "camouflage"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"60e9-1f2b-145c-00bd", PROCESS_NAME_ACTION: "hide", AGENT_OBJECT: "ability be see", DIRECTION: "decrease", FOR_PURPOSE: "camouflage"]
+
+	// CENTRAL         KINDOF: prey is a kind of animal     (8c3a-8bf8-70a4-5d30) [ HYPONYM:"prey", HYPERNYM:"animal" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"8c3a-8bf8-70a4-5d30", HYPONYM: "prey", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"8c3a-8bf8-70a4-5d30", HYPONYM: "prey", HYPERNYM: "animal"]
+
+	// CENTRAL         IFTHEN: if an animal eats other animals for food , then the animal will be the predator     (bd7a-cd1b-3700-b652) [ THING:"animal", ACTION1:"eat", OBJECT_PATIENT1:"animal", OBJECT_PROPERTY1:"for food", ACTOR_AGENT_PROCESS2:"animal", OBJECT_PROPERTY3:"predator" ]
+	//  Notes: predator
+	//row autoRow9 = [UUID:"bd7a-cd1b-3700-b652", THING: "animal", ACTION1: "eat", OBJECT_PATIENT1: "animal", OBJECT_PROPERTY1: "for food", ACTOR_AGENT_PROCESS2: "animal", OBJECT_PROPERTY3: "predator"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"bd7a-cd1b-3700-b652", THING: "animal", ACTION1: "eat", OBJECT_PATIENT1: "animal", OBJECT_PROPERTY1: "for food", ACTOR_AGENT_PROCESS2: "animal", OBJECT_PROPERTY3: "predator"]
+
+	// CENTRAL         IFTHEN: if an animal is eaten by other animals , then the animal will be the prey     (285c-373b-e428-cbba) [ THING:"animal", ACTION1:"be eat by", OBJECT_PATIENT1:"animal", ACTOR_AGENT_PROCESS2:"animal", OBJECT_PROPERTY3:"prey" ]
+	//  Notes: prey
+	//row autoRow10 = [UUID:"285c-373b-e428-cbba", THING: "animal", ACTION1: "be eat by", OBJECT_PATIENT1: "animal", ACTOR_AGENT_PROCESS2: "animal", OBJECT_PROPERTY3: "prey"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"285c-373b-e428-cbba", THING: "animal", ACTION1: "be eat by", OBJECT_PATIENT1: "animal", ACTOR_AGENT_PROCESS2: "animal", OBJECT_PROPERTY3: "prey"]
+
+	// CENTRAL         HABITAT: some animals live in forests     (583b-9241-f02c-05bb) [ ORGANISM:"animal", HABITAT:"forest" ]
+	//row autoRow11 = [UUID:"583b-9241-f02c-05bb", ORGANISM: "animal", HABITAT: "forest"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"583b-9241-f02c-05bb", ORGANISM: "animal", HABITAT: "forest"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: octopuses releasing ink into the water causes predators to have difficulty seeing the octopus     (c135-b400-0c92-8c7b) [ CONDITION_AGENT_OBJECT:"octopus", CONDITION_VERB:"release", CONDITION_PATIENT:"ink", SCOPE1:"into water", RESULT_AGENT:"predator", RESULT_VERB:"have difficulty see", RESULT_PATIENT:"octopus" ]
+	//row *autoRow12 = [UUID:"c135-b400-0c92-8c7b", CONDITION_AGENT_OBJECT: "octopus", CONDITION_VERB: "release", CONDITION_PATIENT: "ink", SCOPE1: "into water", RESULT_AGENT: "predator", RESULT_VERB: "have difficulty see", RESULT_PATIENT: "octopus"] //OVER-CONSTR.
+	row *autoRow12 = [UUID:"c135-b400-0c92-8c7b", CONDITION_AGENT_OBJECT: "octopus", CONDITION_VERB: "release", CONDITION_PATIENT: "ink", SCOPE1: "into water", RESULT_AGENT: "predator", RESULT_VERB: "have difficulty see", RESULT_PATIENT: "octopus"]
+
+endinferencepattern

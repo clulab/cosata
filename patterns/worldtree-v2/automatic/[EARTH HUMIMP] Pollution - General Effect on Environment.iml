@@ -1,0 +1,64 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Pollution_General_Effect_on_Environment
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//        HINTROW a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "organism"]
+
+	// GROUNDING       KINDOF: a forest is a kind of environment     (b5d1-0f14-f32e-c6b4) [ HYPONYM:"forest", HYPERNYM:"environment" ]
+	//        HINTROW a beach is a kind of habitat ; environment     (2913-c482-da7e-b2f6) [ HYPONYM:"beach", HYPERNYM:"habitat;environment" ]
+	//        HINTROW a body of water is a kind of environment     (3f9d-8b3a-54b5-6a3c) [ HYPONYM:"body of water", HYPERNYM:"environment" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"KINDOF"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "environment"]
+
+	// CENTRAL         AFFECT: humans changing ecosystems ; environments usually has a negative impact on an ecosystem ; organisms living in an ecosystem     (f4dc-5030-6255-a1f8) [ ACTOR_WHO:"human", VERB:"change", OBJECT_PROPERTY:"ecosystem;environment", QUALIFIER1:"usually", POSITIVE_NEGATIVE:"negative", PATIENT:"ecosystem;organism live in ecosystem" ]
+	//row autoRow2 = [UUID:"f4dc-5030-6255-a1f8", ACTOR_WHO: "human", VERB: "change", OBJECT_PROPERTY: "ecosystem", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"f4dc-5030-6255-a1f8", ACTOR_WHO: "human", VERB: "change", OBJECT_PROPERTY: "ecosystem", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"]
+
+	// CENTRAL         CAUSE: polluting means something harmful ; something poisonous is added in an environment causes harm in the environment     (d1ac-a510-1958-0100) [ PROCESS_NAME:"pollute", CONDITION_AGENT_OBJECT:"something harm;something poisonous", CONDITION_VERB:"be add", SCOPE1:"in environment", RESULT_PATIENT:"harm", SCOPE2:"in environment" ]
+	//row autoRow3 = [UUID:"d1ac-a510-1958-0100", PROCESS_NAME: "pollute", CONDITION_AGENT_OBJECT: "something harm", CONDITION_VERB: "be add", SCOPE1: "in environment", RESULT_PATIENT: "harm", SCOPE2: "in environment"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"d1ac-a510-1958-0100", PROCESS_NAME: "pollute", CONDITION_AGENT_OBJECT: "something harm", CONDITION_VERB: "be add", SCOPE1: "in environment", RESULT_PATIENT: "harm", SCOPE2: "in environment"]
+
+	// CENTRAL         CAUSE: harming an environment causes harm to the living things ; to the organisms in that environment     (fcf3-cad2-b199-4da1) [ CONDITION_VERB:"harm", CONDITION_PATIENT:"environment", RESULT_VERB:"harm", RESULT_PATIENT:"live thing;organism", SCOPE2:"in that environment" ]
+	//row autoRow4 = [UUID:"fcf3-cad2-b199-4da1", CONDITION_VERB: "harm", CONDITION_PATIENT: "environment", RESULT_VERB: "harm", RESULT_PATIENT: "live thing", SCOPE2: "in that environment"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"fcf3-cad2-b199-4da1", CONDITION_VERB: "harm", CONDITION_PATIENT: "environment", RESULT_VERB: "harm", RESULT_PATIENT: "live thing", SCOPE2: "in that environment"]
+
+	// CENTRAL         AFFECT: pollution has a negative impact on the environment ; air quality ; water quality ; society     (d116-6f25-b3ac-7d88) [ ACTOR_WHO:"pollute", POSITIVE_NEGATIVE:"negative", PATIENT:"environment;air quality;water quality;society" ]
+	//row autoRow5 = [UUID:"d116-6f25-b3ac-7d88", ACTOR_WHO: "pollute", POSITIVE_NEGATIVE: "negative", PATIENT: "air quality"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"d116-6f25-b3ac-7d88", ACTOR_WHO: "pollute", POSITIVE_NEGATIVE: "negative", PATIENT: "air quality"]
+
+	// CENTRAL         AFFECT: harming something has a negative impact on ; effect on that something     (57d4-79ba-a97d-0f9a) [ VERB:"harm", OBJECT_PROPERTY:"something", POSITIVE_NEGATIVE:"negative", PATIENT:"something" ]
+	//row autoRow6 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"]
+
+	// CENTRAL         CAUSE: humans cause pollution     (d951-095d-6862-917c) [ CONDITION_AGENT_OBJECT:"human", RESULT_VERB:"pollute" ]
+	//row autoRow7 = [UUID:"d951-095d-6862-917c", CONDITION_AGENT_OBJECT: "human", RESULT_VERB: "pollute"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"d951-095d-6862-917c", CONDITION_AGENT_OBJECT: "human", RESULT_VERB: "pollute"]
+
+	// CENTRAL        (OPTIONAL) MADEOF: society is made of humans     (ab30-97e0-586f-d18a) [ OBJECT:"society", MATERIAL:"human" ]
+	//row *autoRow8 = [UUID:"ab30-97e0-586f-d18a", OBJECT: "society", MATERIAL: "human"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"ab30-97e0-586f-d18a", OBJECT: "society", MATERIAL: "human"]
+
+	// CENTRAL        (OPTIONAL) PARTOF: a city is a part of a society     (70d9-be39-5c85-8eb7) [ PART:"city", WHOLE:"society" ]
+	//row *autoRow9 = [UUID:"70d9-be39-5c85-8eb7", PART: "city", WHOLE: "society"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"70d9-be39-5c85-8eb7", PART: "city", WHOLE: "society"]
+
+	// CENTRAL         KINDOF: polluting is a kind of activity     (0a09-b3f6-9229-9511) [ HYPONYM:"pollute", HYPERNYM:"activity" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"0a09-b3f6-9229-9511", HYPONYM: "pollute", HYPERNYM: "activity"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"0a09-b3f6-9229-9511", HYPONYM: "pollute", HYPERNYM: "activity"]
+
+	// LEXGLUE         SYNONYMY: an environment is similar to an ecosystem     (c1d3-4ab4-b443-aac3) [ X1:"environment", X2:"ecosystem" ]
+	//row autoRow11 = [UUID:"c1d3-4ab4-b443-aac3", X1: "environment", X2: "ecosystem"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"c1d3-4ab4-b443-aac3", X1: "environment", X2: "ecosystem"]
+
+endinferencepattern

@@ -1,0 +1,1616 @@
+{"patternMatches": [
+{
+	"patternName":"MAT_MIXTURES_Separation_Liquid_Liquid_Mixture",
+	"matches":[
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","364c-916c-57f0-8607"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","735a-963c-130f-059c","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","9247-2bc4-e950-d3dd","7fae-fd07-1d25-28ad"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9247-2bc4-e950-d3dd", "rowText": "an mixture is formed by two or more substances combined together physically", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","364c-916c-57f0-8607"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "364c-916c-57f0-8607", "rowText": "dissolving is when the solute spread evenly through the solvent", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","735a-963c-130f-059c"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "735a-963c-130f-059c", "rowText": "dissolving a substance in water causes the water to taste like that substance", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad","340e-90d3-2c17-f434"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "340e-90d3-2c17-f434", "rowText": "when one substance is dissolved in another substance then the molecules of that other substance exist in solution", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["78d4-18c9-9484-0154","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78d4-18c9-9484-0154", "rowText": "sugar dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","1fd0-279c-ed27-afca","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "1fd0-279c-ed27-afca", "rowText": "salt is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		},
+		{
+		"uuids": ["6d0b-5a2b-14b5-805d","826e-4bd3-1390-0182","81b7-0a58-5b0b-0bbf","317c-5ea4-8f0c-5be5","f688-9579-bfb6-61d1","7c08-85f6-fae2-8190","d2e9-11e9-5d56-acb0","7fae-fd07-1d25-28ad"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6d0b-5a2b-14b5-805d", "rowText": "sodium chloride dissolves in water when they are combined", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "826e-4bd3-1390-0182", "rowText": "sugar is a kind of pure substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "317c-5ea4-8f0c-5be5", "rowText": "evaporation ; boiling can be used for separating a solution by allowing the solvent to evaporate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f688-9579-bfb6-61d1", "rowText": "a solution is made of one substance dissolved in another substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "7c08-85f6-fae2-8190", "rowText": "a solute can be dissolved in a solvent when they are combined", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "d2e9-11e9-5d56-acb0", "rowText": "a solution is a mixture", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "7fae-fd07-1d25-28ad", "rowText": "solution is a kind of liquid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow11", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"autoRow9", "value":"" }
+		]
+		}
+	]
+}
+]}
+

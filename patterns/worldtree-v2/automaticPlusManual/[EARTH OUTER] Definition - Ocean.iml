@@ -1,0 +1,43 @@
+// Automatically converted pattern
+inferencepattern EARTH_OUTER_Definition_Ocean
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "ocean", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "ocean", HYPERNYM: "body of water"]
+
+	// CENTRAL         ACTION: oceans cover 70% of the surface of the earth     (3aef-09ab-a751-dd44) [ AGENT_OBJECT:"ocean", ACTION2:"cover", OBJECT_PROPERTY:"70 % of surface", WHEN_WHERE:"of earth" ]
+	//row autoRow1 = [UUID:"3aef-09ab-a751-dd44", AGENT_OBJECT: "ocean", ACTION2: "cover", OBJECT_PROPERTY: "70 % of surface", WHEN_WHERE: "of earth"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"3aef-09ab-a751-dd44", AGENT_OBJECT: "ocean", ACTION2: "cover", OBJECT_PROPERTY: "70 % of surface", WHEN_WHERE: "of earth"]
+
+	// CENTRAL         CONTAINS: a body of water contains water     (b927-5436-1d17-c396) [ OBJECT_AGENT:"body of water", WHAT_IT_CONTAINS:"water" ]
+	//row autoRow2 = [UUID:"b927-5436-1d17-c396", OBJECT_AGENT: "body of water", WHAT_IT_CONTAINS: "water"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"b927-5436-1d17-c396", OBJECT_AGENT: "body of water", WHAT_IT_CONTAINS: "water"]
+
+	// CENTRAL         CONTAINS: oceans contain most of earth 's water     (c0ad-4856-2d41-4fa9) [ OBJECT_AGENT:"ocean", QUANTITY_RANGE:"much of", WHAT_IT_CONTAINS:"earth water" ]
+	//row autoRow3 = [UUID:"c0ad-4856-2d41-4fa9", OBJECT_AGENT: "ocean", QUANTITY_RANGE: "much of", WHAT_IT_CONTAINS: "earth water"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"c0ad-4856-2d41-4fa9", OBJECT_AGENT: "ocean", QUANTITY_RANGE: "much of", WHAT_IT_CONTAINS: "earth water"]
+
+	// CENTRAL         CONTAINS: the ocean contains large amounts of salt water     (a67b-a673-e85b-6310) [ OBJECT_AGENT:"ocean", QUANTITY_RANGE:"large amount of", WHAT_IT_CONTAINS:"salt water" ]
+	//row autoRow4 = [UUID:"a67b-a673-e85b-6310", OBJECT_AGENT: "ocean", QUANTITY_RANGE: "large amount of", WHAT_IT_CONTAINS: "salt water"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"a67b-a673-e85b-6310", OBJECT_AGENT: "ocean", QUANTITY_RANGE: "large amount of", WHAT_IT_CONTAINS: "salt water"]
+
+	// CENTRAL         CONTAINS: an ocean contains waves     (3836-b248-bdff-be59) [ OBJECT_AGENT:"ocean", WHAT_IT_CONTAINS:"wave" ]
+	//row autoRow5 = [UUID:"3836-b248-bdff-be59", OBJECT_AGENT: "ocean", WHAT_IT_CONTAINS: "wave"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"3836-b248-bdff-be59", OBJECT_AGENT: "ocean", WHAT_IT_CONTAINS: "wave"]
+
+	// CENTRAL         PARTOF: oceans are a part of the hydrosphere on earth     (f608-e2e9-5ab0-265f) [ PART:"ocean", QUANTIFIER1:"be", WHOLE:"hydrosphere", SCOPE:"on earth" ]
+	//row autoRow6 = [UUID:"f608-e2e9-5ab0-265f", PART: "ocean", QUANTIFIER1: "be", WHOLE: "hydrosphere", SCOPE: "on earth"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"f608-e2e9-5ab0-265f", PART: "ocean", QUANTIFIER1: "be", WHOLE: "hydrosphere", SCOPE: "on earth"]
+
+	// CENTRAL         COMPARISON: ocean is the largest body of water on Earth     (b796-7088-2b45-5543) [ THING:"ocean", ACTION1:"be", COMPARISON:"large", WHAT:"body of water", SCOPE2:"on earth" ]
+	//row autoRow7 = [UUID:"b796-7088-2b45-5543", THING: "ocean", ACTION1: "be", COMPARISON: "large", WHAT: "body of water", SCOPE2: "on earth"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"b796-7088-2b45-5543", THING: "ocean", ACTION1: "be", COMPARISON: "large", WHAT: "body of water", SCOPE2: "on earth"]
+
+endinferencepattern

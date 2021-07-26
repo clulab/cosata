@@ -1,0 +1,83 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Eat_X_to_get_nutrients
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CONSUMERS-EATING: humans eat crops     (76c8-6933-622a-64f6) [ ORGANISM1:"human", EATS_CONSUMES:"eat", ORGANISM2:"crop" ]
+	//        HINTROW turtles sometimes eat worms     (2cdd-bc45-2b41-8f05) [ ORGANISM1:"turtle", QUANTIFIER:"sometimes", EATS_CONSUMES:"eat", ORGANISM2:"worm" ]
+	//  Notes: X eats Y
+	//row autoRow0 = [TABLE:"CONSUMERS-EATING", ORGANISM1: <human_0>, EATS_CONSUMES: "eat"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CONSUMERS-EATING", ORGANISM1: <human_0>, EATS_CONSUMES: "eat"]
+
+	// CENTRALSW      (OPTIONAL) CONSUMERS-EATING: omnivores eat plants ; animals     (3b62-4057-84c9-7743) [ ORGANISM1:"omnivore", EATS_CONSUMES:"eat", ORGANISM2:"plant;animal" ]
+	//        HINTROW carnivores only eat animals     (f2b6-e2f5-8939-94ae) [ ORGANISM1:"carnivore", QUANTIFIER:"only", EATS_CONSUMES:"eat", ORGANISM2:"animal" ]
+	//        HINTROW herbivores only eat plants     (57e4-c7f7-0031-fb0a) [ ORGANISM1:"herbivore", QUANTIFIER:"only", EATS_CONSUMES:"eat", ORGANISM2:"plant" ]
+	//row *autoRow1 = [TABLE:"CONSUMERS-EATING", ORGANISM1: "omnivore", EATS_CONSUMES: "eat", ORGANISM2: "animal"] //OVER-CONSTR.
+	row *autoRow1 = [TABLE:"CONSUMERS-EATING", EATS_CONSUMES: "eat"]
+
+	// GROUNDING       KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//        HINTROW a turtle is a kind of animal     (964f-3c67-13dd-a443) [ HYPONYM:"turtle", HYPERNYM:"animal" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <human_0>, HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <human_0>, HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: a girl is a kind of young ; female human     (a50c-ba38-bbe4-12c1) [ HYPONYM:"girl", SCOPE1:"young;female", HYPERNYM:"human" ]
+	//        HINTROW a boy is a kind of young male human     (e881-b28d-9433-c19d) [ HYPONYM:"boy", SCOPE1:"young male", HYPERNYM:"human" ]
+	//  Notes: examples of human
+	//row autoRow3 = [TABLE:"KINDOF", SCOPE1: "young", HYPERNYM: <human_0>] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", SCOPE1: "young", HYPERNYM: <human_0>]
+
+	// GROUNDING       KINDOF: an apple is a kind of fruit     (440e-272e-8e84-6b1e) [ HYPONYM:"apple", HYPERNYM:"fruit" ]
+	//        HINTROW a berry is a kind of fruit     (0d28-7059-bcd4-0859) [ HYPONYM:"berry", HYPERNYM:"fruit" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "fruit"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "fruit"]
+
+	// GROUNDING       KINDOF: fruit is a kind of food     (d1e4-c4e1-111b-0f34) [ HYPONYM:"fruit", HYPERNYM:"food" ]
+	//        HINTROW a beverage is a kind of food     (879e-75ee-34d3-b880) [ HYPONYM:"beverage", HYPERNYM:"food" ]
+	//        HINTROW bread is a kind of food     (08c1-496e-6ad5-5c13) [ HYPONYM:"bread", HYPERNYM:"food" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "food"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "food"]
+
+	// CENTRAL         KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"]
+
+	// CENTRAL         REQUIRES: an animal ; living thing requires nutrients for survival     (80de-489f-48b2-16f4) [ OBJECT_AGENT_PROCESS:"animal;live thing", VERB_REQUIRES:"require", OBJECT:"nutrient", FOR_PURPOSE:"survive" ]
+	//row autoRow7 = [UUID:"80de-489f-48b2-16f4", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"80de-489f-48b2-16f4", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         REQUIRES: an animal needs to eat food for nutrients     (7d29-0a2c-6959-b1dd) [ OBJECT_AGENT_PROCESS:"animal", VERB_REQUIRES:"need", ACTION2:"eat", OBJECT:"food", FOR_PURPOSE:"nutrient" ]
+	//row autoRow8 = [UUID:"7d29-0a2c-6959-b1dd", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "need", ACTION2: "eat", OBJECT: "food", FOR_PURPOSE: "nutrient"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"7d29-0a2c-6959-b1dd", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "need", ACTION2: "eat", OBJECT: "food", FOR_PURPOSE: "nutrient"]
+
+	// CENTRAL         CONTAINS: food contains nutrients for living things     (a4c9-5ade-9cc2-f3f0) [ OBJECT_AGENT:"food", WHAT_IT_CONTAINS:"nutrient", FOR_PURPOSE:"live thing" ]
+	//  Notes: Good->a4c9-5ade-9cc2-f3f0
+	//row autoRow9 = [UUID:"a4c9-5ade-9cc2-f3f0", OBJECT_AGENT: "food", WHAT_IT_CONTAINS: "nutrient", FOR_PURPOSE: "live thing"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"a4c9-5ade-9cc2-f3f0", OBJECT_AGENT: "food", WHAT_IT_CONTAINS: "nutrient", FOR_PURPOSE: "live thing"]
+
+	// CENTRAL         USEDFOR: eating ; taking in food is used to get nutrients ; energy by animals ; living things     (4842-3518-d7ab-f670) [ ACTION:"eat;take", AGENT_OBJECT:"food", FOR_PURPOSE:"get", PATIENT:"nutrient;energy", AGENT_THING_WHO_USES:"animal;live thing" ]
+	//row autoRow10 = [UUID:"4842-3518-d7ab-f670", ACTION: "eat", AGENT_OBJECT: "food", FOR_PURPOSE: "get", PATIENT: "nutrient", AGENT_THING_WHO_USES: "live thing"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"4842-3518-d7ab-f670", ACTION: "eat", AGENT_OBJECT: "food", FOR_PURPOSE: "get", PATIENT: "nutrient", AGENT_THING_WHO_USES: "live thing"]
+
+	// CENTRAL         TRANSFER: eating ; digestion is when an organism takes in nutrients from food into itself by eating     (244b-03a0-929e-0095) [ PROCESS_NAME:"eat;digest", ACTOR_WHO:"organism", VERB:"take in", WHAT:"nutrient", SOURCE:"food", BY_THROUGH_HOW:"eat" ]
+	//row autoRow11 = [UUID:"244b-03a0-929e-0095", PROCESS_NAME: "eat", ACTOR_WHO: "organism", VERB: "take in", WHAT: "nutrient", SOURCE: "food", BY_THROUGH_HOW: "eat"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"244b-03a0-929e-0095", PROCESS_NAME: "eat", ACTOR_WHO: "organism", VERB: "take in", WHAT: "nutrient", SOURCE: "food", BY_THROUGH_HOW: "eat"]
+
+	// CENTRAL         IFTHEN: if an animal eats particles then that animal is a carnivore or omnivore or predator     (dcb0-11ec-8b50-ceb3) [ THING:"animal", ACTION1:"eat", OBJECT_PATIENT1:"particle", ACTOR_AGENT_PROCESS2:"that animal", ACTION3:"be", OBJECT_PROPERTY3:"carnivore omnivore predator" ]
+	//row autoRow12 = [UUID:"dcb0-11ec-8b50-ceb3", THING: "animal", ACTION1: "eat", OBJECT_PATIENT1: "particle", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "be", OBJECT_PROPERTY3: "carnivore omnivore predator"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"dcb0-11ec-8b50-ceb3", THING: "animal", ACTION1: "eat", OBJECT_PATIENT1: "particle", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "be", OBJECT_PROPERTY3: "carnivore omnivore predator"]
+
+	// CENTRAL         CONSUMERS-EATING: predators ; carnivores ; omnivores eat other animals     (20a3-dcb5-8ce4-ae5c) [ ORGANISM1:"predator;carnivore;omnivore", EATS_CONSUMES:"eat", ORGANISM2:"other animal" ]
+	//row autoRow13 = [UUID:"20a3-dcb5-8ce4-ae5c", ORGANISM1: "predator", EATS_CONSUMES: "eat", ORGANISM2: "other animal"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"20a3-dcb5-8ce4-ae5c", ORGANISM1: "predator", EATS_CONSUMES: "eat", ORGANISM2: "other animal"]
+
+	// LEXGLUE         SYNONYMY: an organism is a living thing     (87a0-dd02-dd6d-ee60) [ X1:"organism", X2:"live thing" ]
+	//row autoRow14 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"]
+
+endinferencepattern

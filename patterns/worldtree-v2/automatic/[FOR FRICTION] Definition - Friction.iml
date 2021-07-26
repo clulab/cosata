@@ -1,0 +1,97 @@
+// Automatically converted pattern
+inferencepattern FOR_FRICTION_Definition_Friction
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       IFTHEN: if a wheel travels on a surface then the wheel touches that surface     (dae7-2f8d-73b1-9520) [ THING:"wheel", ACTION1:"travel on", OBJECT_PATIENT1:"surface", ACTOR_AGENT_PROCESS2:"wheel", ACTION3:"touch", OBJECT_PROPERTY3:"surface" ]
+	//        HINTROW if one surface is moved against ; moved over ; moved down another surface then those surfaces are touching     (ce72-7053-8df0-6419) [ THING:"one surface", ACTION1:"move against;move over;move down", OBJECT_PATIENT1:"surface", ACTOR_AGENT_PROCESS2:"surface", ACTION3:"touch" ]
+	//row autoRow0 = [TABLE:"IFTHEN", THING: "wheel", ACTION1: *"POS:VB"+"on", OBJECT_PATIENT1: "surface", ACTOR_AGENT_PROCESS2: "wheel", ACTION3: "touch", OBJECT_PROPERTY3: "surface"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"IFTHEN", ACTION1: *"POS:VB"+"on", OBJECT_PATIENT1: "surface", ACTION3: "touch"]
+
+	// CENTRALSW      (OPTIONAL) PARTOF: wheels are a part of a car     (ee81-6896-fd50-40b6) [ PART:"wheel", QUANTIFIER1:"be", WHOLE:"car" ]
+	//        HINTROW wheels are a part of roller skates     (0b44-5bde-7e62-3b5c) [ PART:"wheel", WHOLE:"roller skate" ]
+	//row *autoRow1 = [TABLE:"PARTOF", PART: "wheel"] //OVER-CONSTR.
+	row *autoRow1 = [TABLE:"PARTOF", PART: "wheel"]
+
+	// GROUNDING       KINDOF: a wheel is a kind of object     (9a4c-d676-bb0b-b60f) [ HYPONYM:"wheel", HYPERNYM:"object" ]
+	//        HINTROW a toy car is a kind of object     (4f86-9f32-f5ab-f744) [ HYPONYM:"toy car", HYPERNYM:"object" ]
+	//  Notes: the one that is moving 
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: the floor is a kind of object     (785d-6676-9d5d-78b2) [ HYPONYM:"floor", HYPERNYM:"object" ]
+	//        HINTROW a ramp is a kind of object     (d99b-5382-b496-b2fd) [ HYPONYM:"ramp", HYPERNYM:"object" ]
+	//  Notes: the one that is under the moving one
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: a force acting on an object in the opposite direction that the object is moving can cause that object 's speed to decrease in a forward motion     (8ee7-24ec-255f-d9fe) [ CONDITION_AGENT_OBJECT:"force", CONDITION_VERB:"act", CONDITION_PATIENT:"on object", SCOPE1:"in opposite direction that object be move", RESULT_AGENT:"that object speed", RESULT_VERB:"decrease", SCOPE2:"in forward move" ]
+	//  Notes: friction is the force acting in the different direction
+	//row *autoRow4 = [UUID:"8ee7-24ec-255f-d9fe", CONDITION_AGENT_OBJECT: "force", CONDITION_VERB: "act", CONDITION_PATIENT: "on object", SCOPE1: "in opposite direction that object be move", RESULT_AGENT: "that object speed", RESULT_VERB: "decrease", SCOPE2: "in forward move"] //OVER-CONSTR.
+	row *autoRow4 = [UUID:"8ee7-24ec-255f-d9fe", CONDITION_AGENT_OBJECT: "force", CONDITION_VERB: "act", CONDITION_PATIENT: "on object", SCOPE1: "in opposite direction that object be move", RESULT_AGENT: "that object speed", RESULT_VERB: "decrease", SCOPE2: "in forward move"]
+
+	// CENTRAL         ACTION: friction acts to counter the motion of two objects when their surfaces are touching     (512a-c5ef-bcba-905d) [ AGENT_OBJECT:"friction", ACTION2:"act counter", OBJECT_PROPERTY:"move of two object", WHEN_WHERE:"surface be touch" ]
+	//row autoRow5 = [UUID:"512a-c5ef-bcba-905d", AGENT_OBJECT: "friction", ACTION2: "act counter", OBJECT_PROPERTY: "move of two object", WHEN_WHERE: "surface be touch"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"512a-c5ef-bcba-905d", AGENT_OBJECT: "friction", ACTION2: "act counter", OBJECT_PROPERTY: "move of two object", WHEN_WHERE: "surface be touch"]
+
+	// CENTRAL         ACTION: friction exerts force on moving objects     (3518-79e5-2f89-2bc0) [ AGENT_OBJECT:"friction", ACTION2:"exert", OBJECT_PROPERTY:"force", WHEN_WHERE:"on move object" ]
+	//row autoRow6 = [UUID:"3518-79e5-2f89-2bc0", AGENT_OBJECT: "friction", ACTION2: "exert", OBJECT_PROPERTY: "force", WHEN_WHERE: "on move object"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3518-79e5-2f89-2bc0", AGENT_OBJECT: "friction", ACTION2: "exert", OBJECT_PROPERTY: "force", WHEN_WHERE: "on move object"]
+
+	// CENTRAL         ACTION: friction occurs when two object 's surfaces move against each other     (e9ed-3032-6736-3077) [ DEFINITION_NAME:"friction", ADJ:"two object", AGENT_OBJECT:"surface", ACTION2:"move against", OBJECT_PROPERTY:"other" ]
+	//row autoRow7 = [UUID:"e9ed-3032-6736-3077", DEFINITION_NAME: "friction", ADJ: "two object", AGENT_OBJECT: "surface", ACTION2: "move against", OBJECT_PROPERTY: "other"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"e9ed-3032-6736-3077", DEFINITION_NAME: "friction", ADJ: "two object", AGENT_OBJECT: "surface", ACTION2: "move against", OBJECT_PROPERTY: "other"]
+
+	// CENTRAL         EXAMPLES: An example of mechanical energy is an object in motion     (4aca-cf16-fcc6-1f79) [ AGENT_OBJECT1:"mechanical energy", AGENT_OBJECT2:"object in move" ]
+	//row autoRow8 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"]
+
+	// CENTRAL        (OPTIONAL) REQUIRES: a wheeled vehicle requires smooth surfaces     (57ff-11f6-5854-80c5) [ OBJECT_AGENT_PROCESS:"wheel vehicle", VERB_REQUIRES:"require", OBJECT:"smooth surface" ]
+	//row *autoRow9 = [UUID:"57ff-11f6-5854-80c5", OBJECT_AGENT_PROCESS: "wheel vehicle", VERB_REQUIRES: "require", OBJECT: "smooth surface"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"57ff-11f6-5854-80c5", OBJECT_AGENT_PROCESS: "wheel vehicle", VERB_REQUIRES: "require", OBJECT: "smooth surface"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: friction causes the speed of an object to decrease     (fd7f-e7b7-79fa-6ff9) [ CONDITION_AGENT_OBJECT:"friction", RESULT_AGENT:"speed of object", RESULT_VERB:"decrease" ]
+	//row *autoRow10 = [UUID:"fd7f-e7b7-79fa-6ff9", CONDITION_AGENT_OBJECT: "friction", RESULT_AGENT: "speed of object", RESULT_VERB: "decrease"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"fd7f-e7b7-79fa-6ff9", CONDITION_AGENT_OBJECT: "friction", RESULT_AGENT: "speed of object", RESULT_VERB: "decrease"]
+
+	// CENTRAL         CHANGE: friction converts mechanical energy into heat energy     (2049-7f3d-b2f3-a0a3) [ ACTOR_WHO:"friction", VERB:"convert", FROM:"mechanical energy", INTO:"heat energy" ]
+	//  Notes: friction changes mechanical energy --> heat energy
+	//row autoRow11 = [UUID:"2049-7f3d-b2f3-a0a3", ACTOR_WHO: "friction", VERB: "convert", FROM: "mechanical energy", INTO: "heat energy"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"2049-7f3d-b2f3-a0a3", ACTOR_WHO: "friction", VERB: "convert", FROM: "mechanical energy", INTO: "heat energy"]
+
+	// CENTRAL         USEDFOR: friction is used for stopping a vehicle by brakes     (0dab-6edc-e179-77ac) [ AGENT_OBJECT:"friction", FOR_PURPOSE:"stop", PATIENT:"vehicle", AGENT_THING_WHO_USES:"brake" ]
+	//  Notes: friction as brakes
+	//row autoRow12 = [UUID:"0dab-6edc-e179-77ac", AGENT_OBJECT: "friction", FOR_PURPOSE: "stop", PATIENT: "vehicle", AGENT_THING_WHO_USES: "brake"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"0dab-6edc-e179-77ac", AGENT_OBJECT: "friction", FOR_PURPOSE: "stop", PATIENT: "vehicle", AGENT_THING_WHO_USES: "brake"]
+
+	// CENTRAL        (OPTIONAL) ACTION: wheels ; gears usually move against other surfaces     (da72-519d-898d-d79f) [ AGENT_OBJECT:"wheel;gear", QUANITIFIER:"usually", ACTION2:"move", OBJECT_PROPERTY:"against other surface" ]
+	//row *autoRow13 = [UUID:"da72-519d-898d-d79f", AGENT_OBJECT: "wheel", QUANITIFIER: "usually", ACTION2: "move", OBJECT_PROPERTY: "against other surface"] //OVER-CONSTR.
+	row *autoRow13 = [UUID:"da72-519d-898d-d79f", AGENT_OBJECT: "wheel", QUANITIFIER: "usually", ACTION2: "move", OBJECT_PROPERTY: "against other surface"]
+
+	// CENTRAL         PARTOF: a surface is a part of an object     (eb92-b0cd-c257-9bcf) [ PART:"surface", WHOLE:"object" ]
+	//row autoRow14 = [UUID:"eb92-b0cd-c257-9bcf", PART: "surface", WHOLE: "object"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"eb92-b0cd-c257-9bcf", PART: "surface", WHOLE: "object"]
+
+	// CENTRAL         KINDOF: friction is a kind of force     (dc6a-e211-23ac-d827) [ HYPONYM:"friction", HYPERNYM:"force" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"dc6a-e211-23ac-d827", HYPONYM: "friction", HYPERNYM: "force"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"dc6a-e211-23ac-d827", HYPONYM: "friction", HYPERNYM: "force"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of heat energy     (d753-423d-5ce7-53ce) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"heat energy" ]
+	//row autoRow16 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"]
+
+	// LEXGLUE         SYNONYMY: motion ; movement means moving ; to move     (d8a3-10bb-9aea-178a) [ X1:"move;move", ACTION2:"move;move" ]
+	//row autoRow17 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"]
+
+	// LEXGLUE         SYNONYMY: being on something ; placed in something ; placed over something means touching that something     (4d0b-497e-6a7f-bfca) [ ACTION1:"be", Y1:"on something;place in something;place over something", ACTION2:"touch", Y2:"that something" ]
+	//row autoRow18 = [UUID:"4d0b-497e-6a7f-bfca", ACTION1: "be", Y1: "place in something", ACTION2: "touch", Y2: "that something"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"4d0b-497e-6a7f-bfca", ACTION1: "be", Y1: "place in something", ACTION2: "touch", Y2: "that something"]
+
+endinferencepattern

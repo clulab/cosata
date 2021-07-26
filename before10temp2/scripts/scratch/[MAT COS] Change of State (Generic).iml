@@ -1,0 +1,104 @@
+// Automatically converted pattern
+inferencepattern MAT_COS_Change_of_State_Generic
+
+	// Plain text description
+	description = "Generic change of state"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE: (boiling; evaporation) means (matter;  a substance) changes from a liquid into a gas by increasing heat energy 
+	//        HINTROW melting means (matter;  a substance) changes from a solid into a liquid by increasing heat energy 
+	//        HINTROW condensing means (matter;  a substance) changes from a gas into a liquid by decreasing heat energy 
+	//        HINTROW freezing means (matter;  a substance) changes from a liquid into a solid by decreasing heat energy 
+	//        HINTROW (desublimation;  deposition) means (matter;  a substance) changes from a gas into a solid by decreasing heat energy 
+	//        HINTROW condensation is when (matter;  a substance) changes from a gas into a liquid by decreasing heat energy 
+	//        HINTROW sublimation means (matter;  a substance) changes from a solid into a gas by increasing heat energy 
+	row autoRow0 = [TABLE:"CHANGE", PROCESS_NAME: "boil", INTO: <var_2>, BY_THROUGH_HOW: "heat", ACTOR_WHO: "substance", VERB: "change", FROM: <var_1>]
+
+	// CENTRAL         CHANGE: a phase change is when (matter;  a substance) changes from one state of matter into another state of matter 
+	row autoRow1 = [UUID:"72bd-5535-598e-82e8", PROCESS_NAME: "phase change", INTO: "state matt", ACTOR_WHO: "substance", VERB: "change", FROM: "state matt"]
+
+	// CENTRAL         PROP-GENERIC: (temperature;  heat energy) is a property of (objects;  weather) and includes ordered values of (cold;  cool; warm; hot) 
+	row autoRow2 = [UUID:"4084-f2bc-52cf-0f74", X: "temperature heat", VALUES: "cold cool"]
+
+	// CENTRALSW       SYNONYMY: boiling point means temperature (at which a liquid boils;  above which a liquid boils) 
+	//        HINTROW freezing point means temperature (at which a liquid freezes;  below which a liquid freezes) 
+	//        HINTROW melting point means temperature (at which a solid melts;  above which a solid melts) 
+	row autoRow3 = [TABLE:"SYNONYMY", X1: <var_0>+"point", X2: "temperature", ACTION2: <var_0>]
+
+	// CENTRAL         CHANGE: phase changes change the arrangement of molecules (in a substance;  in a sample) 
+	row autoRow4 = [UUID:"08c0-16d0-2d6d-8df7", SCOPE: "substance", ACTOR_WHO: "phase change", VERB: "change"]
+
+	// GROUNDING       PROP-STATESOFMATTER-TEMPS: water is in the gas state , called (water vapor;  steam) , for temperatures between (373;  212; 100) and 100000000000 
+	//        HINTROW water is in the liquid state , called liquid water , for temperatures between (273;  32; 0) and (373;  212; 100) (K;  F; C) 
+	//        HINTROW water is in the solid state , called ice , for temperatures between (0;  -459; -273) and (273;  32; 0) (K;  F; C) 
+	row autoRow5 = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME: "water", STATEOFMATTER: <var_2>, FORM_NAME: <var_4>]
+
+	// GROUNDING       SOURCEOF: a stove generates heat for cooking usually 
+	//        HINTROW a hot plate is a source of heat 
+	//        HINTROW a hand dryer produces heat 
+	//        HINTROW the sun is a source of (radiation;  heat) called sunlight 
+	row autoRow6 = [TABLE:"SOURCEOF", VERB_sourceof_provide_etc: "generate", WHAT_IT_PROVIDES: "heat"]
+
+	// CENTRALSW       CHANGE-VEC: boiling is when liquids are heated 
+	//        HINTROW melting is when solids are heated above their melting point 
+	//        HINTROW condensing is when gasses are  cooled below their boiling point 
+	row autoRow7 = [TABLE:"CHANGE-VEC", PROCESS_NAME_ACTION: <var_0>, QUANTITY_RANGE: <var_0>+"point", AGENT_OBJECT: <var_1>, DIRECTION: <var_5>]
+
+	// CENTRAL         CHANGE: heat energy can change the state of matter 
+	row autoRow8 = [UUID:"7909-f63c-46d1-01a2", ACTOR_WHO: "heat", VERB: "change", WHAT: "state matt"]
+
+	// CENTRAL         IFTHEN: if heat is added to a substance then that substance absorbs that heat 
+	row autoRow9 = [UUID:"9f40-769a-b2ba-d984", ACTOR_AGENT_PROCESS2: "substance", THING: "heat", OBJECT_PROPERTY3: "that", OBJECT_PATIENT1: "substance"]
+
+	// CENTRAL         KINDOF: state of matter is a kind of physical property 
+	row autoRow10 = [UUID:"7532-01eb-475e-acbd", HYPONYM: "state matt", SCOPE1: "physical"]
+
+	// GROUNDING       KINDOF: water is a kind of liquid at room temperature 
+	//        HINTROW milk is a kind of liquid at room temperature 
+	//        HINTROW glass is a kind of solid at room temperature 
+	//        HINTROW hydrogen is a kind of gas at room temperature 
+	row autoRow11 = [TABLE:"KINDOF", HYPONYM: <var_4>, HYPERNYM: <var_1>, SCOPE2: "temperature"]
+
+	// CENTRAL         KINDOF: a phase change is a kind of physical change 
+	row autoRow12 = [UUID:"b6d6-89d9-43a5-fd91", HYPONYM: "phase change", SCOPE1: "physical", HYPERNYM: "change"]
+
+	// CENTRAL         KINDOF: boiling is a kind of phase change 
+	//        HINTROW evaporating is a kind of phase change 
+	//        HINTROW freezing is a kind of phase change 
+	//        HINTROW melting is a kind of phase change 
+	//        HINTROW condensing is a kind of  phase change 
+	row autoRow13 = [UUID:"edd3-cea2-f046-e76f", HYPONYM: "boil", HYPERNYM: "change"]
+
+	// CENTRALSW       KINDOF: liquid is a kind of state of matter 
+	//        HINTROW gas is a kind of state of matter 
+	//        HINTROW plasma is a kind of state of matter 
+	//        HINTROW solid is a kind of state of matter 
+	row autoRow14 = [TABLE:"KINDOF", HYPONYM: <var_1>, HYPERNYM: "state matt"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of heat energy 
+	row autoRow15 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", ATTRIBUTE: "heat"]
+
+	// CENTRALSW       CHANGE-VEC: (cooling; colder) means (removing; reducing;decreasing) (heat; temperature) 
+	//        HINTROW heat means temperature increases 
+	row autoRow16 = [TABLE:"CHANGE-VEC", PROCESS_NAME_ACTION: "cold cool", PATIENT: "heat"]
+
+	// CENTRAL         ACTION: a source of something (emits;  produces; generates; provides) that something 
+	row autoRow17 = [UUID:"b877-a58b-f75a-3998", OBJECT_PROPERTY: "that", ACTION2: "generate"]
+
+	// CENTRALSW       KINDOF: evaporation is a kind of process 
+	//        HINTROW condensing is a kind of process 
+	//        HINTROW condensation is a kind of process 
+	//        HINTROW melting is a kind of process 
+	// GROUNDING       PROP-THINGS: the boiling point of water is (212F;  100C; 373K) 
+	//        HINTROW the melting point of iron is (2800F;  1538C; 1811K) 
+	//        HINTROW the melting point of oxygen is (-361.8F;  -218.8C; 54.4K) 
+	//        HINTROW the (freezing point of water;  melting point of water) is (32F;  0C; 273K) 
+	row autoRow19 = [TABLE:"PROP-THINGS", THING: <var_0>+"point"]
+
+	// GROUNDING       KINDOF: water is a kind of substance 
+	row autoRow20 = [TABLE:"KINDOF", HYPONYM: <var_4>, HYPERNYM: "substance"]
+
+endinferencepattern

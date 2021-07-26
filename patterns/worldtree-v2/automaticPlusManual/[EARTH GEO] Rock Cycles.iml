@@ -1,0 +1,87 @@
+// Automatically converted pattern
+inferencepattern EARTH_GEO_Rock_Cycles
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE: exposure to extreme heat and pressure changes ; metamorphoses sedimentary ; igneous rock into metamorphic rock     (a029-482a-dd71-9829) [ PROCESS_NAME:"exposure", ADJ_QUANTIFIER:"extreme", ACTOR_WHO:"heat pressure", VERB:"change;metamorphosis", WHAT:"sedimentary;igneous", FROM:"rock", INTO:"metamorphic rock" ]
+	//        HINTROW erosion and deposition can change metamorphic rock into sedimentary rock     (be57-b419-d43a-a455) [ PROCESS_NAME:"erode deposition", VERB:"change", FROM:"metamorphic rock", INTO:"sedimentary rock" ]
+	//  Notes: rock changes in rock cycle
+	//row autoRow0 = [TABLE:"CHANGE", ADJ_QUANTIFIER: "extreme", ACTOR_WHO: "heat pressure", VERB: "change", WHAT: "sedimentary", FROM: "rock", INTO: <metamorphic_0>+"rock"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CHANGE", VERB: "change", FROM: "rock", INTO: <metamorphic_0>+"rock"]
+
+	// GROUNDING       KINDOF: granite is a kind of igneous rock     (65b7-dcc0-e9d7-6b54) [ HYPONYM:"granite", SCOPE1:"igneous", HYPERNYM:"rock" ]
+	//        HINTROW pumice is a kind of igneous rock     (236b-7456-aa80-d1b2) [ HYPONYM:"pumice", HYPERNYM:"igneous rock" ]
+	//row autoRow1 = [TABLE:"KINDOF", SCOPE1: "igneous", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "rock"]
+
+	// GROUNDING       KINDOF: limestone is a kind of sedimentary rock     (f5b2-aca4-88b1-e3a4) [ HYPONYM:"limestone", SCOPE1:"sedimentary", HYPERNYM:"rock" ]
+	//        HINTROW sandstone is a kind of sedimentary rock     (77b8-2e5a-f47d-fda3) [ HYPONYM:"sandstone", SCOPE1:"sedimentary", HYPERNYM:"rock" ]
+	//row autoRow2 = [TABLE:"KINDOF", SCOPE1: "sedimentary", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", SCOPE1: "sedimentary", HYPERNYM: "rock"]
+
+	// GROUNDING       KINDOF: marble is a kind of metamorphic rock     (41e6-0974-2590-1700) [ HYPONYM:"marble", HYPERNYM:"metamorphic rock" ]
+	//        HINTROW gneiss is a kind of metamorphic rock     (508b-2d8b-6d54-a8f3) [ HYPONYM:"gneiss", HYPERNYM:"metamorphic rock" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: <metamorphic_0>+"rock"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: <metamorphic_0>+"rock"]
+
+	// CENTRAL         CHANGE: formation in the rock cycle means an old class of rocks changes into a new class of rocks     (3179-e5c7-2920-6db8) [ PROCESS_NAME:"form in rock cycle", ACTOR_WHO:"old class of rock", VERB:"change", INTO:"new class of rock" ]
+	//row autoRow4 = [UUID:"3179-e5c7-2920-6db8", PROCESS_NAME: "form in rock cycle", ACTOR_WHO: "old class of rock", VERB: "change", INTO: "new class of rock"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3179-e5c7-2920-6db8", PROCESS_NAME: "form in rock cycle", ACTOR_WHO: "old class of rock", VERB: "change", INTO: "new class of rock"]
+
+	// CENTRAL         PROCESSSTAGES-ORDERS: In the rock cycle , formation of sediments follows weathering and erosion     (eeb2-9945-f2f5-6173) [ PROCESS_NAME:"rock cycle", STAGEAFTER_STAGE:"form of sediment", FOLLOWS_PARTOF:"follow", STAGEBEFORE:"weather erode" ]
+	//row autoRow5 = [UUID:"eeb2-9945-f2f5-6173", PROCESS_NAME: "rock cycle", STAGEAFTER_STAGE: "form of sediment", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "weather erode"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"eeb2-9945-f2f5-6173", PROCESS_NAME: "rock cycle", STAGEAFTER_STAGE: "form of sediment", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "weather erode"]
+
+	// CENTRAL         PROP-GENERIC: class is a property of a rock and includes values of sedimentary ; metamorphic ; igneous     (ac6e-0804-8e8f-2943) [ X:"class", Y:"rock", VALUES:"sedimentary;metamorphic;igneous" ]
+	//row autoRow6 = [UUID:"ac6e-0804-8e8f-2943", X: "class", Y: "rock", VALUES: <metamorphic_0>] //OVER-CONSTR.
+	row autoRow6 = [UUID:"ac6e-0804-8e8f-2943", X: "class", Y: "rock", VALUES: <metamorphic_0>]
+
+	// CENTRAL         CHANGE: extreme heat and pressure compact sediments into sedimentary rocks     (71ba-ef2d-fb5f-33fc) [ ADJ_QUANTIFIER:"extreme", ACTOR_WHO:"heat pressure", VERB:"compact", FROM:"sediment", INTO:"sedimentary rock" ]
+	//  Notes: 3f61-74b3-1327-f313->71ba-ef2d-fb5f-33fcrock formation of sedimentary rocks
+	//row autoRow7 = [UUID:"71ba-ef2d-fb5f-33fc", ADJ_QUANTIFIER: "extreme", ACTOR_WHO: "heat pressure", VERB: "compact", FROM: "sediment", INTO: "sedimentary rock"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"71ba-ef2d-fb5f-33fc", ADJ_QUANTIFIER: "extreme", ACTOR_WHO: "heat pressure", VERB: "compact", FROM: "sediment", INTO: "sedimentary rock"]
+
+	// CENTRAL         PROCESSSTAGES: the rock cycle is a cyclical process, with stages of formation, weathering, erosion     (24ad-ac10-90a2-5448) [ PROCESS_NAME:"rock cycle", SEQUENTIAL_CYCLICAL:"cyclical", STAGES:"form weather erode" ]
+	//row autoRow8 = [UUID:"24ad-ac10-90a2-5448", PROCESS_NAME: "rock cycle", SEQUENTIAL_CYCLICAL: "cyclical", STAGES: "form weather erode"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"24ad-ac10-90a2-5448", PROCESS_NAME: "rock cycle", SEQUENTIAL_CYCLICAL: "cyclical", STAGES: "form weather erode"]
+
+	// CENTRAL         PROCESSSTAGES-ORDERS: In the rock cycle , erosion follows weathering     (d499-0f35-1076-0939) [ PROCESS_NAME:"rock cycle", STAGEAFTER_STAGE:"erode", FOLLOWS_PARTOF:"follow", STAGEBEFORE:"weather" ]
+	//row autoRow9 = [UUID:"d499-0f35-1076-0939", PROCESS_NAME: "rock cycle", STAGEAFTER_STAGE: "erode", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "weather"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"d499-0f35-1076-0939", PROCESS_NAME: "rock cycle", STAGEAFTER_STAGE: "erode", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "weather"]
+
+	// CENTRAL         FORMEDBY: sediment is formed by rocks weathering     (5645-74d9-19c8-9dc4) [ OBJECT:"sediment", AGENT_PROCESS:"rock", VERB:"weather" ]
+	//  Notes: formation of the sediments
+	//row autoRow10 = [UUID:"5645-74d9-19c8-9dc4", OBJECT: "sediment", AGENT_PROCESS: "rock", VERB: "weather"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"5645-74d9-19c8-9dc4", OBJECT: "sediment", AGENT_PROCESS: "rock", VERB: "weather"]
+
+	// CENTRAL         FORMEDBY: igneous rocks ; minerals are formed by magma ; lava cooling ; crystallizing     (d9aa-4785-cdb4-ac25) [ OBJECT:"igneous rock;mineral", AGENT_PROCESS:"magma;lava", VERB:"cool;crystallize" ]
+	//  Notes: formation of igneous rock
+	//row autoRow11 = [UUID:"d9aa-4785-cdb4-ac25", OBJECT: "igneous rock", AGENT_PROCESS: "magma", VERB: "cool"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"d9aa-4785-cdb4-ac25", OBJECT: "igneous rock", AGENT_PROCESS: "magma", VERB: "cool"]
+
+	// CENTRAL         KINDOF: igneous rock is a kind of rock     (075f-d7cb-993c-ade1) [ HYPONYM:"igneous rock", HYPERNYM:"rock" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"075f-d7cb-993c-ade1", HYPONYM: "igneous rock", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"075f-d7cb-993c-ade1", HYPONYM: "igneous rock", HYPERNYM: "rock"]
+
+	// CENTRAL         KINDOF: metamorphic rock is a kind of rock     (96ab-0b82-8d18-ca9a) [ HYPONYM:"metamorphic rock", HYPERNYM:"rock" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"96ab-0b82-8d18-ca9a", HYPONYM: <metamorphic_0>+"rock", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"96ab-0b82-8d18-ca9a", HYPONYM: <metamorphic_0>+"rock", HYPERNYM: "rock"]
+
+	// CENTRAL         KINDOF: sedimentary rock is a kind of rock     (68cb-62b0-32a3-30e2) [ HYPONYM:"sedimentary rock", HYPERNYM:"rock" ]
+	//  Notes: peripheral
+	//row autoRow14 = [UUID:"68cb-62b0-32a3-30e2", HYPONYM: "sedimentary rock", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"68cb-62b0-32a3-30e2", HYPONYM: "sedimentary rock", HYPERNYM: "rock"]
+
+	// CENTRAL         PROCESSSTAGES: the formation of metamorphic rock is a sequential process, with stages of rock being compacted, heated, recrystallized     (56b9-06de-d82b-67b2) [ PROCESS_NAME:"form of metamorphic rock", SEQUENTIAL_CYCLICAL:"sequential", STAGES:"rock be compact heat recrystallize" ]
+	//  Notes: formation of metamorphic rock
+	//row autoRow15 = [UUID:"56b9-06de-d82b-67b2", PROCESS_NAME: "form of"+<metamorphic_0>+"rock", SEQUENTIAL_CYCLICAL: "sequential", STAGES: "rock be compact heat recrystallize"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"56b9-06de-d82b-67b2", PROCESS_NAME: "form of"+<metamorphic_0>+"rock", SEQUENTIAL_CYCLICAL: "sequential", STAGES: "rock be compact heat recrystallize"]
+
+endinferencepattern

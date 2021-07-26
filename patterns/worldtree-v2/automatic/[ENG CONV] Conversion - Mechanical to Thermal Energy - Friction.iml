@@ -1,0 +1,96 @@
+// Automatically converted pattern
+inferencepattern ENG_CONV_Conversion_Mechanical_to_Thermal_Energy_Friction
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a sheet of paper is a kind of object     (5029-9d16-9c77-acf3) [ HYPONYM:"sheet of paper", HYPERNYM:"object" ]
+	//        HINTROW a sheet of sandpaper is a kind of object     (7ab6-d0b1-eac4-a2a9) [ HYPONYM:"sheet of sandpaper", HYPERNYM:"object" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "sheet of"+*"POS:NN", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "sheet of"+*"POS:NN", HYPERNYM: "object"]
+
+	// GROUNDING       CAUSE: pushing something can cause that something to move     (4048-519e-258b-fc12) [ CONDITION_VERB:"push", CONDITION_PATIENT:"something", RESULT_AGENT:"that something", RESULT_VERB:"move" ]
+	//row autoRow1 = [TABLE:"CAUSE", CONDITION_VERB: "push", CONDITION_PATIENT: "something", RESULT_AGENT: "that something", RESULT_VERB: "move"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CAUSE", CONDITION_VERB: "push", CONDITION_PATIENT: "something", RESULT_AGENT: "that something", RESULT_VERB: "move"]
+
+	// GROUNDING       KINDOF: pushing is a kind of motion     (044f-aca4-3be4-bb64) [ HYPONYM:"push", HYPERNYM:"move" ]
+	//        HINTROW pulling is a kind of motion     (cffc-a299-4321-b49d) [ HYPONYM:"pull", HYPERNYM:"move" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "push", HYPERNYM: "move"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "move"]
+
+	// GROUNDING       KINDOF: wood is a kind of object     (7969-9020-bfa6-c54c) [ HYPONYM:"wood", HYPERNYM:"object" ]
+	//        HINTROW a ball is a kind of object     (5650-b213-46ea-d9dd) [ HYPONYM:"ball", HYPERNYM:"object" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// CENTRAL         CHANGE: energy transformation means one kind of energy changes into another kind of energy     (3d34-b43e-8a7e-07fd) [ PROCESS_NAME:"energy transformation", ACTOR_WHO:"one kind of energy", VERB:"change", INTO:"kind of energy" ]
+	//row autoRow4 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"]
+
+	// CENTRAL         CHANGE: friction converts mechanical energy into heat energy     (2049-7f3d-b2f3-a0a3) [ ACTOR_WHO:"friction", VERB:"convert", FROM:"mechanical energy", INTO:"heat energy" ]
+	//row autoRow5 = [UUID:"2049-7f3d-b2f3-a0a3", ACTOR_WHO: "friction", VERB: "convert", FROM: "mechanical energy", INTO: "heat energy"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"2049-7f3d-b2f3-a0a3", ACTOR_WHO: "friction", VERB: "convert", FROM: "mechanical energy", INTO: "heat energy"]
+
+	// CENTRAL         ACTION: friction occurs when two object 's surfaces move against each other     (e9ed-3032-6736-3077) [ DEFINITION_NAME:"friction", ADJ:"two object", AGENT_OBJECT:"surface", ACTION2:"move against", OBJECT_PROPERTY:"other" ]
+	//row autoRow6 = [UUID:"e9ed-3032-6736-3077", DEFINITION_NAME: "friction", ADJ: "two object", AGENT_OBJECT: "surface", ACTION2: "move against", OBJECT_PROPERTY: "other"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"e9ed-3032-6736-3077", DEFINITION_NAME: "friction", ADJ: "two object", AGENT_OBJECT: "surface", ACTION2: "move against", OBJECT_PROPERTY: "other"]
+
+	// CENTRAL         EXAMPLES: An example of mechanical energy is an object in motion     (4aca-cf16-fcc6-1f79) [ AGENT_OBJECT1:"mechanical energy", AGENT_OBJECT2:"object in move" ]
+	//row autoRow7 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"]
+
+	// CENTRAL         CAUSE: an object being pushed across another object causes their surfaces to move against each other     (967c-c4d5-4455-0e4b) [ CONDITION_AGENT_OBJECT:"object", CONDITION_VERB:"be push", CONDITION_PATIENT:"across object", RESULT_AGENT:"surface", RESULT_VERB:"move", RESULT_PATIENT:"against other" ]
+	//row autoRow8 = [UUID:"967c-c4d5-4455-0e4b", CONDITION_AGENT_OBJECT: "object", CONDITION_VERB: "be push", CONDITION_PATIENT: "across object", RESULT_AGENT: "surface", RESULT_VERB: "move", RESULT_PATIENT: "against other"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"967c-c4d5-4455-0e4b", CONDITION_AGENT_OBJECT: "object", CONDITION_VERB: "be push", CONDITION_PATIENT: "across object", RESULT_AGENT: "surface", RESULT_VERB: "move", RESULT_PATIENT: "against other"]
+
+	// CENTRAL         KINDOF: heat is a kind of energy     (9e7d-986e-6af1-5ac1) [ HYPONYM:"heat", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"9e7d-986e-6af1-5ac1", HYPONYM: "heat", HYPERNYM: "energy"]
+
+	// CENTRAL         KINDOF: mechanical energy is a kind of energy     (3144-f8f2-43a4-8712) [ HYPONYM:"mechanical energy", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"3144-f8f2-43a4-8712", HYPONYM: "mechanical energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"3144-f8f2-43a4-8712", HYPONYM: "mechanical energy", HYPERNYM: "energy"]
+
+	// CENTRAL         PARTOF: a surface is a part of an object     (eb92-b0cd-c257-9bcf) [ PART:"surface", WHOLE:"object" ]
+	//row autoRow11 = [UUID:"eb92-b0cd-c257-9bcf", PART: "surface", WHOLE: "object"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"eb92-b0cd-c257-9bcf", PART: "surface", WHOLE: "object"]
+
+	// CENTRAL         CAUSE: friction causes the temperature of an object to increase     (26cb-7582-a17c-a0d6) [ CONDITION_AGENT_OBJECT:"friction", RESULT_AGENT:"temperature of object", RESULT_VERB:"increase" ]
+	//row autoRow12 = [UUID:"26cb-7582-a17c-a0d6", CONDITION_AGENT_OBJECT: "friction", RESULT_AGENT: "temperature of object", RESULT_VERB: "increase"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"26cb-7582-a17c-a0d6", CONDITION_AGENT_OBJECT: "friction", RESULT_AGENT: "temperature of object", RESULT_VERB: "increase"]
+
+	// CENTRAL         SOURCEOF: fire gives off light ; heat ; smoke     (891f-4f5c-91a2-bd31) [ AGENT:"fire", VERB_SOURCEOF_PROVIDE_ETC:"give", WHAT_IT_PROVIDES:"light;heat;smoke" ]
+	//row autoRow13 = [UUID:"891f-4f5c-91a2-bd31", AGENT: "fire", VERB_SOURCEOF_PROVIDE_ETC: "give", WHAT_IT_PROVIDES: "light"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"891f-4f5c-91a2-bd31", AGENT: "fire", VERB_SOURCEOF_PROVIDE_ETC: "give", WHAT_IT_PROVIDES: "light"]
+
+	// CENTRAL         IFTHEN: if too much heat is transferred to an object then that object may burn     (f253-a9f3-3688-96a7) [ ADJ_QUANTITY1:"too much", THING:"heat", ACTION1:"transfer", OBJECT_PATIENT1:"object", ACTOR_AGENT_PROCESS2:"that object", ACTION3:"burn" ]
+	//row autoRow14 = [UUID:"f253-a9f3-3688-96a7", ADJ_QUANTITY1: "too much", THING: "heat", ACTION1: "transfer", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "burn"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"f253-a9f3-3688-96a7", ADJ_QUANTITY1: "too much", THING: "heat", ACTION1: "transfer", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "burn"]
+
+	// CENTRAL         CAUSE: fire causes burning     (4dc5-13bf-3c46-af74) [ CONDITION_AGENT_OBJECT:"fire", RESULT_VERB:"burn" ]
+	//row autoRow15 = [UUID:"4dc5-13bf-3c46-af74", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "burn"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"4dc5-13bf-3c46-af74", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "burn"]
+
+	// LEXGLUE         SYNONYMY: motion ; movement means moving ; to move     (d8a3-10bb-9aea-178a) [ X1:"move;move", ACTION2:"move;move" ]
+	//row autoRow16 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"]
+
+	// LEXGLUE         SYNONYMY: to rub ; to rub together means to move against     (c4a5-564d-59d0-1074) [ ACTION1:"rub;rub together", ACTION2:"move against" ]
+	//row autoRow17 = [UUID:"c4a5-564d-59d0-1074", ACTION1: "rub together", ACTION2: "move against"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"c4a5-564d-59d0-1074", ACTION1: "rub together", ACTION2: "move against"]
+
+	// LEXGLUE         SYNONYMY: energy conversion is similar to energy transformation     (a67b-a715-13a4-9b5d) [ X1:"energy conversion", X2:"energy transformation" ]
+	//row autoRow18 = [UUID:"a67b-a715-13a4-9b5d", X1: "energy conversion", X2: "energy transformation"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"a67b-a715-13a4-9b5d", X1: "energy conversion", X2: "energy transformation"]
+
+	// LEXGLUE         SYNONYMY: heat energy is synonymous with thermal energy     (ae86-c631-e4ad-1669) [ X1:"heat energy", X2:"thermal energy" ]
+	//row autoRow19 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"]
+
+endinferencepattern

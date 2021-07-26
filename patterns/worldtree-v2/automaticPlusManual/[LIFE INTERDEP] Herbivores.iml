@@ -1,0 +1,56 @@
+// Automatically converted pattern
+inferencepattern LIFE_INTERDEP_Herbivores
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a rabbit is a kind of animal     (44d7-fef6-90ef-75aa) [ HYPONYM:"rabbit", HYPERNYM:"animal" ]
+	//        HINTROW a cow is a kind of animal     (7579-be94-da2b-b793) [ HYPONYM:"cow", HYPERNYM:"animal" ]
+	//        HINTROW a squirrel is a kind of animal     (b5dc-c66c-4d4e-031d) [ HYPONYM:"squirrel", HYPERNYM:"animal" ]
+	//        HINTROW a mouse is a kind of animal     (782f-7770-b8be-f40e) [ HYPONYM:"mouse", HYPERNYM:"animal" ]
+	//        HINTROW a deer is a kind of animal     (8cd7-84f7-76a1-1ba5) [ HYPONYM:"deer", HYPERNYM:"animal" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: <rabbit_0>, HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: <rabbit_0>, HYPERNYM: "animal"]
+
+	// GROUNDING       XIVORE: a rabbit is a kind of herbivore     (d825-1694-54c8-7842) [ ANIMAL:"rabbit", XIVORE:"herbivore" ]
+	//        HINTROW a cow is a kind of herbivore     (dfcb-6cbb-85ac-9195) [ ANIMAL:"cow", XIVORE:"herbivore" ]
+	//        HINTROW a squirrel is a kind of herbivore     (917a-13e0-ccdc-3673) [ ANIMAL:"squirrel", XIVORE:"herbivore" ]
+	//        HINTROW a mouse is a kind of herbivore     (b063-0f0c-d332-f233) [ ANIMAL:"mouse", XIVORE:"herbivore" ]
+	//        HINTROW a deer is a kind of herbivore     (3958-4821-2eca-d3a9) [ ANIMAL:"deer", XIVORE:"herbivore" ]
+	//row autoRow1 = [TABLE:"XIVORE", ANIMAL: <rabbit_0>, XIVORE: "herbivore"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"XIVORE", ANIMAL: <rabbit_0>, XIVORE: "herbivore"]
+
+	// CENTRAL         PROCESSROLES: In the food chain process herbivores have the role of primary consumer which eats producers for food     (18e1-c8ad-e980-2db1) [ PROCESS_NAME:"food chain", ACTOR_COMMON_EXAMPLE:"herbivore", ROLE:"primary consumer", VERBS:"eat", PATIENT:"producer", FOR_PURPOSE:"food" ]
+	//row autoRow2 = [UUID:"18e1-c8ad-e980-2db1", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "herbivore", ROLE: "primary consumer", VERBS: "eat", PATIENT: "producer", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"18e1-c8ad-e980-2db1", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "herbivore", ROLE: "primary consumer", VERBS: "eat", PATIENT: "producer", FOR_PURPOSE: "food"]
+
+	// CENTRAL        (OPTIONAL) USEDFOR: the skull of an animal can be used to determine if that animal was a carnivore or an herbivore     (afb3-0848-efcb-4bbb) [ AGENT_OBJECT:"skull", SCOPE1:"of animal", QUALIFIER:"be", FOR_PURPOSE:"determine", PATIENT:"if animal be carnivore herbivore" ]
+	//row *autoRow3 = [UUID:"afb3-0848-efcb-4bbb", AGENT_OBJECT: "skull", SCOPE1: "of animal", QUALIFIER: "be", FOR_PURPOSE: "determine", PATIENT: "if animal be carnivore herbivore"] //OVER-CONSTR.
+	row *autoRow3 = [UUID:"afb3-0848-efcb-4bbb", AGENT_OBJECT: "skull", SCOPE1: "of animal", QUALIFIER: "be", FOR_PURPOSE: "determine", PATIENT: "if animal be carnivore herbivore"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the population of plants decreases , the population of herbivores will decrease     (2590-d8b5-881d-7252) [ QUANTITY_MEASURE1:"population", AGENT_ATTRIBUTE1:"of plant", CHANGE1:"decrease", QUANTITY_MEASURE2:"population", AGENT_ATTRIBUTE2:"of herbivore", CHANGE2:"decrease" ]
+	//row autoRow4 = [UUID:"2590-d8b5-881d-7252", QUANTITY_MEASURE1: "population", AGENT_ATTRIBUTE1: "of plant", CHANGE1: "decrease", QUANTITY_MEASURE2: "population", AGENT_ATTRIBUTE2: "of herbivore", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"2590-d8b5-881d-7252", QUANTITY_MEASURE1: "population", AGENT_ATTRIBUTE1: "of plant", CHANGE1: "decrease", QUANTITY_MEASURE2: "population", AGENT_ATTRIBUTE2: "of herbivore", CHANGE2: "decrease"]
+
+	// CENTRAL         KINDOF: carnivores ; omnivores ; herbivores are a kind of animal     (c709-83dd-975c-b05d) [ HYPONYM:"carnivore;omnivore;herbivore", HYPERNYM:"animal" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"c709-83dd-975c-b05d", HYPONYM: "carnivore", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"c709-83dd-975c-b05d", HYPONYM: "carnivore", HYPERNYM: "animal"]
+
+	// CENTRAL         CONSUMERS-EATING: herbivores only eat plants     (57e4-c7f7-0031-fb0a) [ ORGANISM1:"herbivore", QUANTIFIER:"only", EATS_CONSUMES:"eat", ORGANISM2:"plant" ]
+	//row autoRow6 = [UUID:"57e4-c7f7-0031-fb0a", ORGANISM1: "herbivore", QUANTIFIER: "only", EATS_CONSUMES: "eat", ORGANISM2: "plant"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"57e4-c7f7-0031-fb0a", ORGANISM1: "herbivore", QUANTIFIER: "only", EATS_CONSUMES: "eat", ORGANISM2: "plant"]
+
+	// CENTRAL         INSTANCES: many animals are herbivores     (9842-70ea-d82e-01bf) [ ADJ_QUANTIFIER:"many", INSTANCE:"animal", CLASS:"herbivore" ]
+	//row autoRow7 = [UUID:"9842-70ea-d82e-01bf", ADJ_QUANTIFIER: "many", INSTANCE: "animal", CLASS: "herbivore"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"9842-70ea-d82e-01bf", ADJ_QUANTIFIER: "many", INSTANCE: "animal", CLASS: "herbivore"]
+
+	// LEXGLUE         SYNONYMY: herbivore means first-level consumer     (5706-62c6-1f2a-6e18) [ X1:"herbivore", X2:"first-level consumer;﻿1 level consumer" ]
+	//row autoRow8 = [UUID:"5706-62c6-1f2a-6e18", X1: "herbivore", X2: "﻿1 level consumer"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"5706-62c6-1f2a-6e18", X1: "herbivore", X2: "﻿1 level consumer"]
+
+endinferencepattern

@@ -1,0 +1,268 @@
+{"patternMatches": [
+{
+	"patternName":"LIFE_FUNCT_Animals_Organs_X_part_of_System_Y",
+	"matches":[
+		{
+		"uuids": ["aa4b-35f5-0dc1-afbe","8e1c-a4f8-3938-b891"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "aa4b-35f5-0dc1-afbe", "rowText": "a brain is a part of an animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8e1c-a4f8-3938-b891", "rowText": "a brain is a kind of internal organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"brain" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"brain" }
+		]
+		},
+		{
+		"uuids": ["a34e-7e20-4d9f-1540","9b5d-df25-aa44-8d07"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a34e-7e20-4d9f-1540", "rowText": "a liver is a part of an animal used in digestion", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9b5d-df25-aa44-8d07", "rowText": "a liver is a kind of organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"live" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"liver" }
+		]
+		},
+		{
+		"uuids": ["75d4-d09a-466c-e258","9c97-5684-21f1-8494"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "75d4-d09a-466c-e258", "rowText": "skin is a part of an animal ; plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9c97-5684-21f1-8494", "rowText": "skin is a kind of organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"skin" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"skin" }
+		]
+		},
+		{
+		"uuids": ["b29a-9bdd-4596-0296","8e1c-a4f8-3938-b891"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b29a-9bdd-4596-0296", "rowText": "the brain is a part of the body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8e1c-a4f8-3938-b891", "rowText": "a brain is a kind of internal organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"brain" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"brain" }
+		]
+		},
+		{
+		"uuids": ["a9a4-1a6c-b84b-528b","9078-ba6c-fdad-d876"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a9a4-1a6c-b84b-528b", "rowText": "a heart is a part of the body", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9078-ba6c-fdad-d876", "rowText": "a heart is a kind of organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"heart" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"heart" }
+		]
+		},
+		{
+		"uuids": ["d1c9-6993-fd7a-b8e9","e7d7-9393-dfc8-98bf"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d1c9-6993-fd7a-b8e9", "rowText": "the lungs are a part of the body of an animal used for breathing air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "e7d7-9393-dfc8-98bf", "rowText": "a lung is a kind of organ for breathing air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"lung" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"lungs" }
+		]
+		},
+		{
+		"uuids": ["9adf-5c73-e94c-f250","8e1c-a4f8-3938-b891"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9adf-5c73-e94c-f250", "rowText": "the brain is a part of the central nervous system", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8e1c-a4f8-3938-b891", "rowText": "a brain is a kind of internal organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"brain" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"brain" }
+		]
+		},
+		{
+		"uuids": ["8df9-e442-bb72-474f","83a9-87e2-2bd1-de6a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8df9-e442-bb72-474f", "rowText": "a small intestine is a part of a human 's ; animal 's digestive system for the digestion of proteins", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "83a9-87e2-2bd1-de6a", "rowText": "the small intestine is a kind of organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"small intestine" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"small intestine" }
+		]
+		},
+		{
+		"uuids": ["89e6-524b-d877-7386","6e76-34eb-601f-9783"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "89e6-524b-d877-7386", "rowText": "the stomach is a part of the digestive system", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6e76-34eb-601f-9783", "rowText": "the stomach is a kind of organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"stomach" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"stomach" }
+		]
+		},
+		{
+		"uuids": ["2205-7909-1511-8ae9","6e76-34eb-601f-9783"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2205-7909-1511-8ae9", "rowText": "a stomach is a part of a human 's ; animal 's digestive system for the digestion of proteins", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "6e76-34eb-601f-9783", "rowText": "the stomach is a kind of organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"stomach" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"stomach" }
+		]
+		},
+		{
+		"uuids": ["686d-e4be-a123-314f","3756-21fd-e448-dbfc"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "686d-e4be-a123-314f", "rowText": "gills are a part of a fish used for breathing water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3756-21fd-e448-dbfc", "rowText": "a gill is a kind of organ for breathing water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"gill" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"gills" }
+		]
+		},
+		{
+		"uuids": ["58ee-3692-38a4-c3bc","9c97-5684-21f1-8494"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "58ee-3692-38a4-c3bc", "rowText": "skin is a part of a frog for breathing ; protection ; absorbing moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9c97-5684-21f1-8494", "rowText": "skin is a kind of organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"skin" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"skin" }
+		]
+		},
+		{
+		"uuids": ["ecf3-617e-32df-416b","8f7c-1063-8805-ff44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ecf3-617e-32df-416b", "rowText": "a leaf is a part of a green plant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f7c-1063-8805-ff44", "rowText": "a leaf is a kind of plant organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"leaf" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"leaf" }
+		]
+		},
+		{
+		"uuids": ["aac5-9b7d-012e-9bac","9078-ba6c-fdad-d876"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "aac5-9b7d-012e-9bac", "rowText": "the heart is a part of the circulatory system", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9078-ba6c-fdad-d876", "rowText": "a heart is a kind of organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"heart" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"heart" }
+		]
+		},
+		{
+		"uuids": ["3bf2-b31e-b15c-fd05","9b5d-df25-aa44-8d07"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3bf2-b31e-b15c-fd05", "rowText": "the liver is a part of the digestive system", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9b5d-df25-aa44-8d07", "rowText": "a liver is a kind of organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"live" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"liver" }
+		]
+		},
+		{
+		"uuids": ["f653-454d-6b95-5714","83a9-87e2-2bd1-de6a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f653-454d-6b95-5714", "rowText": "the small intestine is a part of the digestive system", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "83a9-87e2-2bd1-de6a", "rowText": "the small intestine is a kind of organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"small intestine" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"small intestine" }
+		]
+		},
+		{
+		"uuids": ["1d47-e53f-f83b-45a8","9c97-5684-21f1-8494"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1d47-e53f-f83b-45a8", "rowText": "the skin is a part of the integumentary system", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9c97-5684-21f1-8494", "rowText": "skin is a kind of organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"skin" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"skin" }
+		]
+		},
+		{
+		"uuids": ["abc0-1f2b-3484-cf27","e7d7-9393-dfc8-98bf"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "abc0-1f2b-3484-cf27", "rowText": "the lungs are a part of the respiratory system", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "e7d7-9393-dfc8-98bf", "rowText": "a lung is a kind of organ for breathing air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"lung" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"lungs" }
+		]
+		},
+		{
+		"uuids": ["7f97-3a19-456e-8fdc","8f7c-1063-8805-ff44"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7f97-3a19-456e-8fdc", "rowText": "a leaf is a part of a tree", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f7c-1063-8805-ff44", "rowText": "a leaf is a kind of plant organ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"leaf" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"leaf" }
+		]
+		},
+		{
+		"uuids": ["ce79-c43f-0cd5-ed36","3756-21fd-e448-dbfc"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ce79-c43f-0cd5-ed36", "rowText": "gills are a part of trout", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3756-21fd-e448-dbfc", "rowText": "a gill is a kind of organ for breathing water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"lung_0", "value":"gill" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"lung_0", "value":"gills" }
+		]
+		}
+	]
+}
+]}
+

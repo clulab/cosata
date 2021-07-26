@@ -1,0 +1,56 @@
+// Automatically converted pattern
+inferencepattern MAT_MEAS_Measuring_Temperature
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: cold means low in temperature     (cf2a-6257-0c5c-7445) [ THING:"cold", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//        HINTROW hot means high in heat energy ; temperature     (9ff8-543c-2f35-5d3f) [ THING:"hot", VALUE:"high", ATTRIBUTE:"heat energy;temperature" ]
+	//        HINTROW warm means medium heat energy ; temperature     (63df-d3d9-56dc-161a) [ THING:"warm", VALUE:"medium;medium", ATTRIBUTE:"heat energy;temperature" ]
+	//        HINTROW warmer means greater ; higher in temperature ; warmth     (3c5b-8471-16d4-f1b2) [ THING:"warm", VALUE:"great;high", ATTRIBUTE:"temperature;warmth" ]
+	//        HINTROW moderate means medium in temperature ; warmth     (0994-2334-3ae5-92d1) [ THING:"moderate", VALUE:"medium", ATTRIBUTE:"temperature;warmth" ]
+	//row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "cold", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "temperature"]
+
+	// CENTRAL         PROP-GENERIC: temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot     (4084-f2bc-52cf-0f74) [ X:"temperature;heat energy", Y:"object;weather", ORDERED_UNORDERED:"order", VALUES:"cold;cool;warm;hot" ]
+	//row autoRow1 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"]
+
+	// CENTRAL         KINDOF: a thermometer is a kind of instrument for measuring temperature     (1296-2edb-a443-10d1) [ HYPONYM:"thermometer", HYPERNYM:"instrument", FOR_PURPOSE:"measure temperature" ]
+	//row autoRow2 = [UUID:"1296-2edb-a443-10d1", HYPONYM: "thermometer", HYPERNYM: "instrument", FOR_PURPOSE: "measure temperature"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"1296-2edb-a443-10d1", HYPONYM: "thermometer", HYPERNYM: "instrument", FOR_PURPOSE: "measure temperature"]
+
+	// CENTRAL         USEDFOR: a thermometer is used to measure temperature     (8346-8315-1f24-a5be) [ AGENT_OBJECT:"thermometer", FOR_PURPOSE:"measure", PATIENT:"temperature" ]
+	//row autoRow3 = [UUID:"8346-8315-1f24-a5be", AGENT_OBJECT: "thermometer", FOR_PURPOSE: "measure", PATIENT: "temperature"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"8346-8315-1f24-a5be", AGENT_OBJECT: "thermometer", FOR_PURPOSE: "measure", PATIENT: "temperature"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of heat energy     (d753-423d-5ce7-53ce) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"heat energy" ]
+	//row autoRow4 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"]
+
+	// LEXGLUE         SYNONYMY: adding heat means increasing temperature     (7d37-b81d-0cf3-9ae0) [ ACTION1:"add", Y1:"heat", ACTION2:"increase", Y2:"temperature" ]
+	//row autoRow5 = [UUID:"7d37-b81d-0cf3-9ae0", ACTION1: "add", Y1: "heat", ACTION2: "increase", Y2: "temperature"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"7d37-b81d-0cf3-9ae0", ACTION1: "add", Y1: "heat", ACTION2: "increase", Y2: "temperature"]
+
+	// LEXGLUE         SYNONYMY: heat means heat energy     (4710-c993-7a19-bef2) [ X1:"heat", X2:"heat energy" ]
+	//row autoRow6 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"]
+
+	// LEXGLUE         CHANGE-VEC: heating means adding heat     (9469-8559-7f35-1bbd) [ PROCESS_NAME_ACTION:"heat", DIRECTION:"add", PATIENT:"heat" ]
+	//row autoRow7 = [UUID:"9469-8559-7f35-1bbd", PROCESS_NAME_ACTION: "heat", DIRECTION: "add", PATIENT: "heat"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"9469-8559-7f35-1bbd", PROCESS_NAME_ACTION: "heat", DIRECTION: "add", PATIENT: "heat"]
+
+	// LEXGLUE         SYNONYMY: warm means warm temperature     (03e0-14b7-ecf9-28e4) [ X1:"warm", X2:"warm temperature" ]
+	//  Notes: Should use the attribute-value-pair table row?
+	//row autoRow8 = [UUID:"03e0-14b7-ecf9-28e4", X1: "warm", X2: "warm temperature"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"03e0-14b7-ecf9-28e4", X1: "warm", X2: "warm temperature"]
+
+	// LEXGLUE         SYNONYMY: heat means the transfer of thermal energy     (74c9-ce13-0e8d-4a29) [ X1:"heat", X2:"transfer of thermal energy" ]
+	//row autoRow9 = [UUID:"74c9-ce13-0e8d-4a29", X1: "heat", X2: "transfer of thermal energy"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"74c9-ce13-0e8d-4a29", X1: "heat", X2: "transfer of thermal energy"]
+
+endinferencepattern

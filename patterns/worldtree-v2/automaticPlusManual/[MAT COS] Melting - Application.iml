@@ -1,0 +1,80 @@
+// Automatically converted pattern
+inferencepattern MAT_COS_Melting_Application
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       SOURCEOF: a hot ; warm something is a source of heat     (55b7-97a0-0554-156d) [ ADJ:"hot;warm", AGENT:"something", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"heat" ]
+	//        HINTROW a hot plate is a source of heat     (945f-acde-29f3-d573) [ AGENT:"hot plate", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"heat" ]
+	//        HINTROW a hot substance is a source of heat     (bdf8-fbda-ff94-54f5) [ ADJ:"hot", AGENT:"substance", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"heat" ]
+	//  Notes: heat source
+	//row autoRow0 = [TABLE:"SOURCEOF", ADJ: "hot", AGENT: "something", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "heat"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "heat"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: warm means medium heat energy ; temperature     (63df-d3d9-56dc-161a) [ THING:"warm", VALUE:"medium;medium", ATTRIBUTE:"heat energy;temperature" ]
+	//        HINTROW hot means high in heat energy ; temperature     (9ff8-543c-2f35-5d3f) [ THING:"hot", VALUE:"high", ATTRIBUTE:"heat energy;temperature" ]
+	//row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "warm", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "warm", ATTRIBUTE: "heat energy"]
+
+	// GROUNDING       KINDOF: butter is a kind of solid below 32 degrees celsius     (e9ec-d6ef-e1a0-97fd) [ HYPONYM:"butter", HYPERNYM:"solid", QUANTITY_RANGE:"below 32 degree celsius" ]
+	//  Notes: peripheral
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "butter", HYPERNYM: "solid", QUANTITY_RANGE: "below 32 degree celsius"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "butter", HYPERNYM: "solid", QUANTITY_RANGE: "below 32 degree celsius"]
+
+	// GROUNDING       KINDOF: butter is a kind of substance     (e15d-0c5d-0e78-b5dc) [ HYPONYM:"butter", HYPERNYM:"substance" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "butter", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "butter", HYPERNYM: "substance"]
+
+	// CENTRAL         CHANGE: melting means matter ; a substance changes from a solid into a liquid by increasing heat energy     (6abc-4443-f672-9a97) [ PROCESS_NAME:"melt", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"solid", INTO:"liquid", BY_THROUGH_HOW:"increase heat energy" ]
+	//row autoRow4 = [UUID:"6abc-4443-f672-9a97", PROCESS_NAME: "melt", ACTOR_WHO: "matt", VERB: "change", FROM: "solid", INTO: "liquid", BY_THROUGH_HOW: "increase heat energy"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"6abc-4443-f672-9a97", PROCESS_NAME: "melt", ACTOR_WHO: "matt", VERB: "change", FROM: "solid", INTO: "liquid", BY_THROUGH_HOW: "increase heat energy"]
+
+	// CENTRAL         IFTHEN: if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm     (c9e0-141e-88fa-2c43) [ THING:"thermal conduct;object", ACTION1:"expose", ADJ_QUANTITY1A:"source of", OBJECT_PATIENT1:"heat", ACTOR_AGENT_PROCESS2:"that conduct;that object", OBJECT_PROPERTY3:"hot;warm" ]
+	//row autoRow5 = [UUID:"c9e0-141e-88fa-2c43", THING: "thermal conduct", ACTION1: "expose", ADJ_QUANTITY1A: "source of", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "that conduct", OBJECT_PROPERTY3: "hot"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"c9e0-141e-88fa-2c43", THING: "thermal conduct", ACTION1: "expose", ADJ_QUANTITY1A: "source of", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "that conduct", OBJECT_PROPERTY3: "hot"]
+
+	// CENTRAL         KINDOF: a pan ; frying pan is a kind of container for cooking ; food     (a18a-21be-3303-f9b8) [ HYPONYM:"pan;fry pan", HYPERNYM:"container", FOR_PURPOSE:"cook;food" ]
+	//row autoRow6 = [UUID:"a18a-21be-3303-f9b8", HYPONYM: "fry pan", HYPERNYM: "container", FOR_PURPOSE: "cook"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"a18a-21be-3303-f9b8", HYPONYM: "fry pan", HYPERNYM: "container", FOR_PURPOSE: "cook"]
+
+	// CENTRAL         CHANGE-VEC: melting is when solids are heated above their melting point     (8cbb-8bf8-bfbd-681e) [ PROCESS_NAME_ACTION:"melt", AGENT_OBJECT:"solid", DIRECTION:"heat", QUANTITY_RANGE:"above melt point" ]
+	//row autoRow7 = [UUID:"8cbb-8bf8-bfbd-681e", PROCESS_NAME_ACTION: "melt", AGENT_OBJECT: "solid", DIRECTION: "heat", QUANTITY_RANGE: "above melt point"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"8cbb-8bf8-bfbd-681e", PROCESS_NAME_ACTION: "melt", AGENT_OBJECT: "solid", DIRECTION: "heat", QUANTITY_RANGE: "above melt point"]
+
+	// CENTRAL         MADEOF: pot ; pan ; frying pan is made of metal for cooking     (a955-8642-4044-5a48) [ OBJECT:"pot;pan;fry pan", MATERIAL:"metal", FOR_PURPOSE:"cook" ]
+	//row autoRow8 = [UUID:"a955-8642-4044-5a48", OBJECT: "fry pan", MATERIAL: "metal", FOR_PURPOSE: "cook"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"a955-8642-4044-5a48", OBJECT: "fry pan", MATERIAL: "metal", FOR_PURPOSE: "cook"]
+
+	// CENTRAL         PROP-CONDUCTIVITY: metal is a thermal ; thermal energy conductor     (0439-8c06-da63-6721) [ OBJECT_AGENT:"metal", KIND_OF_CONDUCTIVITY:"thermal;thermal energy", CONDUCTOR_INSULATOR:"conduct" ]
+	//row autoRow9 = [UUID:"0439-8c06-da63-6721", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "thermal energy", CONDUCTOR_INSULATOR: "conduct"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"0439-8c06-da63-6721", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "thermal energy", CONDUCTOR_INSULATOR: "conduct"]
+
+	// CENTRAL         PROP-GENERIC: conductivity is a property of a material ; substance     (d681-3158-6a99-253a) [ X:"conduct", Y:"material;substance" ]
+	//row autoRow10 = [UUID:"d681-3158-6a99-253a", X: "conduct", Y: "material"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"d681-3158-6a99-253a", X: "conduct", Y: "material"]
+
+	// CENTRAL         KINDOF: metal is a kind of material     (95c4-ec5e-bce9-afd8) [ HYPONYM:"metal", HYPERNYM:"material" ]
+	//row autoRow11 = [UUID:"95c4-ec5e-bce9-afd8", HYPONYM: "metal", HYPERNYM: "material"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"95c4-ec5e-bce9-afd8", HYPONYM: "metal", HYPERNYM: "material"]
+
+	// CENTRAL         IFTHEN: if something is places over a heat source then that something is exposed to that heat source     (fb09-0269-17fe-9106) [ THING:"something", ACTION1:"place over", OBJECT_PATIENT1:"heat source", ACTOR_AGENT_PROCESS2:"that something", ACTION3:"expose", OBJECT_PROPERTY3:"heat source" ]
+	//row autoRow12 = [UUID:"fb09-0269-17fe-9106", THING: "something", ACTION1: "place over", OBJECT_PATIENT1: "heat source", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "expose", OBJECT_PROPERTY3: "heat source"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"fb09-0269-17fe-9106", THING: "something", ACTION1: "place over", OBJECT_PATIENT1: "heat source", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "expose", OBJECT_PROPERTY3: "heat source"]
+
+	// LEXGLUE         CHANGE-VEC: heating means adding heat     (9469-8559-7f35-1bbd) [ PROCESS_NAME_ACTION:"heat", DIRECTION:"add", PATIENT:"heat" ]
+	//row autoRow13 = [UUID:"9469-8559-7f35-1bbd", PROCESS_NAME_ACTION: "heat", DIRECTION: "add", PATIENT: "heat"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"9469-8559-7f35-1bbd", PROCESS_NAME_ACTION: "heat", DIRECTION: "add", PATIENT: "heat"]
+
+	// LEXGLUE         SYNONYMY: high is similar to increase     (53d0-8110-c683-52da) [ X1:"high", X2:"increase" ]
+	//row autoRow14 = [UUID:"53d0-8110-c683-52da", X1: "high", X2: "increase"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"53d0-8110-c683-52da", X1: "high", X2: "increase"]
+
+	// LEXGLUE         SYNONYMY: being in something means touching that something     (4e2c-c684-660e-fcbe) [ ACTION1:"be", Y1:"in something", ACTION2:"touch", Y2:"that something" ]
+	//row autoRow15 = [UUID:"4e2c-c684-660e-fcbe", ACTION1: "be", Y1: "in something", ACTION2: "touch", Y2: "that something"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"4e2c-c684-660e-fcbe", ACTION1: "be", Y1: "in something", ACTION2: "touch", Y2: "that something"]
+
+endinferencepattern

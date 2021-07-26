@@ -1,0 +1,106 @@
+// Automatically converted pattern
+inferencepattern MAT_COS_Temperature_Changes_to_the_Medium
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: colder ; cooler means lower in temperature     (246e-dd6e-6e09-988a) [ THING:"cold;cool", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//        HINTROW cold means low in temperature     (cf2a-6257-0c5c-7445) [ THING:"cold", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "cold", VALUE: "low", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "cold", VALUE: "low", ATTRIBUTE: "temperature"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: hot means high in heat energy ; temperature     (9ff8-543c-2f35-5d3f) [ THING:"hot", VALUE:"high", ATTRIBUTE:"heat energy;temperature" ]
+	//        HINTROW warmer means greater ; higher in temperature ; warmth     (3c5b-8471-16d4-f1b2) [ THING:"warm", VALUE:"great;high", ATTRIBUTE:"temperature;warmth" ]
+	//        HINTROW warm means medium heat energy ; temperature     (63df-d3d9-56dc-161a) [ THING:"warm", VALUE:"medium;medium", ATTRIBUTE:"heat energy;temperature" ]
+	//row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "hot", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "hot", ATTRIBUTE: "heat energy"]
+
+	// CENTRALSW       IFTHEN: if two objects of different temperature are touching , then the final temperature will be between the temperature of those two objects     (0425-bd17-34f6-b71e) [ ADJ_QUANTITY1:"two", THING:"object", SCOPE1A:"of differ temperature", ACTION1:"touch", ADJ_QUANTITY2:"final", ACTOR_AGENT_PROCESS2:"temperature", OBJECT_PROPERTY3:"between temperature", SCOPE4:"of two object" ]
+	//        HINTROW if an object is touching a warmer object , then the cooler object will increase in temperature until two objects reach the same temperature     (98af-df3e-d96e-a011) [ THING:"object", ACTION1:"touch", ADJ_QUANTITY1A:"warm", OBJECT_PATIENT1:"object", ADJ_QUANTITY2:"cool", ACTOR_AGENT_PROCESS2:"object", ACTION3:"increase", OBJECT_PROPERTY3:"in temperature", SCOPE4:"until two object reach same temperature" ]
+	//  Notes: temperature balance
+	//row autoRow2 = [TABLE:"IFTHEN", THING: "object", SCOPE1A: "of"+*"POS:JJ"+"temperature", ACTION1: "touch", ACTOR_AGENT_PROCESS2: "temperature", OBJECT_PROPERTY3: *"POS:IN"+"temperature", SCOPE4: "of"+*"POS:CD"+"object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"IFTHEN", THING: "object", ACTION1: "touch", OBJECT_PROPERTY3: *"POS:IN"+"temperature", SCOPE4: *"POS:IN"+*"POS:CD"+"object"]
+
+	// CENTRALSW       CHANGE-VEC: warm ; becoming warm means heat is added     (39ec-9974-829d-ba5e) [ PROCESS_NAME_ACTION:"warm;become warm", AGENT_OBJECT:"heat", DIRECTION:"add" ]
+	//        HINTROW heating means adding heat     (9469-8559-7f35-1bbd) [ PROCESS_NAME_ACTION:"heat", DIRECTION:"add", PATIENT:"heat" ]
+	//        HINTROW heat means temperature increases     (7afc-2bcd-13a5-2d35) [ PROCESS_NAME_ACTION:"heat", AGENT_OBJECT:"temperature", DIRECTION:"increase" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow3 = [TABLE:"CHANGE-VEC"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow3 = [TABLE:"CHANGE-VEC"]
+
+	// CENTRALSW       CHANGE-VEC: cooling means temperature decreases     (b71d-3add-69c0-1d03) [ PROCESS_NAME_ACTION:"cool", AGENT_OBJECT:"temperature", DIRECTION:"decrease" ]
+	//        HINTROW cooling ; colder means removing ; reducing ; decreasing heat ; temperature     (3a9b-81b5-1a3a-40a0) [ PROCESS_NAME_ACTION:"cool;cold", DIRECTION:"remove;reduce;decrease", PATIENT:"heat;temperature" ]
+	//row autoRow4 = [TABLE:"CHANGE-VEC", PROCESS_NAME_ACTION: "cool", AGENT_OBJECT: "temperature"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"CHANGE-VEC", PROCESS_NAME_ACTION: "cool"]
+
+	// GROUNDING       KINDOF: an egg is a kind of object     (14f6-1b4a-f963-8a50) [ HYPONYM:"egg", HYPERNYM:"object" ]
+	//        HINTROW ice is a kind of object     (2959-08e0-430c-0f87) [ HYPONYM:"ice", HYPERNYM:"object" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//row autoRow6 = [TABLE:"KINDOF", HYPONYM: "water", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPONYM: "water", HYPERNYM: "substance"]
+
+	// CENTRAL         PROP-GENERIC: temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot     (4084-f2bc-52cf-0f74) [ X:"temperature;heat energy", Y:"object;weather", ORDERED_UNORDERED:"order", VALUES:"cold;cool;warm;hot" ]
+	//row autoRow7 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"]
+
+	// CENTRAL         TRANSFER: moving an object from a cool place to a warm place causes the object 's temperature to increase     (b870-3f32-ad2b-c308) [ VERB:"move", WHAT:"object", SOURCE:"cool place", DESTINATION:"warm place", LINKING:"cause object temperature increase" ]
+	//  Notes: cool object warms up
+	//row autoRow8 = [UUID:"b870-3f32-ad2b-c308", VERB: "move", WHAT: "object", SOURCE: "cool place", DESTINATION: "warm place", LINKING: "cause object temperature increase"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"b870-3f32-ad2b-c308", VERB: "move", WHAT: "object", SOURCE: "cool place", DESTINATION: "warm place", LINKING: "cause object temperature increase"]
+
+	// CENTRAL         IFTHEN: if a hot object ; substance is exposed to ; touches a cold object ; substance then that object ; that substance will likely cool     (284d-e19c-6811-6a99) [ ADJ_QUANTITY1:"hot", THING:"object;substance", ACTION1:"expose;touch", ADJ_QUANTITY1A:"cold", OBJECT_PATIENT1:"object;substance", ACTOR_AGENT_PROCESS2:"that object;that substance", ACTION3:"cool" ]
+	//  Notes: hot object cools
+	//row autoRow9 = [UUID:"284d-e19c-6811-6a99", ADJ_QUANTITY1: "hot", THING: "object", ACTION1: "expose", ADJ_QUANTITY1A: "cold", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "cool"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"284d-e19c-6811-6a99", ADJ_QUANTITY1: "hot", THING: "object", ACTION1: "expose", ADJ_QUANTITY1A: "cold", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "cool"]
+
+	// CENTRAL         IFTHEN: if an object is placed in a substance ; in a location that is colder then that object will cool to the same temperature of that substance ; of that location     (fa48-b603-26c3-49ea) [ THING:"object", ACTION1:"place", OBJECT_PATIENT1:"in substance;in locate", SCOPE1B:"be cold", ACTOR_AGENT_PROCESS2:"object", ACTION3:"cool", ADJ_QUANTIFIER3:"same", OBJECT_PROPERTY3:"temperature", SCOPE4:"of substance;of locate" ]
+	//  Notes: hot object cools to the environment temperature
+	//row autoRow10 = [UUID:"fa48-b603-26c3-49ea", THING: "object", ACTION1: "place", OBJECT_PATIENT1: "in substance", SCOPE1B: "be cold", ACTOR_AGENT_PROCESS2: "object", ACTION3: "cool", ADJ_QUANTIFIER3: "same", OBJECT_PROPERTY3: "temperature", SCOPE4: "of substance"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"fa48-b603-26c3-49ea", THING: "object", ACTION1: "place", OBJECT_PATIENT1: "in substance", SCOPE1B: "be cold", ACTOR_AGENT_PROCESS2: "object", ACTION3: "cool", ADJ_QUANTIFIER3: "same", OBJECT_PROPERTY3: "temperature", SCOPE4: "of substance"]
+
+	// CENTRAL         CHANGE-VEC: the heat energy in the cooler object increases in thermal conduction     (3497-68e4-f791-9066) [ AGENT_OBJECT:"heat energy", SCOPE1:"in cool object", DIRECTION:"increase", SCOPE2:"in thermal conduction" ]
+	//  Notes: cool object warms up
+	//row autoRow11 = [UUID:"3497-68e4-f791-9066", AGENT_OBJECT: "heat energy", SCOPE1: "in cool object", DIRECTION: "increase", SCOPE2: "in thermal conduction"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"3497-68e4-f791-9066", AGENT_OBJECT: "heat energy", SCOPE1: "in cool object", DIRECTION: "increase", SCOPE2: "in thermal conduction"]
+
+	// CENTRAL         TRANSFER: thermal conduction is when heat flows from warmer object to cooler object     (9e2b-1cdd-38e4-7a7f) [ PROCESS_NAME:"thermal conduction", ACTOR_WHO:"heat", VERB:"flow", SOURCE:"warm object", DESTINATION:"cool object" ]
+	//row autoRow12 = [UUID:"9e2b-1cdd-38e4-7a7f", PROCESS_NAME: "thermal conduction", ACTOR_WHO: "heat", VERB: "flow", SOURCE: "warm object", DESTINATION: "cool object"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"9e2b-1cdd-38e4-7a7f", PROCESS_NAME: "thermal conduction", ACTOR_WHO: "heat", VERB: "flow", SOURCE: "warm object", DESTINATION: "cool object"]
+
+	// CENTRAL         IFTHEN: when a cooler object touches a warmer object , thermal conduction occurs     (8a04-b22c-d916-924f) [ ADJ_QUANTITY1:"cool", THING:"object", ACTION1:"touch", ADJ_QUANTITY1A:"warm", OBJECT_PATIENT1:"object", ACTOR_AGENT_PROCESS2:"thermal conduction", ACTION3:"occur" ]
+	//row autoRow13 = [UUID:"8a04-b22c-d916-924f", ADJ_QUANTITY1: "cool", THING: "object", ACTION1: "touch", ADJ_QUANTITY1A: "warm", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "thermal conduction", ACTION3: "occur"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"8a04-b22c-d916-924f", ADJ_QUANTITY1: "cool", THING: "object", ACTION1: "touch", ADJ_QUANTITY1A: "warm", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "thermal conduction", ACTION3: "occur"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if heat is conducted to an object then that object will become hot     (2a3c-96de-3124-d8f9) [ THING:"heat", ACTION1:"conduct", OBJECT_PATIENT1:"object", ACTOR_AGENT_PROCESS2:"object", ACTION3:"become", ADJ_QUANTIFIER3:"hot" ]
+	//row *autoRow14 = [UUID:"2a3c-96de-3124-d8f9", THING: "heat", ACTION1: "conduct", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "object", ACTION3: "become", ADJ_QUANTIFIER3: "hot"] //OVER-CONSTR.
+	row *autoRow14 = [UUID:"2a3c-96de-3124-d8f9", THING: "heat", ACTION1: "conduct", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "object", ACTION3: "become", ADJ_QUANTIFIER3: "hot"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of heat energy     (d753-423d-5ce7-53ce) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"heat energy" ]
+	//row autoRow15 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"]
+
+	// LEXGLUE         SYNONYMY: heat means heat energy     (4710-c993-7a19-bef2) [ X1:"heat", X2:"heat energy" ]
+	//row autoRow16 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"]
+
+	// LEXGLUE         SYNONYMY: increase means more     (19f5-4162-4c01-59aa) [ X1:"increase", X2:"much" ]
+	//row autoRow17 = [UUID:"19f5-4162-4c01-59aa", X1: "increase", X2: "much"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"19f5-4162-4c01-59aa", X1: "increase", X2: "much"]
+
+	// LEXGLUE         SYNONYMY: to conduct is similar to to transfer     (ac2a-9f55-aeab-2917) [ ACTION1:"conduct", ACTION2:"transfer" ]
+	//row autoRow18 = [UUID:"ac2a-9f55-aeab-2917", ACTION1: "conduct", ACTION2: "transfer"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"ac2a-9f55-aeab-2917", ACTION1: "conduct", ACTION2: "transfer"]
+
+	// LEXGLUE         SYNONYMY: to turn means to change     (dfa9-fbe6-0fdf-502c) [ ACTION1:"turn", ACTION2:"change" ]
+	//row autoRow19 = [UUID:"dfa9-fbe6-0fdf-502c", ACTION1: "turn", ACTION2: "change"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"dfa9-fbe6-0fdf-502c", ACTION1: "turn", ACTION2: "change"]
+
+endinferencepattern

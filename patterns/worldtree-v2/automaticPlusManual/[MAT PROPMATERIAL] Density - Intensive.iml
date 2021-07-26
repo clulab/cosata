@@ -1,0 +1,113 @@
+// Automatically converted pattern
+inferencepattern MAT_PROPMATERIAL_Density_Intensive
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+    // Core
+
+
+    // Measuring volume
+
+	// CENTRAL         PROP-GENERIC: volume is a property of matter     (866b-5e77-f131-2b80) [ X:"volume", Y:"matt" ]
+	//  Notes: peripheral
+	//row autoRow14 = [UUID:"866b-5e77-f131-2b80", X: "volume", Y: "matt"] //OVER-CONSTR.
+	row autoRow14 = [TABLE:"PROP-GENERIC", X: "volume", Y: "object" || "matter"]
+
+	// CENTRALSW       USEDFOR: a graduated cylinder is used to measure volume of a liquid ; of an object     (eefd-f260-5dc6-2267) [ AGENT_OBJECT:"graduate cylinder", FOR_PURPOSE:"measure", PATIENT:"volume", SCOPE2:"of liquid;of object" ]
+	//        HINTROW a measuring cup is used for measuring the volume of substances     (7dea-a87e-e497-6cef) [ ACTION:"measure", AGENT_OBJECT:"cup", FOR_PURPOSE:"measure", PATIENT:"volume of substance" ]
+	//        HINTROW a beaker is used for measuring the volume of substances     (fbc1-b668-75a4-a167) [ ACTION:"beaker", FOR_PURPOSE:"measure", PATIENT:"volume of substance" ]
+	//  Notes: tools to measure volume
+	//row autoRow0 = [TABLE:"USEDFOR", FOR_PURPOSE: "measure"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT:<volumeInstrument>, FOR_PURPOSE: "measure", PATIENT: ~"volume"]
+
+	// GROUNDING       UNIT: milliliters ( mL ) is a metric unit used for measuring volume generally used for values between 1 and 1000     (833d-29e2-dde2-a9fa) [ UNIT:"milliliter", ABBREVIATION:"ml", PROPERTY:"volume", LOWERBOUND:"1", UPPERBOUND:"1000" ]
+	//        HINTROW liters ( L ) is a metric unit used for measuring volume generally used for values between 1 and 50000000     (4aff-d072-35cc-3ebe) [ UNIT:"liter", ABBREVIATION:"l", PROPERTY:"volume", LOWERBOUND:"1", UPPERBOUND:"50000000" ]
+	//  Notes: units for the volume
+	//row autoRow4 = [TABLE:"UNIT", PROPERTY: "volume", LOWERBOUND: "1"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"UNIT", PROPERTY: "volume"]
+
+	// CENTRALSW       KINDOF: a graduated cylinder is a kind of instrument for measuring volume of liquids or objects     (8fee-0f80-9fbf-df1d) [ HYPONYM:"graduate cylinder", HYPERNYM:"instrument", FOR_PURPOSE:"measure volume of liquid object" ]
+	//  Notes: peripheral
+	//row autoRow6 = [TABLE:"KINDOF", HYPONYM: "graduate cylinder", HYPERNYM: "instrument", FOR_PURPOSE: "measure volume of liquid object"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPONYM: <volumeInstrument>, HYPERNYM: "instrument", FOR_PURPOSE: ~"measure volume"]
+
+
+    // Measuring Mass
+
+	// CENTRAL         PROP-GENERIC: mass is a property of objects ; matter     (bbf0-3d09-563f-196b) [ X:"mass", Y:"object;matt" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"bbf0-3d09-563f-196b", X: "mass", Y: "object"] //OVER-CONSTR.
+	row autoRow11 = [TABLE:"PROP-GENERIC", X: "mass", Y: "object" || "matter"]
+
+	// CENTRALSW       USEDFOR: a balance is used for measuring mass ; weight of an object ; of a substance     (5c76-a005-e9c2-354a) [ AGENT_OBJECT:"balance", FOR_PURPOSE:"measure", PATIENT:"mass;weight", SCOPE2:"of object;of substance" ]
+	//        HINTROW a scale is used for measuring weight     (af64-6dc9-a2bb-291d) [ AGENT_OBJECT:"scale", FOR_PURPOSE:"measure", PATIENT:"weight" ]
+	//  Notes: tools for measuring mass
+	//row autoRow1 = [TABLE:"USEDFOR", FOR_PURPOSE: "measure"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"USEDFOR", AGENT_OBJECT:<massInstrument>, FOR_PURPOSE: "measure", PATIENT: ~"mass"]
+
+	// GROUNDING       UNIT: grams ( g ) are a metric unit used for measuring mass ; weight generally used for values between 1 and 2000     (3ad2-62a6-57f5-df68) [ UNIT:"gram", ABBREVIATION:"g", PROPERTY:"mass;weight", LOWERBOUND:"1", UPPERBOUND:"2000" ]
+	//        HINTROW kilograms ( kg ) are a metric ; SI unit used for measuring mass ; weight generally used for values between 1 and 50000000     (7a26-9d80-a88f-94fa) [ UNIT:"kilogram", ABBREVIATION:"kg", PROPERTY:"mass;weight", LOWERBOUND:"1", UPPERBOUND:"50000000" ]
+	//  Notes: units for mass
+	//row autoRow3 = [TABLE:"UNIT", PROPERTY: "mass", LOWERBOUND: "1"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"UNIT", PROPERTY: "mass"]
+
+// CENTRALSW       KINDOF: a balance is a kind of instrument for measuring mass ; measuring weight     (fad5-a6d6-cfd6-b9ed) [ HYPONYM:"balance", HYPERNYM:"instrument", FOR_PURPOSE:"measure mass;measure weight" ]
+	//  Notes: peripheral
+	//row autoRow9 = [TABLE:"KINDOF", HYPONYM: "balance", HYPERNYM: "instrument", FOR_PURPOSE: "measure mass"] //OVER-CONSTR.
+	row autoRow9 = [TABLE:"KINDOF", HYPONYM: <massInstrument>, HYPERNYM: "instrument", FOR_PURPOSE: ~"measure mass"]
+
+
+    // Density
+	// CENTRAL         MEASUREMENTS: density is a measure of mass of an object over volume ; divided by volume     (8d85-3a9e-2f98-5a9b) [ MEASURE:"density", QUANTITY_ADJ:"measure of", ATTRIBUTE:"mass", AGENT:"of object", SCOPE:"over volume;divide by volume" ]
+	//row autoRow7 = [UUID:"8d85-3a9e-2f98-5a9b", MEASURE: "density", QUANTITY_ADJ: "measure of", ATTRIBUTE: "mass", AGENT: "of object", SCOPE: "divide by volume"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"8d85-3a9e-2f98-5a9b", MEASURE: "density", QUANTITY_ADJ: "measure of", ATTRIBUTE: "mass", AGENT: "of object", SCOPE: "divide by volume"]
+
+	// CENTRAL         PROP-GENERIC: density is a property of an object ; a substance and includes ordered values of dense ; not dense     (b765-cf69-400e-c8f8) [ X:"density", Y:"object;substance", ORDERED_UNORDERED:"order", VALUES:"dense;not dense" ]
+	//row autoRow8 = [UUID:"b765-cf69-400e-c8f8", X: "density", Y: "object", ORDERED_UNORDERED: "order", VALUES: "not dense"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"b765-cf69-400e-c8f8", X: "density", Y: "object", ORDERED_UNORDERED: "order", VALUES: "not dense"]
+
+	// CENTRAL         PROP-INTENSIVE-EXTENSIVE: density is an intensive property     (95a8-9d17-fc2e-069e) [ PROPERTY:"density", EXTENSIVE_INTENSIVE:"intensive property" ]
+	//row autoRow12 = [UUID:"95a8-9d17-fc2e-069e", PROPERTY: "density", EXTENSIVE_INTENSIVE: "intensive property"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"95a8-9d17-fc2e-069e", PROPERTY: "density", EXTENSIVE_INTENSIVE: "intensive property"]
+
+	// CENTRAL         KINDOF: density is a kind of physical property     (c335-4d4c-5237-f1ea) [ HYPONYM:"density", SCOPE1:"physical", HYPERNYM:"property" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"c335-4d4c-5237-f1ea", HYPONYM: "density", SCOPE1: "physical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"c335-4d4c-5237-f1ea", HYPONYM: "density", SCOPE1: "physical", HYPERNYM: "property"]
+
+
+    // Density (Optional)
+	// CENTRAL        (OPTIONAL) IFTHEN: if an object has a small volume and large mass , then the object will have a high density     (5aa9-7cbb-7412-8d1b) [ THING:"object", QUANTIFIER1:"have", ADJ_QUANTITY1A:"small", OBJECT_PATIENT1:"volume", SCOPE1B:"large mass", ACTOR_AGENT_PROCESS2:"object", ACTION3:"have", ADJ_QUANTIFIER3:"high", OBJECT_PROPERTY3:"density" ]
+	//row *autoRow10 = [UUID:"5aa9-7cbb-7412-8d1b", THING: "object", QUANTIFIER1: "have", ADJ_QUANTITY1A: "small", OBJECT_PATIENT1: "volume", SCOPE1B: "large mass", ACTOR_AGENT_PROCESS2: "object", ACTION3: "have", ADJ_QUANTIFIER3: "high", OBJECT_PROPERTY3: "density"] //OVER-CONSTR.
+	row *autoRow10 = [TABLE:"IFTHEN", THING: "object", ADJ_QUANTITY1A: <smallLarge1>, OBJECT_PATIENT1: "volume", SCOPE1B: <smallLarge2> + "mass", ACTOR_AGENT_PROCESS2: "object", ADJ_QUANTIFIER3: <highLow>, OBJECT_PROPERTY3: "density"]
+
+
+    // Intensive/Extensive
+
+	// CENTRALSW      (OPTIONAL) COUPLEDRELATIONSHIP: as amount ; size of something increases , the intensive properties of that something will not change     (4c10-6365-6e17-e201) [ QUANTITY_MEASURE1:"amount;size", AGENT_ATTRIBUTE1:"of something", CHANGE1:"increase", QUANTITY_MEASURE2:"intensive property", AGENT_ATTRIBUTE2:"of something", CHANGE2:"not change" ]
+	//        HINTROW as the temperature of something increases , the intensive properties of that something will not change     (94b4-900e-1eec-d6c3) [ QUANTITY_MEASURE1:"temperature", AGENT_ATTRIBUTE1:"of something", CHANGE1:"increase", QUANTITY_MEASURE2:"intensive property", AGENT_ATTRIBUTE2:"of something", CHANGE2:"not change" ]
+	//  Notes: intensive property stay unchanged
+	//row *autoRow2 = [TABLE:"COUPLEDRELATIONSHIP", AGENT_ATTRIBUTE1: "of something", CHANGE1: "increase", QUANTITY_MEASURE2: "intensive property", AGENT_ATTRIBUTE2: "of something", CHANGE2: "not change"] //OVER-CONSTR.
+	//row *autoRow2 = [TABLE:"COUPLEDRELATIONSHIP", AGENT_ATTRIBUTE1: "of something", CHANGE1: "increase", QUANTITY_MEASURE2: "intensive property", AGENT_ATTRIBUTE2: "of something", CHANGE2: "not change"]
+
+
+
+    // Object grounding
+	// CENTRAL         MADEOF: objects are made of materials ; substances ; matter     (80a3-454d-e8e0-3de2) [ OBJECT:"object", MATERIAL:"material;substance;matt" ]
+	//row autoRow13 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"]
+
+
+	// GROUNDING       KINDOF: marble is a kind of object ; material     (1d1c-a940-405e-dd50) [ HYPONYM:"marble", HYPERNYM:"object;material" ]
+	//        HINTROW a rock is a kind of object     (7c8b-3728-1d36-f922) [ HYPONYM:"rock", HYPERNYM:"object" ]
+	//  Notes: object examples
+	//row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	//## row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "object"]
+	
+
+endinferencepattern

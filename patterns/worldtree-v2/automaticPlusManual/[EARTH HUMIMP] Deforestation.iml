@@ -1,0 +1,79 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Deforestation
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ACTION: logging is when humans cut down trees ; forests for wood     (a65f-d177-962c-f0fe) [ DEFINITION_NAME:"log", AGENT_OBJECT:"human", ACTION2:"cut", OBJECT_PROPERTY:"tree;forest", FOR_PURPOSE:"wood" ]
+	//        HINTROW timber companies cut down trees     (d54a-daf9-1853-05ac) [ AGENT_OBJECT:"timber company", ACTION2:"cut", OBJECT_PROPERTY:"tree" ]
+	//row autoRow0 = [TABLE:"ACTION", ACTION2: "cut", OBJECT_PROPERTY: "tree"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ACTION", ACTION2: "cut", OBJECT_PROPERTY: "tree"]
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as the deforestation increases , the amount of carbon dioxide in the atmosphere will increase     (02dc-cd37-581a-992b) [ AGENT_ATTRIBUTE1:"deforestation", CHANGE1:"increase", QUANTITY_MEASURE2:"amount of", AGENT_ATTRIBUTE2:"carbon dioxide", SCOPE2A:"in atmosphere", CHANGE2:"increase" ]
+	//        HINTROW as the deforestation increases , the soil fertility will decrease     (b035-f9c4-7ccd-f9ba) [ AGENT_ATTRIBUTE1:"deforestation", CHANGE1:"increase", AGENT_ATTRIBUTE2:"soil fertility", CHANGE2:"decrease" ]
+	//        HINTROW as the deforestation increases , the soil erosion will increase     (b1c8-b2b3-3088-3bb5) [ AGENT_ATTRIBUTE1:"deforestation", CHANGE1:"increase", AGENT_ATTRIBUTE2:"soil erode", CHANGE2:"increase" ]
+	//  Notes: effect of deforestation
+	//row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", AGENT_ATTRIBUTE1: "deforestation", CHANGE1: "increase"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", AGENT_ATTRIBUTE1: "deforestation", CHANGE1: "increase"]
+
+	// CENTRAL         AFFECT: humans changing ecosystems ; environments usually has a negative impact on an ecosystem ; organisms living in an ecosystem     (f4dc-5030-6255-a1f8) [ ACTOR_WHO:"human", VERB:"change", OBJECT_PROPERTY:"ecosystem;environment", QUALIFIER1:"usually", POSITIVE_NEGATIVE:"negative", PATIENT:"ecosystem;organism live in ecosystem" ]
+	//row autoRow2 = [UUID:"f4dc-5030-6255-a1f8", ACTOR_WHO: "human", VERB: "change", OBJECT_PROPERTY: "ecosystem", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"f4dc-5030-6255-a1f8", ACTOR_WHO: "human", VERB: "change", OBJECT_PROPERTY: "ecosystem", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"]
+
+	// CENTRAL         AFFECT: cutting down trees has a negative impact on an ecosystem ; organisms living in an ecosystem     (f178-8a67-81c1-e3fb) [ VERB:"cut", OBJECT_PROPERTY:"tree", POSITIVE_NEGATIVE:"negative", PATIENT:"ecosystem;organism live in ecosystem" ]
+	//row autoRow3 = [UUID:"f178-8a67-81c1-e3fb", VERB: "cut", OBJECT_PROPERTY: "tree", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"f178-8a67-81c1-e3fb", VERB: "cut", OBJECT_PROPERTY: "tree", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"]
+
+	// CENTRAL         CAUSE: cutting down trees in a forest causes the number of trees to decrease in that forest     (521a-5b49-3683-2b01) [ CONDITION_VERB:"cut", CONDITION_PATIENT:"tree", SCOPE1:"in forest", RESULT_AGENT:"numb of tree", RESULT_VERB:"decrease", SCOPE2:"in forest" ]
+	//row autoRow4 = [UUID:"521a-5b49-3683-2b01", CONDITION_VERB: "cut", CONDITION_PATIENT: "tree", SCOPE1: "in forest", RESULT_AGENT: "numb of tree", RESULT_VERB: "decrease", SCOPE2: "in forest"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"521a-5b49-3683-2b01", CONDITION_VERB: "cut", CONDITION_PATIENT: "tree", SCOPE1: "in forest", RESULT_AGENT: "numb of tree", RESULT_VERB: "decrease", SCOPE2: "in forest"]
+
+	// CENTRAL        (OPTIONAL) REQUIRES: building housing developments ; dams ; roads usually requires replacing ; destroying animal habitats     (02d9-ec74-0c49-8fcd) [ ACTION1:"build", OBJECT_AGENT_PROCESS:"house development;dam;road", QUANTIFIER:"usually", VERB_REQUIRES:"require", ACTION2:"replace;destroy", OBJECT:"animal habitat" ]
+	//row *autoRow5 = [UUID:"02d9-ec74-0c49-8fcd", ACTION1: "build", OBJECT_AGENT_PROCESS: "house development", QUANTIFIER: "usually", VERB_REQUIRES: "require", ACTION2: "replace", OBJECT: "animal habitat"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"02d9-ec74-0c49-8fcd", ACTION1: "build", OBJECT_AGENT_PROCESS: "house development", QUANTIFIER: "usually", VERB_REQUIRES: "require", ACTION2: "replace", OBJECT: "animal habitat"]
+
+	// CENTRAL        (OPTIONAL) CHANGE-VEC: tree roots decrease ; reduce soil erosion     (08a7-34bf-d1a2-f681) [ AGENT_OBJECT:"tree root", DIRECTION:"decrease;reduce", PATIENT:"soil erode" ]
+	//  Notes: 2996-0b6b-14c4-7682->08a7-34bf-d1a2-f681
+	//row *autoRow6 = [UUID:"08a7-34bf-d1a2-f681", AGENT_OBJECT: "tree root", DIRECTION: "decrease", PATIENT: "soil erode"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"08a7-34bf-d1a2-f681", AGENT_OBJECT: "tree root", DIRECTION: "decrease", PATIENT: "soil erode"]
+
+	// CENTRAL         CONTAINS: a forest contains lots of plants ; trees     (a54a-a04c-71eb-ba0a) [ OBJECT_AGENT:"forest", QUANTITY_RANGE:"lot of", WHAT_IT_CONTAINS:"plant;tree" ]
+	//row autoRow7 = [UUID:"a54a-a04c-71eb-ba0a", OBJECT_AGENT: "forest", QUANTITY_RANGE: "lot of", WHAT_IT_CONTAINS: "plant"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"a54a-a04c-71eb-ba0a", OBJECT_AGENT: "forest", QUANTITY_RANGE: "lot of", WHAT_IT_CONTAINS: "plant"]
+
+	// CENTRAL         KINDOF: a forest is a kind of ecosystem     (e58d-03a1-b94d-942d) [ HYPONYM:"forest", HYPERNYM:"ecosystem" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"e58d-03a1-b94d-942d", HYPONYM: "forest", HYPERNYM: "ecosystem"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"e58d-03a1-b94d-942d", HYPONYM: "forest", HYPERNYM: "ecosystem"]
+
+	// CENTRAL         AFFECT: harming something has a negative impact on ; effect on that something     (57d4-79ba-a97d-0f9a) [ VERB:"harm", OBJECT_PROPERTY:"something", POSITIVE_NEGATIVE:"negative", PATIENT:"something" ]
+	//row autoRow9 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"]
+
+	// CENTRAL        (OPTIONAL) PARTOF: roots are a part of a plant ; tree     (6cdd-9626-9859-7279) [ PART:"root", WHOLE:"plant;tree" ]
+	//row *autoRow10 = [UUID:"6cdd-9626-9859-7279", PART: "root", WHOLE: "plant"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"6cdd-9626-9859-7279", PART: "root", WHOLE: "plant"]
+
+	// CENTRAL        (OPTIONAL) ACTION: national parks limit mining ; logging ; hunting     (ec15-e4f0-40a4-c40e) [ ADJ:"national", AGENT_OBJECT:"park", ACTION2:"limit", OBJECT_PROPERTY:"mine;log;hunt" ]
+	//row *autoRow11 = [UUID:"ec15-e4f0-40a4-c40e", ADJ: "national", AGENT_OBJECT: "park", ACTION2: "limit", OBJECT_PROPERTY: "mine"] //OVER-CONSTR.
+	row *autoRow11 = [UUID:"ec15-e4f0-40a4-c40e", ADJ: "national", AGENT_OBJECT: "park", ACTION2: "limit", OBJECT_PROPERTY: "mine"]
+
+	// CENTRAL        (OPTIONAL) AFFECT: national parks have a positive impact on ecosystems     (0c65-2951-3811-5f6a) [ ACTOR_WHO:"national park", POSITIVE_NEGATIVE:"positive", PATIENT:"ecosystem" ]
+	//row *autoRow12 = [UUID:"0c65-2951-3811-5f6a", ACTOR_WHO: "national park", POSITIVE_NEGATIVE: "positive", PATIENT: "ecosystem"] //OVER-CONSTR.
+	row *autoRow12 = [UUID:"0c65-2951-3811-5f6a", ACTOR_WHO: "national park", POSITIVE_NEGATIVE: "positive", PATIENT: "ecosystem"]
+
+	// LEXGLUE         SYNONYMY: destroying a forest means cutting down the trees in that forest     (89d2-2796-1e94-3b10) [ ACTION1:"destroy", Y1:"forest", ACTION2:"cut", Y2:"tree in forest" ]
+	//        HINTROW deforested area means an area where trees have been cut down     (58fb-4d30-982b-787b) [ X1:"deforest area", X2:"area tree", ACTION2:"have be cut" ]
+	//        HINTROW deforestation is the process of cutting down trees     (fc89-46d1-f058-2a39) [ X1:"deforestation", X2:"process of cut tree" ]
+	//        HINTROW clearing a forest is similar to deforestation     (7d73-7555-274c-15d4) [ ACTION1:"clear forest", X2:"deforestation" ]
+	//        HINTROW removing a forest means cutting down the trees in that forest     (298b-ca93-e80a-a32d) [ ACTION1:"remove", Y1:"forest", ACTION2:"cut", Y2:"tree in forest" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow13 = [UUID:"89d2-2796-1e94-3b10"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow13 = [UUID:"89d2-2796-1e94-3b10"]
+
+endinferencepattern

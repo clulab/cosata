@@ -1,0 +1,50 @@
+// Automatically converted pattern
+inferencepattern MAT_CHANGES_Physical_Changes_Shape_Change
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CAUSE: sharpening an object causes that object to change shape     (5db0-e85b-34b3-b679) [ CONDITION_VERB:"sharpen", CONDITION_PATIENT:"object", RESULT_AGENT:"that object", RESULT_VERB:"change", RESULT_PATIENT:"shape" ]
+	//        HINTROW folding an object causes that object to change shape     (522b-1df0-7e74-363f) [ CONDITION_VERB:"fold", CONDITION_PATIENT:"object", RESULT_AGENT:"that object", RESULT_VERB:"change", RESULT_PATIENT:"shape" ]
+	//        HINTROW squeezing an object can cause that object 's shape to change     (529d-2876-6155-3338) [ CONDITION_VERB:"squeeze", CONDITION_PATIENT:"object", RESULT_AGENT:"that object shape", RESULT_VERB:"change" ]
+	//row autoRow0 = [TABLE:"CAUSE", CONDITION_PATIENT: "object", RESULT_AGENT: "that object", RESULT_VERB: "change", RESULT_PATIENT: "shape"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CAUSE", CONDITION_PATIENT: "object", RESULT_AGENT: "that object", RESULT_VERB: "change"]
+
+	// CENTRALSW       CHANGE: tearing an object changes that object 's shape     (735e-0af2-549d-a69a) [ PROCESS_NAME:"tear", ACTOR_WHO:"object", VERB:"change", WHAT:"object shape" ]
+	//        HINTROW breaking down an object changes that object 's shape ; that object 's mass     (9697-ac7b-6ca7-7421) [ PROCESS_NAME:"break", ACTOR_WHO:"object", VERB:"change", WHAT:"object shape;object mass" ]
+	//        HINTROW stretching changes the shape of an object     (9d13-75dd-6bda-4d9f) [ ACTOR_WHO:"stretch", VERB:"change", WHAT:"shape", SCOPE:"of object" ]
+	//        HINTROW breaking an object into pieces changes the shape of the object     (f51e-d087-c2c3-de6c) [ ACTOR_WHO:"break object", QUANTIFIER_SCOPE:"into piece", VERB:"change", WHAT:"shape", SCOPE:"of object" ]
+	//row autoRow1 = [TABLE:"CHANGE", ACTOR_WHO: "object", VERB: "change", WHAT: "object shape"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CHANGE", VERB: "change", WHAT: *"POS:VB"+"shape"]
+
+	// GROUNDING       KINDOF: a paper is a kind of object     (9098-c80a-ed21-5447) [ HYPONYM:"paper", HYPERNYM:"object" ]
+	//        HINTROW a pencil is a kind of object     (e729-2ae7-04b3-9240) [ HYPONYM:"pencil", HYPERNYM:"object" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// CENTRAL         IFTHEN: if something undergoes physical change then the chemical properties of that something will remain unchanged     (36ff-8e28-fa84-d964) [ THING:"something", ACTION1:"undergo", OBJECT_PATIENT1:"physical change", ACTOR_AGENT_PROCESS2:"chemical property", PROPERTY_SCOPE:"of something", ACTION3:"remain", ADJ_QUANTIFIER3:"unchanged" ]
+	//row autoRow3 = [UUID:"36ff-8e28-fa84-d964", THING: "something", ACTION1: "undergo", OBJECT_PATIENT1: "physical change", ACTOR_AGENT_PROCESS2: "chemical property", PROPERTY_SCOPE: "of something", ACTION3: "remain", ADJ_QUANTIFIER3: "unchanged"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"36ff-8e28-fa84-d964", THING: "something", ACTION1: "undergo", OBJECT_PATIENT1: "physical change", ACTOR_AGENT_PROCESS2: "chemical property", PROPERTY_SCOPE: "of something", ACTION3: "remain", ADJ_QUANTIFIER3: "unchanged"]
+
+	// CENTRAL         IFTHEN: if something undergoes a physical change then the physical properties of that something will change     (e555-8a18-84d7-15d1) [ THING:"something", ACTION1:"undergo", OBJECT_PATIENT1:"physical change", ACTOR_AGENT_PROCESS2:"physical property", PROPERTY_SCOPE:"of something", ACTION3:"change" ]
+	//row autoRow4 = [UUID:"e555-8a18-84d7-15d1", THING: "something", ACTION1: "undergo", OBJECT_PATIENT1: "physical change", ACTOR_AGENT_PROCESS2: "physical property", PROPERTY_SCOPE: "of something", ACTION3: "change"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"e555-8a18-84d7-15d1", THING: "something", ACTION1: "undergo", OBJECT_PATIENT1: "physical change", ACTOR_AGENT_PROCESS2: "physical property", PROPERTY_SCOPE: "of something", ACTION3: "change"]
+
+	// CENTRAL         KINDOF: shape is a kind of physical property     (095a-404f-6149-222c) [ HYPONYM:"shape", SCOPE1:"physical", HYPERNYM:"property" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"095a-404f-6149-222c", HYPONYM: "shape", SCOPE1: "physical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"095a-404f-6149-222c", HYPONYM: "shape", SCOPE1: "physical", HYPERNYM: "property"]
+
+	// CENTRAL         PROP-GENERIC: shape is a property of the appearance of an object     (92e5-34ee-da79-3c25) [ X:"shape", Y:"appearance of object" ]
+	//row autoRow6 = [UUID:"92e5-34ee-da79-3c25", X: "shape", Y: "appearance of object"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"92e5-34ee-da79-3c25", X: "shape", Y: "appearance of object"]
+
+	// CENTRAL        (OPTIONAL) PROP-GENERIC: appearance is a property of objects ; materials     (f0ff-da5a-7b9d-614d) [ X:"appearance", Y:"object;material" ]
+	//row *autoRow7 = [UUID:"f0ff-da5a-7b9d-614d", X: "appearance", Y: "object"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"f0ff-da5a-7b9d-614d", X: "appearance", Y: "object"]
+
+endinferencepattern

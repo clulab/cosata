@@ -1,0 +1,70 @@
+// Automatically converted pattern
+inferencepattern ENG_SOUND_Echos_Echolocation
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a bat is a kind of animal     (7ca2-740e-37f4-0a9e) [ HYPONYM:"bat", HYPERNYM:"animal" ]
+	//  Notes: animals that can echolocate
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "bat", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "bat", HYPERNYM: "animal"]
+
+	// CENTRAL         WAVES: reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence     (c2d6-e332-6199-27ac) [ PROCESS:"reflect", ACTION:"bounce", OBJECT:"surface", DIRECTION:"opposite" ]
+	//row autoRow1 = [UUID:"c2d6-e332-6199-27ac", PROCESS: "reflect", ACTION: "bounce", OBJECT: "surface", DIRECTION: "opposite"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"c2d6-e332-6199-27ac", PROCESS: "reflect", ACTION: "bounce", OBJECT: "surface", DIRECTION: "opposite"]
+
+	// CENTRAL         ACTION: echolocation is when some animals detect objects by hearing echoes by emitting sound     (77e3-2567-0b8a-e691) [ DEFINITION_NAME:"echolocation", AGENT_OBJECT:"animal", ACTION2:"detect", OBJECT_PROPERTY:"object", HOW:"hear echo", BY_THROUGH_HOW:"emit sound" ]
+	//row autoRow2 = [UUID:"77e3-2567-0b8a-e691", DEFINITION_NAME: "echolocation", AGENT_OBJECT: "animal", ACTION2: "detect", OBJECT_PROPERTY: "object", HOW: "hear echo", BY_THROUGH_HOW: "emit sound"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"77e3-2567-0b8a-e691", DEFINITION_NAME: "echolocation", AGENT_OBJECT: "animal", ACTION2: "detect", OBJECT_PROPERTY: "object", HOW: "hear echo", BY_THROUGH_HOW: "emit sound"]
+
+	// CENTRAL         ACTION: echo is when sound reflects off of a surface     (68c7-53c9-4730-b283) [ DEFINITION_NAME:"echo", AGENT_OBJECT:"sound", ACTION2:"reflect off of", OBJECT_PROPERTY:"surface" ]
+	//row autoRow3 = [UUID:"68c7-53c9-4730-b283", DEFINITION_NAME: "echo", AGENT_OBJECT: "sound", ACTION2: "reflect off of", OBJECT_PROPERTY: "surface"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"68c7-53c9-4730-b283", DEFINITION_NAME: "echo", AGENT_OBJECT: "sound", ACTION2: "reflect off of", OBJECT_PROPERTY: "surface"]
+
+	// CENTRAL         USEDFOR: hearing is used for sensing sound by animals     (372c-c52a-b8f0-bc43) [ ACTION:"hear", FOR_PURPOSE:"sense", PATIENT:"sound", AGENT_THING_WHO_USES:"animal" ]
+	//row autoRow4 = [UUID:"372c-c52a-b8f0-bc43", ACTION: "hear", FOR_PURPOSE: "sense", PATIENT: "sound", AGENT_THING_WHO_USES: "animal"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"372c-c52a-b8f0-bc43", ACTION: "hear", FOR_PURPOSE: "sense", PATIENT: "sound", AGENT_THING_WHO_USES: "animal"]
+
+	// CENTRAL         PROP-GENERIC: the ability to reflect is a property of sound wave     (4f98-e74f-86e5-4975) [ X:"ability reflect", Y:"sound wave" ]
+	//row autoRow5 = [UUID:"4f98-e74f-86e5-4975", X: "ability reflect", Y: "sound wave"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"4f98-e74f-86e5-4975", X: "ability reflect", Y: "sound wave"]
+
+	// CENTRAL         PARTOF: a surface is a part of an object     (eb92-b0cd-c257-9bcf) [ PART:"surface", WHOLE:"object" ]
+	//row autoRow6 = [UUID:"eb92-b0cd-c257-9bcf", PART: "surface", WHOLE: "object"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"eb92-b0cd-c257-9bcf", PART: "surface", WHOLE: "object"]
+
+	// CENTRAL         KINDOF: a wall is a kind of surface     (3fe8-0138-a901-b730) [ HYPONYM:"wall", HYPERNYM:"surface" ]
+	//row autoRow7 = [UUID:"3fe8-0138-a901-b730", HYPONYM: "wall", HYPERNYM: "surface"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3fe8-0138-a901-b730", HYPONYM: "wall", HYPERNYM: "surface"]
+
+	// CENTRAL         KINDOF: an echo is a kind of sound     (e9e5-df09-379a-fa17) [ HYPONYM:"echo", HYPERNYM:"sound" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"e9e5-df09-379a-fa17", HYPONYM: "echo", HYPERNYM: "sound"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"e9e5-df09-379a-fa17", HYPONYM: "echo", HYPERNYM: "sound"]
+
+	// CENTRAL         KINDOF: hearing is a kind of sense     (e3f1-e16c-dd80-32ea) [ HYPONYM:"hear", HYPERNYM:"sense" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"e3f1-e16c-dd80-32ea", HYPONYM: "hear", HYPERNYM: "sense"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"e3f1-e16c-dd80-32ea", HYPONYM: "hear", HYPERNYM: "sense"]
+
+	// CENTRAL         KINDOF: sound wave is a kind of wave     (c0fe-e47e-44b2-66e7) [ HYPONYM:"sound wave", HYPERNYM:"wave" ]
+	//row autoRow10 = [UUID:"c0fe-e47e-44b2-66e7", HYPONYM: "sound wave", HYPERNYM: "wave"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"c0fe-e47e-44b2-66e7", HYPONYM: "sound wave", HYPERNYM: "wave"]
+
+	// CENTRAL         SOURCEOF: vibrations are a source of sound     (6f04-f08d-2b7e-a7f4) [ AGENT:"vibration", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"sound" ]
+	//row autoRow11 = [UUID:"6f04-f08d-2b7e-a7f4", AGENT: "vibration", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "sound"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"6f04-f08d-2b7e-a7f4", AGENT: "vibration", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "sound"]
+
+	// CENTRAL         AFFORDANCES: bats can echolocate     (6b7f-061c-c3e6-7b6a) [ ACTOR_THING:"bat", VERB:"echolocate" ]
+	//row autoRow12 = [UUID:"6b7f-061c-c3e6-7b6a", ACTOR_THING: "bat", VERB: "echolocate"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"6b7f-061c-c3e6-7b6a", ACTOR_THING: "bat", VERB: "echolocate"]
+
+	// LEXGLUE         OPPOSITES: reflecting light ; sound is the opposite of absorbing light ; sound     (9f3b-6ec5-eb1c-178d) [ VERB1:"reflect", THING_PROPERTY1:"light;sound", VERB2:"absorb", THING_PROPERTY2:"light;sound" ]
+	//row autoRow13 = [UUID:"9f3b-6ec5-eb1c-178d", VERB1: "reflect", THING_PROPERTY1: "light", VERB2: "absorb", THING_PROPERTY2: "light"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"9f3b-6ec5-eb1c-178d", VERB1: "reflect", THING_PROPERTY1: "light", VERB2: "absorb", THING_PROPERTY2: "light"]
+
+endinferencepattern

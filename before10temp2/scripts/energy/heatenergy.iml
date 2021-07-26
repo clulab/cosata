@@ -1,0 +1,427 @@
+/*
+ * Heat energy
+ */
+
+inferencepattern sourceofHeatEnergy
+        // Plain text description
+        description = "Something being a source of heat energy"
+
+        // Constants
+
+        // Row definitions
+        row source = [TABLE:"SOURCEOF", AGENT:<agent>, WHAT_IT_PROVIDES:"heat energy"]
+
+        // Code
+
+endinferencepattern
+
+
+inferencepattern heatingCoolingDevice
+        // Plain text description
+        description = "Something is a heating or cooling device"
+
+        // Constants
+
+        // Row definitions
+        // e.g. a stove is a king of heating device
+        row som = [TABLE:"KINDOF", HYPONYM:<devicename>, HYPERNYM:<heatingOrCoolingDevice>]
+
+        // e.g. heating devices are used for heating objects
+        row usedfor = [TABLE:"USEDFOR", AGENT_OBJECT:<heatingOrCoolingDevice>, FOR_PURPOSE:<heatingOrCooling>, PATIENT:<obj>]
+
+        // e.g. heating means the (temperature; heat energy) of an (object; substance) is increased
+        row heatcoolchange = [TABLE:"CHANGE-VEC-PROP", PROCESS_NAME:<heatingOrCooling>, PROPERTY:<tempHeatEnergy>, INCREASED_DECREASED:<incDec>]
+
+
+        // Code
+
+endinferencepattern
+
+
+//## This is depricated
+inferencepattern heatTransfer
+        // Plain text description
+        description = "Heat transfer test"
+
+        // Instances
+		require instance object1 = [KINDOF:"object"]
+		require instance object2 = [KINDOF:"object"]
+		musthave (object1."temperature" != "")
+		musthave (object2."temperature" != "")
+
+        // Row definitions
+
+        // e.g. ice is touching the ground
+        row touching = [TABLE:"SPATIAL", THING1:<thingName1>, SPATIALRELATION:"touching", THING2:<thingName2>]
+
+        // Code
+        var delta = 0.0
+        var stepProportion = 0.1        // At each step, temperatures become 0.1 (or 10%) closer to the other object's temperature
+
+        if (object1."temperature" > object2."temperature") then
+            // object2 has more heat than object1
+            delta = object1."temperature" - object2."temperature"
+            var stepSize = delta * stepProportion
+            object1."temperature" = object1."temperature" - stepSize      // warmer object becomes cooler
+            object2."temperature" = object2."temperature" + stepSize      // cooler object becomes warmer
+
+            printVariables
+        else
+            // object1 has more heat than object2
+            delta = object2."temperature" - object1."temperature"
+            var stepSize = delta * stepProportion
+            object1."temperature" = object1."temperature" + stepSize      // cooler object becomes warmer
+            object2."temperature" = object2."temperature" - stepSize      // warmer object becomes cooler
+
+            printVariables
+        endif
+
+        temporalblock(now)
+            // Now code
+            println ("NOW")
+            printInstances
+
+        endtemporalblock
+
+        temporalblock(step)
+            // Step code
+            println ("STEP")
+            printInstances
+
+        endtemporalblock
+
+        temporalblock(eventually)
+            // Eventually code
+            println ("EVENTUALLY")
+            printInstances
+            addExplanationText("Eventually, the temperature of the two objects in thermal contact becomes the same.")
+
+        endtemporalblock
+
+
+endinferencepattern
+
+
+
+inferencepattern heatTransferObjectObject
+        // Plain text description
+        description = "Heat transfer -- Object-to-object (touching objects -- no mass or thermal conductivity included in calculation)"
+
+        // Instances
+		require instance object1 = [KINDOF:"object"]
+		require instance object2 = [KINDOF:"object"]
+		musthave (object1."temperature" != "")
+		musthave (object2."temperature" != "")
+
+
+        // Row definitions
+
+        // e.g. ice is touching the ground
+        row touching = [TABLE:"SPATIAL", THING1:<thingName1>, SPATIALRELATION:"touching", THING2:<thingName2>]
+
+        // TODO: Musthave -- thingName1 is the same as object1, thingName2 is the same as object2
+        musthave (<thingName1> == object1."name")
+        musthave (<thingName2> == object2."name")
+
+        // Code
+        /*
+        temporalblock(now)
+            // Now code -- unimplemented
+            println ("NOW")
+            printInstances
+
+        endtemporalblock
+        */
+
+
+        temporalblock(step)
+            addExplanationText("Some heat flows from the warmer object to the cooler object, warming the cooler object, and cooling the warmer object.")
+
+            var delta = 0.0
+            var stepProportion = 0.1        // At each step, temperatures become 0.1 (or 10%) closer to the other object's temperature
+
+            if (object1."temperature" > object2."temperature") then
+                // CASE: object2 has more heat than object1 -- object2 heats object1
+                delta = object1."temperature" - object2."temperature"
+                var stepSize = delta * stepProportion
+                object1."temperature" = object1."temperature" - stepSize      // warmer object becomes cooler
+                object2."temperature" = object2."temperature" + stepSize      // cooler object becomes warmer
+
+                // Generate a row describing this transfer, and attach it to the object instances
+                executePattern(setHeatCool, "0", [thing1->object1, thing2->object2])
+
+                //printVariables
+            else if (object2."temperature" > object1."temperature") then
+                // CASE: object1 has more heat than object2 -- object1 heats object2
+                delta = object2."temperature" - object1."temperature"
+                var stepSize = delta * stepProportion
+                object1."temperature" = object1."temperature" + stepSize      // cooler object becomes warmer
+                object2."temperature" = object2."temperature" - stepSize      // warmer object becomes cooler
+
+                // Generate rows describing this transfer, and attach it to the object instances
+                executePattern(setHeatCool, "0", [thing1->object1, thing2->object2])
+
+
+                //printVariables
+            endif
+
+
+        endtemporalblock
+
+        temporalblock(eventually)
+            addExplanationText("Eventually, the temperature of the two objects in thermal contact becomes the same. If the masses of the two objects are unknown, we can assume their masses are equal, and that their eventual temperature will be the midpoint between the temperatures of the warmer and cooler objects.")
+
+            // Find the midpoint
+            var lowerTemperature = 0.0
+            var higherTemperature = 0.0
+            if (object1."temperature" > object2."temperature") then
+                lowerTemperature = object2."temperature"
+                higherTemperature = object1."temperature"
+            else
+                lowerTemperature = object1."temperature"
+                higherTemperature = object2."temperature"
+            endif
+
+            var delta = higherTemperature - lowerTemperature
+            var midTemperature = lowerTemperature + (delta / 2)
+
+            // Set the temperatures of both objects to the midpoint
+            object1."temperature" = midTemperature
+            object2."temperature" = midTemperature
+
+            removeRows([TABLE:"TRANSFER", WHAT:"heat energy", FILL_FROM:"from", SOURCE:object1."name", FILL_TO:"to", DESTINATION:object2."name"])
+            removeRows([TABLE:"TRANSFER", WHAT:"heat energy", FILL_FROM:"from", SOURCE:object2."name", FILL_TO:"to", DESTINATION:object1."name"])
+
+        endtemporalblock
+
+
+endinferencepattern
+
+
+inferencepattern heatTransferEnvironmentObject
+        // Plain text description
+        description = "Heat transfer -- Environment-to-object (An object in an environment -- no mass or thermal conductivity included in calculation)"
+        patterndescription = "transfer heat between " + <thingName1> + " and " + <envName1>
+
+        // Instances
+	require instance object1 = [KINDOF:"object"]
+	require instance environment1 = [KINDOF:"environment"]
+	musthave (object1."temperature" != "")
+	musthave (environment1."temperature" != "")
+
+        // Row definitions
+
+        // e.g. the ice is located outside, the ice is located in the freezer, the animal is located outside
+        //row touching = [TABLE:"SPATIAL", THING1:<thingName1>, SPATIALRELATION:"located", THING2:<thingName2>]     // old, moved to PROP-LOCATIONS
+        row touching = [TABLE:"PROP-LOCATIONS", PROPERTY:"location", AGENT_OBJECT:<thingName1>, VALUE:<envName1>]
+
+        // Constraints -- thingName1 is the same as object1, thingName2 is the same as object2
+        musthave (<thingName1> == object1."name")
+        musthave (<envName1> == environment1."name")
+
+        // Code
+        temporalblock(step)
+            var delta = 0.0
+            var stepProportion = 0.1        // At each step, temperatures become 0.1 (or 10%) closer to the other object's temperature
+
+            if (object1."temperature" > environment1."temperature") then
+                // CASE: object has more heat than environment, so it will cool -- technically object heats environment
+                addExplanationText("The object cools, becoming closer to the temperature of the environment.")
+                delta = object1."temperature" - environment1."temperature"
+                var stepSize = delta * stepProportion
+                object1."temperature" = object1."temperature" - stepSize      // warmer object becomes cooler.  the environment temperature (having much more thermal mass) doesn't change.
+
+                // Generate rows describing this transfer, and attach it to the object instances
+                executePattern(setHeatCool, "0", [thing1->object1, thing2->environment1])
+
+                //printVariables
+            else if (environment1."temperature" > object1."temperature") then
+                // CASE: environment has more heat than object
+                addExplanationText("The object warms, becoming closer to the temperature of the environment.")
+                delta = environment1."temperature" - object1."temperature"
+                var stepSize = delta * stepProportion
+                object1."temperature" = object1."temperature" + stepSize      // cooler object becomes warmer.  the environment temperature (having much more thermal mass) doesn't change.
+
+                // Generate rows describing this transfer, and attach it to the object instances
+                executePattern(setHeatCool, "0", [thing1->object1, thing2->environment1])
+
+                //printVariables
+            endif
+
+        endtemporalblock
+
+        temporalblock(eventually)
+            addExplanationText("Eventually, the temperature of the object will reach the same temperature as the environment. ")
+
+            // Set the temperatures of the object to the temperature of the environment.
+            object1."temperature" = environment1."temperature"
+
+            removeRows([TABLE:"TRANSFER", WHAT:"heat energy", SOURCE:environment1."name", DESTINATION:object1."name"])
+            removeRows([TABLE:"TRANSFER", WHAT:"heat energy", SOURCE:object1."name", DESTINATION:environment1."name"])
+
+        endtemporalblock
+
+
+endinferencepattern
+
+
+inferencepattern heatTransferRadiativeObject
+        // Plain text description
+        description = "Heat transfer -- Radiative-to-object (Light heating an object -- no mass or thermal conductivity included in calculation)"
+        patterndescription = "radiative transfer heat between " + <thingName1> + " and " + <envName1>
+
+        // Instances
+		require instance object1 = [KINDOF:"object"]
+		require instance radsource1 = [KINDOF:"radiative heat source"]
+		musthave (object1."temperature" != "")
+		musthave (radsource1."maximum heating temperature" != "")
+
+        // Row definitions
+
+        // e.g. the ice is located outside, the ice is located in the freezer, the animal is located outside
+        //row touching = [TABLE:"SPATIAL", THING1:<thingName1>, SPATIALRELATION:"located", THING2:<thingName2>]     // old, moved to PROP-LOCATIONS
+        row touching = [TABLE:"PROP-LOCATIONS", PROPERTY:"location", AGENT_OBJECT:<thingName1>, VALUE:<envName1>]
+
+        // Constraints -- thingName1 is the same as object1, thingName2 is the same as object2
+        musthave (<thingName1> == object1."name")
+        musthave (<envName1> == radsource1."name")
+
+        // Code
+        temporalblock(step)
+            var delta = 0.0
+            var stepProportion = 0.1        // At each step, temperatures become 0.1 (or 10%) closer to the other object's temperature
+
+            if (radsource1."maximum heating temperature" > object1."temperature") then
+                // CASE: radiative heat source has more heat than object
+                addExplanationText("The object warms, becoming closer to the temperature of the environment.")
+                delta = radsource1."maximum heating temperature" - object1."temperature"
+                var stepSize = delta * stepProportion
+                object1."temperature" = object1."temperature" + stepSize      // cooler object becomes warmer.  the environment temperature (having much more thermal mass) doesn't change.
+
+                // Generate rows describing this transfer, and attach it to the object instances
+                //## TODO: setHeatCool assumes both objects have temperatures
+                //## executePattern(setHeatCool, "0", [thing1->object1, thing2->radsource1])
+
+                //printVariables
+            endif
+
+        endtemporalblock
+
+        temporalblock(eventually)
+            addExplanationText("Eventually, the temperature of the object will reach the same temperature as the environment. ")
+
+            // Set the temperatures of the object to the temperature of the environment.
+            object1."temperature" = radsource1."maximum heating temperature"
+
+            removeRows([TABLE:"TRANSFER", WHAT:"heat energy", SOURCE:radsource1."name", DESTINATION:object1."name"])
+            removeRows([TABLE:"TRANSFER", WHAT:"heat energy", SOURCE:object1."name", DESTINATION:radsource1."name"])
+
+        endtemporalblock
+
+
+endinferencepattern
+
+
+/*
+ * Helpers
+ */
+
+inferencepattern setHeatCool
+        // Plain text description
+        description = "Sets that two things (that are assumed to be in thermal contact) are heating/cooling each other (ACTION-ACTIVE), and transferring heat from the hotter object to the cooler object (TRANSFER) "
+
+        // Instances
+		require instance thing1 = [KINDOF:"thing"]
+		require instance thing2 = [KINDOF:"thing"]
+		musthave (thing1."temperature" != "")
+		musthave (thing2."temperature" != "")
+
+        // Code
+		if (thing1."temperature" > thing2."temperature") then
+		    // CASE: Thing1 is heating Thing2
+
+		    // Thing1 is transfering heat energy from Thing1(itself) to Thing2
+            var genUUID1 = generateRow([TABLE:"TRANSFER", WHAT:"heat energy", FILL_FROM:"from", SOURCE:thing1."name", FILL_TO:"to", DESTINATION:thing2."name"])
+            attachRowToInstance(thing1, genUUID1)
+            attachRowToInstance(thing2, genUUID1)
+
+		    // Therefore, Thing1 is heating Thing2
+            var genUUID2 = generateRow([TABLE:"ACTION-ACTIVE", AGENT:thing1."name", ACTION:"heating", PATIENT:thing2."name"])
+            attachRowToInstance(thing1, genUUID2)
+            attachRowToInstance(thing2, genUUID2)
+
+		    // And Thing2 is cooling Thing1
+            var genUUID3 = generateRow([TABLE:"ACTION-ACTIVE", AGENT:thing2."name", ACTION:"cooling", PATIENT:thing1."name"])
+            attachRowToInstance(thing1, genUUID3)
+            attachRowToInstance(thing2, genUUID3)
+
+		else if (thing2."temperature" > thing1."temperature") then
+		    // CASE: Thing2 is heating Thing1
+
+		    // Thing2 is transfering heat energy from Thing2(itself) to Thing1
+            var genUUID1 = generateRow([TABLE:"TRANSFER", WHAT:"heat energy", FILL_FROM:"from", SOURCE:thing2."name", FILL_TO:"to", DESTINATION:thing1."name"])
+            attachRowToInstance(thing1, genUUID1)
+            attachRowToInstance(thing2, genUUID1)
+
+		    // Therefore, Thing2 is heating Thing1
+            var genUUID2 = generateRow([TABLE:"ACTION-ACTIVE", AGENT:thing2."name", ACTION:"heating", PATIENT:thing1."name"])
+            attachRowToInstance(thing1, genUUID2)
+            attachRowToInstance(thing2, genUUID2)
+
+		    // And Thing1 is cooling Thing2
+            var genUUID2 = generateRow([TABLE:"ACTION-ACTIVE", AGENT:thing1."name", ACTION:"cooling", PATIENT:thing2."name"])
+            attachRowToInstance(thing1, genUUID2)
+            attachRowToInstance(thing2, genUUID2)
+
+		endif
+
+
+endinferencepattern
+
+inferencepattern stopHeatCool
+        // Plain text description
+        description = "Companion to setHeatCool -- removes the rows generated by setHeatCool, to signify that thing1/thing2 are no longer in thermal contact. "
+
+        // Instances
+		require instance thing1 = [KINDOF:"thing"]
+		require instance thing2 = [KINDOF:"thing"]
+		musthave (thing1."temperature" != "")
+		musthave (thing2."temperature" != "")
+
+        // Direction 1: If Thing1 was heating Thing2
+        removeRows([TABLE:"TRANSFER", WHAT:"heat energy", FILL_FROM:"from", SOURCE:thing1."name", FILL_TO:"to", DESTINATION:thing2."name"])
+        removeRows([TABLE:"ACTION-ACTIVE", AGENT:thing1."name", ACTION:"heating", PATIENT:thing2."name"])
+        removeRows([TABLE:"ACTION-ACTIVE", AGENT:thing2."name", ACTION:"cooling", PATIENT:thing1."name"])
+
+        // Direction 2: If Thing2 was heating Thing1
+        removeRows([TABLE:"TRANSFER", WHAT:"heat energy", FILL_FROM:"from", SOURCE:thing2."name", FILL_TO:"to", DESTINATION:thing1."name"])
+        removeRows([TABLE:"ACTION-ACTIVE", AGENT:thing2."name", ACTION:"heating", PATIENT:thing1."name"])
+        removeRows([TABLE:"ACTION-ACTIVE", AGENT:thing1."name", ACTION:"cooling", PATIENT:thing2."name"])
+
+endinferencepattern
+
+
+
+// Properties
+inferencepattern setInitialTemperature
+    // Plain text description
+    description = "If an object is in an environment, it will (often) be the same temperature as that environment"
+
+    // Instances
+    require instance object1 = [KINDOF:"thing"]
+    require instance environment1 = [KINDOF:"environment"]
+    musthave (environment1."temperature" != "")
+
+    // Row definitions    
+    row objInEnv = [TABLE:"PROP-LOCATIONS", PROPERTY:"location", AGENT_OBJECT:<thingName>, QUALIFIER:<*qualifier>, VALUE:<environmentName>]
+    //##row objInEnv = [TABLE:"PROP-LOCATIONS", PROPERTY:"location", AGENT_OBJECT:<thingName>, QUALIFIER:<qualifier>, VALUE:<environmentName>]
+    
+    // Constraints -- thingName1 is the same as object1, thingName2 is the same as object2
+    musthaveoromit (<thingName> == object1."name")
+    musthaveoromit (<environmentName> == environment1."name")
+
+    // Code
+    object1."temperature" = environment1."temperature"
+    addExplanationText("The object (" + thingName + ") is given the same temperature as the environment (" + environmentName + ").")
+
+endinferencepattern

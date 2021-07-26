@@ -1,0 +1,85 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Plant_Part_X_does_Y
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ACTION: a leaf performs photosynthesis ; gas exchange     (8958-fc28-d9ce-a1d6) [ AGENT_OBJECT:"leaf", ACTION2:"perform", OBJECT_PROPERTY:"photosynthesis;gas exchange" ]
+	//        HINTROW a leaf absorbs sunlight to perform photosynthesis     (0514-7919-c1bf-6188) [ AGENT_OBJECT:"leaf", ACTION2:"absorb", OBJECT_PROPERTY:"sunlight", FOR_PURPOSE:"perform photosynthesis" ]
+	//  Notes: part A: leaf
+	//row autoRow0 = [TABLE:"ACTION", AGENT_OBJECT: "leaf"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ACTION", AGENT_OBJECT: "leaf"]
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW a lemon tree is a kind of plant     (9cf1-bc5a-d350-5541) [ HYPONYM:"lemon tree", HYPERNYM:"plant" ]
+	//        HINTROW a bush is a kind of plant     (311e-8d88-cde2-860d) [ HYPONYM:"bush", HYPERNYM:"plant" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "tree", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// CENTRAL         CHANGE: photosynthesis means producers ; green plants convert from carbon dioxide and water and solar energy into carbohydrates and food and oxygen for themselves     (0962-4a47-4e17-ce97) [ PROCESS_NAME:"photosynthesis", ACTOR_WHO:"producer;green plant", VERB:"convert", FROM:"carbon dioxide water solar energy", INTO:"carbohydrate food oxygen" ]
+	//row autoRow2 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"]
+
+	// CENTRAL         PARTOF: a leaf is a part of a tree     (7f97-3a19-456e-8fdc) [ PART:"leaf", QUANTIFIER1:"be", WHOLE:"tree" ]
+	//row autoRow3 = [UUID:"7f97-3a19-456e-8fdc", PART: "leaf", QUANTIFIER1: "be", WHOLE: "tree"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"7f97-3a19-456e-8fdc", PART: "leaf", QUANTIFIER1: "be", WHOLE: "tree"]
+
+	// CENTRAL         PARTOF: fruit is a part of a plant ; tree     (e5ad-f4c8-aca4-466f) [ PART:"fruit", WHOLE:"plant;tree" ]
+	//  Notes: part E: fruit
+	//row autoRow4 = [UUID:"e5ad-f4c8-aca4-466f", PART: "fruit", WHOLE: "plant"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"e5ad-f4c8-aca4-466f", PART: "fruit", WHOLE: "plant"]
+
+	// CENTRAL         PARTOF: roots are a part of a plant ; tree     (6cdd-9626-9859-7279) [ PART:"root", WHOLE:"plant;tree" ]
+	//  Notes: part F: root
+	//row autoRow5 = [UUID:"6cdd-9626-9859-7279", PART: "root", WHOLE: "plant"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"6cdd-9626-9859-7279", PART: "root", WHOLE: "plant"]
+
+	// CENTRAL         PARTOF: bark is a part of a tree     (555d-d839-0a6b-4a52) [ PART:"bark", QUANTIFIER1:"be", WHOLE:"tree" ]
+	//  Notes: part D: bark
+	//row autoRow6 = [UUID:"555d-d839-0a6b-4a52", PART: "bark", QUANTIFIER1: "be", WHOLE: "tree"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"555d-d839-0a6b-4a52", PART: "bark", QUANTIFIER1: "be", WHOLE: "tree"]
+
+	// CENTRAL         PARTOF: a trunk is a part of a tree for supporting the tree     (a036-70b7-7cb6-d950) [ PART:"trunk", WHOLE:"tree", FOR_PURPOSE:"support tree" ]
+	//  Notes: part C: trunk
+	//row autoRow7 = [UUID:"a036-70b7-7cb6-d950", PART: "trunk", WHOLE: "tree", FOR_PURPOSE: "support tree"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"a036-70b7-7cb6-d950", PART: "trunk", WHOLE: "tree", FOR_PURPOSE: "support tree"]
+
+	// CENTRAL         SOURCEOF: a trunk is a source of support for a tree     (9633-63de-89db-ce0e) [ AGENT:"trunk", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"support", AGENT_IT_PROVIDES_THING_TO:"tree" ]
+	//  Notes: part C: trunk
+	//row autoRow8 = [UUID:"9633-63de-89db-ce0e", AGENT: "trunk", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "support", AGENT_IT_PROVIDES_THING_TO: "tree"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"9633-63de-89db-ce0e", AGENT: "trunk", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "support", AGENT_IT_PROVIDES_THING_TO: "tree"]
+
+	// CENTRAL         SUBDIVISION-GENERICSPATIAL: bark is a protective covering around the trunk of ; branches of a tree     (4bbd-68e4-692b-c8db) [ SUBDIVISION:"bark", ADJ:"protect", TYPE_OF_SUBDIVISION:"cover", PART:"trunk of;branch of", WHOLE:"tree" ]
+	//  Notes: part D: bark
+	//row autoRow9 = [UUID:"4bbd-68e4-692b-c8db", SUBDIVISION: "bark", ADJ: "protect", TYPE_OF_SUBDIVISION: "cover", PART: "trunk of", WHOLE: "tree"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"4bbd-68e4-692b-c8db", SUBDIVISION: "bark", ADJ: "protect", TYPE_OF_SUBDIVISION: "cover", PART: "trunk of", WHOLE: "tree"]
+
+	// CENTRAL         CONTAINS: fruit contains seeds     (ef49-c852-8727-d2dd) [ OBJECT_AGENT:"fruit", WHAT_IT_CONTAINS:"seed" ]
+	//  Notes: part E: fruit
+	//row autoRow10 = [UUID:"ef49-c852-8727-d2dd", OBJECT_AGENT: "fruit", WHAT_IT_CONTAINS: "seed"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"ef49-c852-8727-d2dd", OBJECT_AGENT: "fruit", WHAT_IT_CONTAINS: "seed"]
+
+	// CENTRAL         PARTOF: a flower is a part of a plant for attracting pollinators ; producing seeds     (d42a-e547-fdf9-9c35) [ PART:"flower", WHOLE:"plant", FOR_PURPOSE:"attract pollinator;produce seed" ]
+	//  Notes: part B: flower
+	//row autoRow11 = [UUID:"d42a-e547-fdf9-9c35", PART: "flower", WHOLE: "plant", FOR_PURPOSE: "attract pollinator"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"d42a-e547-fdf9-9c35", PART: "flower", WHOLE: "plant", FOR_PURPOSE: "attract pollinator"]
+
+	// CENTRAL         CONTAINS: a flower contains pollen for sexual reproduction     (5505-0403-08c0-3571) [ OBJECT_AGENT:"flower", WHAT_IT_CONTAINS:"pollen", FOR_PURPOSE:"sexual reproduce" ]
+	//  Notes: part B: flower
+	//row autoRow12 = [UUID:"5505-0403-08c0-3571", OBJECT_AGENT: "flower", WHAT_IT_CONTAINS: "pollen", FOR_PURPOSE: "sexual reproduce"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"5505-0403-08c0-3571", OBJECT_AGENT: "flower", WHAT_IT_CONTAINS: "pollen", FOR_PURPOSE: "sexual reproduce"]
+
+	// CENTRAL         ACTION: roots anchor plants into the soil     (efd2-9d11-3f32-24cc) [ AGENT_OBJECT:"root", ACTION2:"anchor", OBJECT_PROPERTY:"plant", WHEN_WHERE:"into soil" ]
+	//  Notes: part F: root
+	//row autoRow13 = [UUID:"efd2-9d11-3f32-24cc", AGENT_OBJECT: "root", ACTION2: "anchor", OBJECT_PROPERTY: "plant", WHEN_WHERE: "into soil"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"efd2-9d11-3f32-24cc", AGENT_OBJECT: "root", ACTION2: "anchor", OBJECT_PROPERTY: "plant", WHEN_WHERE: "into soil"]
+
+	// CENTRAL         SOURCEOF: photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates     (a9fc-ec58-9496-d635) [ AGENT:"photosynthesis", VERB_SOURCEOF_PROVIDE_ETC:"be source of;make", WHAT_IT_PROVIDES:"food;energy", AGENT_IT_PROVIDES_THING_TO:"plant", BY_THROUGH_HOW:"convert carbon dioxide water sunlight into carbohydrate" ]
+	//row autoRow14 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"]
+
+endinferencepattern

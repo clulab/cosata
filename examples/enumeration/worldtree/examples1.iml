@@ -1,0 +1,50 @@
+
+/*
+inferencepattern transitivity_kindof
+	row row1 = [TABLE:"KINDOF", HYPONYM: <x>, HYPERNYM: <y>]
+	row row2 = [TABLE:"KINDOF", HYPONYM: <y>, HYPERNYM: <z>]
+
+endinferencepattern
+*/
+
+inferencepattern transitivity_partof
+    // Plain text description
+    description = "If <partName> is a part of <whole>, <whole> is a kind of <X>, then <partName> is a part of <x>."    
+
+	row row1 = [TABLE:"KINDOF", HYPONYM: <x>, HYPERNYM: <whole>]
+	row row2 = [TABLE:"PARTOF", PART: <partName>, WHOLE: <whole>]	
+	    
+endinferencepattern
+
+
+inferencepattern transitivity_cause1
+
+	row because = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: <precondition>, RESULT_AGENT: <result1>]
+	row and = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: <result1>, RESULT_AGENT: <result1>]
+	    
+endinferencepattern
+
+
+
+inferencepattern transitivity_change1
+
+	row because = [TABLE:"CHANGE", PROCESS_NAME: <processName>, VERB:<verb>, WHAT: <thing>]
+	row and = [TABLE:"KINDOF", HYPONYM: <x>, HYPERNYM: <thing>]	
+	
+endinferencepattern
+
+
+inferencepattern transitivity_change2a        
+
+	row because = [TABLE:"CHANGE", PROCESS_NAME: <processName>, VERB: <verb>, WHAT: <thing>, FROM:<from1>, INTO:<into1>]
+	row and = [TABLE:"KINDOF", HYPONYM: <x>, HYPERNYM: <from1>]
+		
+endinferencepattern
+
+
+inferencepattern transitivity_change2b        
+
+	row because = [TABLE:"CHANGE", PROCESS_NAME: <processName>, VERB:<verb>, WHAT: <thing>, FROM:<from1>, INTO:<into1>]
+	row and = [TABLE:"KINDOF", HYPONYM: <x>, HYPERNYM: <into1>]
+	
+endinferencepattern

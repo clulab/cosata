@@ -1,0 +1,56 @@
+// Automatically converted pattern
+inferencepattern MAT_MEAS_Shape_and_Volume
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         PROP-STATESOFMATTER-SHAPEVOL: Matter in the gas phase has variable shape     (77a9-72bb-f1d8-77ff) [ PHASE:"gas", VALUE:"variable", ATTRIBUTE:"shape" ]
+	//row autoRow0 = [UUID:"77a9-72bb-f1d8-77ff", PHASE: "gas", VALUE: "variable", ATTRIBUTE: "shape"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"77a9-72bb-f1d8-77ff", PHASE: "gas", VALUE: "variable", ATTRIBUTE: "shape"]
+
+	// CENTRAL         PROP-STATESOFMATTER-SHAPEVOL: Matter in the gas phase has variable volume     (42dd-0aaa-7736-eea9) [ PHASE:"gas", VALUE:"variable", ATTRIBUTE:"volume" ]
+	//row autoRow1 = [UUID:"42dd-0aaa-7736-eea9", PHASE: "gas", VALUE: "variable", ATTRIBUTE: "volume"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"42dd-0aaa-7736-eea9", PHASE: "gas", VALUE: "variable", ATTRIBUTE: "volume"]
+
+	// CENTRAL         PROP-STATESOFMATTER-SHAPEVOL: Matter in the liquid phase has definite volume     (d048-a12a-4f58-5472) [ PHASE:"liquid", VALUE:"definite", ATTRIBUTE:"volume" ]
+	//row autoRow2 = [UUID:"d048-a12a-4f58-5472", PHASE: "liquid", VALUE: "definite", ATTRIBUTE: "volume"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"d048-a12a-4f58-5472", PHASE: "liquid", VALUE: "definite", ATTRIBUTE: "volume"]
+
+	// CENTRAL         PROP-STATESOFMATTER-SHAPEVOL: Matter in the liquid phase has variable shape     (5458-220e-3046-62d2) [ PHASE:"liquid", VALUE:"variable", ATTRIBUTE:"shape" ]
+	//row autoRow3 = [UUID:"5458-220e-3046-62d2", PHASE: "liquid", VALUE: "variable", ATTRIBUTE: "shape"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"5458-220e-3046-62d2", PHASE: "liquid", VALUE: "variable", ATTRIBUTE: "shape"]
+
+	// CENTRAL         PROP-STATESOFMATTER-SHAPEVOL: Matter in the solid phase has definite shape     (d068-9891-46a3-e999) [ PHASE:"solid", VALUE:"definite", ATTRIBUTE:"shape" ]
+	//row autoRow4 = [UUID:"d068-9891-46a3-e999", PHASE: "solid", VALUE: "definite", ATTRIBUTE: "shape"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"d068-9891-46a3-e999", PHASE: "solid", VALUE: "definite", ATTRIBUTE: "shape"]
+
+	// CENTRAL         PROP-STATESOFMATTER-SHAPEVOL: Matter in the solid phase has definite volume     (92b1-8801-0e59-845e) [ PHASE:"solid", VALUE:"definite", ATTRIBUTE:"volume" ]
+	//row autoRow5 = [UUID:"92b1-8801-0e59-845e", PHASE: "solid", VALUE: "definite", ATTRIBUTE: "volume"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"92b1-8801-0e59-845e", PHASE: "solid", VALUE: "definite", ATTRIBUTE: "volume"]
+
+	// CENTRAL         PROP-GENERIC: variability of shape ; variability of volume is a property of matter and includes values of variable ; definite     (5364-1d90-a262-32e7) [ X:"variable of shape;variable of volume", Y:"matt", VALUES:"variable;definite" ]
+	//row autoRow6 = [UUID:"5364-1d90-a262-32e7", X: "variable of shape", Y: "matt", VALUES: "variable"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"5364-1d90-a262-32e7", X: "variable of shape", Y: "matt", VALUES: "variable"]
+
+	// CENTRAL         KINDOF: gas is a kind of state of matter     (aa73-331e-e970-c934) [ HYPONYM:"gas", HYPERNYM:"state of matt" ]
+	//row autoRow7 = [UUID:"aa73-331e-e970-c934", HYPONYM: "gas", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"aa73-331e-e970-c934", HYPONYM: "gas", HYPERNYM: "state of matt"]
+
+	// CENTRAL         KINDOF: liquid is a kind of state of matter     (f7e9-c6f8-892b-3496) [ HYPONYM:"liquid", HYPERNYM:"state of matt" ]
+	//row autoRow8 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"]
+
+	// CENTRAL         KINDOF: solid is a kind of state of matter     (cf49-1b7a-89f0-41f5) [ HYPONYM:"solid", HYPERNYM:"state of matt" ]
+	//row autoRow9 = [UUID:"cf49-1b7a-89f0-41f5", HYPONYM: "solid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"cf49-1b7a-89f0-41f5", HYPONYM: "solid", HYPERNYM: "state of matt"]
+
+	// CENTRAL         KINDOF: variability of shape ; variability of volume is a kind of physical property     (f926-954b-1f50-2b3b) [ HYPONYM:"variable of shape;variable of volume", SCOPE1:"physical", HYPERNYM:"property" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"f926-954b-1f50-2b3b", HYPONYM: "variable of shape", SCOPE1: "physical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"f926-954b-1f50-2b3b", HYPONYM: "variable of shape", SCOPE1: "physical", HYPERNYM: "property"]
+
+endinferencepattern

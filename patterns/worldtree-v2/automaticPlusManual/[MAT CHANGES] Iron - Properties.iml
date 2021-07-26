@@ -1,0 +1,117 @@
+// Automatically converted pattern
+inferencepattern MAT_CHANGES_Iron_Properties
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: iron is a kind of metal     (de4c-ca36-c336-540f) [ HYPONYM:"iron", HYPERNYM:"metal" ]
+	//        HINTROW iron is a kind of element     (bb4d-ea33-08e1-7106) [ HYPONYM:"iron", HYPERNYM:"element" ]
+	//        HINTROW iron is a kind of mineral     (564d-448d-05b5-998e) [ HYPONYM:"iron", HYPERNYM:"mineral" ]
+	//        HINTROW iron is a kind of solid     (89f4-0fad-6afc-2199) [ HYPONYM:"iron", HYPERNYM:"solid" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "iron", HYPERNYM: "metal"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "iron"]
+
+	// CENTRALSW       KINDOF: state of matter is a kind of physical property     (7532-01eb-475e-acbd) [ HYPONYM:"state of matt", SCOPE1:"physical", HYPERNYM:"property" ]
+	//        HINTROW state of matter at room temperature is a kind of physical property     (a648-4d74-dae9-2ef2) [ HYPONYM:"state of matt at room temperature", SCOPE1:"physical", HYPERNYM:"property" ]
+	//  Notes: state of matter
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "state of matt", SCOPE1: "physical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "state of matt", SCOPE1: "physical", HYPERNYM: "property"]
+
+	// CENTRALSW       MADEOF: iron nails are made of iron     (b9dd-961e-269e-aa5d) [ OBJECT:"iron nail", MATERIAL:"iron" ]
+	//        HINTROW nails are often made of iron     (1141-2506-451f-587c) [ OBJECT:"nail", QUALIFIER:"be often", MATERIAL:"iron" ]
+	//        HINTROW an iron chain is made of iron     (2035-bfb0-7672-2184) [ OBJECT:"iron chain", MATERIAL:"iron" ]
+	//        HINTROW iron filings are made of small pieces of iron     (220c-4dd1-0a7c-8792) [ OBJECT:"iron filing", MATERIAL:"small piece of iron" ]
+	//  Notes: object X is made of iron
+	//row autoRow2 = [TABLE:"MADEOF", OBJECT: "iron"+*"POS:NN", MATERIAL: "iron"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"MADEOF", MATERIAL: "iron"]
+
+	// GROUNDING       KINDOF: a nail is a kind of object     (b3d3-c3da-3c51-659e) [ HYPONYM:"nail", HYPERNYM:"object" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "nail", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "nail", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: solid is a kind of state of matter     (cf49-1b7a-89f0-41f5) [ HYPONYM:"solid", HYPERNYM:"state of matt" ]
+	//  Notes: state of matter property
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "solid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "solid", HYPERNYM: "state of matt"]
+
+	// CENTRAL         KINDOF: metal is a kind of material     (95c4-ec5e-bce9-afd8) [ HYPONYM:"metal", HYPERNYM:"material" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"95c4-ec5e-bce9-afd8", HYPONYM: "metal", HYPERNYM: "material"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"95c4-ec5e-bce9-afd8", HYPONYM: "metal", HYPERNYM: "material"]
+
+	// CENTRAL         IFTHEN: if an object is made of a material then that object has the properties of that material     (1e4c-46e8-996c-f2f7) [ THING:"object", OBJECT_PROPERTY1:"make of material", ACTOR_AGENT_PROCESS2:"that object", OBJECT_PROPERTY3:"property of material" ]
+	//row autoRow6 = [UUID:"1e4c-46e8-996c-f2f7", THING: "object", OBJECT_PROPERTY1: "make of material", ACTOR_AGENT_PROCESS2: "that object", OBJECT_PROPERTY3: "property of material"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"1e4c-46e8-996c-f2f7", THING: "object", OBJECT_PROPERTY1: "make of material", ACTOR_AGENT_PROCESS2: "that object", OBJECT_PROPERTY3: "property of material"]
+
+	// CENTRAL         PROP-CONDUCTIVITY: metal is a thermal ; thermal energy conductor     (0439-8c06-da63-6721) [ OBJECT_AGENT:"metal", KIND_OF_CONDUCTIVITY:"thermal;thermal energy", CONDUCTOR_INSULATOR:"conduct" ]
+	//row autoRow7 = [UUID:"0439-8c06-da63-6721", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "thermal energy", CONDUCTOR_INSULATOR: "conduct"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"0439-8c06-da63-6721", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "thermal energy", CONDUCTOR_INSULATOR: "conduct"]
+
+	// CENTRAL         MADEOF: objects are made of materials ; substances ; matter     (80a3-454d-e8e0-3de2) [ OBJECT:"object", MATERIAL:"material;substance;matt" ]
+	//row autoRow8 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"]
+
+	// CENTRAL         ACTION: a magnet attracts magnetic metals ; ferromagnetic metals through magnetism     (178a-9dd1-8569-86f1) [ AGENT_OBJECT:"magnet", ACTION2:"attract", OBJECT_PROPERTY:"magnetic metal;ferromagnetic metal", HOW:"magnetism" ]
+	//row autoRow9 = [UUID:"178a-9dd1-8569-86f1", AGENT_OBJECT: "magnet", ACTION2: "attract", OBJECT_PROPERTY: "magnetic metal", HOW: "magnetism"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"178a-9dd1-8569-86f1", AGENT_OBJECT: "magnet", ACTION2: "attract", OBJECT_PROPERTY: "magnetic metal", HOW: "magnetism"]
+
+	// CENTRAL         PROP-GENERIC: magnetism is a property of materials ; objects and includes ordered values of nonmagnetic ; magnetic     (4a27-3046-0e5d-9891) [ X:"magnetism", Y:"material;object", ORDERED_UNORDERED:"order", VALUES:"nonmagnetic;magnetic" ]
+	//  Notes: magnetism as property
+	//row autoRow10 = [UUID:"4a27-3046-0e5d-9891", X: "magnetism", Y: "material", ORDERED_UNORDERED: "order", VALUES: "nonmagnetic"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"4a27-3046-0e5d-9891", X: "magnetism", Y: "material", ORDERED_UNORDERED: "order", VALUES: "nonmagnetic"]
+
+	// CENTRAL         PROP-MAGNETISM: soft iron ; iron is always ferromagnetic ; magnetic     (8e64-7c6e-2572-2438) [ MATERIAL:"soft iron;iron", QUALIFIER:"always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC:"ferromagnetic;magnetic" ]
+	//  Notes: magnetic property
+	//row autoRow11 = [UUID:"8e64-7c6e-2572-2438", MATERIAL: "soft iron", QUALIFIER: "always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC: "ferromagnetic"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"8e64-7c6e-2572-2438", MATERIAL: "soft iron", QUALIFIER: "always", MAGNETIC_NONMAGNETIC_FERROMAGNETIC: "ferromagnetic"]
+
+	// CENTRAL         TRANSFER: a thermal energy conductor transfers heat from warmer objects ; hotter objects to cooler objects     (3dcc-05e2-48cc-db62) [ ACTOR_WHO:"thermal energy conduct", VERB:"transfer", WHAT:"heat", SOURCE:"warm object;hot object", DESTINATION:"cool object" ]
+	//row autoRow12 = [UUID:"3dcc-05e2-48cc-db62", ACTOR_WHO: "thermal energy conduct", VERB: "transfer", WHAT: "heat", SOURCE: "warm object", DESTINATION: "cool object"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"3dcc-05e2-48cc-db62", ACTOR_WHO: "thermal energy conduct", VERB: "transfer", WHAT: "heat", SOURCE: "warm object", DESTINATION: "cool object"]
+
+	// CENTRAL         INSTANCES: a metal is usually a solid at room temperature     (6b13-b027-dc64-b855) [ INSTANCE:"metal", QUANTIFIER:"usually", CLASS:"solid", SCOPE:"at room temperature" ]
+	//row autoRow13 = [UUID:"6b13-b027-dc64-b855", INSTANCE: "metal", QUANTIFIER: "usually", CLASS: "solid", SCOPE: "at room temperature"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"6b13-b027-dc64-b855", INSTANCE: "metal", QUANTIFIER: "usually", CLASS: "solid", SCOPE: "at room temperature"]
+
+	// CENTRAL         KINDOF: conductivity is a kind of physical property     (c41d-9ce9-3d44-e24a) [ HYPONYM:"conduct", SCOPE1:"physical", HYPERNYM:"property" ]
+	//  Notes: conductivity
+	//row autoRow14 = [UUID:"c41d-9ce9-3d44-e24a", HYPONYM: "conduct", SCOPE1: "physical", HYPERNYM: "property"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"c41d-9ce9-3d44-e24a", HYPONYM: "conduct", SCOPE1: "physical", HYPERNYM: "property"]
+
+	// CENTRAL        (OPTIONAL) CONTAINS: ferrous metals contain iron     (7114-deda-e0a0-d3e9) [ ADJ:"ferrous", OBJECT_AGENT:"metal", WHAT_IT_CONTAINS:"iron" ]
+	//row *autoRow15 = [UUID:"7114-deda-e0a0-d3e9", ADJ: "ferrous", OBJECT_AGENT: "metal", WHAT_IT_CONTAINS: "iron"] //OVER-CONSTR.
+	row *autoRow15 = [UUID:"7114-deda-e0a0-d3e9", ADJ: "ferrous", OBJECT_AGENT: "metal", WHAT_IT_CONTAINS: "iron"]
+
+	// CENTRAL         ACTION: iron in contact with water and oxygen will rust     (6d3e-e79a-9d08-519b) [ AGENT_OBJECT:"iron", SCOPE1:"in contact with water oxygen", ACTION2:"rust" ]
+	//  Notes: chemical property
+	//row autoRow16 = [UUID:"6d3e-e79a-9d08-519b", AGENT_OBJECT: "iron", SCOPE1: "in contact with water oxygen", ACTION2: "rust"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"6d3e-e79a-9d08-519b", AGENT_OBJECT: "iron", SCOPE1: "in contact with water oxygen", ACTION2: "rust"]
+
+	// CENTRAL         PROP-GENERIC: state of matter is a property of matter and includes ordered values of solid ; liquid ; gas     (c1df-9444-188f-6d1a) [ X:"state of matt", Y:"matt", ORDERED_UNORDERED:"order", VALUES:"solid;liquid;gas" ]
+	//  Notes: SOM as property
+	//row autoRow17 = [UUID:"c1df-9444-188f-6d1a", X: "state of matt", Y: "matt", ORDERED_UNORDERED: "order", VALUES: "solid"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"c1df-9444-188f-6d1a", X: "state of matt", Y: "matt", ORDERED_UNORDERED: "order", VALUES: "solid"]
+
+	// CENTRAL        (OPTIONAL) EXAMPLES: An example of using metal is a construction crew building an iron bridge     (9692-a5e0-7f32-3858) [ VERB1:"use", AGENT_OBJECT1:"metal", AGENT_OBJECT2:"construction crow", VERB2:"build", AGENT_OBJECT3:"iron bridge" ]
+	//  Notes: usage of metal
+	//row *autoRow18 = [UUID:"9692-a5e0-7f32-3858", VERB1: "use", AGENT_OBJECT1: "metal", AGENT_OBJECT2: "construction crow", VERB2: "build", AGENT_OBJECT3: "iron bridge"] //OVER-CONSTR.
+	row *autoRow18 = [UUID:"9692-a5e0-7f32-3858", VERB1: "use", AGENT_OBJECT1: "metal", AGENT_OBJECT2: "construction crow", VERB2: "build", AGENT_OBJECT3: "iron bridge"]
+
+	// CENTRAL         CAUSE: iron element in soil causes soil to be red     (11bd-5e56-8129-a9e2) [ CONDITION_AGENT_OBJECT:"iron element", SCOPE1:"in soil", RESULT_AGENT:"soil", RESULT_VERB:"be red" ]
+	//  Notes: iron color property
+	//row autoRow19 = [UUID:"11bd-5e56-8129-a9e2", CONDITION_AGENT_OBJECT: "iron element", SCOPE1: "in soil", RESULT_AGENT: "soil", RESULT_VERB: "be red"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"11bd-5e56-8129-a9e2", CONDITION_AGENT_OBJECT: "iron element", SCOPE1: "in soil", RESULT_AGENT: "soil", RESULT_VERB: "be red"]
+
+	// LEXGLUE         SYNONYMY: material means substance     (efac-0ec0-58dc-8f9e) [ X1:"material", X2:"substance" ]
+	//row autoRow20 = [UUID:"efac-0ec0-58dc-8f9e", X1: "material", X2: "substance"] //OVER-CONSTR.
+	row autoRow20 = [UUID:"efac-0ec0-58dc-8f9e", X1: "material", X2: "substance"]
+
+	// LEXGLUE         SYNONYMY: physical state means state of matter     (fb57-e33b-b44f-8545) [ X1:"physical state", X2:"state of matt" ]
+	//row autoRow21 = [UUID:"fb57-e33b-b44f-8545", X1: "physical state", X2: "state of matt"] //OVER-CONSTR.
+	row autoRow21 = [UUID:"fb57-e33b-b44f-8545", X1: "physical state", X2: "state of matt"]
+
+endinferencepattern

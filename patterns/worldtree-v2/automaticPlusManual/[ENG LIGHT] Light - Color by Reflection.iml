@@ -1,0 +1,54 @@
+// Automatically converted pattern
+inferencepattern ENG_LIGHT_Light_Color_by_Reflection
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: a leaf is a kind of object     (08e0-810a-daa2-5a48) [ HYPONYM:"leaf", HYPERNYM:"object" ]
+	//        HINTROW coal is a kind of object     (5822-9815-bdf1-f406) [ HYPONYM:"coal", HYPERNYM:"object" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: <leaf_0>, HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: <leaf_0>, HYPERNYM: "object"]
+
+	// CENTRALSW       PROP-THINGS: a leaf is often green in color     (c904-3dbd-0d11-2f34) [ THING:"leaf", QUALIFIER2:"often", VALUE:"green", ATTRIBUTE:"in color" ]
+	//        HINTROW coal is black in color     (7fb2-6558-b28c-87e5) [ THING:"coal", VALUE:"black", ATTRIBUTE:"in color" ]
+	//row autoRow1 = [TABLE:"PROP-THINGS", THING: <leaf_0>, VALUE: <green_1>, ATTRIBUTE: "in color"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-THINGS", THING: <leaf_0>, VALUE: <green_1>, ATTRIBUTE: "in color"]
+
+	// CENTRALSW       KINDOF: green is a kind of color     (8f8e-37fa-0093-b7ef) [ HYPONYM:"green", HYPERNYM:"color" ]
+	//        HINTROW black is a kind of color     (7892-f43a-8f12-2a8d) [ HYPONYM:"black", HYPERNYM:"color" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <green_1>, HYPERNYM: "color"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <green_1>, HYPERNYM: "color"]
+
+	// GROUNDING       ACTION: a blue object reflects only blue light     (c097-1dcb-a31f-8800) [ ADJ:"blue", AGENT_OBJECT:"object", ACTION2:"reflect", OBJECT_PROPERTY:"only blue light" ]
+	//row autoRow3 = [TABLE:"ACTION", ADJ: "blue", AGENT_OBJECT: "object", ACTION2: "reflect", OBJECT_PROPERTY: "only blue light"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"ACTION", ADJ: "blue", AGENT_OBJECT: "object", ACTION2: "reflect", OBJECT_PROPERTY: "only blue light"]
+
+	// CENTRAL         IFTHEN: if an object reflects a light of a certain color then the object appears to be that color     (255c-ea3b-7584-7dc9) [ THING:"object", ACTION1:"reflect", OBJECT_PATIENT1:"light", OBJECT_PROPERTY1:"of certain color", ACTOR_AGENT_PROCESS2:"object", ACTION3:"be", ADJ_QUANTIFIER3:"that color" ]
+	//row autoRow4 = [UUID:"255c-ea3b-7584-7dc9", THING: "object", ACTION1: "reflect", OBJECT_PATIENT1: "light", OBJECT_PROPERTY1: "of certain color", ACTOR_AGENT_PROCESS2: "object", ACTION3: "be", ADJ_QUANTIFIER3: "that color"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"255c-ea3b-7584-7dc9", THING: "object", ACTION1: "reflect", OBJECT_PATIENT1: "light", OBJECT_PROPERTY1: "of certain color", ACTOR_AGENT_PROCESS2: "object", ACTION3: "be", ADJ_QUANTIFIER3: "that color"]
+
+	// CENTRAL         KINDOF: sunlight is a kind of light     (49dc-4526-46f9-5b32) [ HYPONYM:"sunlight", HYPERNYM:"light" ]
+	//row autoRow5 = [UUID:"49dc-4526-46f9-5b32", HYPONYM: "sunlight", HYPERNYM: "light"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"49dc-4526-46f9-5b32", HYPONYM: "sunlight", HYPERNYM: "light"]
+
+	// CENTRAL         CAUSE: light reflecting off of an object causes that object to be visible to the observer     (6315-d70b-bc57-16c8) [ CONDITION_AGENT_OBJECT:"light", CONDITION_VERB:"reflect", CONDITION_PATIENT:"off of object", RESULT_AGENT:"that object", RESULT_VERB:"be visible", RESULT_PATIENT:"observer" ]
+	//row autoRow6 = [UUID:"6315-d70b-bc57-16c8", CONDITION_AGENT_OBJECT: "light", CONDITION_VERB: "reflect", CONDITION_PATIENT: "off of object", RESULT_AGENT: "that object", RESULT_VERB: "be visible", RESULT_PATIENT: "observer"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"6315-d70b-bc57-16c8", CONDITION_AGENT_OBJECT: "light", CONDITION_VERB: "reflect", CONDITION_PATIENT: "off of object", RESULT_AGENT: "that object", RESULT_VERB: "be visible", RESULT_PATIENT: "observer"]
+
+	// CENTRAL         AFFORDANCES: the color of an object can be discovered by looking at that object     (a10f-b463-32a7-a229) [ ACTOR_THING:"color", PROPERTY_OBJECT:"of object", VERB:"discover", BY_THROUGH_HOW:"look at object" ]
+	//row autoRow7 = [UUID:"a10f-b463-32a7-a229", ACTOR_THING: "color", PROPERTY_OBJECT: "of object", VERB: "discover", BY_THROUGH_HOW: "look at object"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"a10f-b463-32a7-a229", ACTOR_THING: "color", PROPERTY_OBJECT: "of object", VERB: "discover", BY_THROUGH_HOW: "look at object"]
+
+	// LEXGLUE         SYNONYMY: visible means able to be seen     (be45-3cb8-edbc-dd56) [ X1:"visible", ACTION2:"able be see" ]
+	//row autoRow8 = [UUID:"be45-3cb8-edbc-dd56", X1: "visible", ACTION2: "able be see"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"be45-3cb8-edbc-dd56", X1: "visible", ACTION2: "able be see"]
+
+	// LEXGLUE         SYNONYMY: to see means to look     (faab-3e71-cd3d-575c) [ ACTION1:"see", ACTION2:"look" ]
+	//row autoRow9 = [UUID:"faab-3e71-cd3d-575c", ACTION1: "see", ACTION2: "look"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"faab-3e71-cd3d-575c", ACTION1: "see", ACTION2: "look"]
+
+endinferencepattern

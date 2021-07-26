@@ -1,0 +1,58 @@
+// Automatically converted pattern
+inferencepattern LIFE_CONTL_Food_for_Repair_and_Growth
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//        HINTROW a cat is a kind of animal     (1700-a363-df25-ad34) [ HYPONYM:"cat", HYPERNYM:"animal" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// CENTRAL         KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow1 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"]
+
+	// CENTRAL         SOURCEOF: food is a source of energy for animals ; plants     (5753-2812-04c2-af70) [ AGENT:"food", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"energy", AGENT_IT_PROVIDES_THING_TO:"animal;plant" ]
+	//row autoRow2 = [UUID:"5753-2812-04c2-af70", AGENT: "food", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "animal"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"5753-2812-04c2-af70", AGENT: "food", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "animal"]
+
+	// CENTRAL         USEDFOR: eating ; taking in food is used to get nutrients ; energy by animals ; living things     (4842-3518-d7ab-f670) [ ACTION:"eat;take", AGENT_OBJECT:"food", FOR_PURPOSE:"get", PATIENT:"nutrient;energy", AGENT_THING_WHO_USES:"animal;live thing" ]
+	//row autoRow3 = [UUID:"4842-3518-d7ab-f670", ACTION: "eat", AGENT_OBJECT: "food", FOR_PURPOSE: "get", PATIENT: "nutrient", AGENT_THING_WHO_USES: "live thing"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"4842-3518-d7ab-f670", ACTION: "eat", AGENT_OBJECT: "food", FOR_PURPOSE: "get", PATIENT: "nutrient", AGENT_THING_WHO_USES: "live thing"]
+
+	// CENTRAL         CAUSE: cell division often causes growth ; healing     (2ae0-ee99-8973-1ce6) [ CONDITION_VERB:"cell division", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS:"often", RESULT_AGENT:"grow;heal" ]
+	//row autoRow4 = [UUID:"2ae0-ee99-8973-1ce6", CONDITION_VERB: "cell division", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "often", RESULT_AGENT: "grow"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"2ae0-ee99-8973-1ce6", CONDITION_VERB: "cell division", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "often", RESULT_AGENT: "grow"]
+
+	// CENTRAL         REQUIRES: an organism requires energy for growth ; repair     (5aba-6d6d-1c38-fe18) [ OBJECT_AGENT_PROCESS:"organism", VERB_REQUIRES:"require", OBJECT:"energy", FOR_PURPOSE:"grow;repair" ]
+	//row autoRow5 = [UUID:"5aba-6d6d-1c38-fe18", OBJECT_AGENT_PROCESS: "organism", VERB_REQUIRES: "require", OBJECT: "energy", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"5aba-6d6d-1c38-fe18", OBJECT_AGENT_PROCESS: "organism", VERB_REQUIRES: "require", OBJECT: "energy", FOR_PURPOSE: "grow"]
+
+	// CENTRAL         REQUIRES: all cells require energy     (c583-5e80-c3f0-38a9) [ OBJECT_AGENT_PROCESS:"cell", VERB_REQUIRES:"require", ACTION2:"energy" ]
+	//row autoRow6 = [UUID:"c583-5e80-c3f0-38a9", OBJECT_AGENT_PROCESS: "cell", VERB_REQUIRES: "require", ACTION2: "energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"c583-5e80-c3f0-38a9", OBJECT_AGENT_PROCESS: "cell", VERB_REQUIRES: "require", ACTION2: "energy"]
+
+	// CENTRAL         REQUIRES: repairing an organism requires cells working together     (3c06-7426-57b6-76c6) [ ACTION1:"repair", OBJECT_AGENT_PROCESS:"organism", VERB_REQUIRES:"require", ACTION2:"cell work together" ]
+	//row autoRow7 = [UUID:"3c06-7426-57b6-76c6", ACTION1: "repair", OBJECT_AGENT_PROCESS: "organism", VERB_REQUIRES: "require", ACTION2: "cell work together"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3c06-7426-57b6-76c6", ACTION1: "repair", OBJECT_AGENT_PROCESS: "organism", VERB_REQUIRES: "require", ACTION2: "cell work together"]
+
+	// LEXGLUE         SYNONYMY: an organism is a living thing     (87a0-dd02-dd6d-ee60) [ X1:"organism", X2:"live thing" ]
+	//row autoRow8 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"]
+
+	// LEXGLUE         SYNONYMY: person is synonymous with human     (9d3e-05a6-f555-db18) [ X1:"person", X2:"human" ]
+	//row autoRow9 = [UUID:"9d3e-05a6-f555-db18", X1: "person", X2: "human"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"9d3e-05a6-f555-db18", X1: "person", X2: "human"]
+
+	// LEXGLUE         SYNONYMY: to repair means to heal     (86d3-723e-62b0-6dfa) [ ACTION1:"repair", ACTION2:"heal" ]
+	//        HINTROW to repair means to fix damage     (e8ab-f168-ec58-ad28) [ ACTION1:"repair", ACTION2:"fix", Y2:"damage" ]
+	//row autoRow10 = [UUID:"86d3-723e-62b0-6dfa", ACTION1: "repair"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"86d3-723e-62b0-6dfa", ACTION1: "repair"]
+
+endinferencepattern

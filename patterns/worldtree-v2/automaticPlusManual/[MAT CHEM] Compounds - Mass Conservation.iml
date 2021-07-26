@@ -1,0 +1,33 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Compounds_Mass_Conservation
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: oxygen is a kind of element     (936b-92a1-0e96-0846) [ HYPONYM:"oxygen", HYPERNYM:"element" ]
+	//  Notes: Y column
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "oxygen", HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "oxygen", HYPERNYM: "element"]
+
+	// CENTRALSW       KINDOF: carbon is a kind of element     (2ae6-3458-f1d9-a724) [ HYPONYM:"carbon", HYPERNYM:"element" ]
+	//        HINTROW hydrogen is a kind of element     (f861-f54e-3435-b0e6) [ HYPONYM:"hydrogen", HYPERNYM:"element" ]
+	//  Notes: X column
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "element"]
+
+	// CENTRALSW       MADEOF: carbon dioxide can be made of carbon and oxygen chemically combined     (239b-02c3-400f-0319) [ OBJECT:"carbon dioxide", MATERIAL:"carbon oxygen", BY_THROUGH_HOW:"chemically combine" ]
+	//        HINTROW a hydrocarbon molecule is made of hydrogen and carbon chemically combined     (cd58-1219-7d4f-71dc) [ OBJECT:"hydrocarbon molecule", MATERIAL:"hydrogen carbon", BY_THROUGH_HOW:"chemically combine" ]
+	//        HINTROW a compound is made of two or more elements chemically combined     (6bb0-ea31-6fee-5e77) [ OBJECT:"compound", VALUE:"two much", MATERIAL:"element", BY_THROUGH_HOW:"chemically combine" ]
+	//  Notes: compound is made of X and Y
+	//row autoRow2 = [TABLE:"MADEOF", BY_THROUGH_HOW: "chemically combine"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"MADEOF", BY_THROUGH_HOW: "chemically combine"]
+
+	// CENTRAL         IFTHEN: when two or more elements ; molecules combine chemically , the mass of the product is equal to the combined masses of the elements or molecules     (1d33-044e-3b43-901c) [ ADJ_QUANTITY1:"two much", THING:"element;molecule", ACTION1:"combine chemically", ACTOR_AGENT_PROCESS2:"mass", PROPERTY_SCOPE:"of product", ADJ_QUANTIFIER3:"equal", SCOPE4:"combine mass of element molecule" ]
+	//row autoRow3 = [UUID:"1d33-044e-3b43-901c", ADJ_QUANTITY1: "two much", THING: "element", ACTION1: "combine chemically", ACTOR_AGENT_PROCESS2: "mass", PROPERTY_SCOPE: "of product", ADJ_QUANTIFIER3: "equal", SCOPE4: "combine mass of element molecule"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"1d33-044e-3b43-901c", ADJ_QUANTITY1: "two much", THING: "element", ACTION1: "combine chemically", ACTOR_AGENT_PROCESS2: "mass", PROPERTY_SCOPE: "of product", ADJ_QUANTIFIER3: "equal", SCOPE4: "combine mass of element molecule"]
+
+endinferencepattern

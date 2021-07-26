@@ -1,0 +1,100 @@
+// Automatically converted pattern
+inferencepattern LIFE_UNIMULTICELL_Cells_Volvox_vs_Paramecium_vs_Amoeba
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL        (OPTIONAL) EXAMPLES: An example of asexual reproduction is an organism creating cells identical to itself without combining genes from parent cells     (204e-415d-e74c-49d0) [ AGENT_OBJECT1:"asexual reproduce", AGENT_OBJECT2:"organism", VERB2:"create", AGENT_OBJECT3:"cell identical", SCOPE:"without combine gene from parent cell" ]
+	//row *autoRow0 = [UUID:"204e-415d-e74c-49d0", AGENT_OBJECT1: "asexual reproduce", AGENT_OBJECT2: "organism", VERB2: "create", AGENT_OBJECT3: "cell identical", SCOPE: "without combine gene from parent cell"] //OVER-CONSTR.
+	row *autoRow0 = [UUID:"204e-415d-e74c-49d0", AGENT_OBJECT1: "asexual reproduce", AGENT_OBJECT2: "organism", VERB2: "create", AGENT_OBJECT3: "cell identical", SCOPE: "without combine gene from parent cell"]
+
+	// CENTRAL         CAUSE: conjugation causes two genetically identical cells     (3f0d-9d7a-8cf7-dc1d) [ CONDITION_AGENT_OBJECT:"conjugation", RESULT_AGENT:"two genetically identical cell" ]
+	//  Notes: asexual reproduction
+	//row autoRow1 = [UUID:"3f0d-9d7a-8cf7-dc1d", CONDITION_AGENT_OBJECT: "conjugation", RESULT_AGENT: "two genetically identical cell"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"3f0d-9d7a-8cf7-dc1d", CONDITION_AGENT_OBJECT: "conjugation", RESULT_AGENT: "two genetically identical cell"]
+
+	// CENTRAL         STAGE-IN-PROCESS: fertilization is a stage in the sexual reproduction process     (7062-9b88-0291-7a17) [ STAGE:"fertilization", PROCESS:"sexual reproduce" ]
+	//row autoRow2 = [UUID:"7062-9b88-0291-7a17", STAGE: "fertilization", PROCESS: "sexual reproduce"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"7062-9b88-0291-7a17", STAGE: "fertilization", PROCESS: "sexual reproduce"]
+
+	// CENTRAL         DURING: a zygote is formed immediately after fertilization     (2b8b-2802-4699-c538) [ AGENT:"zygote", EVENT:"be form", TIME:"immediately after fertilization" ]
+	//row autoRow3 = [UUID:"2b8b-2802-4699-c538", AGENT: "zygote", EVENT: "be form", TIME: "immediately after fertilization"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"2b8b-2802-4699-c538", AGENT: "zygote", EVENT: "be form", TIME: "immediately after fertilization"]
+
+	// CENTRAL         KINDOF: a zygote is a kind of fertilized ovum ; egg     (b5d0-6bc6-51de-d3a9) [ HYPONYM:"zygote", SCOPE1:"fertilize", HYPERNYM:"ovum;egg" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"b5d0-6bc6-51de-d3a9", HYPONYM: "zygote", SCOPE1: "fertilize", HYPERNYM: "ovum"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"b5d0-6bc6-51de-d3a9", HYPONYM: "zygote", SCOPE1: "fertilize", HYPERNYM: "ovum"]
+
+	// CENTRAL         PROP-THINGS: paramecium has an organelle for movement     (32ae-6ec9-2651-0868) [ THING:"paramecium", ATTRIBUTE:"organelle", PURPOSE:"move" ]
+	//  Notes: property of paramecium
+	//row autoRow5 = [UUID:"32ae-6ec9-2651-0868", THING: "paramecium", ATTRIBUTE: "organelle", PURPOSE: "move"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"32ae-6ec9-2651-0868", THING: "paramecium", ATTRIBUTE: "organelle", PURPOSE: "move"]
+
+	// CENTRAL         PROP-THINGS: volvox has an organelle for movement     (c861-bb6c-ea7f-208b) [ THING:"volvox", ATTRIBUTE:"organelle", PURPOSE:"move" ]
+	//  Notes: property of volvox
+	//row autoRow6 = [UUID:"c861-bb6c-ea7f-208b", THING: "volvox", ATTRIBUTE: "organelle", PURPOSE: "move"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"c861-bb6c-ea7f-208b", THING: "volvox", ATTRIBUTE: "organelle", PURPOSE: "move"]
+
+	// CENTRAL         PROP-THINGS: volvox is a bi-flagellate autotroph     (ad5a-6138-06c3-b5ed) [ THING:"volvox", VALUE:"bi-flagellate;bus flagellate", ATTRIBUTE:"autotroph" ]
+	//  Notes: a8f0-25f9-4eb2-8fba->ad5a-6138-06c3-b5edproperty of volvox
+	//row autoRow7 = [UUID:"ad5a-6138-06c3-b5ed", THING: "volvox", VALUE: "bus flagellate", ATTRIBUTE: "autotroph"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"ad5a-6138-06c3-b5ed", THING: "volvox", VALUE: "bus flagellate", ATTRIBUTE: "autotroph"]
+
+	// CENTRAL         KINDOF: volvox is a kind of protist     (8e5d-46f8-0a0f-442a) [ HYPONYM:"volvox", HYPERNYM:"protist" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"8e5d-46f8-0a0f-442a", HYPONYM: "volvox", HYPERNYM: "protist"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"8e5d-46f8-0a0f-442a", HYPONYM: "volvox", HYPERNYM: "protist"]
+
+	// CENTRAL         ACTION: volvox reproduces sexually     (890c-5c3f-e3c7-8727) [ AGENT_OBJECT:"volvox", ACTION2:"reproduce", OBJECT_PROPERTY:"sexually" ]
+	//  Notes: property of volvox
+	//row autoRow9 = [UUID:"890c-5c3f-e3c7-8727", AGENT_OBJECT: "volvox", ACTION2: "reproduce", OBJECT_PROPERTY: "sexually"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"890c-5c3f-e3c7-8727", AGENT_OBJECT: "volvox", ACTION2: "reproduce", OBJECT_PROPERTY: "sexually"]
+
+	// CENTRAL         AFFORDANCES: a paramecium can conjugate     (9112-e658-dddb-1171) [ ACTOR_THING:"paramecium", VERB:"conjugate" ]
+	//  Notes: property of paramecium
+	//row autoRow10 = [UUID:"9112-e658-dddb-1171", ACTOR_THING: "paramecium", VERB: "conjugate"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"9112-e658-dddb-1171", ACTOR_THING: "paramecium", VERB: "conjugate"]
+
+	// CENTRAL         AFFORDANCES: an amoeba can change its shape     (482b-4abf-c354-5cc9) [ ACTOR_THING:"amoeba", VERB:"change", PATIENT:"shape" ]
+	//  Notes: amoeba's property
+	//row autoRow11 = [UUID:"482b-4abf-c354-5cc9", ACTOR_THING: "amoeba", VERB: "change", PATIENT: "shape"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"482b-4abf-c354-5cc9", ACTOR_THING: "amoeba", VERB: "change", PATIENT: "shape"]
+
+	// CENTRAL         AFFORDANCES: an amoeba cannot conjugate     (d334-9b9e-89f6-f4cd) [ ACTOR_THING:"amoeba", VERB:"conjugate" ]
+	//  Notes: amoeba's property
+	//row autoRow12 = [UUID:"d334-9b9e-89f6-f4cd", ACTOR_THING: "amoeba", VERB: "conjugate"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"d334-9b9e-89f6-f4cd", ACTOR_THING: "amoeba", VERB: "conjugate"]
+
+	// CENTRAL         KINDOF: an amoeba is a kind of organism     (7a25-e004-fe5d-2cb4) [ HYPONYM:"amoeba", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"7a25-e004-fe5d-2cb4", HYPONYM: "amoeba", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"7a25-e004-fe5d-2cb4", HYPONYM: "amoeba", HYPERNYM: "organism"]
+
+	// CENTRAL         AFFORDANCES: a paramecium cannot change its shape     (b8b9-ead7-5a72-0fba) [ ACTOR_THING:"paramecium", VERB:"change", PATIENT:"shape" ]
+	//  Notes: property of paramecium
+	//row autoRow14 = [UUID:"b8b9-ead7-5a72-0fba", ACTOR_THING: "paramecium", VERB: "change", PATIENT: "shape"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"b8b9-ead7-5a72-0fba", ACTOR_THING: "paramecium", VERB: "change", PATIENT: "shape"]
+
+	// CENTRAL         KINDOF: an paramecium is a kind of organism     (f2d8-55c9-8864-4498) [ HYPONYM:"paramecium", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"f2d8-55c9-8864-4498", HYPONYM: "paramecium", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"f2d8-55c9-8864-4498", HYPONYM: "paramecium", HYPERNYM: "organism"]
+
+	// CENTRAL        (OPTIONAL) SOURCEOF: sexual reproduction produces offspring with genetic material from both parents ; cells with genetic material from both parent cells     (8943-36d2-8c4d-ab9e) [ AGENT:"sexual reproduce", VERB_SOURCEOF_PROVIDE_ETC:"produce", WHAT_IT_PROVIDES:"offspring with genetic material from parent;cell with genetic material from parent cell" ]
+	//row *autoRow16 = [UUID:"8943-36d2-8c4d-ab9e", AGENT: "sexual reproduce", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "cell with genetic material from parent cell"] //OVER-CONSTR.
+	row *autoRow16 = [UUID:"8943-36d2-8c4d-ab9e", AGENT: "sexual reproduce", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "cell with genetic material from parent cell"]
+
+	// LEXGLUE         SYNONYMY: a body cell means a somatic cell     (e699-3aa0-0cda-d7c8) [ X1:"body cell", X2:"somatic cell" ]
+	//row autoRow17 = [UUID:"e699-3aa0-0cda-d7c8", X1: "body cell", X2: "somatic cell"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"e699-3aa0-0cda-d7c8", X1: "body cell", X2: "somatic cell"]
+
+	// LEXGLUE         SYNONYMY: characteristic means property     (b605-9c58-598d-817e) [ X1:"characteristic", X2:"property" ]
+	//row autoRow18 = [UUID:"b605-9c58-598d-817e", X1: "characteristic", X2: "property"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"b605-9c58-598d-817e", X1: "characteristic", X2: "property"]
+
+endinferencepattern

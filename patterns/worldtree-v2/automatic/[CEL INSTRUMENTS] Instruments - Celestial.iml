@@ -1,0 +1,45 @@
+// Automatically converted pattern
+inferencepattern CEL_INSTRUMENTS_Instruments_Celestial
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a moon is a kind of celestial object ; body     (e2ec-1655-c1fd-cb58) [ HYPONYM:"moon", SCOPE1:"celestial", HYPERNYM:"object;body" ]
+	//        HINTROW a planet is a kind of celestial object ; body     (22a2-1029-702e-a29a) [ HYPONYM:"planet", SCOPE1:"celestial", HYPERNYM:"object;body" ]
+	//        HINTROW a star is a kind of celestial object ; celestial body     (dbe8-e776-f804-99a0) [ HYPONYM:"star", HYPERNYM:"celestial object;celestial body" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "moon", SCOPE1: "celestial", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "moon", HYPERNYM: "object"]
+
+	// CENTRAL         USEDFOR: a telescope is used for observing stars ; planets ; moons ; distant objects ; the sky ; celestial objects by astronomers     (4383-694e-b4d4-cd5d) [ AGENT_OBJECT:"telescope", FOR_PURPOSE:"observe", PATIENT:"star;planet;moon;distant object;sky;celestial object", AGENT_THING_WHO_USES:"astronomer" ]
+	//row autoRow1 = [UUID:"4383-694e-b4d4-cd5d", AGENT_OBJECT: "telescope", FOR_PURPOSE: "observe", PATIENT: "distant object", AGENT_THING_WHO_USES: "astronomer"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"4383-694e-b4d4-cd5d", AGENT_OBJECT: "telescope", FOR_PURPOSE: "observe", PATIENT: "distant object", AGENT_THING_WHO_USES: "astronomer"]
+
+	// CENTRAL         KINDOF: a telescope is a kind of optical instrument for observing celestial objects ; observing the sky     (55a5-70f3-961c-a142) [ HYPONYM:"telescope", SCOPE1:"optical", HYPERNYM:"instrument", FOR_PURPOSE:"observe celestial object;observe sky" ]
+	//row autoRow2 = [UUID:"55a5-70f3-961c-a142", HYPONYM: "telescope", SCOPE1: "optical", HYPERNYM: "instrument", FOR_PURPOSE: "observe celestial object"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"55a5-70f3-961c-a142", HYPONYM: "telescope", SCOPE1: "optical", HYPERNYM: "instrument", FOR_PURPOSE: "observe celestial object"]
+
+	// CENTRAL        (OPTIONAL) ACTION: the Milky Way galaxy appears as a glowing band across the night sky     (2544-b803-8031-cad3) [ ADJ:"milky way", AGENT_OBJECT:"galaxy", ACTION2:"appear", SCOPE2:"a glow band across night sky" ]
+	//  Notes: specific
+	//row *autoRow3 = [UUID:"2544-b803-8031-cad3", ADJ: "milky way", AGENT_OBJECT: "galaxy", ACTION2: "appear", SCOPE2: "a glow band across night sky"] //OVER-CONSTR.
+	row *autoRow3 = [UUID:"2544-b803-8031-cad3", ADJ: "milky way", AGENT_OBJECT: "galaxy", ACTION2: "appear", SCOPE2: "a glow band across night sky"]
+
+	// CENTRAL         PROP-REL-DIST: the stars in the night sky are very far away from the Earth     (c14b-4971-7d32-d1d3) [ OBJECT_AGENT:"star", WHERE:"in night sky", RELATIVE_DISTANCE:"very far away", TO_REFERENCE_POINT:"earth" ]
+	//  Notes: n/a?
+	//row autoRow4 = [UUID:"c14b-4971-7d32-d1d3", OBJECT_AGENT: "star", WHERE: "in night sky", RELATIVE_DISTANCE: "very far away", TO_REFERENCE_POINT: "earth"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"c14b-4971-7d32-d1d3", OBJECT_AGENT: "star", WHERE: "in night sky", RELATIVE_DISTANCE: "very far away", TO_REFERENCE_POINT: "earth"]
+
+	// LEXGLUE         SYNONYMY: distant means far away     (93d3-a9a2-f9e9-5860) [ X1:"distant", X2:"far away" ]
+	//  Notes: n/a
+	//row autoRow5 = [UUID:"93d3-a9a2-f9e9-5860", X1: "distant", X2: "far away"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"93d3-a9a2-f9e9-5860", X1: "distant", X2: "far away"]
+
+	// LEXGLUE         SYNONYMY: the sky is similar to space     (dd7d-0d6d-91f5-1a83) [ X1:"sky", X2:"space" ]
+	//        HINTROW the atmosphere is similar to the sky     (0e85-1362-e513-8912) [ X1:"atmosphere", X2:"sky" ]
+	//row autoRow6 = [UUID:"dd7d-0d6d-91f5-1a83", X1: "sky"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"dd7d-0d6d-91f5-1a83", X1: "sky"]
+
+endinferencepattern

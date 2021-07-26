@@ -1,0 +1,353 @@
+{"patternMatches": [
+{
+	"patternName":"LIFE_INTERDEP_Carnivores",
+	"matches":[
+		{
+		"uuids": ["1846-e872-e856-3ce3","efb4-baee-b1ad-1184","133f-8977-dfd9-c969","9526-aecc-22b2-4b6a","4842-3518-d7ab-f670","87bf-0489-981e-be99","c709-83dd-975c-b05d","20a3-dcb5-8ce4-ae5c","f2b6-e2f5-8939-94ae","349d-dd0e-2deb-7b57"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1846-e872-e856-3ce3", "rowText": "an eagle is a kind of carnivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "efb4-baee-b1ad-1184", "rowText": "eagles eat fish", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "133f-8977-dfd9-c969", "rowText": "an eagle is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9526-aecc-22b2-4b6a", "rowText": "a fish is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4842-3518-d7ab-f670", "rowText": "eating ; taking in food is used to get nutrients ; energy by animals ; living things", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "87bf-0489-981e-be99", "rowText": "if two or more carnivores share the same ecosystem then those carnivores may share the same food source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "20a3-dcb5-8ce4-ae5c", "rowText": "predators ; carnivores ; omnivores eat other animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2b6-e2f5-8939-94ae", "rowText": "carnivores only eat animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "349d-dd0e-2deb-7b57", "rowText": "food web is synonymous with food chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"eagle_0", "value":"eagle" },
+			{ "name":"fish_1", "value":"fish" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"eagle_0", "value":"eagle" },
+			{ "name":"fish_1", "value":"fish" }
+		]
+		},
+		{
+		"uuids": ["1846-e872-e856-3ce3","5ac6-9dc1-9a19-3eaa","133f-8977-dfd9-c969","44d7-fef6-90ef-75aa","4842-3518-d7ab-f670","87bf-0489-981e-be99","c709-83dd-975c-b05d","20a3-dcb5-8ce4-ae5c","f2b6-e2f5-8939-94ae","349d-dd0e-2deb-7b57"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1846-e872-e856-3ce3", "rowText": "an eagle is a kind of carnivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5ac6-9dc1-9a19-3eaa", "rowText": "eagles eat rabbits", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "133f-8977-dfd9-c969", "rowText": "an eagle is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "44d7-fef6-90ef-75aa", "rowText": "a rabbit is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4842-3518-d7ab-f670", "rowText": "eating ; taking in food is used to get nutrients ; energy by animals ; living things", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "87bf-0489-981e-be99", "rowText": "if two or more carnivores share the same ecosystem then those carnivores may share the same food source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "20a3-dcb5-8ce4-ae5c", "rowText": "predators ; carnivores ; omnivores eat other animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2b6-e2f5-8939-94ae", "rowText": "carnivores only eat animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "349d-dd0e-2deb-7b57", "rowText": "food web is synonymous with food chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"eagle_0", "value":"eagle" },
+			{ "name":"fish_1", "value":"rabbit" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"eagle_0", "value":"eagle" },
+			{ "name":"fish_1", "value":"rabbits" }
+		]
+		},
+		{
+		"uuids": ["1846-e872-e856-3ce3","d28f-0727-460f-5ab6","133f-8977-dfd9-c969","33a0-5ab1-14b3-6bf8","4842-3518-d7ab-f670","87bf-0489-981e-be99","c709-83dd-975c-b05d","20a3-dcb5-8ce4-ae5c","f2b6-e2f5-8939-94ae","349d-dd0e-2deb-7b57"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1846-e872-e856-3ce3", "rowText": "an eagle is a kind of carnivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d28f-0727-460f-5ab6", "rowText": "hawks ; eagles eat snakes ; lizards ; rats ; rabbits ; mice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "133f-8977-dfd9-c969", "rowText": "an eagle is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "33a0-5ab1-14b3-6bf8", "rowText": "a lizard is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4842-3518-d7ab-f670", "rowText": "eating ; taking in food is used to get nutrients ; energy by animals ; living things", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "87bf-0489-981e-be99", "rowText": "if two or more carnivores share the same ecosystem then those carnivores may share the same food source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "20a3-dcb5-8ce4-ae5c", "rowText": "predators ; carnivores ; omnivores eat other animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2b6-e2f5-8939-94ae", "rowText": "carnivores only eat animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "349d-dd0e-2deb-7b57", "rowText": "food web is synonymous with food chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"eagle_0", "value":"eagle" },
+			{ "name":"fish_1", "value":"lizard" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"eagle_0", "value":"eagle" },
+			{ "name":"fish_1", "value":"lizards" }
+		]
+		},
+		{
+		"uuids": ["1846-e872-e856-3ce3","d28f-0727-460f-5ab6","133f-8977-dfd9-c969","782f-7770-b8be-f40e","4842-3518-d7ab-f670","87bf-0489-981e-be99","c709-83dd-975c-b05d","20a3-dcb5-8ce4-ae5c","f2b6-e2f5-8939-94ae","349d-dd0e-2deb-7b57"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1846-e872-e856-3ce3", "rowText": "an eagle is a kind of carnivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d28f-0727-460f-5ab6", "rowText": "hawks ; eagles eat snakes ; lizards ; rats ; rabbits ; mice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "133f-8977-dfd9-c969", "rowText": "an eagle is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "782f-7770-b8be-f40e", "rowText": "a mouse is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4842-3518-d7ab-f670", "rowText": "eating ; taking in food is used to get nutrients ; energy by animals ; living things", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "87bf-0489-981e-be99", "rowText": "if two or more carnivores share the same ecosystem then those carnivores may share the same food source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "20a3-dcb5-8ce4-ae5c", "rowText": "predators ; carnivores ; omnivores eat other animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2b6-e2f5-8939-94ae", "rowText": "carnivores only eat animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "349d-dd0e-2deb-7b57", "rowText": "food web is synonymous with food chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"eagle_0", "value":"eagle" },
+			{ "name":"fish_1", "value":"mouse" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"eagle_0", "value":"eagle" },
+			{ "name":"fish_1", "value":"mice" }
+		]
+		},
+		{
+		"uuids": ["1846-e872-e856-3ce3","d28f-0727-460f-5ab6","133f-8977-dfd9-c969","44d7-fef6-90ef-75aa","4842-3518-d7ab-f670","87bf-0489-981e-be99","c709-83dd-975c-b05d","20a3-dcb5-8ce4-ae5c","f2b6-e2f5-8939-94ae","349d-dd0e-2deb-7b57"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1846-e872-e856-3ce3", "rowText": "an eagle is a kind of carnivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d28f-0727-460f-5ab6", "rowText": "hawks ; eagles eat snakes ; lizards ; rats ; rabbits ; mice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "133f-8977-dfd9-c969", "rowText": "an eagle is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "44d7-fef6-90ef-75aa", "rowText": "a rabbit is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4842-3518-d7ab-f670", "rowText": "eating ; taking in food is used to get nutrients ; energy by animals ; living things", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "87bf-0489-981e-be99", "rowText": "if two or more carnivores share the same ecosystem then those carnivores may share the same food source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "20a3-dcb5-8ce4-ae5c", "rowText": "predators ; carnivores ; omnivores eat other animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2b6-e2f5-8939-94ae", "rowText": "carnivores only eat animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "349d-dd0e-2deb-7b57", "rowText": "food web is synonymous with food chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"eagle_0", "value":"eagle" },
+			{ "name":"fish_1", "value":"rabbit" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"eagle_0", "value":"eagle" },
+			{ "name":"fish_1", "value":"rabbits" }
+		]
+		},
+		{
+		"uuids": ["1846-e872-e856-3ce3","d28f-0727-460f-5ab6","133f-8977-dfd9-c969","6188-73e6-6db4-bfea","4842-3518-d7ab-f670","87bf-0489-981e-be99","c709-83dd-975c-b05d","20a3-dcb5-8ce4-ae5c","f2b6-e2f5-8939-94ae","349d-dd0e-2deb-7b57"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1846-e872-e856-3ce3", "rowText": "an eagle is a kind of carnivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d28f-0727-460f-5ab6", "rowText": "hawks ; eagles eat snakes ; lizards ; rats ; rabbits ; mice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "133f-8977-dfd9-c969", "rowText": "an eagle is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "6188-73e6-6db4-bfea", "rowText": "a snake is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4842-3518-d7ab-f670", "rowText": "eating ; taking in food is used to get nutrients ; energy by animals ; living things", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "87bf-0489-981e-be99", "rowText": "if two or more carnivores share the same ecosystem then those carnivores may share the same food source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "20a3-dcb5-8ce4-ae5c", "rowText": "predators ; carnivores ; omnivores eat other animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2b6-e2f5-8939-94ae", "rowText": "carnivores only eat animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "349d-dd0e-2deb-7b57", "rowText": "food web is synonymous with food chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"eagle_0", "value":"eagle" },
+			{ "name":"fish_1", "value":"snake" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"eagle_0", "value":"eagle" },
+			{ "name":"fish_1", "value":"snakes" }
+		]
+		},
+		{
+		"uuids": ["eeda-6609-161c-9926","aa17-e87c-2259-5f04","5086-b21f-9f0a-e67d","e26b-b21d-d4a3-25fc","4842-3518-d7ab-f670","87bf-0489-981e-be99","c709-83dd-975c-b05d","20a3-dcb5-8ce4-ae5c","f2b6-e2f5-8939-94ae","349d-dd0e-2deb-7b57"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eeda-6609-161c-9926", "rowText": "an alligator is a kind of carnivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "aa17-e87c-2259-5f04", "rowText": "alligators eat frogs ; turtles ; fish ; mice ; birds", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "5086-b21f-9f0a-e67d", "rowText": "an alligator is a kind of aquatic animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "e26b-b21d-d4a3-25fc", "rowText": "a bird is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4842-3518-d7ab-f670", "rowText": "eating ; taking in food is used to get nutrients ; energy by animals ; living things", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "87bf-0489-981e-be99", "rowText": "if two or more carnivores share the same ecosystem then those carnivores may share the same food source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "20a3-dcb5-8ce4-ae5c", "rowText": "predators ; carnivores ; omnivores eat other animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2b6-e2f5-8939-94ae", "rowText": "carnivores only eat animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "349d-dd0e-2deb-7b57", "rowText": "food web is synonymous with food chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"eagle_0", "value":"alligator" },
+			{ "name":"fish_1", "value":"bird" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"eagle_0", "value":"alligator" },
+			{ "name":"fish_1", "value":"birds" }
+		]
+		},
+		{
+		"uuids": ["eeda-6609-161c-9926","aa17-e87c-2259-5f04","5086-b21f-9f0a-e67d","9526-aecc-22b2-4b6a","4842-3518-d7ab-f670","87bf-0489-981e-be99","c709-83dd-975c-b05d","20a3-dcb5-8ce4-ae5c","f2b6-e2f5-8939-94ae","349d-dd0e-2deb-7b57"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eeda-6609-161c-9926", "rowText": "an alligator is a kind of carnivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "aa17-e87c-2259-5f04", "rowText": "alligators eat frogs ; turtles ; fish ; mice ; birds", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "5086-b21f-9f0a-e67d", "rowText": "an alligator is a kind of aquatic animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9526-aecc-22b2-4b6a", "rowText": "a fish is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4842-3518-d7ab-f670", "rowText": "eating ; taking in food is used to get nutrients ; energy by animals ; living things", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "87bf-0489-981e-be99", "rowText": "if two or more carnivores share the same ecosystem then those carnivores may share the same food source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "20a3-dcb5-8ce4-ae5c", "rowText": "predators ; carnivores ; omnivores eat other animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2b6-e2f5-8939-94ae", "rowText": "carnivores only eat animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "349d-dd0e-2deb-7b57", "rowText": "food web is synonymous with food chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"eagle_0", "value":"alligator" },
+			{ "name":"fish_1", "value":"fish" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"eagle_0", "value":"alligator" },
+			{ "name":"fish_1", "value":"fish" }
+		]
+		},
+		{
+		"uuids": ["eeda-6609-161c-9926","aa17-e87c-2259-5f04","5086-b21f-9f0a-e67d","9e89-73fd-66d5-18e2","4842-3518-d7ab-f670","87bf-0489-981e-be99","c709-83dd-975c-b05d","20a3-dcb5-8ce4-ae5c","f2b6-e2f5-8939-94ae","349d-dd0e-2deb-7b57"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eeda-6609-161c-9926", "rowText": "an alligator is a kind of carnivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "aa17-e87c-2259-5f04", "rowText": "alligators eat frogs ; turtles ; fish ; mice ; birds", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "5086-b21f-9f0a-e67d", "rowText": "an alligator is a kind of aquatic animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "9e89-73fd-66d5-18e2", "rowText": "a frog is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4842-3518-d7ab-f670", "rowText": "eating ; taking in food is used to get nutrients ; energy by animals ; living things", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "87bf-0489-981e-be99", "rowText": "if two or more carnivores share the same ecosystem then those carnivores may share the same food source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "20a3-dcb5-8ce4-ae5c", "rowText": "predators ; carnivores ; omnivores eat other animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2b6-e2f5-8939-94ae", "rowText": "carnivores only eat animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "349d-dd0e-2deb-7b57", "rowText": "food web is synonymous with food chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"eagle_0", "value":"alligator" },
+			{ "name":"fish_1", "value":"frog" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"eagle_0", "value":"alligator" },
+			{ "name":"fish_1", "value":"frogs" }
+		]
+		},
+		{
+		"uuids": ["eeda-6609-161c-9926","aa17-e87c-2259-5f04","5086-b21f-9f0a-e67d","782f-7770-b8be-f40e","4842-3518-d7ab-f670","87bf-0489-981e-be99","c709-83dd-975c-b05d","20a3-dcb5-8ce4-ae5c","f2b6-e2f5-8939-94ae","349d-dd0e-2deb-7b57"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eeda-6609-161c-9926", "rowText": "an alligator is a kind of carnivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "aa17-e87c-2259-5f04", "rowText": "alligators eat frogs ; turtles ; fish ; mice ; birds", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "5086-b21f-9f0a-e67d", "rowText": "an alligator is a kind of aquatic animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "782f-7770-b8be-f40e", "rowText": "a mouse is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4842-3518-d7ab-f670", "rowText": "eating ; taking in food is used to get nutrients ; energy by animals ; living things", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "87bf-0489-981e-be99", "rowText": "if two or more carnivores share the same ecosystem then those carnivores may share the same food source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "20a3-dcb5-8ce4-ae5c", "rowText": "predators ; carnivores ; omnivores eat other animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2b6-e2f5-8939-94ae", "rowText": "carnivores only eat animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "349d-dd0e-2deb-7b57", "rowText": "food web is synonymous with food chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"eagle_0", "value":"alligator" },
+			{ "name":"fish_1", "value":"mouse" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"eagle_0", "value":"alligator" },
+			{ "name":"fish_1", "value":"mice" }
+		]
+		},
+		{
+		"uuids": ["eeda-6609-161c-9926","aa17-e87c-2259-5f04","5086-b21f-9f0a-e67d","964f-3c67-13dd-a443","4842-3518-d7ab-f670","87bf-0489-981e-be99","c709-83dd-975c-b05d","20a3-dcb5-8ce4-ae5c","f2b6-e2f5-8939-94ae","349d-dd0e-2deb-7b57"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eeda-6609-161c-9926", "rowText": "an alligator is a kind of carnivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "aa17-e87c-2259-5f04", "rowText": "alligators eat frogs ; turtles ; fish ; mice ; birds", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "5086-b21f-9f0a-e67d", "rowText": "an alligator is a kind of aquatic animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "964f-3c67-13dd-a443", "rowText": "a turtle is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4842-3518-d7ab-f670", "rowText": "eating ; taking in food is used to get nutrients ; energy by animals ; living things", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "87bf-0489-981e-be99", "rowText": "if two or more carnivores share the same ecosystem then those carnivores may share the same food source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "20a3-dcb5-8ce4-ae5c", "rowText": "predators ; carnivores ; omnivores eat other animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2b6-e2f5-8939-94ae", "rowText": "carnivores only eat animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "349d-dd0e-2deb-7b57", "rowText": "food web is synonymous with food chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"eagle_0", "value":"alligator" },
+			{ "name":"fish_1", "value":"turtle" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"eagle_0", "value":"alligator" },
+			{ "name":"fish_1", "value":"turtles" }
+		]
+		},
+		{
+		"uuids": ["b7ce-2574-5bf6-af4f","d28f-0727-460f-5ab6","78d2-c53f-0244-23c2","33a0-5ab1-14b3-6bf8","4842-3518-d7ab-f670","87bf-0489-981e-be99","c709-83dd-975c-b05d","20a3-dcb5-8ce4-ae5c","f2b6-e2f5-8939-94ae","349d-dd0e-2deb-7b57"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b7ce-2574-5bf6-af4f", "rowText": "a hawk is a kind of carnivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d28f-0727-460f-5ab6", "rowText": "hawks ; eagles eat snakes ; lizards ; rats ; rabbits ; mice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "78d2-c53f-0244-23c2", "rowText": "a hawk is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "33a0-5ab1-14b3-6bf8", "rowText": "a lizard is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4842-3518-d7ab-f670", "rowText": "eating ; taking in food is used to get nutrients ; energy by animals ; living things", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "87bf-0489-981e-be99", "rowText": "if two or more carnivores share the same ecosystem then those carnivores may share the same food source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "20a3-dcb5-8ce4-ae5c", "rowText": "predators ; carnivores ; omnivores eat other animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2b6-e2f5-8939-94ae", "rowText": "carnivores only eat animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "349d-dd0e-2deb-7b57", "rowText": "food web is synonymous with food chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"eagle_0", "value":"hawk" },
+			{ "name":"fish_1", "value":"lizard" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"eagle_0", "value":"hawk" },
+			{ "name":"fish_1", "value":"lizards" }
+		]
+		},
+		{
+		"uuids": ["b7ce-2574-5bf6-af4f","d28f-0727-460f-5ab6","78d2-c53f-0244-23c2","782f-7770-b8be-f40e","4842-3518-d7ab-f670","87bf-0489-981e-be99","c709-83dd-975c-b05d","20a3-dcb5-8ce4-ae5c","f2b6-e2f5-8939-94ae","349d-dd0e-2deb-7b57"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b7ce-2574-5bf6-af4f", "rowText": "a hawk is a kind of carnivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d28f-0727-460f-5ab6", "rowText": "hawks ; eagles eat snakes ; lizards ; rats ; rabbits ; mice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "78d2-c53f-0244-23c2", "rowText": "a hawk is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "782f-7770-b8be-f40e", "rowText": "a mouse is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4842-3518-d7ab-f670", "rowText": "eating ; taking in food is used to get nutrients ; energy by animals ; living things", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "87bf-0489-981e-be99", "rowText": "if two or more carnivores share the same ecosystem then those carnivores may share the same food source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "20a3-dcb5-8ce4-ae5c", "rowText": "predators ; carnivores ; omnivores eat other animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2b6-e2f5-8939-94ae", "rowText": "carnivores only eat animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "349d-dd0e-2deb-7b57", "rowText": "food web is synonymous with food chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"eagle_0", "value":"hawk" },
+			{ "name":"fish_1", "value":"mouse" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"eagle_0", "value":"hawk" },
+			{ "name":"fish_1", "value":"mice" }
+		]
+		},
+		{
+		"uuids": ["b7ce-2574-5bf6-af4f","d28f-0727-460f-5ab6","78d2-c53f-0244-23c2","44d7-fef6-90ef-75aa","4842-3518-d7ab-f670","87bf-0489-981e-be99","c709-83dd-975c-b05d","20a3-dcb5-8ce4-ae5c","f2b6-e2f5-8939-94ae","349d-dd0e-2deb-7b57"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b7ce-2574-5bf6-af4f", "rowText": "a hawk is a kind of carnivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d28f-0727-460f-5ab6", "rowText": "hawks ; eagles eat snakes ; lizards ; rats ; rabbits ; mice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "78d2-c53f-0244-23c2", "rowText": "a hawk is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "44d7-fef6-90ef-75aa", "rowText": "a rabbit is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4842-3518-d7ab-f670", "rowText": "eating ; taking in food is used to get nutrients ; energy by animals ; living things", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "87bf-0489-981e-be99", "rowText": "if two or more carnivores share the same ecosystem then those carnivores may share the same food source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "20a3-dcb5-8ce4-ae5c", "rowText": "predators ; carnivores ; omnivores eat other animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2b6-e2f5-8939-94ae", "rowText": "carnivores only eat animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "349d-dd0e-2deb-7b57", "rowText": "food web is synonymous with food chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"eagle_0", "value":"hawk" },
+			{ "name":"fish_1", "value":"rabbit" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"eagle_0", "value":"hawk" },
+			{ "name":"fish_1", "value":"rabbits" }
+		]
+		},
+		{
+		"uuids": ["b7ce-2574-5bf6-af4f","d28f-0727-460f-5ab6","78d2-c53f-0244-23c2","6188-73e6-6db4-bfea","4842-3518-d7ab-f670","87bf-0489-981e-be99","c709-83dd-975c-b05d","20a3-dcb5-8ce4-ae5c","f2b6-e2f5-8939-94ae","349d-dd0e-2deb-7b57"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b7ce-2574-5bf6-af4f", "rowText": "a hawk is a kind of carnivore", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d28f-0727-460f-5ab6", "rowText": "hawks ; eagles eat snakes ; lizards ; rats ; rabbits ; mice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "78d2-c53f-0244-23c2", "rowText": "a hawk is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "6188-73e6-6db4-bfea", "rowText": "a snake is a kind of animal", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "4842-3518-d7ab-f670", "rowText": "eating ; taking in food is used to get nutrients ; energy by animals ; living things", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "87bf-0489-981e-be99", "rowText": "if two or more carnivores share the same ecosystem then those carnivores may share the same food source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "c709-83dd-975c-b05d", "rowText": "carnivores ; omnivores ; herbivores are a kind of animal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "20a3-dcb5-8ce4-ae5c", "rowText": "predators ; carnivores ; omnivores eat other animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "f2b6-e2f5-8939-94ae", "rowText": "carnivores only eat animals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "349d-dd0e-2deb-7b57", "rowText": "food web is synonymous with food chain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"eagle_0", "value":"hawk" },
+			{ "name":"fish_1", "value":"snake" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"eagle_0", "value":"hawk" },
+			{ "name":"fish_1", "value":"snakes" }
+		]
+		}
+	]
+}
+]}
+

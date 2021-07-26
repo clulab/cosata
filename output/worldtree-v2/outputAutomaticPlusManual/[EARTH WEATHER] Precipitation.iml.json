@@ -1,0 +1,840 @@
+{"patternMatches": [
+{
+	"patternName":"EARTH_WEATHER_Precipitation",
+	"matches":[
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","9436-c8e4-c0e1-914f","db52-3ce3-5e7f-1953","cb4c-5229-e5b9-6408","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb4c-5229-e5b9-6408", "rowText": "hail is a kind of precipitation ; ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","9436-c8e4-c0e1-914f","db52-3ce3-5e7f-1953","da1e-dca3-f46a-5189","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "da1e-dca3-f46a-5189", "rowText": "rain is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","9436-c8e4-c0e1-914f","db52-3ce3-5e7f-1953","f704-bbf0-c1f5-b8ba","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f704-bbf0-c1f5-b8ba", "rowText": "sleet is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","9436-c8e4-c0e1-914f","db52-3ce3-5e7f-1953","8083-d6d0-9cba-da83","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "8083-d6d0-9cba-da83", "rowText": "snow is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","9436-c8e4-c0e1-914f","20a9-322c-b21a-3d54","cb4c-5229-e5b9-6408","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb4c-5229-e5b9-6408", "rowText": "hail is a kind of precipitation ; ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","9436-c8e4-c0e1-914f","20a9-322c-b21a-3d54","da1e-dca3-f46a-5189","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "da1e-dca3-f46a-5189", "rowText": "rain is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","9436-c8e4-c0e1-914f","20a9-322c-b21a-3d54","f704-bbf0-c1f5-b8ba","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f704-bbf0-c1f5-b8ba", "rowText": "sleet is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","9436-c8e4-c0e1-914f","20a9-322c-b21a-3d54","8083-d6d0-9cba-da83","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "8083-d6d0-9cba-da83", "rowText": "snow is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","3a13-9e03-8109-0023","db52-3ce3-5e7f-1953","cb4c-5229-e5b9-6408","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb4c-5229-e5b9-6408", "rowText": "hail is a kind of precipitation ; ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"cold" }
+		]
+		},
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","3a13-9e03-8109-0023","db52-3ce3-5e7f-1953","da1e-dca3-f46a-5189","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "da1e-dca3-f46a-5189", "rowText": "rain is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"cold" }
+		]
+		},
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","3a13-9e03-8109-0023","db52-3ce3-5e7f-1953","f704-bbf0-c1f5-b8ba","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f704-bbf0-c1f5-b8ba", "rowText": "sleet is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"cold" }
+		]
+		},
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","3a13-9e03-8109-0023","db52-3ce3-5e7f-1953","8083-d6d0-9cba-da83","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "8083-d6d0-9cba-da83", "rowText": "snow is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"cold" }
+		]
+		},
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","3a13-9e03-8109-0023","20a9-322c-b21a-3d54","cb4c-5229-e5b9-6408","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb4c-5229-e5b9-6408", "rowText": "hail is a kind of precipitation ; ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"cold" }
+		]
+		},
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","3a13-9e03-8109-0023","20a9-322c-b21a-3d54","da1e-dca3-f46a-5189","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "da1e-dca3-f46a-5189", "rowText": "rain is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"cold" }
+		]
+		},
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","3a13-9e03-8109-0023","20a9-322c-b21a-3d54","f704-bbf0-c1f5-b8ba","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f704-bbf0-c1f5-b8ba", "rowText": "sleet is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"cold" }
+		]
+		},
+		{
+		"uuids": ["2e26-d568-7d5a-f4be","3a13-9e03-8109-0023","20a9-322c-b21a-3d54","8083-d6d0-9cba-da83","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e26-d568-7d5a-f4be", "rowText": "as the size of a cloud increases , the amount of precipitation contained in that cloud will increase", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "8083-d6d0-9cba-da83", "rowText": "snow is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"warm_0", "value":"cold" }
+		]
+		},
+		{
+		"uuids": ["9436-c8e4-c0e1-914f","db52-3ce3-5e7f-1953","cb4c-5229-e5b9-6408","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb4c-5229-e5b9-6408", "rowText": "hail is a kind of precipitation ; ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["9436-c8e4-c0e1-914f","db52-3ce3-5e7f-1953","da1e-dca3-f46a-5189","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "da1e-dca3-f46a-5189", "rowText": "rain is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["9436-c8e4-c0e1-914f","db52-3ce3-5e7f-1953","f704-bbf0-c1f5-b8ba","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f704-bbf0-c1f5-b8ba", "rowText": "sleet is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["9436-c8e4-c0e1-914f","db52-3ce3-5e7f-1953","8083-d6d0-9cba-da83","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "8083-d6d0-9cba-da83", "rowText": "snow is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["9436-c8e4-c0e1-914f","20a9-322c-b21a-3d54","cb4c-5229-e5b9-6408","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb4c-5229-e5b9-6408", "rowText": "hail is a kind of precipitation ; ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["9436-c8e4-c0e1-914f","20a9-322c-b21a-3d54","da1e-dca3-f46a-5189","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "da1e-dca3-f46a-5189", "rowText": "rain is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["9436-c8e4-c0e1-914f","20a9-322c-b21a-3d54","f704-bbf0-c1f5-b8ba","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f704-bbf0-c1f5-b8ba", "rowText": "sleet is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["9436-c8e4-c0e1-914f","20a9-322c-b21a-3d54","8083-d6d0-9cba-da83","f992-5698-76aa-c6de","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9436-c8e4-c0e1-914f", "rowText": "a warm front causes cloudy and rainy weather", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "8083-d6d0-9cba-da83", "rowText": "snow is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "f992-5698-76aa-c6de", "rowText": "a warm front is when warm air mass rises and passes over ; collides a cold air mass", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"warm" }
+		]
+		},
+		{
+		"uuids": ["3a13-9e03-8109-0023","db52-3ce3-5e7f-1953","cb4c-5229-e5b9-6408","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb4c-5229-e5b9-6408", "rowText": "hail is a kind of precipitation ; ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		]
+		},
+		{
+		"uuids": ["3a13-9e03-8109-0023","db52-3ce3-5e7f-1953","da1e-dca3-f46a-5189","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "da1e-dca3-f46a-5189", "rowText": "rain is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		]
+		},
+		{
+		"uuids": ["3a13-9e03-8109-0023","db52-3ce3-5e7f-1953","f704-bbf0-c1f5-b8ba","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f704-bbf0-c1f5-b8ba", "rowText": "sleet is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		]
+		},
+		{
+		"uuids": ["3a13-9e03-8109-0023","db52-3ce3-5e7f-1953","8083-d6d0-9cba-da83","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "db52-3ce3-5e7f-1953", "rowText": "clouds produce precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "8083-d6d0-9cba-da83", "rowText": "snow is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		]
+		},
+		{
+		"uuids": ["3a13-9e03-8109-0023","20a9-322c-b21a-3d54","cb4c-5229-e5b9-6408","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cb4c-5229-e5b9-6408", "rowText": "hail is a kind of precipitation ; ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		]
+		},
+		{
+		"uuids": ["3a13-9e03-8109-0023","20a9-322c-b21a-3d54","da1e-dca3-f46a-5189","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "da1e-dca3-f46a-5189", "rowText": "rain is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		]
+		},
+		{
+		"uuids": ["3a13-9e03-8109-0023","20a9-322c-b21a-3d54","f704-bbf0-c1f5-b8ba","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "f704-bbf0-c1f5-b8ba", "rowText": "sleet is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		]
+		},
+		{
+		"uuids": ["3a13-9e03-8109-0023","20a9-322c-b21a-3d54","8083-d6d0-9cba-da83","d7b0-6601-25df-12d7","c43e-7b5f-7d4e-0bdf","264c-58db-a41c-9483","7782-71ee-3c2e-0c81","457f-3767-5871-6ec8","e228-46ac-0cee-0559","4347-84dc-10ce-8007","7975-13c2-aeb2-5a9a","5e47-e0b9-a06f-d37b","bb3e-1c79-d8db-8643"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3a13-9e03-8109-0023", "rowText": "cold fronts cause thunderstorms as they pass by", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "20a9-322c-b21a-3d54", "rowText": "grey clouds are a source of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "8083-d6d0-9cba-da83", "rowText": "snow is a kind of precipitation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d7b0-6601-25df-12d7", "rowText": "a cold front is when a cooler air mass moves into contact with an area of warmer air", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c43e-7b5f-7d4e-0bdf", "rowText": "water vapor condensing in clouds causes rain", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7782-71ee-3c2e-0c81", "rowText": "cloudy conditions cause a low-pressure weather system", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "457f-3767-5871-6ec8", "rowText": "grey clouds appear before precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "e228-46ac-0cee-0559", "rowText": "low pressure systems cause precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "4347-84dc-10ce-8007", "rowText": "precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "7975-13c2-aeb2-5a9a", "rowText": "precipitation is when water falls from the sky", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "5e47-e0b9-a06f-d37b", "rowText": "precipitation is a property of weather", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "bb3e-1c79-d8db-8643", "rowText": "rainfall means the amount of precipitation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"warm_0", "value":"cold" }
+		]
+		}
+	]
+}
+]}
+

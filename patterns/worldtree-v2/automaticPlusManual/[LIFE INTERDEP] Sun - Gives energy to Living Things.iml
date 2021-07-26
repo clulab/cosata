@@ -1,0 +1,70 @@
+// Automatically converted pattern
+inferencepattern LIFE_INTERDEP_Sun_Gives_energy_to_Living_Things
+
+	// Plain text description
+	description = "zx: energy flow from the sun to the plants and then to the animals"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//        HINTROW a plant is a kind of living thing     (2e89-d8e8-a8fb-9acc) [ HYPONYM:"plant", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+	// GROUNDING       KINDOF: an apple tree is a kind of plant     (00a7-56fc-3c22-e6f2) [ HYPONYM:"apple tree", HYPERNYM:"plant" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "apple tree", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "apple tree", HYPERNYM: "plant"]
+
+	// GROUNDING       KINDOF: green plants are a kind of producer     (f812-4338-e44b-e685) [ HYPONYM:"green plant", HYPERNYM:"producer" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "green plant", HYPERNYM: "producer"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "green plant", HYPERNYM: "producer"]
+
+	// GROUNDING       KINDOF: a bear is a kind of animal     (5639-8136-4788-3ee6) [ HYPONYM:"bear", HYPERNYM:"animal" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "bear", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "bear", HYPERNYM: "animal"]
+
+	// CENTRAL         USEDFOR: eating ; taking in food is used to get nutrients ; energy by animals ; living things     (4842-3518-d7ab-f670) [ ACTION:"eat;take", AGENT_OBJECT:"food", FOR_PURPOSE:"get", PATIENT:"nutrient;energy", AGENT_THING_WHO_USES:"animal;live thing" ]
+	//row autoRow4 = [UUID:"4842-3518-d7ab-f670", ACTION: "eat", AGENT_OBJECT: "food", FOR_PURPOSE: "get", PATIENT: "nutrient", AGENT_THING_WHO_USES: "live thing"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4842-3518-d7ab-f670", ACTION: "eat", AGENT_OBJECT: "food", FOR_PURPOSE: "get", PATIENT: "nutrient", AGENT_THING_WHO_USES: "live thing"]
+
+	// CENTRAL         PROCESSROLES: In the food chain process an animal has the role of consumer which eats producers ; other animals for food     (a4f8-5748-0846-cb45) [ PROCESS_NAME:"food chain", ACTOR_COMMON_EXAMPLE:"animal", ROLE:"consumer", VERBS:"eat", PATIENT:"producer;other animal", FOR_PURPOSE:"food" ]
+	//row autoRow5 = [UUID:"a4f8-5748-0846-cb45", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "animal", ROLE: "consumer", VERBS: "eat", PATIENT: "other animal", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"a4f8-5748-0846-cb45", PROCESS_NAME: "food chain", ACTOR_COMMON_EXAMPLE: "animal", ROLE: "consumer", VERBS: "eat", PATIENT: "other animal", FOR_PURPOSE: "food"]
+
+	// CENTRAL         SOURCEOF: green plants provide food for themselves ; animals ; consumers by performing photosynthesis     (694b-d9ec-8c65-5a6a) [ ADJ:"green", AGENT:"plant", VERB_SOURCEOF_PROVIDE_ETC:"provide", WHAT_IT_PROVIDES:"food", AGENT_IT_PROVIDES_THING_TO:";animal;consumer", BY_THROUGH_HOW:"perform photosynthesis" ]
+	//row autoRow6 = [UUID:"694b-d9ec-8c65-5a6a", ADJ: "green", AGENT: "plant", VERB_SOURCEOF_PROVIDE_ETC: "provide", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "animal", BY_THROUGH_HOW: "perform photosynthesis"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"694b-d9ec-8c65-5a6a", ADJ: "green", AGENT: "plant", VERB_SOURCEOF_PROVIDE_ETC: "provide", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "animal", BY_THROUGH_HOW: "perform photosynthesis"]
+
+	// CENTRAL         REQUIRES: an animal ; living thing requires nutrients for survival     (80de-489f-48b2-16f4) [ OBJECT_AGENT_PROCESS:"animal;live thing", VERB_REQUIRES:"require", OBJECT:"nutrient", FOR_PURPOSE:"survive" ]
+	//row autoRow7 = [UUID:"80de-489f-48b2-16f4", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"80de-489f-48b2-16f4", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         SOURCEOF: the sun is the source of energy for life on Earth     (2d69-ee53-599f-9438) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"energy", AGENT_IT_PROVIDES_THING_TO:"life", SCOPE:"on earth" ]
+	//row autoRow8 = [UUID:"2d69-ee53-599f-9438", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "life", SCOPE: "on earth"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"2d69-ee53-599f-9438", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "life", SCOPE: "on earth"]
+
+	// CENTRAL         CONTAINS: food contains nutrients for living things     (a4c9-5ade-9cc2-f3f0) [ OBJECT_AGENT:"food", WHAT_IT_CONTAINS:"nutrient", FOR_PURPOSE:"live thing" ]
+	//  Notes: Good->a4c9-5ade-9cc2-f3f0
+	//row autoRow9 = [UUID:"a4c9-5ade-9cc2-f3f0", OBJECT_AGENT: "food", WHAT_IT_CONTAINS: "nutrient", FOR_PURPOSE: "live thing"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"a4c9-5ade-9cc2-f3f0", OBJECT_AGENT: "food", WHAT_IT_CONTAINS: "nutrient", FOR_PURPOSE: "live thing"]
+
+	// CENTRAL         SOURCEOF: food is a source of energy for animals ; plants     (5753-2812-04c2-af70) [ AGENT:"food", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"energy", AGENT_IT_PROVIDES_THING_TO:"animal;plant" ]
+	//row autoRow10 = [UUID:"5753-2812-04c2-af70", AGENT: "food", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "animal"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"5753-2812-04c2-af70", AGENT: "food", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "animal"]
+
+	// CENTRAL         REQUIRES: a plant requires sunlight for photosynthesis     (619e-a5d1-b505-4f69) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"sunlight", FOR_PURPOSE:"photosynthesis" ]
+	//row autoRow11 = [UUID:"619e-a5d1-b505-4f69", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "photosynthesis"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"619e-a5d1-b505-4f69", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "photosynthesis"]
+
+	// CENTRAL         SOURCEOF: a producer is a source of energy for consumers     (b19d-b086-7090-2115) [ AGENT:"producer", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"energy", AGENT_IT_PROVIDES_THING_TO:"consumer" ]
+	//row autoRow12 = [UUID:"b19d-b086-7090-2115", AGENT: "producer", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "consumer"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"b19d-b086-7090-2115", AGENT: "producer", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "consumer"]
+
+	// CENTRAL         ACTION: a consumer can not produce its own food     (6bf8-4a05-d7b7-8bc0) [ AGENT_OBJECT:"consumer", QUANITIFIER:"not", ACTION2:"product", OBJECT_PROPERTY:"own food" ]
+	//row autoRow13 = [UUID:"6bf8-4a05-d7b7-8bc0", AGENT_OBJECT: "consumer", QUANITIFIER: "not", ACTION2: "product", OBJECT_PROPERTY: "own food"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"6bf8-4a05-d7b7-8bc0", AGENT_OBJECT: "consumer", QUANITIFIER: "not", ACTION2: "product", OBJECT_PROPERTY: "own food"]
+
+endinferencepattern

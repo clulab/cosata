@@ -1,0 +1,110 @@
+// Automatically converted pattern
+inferencepattern FOR_FRICTION_Friction_Results_in
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CAUSE: friction causes the speed of an object to decrease     (fd7f-e7b7-79fa-6ff9) [ CONDITION_AGENT_OBJECT:"friction", RESULT_AGENT:"speed of object", RESULT_VERB:"decrease" ]
+	//        HINTROW friction causes speed to decrease     (965e-d62d-3e68-c22c) [ CONDITION_AGENT_OBJECT:"friction", RESULT_AGENT:"speed", RESULT_VERB:"decrease" ]
+	//  Notes: speed decreasing
+	//row autoRow0 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "friction", RESULT_AGENT: "speed of object", RESULT_VERB: "decrease"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "friction", RESULT_AGENT: "speed"+*"POS:IN"+*"POS:NN", RESULT_VERB: "decrease"]
+
+	// CENTRALSW       CHANGE-VEC: heat means temperature increases     (7afc-2bcd-13a5-2d35) [ PROCESS_NAME_ACTION:"heat", AGENT_OBJECT:"temperature", DIRECTION:"increase" ]
+	//        HINTROW heating means adding heat     (9469-8559-7f35-1bbd) [ PROCESS_NAME_ACTION:"heat", DIRECTION:"add", PATIENT:"heat" ]
+	//        HINTROW warm ; becoming warm means heat is added     (39ec-9974-829d-ba5e) [ PROCESS_NAME_ACTION:"warm;become warm", AGENT_OBJECT:"heat", DIRECTION:"add" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"CHANGE-VEC"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow1 = [TABLE:"CHANGE-VEC"]
+
+	// CENTRALSW       ACTION: a tire moves against the road     (379e-4bd0-e3d5-5a1a) [ AGENT_OBJECT:"tire", ACTION2:"move against", OBJECT_PROPERTY:"road" ]
+	//        HINTROW wheels ; gears usually move against other surfaces     (da72-519d-898d-d79f) [ AGENT_OBJECT:"wheel;gear", QUANITIFIER:"usually", ACTION2:"move", OBJECT_PROPERTY:"against other surface" ]
+	//row autoRow2 = [TABLE:"ACTION", AGENT_OBJECT: <tire_0>, ACTION2: "move against", OBJECT_PROPERTY: "road"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"ACTION", AGENT_OBJECT: <tire_0>, ACTION2: "move against"]
+
+	// GROUNDING       KINDOF: a road is a kind of object     (3234-2820-f7a1-4074) [ HYPONYM:"road", HYPERNYM:"object" ]
+	//        HINTROW a ramp is a kind of object     (d99b-5382-b496-b2fd) [ HYPONYM:"ramp", HYPERNYM:"object" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: a tire is a kind of object     (02c9-a481-d0f4-91e2) [ HYPONYM:"tire", HYPERNYM:"object" ]
+	//        HINTROW a wheel is a kind of object     (9a4c-d676-bb0b-b60f) [ HYPONYM:"wheel", HYPERNYM:"object" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: <tire_0>, HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: <tire_0>, HYPERNYM: "object"]
+
+	// CENTRAL         ACTION: friction acts to counter the motion of two objects when their surfaces are touching     (512a-c5ef-bcba-905d) [ AGENT_OBJECT:"friction", ACTION2:"act counter", OBJECT_PROPERTY:"move of two object", WHEN_WHERE:"surface be touch" ]
+	//row autoRow5 = [UUID:"512a-c5ef-bcba-905d", AGENT_OBJECT: "friction", ACTION2: "act counter", OBJECT_PROPERTY: "move of two object", WHEN_WHERE: "surface be touch"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"512a-c5ef-bcba-905d", AGENT_OBJECT: "friction", ACTION2: "act counter", OBJECT_PROPERTY: "move of two object", WHEN_WHERE: "surface be touch"]
+
+	// CENTRAL         ACTION: friction exerts force on moving objects     (3518-79e5-2f89-2bc0) [ AGENT_OBJECT:"friction", ACTION2:"exert", OBJECT_PROPERTY:"force", WHEN_WHERE:"on move object" ]
+	//row autoRow6 = [UUID:"3518-79e5-2f89-2bc0", AGENT_OBJECT: "friction", ACTION2: "exert", OBJECT_PROPERTY: "force", WHEN_WHERE: "on move object"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3518-79e5-2f89-2bc0", AGENT_OBJECT: "friction", ACTION2: "exert", OBJECT_PROPERTY: "force", WHEN_WHERE: "on move object"]
+
+	// CENTRAL         ACTION: friction occurs when two object 's surfaces move against each other     (e9ed-3032-6736-3077) [ DEFINITION_NAME:"friction", ADJ:"two object", AGENT_OBJECT:"surface", ACTION2:"move against", OBJECT_PROPERTY:"other" ]
+	//row autoRow7 = [UUID:"e9ed-3032-6736-3077", DEFINITION_NAME: "friction", ADJ: "two object", AGENT_OBJECT: "surface", ACTION2: "move against", OBJECT_PROPERTY: "other"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"e9ed-3032-6736-3077", DEFINITION_NAME: "friction", ADJ: "two object", AGENT_OBJECT: "surface", ACTION2: "move against", OBJECT_PROPERTY: "other"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if one surface is moved against ; moved over ; moved down another surface then those surfaces are touching     (ce72-7053-8df0-6419) [ THING:"one surface", ACTION1:"move against;move over;move down", OBJECT_PATIENT1:"surface", ACTOR_AGENT_PROCESS2:"surface", ACTION3:"touch" ]
+	//row *autoRow8 = [UUID:"ce72-7053-8df0-6419", THING: "one surface", ACTION1: "move against", OBJECT_PATIENT1: "surface", ACTOR_AGENT_PROCESS2: "surface", ACTION3: "touch"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"ce72-7053-8df0-6419", THING: "one surface", ACTION1: "move against", OBJECT_PATIENT1: "surface", ACTOR_AGENT_PROCESS2: "surface", ACTION3: "touch"]
+
+	// CENTRAL         IFTHEN: if too much heat is transferred to an object then that object may burn     (f253-a9f3-3688-96a7) [ ADJ_QUANTITY1:"too much", THING:"heat", ACTION1:"transfer", OBJECT_PATIENT1:"object", ACTOR_AGENT_PROCESS2:"that object", ACTION3:"burn" ]
+	//row autoRow9 = [UUID:"f253-a9f3-3688-96a7", ADJ_QUANTITY1: "too much", THING: "heat", ACTION1: "transfer", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "burn"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"f253-a9f3-3688-96a7", ADJ_QUANTITY1: "too much", THING: "heat", ACTION1: "transfer", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "burn"]
+
+	// CENTRAL         CAUSE: friction causes the temperature of an object to increase     (26cb-7582-a17c-a0d6) [ CONDITION_AGENT_OBJECT:"friction", RESULT_AGENT:"temperature of object", RESULT_VERB:"increase" ]
+	//  Notes: temperature increasing
+	//row autoRow10 = [UUID:"26cb-7582-a17c-a0d6", CONDITION_AGENT_OBJECT: "friction", RESULT_AGENT: "temperature of object", RESULT_VERB: "increase"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"26cb-7582-a17c-a0d6", CONDITION_AGENT_OBJECT: "friction", RESULT_AGENT: "temperature of object", RESULT_VERB: "increase"]
+
+	// CENTRAL         ACTION: a car moves on a road     (010c-39f3-1b7a-7408) [ AGENT_OBJECT:"car", ACTION2:"move", WHEN_WHERE:"on road" ]
+	//row autoRow11 = [UUID:"010c-39f3-1b7a-7408", AGENT_OBJECT: "car", ACTION2: "move", WHEN_WHERE: "on road"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"010c-39f3-1b7a-7408", AGENT_OBJECT: "car", ACTION2: "move", WHEN_WHERE: "on road"]
+
+	// CENTRAL         SOURCEOF: fire gives off light ; heat ; smoke     (891f-4f5c-91a2-bd31) [ AGENT:"fire", VERB_SOURCEOF_PROVIDE_ETC:"give", WHAT_IT_PROVIDES:"light;heat;smoke" ]
+	//row autoRow12 = [UUID:"891f-4f5c-91a2-bd31", AGENT: "fire", VERB_SOURCEOF_PROVIDE_ETC: "give", WHAT_IT_PROVIDES: "light"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"891f-4f5c-91a2-bd31", AGENT: "fire", VERB_SOURCEOF_PROVIDE_ETC: "give", WHAT_IT_PROVIDES: "light"]
+
+	// CENTRAL         CAUSE: friction causes an object to lose energy     (3b7d-b0fb-9acc-cb6c) [ CONDITION_AGENT_OBJECT:"friction", RESULT_AGENT:"object", RESULT_VERB:"lose", RESULT_PATIENT:"energy" ]
+	//row autoRow13 = [UUID:"3b7d-b0fb-9acc-cb6c", CONDITION_AGENT_OBJECT: "friction", RESULT_AGENT: "object", RESULT_VERB: "lose", RESULT_PATIENT: "energy"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"3b7d-b0fb-9acc-cb6c", CONDITION_AGENT_OBJECT: "friction", RESULT_AGENT: "object", RESULT_VERB: "lose", RESULT_PATIENT: "energy"]
+
+	// CENTRAL         TRANSFER: motion is when moves an object ; something to a direction     (d067-f0ea-b5ff-d34e) [ PROCESS_NAME:"move", VERB:"move;move", WHAT:"object;something", DESTINATION:"direction" ]
+	//row autoRow14 = [UUID:"d067-f0ea-b5ff-d34e", PROCESS_NAME: "move", VERB: "move", WHAT: "object", DESTINATION: "direction"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"d067-f0ea-b5ff-d34e", PROCESS_NAME: "move", VERB: "move", WHAT: "object", DESTINATION: "direction"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: skidding causes speed to decrease     (1af6-b1e2-ade4-b6af) [ CONDITION_VERB:"skid", RESULT_AGENT:"speed", RESULT_VERB:"decrease" ]
+	//row *autoRow15 = [UUID:"1af6-b1e2-ade4-b6af", CONDITION_VERB: "skid", RESULT_AGENT: "speed", RESULT_VERB: "decrease"] //OVER-CONSTR.
+	row *autoRow15 = [UUID:"1af6-b1e2-ade4-b6af", CONDITION_VERB: "skid", RESULT_AGENT: "speed", RESULT_VERB: "decrease"]
+
+	// CENTRAL         PARTOF: a surface is a part of an object     (eb92-b0cd-c257-9bcf) [ PART:"surface", WHOLE:"object" ]
+	//row autoRow16 = [UUID:"eb92-b0cd-c257-9bcf", PART: "surface", WHOLE: "object"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"eb92-b0cd-c257-9bcf", PART: "surface", WHOLE: "object"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: braking can cause skidding     (4a43-f8d5-b9e8-39c8) [ CONDITION_VERB:"brake", RESULT_VERB:"skid" ]
+	//row *autoRow17 = [UUID:"4a43-f8d5-b9e8-39c8", CONDITION_VERB: "brake", RESULT_VERB: "skid"] //OVER-CONSTR.
+	row *autoRow17 = [UUID:"4a43-f8d5-b9e8-39c8", CONDITION_VERB: "brake", RESULT_VERB: "skid"]
+
+	// CENTRAL         CAUSE: fire causes burning     (4dc5-13bf-3c46-af74) [ CONDITION_AGENT_OBJECT:"fire", RESULT_VERB:"burn" ]
+	//row autoRow18 = [UUID:"4dc5-13bf-3c46-af74", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "burn"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"4dc5-13bf-3c46-af74", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "burn"]
+
+	// CENTRAL         KINDOF: friction is a kind of force     (dc6a-e211-23ac-d827) [ HYPONYM:"friction", HYPERNYM:"force" ]
+	//  Notes: peripheral
+	//row autoRow19 = [UUID:"dc6a-e211-23ac-d827", HYPONYM: "friction", HYPERNYM: "force"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"dc6a-e211-23ac-d827", HYPONYM: "friction", HYPERNYM: "force"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: skidding causes friction     (0781-1abe-a590-378c) [ CONDITION_VERB:"skid", RESULT_AGENT:"friction" ]
+	//row *autoRow20 = [UUID:"0781-1abe-a590-378c", CONDITION_VERB: "skid", RESULT_AGENT: "friction"] //OVER-CONSTR.
+	row *autoRow20 = [UUID:"0781-1abe-a590-378c", CONDITION_VERB: "skid", RESULT_AGENT: "friction"]
+
+	// LEXGLUE         SYNONYMY: motion ; movement means moving ; to move     (d8a3-10bb-9aea-178a) [ X1:"move;move", ACTION2:"move;move" ]
+	//row autoRow21 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"] //OVER-CONSTR.
+	row autoRow21 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"]
+
+endinferencepattern

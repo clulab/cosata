@@ -1,0 +1,72 @@
+// Automatically converted pattern
+inferencepattern CEL_TIDES_Tides_by_Gravity
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as the gravitational pull of the moon on the Earth increases , the size of the tides on Earth increase     (5095-dfd3-1847-a4a0) [ QUANTITY_MEASURE1:"gravitational pull", AGENT_ATTRIBUTE1:"of moon", SCOPE1A:"on earth", CHANGE1:"increase", QUANTITY_MEASURE2:"size", AGENT_ATTRIBUTE2:"of tide", SCOPE2A:"on earth", CHANGE2:"increase" ]
+	//        HINTROW as the gravitational pull of the moon decreases , the height of ocean tides will decrease     (e2a7-762e-edc2-435b) [ AGENT_ATTRIBUTE1:"gravitational pull", SCOPE1A:"of moon", CHANGE1:"decrease", QUANTITY_MEASURE2:"height of", AGENT_ATTRIBUTE2:"ocean tide", CHANGE2:"decrease" ]
+	//row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "gravitational pull", AGENT_ATTRIBUTE1: "of moon", SCOPE1A: "on earth", CHANGE1: "increase", AGENT_ATTRIBUTE2: "of tide", SCOPE2A: "on earth", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", AGENT_ATTRIBUTE1: "of"+*"POS:NN", CHANGE1: "increase", AGENT_ATTRIBUTE2: *"POS:IN"+"tide", CHANGE2: "increase"]
+
+	// CENTRALSW       STAGE-IN-PROCESS: high tide is a stage in the tide cycle process     (8317-e088-279b-ba21) [ STAGE:"high tide", PROCESS:"tide cycle" ]
+	//        HINTROW low tide is a stage in the tide cycle process     (568b-892b-0284-5037) [ STAGE:"low tide", PROCESS:"tide cycle" ]
+	//row autoRow1 = [TABLE:"STAGE-IN-PROCESS", STAGE: "high tide", PROCESS: "tide cycle"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"STAGE-IN-PROCESS", STAGE: "high tide", PROCESS: "tide cycle"]
+
+	// CENTRALSW       DURING: spring tides occur during a full moon     (0740-308a-85e1-af19) [ EVENT:"spring tide", TIME:"full moon" ]
+	//        HINTROW spring tides occur during a new moon     (21da-2d01-19be-dc98) [ EVENT:"spring tide", TIME:"new moon" ]
+	//row autoRow2 = [TABLE:"DURING", EVENT: "spring tide", TIME: *"POS:JJ"+"moon"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"DURING", EVENT: "spring tide", TIME: *"POS:JJ"+"moon"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as distance from an object decreases , the pull of gravity on that object increases     (9d4d-3bfb-e0e2-d068) [ QUANTITY_MEASURE1:"distance", SCOPE1A:"from object", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"pull of gravity", SCOPE2A:"on object", CHANGE2:"increase" ]
+	//row autoRow3 = [UUID:"9d4d-3bfb-e0e2-d068", QUANTITY_MEASURE1: "distance", SCOPE1A: "from object", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "pull of gravity", SCOPE2A: "on object", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"9d4d-3bfb-e0e2-d068", QUANTITY_MEASURE1: "distance", SCOPE1A: "from object", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "pull of gravity", SCOPE2A: "on object", CHANGE2: "increase"]
+
+	// CENTRAL         CAUSE: the gravitational pull of the Moon on Earth 's oceans causes the tides     (ddca-37d6-9e7b-d216) [ CONDITION_VERB:"gravitational pull", CONDITION_PATIENT:"of moon", SCOPE1:"on earth ocean", RESULT_AGENT:"tide" ]
+	//row autoRow4 = [UUID:"ddca-37d6-9e7b-d216", CONDITION_VERB: "gravitational pull", CONDITION_PATIENT: "of moon", SCOPE1: "on earth ocean", RESULT_AGENT: "tide"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"ddca-37d6-9e7b-d216", CONDITION_VERB: "gravitational pull", CONDITION_PATIENT: "of moon", SCOPE1: "on earth ocean", RESULT_AGENT: "tide"]
+
+	// CENTRAL         CAUSE: the gravitational pull of the Sun on Earth 's oceans causes the tides     (b75d-4ff4-3225-6e84) [ CONDITION_VERB:"gravitational pull", CONDITION_PATIENT:"of sun", SCOPE1:"on earth ocean", RESULT_AGENT:"tide" ]
+	//row autoRow5 = [UUID:"b75d-4ff4-3225-6e84", CONDITION_VERB: "gravitational pull", CONDITION_PATIENT: "of sun", SCOPE1: "on earth ocean", RESULT_AGENT: "tide"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"b75d-4ff4-3225-6e84", CONDITION_VERB: "gravitational pull", CONDITION_PATIENT: "of sun", SCOPE1: "on earth ocean", RESULT_AGENT: "tide"]
+
+	// CENTRAL         PROP-GENERIC: distance is a property of space and includes ordered values of close ; far     (91b9-6388-d5b8-58b6) [ X:"distance", Y:"space", ORDERED_UNORDERED:"order", VALUES:"close;far" ]
+	//row autoRow6 = [UUID:"91b9-6388-d5b8-58b6", X: "distance", Y: "space", ORDERED_UNORDERED: "order", VALUES: "close"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"91b9-6388-d5b8-58b6", X: "distance", Y: "space", ORDERED_UNORDERED: "order", VALUES: "close"]
+
+	// CENTRAL         FREQUENCY: the tide cycle occurs regularly twice per day     (cc3c-b438-6a44-57f6) [ AGENT_OCCURRENCE:"tide cycle", QUANTIFIER:"regular", FREQUENCY:"twice", TIME_UNIT:"day" ]
+	//row autoRow7 = [UUID:"cc3c-b438-6a44-57f6", AGENT_OCCURRENCE: "tide cycle", QUANTIFIER: "regular", FREQUENCY: "twice", TIME_UNIT: "day"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"cc3c-b438-6a44-57f6", AGENT_OCCURRENCE: "tide cycle", QUANTIFIER: "regular", FREQUENCY: "twice", TIME_UNIT: "day"]
+
+	// CENTRAL         KINDOF: a tide is a kind of natural event     (7c75-71b3-613b-1ebe) [ HYPONYM:"tide", SCOPE1:"nature", HYPERNYM:"event" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"7c75-71b3-613b-1ebe", HYPONYM: "tide", SCOPE1: "nature", HYPERNYM: "event"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"7c75-71b3-613b-1ebe", HYPONYM: "tide", SCOPE1: "nature", HYPERNYM: "event"]
+
+	// CENTRAL         ACTION: the tide is when ocean levels periodically rise ; fall     (abe7-8ef7-d11e-25ca) [ DEFINITION_NAME:"tide", ADJ:"ocean", AGENT_OBJECT:"level", QUANITIFIER:"periodically", ACTION2:"rise;fall" ]
+	//row autoRow9 = [UUID:"abe7-8ef7-d11e-25ca", DEFINITION_NAME: "tide", ADJ: "ocean", AGENT_OBJECT: "level", QUANITIFIER: "periodically", ACTION2: "rise"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"abe7-8ef7-d11e-25ca", DEFINITION_NAME: "tide", ADJ: "ocean", AGENT_OBJECT: "level", QUANITIFIER: "periodically", ACTION2: "rise"]
+
+	// LEXGLUE         SYNONYMY: gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction     (a6ed-d678-af19-2281) [ X1:"gravity", X2:"gravitational pull;gravitational energy;gravitational force;gravitational attraction" ]
+	//row autoRow10 = [UUID:"a6ed-d678-af19-2281", X1: "gravity", X2: "gravitational pull"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"a6ed-d678-af19-2281", X1: "gravity", X2: "gravitational pull"]
+
+	// LEXGLUE         KINDOF: an increase is a kind of change     (782a-53e7-c1c7-aae0) [ HYPONYM:"increase", HYPERNYM:"change" ]
+	//row autoRow11 = [UUID:"782a-53e7-c1c7-aae0", HYPONYM: "increase", HYPERNYM: "change"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"782a-53e7-c1c7-aae0", HYPONYM: "increase", HYPERNYM: "change"]
+
+	// LEXGLUE         SYNONYMY: spring tide is similar to high tide     (38a0-db1a-ac8d-276b) [ X1:"spring tide", X2:"high tide" ]
+	//row autoRow12 = [UUID:"38a0-db1a-ac8d-276b", X1: "spring tide", X2: "high tide"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"38a0-db1a-ac8d-276b", X1: "spring tide", X2: "high tide"]
+
+	// LEXGLUE         SYNONYMY: rise is similar to increase     (1db8-7615-aa61-9575) [ ACTION1:"rise", ACTION2:"increase" ]
+	//        HINTROW fall is similar to decrease     (b761-0e77-9f87-bf6d) [ ACTION1:"fall", ACTION2:"decrease" ]
+	//row autoRow13 = [UUID:"1db8-7615-aa61-9575", ACTION1: "rise", ACTION2: "increase"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"1db8-7615-aa61-9575", ACTION1: "rise", ACTION2: "increase"]
+
+endinferencepattern

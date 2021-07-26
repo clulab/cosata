@@ -1,0 +1,66 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Plants_Consume_X_for_nutrients
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: nitrogen is a kind of nutrient for plant growth     (aed2-c2ce-7d6c-ef26) [ HYPONYM:"nitrogen", HYPERNYM:"nutrient", FOR_PURPOSE:"for plant grow" ]
+	//        HINTROW potassium is a kind of nutrient for plant growth     (0afa-db45-c7bf-4690) [ HYPONYM:"potassium", HYPERNYM:"nutrient for plant grow" ]
+	//        HINTROW phosphorus is a kind of nutrient for plant growth     (03f3-836f-177e-1be9) [ HYPONYM:"phosphorus", HYPERNYM:"nutrient for plant grow" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "nutrient", FOR_PURPOSE: *"POS:IN"+"plant grow"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "nutrient"]
+
+	// GROUNDING       KINDOF: iron is a kind of mineral     (564d-448d-05b5-998e) [ HYPONYM:"iron", HYPERNYM:"mineral" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "iron", HYPERNYM: "mineral"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "iron", HYPERNYM: "mineral"]
+
+	// CENTRAL         CHANGE: photosynthesis means producers ; green plants convert from carbon dioxide and water and solar energy into carbohydrates and food and oxygen for themselves     (0962-4a47-4e17-ce97) [ PROCESS_NAME:"photosynthesis", ACTOR_WHO:"producer;green plant", VERB:"convert", FROM:"carbon dioxide water solar energy", INTO:"carbohydrate food oxygen" ]
+	//row autoRow2 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"]
+
+	// CENTRAL         SOURCEOF: photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates     (a9fc-ec58-9496-d635) [ AGENT:"photosynthesis", VERB_SOURCEOF_PROVIDE_ETC:"be source of;make", WHAT_IT_PROVIDES:"food;energy", AGENT_IT_PROVIDES_THING_TO:"plant", BY_THROUGH_HOW:"convert carbon dioxide water sunlight into carbohydrate" ]
+	//row autoRow3 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"]
+
+	// CENTRAL         TRANSFER: plant uptake is when plants absorb nutrients ; water from soil into themselves through their roots     (d7c1-cdfd-2de5-6b7d) [ PROCESS_NAME:"plant uptake", ACTOR_WHO:"plant", VERB:"absorb", WHAT:"nutrient;water", SOURCE:"soil", BY_THROUGH_HOW:"root" ]
+	//row autoRow4 = [UUID:"d7c1-cdfd-2de5-6b7d", PROCESS_NAME: "plant uptake", ACTOR_WHO: "plant", VERB: "absorb", WHAT: "nutrient", SOURCE: "soil", BY_THROUGH_HOW: "root"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"d7c1-cdfd-2de5-6b7d", PROCESS_NAME: "plant uptake", ACTOR_WHO: "plant", VERB: "absorb", WHAT: "nutrient", SOURCE: "soil", BY_THROUGH_HOW: "root"]
+
+	// CENTRAL         REQUIRES: a plant ; living thing requires nutrients to grow     (085c-28bf-bb51-79e6) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"nutrient", FOR_PURPOSE:"grow" ]
+	//row autoRow5 = [UUID:"085c-28bf-bb51-79e6", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"085c-28bf-bb51-79e6", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "grow"]
+
+	// CENTRAL         SOURCEOF: the sun is the source of solar energy called sunlight     (1ed3-919d-4a4c-1be7) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"solar energy", NAME:"sunlight" ]
+	//row autoRow6 = [UUID:"1ed3-919d-4a4c-1be7", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "solar energy", NAME: "sunlight"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"1ed3-919d-4a4c-1be7", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "solar energy", NAME: "sunlight"]
+
+	// CENTRAL         LOCATIONS: carbon dioxide can be found in the air     (3cff-4d77-9e27-7dc5) [ THING_PROCESS:"carbon dioxide", LOCATION:"air" ]
+	//row autoRow7 = [UUID:"3cff-4d77-9e27-7dc5", THING_PROCESS: "carbon dioxide", LOCATION: "air"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3cff-4d77-9e27-7dc5", THING_PROCESS: "carbon dioxide", LOCATION: "air"]
+
+	// CENTRAL         CONTAINS: soil contains nutrients for plants     (ddcc-3b71-b14e-97d1) [ OBJECT_AGENT:"soil", WHAT_IT_CONTAINS:"nutrient", FOR_PURPOSE:"plant" ]
+	//row autoRow8 = [UUID:"ddcc-3b71-b14e-97d1", OBJECT_AGENT: "soil", WHAT_IT_CONTAINS: "nutrient", FOR_PURPOSE: "plant"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"ddcc-3b71-b14e-97d1", OBJECT_AGENT: "soil", WHAT_IT_CONTAINS: "nutrient", FOR_PURPOSE: "plant"]
+
+	// CENTRAL         SOURCEOF: soil provides nutrients for plants     (6758-0732-1458-ec8b) [ AGENT:"soil", VERB_SOURCEOF_PROVIDE_ETC:"provide", WHAT_IT_PROVIDES:"nutrient", AGENT_IT_PROVIDES_THING_TO:"plant" ]
+	//row autoRow9 = [UUID:"6758-0732-1458-ec8b", AGENT: "soil", VERB_SOURCEOF_PROVIDE_ETC: "provide", WHAT_IT_PROVIDES: "nutrient", AGENT_IT_PROVIDES_THING_TO: "plant"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"6758-0732-1458-ec8b", AGENT: "soil", VERB_SOURCEOF_PROVIDE_ETC: "provide", WHAT_IT_PROVIDES: "nutrient", AGENT_IT_PROVIDES_THING_TO: "plant"]
+
+	// CENTRAL         LOCATIONS: mineral nutrients can be found in soil     (7fac-c053-0547-dfab) [ THING_PROCESS:"mineral nutrient", LOCATION:"soil" ]
+	//row autoRow10 = [UUID:"7fac-c053-0547-dfab", THING_PROCESS: "mineral nutrient", LOCATION: "soil"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"7fac-c053-0547-dfab", THING_PROCESS: "mineral nutrient", LOCATION: "soil"]
+
+	// CENTRAL         INSTANCES: some minerals are nutrients     (ca61-050e-2c77-6cda) [ INSTANCE:"mineral", CLASS:"nutrient" ]
+	//row autoRow11 = [UUID:"ca61-050e-2c77-6cda", INSTANCE: "mineral", CLASS: "nutrient"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"ca61-050e-2c77-6cda", INSTANCE: "mineral", CLASS: "nutrient"]
+
+	// CENTRAL         PROP-RESOURCES-RENEWABLE: soil is a renewable resource for growing plants     (1af4-c273-5b80-34e6) [ RESOURCE:"soil", REWABLE_NONRENEWABLE:"renewable", FOR_PURPOSE:"grow plant" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"1af4-c273-5b80-34e6", RESOURCE: "soil", REWABLE_NONRENEWABLE: "renewable", FOR_PURPOSE: "grow plant"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"1af4-c273-5b80-34e6", RESOURCE: "soil", REWABLE_NONRENEWABLE: "renewable", FOR_PURPOSE: "grow plant"]
+
+endinferencepattern

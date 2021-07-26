@@ -1,0 +1,61 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Protons_Dictate_Element
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: aluminum is a kind of element     (4c25-b5f8-13bf-6b86) [ HYPONYM:"aluminum", HYPERNYM:"element" ]
+	//        HINTROW chlorine is a kind of element     (d176-e42a-2654-8d3c) [ HYPONYM:"chlorine", HYPERNYM:"element" ]
+	//        HINTROW copper is a kind of element     (6cfd-e59f-1413-76ff) [ HYPONYM:"copper", HYPERNYM:"element" ]
+	//        HINTROW gold is a kind of element     (eb57-77f3-768e-3665) [ HYPONYM:"gold", HYPERNYM:"element" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "element"]
+
+	// CENTRAL         COMPARISON: the atom is the smallest unit ; particle that has the properties of an element     (9059-174e-fc66-fd7a) [ THING:"atom", ACTION1:"be", COMPARISON:"small", WHAT:"unit;particle", SCOPE2:"have property of element" ]
+	//  Notes: 3b8b-8c35-53cf-354f->9059-174e-fc66-fd7a
+	//row autoRow1 = [UUID:"9059-174e-fc66-fd7a", THING: "atom", ACTION1: "be", COMPARISON: "small", WHAT: "unit", SCOPE2: "have property of element"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"9059-174e-fc66-fd7a", THING: "atom", ACTION1: "be", COMPARISON: "small", WHAT: "unit", SCOPE2: "have property of element"]
+
+	// CENTRAL         MADEOF: an element is made of one kind of atoms     (07ab-6aed-2ab3-9846) [ OBJECT:"element", VALUE:"one kind of", MATERIAL:"atom" ]
+	//row autoRow2 = [UUID:"07ab-6aed-2ab3-9846", OBJECT: "element", VALUE: "one kind of", MATERIAL: "atom"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"07ab-6aed-2ab3-9846", OBJECT: "element", VALUE: "one kind of", MATERIAL: "atom"]
+
+	// CENTRAL         PARTOF: a proton is a part of an atom ; an element     (3927-8f89-d676-6ab4) [ PART:"proton", WHOLE:"atom;element" ]
+	//row autoRow3 = [UUID:"3927-8f89-d676-6ab4", PART: "proton", WHOLE: "atom"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"3927-8f89-d676-6ab4", PART: "proton", WHOLE: "atom"]
+
+	// CENTRAL         ACTION: an element is identified by its number of protons     (1c60-3ebb-470c-1ad4) [ AGENT_OBJECT:"element", ACTION2:"be identify", HOW:"numb of proton" ]
+	//row autoRow4 = [UUID:"1c60-3ebb-470c-1ad4", AGENT_OBJECT: "element", ACTION2: "be identify", HOW: "numb of proton"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"1c60-3ebb-470c-1ad4", AGENT_OBJECT: "element", ACTION2: "be identify", HOW: "numb of proton"]
+
+	// CENTRAL         KINDOF: proton is a kind of subatomic particles     (a100-2a92-ea23-ffeb) [ HYPONYM:"proton", SCOPE1:"subatomic", HYPERNYM:"particle" ]
+	//  Notes: 7d6b-0edf-e4de-b8f9->a100-2a92-ea23-ffeb
+	//row autoRow5 = [UUID:"a100-2a92-ea23-ffeb", HYPONYM: "proton", SCOPE1: "subatomic", HYPERNYM: "particle"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"a100-2a92-ea23-ffeb", HYPONYM: "proton", SCOPE1: "subatomic", HYPERNYM: "particle"]
+
+	// CENTRAL         MADEOF: an atom is made of protons ; neutrons ; electrons     (b5fd-9d86-c99e-9a4e) [ OBJECT:"atom", MATERIAL:"proton;neutron;electron" ]
+	//row autoRow6 = [UUID:"b5fd-9d86-c99e-9a4e", OBJECT: "atom", MATERIAL: "proton"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"b5fd-9d86-c99e-9a4e", OBJECT: "atom", MATERIAL: "proton"]
+
+	// CENTRAL         LOCATIONS: protons are found in the nucleus of an atom     (02db-ddef-7cc9-ebae) [ THING_PROCESS:"proton", LOCATION:"nucleus", SCOPE:"of atom" ]
+	//row autoRow7 = [UUID:"02db-ddef-7cc9-ebae", THING_PROCESS: "proton", LOCATION: "nucleus", SCOPE: "of atom"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"02db-ddef-7cc9-ebae", THING_PROCESS: "proton", LOCATION: "nucleus", SCOPE: "of atom"]
+
+	// CENTRAL         MADEOF: the nucleus of an atom is usually made of both protons and neutrons     (9b34-00dc-73a7-2307) [ OBJECT:"nucleus of atom", QUALIFIER:"be usually", MATERIAL:"proton neutron" ]
+	//row autoRow8 = [UUID:"9b34-00dc-73a7-2307", OBJECT: "nucleus of atom", QUALIFIER: "be usually", MATERIAL: "proton neutron"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"9b34-00dc-73a7-2307", OBJECT: "nucleus of atom", QUALIFIER: "be usually", MATERIAL: "proton neutron"]
+
+	// CENTRAL        (OPTIONAL) PROP-CHEM-CHARGE: a proton has a positive 1 electric charge     (09fe-b28e-e458-a48a) [ THING:"proton", POSITIVE_NEGATIVE_NEUTRAL:"positive", NUMERICQUANTITY:"1" ]
+	//  Notes: fbfd-9bdb-a833-89c2->09fe-b28e-e458-a48a
+	//row *autoRow9 = [UUID:"09fe-b28e-e458-a48a", THING: "proton", POSITIVE_NEGATIVE_NEUTRAL: "positive", NUMERICQUANTITY: "1"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"09fe-b28e-e458-a48a", THING: "proton", POSITIVE_NEGATIVE_NEUTRAL: "positive", NUMERICQUANTITY: "1"]
+
+	// LEXGLUE         SYNONYMY: identifying is similar to determining     (7955-b33e-9357-33b7) [ ACTION1:"identify", ACTION2:"determine" ]
+	//row autoRow10 = [UUID:"7955-b33e-9357-33b7", ACTION1: "identify", ACTION2: "determine"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"7955-b33e-9357-33b7", ACTION1: "identify", ACTION2: "determine"]
+
+endinferencepattern

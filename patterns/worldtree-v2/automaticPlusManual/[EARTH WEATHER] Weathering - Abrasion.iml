@@ -1,0 +1,47 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Weathering_Abrasion
+
+	// Plain text description
+	description = "can be collapsed into other pattern"
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a pebble is a kind of small rock     (9815-d368-af06-bf1c) [ HYPONYM:"pebble", SCOPE1:"small", HYPERNYM:"rock" ]
+	//        HINTROW bedrock is a kind of rock     (e9d6-4c3d-84ba-0cd0) [ HYPONYM:"bedrock", HYPERNYM:"rock" ]
+	//        HINTROW a boulder is a kind of rock     (283c-4f87-4279-929c) [ HYPONYM:"boulder", HYPERNYM:"rock" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "rock"]
+
+	// CENTRAL         ACTION: abrasion is when rocks rub against each other when being moved     (f846-f07d-051e-3061) [ DEFINITION_NAME:"abrasion", AGENT_OBJECT:"rock", ACTION2:"rub", OBJECT_PROPERTY:"against other", WHEN_WHERE:"be move" ]
+	//row autoRow1 = [UUID:"f846-f07d-051e-3061", DEFINITION_NAME: "abrasion", AGENT_OBJECT: "rock", ACTION2: "rub", OBJECT_PROPERTY: "against other", WHEN_WHERE: "be move"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"f846-f07d-051e-3061", DEFINITION_NAME: "abrasion", AGENT_OBJECT: "rock", ACTION2: "rub", OBJECT_PROPERTY: "against other", WHEN_WHERE: "be move"]
+
+	// CENTRAL         CHANGE: abrasion changes rocks from rough into smooth ; round     (cfd7-7ab4-8396-4d7a) [ PROCESS_NAME:"abrasion", VERB:"change", WHAT:"rock", FROM:"rough", INTO:"smooth;round" ]
+	//  Notes: 81aa-b05f-7a46-d120->cfd7-7ab4-8396-4d7a
+	//row autoRow2 = [UUID:"cfd7-7ab4-8396-4d7a", PROCESS_NAME: "abrasion", VERB: "change", WHAT: "rock", FROM: "rough", INTO: "smooth"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"cfd7-7ab4-8396-4d7a", PROCESS_NAME: "abrasion", VERB: "change", WHAT: "rock", FROM: "rough", INTO: "smooth"]
+
+	// CENTRAL         KINDOF: abrasion is a kind of weathering     (71af-befa-172b-9cab) [ HYPONYM:"abrasion", HYPERNYM:"weather" ]
+	//  Notes: peripheral
+	//row autoRow3 = [UUID:"71af-befa-172b-9cab", HYPONYM: "abrasion", HYPERNYM: "weather"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"71af-befa-172b-9cab", HYPONYM: "abrasion", HYPERNYM: "weather"]
+
+	// CENTRAL         CAUSE: rocks contacting ; rubbing each other over long periods of time causes those rocks to smooth     (b3f4-9bbd-487f-8643) [ CONDITION_AGENT_OBJECT:"rock", CONDITION_VERB:"contact;rub", CONDITION_PATIENT:"other", DURATION1:"over long period of time", RESULT_AGENT:"rock", RESULT_VERB:"smooth" ]
+	//row autoRow4 = [UUID:"b3f4-9bbd-487f-8643", CONDITION_AGENT_OBJECT: "rock", CONDITION_VERB: "contact", CONDITION_PATIENT: "other", DURATION1: "over long period of time", RESULT_AGENT: "rock", RESULT_VERB: "smooth"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"b3f4-9bbd-487f-8643", CONDITION_AGENT_OBJECT: "rock", CONDITION_VERB: "contact", CONDITION_PATIENT: "other", DURATION1: "over long period of time", RESULT_AGENT: "rock", RESULT_VERB: "smooth"]
+
+	// CENTRAL        (OPTIONAL) PARTOF: a riverbed is a part of a river     (4ac1-3c02-0e81-324b) [ PART:"riverbed", QUANTIFIER1:"be", WHOLE:"river" ]
+	//row *autoRow5 = [UUID:"4ac1-3c02-0e81-324b", PART: "riverbed", QUANTIFIER1: "be", WHOLE: "river"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"4ac1-3c02-0e81-324b", PART: "riverbed", QUANTIFIER1: "be", WHOLE: "river"]
+
+	// CENTRAL         ACTION: sometimes weathering smooths ; rounds rocks     (e357-f8b5-992c-2d25) [ QUANTIFIER:"sometimes", AGENT_OBJECT:"weather", ACTION2:"smooth;round", OBJECT_PROPERTY:"rock" ]
+	//row autoRow6 = [UUID:"e357-f8b5-992c-2d25", QUANTIFIER: "sometimes", AGENT_OBJECT: "weather", ACTION2: "smooth", OBJECT_PROPERTY: "rock"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"e357-f8b5-992c-2d25", QUANTIFIER: "sometimes", AGENT_OBJECT: "weather", ACTION2: "smooth", OBJECT_PROPERTY: "rock"]
+
+	// LEXGLUE         SYNONYMY: rounding means making the shape round     (24aa-04ec-f70c-3f1a) [ X1:"round", X2:"make shape round" ]
+	//row autoRow7 = [UUID:"24aa-04ec-f70c-3f1a", X1: "round", X2: "make shape round"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"24aa-04ec-f70c-3f1a", X1: "round", X2: "make shape round"]
+
+endinferencepattern

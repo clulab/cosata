@@ -1,0 +1,118 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Power_Generators_RenewableNonRenewable
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+// Renewable/Non-renewable energy source
+
+	// CENTRALSW       REQUIRES: electric devices require electrical energy to function     (0584-393a-7b86-9c70) [ OBJECT_AGENT_PROCESS:"electric device", VERB_REQUIRES:"require", OBJECT:"electric energy", FOR_PURPOSE:"function" ]
+	//        HINTROW an electrical device requires electricity to turn on     (4ba9-2d5a-0284-2882) [ OBJECT_AGENT_PROCESS:"electric device", VERB_REQUIRES:"require", OBJECT:"electric", FOR_PURPOSE:"turn" ]
+	//row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "electric device", VERB_REQUIRES: "require", OBJECT: "electric"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "electric device", VERB_REQUIRES: "require", OBJECT: <electricalEnergy>]
+
+	// CENTRALSW       CHANGE: a solar panel converts sunlight ; solar energy into electrical energy ; electricity     (bc35-178c-432b-77f5) [ ACTOR_WHO:"solar panel", VERB:"convert", FROM:"sunlight;solar energy", INTO:"electric energy;electric" ]
+	//row autoRow6 = [TABLE:"CHANGE", ACTOR_WHO: "solar panel", VERB: "convert", FROM: "solar"+<energy_0>, INTO: "electric"+<energy_0>] //OVER-CONSTR.
+	//row autoRow6 = [TABLE:"CHANGE", ACTOR_WHO: <deviceName>, VERB: "convert", FROM: "solar"+<energy_0>, INTO: "electric"+<energy_0>]
+	// CENTRALSW       CHANGE: solar cells convert solar energy into electrical energy     (66e0-20b6-da6c-8421) [ ACTOR_WHO:"solar cell", VERB:"convert", FROM:"solar energy", INTO:"electric energy" ]
+	//        HINTROW photovoltaic cells convert light energy into electricity     (94cd-574c-c925-3eff) [ ACTOR_WHO:"photovoltaic cell", VERB:"convert", FROM:"light energy", INTO:"electric" ]
+	//row autoRow1 = [TABLE:"CHANGE", ACTOR_WHO: *"POS:JJ"+"cell", VERB: "convert", FROM: *"POS:JJ"+<energy_0>, INTO: "electric"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CHANGE", ACTOR_WHO: <deviceName>, FROM: <energySourceBefore>, INTO: <electricalEnergy>]
+
+	// CENTRAL         KINDOF: solar panels are a kind of power supplies     (1aa9-530e-351f-2c08) [ HYPONYM:"solar panel", HYPERNYM:"power supply" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"1aa9-530e-351f-2c08", HYPONYM: "solar panel", HYPERNYM: "power supply"] //OVER-CONSTR.
+	row *autoRow13 = [TABLE:"KINDOF", HYPONYM: <deviceName>, HYPERNYM: "power supply"]
+
+	// CENTRALSW       SOURCEOF: the sun is the source of solar energy called sunlight     (1ed3-919d-4a4c-1be7) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"solar energy", NAME:"sunlight" ]
+	//row autoRow5 = [TABLE:"SOURCEOF", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "solar"+<energy_0>, NAME: "sunlight"] //OVER-CONSTR.
+	row *autoRow5 = [TABLE:"SOURCEOF", AGENT: <sourceName>, WHAT_IT_PROVIDES: <energySourceBefore>, NAME: <energySourceAltName>]
+
+	// CENTRALSW       PROP-RESOURCES-RENEWABLE: solar energy is a renewable ; inexhaustible resource     (f5c3-d141-1a8b-80c9) [ RESOURCE:"solar energy", REWABLE_NONRENEWABLE:"renewable;inexhaustible" ]
+	//row autoRow3 = [TABLE:"PROP-RESOURCES-RENEWABLE", RESOURCE: "solar"+<energy_0>, REWABLE_NONRENEWABLE: "renewable"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"PROP-RESOURCES-RENEWABLE", RESOURCE: <energySourceBefore>, REWABLE_NONRENEWABLE: <renewableNonRenewable>]
+
+	// CENTRAL        (OPTIONAL) COUPLEDRELATIONSHIP: as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease     (a979-cbd2-fb2d-175e) [ QUANTITY_MEASURE1:"use of renewable resource", ACTION1:"use", PATIENT1:"of renewable resource", CHANGE1:"increase", ACTION2:"use", PATIENT2:"of nonrenewable resource", CHANGE2:"decrease" ]
+	//row *autoRow10 = [UUID:"a979-cbd2-fb2d-175e", QUANTITY_MEASURE1: "use of renewable resource", ACTION1: "use", PATIENT1: "of renewable resource", CHANGE1: "increase", ACTION2: "use", PATIENT2: "of nonrenewable resource", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"a979-cbd2-fb2d-175e", QUANTITY_MEASURE1: "use of renewable resource", ACTION1: "use", PATIENT1: "of renewable resource", CHANGE1: "increase", ACTION2: "use", PATIENT2: "of nonrenewable resource", CHANGE2: "decrease"]
+
+	// GROUNDING       KINDOF: household appliances are a kind of electrical device     (53c2-3d92-5b32-6e64) [ HYPONYM:"household appliance", SCOPE1:"electric", HYPERNYM:"device" ]
+	//        HINTROW a light bulb is a kind of electrical device     (00a4-b16a-aa4d-893d) [ HYPONYM:"light bulb", SCOPE1:"electric", HYPERNYM:"device" ]
+	//row autoRow2 = [TABLE:"KINDOF", SCOPE1: "electric", HYPERNYM: "device"] //OVER-CONSTR.
+    // Can enumerate a lot
+	//## row autoRow2 = [TABLE:"KINDOF",  HYPONYM:<electricDeviceName>, SCOPE1: "electric", HYPERNYM: "device"]
+
+endinferencepattern
+
+inferencepattern PoweringElectricDevices
+// Powering electrical devices
+
+	// GROUNDING       KINDOF: household appliances are a kind of electrical device     (53c2-3d92-5b32-6e64) [ HYPONYM:"household appliance", SCOPE1:"electric", HYPERNYM:"device" ]
+	//        HINTROW a light bulb is a kind of electrical device     (00a4-b16a-aa4d-893d) [ HYPONYM:"light bulb", SCOPE1:"electric", HYPERNYM:"device" ]
+	//row autoRow2 = [TABLE:"KINDOF", SCOPE1: "electric", HYPERNYM: "device"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF",  HYPONYM:<electricDeviceName>, SCOPE1: "electric", HYPERNYM: "device"]
+
+
+	// CENTRAL        (OPTIONAL) USEDFOR: electricity is used as an energy source by electrical devices     (b8fe-4fe5-0eae-a038) [ AGENT_OBJECT:"electric", FOR_PURPOSE:"energy source", AGENT_THING_WHO_USES:"electric device" ]
+	//row *autoRow9 = [UUID:"b8fe-4fe5-0eae-a038", AGENT_OBJECT: "electric", FOR_PURPOSE: <energy_0>+"source", AGENT_THING_WHO_USES: "electric device"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"b8fe-4fe5-0eae-a038", AGENT_OBJECT: "electric", AGENT_THING_WHO_USES: "electric device"]
+
+	// CENTRAL         KINDOF: an energy source is a kind of resource     (044f-98c1-07d1-2e57) [ HYPONYM:"energy source", HYPERNYM:"resource" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: <energy_0>+"source", HYPERNYM: "resource"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"044f-98c1-07d1-2e57", HYPONYM: "energy source", HYPERNYM: "resource"]
+
+	// LEXGLUE         SYNONYMY: to provide something means to be the source of that something     (acf6-d100-2553-e4ac) [ ACTION1:"provide", Y1:"something", ACTION2:"be", Y2:"source of something" ]
+	//row autoRow14 = [UUID:"acf6-d100-2553-e4ac", ACTION1: "provide", Y1: "something", ACTION2: "be", Y2: "source of something"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"acf6-d100-2553-e4ac", ACTION1: "provide", Y1: "something", ACTION2: "be", Y2: "source of something"]
+
+	// LEXGLUE         SYNONYMY: to power means to provide energy for     (3a7a-4175-a1b7-db73) [ ACTION1:"power", ACTION2:"provide energy for" ]
+	//row autoRow15 = [UUID:"3a7a-4175-a1b7-db73", ACTION1: "power", ACTION2: "provide"+<energy_0>+"for"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"3a7a-4175-a1b7-db73"]
+
+endinferencepattern
+
+
+inferencepattern SolarPanelSpecific
+
+// Solar panel specific
+	// CENTRAL         MADEOF: solar cells often are made of silicon     (4ec0-b548-a2c5-73c1) [ OBJECT:"solar cell", QUALIFIER:"often", MATERIAL:"silicon" ]
+	//row autoRow11 = [UUID:"4ec0-b548-a2c5-73c1", OBJECT: "solar cell", QUALIFIER: "often", MATERIAL: "silicon"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"4ec0-b548-a2c5-73c1", OBJECT: "solar cell", QUALIFIER: "often", MATERIAL: "silicon"]
+
+	// CENTRAL         MADEOF: a solar panel is made of solar cells     (432f-babd-5745-f060) [ OBJECT:"solar panel", MATERIAL:"solar cell" ]
+	//row autoRow12 = [UUID:"432f-babd-5745-f060", OBJECT: "solar panel", MATERIAL: "solar cell"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"432f-babd-5745-f060", OBJECT: "solar panel", MATERIAL: "solar cell"]
+
+	// CENTRAL         KINDOF: solar panels are a kind of power supplies     (1aa9-530e-351f-2c08) [ HYPONYM:"solar panel", HYPERNYM:"power supply" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"1aa9-530e-351f-2c08", HYPONYM: "solar panel", HYPERNYM: "power supply"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"1aa9-530e-351f-2c08", HYPONYM: "solar panel", HYPERNYM: "power supply"]
+
+	// LEXGLUE         SYNONYMY: sunlight means solar energy     (6759-5ee2-140f-df48) [ X1:"sunlight", X2:"solar energy" ]
+	//row autoRow16 = [UUID:"6759-5ee2-140f-df48", X1: "sunlight", X2: "solar"+<energy_0>] //OVER-CONSTR.
+	row autoRow16 = [UUID:"6759-5ee2-140f-df48", X1: "sunlight"]
+
+	// LEXGLUE         SYNONYMY: solar cell is similar to photovoltaic cell     (673d-b928-1d98-7e31) [ X1:"solar cell", X2:"photovoltaic cell" ]
+	//row autoRow17 = [UUID:"673d-b928-1d98-7e31", X1: "solar cell", X2: "photovoltaic cell"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"673d-b928-1d98-7e31", X1: "solar cell", X2: "photovoltaic cell"]
+
+	// LEXGLUE         SYNONYMY: solar power means solar energy     (b19d-499c-1f30-c429) [ X1:"solar power", X2:"solar energy" ]
+	//row autoRow18 = [UUID:"b19d-499c-1f30-c429", X1: "solar power", X2: "solar"+<energy_0>] //OVER-CONSTR.
+	row autoRow18 = [UUID:"b19d-499c-1f30-c429", X1: "solar power"]
+
+	// CENTRAL         KINDOF: sunlight is a kind of solar energy     (59d6-9954-ef5e-12b2) [ HYPONYM:"sunlight", HYPERNYM:"solar energy" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"59d6-9954-ef5e-12b2", HYPONYM: "sunlight", HYPERNYM: "solar"+<energy_0>] //OVER-CONSTR.
+	row autoRow4 = [UUID:"59d6-9954-ef5e-12b2", HYPONYM: "sunlight"]
+
+	// CENTRAL         KINDOF: solar energy is a kind of energy     (4849-d977-c75a-e8fb) [ HYPONYM:"solar energy", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"4849-d977-c75a-e8fb", HYPONYM: "solar"+<energy_0>, HYPERNYM: <energy_0>] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4849-d977-c75a-e8fb"]
+
+endinferencepattern

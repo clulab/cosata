@@ -1,0 +1,79 @@
+
+// Automatically converted pattern
+inferencepattern TestPattern1
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+	row obj = [TABLE:"KINDOF", HYPONYM:<COL> + <ANIM>, HYPERNYM:"test object"]
+	row *color = [TABLE:"KINDOF", HYPONYM:<COL>, HYPERNYM:"color"]
+	row animal = [TABLE:"KINDOF", HYPONYM:<ANIM>, HYPERNYM:"animal"]
+	
+endinferencepattern
+
+
+/*
+// Automatically converted pattern
+inferencepattern TestPattern3
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+	//row obj = [TABLE:"KINDOF", HYPERNYM:"in" + <x>]
+	//row obj2 = [TABLE:"KINDOF", HYPERNYM:<y> + "in" + <x>]
+	//row obj3 = [TABLE:"KINDOF", HYPERNYM:<y> + "in" + <x> + <z>]
+	//row obj3 = [TABLE:"KINDOF", HYPERNYM:<y> + "in" + <*x> + <z>]
+	//row obj3 = [TABLE:"KINDOF", HYPERNYM:<y> + "in" + <*x> + <*z> + <a>]
+	//row obj3 = [TABLE:"KINDOF", HYPERNYM:"in" + <*x> + <*z> + <a>]
+	//row obj1 = [TABLE:"KINDOF", HYPERNYM:"sea"]
+	row obj1 = [TABLE:"KINDOF", HYPERNYM:"animal"]
+	
+	
+	
+endinferencepattern
+*/
+
+
+/*
+inferencepattern TestPattern2
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+	row animal = [TABLE:"KINDOF", HYPONYM:<ANIM>, HYPERNYM:"animal"]
+	
+endinferencepattern
+*/
+
+/*
+// Automatically converted pattern
+inferencepattern TestPattern
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+	// Test 2	
+	//row autoRow2a = [TABLE:"DURING", EVENT: <var_0> + "solstice", TIME: <var_2> + "POS:CD", SCOPE: "in" + "northern" + <var1b>]
+	//row autoRow2b = [TABLE:"DURING", EVENT: <var_0> + "solstice", TIME: <var_2> + "POS:CD", SCOPE: "in" + "northern" + <var1b>]
+
+	//row autoRow2a = [TABLE:"DURING", EVENT: <var_0> + "solstice", TIME: <var_2> + "POS:CD", SCOPE:= "in" + "northern hemisphere"]
+	
+	//row autoRow2a = [TABLE:"DURING", SCOPE:= "in" + "northern hemisphere"]			// Multi-element lexical pattern (2 elements)
+	//row autoRow2b = [TABLE:"DURING", SCOPE: "in" + "northern" + "hemisphere"]			// Multi-elemene lexical pattern (3 elements)
+	//row autoRow2b = [TABLE:"DURING", SCOPE: "in northern hemisphere"]				// Single-element lexical pattern (1 element)
+	//row autoRow2b = [TABLE:"DURING", SCOPE: <test123>]						// Single-element variable pattern (1 variable)	
+	//row autoRow2b = [TABLE:"DURING", SCOPE: "in" + <test123>]					// Mixed pattern (1 lexical and 1 variable)
+	//row autoRow2b = [TABLE:"DURING", SCOPE: "in" + <test123> + "hemisphere"]			// Mixed pattern (1 variable between 2 lexical)	
+	//row autoRow2b = [TABLE:"DURING", SCOPE: <test123> + <test456>]					// Multiple variables beside each other
+	
+	
+	row obj = [TABLE:"KINDOF", HYPONYM:<COL> + <ANIM>, HYPERNYM:"test object"]
+	row color = [TABLE:"KINDOF", HYPONYM:<COL>, HYPERNYM:"color"]
+	row animal = [TABLE:"KINDOF", HYPONYM:<ANIM>, HYPERNYM:"animal"]
+		
+endinferencepattern
+*/

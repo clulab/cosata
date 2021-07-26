@@ -1,0 +1,47 @@
+// Automatically converted pattern
+inferencepattern MAT_STATES_States_of_Matter_Kinetic_Energy_of_Particles
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-THINGS: particles in a liquid have more kinetic energy than particles in a solid     (261f-49cc-683a-a8e4) [ THING:"particle in liquid", VALUE:"much", ATTRIBUTE:"kinetic energy", SCOPE_RELATIVETO:"than particle in solid" ]
+	//        HINTROW particles in a gas have more kinetic energy than particles in a liquid     (ca8b-bc08-0c42-61cb) [ THING:"particle in gas", VALUE:"much", ATTRIBUTE:"kinetic energy", SCOPE_RELATIVETO:"than particle in liquid" ]
+	//row autoRow0 = [TABLE:"PROP-THINGS", THING: "particle in"+*"POS:NN", VALUE: "much", ATTRIBUTE: "kinetic energy", SCOPE_RELATIVETO: "than particle in"+*"POS:JJ"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-THINGS", THING: "particle in"+*"POS:NN", VALUE: "much", ATTRIBUTE: "kinetic energy", SCOPE_RELATIVETO: "than particle in"+*"POS:JJ"]
+
+	// CENTRALSW      (OPTIONAL) PROP-STATESOFMATTER-TEMPS: water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C     (4a5a-9115-28a9-b97b) [ MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice", LOWER_BOUND:"0;-459;-273;459;273", UPPER_BOUND:"273;32;0", UNITS:"k;f;c" ]
+	//        HINTROW water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//        HINTROW water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C     (e474-2a11-6e7b-ae8b) [ MATERIAL_NAME:"water", STATEOFMATTER:"gas", FORM_NAME:"water vapor;steam", LOWER_BOUND:"373;212;100", UPPER_BOUND:"100000000000", UNITS:"k;f;c" ]
+	//row *autoRow1 = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME: "water", UNITS: "k"] //OVER-CONSTR.
+	row *autoRow1 = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME: "water", UNITS: "k"]
+
+	// CENTRAL         MADEOF: matter ; materials ; substances are made of atoms ; particles     (1758-a1b7-4083-9e99) [ OBJECT:"matt;material;substance", MATERIAL:"atom;particle" ]
+	//row autoRow2 = [UUID:"1758-a1b7-4083-9e99", OBJECT: "matt", MATERIAL: "atom"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"1758-a1b7-4083-9e99", OBJECT: "matt", MATERIAL: "atom"]
+
+	// CENTRAL         KINDOF: liquid is a kind of state of matter     (f7e9-c6f8-892b-3496) [ HYPONYM:"liquid", HYPERNYM:"state of matt" ]
+	//row autoRow3 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"]
+
+	// CENTRAL         KINDOF: solid is a kind of state of matter     (cf49-1b7a-89f0-41f5) [ HYPONYM:"solid", HYPERNYM:"state of matt" ]
+	//row autoRow4 = [UUID:"cf49-1b7a-89f0-41f5", HYPONYM: "solid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"cf49-1b7a-89f0-41f5", HYPONYM: "solid", HYPERNYM: "state of matt"]
+
+	// CENTRAL         KINDOF: gas is a kind of state of matter     (aa73-331e-e970-c934) [ HYPONYM:"gas", HYPERNYM:"state of matt" ]
+	//row autoRow5 = [UUID:"aa73-331e-e970-c934", HYPONYM: "gas", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"aa73-331e-e970-c934", HYPONYM: "gas", HYPERNYM: "state of matt"]
+
+	// CENTRAL         MADEOF: substances are made of matter     (3395-b5a2-ae2d-39c2) [ OBJECT:"substance", MATERIAL:"matt" ]
+	//row autoRow6 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"]
+
+	// CENTRAL         KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"81b7-0a58-5b0b-0bbf", HYPONYM: "water", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"81b7-0a58-5b0b-0bbf", HYPONYM: "water", HYPERNYM: "substance"]
+
+endinferencepattern

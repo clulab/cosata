@@ -1,0 +1,71 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Origin_Coal
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW a bush is a kind of plant     (311e-8d88-cde2-860d) [ HYPONYM:"bush", HYPERNYM:"plant" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// CENTRAL         CHANGE: being buried under soil and mud changes dead vegetation ; dead plant matter into peat through extreme heat and pressure in a swamp over a long period of time     (43e2-442b-4572-2279) [ ACTOR_WHO:"be bury", QUANTIFIER_SCOPE:"under soil mud", VERB:"change", FROM:"dead vegetation;dead plant matt", INTO:"peat", BY_THROUGH_HOW:"extreme heat pressure", SCOPE:"in swamp over long period of time" ]
+	//row autoRow1 = [UUID:"43e2-442b-4572-2279", ACTOR_WHO: "be bury", QUANTIFIER_SCOPE: "under soil mud", VERB: "change", FROM: "dead plant matt", INTO: "peat", BY_THROUGH_HOW: "extreme heat pressure", SCOPE: "in swamp over long period of time"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"43e2-442b-4572-2279", ACTOR_WHO: "be bury", QUANTIFIER_SCOPE: "under soil mud", VERB: "change", FROM: "dead plant matt", INTO: "peat", BY_THROUGH_HOW: "extreme heat pressure", SCOPE: "in swamp over long period of time"]
+
+	// CENTRAL         CHANGE: being buried under soil and mud changes peat into coal through extreme heat and pressure in a swamp over a long period of time     (b9b5-a8fe-7c6e-bde2) [ ACTOR_WHO:"be bury", QUANTIFIER_SCOPE:"under soil mud", VERB:"change", FROM:"peat", INTO:"coal", BY_THROUGH_HOW:"extreme heat pressure", SCOPE:"in swamp over long period of time" ]
+	//row autoRow2 = [UUID:"b9b5-a8fe-7c6e-bde2", ACTOR_WHO: "be bury", QUANTIFIER_SCOPE: "under soil mud", VERB: "change", FROM: "peat", INTO: "coal", BY_THROUGH_HOW: "extreme heat pressure", SCOPE: "in swamp over long period of time"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"b9b5-a8fe-7c6e-bde2", ACTOR_WHO: "be bury", QUANTIFIER_SCOPE: "under soil mud", VERB: "change", FROM: "peat", INTO: "coal", BY_THROUGH_HOW: "extreme heat pressure", SCOPE: "in swamp over long period of time"]
+
+	// CENTRAL         MADEOF: peat is made of decaying vegetation compacted by soil in a swamp over a long period of time     (63dd-a852-6c17-7b9a) [ OBJECT:"peat", MATERIAL:"decay vegetation", BY_THROUGH_HOW:"compact by soil", SCOPE:"in swamp over long period of time" ]
+	//row autoRow3 = [UUID:"63dd-a852-6c17-7b9a", OBJECT: "peat", MATERIAL: "decay vegetation", BY_THROUGH_HOW: "compact by soil", SCOPE: "in swamp over long period of time"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"63dd-a852-6c17-7b9a", OBJECT: "peat", MATERIAL: "decay vegetation", BY_THROUGH_HOW: "compact by soil", SCOPE: "in swamp over long period of time"]
+
+	// CENTRAL         REQUIRES: forming coal ; fossil fuels requires deposition and burial of decaying vegetation     (69e3-9034-d59c-1674) [ ACTION1:"form", OBJECT_AGENT_PROCESS:"coal;fossil fuel", VERB_REQUIRES:"require", ACTION2:"deposition burial of", OBJECT:"decay vegetation" ]
+	//row autoRow4 = [UUID:"69e3-9034-d59c-1674", ACTION1: "form", OBJECT_AGENT_PROCESS: "fossil fuel", VERB_REQUIRES: "require", ACTION2: "deposition burial of", OBJECT: "decay vegetation"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"69e3-9034-d59c-1674", ACTION1: "form", OBJECT_AGENT_PROCESS: "fossil fuel", VERB_REQUIRES: "require", ACTION2: "deposition burial of", OBJECT: "decay vegetation"]
+
+	// CENTRAL         LOCATIONS: the formation of peat occurs at the bottom of swamps     (071b-6b75-e037-a163) [ THING_PROCESS:"form of peat", LOCATION:"bottom of swamp" ]
+	//row autoRow5 = [UUID:"071b-6b75-e037-a163", THING_PROCESS: "form of peat", LOCATION: "bottom of swamp"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"071b-6b75-e037-a163", THING_PROCESS: "form of peat", LOCATION: "bottom of swamp"]
+
+	// CENTRAL         KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"]
+
+	// CENTRAL         ACTION: dead organisms decay     (2e43-6a8c-1231-65f1) [ ADJ:"dead", AGENT_OBJECT:"organism", ACTION2:"decay" ]
+	//row autoRow7 = [UUID:"2e43-6a8c-1231-65f1", ADJ: "dead", AGENT_OBJECT: "organism", ACTION2: "decay"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"2e43-6a8c-1231-65f1", ADJ: "dead", AGENT_OBJECT: "organism", ACTION2: "decay"]
+
+	// CENTRAL         KINDOF: coal is a kind of fossil fuel     (cab1-f3c3-59de-b682) [ HYPONYM:"coal", HYPERNYM:"fossil fuel" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"cab1-f3c3-59de-b682", HYPONYM: "coal", HYPERNYM: "fossil fuel"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"cab1-f3c3-59de-b682", HYPONYM: "coal", HYPERNYM: "fossil fuel"]
+
+	// CENTRAL         KINDOF: a swamp is a kind of environment     (8aaf-28c3-9099-96b9) [ HYPONYM:"swamp", HYPERNYM:"environment" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"8aaf-28c3-9099-96b9", HYPONYM: "swamp", HYPERNYM: "environment"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"8aaf-28c3-9099-96b9", HYPONYM: "swamp", HYPERNYM: "environment"]
+
+	// CENTRAL         FORMEDBY: fossil fuels ; fossils are formed from dead organisms over time     (18f3-bb02-623d-b420) [ OBJECT:"fossil fuel;fossil", AGENT_PROCESS:"dead organism", SCOPE:"over time" ]
+	//row autoRow10 = [UUID:"18f3-bb02-623d-b420", OBJECT: "fossil fuel", AGENT_PROCESS: "dead organism", SCOPE: "over time"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"18f3-bb02-623d-b420", OBJECT: "fossil fuel", AGENT_PROCESS: "dead organism", SCOPE: "over time"]
+
+	// LEXGLUE         SYNONYMY: vegetation means plants     (b5f5-69f4-c4e2-6552) [ X1:"vegetation", X2:"plant" ]
+	//row autoRow11 = [UUID:"b5f5-69f4-c4e2-6552", X1: "vegetation", X2: "plant"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"b5f5-69f4-c4e2-6552", X1: "vegetation", X2: "plant"]
+
+	// LEXGLUE         SYNONYMY: an environment is similar to an ecosystem     (c1d3-4ab4-b443-aac3) [ X1:"environment", X2:"ecosystem" ]
+	//row autoRow12 = [UUID:"c1d3-4ab4-b443-aac3", X1: "environment", X2: "ecosystem"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"c1d3-4ab4-b443-aac3", X1: "environment", X2: "ecosystem"]
+
+	// LEXGLUE         SYNONYMY: once-living means dead     (bcfb-6f90-61bf-55c6) [ X1:"once-living;one live", X2:"dead" ]
+	//row autoRow13 = [UUID:"bcfb-6f90-61bf-55c6", X1: "one live", X2: "dead"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"bcfb-6f90-61bf-55c6", X1: "one live", X2: "dead"]
+
+endinferencepattern

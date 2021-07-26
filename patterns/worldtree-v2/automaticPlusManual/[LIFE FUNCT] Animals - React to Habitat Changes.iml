@@ -1,0 +1,78 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_React_to_Habitat_Changes
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as water increases in an environment , the population of aquatic animals will increase     (6bf3-1b34-7a15-0fe9) [ QUANTITY_MEASURE1:"water", CHANGE1:"increase", SCOPE1B:"in environment", QUANTITY_MEASURE2:"population", AGENT_ATTRIBUTE2:"of aquatic animal", CHANGE2:"increase" ]
+	//        HINTROW as the size of a body of water increases , the amount of wild fish will increase     (1fbc-be15-c1d5-7b72) [ QUANTITY_MEASURE1:"size of", AGENT_ATTRIBUTE1:"body of water", CHANGE1:"increase", QUANTITY_MEASURE2:"amount of", AGENT_ATTRIBUTE2:"wild fish", CHANGE2:"increase" ]
+	//  Notes: CORE
+	//row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: <water_0>, CHANGE1: "increase", SCOPE1B: "in"+*"POS:NN", AGENT_ATTRIBUTE2: "of aquatic animal", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: <water_0>, CHANGE1: "increase", CHANGE2: "increase"]
+
+	// GROUNDING       KINDOF: a river is a kind of flowing ; moving body of water     (9885-6337-f26c-cfbd) [ HYPONYM:"river", SCOPE1:"flow;move", HYPERNYM:"body of water" ]
+	//        HINTROW a bay is a kind of body of water     (0596-e537-4cc3-192c) [ HYPONYM:"bay", HYPERNYM:"body of water" ]
+	//        HINTROW a lake is a kind of body of water     (5d6a-544c-b296-832e) [ HYPONYM:"lake", HYPERNYM:"body of water" ]
+	//        HINTROW a stream is a kind of moving body of water     (c71c-f0da-3930-67f0) [ HYPONYM:"stream", SCOPE1:"move", HYPERNYM:"body of water" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "body of"+<water_0>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "body of"+<water_0>]
+
+	// GROUNDING       KINDOF: a fish is a kind of aquatic animal     (a94e-e849-c066-fecd) [ HYPONYM:"fish", HYPERNYM:"aquatic animal" ]
+	//        HINTROW an alligator is a kind of aquatic animal     (5086-b21f-9f0a-e67d) [ HYPONYM:"alligator", SCOPE1:"aquatic", HYPERNYM:"animal" ]
+	//        HINTROW an otter is a kind of aquatic animal     (a328-84da-ecad-102f) [ HYPONYM:"otter", SCOPE1:"aquatic", HYPERNYM:"animal" ]
+	//        HINTROW a salamander is a kind of aquatic animal     (2452-4ec6-cebd-d341) [ HYPONYM:"salamander", SCOPE1:"aquatic", HYPERNYM:"animal" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "aquatic animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "aquatic animal"]
+
+	// GROUNDING       KINDOF: a thunderstorm is a kind of storm     (ed1d-c1cf-76c9-eed3) [ HYPONYM:"thunderstorm", HYPERNYM:"storm" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "thunderstorm", HYPERNYM: "storm"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "thunderstorm", HYPERNYM: "storm"]
+
+	// CENTRAL         CHANGE-VEC: amount of water in a body of water increases by storms ; rain ; glaciers melting ; snow melting ; ice melting     (19c9-47bf-de91-1f2e) [ AGENT_OBJECT:"amount of water", SCOPE1:"in body of water", DIRECTION:"increase", BY_THROUGH_HOW:"storm;rain;glacier melt;snow melt;ice melt" ]
+	//row autoRow4 = [UUID:"19c9-47bf-de91-1f2e", AGENT_OBJECT: "amount of"+<water_0>, SCOPE1: "in body of"+<water_0>, DIRECTION: "increase", BY_THROUGH_HOW: "glacier melt"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"19c9-47bf-de91-1f2e", AGENT_OBJECT: "amount of"+<water_0>, SCOPE1: "in body of"+<water_0>, DIRECTION: "increase", BY_THROUGH_HOW: "glacier melt"]
+
+	// CENTRAL         CAUSE: storms ; rain cause bodies of water to increase amount of water they contain     (c1bf-db54-7c40-a799) [ CONDITION_AGENT_OBJECT:"storm;rain", RESULT_AGENT:"body of water", RESULT_VERB:"increase", RESULT_PATIENT:"amount of water contain" ]
+	//row autoRow5 = [UUID:"c1bf-db54-7c40-a799", CONDITION_AGENT_OBJECT: "storm", RESULT_AGENT: "body of"+<water_0>, RESULT_VERB: "increase", RESULT_PATIENT: "amount of"+<water_0>+"contain"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"c1bf-db54-7c40-a799", CONDITION_AGENT_OBJECT: "storm", RESULT_AGENT: "body of"+<water_0>, RESULT_VERB: "increase", RESULT_PATIENT: "amount of"+<water_0>+"contain"]
+
+	// CENTRAL         REQUIRES: an aquatic animal ; aquatic plant requires great amounts of water to survive ; thrive     (335b-df55-9aa4-74ac) [ OBJECT_AGENT_PROCESS:"aquatic animal;aquatic plant", VERB_REQUIRES:"require", QUANTITY_VALUE:"great amount of", OBJECT:"water", FOR_PURPOSE:"survive;thrive" ]
+	//  Notes: CORE
+	//row autoRow6 = [UUID:"335b-df55-9aa4-74ac", OBJECT_AGENT_PROCESS: "aquatic animal", VERB_REQUIRES: "require", QUANTITY_VALUE: "great amount of", OBJECT: <water_0>, FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"335b-df55-9aa4-74ac", OBJECT_AGENT_PROCESS: "aquatic animal", VERB_REQUIRES: "require", QUANTITY_VALUE: "great amount of", OBJECT: <water_0>, FOR_PURPOSE: "survive"]
+
+	// CENTRAL         HABITAT: aquatic animals ; plants live in bodies of water     (a13a-1bd4-3d64-f3db) [ SUBSPECIES:"aquatic", ORGANISM:"animal;plant", HABITAT:"body of water" ]
+	//  Notes: 2125-ab14-605b-2b8c->a13a-1bd4-3d64-f3db
+	//row autoRow7 = [UUID:"a13a-1bd4-3d64-f3db", SUBSPECIES: "aquatic", ORGANISM: "animal", HABITAT: "body of"+<water_0>] //OVER-CONSTR.
+	row autoRow7 = [UUID:"a13a-1bd4-3d64-f3db", SUBSPECIES: "aquatic", ORGANISM: "animal", HABITAT: "body of"+<water_0>]
+
+	// CENTRAL         IFTHEN: when a body of water receives more water than it can hold , a flood occurs     (6a1a-d4cc-de02-eac6) [ THING:"body of water", ACTION1:"receive", ADJ_QUANTITY1A:"much", OBJECT_PATIENT1:"water", SCOPE1B:"than hold", ACTOR_AGENT_PROCESS2:"flood", ACTION3:"occur" ]
+	//row autoRow8 = [UUID:"6a1a-d4cc-de02-eac6", THING: "body of"+<water_0>, ACTION1: "receive", ADJ_QUANTITY1A: "much", OBJECT_PATIENT1: <water_0>, SCOPE1B: "than hold", ACTOR_AGENT_PROCESS2: "flood", ACTION3: "occur"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"6a1a-d4cc-de02-eac6", THING: "body of"+<water_0>, ACTION1: "receive", ADJ_QUANTITY1A: "much", OBJECT_PATIENT1: <water_0>, SCOPE1B: "than hold", ACTOR_AGENT_PROCESS2: "flood", ACTION3: "occur"]
+
+	// CENTRAL         CHANGE-VEC: flooding decreases the availability of food     (6bdc-9933-be8d-61b8) [ ACTION:"flood", DIRECTION:"decrease", QUANTITY:"availability of", PATIENT:"food" ]
+	//row autoRow9 = [UUID:"6bdc-9933-be8d-61b8", ACTION: "flood", DIRECTION: "decrease", QUANTITY: "availability of", PATIENT: "food"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"6bdc-9933-be8d-61b8", ACTION: "flood", DIRECTION: "decrease", QUANTITY: "availability of", PATIENT: "food"]
+
+	// CENTRAL         CONTAINS: a body of water contains water     (b927-5436-1d17-c396) [ OBJECT_AGENT:"body of water", WHAT_IT_CONTAINS:"water" ]
+	//row autoRow10 = [UUID:"b927-5436-1d17-c396", OBJECT_AGENT: "body of"+<water_0>, WHAT_IT_CONTAINS: <water_0>] //OVER-CONSTR.
+	row autoRow10 = [UUID:"b927-5436-1d17-c396", OBJECT_AGENT: "body of"+<water_0>, WHAT_IT_CONTAINS: <water_0>]
+
+	// CENTRAL         KINDOF: flooding is a kind of change     (ec04-9eb8-f263-13ea) [ HYPONYM:"flood", HYPERNYM:"change" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"ec04-9eb8-f263-13ea", HYPONYM: "flood", HYPERNYM: "change"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"ec04-9eb8-f263-13ea", HYPONYM: "flood", HYPERNYM: "change"]
+
+	// CENTRAL        (OPTIONAL) CHANGE-VEC: flooding decreases the number of native plants in an area     (fc4e-bad0-108d-feef) [ AGENT_OBJECT:"flood", DIRECTION:"decrease", QUANTITY:"numb of", PATIENT:"native plant", SCOPE2:"in area" ]
+	//row *autoRow12 = [UUID:"fc4e-bad0-108d-feef", AGENT_OBJECT: "flood", DIRECTION: "decrease", QUANTITY: "numb of", PATIENT: "native plant", SCOPE2: "in area"] //OVER-CONSTR.
+	row *autoRow12 = [UUID:"fc4e-bad0-108d-feef", AGENT_OBJECT: "flood", DIRECTION: "decrease", QUANTITY: "numb of", PATIENT: "native plant", SCOPE2: "in area"]
+
+	// CENTRAL         CAUSE: heavy rains cause flooding     (6757-76c5-8bf9-33b8) [ CONDITION_AGENT_OBJECT:"heavy rain", RESULT_VERB:"flood" ]
+	//row autoRow13 = [UUID:"6757-76c5-8bf9-33b8", CONDITION_AGENT_OBJECT: "heavy rain", RESULT_VERB: "flood"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"6757-76c5-8bf9-33b8", CONDITION_AGENT_OBJECT: "heavy rain", RESULT_VERB: "flood"]
+
+endinferencepattern

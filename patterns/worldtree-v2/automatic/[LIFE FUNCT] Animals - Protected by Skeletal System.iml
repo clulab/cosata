@@ -1,0 +1,55 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Protected_by_Skeletal_System
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//        HINTROW a bear is a kind of animal     (5639-8136-4788-3ee6) [ HYPONYM:"bear", HYPERNYM:"animal" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: protecting is a kind of function     (401b-d6f7-6bc5-3718) [ HYPONYM:"protect", HYPERNYM:"function" ]
+	//        HINTROW providing support is a kind of function     (aefd-91ae-8cfa-8c9e) [ HYPONYM:"provide support", HYPERNYM:"function" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "function"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "function"]
+
+	// CENTRAL         PARTOF: a skeletal system is a part of an animal     (af66-465f-0191-efbd) [ PART:"skeletal system", WHOLE:"animal" ]
+	//  Notes: 23e8-c43f-6394-cd30->af66-465f-0191-efbd,1a92-e330-2321-97aaskeletal system is part of an animal/ is used for protection
+	//row autoRow2 = [UUID:"af66-465f-0191-efbd", PART: "skeletal system", WHOLE: "animal"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"af66-465f-0191-efbd", PART: "skeletal system", WHOLE: "animal"]
+
+	// CENTRAL         ACTION: the skeletal system protects internal organs     (1910-6fcf-a49a-634a) [ AGENT_OBJECT:"skeletal system", ACTION2:"protect", OBJECT_PROPERTY:"internal organ" ]
+	//row autoRow3 = [UUID:"1910-6fcf-a49a-634a", AGENT_OBJECT: "skeletal system", ACTION2: "protect", OBJECT_PROPERTY: "internal organ"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"1910-6fcf-a49a-634a", AGENT_OBJECT: "skeletal system", ACTION2: "protect", OBJECT_PROPERTY: "internal organ"]
+
+	// CENTRAL         USEDFOR: something hard ; something strong can be used for protection     (773a-31a5-f976-927c) [ AGENT_OBJECT:"something hard;something strong", QUALIFIER:"be", FOR_PURPOSE:"protect" ]
+	//row autoRow4 = [UUID:"773a-31a5-f976-927c", AGENT_OBJECT: "something hard", QUALIFIER: "be", FOR_PURPOSE: "protect"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"773a-31a5-f976-927c", AGENT_OBJECT: "something hard", QUALIFIER: "be", FOR_PURPOSE: "protect"]
+
+	// CENTRAL         MADEOF: skeletal system is made of bones     (1868-9bad-b9cc-1302) [ OBJECT:"skeletal system", MATERIAL:"bone" ]
+	//row autoRow5 = [UUID:"1868-9bad-b9cc-1302", OBJECT: "skeletal system", MATERIAL: "bone"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"1868-9bad-b9cc-1302", OBJECT: "skeletal system", MATERIAL: "bone"]
+
+	// CENTRAL         KINDOF: the skeletal system is a kind of body system     (3e34-7133-f645-504b) [ HYPONYM:"skeletal system", SCOPE1:"body", HYPERNYM:"system" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"3e34-7133-f645-504b", HYPONYM: "skeletal system", SCOPE1: "body", HYPERNYM: "system"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3e34-7133-f645-504b", HYPONYM: "skeletal system", SCOPE1: "body", HYPERNYM: "system"]
+
+	// CENTRAL         PROP-HARDNESS: bone is hard     (6c5d-e42d-a164-2888) [ OBJECT:"bone", HARD_SOFT:"hard" ]
+	//row autoRow7 = [UUID:"6c5d-e42d-a164-2888", OBJECT: "bone", HARD_SOFT: "hard"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"6c5d-e42d-a164-2888", OBJECT: "bone", HARD_SOFT: "hard"]
+
+	// LEXGLUE         SYNONYMY: the function of something is what that something is used to do     (3e2e-e065-36c0-898c) [ X1:"function of something", X2:"something", ACTION2:"be use do" ]
+	//row autoRow8 = [UUID:"3e2e-e065-36c0-898c", X1: "function of something", X2: "something", ACTION2: "be use do"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"3e2e-e065-36c0-898c", X1: "function of something", X2: "something", ACTION2: "be use do"]
+
+	// LEXGLUE         SYNONYMY: function means job     (5bed-2cfd-fe4d-324e) [ X1:"function", X2:"job" ]
+	//row autoRow9 = [UUID:"5bed-2cfd-fe4d-324e", X1: "function", X2: "job"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"5bed-2cfd-fe4d-324e", X1: "function", X2: "job"]
+
+endinferencepattern

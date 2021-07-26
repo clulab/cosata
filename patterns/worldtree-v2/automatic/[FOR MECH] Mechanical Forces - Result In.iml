@@ -1,0 +1,74 @@
+// Automatically converted pattern
+inferencepattern FOR_MECH_Mechanical_Forces_Result_In
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CAUSE: a force acting on an object in the opposite direction that the object is moving can cause that object 's speed to decrease in a forward motion     (8ee7-24ec-255f-d9fe) [ CONDITION_AGENT_OBJECT:"force", CONDITION_VERB:"act", CONDITION_PATIENT:"on object", SCOPE1:"in opposite direction that object be move", RESULT_AGENT:"that object speed", RESULT_VERB:"decrease", SCOPE2:"in forward move" ]
+	//        HINTROW a force continually acting on an object in the same direction that the object is moving can cause that object 's speed to increase in a forward motion     (897e-080a-cbfa-6224) [ CONDITION_AGENT_OBJECT:"force", CONDITION_VERB:"continually act", CONDITION_PATIENT:"on object", SCOPE1:"in same direction that object be move", RESULT_AGENT:"that object speed", RESULT_VERB:"increase", SCOPE2:"in forward move" ]
+	//row autoRow0 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "force", CONDITION_VERB: "act", CONDITION_PATIENT: "on object", SCOPE1: "in opposite direction that object be move", RESULT_AGENT: "that object speed", RESULT_VERB: "decrease", SCOPE2: "in forward move"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: "force", CONDITION_VERB: "act", CONDITION_PATIENT: "on object", SCOPE1: "in opposite direction that object be move", RESULT_AGENT: "that object speed", RESULT_VERB: "decrease", SCOPE2: "in forward move"]
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as the power of the force exerted on an object increases , the speed of the object being moved by the force will increase     (d4b6-22d9-09f5-c87d) [ QUANTITY_MEASURE1:"power", AGENT_ATTRIBUTE1:"of force", ACTION1:"exert", PATIENT1:"on object", CHANGE1:"increase", QUANTITY_MEASURE2:"speed of", AGENT_ATTRIBUTE2:"object", ACTION2:"be move", PATIENT2:"by force", CHANGE2:"increase" ]
+	//        HINTROW as force exerted on an object increases , distance travelled will increase     (d104-d5d8-6378-fe3a) [ QUANTITY_MEASURE1:"force", ACTION1:"exert on", PATIENT1:"object", CHANGE1:"increase", QUANTITY_MEASURE2:"distance travel", CHANGE2:"increase" ]
+	//  Notes: bigger force, longer distance
+	//row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", AGENT_ATTRIBUTE1: "of force", ACTION1: "exert", PATIENT1: "on object", CHANGE1: "increase", QUANTITY_MEASURE2: "speed of", AGENT_ATTRIBUTE2: "object", ACTION2: "be move", PATIENT2: "by force", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", ACTION1: "exert", PATIENT1: "on object", CHANGE1: "increase", CHANGE2: "increase"]
+
+	// GROUNDING       KINDOF: a kick is a kind of push     (2c22-fd47-fae8-9fec) [ HYPONYM:"kick", HYPERNYM:"push" ]
+	//        HINTROW a force is a kind of push or pull on an object     (464e-fb6d-1ff8-2e3a) [ HYPONYM:"force", HYPERNYM:"push pull", SCOPE2:"on object" ]
+	//        HINTROW a pull is a kind of force     (7650-49b9-49e2-621d) [ HYPONYM:"pull", HYPERNYM:"force" ]
+	//        HINTROW push is a kind of force ; application of force     (211f-8a51-037c-704c) [ HYPONYM:"push", HYPERNYM:"force;application of force" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow2 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow2 = [TABLE:"KINDOF"]
+
+	// GROUNDING       KINDOF: a soccer ball is a kind of ball     (9409-bd1d-8f35-fc73) [ HYPONYM:"soccer ball", HYPERNYM:"ball" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "soccer ball", HYPERNYM: "ball"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "soccer ball", HYPERNYM: "ball"]
+
+	// GROUNDING       KINDOF: a ball is a kind of object     (5650-b213-46ea-d9dd) [ HYPONYM:"ball", HYPERNYM:"object" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "ball", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "ball", HYPERNYM: "object"]
+
+	// CENTRAL         AFFORDANCES: mechanical energy exerted by an object can be used to push or pull another object     (77b1-b251-ee0c-a4b4) [ ACTOR_THING:"mechanical energy", PROPERTY_OBJECT:"exert by object", VERB:"be use push pull", PATIENT:"object" ]
+	//row autoRow5 = [UUID:"77b1-b251-ee0c-a4b4", ACTOR_THING: "mechanical energy", PROPERTY_OBJECT: "exert by object", VERB: "be use push pull", PATIENT: "object"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"77b1-b251-ee0c-a4b4", ACTOR_THING: "mechanical energy", PROPERTY_OBJECT: "exert by object", VERB: "be use push pull", PATIENT: "object"]
+
+	// CENTRAL         EXAMPLES: An example of exerting force on an object is lifting an object     (a6f3-a229-98a1-6245) [ VERB1:"exert", AGENT_OBJECT1:"force", SCOPE1:"on object", VERB2:"lift", AGENT_OBJECT3:"object" ]
+	//  Notes: exerting force example: by lifting
+	//row autoRow6 = [UUID:"a6f3-a229-98a1-6245", VERB1: "exert", AGENT_OBJECT1: "force", SCOPE1: "on object", VERB2: "lift", AGENT_OBJECT3: "object"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"a6f3-a229-98a1-6245", VERB1: "exert", AGENT_OBJECT1: "force", SCOPE1: "on object", VERB2: "lift", AGENT_OBJECT3: "object"]
+
+	// CENTRAL         IFTHEN: if an object is kicked then force is exerted on that object     (01ef-1f36-abd7-9217) [ THING:"object", ACTION1:"kick", ACTOR_AGENT_PROCESS2:"force", ACTION3:"exert", OBJECT_PROPERTY3:"on object" ]
+	//  Notes: exerting force example: by kicking
+	//row autoRow7 = [UUID:"01ef-1f36-abd7-9217", THING: "object", ACTION1: "kick", ACTOR_AGENT_PROCESS2: "force", ACTION3: "exert", OBJECT_PROPERTY3: "on object"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"01ef-1f36-abd7-9217", THING: "object", ACTION1: "kick", ACTOR_AGENT_PROCESS2: "force", ACTION3: "exert", OBJECT_PROPERTY3: "on object"]
+
+	// CENTRAL         IFTHEN: when a force is applied to an object , that force is acting on that object     (95d6-33c8-ca3e-3bd5) [ THING:"force", ACTION1:"apply", OBJECT_PATIENT1:"object", ACTOR_AGENT_PROCESS2:"force", ACTION3:"act on", OBJECT_PROPERTY3:"object" ]
+	//row autoRow8 = [UUID:"95d6-33c8-ca3e-3bd5", THING: "force", ACTION1: "apply", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "force", ACTION3: "act on", OBJECT_PROPERTY3: "object"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"95d6-33c8-ca3e-3bd5", THING: "force", ACTION1: "apply", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "force", ACTION3: "act on", OBJECT_PROPERTY3: "object"]
+
+	// CENTRAL         KINDOF: mechanical force is a kind of mechanical energy     (2ce7-fd1a-22ed-5437) [ HYPONYM:"mechanical force", HYPERNYM:"mechanical energy" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"2ce7-fd1a-22ed-5437", HYPONYM: "mechanical force", HYPERNYM: "mechanical energy"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"2ce7-fd1a-22ed-5437", HYPONYM: "mechanical force", HYPERNYM: "mechanical energy"]
+
+	// CENTRAL         CAUSE: force causes the speed of an object to increase ; to decrease     (d10e-17d2-b2db-e326) [ CONDITION_AGENT_OBJECT:"force", RESULT_AGENT:"speed of object", RESULT_VERB:"increase;decrease" ]
+	//row autoRow10 = [UUID:"d10e-17d2-b2db-e326", CONDITION_AGENT_OBJECT: "force", RESULT_AGENT: "speed of object", RESULT_VERB: "increase"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"d10e-17d2-b2db-e326", CONDITION_AGENT_OBJECT: "force", RESULT_AGENT: "speed of object", RESULT_VERB: "increase"]
+
+	// CENTRAL         CAUSE: an object acting against a force can cause that object to move in the opposite direction     (4916-08e1-51ef-8c63) [ CONDITION_AGENT_OBJECT:"object", CONDITION_VERB:"act", CONDITION_PATIENT:"against force", RESULT_AGENT:"that object", RESULT_VERB:"move", RESULT_PATIENT:"in opposite direction" ]
+	//row autoRow11 = [UUID:"4916-08e1-51ef-8c63", CONDITION_AGENT_OBJECT: "object", CONDITION_VERB: "act", CONDITION_PATIENT: "against force", RESULT_AGENT: "that object", RESULT_VERB: "move", RESULT_PATIENT: "in opposite direction"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"4916-08e1-51ef-8c63", CONDITION_AGENT_OBJECT: "object", CONDITION_VERB: "act", CONDITION_PATIENT: "against force", RESULT_AGENT: "that object", RESULT_VERB: "move", RESULT_PATIENT: "in opposite direction"]
+
+	// LEXGLUE         SYNONYMY: exerting force on an object means a force acts on an object     (78bb-1a9c-dc5f-468b) [ ACTION1:"exert force", Y1:"on object", X2:"force", ACTION2:"act", Y2:"on object" ]
+	//row autoRow12 = [UUID:"78bb-1a9c-dc5f-468b", ACTION1: "exert force", Y1: "on object", X2: "force", ACTION2: "act", Y2: "on object"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"78bb-1a9c-dc5f-468b", ACTION1: "exert force", Y1: "on object", X2: "force", ACTION2: "act", Y2: "on object"]
+
+endinferencepattern

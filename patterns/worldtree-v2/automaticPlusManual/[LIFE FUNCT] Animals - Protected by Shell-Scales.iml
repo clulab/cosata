@@ -1,0 +1,54 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Protected_by_Shell_Scales
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       SUBDIVISION-GENERICSPATIAL: scales are a covering around the body of a scaled animal     (ae2c-3485-b503-7d22) [ SUBDIVISION:"scale", TYPE_OF_SUBDIVISION:"cover", PART:"body of", WHOLE:"scale animal" ]
+	//        HINTROW a shell is a covering around the body of a shelled animal     (b3a6-9eda-f74e-3d5c) [ SUBDIVISION:"shell", TYPE_OF_SUBDIVISION:"cover", PART:"body of", WHOLE:"shell animal" ]
+	//row autoRow0 = [TABLE:"SUBDIVISION-GENERICSPATIAL", SUBDIVISION: <scale_0>, TYPE_OF_SUBDIVISION: "cover", PART: "body of", WHOLE: <scale_0>+"animal"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"SUBDIVISION-GENERICSPATIAL", SUBDIVISION: <scale_0>, TYPE_OF_SUBDIVISION: "cover", PART: "body of", WHOLE: <scale_0>+"animal"]
+
+	// CENTRALSW       LOCATIONS: scales are found on the skin of scaled animals     (3227-54bb-37d3-16c8) [ THING_PROCESS:"scale", LOCATION:"skin of scale animal" ]
+	//        HINTROW a shell is located on the exterior of shelled animals     (a89e-2937-b5b7-2d41) [ THING_PROCESS:"shell", LOCATION:"exterior", SCOPE:"of shell animal" ]
+	//row autoRow1 = [TABLE:"LOCATIONS", THING_PROCESS: <scale_0>, LOCATION: *"POS:NN"+*"POS:IN"+<scale_0>+"animal"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"LOCATIONS", THING_PROCESS: <scale_0>]
+
+	// CENTRALSW       USEDFOR: scales are used for protection by scaled animals     (6085-14ee-581d-00b5) [ AGENT_OBJECT:"scale", FOR_PURPOSE:"protect", AGENT_THING_WHO_USES:"scale animal" ]
+	//        HINTROW the shell of an animal is used to protect the animal     (a400-d150-a8db-cc9d) [ AGENT_OBJECT:"shell", SCOPE1:"of animal", FOR_PURPOSE:"protect", PATIENT:"animal" ]
+	//row autoRow2 = [TABLE:"USEDFOR", AGENT_OBJECT: <scale_0>, FOR_PURPOSE: "protect", AGENT_THING_WHO_USES: <scale_0>+"animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"USEDFOR", AGENT_OBJECT: <scale_0>, FOR_PURPOSE: "protect"]
+
+	// CENTRALSW       PARTOF: a scale is a part of a fish     (dc30-f318-31e7-5c0b) [ PART:"scale", WHOLE:"fish" ]
+	//        HINTROW a shell is a part of a snail for protecting the snail     (e4da-e98f-0e23-2742) [ PART:"shell", QUANTIFIER1:"be", WHOLE:"snail", FOR_PURPOSE:"protect snail" ]
+	//        HINTROW a shell is a part of a turtle for protecting the turtle     (7a5a-d5b3-8af9-29c1) [ PART:"shell", QUANTIFIER1:"be", WHOLE:"turtle", FOR_PURPOSE:"protect turtle" ]
+	//        HINTROW a seashell is a part of a crab for protecting the crab     (fb95-007e-8829-b2aa) [ PART:"seashell", QUANTIFIER1:"be", WHOLE:"crab", FOR_PURPOSE:"protect crab" ]
+	//row autoRow3 = [TABLE:"PARTOF", PART: <scale_0>, WHOLE: <fish_1>] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"PARTOF", WHOLE: <fish_1>]
+
+	// CENTRALSW       PROP-HARDNESS: a scale is hard     (f344-9f75-ceae-9506) [ OBJECT:"scale", HARD_SOFT:"hard" ]
+	//        HINTROW an animal 's shell is usually hard for protection     (9dc0-0ba6-dbb6-4ff7) [ ADJ:"animal", OBJECT:"shell", QUALIFIER:"usually", HARD_SOFT:"hard", FOR_PURPOSE:"protect" ]
+	//row autoRow4 = [TABLE:"PROP-HARDNESS", OBJECT: <scale_0>, HARD_SOFT: "hard"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"PROP-HARDNESS", OBJECT: <scale_0>, HARD_SOFT: "hard"]
+
+	// GROUNDING       KINDOF: a fish is a kind of scaled animal     (7ec2-c1a0-5e6d-55eb) [ HYPONYM:"fish", HYPERNYM:"scale animal" ]
+	//        HINTROW a turtle is a kind of animal     (964f-3c67-13dd-a443) [ HYPONYM:"turtle", HYPERNYM:"animal" ]
+	//        HINTROW a snail is a kind of animal     (7c65-e5ab-1f92-0c39) [ HYPONYM:"snail", HYPERNYM:"animal" ]
+	//        HINTROW a crab is a kind of water animal     (0499-a475-56c4-8d43) [ HYPONYM:"crab", SCOPE1:"water", HYPERNYM:"animal" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPONYM: <fish_1>, HYPERNYM: <scale_0>+"animal"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPONYM: <fish_1>, HYPERNYM: <scale_0>+"animal"]
+
+	// GROUNDING       KINDOF: protecting is a kind of function     (401b-d6f7-6bc5-3718) [ HYPONYM:"protect", HYPERNYM:"function" ]
+	//        HINTROW providing support is a kind of function     (aefd-91ae-8cfa-8c9e) [ HYPONYM:"provide support", HYPERNYM:"function" ]
+	//row autoRow6 = [TABLE:"KINDOF", HYPERNYM: "function"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPERNYM: "function"]
+
+	// CENTRAL         USEDFOR: something hard ; something strong can be used for protection     (773a-31a5-f976-927c) [ AGENT_OBJECT:"something hard;something strong", QUALIFIER:"be", FOR_PURPOSE:"protect" ]
+	//row autoRow7 = [UUID:"773a-31a5-f976-927c", AGENT_OBJECT: "something hard", QUALIFIER: "be", FOR_PURPOSE: "protect"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"773a-31a5-f976-927c", AGENT_OBJECT: "something hard", QUALIFIER: "be", FOR_PURPOSE: "protect"]
+
+endinferencepattern

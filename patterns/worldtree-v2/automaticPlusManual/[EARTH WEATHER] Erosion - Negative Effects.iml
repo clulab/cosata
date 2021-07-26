@@ -1,0 +1,47 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Erosion_Negative_Effects
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         AFFECT: erosion of soil has a negative impact on the environment ; soil quality     (1fc9-87b3-4b09-6451) [ VERB:"erode", OBJECT_PROPERTY:"of soil", POSITIVE_NEGATIVE:"negative", PATIENT:"environment;soil quality" ]
+	//row autoRow0 = [UUID:"1fc9-87b3-4b09-6451", VERB: "erode", OBJECT_PROPERTY: "of soil", POSITIVE_NEGATIVE: "negative", PATIENT: "soil quality"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"1fc9-87b3-4b09-6451", VERB: "erode", OBJECT_PROPERTY: "of soil", POSITIVE_NEGATIVE: "negative", PATIENT: "soil quality"]
+
+	// CENTRAL         CAUSE: erosion usually causes harm to the environment     (a12e-c34a-ab3d-d601) [ CONDITION_AGENT_OBJECT:"erode", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS:"usually", RESULT_VERB:"harm", RESULT_PATIENT:"environment" ]
+	//row autoRow1 = [UUID:"a12e-c34a-ab3d-d601", CONDITION_AGENT_OBJECT: "erode", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "usually", RESULT_VERB: "harm", RESULT_PATIENT: "environment"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"a12e-c34a-ab3d-d601", CONDITION_AGENT_OBJECT: "erode", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "usually", RESULT_VERB: "harm", RESULT_PATIENT: "environment"]
+
+	// CENTRAL         CAUSE: soil erosion can cause desertification of the land     (7c20-d1c7-aa17-41a2) [ CONDITION_AGENT_OBJECT:"soil erode", RESULT_AGENT:"desertification of land" ]
+	//row autoRow2 = [UUID:"7c20-d1c7-aa17-41a2", CONDITION_AGENT_OBJECT: "soil erode", RESULT_AGENT: "desertification of land"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"7c20-d1c7-aa17-41a2", CONDITION_AGENT_OBJECT: "soil erode", RESULT_AGENT: "desertification of land"]
+
+	// CENTRAL         CAUSE: erosion ; storms can cause a landslide     (ad27-ad14-2ed7-2b55) [ CONDITION_AGENT_OBJECT:"erode;storm", RESULT_AGENT:"landslide" ]
+	//row autoRow3 = [UUID:"ad27-ad14-2ed7-2b55", CONDITION_AGENT_OBJECT: "erode", RESULT_AGENT: "landslide"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"ad27-ad14-2ed7-2b55", CONDITION_AGENT_OBJECT: "erode", RESULT_AGENT: "landslide"]
+
+	// CENTRAL         TRANSFER: a landslide is when water ; gravity rapidly moves rocks ; soil downhill especially after a rain storm     (14a5-1229-3653-681c) [ PROCESS_NAME:"landslide", ACTOR_WHO:"water;gravity", VERB:"rapid move", WHAT:"rock;soil", DESTINATION:"downhill", SCOPE:"especially after rain storm" ]
+	//row autoRow4 = [UUID:"14a5-1229-3653-681c", PROCESS_NAME: "landslide", ACTOR_WHO: "water", VERB: "rapid move", WHAT: "rock", DESTINATION: "downhill", SCOPE: "especially after rain storm"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"14a5-1229-3653-681c", PROCESS_NAME: "landslide", ACTOR_WHO: "water", VERB: "rapid move", WHAT: "rock", DESTINATION: "downhill", SCOPE: "especially after rain storm"]
+
+	// CENTRAL         LOCATIONS: landslides often occur on mountains     (368d-e93c-2b60-3348) [ THING_PROCESS:"landslide", LOCATION:"on mountain" ]
+	//row autoRow5 = [UUID:"368d-e93c-2b60-3348", THING_PROCESS: "landslide", LOCATION: "on mountain"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"368d-e93c-2b60-3348", THING_PROCESS: "landslide", LOCATION: "on mountain"]
+
+	// CENTRAL         AFFECT: a decrease in soil fertility has a negative impact on environment     (4818-fc4f-65c7-8598) [ ACTOR_WHO:"decrease", OBJECT_PROPERTY:"in soil fertility", POSITIVE_NEGATIVE:"negative", PATIENT:"environment" ]
+	//row autoRow6 = [UUID:"4818-fc4f-65c7-8598", ACTOR_WHO: "decrease", OBJECT_PROPERTY: "in soil fertility", POSITIVE_NEGATIVE: "negative", PATIENT: "environment"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4818-fc4f-65c7-8598", ACTOR_WHO: "decrease", OBJECT_PROPERTY: "in soil fertility", POSITIVE_NEGATIVE: "negative", PATIENT: "environment"]
+
+	// CENTRAL         CHANGE-VEC: erosion sometimes decreases the amount of nutrients in soil     (b0fc-d00e-2723-8578) [ AGENT_OBJECT:"erode", SCOPE1:"sometimes", DIRECTION:"decrease", QUANTITY:"amount of", PATIENT:"nutrient", SCOPE2:"in soil" ]
+	//row autoRow7 = [UUID:"b0fc-d00e-2723-8578", AGENT_OBJECT: "erode", SCOPE1: "sometimes", DIRECTION: "decrease", QUANTITY: "amount of", PATIENT: "nutrient", SCOPE2: "in soil"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"b0fc-d00e-2723-8578", AGENT_OBJECT: "erode", SCOPE1: "sometimes", DIRECTION: "decrease", QUANTITY: "amount of", PATIENT: "nutrient", SCOPE2: "in soil"]
+
+	// LEXGLUE         SYNONYMY: soil fertility means the ability of soil to sustain plant growth     (2137-7934-4c51-573e) [ X1:"soil fertility", X2:"ability of soil sustain plant grow" ]
+	//row autoRow8 = [UUID:"2137-7934-4c51-573e", X1: "soil fertility", X2: "ability of soil sustain plant grow"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"2137-7934-4c51-573e", X1: "soil fertility", X2: "ability of soil sustain plant grow"]
+
+endinferencepattern

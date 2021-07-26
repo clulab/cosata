@@ -1,0 +1,50 @@
+// Automatically converted pattern
+inferencepattern MAT_MIXTURES_Air_Madeof
+
+	// Plain text description
+	description = "Spatial model?"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       MADEOF: the Earth 's atmosphere is made of 78 percent nitrogen by mass     (18df-4496-f1cf-d9b1) [ QUANTIFIER:"earth", OBJECT:"atmosphere", VALUE:"78 percent", MATERIAL:"nitrogen", SCOPE:"by mass" ]
+	//        HINTROW the Earth 's atmosphere is made of 1.288 percent argon by mass     (67f7-1d8d-dcef-b743) [ QUANTIFIER:"earth", OBJECT:"atmosphere", VALUE:"1.288 percent", MATERIAL:"argon", SCOPE:"by mass" ]
+	//        HINTROW the Earth 's atmosphere is made of .036 percent carbon dioxide by volume     (b110-974a-3fbc-a21a) [ QUANTIFIER:"earth", OBJECT:"atmosphere", VALUE:".036 percent", MATERIAL:"carbon dioxide", SCOPE:"by volume" ]
+	//        HINTROW the Earth 's atmosphere is made of 0 to 4 percent hydrogen ; water vapor by volume     (7051-de21-70b0-8c49) [ QUANTIFIER:"earth", OBJECT:"atmosphere", VALUE:"0 4 percent", MATERIAL:"hydrogen;water vapor", SCOPE:"by volume" ]
+	//        HINTROW the Earth 's atmosphere is made of 23.133 percent oxygen by mass     (52a9-1c58-ae78-1d67) [ QUANTIFIER:"earth", OBJECT:"atmosphere", VALUE:"23.133 percent", MATERIAL:"oxygen", SCOPE:"by mass" ]
+	//  Notes: Earth air, components
+	//row autoRow0 = [TABLE:"MADEOF", QUANTIFIER: "earth", OBJECT: "atmosphere", SCOPE: "by"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"MADEOF", QUANTIFIER: "earth", OBJECT: "atmosphere", SCOPE: "by"+*"POS:NN"]
+
+	// CENTRALSW       KINDOF: oxygen is a kind of gas at room temperature     (16b7-673f-bc0d-ed99) [ HYPONYM:"oxygen", HYPERNYM:"gas", SCOPE2:"at room temperature" ]
+	//        HINTROW hydrogen is a kind of gas at room temperature     (bcb9-f1d4-4c6d-cb70) [ HYPONYM:"hydrogen", HYPERNYM:"gas", SCOPE2:"at room temperature" ]
+	//        HINTROW carbon dioxide is a kind of gas     (96ff-31bb-ea13-9aff) [ HYPONYM:"carbon dioxide", HYPERNYM:"gas" ]
+	//        HINTROW nitrogen is a kind of gas     (8005-4f1a-6744-1a05) [ HYPONYM:"nitrogen", HYPERNYM:"gas" ]
+	//        HINTROW water vapor is a kind of greenhouse gas     (dc5f-51cc-0c46-18df) [ HYPONYM:"water vapor", HYPERNYM:"greenhouse gas" ]
+	//        HINTROW air is a kind of gas     (70ac-58d8-10b4-1313) [ HYPONYM:"air", HYPERNYM:"gas" ]
+	//        HINTROW argon is a kind of gas     (7e95-aa4d-92bd-7c26) [ HYPONYM:"argon", HYPERNYM:"gas" ]
+	//        Hint Words: gas
+	//  Notes: the state of the components
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "gas"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "gas"]
+
+	// CENTRAL         KINDOF: gas is a kind of substance     (6c6f-b690-6b57-aab6) [ HYPONYM:"gas", HYPERNYM:"substance" ]
+	//  Notes: peripheral
+	//row autoRow2 = [UUID:"6c6f-b690-6b57-aab6", HYPONYM: "gas", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"6c6f-b690-6b57-aab6", HYPONYM: "gas", HYPERNYM: "substance"]
+
+	// CENTRAL         PROP-MAT-PURITY-MIXTURE: air is a mixture     (442c-6b3e-0b69-467d) [ THING:"air", MIXTURE_PURE_SUBSTANCE:"mixture" ]
+	//  Notes: 7acf-d960-5965-ec12->442c-6b3e-0b69-467d
+	//row autoRow3 = [UUID:"442c-6b3e-0b69-467d", THING: "air", MIXTURE_PURE_SUBSTANCE: "mixture"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"442c-6b3e-0b69-467d", THING: "air", MIXTURE_PURE_SUBSTANCE: "mixture"]
+
+	// CENTRAL         FORMEDBY: an mixture is formed by two or more substances combined together physically     (9247-2bc4-e950-d3dd) [ OBJECT:"mixture", AGENT_PROCESS:"two much substance", VERB:"combine together", SCOPE:"physically" ]
+	//row autoRow4 = [UUID:"9247-2bc4-e950-d3dd", OBJECT: "mixture", AGENT_PROCESS: "two much substance", VERB: "combine together", SCOPE: "physically"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"9247-2bc4-e950-d3dd", OBJECT: "mixture", AGENT_PROCESS: "two much substance", VERB: "combine together", SCOPE: "physically"]
+
+	// LEXGLUE         SYNONYMY: atmosphere means air     (9568-cc75-424d-e775) [ X1:"atmosphere", X2:"air" ]
+	//row autoRow5 = [UUID:"9568-cc75-424d-e775", X1: "atmosphere", X2: "air"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"9568-cc75-424d-e775", X1: "atmosphere", X2: "air"]
+
+endinferencepattern

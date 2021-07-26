@@ -1,0 +1,57 @@
+// Automatically converted pattern
+inferencepattern ENG_SOUND_Sound_Waves_Properties
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       SOURCEOF: vibrations are a source of sound     (6f04-f08d-2b7e-a7f4) [ AGENT:"vibration", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"sound" ]
+	//        HINTROW vibrating matter can produce sound     (cf64-935e-ea78-35a4) [ ACTION:"vibrate", OBJECT_PATIENT:"matt", VERB_SOURCEOF_PROVIDE_ETC:"product", WHAT_IT_PROVIDES:"sound" ]
+	//row autoRow0 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "sound"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"SOURCEOF", WHAT_IT_PROVIDES: "sound"]
+
+	// CENTRAL         AFFORDANCES: sound wave with frequency range in 20-20000 hertz can be heard by human     (58cf-b819-508e-96fc) [ ACTOR_THING:"sound wave", PROPERTY_OBJECT:"with frequency range in 20-20000 hertz;with frequency range in 20 20000 hertz", VERB:"hear", PATIENT:"by human" ]
+	//row autoRow1 = [UUID:"58cf-b819-508e-96fc", ACTOR_THING: "sound wave", PROPERTY_OBJECT: "with frequency range in 20 20000 hertz", VERB: "hear", PATIENT: "by human"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"58cf-b819-508e-96fc", ACTOR_THING: "sound wave", PROPERTY_OBJECT: "with frequency range in 20 20000 hertz", VERB: "hear", PATIENT: "by human"]
+
+	// CENTRAL         ACTION: longitudinal waves travel through pattern of compressions and rarefactions     (9938-682d-bfb5-a91f) [ ADJ:"longitudinal", AGENT_OBJECT:"wave", ACTION2:"travel", HOW:"pattern of compression rarefaction" ]
+	//row autoRow2 = [UUID:"9938-682d-bfb5-a91f", ADJ: "longitudinal", AGENT_OBJECT: "wave", ACTION2: "travel", HOW: "pattern of compression rarefaction"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"9938-682d-bfb5-a91f", ADJ: "longitudinal", AGENT_OBJECT: "wave", ACTION2: "travel", HOW: "pattern of compression rarefaction"]
+
+	// CENTRAL         ACTION: sound waves spread in all directions away from their source     (264f-16ad-34a0-23a1) [ ADJ:"sound", AGENT_OBJECT:"wave", ACTION2:"spread", OBJECT_PROPERTY:"in direction", WHEN_WHERE:"away from source" ]
+	//row autoRow3 = [UUID:"264f-16ad-34a0-23a1", ADJ: "sound", AGENT_OBJECT: "wave", ACTION2: "spread", OBJECT_PROPERTY: "in direction", WHEN_WHERE: "away from source"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"264f-16ad-34a0-23a1", ADJ: "sound", AGENT_OBJECT: "wave", ACTION2: "spread", OBJECT_PROPERTY: "in direction", WHEN_WHERE: "away from source"]
+
+	// CENTRAL         MEASUREMENTS: amplitude is a measure of the loudness of the sound wave     (71ea-638a-0dde-b020) [ MEASURE:"amplitude", QUANTITY_ADJ:"measure of", ATTRIBUTE:"loudness of", AGENT:"sound wave" ]
+	//row autoRow4 = [UUID:"71ea-638a-0dde-b020", MEASURE: "amplitude", QUANTITY_ADJ: "measure of", ATTRIBUTE: "loudness of", AGENT: "sound wave"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"71ea-638a-0dde-b020", MEASURE: "amplitude", QUANTITY_ADJ: "measure of", ATTRIBUTE: "loudness of", AGENT: "sound wave"]
+
+	// CENTRAL         PROP-GENERIC: the ability to reflect is a property of sound wave     (4f98-e74f-86e5-4975) [ X:"ability reflect", Y:"sound wave" ]
+	//row autoRow5 = [UUID:"4f98-e74f-86e5-4975", X: "ability reflect", Y: "sound wave"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"4f98-e74f-86e5-4975", X: "ability reflect", Y: "sound wave"]
+
+	// CENTRAL         KINDOF: longitudinal wave is a kind of mechanical wave     (a957-b066-c4e6-1350) [ HYPONYM:"longitudinal wave", HYPERNYM:"mechanical wave" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"a957-b066-c4e6-1350", HYPONYM: "longitudinal wave", HYPERNYM: "mechanical wave"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"a957-b066-c4e6-1350", HYPONYM: "longitudinal wave", HYPERNYM: "mechanical wave"]
+
+	// CENTRAL         TRANSFER: sound energy is transferred by vibrational waves     (4f79-a407-3046-b4eb) [ ACTOR_WHO:"sound energy", VERB:"be transfer", BY_THROUGH_HOW:"vibrational wave" ]
+	//row autoRow7 = [UUID:"4f79-a407-3046-b4eb", ACTOR_WHO: "sound energy", VERB: "be transfer", BY_THROUGH_HOW: "vibrational wave"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4f79-a407-3046-b4eb", ACTOR_WHO: "sound energy", VERB: "be transfer", BY_THROUGH_HOW: "vibrational wave"]
+
+	// CENTRAL         ACTION: sound travels as longitudinal waves     (5748-8e34-2dbb-e9ab) [ AGENT_OBJECT:"sound", ACTION2:"travel", OBJECT_PROPERTY:"a longitudinal wave" ]
+	//row autoRow8 = [UUID:"5748-8e34-2dbb-e9ab", AGENT_OBJECT: "sound", ACTION2: "travel", OBJECT_PROPERTY: "a longitudinal wave"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"5748-8e34-2dbb-e9ab", AGENT_OBJECT: "sound", ACTION2: "travel", OBJECT_PROPERTY: "a longitudinal wave"]
+
+	// CENTRAL         AFFORDANCES: sound can travel through air by vibrating air     (f672-4bbb-6fff-373c) [ ACTOR_THING:"sound", VERB:"travel", PATIENT:"through air", BY_THROUGH_HOW:"vibrate air" ]
+	//row autoRow9 = [UUID:"f672-4bbb-6fff-373c", ACTOR_THING: "sound", VERB: "travel", PATIENT: "through air", BY_THROUGH_HOW: "vibrate air"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"f672-4bbb-6fff-373c", ACTOR_THING: "sound", VERB: "travel", PATIENT: "through air", BY_THROUGH_HOW: "vibrate air"]
+
+	// LEXGLUE         SYNONYMY: a vibration is similar to a wave     (9072-0c5d-d333-d1ce) [ X1:"vibrate", X2:"wave" ]
+	//row autoRow10 = [UUID:"9072-0c5d-d333-d1ce", X1: "vibrate", X2: "wave"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"9072-0c5d-d333-d1ce", X1: "vibrate", X2: "wave"]
+
+endinferencepattern

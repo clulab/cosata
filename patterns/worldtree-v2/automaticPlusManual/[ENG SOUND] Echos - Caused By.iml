@@ -1,0 +1,83 @@
+// Automatically converted pattern
+inferencepattern ENG_SOUND_Echos_Caused_By
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       SOURCEOF: a person speaking is a source of sound     (37c3-538a-6459-6572) [ AGENT:"person", ACTION:"speak", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"sound" ]
+	//        HINTROW vibrations are a source of sound     (6f04-f08d-2b7e-a7f4) [ AGENT:"vibration", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"sound" ]
+	//row autoRow0 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "sound"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "sound"]
+
+	// GROUNDING       KINDOF: a canyon is a kind of landform     (9391-2a1e-2e67-95b9) [ HYPONYM:"canyon", HYPERNYM:"landform" ]
+	//        HINTROW a cavern is a kind of land form     (34ab-0980-7a15-537e) [ HYPONYM:"cavern", SCOPE1:"land", HYPERNYM:"form" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow1 = [TABLE:"KINDOF"]
+
+	// GROUNDING       KINDOF: a shout is a kind of sound     (8cef-917a-e2d3-335e) [ HYPONYM:"shout", HYPERNYM:"sound" ]
+	//        HINTROW bark is a kind of sound     (74e3-5983-4e66-f53f) [ HYPONYM:"bark", HYPERNYM:"sound" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "sound"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "sound"]
+
+	// GROUNDING       KINDOF: a student is a kind of human     (3ed8-5fde-3b7b-6513) [ HYPONYM:"student", HYPERNYM:"human" ]
+	//        HINTROW a camper is a kind of human     (d57a-f3b8-87b3-73c6) [ HYPONYM:"camper", HYPERNYM:"human" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "human"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "human"]
+
+	// CENTRAL         WAVES: reflection is when a wave bounces off a surface and travels in the opposite direction relative to the angle of incidence     (c2d6-e332-6199-27ac) [ PROCESS:"reflect", ACTION:"bounce", OBJECT:"surface", DIRECTION:"opposite" ]
+	//row autoRow4 = [UUID:"c2d6-e332-6199-27ac", PROCESS: "reflect", ACTION: "bounce", OBJECT: "surface", DIRECTION: "opposite"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"c2d6-e332-6199-27ac", PROCESS: "reflect", ACTION: "bounce", OBJECT: "surface", DIRECTION: "opposite"]
+
+	// CENTRAL         IFTHEN: when a sound is produced inside of a room , there is sometimes an echo after the sound     (c29b-9a2e-2b75-5efa) [ THING:"sound", ACTION1:"produce inside of", OBJECT_PATIENT1:"room", ADJ_QUANTIFIER3:"sometimes", OBJECT_PROPERTY3:"echo", SCOPE4:"after sound" ]
+	//row autoRow5 = [UUID:"c29b-9a2e-2b75-5efa", THING: "sound", ACTION1: "produce inside of", OBJECT_PATIENT1: "room", ADJ_QUANTIFIER3: "sometimes", OBJECT_PROPERTY3: "echo", SCOPE4: "after sound"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"c29b-9a2e-2b75-5efa", THING: "sound", ACTION1: "produce inside of", OBJECT_PATIENT1: "room", ADJ_QUANTIFIER3: "sometimes", OBJECT_PROPERTY3: "echo", SCOPE4: "after sound"]
+
+	// CENTRAL         ACTION: echo is when sound reflects off of a surface     (68c7-53c9-4730-b283) [ DEFINITION_NAME:"echo", AGENT_OBJECT:"sound", ACTION2:"reflect off of", OBJECT_PROPERTY:"surface" ]
+	//row autoRow6 = [UUID:"68c7-53c9-4730-b283", DEFINITION_NAME: "echo", AGENT_OBJECT: "sound", ACTION2: "reflect off of", OBJECT_PROPERTY: "surface"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"68c7-53c9-4730-b283", DEFINITION_NAME: "echo", AGENT_OBJECT: "sound", ACTION2: "reflect off of", OBJECT_PROPERTY: "surface"]
+
+	// CENTRAL         USEDFOR: hearing is used for sensing sound by animals     (372c-c52a-b8f0-bc43) [ ACTION:"hear", FOR_PURPOSE:"sense", PATIENT:"sound", AGENT_THING_WHO_USES:"animal" ]
+	//row autoRow7 = [UUID:"372c-c52a-b8f0-bc43", ACTION: "hear", FOR_PURPOSE: "sense", PATIENT: "sound", AGENT_THING_WHO_USES: "animal"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"372c-c52a-b8f0-bc43", ACTION: "hear", FOR_PURPOSE: "sense", PATIENT: "sound", AGENT_THING_WHO_USES: "animal"]
+
+	// CENTRAL         PROP-GENERIC: the ability to reflect is a property of sound wave     (4f98-e74f-86e5-4975) [ X:"ability reflect", Y:"sound wave" ]
+	//row autoRow8 = [UUID:"4f98-e74f-86e5-4975", X: "ability reflect", Y: "sound wave"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"4f98-e74f-86e5-4975", X: "ability reflect", Y: "sound wave"]
+
+	// CENTRAL         PARTOF: a surface is a part of an object     (eb92-b0cd-c257-9bcf) [ PART:"surface", WHOLE:"object" ]
+	//row autoRow9 = [UUID:"eb92-b0cd-c257-9bcf", PART: "surface", WHOLE: "object"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"eb92-b0cd-c257-9bcf", PART: "surface", WHOLE: "object"]
+
+	// CENTRAL         KINDOF: a wall is a kind of surface     (3fe8-0138-a901-b730) [ HYPONYM:"wall", HYPERNYM:"surface" ]
+	//row autoRow10 = [UUID:"3fe8-0138-a901-b730", HYPONYM: "wall", HYPERNYM: "surface"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"3fe8-0138-a901-b730", HYPONYM: "wall", HYPERNYM: "surface"]
+
+	// CENTRAL         KINDOF: an echo is a kind of sound     (e9e5-df09-379a-fa17) [ HYPONYM:"echo", HYPERNYM:"sound" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"e9e5-df09-379a-fa17", HYPONYM: "echo", HYPERNYM: "sound"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"e9e5-df09-379a-fa17", HYPONYM: "echo", HYPERNYM: "sound"]
+
+	// CENTRAL         KINDOF: hearing is a kind of sense     (e3f1-e16c-dd80-32ea) [ HYPONYM:"hear", HYPERNYM:"sense" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"e3f1-e16c-dd80-32ea", HYPONYM: "hear", HYPERNYM: "sense"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"e3f1-e16c-dd80-32ea", HYPONYM: "hear", HYPERNYM: "sense"]
+
+	// CENTRAL        (OPTIONAL) CONTAINS: room contains walls     (1c37-9df2-350b-3c5a) [ OBJECT_AGENT:"room", WHAT_IT_CONTAINS:"wall" ]
+	//row *autoRow13 = [UUID:"1c37-9df2-350b-3c5a", OBJECT_AGENT: "room", WHAT_IT_CONTAINS: "wall"] //OVER-CONSTR.
+	row *autoRow13 = [UUID:"1c37-9df2-350b-3c5a", OBJECT_AGENT: "room", WHAT_IT_CONTAINS: "wall"]
+
+	// CENTRAL         KINDOF: sound wave is a kind of wave     (c0fe-e47e-44b2-66e7) [ HYPONYM:"sound wave", HYPERNYM:"wave" ]
+	//row autoRow14 = [UUID:"c0fe-e47e-44b2-66e7", HYPONYM: "sound wave", HYPERNYM: "wave"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"c0fe-e47e-44b2-66e7", HYPONYM: "sound wave", HYPERNYM: "wave"]
+
+	// LEXGLUE         OPPOSITES: reflecting light ; sound is the opposite of absorbing light ; sound     (9f3b-6ec5-eb1c-178d) [ VERB1:"reflect", THING_PROPERTY1:"light;sound", VERB2:"absorb", THING_PROPERTY2:"light;sound" ]
+	//row autoRow15 = [UUID:"9f3b-6ec5-eb1c-178d", VERB1: "reflect", THING_PROPERTY1: "light", VERB2: "absorb", THING_PROPERTY2: "light"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"9f3b-6ec5-eb1c-178d", VERB1: "reflect", THING_PROPERTY1: "light", VERB2: "absorb", THING_PROPERTY2: "light"]
+
+endinferencepattern

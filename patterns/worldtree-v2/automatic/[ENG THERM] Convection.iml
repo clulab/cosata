@@ -1,0 +1,66 @@
+// Automatically converted pattern
+inferencepattern ENG_THERM_Convection
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ACTION: convection is when a liquid is heated by hotter material rising to the top of the liquid     (892f-b95e-de84-6aeb) [ DEFINITION_NAME:"convection", AGENT_OBJECT:"liquid", ACTION2:"be heat", HOW:"hot material rise top of liquid" ]
+	//        HINTROW convection is when the heated part of gas rises     (e684-ed12-2c74-c5cc) [ DEFINITION_NAME:"convection", ADJ:"heat", AGENT_OBJECT:"part of gas", ACTION2:"rise" ]
+	//row autoRow0 = [TABLE:"ACTION", DEFINITION_NAME: "convection", ACTION2: *"POS:VB"+"heat", HOW: *"POS:JJ"+*"POS:NN"+"rise"+*"POS:NN"+"of"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ACTION", DEFINITION_NAME: "convection"]
+
+	// CENTRALSW       SOURCEOF: a stove generates heat for cooking usually     (d59b-bac8-e191-05be) [ AGENT:"stave", VERB_SOURCEOF_PROVIDE_ETC:"generate", WHAT_IT_PROVIDES:"heat", FOR_PURPOSE:"cook", SCOPE:"usually" ]
+	//        HINTROW a hot plate is a source of heat     (945f-acde-29f3-d573) [ AGENT:"hot plate", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"heat" ]
+	//row autoRow1 = [TABLE:"SOURCEOF", WHAT_IT_PROVIDES: "heat"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"SOURCEOF", WHAT_IT_PROVIDES: "heat"]
+
+	// CENTRALSW       KINDOF: soup is a kind of liquid     (3005-d180-4d74-cdb2) [ HYPONYM:"soup", HYPERNYM:"liquid" ]
+	//        HINTROW water is a kind of liquid at room temperature     (3961-d09c-4b9a-a6f7) [ HYPONYM:"water", HYPERNYM:"liquid", SCOPE2:"at room temperature" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "liquid"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "liquid"]
+
+	// CENTRAL         IFTHEN: if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm     (c9e0-141e-88fa-2c43) [ THING:"thermal conduct;object", ACTION1:"expose", ADJ_QUANTITY1A:"source of", OBJECT_PATIENT1:"heat", ACTOR_AGENT_PROCESS2:"that conduct;that object", OBJECT_PROPERTY3:"hot;warm" ]
+	//row autoRow3 = [UUID:"c9e0-141e-88fa-2c43", THING: "thermal conduct", ACTION1: "expose", ADJ_QUANTITY1A: "source of", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "that conduct", OBJECT_PROPERTY3: "hot"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"c9e0-141e-88fa-2c43", THING: "thermal conduct", ACTION1: "expose", ADJ_QUANTITY1A: "source of", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "that conduct", OBJECT_PROPERTY3: "hot"]
+
+	// CENTRAL         EXAMPLES: An example of heat transfer by convection is heat rising in a chimney     (4aa3-658a-1ced-63bb) [ AGENT_OBJECT1:"heat transfer", SCOPE1:"by convection", AGENT_OBJECT2:"heat", VERB2:"rise", SCOPE:"in chimney" ]
+	//row autoRow4 = [UUID:"4aa3-658a-1ced-63bb", AGENT_OBJECT1: "heat transfer", SCOPE1: "by convection", AGENT_OBJECT2: "heat", VERB2: "rise", SCOPE: "in chimney"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4aa3-658a-1ced-63bb", AGENT_OBJECT1: "heat transfer", SCOPE1: "by convection", AGENT_OBJECT2: "heat", VERB2: "rise", SCOPE: "in chimney"]
+
+	// CENTRAL         IFTHEN: when a cooler object touches a warmer object , thermal conduction occurs     (8a04-b22c-d916-924f) [ ADJ_QUANTITY1:"cool", THING:"object", ACTION1:"touch", ADJ_QUANTITY1A:"warm", OBJECT_PATIENT1:"object", ACTOR_AGENT_PROCESS2:"thermal conduction", ACTION3:"occur" ]
+	//row autoRow5 = [UUID:"8a04-b22c-d916-924f", ADJ_QUANTITY1: "cool", THING: "object", ACTION1: "touch", ADJ_QUANTITY1A: "warm", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "thermal conduction", ACTION3: "occur"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"8a04-b22c-d916-924f", ADJ_QUANTITY1: "cool", THING: "object", ACTION1: "touch", ADJ_QUANTITY1A: "warm", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "thermal conduction", ACTION3: "occur"]
+
+	// CENTRAL         IFTHEN: if a spoon ; an object is used to stir a liquid ; mixture then that spoon ; that object is touching that liquid ; that mixture     (e9db-4122-22ea-1d50) [ THING:"spoon;object", ACTION1:"stir", OBJECT_PATIENT1:"liquid;mixture", ACTOR_AGENT_PROCESS2:"that spoon;that object", ACTION3:"touch", OBJECT_PROPERTY3:"that liquid;that mixture" ]
+	//row autoRow6 = [UUID:"e9db-4122-22ea-1d50", THING: "spoon", ACTION1: "stir", OBJECT_PATIENT1: "liquid", ACTOR_AGENT_PROCESS2: "that spoon", ACTION3: "touch", OBJECT_PROPERTY3: "that liquid"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"e9db-4122-22ea-1d50", THING: "spoon", ACTION1: "stir", OBJECT_PATIENT1: "liquid", ACTOR_AGENT_PROCESS2: "that spoon", ACTION3: "touch", OBJECT_PROPERTY3: "that liquid"]
+
+	// CENTRAL         IFTHEN: if one surface ; one substance ; one object touches something then one is exposed to that something     (010a-f960-ad4b-537c) [ THING:"one surface;one substance;one object", ACTION1:"touch", OBJECT_PATIENT1:"something", ACTOR_AGENT_PROCESS2:"one", ACTION3:"expose", OBJECT_PROPERTY3:"something" ]
+	//row autoRow7 = [UUID:"010a-f960-ad4b-537c", THING: "one surface", ACTION1: "touch", OBJECT_PATIENT1: "something", ACTOR_AGENT_PROCESS2: "one", ACTION3: "expose", OBJECT_PROPERTY3: "something"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"010a-f960-ad4b-537c", THING: "one surface", ACTION1: "touch", OBJECT_PATIENT1: "something", ACTOR_AGENT_PROCESS2: "one", ACTION3: "expose", OBJECT_PROPERTY3: "something"]
+
+	// CENTRAL        (OPTIONAL) TRANSFER: convection in the mantle transfers heat from deep in the interior of Earth to the crust     (0cf7-cc9c-5924-691c) [ ACTOR_WHO:"convection in mantle", VERB:"transfer", WHAT:"heat", SOURCE:"deep in interior of earth", DESTINATION:"crust" ]
+	//row *autoRow8 = [UUID:"0cf7-cc9c-5924-691c", ACTOR_WHO: "convection in mantle", VERB: "transfer", WHAT: "heat", SOURCE: "deep in interior of earth", DESTINATION: "crust"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"0cf7-cc9c-5924-691c", ACTOR_WHO: "convection in mantle", VERB: "transfer", WHAT: "heat", SOURCE: "deep in interior of earth", DESTINATION: "crust"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if an object is made of a material then that object has the properties of that material     (1e4c-46e8-996c-f2f7) [ THING:"object", OBJECT_PROPERTY1:"make of material", ACTOR_AGENT_PROCESS2:"that object", OBJECT_PROPERTY3:"property of material" ]
+	//row *autoRow9 = [UUID:"1e4c-46e8-996c-f2f7", THING: "object", OBJECT_PROPERTY1: "make of material", ACTOR_AGENT_PROCESS2: "that object", OBJECT_PROPERTY3: "property of material"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"1e4c-46e8-996c-f2f7", THING: "object", OBJECT_PROPERTY1: "make of material", ACTOR_AGENT_PROCESS2: "that object", OBJECT_PROPERTY3: "property of material"]
+
+	// LEXGLUE         SYNONYMY: heat means the transfer of thermal energy     (74c9-ce13-0e8d-4a29) [ X1:"heat", X2:"transfer of thermal energy" ]
+	//row autoRow10 = [UUID:"74c9-ce13-0e8d-4a29", X1: "heat", X2: "transfer of thermal energy"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"74c9-ce13-0e8d-4a29", X1: "heat", X2: "transfer of thermal energy"]
+
+	// LEXGLUE         SYNONYMY: heat energy is synonymous with thermal energy     (ae86-c631-e4ad-1669) [ X1:"heat energy", X2:"thermal energy" ]
+	//row autoRow11 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"]
+
+	// LEXGLUE         SYNONYMY: heat means heat energy     (4710-c993-7a19-bef2) [ X1:"heat", X2:"heat energy" ]
+	//row autoRow12 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"]
+
+endinferencepattern

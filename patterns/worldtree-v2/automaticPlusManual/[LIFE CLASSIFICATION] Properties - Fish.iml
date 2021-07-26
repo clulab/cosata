@@ -1,0 +1,68 @@
+// Automatically converted pattern
+inferencepattern LIFE_CLASSIFICATION_Properties_Fish
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PARTOF: gills are a part of a fish used for breathing water     (686d-e4be-a123-314f) [ PART:"gill", WHOLE:"fish", FOR_PURPOSE:"breathe water" ]
+	//        HINTROW a scale is a part of a fish     (dc30-f318-31e7-5c0b) [ PART:"scale", WHOLE:"fish" ]
+	//        HINTROW whiskers are a part of some fish for feeling     (28be-f4f5-1057-562f) [ PART:"whisker", QUANTIFIER1:"be", WHOLE:"fish", FOR_PURPOSE:"feel" ]
+	//row autoRow0 = [TABLE:"PARTOF", PART: <gill_0>, WHOLE: "fish", FOR_PURPOSE: "breathe water"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PARTOF", PART: <gill_0>, WHOLE: "fish"]
+
+	// CENTRALSW       KINDOF: a fish is a kind of aquatic animal     (a94e-e849-c066-fecd) [ HYPONYM:"fish", HYPERNYM:"aquatic animal" ]
+	//        HINTROW a fish is a kind of animal     (9526-aecc-22b2-4b6a) [ HYPONYM:"fish", HYPERNYM:"animal" ]
+	//        HINTROW a fish is a kind of scaled animal     (7ec2-c1a0-5e6d-55eb) [ HYPONYM:"fish", HYPERNYM:"scale animal" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "fish", HYPERNYM: <aquatic_1>+"animal"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "fish", HYPERNYM: <aquatic_1>+"animal"]
+
+	// CENTRALSW       PROP-ANIMAL-REPROD: fish lay eggs     (aa8a-c5b2-7062-625e) [ ANIMAL:"fish", LIVE_YOUNG_EGGS:"egg" ]
+	//        HINTROW fish eat insects     (adf9-b62a-6b73-48e7) [ ORGANISM1:"fish", EATS_CONSUMES:"eat", ORGANISM2:"insect" ]
+	//  Notes: 70b7-f5bc-ff13-10f9->aa8a-c5b2-7062-625e;8735-9116-c537-0768->adf9-b62a-6b73-48e7
+//WARNING! Slot with no constraints.
+//	//row autoRow2 = [TABLE:"PROP-ANIMAL-REPROD"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow2 = [TABLE:"PROP-ANIMAL-REPROD"]
+
+	// CENTRALSW       USEDFOR: gills are used for breathing water by aquatic animals     (743b-9053-1b87-b6ae) [ AGENT_OBJECT:"gill", FOR_PURPOSE:"breathe", PATIENT:"water", AGENT_THING_WHO_USES:"aquatic animal" ]
+	//        HINTROW scales are used for protection by scaled animals     (6085-14ee-581d-00b5) [ AGENT_OBJECT:"scale", FOR_PURPOSE:"protect", AGENT_THING_WHO_USES:"scale animal" ]
+	//        HINTROW whiskers are used for feeling by animals     (a57e-6830-a887-2134) [ AGENT_OBJECT:"whisker", FOR_PURPOSE:"feel", AGENT_THING_WHO_USES:"animal" ]
+	//row autoRow3 = [TABLE:"USEDFOR", AGENT_OBJECT: <gill_0>, FOR_PURPOSE: "breathe", PATIENT: "water", AGENT_THING_WHO_USES: <aquatic_1>+"animal"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"USEDFOR", AGENT_OBJECT: <gill_0>, AGENT_THING_WHO_USES: <aquatic_1>+"animal"]
+
+	// GROUNDING       KINDOF: a goldfish is a kind of fish     (502a-ad74-1aed-3da5) [ HYPONYM:"goldfish", HYPERNYM:"fish" ]
+	//        HINTROW a shark is a kind of fish     (737d-9e1b-683f-862c) [ HYPONYM:"shark", HYPERNYM:"fish" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "fish"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "fish"]
+
+	// CENTRAL        (OPTIONAL) CHANGE: breathing is when a gill converts from oxygen in water into oxygen in blood     (571a-0a31-ad7b-e097) [ PROCESS_NAME:"breathe", ACTOR_WHO:"gill", VERB:"convert", FROM:"oxygen in water", INTO:"oxygen in blood" ]
+	//row *autoRow5 = [UUID:"571a-0a31-ad7b-e097", PROCESS_NAME: "breathe", ACTOR_WHO: <gill_0>, VERB: "convert", FROM: "oxygen in water", INTO: "oxygen in blood"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"571a-0a31-ad7b-e097", PROCESS_NAME: "breathe", ACTOR_WHO: <gill_0>, VERB: "convert", FROM: "oxygen in water", INTO: "oxygen in blood"]
+
+	// CENTRAL         HABITAT: aquatic animals ; plants live in bodies of water     (a13a-1bd4-3d64-f3db) [ SUBSPECIES:"aquatic", ORGANISM:"animal;plant", HABITAT:"body of water" ]
+	//  Notes: 2125-ab14-605b-2b8c->a13a-1bd4-3d64-f3db
+	//row autoRow6 = [UUID:"a13a-1bd4-3d64-f3db", SUBSPECIES: <aquatic_1>, ORGANISM: "animal", HABITAT: "body of water"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"a13a-1bd4-3d64-f3db", SUBSPECIES: <aquatic_1>, ORGANISM: "animal", HABITAT: "body of water"]
+
+	// CENTRAL         DURATIONS: fish have been on Earth for 419000000 years     (c1bc-98d6-f33c-8f67) [ AGENT:"fish", ACTION:"have be on earth", LOWERBOUND:"419000000", DURATIONUNIT:"year" ]
+	//row autoRow7 = [UUID:"c1bc-98d6-f33c-8f67", AGENT: "fish", ACTION: "have be on earth", LOWERBOUND: "419000000", DURATIONUNIT: "year"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"c1bc-98d6-f33c-8f67", AGENT: "fish", ACTION: "have be on earth", LOWERBOUND: "419000000", DURATIONUNIT: "year"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+	// CENTRAL         ACTION: classifying means grouping objects ; materials by their properties     (69c1-2991-2421-ce63) [ DEFINITION_NAME:"classify", ACTION2:"group", OBJECT_PROPERTY:"object;material", HOW:"property" ]
+	//row autoRow9 = [UUID:"69c1-2991-2421-ce63", DEFINITION_NAME: "classify", ACTION2: "group", OBJECT_PROPERTY: "object", HOW: "property"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"69c1-2991-2421-ce63", DEFINITION_NAME: "classify", ACTION2: "group", OBJECT_PROPERTY: "object", HOW: "property"]
+
+	// CENTRAL         PROP-WARM-COLD-BLOODED: a fish is cold-blooded     (cf4b-71ca-0767-f157) [ TYPE_OF_ANIMAL:"fish", WARM_COLD_BLOODED:"cold-blooded;cold blood" ]
+	//row autoRow10 = [UUID:"cf4b-71ca-0767-f157", TYPE_OF_ANIMAL: "fish", WARM_COLD_BLOODED: "cold blood"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"cf4b-71ca-0767-f157", TYPE_OF_ANIMAL: "fish", WARM_COLD_BLOODED: "cold blood"]
+
+endinferencepattern

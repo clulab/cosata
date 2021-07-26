@@ -1,0 +1,975 @@
+{"patternMatches": [
+{
+	"patternName":"MAT_MEAS_Measuring_Speed",
+	"matches":[
+		{
+		"uuids": ["48c0-261e-72f5-c101","1958-4336-80f2-90bd","91bf-d72e-f4e5-1526","ba0a-4b3e-ff60-ec49","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["48c0-261e-72f5-c101","1958-4336-80f2-90bd","563d-53cc-0a8a-e8da","ba0a-4b3e-ff60-ec49","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","91bf-d72e-f4e5-1526","ba0a-4b3e-ff60-ec49","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","563d-53cc-0a8a-e8da","ba0a-4b3e-ff60-ec49","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["48c0-261e-72f5-c101","1958-4336-80f2-90bd","40b8-ce9a-9919-60f8","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "40b8-ce9a-9919-60f8", "rowText": "seconds are used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"second" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"seconds" }
+		]
+		},
+		{
+		"uuids": ["48c0-261e-72f5-c101","1958-4336-80f2-90bd","91bf-d72e-f4e5-1526","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["48c0-261e-72f5-c101","1958-4336-80f2-90bd","563d-53cc-0a8a-e8da","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"watch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"watch" }
+		]
+		},
+		{
+		"uuids": ["48c0-261e-72f5-c101","1958-4336-80f2-90bd","563d-53cc-0a8a-e8da","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"clock" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"clock" }
+		]
+		},
+		{
+		"uuids": ["48c0-261e-72f5-c101","1958-4336-80f2-90bd","563d-53cc-0a8a-e8da","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "1958-4336-80f2-90bd", "rowText": "a meter stick is a kind of tool for measuring length ; measuring distance", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["48c0-261e-72f5-c101","91bf-d72e-f4e5-1526","ba0a-4b3e-ff60-ec49","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["48c0-261e-72f5-c101","563d-53cc-0a8a-e8da","ba0a-4b3e-ff60-ec49","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","40b8-ce9a-9919-60f8","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "40b8-ce9a-9919-60f8", "rowText": "seconds are used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"second" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"seconds" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","91bf-d72e-f4e5-1526","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","563d-53cc-0a8a-e8da","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"watch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"watch" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","563d-53cc-0a8a-e8da","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"clock" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"clock" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","89ff-54de-77cf-9d13","563d-53cc-0a8a-e8da","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "89ff-54de-77cf-9d13", "rowText": "a tape measure is a kind of tool for measuring distance ; measuring length", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","91bf-d72e-f4e5-1526","ba0a-4b3e-ff60-ec49","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","563d-53cc-0a8a-e8da","ba0a-4b3e-ff60-ec49","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["78e7-ae4d-49b6-71a4","91bf-d72e-f4e5-1526","ba0a-4b3e-ff60-ec49","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78e7-ae4d-49b6-71a4", "rowText": "sound wave can be used to measure distance by measuring the time delay of the reflected wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"sound wave" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"sound wave" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["78e7-ae4d-49b6-71a4","563d-53cc-0a8a-e8da","ba0a-4b3e-ff60-ec49","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78e7-ae4d-49b6-71a4", "rowText": "sound wave can be used to measure distance by measuring the time delay of the reflected wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "ba0a-4b3e-ff60-ec49", "rowText": "a stopwatch is a kind of tool for measuring time", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"sound wave" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"sound wave" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["48c0-261e-72f5-c101","40b8-ce9a-9919-60f8","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "40b8-ce9a-9919-60f8", "rowText": "seconds are used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"second" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"seconds" }
+		]
+		},
+		{
+		"uuids": ["48c0-261e-72f5-c101","91bf-d72e-f4e5-1526","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["48c0-261e-72f5-c101","563d-53cc-0a8a-e8da","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"watch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"watch" }
+		]
+		},
+		{
+		"uuids": ["48c0-261e-72f5-c101","563d-53cc-0a8a-e8da","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"clock" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"clock" }
+		]
+		},
+		{
+		"uuids": ["48c0-261e-72f5-c101","563d-53cc-0a8a-e8da","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "48c0-261e-72f5-c101", "rowText": "a meter stick is used to measure distance ; height ; length", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"meter stick" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","40b8-ce9a-9919-60f8","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "40b8-ce9a-9919-60f8", "rowText": "seconds are used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"second" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"seconds" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","91bf-d72e-f4e5-1526","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","563d-53cc-0a8a-e8da","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"watch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"watch" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","563d-53cc-0a8a-e8da","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"clock" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"clock" }
+		]
+		},
+		{
+		"uuids": ["1f6a-7744-7f91-26b5","563d-53cc-0a8a-e8da","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1f6a-7744-7f91-26b5", "rowText": "a tape measure is used to measure length ; distance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"tape measure" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["78e7-ae4d-49b6-71a4","40b8-ce9a-9919-60f8","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78e7-ae4d-49b6-71a4", "rowText": "sound wave can be used to measure distance by measuring the time delay of the reflected wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "40b8-ce9a-9919-60f8", "rowText": "seconds are used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"sound wave" },
+			{ "name":"toolMeasureTime", "value":"second" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"sound wave" },
+			{ "name":"toolMeasureTime", "value":"seconds" }
+		]
+		},
+		{
+		"uuids": ["78e7-ae4d-49b6-71a4","91bf-d72e-f4e5-1526","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78e7-ae4d-49b6-71a4", "rowText": "sound wave can be used to measure distance by measuring the time delay of the reflected wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "91bf-d72e-f4e5-1526", "rowText": "a stopwatch is used to measure time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"sound wave" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"sound wave" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		},
+		{
+		"uuids": ["78e7-ae4d-49b6-71a4","563d-53cc-0a8a-e8da","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78e7-ae4d-49b6-71a4", "rowText": "sound wave can be used to measure distance by measuring the time delay of the reflected wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"sound wave" },
+			{ "name":"toolMeasureTime", "value":"watch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"sound wave" },
+			{ "name":"toolMeasureTime", "value":"watch" }
+		]
+		},
+		{
+		"uuids": ["78e7-ae4d-49b6-71a4","563d-53cc-0a8a-e8da","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78e7-ae4d-49b6-71a4", "rowText": "sound wave can be used to measure distance by measuring the time delay of the reflected wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"sound wave" },
+			{ "name":"toolMeasureTime", "value":"clock" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"sound wave" },
+			{ "name":"toolMeasureTime", "value":"clock" }
+		]
+		},
+		{
+		"uuids": ["78e7-ae4d-49b6-71a4","563d-53cc-0a8a-e8da","b753-a285-8304-024a","98dd-55cb-7cfa-5e19","61e6-58a6-0d23-51c3","9b53-8b62-61f9-9e1a"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78e7-ae4d-49b6-71a4", "rowText": "sound wave can be used to measure distance by measuring the time delay of the reflected wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "563d-53cc-0a8a-e8da", "rowText": "a watch ; clock ; stopwatch is used for measuring time", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2B", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b753-a285-8304-024a", "rowText": "speed is a measure of distance travelled by an object over time ; divided by time ; per unit of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "98dd-55cb-7cfa-5e19", "rowText": "calculating speed requires knowing distance travelled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "61e6-58a6-0d23-51c3", "rowText": "a calculator is used for adding ; subtracting ; multiplying ; dividing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "9b53-8b62-61f9-9e1a", "rowText": "velocity is a measure of a speed in a direction", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "2"}
+		], 
+		"variables": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"sound wave" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow2B", "value":"" },
+			{ "name":"distance_0", "value":"distance" },
+			{ "name":"measureName", "value":"velocity" },
+			{ "name":"toolMeasureDistance", "value":"sound wave" },
+			{ "name":"toolMeasureTime", "value":"stopwatch" }
+		]
+		}
+	]
+}
+]}
+

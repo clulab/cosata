@@ -1,0 +1,49 @@
+// Automatically converted pattern
+inferencepattern MAT_COS_MeltingBoilingFreezing_Point_Independant_of_Mass_and_Volume
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       UNIT: kilograms ( kg ) are a metric ; SI unit used for measuring mass ; weight generally used for values between 1 and 50000000     (7a26-9d80-a88f-94fa) [ UNIT:"kilogram", ABBREVIATION:"kg", PROPERTY:"mass;weight", LOWERBOUND:"1", UPPERBOUND:"50000000" ]
+	//        HINTROW grams ( g ) are a metric unit used for measuring mass ; weight generally used for values between 1 and 2000     (3ad2-62a6-57f5-df68) [ UNIT:"gram", ABBREVIATION:"g", PROPERTY:"mass;weight", LOWERBOUND:"1", UPPERBOUND:"2000" ]
+	//row autoRow0 = [TABLE:"UNIT", PROPERTY: <mass_0>, LOWERBOUND: "1", UPPERBOUND: "50000000"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"UNIT", PROPERTY: <mass_0>, LOWERBOUND: "1"]
+
+	// CENTRALSW       UNIT: liters ( L ) is a metric unit used for measuring volume generally used for values between 1 and 50000000     (4aff-d072-35cc-3ebe) [ UNIT:"liter", ABBREVIATION:"l", PROPERTY:"volume", LOWERBOUND:"1", UPPERBOUND:"50000000" ]
+	//        HINTROW milliliters ( mL ) is a metric unit used for measuring volume generally used for values between 1 and 1000     (833d-29e2-dde2-a9fa) [ UNIT:"milliliter", ABBREVIATION:"ml", PROPERTY:"volume", LOWERBOUND:"1", UPPERBOUND:"1000" ]
+	//row autoRow1 = [TABLE:"UNIT", PROPERTY: "volume", LOWERBOUND: "1", UPPERBOUND: "50000000"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"UNIT", PROPERTY: "volume", LOWERBOUND: "1"]
+
+	// CENTRALSW       MEASUREMENTS: mass is a measure of the amount of matter in an object     (6dd3-883b-2639-04d5) [ MEASURE:"mass", QUANTITY_ADJ:"measure of", ATTRIBUTE:"amount of matt in", AGENT:"object" ]
+	//        HINTROW volume is a measure of the size of an object by multiplying the length, width, and height of the object     (19c2-c24b-e693-d22e) [ MEASURE:"volume", QUANTITY_ADJ:"measure of", ATTRIBUTE:"size of", AGENT:"object", SCOPE:"by multiply length width height of object" ]
+	//row autoRow2 = [TABLE:"MEASUREMENTS", MEASURE: <mass_0>, QUANTITY_ADJ: "measure of", ATTRIBUTE: "amount of matt"+*"POS:IN", AGENT: "object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"MEASUREMENTS", MEASURE: <mass_0>, QUANTITY_ADJ: "measure of", ATTRIBUTE: "amount of"+*"POS:NN"+*"POS:IN", AGENT: "object"]
+
+	// CENTRALSW       AFFECT: mass has no impact on boiling ; melting ; freezing point     (5ab1-a5c2-3701-58e0) [ ACTOR_WHO:"mass", ADJ:"boil;melt;freeze", PATIENT:"point" ]
+	//        HINTROW volume has no impact on boiling ; melting ; freezing point     (eb43-fbe4-985f-86c2) [ ACTOR_WHO:"volume", ADJ:"boil;melt;freeze", PATIENT:"point" ]
+	//row autoRow3 = [TABLE:"AFFECT", ACTOR_WHO: <mass_0>, ADJ: "boil", PATIENT: "point"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"AFFECT", ACTOR_WHO: <mass_0>, ADJ: "boil", PATIENT: "point"]
+
+	// CENTRALSW       PROP-INTENSIVE-EXTENSIVE: freezing point is an intensive property     (c93f-5b27-4efb-2c0c) [ PROPERTY:"freeze point", EXTENSIVE_INTENSIVE:"intensive property" ]
+	//        HINTROW boiling point is an intensive property     (0f8b-28e6-6305-a476) [ PROPERTY:"boil point", EXTENSIVE_INTENSIVE:"intensive property" ]
+	//row autoRow4 = [TABLE:"PROP-INTENSIVE-EXTENSIVE", PROPERTY: "freeze point", EXTENSIVE_INTENSIVE: "intensive property"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"PROP-INTENSIVE-EXTENSIVE", PROPERTY: "freeze point", EXTENSIVE_INTENSIVE: "intensive property"]
+
+	// GROUNDING       KINDOF: water is a kind of object     (533c-79f7-8267-e271) [ HYPONYM:"water", HYPERNYM:"object" ]
+	//        HINTROW a candle is a kind of object     (95ea-5ab6-c735-8ce5) [ HYPONYM:"candle", HYPERNYM:"object" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as amount ; size of something increases , the intensive properties of that something will not change     (4c10-6365-6e17-e201) [ QUANTITY_MEASURE1:"amount;size", AGENT_ATTRIBUTE1:"of something", CHANGE1:"increase", QUANTITY_MEASURE2:"intensive property", AGENT_ATTRIBUTE2:"of something", CHANGE2:"not change" ]
+	//row autoRow6 = [UUID:"4c10-6365-6e17-e201", QUANTITY_MEASURE1: "amount", AGENT_ATTRIBUTE1: "of something", CHANGE1: "increase", QUANTITY_MEASURE2: "intensive property", AGENT_ATTRIBUTE2: "of something", CHANGE2: "not change"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4c10-6365-6e17-e201", QUANTITY_MEASURE1: "amount", AGENT_ATTRIBUTE1: "of something", CHANGE1: "increase", QUANTITY_MEASURE2: "intensive property", AGENT_ATTRIBUTE2: "of something", CHANGE2: "not change"]
+
+	// CENTRAL         MADEOF: objects are made of materials ; substances ; matter     (80a3-454d-e8e0-3de2) [ OBJECT:"object", MATERIAL:"material;substance;matt" ]
+	//row autoRow7 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"]
+
+endinferencepattern

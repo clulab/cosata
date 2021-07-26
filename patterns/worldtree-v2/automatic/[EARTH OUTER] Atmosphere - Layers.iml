@@ -1,0 +1,59 @@
+// Automatically converted pattern
+inferencepattern EARTH_OUTER_Atmosphere_Layers
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as altitude increases , the temperature of the air will decrease in the troposphere     (335f-491e-b6bf-7684) [ QUANTITY_MEASURE1:"altitude", CHANGE1:"increase", QUANTITY_MEASURE2:"temperature", AGENT_ATTRIBUTE2:"of air", CHANGE2:"decrease", SCOPE2B:"in troposphere" ]
+	//row autoRow0 = [UUID:"335f-491e-b6bf-7684", QUANTITY_MEASURE1: "altitude", CHANGE1: "increase", QUANTITY_MEASURE2: "temperature", AGENT_ATTRIBUTE2: "of air", CHANGE2: "decrease", SCOPE2B: "in troposphere"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"335f-491e-b6bf-7684", QUANTITY_MEASURE1: "altitude", CHANGE1: "increase", QUANTITY_MEASURE2: "temperature", AGENT_ATTRIBUTE2: "of air", CHANGE2: "decrease", SCOPE2B: "in troposphere"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the altitude increases , the temperature of the air will increase in the stratosphere     (5664-0e00-8eaa-4156) [ AGENT_ATTRIBUTE1:"altitude", CHANGE1:"increase", QUANTITY_MEASURE2:"temperature", AGENT_ATTRIBUTE2:"of air", CHANGE2:"increase", SCOPE2B:"in stratosphere" ]
+	//row autoRow1 = [UUID:"5664-0e00-8eaa-4156", AGENT_ATTRIBUTE1: "altitude", CHANGE1: "increase", QUANTITY_MEASURE2: "temperature", AGENT_ATTRIBUTE2: "of air", CHANGE2: "increase", SCOPE2B: "in stratosphere"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"5664-0e00-8eaa-4156", AGENT_ATTRIBUTE1: "altitude", CHANGE1: "increase", QUANTITY_MEASURE2: "temperature", AGENT_ATTRIBUTE2: "of air", CHANGE2: "increase", SCOPE2B: "in stratosphere"]
+
+	// CENTRAL         SUBDIVISION-GENERICSPATIAL: the troposphere is a lower layer of Earth 's atmosphere     (24f8-3e5d-4744-4f42) [ SUBDIVISION:"troposphere", ADJ:"low", TYPE_OF_SUBDIVISION:"layer", WHOLE:"earth atmosphere" ]
+	//row autoRow2 = [UUID:"24f8-3e5d-4744-4f42", SUBDIVISION: "troposphere", ADJ: "low", TYPE_OF_SUBDIVISION: "layer", WHOLE: "earth atmosphere"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"24f8-3e5d-4744-4f42", SUBDIVISION: "troposphere", ADJ: "low", TYPE_OF_SUBDIVISION: "layer", WHOLE: "earth atmosphere"]
+
+	// CENTRAL         PROP-THINGS: Earth 's atmosphere has different layers     (cbc0-61a2-ad48-5ce3) [ THING:"earth atmosphere", VALUE:"differ", ATTRIBUTE:"layer" ]
+	//row autoRow3 = [UUID:"cbc0-61a2-ad48-5ce3", THING: "earth atmosphere", VALUE: "differ", ATTRIBUTE: "layer"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"cbc0-61a2-ad48-5ce3", THING: "earth atmosphere", VALUE: "differ", ATTRIBUTE: "layer"]
+
+	// CENTRAL         SUBDIVISION-GENERICSPATIAL: the thermosphere is a layer of Earth 's atmosphere     (61d7-9c65-b290-2be7) [ SUBDIVISION:"thermosphere", TYPE_OF_SUBDIVISION:"layer", WHOLE:"earth atmosphere" ]
+	//row autoRow4 = [UUID:"61d7-9c65-b290-2be7", SUBDIVISION: "thermosphere", TYPE_OF_SUBDIVISION: "layer", WHOLE: "earth atmosphere"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"61d7-9c65-b290-2be7", SUBDIVISION: "thermosphere", TYPE_OF_SUBDIVISION: "layer", WHOLE: "earth atmosphere"]
+
+	// CENTRAL         CONTAINS: thermosphere contains high-energy particles     (4761-bcf2-0611-bfd3) [ OBJECT_AGENT:"thermosphere", WHAT_IT_CONTAINS:"high-energy particle;high energy particle" ]
+	//row autoRow5 = [UUID:"4761-bcf2-0611-bfd3", OBJECT_AGENT: "thermosphere", WHAT_IT_CONTAINS: "high energy particle"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"4761-bcf2-0611-bfd3", OBJECT_AGENT: "thermosphere", WHAT_IT_CONTAINS: "high energy particle"]
+
+	// CENTRAL         CONTAINS: troposphere contains 75% the gases     (ed12-5a2a-48c6-b7fc) [ OBJECT_AGENT:"troposphere", QUANTITY_RANGE:"75 %", WHAT_IT_CONTAINS:"gas" ]
+	//row autoRow6 = [UUID:"ed12-5a2a-48c6-b7fc", OBJECT_AGENT: "troposphere", QUANTITY_RANGE: "75 %", WHAT_IT_CONTAINS: "gas"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"ed12-5a2a-48c6-b7fc", OBJECT_AGENT: "troposphere", QUANTITY_RANGE: "75 %", WHAT_IT_CONTAINS: "gas"]
+
+	// CENTRAL         SUBDIVISION-GENERICSPATIAL: the stratosphere is a layer of Earth 's atmosphere     (2b6d-ec8c-1864-c2e3) [ SUBDIVISION:"stratosphere", TYPE_OF_SUBDIVISION:"layer", WHOLE:"earth atmosphere" ]
+	//row autoRow7 = [UUID:"2b6d-ec8c-1864-c2e3", SUBDIVISION: "stratosphere", TYPE_OF_SUBDIVISION: "layer", WHOLE: "earth atmosphere"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"2b6d-ec8c-1864-c2e3", SUBDIVISION: "stratosphere", TYPE_OF_SUBDIVISION: "layer", WHOLE: "earth atmosphere"]
+
+	// CENTRAL         SUBDIVISION-GENERICSPATIAL: the mesosphere is a layer of Earth 's atmosphere     (7313-b37c-eea7-8724) [ SUBDIVISION:"mesosphere", TYPE_OF_SUBDIVISION:"layer", WHOLE:"earth atmosphere" ]
+	//row autoRow8 = [UUID:"7313-b37c-eea7-8724", SUBDIVISION: "mesosphere", TYPE_OF_SUBDIVISION: "layer", WHOLE: "earth atmosphere"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"7313-b37c-eea7-8724", SUBDIVISION: "mesosphere", TYPE_OF_SUBDIVISION: "layer", WHOLE: "earth atmosphere"]
+
+	// CENTRAL         CONTAINS: troposphere contains almost all the water vapor     (218d-6a24-24db-a9dc) [ OBJECT_AGENT:"troposphere", QUANTITY_RANGE:"almost", WHAT_IT_CONTAINS:"water vapor" ]
+	//row autoRow9 = [UUID:"218d-6a24-24db-a9dc", OBJECT_AGENT: "troposphere", QUANTITY_RANGE: "almost", WHAT_IT_CONTAINS: "water vapor"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"218d-6a24-24db-a9dc", OBJECT_AGENT: "troposphere", QUANTITY_RANGE: "almost", WHAT_IT_CONTAINS: "water vapor"]
+
+	// CENTRAL         LOCATIONS: weather usually happens in troposphere     (6b70-ac2f-4ff1-f693) [ THING_PROCESS:"weather", LOCATION:"troposphere" ]
+	//row autoRow10 = [UUID:"6b70-ac2f-4ff1-f693", THING_PROCESS: "weather", LOCATION: "troposphere"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"6b70-ac2f-4ff1-f693", THING_PROCESS: "weather", LOCATION: "troposphere"]
+
+	// CENTRAL         SEQ-SPATIAL: the layers of Earth 's atmosphere from low to high are troposphere, stratosphere, mesosphere, thermosphere     (1ede-c8a1-5448-6851) [ TYPEOFSEQUENCE:"layer", WHOLE:"of earth atmosphere", FROM:"from", BOS:"low", EOS:"high", SEQUENCE:"troposphere stratosphere mesosphere thermosphere" ]
+	//row autoRow11 = [UUID:"1ede-c8a1-5448-6851", TYPEOFSEQUENCE: "layer", WHOLE: "of earth atmosphere", FROM: "from", BOS: "low", EOS: "high", SEQUENCE: "troposphere stratosphere mesosphere thermosphere"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"1ede-c8a1-5448-6851", TYPEOFSEQUENCE: "layer", WHOLE: "of earth atmosphere", FROM: "from", BOS: "low", EOS: "high", SEQUENCE: "troposphere stratosphere mesosphere thermosphere"]
+
+endinferencepattern

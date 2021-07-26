@@ -1,0 +1,91 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Pollution_Fertilizer
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW      (OPTIONAL) CONTAINS: fertilizer contains chemicals     (a288-7e08-49cc-7661) [ OBJECT_AGENT:"fertilizer", WHAT_IT_CONTAINS:"chemical" ]
+	//        HINTROW fertilizers contain nitrogen     (4ecf-622a-52fe-b8b7) [ OBJECT_AGENT:"fertilizer", WHAT_IT_CONTAINS:"nitrogen" ]
+	//row *autoRow0 = [TABLE:"CONTAINS", OBJECT_AGENT: "fertilizer", WHAT_IT_CONTAINS: "chemical"] //OVER-CONSTR.
+	row *autoRow0 = [TABLE:"CONTAINS", OBJECT_AGENT: "fertilizer"]
+
+	// GROUNDING       KINDOF: a river is a kind of flowing ; moving body of water     (9885-6337-f26c-cfbd) [ HYPONYM:"river", SCOPE1:"flow;move", HYPERNYM:"body of water" ]
+	//        HINTROW an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "body of water"]
+
+	// CENTRAL         AFFECT: humans changing ecosystems ; environments usually has a negative impact on an ecosystem ; organisms living in an ecosystem     (f4dc-5030-6255-a1f8) [ ACTOR_WHO:"human", VERB:"change", OBJECT_PROPERTY:"ecosystem;environment", QUALIFIER1:"usually", POSITIVE_NEGATIVE:"negative", PATIENT:"ecosystem;organism live in ecosystem" ]
+	//row autoRow2 = [UUID:"f4dc-5030-6255-a1f8", ACTOR_WHO: "human", VERB: "change", OBJECT_PROPERTY: "ecosystem", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"f4dc-5030-6255-a1f8", ACTOR_WHO: "human", VERB: "change", OBJECT_PROPERTY: "ecosystem", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"]
+
+	// CENTRAL         CAUSE: polluting means something harmful ; something poisonous is added in an environment causes harm in the environment     (d1ac-a510-1958-0100) [ PROCESS_NAME:"pollute", CONDITION_AGENT_OBJECT:"something harm;something poisonous", CONDITION_VERB:"be add", SCOPE1:"in environment", RESULT_PATIENT:"harm", SCOPE2:"in environment" ]
+	//row autoRow3 = [UUID:"d1ac-a510-1958-0100", PROCESS_NAME: "pollute", CONDITION_AGENT_OBJECT: "something harm", CONDITION_VERB: "be add", SCOPE1: "in environment", RESULT_PATIENT: "harm", SCOPE2: "in environment"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"d1ac-a510-1958-0100", PROCESS_NAME: "pollute", CONDITION_AGENT_OBJECT: "something harm", CONDITION_VERB: "be add", SCOPE1: "in environment", RESULT_PATIENT: "harm", SCOPE2: "in environment"]
+
+	// CENTRAL         AFFECT: fertilizers have a negative impact on the environment ; natural resources     (e65a-df84-fcd2-733c) [ ACTOR_WHO:"fertilizer", POSITIVE_NEGATIVE:"negative", PATIENT:"environment;nature resource" ]
+	//row autoRow4 = [UUID:"e65a-df84-fcd2-733c", ACTOR_WHO: "fertilizer", POSITIVE_NEGATIVE: "negative", PATIENT: "nature resource"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"e65a-df84-fcd2-733c", ACTOR_WHO: "fertilizer", POSITIVE_NEGATIVE: "negative", PATIENT: "nature resource"]
+
+	// CENTRAL         AFFECT: harming something has a negative impact on ; effect on that something     (57d4-79ba-a97d-0f9a) [ VERB:"harm", OBJECT_PROPERTY:"something", POSITIVE_NEGATIVE:"negative", PATIENT:"something" ]
+	//row autoRow5 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"]
+
+	// CENTRAL         ACTION: runoff is when cropland water enters ; runs off into bodies of water     (4ee7-8c52-99b5-7674) [ DEFINITION_NAME:"runoff", ADJ:"cropland", AGENT_OBJECT:"water", ACTION2:"enter;run into", OBJECT_PROPERTY:"body of water" ]
+	//row autoRow6 = [UUID:"4ee7-8c52-99b5-7674", DEFINITION_NAME: "runoff", ADJ: "cropland", AGENT_OBJECT: "water", ACTION2: "run into", OBJECT_PROPERTY: "body of water"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4ee7-8c52-99b5-7674", DEFINITION_NAME: "runoff", ADJ: "cropland", AGENT_OBJECT: "water", ACTION2: "run into", OBJECT_PROPERTY: "body of water"]
+
+	// CENTRAL         CONTAINS: runoff contains chemicals ; fertilizer ; pollutants ; pesticides from cropland     (6029-2646-fb11-8753) [ OBJECT_AGENT:"runoff", WHAT_IT_CONTAINS:"chemical;fertilizer;pollutant;pesticide", SCOPE:"from cropland" ]
+	//row autoRow7 = [UUID:"6029-2646-fb11-8753", OBJECT_AGENT: "runoff", WHAT_IT_CONTAINS: "chemical", SCOPE: "from cropland"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"6029-2646-fb11-8753", OBJECT_AGENT: "runoff", WHAT_IT_CONTAINS: "chemical", SCOPE: "from cropland"]
+
+	// CENTRAL         CAUSE: runoff from a cropland causes water pollution     (fb41-0702-939a-040a) [ CONDITION_AGENT_OBJECT:"runoff", SCOPE1:"from cropland", RESULT_AGENT:"water pollute" ]
+	//row autoRow8 = [UUID:"fb41-0702-939a-040a", CONDITION_AGENT_OBJECT: "runoff", SCOPE1: "from cropland", RESULT_AGENT: "water pollute"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"fb41-0702-939a-040a", CONDITION_AGENT_OBJECT: "runoff", SCOPE1: "from cropland", RESULT_AGENT: "water pollute"]
+
+	// CENTRAL         ACTION: water pollution is when humans pollute the environment with pollutants     (3547-7689-fb87-ee96) [ DEFINITION_NAME:"water pollute", AGENT_OBJECT:"human", ACTION2:"pollute", OBJECT_PROPERTY:"environment", HOW:"pollutant" ]
+	//row autoRow9 = [UUID:"3547-7689-fb87-ee96", DEFINITION_NAME: "water pollute", AGENT_OBJECT: "human", ACTION2: "pollute", OBJECT_PROPERTY: "environment", HOW: "pollutant"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"3547-7689-fb87-ee96", DEFINITION_NAME: "water pollute", AGENT_OBJECT: "human", ACTION2: "pollute", OBJECT_PROPERTY: "environment", HOW: "pollutant"]
+
+	// CENTRAL         KINDOF: a body of water is a kind of environment     (3f9d-8b3a-54b5-6a3c) [ HYPONYM:"body of water", HYPERNYM:"environment" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"3f9d-8b3a-54b5-6a3c", HYPONYM: "body of water", HYPERNYM: "environment"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"3f9d-8b3a-54b5-6a3c", HYPONYM: "body of water", HYPERNYM: "environment"]
+
+	// CENTRAL         SOURCEOF: fertilizers are a source of pollution     (fb74-d393-266e-0f88) [ AGENT:"fertilizer", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"pollute" ]
+	//row autoRow11 = [UUID:"fb74-d393-266e-0f88", AGENT: "fertilizer", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "pollute"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"fb74-d393-266e-0f88", AGENT: "fertilizer", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "pollute"]
+
+	// CENTRAL         AFFECT: fertilizers have a positive impact on algae growth     (6cb9-7da9-1e1b-119b) [ ACTOR_WHO:"fertilizer", POSITIVE_NEGATIVE:"positive", ADJ:"alga", PATIENT:"grow" ]
+	//row autoRow12 = [UUID:"6cb9-7da9-1e1b-119b", ACTOR_WHO: "fertilizer", POSITIVE_NEGATIVE: "positive", ADJ: "alga", PATIENT: "grow"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"6cb9-7da9-1e1b-119b", ACTOR_WHO: "fertilizer", POSITIVE_NEGATIVE: "positive", ADJ: "alga", PATIENT: "grow"]
+
+	// CENTRAL         USEDFOR: cropland is used for farming by humans     (ff67-56ea-3f47-20c2) [ AGENT_OBJECT:"cropland", FOR_PURPOSE:"farm", AGENT_THING_WHO_USES:"human" ]
+	//row autoRow13 = [UUID:"ff67-56ea-3f47-20c2", AGENT_OBJECT: "cropland", FOR_PURPOSE: "farm", AGENT_THING_WHO_USES: "human"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"ff67-56ea-3f47-20c2", AGENT_OBJECT: "cropland", FOR_PURPOSE: "farm", AGENT_THING_WHO_USES: "human"]
+
+	// CENTRAL         CAUSE: pesticides can cause pollution     (9318-8bfb-fa4c-6d86) [ CONDITION_AGENT_OBJECT:"pesticide", RESULT_AGENT:"pollute" ]
+	//row autoRow14 = [UUID:"9318-8bfb-fa4c-6d86", CONDITION_AGENT_OBJECT: "pesticide", RESULT_AGENT: "pollute"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"9318-8bfb-fa4c-6d86", CONDITION_AGENT_OBJECT: "pesticide", RESULT_AGENT: "pollute"]
+
+	// CENTRAL        (OPTIONAL) COUPLEDRELATIONSHIP: as the population of algae increases , the amount of available oxygen for fish will decrease     (8075-8948-7b4a-dee5) [ QUANTITY_MEASURE1:"population of", AGENT_ATTRIBUTE1:"alga", CHANGE1:"increase", QUANTITY_MEASURE2:"amount of", AGENT_ATTRIBUTE2:"available oxygen", SCOPE2A:"for fish", CHANGE2:"decrease" ]
+	//  Notes: the effect of algae growth in the river
+	//row *autoRow15 = [UUID:"8075-8948-7b4a-dee5", QUANTITY_MEASURE1: "population of", AGENT_ATTRIBUTE1: "alga", CHANGE1: "increase", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "available oxygen", SCOPE2A: "for fish", CHANGE2: "decrease"] //OVER-CONSTR.
+	row *autoRow15 = [UUID:"8075-8948-7b4a-dee5", QUANTITY_MEASURE1: "population of", AGENT_ATTRIBUTE1: "alga", CHANGE1: "increase", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "available oxygen", SCOPE2A: "for fish", CHANGE2: "decrease"]
+
+	// LEXGLUE         SYNONYMY: to be a source of something means to cause that something     (4bc3-00d6-bc97-8838) [ ACTION1:"be", Y1:"source of something", ACTION2:"cause", Y2:"that something" ]
+	//row autoRow16 = [UUID:"4bc3-00d6-bc97-8838", ACTION1: "be", Y1: "source of something", ACTION2: "cause", Y2: "that something"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"4bc3-00d6-bc97-8838", ACTION1: "be", Y1: "source of something", ACTION2: "cause", Y2: "that something"]
+
+	// LEXGLUE         SYNONYMY: impact means effect     (8b85-9aff-8362-b0d3) [ X1:"impact", X2:"effect" ]
+	//row autoRow17 = [UUID:"8b85-9aff-8362-b0d3", X1: "impact", X2: "effect"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"8b85-9aff-8362-b0d3", X1: "impact", X2: "effect"]
+
+	// LEXGLUE         SYNONYMY: to cause means to result in     (f4d3-fd82-31d1-855c) [ ACTION1:"cause", ACTION2:"result in" ]
+	//row autoRow18 = [UUID:"f4d3-fd82-31d1-855c", ACTION1: "cause", ACTION2: "result in"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"f4d3-fd82-31d1-855c", ACTION1: "cause", ACTION2: "result in"]
+
+endinferencepattern

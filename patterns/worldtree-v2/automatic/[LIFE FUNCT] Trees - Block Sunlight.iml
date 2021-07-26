@@ -1,0 +1,65 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Trees_Block_Sunlight
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW an apple tree is a kind of plant     (00a7-56fc-3c22-e6f2) [ HYPONYM:"apple tree", HYPERNYM:"plant" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "tree", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "tree", HYPERNYM: "plant"]
+
+	// CENTRAL         ACTION: a lack of something that a living thing requires prevents the survival of that living thing     (be10-2687-bb9c-5186) [ ADJ:"lack", AGENT_OBJECT:"of something that live thing require", ACTION2:"prevent", OBJECT_PROPERTY:"survive of live thing" ]
+	//row autoRow1 = [UUID:"be10-2687-bb9c-5186", ADJ: "lack", AGENT_OBJECT: "of something that live thing require", ACTION2: "prevent", OBJECT_PROPERTY: "survive of live thing"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"be10-2687-bb9c-5186", ADJ: "lack", AGENT_OBJECT: "of something that live thing require", ACTION2: "prevent", OBJECT_PROPERTY: "survive of live thing"]
+
+	// CENTRAL         ACTION: large canopies ; trees block sunlight from reaching the ground     (ce2f-df98-e9c7-37ac) [ ADJ:"large", AGENT_OBJECT:"canopy;tree", ACTION2:"block", OBJECT_PROPERTY:"sunlight", WHEN_WHERE:"from reach grind" ]
+	//row autoRow2 = [UUID:"ce2f-df98-e9c7-37ac", ADJ: "large", AGENT_OBJECT: "canopy", ACTION2: "block", OBJECT_PROPERTY: "sunlight", WHEN_WHERE: "from reach grind"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"ce2f-df98-e9c7-37ac", ADJ: "large", AGENT_OBJECT: "canopy", ACTION2: "block", OBJECT_PROPERTY: "sunlight", WHEN_WHERE: "from reach grind"]
+
+	// CENTRAL         SOURCEOF: the sun is the source of solar energy called sunlight     (1ed3-919d-4a4c-1be7) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"solar energy", NAME:"sunlight" ]
+	//row autoRow3 = [UUID:"1ed3-919d-4a4c-1be7", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "solar energy", NAME: "sunlight"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"1ed3-919d-4a4c-1be7", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "solar energy", NAME: "sunlight"]
+
+	// CENTRAL         REQUIRES: a plant requires sunlight for photosynthesis     (619e-a5d1-b505-4f69) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"sunlight", FOR_PURPOSE:"photosynthesis" ]
+	//row autoRow4 = [UUID:"619e-a5d1-b505-4f69", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "photosynthesis"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"619e-a5d1-b505-4f69", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "photosynthesis"]
+
+	// CENTRAL         KINDOF: a plant is a kind of living thing     (2e89-d8e8-a8fb-9acc) [ HYPONYM:"plant", HYPERNYM:"live thing" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"2e89-d8e8-a8fb-9acc", HYPONYM: "plant", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"2e89-d8e8-a8fb-9acc", HYPONYM: "plant", HYPERNYM: "live thing"]
+
+	// CENTRAL         REQUIRES: a plant requires photosynthesis to grow ; survive     (fe74-c2b4-98c2-9496) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"photosynthesis", FOR_PURPOSE:"grow;survive" ]
+	//row autoRow6 = [UUID:"fe74-c2b4-98c2-9496", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "photosynthesis", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"fe74-c2b4-98c2-9496", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "photosynthesis", FOR_PURPOSE: "grow"]
+
+	// CENTRAL         IFTHEN: if sunlight is blocked from an area then that area lacks sunlight     (7001-a06c-e3fe-2d35) [ THING:"sunlight", ACTION1:"block from", OBJECT_PATIENT1:"area", ACTOR_AGENT_PROCESS2:"that area", ACTION3:"lack", OBJECT_PROPERTY3:"sunlight" ]
+	//row autoRow7 = [UUID:"7001-a06c-e3fe-2d35", THING: "sunlight", ACTION1: "block from", OBJECT_PATIENT1: "area", ACTOR_AGENT_PROCESS2: "that area", ACTION3: "lack", OBJECT_PROPERTY3: "sunlight"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"7001-a06c-e3fe-2d35", THING: "sunlight", ACTION1: "block from", OBJECT_PATIENT1: "area", ACTOR_AGENT_PROCESS2: "that area", ACTION3: "lack", OBJECT_PROPERTY3: "sunlight"]
+
+	// CENTRAL         SOURCEOF: photosynthesis is a source of ; makes food ; energy for the plant by converting carbon dioxide, water, and sunlight into carbohydrates     (a9fc-ec58-9496-d635) [ AGENT:"photosynthesis", VERB_SOURCEOF_PROVIDE_ETC:"be source of;make", WHAT_IT_PROVIDES:"food;energy", AGENT_IT_PROVIDES_THING_TO:"plant", BY_THROUGH_HOW:"convert carbon dioxide water sunlight into carbohydrate" ]
+	//row autoRow8 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"a9fc-ec58-9496-d635", AGENT: "photosynthesis", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "food", AGENT_IT_PROVIDES_THING_TO: "plant", BY_THROUGH_HOW: "convert carbon dioxide water sunlight into carbohydrate"]
+
+	// CENTRAL         REQUIRES: a plant requires sunlight to grow     (4480-75c2-5b75-c32a) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"sunlight", FOR_PURPOSE:"grow" ]
+	//row autoRow9 = [UUID:"4480-75c2-5b75-c32a", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"4480-75c2-5b75-c32a", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "grow"]
+
+	// CENTRAL         IFTHEN: if a tree falls then sunlight becomes available to the surrounding plants     (b817-9d94-9032-10f0) [ THING:"tree", ACTION1:"fall", ACTOR_AGENT_PROCESS2:"sunlight", ACTION3:"become", OBJECT_PROPERTY3:"available", SCOPE4:"surround plant" ]
+	//row autoRow10 = [UUID:"b817-9d94-9032-10f0", THING: "tree", ACTION1: "fall", ACTOR_AGENT_PROCESS2: "sunlight", ACTION3: "become", OBJECT_PROPERTY3: "available", SCOPE4: "surround plant"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"b817-9d94-9032-10f0", THING: "tree", ACTION1: "fall", ACTOR_AGENT_PROCESS2: "sunlight", ACTION3: "become", OBJECT_PROPERTY3: "available", SCOPE4: "surround plant"]
+
+	// CENTRAL         CHANGE: photosynthesis means producers ; green plants convert from carbon dioxide and water and solar energy into carbohydrates and food and oxygen for themselves     (0962-4a47-4e17-ce97) [ PROCESS_NAME:"photosynthesis", ACTOR_WHO:"producer;green plant", VERB:"convert", FROM:"carbon dioxide water solar energy", INTO:"carbohydrate food oxygen" ]
+	//row autoRow11 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"]
+
+	// CENTRAL         KINDOF: sunlight is a kind of solar energy     (59d6-9954-ef5e-12b2) [ HYPONYM:"sunlight", HYPERNYM:"solar energy" ]
+	//row autoRow12 = [UUID:"59d6-9954-ef5e-12b2", HYPONYM: "sunlight", HYPERNYM: "solar energy"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"59d6-9954-ef5e-12b2", HYPONYM: "sunlight", HYPERNYM: "solar energy"]
+
+endinferencepattern

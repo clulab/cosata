@@ -1,0 +1,73 @@
+// Automatically converted pattern
+inferencepattern LIFE_INTERDEP_Overconsumption_of_Resources_Hurting_Other_Consumers
+
+	// Plain text description
+	description = "more consumers faster consump -> less o2 -> fishies die"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       AFFECT: the decrease of something required by an organism has a negative impact on that organism 's survival ; that organism 's ability     (f346-e8eb-6338-4e34) [ ACTOR_WHO:"decrease", OBJECT_PROPERTY:"of something require by organism", POSITIVE_NEGATIVE:"negative", PATIENT:"organism survive;organism ability" ]
+	//        HINTROW a required resource being low in availability has a negative impact on the something that requires that resource     (09f9-ddfd-fa69-b278) [ ACTOR_WHO:"require resource", VERB:"be low in availability", POSITIVE_NEGATIVE:"negative", PATIENT:"something require that resource" ]
+	//row autoRow0 = [TABLE:"AFFECT", ACTOR_WHO: "decrease", OBJECT_PROPERTY: "of"+*"POS:NN"+*"POS:VB"+"by organism", POSITIVE_NEGATIVE: "negative", PATIENT: "organism"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"AFFECT", POSITIVE_NEGATIVE: "negative", PATIENT: "organism"+*"POS:NN"]
+
+	// GROUNDING       KINDOF: a fish is a kind of animal     (9526-aecc-22b2-4b6a) [ HYPONYM:"fish", HYPERNYM:"animal" ]
+	//        HINTROW a fish is a kind of aquatic animal     (a94e-e849-c066-fecd) [ HYPONYM:"fish", HYPERNYM:"aquatic animal" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "fish", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "fish", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: an algae is a kind of organism     (28d3-fb60-bdd3-d10c) [ HYPONYM:"alga", HYPERNYM:"organism" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "alga", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "alga", HYPERNYM: "organism"]
+
+	// GROUNDING       KINDOF: a pond is a kind of body of water     (2a41-7224-fbc2-ba94) [ HYPONYM:"pond", HYPERNYM:"body of water" ]
+	//        HINTROW a river is a kind of flowing ; moving body of water     (9885-6337-f26c-cfbd) [ HYPONYM:"river", SCOPE1:"flow;move", HYPERNYM:"body of water" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "body of water"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the population of algae increases , the amount of available oxygen for fish will decrease     (8075-8948-7b4a-dee5) [ QUANTITY_MEASURE1:"population of", AGENT_ATTRIBUTE1:"alga", CHANGE1:"increase", QUANTITY_MEASURE2:"amount of", AGENT_ATTRIBUTE2:"available oxygen", SCOPE2A:"for fish", CHANGE2:"decrease" ]
+	//row autoRow4 = [UUID:"8075-8948-7b4a-dee5", QUANTITY_MEASURE1: "population of", AGENT_ATTRIBUTE1: "alga", CHANGE1: "increase", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "available oxygen", SCOPE2A: "for fish", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"8075-8948-7b4a-dee5", QUANTITY_MEASURE1: "population of", AGENT_ATTRIBUTE1: "alga", CHANGE1: "increase", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "available oxygen", SCOPE2A: "for fish", CHANGE2: "decrease"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as available resources increases , the population of an organism using those resources will increase     (ef04-96f5-1898-e701) [ QUANTITY_MEASURE1:"available resource", CHANGE1:"increase", QUANTITY_MEASURE2:"population", AGENT_ATTRIBUTE2:"of organism", ACTION2:"use", PATIENT2:"resource", CHANGE2:"increase" ]
+	//row autoRow5 = [UUID:"ef04-96f5-1898-e701", QUANTITY_MEASURE1: "available resource", CHANGE1: "increase", QUANTITY_MEASURE2: "population", AGENT_ATTRIBUTE2: "of organism", ACTION2: "use", PATIENT2: "resource", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"ef04-96f5-1898-e701", QUANTITY_MEASURE1: "available resource", CHANGE1: "increase", QUANTITY_MEASURE2: "population", AGENT_ATTRIBUTE2: "of organism", ACTION2: "use", PATIENT2: "resource", CHANGE2: "increase"]
+
+	// CENTRAL         IFTHEN: if the population of an organism increases then the ecosystem may become overpopulated with that organism     (2ebb-fce7-3fb0-eb17) [ ADJ_QUANTITY1:"population of", THING:"organism", ACTION1:"increase", ACTOR_AGENT_PROCESS2:"ecosystem", OBJECT_PROPERTY3:"overpopulate", SCOPE4:"with organism" ]
+	//row autoRow6 = [UUID:"2ebb-fce7-3fb0-eb17", ADJ_QUANTITY1: "population of", THING: "organism", ACTION1: "increase", ACTOR_AGENT_PROCESS2: "ecosystem", OBJECT_PROPERTY3: "overpopulate", SCOPE4: "with organism"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"2ebb-fce7-3fb0-eb17", ADJ_QUANTITY1: "population of", THING: "organism", ACTION1: "increase", ACTOR_AGENT_PROCESS2: "ecosystem", OBJECT_PROPERTY3: "overpopulate", SCOPE4: "with organism"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as a population of organisms increases , the resources used by those organisms will decrease     (41dc-5a9d-b5a2-b743) [ QUANTITY_MEASURE1:"population of", AGENT_ATTRIBUTE1:"organism", CHANGE1:"increase", AGENT_ATTRIBUTE2:"resource", ACTION2:"use by", PATIENT2:"organism", CHANGE2:"decrease" ]
+	//row autoRow7 = [UUID:"41dc-5a9d-b5a2-b743", QUANTITY_MEASURE1: "population of", AGENT_ATTRIBUTE1: "organism", CHANGE1: "increase", AGENT_ATTRIBUTE2: "resource", ACTION2: "use by", PATIENT2: "organism", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"41dc-5a9d-b5a2-b743", QUANTITY_MEASURE1: "population of", AGENT_ATTRIBUTE1: "organism", CHANGE1: "increase", AGENT_ATTRIBUTE2: "resource", ACTION2: "use by", PATIENT2: "organism", CHANGE2: "decrease"]
+
+	// CENTRAL         CHANGE-VEC: negative impacts on organisms ; species will decrease the population of the organisms ; the species     (83f9-1f31-2097-7a80) [ ADJ:"negative", AGENT_OBJECT:"impact", SCOPE1:"on organism;species", DIRECTION:"decrease", PATIENT:"population", SCOPE2:"of organism;species" ]
+	//  Notes: 4c89-1538-021d-96b2->83f9-1f31-2097-7a80
+	//row autoRow8 = [UUID:"83f9-1f31-2097-7a80", ADJ: "negative", AGENT_OBJECT: "impact", SCOPE1: "on organism", DIRECTION: "decrease", PATIENT: "population", SCOPE2: "of organism"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"83f9-1f31-2097-7a80", ADJ: "negative", AGENT_OBJECT: "impact", SCOPE1: "on organism", DIRECTION: "decrease", PATIENT: "population", SCOPE2: "of organism"]
+
+	// CENTRAL         LOCATIONS: algae is found in bodies of water     (3648-f2f7-ae08-d6f7) [ THING_PROCESS:"alga", LOCATION:"body of water" ]
+	//row autoRow9 = [UUID:"3648-f2f7-ae08-d6f7", THING_PROCESS: "alga", LOCATION: "body of water"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"3648-f2f7-ae08-d6f7", THING_PROCESS: "alga", LOCATION: "body of water"]
+
+	// CENTRAL         HABITAT: aquatic animals ; plants live in bodies of water     (a13a-1bd4-3d64-f3db) [ SUBSPECIES:"aquatic", ORGANISM:"animal;plant", HABITAT:"body of water" ]
+	//  Notes: 2125-ab14-605b-2b8c->a13a-1bd4-3d64-f3db
+	//row autoRow10 = [UUID:"a13a-1bd4-3d64-f3db", SUBSPECIES: "aquatic", ORGANISM: "animal", HABITAT: "body of water"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"a13a-1bd4-3d64-f3db", SUBSPECIES: "aquatic", ORGANISM: "animal", HABITAT: "body of water"]
+
+	// CENTRAL         REQUIRES: an animal ; bacterium requires oxygen for survival ; to breathe     (f59c-9a1b-f57b-d689) [ OBJECT_AGENT_PROCESS:"animal;bacterium", VERB_REQUIRES:"require", OBJECT:"oxygen", FOR_PURPOSE:"survive;breathe" ]
+	//row autoRow11 = [UUID:"f59c-9a1b-f57b-d689", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "oxygen", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"f59c-9a1b-f57b-d689", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "oxygen", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"]
+
+	// CENTRAL         CONTAINS: water contains dissolved oxygen     (f32e-0424-d7c1-e558) [ OBJECT_AGENT:"water", WHAT_IT_CONTAINS:"dissolve oxygen" ]
+	//row autoRow13 = [UUID:"f32e-0424-d7c1-e558", OBJECT_AGENT: "water", WHAT_IT_CONTAINS: "dissolve oxygen"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"f32e-0424-d7c1-e558", OBJECT_AGENT: "water", WHAT_IT_CONTAINS: "dissolve oxygen"]
+
+endinferencepattern

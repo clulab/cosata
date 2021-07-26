@@ -1,0 +1,63 @@
+// Automatically converted pattern
+inferencepattern LIFE_REPROD_Sexual_Reproduction_Outcomes_of
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       ACTION: volvox reproduces sexually     (890c-5c3f-e3c7-8727) [ AGENT_OBJECT:"volvox", ACTION2:"reproduce", OBJECT_PROPERTY:"sexually" ]
+	//        HINTROW animals reproduce sexually     (f6a5-58cd-2531-d0ae) [ AGENT_OBJECT:"animal", ACTION2:"reproduce", HOW:"sexually" ]
+	//  Notes: X reproduces sexually
+	//row autoRow0 = [TABLE:"ACTION", ACTION2: "reproduce"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ACTION", ACTION2: "reproduce"]
+
+	// CENTRAL         AFFECT: genetic variation in offspring has a positive impact on an organism 's ; offspring 's survival ; health ; ability to reproduce     (03ba-1030-0607-8d07) [ OBJECT_PROPERTY:"genetic variation in offspring", POSITIVE_NEGATIVE:"positive", ADJ:"organism;offspring", PATIENT:"survive;health;ability reproduce" ]
+	//row autoRow1 = [UUID:"03ba-1030-0607-8d07", OBJECT_PROPERTY: "genetic variation in offspring", POSITIVE_NEGATIVE: "positive", ADJ: "organism", PATIENT: "ability reproduce"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"03ba-1030-0607-8d07", OBJECT_PROPERTY: "genetic variation in offspring", POSITIVE_NEGATIVE: "positive", ADJ: "organism", PATIENT: "ability reproduce"]
+
+	// CENTRAL         SOURCEOF: sexual reproduction is a source of genetic variation ; naturally occurring variation in offspring ; in a species     (e13a-bed8-c1c1-d77a) [ AGENT:"sexual reproduce", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"genetic variation;naturally occur variation", AGENT_IT_PROVIDES_THING_TO:"in offspring;in species" ]
+	//row autoRow2 = [UUID:"e13a-bed8-c1c1-d77a", AGENT: "sexual reproduce", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "naturally occur variation", AGENT_IT_PROVIDES_THING_TO: "in offspring"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"e13a-bed8-c1c1-d77a", AGENT: "sexual reproduce", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "naturally occur variation", AGENT_IT_PROVIDES_THING_TO: "in offspring"]
+
+	// CENTRAL         SOURCEOF: sexual reproduction produces offspring with genetic material from both parents ; cells with genetic material from both parent cells     (8943-36d2-8c4d-ab9e) [ AGENT:"sexual reproduce", VERB_SOURCEOF_PROVIDE_ETC:"produce", WHAT_IT_PROVIDES:"offspring with genetic material from parent;cell with genetic material from parent cell" ]
+	//row autoRow3 = [UUID:"8943-36d2-8c4d-ab9e", AGENT: "sexual reproduce", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "cell with genetic material from parent cell"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"8943-36d2-8c4d-ab9e", AGENT: "sexual reproduce", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "cell with genetic material from parent cell"]
+
+	// CENTRAL         SOURCEOF: asexual reproduction is not a source of genetic variation in offspring     (341b-588a-42ea-2eae) [ AGENT:"asexual reproduce", QUALIFIER:"be not", VERB_SOURCEOF_PROVIDE_ETC:"source of", WHAT_IT_PROVIDES:"genetic variation", AGENT_IT_PROVIDES_THING_TO:"in offspring" ]
+	//row autoRow4 = [UUID:"341b-588a-42ea-2eae", AGENT: "asexual reproduce", QUALIFIER: "be not", VERB_SOURCEOF_PROVIDE_ETC: "source of", WHAT_IT_PROVIDES: "genetic variation", AGENT_IT_PROVIDES_THING_TO: "in offspring"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"341b-588a-42ea-2eae", AGENT: "asexual reproduce", QUALIFIER: "be not", VERB_SOURCEOF_PROVIDE_ETC: "source of", WHAT_IT_PROVIDES: "genetic variation", AGENT_IT_PROVIDES_THING_TO: "in offspring"]
+
+	// CENTRAL        (OPTIONAL) STAGE-IN-PROCESS: cross-pollination is a stage in the sexual reproduction process of plants     (e477-2c0c-9782-8b1b) [ STAGE:"cross-pollination;cross pollination", PROCESS:"sexual reproduce", SCOPE:"of plant" ]
+	//row *autoRow5 = [UUID:"e477-2c0c-9782-8b1b", STAGE: "cross pollination", PROCESS: "sexual reproduce", SCOPE: "of plant"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"e477-2c0c-9782-8b1b", STAGE: "cross pollination", PROCESS: "sexual reproduce", SCOPE: "of plant"]
+
+	// CENTRAL         CHANGE-VEC: sexual reproduction increases genetic diversity     (5cd9-f632-759b-0f39) [ AGENT_OBJECT:"sexual reproduce", DIRECTION:"increase", PATIENT:"genetic diversity" ]
+	//row autoRow6 = [UUID:"5cd9-f632-759b-0f39", AGENT_OBJECT: "sexual reproduce", DIRECTION: "increase", PATIENT: "genetic diversity"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"5cd9-f632-759b-0f39", AGENT_OBJECT: "sexual reproduce", DIRECTION: "increase", PATIENT: "genetic diversity"]
+
+	// CENTRAL         CHANGE-VEC: a source of something increases the amount of that something     (da68-3173-2681-d90e) [ AGENT_OBJECT:"source", SCOPE1:"of something", DIRECTION:"increase", QUANTITY:"amount of", PATIENT:"something" ]
+	//row autoRow7 = [UUID:"da68-3173-2681-d90e", AGENT_OBJECT: "source", SCOPE1: "of something", DIRECTION: "increase", QUANTITY: "amount of", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"da68-3173-2681-d90e", AGENT_OBJECT: "source", SCOPE1: "of something", DIRECTION: "increase", QUANTITY: "amount of", PATIENT: "something"]
+
+	// CENTRAL         KINDOF: an increase is a kind of change     (782a-53e7-c1c7-aae0) [ HYPONYM:"increase", HYPERNYM:"change" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"782a-53e7-c1c7-aae0", HYPONYM: "increase", HYPERNYM: "change"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"782a-53e7-c1c7-aae0", HYPONYM: "increase", HYPERNYM: "change"]
+
+	// CENTRAL        (OPTIONAL) CHANGE-VEC: cross-pollination increases genetic diversity     (5c15-f271-e31f-f9ec) [ AGENT_OBJECT:"cross-pollination;cross pollination", DIRECTION:"increase;increase", PATIENT:"genetic diversity" ]
+	//row *autoRow9 = [UUID:"5c15-f271-e31f-f9ec", AGENT_OBJECT: "cross pollination", DIRECTION: "increase", PATIENT: "genetic diversity"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"5c15-f271-e31f-f9ec", AGENT_OBJECT: "cross pollination", DIRECTION: "increase", PATIENT: "genetic diversity"]
+
+	// CENTRAL         KINDOF: sexual reproduction is a kind of reproduction     (469b-a193-6635-90ba) [ HYPONYM:"sexual reproduce", HYPERNYM:"reproduce" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"469b-a193-6635-90ba", HYPONYM: "sexual reproduce", HYPERNYM: "reproduce"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"469b-a193-6635-90ba", HYPONYM: "sexual reproduce", HYPERNYM: "reproduce"]
+
+	// LEXGLUE         SYNONYMY: to cause means to result in     (f4d3-fd82-31d1-855c) [ ACTION1:"cause", ACTION2:"result in" ]
+	//row autoRow11 = [UUID:"f4d3-fd82-31d1-855c", ACTION1: "cause", ACTION2: "result in"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"f4d3-fd82-31d1-855c", ACTION1: "cause", ACTION2: "result in"]
+
+endinferencepattern

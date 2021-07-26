@@ -1,0 +1,264 @@
+{"patternMatches": [
+{
+	"patternName":"EARTH_GEO_Minerals_Hardness",
+	"matches":[
+		{
+		"uuids": ["2863-93fe-ff62-7b41","d332-396d-4f4f-cda0","7e9a-fec3-cac8-51bb","2e56-4666-451b-5894","63a1-8273-80bd-cf40","72e2-6cde-7faa-4d2b","cd93-2714-3e29-9def","69c1-2991-2421-ce63","a6b1-8a48-8882-cdfd","757d-cd70-0857-0d35","0d14-a620-1810-48a3","8661-5700-67ef-4ac8","2bc5-2931-e694-ba1a","33f0-39de-0983-aad8","f294-6f62-2e34-4af0","8435-aecd-2348-6182","2ac5-c14f-0f63-8b01","0654-00a0-45fb-b306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2863-93fe-ff62-7b41", "rowText": "if a mineral can be scratched by a fingernail then that mineral is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d332-396d-4f4f-cda0", "rowText": "mica is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7e9a-fec3-cac8-51bb", "rowText": "diamond is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2e56-4666-451b-5894", "rowText": "mica is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "63a1-8273-80bd-cf40", "rowText": "diamond is hard", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "72e2-6cde-7faa-4d2b", "rowText": "hardness is a property of a material ; an object and includes ordered values of malleable ; rigid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cd93-2714-3e29-9def", "rowText": "a streak plate can be used to determine the hardness of a mineral", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "69c1-2991-2421-ce63", "rowText": "classifying means grouping objects ; materials by their properties", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a6b1-8a48-8882-cdfd", "rowText": "hardness is a measure of a mineral 's ability to resist scratching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "757d-cd70-0857-0d35", "rowText": "measuring the hardness of minerals requires scratching those materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0d14-a620-1810-48a3", "rowText": "if a material scratches easily then that material has low hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "2bc5-2931-e694-ba1a", "rowText": "hardness can be used to identify minerals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "f294-6f62-2e34-4af0", "rowText": "a mineral is a kind of solid ; natural material", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "8435-aecd-2348-6182", "rowText": "a mineral is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "2ac5-c14f-0f63-8b01", "rowText": "if something is soft , then that something is malleable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "0654-00a0-45fb-b306", "rowText": "soft is a kind of hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"mica_0", "value":"mica" },
+			{ "name":"quartz_1", "value":"diamond" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"mica_0", "value":"mica" },
+			{ "name":"quartz_1", "value":"diamond" }
+		]
+		},
+		{
+		"uuids": ["2863-93fe-ff62-7b41","d332-396d-4f4f-cda0","fe8b-fc9f-5401-dc19","2e56-4666-451b-5894","5925-533c-7bb7-4954","72e2-6cde-7faa-4d2b","cd93-2714-3e29-9def","69c1-2991-2421-ce63","a6b1-8a48-8882-cdfd","757d-cd70-0857-0d35","0d14-a620-1810-48a3","8661-5700-67ef-4ac8","2bc5-2931-e694-ba1a","33f0-39de-0983-aad8","f294-6f62-2e34-4af0","8435-aecd-2348-6182","2ac5-c14f-0f63-8b01","0654-00a0-45fb-b306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2863-93fe-ff62-7b41", "rowText": "if a mineral can be scratched by a fingernail then that mineral is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d332-396d-4f4f-cda0", "rowText": "mica is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fe8b-fc9f-5401-dc19", "rowText": "quartz is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2e56-4666-451b-5894", "rowText": "mica is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5925-533c-7bb7-4954", "rowText": "quartz is hard", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "72e2-6cde-7faa-4d2b", "rowText": "hardness is a property of a material ; an object and includes ordered values of malleable ; rigid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cd93-2714-3e29-9def", "rowText": "a streak plate can be used to determine the hardness of a mineral", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "69c1-2991-2421-ce63", "rowText": "classifying means grouping objects ; materials by their properties", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a6b1-8a48-8882-cdfd", "rowText": "hardness is a measure of a mineral 's ability to resist scratching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "757d-cd70-0857-0d35", "rowText": "measuring the hardness of minerals requires scratching those materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0d14-a620-1810-48a3", "rowText": "if a material scratches easily then that material has low hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "2bc5-2931-e694-ba1a", "rowText": "hardness can be used to identify minerals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "f294-6f62-2e34-4af0", "rowText": "a mineral is a kind of solid ; natural material", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "8435-aecd-2348-6182", "rowText": "a mineral is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "2ac5-c14f-0f63-8b01", "rowText": "if something is soft , then that something is malleable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "0654-00a0-45fb-b306", "rowText": "soft is a kind of hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"mica_0", "value":"mica" },
+			{ "name":"quartz_1", "value":"quartz" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"mica_0", "value":"mica" },
+			{ "name":"quartz_1", "value":"quartz" }
+		]
+		},
+		{
+		"uuids": ["2863-93fe-ff62-7b41","5c41-c4f8-7ec9-93a5","7e9a-fec3-cac8-51bb","a080-8e02-49a6-9707","63a1-8273-80bd-cf40","72e2-6cde-7faa-4d2b","cd93-2714-3e29-9def","69c1-2991-2421-ce63","a6b1-8a48-8882-cdfd","757d-cd70-0857-0d35","0d14-a620-1810-48a3","8661-5700-67ef-4ac8","2bc5-2931-e694-ba1a","33f0-39de-0983-aad8","f294-6f62-2e34-4af0","8435-aecd-2348-6182","2ac5-c14f-0f63-8b01","0654-00a0-45fb-b306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2863-93fe-ff62-7b41", "rowText": "if a mineral can be scratched by a fingernail then that mineral is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c41-c4f8-7ec9-93a5", "rowText": "gold is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7e9a-fec3-cac8-51bb", "rowText": "diamond is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a080-8e02-49a6-9707", "rowText": "gold is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "63a1-8273-80bd-cf40", "rowText": "diamond is hard", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "72e2-6cde-7faa-4d2b", "rowText": "hardness is a property of a material ; an object and includes ordered values of malleable ; rigid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cd93-2714-3e29-9def", "rowText": "a streak plate can be used to determine the hardness of a mineral", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "69c1-2991-2421-ce63", "rowText": "classifying means grouping objects ; materials by their properties", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a6b1-8a48-8882-cdfd", "rowText": "hardness is a measure of a mineral 's ability to resist scratching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "757d-cd70-0857-0d35", "rowText": "measuring the hardness of minerals requires scratching those materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0d14-a620-1810-48a3", "rowText": "if a material scratches easily then that material has low hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "2bc5-2931-e694-ba1a", "rowText": "hardness can be used to identify minerals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "f294-6f62-2e34-4af0", "rowText": "a mineral is a kind of solid ; natural material", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "8435-aecd-2348-6182", "rowText": "a mineral is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "2ac5-c14f-0f63-8b01", "rowText": "if something is soft , then that something is malleable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "0654-00a0-45fb-b306", "rowText": "soft is a kind of hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"mica_0", "value":"gold" },
+			{ "name":"quartz_1", "value":"diamond" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"mica_0", "value":"gold" },
+			{ "name":"quartz_1", "value":"diamond" }
+		]
+		},
+		{
+		"uuids": ["2863-93fe-ff62-7b41","5c41-c4f8-7ec9-93a5","fe8b-fc9f-5401-dc19","a080-8e02-49a6-9707","5925-533c-7bb7-4954","72e2-6cde-7faa-4d2b","cd93-2714-3e29-9def","69c1-2991-2421-ce63","a6b1-8a48-8882-cdfd","757d-cd70-0857-0d35","0d14-a620-1810-48a3","8661-5700-67ef-4ac8","2bc5-2931-e694-ba1a","33f0-39de-0983-aad8","f294-6f62-2e34-4af0","8435-aecd-2348-6182","2ac5-c14f-0f63-8b01","0654-00a0-45fb-b306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2863-93fe-ff62-7b41", "rowText": "if a mineral can be scratched by a fingernail then that mineral is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c41-c4f8-7ec9-93a5", "rowText": "gold is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fe8b-fc9f-5401-dc19", "rowText": "quartz is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a080-8e02-49a6-9707", "rowText": "gold is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5925-533c-7bb7-4954", "rowText": "quartz is hard", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "72e2-6cde-7faa-4d2b", "rowText": "hardness is a property of a material ; an object and includes ordered values of malleable ; rigid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cd93-2714-3e29-9def", "rowText": "a streak plate can be used to determine the hardness of a mineral", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "69c1-2991-2421-ce63", "rowText": "classifying means grouping objects ; materials by their properties", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a6b1-8a48-8882-cdfd", "rowText": "hardness is a measure of a mineral 's ability to resist scratching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "757d-cd70-0857-0d35", "rowText": "measuring the hardness of minerals requires scratching those materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0d14-a620-1810-48a3", "rowText": "if a material scratches easily then that material has low hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "2bc5-2931-e694-ba1a", "rowText": "hardness can be used to identify minerals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "f294-6f62-2e34-4af0", "rowText": "a mineral is a kind of solid ; natural material", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "8435-aecd-2348-6182", "rowText": "a mineral is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "2ac5-c14f-0f63-8b01", "rowText": "if something is soft , then that something is malleable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "0654-00a0-45fb-b306", "rowText": "soft is a kind of hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"mica_0", "value":"gold" },
+			{ "name":"quartz_1", "value":"quartz" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"mica_0", "value":"gold" },
+			{ "name":"quartz_1", "value":"quartz" }
+		]
+		},
+		{
+		"uuids": ["2863-93fe-ff62-7b41","d332-396d-4f4f-cda0","7e9a-fec3-cac8-51bb","2e56-4666-451b-5894","63a1-8273-80bd-cf40","72e2-6cde-7faa-4d2b","cd93-2714-3e29-9def","a6b1-8a48-8882-cdfd","757d-cd70-0857-0d35","0d14-a620-1810-48a3","8661-5700-67ef-4ac8","2bc5-2931-e694-ba1a","33f0-39de-0983-aad8","f294-6f62-2e34-4af0","8435-aecd-2348-6182","2ac5-c14f-0f63-8b01","0654-00a0-45fb-b306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2863-93fe-ff62-7b41", "rowText": "if a mineral can be scratched by a fingernail then that mineral is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d332-396d-4f4f-cda0", "rowText": "mica is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7e9a-fec3-cac8-51bb", "rowText": "diamond is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2e56-4666-451b-5894", "rowText": "mica is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "63a1-8273-80bd-cf40", "rowText": "diamond is hard", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "72e2-6cde-7faa-4d2b", "rowText": "hardness is a property of a material ; an object and includes ordered values of malleable ; rigid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cd93-2714-3e29-9def", "rowText": "a streak plate can be used to determine the hardness of a mineral", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a6b1-8a48-8882-cdfd", "rowText": "hardness is a measure of a mineral 's ability to resist scratching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "757d-cd70-0857-0d35", "rowText": "measuring the hardness of minerals requires scratching those materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0d14-a620-1810-48a3", "rowText": "if a material scratches easily then that material has low hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "2bc5-2931-e694-ba1a", "rowText": "hardness can be used to identify minerals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "f294-6f62-2e34-4af0", "rowText": "a mineral is a kind of solid ; natural material", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "8435-aecd-2348-6182", "rowText": "a mineral is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "2ac5-c14f-0f63-8b01", "rowText": "if something is soft , then that something is malleable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "0654-00a0-45fb-b306", "rowText": "soft is a kind of hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"mica_0", "value":"mica" },
+			{ "name":"quartz_1", "value":"diamond" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"mica_0", "value":"mica" },
+			{ "name":"quartz_1", "value":"diamond" }
+		]
+		},
+		{
+		"uuids": ["2863-93fe-ff62-7b41","d332-396d-4f4f-cda0","fe8b-fc9f-5401-dc19","2e56-4666-451b-5894","5925-533c-7bb7-4954","72e2-6cde-7faa-4d2b","cd93-2714-3e29-9def","a6b1-8a48-8882-cdfd","757d-cd70-0857-0d35","0d14-a620-1810-48a3","8661-5700-67ef-4ac8","2bc5-2931-e694-ba1a","33f0-39de-0983-aad8","f294-6f62-2e34-4af0","8435-aecd-2348-6182","2ac5-c14f-0f63-8b01","0654-00a0-45fb-b306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2863-93fe-ff62-7b41", "rowText": "if a mineral can be scratched by a fingernail then that mineral is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "d332-396d-4f4f-cda0", "rowText": "mica is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fe8b-fc9f-5401-dc19", "rowText": "quartz is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "2e56-4666-451b-5894", "rowText": "mica is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5925-533c-7bb7-4954", "rowText": "quartz is hard", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "72e2-6cde-7faa-4d2b", "rowText": "hardness is a property of a material ; an object and includes ordered values of malleable ; rigid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cd93-2714-3e29-9def", "rowText": "a streak plate can be used to determine the hardness of a mineral", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a6b1-8a48-8882-cdfd", "rowText": "hardness is a measure of a mineral 's ability to resist scratching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "757d-cd70-0857-0d35", "rowText": "measuring the hardness of minerals requires scratching those materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0d14-a620-1810-48a3", "rowText": "if a material scratches easily then that material has low hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "2bc5-2931-e694-ba1a", "rowText": "hardness can be used to identify minerals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "f294-6f62-2e34-4af0", "rowText": "a mineral is a kind of solid ; natural material", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "8435-aecd-2348-6182", "rowText": "a mineral is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "2ac5-c14f-0f63-8b01", "rowText": "if something is soft , then that something is malleable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "0654-00a0-45fb-b306", "rowText": "soft is a kind of hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"mica_0", "value":"mica" },
+			{ "name":"quartz_1", "value":"quartz" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"mica_0", "value":"mica" },
+			{ "name":"quartz_1", "value":"quartz" }
+		]
+		},
+		{
+		"uuids": ["2863-93fe-ff62-7b41","5c41-c4f8-7ec9-93a5","7e9a-fec3-cac8-51bb","a080-8e02-49a6-9707","63a1-8273-80bd-cf40","72e2-6cde-7faa-4d2b","cd93-2714-3e29-9def","a6b1-8a48-8882-cdfd","757d-cd70-0857-0d35","0d14-a620-1810-48a3","8661-5700-67ef-4ac8","2bc5-2931-e694-ba1a","33f0-39de-0983-aad8","f294-6f62-2e34-4af0","8435-aecd-2348-6182","2ac5-c14f-0f63-8b01","0654-00a0-45fb-b306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2863-93fe-ff62-7b41", "rowText": "if a mineral can be scratched by a fingernail then that mineral is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c41-c4f8-7ec9-93a5", "rowText": "gold is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "7e9a-fec3-cac8-51bb", "rowText": "diamond is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a080-8e02-49a6-9707", "rowText": "gold is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "63a1-8273-80bd-cf40", "rowText": "diamond is hard", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "72e2-6cde-7faa-4d2b", "rowText": "hardness is a property of a material ; an object and includes ordered values of malleable ; rigid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cd93-2714-3e29-9def", "rowText": "a streak plate can be used to determine the hardness of a mineral", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a6b1-8a48-8882-cdfd", "rowText": "hardness is a measure of a mineral 's ability to resist scratching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "757d-cd70-0857-0d35", "rowText": "measuring the hardness of minerals requires scratching those materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0d14-a620-1810-48a3", "rowText": "if a material scratches easily then that material has low hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "2bc5-2931-e694-ba1a", "rowText": "hardness can be used to identify minerals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "f294-6f62-2e34-4af0", "rowText": "a mineral is a kind of solid ; natural material", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "8435-aecd-2348-6182", "rowText": "a mineral is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "2ac5-c14f-0f63-8b01", "rowText": "if something is soft , then that something is malleable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "0654-00a0-45fb-b306", "rowText": "soft is a kind of hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"mica_0", "value":"gold" },
+			{ "name":"quartz_1", "value":"diamond" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"mica_0", "value":"gold" },
+			{ "name":"quartz_1", "value":"diamond" }
+		]
+		},
+		{
+		"uuids": ["2863-93fe-ff62-7b41","5c41-c4f8-7ec9-93a5","fe8b-fc9f-5401-dc19","a080-8e02-49a6-9707","5925-533c-7bb7-4954","72e2-6cde-7faa-4d2b","cd93-2714-3e29-9def","a6b1-8a48-8882-cdfd","757d-cd70-0857-0d35","0d14-a620-1810-48a3","8661-5700-67ef-4ac8","2bc5-2931-e694-ba1a","33f0-39de-0983-aad8","f294-6f62-2e34-4af0","8435-aecd-2348-6182","2ac5-c14f-0f63-8b01","0654-00a0-45fb-b306"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2863-93fe-ff62-7b41", "rowText": "if a mineral can be scratched by a fingernail then that mineral is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5c41-c4f8-7ec9-93a5", "rowText": "gold is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "fe8b-fc9f-5401-dc19", "rowText": "quartz is a kind of mineral", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a080-8e02-49a6-9707", "rowText": "gold is soft", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "5925-533c-7bb7-4954", "rowText": "quartz is hard", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "72e2-6cde-7faa-4d2b", "rowText": "hardness is a property of a material ; an object and includes ordered values of malleable ; rigid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cd93-2714-3e29-9def", "rowText": "a streak plate can be used to determine the hardness of a mineral", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a6b1-8a48-8882-cdfd", "rowText": "hardness is a measure of a mineral 's ability to resist scratching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "757d-cd70-0857-0d35", "rowText": "measuring the hardness of minerals requires scratching those materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "0d14-a620-1810-48a3", "rowText": "if a material scratches easily then that material has low hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "8661-5700-67ef-4ac8", "rowText": "the properties of something can be used to identify ; used to describe that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "2bc5-2931-e694-ba1a", "rowText": "hardness can be used to identify minerals", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "33f0-39de-0983-aad8", "rowText": "the properties of something are used for describing that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "f294-6f62-2e34-4af0", "rowText": "a mineral is a kind of solid ; natural material", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "8435-aecd-2348-6182", "rowText": "a mineral is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "2ac5-c14f-0f63-8b01", "rowText": "if something is soft , then that something is malleable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "0654-00a0-45fb-b306", "rowText": "soft is a kind of hardness", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"mica_0", "value":"gold" },
+			{ "name":"quartz_1", "value":"quartz" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"mica_0", "value":"gold" },
+			{ "name":"quartz_1", "value":"quartz" }
+		]
+		}
+	]
+}
+]}
+

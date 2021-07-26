@@ -1,0 +1,75 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Plants_Roots_as_a_Part_of_the_Plant
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW an apple tree is a kind of plant     (00a7-56fc-3c22-e6f2) [ HYPONYM:"apple tree", HYPERNYM:"plant" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "tree", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "tree", HYPERNYM: "plant"]
+
+	// GROUNDING       KINDOF: iron is a kind of mineral     (564d-448d-05b5-998e) [ HYPONYM:"iron", HYPERNYM:"mineral" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "iron", HYPERNYM: "mineral"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "iron", HYPERNYM: "mineral"]
+
+	// GROUNDING       KINDOF: transporting nutrients, water, and minerals is a kind of function     (46cd-dec2-14f6-b382) [ HYPONYM:"transportation nutrient water mineral", HYPERNYM:"function" ]
+	//  Notes: peripheral
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "transportation nutrient water mineral", HYPERNYM: "function"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "transportation nutrient water mineral", HYPERNYM: "function"]
+
+	// CENTRAL         REQUIRES: a plant ; living thing requires nutrients to grow     (085c-28bf-bb51-79e6) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"nutrient", FOR_PURPOSE:"grow" ]
+	//row autoRow3 = [UUID:"085c-28bf-bb51-79e6", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"085c-28bf-bb51-79e6", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "grow"]
+
+	// CENTRAL         PARTOF: roots are a part of a plant ; tree     (6cdd-9626-9859-7279) [ PART:"root", WHOLE:"plant;tree" ]
+	//row autoRow4 = [UUID:"6cdd-9626-9859-7279", PART: "root", WHOLE: "plant"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"6cdd-9626-9859-7279", PART: "root", WHOLE: "plant"]
+
+	// CENTRAL         CONTAINS: soil contains nutrients for plants     (ddcc-3b71-b14e-97d1) [ OBJECT_AGENT:"soil", WHAT_IT_CONTAINS:"nutrient", FOR_PURPOSE:"plant" ]
+	//row autoRow5 = [UUID:"ddcc-3b71-b14e-97d1", OBJECT_AGENT: "soil", WHAT_IT_CONTAINS: "nutrient", FOR_PURPOSE: "plant"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"ddcc-3b71-b14e-97d1", OBJECT_AGENT: "soil", WHAT_IT_CONTAINS: "nutrient", FOR_PURPOSE: "plant"]
+
+	// CENTRAL         TRANSFER: plant uptake is when plants absorb nutrients ; water from soil into themselves through their roots     (d7c1-cdfd-2de5-6b7d) [ PROCESS_NAME:"plant uptake", ACTOR_WHO:"plant", VERB:"absorb", WHAT:"nutrient;water", SOURCE:"soil", BY_THROUGH_HOW:"root" ]
+	//row autoRow6 = [UUID:"d7c1-cdfd-2de5-6b7d", PROCESS_NAME: "plant uptake", ACTOR_WHO: "plant", VERB: "absorb", WHAT: "nutrient", SOURCE: "soil", BY_THROUGH_HOW: "root"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"d7c1-cdfd-2de5-6b7d", PROCESS_NAME: "plant uptake", ACTOR_WHO: "plant", VERB: "absorb", WHAT: "nutrient", SOURCE: "soil", BY_THROUGH_HOW: "root"]
+
+	// CENTRAL         KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"]
+
+	// CENTRAL         VEHICLE: roots are a vehicle for absorbing water and nutrients from soil into the plant     (c69c-a3e1-df55-5fc1) [ ACTOR_WHO:"root", VERB:"absorb", WHAT:"water nutrient", SOURCE:"soil", DESTINATION:"plant" ]
+	//row autoRow8 = [UUID:"c69c-a3e1-df55-5fc1", ACTOR_WHO: "root", VERB: "absorb", WHAT: "water nutrient", SOURCE: "soil", DESTINATION: "plant"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"c69c-a3e1-df55-5fc1", ACTOR_WHO: "root", VERB: "absorb", WHAT: "water nutrient", SOURCE: "soil", DESTINATION: "plant"]
+
+	// CENTRAL        (OPTIONAL) INSTANCES: some minerals are nutrients     (ca61-050e-2c77-6cda) [ INSTANCE:"mineral", CLASS:"nutrient" ]
+	//row *autoRow9 = [UUID:"ca61-050e-2c77-6cda", INSTANCE: "mineral", CLASS: "nutrient"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"ca61-050e-2c77-6cda", INSTANCE: "mineral", CLASS: "nutrient"]
+
+	// CENTRAL         REQUIRES: a plant requires soil for survival ; to grow     (5ebe-099f-fd30-b713) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"soil", FOR_PURPOSE:"survive;grow" ]
+	//  Notes: background
+	//row autoRow10 = [UUID:"5ebe-099f-fd30-b713", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "soil", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"5ebe-099f-fd30-b713", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "soil", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         ACTION: roots anchor plants into the soil     (efd2-9d11-3f32-24cc) [ AGENT_OBJECT:"root", ACTION2:"anchor", OBJECT_PROPERTY:"plant", WHEN_WHERE:"into soil" ]
+	//row autoRow11 = [UUID:"efd2-9d11-3f32-24cc", AGENT_OBJECT: "root", ACTION2: "anchor", OBJECT_PROPERTY: "plant", WHEN_WHERE: "into soil"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"efd2-9d11-3f32-24cc", AGENT_OBJECT: "root", ACTION2: "anchor", OBJECT_PROPERTY: "plant", WHEN_WHERE: "into soil"]
+
+	// CENTRAL         IFTHEN: when a plant grows , the roots of that plant may become longer     (badc-0c72-9633-5872) [ THING:"plant", ACTION1:"grow", ACTOR_AGENT_PROCESS2:"root", PROPERTY_SCOPE:"of plant", OBJECT_PROPERTY3:"long" ]
+	//row autoRow12 = [UUID:"badc-0c72-9633-5872", THING: "plant", ACTION1: "grow", ACTOR_AGENT_PROCESS2: "root", PROPERTY_SCOPE: "of plant", OBJECT_PROPERTY3: "long"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"badc-0c72-9633-5872", THING: "plant", ACTION1: "grow", ACTOR_AGENT_PROCESS2: "root", PROPERTY_SCOPE: "of plant", OBJECT_PROPERTY3: "long"]
+
+	// CENTRAL        (OPTIONAL) ACTION: a plant 's roots slowly break down rocks as the roots grow     (c083-9545-9c5e-f943) [ ADJ:"plant", AGENT_OBJECT:"root", ACTION2:"slowly break", OBJECT_PROPERTY:"rock", WHEN_WHERE:"a root grow" ]
+	//row *autoRow13 = [UUID:"c083-9545-9c5e-f943", ADJ: "plant", AGENT_OBJECT: "root", ACTION2: "slowly break", OBJECT_PROPERTY: "rock", WHEN_WHERE: "a root grow"] //OVER-CONSTR.
+	row *autoRow13 = [UUID:"c083-9545-9c5e-f943", ADJ: "plant", AGENT_OBJECT: "root", ACTION2: "slowly break", OBJECT_PROPERTY: "rock", WHEN_WHERE: "a root grow"]
+
+	// LEXGLUE         SYNONYMY: take in means absorb     (160e-6da0-3cc4-1b3d) [ ACTION1:"take", ACTION2:"absorb" ]
+	//row autoRow14 = [UUID:"160e-6da0-3cc4-1b3d", ACTION1: "take", ACTION2: "absorb"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"160e-6da0-3cc4-1b3d", ACTION1: "take", ACTION2: "absorb"]
+
+endinferencepattern

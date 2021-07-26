@@ -1,0 +1,60 @@
+// Automatically converted pattern
+inferencepattern MAT_COS_Melting_Point_Comparison
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: oxygen is a kind of gas at room temperature     (16b7-673f-bc0d-ed99) [ HYPONYM:"oxygen", HYPERNYM:"gas", SCOPE2:"at room temperature" ]
+	//        HINTROW hydrogen is a kind of gas at room temperature     (bcb9-f1d4-4c6d-cb70) [ HYPONYM:"hydrogen", HYPERNYM:"gas", SCOPE2:"at room temperature" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "gas", SCOPE2: "at room temperature"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "gas", SCOPE2: "at room temperature"]
+
+	// GROUNDING       KINDOF: water is a kind of liquid at room temperature     (3961-d09c-4b9a-a6f7) [ HYPONYM:"water", HYPERNYM:"liquid", SCOPE2:"at room temperature" ]
+	//        HINTROW milk is a kind of liquid at room temperature     (0412-1219-6683-82d1) [ HYPONYM:"milk", HYPERNYM:"liquid", SCOPE2:"at room temperature" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "liquid", SCOPE2: "at room temperature"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "liquid", SCOPE2: "at room temperature"]
+
+	// GROUNDING       KINDOF: iron is a kind of solid     (89f4-0fad-6afc-2199) [ HYPONYM:"iron", HYPERNYM:"solid" ]
+	//        HINTROW chocolate is a kind of solid usually     (858d-7f12-bc99-2177) [ HYPONYM:"chocolate", HYPERNYM:"solid", SCOPE2:"usually" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "solid"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "solid"]
+
+	// CENTRAL         COMPARISON: gas has a a lower melting point than liquid     (9262-950a-15c4-21e8) [ THING:"gas", ACTION1:"have", COMPARISON:"low", WHAT:"melt point", THING_COMPARED:"liquid" ]
+	//  Notes: 4c65-5034-3cda-3150->9262-950a-15c4-21e8
+	//row autoRow3 = [UUID:"9262-950a-15c4-21e8", THING: "gas", ACTION1: "have", COMPARISON: "low", WHAT: "melt point", THING_COMPARED: "liquid"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"9262-950a-15c4-21e8", THING: "gas", ACTION1: "have", COMPARISON: "low", WHAT: "melt point", THING_COMPARED: "liquid"]
+
+	// CENTRAL         COMPARISON: liquid has a a lower melting point than solid     (8acd-cc48-2a22-3e00) [ THING:"liquid", ACTION1:"have", COMPARISON:"low", WHAT:"melt point", THING_COMPARED:"solid" ]
+	//  Notes: 4802-a948-2a98-4dd0->8acd-cc48-2a22-3e00
+	//row autoRow4 = [UUID:"8acd-cc48-2a22-3e00", THING: "liquid", ACTION1: "have", COMPARISON: "low", WHAT: "melt point", THING_COMPARED: "solid"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"8acd-cc48-2a22-3e00", THING: "liquid", ACTION1: "have", COMPARISON: "low", WHAT: "melt point", THING_COMPARED: "solid"]
+
+	// CENTRAL         PROP-THINGS: the freezing point of water ; melting point of water is 32F ; 0C ; 273K     (cdc9-5a05-7bcd-607f) [ THING:"freeze point of water;melt point of water", VALUE:"32f;0c;273k" ]
+	//row autoRow5 = [UUID:"cdc9-5a05-7bcd-607f", THING: "freeze point of water", VALUE: "32f"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"cdc9-5a05-7bcd-607f", THING: "freeze point of water", VALUE: "32f"]
+
+	// CENTRAL         PROP-THINGS: the melting point of iron is 2800F ; 1538C ; 1811K     (00f1-21aa-fbc1-fe69) [ THING:"melt point of iron", VALUE:"2800f;1538c;1811k" ]
+	//row autoRow6 = [UUID:"00f1-21aa-fbc1-fe69", THING: "melt point of iron", VALUE: "2800f"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"00f1-21aa-fbc1-fe69", THING: "melt point of iron", VALUE: "2800f"]
+
+	// CENTRAL         PROP-THINGS: the melting point of oxygen is -361.8F ; -218.8C ; 54.4K     (0ed7-324f-5c82-eb6c) [ THING:"melt point of oxygen", VALUE:"-361.8 f;-218.8 c;54.4 k;361.8 f;218.8 c" ]
+	//row autoRow7 = [UUID:"0ed7-324f-5c82-eb6c", THING: "melt point of oxygen", VALUE: "-361.8 f"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"0ed7-324f-5c82-eb6c", THING: "melt point of oxygen", VALUE: "-361.8 f"]
+
+	// CENTRAL         KINDOF: liquid is a kind of state of matter     (f7e9-c6f8-892b-3496) [ HYPONYM:"liquid", HYPERNYM:"state of matt" ]
+	//row autoRow8 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"]
+
+	// CENTRAL         KINDOF: gas is a kind of state of matter     (aa73-331e-e970-c934) [ HYPONYM:"gas", HYPERNYM:"state of matt" ]
+	//row autoRow9 = [UUID:"aa73-331e-e970-c934", HYPONYM: "gas", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"aa73-331e-e970-c934", HYPONYM: "gas", HYPERNYM: "state of matt"]
+
+	// CENTRAL         KINDOF: solid is a kind of state of matter     (cf49-1b7a-89f0-41f5) [ HYPONYM:"solid", HYPERNYM:"state of matt" ]
+	//row autoRow10 = [UUID:"cf49-1b7a-89f0-41f5", HYPONYM: "solid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"cf49-1b7a-89f0-41f5", HYPONYM: "solid", HYPERNYM: "state of matt"]
+
+endinferencepattern

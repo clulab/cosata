@@ -1,0 +1,52 @@
+// Automatically converted pattern
+inferencepattern LIFE_HEALTH_Diseases_Food_Poisoning
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         AFFECT: illness has a negative impact on an organism 's health     (0c02-ef0b-7f35-1468) [ ACTOR_WHO:"illness", POSITIVE_NEGATIVE:"negative", PATIENT:"organism health" ]
+	//row autoRow0 = [UUID:"0c02-ef0b-7f35-1468", ACTOR_WHO: "illness", POSITIVE_NEGATIVE: "negative", PATIENT: "organism health"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"0c02-ef0b-7f35-1468", ACTOR_WHO: "illness", POSITIVE_NEGATIVE: "negative", PATIENT: "organism health"]
+
+	// CENTRAL         ACTION: adding heat to something kills viruses ; bacteria in that something     (1966-99de-7765-39de) [ ACTION1:"add", AGENT_OBJECT:"heat", SCOPE1:"something", ACTION2:"kill", OBJECT_PROPERTY:"virus;bacterium", WHEN_WHERE:"in something" ]
+	//row autoRow1 = [UUID:"1966-99de-7765-39de", ACTION1: "add", AGENT_OBJECT: "heat", SCOPE1: "something", ACTION2: "kill", OBJECT_PROPERTY: "virus", WHEN_WHERE: "in something"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"1966-99de-7765-39de", ACTION1: "add", AGENT_OBJECT: "heat", SCOPE1: "something", ACTION2: "kill", OBJECT_PROPERTY: "virus", WHEN_WHERE: "in something"]
+
+	// CENTRAL         AFFECT: protecting a living thing has a positive impact on that living thing 's survival ; health     (1992-cbd3-6534-a7f7) [ VERB:"protect", OBJECT_PROPERTY:"live thing", POSITIVE_NEGATIVE:"positive", ADJ:"live thing", PATIENT:"survive;health" ]
+	//row autoRow2 = [UUID:"1992-cbd3-6534-a7f7", VERB: "protect", OBJECT_PROPERTY: "live thing", POSITIVE_NEGATIVE: "positive", ADJ: "live thing", PATIENT: "survive"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"1992-cbd3-6534-a7f7", VERB: "protect", OBJECT_PROPERTY: "live thing", POSITIVE_NEGATIVE: "positive", ADJ: "live thing", PATIENT: "survive"]
+
+	// CENTRAL         IFTHEN: if an organism dies then the population of that organism will decrease     (3a44-7b6a-8b5c-d15f) [ THING:"organism", ACTION1:"die", ADJ_QUANTITY2:"population of", ACTOR_AGENT_PROCESS2:"organism" ]
+	//row autoRow3 = [UUID:"3a44-7b6a-8b5c-d15f", THING: "organism", ACTION1: "die", ADJ_QUANTITY2: "population of", ACTOR_AGENT_PROCESS2: "organism"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"3a44-7b6a-8b5c-d15f", THING: "organism", ACTION1: "die", ADJ_QUANTITY2: "population of", ACTOR_AGENT_PROCESS2: "organism"]
+
+	// CENTRAL         IFTHEN: if food is cooked then heat energy is added to that food     (6612-fa0b-cd41-ce24) [ THING:"food", ACTION1:"cook", ACTOR_AGENT_PROCESS2:"heat energy", ACTION3:"add", ADJ_QUANTIFIER3:"food" ]
+	//row autoRow4 = [UUID:"6612-fa0b-cd41-ce24", THING: "food", ACTION1: "cook", ACTOR_AGENT_PROCESS2: "heat energy", ACTION3: "add", ADJ_QUANTIFIER3: "food"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"6612-fa0b-cd41-ce24", THING: "food", ACTION1: "cook", ACTOR_AGENT_PROCESS2: "heat energy", ACTION3: "add", ADJ_QUANTIFIER3: "food"]
+
+	// CENTRAL         AFFECT: decreasing something negative has a positive impact on a thing     (d390-3d50-786d-4e9f) [ VERB:"decrease", OBJECT_PROPERTY:"something negative", POSITIVE_NEGATIVE:"positive", PATIENT:"thing" ]
+	//row autoRow5 = [UUID:"d390-3d50-786d-4e9f", VERB: "decrease", OBJECT_PROPERTY: "something negative", POSITIVE_NEGATIVE: "positive", PATIENT: "thing"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"d390-3d50-786d-4e9f", VERB: "decrease", OBJECT_PROPERTY: "something negative", POSITIVE_NEGATIVE: "positive", PATIENT: "thing"]
+
+	// CENTRAL         ACTION: cooking food to proper temperatures protects against food poisoning by killing bacteria and viruses     (a53c-6387-9cc9-d3e1) [ ACTION1:"cook", AGENT_OBJECT:"food", SCOPE1:"proper temperature", ACTION2:"protect against", OBJECT_PROPERTY:"food poison", HOW:"kill bacterium virus" ]
+	//row autoRow6 = [UUID:"a53c-6387-9cc9-d3e1", ACTION1: "cook", AGENT_OBJECT: "food", SCOPE1: "proper temperature", ACTION2: "protect against", OBJECT_PROPERTY: "food poison", HOW: "kill bacterium virus"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"a53c-6387-9cc9-d3e1", ACTION1: "cook", AGENT_OBJECT: "food", SCOPE1: "proper temperature", ACTION2: "protect against", OBJECT_PROPERTY: "food poison", HOW: "kill bacterium virus"]
+
+	// CENTRAL         ACTION: reducing bacteria in food prevents illness in people     (b267-35c1-c2c8-f1f0) [ ACTION1:"reduce", AGENT_OBJECT:"bacterium", SCOPE1:"in food", ACTION2:"prevent", OBJECT_PROPERTY:"illness", WHEN_WHERE:"in person" ]
+	//row autoRow7 = [UUID:"b267-35c1-c2c8-f1f0", ACTION1: "reduce", AGENT_OBJECT: "bacterium", SCOPE1: "in food", ACTION2: "prevent", OBJECT_PROPERTY: "illness", WHEN_WHERE: "in person"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"b267-35c1-c2c8-f1f0", ACTION1: "reduce", AGENT_OBJECT: "bacterium", SCOPE1: "in food", ACTION2: "prevent", OBJECT_PROPERTY: "illness", WHEN_WHERE: "in person"]
+
+	// CENTRAL         CAUSE: bacteria ; viruses cause food poisoning     (5611-cf44-6cd6-2aed) [ CONDITION_AGENT_OBJECT:"bacterium;virus", RESULT_AGENT:"food poison" ]
+	//row autoRow8 = [UUID:"5611-cf44-6cd6-2aed", CONDITION_AGENT_OBJECT: "bacterium", RESULT_AGENT: "food poison"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"5611-cf44-6cd6-2aed", CONDITION_AGENT_OBJECT: "bacterium", RESULT_AGENT: "food poison"]
+
+	// CENTRAL         KINDOF: food poisoning is a kind of illness     (ccdf-6c73-fb7c-ab36) [ HYPONYM:"food poison", HYPERNYM:"illness" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"ccdf-6c73-fb7c-ab36", HYPONYM: "food poison", HYPERNYM: "illness"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"ccdf-6c73-fb7c-ab36", HYPONYM: "food poison", HYPERNYM: "illness"]
+
+endinferencepattern

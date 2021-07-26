@@ -1,0 +1,58 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Sediment_From_Weathering
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: sand is a kind of sediment     (af21-14b2-7513-a570) [ HYPONYM:"sand", HYPERNYM:"sediment" ]
+	//  Notes: sediment examples
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "sand", HYPERNYM: "sediment"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "sand", HYPERNYM: "sediment"]
+
+	// CENTRAL         CHANGE: weathering ; mechanical weathering means breaking down rocks ; surface materials from a larger whole into smaller pieces by weather ; mechanical means     (791e-1c71-7a1d-d10a) [ PROCESS_NAME:"weather;mechanical weather", VERB:"break", WHAT:"rock;surface material", FROM:"large whole", INTO:"small piece", BY_THROUGH_HOW:"weather;mechanical mean" ]
+	//row autoRow1 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"]
+
+	// CENTRAL         CAUSE: rocks ; soil ; materials interacting with wind ; moving water over long periods of time causes weathering     (02f0-b4ba-41d8-0483) [ CONDITION_AGENT_OBJECT:"rock;soil;material", CONDITION_VERB:"interact with", CONDITION_PATIENT:"wind;move water", DURATION1:"over long period of time", RESULT_VERB:"weather" ]
+	//row autoRow2 = [UUID:"02f0-b4ba-41d8-0483", CONDITION_AGENT_OBJECT: "rock", CONDITION_VERB: "interact with", CONDITION_PATIENT: "move water", DURATION1: "over long period of time", RESULT_VERB: "weather"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"02f0-b4ba-41d8-0483", CONDITION_AGENT_OBJECT: "rock", CONDITION_VERB: "interact with", CONDITION_PATIENT: "move water", DURATION1: "over long period of time", RESULT_VERB: "weather"]
+
+	// CENTRAL         IFTHEN: if sediments are formed by colored rocks , then the sediments will have the same color     (cc24-9ae1-3187-9fb2) [ THING:"sediment", ACTION1:"be form by", OBJECT_PATIENT1:"color rock", ACTOR_AGENT_PROCESS2:"sediment", ACTION3:"have", OBJECT_PROPERTY3:"same color" ]
+	//row autoRow3 = [UUID:"cc24-9ae1-3187-9fb2", THING: "sediment", ACTION1: "be form by", OBJECT_PATIENT1: "color rock", ACTOR_AGENT_PROCESS2: "sediment", ACTION3: "have", OBJECT_PROPERTY3: "same color"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"cc24-9ae1-3187-9fb2", THING: "sediment", ACTION1: "be form by", OBJECT_PATIENT1: "color rock", ACTOR_AGENT_PROCESS2: "sediment", ACTION3: "have", OBJECT_PROPERTY3: "same color"]
+
+	// CENTRAL         FORMEDBY: sediment is formed by rocks weathering     (5645-74d9-19c8-9dc4) [ OBJECT:"sediment", AGENT_PROCESS:"rock", VERB:"weather" ]
+	//row autoRow4 = [UUID:"5645-74d9-19c8-9dc4", OBJECT: "sediment", AGENT_PROCESS: "rock", VERB: "weather"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"5645-74d9-19c8-9dc4", OBJECT: "sediment", AGENT_PROCESS: "rock", VERB: "weather"]
+
+	// CENTRAL         KINDOF: weathering is a kind of geologic process     (b9ee-1aa0-8736-13c8) [ HYPONYM:"weather", SCOPE1:"geologic", HYPERNYM:"process" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"b9ee-1aa0-8736-13c8", HYPONYM: "weather", SCOPE1: "geologic", HYPERNYM: "process"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"b9ee-1aa0-8736-13c8", HYPONYM: "weather", SCOPE1: "geologic", HYPERNYM: "process"]
+
+	// CENTRAL         KINDOF: a process is a kind of event     (3b7f-815d-511b-c7bb) [ HYPONYM:"process", HYPERNYM:"event" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"3b7f-815d-511b-c7bb", HYPONYM: "process", HYPERNYM: "event"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3b7f-815d-511b-c7bb", HYPONYM: "process", HYPERNYM: "event"]
+
+	// CENTRAL         DURATIONS: weathering ; erosion usually occurs over a period of many years which is considered a long time     (3823-1fac-a50b-665f) [ EVENT:"weather;erode", QUANTIFIER:"usually", LOWERBOUND:"many", DURATIONUNIT:"year", MAGNITUDE:"long", ATTRIBUTE:"time" ]
+	//row autoRow7 = [UUID:"3823-1fac-a50b-665f", EVENT: "weather", QUANTIFIER: "usually", LOWERBOUND: "many", DURATIONUNIT: "year", MAGNITUDE: "long", ATTRIBUTE: "time"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3823-1fac-a50b-665f", EVENT: "weather", QUANTIFIER: "usually", LOWERBOUND: "many", DURATIONUNIT: "year", MAGNITUDE: "long", ATTRIBUTE: "time"]
+
+	// CENTRAL         FORMEDBY: soil is formed by weathering     (e058-7f0b-067c-4da4) [ OBJECT:"soil", AGENT_PROCESS:"weather" ]
+	//row autoRow8 = [UUID:"e058-7f0b-067c-4da4", OBJECT: "soil", AGENT_PROCESS: "weather"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"e058-7f0b-067c-4da4", OBJECT: "soil", AGENT_PROCESS: "weather"]
+
+	// CENTRAL         PROCESSSTAGES-ORDERS: In the rock cycle , formation of sediments follows weathering and erosion     (eeb2-9945-f2f5-6173) [ PROCESS_NAME:"rock cycle", STAGEAFTER_STAGE:"form of sediment", FOLLOWS_PARTOF:"follow", STAGEBEFORE:"weather erode" ]
+	//row autoRow9 = [UUID:"eeb2-9945-f2f5-6173", PROCESS_NAME: "rock cycle", STAGEAFTER_STAGE: "form of sediment", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "weather erode"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"eeb2-9945-f2f5-6173", PROCESS_NAME: "rock cycle", STAGEAFTER_STAGE: "form of sediment", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "weather erode"]
+
+	// LEXGLUE         SYNONYMY: sediment is similar to soil     (1039-d8f3-b11c-3d03) [ X1:"sediment", X2:"soil" ]
+	//row autoRow10 = [UUID:"1039-d8f3-b11c-3d03", X1: "sediment", X2: "soil"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"1039-d8f3-b11c-3d03", X1: "sediment", X2: "soil"]
+
+endinferencepattern

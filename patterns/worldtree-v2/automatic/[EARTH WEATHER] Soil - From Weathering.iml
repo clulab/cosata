@@ -1,0 +1,43 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Soil_From_Weathering
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       FORMEDBY: soil is formed by weathering     (e058-7f0b-067c-4da4) [ OBJECT:"soil", AGENT_PROCESS:"weather" ]
+	//        HINTROW soil is formed by rocks eroding     (c59e-0070-96f7-48b8) [ OBJECT:"soil", AGENT_PROCESS:"rock", VERB:"erode" ]
+	//row autoRow0 = [TABLE:"FORMEDBY", OBJECT: "soil", AGENT_PROCESS: "weather"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"FORMEDBY", OBJECT: "soil"]
+
+	// CENTRALSW       MADEOF: soil is made of very small rocks ; minerals     (17a3-86be-a2ea-bdb8) [ OBJECT:"soil", VALUE:"very small", MATERIAL:"rock;mineral" ]
+	//        HINTROW soil is made of solid particles     (cb4c-e3f2-22b6-3fa4) [ OBJECT:"soil", MATERIAL:"solid particle" ]
+	//row autoRow1 = [TABLE:"MADEOF", OBJECT: "soil", MATERIAL: "rock"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"MADEOF", OBJECT: "soil"]
+
+	// CENTRAL         CHANGE: weathering ; mechanical weathering means breaking down rocks ; surface materials from a larger whole into smaller pieces by weather ; mechanical means     (791e-1c71-7a1d-d10a) [ PROCESS_NAME:"weather;mechanical weather", VERB:"break", WHAT:"rock;surface material", FROM:"large whole", INTO:"small piece", BY_THROUGH_HOW:"weather;mechanical mean" ]
+	//row autoRow2 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"]
+
+	// CENTRAL         CAUSE: rocks ; soil ; materials interacting with wind ; moving water over long periods of time causes weathering     (02f0-b4ba-41d8-0483) [ CONDITION_AGENT_OBJECT:"rock;soil;material", CONDITION_VERB:"interact with", CONDITION_PATIENT:"wind;move water", DURATION1:"over long period of time", RESULT_VERB:"weather" ]
+	//row autoRow3 = [UUID:"02f0-b4ba-41d8-0483", CONDITION_AGENT_OBJECT: "rock", CONDITION_VERB: "interact with", CONDITION_PATIENT: "move water", DURATION1: "over long period of time", RESULT_VERB: "weather"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"02f0-b4ba-41d8-0483", CONDITION_AGENT_OBJECT: "rock", CONDITION_VERB: "interact with", CONDITION_PATIENT: "move water", DURATION1: "over long period of time", RESULT_VERB: "weather"]
+
+	// CENTRAL         KINDOF: a process is a kind of event     (3b7f-815d-511b-c7bb) [ HYPONYM:"process", HYPERNYM:"event" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"3b7f-815d-511b-c7bb", HYPONYM: "process", HYPERNYM: "event"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3b7f-815d-511b-c7bb", HYPONYM: "process", HYPERNYM: "event"]
+
+	// CENTRAL         KINDOF: weathering is a kind of geologic process     (b9ee-1aa0-8736-13c8) [ HYPONYM:"weather", SCOPE1:"geologic", HYPERNYM:"process" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"b9ee-1aa0-8736-13c8", HYPONYM: "weather", SCOPE1: "geologic", HYPERNYM: "process"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"b9ee-1aa0-8736-13c8", HYPONYM: "weather", SCOPE1: "geologic", HYPERNYM: "process"]
+
+	// LEXGLUE         SYNONYMY: sediment is similar to soil     (1039-d8f3-b11c-3d03) [ X1:"sediment", X2:"soil" ]
+	//row autoRow6 = [UUID:"1039-d8f3-b11c-3d03", X1: "sediment", X2: "soil"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"1039-d8f3-b11c-3d03", X1: "sediment", X2: "soil"]
+
+endinferencepattern

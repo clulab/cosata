@@ -1,0 +1,38 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Precipition_Examples_of
+
+	// Plain text description
+	description = "potentially can be collapsed into PRECIPITATION pattern"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: hail is a kind of precipitation ; ice     (cb4c-5229-e5b9-6408) [ HYPONYM:"hail", HYPERNYM:"precipitation;ice" ]
+	//        HINTROW rain is a kind of precipitation     (da1e-dca3-f46a-5189) [ HYPONYM:"rain", HYPERNYM:"precipitation" ]
+	//        HINTROW sleet is a kind of precipitation     (f704-bbf0-c1f5-b8ba) [ HYPONYM:"sleet", HYPERNYM:"precipitation" ]
+	//        HINTROW snow is a kind of precipitation     (8083-d6d0-9cba-da83) [ HYPONYM:"snow", HYPERNYM:"precipitation" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "hail", HYPERNYM: "precipitation"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "precipitation"]
+
+	// CENTRAL         TRANSFER: precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground     (4347-84dc-10ce-8007) [ PROCESS_NAME:"precipitation", ACTOR_WHO:"rain;snow;hail", VERB:"fall", SOURCE:"cloud", DESTINATION:"earth;grind" ]
+	//row autoRow1 = [UUID:"4347-84dc-10ce-8007", PROCESS_NAME: "precipitation", ACTOR_WHO: "rain", VERB: "fall", SOURCE: "cloud", DESTINATION: "earth"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"4347-84dc-10ce-8007", PROCESS_NAME: "precipitation", ACTOR_WHO: "rain", VERB: "fall", SOURCE: "cloud", DESTINATION: "earth"]
+
+	// CENTRAL         KINDOF: precipitation is a kind of natural process     (a687-4d6c-825b-27a4) [ HYPONYM:"precipitation", SCOPE1:"nature", HYPERNYM:"process" ]
+	//row autoRow2 = [UUID:"a687-4d6c-825b-27a4", HYPONYM: "precipitation", SCOPE1: "nature", HYPERNYM: "process"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"a687-4d6c-825b-27a4", HYPONYM: "precipitation", SCOPE1: "nature", HYPERNYM: "process"]
+
+	// CENTRAL         ACTION: grey clouds appear before precipitation     (457f-3767-5871-6ec8) [ ADJ:"grey", AGENT_OBJECT:"cloud", ACTION2:"appear", WHEN_WHERE:"before precipitation" ]
+	//row autoRow3 = [UUID:"457f-3767-5871-6ec8", ADJ: "grey", AGENT_OBJECT: "cloud", ACTION2: "appear", WHEN_WHERE: "before precipitation"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"457f-3767-5871-6ec8", ADJ: "grey", AGENT_OBJECT: "cloud", ACTION2: "appear", WHEN_WHERE: "before precipitation"]
+
+	// CENTRAL         PROP-GENERIC: precipitation is a property of weather     (5e47-e0b9-a06f-d37b) [ X:"precipitation", Y:"weather" ]
+	//row autoRow4 = [UUID:"5e47-e0b9-a06f-d37b", X: "precipitation", Y: "weather"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"5e47-e0b9-a06f-d37b", X: "precipitation", Y: "weather"]
+
+	// CENTRAL         KINDOF: precipitation is a kind of weather     (86b0-5c6f-cd54-4d52) [ HYPONYM:"precipitation", HYPERNYM:"weather" ]
+	//row autoRow5 = [UUID:"86b0-5c6f-cd54-4d52", HYPONYM: "precipitation", HYPERNYM: "weather"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"86b0-5c6f-cd54-4d52", HYPONYM: "precipitation", HYPERNYM: "weather"]
+
+endinferencepattern

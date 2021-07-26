@@ -1,0 +1,56 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Seeking_Shelter
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: shelter is a kind of protective covering     (07ae-5b5d-6e83-d86a) [ HYPONYM:"shelter", SCOPE1:"protect", HYPERNYM:"cover" ]
+	//        HINTROW shelter is a kind of place ; building ; structure for protection     (e98a-5e1d-e825-0c47) [ HYPONYM:"shelter", HYPERNYM:"place;build;structure", FOR_PURPOSE:"protect" ]
+	//  Notes: peripheral
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "shelter", SCOPE1: "protect"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "shelter"]
+
+	// GROUNDING       KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//        HINTROW a dog is a kind of animal     (c963-24b2-f50d-a21d) [ HYPONYM:"dog", HYPERNYM:"animal" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "human", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: rain is a kind of precipitation     (da1e-dca3-f46a-5189) [ HYPONYM:"rain", HYPERNYM:"precipitation" ]
+	//        HINTROW snow is a kind of precipitation     (8083-d6d0-9cba-da83) [ HYPONYM:"snow", HYPERNYM:"precipitation" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "precipitation"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "precipitation"]
+
+	// CENTRAL         REQUIRES: an animal needs to move to find shelter     (df9f-982c-aa68-428a) [ OBJECT_AGENT_PROCESS:"animal", VERB_REQUIRES:"need", ACTION2:"move", FOR_PURPOSE:"find shelter" ]
+	//row autoRow3 = [UUID:"df9f-982c-aa68-428a", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "need", ACTION2: "move", FOR_PURPOSE: "find shelter"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"df9f-982c-aa68-428a", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "need", ACTION2: "move", FOR_PURPOSE: "find shelter"]
+
+	// CENTRAL         AFFORDANCES: shelter can protect animals ; humans from weather     (489e-9103-cfb3-9d2e) [ ACTOR_THING:"shelter", VERB:"protect", PATIENT:"animal;human", SCOPE:"from weather" ]
+	//row autoRow4 = [UUID:"489e-9103-cfb3-9d2e", ACTOR_THING: "shelter", VERB: "protect", PATIENT: "animal", SCOPE: "from weather"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"489e-9103-cfb3-9d2e", ACTOR_THING: "shelter", VERB: "protect", PATIENT: "animal", SCOPE: "from weather"]
+
+	// CENTRAL         USEDFOR: shelter is used for protection by animals against weather     (d5fc-0707-ab28-947f) [ AGENT_OBJECT:"shelter", FOR_PURPOSE:"protect", AGENT_THING_WHO_USES:"animal", SCOPE2:"against weather" ]
+	//row autoRow5 = [UUID:"d5fc-0707-ab28-947f", AGENT_OBJECT: "shelter", FOR_PURPOSE: "protect", AGENT_THING_WHO_USES: "animal", SCOPE2: "against weather"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"d5fc-0707-ab28-947f", AGENT_OBJECT: "shelter", FOR_PURPOSE: "protect", AGENT_THING_WHO_USES: "animal", SCOPE2: "against weather"]
+
+	// CENTRAL         REQUIRES: an animal requires shelter     (44e1-a4d0-f534-fb1b) [ OBJECT_AGENT_PROCESS:"animal", VERB_REQUIRES:"require", OBJECT:"shelter" ]
+	//row autoRow6 = [UUID:"44e1-a4d0-f534-fb1b", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "shelter"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"44e1-a4d0-f534-fb1b", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "shelter"]
+
+	// CENTRAL         KINDOF: precipitation is a kind of weather     (86b0-5c6f-cd54-4d52) [ HYPONYM:"precipitation", HYPERNYM:"weather" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"86b0-5c6f-cd54-4d52", HYPONYM: "precipitation", HYPERNYM: "weather"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"86b0-5c6f-cd54-4d52", HYPONYM: "precipitation", HYPERNYM: "weather"]
+
+	// LEXGLUE         SYNONYMY: finding something means locating that something     (157e-8f35-f478-8797) [ ACTION1:"find", Y1:"something", ACTION2:"locate", Y2:"that something" ]
+	//row autoRow8 = [UUID:"157e-8f35-f478-8797", ACTION1: "find", Y1: "something", ACTION2: "locate", Y2: "that something"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"157e-8f35-f478-8797", ACTION1: "find", Y1: "something", ACTION2: "locate", Y2: "that something"]
+
+	// LEXGLUE         SYNONYMY: search for means seek to find     (3a4a-a10f-5973-6530) [ ACTION1:"search for", ACTION2:"seek find" ]
+	//row autoRow9 = [UUID:"3a4a-a10f-5973-6530", ACTION1: "search for", ACTION2: "seek find"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"3a4a-a10f-5973-6530", ACTION1: "search for", ACTION2: "seek find"]
+
+endinferencepattern

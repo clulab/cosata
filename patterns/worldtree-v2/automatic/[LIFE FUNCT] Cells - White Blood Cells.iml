@@ -1,0 +1,51 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Cells_White_Blood_Cells
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: bacteria is a kind of pathogen sometimes     (a6b3-0704-7aa1-879d) [ HYPONYM:"bacterium", HYPERNYM:"pathogen", SCOPE2:"sometimes" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "bacterium", HYPERNYM: "pathogen", SCOPE2: "sometimes"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "bacterium", HYPERNYM: "pathogen", SCOPE2: "sometimes"]
+
+	// GROUNDING       KINDOF: mast cells are a kind of white blood cell     (efce-6c09-2791-1993) [ HYPONYM:"mast cell", HYPERNYM:"white blood cell" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "mast cell", HYPERNYM: "white blood cell"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "mast cell", HYPERNYM: "white blood cell"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the cause of something decreases , that something will decrease     (1562-b39a-4392-304b) [ AGENT_ATTRIBUTE1:"cause", SCOPE1A:"of something", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"something", CHANGE2:"decrease" ]
+	//row autoRow2 = [UUID:"1562-b39a-4392-304b", AGENT_ATTRIBUTE1: "cause", SCOPE1A: "of something", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "something", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"1562-b39a-4392-304b", AGENT_ATTRIBUTE1: "cause", SCOPE1A: "of something", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "something", CHANGE2: "decrease"]
+
+	// CENTRAL         CAUSE: pathogens can cause disease     (3801-5e11-2d3b-4a2e) [ CONDITION_AGENT_OBJECT:"pathogen", RESULT_AGENT:"disease" ]
+	//row autoRow3 = [UUID:"3801-5e11-2d3b-4a2e", CONDITION_AGENT_OBJECT: "pathogen", RESULT_AGENT: "disease"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"3801-5e11-2d3b-4a2e", CONDITION_AGENT_OBJECT: "pathogen", RESULT_AGENT: "disease"]
+
+	// CENTRAL         ACTION: white blood cell destroys pathogens in the body     (4bfa-70f5-4c5f-1484) [ ADJ:"white", AGENT_OBJECT:"blood cell", ACTION2:"destroy", OBJECT_PROPERTY:"pathogen", WHEN_WHERE:"in body" ]
+	//row autoRow4 = [UUID:"4bfa-70f5-4c5f-1484", ADJ: "white", AGENT_OBJECT: "blood cell", ACTION2: "destroy", OBJECT_PROPERTY: "pathogen", WHEN_WHERE: "in body"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4bfa-70f5-4c5f-1484", ADJ: "white", AGENT_OBJECT: "blood cell", ACTION2: "destroy", OBJECT_PROPERTY: "pathogen", WHEN_WHERE: "in body"]
+
+	// CENTRAL         CHANGE-VEC: destroying something decreases the amount of that something     (84bb-0231-2480-1c8b) [ PROCESS_NAME_ACTION:"destroy", AGENT_OBJECT:"something", DIRECTION:"decrease", QUANTITY:"amount of", PATIENT:"something" ]
+	//row autoRow5 = [UUID:"84bb-0231-2480-1c8b", PROCESS_NAME_ACTION: "destroy", AGENT_OBJECT: "something", DIRECTION: "decrease", QUANTITY: "amount of", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"84bb-0231-2480-1c8b", PROCESS_NAME_ACTION: "destroy", AGENT_OBJECT: "something", DIRECTION: "decrease", QUANTITY: "amount of", PATIENT: "something"]
+
+	// CENTRAL         PARTOF: white blood cells are a part of the immune system     (b91b-e9f6-099b-f79b) [ PART:"white blood cell", WHOLE:"immune system" ]
+	//row autoRow6 = [UUID:"b91b-e9f6-099b-f79b", PART: "white blood cell", WHOLE: "immune system"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"b91b-e9f6-099b-f79b", PART: "white blood cell", WHOLE: "immune system"]
+
+	// LEXGLUE         SYNONYMY: pathogen is similar to harmful substance     (cc8d-65bd-dfc0-9c0d) [ X1:"pathogen", X2:"harm substance" ]
+	//row autoRow7 = [UUID:"cc8d-65bd-dfc0-9c0d", X1: "pathogen", X2: "harm substance"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"cc8d-65bd-dfc0-9c0d", X1: "pathogen", X2: "harm substance"]
+
+	// LEXGLUE         SYNONYMY: decreasing something is similar to fighting something     (252e-8de8-4e74-54c8) [ ACTION1:"decrease", Y1:"something", ACTION2:"fight", Y2:"something" ]
+	//row autoRow8 = [UUID:"252e-8de8-4e74-54c8", ACTION1: "decrease", Y1: "something", ACTION2: "fight", Y2: "something"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"252e-8de8-4e74-54c8", ACTION1: "decrease", Y1: "something", ACTION2: "fight", Y2: "something"]
+
+	// LEXGLUE         SYNONYMY: function means job     (5bed-2cfd-fe4d-324e) [ X1:"function", X2:"job" ]
+	//row autoRow9 = [UUID:"5bed-2cfd-fe4d-324e", X1: "function", X2: "job"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"5bed-2cfd-fe4d-324e", X1: "function", X2: "job"]
+
+endinferencepattern

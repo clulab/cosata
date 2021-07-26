@@ -1,0 +1,31 @@
+// Automatically converted pattern
+inferencepattern LIFE_INTERDEP_Animals_Mobility_from_Energy
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a rabbit is a kind of animal     (44d7-fef6-90ef-75aa) [ HYPONYM:"rabbit", HYPERNYM:"animal" ]
+	//        HINTROW a bat is a kind of animal     (7ca2-740e-37f4-0a9e) [ HYPONYM:"bat", HYPERNYM:"animal" ]
+	//        HINTROW a dog is a kind of animal     (c963-24b2-f50d-a21d) [ HYPONYM:"dog", HYPERNYM:"animal" ]
+	//        HINTROW a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: running is a kind of movement     (b096-ec41-5c64-f0d4) [ HYPONYM:"run", HYPERNYM:"move" ]
+	//        HINTROW riding something is a kind of movement     (eb88-7190-51ea-a396) [ HYPONYM:"ride something", HYPERNYM:"move" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "move"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "move"]
+
+	// CENTRAL         SOURCEOF: food is a source of energy for animals ; plants     (5753-2812-04c2-af70) [ AGENT:"food", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"energy", AGENT_IT_PROVIDES_THING_TO:"animal;plant" ]
+	//row autoRow2 = [UUID:"5753-2812-04c2-af70", AGENT: "food", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "animal"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"5753-2812-04c2-af70", AGENT: "food", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "animal"]
+
+	// CENTRAL         REQUIRES: an animal requires energy to move     (838c-30bf-9b24-714b) [ OBJECT_AGENT_PROCESS:"animal", VERB_REQUIRES:"require", OBJECT:"energy", FOR_PURPOSE:"move" ]
+	//row autoRow3 = [UUID:"838c-30bf-9b24-714b", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "energy", FOR_PURPOSE: "move"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"838c-30bf-9b24-714b", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "energy", FOR_PURPOSE: "move"]
+
+endinferencepattern

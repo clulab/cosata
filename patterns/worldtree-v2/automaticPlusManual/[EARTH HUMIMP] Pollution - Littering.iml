@@ -1,0 +1,58 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Pollution_Littering
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a river is a kind of flowing ; moving body of water     (9885-6337-f26c-cfbd) [ HYPONYM:"river", SCOPE1:"flow;move", HYPERNYM:"body of water" ]
+	//        HINTROW an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row *autoRow0 = [TABLE:"KINDOF", HYPONYM:<bodyOfWaterName>, HYPERNYM: "body of water"]
+
+	// GROUNDING       KINDOF: a plastic bag is a kind of waste     (85c5-24b7-8f38-f0a9) [ HYPONYM:"plastic bag", HYPERNYM:"waste" ]
+	//        HINTROW a metal can is a kind of waste     (cb54-2805-b32b-817f) [ HYPONYM:"metal", HYPERNYM:"waste" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "waste"] //OVER-CONSTR.
+	row *autoRow1 = [TABLE:"KINDOF", HYPONYM:<wasteType>, HYPERNYM: "waste"]
+
+	// CENTRAL         AFFECT: harming something has a negative impact on ; effect on that something     (57d4-79ba-a97d-0f9a) [ VERB:"harm", OBJECT_PROPERTY:"something", POSITIVE_NEGATIVE:"negative", PATIENT:"something" ]
+	//row autoRow2 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"]
+
+	// CENTRAL         AFFECT: waste has a negative impact on the environment     (2d23-54ce-1de1-e3a8) [ ACTOR_WHO:"waste", POSITIVE_NEGATIVE:"negative", PATIENT:"environment" ]
+	//row autoRow3 = [UUID:"2d23-54ce-1de1-e3a8", ACTOR_WHO: "waste", POSITIVE_NEGATIVE: "negative", PATIENT: "environment"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"2d23-54ce-1de1-e3a8", ACTOR_WHO: "waste", POSITIVE_NEGATIVE: "negative", PATIENT: "environment"]
+
+	// CENTRAL         CAUSE: littering causes land pollution ; water pollution     (0abb-a967-e963-6e9e) [ CONDITION_VERB:"litter", RESULT_AGENT:"land pollute;water pollute" ]
+	//row autoRow4 = [UUID:"0abb-a967-e963-6e9e", CONDITION_VERB: "litter", RESULT_AGENT: "land pollute"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"0abb-a967-e963-6e9e", CONDITION_VERB: "litter", RESULT_AGENT: "land pollute"]
+
+	// CENTRAL         ACTION: water pollution is when humans pollute the environment with pollutants     (3547-7689-fb87-ee96) [ DEFINITION_NAME:"water pollute", AGENT_OBJECT:"human", ACTION2:"pollute", OBJECT_PROPERTY:"environment", HOW:"pollutant" ]
+	//row autoRow5 = [UUID:"3547-7689-fb87-ee96", DEFINITION_NAME: "water pollute", AGENT_OBJECT: "human", ACTION2: "pollute", OBJECT_PROPERTY: "environment", HOW: "pollutant"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"3547-7689-fb87-ee96", DEFINITION_NAME: "water pollute", AGENT_OBJECT: "human", ACTION2: "pollute", OBJECT_PROPERTY: "environment", HOW: "pollutant"]
+
+	// CENTRAL         CAUSE: harming an environment causes harm to the living things ; to the organisms in that environment     (fcf3-cad2-b199-4da1) [ CONDITION_VERB:"harm", CONDITION_PATIENT:"environment", RESULT_VERB:"harm", RESULT_PATIENT:"live thing;organism", SCOPE2:"in that environment" ]
+	//row autoRow6 = [UUID:"fcf3-cad2-b199-4da1", CONDITION_VERB: "harm", CONDITION_PATIENT: "environment", RESULT_VERB: "harm", RESULT_PATIENT: "live thing", SCOPE2: "in that environment"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"fcf3-cad2-b199-4da1", CONDITION_VERB: "harm", CONDITION_PATIENT: "environment", RESULT_VERB: "harm", RESULT_PATIENT: "live thing", SCOPE2: "in that environment"]
+
+	// CENTRAL         ACTION: litter is when people throw away wastes on the ground ; into a body of water     (fe88-a72e-86fb-61f0) [ DEFINITION_NAME:"litter", AGENT_OBJECT:"person", ACTION2:"throw", OBJECT_PROPERTY:"waste", WHEN_WHERE:"on grind;into body of water" ]
+	//row autoRow7 = [UUID:"fe88-a72e-86fb-61f0", DEFINITION_NAME: "litter", AGENT_OBJECT: "person", ACTION2: "throw", OBJECT_PROPERTY: "waste", WHEN_WHERE: "into body of water"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"fe88-a72e-86fb-61f0", DEFINITION_NAME: "litter", AGENT_OBJECT: "person", ACTION2: "throw", OBJECT_PROPERTY: "waste", WHEN_WHERE: "into body of water"]
+
+	// CENTRAL         CAUSE: polluting means something harmful ; something poisonous is added in an environment causes harm in the environment     (d1ac-a510-1958-0100) [ PROCESS_NAME:"pollute", CONDITION_AGENT_OBJECT:"something harm;something poisonous", CONDITION_VERB:"be add", SCOPE1:"in environment", RESULT_PATIENT:"harm", SCOPE2:"in environment" ]
+	//row autoRow8 = [UUID:"d1ac-a510-1958-0100", PROCESS_NAME: "pollute", CONDITION_AGENT_OBJECT: "something harm", CONDITION_VERB: "be add", SCOPE1: "in environment", RESULT_PATIENT: "harm", SCOPE2: "in environment"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"d1ac-a510-1958-0100", PROCESS_NAME: "pollute", CONDITION_AGENT_OBJECT: "something harm", CONDITION_VERB: "be add", SCOPE1: "in environment", RESULT_PATIENT: "harm", SCOPE2: "in environment"]
+
+	// CENTRAL         KINDOF: polluting is a kind of activity     (0a09-b3f6-9229-9511) [ HYPONYM:"pollute", HYPERNYM:"activity" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"0a09-b3f6-9229-9511", HYPONYM: "pollute", HYPERNYM: "activity"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"0a09-b3f6-9229-9511", HYPONYM: "pollute", HYPERNYM: "activity"]
+
+	// LEXGLUE         SYNONYMY: garbage means waste     (90eb-c6e6-6838-9461) [ X1:"garbage", X2:"waste" ]
+	//row autoRow10 = [UUID:"90eb-c6e6-6838-9461", X1: "garbage", X2: "waste"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"90eb-c6e6-6838-9461", X1: "garbage", X2: "waste"]
+
+endinferencepattern

@@ -1,0 +1,49 @@
+// Automatically converted pattern
+inferencepattern MAT_ENVEFF_Mass_Constant_Thermal_Changes
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	//        HINTROW metal is a kind of substance     (777a-cdbf-9167-82e0) [ HYPONYM:"metal", HYPERNYM:"substance" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "substance"]
+
+	// CENTRAL         CAUSE: increasing heat causes thermal expansion     (3f85-e8bf-c6a4-33fd) [ CONDITION_VERB:"increase", CONDITION_PATIENT:"heat", RESULT_AGENT:"thermal expansion" ]
+	//row autoRow1 = [UUID:"3f85-e8bf-c6a4-33fd", CONDITION_VERB: "increase", CONDITION_PATIENT: "heat", RESULT_AGENT: "thermal expansion"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"3f85-e8bf-c6a4-33fd", CONDITION_VERB: "increase", CONDITION_PATIENT: "heat", RESULT_AGENT: "thermal expansion"]
+
+	// CENTRAL         CAUSE: temperature changing does not cause mass to change     (6547-5706-4e4b-6323) [ CONDITION_AGENT_OBJECT:"temperature", CONDITION_VERB:"change", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS:"doe not", RESULT_AGENT:"mass", RESULT_VERB:"change" ]
+	//row autoRow2 = [UUID:"6547-5706-4e4b-6323", CONDITION_AGENT_OBJECT: "temperature", CONDITION_VERB: "change", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "doe not", RESULT_AGENT: "mass", RESULT_VERB: "change"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"6547-5706-4e4b-6323", CONDITION_AGENT_OBJECT: "temperature", CONDITION_VERB: "change", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "doe not", RESULT_AGENT: "mass", RESULT_VERB: "change"]
+
+	// CENTRAL         PROP-GENERIC: mass is a property of objects ; matter     (bbf0-3d09-563f-196b) [ X:"mass", Y:"object;matt" ]
+	//row autoRow3 = [UUID:"bbf0-3d09-563f-196b", X: "mass", Y: "object"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"bbf0-3d09-563f-196b", X: "mass", Y: "object"]
+
+	// CENTRAL         MADEOF: objects are made of materials ; substances ; matter     (80a3-454d-e8e0-3de2) [ OBJECT:"object", MATERIAL:"material;substance;matt" ]
+	//row autoRow4 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"]
+
+	// CENTRAL         KINDOF: an increase is a kind of change     (782a-53e7-c1c7-aae0) [ HYPONYM:"increase", HYPERNYM:"change" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"782a-53e7-c1c7-aae0", HYPONYM: "increase", HYPERNYM: "change"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"782a-53e7-c1c7-aae0", HYPONYM: "increase", HYPERNYM: "change"]
+
+	// CENTRAL         MADEOF: substances are made of matter     (3395-b5a2-ae2d-39c2) [ OBJECT:"substance", MATERIAL:"matt" ]
+	//row autoRow6 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3395-b5a2-ae2d-39c2", OBJECT: "substance", MATERIAL: "matt"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of heat energy     (d753-423d-5ce7-53ce) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"heat energy" ]
+	//row autoRow7 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"]
+
+	// LEXGLUE         SYNONYMY: to conserve means to not change     (143e-9cd6-64d6-2c2c) [ ACTION1:"conserve", ACTION2:"not change" ]
+	//row autoRow8 = [UUID:"143e-9cd6-64d6-2c2c", ACTION1: "conserve", ACTION2: "not change"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"143e-9cd6-64d6-2c2c", ACTION1: "conserve", ACTION2: "not change"]
+
+endinferencepattern

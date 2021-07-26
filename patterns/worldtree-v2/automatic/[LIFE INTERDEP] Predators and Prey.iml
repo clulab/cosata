@@ -1,0 +1,80 @@
+// Automatically converted pattern
+inferencepattern LIFE_INTERDEP_Predators_and_Prey
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CONSUMERS-EATING: birds sometimes eat insects     (a872-f6a2-a467-59ec) [ ORGANISM1:"bird", QUANTIFIER:"sometimes", EATS_CONSUMES:"eat", ORGANISM2:"insect" ]
+	//        HINTROW bats eat insects     (f2a3-ee07-16d7-56a0) [ ORGANISM1:"bat", EATS_CONSUMES:"eat", ORGANISM2:"insect" ]
+	//        HINTROW lion eat zebras     (40f1-6036-6301-1bd6) [ ORGANISM1:"lion", EATS_CONSUMES:"eat", ORGANISM2:"zebra" ]
+	//        HINTROW turtles sometimes eat worms     (2cdd-bc45-2b41-8f05) [ ORGANISM1:"turtle", QUANTIFIER:"sometimes", EATS_CONSUMES:"eat", ORGANISM2:"worm" ]
+	//row autoRow0 = [TABLE:"CONSUMERS-EATING", ORGANISM1: <bird_0>, EATS_CONSUMES: "eat", ORGANISM2: <insect_1>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CONSUMERS-EATING", ORGANISM1: <bird_0>, EATS_CONSUMES: "eat", ORGANISM2: <insect_1>]
+
+	// CENTRALSW       CONSUMERS-EATING: predators eat prey     (fb00-41ad-f198-b5ac) [ ORGANISM1:"predator", EATS_CONSUMES:"eat", ORGANISM2:"prey" ]
+	//        HINTROW predators ; carnivores ; omnivores eat other animals     (20a3-dcb5-8ce4-ae5c) [ ORGANISM1:"predator;carnivore;omnivore", EATS_CONSUMES:"eat", ORGANISM2:"other animal" ]
+	//row autoRow1 = [TABLE:"CONSUMERS-EATING", ORGANISM1: "predator", EATS_CONSUMES: "eat", ORGANISM2: "prey"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CONSUMERS-EATING", ORGANISM1: "predator", EATS_CONSUMES: "eat"]
+
+	// GROUNDING       KINDOF: a bird is a kind of animal     (e26b-b21d-d4a3-25fc) [ HYPONYM:"bird", HYPERNYM:"animal" ]
+	//        HINTROW a bat is a kind of animal     (7ca2-740e-37f4-0a9e) [ HYPONYM:"bat", HYPERNYM:"animal" ]
+	//        HINTROW a lion is a kind of animal     (e729-b2af-f089-3c53) [ HYPONYM:"lion", HYPERNYM:"animal" ]
+	//        HINTROW a sea turtle is a kind of animal     (cc37-fd38-b39c-7eb2) [ HYPONYM:"sea turtle", HYPERNYM:"animal" ]
+	//  Notes: predator column
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <bird_0>, HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <bird_0>, HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: a cricket is a kind of insect     (5319-76bf-8c5d-657d) [ HYPONYM:"cricket", HYPERNYM:"insect" ]
+	//        HINTROW a moth is a kind of insect     (4c05-ce97-15e0-e7d5) [ HYPONYM:"moth", HYPERNYM:"insect" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: <insect_1>] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: <insect_1>]
+
+	// GROUNDING       KINDOF: a robin is a kind of bird     (9621-09a0-c0f8-289e) [ HYPONYM:"robin", HYPERNYM:"bird" ]
+	//        HINTROW a chicken is a kind of bird     (9ede-6c4b-43f2-6da3) [ HYPONYM:"chicken", HYPERNYM:"bird" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: <bird_0>] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: <bird_0>]
+
+	// GROUNDING       KINDOF: an insect is a kind of animal     (56bd-8c40-3dae-d3e9) [ HYPONYM:"insect", HYPERNYM:"animal" ]
+	//        HINTROW a zebra is a kind of animal     (5ba8-be09-ebaf-827a) [ HYPONYM:"zebra", HYPERNYM:"animal" ]
+	//        HINTROW a worm is a kind of animal     (9d7a-3ad1-561c-deae) [ HYPONYM:"worm", HYPERNYM:"animal" ]
+	//  Notes: prey column
+	//row autoRow5 = [TABLE:"KINDOF", HYPONYM: <insect_1>, HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPONYM: <insect_1>, HYPERNYM: "animal"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if an animal eats particles then that animal is a carnivore or omnivore or predator     (dcb0-11ec-8b50-ceb3) [ THING:"animal", ACTION1:"eat", OBJECT_PATIENT1:"particle", ACTOR_AGENT_PROCESS2:"that animal", ACTION3:"be", OBJECT_PROPERTY3:"carnivore omnivore predator" ]
+	//row *autoRow6 = [UUID:"dcb0-11ec-8b50-ceb3", THING: "animal", ACTION1: "eat", OBJECT_PATIENT1: "particle", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "be", OBJECT_PROPERTY3: "carnivore omnivore predator"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"dcb0-11ec-8b50-ceb3", THING: "animal", ACTION1: "eat", OBJECT_PATIENT1: "particle", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "be", OBJECT_PROPERTY3: "carnivore omnivore predator"]
+
+	// CENTRAL         ACTION: a predator usually kills its prey to eat it     (952c-f654-fec2-8b06) [ AGENT_OBJECT:"predator", QUANITIFIER:"usually", ACTION2:"kill", OBJECT_PROPERTY:"prey", FOR_PURPOSE:"eat" ]
+	//  Notes: predator behaviors
+	//row autoRow7 = [UUID:"952c-f654-fec2-8b06", AGENT_OBJECT: "predator", QUANITIFIER: "usually", ACTION2: "kill", OBJECT_PROPERTY: "prey", FOR_PURPOSE: "eat"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"952c-f654-fec2-8b06", AGENT_OBJECT: "predator", QUANITIFIER: "usually", ACTION2: "kill", OBJECT_PROPERTY: "prey", FOR_PURPOSE: "eat"]
+
+	// CENTRAL         IFTHEN: if an animal eats other animals for food , then the animal will be the predator     (bd7a-cd1b-3700-b652) [ THING:"animal", ACTION1:"eat", OBJECT_PATIENT1:"animal", OBJECT_PROPERTY1:"for food", ACTOR_AGENT_PROCESS2:"animal", OBJECT_PROPERTY3:"predator" ]
+	//row autoRow8 = [UUID:"bd7a-cd1b-3700-b652", THING: "animal", ACTION1: "eat", OBJECT_PATIENT1: "animal", OBJECT_PROPERTY1: "for food", ACTOR_AGENT_PROCESS2: "animal", OBJECT_PROPERTY3: "predator"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"bd7a-cd1b-3700-b652", THING: "animal", ACTION1: "eat", OBJECT_PATIENT1: "animal", OBJECT_PROPERTY1: "for food", ACTOR_AGENT_PROCESS2: "animal", OBJECT_PROPERTY3: "predator"]
+
+	// CENTRAL         ACTION: some animals move quickly to escape predators     (e4af-0fe7-8fbf-a009) [ AGENT_OBJECT:"animal", ACTION2:"move quickly", FOR_PURPOSE:"escape predator" ]
+	//  Notes: prey behaviors
+	//row autoRow9 = [UUID:"e4af-0fe7-8fbf-a009", AGENT_OBJECT: "animal", ACTION2: "move quickly", FOR_PURPOSE: "escape predator"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"e4af-0fe7-8fbf-a009", AGENT_OBJECT: "animal", ACTION2: "move quickly", FOR_PURPOSE: "escape predator"]
+
+	// CENTRAL         ACTION: some predators move quickly to catch prey     (07b2-9ecc-9cbf-916e) [ AGENT_OBJECT:"predator", ACTION2:"move", HOW:"quickly", FOR_PURPOSE:"catch prey" ]
+	//  Notes: predator behaviors
+	//row autoRow10 = [UUID:"07b2-9ecc-9cbf-916e", AGENT_OBJECT: "predator", ACTION2: "move", HOW: "quickly", FOR_PURPOSE: "catch prey"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"07b2-9ecc-9cbf-916e", AGENT_OBJECT: "predator", ACTION2: "move", HOW: "quickly", FOR_PURPOSE: "catch prey"]
+
+	// CENTRAL         ACTION: a predator eats other animals for food     (9bdc-0291-3f7e-751d) [ AGENT_OBJECT:"predator", ACTION2:"eat", OBJECT_PROPERTY:"other animal", FOR_PURPOSE:"food" ]
+	//  Notes: predator behaviors
+	//row autoRow11 = [UUID:"9bdc-0291-3f7e-751d", AGENT_OBJECT: "predator", ACTION2: "eat", OBJECT_PROPERTY: "other animal", FOR_PURPOSE: "food"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"9bdc-0291-3f7e-751d", AGENT_OBJECT: "predator", ACTION2: "eat", OBJECT_PROPERTY: "other animal", FOR_PURPOSE: "food"]
+
+	// CENTRAL         IFTHEN: if an animal is eaten by other animals , then the animal will be the prey     (285c-373b-e428-cbba) [ THING:"animal", ACTION1:"be eat by", OBJECT_PATIENT1:"animal", ACTOR_AGENT_PROCESS2:"animal", OBJECT_PROPERTY3:"prey" ]
+	//row autoRow12 = [UUID:"285c-373b-e428-cbba", THING: "animal", ACTION1: "be eat by", OBJECT_PATIENT1: "animal", ACTOR_AGENT_PROCESS2: "animal", OBJECT_PROPERTY3: "prey"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"285c-373b-e428-cbba", THING: "animal", ACTION1: "be eat by", OBJECT_PATIENT1: "animal", ACTOR_AGENT_PROCESS2: "animal", OBJECT_PROPERTY3: "prey"]
+
+endinferencepattern

@@ -1,0 +1,106 @@
+// Automatically converted pattern
+inferencepattern MAT_COS_Change_of_State_Generic
+
+	// Plain text description
+	description = "Generic change of state"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE: boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy     (a0b2-a45f-01e1-4bf4) [ PROCESS_NAME:"boil;evaporate", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"gas", BY_THROUGH_HOW:"increase heat energy" ]
+	//        HINTROW melting means matter ; a substance changes from a solid into a liquid by increasing heat energy     (6abc-4443-f672-9a97) [ PROCESS_NAME:"melt", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"solid", INTO:"liquid", BY_THROUGH_HOW:"increase heat energy" ]
+	//        HINTROW condensing means matter ; a substance changes from a gas into a liquid by decreasing heat energy     (2aba-39fa-3a07-5ee4) [ PROCESS_NAME:"condense", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"gas", INTO:"liquid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//        HINTROW freezing means matter ; a substance changes from a liquid into a solid by decreasing heat energy     (f03c-decc-030f-b860) [ PROCESS_NAME:"freeze", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"solid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//        HINTROW desublimation ; deposition means matter ; a substance changes from a gas into a solid by decreasing heat energy     (3002-4c80-039d-2114) [ PROCESS_NAME:"desublimation;deposition", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"gas", INTO:"solid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//        HINTROW condensation is when matter ; a substance changes from a gas into a liquid by decreasing heat energy     (2c44-c2fa-bff1-5946) [ PROCESS_NAME:"condense", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"gas", INTO:"liquid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//        HINTROW sublimation means matter ; a substance changes from a solid into a gas by increasing heat energy     (1613-c8b2-f818-85be) [ PROCESS_NAME:"sublimation", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"solid", INTO:"gas", BY_THROUGH_HOW:"increase heat energy" ]
+	row autoRow0 = [TABLE:"CHANGE", PROCESS_NAME: <boil_0>, ACTOR_WHO: "matt", VERB: "change", FROM: <liquid_1>, INTO: <gas_2>, BY_THROUGH_HOW: *"POS:VB"+<heat_6>+"energy"]
+
+	// CENTRAL         CHANGE: a phase change is when matter ; a substance changes from one state of matter into another state of matter     (72bd-5535-598e-82e8) [ PROCESS_NAME:"phase change", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"one state of matt", INTO:"state of matt" ]
+	row autoRow1 = [UUID:"72bd-5535-598e-82e8", PROCESS_NAME: "phase change", ACTOR_WHO: "matt", VERB: "change", FROM: "one state of matt", INTO: "state of matt"]
+
+	// CENTRAL         PROP-GENERIC: temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot     (4084-f2bc-52cf-0f74) [ X:"temperature;heat energy", Y:"object;weather", ORDERED_UNORDERED:"order", VALUES:"cold;cool;warm;hot" ]
+	row autoRow2 = [UUID:"4084-f2bc-52cf-0f74", X: <heat_6>+"energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"]
+
+	// CENTRALSW       SYNONYMY: boiling point means temperature at which a liquid boils ; above which a liquid boils     (73e5-00b0-22fd-e34e) [ X1:"boil point", X2:"temperature", ACTION2:"at liquid boil;above liquid boil" ]
+	//        HINTROW freezing point means temperature at which a liquid freezes ; below which a liquid freezes     (bb18-f19f-69ba-8bc6) [ X1:"freeze point", X2:"temperature", ACTION2:"at liquid freeze;below liquid freeze" ]
+	//        HINTROW melting point means temperature at which a solid melts ; above which a solid melts     (fa8f-6c8e-1364-1b72) [ X1:"melt point", X2:"temperature", ACTION2:"at solid melt;above solid melt" ]
+	row autoRow3 = [TABLE:"SYNONYMY", X1: <boil_0>+"point", X2: "temperature", ACTION2: <above_4>+<liquid_1>+<boil_0>]
+
+	// CENTRAL         CHANGE: phase changes change the arrangement of molecules in a substance ; in a sample     (08c0-16d0-2d6d-8df7) [ ACTOR_WHO:"phase change", VERB:"change", FROM:"arrangement of molecule", SCOPE:"in substance;in sample" ]
+	row autoRow4 = [UUID:"08c0-16d0-2d6d-8df7", ACTOR_WHO: "phase change", VERB: "change", FROM: "arrangement of molecule", SCOPE: "in substance"]
+
+	// GROUNDING       PROP-STATESOFMATTER-TEMPS: water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C     (e474-2a11-6e7b-ae8b) [ MATERIAL_NAME:"water", STATEOFMATTER:"gas", FORM_NAME:"water vapor;steam", LOWER_BOUND:"373;212;100", UPPER_BOUND:"100000000000", UNITS:"k;f;c" ]
+	//        HINTROW water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//        HINTROW water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C     (4a5a-9115-28a9-b97b) [ MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice", LOWER_BOUND:"0;-459;-273;459;273", UPPER_BOUND:"273;32;0", UNITS:"k;f;c" ]
+	row autoRow5 = [TABLE:"PROP-STATESOFMATTER-TEMPS", MATERIAL_NAME: <water_5>, STATEOFMATTER: <gas_2>, FORM_NAME: <water_5>+*"POS:NN", UNITS: "k"]
+
+	// GROUNDING       SOURCEOF: a stove generates heat for cooking usually     (d59b-bac8-e191-05be) [ AGENT:"stave", VERB_SOURCEOF_PROVIDE_ETC:"generate", WHAT_IT_PROVIDES:"heat", FOR_PURPOSE:"cook", SCOPE:"usually" ]
+	//        HINTROW a hot plate is a source of heat     (945f-acde-29f3-d573) [ AGENT:"hot plate", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"heat" ]
+	//        HINTROW a hand dryer produces heat     (2e43-a74f-bca2-5d7f) [ AGENT:"hand dry", VERB_SOURCEOF_PROVIDE_ETC:"produce", WHAT_IT_PROVIDES:"heat" ]
+	//        HINTROW the sun is a source of radiation ; heat called sunlight     (d247-b029-3aab-0950) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"radiation;heat", NAME:"sunlight" ]
+	row autoRow6 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "generate", WHAT_IT_PROVIDES: <heat_6>]
+
+	// CENTRALSW       CHANGE-VEC: boiling is when liquids are heated above their boiling point     (ae9d-5e74-afa3-d031) [ PROCESS_NAME_ACTION:"boil", AGENT_OBJECT:"liquid", DIRECTION:"heat", QUANTITY_RANGE:"above boil point" ]
+	//        HINTROW melting is when solids are heated above their melting point     (8cbb-8bf8-bfbd-681e) [ PROCESS_NAME_ACTION:"melt", AGENT_OBJECT:"solid", DIRECTION:"heat", QUANTITY_RANGE:"above melt point" ]
+	//        HINTROW condensing is when gasses are cooled below their boiling point     (3e90-e3f3-440d-008e) [ PROCESS_NAME_ACTION:"condense", AGENT_OBJECT:"gas", DIRECTION:"cool", QUANTITY_RANGE:"below boil point" ]
+	row autoRow7 = [TABLE:"CHANGE-VEC", PROCESS_NAME_ACTION: <boil_0>, AGENT_OBJECT: <liquid_1>, DIRECTION: <heat_6>, QUANTITY_RANGE: <above_4>+<boil_0>+"point"]
+
+	// CENTRAL         CHANGE: heat energy can change the state of matter     (7909-f63c-46d1-01a2) [ ACTOR_WHO:"heat energy", VERB:"change", WHAT:"state of matt" ]
+	row autoRow8 = [UUID:"7909-f63c-46d1-01a2", ACTOR_WHO: <heat_6>+"energy", VERB: "change", WHAT: "state of matt"]
+
+	// CENTRAL         IFTHEN: if heat is added to a substance then that substance absorbs that heat     (9f40-769a-b2ba-d984) [ THING:"heat", ACTION1:"add", OBJECT_PATIENT1:"substance", ACTOR_AGENT_PROCESS2:"substance", ACTION3:"absorb", OBJECT_PROPERTY3:"that heat" ]
+	row autoRow9 = [UUID:"9f40-769a-b2ba-d984", THING: <heat_6>, ACTION1: "add", OBJECT_PATIENT1: "substance", ACTOR_AGENT_PROCESS2: "substance", ACTION3: "absorb", OBJECT_PROPERTY3: "that"+<heat_6>]
+
+	// CENTRAL         KINDOF: state of matter is a kind of physical property     (7532-01eb-475e-acbd) [ HYPONYM:"state of matt", SCOPE1:"physical", HYPERNYM:"property" ]
+	row autoRow10 = [UUID:"7532-01eb-475e-acbd", HYPONYM: "state of matt", SCOPE1: "physical", HYPERNYM: "property"]
+
+	// GROUNDING       KINDOF: water is a kind of liquid at room temperature     (3961-d09c-4b9a-a6f7) [ HYPONYM:"water", HYPERNYM:"liquid", SCOPE2:"at room temperature" ]
+	//        HINTROW milk is a kind of liquid at room temperature     (0412-1219-6683-82d1) [ HYPONYM:"milk", HYPERNYM:"liquid", SCOPE2:"at room temperature" ]
+	//        HINTROW glass is a kind of solid at room temperature     (a021-1daa-802b-93c7) [ HYPONYM:"glass", HYPERNYM:"solid", SCOPE2:"at room temperature" ]
+	//        HINTROW hydrogen is a kind of gas at room temperature     (bcb9-f1d4-4c6d-cb70) [ HYPONYM:"hydrogen", HYPERNYM:"gas", SCOPE2:"at room temperature" ]
+	row autoRow11 = [TABLE:"KINDOF", HYPONYM: <water_5>, HYPERNYM: <liquid_1>, SCOPE2: "at room temperature"]
+
+	// CENTRAL         KINDOF: a phase change is a kind of physical change     (b6d6-89d9-43a5-fd91) [ HYPONYM:"phase change", SCOPE1:"physical", HYPERNYM:"change" ]
+	row autoRow12 = [UUID:"b6d6-89d9-43a5-fd91", HYPONYM: "phase change", SCOPE1: "physical", HYPERNYM: "change"]
+
+	// CENTRAL         KINDOF: boiling is a kind of phase change     (edd3-cea2-f046-e76f) [ HYPONYM:"boil", HYPERNYM:"phase change" ]
+	//        HINTROW evaporating is a kind of phase change     (4a2c-c349-a627-edc5) [ HYPONYM:"evaporate", HYPERNYM:"phase change" ]
+	//        HINTROW freezing is a kind of phase change     (eebb-a341-23c6-8447) [ HYPONYM:"freeze", HYPERNYM:"phase change" ]
+	//        HINTROW melting is a kind of phase change     (fae9-3cca-92cd-bf20) [ HYPONYM:"melt", HYPERNYM:"phase change" ]
+	//        HINTROW condensing is a kind of phase change     (e2ac-16b6-eb78-880e) [ HYPONYM:"condense", HYPERNYM:"phase change" ]
+	row autoRow13 = [UUID:"edd3-cea2-f046-e76f", HYPONYM: <boil_0>, HYPERNYM: "phase change"]
+
+	// CENTRALSW       KINDOF: liquid is a kind of state of matter     (f7e9-c6f8-892b-3496) [ HYPONYM:"liquid", HYPERNYM:"state of matt" ]
+	//        HINTROW gas is a kind of state of matter     (aa73-331e-e970-c934) [ HYPONYM:"gas", HYPERNYM:"state of matt" ]
+	//        HINTROW plasma is a kind of state of matter     (fcce-8881-7921-d9d2) [ HYPONYM:"plasma", HYPERNYM:"state of matt" ]
+	//        HINTROW solid is a kind of state of matter     (cf49-1b7a-89f0-41f5) [ HYPONYM:"solid", HYPERNYM:"state of matt" ]
+	row autoRow14 = [TABLE:"KINDOF", HYPONYM: <liquid_1>, HYPERNYM: "state of matt"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of heat energy     (d753-423d-5ce7-53ce) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"heat energy" ]
+	row autoRow15 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: <heat_6>+"energy"]
+
+	// CENTRALSW       CHANGE-VEC: cooling ; colder means removing ; reducing ; decreasing heat ; temperature     (3a9b-81b5-1a3a-40a0) [ PROCESS_NAME_ACTION:"cool;cold", DIRECTION:"remove;reduce;decrease", PATIENT:"heat;temperature" ]
+	//        HINTROW heat means temperature increases     (7afc-2bcd-13a5-2d35) [ PROCESS_NAME_ACTION:"heat", AGENT_OBJECT:"temperature", DIRECTION:"increase" ]
+	row autoRow16 = [TABLE:"CHANGE-VEC", PROCESS_NAME_ACTION: "cool", PATIENT: <heat_6>]
+
+	// CENTRAL         ACTION: a source of something emits ; produces ; generates ; provides that something     (b877-a58b-f75a-3998) [ AGENT_OBJECT:"source of something", ACTION2:"emit;produce;generate;provide", OBJECT_PROPERTY:"that something" ]
+	row autoRow17 = [UUID:"b877-a58b-f75a-3998", AGENT_OBJECT: "source of something", ACTION2: "emit", OBJECT_PROPERTY: "that something"]
+
+	// CENTRALSW       KINDOF: evaporation is a kind of process     (bfeb-fb56-8937-91c9) [ HYPONYM:"evaporate", HYPERNYM:"process" ]
+	//        HINTROW condensing is a kind of process     (672f-0cc0-73d8-ae50) [ HYPONYM:"condense", HYPERNYM:"process" ]
+	//        HINTROW condensation is a kind of process     (7faf-cb37-05f2-3e08) [ HYPONYM:"condense", HYPERNYM:"process" ]
+	//        HINTROW melting is a kind of process     (36f6-e94f-8780-1897) [ HYPONYM:"melt", HYPERNYM:"process" ]
+	row autoRow18 = [TABLE:"KINDOF", HYPONYM: <evaporate_3>, HYPERNYM: "process"]
+
+	// GROUNDING       PROP-THINGS: the boiling point of water is 212F ; 100C ; 373K     (a10a-a44b-4ab6-225f) [ THING:"boil point of water", VALUE:"212f;100c;373k" ]
+	//        HINTROW the melting point of iron is 2800F ; 1538C ; 1811K     (00f1-21aa-fbc1-fe69) [ THING:"melt point of iron", VALUE:"2800f;1538c;1811k" ]
+	//        HINTROW the melting point of oxygen is -361.8F ; -218.8C ; 54.4K     (0ed7-324f-5c82-eb6c) [ THING:"melt point of oxygen", VALUE:"-361.8 f;-218.8 c;54.4 k;361.8 f;218.8 c" ]
+	//        HINTROW the freezing point of water ; melting point of water is 32F ; 0C ; 273K     (cdc9-5a05-7bcd-607f) [ THING:"freeze point of water;melt point of water", VALUE:"32f;0c;273k" ]
+	row autoRow19 = [TABLE:"PROP-THINGS", THING: <boil_0>+"point of"+<water_5>]
+
+	// GROUNDING       KINDOF: water is a kind of substance     (81b7-0a58-5b0b-0bbf) [ HYPONYM:"water", HYPERNYM:"substance" ]
+	row autoRow20 = [TABLE:"KINDOF", HYPONYM: <water_5>, HYPERNYM: "substance"]
+
+endinferencepattern

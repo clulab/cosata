@@ -1,0 +1,67 @@
+// Automatically converted pattern
+inferencepattern FOR_FRICTION_Friction_Effected_By_Texture
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as the smoothness of something increases , the friction of that something will decrease when its surface moves against another surface     (1b40-3366-53ff-d094) [ QUANTITY_MEASURE1:"smooth", AGENT_ATTRIBUTE1:"of something", CHANGE1:"increase", QUANTITY_MEASURE2:"friction", AGENT_ATTRIBUTE2:"of something", CHANGE2:"decrease", SCOPE2B:"surface move against surface" ]
+	//        HINTROW as the roughness of something increases , the friction of that something will increase when its surface moves against another surface     (5301-3197-c9cd-25af) [ QUANTITY_MEASURE1:"rough", AGENT_ATTRIBUTE1:"of something", CHANGE1:"increase", QUANTITY_MEASURE2:"friction", AGENT_ATTRIBUTE2:"of something", CHANGE2:"increase", SCOPE2B:"surface move against surface" ]
+	//        HINTROW as roughness of a surface increases , friction will increase     (f5db-3d81-10c5-e292) [ QUANTITY_MEASURE1:"rough", AGENT_ATTRIBUTE1:"of surface", CHANGE1:"increase", QUANTITY_MEASURE2:"friction", CHANGE2:"increase" ]
+	//row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: <smooth_0>, AGENT_ATTRIBUTE1: "of"+*"POS:NN", CHANGE1: "increase", QUANTITY_MEASURE2: "friction", AGENT_ATTRIBUTE2: "of"+*"POS:NN", SCOPE2B: "surface move against surface"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: <smooth_0>, AGENT_ATTRIBUTE1: "of"+*"POS:NN", CHANGE1: "increase", QUANTITY_MEASURE2: "friction"]
+
+	// CENTRALSW       KINDOF: smooth is a kind of texture     (be7f-0242-d76f-3be0) [ HYPONYM:"smooth", HYPERNYM:"texture" ]
+	//        HINTROW rough is a kind of texture     (4639-8ac3-5232-3850) [ HYPONYM:"rough", HYPERNYM:"texture" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: <smooth_0>, HYPERNYM: "texture"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: <smooth_0>, HYPERNYM: "texture"]
+
+	// GROUNDING       KINDOF: a bicycle is a kind of object     (ab39-00a1-7fb7-b1d1) [ HYPONYM:"bicycle", HYPERNYM:"object" ]
+	//        HINTROW a toy car is a kind of object     (4f86-9f32-f5ab-f744) [ HYPONYM:"toy car", HYPERNYM:"object" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: the floor is a kind of object     (785d-6676-9d5d-78b2) [ HYPONYM:"floor", HYPERNYM:"object" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "floor", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "floor", HYPERNYM: "object"]
+
+	// CENTRAL         ACTION: friction acts to counter the motion of two objects when their surfaces are touching     (512a-c5ef-bcba-905d) [ AGENT_OBJECT:"friction", ACTION2:"act counter", OBJECT_PROPERTY:"move of two object", WHEN_WHERE:"surface be touch" ]
+	//row autoRow4 = [UUID:"512a-c5ef-bcba-905d", AGENT_OBJECT: "friction", ACTION2: "act counter", OBJECT_PROPERTY: "move of two object", WHEN_WHERE: "surface be touch"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"512a-c5ef-bcba-905d", AGENT_OBJECT: "friction", ACTION2: "act counter", OBJECT_PROPERTY: "move of two object", WHEN_WHERE: "surface be touch"]
+
+	// CENTRAL         PROP-GENERIC: texture is a property of surfaces ; materials ; objects and includes ordered values of smooth ; rough     (936a-31ea-b049-fee7) [ X:"texture", Y:"surface;material;object", ORDERED_UNORDERED:"order", VALUES:"smooth;rough" ]
+	//row autoRow5 = [UUID:"936a-31ea-b049-fee7", X: "texture", Y: "surface", ORDERED_UNORDERED: "order", VALUES: <smooth_0>] //OVER-CONSTR.
+	row autoRow5 = [UUID:"936a-31ea-b049-fee7", X: "texture", Y: "surface", ORDERED_UNORDERED: "order", VALUES: <smooth_0>]
+
+	// CENTRAL         IFTHEN: if one surface is moved against ; moved over ; moved down another surface then those surfaces are touching     (ce72-7053-8df0-6419) [ THING:"one surface", ACTION1:"move against;move over;move down", OBJECT_PATIENT1:"surface", ACTOR_AGENT_PROCESS2:"surface", ACTION3:"touch" ]
+	//row autoRow6 = [UUID:"ce72-7053-8df0-6419", THING: "one surface", ACTION1: "move against", OBJECT_PATIENT1: "surface", ACTOR_AGENT_PROCESS2: "surface", ACTION3: "touch"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"ce72-7053-8df0-6419", THING: "one surface", ACTION1: "move against", OBJECT_PATIENT1: "surface", ACTOR_AGENT_PROCESS2: "surface", ACTION3: "touch"]
+
+	// CENTRAL        (OPTIONAL) REQUIRES: a wheeled vehicle requires smooth surfaces     (57ff-11f6-5854-80c5) [ OBJECT_AGENT_PROCESS:"wheel vehicle", VERB_REQUIRES:"require", OBJECT:"smooth surface" ]
+	//row *autoRow7 = [UUID:"57ff-11f6-5854-80c5", OBJECT_AGENT_PROCESS: "wheel vehicle", VERB_REQUIRES: "require", OBJECT: <smooth_0>+"surface"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"57ff-11f6-5854-80c5", OBJECT_AGENT_PROCESS: "wheel vehicle", VERB_REQUIRES: "require", OBJECT: <smooth_0>+"surface"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if a wheel travels on a surface then the wheel touches that surface     (dae7-2f8d-73b1-9520) [ THING:"wheel", ACTION1:"travel on", OBJECT_PATIENT1:"surface", ACTOR_AGENT_PROCESS2:"wheel", ACTION3:"touch", OBJECT_PROPERTY3:"surface" ]
+	//row *autoRow8 = [UUID:"dae7-2f8d-73b1-9520", THING: "wheel", ACTION1: "travel on", OBJECT_PATIENT1: "surface", ACTOR_AGENT_PROCESS2: "wheel", ACTION3: "touch", OBJECT_PROPERTY3: "surface"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"dae7-2f8d-73b1-9520", THING: "wheel", ACTION1: "travel on", OBJECT_PATIENT1: "surface", ACTOR_AGENT_PROCESS2: "wheel", ACTION3: "touch", OBJECT_PROPERTY3: "surface"]
+
+	// CENTRAL        (OPTIONAL) MADEOF: a bicycle is made of levers, wheels and axles, pulleys, and screws     (50be-644b-a1be-7fb1) [ OBJECT:"bicycle", MATERIAL:"lever wheel axle pulley screw" ]
+	//row *autoRow9 = [UUID:"50be-644b-a1be-7fb1", OBJECT: "bicycle", MATERIAL: "lever wheel axle pulley screw"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"50be-644b-a1be-7fb1", OBJECT: "bicycle", MATERIAL: "lever wheel axle pulley screw"]
+
+	// CENTRAL         PARTOF: a surface is a part of an object     (eb92-b0cd-c257-9bcf) [ PART:"surface", WHOLE:"object" ]
+	//row autoRow10 = [UUID:"eb92-b0cd-c257-9bcf", PART: "surface", WHOLE: "object"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"eb92-b0cd-c257-9bcf", PART: "surface", WHOLE: "object"]
+
+	// CENTRAL         ACTION: friction occurs when two object 's surfaces move against each other     (e9ed-3032-6736-3077) [ DEFINITION_NAME:"friction", ADJ:"two object", AGENT_OBJECT:"surface", ACTION2:"move against", OBJECT_PROPERTY:"other" ]
+	//row autoRow11 = [UUID:"e9ed-3032-6736-3077", DEFINITION_NAME: "friction", ADJ: "two object", AGENT_OBJECT: "surface", ACTION2: "move against", OBJECT_PROPERTY: "other"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"e9ed-3032-6736-3077", DEFINITION_NAME: "friction", ADJ: "two object", AGENT_OBJECT: "surface", ACTION2: "move against", OBJECT_PROPERTY: "other"]
+
+	// CENTRAL         ACTION: friction exerts force on moving objects     (3518-79e5-2f89-2bc0) [ AGENT_OBJECT:"friction", ACTION2:"exert", OBJECT_PROPERTY:"force", WHEN_WHERE:"on move object" ]
+	//row autoRow12 = [UUID:"3518-79e5-2f89-2bc0", AGENT_OBJECT: "friction", ACTION2: "exert", OBJECT_PROPERTY: "force", WHEN_WHERE: "on move object"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"3518-79e5-2f89-2bc0", AGENT_OBJECT: "friction", ACTION2: "exert", OBJECT_PROPERTY: "force", WHEN_WHERE: "on move object"]
+
+endinferencepattern

@@ -1,0 +1,71 @@
+// Automatically converted pattern
+inferencepattern LIFE_REPROD_Protein_Formation_From_DNA
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         REQUIRES: one amino acid requires three nucleotides in DNA to be encoded ; to be made     (69af-000d-2165-e939) [ OBJECT_AGENT_PROCESS:"one amino acid", VERB_REQUIRES:"require", QUANTITY_VALUE:"three", OBJECT:"nucleotide", SCOPE2:"in dna", FOR_PURPOSE:"be encode;be make" ]
+	//row autoRow0 = [UUID:"69af-000d-2165-e939", OBJECT_AGENT_PROCESS: "one amino acid", VERB_REQUIRES: "require", QUANTITY_VALUE: "three", OBJECT: "nucleotide", SCOPE2: "in dna", FOR_PURPOSE: "be encode"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"69af-000d-2165-e939", OBJECT_AGENT_PROCESS: "one amino acid", VERB_REQUIRES: "require", QUANTITY_VALUE: "three", OBJECT: "nucleotide", SCOPE2: "in dna", FOR_PURPOSE: "be encode"]
+
+	// CENTRAL         MADEOF: DNA are made of two sequences of nucleotides linked together     (9a8c-9e9d-2f7d-537e) [ OBJECT:"dna", VALUE:"two sequence of", MATERIAL:"nucleotide", SCOPE:"link together" ]
+	//row autoRow1 = [UUID:"9a8c-9e9d-2f7d-537e", OBJECT: "dna", VALUE: "two sequence of", MATERIAL: "nucleotide", SCOPE: "link together"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"9a8c-9e9d-2f7d-537e", OBJECT: "dna", VALUE: "two sequence of", MATERIAL: "nucleotide", SCOPE: "link together"]
+
+	// CENTRAL         KINDOF: a nucleotide is a kind of basic unit of genetic information     (2425-834b-a516-1a0d) [ HYPONYM:"nucleotide", HYPERNYM:"basic unit", SCOPE2:"of genetic information" ]
+	//row autoRow2 = [UUID:"2425-834b-a516-1a0d", HYPONYM: "nucleotide", HYPERNYM: "basic unit", SCOPE2: "of genetic information"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"2425-834b-a516-1a0d", HYPONYM: "nucleotide", HYPERNYM: "basic unit", SCOPE2: "of genetic information"]
+
+	// CENTRAL         MADEOF: proteins are made of a chain of 20 amino acids     (8f6f-b765-8298-2ac5) [ OBJECT:"protein", VALUE:"chain of 20", MATERIAL:"amino acid" ]
+	//row autoRow3 = [UUID:"8f6f-b765-8298-2ac5", OBJECT: "protein", VALUE: "chain of 20", MATERIAL: "amino acid"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"8f6f-b765-8298-2ac5", OBJECT: "protein", VALUE: "chain of 20", MATERIAL: "amino acid"]
+
+	// CENTRAL         CONTAINS: the sequence of nucleotides contains genetic information for the organism     (dfc7-ea44-9a0a-a350) [ OBJECT_AGENT:"sequence of nucleotide", WHAT_IT_CONTAINS:"genetic information", SCOPE:"for organism" ]
+	//row autoRow4 = [UUID:"dfc7-ea44-9a0a-a350", OBJECT_AGENT: "sequence of nucleotide", WHAT_IT_CONTAINS: "genetic information", SCOPE: "for organism"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"dfc7-ea44-9a0a-a350", OBJECT_AGENT: "sequence of nucleotide", WHAT_IT_CONTAINS: "genetic information", SCOPE: "for organism"]
+
+	// CENTRAL         TRANSFER: translation is when genetic information flows from RNA to proteins     (73e3-8544-fa97-e4fb) [ PROCESS_NAME:"translation", ACTOR_WHO:"genetic information", VERB:"flow", SOURCE:"rna", DESTINATION:"protein" ]
+	//row autoRow5 = [UUID:"73e3-8544-fa97-e4fb", PROCESS_NAME: "translation", ACTOR_WHO: "genetic information", VERB: "flow", SOURCE: "rna", DESTINATION: "protein"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"73e3-8544-fa97-e4fb", PROCESS_NAME: "translation", ACTOR_WHO: "genetic information", VERB: "flow", SOURCE: "rna", DESTINATION: "protein"]
+
+	// CENTRAL         USEDFOR: genetic information can be used for making proteins     (205f-a820-0cda-de3c) [ AGENT_OBJECT:"genetic information", QUALIFIER:"be", FOR_PURPOSE:"make", PATIENT:"protein" ]
+	//row autoRow6 = [UUID:"205f-a820-0cda-de3c", AGENT_OBJECT: "genetic information", QUALIFIER: "be", FOR_PURPOSE: "make", PATIENT: "protein"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"205f-a820-0cda-de3c", AGENT_OBJECT: "genetic information", QUALIFIER: "be", FOR_PURPOSE: "make", PATIENT: "protein"]
+
+	// CENTRAL         ACTION: genetic information is encoded in genetic code     (3ba4-7de7-8125-4e20) [ ADJ:"genetic", AGENT_OBJECT:"information", ACTION2:"be encode", OBJECT_PROPERTY:"in genetic code" ]
+	//row autoRow7 = [UUID:"3ba4-7de7-8125-4e20", ADJ: "genetic", AGENT_OBJECT: "information", ACTION2: "be encode", OBJECT_PROPERTY: "in genetic code"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3ba4-7de7-8125-4e20", ADJ: "genetic", AGENT_OBJECT: "information", ACTION2: "be encode", OBJECT_PROPERTY: "in genetic code"]
+
+	// CENTRAL         REQUIRES: making proteins requires genetic information     (def0-6991-a084-0b14) [ ACTION1:"make", OBJECT_AGENT_PROCESS:"protein", VERB_REQUIRES:"require", QUANTITY_VALUE:"genetic", OBJECT:"information" ]
+	//row autoRow8 = [UUID:"def0-6991-a084-0b14", ACTION1: "make", OBJECT_AGENT_PROCESS: "protein", VERB_REQUIRES: "require", QUANTITY_VALUE: "genetic", OBJECT: "information"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"def0-6991-a084-0b14", ACTION1: "make", OBJECT_AGENT_PROCESS: "protein", VERB_REQUIRES: "require", QUANTITY_VALUE: "genetic", OBJECT: "information"]
+
+	// CENTRAL         CONTAINS: genes contains genetic information     (e5cc-028d-dd22-6e8f) [ OBJECT_AGENT:"gene", WHAT_IT_CONTAINS:"genetic information" ]
+	//row autoRow9 = [UUID:"e5cc-028d-dd22-6e8f", OBJECT_AGENT: "gene", WHAT_IT_CONTAINS: "genetic information"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"e5cc-028d-dd22-6e8f", OBJECT_AGENT: "gene", WHAT_IT_CONTAINS: "genetic information"]
+
+	// CENTRAL         PROCESSSTAGES-ORDERS: In the central dogma of molecular biology , translation follows transcription     (b5fa-ca29-d311-6b06) [ PROCESS_NAME:"central dogma of molecular biology", STAGEAFTER_STAGE:"translation", FOLLOWS_PARTOF:"follow", STAGEBEFORE:"transcription" ]
+	//row autoRow10 = [UUID:"b5fa-ca29-d311-6b06", PROCESS_NAME: "central dogma of molecular biology", STAGEAFTER_STAGE: "translation", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "transcription"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"b5fa-ca29-d311-6b06", PROCESS_NAME: "central dogma of molecular biology", STAGEAFTER_STAGE: "translation", FOLLOWS_PARTOF: "follow", STAGEBEFORE: "transcription"]
+
+	// CENTRAL         ACTION: the central dogma of molecular biology begins with the transcription of DNA     (bbac-8b14-0705-6c99) [ DEFINITION_NAME:"central dogma of molecular biology", ACTION2:"begin with", OBJECT_PROPERTY:"transcription of dna" ]
+	//row autoRow11 = [UUID:"bbac-8b14-0705-6c99", DEFINITION_NAME: "central dogma of molecular biology", ACTION2: "begin with", OBJECT_PROPERTY: "transcription of dna"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"bbac-8b14-0705-6c99", DEFINITION_NAME: "central dogma of molecular biology", ACTION2: "begin with", OBJECT_PROPERTY: "transcription of dna"]
+
+	// CENTRAL         TRANSFER: transcription is when genetic information flows from DNA to RNA     (4101-0f31-6871-d4ea) [ PROCESS_NAME:"transcription", ACTOR_WHO:"genetic information", VERB:"flow", SOURCE:"dna", DESTINATION:"rna" ]
+	//row autoRow12 = [UUID:"4101-0f31-6871-d4ea", PROCESS_NAME: "transcription", ACTOR_WHO: "genetic information", VERB: "flow", SOURCE: "dna", DESTINATION: "rna"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"4101-0f31-6871-d4ea", PROCESS_NAME: "transcription", ACTOR_WHO: "genetic information", VERB: "flow", SOURCE: "dna", DESTINATION: "rna"]
+
+	// LEXGLUE         SYNONYMY: to be found in means to be contained in     (e57b-18c2-73ff-869b) [ ACTION1:"be find in", ACTION2:"be contain in" ]
+	//row autoRow13 = [UUID:"e57b-18c2-73ff-869b", ACTION1: "be find in", ACTION2: "be contain in"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"e57b-18c2-73ff-869b", ACTION1: "be find in", ACTION2: "be contain in"]
+
+	// LEXGLUE         SYNONYMY: unit is similar to part     (c78b-0a6d-70b9-47ff) [ X1:"unit", X2:"part" ]
+	//row autoRow14 = [UUID:"c78b-0a6d-70b9-47ff", X1: "unit", X2: "part"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"c78b-0a6d-70b9-47ff", X1: "unit", X2: "part"]
+
+endinferencepattern

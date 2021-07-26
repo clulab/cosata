@@ -1,0 +1,54 @@
+// Automatically converted pattern
+inferencepattern LIFE_REPROD_Selective_Breeding
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: crops are a kind of edible plant for eating     (281b-9541-e1c7-6c92) [ HYPONYM:"crop", SCOPE1:"edible", HYPERNYM:"plant", FOR_PURPOSE:"eat" ]
+	//        HINTROW a vegetable is a kind of plant     (6755-3424-c45b-3c9c) [ HYPONYM:"vegetable", HYPERNYM:"plant" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// GROUNDING       KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//        HINTROW an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "organism"]
+
+	// CENTRAL         AFFECT: genetic variation in offspring has a positive impact on an organism 's ; offspring 's survival ; health ; ability to reproduce     (03ba-1030-0607-8d07) [ OBJECT_PROPERTY:"genetic variation in offspring", POSITIVE_NEGATIVE:"positive", ADJ:"organism;offspring", PATIENT:"survive;health;ability reproduce" ]
+	//row autoRow2 = [UUID:"03ba-1030-0607-8d07", OBJECT_PROPERTY: "genetic variation in offspring", POSITIVE_NEGATIVE: "positive", ADJ: "organism", PATIENT: "ability reproduce"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"03ba-1030-0607-8d07", OBJECT_PROPERTY: "genetic variation in offspring", POSITIVE_NEGATIVE: "positive", ADJ: "organism", PATIENT: "ability reproduce"]
+
+	// CENTRAL         ACTION: selective breeding is when an organism receives selective genetic traits from its parents by human design     (231b-e81a-0f32-3c10) [ DEFINITION_NAME:"selective breed", AGENT_OBJECT:"organism", ACTION2:"receive", OBJECT_PROPERTY:"selective genetic trait", WHEN_WHERE:"from parent", HOW:"human design" ]
+	//row autoRow3 = [UUID:"231b-e81a-0f32-3c10", DEFINITION_NAME: "selective breed", AGENT_OBJECT: "organism", ACTION2: "receive", OBJECT_PROPERTY: "selective genetic trait", WHEN_WHERE: "from parent", HOW: "human design"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"231b-e81a-0f32-3c10", DEFINITION_NAME: "selective breed", AGENT_OBJECT: "organism", ACTION2: "receive", OBJECT_PROPERTY: "selective genetic trait", WHEN_WHERE: "from parent", HOW: "human design"]
+
+	// CENTRAL         CHANGE-VEC: selective breeding decreases genetic diversity     (e065-054d-5d91-ac7e) [ ACTION:"selective breed", DIRECTION:"decrease", PATIENT:"genetic diversity" ]
+	//row autoRow4 = [UUID:"e065-054d-5d91-ac7e", ACTION: "selective breed", DIRECTION: "decrease", PATIENT: "genetic diversity"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"e065-054d-5d91-ac7e", ACTION: "selective breed", DIRECTION: "decrease", PATIENT: "genetic diversity"]
+
+	// CENTRAL         VEHICLE: genes is a vehicle for passing inherited characteristics from parent to offspring     (42cf-e041-f00a-7e84) [ ACTOR_WHO:"gene", VERB:"pass", WHAT:"inherit characteristic", SOURCE:"parent", DESTINATION:"offspring" ]
+	//row autoRow5 = [UUID:"42cf-e041-f00a-7e84", ACTOR_WHO: "gene", VERB: "pass", WHAT: "inherit characteristic", SOURCE: "parent", DESTINATION: "offspring"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"42cf-e041-f00a-7e84", ACTOR_WHO: "gene", VERB: "pass", WHAT: "inherit characteristic", SOURCE: "parent", DESTINATION: "offspring"]
+
+	// CENTRAL         ACTION: traits can be determined by one pair ; many pairs of genes in an organism     (b514-8bda-4ce6-d5c4) [ AGENT_OBJECT:"trait", QUANITIFIER:"be", ACTION2:"determine", HOW:"one pair;many pair", SCOPE2:"of gene in organism" ]
+	//row autoRow6 = [UUID:"b514-8bda-4ce6-d5c4", AGENT_OBJECT: "trait", QUANITIFIER: "be", ACTION2: "determine", HOW: "one pair", SCOPE2: "of gene in organism"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"b514-8bda-4ce6-d5c4", AGENT_OBJECT: "trait", QUANITIFIER: "be", ACTION2: "determine", HOW: "one pair", SCOPE2: "of gene in organism"]
+
+	// CENTRAL         IFTHEN: if a trait is chosen , then the trait is desirable     (76cf-d0ad-1d02-d261) [ THING:"trait", ACTION1:"choose", ACTOR_AGENT_PROCESS2:"trait", OBJECT_PROPERTY3:"desirable" ]
+	//row autoRow7 = [UUID:"76cf-d0ad-1d02-d261", THING: "trait", ACTION1: "choose", ACTOR_AGENT_PROCESS2: "trait", OBJECT_PROPERTY3: "desirable"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"76cf-d0ad-1d02-d261", THING: "trait", ACTION1: "choose", ACTOR_AGENT_PROCESS2: "trait", OBJECT_PROPERTY3: "desirable"]
+
+	// CENTRAL         KINDOF: trait is a kind of genetic information     (a4ee-7f65-23db-559a) [ HYPONYM:"trait", HYPERNYM:"genetic information" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"a4ee-7f65-23db-559a", HYPONYM: "trait", HYPERNYM: "genetic information"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"a4ee-7f65-23db-559a", HYPONYM: "trait", HYPERNYM: "genetic information"]
+
+	// CENTRAL         CONTAINS: genes contains genetic information     (e5cc-028d-dd22-6e8f) [ OBJECT_AGENT:"gene", WHAT_IT_CONTAINS:"genetic information" ]
+	//row autoRow9 = [UUID:"e5cc-028d-dd22-6e8f", OBJECT_AGENT: "gene", WHAT_IT_CONTAINS: "genetic information"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"e5cc-028d-dd22-6e8f", OBJECT_AGENT: "gene", WHAT_IT_CONTAINS: "genetic information"]
+
+endinferencepattern

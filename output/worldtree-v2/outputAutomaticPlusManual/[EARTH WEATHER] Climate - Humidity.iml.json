@@ -1,0 +1,248 @@
+{"patternMatches": [
+{
+	"patternName":"EARTH_WEATHER_Climate_Humidity",
+	"matches":[
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","e30b-6621-73f9-b0a3","4493-589b-f126-ea3e","cea7-aca6-4f38-15d1","1dba-dc42-8ca9-0ab2","1c42-416a-fc92-2b03","33cb-429a-ce86-2d79","7896-0ee6-9c3c-f3c1","e7b5-57e9-5c3c-fe3e","6d05-237f-42f2-6589","b9e7-6612-b3bc-264a","926e-6eea-3b5a-f747","fa3b-1528-2b6e-4d28","1fd7-6b9d-6694-78b6","264c-58db-a41c-9483"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "e30b-6621-73f9-b0a3", "rowText": "Nevada is a state located in the United States of America", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4493-589b-f126-ea3e", "rowText": "the climate is low in humidity in Nevada", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cea7-aca6-4f38-15d1", "rowText": "Atlantic Ocean is a kind of ocean", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "1dba-dc42-8ca9-0ab2", "rowText": "climate is the usual kind of weather in a location over a period of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7896-0ee6-9c3c-f3c1", "rowText": "water vapor is found in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6d05-237f-42f2-6589", "rowText": "Boston is a city that is near to the coast of the Atlantic Ocean", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "926e-6eea-3b5a-f747", "rowText": "moisture is a kind of environmental factor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1fd7-6b9d-6694-78b6", "rowText": "moist air mass contains a high amount of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"low_0", "value":"low" },
+			{ "name":"nevada_1", "value":"nevada" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"low_0", "value":"lower" },
+			{ "name":"nevada_1", "value":"Nevada" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","e30b-6621-73f9-b0a3","4493-589b-f126-ea3e","cea7-aca6-4f38-15d1","1dba-dc42-8ca9-0ab2","1c42-416a-fc92-2b03","33cb-429a-ce86-2d79","7896-0ee6-9c3c-f3c1","e7b5-57e9-5c3c-fe3e","6d05-237f-42f2-6589","b9e7-6612-b3bc-264a","926e-6eea-3b5a-f747","fa3b-1528-2b6e-4d28","1fd7-6b9d-6694-78b6","264c-58db-a41c-9483"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "e30b-6621-73f9-b0a3", "rowText": "Nevada is a state located in the United States of America", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4493-589b-f126-ea3e", "rowText": "the climate is low in humidity in Nevada", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cea7-aca6-4f38-15d1", "rowText": "Atlantic Ocean is a kind of ocean", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "1dba-dc42-8ca9-0ab2", "rowText": "climate is the usual kind of weather in a location over a period of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7896-0ee6-9c3c-f3c1", "rowText": "water vapor is found in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6d05-237f-42f2-6589", "rowText": "Boston is a city that is near to the coast of the Atlantic Ocean", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "926e-6eea-3b5a-f747", "rowText": "moisture is a kind of environmental factor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1fd7-6b9d-6694-78b6", "rowText": "moist air mass contains a high amount of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"low_0", "value":"low" },
+			{ "name":"nevada_1", "value":"nevada" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"low_0", "value":"low" },
+			{ "name":"nevada_1", "value":"Nevada" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","e30b-6621-73f9-b0a3","4493-589b-f126-ea3e","cea7-aca6-4f38-15d1","1dba-dc42-8ca9-0ab2","1c42-416a-fc92-2b03","33cb-429a-ce86-2d79","7896-0ee6-9c3c-f3c1","e7b5-57e9-5c3c-fe3e","6d05-237f-42f2-6589","b9e7-6612-b3bc-264a","926e-6eea-3b5a-f747","1fd7-6b9d-6694-78b6","264c-58db-a41c-9483"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "e30b-6621-73f9-b0a3", "rowText": "Nevada is a state located in the United States of America", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4493-589b-f126-ea3e", "rowText": "the climate is low in humidity in Nevada", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cea7-aca6-4f38-15d1", "rowText": "Atlantic Ocean is a kind of ocean", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "1dba-dc42-8ca9-0ab2", "rowText": "climate is the usual kind of weather in a location over a period of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7896-0ee6-9c3c-f3c1", "rowText": "water vapor is found in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6d05-237f-42f2-6589", "rowText": "Boston is a city that is near to the coast of the Atlantic Ocean", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "926e-6eea-3b5a-f747", "rowText": "moisture is a kind of environmental factor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1fd7-6b9d-6694-78b6", "rowText": "moist air mass contains a high amount of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"low_0", "value":"low" },
+			{ "name":"nevada_1", "value":"nevada" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"low_0", "value":"lower" },
+			{ "name":"nevada_1", "value":"Nevada" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","e30b-6621-73f9-b0a3","4493-589b-f126-ea3e","cea7-aca6-4f38-15d1","1dba-dc42-8ca9-0ab2","1c42-416a-fc92-2b03","33cb-429a-ce86-2d79","7896-0ee6-9c3c-f3c1","e7b5-57e9-5c3c-fe3e","b9e7-6612-b3bc-264a","926e-6eea-3b5a-f747","fa3b-1528-2b6e-4d28","1fd7-6b9d-6694-78b6","264c-58db-a41c-9483"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "e30b-6621-73f9-b0a3", "rowText": "Nevada is a state located in the United States of America", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4493-589b-f126-ea3e", "rowText": "the climate is low in humidity in Nevada", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cea7-aca6-4f38-15d1", "rowText": "Atlantic Ocean is a kind of ocean", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "1dba-dc42-8ca9-0ab2", "rowText": "climate is the usual kind of weather in a location over a period of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7896-0ee6-9c3c-f3c1", "rowText": "water vapor is found in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "926e-6eea-3b5a-f747", "rowText": "moisture is a kind of environmental factor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1fd7-6b9d-6694-78b6", "rowText": "moist air mass contains a high amount of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"low_0", "value":"low" },
+			{ "name":"nevada_1", "value":"nevada" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"low_0", "value":"lower" },
+			{ "name":"nevada_1", "value":"Nevada" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","e30b-6621-73f9-b0a3","4493-589b-f126-ea3e","cea7-aca6-4f38-15d1","1dba-dc42-8ca9-0ab2","1c42-416a-fc92-2b03","33cb-429a-ce86-2d79","7896-0ee6-9c3c-f3c1","e7b5-57e9-5c3c-fe3e","6d05-237f-42f2-6589","b9e7-6612-b3bc-264a","926e-6eea-3b5a-f747","1fd7-6b9d-6694-78b6","264c-58db-a41c-9483"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "e30b-6621-73f9-b0a3", "rowText": "Nevada is a state located in the United States of America", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4493-589b-f126-ea3e", "rowText": "the climate is low in humidity in Nevada", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cea7-aca6-4f38-15d1", "rowText": "Atlantic Ocean is a kind of ocean", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "1dba-dc42-8ca9-0ab2", "rowText": "climate is the usual kind of weather in a location over a period of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7896-0ee6-9c3c-f3c1", "rowText": "water vapor is found in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "6d05-237f-42f2-6589", "rowText": "Boston is a city that is near to the coast of the Atlantic Ocean", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "926e-6eea-3b5a-f747", "rowText": "moisture is a kind of environmental factor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1fd7-6b9d-6694-78b6", "rowText": "moist air mass contains a high amount of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"low_0", "value":"low" },
+			{ "name":"nevada_1", "value":"nevada" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"low_0", "value":"low" },
+			{ "name":"nevada_1", "value":"Nevada" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","e30b-6621-73f9-b0a3","4493-589b-f126-ea3e","cea7-aca6-4f38-15d1","1dba-dc42-8ca9-0ab2","1c42-416a-fc92-2b03","33cb-429a-ce86-2d79","7896-0ee6-9c3c-f3c1","e7b5-57e9-5c3c-fe3e","b9e7-6612-b3bc-264a","926e-6eea-3b5a-f747","fa3b-1528-2b6e-4d28","1fd7-6b9d-6694-78b6","264c-58db-a41c-9483"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "e30b-6621-73f9-b0a3", "rowText": "Nevada is a state located in the United States of America", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4493-589b-f126-ea3e", "rowText": "the climate is low in humidity in Nevada", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cea7-aca6-4f38-15d1", "rowText": "Atlantic Ocean is a kind of ocean", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "1dba-dc42-8ca9-0ab2", "rowText": "climate is the usual kind of weather in a location over a period of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7896-0ee6-9c3c-f3c1", "rowText": "water vapor is found in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "926e-6eea-3b5a-f747", "rowText": "moisture is a kind of environmental factor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "fa3b-1528-2b6e-4d28", "rowText": "moisture is a property of air mass and includes ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1fd7-6b9d-6694-78b6", "rowText": "moist air mass contains a high amount of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"low_0", "value":"low" },
+			{ "name":"nevada_1", "value":"nevada" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"low_0", "value":"low" },
+			{ "name":"nevada_1", "value":"Nevada" }
+		]
+		},
+		{
+		"uuids": ["3cfa-bd2a-6867-18ba","e30b-6621-73f9-b0a3","4493-589b-f126-ea3e","cea7-aca6-4f38-15d1","1dba-dc42-8ca9-0ab2","1c42-416a-fc92-2b03","33cb-429a-ce86-2d79","7896-0ee6-9c3c-f3c1","e7b5-57e9-5c3c-fe3e","b9e7-6612-b3bc-264a","926e-6eea-3b5a-f747","1fd7-6b9d-6694-78b6","264c-58db-a41c-9483"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3cfa-bd2a-6867-18ba", "rowText": "drier means lower in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "e30b-6621-73f9-b0a3", "rowText": "Nevada is a state located in the United States of America", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4493-589b-f126-ea3e", "rowText": "the climate is low in humidity in Nevada", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cea7-aca6-4f38-15d1", "rowText": "Atlantic Ocean is a kind of ocean", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "1dba-dc42-8ca9-0ab2", "rowText": "climate is the usual kind of weather in a location over a period of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7896-0ee6-9c3c-f3c1", "rowText": "water vapor is found in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "926e-6eea-3b5a-f747", "rowText": "moisture is a kind of environmental factor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1fd7-6b9d-6694-78b6", "rowText": "moist air mass contains a high amount of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"low_0", "value":"low" },
+			{ "name":"nevada_1", "value":"nevada" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"low_0", "value":"lower" },
+			{ "name":"nevada_1", "value":"Nevada" }
+		]
+		},
+		{
+		"uuids": ["5554-6d9d-779d-d5f5","e30b-6621-73f9-b0a3","4493-589b-f126-ea3e","cea7-aca6-4f38-15d1","1dba-dc42-8ca9-0ab2","1c42-416a-fc92-2b03","33cb-429a-ce86-2d79","7896-0ee6-9c3c-f3c1","e7b5-57e9-5c3c-fe3e","b9e7-6612-b3bc-264a","926e-6eea-3b5a-f747","1fd7-6b9d-6694-78b6","264c-58db-a41c-9483"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5554-6d9d-779d-d5f5", "rowText": "dry means low in amount of water ; wetness ; moisture", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "e30b-6621-73f9-b0a3", "rowText": "Nevada is a state located in the United States of America", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "4493-589b-f126-ea3e", "rowText": "the climate is low in humidity in Nevada", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "cea7-aca6-4f38-15d1", "rowText": "Atlantic Ocean is a kind of ocean", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "1dba-dc42-8ca9-0ab2", "rowText": "climate is the usual kind of weather in a location over a period of time", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "1c42-416a-fc92-2b03", "rowText": "humidity is the amount of water vapor ; moisture in the air ; in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "33cb-429a-ce86-2d79", "rowText": "humidity is a property of weather and include ordered values of dry ; humid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "7896-0ee6-9c3c-f3c1", "rowText": "water vapor is found in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "e7b5-57e9-5c3c-fe3e", "rowText": "An example of moisture is water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b9e7-6612-b3bc-264a", "rowText": "as distance from water decreases , humidity will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "926e-6eea-3b5a-f747", "rowText": "moisture is a kind of environmental factor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "1fd7-6b9d-6694-78b6", "rowText": "moist air mass contains a high amount of water vapor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "264c-58db-a41c-9483", "rowText": "oceans are the source of most of water vapor in the atmosphere", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"low_0", "value":"low" },
+			{ "name":"nevada_1", "value":"nevada" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow12", "value":"" },
+			{ "name":"autoRow9", "value":"" },
+			{ "name":"low_0", "value":"low" },
+			{ "name":"nevada_1", "value":"Nevada" }
+		]
+		}
+	]
+}
+]}
+

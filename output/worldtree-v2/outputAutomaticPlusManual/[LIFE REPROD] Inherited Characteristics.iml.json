@@ -1,0 +1,1234 @@
+{"patternMatches": [
+{
+	"patternName":"LIFE_REPROD_Inherited_Characteristics",
+	"matches":[
+		{
+		"uuids": ["29be-69ad-17f4-11f0","2f86-693e-7175-9932","bb63-bcc5-0cd8-72db","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "29be-69ad-17f4-11f0", "rowText": "the color of ; coloration of fur is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "2f86-693e-7175-9932", "rowText": "fur is often part of an animal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"livingThing", "value":"animal" },
+			{ "name":"part", "value":"fur" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"livingThing", "value":"animal" },
+			{ "name":"part", "value":"fur" }
+		]
+		},
+		{
+		"uuids": ["7bed-ba1b-4cde-f393","9e7f-c460-d954-2617","2e89-d8e8-a8fb-9acc","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7bed-ba1b-4cde-f393", "rowText": "the type of seed of a plant is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9e7f-c460-d954-2617", "rowText": "a seed is a part of a plant", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "2e89-d8e8-a8fb-9acc", "rowText": "a plant is a kind of living thing", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"livingThing", "value":"plant" },
+			{ "name":"part", "value":"seed" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"livingThing", "value":"plant" },
+			{ "name":"part", "value":"seed" }
+		]
+		},
+		{
+		"uuids": ["29be-69ad-17f4-11f0","2f86-693e-7175-9932","bb63-bcc5-0cd8-72db","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "29be-69ad-17f4-11f0", "rowText": "the color of ; coloration of fur is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "2f86-693e-7175-9932", "rowText": "fur is often part of an animal", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "bb63-bcc5-0cd8-72db", "rowText": "an animal is a kind of living thing", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"animal" },
+			{ "name":"part", "value":"fur" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"animal" },
+			{ "name":"part", "value":"fur" }
+		]
+		},
+		{
+		"uuids": ["7bed-ba1b-4cde-f393","9e7f-c460-d954-2617","2e89-d8e8-a8fb-9acc","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7bed-ba1b-4cde-f393", "rowText": "the type of seed of a plant is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "9e7f-c460-d954-2617", "rowText": "a seed is a part of a plant", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "2e89-d8e8-a8fb-9acc", "rowText": "a plant is a kind of living thing", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"plant" },
+			{ "name":"part", "value":"seed" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"plant" },
+			{ "name":"part", "value":"seed" }
+		]
+		},
+		{
+		"uuids": ["1763-9f64-7941-cb50","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1763-9f64-7941-cb50", "rowText": "eye color is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"eye color" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"eye color" }
+		]
+		},
+		{
+		"uuids": ["c390-00e1-36dd-2ae2","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c390-00e1-36dd-2ae2", "rowText": "the shape of body parts is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"body part" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"body parts" }
+		]
+		},
+		{
+		"uuids": ["96e0-40fd-6189-dc8f","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "96e0-40fd-6189-dc8f", "rowText": "curly hair is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"curly hair" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"curly hair" }
+		]
+		},
+		{
+		"uuids": ["29be-69ad-17f4-11f0","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "29be-69ad-17f4-11f0", "rowText": "the color of ; coloration of fur is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"fur" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"fur" }
+		]
+		},
+		{
+		"uuids": ["78a9-0629-0526-4b03","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78a9-0629-0526-4b03", "rowText": "height is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"height" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"height" }
+		]
+		},
+		{
+		"uuids": ["cfdf-d0cc-a5c3-d5c1","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "cfdf-d0cc-a5c3-d5c1", "rowText": "freckles are an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"freckle" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"freckles" }
+		]
+		},
+		{
+		"uuids": ["102a-fa79-43cd-e9a4","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "102a-fa79-43cd-e9a4", "rowText": "the colors of parts of an organism are inherited characteristics", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"part" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"parts" }
+		]
+		},
+		{
+		"uuids": ["b32d-db8e-41c0-13c8","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b32d-db8e-41c0-13c8", "rowText": "the length of body parts is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"body part" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"body parts" }
+		]
+		},
+		{
+		"uuids": ["a616-023f-d122-f2f3","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a616-023f-d122-f2f3", "rowText": "reproductive behavior is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"reproductive behavior" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"reproductive behavior" }
+		]
+		},
+		{
+		"uuids": ["7bed-ba1b-4cde-f393","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7bed-ba1b-4cde-f393", "rowText": "the type of seed of a plant is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"seed" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"seed" }
+		]
+		},
+		{
+		"uuids": ["1d43-ce6e-b5c5-c568","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1d43-ce6e-b5c5-c568", "rowText": "the thickness of the parts of an organism is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"part" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"parts" }
+		]
+		},
+		{
+		"uuids": ["b4e7-dad7-cb84-1e31","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b4e7-dad7-cb84-1e31", "rowText": "the number of body parts of an organism is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"body part" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"body parts" }
+		]
+		},
+		{
+		"uuids": ["5d64-faba-9abd-fd70","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5d64-faba-9abd-fd70", "rowText": "senses are an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"sense" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"senses" }
+		]
+		},
+		{
+		"uuids": ["e8ec-4518-aa04-2498","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "e8ec-4518-aa04-2498", "rowText": "the size of an organism is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"organism" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"organism" }
+		]
+		},
+		{
+		"uuids": ["6436-ff22-8a35-44b1","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6436-ff22-8a35-44b1", "rowText": "the diet of an animal is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"animal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"animal" }
+		]
+		},
+		{
+		"uuids": ["bc35-76af-1eae-89fd","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-76af-1eae-89fd", "rowText": "sound of voice is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"voice" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"voice" }
+		]
+		},
+		{
+		"uuids": ["710b-668d-7cf4-e34a","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "710b-668d-7cf4-e34a", "rowText": "species is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"species" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"species" }
+		]
+		},
+		{
+		"uuids": ["2aff-1db5-28ee-898f","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2aff-1db5-28ee-898f", "rowText": "a spider spinning a web is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"spider" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"spider" }
+		]
+		},
+		{
+		"uuids": ["073a-7112-f53b-18fc","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "073a-7112-f53b-18fc", "rowText": "blood type is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"blood type" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"blood type" }
+		]
+		},
+		{
+		"uuids": ["54cb-0bcd-362b-51d6","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "54cb-0bcd-362b-51d6", "rowText": "the growth of antler is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"antler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"antler" }
+		]
+		},
+		{
+		"uuids": ["88bb-ac12-ed4e-764b","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","298a-b710-adc5-7d76","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "88bb-ac12-ed4e-764b", "rowText": "animals building a shelter is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "298a-b710-adc5-7d76", "rowText": "an organism 's environment affects that organism 's acquired characteristics", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"animal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"animals" }
+		]
+		},
+		{
+		"uuids": ["1763-9f64-7941-cb50","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1763-9f64-7941-cb50", "rowText": "eye color is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"eye color" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"eye color" }
+		]
+		},
+		{
+		"uuids": ["c390-00e1-36dd-2ae2","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c390-00e1-36dd-2ae2", "rowText": "the shape of body parts is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"body part" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"body parts" }
+		]
+		},
+		{
+		"uuids": ["96e0-40fd-6189-dc8f","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "96e0-40fd-6189-dc8f", "rowText": "curly hair is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"curly hair" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"curly hair" }
+		]
+		},
+		{
+		"uuids": ["29be-69ad-17f4-11f0","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "29be-69ad-17f4-11f0", "rowText": "the color of ; coloration of fur is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"fur" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"fur" }
+		]
+		},
+		{
+		"uuids": ["78a9-0629-0526-4b03","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "78a9-0629-0526-4b03", "rowText": "height is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"height" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"height" }
+		]
+		},
+		{
+		"uuids": ["cfdf-d0cc-a5c3-d5c1","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "cfdf-d0cc-a5c3-d5c1", "rowText": "freckles are an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"freckle" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"freckles" }
+		]
+		},
+		{
+		"uuids": ["102a-fa79-43cd-e9a4","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "102a-fa79-43cd-e9a4", "rowText": "the colors of parts of an organism are inherited characteristics", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"part" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"parts" }
+		]
+		},
+		{
+		"uuids": ["b32d-db8e-41c0-13c8","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b32d-db8e-41c0-13c8", "rowText": "the length of body parts is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"body part" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"body parts" }
+		]
+		},
+		{
+		"uuids": ["a616-023f-d122-f2f3","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "a616-023f-d122-f2f3", "rowText": "reproductive behavior is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"reproductive behavior" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"reproductive behavior" }
+		]
+		},
+		{
+		"uuids": ["7bed-ba1b-4cde-f393","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7bed-ba1b-4cde-f393", "rowText": "the type of seed of a plant is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"seed" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"seed" }
+		]
+		},
+		{
+		"uuids": ["1d43-ce6e-b5c5-c568","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1d43-ce6e-b5c5-c568", "rowText": "the thickness of the parts of an organism is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"part" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"parts" }
+		]
+		},
+		{
+		"uuids": ["b4e7-dad7-cb84-1e31","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b4e7-dad7-cb84-1e31", "rowText": "the number of body parts of an organism is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"body part" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"body parts" }
+		]
+		},
+		{
+		"uuids": ["5d64-faba-9abd-fd70","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "5d64-faba-9abd-fd70", "rowText": "senses are an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"sense" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"senses" }
+		]
+		},
+		{
+		"uuids": ["e8ec-4518-aa04-2498","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "e8ec-4518-aa04-2498", "rowText": "the size of an organism is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"organism" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"organism" }
+		]
+		},
+		{
+		"uuids": ["6436-ff22-8a35-44b1","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "6436-ff22-8a35-44b1", "rowText": "the diet of an animal is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"animal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"animal" }
+		]
+		},
+		{
+		"uuids": ["bc35-76af-1eae-89fd","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bc35-76af-1eae-89fd", "rowText": "sound of voice is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"voice" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"voice" }
+		]
+		},
+		{
+		"uuids": ["710b-668d-7cf4-e34a","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "710b-668d-7cf4-e34a", "rowText": "species is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"species" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"species" }
+		]
+		},
+		{
+		"uuids": ["2aff-1db5-28ee-898f","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2aff-1db5-28ee-898f", "rowText": "a spider spinning a web is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"spider" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"spider" }
+		]
+		},
+		{
+		"uuids": ["073a-7112-f53b-18fc","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "073a-7112-f53b-18fc", "rowText": "blood type is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"blood type" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"blood type" }
+		]
+		},
+		{
+		"uuids": ["54cb-0bcd-362b-51d6","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "54cb-0bcd-362b-51d6", "rowText": "the growth of antler is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"antler" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"antler" }
+		]
+		},
+		{
+		"uuids": ["88bb-ac12-ed4e-764b","c566-22fd-4845-1df2","42cf-e041-f00a-7e84","ee78-0795-be47-6ad8","87a0-dd02-dd6d-ee60","b756-83bc-074d-62a2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "88bb-ac12-ed4e-764b", "rowText": "animals building a shelter is an inherited characteristic", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2A", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "c566-22fd-4845-1df2", "rowText": "genes are able to determine the inherited characteristics of a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "42cf-e041-f00a-7e84", "rowText": "genes is a vehicle for passing inherited characteristics from parent to offspring", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "ee78-0795-be47-6ad8", "rowText": "inheriting is when an inherited characteristic is copied ; is passed from parent to offspring by genetics ; DNA", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "87a0-dd02-dd6d-ee60", "rowText": "an organism is a living thing", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "b756-83bc-074d-62a2", "rowText": "coloration means a thing 's color", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"animal" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow2", "value":"" },
+			{ "name":"autoRow2A", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"livingThing", "value":"" },
+			{ "name":"part", "value":"animals" }
+		]
+		}
+	]
+}
+]}
+

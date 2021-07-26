@@ -1,0 +1,91 @@
+// Automatically converted pattern
+inferencepattern ENG_CONV_Origin_Sound_Energy
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       SOURCEOF: vibrations are a source of sound     (6f04-f08d-2b7e-a7f4) [ AGENT:"vibration", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"sound" ]
+	//        HINTROW vibrating matter can produce sound     (cf64-935e-ea78-35a4) [ ACTION:"vibrate", OBJECT_PATIENT:"matt", VERB_SOURCEOF_PROVIDE_ETC:"product", WHAT_IT_PROVIDES:"sound" ]
+	//row autoRow0 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "be source"+*"POS:IN", WHAT_IT_PROVIDES: "sound"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "be"+*"POS:NN"+*"POS:IN", WHAT_IT_PROVIDES: "sound"]
+
+	// GROUNDING       KINDOF: shaking is a kind of motion     (be5f-56dc-4b83-3d4a) [ HYPONYM:"shake", HYPERNYM:"move" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "shake", HYPERNYM: "move"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "shake", HYPERNYM: "move"]
+
+	// GROUNDING       KINDOF: a rattle is a kind of object     (55e5-2e6e-d22b-555a) [ HYPONYM:"rattle", HYPERNYM:"object" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "rattle", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "rattle", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: a shout is a kind of sound     (8cef-917a-e2d3-335e) [ HYPONYM:"shout", HYPERNYM:"sound" ]
+	//        HINTROW bark is a kind of sound     (74e3-5983-4e66-f53f) [ HYPONYM:"bark", HYPERNYM:"sound" ]
+	//        HINTROW a cluck is a kind of sound     (d7da-64da-dcb9-a4ff) [ HYPONYM:"cluck", HYPERNYM:"sound" ]
+	//        HINTROW an echo is a kind of sound     (e9e5-df09-379a-fa17) [ HYPONYM:"echo", HYPERNYM:"sound" ]
+	//  Notes: sound examples
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "sound"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "sound"]
+
+	// CENTRAL         MADEOF: objects are made of materials ; substances ; matter     (80a3-454d-e8e0-3de2) [ OBJECT:"object", MATERIAL:"material;substance;matt" ]
+	//row autoRow4 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"]
+
+	// CENTRAL         KINDOF: mechanical energy is a kind of energy     (3144-f8f2-43a4-8712) [ HYPONYM:"mechanical energy", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"3144-f8f2-43a4-8712", HYPONYM: "mechanical energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"3144-f8f2-43a4-8712", HYPONYM: "mechanical energy", HYPERNYM: "energy"]
+
+	// CENTRAL         EXAMPLES: An example of mechanical energy is an object in motion     (4aca-cf16-fcc6-1f79) [ AGENT_OBJECT1:"mechanical energy", AGENT_OBJECT2:"object in move" ]
+	//row autoRow6 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"]
+
+	// CENTRAL         KINDOF: sound is a kind of energy     (1980-256d-b685-846c) [ HYPONYM:"sound", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"1980-256d-b685-846c", HYPONYM: "sound", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"1980-256d-b685-846c", HYPONYM: "sound", HYPERNYM: "energy"]
+
+	// CENTRAL         CHANGE: energy transformation means one kind of energy changes into another kind of energy     (3d34-b43e-8a7e-07fd) [ PROCESS_NAME:"energy transformation", ACTOR_WHO:"one kind of energy", VERB:"change", INTO:"kind of energy" ]
+	//row autoRow8 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"]
+
+	// CENTRAL         KINDOF: sound is a kind of air vibration     (c73c-b25a-5409-a480) [ HYPONYM:"sound", SCOPE1:"air", HYPERNYM:"vibrate" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"c73c-b25a-5409-a480", HYPONYM: "sound", SCOPE1: "air", HYPERNYM: "vibrate"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"c73c-b25a-5409-a480", HYPONYM: "sound", SCOPE1: "air", HYPERNYM: "vibrate"]
+
+	// CENTRAL         CAUSE: matter ; molecules vibrating can cause sound     (6191-80db-d5e3-b23e) [ CONDITION_AGENT_OBJECT:"matt;molecule", CONDITION_VERB:"vibrate", RESULT_AGENT:"sound" ]
+	//row autoRow10 = [UUID:"6191-80db-d5e3-b23e", CONDITION_AGENT_OBJECT: "matt", CONDITION_VERB: "vibrate", RESULT_AGENT: "sound"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"6191-80db-d5e3-b23e", CONDITION_AGENT_OBJECT: "matt", CONDITION_VERB: "vibrate", RESULT_AGENT: "sound"]
+
+	// CENTRAL         KINDOF: vibration is a kind of motion     (84cd-6cd8-331b-f869) [ HYPONYM:"vibrate", HYPERNYM:"move" ]
+	//row autoRow11 = [UUID:"84cd-6cd8-331b-f869", HYPONYM: "vibrate", HYPERNYM: "move"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"84cd-6cd8-331b-f869", HYPONYM: "vibrate", HYPERNYM: "move"]
+
+	// CENTRAL         AFFORDANCES: sound can travel through air by vibrating air     (f672-4bbb-6fff-373c) [ ACTOR_THING:"sound", VERB:"travel", PATIENT:"through air", BY_THROUGH_HOW:"vibrate air" ]
+	//row autoRow12 = [UUID:"f672-4bbb-6fff-373c", ACTOR_THING: "sound", VERB: "travel", PATIENT: "through air", BY_THROUGH_HOW: "vibrate air"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"f672-4bbb-6fff-373c", ACTOR_THING: "sound", VERB: "travel", PATIENT: "through air", BY_THROUGH_HOW: "vibrate air"]
+
+	// CENTRAL         TRANSFER: sound is produced when mechanical energy is transformed into sound energy     (290b-0e4b-0de3-8f9f) [ PROCESS_NAME:"sound be produce", ACTOR_WHO:"mechanical energy", VERB:"be transform", DESTINATION:"sound energy" ]
+	//row autoRow13 = [UUID:"290b-0e4b-0de3-8f9f", PROCESS_NAME: "sound be produce", ACTOR_WHO: "mechanical energy", VERB: "be transform", DESTINATION: "sound energy"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"290b-0e4b-0de3-8f9f", PROCESS_NAME: "sound be produce", ACTOR_WHO: "mechanical energy", VERB: "be transform", DESTINATION: "sound energy"]
+
+	// CENTRAL         ACTION: sound travels as longitudinal waves     (5748-8e34-2dbb-e9ab) [ AGENT_OBJECT:"sound", ACTION2:"travel", OBJECT_PROPERTY:"a longitudinal wave" ]
+	//row autoRow14 = [UUID:"5748-8e34-2dbb-e9ab", AGENT_OBJECT: "sound", ACTION2: "travel", OBJECT_PROPERTY: "a longitudinal wave"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"5748-8e34-2dbb-e9ab", AGENT_OBJECT: "sound", ACTION2: "travel", OBJECT_PROPERTY: "a longitudinal wave"]
+
+	// CENTRAL         ACTION: sound waves spread in all directions away from their source     (264f-16ad-34a0-23a1) [ ADJ:"sound", AGENT_OBJECT:"wave", ACTION2:"spread", OBJECT_PROPERTY:"in direction", WHEN_WHERE:"away from source" ]
+	//row autoRow15 = [UUID:"264f-16ad-34a0-23a1", ADJ: "sound", AGENT_OBJECT: "wave", ACTION2: "spread", OBJECT_PROPERTY: "in direction", WHEN_WHERE: "away from source"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"264f-16ad-34a0-23a1", ADJ: "sound", AGENT_OBJECT: "wave", ACTION2: "spread", OBJECT_PROPERTY: "in direction", WHEN_WHERE: "away from source"]
+
+	// LEXGLUE         SYNONYMY: noise means sound     (b569-cef5-65a2-2a57) [ X1:"noise", X2:"sound" ]
+	//row autoRow16 = [UUID:"b569-cef5-65a2-2a57", X1: "noise", X2: "sound"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"b569-cef5-65a2-2a57", X1: "noise", X2: "sound"]
+
+	// LEXGLUE         SYNONYMY: motion ; movement means moving ; to move     (d8a3-10bb-9aea-178a) [ X1:"move;move", ACTION2:"move;move" ]
+	//row autoRow17 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"]
+
+endinferencepattern

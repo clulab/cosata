@@ -1,0 +1,86 @@
+// Automatically converted pattern
+inferencepattern ENG_ELEC_Engines
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       REQUIRES: using a gasoline engine requires burning gasoline     (1893-0c1c-dddc-e8c4) [ ACTION1:"use", OBJECT_AGENT_PROCESS:"gasoline engine", VERB_REQUIRES:"require", ACTION2:"burn", OBJECT:"gasoline" ]
+	//        HINTROW a combustion engine requires fuel to operate     (5029-a71e-ab37-c4f9) [ OBJECT_AGENT_PROCESS:"combust engine", VERB_REQUIRES:"require", OBJECT:"fuel", FOR_PURPOSE:"operate" ]
+	//row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: <gasoline_0>+"engine", VERB_REQUIRES: "require", OBJECT: <gasoline_0>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: <gasoline_0>+"engine", VERB_REQUIRES: "require"]
+
+	// GROUNDING       KINDOF: a car is a kind of automobile     (eb14-f908-f76d-7cf0) [ HYPONYM:"car", HYPERNYM:"automobile" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "car", HYPERNYM: "automobile"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "car", HYPERNYM: "automobile"]
+
+	// GROUNDING       KINDOF: gasoline is a kind of fuel     (96b8-8897-2576-7ee6) [ HYPONYM:"gasoline", HYPERNYM:"fuel" ]
+	//        HINTROW vegetable oil is a kind of fuel     (ba85-c8f3-c662-1200) [ HYPONYM:"vegetable oil", HYPERNYM:"fuel" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "fuel"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "fuel"]
+
+	// GROUNDING       PARTOF: a gasoline engine is a part of gasoline lawn mower     (2340-dde0-4132-fccc) [ PART:"gasoline engine", QUANTIFIER1:"be", WHOLE:"gasoline lawn mower" ]
+	//        HINTROW an engine is a part of an automobile     (3c28-d2a7-4f05-ca25) [ PART:"engine", WHOLE:"automobile" ]
+	//        HINTROW a car engine is a part of a car     (e625-b411-690a-92ec) [ PART:"car engine", QUANTIFIER1:"be", WHOLE:"car" ]
+	//row autoRow3 = [TABLE:"PARTOF", PART: <gasoline_0>+"engine", WHOLE: <gasoline_0>+*"POS:NN"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"PARTOF", PART: <gasoline_0>+"engine"]
+
+	// CENTRAL         KINDOF: mechanical energy is a kind of energy     (3144-f8f2-43a4-8712) [ HYPONYM:"mechanical energy", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"3144-f8f2-43a4-8712", HYPONYM: "mechanical energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"3144-f8f2-43a4-8712", HYPONYM: "mechanical energy", HYPERNYM: "energy"]
+
+	// CENTRAL         KINDOF: chemical energy is a kind of energy     (b043-79cc-a77e-e968) [ HYPONYM:"chemical energy", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"b043-79cc-a77e-e968", HYPONYM: "chemical energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"b043-79cc-a77e-e968", HYPONYM: "chemical energy", HYPERNYM: "energy"]
+
+	// CENTRAL         CHANGE: energy transformation means one kind of energy changes into another kind of energy     (3d34-b43e-8a7e-07fd) [ PROCESS_NAME:"energy transformation", ACTOR_WHO:"one kind of energy", VERB:"change", INTO:"kind of energy" ]
+	//row autoRow6 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"]
+
+	// CENTRAL         SOURCEOF: gasoline is a source of chemical energy     (cd91-ad1d-4230-cb44) [ AGENT:"gasoline", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"chemical energy" ]
+	//row autoRow7 = [UUID:"cd91-ad1d-4230-cb44", AGENT: <gasoline_0>, VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "chemical energy"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"cd91-ad1d-4230-cb44", AGENT: <gasoline_0>, VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "chemical energy"]
+
+	// CENTRAL         KINDOF: kinetic energy is a kind of mechanical energy     (8f4b-dcdb-2be5-9423) [ HYPONYM:"kinetic energy", HYPERNYM:"mechanical energy" ]
+	//  Notes: peripheral
+	//row autoRow8 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"]
+
+	// CENTRAL         CHANGE: a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion     (144d-b049-cabe-6198) [ ACTOR_WHO:"internal combust engine;car engine;automobile engine", QUALIFIER:"usually", VERB:"convert", FROM:"fuel;chemical energy", INTO:"mechanical energy heat energy", BY_THROUGH_HOW:"combust" ]
+	//row autoRow9 = [UUID:"144d-b049-cabe-6198", ACTOR_WHO: "internal combust engine", QUALIFIER: "usually", VERB: "convert", FROM: "chemical energy", INTO: "mechanical energy heat energy", BY_THROUGH_HOW: "combust"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"144d-b049-cabe-6198", ACTOR_WHO: "internal combust engine", QUALIFIER: "usually", VERB: "convert", FROM: "chemical energy", INTO: "mechanical energy heat energy", BY_THROUGH_HOW: "combust"]
+
+	// CENTRAL         CONTAINS: fossil fuel contains chemical energy     (bfa4-74ef-3e51-a3cb) [ ADJ:"fossil", OBJECT_AGENT:"fuel", WHAT_IT_CONTAINS:"chemical energy" ]
+	//row autoRow10 = [UUID:"bfa4-74ef-3e51-a3cb", ADJ: "fossil", OBJECT_AGENT: "fuel", WHAT_IT_CONTAINS: "chemical energy"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"bfa4-74ef-3e51-a3cb", ADJ: "fossil", OBJECT_AGENT: "fuel", WHAT_IT_CONTAINS: "chemical energy"]
+
+	// CENTRAL        (OPTIONAL) USEDFOR: a lawnmower is used to cut grass     (73ed-3709-fc7a-b665) [ AGENT_OBJECT:"lawnmower", FOR_PURPOSE:"cut", PATIENT:"grass" ]
+	//row *autoRow11 = [UUID:"73ed-3709-fc7a-b665", AGENT_OBJECT: "lawnmower", FOR_PURPOSE: "cut", PATIENT: "grass"] //OVER-CONSTR.
+	row *autoRow11 = [UUID:"73ed-3709-fc7a-b665", AGENT_OBJECT: "lawnmower", FOR_PURPOSE: "cut", PATIENT: "grass"]
+
+	// CENTRAL        (OPTIONAL) EXAMPLES: An example of an object with kinetic energy is an object in motion     (e1cf-88a5-049d-ec52) [ AGENT_OBJECT1:"object", SCOPE1:"with kinetic energy", AGENT_OBJECT2:"object", VERB2:"in move" ]
+	//row *autoRow12 = [UUID:"e1cf-88a5-049d-ec52", AGENT_OBJECT1: "object", SCOPE1: "with kinetic energy", AGENT_OBJECT2: "object", VERB2: "in move"] //OVER-CONSTR.
+	row *autoRow12 = [UUID:"e1cf-88a5-049d-ec52", AGENT_OBJECT1: "object", SCOPE1: "with kinetic energy", AGENT_OBJECT2: "object", VERB2: "in move"]
+
+	// CENTRAL        (OPTIONAL) USEDFOR: an internal combustion engine is used to move the automobile     (f58a-3073-53ae-87b4) [ AGENT_OBJECT:"internal combust engine", FOR_PURPOSE:"move", PATIENT:"automobile" ]
+	//row *autoRow13 = [UUID:"f58a-3073-53ae-87b4", AGENT_OBJECT: "internal combust engine", FOR_PURPOSE: "move", PATIENT: "automobile"] //OVER-CONSTR.
+	row *autoRow13 = [UUID:"f58a-3073-53ae-87b4", AGENT_OBJECT: "internal combust engine", FOR_PURPOSE: "move", PATIENT: "automobile"]
+
+	// CENTRAL         CONTAINS: fuel contains chemical energy     (c23e-4123-ef7b-6907) [ OBJECT_AGENT:"fuel", WHAT_IT_CONTAINS:"chemical energy" ]
+	//row autoRow14 = [UUID:"c23e-4123-ef7b-6907", OBJECT_AGENT: "fuel", WHAT_IT_CONTAINS: "chemical energy"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"c23e-4123-ef7b-6907", OBJECT_AGENT: "fuel", WHAT_IT_CONTAINS: "chemical energy"]
+
+	// CENTRAL         SOURCEOF: fuel is a source of energy     (623f-9df0-d179-3917) [ AGENT:"fuel", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"energy" ]
+	//row autoRow15 = [UUID:"623f-9df0-d179-3917", AGENT: "fuel", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"623f-9df0-d179-3917", AGENT: "fuel", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy"]
+
+	// CENTRAL        (OPTIONAL) CHANGE: combustion means fire converts chemical energy into light energy and heat energy     (941b-2c2b-0aae-ee3a) [ PROCESS_NAME:"combust", ACTOR_WHO:"fire", VERB:"convert", FROM:"chemical energy", INTO:"light energy heat energy" ]
+	//row *autoRow16 = [UUID:"941b-2c2b-0aae-ee3a", PROCESS_NAME: "combust", ACTOR_WHO: "fire", VERB: "convert", FROM: "chemical energy", INTO: "light energy heat energy"] //OVER-CONSTR.
+	row *autoRow16 = [UUID:"941b-2c2b-0aae-ee3a", PROCESS_NAME: "combust", ACTOR_WHO: "fire", VERB: "convert", FROM: "chemical energy", INTO: "light energy heat energy"]
+
+endinferencepattern

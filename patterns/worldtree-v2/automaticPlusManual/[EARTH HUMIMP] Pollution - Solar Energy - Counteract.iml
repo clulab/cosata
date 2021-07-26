@@ -1,0 +1,65 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Pollution_Solar_Energy_Counteract
+
+	// Plain text description
+	description = "the coal's facts are optional."
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE: a solar panel converts sunlight ; solar energy into electrical energy ; electricity     (bc35-178c-432b-77f5) [ ACTOR_WHO:"solar panel", VERB:"convert", FROM:"sunlight;solar energy", INTO:"electric energy;electric" ]
+	//        HINTROW solar cells convert solar energy into electrical energy     (66e0-20b6-da6c-8421) [ ACTOR_WHO:"solar cell", VERB:"convert", FROM:"solar energy", INTO:"electric energy" ]
+	//row autoRow0 = [TABLE:"CHANGE", ACTOR_WHO: "solar"+*"POS:NN", VERB: "convert", FROM: "solar energy", INTO: "electric energy"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CHANGE", ACTOR_WHO: "solar"+*"POS:NN", VERB: "convert", FROM: "solar energy", INTO: "electric energy"]
+
+	// CENTRAL        (OPTIONAL) COUPLEDRELATIONSHIP: as the use of renewable resources use of renewable resources increases , use of nonrenewable resources will decrease     (a979-cbd2-fb2d-175e) [ QUANTITY_MEASURE1:"use of renewable resource", ACTION1:"use", PATIENT1:"of renewable resource", CHANGE1:"increase", ACTION2:"use", PATIENT2:"of nonrenewable resource", CHANGE2:"decrease" ]
+	//row *autoRow1 = [UUID:"a979-cbd2-fb2d-175e", QUANTITY_MEASURE1: "use of renewable resource", ACTION1: "use", PATIENT1: "of renewable resource", CHANGE1: "increase", ACTION2: "use", PATIENT2: "of nonrenewable resource", CHANGE2: "decrease"] //OVER-CONSTR.
+	row *autoRow1 = [UUID:"a979-cbd2-fb2d-175e", QUANTITY_MEASURE1: "use of renewable resource", ACTION1: "use", PATIENT1: "of renewable resource", CHANGE1: "increase", ACTION2: "use", PATIENT2: "of nonrenewable resource", CHANGE2: "decrease"]
+
+	// CENTRAL         SOURCEOF: the sun is the source of solar energy called sunlight     (1ed3-919d-4a4c-1be7) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"solar energy", NAME:"sunlight" ]
+	//row autoRow2 = [UUID:"1ed3-919d-4a4c-1be7", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "solar energy", NAME: "sunlight"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"1ed3-919d-4a4c-1be7", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "solar energy", NAME: "sunlight"]
+
+	// CENTRAL         CAUSE: solar energy rarely causes pollution     (ccfb-9a10-b3bf-b202) [ CONDITION_AGENT_OBJECT:"solar energy", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS:"rarely", RESULT_AGENT:"pollute" ]
+	//row autoRow3 = [UUID:"ccfb-9a10-b3bf-b202", CONDITION_AGENT_OBJECT: "solar energy", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "rarely", RESULT_AGENT: "pollute"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"ccfb-9a10-b3bf-b202", CONDITION_AGENT_OBJECT: "solar energy", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "rarely", RESULT_AGENT: "pollute"]
+
+	// CENTRAL         CHANGE-VEC: using solar energy decreases pollution     (37f2-bad8-7109-9377) [ AGENT_OBJECT:"use solar energy", DIRECTION:"decrease", PATIENT:"pollute" ]
+	//row autoRow4 = [UUID:"37f2-bad8-7109-9377", AGENT_OBJECT: "use solar energy", DIRECTION: "decrease", PATIENT: "pollute"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"37f2-bad8-7109-9377", AGENT_OBJECT: "use solar energy", DIRECTION: "decrease", PATIENT: "pollute"]
+
+	// CENTRAL         PROP-RESOURCES-RENEWABLE: solar energy is a renewable ; inexhaustible resource     (f5c3-d141-1a8b-80c9) [ RESOURCE:"solar energy", REWABLE_NONRENEWABLE:"renewable;inexhaustible" ]
+	//row autoRow5 = [UUID:"f5c3-d141-1a8b-80c9", RESOURCE: "solar energy", REWABLE_NONRENEWABLE: "renewable"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"f5c3-d141-1a8b-80c9", RESOURCE: "solar energy", REWABLE_NONRENEWABLE: "renewable"]
+
+	// CENTRAL         SOURCEOF: solar energy is a source of electricity     (3c69-24d0-2ef2-5007) [ AGENT:"solar energy", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"electric" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"3c69-24d0-2ef2-5007", AGENT: "solar energy", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "electric"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3c69-24d0-2ef2-5007", AGENT: "solar energy", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "electric"]
+
+	// CENTRAL        (OPTIONAL) SOURCEOF: burning coal is a source of air pollution     (5ea5-d64d-d43e-4ef8) [ ACTION:"burn", OBJECT_PATIENT:"coal", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"air pollute" ]
+	//row *autoRow7 = [UUID:"5ea5-d64d-d43e-4ef8", ACTION: "burn", OBJECT_PATIENT: "coal", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "air pollute"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"5ea5-d64d-d43e-4ef8", ACTION: "burn", OBJECT_PATIENT: "coal", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "air pollute"]
+
+	// CENTRAL        (OPTIONAL) USEDFOR: coal is used to produce electricity by burning in coal-fire power stations     (b47d-ee7e-9ebb-f9db) [ AGENT_OBJECT:"coal", FOR_PURPOSE:"product", PATIENT:"electric", BY_THROUGH_HOW:"burn", SCOPE2:"in coal-fire power station;in coal fire power station" ]
+	//row *autoRow8 = [UUID:"b47d-ee7e-9ebb-f9db", AGENT_OBJECT: "coal", FOR_PURPOSE: "product", PATIENT: "electric", BY_THROUGH_HOW: "burn", SCOPE2: "in coal fire power station"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"b47d-ee7e-9ebb-f9db", AGENT_OBJECT: "coal", FOR_PURPOSE: "product", PATIENT: "electric", BY_THROUGH_HOW: "burn", SCOPE2: "in coal fire power station"]
+
+	// CENTRAL        (OPTIONAL) PROP-RESOURCES-RENEWABLE: coal is a nonrenewable resource     (77f9-749f-9394-ae34) [ RESOURCE:"coal", REWABLE_NONRENEWABLE:"nonrenewable" ]
+	//row *autoRow9 = [UUID:"77f9-749f-9394-ae34", RESOURCE: "coal", REWABLE_NONRENEWABLE: "nonrenewable"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"77f9-749f-9394-ae34", RESOURCE: "coal", REWABLE_NONRENEWABLE: "nonrenewable"]
+
+	// LEXGLUE         SYNONYMY: converting is similar to producing     (0308-b556-3182-b793) [ ACTION1:"convert", ACTION2:"produce" ]
+	//row autoRow10 = [UUID:"0308-b556-3182-b793", ACTION1: "convert", ACTION2: "produce"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"0308-b556-3182-b793", ACTION1: "convert", ACTION2: "produce"]
+
+	// LEXGLUE         SYNONYMY: rarely means not     (8bf2-4daa-df7d-c999) [ X1:"rarely", X2:"not" ]
+	//row autoRow11 = [UUID:"8bf2-4daa-df7d-c999", X1: "rarely", X2: "not"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"8bf2-4daa-df7d-c999", X1: "rarely", X2: "not"]
+
+	// LEXGLUE         KINDOF: conversion is a kind of process     (d3f2-e61a-32a0-2306) [ HYPONYM:"conversion", HYPERNYM:"process" ]
+	//row autoRow12 = [UUID:"d3f2-e61a-32a0-2306", HYPONYM: "conversion", HYPERNYM: "process"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"d3f2-e61a-32a0-2306", HYPONYM: "conversion", HYPERNYM: "process"]
+
+endinferencepattern

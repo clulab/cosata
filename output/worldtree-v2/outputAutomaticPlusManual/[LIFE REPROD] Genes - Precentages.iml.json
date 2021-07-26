@@ -1,0 +1,39 @@
+{"patternMatches": [
+{
+	"patternName":"LIFE_REPROD_Genes_Precentages",
+	"matches":[
+		{
+		"uuids": ["b1d9-25a5-a330-bc21","b0f7-0b94-dd72-578c","56e1-7195-4762-fd8d","d10d-6ed4-e695-8dab","9d19-224c-847b-a622","b2c7-e823-56f6-3747","25d2-07b6-09f9-3dc3","acda-b7a0-d62c-ff9b","bf6d-30bb-f14c-54bb","b514-8bda-4ce6-d5c4","bf96-4d9a-577f-21f1","e7f2-85b1-308c-77d8"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "b1d9-25a5-a330-bc21", "rowText": "if a heterozygous dominant organism is crossed ; bred with homozygous ; pure dominant organism , then the offspring will have a 0% probability of having recessive trait", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "b0f7-0b94-dd72-578c", "rowText": "if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 25% probability of being homozygous recessive", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "56e1-7195-4762-fd8d", "rowText": "if a homozygous ; pure dominant organism is crossed ; bred with a homozygous ; pure recessive organism , then the offspring will have a 100% probability of being heterozygous dominant", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d10d-6ed4-e695-8dab", "rowText": "if a heterozygous dominant organism is crossed ; bred with homozygous ; pure recessive organism , then the offspring will have a 50% probability of being homozygous recessive", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "9d19-224c-847b-a622", "rowText": "if both a dominant and recessive gene are present , the dominant trait will be visible ; expressed", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "b2c7-e823-56f6-3747", "rowText": "crossing ; breeding a homozygous dominant living thing with another living thing causes their offspring to have that dominant trait", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "25d2-07b6-09f9-3dc3", "rowText": "if a homozygous ; pure recessive organism is crossed ; bred with a homozygous ; pure recessive organism , then the offspring will have a 100% probability of being homozygous recessive", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "acda-b7a0-d62c-ff9b", "rowText": "a homozygous dominant organism contains only dominant genes", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "bf6d-30bb-f14c-54bb", "rowText": "a heterozygous organism contains both dominant and recessive genes", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "b514-8bda-4ce6-d5c4", "rowText": "traits can be determined by one pair ; many pairs of genes in an organism", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "bf96-4d9a-577f-21f1", "rowText": "100% probability means always", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "e7f2-85b1-308c-77d8", "rowText": "25% probability is similar to one in four", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"_0", "value":"%" },
+			{ "name":"be_1", "value":"be" },
+			{ "name":"dominant_4", "value":"dominant" },
+			{ "name":"homozygous_2", "value":"homozygous" },
+			{ "name":"recessive_3", "value":"recessive" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"_0", "value":"%" },
+			{ "name":"be_1", "value":"being" },
+			{ "name":"dominant_4", "value":"dominant" },
+			{ "name":"homozygous_2", "value":"homozygous" },
+			{ "name":"recessive_3", "value":"recessive" }
+		]
+		}
+	]
+}
+]}
+

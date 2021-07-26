@@ -1,0 +1,58 @@
+// Automatically converted pattern
+inferencepattern MAT_MEAS_Observing_Small_Things
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       USEDFOR: magnifying glass is used to see small things by making objects appear bigger     (f2e4-3457-4480-2a9e) [ AGENT_OBJECT:"magnify glass", FOR_PURPOSE:"see", PATIENT:"small thing", BY_THROUGH_HOW:"make object appear big" ]
+	//        HINTROW an electron microscope is used for seeing very small objects by making them appear bigger     (7f26-bdb8-7b40-b225) [ AGENT_OBJECT:"electron microscope", FOR_PURPOSE:"see", PATIENT:"very small object", BY_THROUGH_HOW:"make appear big" ]
+	//        HINTROW a microscope is used to see small things ; microscopic things ; specimens by scientists by making them appear bigger     (e15b-3e85-4d7a-42ea) [ AGENT_OBJECT:"microscope", FOR_PURPOSE:"see", PATIENT:"small thing;microscopic thing;specimen", AGENT_THING_WHO_USES:"scientist", BY_THROUGH_HOW:"make appear big" ]
+	//  Notes: magnifying instrumens
+	//row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT: <magnify_0>+<glass_1>, FOR_PURPOSE: "see", PATIENT: "small"+<thing_2>, BY_THROUGH_HOW: "make object appear big"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT: <magnify_0>+<glass_1>, FOR_PURPOSE: "see", PATIENT: "small"+<thing_2>, BY_THROUGH_HOW: "make"+*"POS:NN"+"appear big"]
+
+	// CENTRALSW       PROP-THINGS: an insect usually has a small size     (afbd-d8f4-0c38-88c2) [ THING:"insect", QUALIFIER1:"usually", VALUE:"small", ATTRIBUTE:"size" ]
+	//        HINTROW bacteria is small ; microscopic in size     (dda0-d5ba-63eb-7efa) [ THING:"bacterium", VALUE:"small;microscopic", ATTRIBUTE:"in size" ]
+	//        HINTROW a labybug has a small size     (f917-eb1c-9469-7341) [ THING:"labybug", VALUE:"small", ATTRIBUTE:"size" ]
+	//        HINTROW a leaf is small in size     (bf0b-effc-65b2-b510) [ THING:"leaf", VALUE:"small", ATTRIBUTE:"in size" ]
+	//        HINTROW a microorganism is very small in size     (2faf-8dd2-50a0-d8c3) [ THING:"microorganism", MAGNITUDE:"very", VALUE:"small", ATTRIBUTE:"in size" ]
+	//  Notes: small things examples
+	//row autoRow1 = [TABLE:"PROP-THINGS", VALUE: "small", ATTRIBUTE: "size"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-THINGS", VALUE: "small", ATTRIBUTE: "size"]
+
+	// GROUNDING       KINDOF: a magnifying glass is a kind of tool for observing small things     (685f-4657-44af-cee7) [ HYPONYM:"magnify glass", HYPERNYM:"tool", FOR_PURPOSE:"observe small thing" ]
+	//        HINTROW a microscope is a kind of tool for observing small things     (28d0-868d-1eee-0150) [ HYPONYM:"microscope", HYPERNYM:"tool", FOR_PURPOSE:"observe small thing" ]
+	//  Notes: KINDOF tools
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <magnify_0>+<glass_1>, HYPERNYM: "tool", FOR_PURPOSE: "observe small"+<thing_2>] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <magnify_0>+<glass_1>, HYPERNYM: "tool", FOR_PURPOSE: "observe small"+<thing_2>]
+
+	// GROUNDING       KINDOF: a ladybug is a kind of insect     (cad3-7779-cc28-1338) [ HYPONYM:"ladybug", HYPERNYM:"insect" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "ladybug", HYPERNYM: "insect"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "ladybug", HYPERNYM: "insect"]
+
+	// CENTRAL         PROP-GENERIC: size is a property of objects and includes ordered values of microscopic ; tiny ; small ; medium ; large     (02eb-d26b-a00c-c559) [ X:"size", Y:"object", ORDERED_UNORDERED:"order", VALUES:"microscopic;tiny;small;medium;large" ]
+	//row autoRow4 = [UUID:"02eb-d26b-a00c-c559", X: "size", Y: "object", ORDERED_UNORDERED: "order", VALUES: "microscopic"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"02eb-d26b-a00c-c559", X: "size", Y: "object", ORDERED_UNORDERED: "order", VALUES: "microscopic"]
+
+	// CENTRAL        (OPTIONAL) COUPLEDRELATIONSHIP: as the size of an object appears larger , that object will be seen ; be observed more easily ; better     (4aa6-0eac-9f6d-0d0b) [ QUANTITY_MEASURE1:"size", AGENT_ATTRIBUTE1:"of object", ACTION1:"appear", CHANGE1:"large", AGENT_ATTRIBUTE2:"that object", ACTION2:"be see;be observe", CHANGE2:"much easy;well" ]
+	//row *autoRow5 = [UUID:"4aa6-0eac-9f6d-0d0b", QUANTITY_MEASURE1: "size", AGENT_ATTRIBUTE1: "of object", ACTION1: "appear", CHANGE1: "large", AGENT_ATTRIBUTE2: "that object", ACTION2: "be see", CHANGE2: "much easy"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"4aa6-0eac-9f6d-0d0b", QUANTITY_MEASURE1: "size", AGENT_ATTRIBUTE1: "of object", ACTION1: "appear", CHANGE1: "large", AGENT_ATTRIBUTE2: "that object", ACTION2: "be see", CHANGE2: "much easy"]
+
+	// CENTRAL        (OPTIONAL) REQUIRES: counting something usually requires seeing that something     (6ace-d8ec-0ac5-9dd2) [ ACTION1:"count", OBJECT_AGENT_PROCESS:"something", QUANTIFIER:"usually", VERB_REQUIRES:"require", ACTION2:"see", OBJECT:"something" ]
+	//row *autoRow6 = [UUID:"6ace-d8ec-0ac5-9dd2", ACTION1: "count", OBJECT_AGENT_PROCESS: "something", QUANTIFIER: "usually", VERB_REQUIRES: "require", ACTION2: "see", OBJECT: "something"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"6ace-d8ec-0ac5-9dd2", ACTION1: "count", OBJECT_AGENT_PROCESS: "something", QUANTIFIER: "usually", VERB_REQUIRES: "require", ACTION2: "see", OBJECT: "something"]
+
+	// CENTRAL         COMPARISON: a part of ; piece of an object is smaller in size than the entire object ; whole object     (87d4-163c-b8bc-4a9f) [ ADJ:"part of;piece of", THING:"object", ACTION1:"be", COMPARISON:"small", ATTRIBUTE:"in size", THING_COMPARED:"entire object;whole object" ]
+	//  Notes: 73b8-5c7f-43f4-65e2->87d4-163c-b8bc-4a9f
+	//row autoRow7 = [UUID:"87d4-163c-b8bc-4a9f", ADJ: "part of", THING: "object", ACTION1: "be", COMPARISON: "small", ATTRIBUTE: "in size", THING_COMPARED: "entire object"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"87d4-163c-b8bc-4a9f", ADJ: "part of", THING: "object", ACTION1: "be", COMPARISON: "small", ATTRIBUTE: "in size", THING_COMPARED: "entire object"]
+
+	// LEXGLUE         SYNONYMY: a hand lens ; a magnifying lens is synonymous with a magnifying glass     (ad83-d37c-9b46-94cd) [ X1:"hand lens;magnify lens", X2:"magnify glass" ]
+	//row autoRow8 = [UUID:"ad83-d37c-9b46-94cd", X1: "hand lens", X2: <magnify_0>+<glass_1>] //OVER-CONSTR.
+	row autoRow8 = [UUID:"ad83-d37c-9b46-94cd", X1: "hand lens", X2: <magnify_0>+<glass_1>]
+
+endinferencepattern

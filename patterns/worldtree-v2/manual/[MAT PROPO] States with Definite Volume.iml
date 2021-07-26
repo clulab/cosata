@@ -1,0 +1,68 @@
+// NOTE: This IML has been edited from it's original state
+
+// Automatically converted pattern
+inferencepattern MAT_PROPO_States_with_Definite_Volume
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a bottle is a kind of container     (a824-aa4b-d228-d7c7) [ HYPONYM:"bottle", HYPERNYM:"container" ]
+	//        HINTROW glass is a kind of open container     (6198-fec8-e40b-1993) [ HYPONYM:"glass", SCOPE1:"open", HYPERNYM:"container" ]
+	//        HINTROW a beach ball is a kind of container     (cccd-e81f-c177-7b89) [ HYPONYM:"beach ball", HYPERNYM:"container" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "container"] //OVER-CONSTR.
+
+	//## row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "container"]
+
+	// GROUNDING       KINDOF: aluminum is a kind of matter     (26a1-5a20-e241-28f1) [ HYPONYM:"aluminum", HYPERNYM:"matt" ]
+	//        HINTROW sediment is a kind of matter     (ccdf-7e78-c469-dc95) [ HYPONYM:"sediment", HYPERNYM:"matt" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "matt"] //OVER-CONSTR.
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "matt"]
+
+	// CENTRAL         PROP-GENERIC: variability of shape ; variability of volume is a property of matter and includes values of variable ; definite     (5364-1d90-a262-32e7) [ X:"variable of shape;variable of volume", Y:"matt", VALUES:"variable;definite" ]
+	//row autoRow2 = [UUID:"5364-1d90-a262-32e7", X: "variable of shape", Y: "matt", VALUES: "variable"] //OVER-CONSTR.
+	row autoRow2a = [TABLE:"PROP-GENERIC", X: "variable of" + "shape", Y: "matter"]
+    row autoRow2b = [TABLE:"PROP-GENERIC", X: "variable of" + "volume", Y: "matter"]
+
+	// CENTRAL         IFTHEN: if something has a definite volume , then its volume will not change when transferred into a different container     (4959-f789-6e66-e100) [ THING:"something", ACTION1:"have", ADJ_QUANTITY1A:"definite", OBJECT_PATIENT1:"volume", ACTOR_AGENT_PROCESS2:"volume", ACTION3:"change", SCOPE4:"transfer into differ container" ]
+	//row autoRow3 = [UUID:"4959-f789-6e66-e100", THING: "something", ACTION1: "have", ADJ_QUANTITY1A: "definite", OBJECT_PATIENT1: "volume", ACTOR_AGENT_PROCESS2: "volume", ACTION3: "change", SCOPE4: "transfer into differ container"] //OVER-CONSTR.
+	row *autoRow3a = [TABLE:"IFTHEN", ADJ_QUANTITY1A: <definiteVariableShape>, OBJECT_PATIENT1: "shape", ACTOR_AGENT_PROCESS2: "shape"]
+    row *autoRow3b = [TABLE:"IFTHEN", ADJ_QUANTITY1A: <definiteVariableVolume>, OBJECT_PATIENT1: "volume", ACTOR_AGENT_PROCESS2: "volume"]
+
+    // TODO: Add the companion row for action 
+    // matter with variable volume and shape (assumes; expands to fill; takes) the shape and size of its entire container
+
+
+	// CENTRAL         PROP-STATESOFMATTER-SHAPEVOL: Matter in the liquid phase has definite volume     (d048-a12a-4f58-5472) [ PHASE:"liquid", VALUE:"definite", ATTRIBUTE:"volume" ]
+	//        HINTROW Matter in the solid phase has definite volume     (92b1-8801-0e59-845e) [ PHASE:"solid", VALUE:"definite", ATTRIBUTE:"volume" ]
+	//row autoRow4 = [UUID:"d048-a12a-4f58-5472", PHASE: "liquid", VALUE: "definite", ATTRIBUTE: "volume"] //OVER-CONSTR.
+	row shape = [TABLE:"PROP-STATESOFMATTER-SHAPEVOL", PHASE: <phase>, VALUE: <definiteVariableShape>, ATTRIBUTE: "shape"]
+    row volume = [TABLE:"PROP-STATESOFMATTER-SHAPEVOL", PHASE: <phase>, VALUE: <definiteVariableVolume>, ATTRIBUTE: "volume"]
+
+	// CENTRAL         KINDOF: liquid is a kind of state of matter     (f7e9-c6f8-892b-3496) [ HYPONYM:"liquid", HYPERNYM:"state of matt" ]
+	//row autoRow6 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPONYM: <phase>, HYPERNYM: "state of matt"]
+
+	// CENTRAL        (OPTIONAL) PROP-GENERIC: volume is a property of matter     (866b-5e77-f131-2b80) [ X:"volume", Y:"matt" ]
+	//row *autoRow8 = [UUID:"866b-5e77-f131-2b80", X: "volume", Y: "matt"] //OVER-CONSTR.
+	row autoRow8a = [TABLE:"PROP-GENERIC", X: "volume", Y: "matt"]
+    row autoRow8b = [TABLE:"PROP-GENERIC", X: "shape"]
+
+	// CENTRAL         ACTION: a container contains objects ; material ; substances     (490c-5be7-2ff7-4bf2) [ AGENT_OBJECT:"container", ACTION2:"contain", OBJECT_PROPERTY:"object;material;substance" ]
+	//row autoRow9 = [UUID:"490c-5be7-2ff7-4bf2", AGENT_OBJECT: "container", ACTION2: "contain", OBJECT_PROPERTY: "object"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"490c-5be7-2ff7-4bf2", AGENT_OBJECT: "container", ACTION2: "contain", OBJECT_PROPERTY: "object"]
+
+
+
+	// LEXGLUE         OPPOSITES: definite is the opposite of variable     (b3e1-3703-6490-1530) [ THING_PROPERTY1:"definite", THING_PROPERTY2:"variable" ]
+	//row autoRow10 = [UUID:"b3e1-3703-6490-1530", THING_PROPERTY1: "definite", THING_PROPERTY2: "variable"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"b3e1-3703-6490-1530", THING_PROPERTY1: "definite", THING_PROPERTY2: "variable"]
+
+	// LEXGLUE         SYNONYMY: phase means state     (de31-9a4c-d874-ac06) [ X1:"phase", X2:"state" ]
+	//row autoRow11 = [UUID:"de31-9a4c-d874-ac06", X1: "phase", X2: "state"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"de31-9a4c-d874-ac06", X1: "phase", X2: "state"]
+
+endinferencepattern

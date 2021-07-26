@@ -1,0 +1,59 @@
+// Automatically converted pattern
+inferencepattern OTHER_Motives_of_Transportation
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       USEDFOR: a airplane is used for moving people ; products across bodies of water ; to far away places     (c1b8-6b6a-cfa4-5354) [ AGENT_OBJECT:"airplane", FOR_PURPOSE:"move", PATIENT:"person;product", SCOPE2:"across body of water;far away place" ]
+	//        HINTROW a ship is used for moving people ; products across bodies of water     (a047-3def-21a6-4a8e) [ AGENT_OBJECT:"ship", FOR_PURPOSE:"move", PATIENT:"person;product", SCOPE2:"across body of water" ]
+	//row autoRow0 = [TABLE:"USEDFOR", FOR_PURPOSE: "move", PATIENT: "person", SCOPE2: "across body of water"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"USEDFOR", FOR_PURPOSE: "move", PATIENT: "person", SCOPE2: "across body of water"]
+
+	// GROUNDING       KINDOF: an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//        HINTROW a bay is a kind of body of water     (0596-e537-4cc3-192c) [ HYPONYM:"bay", HYPERNYM:"body of water" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "body of water"]
+
+	// GROUNDING       KINDOF: an airplane is a kind of vehicle     (182e-6373-acc4-bde3) [ HYPONYM:"airplane", HYPERNYM:"vehicle" ]
+	//        HINTROW an automobile is a kind of vehicle     (7cb7-40ac-f4d5-eb6c) [ HYPONYM:"automobile", HYPERNYM:"vehicle" ]
+	//        HINTROW a ship is a kind of vehicle     (f65a-7081-2fcd-f3e0) [ HYPONYM:"ship", HYPERNYM:"vehicle" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "vehicle"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "vehicle"]
+
+	// CENTRAL         KINDOF: transportation technology is a kind of system for moving people and products     (dad5-b201-ab07-ee6f) [ HYPONYM:"transportation technology", HYPERNYM:"system", FOR_PURPOSE:"move person product" ]
+	//row autoRow3 = [UUID:"dad5-b201-ab07-ee6f", HYPONYM: "transportation technology", HYPERNYM: "system", FOR_PURPOSE: "move person product"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"dad5-b201-ab07-ee6f", HYPONYM: "transportation technology", HYPERNYM: "system", FOR_PURPOSE: "move person product"]
+
+	// CENTRAL         USEDFOR: transportation technology is used for moving people ; products     (5473-4fe3-ecbc-5d8c) [ AGENT_OBJECT:"transportation technology", FOR_PURPOSE:"move", PATIENT:"person;product" ]
+	//row autoRow4 = [UUID:"5473-4fe3-ecbc-5d8c", AGENT_OBJECT: "transportation technology", FOR_PURPOSE: "move", PATIENT: "person"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"5473-4fe3-ecbc-5d8c", AGENT_OBJECT: "transportation technology", FOR_PURPOSE: "move", PATIENT: "person"]
+
+	// CENTRAL        (OPTIONAL) KINDOF: public transportation is a kind of way of commuting     (14bf-bfff-4d12-9f09) [ HYPONYM:"public transportation", HYPERNYM:"way of commute" ]
+	//row *autoRow5 = [UUID:"14bf-bfff-4d12-9f09", HYPONYM: "public transportation", HYPERNYM: "way of commute"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"14bf-bfff-4d12-9f09", HYPONYM: "public transportation", HYPERNYM: "way of commute"]
+
+	// CENTRAL         USEDFOR: a vehicle is used for transportation     (6b1d-7b44-edfd-1acc) [ AGENT_OBJECT:"vehicle", FOR_PURPOSE:"transportation" ]
+	//row autoRow6 = [UUID:"6b1d-7b44-edfd-1acc", AGENT_OBJECT: "vehicle", FOR_PURPOSE: "transportation"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"6b1d-7b44-edfd-1acc", AGENT_OBJECT: "vehicle", FOR_PURPOSE: "transportation"]
+
+	// CENTRAL        (OPTIONAL) COUPLEDRELATIONSHIP: as the use of public transportation increases , the use of automobiles decreases     (4059-9d58-3944-0e16) [ QUANTITY_MEASURE1:"use of", AGENT_ATTRIBUTE1:"public transportation", CHANGE1:"increase", QUANTITY_MEASURE2:"use", AGENT_ATTRIBUTE2:"of automobile", CHANGE2:"decrease" ]
+	//row *autoRow7 = [UUID:"4059-9d58-3944-0e16", QUANTITY_MEASURE1: "use of", AGENT_ATTRIBUTE1: "public transportation", CHANGE1: "increase", QUANTITY_MEASURE2: "use", AGENT_ATTRIBUTE2: "of automobile", CHANGE2: "decrease"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"4059-9d58-3944-0e16", QUANTITY_MEASURE1: "use of", AGENT_ATTRIBUTE1: "public transportation", CHANGE1: "increase", QUANTITY_MEASURE2: "use", AGENT_ATTRIBUTE2: "of automobile", CHANGE2: "decrease"]
+
+	// CENTRAL         KINDOF: a vehicle is a kind of tool for travel ; transport     (2b96-b294-3abb-3f9b) [ HYPONYM:"vehicle", HYPERNYM:"tool", FOR_PURPOSE:"travel;transport" ]
+	//row autoRow8 = [UUID:"2b96-b294-3abb-3f9b", HYPONYM: "vehicle", HYPERNYM: "tool", FOR_PURPOSE: "travel"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"2b96-b294-3abb-3f9b", HYPONYM: "vehicle", HYPERNYM: "tool", FOR_PURPOSE: "travel"]
+
+	// CENTRAL        (OPTIONAL) ACTION: inventing a tool allows ; enables that tool to be used     (efcb-faab-cd79-cd07) [ ACTION1:"invent", AGENT_OBJECT:"tool", ACTION2:"allow;enable", OBJECT_PROPERTY:"that tool be use" ]
+	//row *autoRow9 = [UUID:"efcb-faab-cd79-cd07", ACTION1: "invent", AGENT_OBJECT: "tool", ACTION2: "allow", OBJECT_PROPERTY: "that tool be use"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"efcb-faab-cd79-cd07", ACTION1: "invent", AGENT_OBJECT: "tool", ACTION2: "allow", OBJECT_PROPERTY: "that tool be use"]
+
+	// LEXGLUE         SYNONYMY: transit system means public transportation     (4a51-b784-e03b-a1ad) [ X1:"transit system", X2:"public transportation" ]
+	//row autoRow10 = [UUID:"4a51-b784-e03b-a1ad", X1: "transit system", X2: "public transportation"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"4a51-b784-e03b-a1ad", X1: "transit system", X2: "public transportation"]
+
+endinferencepattern

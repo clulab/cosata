@@ -1,0 +1,99 @@
+// Automatically converted pattern
+inferencepattern ENG_THERM_Definition_Conduction
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       TRANSFER: thermal conduction is when materials conduct heat through those materials through collision of particles     (04a3-0791-9bd3-602d) [ PROCESS_NAME:"thermal conduction", ACTOR_WHO:"material", VERB:"conduct", WHAT:"heat", BY_THROUGH_HOW:"material", SCOPE:"through collision of particle" ]
+	//        HINTROW thermal conduction is when heat flows from warmer object to cooler object     (9e2b-1cdd-38e4-7a7f) [ PROCESS_NAME:"thermal conduction", ACTOR_WHO:"heat", VERB:"flow", SOURCE:"warm object", DESTINATION:"cool object" ]
+	//  Notes: CORE
+	//row autoRow0 = [TABLE:"TRANSFER", PROCESS_NAME: "thermal conduction", VERB: "conduct", WHAT: "heat", BY_THROUGH_HOW: *"POS:NN", SCOPE: *"POS:IN"+*"POS:NN"+"of"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"TRANSFER", PROCESS_NAME: "thermal conduction"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: cold means low in temperature     (cf2a-6257-0c5c-7445) [ THING:"cold", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//        HINTROW colder ; cooler means lower in temperature     (246e-dd6e-6e09-988a) [ THING:"cold;cool", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "cold", VALUE: "low", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "cold", VALUE: "low", ATTRIBUTE: "temperature"]
+
+	// GROUNDING       KINDOF: ice is a kind of object     (2959-08e0-430c-0f87) [ HYPONYM:"ice", HYPERNYM:"object" ]
+	//  Notes: colder object
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "ice", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "ice", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: the sidewalk is a kind of object     (ce7e-f24a-8088-35e6) [ HYPONYM:"sidewalk", HYPERNYM:"object" ]
+	//  Notes: warmer object
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "sidewalk", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "sidewalk", HYPERNYM: "object"]
+
+	// CENTRAL         PROP-GENERIC: temperature ; heat energy is a property of objects ; weather and includes ordered values of cold ; cool ; warm ; hot     (4084-f2bc-52cf-0f74) [ X:"temperature;heat energy", Y:"object;weather", ORDERED_UNORDERED:"order", VALUES:"cold;cool;warm;hot" ]
+	//row autoRow4 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4084-f2bc-52cf-0f74", X: "heat energy", Y: "object", ORDERED_UNORDERED: "order", VALUES: "cold"]
+
+	// CENTRAL         IFTHEN: if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm     (c9e0-141e-88fa-2c43) [ THING:"thermal conduct;object", ACTION1:"expose", ADJ_QUANTITY1A:"source of", OBJECT_PATIENT1:"heat", ACTOR_AGENT_PROCESS2:"that conduct;that object", OBJECT_PROPERTY3:"hot;warm" ]
+	//row autoRow5 = [UUID:"c9e0-141e-88fa-2c43", THING: "thermal conduct", ACTION1: "expose", ADJ_QUANTITY1A: "source of", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "that conduct", OBJECT_PROPERTY3: "hot"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"c9e0-141e-88fa-2c43", THING: "thermal conduct", ACTION1: "expose", ADJ_QUANTITY1A: "source of", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "that conduct", OBJECT_PROPERTY3: "hot"]
+
+	// CENTRAL         TRANSFER: a thermal energy conductor transfers heat from warmer objects ; hotter objects to cooler objects     (3dcc-05e2-48cc-db62) [ ACTOR_WHO:"thermal energy conduct", VERB:"transfer", WHAT:"heat", SOURCE:"warm object;hot object", DESTINATION:"cool object" ]
+	//row autoRow6 = [UUID:"3dcc-05e2-48cc-db62", ACTOR_WHO: "thermal energy conduct", VERB: "transfer", WHAT: "heat", SOURCE: "warm object", DESTINATION: "cool object"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3dcc-05e2-48cc-db62", ACTOR_WHO: "thermal energy conduct", VERB: "transfer", WHAT: "heat", SOURCE: "warm object", DESTINATION: "cool object"]
+
+	// CENTRAL         IFTHEN: if a hot object ; substance is exposed to ; touches a cold object ; substance then that object ; that substance will likely cool     (284d-e19c-6811-6a99) [ ADJ_QUANTITY1:"hot", THING:"object;substance", ACTION1:"expose;touch", ADJ_QUANTITY1A:"cold", OBJECT_PATIENT1:"object;substance", ACTOR_AGENT_PROCESS2:"that object;that substance", ACTION3:"cool" ]
+	//row autoRow7 = [UUID:"284d-e19c-6811-6a99", ADJ_QUANTITY1: "hot", THING: "object", ACTION1: "expose", ADJ_QUANTITY1A: "cold", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "cool"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"284d-e19c-6811-6a99", ADJ_QUANTITY1: "hot", THING: "object", ACTION1: "expose", ADJ_QUANTITY1A: "cold", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "cool"]
+
+	// CENTRAL         CHANGE-VEC: the heat energy in the cooler object increases in thermal conduction     (3497-68e4-f791-9066) [ AGENT_OBJECT:"heat energy", SCOPE1:"in cool object", DIRECTION:"increase", SCOPE2:"in thermal conduction" ]
+	//row autoRow8 = [UUID:"3497-68e4-f791-9066", AGENT_OBJECT: "heat energy", SCOPE1: "in cool object", DIRECTION: "increase", SCOPE2: "in thermal conduction"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"3497-68e4-f791-9066", AGENT_OBJECT: "heat energy", SCOPE1: "in cool object", DIRECTION: "increase", SCOPE2: "in thermal conduction"]
+
+	// CENTRAL         IFTHEN: when a cooler object touches a warmer object , thermal conduction occurs     (8a04-b22c-d916-924f) [ ADJ_QUANTITY1:"cool", THING:"object", ACTION1:"touch", ADJ_QUANTITY1A:"warm", OBJECT_PATIENT1:"object", ACTOR_AGENT_PROCESS2:"thermal conduction", ACTION3:"occur" ]
+	//row autoRow9 = [UUID:"8a04-b22c-d916-924f", ADJ_QUANTITY1: "cool", THING: "object", ACTION1: "touch", ADJ_QUANTITY1A: "warm", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "thermal conduction", ACTION3: "occur"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"8a04-b22c-d916-924f", ADJ_QUANTITY1: "cool", THING: "object", ACTION1: "touch", ADJ_QUANTITY1A: "warm", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "thermal conduction", ACTION3: "occur"]
+
+	// CENTRAL         IFTHEN: if heat is conducted to an object then that object will become hot     (2a3c-96de-3124-d8f9) [ THING:"heat", ACTION1:"conduct", OBJECT_PATIENT1:"object", ACTOR_AGENT_PROCESS2:"object", ACTION3:"become", ADJ_QUANTIFIER3:"hot" ]
+	//row autoRow10 = [UUID:"2a3c-96de-3124-d8f9", THING: "heat", ACTION1: "conduct", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "object", ACTION3: "become", ADJ_QUANTIFIER3: "hot"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"2a3c-96de-3124-d8f9", THING: "heat", ACTION1: "conduct", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "object", ACTION3: "become", ADJ_QUANTIFIER3: "hot"]
+
+	// CENTRAL        (OPTIONAL) PROP-THINGS: ice is cold in temperature     (d495-a1f3-29eb-04fe) [ THING:"ice", VALUE:"cold", ATTRIBUTE:"in temperature" ]
+	//row *autoRow11 = [UUID:"d495-a1f3-29eb-04fe", THING: "ice", VALUE: "cold", ATTRIBUTE: "in temperature"] //OVER-CONSTR.
+	row *autoRow11 = [UUID:"d495-a1f3-29eb-04fe", THING: "ice", VALUE: "cold", ATTRIBUTE: "in temperature"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if an object is made of a material then that object has the properties of that material     (1e4c-46e8-996c-f2f7) [ THING:"object", OBJECT_PROPERTY1:"make of material", ACTOR_AGENT_PROCESS2:"that object", OBJECT_PROPERTY3:"property of material" ]
+	//row *autoRow12 = [UUID:"1e4c-46e8-996c-f2f7", THING: "object", OBJECT_PROPERTY1: "make of material", ACTOR_AGENT_PROCESS2: "that object", OBJECT_PROPERTY3: "property of material"] //OVER-CONSTR.
+	row *autoRow12 = [UUID:"1e4c-46e8-996c-f2f7", THING: "object", OBJECT_PROPERTY1: "make of material", ACTOR_AGENT_PROCESS2: "that object", OBJECT_PROPERTY3: "property of material"]
+
+	// CENTRAL         KINDOF: conduction is a kind of process     (6d44-6295-592b-4db9) [ HYPONYM:"conduction", HYPERNYM:"process" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"6d44-6295-592b-4db9", HYPONYM: "conduction", HYPERNYM: "process"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"6d44-6295-592b-4db9", HYPONYM: "conduction", HYPERNYM: "process"]
+
+	// CENTRAL         PROP-CONDUCTIVITY: metal is a thermal ; thermal energy conductor     (0439-8c06-da63-6721) [ OBJECT_AGENT:"metal", KIND_OF_CONDUCTIVITY:"thermal;thermal energy", CONDUCTOR_INSULATOR:"conduct" ]
+	//  Notes: CORE
+	//row autoRow14 = [UUID:"0439-8c06-da63-6721", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "thermal energy", CONDUCTOR_INSULATOR: "conduct"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"0439-8c06-da63-6721", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "thermal energy", CONDUCTOR_INSULATOR: "conduct"]
+
+	// CENTRAL         KINDOF: metal is a kind of material     (95c4-ec5e-bce9-afd8) [ HYPONYM:"metal", HYPERNYM:"material" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"95c4-ec5e-bce9-afd8", HYPONYM: "metal", HYPERNYM: "material"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"95c4-ec5e-bce9-afd8", HYPONYM: "metal", HYPERNYM: "material"]
+
+	// LEXGLUE         SYNONYMY: heat means the transfer of thermal energy     (74c9-ce13-0e8d-4a29) [ X1:"heat", X2:"transfer of thermal energy" ]
+	//row autoRow16 = [UUID:"74c9-ce13-0e8d-4a29", X1: "heat", X2: "transfer of thermal energy"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"74c9-ce13-0e8d-4a29", X1: "heat", X2: "transfer of thermal energy"]
+
+	// LEXGLUE         SYNONYMY: heat energy is synonymous with thermal energy     (ae86-c631-e4ad-1669) [ X1:"heat energy", X2:"thermal energy" ]
+	//row autoRow17 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"]
+
+	// LEXGLUE         SYNONYMY: heat means heat energy     (4710-c993-7a19-bef2) [ X1:"heat", X2:"heat energy" ]
+	//row autoRow18 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"]
+
+	// LEXGLUE         SYNONYMY: to conduct is similar to to transfer     (ac2a-9f55-aeab-2917) [ ACTION1:"conduct", ACTION2:"transfer" ]
+	//row autoRow19 = [UUID:"ac2a-9f55-aeab-2917", ACTION1: "conduct", ACTION2: "transfer"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"ac2a-9f55-aeab-2917", ACTION1: "conduct", ACTION2: "transfer"]
+
+endinferencepattern

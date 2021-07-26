@@ -1,0 +1,63 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Global_Warming_Rising_Sea_Levels
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         CHANGE-VEC: amount of water in a body of water increases by storms ; rain ; glaciers melting ; snow melting ; ice melting     (19c9-47bf-de91-1f2e) [ AGENT_OBJECT:"amount of water", SCOPE1:"in body of water", DIRECTION:"increase", BY_THROUGH_HOW:"storm;rain;glacier melt;snow melt;ice melt" ]
+	//row autoRow0 = [UUID:"19c9-47bf-de91-1f2e", AGENT_OBJECT: "amount of water", SCOPE1: "in body of water", DIRECTION: "increase", BY_THROUGH_HOW: "glacier melt"] //OVER-CONSTR.
+	row autoRow0 = [UUID:"19c9-47bf-de91-1f2e", AGENT_OBJECT: "amount of water", SCOPE1: "in body of water", DIRECTION: "increase", BY_THROUGH_HOW: "glacier melt"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the amount of water in a body of water increases , the water levels will rise ; increase especially at the edge of that body of water     (7956-497a-6dfb-85f9) [ QUANTITY_MEASURE1:"amount", AGENT_ATTRIBUTE1:"of water", SCOPE1A:"in body of water", CHANGE1:"increase", QUANTITY_MEASURE2:"water level", CHANGE2:"rise;increase", SCOPE2B:"especially at edge of body of water" ]
+	//row autoRow1 = [UUID:"7956-497a-6dfb-85f9", QUANTITY_MEASURE1: "amount", AGENT_ATTRIBUTE1: "of water", SCOPE1A: "in body of water", CHANGE1: "increase", QUANTITY_MEASURE2: "water level", CHANGE2: "rise", SCOPE2B: "especially at edge of body of water"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"7956-497a-6dfb-85f9", QUANTITY_MEASURE1: "amount", AGENT_ATTRIBUTE1: "of water", SCOPE1A: "in body of water", CHANGE1: "increase", QUANTITY_MEASURE2: "water level", CHANGE2: "rise", SCOPE2B: "especially at edge of body of water"]
+
+	// CENTRAL         CHANGE: melting means matter ; a substance changes from a solid into a liquid by increasing heat energy     (6abc-4443-f672-9a97) [ PROCESS_NAME:"melt", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"solid", INTO:"liquid", BY_THROUGH_HOW:"increase heat energy" ]
+	//row autoRow2 = [UUID:"6abc-4443-f672-9a97", PROCESS_NAME: "melt", ACTOR_WHO: "matt", VERB: "change", FROM: "solid", INTO: "liquid", BY_THROUGH_HOW: "increase heat energy"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"6abc-4443-f672-9a97", PROCESS_NAME: "melt", ACTOR_WHO: "matt", VERB: "change", FROM: "solid", INTO: "liquid", BY_THROUGH_HOW: "increase heat energy"]
+
+	// CENTRAL         AFFECT: glaciers melting has a negative impact on the glaicial environment     (e170-b8a2-8292-67af) [ ACTOR_WHO:"glacier", VERB:"melt", POSITIVE_NEGATIVE:"negative", PATIENT:"glaicial environment" ]
+	//row autoRow3 = [UUID:"e170-b8a2-8292-67af", ACTOR_WHO: "glacier", VERB: "melt", POSITIVE_NEGATIVE: "negative", PATIENT: "glaicial environment"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"e170-b8a2-8292-67af", ACTOR_WHO: "glacier", VERB: "melt", POSITIVE_NEGATIVE: "negative", PATIENT: "glaicial environment"]
+
+	// CENTRAL         CAUSE: ice caps melting causes ocean water levels to rise     (e53c-3c50-839b-4767) [ CONDITION_AGENT_OBJECT:"ice cap", CONDITION_VERB:"melt", RESULT_AGENT:"ocean water level", RESULT_VERB:"rise" ]
+	//row autoRow4 = [UUID:"e53c-3c50-839b-4767", CONDITION_AGENT_OBJECT: "ice cap", CONDITION_VERB: "melt", RESULT_AGENT: "ocean water level", RESULT_VERB: "rise"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"e53c-3c50-839b-4767", CONDITION_AGENT_OBJECT: "ice cap", CONDITION_VERB: "melt", RESULT_AGENT: "ocean water level", RESULT_VERB: "rise"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C     (4a5a-9115-28a9-b97b) [ MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice", LOWER_BOUND:"0;-459;-273;459;273", UPPER_BOUND:"273;32;0", UNITS:"k;f;c" ]
+	//row autoRow5 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//row autoRow6 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"]
+
+	// CENTRAL         CHANGE-VEC: global warming is when worldwide temperature increases     (4040-94c5-cc21-a29c) [ PROCESS_NAME_ACTION:"global warm", ADJ:"worldwide", AGENT_OBJECT:"temperature", DIRECTION:"increase" ]
+	//row autoRow7 = [UUID:"4040-94c5-cc21-a29c", PROCESS_NAME_ACTION: "global warm", ADJ: "worldwide", AGENT_OBJECT: "temperature", DIRECTION: "increase"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4040-94c5-cc21-a29c", PROCESS_NAME_ACTION: "global warm", ADJ: "worldwide", AGENT_OBJECT: "temperature", DIRECTION: "increase"]
+
+	// CENTRAL         MADEOF: the polar ice caps are made of ice     (cb0f-c249-986a-bc7c) [ OBJECT:"polar ice cap", MATERIAL:"ice" ]
+	//row autoRow8 = [UUID:"cb0f-c249-986a-bc7c", OBJECT: "polar ice cap", MATERIAL: "ice"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"cb0f-c249-986a-bc7c", OBJECT: "polar ice cap", MATERIAL: "ice"]
+
+	// CENTRAL         CONTAINS: Earth contains glaciers ; ice caps     (5962-c3e3-67cc-829b) [ OBJECT_AGENT:"earth", WHAT_IT_CONTAINS:"glacier;ice cap" ]
+	//row autoRow9 = [UUID:"5962-c3e3-67cc-829b", OBJECT_AGENT: "earth", WHAT_IT_CONTAINS: "ice cap"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"5962-c3e3-67cc-829b", OBJECT_AGENT: "earth", WHAT_IT_CONTAINS: "ice cap"]
+
+	// CENTRAL         KINDOF: ice is a kind of solid     (7ef1-c28b-22e3-3edc) [ HYPONYM:"ice", HYPERNYM:"solid" ]
+	//row autoRow10 = [UUID:"7ef1-c28b-22e3-3edc", HYPONYM: "ice", HYPERNYM: "solid"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"7ef1-c28b-22e3-3edc", HYPONYM: "ice", HYPERNYM: "solid"]
+
+	// CENTRAL         AFFECT: global warming has a negative impact on environment ; organisms     (df4c-4ccc-d375-0191) [ ACTOR_WHO:"global warm", POSITIVE_NEGATIVE:"negative", PATIENT:"environment;organism" ]
+	//row autoRow11 = [UUID:"df4c-4ccc-d375-0191", ACTOR_WHO: "global warm", POSITIVE_NEGATIVE: "negative", PATIENT: "environment"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"df4c-4ccc-d375-0191", ACTOR_WHO: "global warm", POSITIVE_NEGATIVE: "negative", PATIENT: "environment"]
+
+	// LEXGLUE         SYNONYMY: water level is similar to ocean level     (1574-3e0c-0dbc-2485) [ X1:"water level", X2:"ocean level" ]
+	//row autoRow12 = [UUID:"1574-3e0c-0dbc-2485", X1: "water level", X2: "ocean level"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"1574-3e0c-0dbc-2485", X1: "water level", X2: "ocean level"]
+
+endinferencepattern

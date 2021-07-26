@@ -1,0 +1,88 @@
+// Automatically converted pattern
+inferencepattern EARTH_OUTER_Origin_Water_in_Atmosphere
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE-VEC: heating means adding heat     (9469-8559-7f35-1bbd) [ PROCESS_NAME_ACTION:"heat", DIRECTION:"add", PATIENT:"heat" ]
+	//        HINTROW heat means temperature increases     (7afc-2bcd-13a5-2d35) [ PROCESS_NAME_ACTION:"heat", AGENT_OBJECT:"temperature", DIRECTION:"increase" ]
+	//        HINTROW warm ; becoming warm means heat is added     (39ec-9974-829d-ba5e) [ PROCESS_NAME_ACTION:"warm;become warm", AGENT_OBJECT:"heat", DIRECTION:"add" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow0 = [TABLE:"CHANGE-VEC"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow0 = [TABLE:"CHANGE-VEC"]
+
+	// CENTRAL         CHANGE: boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy     (a0b2-a45f-01e1-4bf4) [ PROCESS_NAME:"boil;evaporate", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"gas", BY_THROUGH_HOW:"increase heat energy" ]
+	//row autoRow1 = [UUID:"a0b2-a45f-01e1-4bf4", PROCESS_NAME: "boil", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "gas", BY_THROUGH_HOW: "increase heat energy"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"a0b2-a45f-01e1-4bf4", PROCESS_NAME: "boil", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "gas", BY_THROUGH_HOW: "increase heat energy"]
+
+	// CENTRAL         MADEOF: the Earth 's atmosphere is made of 0 to 4 percent hydrogen ; water vapor by volume     (7051-de21-70b0-8c49) [ QUANTIFIER:"earth", OBJECT:"atmosphere", VALUE:"0 4 percent", MATERIAL:"hydrogen;water vapor", SCOPE:"by volume" ]
+	//row autoRow2 = [UUID:"7051-de21-70b0-8c49", QUANTIFIER: "earth", OBJECT: "atmosphere", VALUE: "0 4 percent", MATERIAL: "water vapor", SCOPE: "by volume"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"7051-de21-70b0-8c49", QUANTIFIER: "earth", OBJECT: "atmosphere", VALUE: "0 4 percent", MATERIAL: "water vapor", SCOPE: "by volume"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C     (e474-2a11-6e7b-ae8b) [ MATERIAL_NAME:"water", STATEOFMATTER:"gas", FORM_NAME:"water vapor;steam", LOWER_BOUND:"373;212;100", UPPER_BOUND:"100000000000", UNITS:"k;f;c" ]
+	//row autoRow3 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"e474-2a11-6e7b-ae8b", MATERIAL_NAME: "water", STATEOFMATTER: "gas", FORM_NAME: "water vapor", LOWER_BOUND: "373", UPPER_BOUND: "100000000000", UNITS: "k"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase     (e5d8-c324-b947-ba63) [ QUANTITY_MEASURE1:"amount of", AGENT_ATTRIBUTE1:"water", SCOPE1A:"in body of water", CHANGE1:"increase", QUANTITY_MEASURE2:"amount of", AGENT_ATTRIBUTE2:"water", ACTION2:"evaporate from", PATIENT2:"body of water", CHANGE2:"increase" ]
+	//row autoRow4 = [UUID:"e5d8-c324-b947-ba63", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "water", SCOPE1A: "in body of water", CHANGE1: "increase", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "water", ACTION2: "evaporate from", PATIENT2: "body of water", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"e5d8-c324-b947-ba63", QUANTITY_MEASURE1: "amount of", AGENT_ATTRIBUTE1: "water", SCOPE1A: "in body of water", CHANGE1: "increase", QUANTITY_MEASURE2: "amount of", AGENT_ATTRIBUTE2: "water", ACTION2: "evaporate from", PATIENT2: "body of water", CHANGE2: "increase"]
+
+	// CENTRAL        (OPTIONAL) COUPLEDRELATIONSHIP: as the surface area of a body of water increases , evaporation of that body of water will increase     (11a7-2581-9122-ab66) [ QUANTITY_MEASURE1:"surface area", AGENT_ATTRIBUTE1:"of body of water", CHANGE1:"increase", QUANTITY_MEASURE2:"evaporate", AGENT_ATTRIBUTE2:"of body of water", CHANGE2:"increase" ]
+	//row *autoRow5 = [UUID:"11a7-2581-9122-ab66", QUANTITY_MEASURE1: "surface area", AGENT_ATTRIBUTE1: "of body of water", CHANGE1: "increase", QUANTITY_MEASURE2: "evaporate", AGENT_ATTRIBUTE2: "of body of water", CHANGE2: "increase"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"11a7-2581-9122-ab66", QUANTITY_MEASURE1: "surface area", AGENT_ATTRIBUTE1: "of body of water", CHANGE1: "increase", QUANTITY_MEASURE2: "evaporate", AGENT_ATTRIBUTE2: "of body of water", CHANGE2: "increase"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//row autoRow6 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"]
+
+	// CENTRAL         SOURCEOF: oceans are the source of most of water vapor in the atmosphere     (264c-58db-a41c-9483) [ AGENT:"ocean", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"much of water vapor", SCOPE:"in atmosphere" ]
+	//row autoRow7 = [UUID:"264c-58db-a41c-9483", AGENT: "ocean", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "much of water vapor", SCOPE: "in atmosphere"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"264c-58db-a41c-9483", AGENT: "ocean", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "much of water vapor", SCOPE: "in atmosphere"]
+
+	// CENTRAL         IFTHEN: if an object ; a substance ; a location absorbs solar energy then that object ; that substance will increase in temperature     (9554-47d7-c095-1df7) [ THING:"object;substance;locate", ACTION1:"absorb", OBJECT_PATIENT1:"solar energy", ACTOR_AGENT_PROCESS2:"that object;that substance", ACTION3:"increase", OBJECT_PROPERTY3:"in temperature" ]
+	//row autoRow8 = [UUID:"9554-47d7-c095-1df7", THING: "object", ACTION1: "absorb", OBJECT_PATIENT1: "solar energy", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "increase", OBJECT_PROPERTY3: "in temperature"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"9554-47d7-c095-1df7", THING: "object", ACTION1: "absorb", OBJECT_PATIENT1: "solar energy", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "increase", OBJECT_PROPERTY3: "in temperature"]
+
+	// CENTRAL         ACTION: water absorbs solar energy in the water cycle     (3cac-554a-3149-cd7b) [ AGENT_OBJECT:"water", ACTION2:"absorb", OBJECT_PROPERTY:"solar energy", WHEN_WHERE:"in water cycle" ]
+	//row autoRow9 = [UUID:"3cac-554a-3149-cd7b", AGENT_OBJECT: "water", ACTION2: "absorb", OBJECT_PROPERTY: "solar energy", WHEN_WHERE: "in water cycle"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"3cac-554a-3149-cd7b", AGENT_OBJECT: "water", ACTION2: "absorb", OBJECT_PROPERTY: "solar energy", WHEN_WHERE: "in water cycle"]
+
+	// CENTRAL         LOCATIONS: water vapor is found in the atmosphere     (7896-0ee6-9c3c-f3c1) [ THING_PROCESS:"water vapor", LOCATION:"atmosphere" ]
+	//row autoRow10 = [UUID:"7896-0ee6-9c3c-f3c1", THING_PROCESS: "water vapor", LOCATION: "atmosphere"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"7896-0ee6-9c3c-f3c1", THING_PROCESS: "water vapor", LOCATION: "atmosphere"]
+
+	// CENTRAL         KINDOF: an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"466a-2c15-ac54-8361", HYPONYM: "ocean", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"466a-2c15-ac54-8361", HYPONYM: "ocean", HYPERNYM: "body of water"]
+
+	// CENTRAL         CONTAINS: a body of water contains water     (b927-5436-1d17-c396) [ OBJECT_AGENT:"body of water", WHAT_IT_CONTAINS:"water" ]
+	//row autoRow12 = [UUID:"b927-5436-1d17-c396", OBJECT_AGENT: "body of water", WHAT_IT_CONTAINS: "water"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"b927-5436-1d17-c396", OBJECT_AGENT: "body of water", WHAT_IT_CONTAINS: "water"]
+
+	// CENTRAL         CAUSE: absorbing energy causes objects ; materials ; substances to heat     (6432-a34a-ac7f-4611) [ CONDITION_VERB:"absorb", CONDITION_PATIENT:"energy", RESULT_AGENT:"object;material;substance", RESULT_VERB:"heat" ]
+	//row autoRow13 = [UUID:"6432-a34a-ac7f-4611", CONDITION_VERB: "absorb", CONDITION_PATIENT: "energy", RESULT_AGENT: "object", RESULT_VERB: "heat"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"6432-a34a-ac7f-4611", CONDITION_VERB: "absorb", CONDITION_PATIENT: "energy", RESULT_AGENT: "object", RESULT_VERB: "heat"]
+
+	// CENTRAL         CONTAINS: oceans contain most of earth 's water     (c0ad-4856-2d41-4fa9) [ OBJECT_AGENT:"ocean", QUANTITY_RANGE:"much of", WHAT_IT_CONTAINS:"earth water" ]
+	//row autoRow14 = [UUID:"c0ad-4856-2d41-4fa9", OBJECT_AGENT: "ocean", QUANTITY_RANGE: "much of", WHAT_IT_CONTAINS: "earth water"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"c0ad-4856-2d41-4fa9", OBJECT_AGENT: "ocean", QUANTITY_RANGE: "much of", WHAT_IT_CONTAINS: "earth water"]
+
+	// LEXGLUE         SYNONYMY: adding heat means increasing temperature     (7d37-b81d-0cf3-9ae0) [ ACTION1:"add", Y1:"heat", ACTION2:"increase", Y2:"temperature" ]
+	//row autoRow15 = [UUID:"7d37-b81d-0cf3-9ae0", ACTION1: "add", Y1: "heat", ACTION2: "increase", Y2: "temperature"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"7d37-b81d-0cf3-9ae0", ACTION1: "add", Y1: "heat", ACTION2: "increase", Y2: "temperature"]
+
+	// LEXGLUE         SYNONYMY: atmosphere means air     (9568-cc75-424d-e775) [ X1:"atmosphere", X2:"air" ]
+	//row autoRow16 = [UUID:"9568-cc75-424d-e775", X1: "atmosphere", X2: "air"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"9568-cc75-424d-e775", X1: "atmosphere", X2: "air"]
+
+	// LEXGLUE         SYNONYMY: state means form     (29a1-5acf-45b5-3b06) [ X1:"state", X2:"form" ]
+	//row autoRow17 = [UUID:"29a1-5acf-45b5-3b06", X1: "state", X2: "form"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"29a1-5acf-45b5-3b06", X1: "state", X2: "form"]
+
+endinferencepattern

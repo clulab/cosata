@@ -1,0 +1,58 @@
+// Automatically converted pattern
+inferencepattern ENG_FORMS_Examples_Mechanical_Energy
+
+	// Plain text description
+	description = "Could be potentially collapsed into some bigger pattern"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: rolling is a kind of motion     (b545-b586-fd95-b2af) [ HYPONYM:"roll", HYPERNYM:"move" ]
+	//        HINTROW flowing is a kind of motion     (a52a-1b59-1f8c-028e) [ HYPONYM:"flow", HYPERNYM:"move" ]
+	//        HINTROW pulling is a kind of motion     (cffc-a299-4321-b49d) [ HYPONYM:"pull", HYPERNYM:"move" ]
+	//        HINTROW pushing is a kind of motion     (044f-aca4-3be4-bb64) [ HYPONYM:"push", HYPERNYM:"move" ]
+	//        HINTROW a roll is a kind of movement     (5c38-cb22-09a4-2287) [ HYPONYM:"roll", HYPERNYM:"move" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "move"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "move"]
+
+	// GROUNDING       KINDOF: a ball is a kind of object     (5650-b213-46ea-d9dd) [ HYPONYM:"ball", HYPERNYM:"object" ]
+	//        HINTROW a balloon is a kind of object     (93a8-6f1f-f6e7-e5bc) [ HYPONYM:"balloon", HYPERNYM:"object" ]
+	//        HINTROW a hammer is a kind of object     (825f-0757-a890-fe46) [ HYPONYM:"hammer", HYPERNYM:"object" ]
+	//        HINTROW a vehicle is a kind of object     (d047-715f-550d-3eaa) [ HYPONYM:"vehicle", HYPERNYM:"object" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// GROUNDING       KINDOF: a wagon is a kind of vehicle     (1022-5edd-48da-fd5a) [ HYPONYM:"wagon", HYPERNYM:"vehicle" ]
+	//        HINTROW a car is a kind of object     (fe6e-84fa-d289-aee9) [ HYPONYM:"car", HYPERNYM:"object" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow2 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow2 = [TABLE:"KINDOF"]
+
+	// CENTRAL         EXAMPLES: An example of mechanical energy is an object in motion     (4aca-cf16-fcc6-1f79) [ AGENT_OBJECT1:"mechanical energy", AGENT_OBJECT2:"object in move" ]
+	//row autoRow3 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"]
+
+	// CENTRAL         SOURCEOF: motion is a source of kinetic energy in an object     (9f23-854a-7dc0-c22e) [ AGENT:"move", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"kinetic energy", SCOPE:"in object" ]
+	//row autoRow4 = [UUID:"9f23-854a-7dc0-c22e", AGENT: "move", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "kinetic energy", SCOPE: "in object"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"9f23-854a-7dc0-c22e", AGENT: "move", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "kinetic energy", SCOPE: "in object"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: pushing something can cause that something to move     (4048-519e-258b-fc12) [ CONDITION_VERB:"push", CONDITION_PATIENT:"something", RESULT_AGENT:"that something", RESULT_VERB:"move" ]
+	//row *autoRow5 = [UUID:"4048-519e-258b-fc12", CONDITION_VERB: "push", CONDITION_PATIENT: "something", RESULT_AGENT: "that something", RESULT_VERB: "move"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"4048-519e-258b-fc12", CONDITION_VERB: "push", CONDITION_PATIENT: "something", RESULT_AGENT: "that something", RESULT_VERB: "move"]
+
+	// CENTRAL         KINDOF: kinetic energy is a kind of mechanical energy     (8f4b-dcdb-2be5-9423) [ HYPONYM:"kinetic energy", HYPERNYM:"mechanical energy" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"8f4b-dcdb-2be5-9423", HYPONYM: "kinetic energy", HYPERNYM: "mechanical energy"]
+
+	// CENTRAL         KINDOF: a motion is a kind of event ; action     (e901-c400-086c-8302) [ HYPONYM:"move", HYPERNYM:"event;action" ]
+	//row autoRow7 = [UUID:"e901-c400-086c-8302", HYPONYM: "move", HYPERNYM: "event"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"e901-c400-086c-8302", HYPONYM: "move", HYPERNYM: "event"]
+
+	// LEXGLUE         SYNONYMY: motion ; movement means moving ; to move     (d8a3-10bb-9aea-178a) [ X1:"move;move", ACTION2:"move;move" ]
+	//row autoRow8 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"]
+
+endinferencepattern

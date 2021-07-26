@@ -1,0 +1,988 @@
+{"patternMatches": [
+{
+	"patternName":"ENG_THERM_Radiation_Sunlight",
+	"matches":[
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","f742-384b-744c-10a9","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","c035-787b-ecbc-b968","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c035-787b-ecbc-b968", "rowText": "light is a kind of nonliving thing", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","7830-1dcb-42c6-d8dc","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","f5bd-f09f-df33-571f","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1165199","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1165199", "rowText": "light is a kind of object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1165204","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1165204", "rowText": "light is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1180971","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1180971", "rowText": "light is a kind of event", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1190039","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1190039", "rowText": "light is a kind of action", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1198427","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1198427", "rowText": "light is a kind of differ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1198441","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1198441", "rowText": "light is a kind of impact", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","f742-384b-744c-10a9","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","f742-384b-744c-10a9","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","c035-787b-ecbc-b968","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c035-787b-ecbc-b968", "rowText": "light is a kind of nonliving thing", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","c035-787b-ecbc-b968","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c035-787b-ecbc-b968", "rowText": "light is a kind of nonliving thing", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","7830-1dcb-42c6-d8dc","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","7830-1dcb-42c6-d8dc","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","f5bd-f09f-df33-571f","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","f5bd-f09f-df33-571f","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1165199","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1165199", "rowText": "light is a kind of object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1165199","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1165199", "rowText": "light is a kind of object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1165204","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1165204", "rowText": "light is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1165204","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1165204", "rowText": "light is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1180971","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1180971", "rowText": "light is a kind of event", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1180971","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1180971", "rowText": "light is a kind of event", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1190039","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1190039", "rowText": "light is a kind of action", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1190039","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1190039", "rowText": "light is a kind of action", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1198427","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1198427", "rowText": "light is a kind of differ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1198427","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1198427", "rowText": "light is a kind of differ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1198441","a3c3-47f1-32ba-5c7f","5a0e-924d-c180-98d7","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1198441", "rowText": "light is a kind of impact", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5a0e-924d-c180-98d7", "rowText": "if heat is transferred to an object , then the object will get hot", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1198441","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","1f7b-30af-4177-e9d5","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1198441", "rowText": "light is a kind of impact", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "1f7b-30af-4177-e9d5", "rowText": "sunlight can shine through a window", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","f742-384b-744c-10a9","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","c035-787b-ecbc-b968","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c035-787b-ecbc-b968", "rowText": "light is a kind of nonliving thing", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","7830-1dcb-42c6-d8dc","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7830-1dcb-42c6-d8dc", "rowText": "light is a kind of wave", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","f5bd-f09f-df33-571f","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1165199","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1165199", "rowText": "light is a kind of object", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1165204","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1165204", "rowText": "light is a kind of process", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1180971","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1180971", "rowText": "light is a kind of event", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1190039","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1190039", "rowText": "light is a kind of action", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1198427","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1198427", "rowText": "light is a kind of differ", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		},
+		{
+		"uuids": ["eebe-c5b0-1dea-3414","TEMPGEN-1198441","a3c3-47f1-32ba-5c7f","d247-b029-3aab-0950","863a-bc6c-8c03-249c","3274-5890-ead5-c376","13eb-ea19-5bae-123e","9e7d-986e-6af1-5ac1","49dc-4526-46f9-5b32","9ff8-543c-2f35-5d3f","71fe-7f84-ac6f-b391"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eebe-c5b0-1dea-3414", "rowText": "radiation is when electromagnetic waves transfers heat and light energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-1198441", "rowText": "light is a kind of impact", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "863a-bc6c-8c03-249c", "rowText": "electromagnetic energy travels as electromagnetic waves", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3274-5890-ead5-c376", "rowText": "radiation can affect objects that are not touching", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "13eb-ea19-5bae-123e", "rowText": "electromagnetic wave is a kind of wave", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "49dc-4526-46f9-5b32", "rowText": "sunlight is a kind of light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "9ff8-543c-2f35-5d3f", "rowText": "hot means high in heat energy ; temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "71fe-7f84-ac6f-b391", "rowText": "electromagnetic radiation means electromagnetic energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow3", "value":"" },
+			{ "name":"autoRow7", "value":"" }
+		]
+		}
+	]
+}
+]}
+

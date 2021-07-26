@@ -1,0 +1,65 @@
+// Automatically converted pattern
+inferencepattern MAT_CHANGES_Definition_Chemical_Changes
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CAUSE: adding heat to an object sometimes causes chemical reactions     (b124-8e3c-f8ec-e3c5) [ CONDITION_VERB:"add", CONDITION_PATIENT:"heat", SCOPE1:"object", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS:"sometimes", RESULT_AGENT:"chemical reaction" ]
+	//        HINTROW acid can cause chemical change     (8224-9b5f-01f9-ba94) [ CONDITION_AGENT_OBJECT:"acid", RESULT_AGENT:"chemical change" ]
+	//        HINTROW cooking causes a chemical reaction     (69b4-687c-33bd-2f27) [ CONDITION_VERB:"cook", RESULT_AGENT:"chemical react" ]
+	//  Notes: X can cause chemical reactions
+	//row autoRow0 = [TABLE:"CAUSE", CONDITION_PATIENT: "heat", RESULT_AGENT: "chemical reaction"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CAUSE", RESULT_AGENT: "chemical reaction"]
+
+	// GROUNDING       KINDOF: combustion is a kind of chemical change     (eaad-89d5-b78f-cf5a) [ HYPONYM:"combust", SCOPE1:"chemical", HYPERNYM:"change" ]
+	//        HINTROW rust forming is a kind of chemical change     (3fb1-78ec-77f8-d713) [ HYPONYM:"rust form", SCOPE1:"chemical", HYPERNYM:"change" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "combust", SCOPE1: "chemical", HYPERNYM: "change"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", SCOPE1: "chemical", HYPERNYM: "change"]
+
+	// GROUNDING       CAUSE: lighting a match causes that match to burn     (6566-d617-944b-130c) [ CONDITION_VERB:"light", CONDITION_PATIENT:"match", RESULT_AGENT:"that match", RESULT_VERB:"burn" ]
+	//        HINTROW lighting a candle causes that candle to burn     (615c-9023-3957-0501) [ CONDITION_VERB:"light", CONDITION_PATIENT:"candle", RESULT_AGENT:"that candle", RESULT_VERB:"burn" ]
+	//  Notes: examples of chemical changes
+	//row autoRow2 = [TABLE:"CAUSE", CONDITION_VERB: "light", RESULT_AGENT: "that"+*"POS:NN", RESULT_VERB: "burn"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"CAUSE", CONDITION_VERB: "light", RESULT_AGENT: "that"+*"POS:NN", RESULT_VERB: "burn"]
+
+	// CENTRAL        (OPTIONAL) CHANGE: combustion means fire converts chemical energy into light energy and heat energy     (941b-2c2b-0aae-ee3a) [ PROCESS_NAME:"combust", ACTOR_WHO:"fire", VERB:"convert", FROM:"chemical energy", INTO:"light energy heat energy" ]
+	//row *autoRow3 = [UUID:"941b-2c2b-0aae-ee3a", PROCESS_NAME: "combust", ACTOR_WHO: "fire", VERB: "convert", FROM: "chemical energy", INTO: "light energy heat energy"] //OVER-CONSTR.
+	row *autoRow3 = [UUID:"941b-2c2b-0aae-ee3a", PROCESS_NAME: "combust", ACTOR_WHO: "fire", VERB: "convert", FROM: "chemical energy", INTO: "light energy heat energy"]
+
+	// CENTRAL         CAUSE: combining ; mixing two substances chemically causes chemical reactions     (37e1-5b9e-00a1-5e21) [ CONDITION_VERB:"combine;mix", CONDITION_PATIENT:"two substance", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS:"chemically", RESULT_AGENT:"chemical reaction" ]
+	//row autoRow4 = [UUID:"37e1-5b9e-00a1-5e21", CONDITION_VERB: "combine", CONDITION_PATIENT: "two substance", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "chemically", RESULT_AGENT: "chemical reaction"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"37e1-5b9e-00a1-5e21", CONDITION_VERB: "combine", CONDITION_PATIENT: "two substance", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "chemically", RESULT_AGENT: "chemical reaction"]
+
+	// CENTRAL         CAUSE: chemical reactions cause new substances ; different substances to form     (3dca-07f2-1404-d404) [ CONDITION_AGENT_OBJECT:"chemical reaction", RESULT_AGENT:"new substance;differ substance", RESULT_VERB:"form" ]
+	//row autoRow5 = [UUID:"3dca-07f2-1404-d404", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "new substance", RESULT_VERB: "form"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"3dca-07f2-1404-d404", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "new substance", RESULT_VERB: "form"]
+
+	// CENTRAL        (OPTIONAL) REQUIRES: cooking food requires adding heat energy to the food     (3d03-670e-3580-8f82) [ ACTION1:"cook", OBJECT_AGENT_PROCESS:"food", VERB_REQUIRES:"require", ACTION2:"add", OBJECT:"heat energy", SCOPE2:"food" ]
+	//row *autoRow6 = [UUID:"3d03-670e-3580-8f82", ACTION1: "cook", OBJECT_AGENT_PROCESS: "food", VERB_REQUIRES: "require", ACTION2: "add", OBJECT: "heat energy", SCOPE2: "food"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"3d03-670e-3580-8f82", ACTION1: "cook", OBJECT_AGENT_PROCESS: "food", VERB_REQUIRES: "require", ACTION2: "add", OBJECT: "heat energy", SCOPE2: "food"]
+
+	// CENTRAL         CAUSE: chemical reactions cause chemical change     (0f0d-2cc5-fcc1-3c1f) [ CONDITION_AGENT_OBJECT:"chemical reaction", RESULT_AGENT:"chemical change" ]
+	//row autoRow7 = [UUID:"0f0d-2cc5-fcc1-3c1f", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "chemical change"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"0f0d-2cc5-fcc1-3c1f", CONDITION_AGENT_OBJECT: "chemical reaction", RESULT_AGENT: "chemical change"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: fire causes burning     (4dc5-13bf-3c46-af74) [ CONDITION_AGENT_OBJECT:"fire", RESULT_VERB:"burn" ]
+	//row *autoRow8 = [UUID:"4dc5-13bf-3c46-af74", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "burn"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"4dc5-13bf-3c46-af74", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "burn"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: high temperatures can cause an object to combust     (8309-d5c8-048c-7198) [ CONDITION_AGENT_OBJECT:"high temperature", RESULT_AGENT:"object", RESULT_VERB:"combust" ]
+	//row *autoRow9 = [UUID:"8309-d5c8-048c-7198", CONDITION_AGENT_OBJECT: "high temperature", RESULT_AGENT: "object", RESULT_VERB: "combust"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"8309-d5c8-048c-7198", CONDITION_AGENT_OBJECT: "high temperature", RESULT_AGENT: "object", RESULT_VERB: "combust"]
+
+	// LEXGLUE         SYNONYMY: chemicals means substances     (3e63-f7d0-061e-01d1) [ X1:"chemical", X2:"substance" ]
+	//row autoRow10 = [UUID:"3e63-f7d0-061e-01d1", X1: "chemical", X2: "substance"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"3e63-f7d0-061e-01d1", X1: "chemical", X2: "substance"]
+
+	// LEXGLUE         SYNONYMY: baking is similar to cooking     (3006-985a-1294-98df) [ ACTION1:"bake", ACTION2:"cook" ]
+	//row autoRow11 = [UUID:"3006-985a-1294-98df", ACTION1: "bake", ACTION2: "cook"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"3006-985a-1294-98df", ACTION1: "bake", ACTION2: "cook"]
+
+endinferencepattern

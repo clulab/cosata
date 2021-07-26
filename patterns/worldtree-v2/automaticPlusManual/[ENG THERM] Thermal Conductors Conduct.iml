@@ -1,0 +1,128 @@
+// Automatically converted pattern
+inferencepattern ENG_THERM_Thermal_Conductors_Conduct
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       SOURCEOF: a stove generates heat for cooking usually     (d59b-bac8-e191-05be) [ AGENT:"stave", VERB_SOURCEOF_PROVIDE_ETC:"generate", WHAT_IT_PROVIDES:"heat", FOR_PURPOSE:"cook", SCOPE:"usually" ]
+	//        HINTROW a hot plate is a source of heat     (945f-acde-29f3-d573) [ AGENT:"hot plate", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"heat" ]
+	//row autoRow0 = [TABLE:"SOURCEOF", AGENT: "stave", WHAT_IT_PROVIDES: "heat", FOR_PURPOSE: "cook"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"SOURCEOF", WHAT_IT_PROVIDES: "heat"]
+
+	// GROUNDING       MADEOF: pot ; pan ; frying pan is made of metal for cooking     (a955-8642-4044-5a48) [ OBJECT:"pot;pan;fry pan", MATERIAL:"metal", FOR_PURPOSE:"cook" ]
+	//        HINTROW a burner is made of metal     (7750-9e0a-ea70-dbc3) [ OBJECT:"burner", MATERIAL:"metal" ]
+	//        HINTROW metal fork is made of metal for eating     (dc33-a410-c511-acad) [ OBJECT:"metal fork", MATERIAL:"metal", FOR_PURPOSE:"eat" ]
+	//        HINTROW a spoon sometimes is made of metal     (13cc-db5a-cd32-130d) [ OBJECT:"spoon", QUALIFIER:"sometimes", MATERIAL:"metal" ]
+	//  Notes: object X is made of Y conductor
+	//row autoRow1 = [TABLE:"MADEOF", MATERIAL: "metal"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"MADEOF", MATERIAL: "metal"]
+
+	// GROUNDING       KINDOF: iron is a kind of metal     (de4c-ca36-c336-540f) [ HYPONYM:"iron", HYPERNYM:"metal" ]
+	//        HINTROW copper is a kind of metal     (9cea-7fba-e1c5-f8b3) [ HYPONYM:"copper", HYPERNYM:"metal" ]
+	//  Notes: Y conductor examples
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "metal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "metal"]
+
+	// GROUNDING       KINDOF: a spoon is a kind of object     (fb45-a64a-13f3-241c) [ HYPONYM:"spoon", HYPERNYM:"object" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "spoon", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "spoon", HYPERNYM: "object"]
+
+	// GROUNDING      (OPTIONAL) KINDOF: soup is a kind of food     (330c-b2e7-f883-13e6) [ HYPONYM:"soup", HYPERNYM:"food" ]
+	//  Notes: food examples in the pan
+	//row *autoRow4 = [TABLE:"KINDOF", HYPONYM: "soup", HYPERNYM: "food"] //OVER-CONSTR.
+	row *autoRow4 = [TABLE:"KINDOF", HYPONYM: "soup", HYPERNYM: "food"]
+
+	// GROUNDING       KINDOF: a pan is a kind of object     (aeeb-c836-d4a0-9a0c) [ HYPONYM:"pan", HYPERNYM:"object" ]
+	//        HINTROW a burner is a kind of object ; surface     (a5ab-7b37-388a-1cd3) [ HYPONYM:"burner", HYPERNYM:"object;surface" ]
+	//        HINTROW a hot plate is a kind of instrument     (2326-f572-9b29-58d5) [ HYPONYM:"hot plate", HYPERNYM:"instrument" ]
+	//        HINTROW a pot is a kind of object     (96a6-5b63-d917-e649) [ HYPONYM:"pot", HYPERNYM:"object" ]
+	//  Notes: Object X
+//WARNING! Slot with no constraints.
+//	//row autoRow5 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow5 = [TABLE:"KINDOF"]
+
+	// CENTRAL         KINDOF: metal is a kind of material     (95c4-ec5e-bce9-afd8) [ HYPONYM:"metal", HYPERNYM:"material" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"95c4-ec5e-bce9-afd8", HYPONYM: "metal", HYPERNYM: "material"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"95c4-ec5e-bce9-afd8", HYPONYM: "metal", HYPERNYM: "material"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if an object is made of a material then that object has the properties of that material     (1e4c-46e8-996c-f2f7) [ THING:"object", OBJECT_PROPERTY1:"make of material", ACTOR_AGENT_PROCESS2:"that object", OBJECT_PROPERTY3:"property of material" ]
+	//row *autoRow7 = [UUID:"1e4c-46e8-996c-f2f7", THING: "object", OBJECT_PROPERTY1: "make of material", ACTOR_AGENT_PROCESS2: "that object", OBJECT_PROPERTY3: "property of material"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"1e4c-46e8-996c-f2f7", THING: "object", OBJECT_PROPERTY1: "make of material", ACTOR_AGENT_PROCESS2: "that object", OBJECT_PROPERTY3: "property of material"]
+
+	// CENTRAL         PROP-CONDUCTIVITY: metal is a thermal ; thermal energy conductor     (0439-8c06-da63-6721) [ OBJECT_AGENT:"metal", KIND_OF_CONDUCTIVITY:"thermal;thermal energy", CONDUCTOR_INSULATOR:"conduct" ]
+	//  Notes: Y conductor
+	//row autoRow8 = [UUID:"0439-8c06-da63-6721", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "thermal energy", CONDUCTOR_INSULATOR: "conduct"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"0439-8c06-da63-6721", OBJECT_AGENT: "metal", KIND_OF_CONDUCTIVITY: "thermal energy", CONDUCTOR_INSULATOR: "conduct"]
+
+	// CENTRAL         IFTHEN: if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm     (c9e0-141e-88fa-2c43) [ THING:"thermal conduct;object", ACTION1:"expose", ADJ_QUANTITY1A:"source of", OBJECT_PATIENT1:"heat", ACTOR_AGENT_PROCESS2:"that conduct;that object", OBJECT_PROPERTY3:"hot;warm" ]
+	//row autoRow9 = [UUID:"c9e0-141e-88fa-2c43", THING: "thermal conduct", ACTION1: "expose", ADJ_QUANTITY1A: "source of", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "that conduct", OBJECT_PROPERTY3: "hot"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"c9e0-141e-88fa-2c43", THING: "thermal conduct", ACTION1: "expose", ADJ_QUANTITY1A: "source of", OBJECT_PATIENT1: "heat", ACTOR_AGENT_PROCESS2: "that conduct", OBJECT_PROPERTY3: "hot"]
+
+	// CENTRAL         IFTHEN: if one surface ; one substance ; one object touches something then one is exposed to that something     (010a-f960-ad4b-537c) [ THING:"one surface;one substance;one object", ACTION1:"touch", OBJECT_PATIENT1:"something", ACTOR_AGENT_PROCESS2:"one", ACTION3:"expose", OBJECT_PROPERTY3:"something" ]
+	//row autoRow10 = [UUID:"010a-f960-ad4b-537c", THING: "one surface", ACTION1: "touch", OBJECT_PATIENT1: "something", ACTOR_AGENT_PROCESS2: "one", ACTION3: "expose", OBJECT_PROPERTY3: "something"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"010a-f960-ad4b-537c", THING: "one surface", ACTION1: "touch", OBJECT_PATIENT1: "something", ACTOR_AGENT_PROCESS2: "one", ACTION3: "expose", OBJECT_PROPERTY3: "something"]
+
+	// CENTRAL         PROP-GENERIC: conductivity is a property of a material ; substance     (d681-3158-6a99-253a) [ X:"conduct", Y:"material;substance" ]
+	//row autoRow11 = [UUID:"d681-3158-6a99-253a", X: "conduct", Y: "material"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"d681-3158-6a99-253a", X: "conduct", Y: "material"]
+
+	// CENTRAL        (OPTIONAL) TRANSFER: thermal conduction is when materials conduct heat through those materials through collision of particles     (04a3-0791-9bd3-602d) [ PROCESS_NAME:"thermal conduction", ACTOR_WHO:"material", VERB:"conduct", WHAT:"heat", BY_THROUGH_HOW:"material", SCOPE:"through collision of particle" ]
+	//  Notes: microscopic way of thermal conduction
+	//row *autoRow12 = [UUID:"04a3-0791-9bd3-602d", PROCESS_NAME: "thermal conduction", ACTOR_WHO: "material", VERB: "conduct", WHAT: "heat", BY_THROUGH_HOW: "material", SCOPE: "through collision of particle"] //OVER-CONSTR.
+	row *autoRow12 = [UUID:"04a3-0791-9bd3-602d", PROCESS_NAME: "thermal conduction", ACTOR_WHO: "material", VERB: "conduct", WHAT: "heat", BY_THROUGH_HOW: "material", SCOPE: "through collision of particle"]
+
+	// CENTRAL         TRANSFER: a thermal energy conductor transfers heat from warmer objects ; hotter objects to cooler objects     (3dcc-05e2-48cc-db62) [ ACTOR_WHO:"thermal energy conduct", VERB:"transfer", WHAT:"heat", SOURCE:"warm object;hot object", DESTINATION:"cool object" ]
+	//row autoRow13 = [UUID:"3dcc-05e2-48cc-db62", ACTOR_WHO: "thermal energy conduct", VERB: "transfer", WHAT: "heat", SOURCE: "warm object", DESTINATION: "cool object"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"3dcc-05e2-48cc-db62", ACTOR_WHO: "thermal energy conduct", VERB: "transfer", WHAT: "heat", SOURCE: "warm object", DESTINATION: "cool object"]
+
+	// CENTRAL        (OPTIONAL) USEDFOR: a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove     (33c7-1992-4659-d284) [ AGENT_OBJECT:"pan;fry pan;pot", FOR_PURPOSE:"cook", PATIENT:"food", BY_THROUGH_HOW:"heat food in", SCOPE2:"on stave" ]
+	//row *autoRow14 = [UUID:"33c7-1992-4659-d284", AGENT_OBJECT: "fry pan", FOR_PURPOSE: "cook", PATIENT: "food", BY_THROUGH_HOW: "heat food in", SCOPE2: "on stave"] //OVER-CONSTR.
+	row *autoRow14 = [UUID:"33c7-1992-4659-d284", AGENT_OBJECT: "fry pan", FOR_PURPOSE: "cook", PATIENT: "food", BY_THROUGH_HOW: "heat food in", SCOPE2: "on stave"]
+
+	// CENTRAL         MADEOF: a thermal conductor is made of thermal conductive materials     (a49d-0411-7e72-17d8) [ OBJECT:"thermal conduct", MATERIAL:"thermal conduct material" ]
+	//row autoRow15 = [UUID:"a49d-0411-7e72-17d8", OBJECT: "thermal conduct", MATERIAL: "thermal conduct material"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"a49d-0411-7e72-17d8", OBJECT: "thermal conduct", MATERIAL: "thermal conduct material"]
+
+	// CENTRAL        (OPTIONAL) REQUIRES: cooking food requires adding heat energy to the food     (3d03-670e-3580-8f82) [ ACTION1:"cook", OBJECT_AGENT_PROCESS:"food", VERB_REQUIRES:"require", ACTION2:"add", OBJECT:"heat energy", SCOPE2:"food" ]
+	//row *autoRow16 = [UUID:"3d03-670e-3580-8f82", ACTION1: "cook", OBJECT_AGENT_PROCESS: "food", VERB_REQUIRES: "require", ACTION2: "add", OBJECT: "heat energy", SCOPE2: "food"] //OVER-CONSTR.
+	row *autoRow16 = [UUID:"3d03-670e-3580-8f82", ACTION1: "cook", OBJECT_AGENT_PROCESS: "food", VERB_REQUIRES: "require", ACTION2: "add", OBJECT: "heat energy", SCOPE2: "food"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if heat is conducted to an object then that object will become hot     (2a3c-96de-3124-d8f9) [ THING:"heat", ACTION1:"conduct", OBJECT_PATIENT1:"object", ACTOR_AGENT_PROCESS2:"object", ACTION3:"become", ADJ_QUANTIFIER3:"hot" ]
+	//row *autoRow17 = [UUID:"2a3c-96de-3124-d8f9", THING: "heat", ACTION1: "conduct", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "object", ACTION3: "become", ADJ_QUANTIFIER3: "hot"] //OVER-CONSTR.
+	row *autoRow17 = [UUID:"2a3c-96de-3124-d8f9", THING: "heat", ACTION1: "conduct", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "object", ACTION3: "become", ADJ_QUANTIFIER3: "hot"]
+
+	// CENTRAL         IFTHEN: when a cooler object touches a warmer object , thermal conduction occurs     (8a04-b22c-d916-924f) [ ADJ_QUANTITY1:"cool", THING:"object", ACTION1:"touch", ADJ_QUANTITY1A:"warm", OBJECT_PATIENT1:"object", ACTOR_AGENT_PROCESS2:"thermal conduction", ACTION3:"occur" ]
+	//row autoRow18 = [UUID:"8a04-b22c-d916-924f", ADJ_QUANTITY1: "cool", THING: "object", ACTION1: "touch", ADJ_QUANTITY1A: "warm", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "thermal conduction", ACTION3: "occur"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"8a04-b22c-d916-924f", ADJ_QUANTITY1: "cool", THING: "object", ACTION1: "touch", ADJ_QUANTITY1A: "warm", OBJECT_PATIENT1: "object", ACTOR_AGENT_PROCESS2: "thermal conduction", ACTION3: "occur"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if a spoon ; an object is used to stir a liquid ; mixture then that spoon ; that object is touching that liquid ; that mixture     (e9db-4122-22ea-1d50) [ THING:"spoon;object", ACTION1:"stir", OBJECT_PATIENT1:"liquid;mixture", ACTOR_AGENT_PROCESS2:"that spoon;that object", ACTION3:"touch", OBJECT_PROPERTY3:"that liquid;that mixture" ]
+	//row *autoRow19 = [UUID:"e9db-4122-22ea-1d50", THING: "spoon", ACTION1: "stir", OBJECT_PATIENT1: "liquid", ACTOR_AGENT_PROCESS2: "that spoon", ACTION3: "touch", OBJECT_PROPERTY3: "that liquid"] //OVER-CONSTR.
+	row *autoRow19 = [UUID:"e9db-4122-22ea-1d50", THING: "spoon", ACTION1: "stir", OBJECT_PATIENT1: "liquid", ACTOR_AGENT_PROCESS2: "that spoon", ACTION3: "touch", OBJECT_PROPERTY3: "that liquid"]
+
+	// LEXGLUE         SYNONYMY: heat means heat energy     (4710-c993-7a19-bef2) [ X1:"heat", X2:"heat energy" ]
+	//row autoRow20 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"] //OVER-CONSTR.
+	row autoRow20 = [UUID:"4710-c993-7a19-bef2", X1: "heat", X2: "heat energy"]
+
+	// LEXGLUE         SYNONYMY: heat energy is synonymous with thermal energy     (ae86-c631-e4ad-1669) [ X1:"heat energy", X2:"thermal energy" ]
+	//row autoRow21 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"] //OVER-CONSTR.
+	row autoRow21 = [UUID:"ae86-c631-e4ad-1669", X1: "heat energy", X2: "thermal energy"]
+
+	// LEXGLUE         SYNONYMY: being on something ; placed in something ; placed over something means touching that something     (4d0b-497e-6a7f-bfca) [ ACTION1:"be", Y1:"on something;place in something;place over something", ACTION2:"touch", Y2:"that something" ]
+	//row autoRow22 = [UUID:"4d0b-497e-6a7f-bfca", ACTION1: "be", Y1: "place in something", ACTION2: "touch", Y2: "that something"] //OVER-CONSTR.
+	row autoRow22 = [UUID:"4d0b-497e-6a7f-bfca", ACTION1: "be", Y1: "place in something", ACTION2: "touch", Y2: "that something"]
+
+	// LEXGLUE         SYNONYMY: to conduct is similar to to transfer     (ac2a-9f55-aeab-2917) [ ACTION1:"conduct", ACTION2:"transfer" ]
+	//row autoRow23 = [UUID:"ac2a-9f55-aeab-2917", ACTION1: "conduct", ACTION2: "transfer"] //OVER-CONSTR.
+	row autoRow23 = [UUID:"ac2a-9f55-aeab-2917", ACTION1: "conduct", ACTION2: "transfer"]
+
+	// LEXGLUE         CHANGE-VEC: heating means adding heat     (9469-8559-7f35-1bbd) [ PROCESS_NAME_ACTION:"heat", DIRECTION:"add", PATIENT:"heat" ]
+	//row autoRow24 = [UUID:"9469-8559-7f35-1bbd", PROCESS_NAME_ACTION: "heat", DIRECTION: "add", PATIENT: "heat"] //OVER-CONSTR.
+	row autoRow24 = [UUID:"9469-8559-7f35-1bbd", PROCESS_NAME_ACTION: "heat", DIRECTION: "add", PATIENT: "heat"]
+
+endinferencepattern

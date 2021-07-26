@@ -1,0 +1,91 @@
+// Automatically converted pattern
+inferencepattern CEL_DISTANCES_Sizes_by_Distance
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-REL-DIST: Earth is the planet that is third closest to the Sun     (a352-bde5-b854-f460) [ OBJECT_AGENT:"earth", CLASS:"planet", RELATIVE_DISTANCE:"3 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Mercury is the planet that is first closest to the Sun     (c3ef-1aeb-c9fd-2b71) [ OBJECT_AGENT:"mercury", CLASS:"planet", RELATIVE_DISTANCE:"﻿1 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Venus is the planet that is second closest to the Sun     (859f-86f6-8ed6-3885) [ OBJECT_AGENT:"venus", CLASS:"planet", RELATIVE_DISTANCE:"2 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Neptune is the planet that is eighth closest to the Sun     (397b-d199-32b2-6e1f) [ OBJECT_AGENT:"neptune", CLASS:"planet", RELATIVE_DISTANCE:"8 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Mars is the planet that is fourth closest to the Sun     (4b45-65e4-b5c2-85c9) [ OBJECT_AGENT:"mar", CLASS:"planet", RELATIVE_DISTANCE:"4 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Jupiter is the planet that is fifth closest to the Sun     (393c-5d80-c259-3ee9) [ OBJECT_AGENT:"jupiter", CLASS:"planet", RELATIVE_DISTANCE:"5 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Saturn is the planet that is sixth closest to the Sun     (ffc8-4214-81e1-3903) [ OBJECT_AGENT:"saturn", CLASS:"planet", RELATIVE_DISTANCE:"6 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Uranus is the planet that is seventh closest to the Sun     (10d4-66aa-afc0-5c09) [ OBJECT_AGENT:"uranus", CLASS:"planet", RELATIVE_DISTANCE:"7 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW the stars in the night sky are very far away from the Earth     (c14b-4971-7d32-d1d3) [ OBJECT_AGENT:"star", WHERE:"in night sky", RELATIVE_DISTANCE:"very far away", TO_REFERENCE_POINT:"earth" ]
+	//        HINTROW the Sun is the star that is closest to Earth     (4e12-62f2-0830-d602) [ OBJECT_AGENT:"sun", CLASS:"star", RELATIVE_DISTANCE:"close", TO_REFERENCE_POINT:"earth" ]
+	//  Notes: Distance examples. X is close or far away from Y
+	//row autoRow0 = [TABLE:"PROP-REL-DIST", RELATIVE_DISTANCE: *"POS:JJ"+<close_0>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-REL-DIST", RELATIVE_DISTANCE: *"POS:JJ"+<close_0>]
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as distance from an object decreases , that object will appear larger     (6d4f-15e5-fadf-6159) [ QUANTITY_MEASURE1:"distance", SCOPE1A:"from object", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"that object", ACTION2:"appear", CHANGE2:"large" ]
+	//        HINTROW as distance to an object increases , that object will appear smaller     (994f-4898-9a1a-659b) [ QUANTITY_MEASURE1:"distance", SCOPE1A:"object", CHANGE1:"increase", AGENT_ATTRIBUTE2:"that object", ACTION2:"appear", CHANGE2:"small" ]
+	//row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "distance", SCOPE1A: *"POS:IN"+"object", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "that object", ACTION2: "appear", CHANGE2: <large_1>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "distance", SCOPE1A: *"POS:IN"+"object", AGENT_ATTRIBUTE2: "that object", ACTION2: "appear", CHANGE2: <large_1>]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: closer means lower ; less ; a decrease in distance     (04ee-408f-6c7a-54fc) [ THING:"close", VALUE:"low;little;decrease", ATTRIBUTE:"distance" ]
+	//        HINTROW furthest ; farthest means greatest ; most ; highest in distance     (3d48-21e9-c4e5-6491) [ THING:"far;far", VALUE:"great;much;high", ATTRIBUTE:"distance" ]
+	//row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: <close_0>, VALUE: "decrease", ATTRIBUTE: "distance"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: <close_0>, ATTRIBUTE: "distance"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: larger means greater ; higher ; more ; increase in size     (8b56-35cc-d534-8cad) [ THING:"large", VALUE:"great;high;much;increase", ATTRIBUTE:"size" ]
+	//        HINTROW smaller means less ; lower in size     (4159-4c81-0f08-e0d7) [ THING:"small", VALUE:"little;low", ATTRIBUTE:"size" ]
+	//row autoRow3 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: <large_1>, ATTRIBUTE: "size"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: <large_1>, ATTRIBUTE: "size"]
+
+	// GROUNDING       KINDOF: a star is a kind of celestial object ; celestial body     (dbe8-e776-f804-99a0) [ HYPONYM:"star", HYPERNYM:"celestial object;celestial body" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "star", HYPERNYM: "celestial object"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "star", HYPERNYM: "celestial object"]
+
+	// GROUNDING       KINDOF: Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//        HINTROW Jupiter is a kind of planet     (b772-8846-82c7-f2d8) [ HYPONYM:"jupiter", HYPERNYM:"planet" ]
+	//        HINTROW Mars is a kind of planet     (1fb6-af63-74de-86fd) [ HYPONYM:"mar", HYPERNYM:"planet" ]
+	//        HINTROW Mercury is a kind of planet     (106b-d671-313e-b596) [ HYPONYM:"mercury", HYPERNYM:"planet" ]
+	//        HINTROW Neptune is a kind of planet in the solar system     (9803-3975-7c41-48b6) [ HYPONYM:"neptune", HYPERNYM:"planet", SCOPE2:"in solar system" ]
+	//        HINTROW Venus is a kind of planet     (73aa-f84a-b42e-53b3) [ HYPONYM:"venus", HYPERNYM:"planet" ]
+	//        HINTROW Uranus is a kind of planet     (7bc0-9f19-77c2-4fcf) [ HYPONYM:"uranus", HYPERNYM:"planet" ]
+	//        HINTROW Saturn is a kind of planet     (65b3-1a89-cdd6-22b0) [ HYPONYM:"saturn", HYPERNYM:"planet" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "planet"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "planet"]
+
+	// GROUNDING       KINDOF: the Sun is a kind of star     (af26-8083-b908-7d3b) [ HYPONYM:"sun", HYPERNYM:"star" ]
+	//row autoRow6 = [TABLE:"KINDOF", HYPONYM: "sun", HYPERNYM: "star"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPONYM: "sun", HYPERNYM: "star"]
+
+	// GROUNDING       KINDOF: a planet is a kind of celestial object ; body     (22a2-1029-702e-a29a) [ HYPONYM:"planet", SCOPE1:"celestial", HYPERNYM:"object;body" ]
+	//row autoRow7 = [TABLE:"KINDOF", HYPONYM: "planet", SCOPE1: "celestial", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow7 = [TABLE:"KINDOF", HYPONYM: "planet", SCOPE1: "celestial", HYPERNYM: "object"]
+
+	// CENTRAL         PROP-GENERIC: distance is a property of space and includes ordered values of close ; far     (91b9-6388-d5b8-58b6) [ X:"distance", Y:"space", ORDERED_UNORDERED:"order", VALUES:"close;far" ]
+	//row autoRow8 = [UUID:"91b9-6388-d5b8-58b6", X: "distance", Y: "space", ORDERED_UNORDERED: "order", VALUES: <close_0>] //OVER-CONSTR.
+	row autoRow8 = [UUID:"91b9-6388-d5b8-58b6", X: "distance", Y: "space", ORDERED_UNORDERED: "order", VALUES: <close_0>]
+
+	// CENTRAL        (OPTIONAL) ACTION: planets in the solar system orbit the Sun     (4f0f-94ba-06b4-84be) [ AGENT_OBJECT:"planet", SCOPE1:"in solar system", ACTION2:"orbit", OBJECT_PROPERTY:"sun" ]
+	//row *autoRow9 = [UUID:"4f0f-94ba-06b4-84be", AGENT_OBJECT: "planet", SCOPE1: "in solar system", ACTION2: "orbit", OBJECT_PROPERTY: "sun"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"4f0f-94ba-06b4-84be", AGENT_OBJECT: "planet", SCOPE1: "in solar system", ACTION2: "orbit", OBJECT_PROPERTY: "sun"]
+
+	// CENTRAL        (OPTIONAL) ACTION: planets orbit stars     (e35c-e251-2993-ac25) [ AGENT_OBJECT:"planet", ACTION2:"orbit", OBJECT_PROPERTY:"star" ]
+	//row *autoRow10 = [UUID:"e35c-e251-2993-ac25", AGENT_OBJECT: "planet", ACTION2: "orbit", OBJECT_PROPERTY: "star"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"e35c-e251-2993-ac25", AGENT_OBJECT: "planet", ACTION2: "orbit", OBJECT_PROPERTY: "star"]
+
+	// CENTRAL         PROP-GENERIC: size is a property of objects and includes ordered values of microscopic ; tiny ; small ; medium ; large     (02eb-d26b-a00c-c559) [ X:"size", Y:"object", ORDERED_UNORDERED:"order", VALUES:"microscopic;tiny;small;medium;large" ]
+	//row autoRow11 = [UUID:"02eb-d26b-a00c-c559", X: "size", Y: "object", ORDERED_UNORDERED: "order", VALUES: <large_1>] //OVER-CONSTR.
+	row autoRow11 = [UUID:"02eb-d26b-a00c-c559", X: "size", Y: "object", ORDERED_UNORDERED: "order", VALUES: <large_1>]
+
+	// LEXGLUE         OPPOSITES: far is the opposite of close     (769f-6117-1272-9b62) [ THING_PROPERTY1:"far", THING_PROPERTY2:"close" ]
+	//row autoRow12 = [UUID:"769f-6117-1272-9b62", THING_PROPERTY1: "far", THING_PROPERTY2: <close_0>] //OVER-CONSTR.
+	row autoRow12 = [UUID:"769f-6117-1272-9b62", THING_PROPERTY1: "far", THING_PROPERTY2: <close_0>]
+
+	// LEXGLUE         OPPOSITES: larger ; bigger is the opposite of smaller     (e5c0-79e6-37a7-4b77) [ THING_PROPERTY1:"large;big", THING_PROPERTY2:"small" ]
+	//row autoRow13 = [UUID:"e5c0-79e6-37a7-4b77", THING_PROPERTY1: <large_1>, THING_PROPERTY2: "small"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"e5c0-79e6-37a7-4b77", THING_PROPERTY1: <large_1>, THING_PROPERTY2: "small"]
+
+	// LEXGLUE         SYNONYMY: nighttime means night     (27e6-0bf1-bc03-7f66) [ X1:"nighttime", X2:"night" ]
+	//row autoRow14 = [UUID:"27e6-0bf1-bc03-7f66", X1: "nighttime", X2: "night"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"27e6-0bf1-bc03-7f66", X1: "nighttime", X2: "night"]
+
+endinferencepattern

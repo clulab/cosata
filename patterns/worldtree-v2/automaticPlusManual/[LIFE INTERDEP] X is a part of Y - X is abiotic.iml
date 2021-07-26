@@ -1,0 +1,59 @@
+// Automatically converted pattern
+inferencepattern LIFE_INTERDEP_X_is_a_part_of_Y_X_is_abiotic
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: a plant is a kind of living thing     (2e89-d8e8-a8fb-9acc) [ HYPONYM:"plant", HYPERNYM:"live thing" ]
+	//        HINTROW an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//        HINTROW a fungus is a kind of living thing     (4ae9-5a73-3f04-48f7) [ HYPONYM:"fungus", HYPERNYM:"live thing" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "live thing"]
+
+	// CENTRALSW       KINDOF: soil is a kind of nonliving thing     (ea61-1f68-79b7-f09f) [ HYPONYM:"soil", HYPERNYM:"nonliving thing" ]
+	//        HINTROW water is a kind of nonliving thing     (2e1a-7f43-2f56-54a8) [ HYPONYM:"water", SCOPE1:"nonliving", HYPERNYM:"thing" ]
+	//        HINTROW air is a kind of nonliving thing     (e085-b4bf-5fc4-2955) [ HYPONYM:"air", HYPERNYM:"nonliving thing" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: *"POS:JJ"+"thing"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: *"POS:JJ"+"thing"]
+
+	// CENTRALSW       PARTOF: soil is usually part of an environment     (1004-3a8f-3732-df62) [ PART:"soil", QUANTIFIER1:"be usually", WHOLE:"environment" ]
+	//        HINTROW water is a part of an environment     (9321-c12e-e67d-201b) [ PART:"water", QUANTIFIER1:"be", WHOLE:"environment" ]
+	//        HINTROW the atmosphere is a part of nature ; the environment     (2f7f-0fc8-1863-e47e) [ PART:"atmosphere", WHOLE:"nature;environment" ]
+	//        HINTROW an organism 's shelter is a part of that organism 's environment     (d883-1167-2927-a7f7) [ PART:"organism shelter", QUANTIFIER1:"be", WHOLE:"organism environment" ]
+	//        HINTROW air is a part of the environment     (c1ee-6fac-7007-b120) [ PART:"air", WHOLE:"environment" ]
+	//row autoRow2 = [TABLE:"PARTOF", WHOLE: "environment"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"PARTOF", WHOLE: "environment"]
+
+	// CENTRALSW       KINDOF: a forest is a kind of environment     (b5d1-0f14-f32e-c6b4) [ HYPONYM:"forest", HYPERNYM:"environment" ]
+	//        HINTROW a beach is a kind of habitat ; environment     (2913-c482-da7e-b2f6) [ HYPONYM:"beach", HYPERNYM:"habitat;environment" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "environment"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "environment"]
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW a lemon tree is a kind of plant     (9cf1-bc5a-d350-5541) [ HYPONYM:"lemon tree", HYPERNYM:"plant" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// GROUNDING       KINDOF: a worm is a kind of animal     (9d7a-3ad1-561c-deae) [ HYPONYM:"worm", HYPERNYM:"animal" ]
+	//        HINTROW an earthworm is a kind of animal     (f6bf-c88d-502b-826b) [ HYPONYM:"earthworm", HYPERNYM:"animal" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: a mushroom is a kind of fungus     (ea91-5664-cefc-e7ee) [ HYPONYM:"mushroom", HYPERNYM:"fungus" ]
+	//        HINTROW mold is a kind of fungus     (0d28-3295-e473-c310) [ HYPONYM:"mold", HYPERNYM:"fungus" ]
+	//row autoRow6 = [TABLE:"KINDOF", HYPERNYM: "fungus"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPERNYM: "fungus"]
+
+	// CENTRAL         PARTOF: organisms are a part of an environment     (f7a7-6ffc-be3e-d21d) [ PART:"organism", WHOLE:"environment" ]
+	//row autoRow7 = [UUID:"f7a7-6ffc-be3e-d21d", PART: "organism", WHOLE: "environment"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"f7a7-6ffc-be3e-d21d", PART: "organism", WHOLE: "environment"]
+
+	// LEXGLUE         SYNONYMY: an organism is a living thing     (87a0-dd02-dd6d-ee60) [ X1:"organism", X2:"live thing" ]
+	//row autoRow8 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"]
+
+endinferencepattern

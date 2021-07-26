@@ -1,0 +1,65 @@
+// Automatically converted pattern
+inferencepattern LIFE_REPROD_DNA
+
+	// Plain text description
+	description = "SPACIAL MODEL?"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: guanine is a kind of nitrogenous base in DNA ; RNA     (1126-9cf8-e107-dafb) [ HYPONYM:"guanine", HYPERNYM:"nitrogenous base", SCOPE2:"in dna;rna" ]
+	//        HINTROW adenine is a kind of nitrogenous base in DNA ; RNA     (9a54-c4dd-58cd-9155) [ HYPONYM:"adenine", HYPERNYM:"nitrogenous base", SCOPE2:"in dna;rna" ]
+	//        HINTROW cytosine is a kind of nitrogenous base in DNA ; RNA     (866e-333d-7181-80d6) [ HYPONYM:"cytosine", HYPERNYM:"nitrogenous base", SCOPE2:"in dna;rna" ]
+	//        HINTROW thymine is a kind of nitrogenous base in DNA     (144e-f3e6-1b10-c151) [ HYPONYM:"thymine", HYPERNYM:"nitrogenous base", SCOPE2:"in dna" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "guanine", HYPERNYM: "nitrogenous base", SCOPE2: "in dna"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "nitrogenous base", SCOPE2: "in dna"]
+
+	// CENTRALSW       PROP-THINGS: guanine ; G is the complementary base of cytosine ; C in DNA     (475a-d842-b667-1d50) [ THING:"guanine;g", VALUE:"complementary base", ATTRIBUTE:"of cytosine;c", SCOPE_RELATIVETO:"in dna" ]
+	//        HINTROW adenine ; A is the complementary base of thymine ; T in DNA     (9afd-0acd-bf11-a260) [ THING:"adenine", VALUE:"complementary base", ATTRIBUTE:"of thymine;t", SCOPE_RELATIVETO:"in dna" ]
+	//row autoRow1 = [TABLE:"PROP-THINGS", THING: "guanine", VALUE: "complementary base", ATTRIBUTE: "of"+*"POS:NN", SCOPE_RELATIVETO: "in dna"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-THINGS", VALUE: "complementary base", ATTRIBUTE: "of"+*"POS:NN", SCOPE_RELATIVETO: "in dna"]
+
+	// CENTRALSW       MADEOF: genes are made of DNA     (9b09-fb29-9b1b-d5fb) [ OBJECT:"gene", MATERIAL:"dna" ]
+	//        HINTROW chromosome is made of DNA     (f58e-81b5-41d1-9284) [ OBJECT:"chromosome", MATERIAL:"dna" ]
+	//row autoRow2 = [TABLE:"MADEOF", OBJECT: "gene", MATERIAL: "dna"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"MADEOF", MATERIAL: "dna"]
+
+	// CENTRAL         MADEOF: DNA are made of two sequences of nucleotides linked together     (9a8c-9e9d-2f7d-537e) [ OBJECT:"dna", VALUE:"two sequence of", MATERIAL:"nucleotide", SCOPE:"link together" ]
+	//row autoRow3 = [UUID:"9a8c-9e9d-2f7d-537e", OBJECT: "dna", VALUE: "two sequence of", MATERIAL: "nucleotide", SCOPE: "link together"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"9a8c-9e9d-2f7d-537e", OBJECT: "dna", VALUE: "two sequence of", MATERIAL: "nucleotide", SCOPE: "link together"]
+
+	// CENTRAL         MADEOF: a living thing is made of cells     (6f96-e0e9-ed70-4dbc) [ OBJECT:"live thing", MATERIAL:"cell" ]
+	//row autoRow4 = [UUID:"6f96-e0e9-ed70-4dbc", OBJECT: "live thing", MATERIAL: "cell"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"6f96-e0e9-ed70-4dbc", OBJECT: "live thing", MATERIAL: "cell"]
+
+	// CENTRAL         LOCATIONS: DNA are found in the nucleus of the cell     (00b4-3f03-776a-be84) [ THING_PROCESS:"dna", LOCATION:"nucleus of cell" ]
+	//row autoRow5 = [UUID:"00b4-3f03-776a-be84", THING_PROCESS: "dna", LOCATION: "nucleus of cell"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"00b4-3f03-776a-be84", THING_PROCESS: "dna", LOCATION: "nucleus of cell"]
+
+	// CENTRAL         KINDOF: DNA is a kind of molecule     (456f-2c64-7f1c-ec72) [ HYPONYM:"dna", HYPERNYM:"molecule" ]
+	//row autoRow6 = [UUID:"456f-2c64-7f1c-ec72", HYPONYM: "dna", HYPERNYM: "molecule"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"456f-2c64-7f1c-ec72", HYPONYM: "dna", HYPERNYM: "molecule"]
+
+	// CENTRAL         VEHICLE: DNA are a vehicle for passing genes from parent to offspring     (a93e-05d1-02c8-7f9f) [ ACTOR_WHO:"dna", VERB:"pass", WHAT:"gene", SOURCE:"parent", DESTINATION:"offspring" ]
+	//row autoRow7 = [UUID:"a93e-05d1-02c8-7f9f", ACTOR_WHO: "dna", VERB: "pass", WHAT: "gene", SOURCE: "parent", DESTINATION: "offspring"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"a93e-05d1-02c8-7f9f", ACTOR_WHO: "dna", VERB: "pass", WHAT: "gene", SOURCE: "parent", DESTINATION: "offspring"]
+
+	// CENTRAL         LOCATIONS: thymine is found in DNA     (1275-5d9a-f961-6490) [ THING_PROCESS:"thymine", LOCATION:"dna" ]
+	//row autoRow8 = [UUID:"1275-5d9a-f961-6490", THING_PROCESS: "thymine", LOCATION: "dna"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"1275-5d9a-f961-6490", THING_PROCESS: "thymine", LOCATION: "dna"]
+
+	// CENTRAL        (OPTIONAL) KINDOF: uracil is a kind of nitrogenous base in RNA     (f1fa-ba46-2311-9d8a) [ HYPONYM:"uracil", HYPERNYM:"nitrogenous base", SCOPE2:"in rna" ]
+	//row *autoRow9 = [UUID:"f1fa-ba46-2311-9d8a", HYPONYM: "uracil", HYPERNYM: "nitrogenous base", SCOPE2: "in rna"] //OVER-CONSTR.
+	row *autoRow9 = [UUID:"f1fa-ba46-2311-9d8a", HYPONYM: "uracil", HYPERNYM: "nitrogenous base", SCOPE2: "in rna"]
+
+	// CENTRAL        (OPTIONAL) LOCATIONS: RNA are found in the nucleus of the cell     (b70d-c363-8ef8-6062) [ THING_PROCESS:"rna", LOCATION:"nucleus of cell" ]
+	//row *autoRow10 = [UUID:"b70d-c363-8ef8-6062", THING_PROCESS: "rna", LOCATION: "nucleus of cell"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"b70d-c363-8ef8-6062", THING_PROCESS: "rna", LOCATION: "nucleus of cell"]
+
+	// CENTRAL         KINDOF: DNA is a kind of nucleic acid     (1ccf-aeeb-be31-97dd) [ HYPONYM:"dna", HYPERNYM:"nucleic acid" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"1ccf-aeeb-be31-97dd", HYPONYM: "dna", HYPERNYM: "nucleic acid"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"1ccf-aeeb-be31-97dd", HYPONYM: "dna", HYPERNYM: "nucleic acid"]
+
+endinferencepattern

@@ -1,0 +1,98 @@
+// Automatically converted pattern
+inferencepattern ENG_DEVICES_Devices_Powered_By_Electical_Circuits
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       REQUIRES: electric devices require electrical energy to function     (0584-393a-7b86-9c70) [ OBJECT_AGENT_PROCESS:"electric device", VERB_REQUIRES:"require", OBJECT:"electric energy", FOR_PURPOSE:"function" ]
+	//        HINTROW operating electrical appliances requires electricity     (4497-3566-1187-4d3b) [ ACTION1:"operate", OBJECT_AGENT_PROCESS:"electric appliance", VERB_REQUIRES:"require", OBJECT:"electric" ]
+	//        HINTROW a watch requires electrical energy to operate     (3d6a-381c-137a-f4d5) [ OBJECT_AGENT_PROCESS:"watch", VERB_REQUIRES:"require", OBJECT:"electric energy", FOR_PURPOSE:"operate" ]
+	//        HINTROW an electrical device requires electricity to turn on     (4ba9-2d5a-0284-2882) [ OBJECT_AGENT_PROCESS:"electric device", VERB_REQUIRES:"require", OBJECT:"electric", FOR_PURPOSE:"turn" ]
+	//row autoRow0 = [TABLE:"REQUIRES", VERB_REQUIRES: "require", OBJECT: "electric"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"REQUIRES", VERB_REQUIRES: "require", OBJECT: "electric"+<energy_0>]
+
+	// CENTRALSW       SOURCEOF: a battery is a source of electrical energy ; electricity     (c6c3-2053-aaf7-86fe) [ AGENT:"battery", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"electric energy;electric" ]
+	//        HINTROW an electric outlet is a source of electricity     (bf36-2974-94ee-2412) [ ADJ:"electric", AGENT:"outlet", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"electric" ]
+	//row autoRow1 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "electric"+*"POS:NN"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "electric"+<energy_0>]
+
+	// GROUNDING       KINDOF: a flashlight is a kind of electrical device     (130a-ea4e-6de1-a4af) [ HYPONYM:"flashlight", SCOPE1:"electric", HYPERNYM:"device" ]
+	//        HINTROW a doorbell is a kind of electric device     (ac96-5db5-366c-b342) [ HYPONYM:"doorbell", SCOPE1:"electric", HYPERNYM:"device" ]
+	//        HINTROW a light bulb is a kind of electrical device     (00a4-b16a-aa4d-893d) [ HYPONYM:"light bulb", SCOPE1:"electric", HYPERNYM:"device" ]
+	//        HINTROW a battery-operated device is a kind of electrical device     (0692-6be2-8fb9-41e9) [ HYPONYM:"battery-operated device;battery operate device", SCOPE1:"electric", HYPERNYM:"device" ]
+	//        HINTROW an electric fan is a kind of electrical device for cooling ; ventilation     (d259-7bf2-a54b-5195) [ HYPONYM:"electric fan", HYPERNYM:"electric device", FOR_PURPOSE:"cool;ventilation" ]
+	//        HINTROW an electric toothbrush is a kind of electric device     (106a-0379-0b23-ab7d) [ HYPONYM:"electric toothbrush", HYPERNYM:"electric device" ]
+	//        HINTROW a hand dryer is a kind of electrical device for drying hair     (2728-2bde-6c00-9dd0) [ HYPONYM:"hand dry", HYPERNYM:"electric device", FOR_PURPOSE:"dry hair" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow2 = [TABLE:"KINDOF"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "device"]
+
+	// GROUNDING       KINDOF: a device is a kind of object     (5e04-dbd6-f9b0-14b4) [ HYPONYM:"device", HYPERNYM:"object" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "device", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "device", HYPERNYM: "object"]
+
+	// CENTRAL         REQUIRES: powering an electrical device with a battery requires a path for electricity to flow through a closed circuit     (0b18-91e7-5692-5753) [ ACTION1:"power", OBJECT_AGENT_PROCESS:"electric device", SCOPE1:"with battery", VERB_REQUIRES:"require", OBJECT:"path", SCOPE2:"for electric", FOR_PURPOSE:"flow", BY_THROUGH_HOW:"close circuit" ]
+	//  Notes: path for the electricity
+	//row autoRow4 = [UUID:"0b18-91e7-5692-5753", ACTION1: "power", OBJECT_AGENT_PROCESS: "electric device", SCOPE1: "with battery", VERB_REQUIRES: "require", OBJECT: "path", SCOPE2: "for electric", FOR_PURPOSE: "flow", BY_THROUGH_HOW: "close circuit"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"0b18-91e7-5692-5753", ACTION1: "power", OBJECT_AGENT_PROCESS: "electric device", SCOPE1: "with battery", VERB_REQUIRES: "require", OBJECT: "path", SCOPE2: "for electric", FOR_PURPOSE: "flow", BY_THROUGH_HOW: "close circuit"]
+
+	// CENTRAL         CHANGE: a battery converts chemical energy into electrical energy for powering electrical devices     (e83b-d62e-d528-3e9f) [ ACTOR_WHO:"battery", VERB:"convert", FROM:"chemical energy", INTO:"electric energy", FOR_PURPOSE:"power electric device" ]
+	//  Notes: source of electricity
+	//row autoRow5 = [UUID:"e83b-d62e-d528-3e9f", ACTOR_WHO: "battery", VERB: "convert", FROM: "chemical"+<energy_0>, INTO: "electric"+<energy_0>, FOR_PURPOSE: "power electric device"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"e83b-d62e-d528-3e9f", ACTOR_WHO: "battery", VERB: "convert", FROM: "chemical"+<energy_0>, INTO: "electric"+<energy_0>, FOR_PURPOSE: "power electric device"]
+
+	// CENTRAL         VEHICLE: an electric circuit is a vehicle for moving electrical energy from the source to the electrical device     (8d19-d76d-4c8e-bc04) [ ACTOR_WHO:"electric circuit", VERB:"move", WHAT:"electric energy", SOURCE:"source", DESTINATION:"electric device" ]
+	//row autoRow6 = [UUID:"8d19-d76d-4c8e-bc04", ACTOR_WHO: "electric circuit", VERB: "move", WHAT: "electric"+<energy_0>, SOURCE: "source", DESTINATION: "electric device"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"8d19-d76d-4c8e-bc04", ACTOR_WHO: "electric circuit", VERB: "move", WHAT: "electric"+<energy_0>, SOURCE: "source", DESTINATION: "electric device"]
+
+	// CENTRAL         CAUSE: closing an electric circuit causes an electrical device to function     (b668-73fc-5f73-b444) [ CONDITION_VERB:"close", CONDITION_PATIENT:"electric circuit", RESULT_AGENT:"electric device", RESULT_VERB:"function" ]
+	//row autoRow7 = [UUID:"b668-73fc-5f73-b444", CONDITION_VERB: "close", CONDITION_PATIENT: "electric circuit", RESULT_AGENT: "electric device", RESULT_VERB: "function"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"b668-73fc-5f73-b444", CONDITION_VERB: "close", CONDITION_PATIENT: "electric circuit", RESULT_AGENT: "electric device", RESULT_VERB: "function"]
+
+	// CENTRAL         CAUSE: completing a circuit causes electricity ; electric current to flow through that circuit     (e215-a276-5a10-38a1) [ CONDITION_VERB:"complete", CONDITION_PATIENT:"circuit", RESULT_AGENT:"electric;electric current", RESULT_VERB:"flow", SCOPE2:"through circuit" ]
+	//  Notes: completing circuits --> electric current
+	//row autoRow8 = [UUID:"e215-a276-5a10-38a1", CONDITION_VERB: "complete", CONDITION_PATIENT: "circuit", RESULT_AGENT: "electric current", RESULT_VERB: "flow", SCOPE2: "through circuit"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"e215-a276-5a10-38a1", CONDITION_VERB: "complete", CONDITION_PATIENT: "circuit", RESULT_AGENT: "electric current", RESULT_VERB: "flow", SCOPE2: "through circuit"]
+
+	// CENTRAL         IFTHEN: when an electrical conductor is plugged into an outlet , a circuit is completed     (b6b5-6397-aa43-e453) [ THING:"electric conduct", ACTION1:"plug into", ADJ_QUANTITY1A:"outlet", ACTOR_AGENT_PROCESS2:"circuit", ACTION3:"complete" ]
+	//row autoRow9 = [UUID:"b6b5-6397-aa43-e453", THING: "electric conduct", ACTION1: "plug into", ADJ_QUANTITY1A: "outlet", ACTOR_AGENT_PROCESS2: "circuit", ACTION3: "complete"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"b6b5-6397-aa43-e453", THING: "electric conduct", ACTION1: "plug into", ADJ_QUANTITY1A: "outlet", ACTOR_AGENT_PROCESS2: "circuit", ACTION3: "complete"]
+
+	// GROUNDING       REQUIRES: a flashlight requires a source of electricity to produce light     (e1cb-6dbd-0bf8-8d18) [ OBJECT_AGENT_PROCESS:"flashlight", VERB_REQUIRES:"require", OBJECT:"source of electric", FOR_PURPOSE:"product light" ]
+	//row autoRow10 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "flashlight", VERB_REQUIRES: "require", OBJECT: "source of electric", FOR_PURPOSE: "product light"] //OVER-CONSTR.
+	row autoRow10 = [TABLE:"REQUIRES", OBJECT_AGENT_PROCESS: "flashlight", VERB_REQUIRES: "require", OBJECT: "source of electric", FOR_PURPOSE: "product light"]
+
+	// CENTRAL        (OPTIONAL) AFFORDANCES: electricity cannot flow through an open circuit     (9454-afc8-6751-3910) [ ACTOR_THING:"electric", VERB:"flow through", PATIENT:"open circuit" ]
+	//row *autoRow11 = [UUID:"9454-afc8-6751-3910", ACTOR_THING: "electric", VERB: "flow through", PATIENT: "open circuit"] //OVER-CONSTR.
+	row *autoRow11 = [UUID:"9454-afc8-6751-3910", ACTOR_THING: "electric", VERB: "flow through", PATIENT: "open circuit"]
+
+	// CENTRAL         USEDFOR: electricity is used as an energy source by electrical devices     (b8fe-4fe5-0eae-a038) [ AGENT_OBJECT:"electric", FOR_PURPOSE:"energy source", AGENT_THING_WHO_USES:"electric device" ]
+	//row autoRow12 = [UUID:"b8fe-4fe5-0eae-a038", AGENT_OBJECT: "electric", FOR_PURPOSE: <energy_0>+"source", AGENT_THING_WHO_USES: "electric device"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"b8fe-4fe5-0eae-a038", AGENT_OBJECT: "electric", FOR_PURPOSE: <energy_0>+"source", AGENT_THING_WHO_USES: "electric device"]
+
+	// CENTRAL         IFTHEN: if something is powered by something else then that something requires a source of that something else     (c80b-ccc9-30c6-8280) [ THING:"something", ACTION1:"power by", OBJECT_PATIENT1:"something else", ACTOR_AGENT_PROCESS2:"that something", ACTION3:"require", OBJECT_PROPERTY3:"source", SCOPE4:"of something else" ]
+	//row autoRow13 = [UUID:"c80b-ccc9-30c6-8280", THING: "something", ACTION1: "power by", OBJECT_PATIENT1: "something else", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "require", OBJECT_PROPERTY3: "source", SCOPE4: "of something else"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"c80b-ccc9-30c6-8280", THING: "something", ACTION1: "power by", OBJECT_PATIENT1: "something else", ACTOR_AGENT_PROCESS2: "that something", ACTION3: "require", OBJECT_PROPERTY3: "source", SCOPE4: "of something else"]
+
+	// CENTRAL         PROP-THINGS: a closed circuit has continuous path     (3c9d-e904-586a-2a9d) [ ADJ:"close", THING:"circuit", VALUE:"continuous", ATTRIBUTE:"path" ]
+	//row autoRow14 = [UUID:"3c9d-e904-586a-2a9d", ADJ: "close", THING: "circuit", VALUE: "continuous", ATTRIBUTE: "path"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"3c9d-e904-586a-2a9d", ADJ: "close", THING: "circuit", VALUE: "continuous", ATTRIBUTE: "path"]
+
+	// CENTRAL         KINDOF: electrical energy is a kind of energy     (b5ca-9f64-d6d6-6783) [ HYPONYM:"electric energy", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"b5ca-9f64-d6d6-6783", HYPONYM: "electric"+<energy_0>, HYPERNYM: <energy_0>] //OVER-CONSTR.
+	row autoRow15 = [UUID:"b5ca-9f64-d6d6-6783", HYPONYM: "electric"+<energy_0>, HYPERNYM: <energy_0>]
+
+	// CENTRAL         CHANGE: electrical devices convert from electrical energy ; electricity into other forms of energy     (5e4d-6ae2-e556-9200) [ ACTOR_WHO:"electric device", VERB:"convert", FROM:"electric energy;electric", INTO:"other form of energy" ]
+	//row autoRow16 = [UUID:"5e4d-6ae2-e556-9200", ACTOR_WHO: "electric device", VERB: "convert", FROM: "electric"+<energy_0>, INTO: "other form of"+<energy_0>] //OVER-CONSTR.
+	row autoRow16 = [UUID:"5e4d-6ae2-e556-9200", ACTOR_WHO: "electric device", VERB: "convert", FROM: "electric"+<energy_0>, INTO: "other form of"+<energy_0>]
+
+	// LEXGLUE         SYNONYMY: to power means to provide energy for     (3a7a-4175-a1b7-db73) [ ACTION1:"power", ACTION2:"provide energy for" ]
+	//row autoRow17 = [UUID:"3a7a-4175-a1b7-db73", ACTION1: "power", ACTION2: "provide"+<energy_0>+"for"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"3a7a-4175-a1b7-db73", ACTION1: "power", ACTION2: "provide"+<energy_0>+"for"]
+
+endinferencepattern

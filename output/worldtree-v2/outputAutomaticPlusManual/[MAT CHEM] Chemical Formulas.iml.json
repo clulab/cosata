@@ -1,0 +1,32 @@
+{"patternMatches": [
+{
+	"patternName":"MAT_CHEM_Chemical_Formulas",
+	"matches":[
+		{
+		"uuids": ["44d0-0720-a568-afe0","5efe-966e-a1a6-df5e","cf66-0bec-c1d7-289c","0192-47c6-a615-1984","d176-e42a-2654-8d3c","d42a-9ce6-a782-24a6","f25a-54b9-3641-f7e4","fcf2-562c-5997-2086","1f87-3d79-4268-86d2"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "44d0-0720-a568-afe0", "rowText": "sodium chloride is always made of chemically combined chlorine and sodium", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5efe-966e-a1a6-df5e", "rowText": "sodium chloride is a kind of chemical compound", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "cf66-0bec-c1d7-289c", "rowText": "sodium chloride is a kind of substance", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "0192-47c6-a615-1984", "rowText": "sodium is a kind of element", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "d176-e42a-2654-8d3c", "rowText": "chlorine is a kind of element", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "d42a-9ce6-a782-24a6", "rowText": "the number in chemical formula shows the number of atoms of each element in a molecule", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "f25a-54b9-3641-f7e4", "rowText": "a molecule is the smallest particle ; unit that has the properties of a compound", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "fcf2-562c-5997-2086", "rowText": "a compound is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "1f87-3d79-4268-86d2", "rowText": "substances are made of molecules", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"chloride_1", "value":"chloride" },
+			{ "name":"chlorine_2", "value":"chlorine" },
+			{ "name":"sodium_0", "value":"sodium" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"chloride_1", "value":"chloride" },
+			{ "name":"chlorine_2", "value":"chlorine" },
+			{ "name":"sodium_0", "value":"sodium" }
+		]
+		}
+	]
+}
+]}
+

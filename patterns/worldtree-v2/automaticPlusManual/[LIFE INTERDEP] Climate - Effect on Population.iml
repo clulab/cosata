@@ -1,0 +1,58 @@
+// Automatically converted pattern
+inferencepattern LIFE_INTERDEP_Climate_Effect_on_Population
+
+	// Plain text description
+	description = "zx: not a lot of examples presented in the questions"
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//        HINTROW an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: <plant_0>, HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: <plant_0>, HYPERNYM: "organism"]
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: <plant_0>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: <plant_0>]
+
+	// CENTRAL         IFTHEN: if the environmental temperature ; air temperature is too cold then an animal ; a living thing in that environment may become cold     (2460-c937-4e53-293a) [ THING:"environment temperature;air temperature", ADJ_QUANTITY1A:"too", OBJECT_PROPERTY1:"cold", ACTOR_AGENT_PROCESS2:"animal;live thing", PROPERTY_SCOPE:"in that environment", OBJECT_PROPERTY3:"cold" ]
+	//row autoRow2 = [UUID:"2460-c937-4e53-293a", THING: "environment temperature", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "live thing", PROPERTY_SCOPE: "in that environment", OBJECT_PROPERTY3: "cold"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"2460-c937-4e53-293a", THING: "environment temperature", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "live thing", PROPERTY_SCOPE: "in that environment", OBJECT_PROPERTY3: "cold"]
+
+	// CENTRAL         AFFECT: cold temperatures usually have a negative impact on organisms     (cf66-dfc6-48d2-57ce) [ ACTOR_WHO:"cold temperature", QUALIFIER1:"usually", POSITIVE_NEGATIVE:"negative", PATIENT:"organism" ]
+	//row autoRow3 = [UUID:"cf66-dfc6-48d2-57ce", ACTOR_WHO: "cold temperature", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"cf66-dfc6-48d2-57ce", ACTOR_WHO: "cold temperature", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism"]
+
+	// CENTRAL         CHANGE-VEC: negative impacts on organisms ; species will decrease the population of the organisms ; the species     (83f9-1f31-2097-7a80) [ ADJ:"negative", AGENT_OBJECT:"impact", SCOPE1:"on organism;species", DIRECTION:"decrease", PATIENT:"population", SCOPE2:"of organism;species" ]
+	//  Notes: 4c89-1538-021d-96b2->83f9-1f31-2097-7a80
+	//row autoRow4 = [UUID:"83f9-1f31-2097-7a80", ADJ: "negative", AGENT_OBJECT: "impact", SCOPE1: "on organism", DIRECTION: "decrease", PATIENT: "population", SCOPE2: "of organism"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"83f9-1f31-2097-7a80", ADJ: "negative", AGENT_OBJECT: "impact", SCOPE1: "on organism", DIRECTION: "decrease", PATIENT: "population", SCOPE2: "of organism"]
+
+	// CENTRAL         MEASUREMENTS: population is a measure of the number of a species in an environment     (f274-b61a-7bc7-123e) [ MEASURE:"population", QUANTITY_ADJ:"measure of", ATTRIBUTE:"numb of", AGENT:"species", SCOPE:"in environment" ]
+	//row autoRow5 = [UUID:"f274-b61a-7bc7-123e", MEASURE: "population", QUANTITY_ADJ: "measure of", ATTRIBUTE: "numb of", AGENT: "species", SCOPE: "in environment"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"f274-b61a-7bc7-123e", MEASURE: "population", QUANTITY_ADJ: "measure of", ATTRIBUTE: "numb of", AGENT: "species", SCOPE: "in environment"]
+
+	// CENTRAL         IFTHEN: if a living thing becomes too cold then that living thing will die     (d662-f8eb-acab-099f) [ THING:"live thing", ACTION1:"become", ADJ_QUANTITY1A:"too", OBJECT_PROPERTY1:"cold", ACTOR_AGENT_PROCESS2:"that live thing", ACTION3:"die" ]
+	//row autoRow6 = [UUID:"d662-f8eb-acab-099f", THING: "live thing", ACTION1: "become", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "that live thing", ACTION3: "die"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"d662-f8eb-acab-099f", THING: "live thing", ACTION1: "become", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "that live thing", ACTION3: "die"]
+
+	// CENTRAL         CONTAINS: cold environments contain few organisms     (d0ac-f4c5-d526-2831) [ ADJ:"cold", OBJECT_AGENT:"environment", QUANTITY_RANGE:"few", WHAT_IT_CONTAINS:"organism" ]
+	//row autoRow7 = [UUID:"d0ac-f4c5-d526-2831", ADJ: "cold", OBJECT_AGENT: "environment", QUANTITY_RANGE: "few", WHAT_IT_CONTAINS: "organism"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"d0ac-f4c5-d526-2831", ADJ: "cold", OBJECT_AGENT: "environment", QUANTITY_RANGE: "few", WHAT_IT_CONTAINS: "organism"]
+
+	// CENTRAL         PROP-THINGS: ice is cold in temperature     (d495-a1f3-29eb-04fe) [ THING:"ice", VALUE:"cold", ATTRIBUTE:"in temperature" ]
+	//row autoRow8 = [UUID:"d495-a1f3-29eb-04fe", THING: "ice", VALUE: "cold", ATTRIBUTE: "in temperature"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"d495-a1f3-29eb-04fe", THING: "ice", VALUE: "cold", ATTRIBUTE: "in temperature"]
+
+	// CENTRAL         IFTHEN: if an organism dies then the population of that organism will decrease     (3a44-7b6a-8b5c-d15f) [ THING:"organism", ACTION1:"die", ADJ_QUANTITY2:"population of", ACTOR_AGENT_PROCESS2:"organism" ]
+	//row autoRow9 = [UUID:"3a44-7b6a-8b5c-d15f", THING: "organism", ACTION1: "die", ADJ_QUANTITY2: "population of", ACTOR_AGENT_PROCESS2: "organism"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"3a44-7b6a-8b5c-d15f", THING: "organism", ACTION1: "die", ADJ_QUANTITY2: "population of", ACTOR_AGENT_PROCESS2: "organism"]
+
+	// CENTRAL         MADEOF: a glacier is made of ice     (b901-aa66-c858-54e7) [ OBJECT:"glacier", MATERIAL:"ice" ]
+	//row autoRow10 = [UUID:"b901-aa66-c858-54e7", OBJECT: "glacier", MATERIAL: "ice"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"b901-aa66-c858-54e7", OBJECT: "glacier", MATERIAL: "ice"]
+
+endinferencepattern

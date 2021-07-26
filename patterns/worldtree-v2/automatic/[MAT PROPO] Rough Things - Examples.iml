@@ -1,0 +1,57 @@
+// Automatically converted pattern
+inferencepattern MAT_PROPO_Rough_Things_Examples
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ACTION: touching is when a body part makes contact with the surface of an object     (7c06-acbe-198f-0202) [ DEFINITION_NAME:"touch", AGENT_OBJECT:"body part", ACTION2:"make contact with", OBJECT_PROPERTY:"surface", WHEN_WHERE:"of object" ]
+	//        HINTROW feeling is when an living thing senses through touch     (e58b-6fd8-4321-1a69) [ DEFINITION_NAME:"feel", AGENT_OBJECT:"live thing", ACTION2:"sense", BY_THROUGH_HOW:"touch" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow0 = [TABLE:"ACTION"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow0 = [TABLE:"ACTION"]
+
+	// GROUNDING       PARTOF: a rough surface is a part of sandpaper     (a67b-fecc-2c14-cefb) [ PART:"rough surface", WHOLE:"sandpaper" ]
+	//        HINTROW a smooth surface is a part of a sheet of paper     (361e-8f98-2bbd-088c) [ PART:"smooth surface", QUANTIFIER1:"be", WHOLE:"sheet of paper" ]
+	//row autoRow1 = [TABLE:"PARTOF", PART: "rough surface", WHOLE: <sandpaper_0>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PARTOF", PART: "rough surface", WHOLE: <sandpaper_0>]
+
+	// GROUNDING       KINDOF: a sheet of sandpaper is a kind of object     (7ab6-d0b1-eac4-a2a9) [ HYPONYM:"sheet of sandpaper", HYPERNYM:"object" ]
+	//        HINTROW a sheet of paper is a kind of object     (5029-9d16-9c77-acf3) [ HYPONYM:"sheet of paper", HYPERNYM:"object" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "sheet of"+<sandpaper_0>, HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "sheet of"+<sandpaper_0>, HYPERNYM: "object"]
+
+	// CENTRAL         PROP-GENERIC: texture is a property of surfaces ; materials ; objects and includes ordered values of smooth ; rough     (936a-31ea-b049-fee7) [ X:"texture", Y:"surface;material;object", ORDERED_UNORDERED:"order", VALUES:"smooth;rough" ]
+	//row autoRow3 = [UUID:"936a-31ea-b049-fee7", X: "texture", Y: "surface", ORDERED_UNORDERED: "order", VALUES: "smooth"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"936a-31ea-b049-fee7", X: "texture", Y: "surface", ORDERED_UNORDERED: "order", VALUES: "smooth"]
+
+	// CENTRAL         AFFORDANCES: the texture of an object can sometimes be told by looking at the object     (bac8-51e2-f03a-e1c1) [ ACTOR_THING:"texture", PROPERTY_OBJECT:"of object", QUANTIFIER:"sometimes", VERB:"be tell", BY_THROUGH_HOW:"look at object" ]
+	//row autoRow4 = [UUID:"bac8-51e2-f03a-e1c1", ACTOR_THING: "texture", PROPERTY_OBJECT: "of object", QUANTIFIER: "sometimes", VERB: "be tell", BY_THROUGH_HOW: "look at object"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"bac8-51e2-f03a-e1c1", ACTOR_THING: "texture", PROPERTY_OBJECT: "of object", QUANTIFIER: "sometimes", VERB: "be tell", BY_THROUGH_HOW: "look at object"]
+
+	// CENTRAL         USEDFOR: touch can be used for detecting texture     (df67-2c42-2ea5-500d) [ AGENT_OBJECT:"touch", QUALIFIER:"be", FOR_PURPOSE:"detect", PATIENT:"texture" ]
+	//row autoRow5 = [UUID:"df67-2c42-2ea5-500d", AGENT_OBJECT: "touch", QUALIFIER: "be", FOR_PURPOSE: "detect", PATIENT: "texture"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"df67-2c42-2ea5-500d", AGENT_OBJECT: "touch", QUALIFIER: "be", FOR_PURPOSE: "detect", PATIENT: "texture"]
+
+	// CENTRAL         PARTOF: a surface is a part of an object     (eb92-b0cd-c257-9bcf) [ PART:"surface", WHOLE:"object" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"eb92-b0cd-c257-9bcf", PART: "surface", WHOLE: "object"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"eb92-b0cd-c257-9bcf", PART: "surface", WHOLE: "object"]
+
+	// CENTRAL         KINDOF: rough is a kind of texture     (4639-8ac3-5232-3850) [ HYPONYM:"rough", HYPERNYM:"texture" ]
+	//row autoRow7 = [UUID:"4639-8ac3-5232-3850", HYPONYM: "rough", HYPERNYM: "texture"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4639-8ac3-5232-3850", HYPONYM: "rough", HYPERNYM: "texture"]
+
+	// CENTRAL        (OPTIONAL) KINDOF: smooth is a kind of texture     (be7f-0242-d76f-3be0) [ HYPONYM:"smooth", HYPERNYM:"texture" ]
+	//row *autoRow8 = [UUID:"be7f-0242-d76f-3be0", HYPONYM: "smooth", HYPERNYM: "texture"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"be7f-0242-d76f-3be0", HYPONYM: "smooth", HYPERNYM: "texture"]
+
+	// LEXGLUE         SYNONYMY: texture means how an object feels     (6c86-9d15-6ab9-f4c3) [ X1:"texture", X2:"object feel" ]
+	//row autoRow9 = [UUID:"6c86-9d15-6ab9-f4c3", X1: "texture", X2: "object feel"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"6c86-9d15-6ab9-f4c3", X1: "texture", X2: "object feel"]
+
+endinferencepattern

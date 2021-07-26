@@ -1,0 +1,113 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Wildfires_by_Droughts
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: dry means low in amount of water ; wetness ; moisture     (5554-6d9d-779d-d5f5) [ THING:"spin-dry", VALUE:"low", ATTRIBUTE:"amount of water;wet;moisture" ]
+	//        HINTROW drier means lower in amount of water ; wetness ; moisture     (3cfa-bd2a-6867-18ba) [ THING:"dry", VALUE:"low", ATTRIBUTE:"amount of water;wet;moisture" ]
+	//row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", VALUE: "low", ATTRIBUTE: "amount of water"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", VALUE: "low", ATTRIBUTE: "amount of water"]
+
+	// CENTRALSW       CAUSE: drought may cause wildfires     (a603-7574-10cf-966e) [ CONDITION_AGENT_OBJECT:"drought", RESULT_AGENT:"wildfire" ]
+	//        HINTROW dry conditions can cause fire     (e30d-554a-d858-1f89) [ CONDITION_AGENT_OBJECT:"spin-dry condition", RESULT_AGENT:"fire" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"CAUSE"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow1 = [TABLE:"CAUSE"]
+
+	// GROUNDING       KINDOF: a forest is a kind of ecosystem     (e58d-03a1-b94d-942d) [ HYPONYM:"forest", HYPERNYM:"ecosystem" ]
+	//        HINTROW a rainforest is a kind of ecosystem     (4560-3d4b-41c1-7cdb) [ HYPONYM:"rainforest", HYPERNYM:"ecosystem" ]
+	//        HINTROW a pond is a kind of environment     (e37d-8beb-fc76-3e82) [ HYPONYM:"pond", HYPERNYM:"environment" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow2 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow2 = [TABLE:"KINDOF"]
+
+	// GROUNDING       KINDOF: a deer is a kind of animal     (8cd7-84f7-76a1-1ba5) [ HYPONYM:"deer", HYPERNYM:"animal" ]
+	//        HINTROW a frog is a kind of animal     (9e89-73fd-66d5-18e2) [ HYPONYM:"frog", HYPERNYM:"animal" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// CENTRAL         CONTAINS: a forest contains lots of plants ; trees     (a54a-a04c-71eb-ba0a) [ OBJECT_AGENT:"forest", QUANTITY_RANGE:"lot of", WHAT_IT_CONTAINS:"plant;tree" ]
+	//row autoRow4 = [UUID:"a54a-a04c-71eb-ba0a", OBJECT_AGENT: "forest", QUANTITY_RANGE: "lot of", WHAT_IT_CONTAINS: "plant"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"a54a-a04c-71eb-ba0a", OBJECT_AGENT: "forest", QUANTITY_RANGE: "lot of", WHAT_IT_CONTAINS: "plant"]
+
+	// CENTRAL         CHANGE-VEC: drought is when available water decreases in an environment     (3492-2519-a7cc-d552) [ PROCESS_NAME_ACTION:"drought", AGENT_OBJECT:"available water", DIRECTION:"decrease", SCOPE2:"in environment" ]
+	//row autoRow5 = [UUID:"3492-2519-a7cc-d552", PROCESS_NAME_ACTION: "drought", AGENT_OBJECT: "available water", DIRECTION: "decrease", SCOPE2: "in environment"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"3492-2519-a7cc-d552", PROCESS_NAME_ACTION: "drought", AGENT_OBJECT: "available water", DIRECTION: "decrease", SCOPE2: "in environment"]
+
+	// CENTRAL         CONTAINS: a tree contains wood     (bcc7-8811-5dcd-6e0f) [ OBJECT_AGENT:"tree", WHAT_IT_CONTAINS:"wood" ]
+	//row autoRow6 = [UUID:"bcc7-8811-5dcd-6e0f", OBJECT_AGENT: "tree", WHAT_IT_CONTAINS: "wood"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"bcc7-8811-5dcd-6e0f", OBJECT_AGENT: "tree", WHAT_IT_CONTAINS: "wood"]
+
+	// CENTRAL         CAUSE: fire causes burning     (4dc5-13bf-3c46-af74) [ CONDITION_AGENT_OBJECT:"fire", RESULT_VERB:"burn" ]
+	//row autoRow7 = [UUID:"4dc5-13bf-3c46-af74", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "burn"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"4dc5-13bf-3c46-af74", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "burn"]
+
+	// CENTRAL         CONTAINS: an ecosystem contains a large community of ; large numbers of living organisms     (7a75-f74f-4c98-0f01) [ OBJECT_AGENT:"ecosystem", QUANTITY_RANGE:"large community of;large number of", WHAT_IT_CONTAINS:"live organism" ]
+	//row autoRow8 = [UUID:"7a75-f74f-4c98-0f01", OBJECT_AGENT: "ecosystem", QUANTITY_RANGE: "large community of", WHAT_IT_CONTAINS: "live organism"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"7a75-f74f-4c98-0f01", OBJECT_AGENT: "ecosystem", QUANTITY_RANGE: "large community of", WHAT_IT_CONTAINS: "live organism"]
+
+	// CENTRAL         CAUSE: fire causes harm to trees ; to forests ; to living things     (8341-4d61-aa1c-ffbd) [ CONDITION_AGENT_OBJECT:"fire", RESULT_VERB:"harm", RESULT_PATIENT:"tree;forest;live thing" ]
+	//row autoRow9 = [UUID:"8341-4d61-aa1c-ffbd", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "harm", RESULT_PATIENT: "live thing"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"8341-4d61-aa1c-ffbd", CONDITION_AGENT_OBJECT: "fire", RESULT_VERB: "harm", RESULT_PATIENT: "live thing"]
+
+	// CENTRAL         IFTHEN: if an animal 's ; organisms habitat no longer exists ; ceases to exist then that animal ; that organism will die     (54f0-f2ea-baa5-7a2f) [ ADJ_QUANTITY1:"animal;organism", THING:"habitat", ACTION1:"no long exist;cease exist", ACTOR_AGENT_PROCESS2:"that animal;that organism", ACTION3:"die" ]
+	//row autoRow10 = [UUID:"54f0-f2ea-baa5-7a2f", ADJ_QUANTITY1: "animal", THING: "habitat", ACTION1: "no long exist", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "die"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"54f0-f2ea-baa5-7a2f", ADJ_QUANTITY1: "animal", THING: "habitat", ACTION1: "no long exist", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "die"]
+
+	// CENTRAL         ACTION: wildfire is when a forest catches fire     (e286-2d36-370a-0d17) [ DEFINITION_NAME:"wildfire", AGENT_OBJECT:"forest", ACTION2:"catch", OBJECT_PROPERTY:"fire" ]
+	//row autoRow11 = [UUID:"e286-2d36-370a-0d17", DEFINITION_NAME: "wildfire", AGENT_OBJECT: "forest", ACTION2: "catch", OBJECT_PROPERTY: "fire"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"e286-2d36-370a-0d17", DEFINITION_NAME: "wildfire", AGENT_OBJECT: "forest", ACTION2: "catch", OBJECT_PROPERTY: "fire"]
+
+	// CENTRAL         KINDOF: a wildfire is a kind of natural disaster     (b20b-f9ca-a6c1-68e6) [ HYPONYM:"wildfire", SCOPE1:"nature", HYPERNYM:"disaster" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"b20b-f9ca-a6c1-68e6", HYPONYM: "wildfire", SCOPE1: "nature", HYPERNYM: "disaster"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"b20b-f9ca-a6c1-68e6", HYPONYM: "wildfire", SCOPE1: "nature", HYPERNYM: "disaster"]
+
+	// CENTRAL         ACTION: dry wood easily burns     (50c2-119a-8445-c8b7) [ ADJ:"spin-dry", AGENT_OBJECT:"wood", QUANITIFIER:"easy", ACTION2:"burn" ]
+	//row autoRow13 = [UUID:"50c2-119a-8445-c8b7", ADJ: "spin-dry", AGENT_OBJECT: "wood", QUANITIFIER: "easy", ACTION2: "burn"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"50c2-119a-8445-c8b7", ADJ: "spin-dry", AGENT_OBJECT: "wood", QUANITIFIER: "easy", ACTION2: "burn"]
+
+	// CENTRAL         CAUSE: natural disasters can cause animals to leave an environment     (2e42-1ae7-02c4-eb40) [ CONDITION_AGENT_OBJECT:"nature disaster", RESULT_AGENT:"animal", RESULT_VERB:"leave", RESULT_PATIENT:"environment" ]
+	//row autoRow14 = [UUID:"2e42-1ae7-02c4-eb40", CONDITION_AGENT_OBJECT: "nature disaster", RESULT_AGENT: "animal", RESULT_VERB: "leave", RESULT_PATIENT: "environment"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"2e42-1ae7-02c4-eb40", CONDITION_AGENT_OBJECT: "nature disaster", RESULT_AGENT: "animal", RESULT_VERB: "leave", RESULT_PATIENT: "environment"]
+
+	// CENTRAL         CAUSE: dry and hot weather for a long time can cause drought     (b6b1-26df-3362-29e1) [ CONDITION_AGENT_OBJECT:"spin-dry hot weather", SCOPE1:"for long time", RESULT_AGENT:"drought" ]
+	//row autoRow15 = [UUID:"b6b1-26df-3362-29e1", CONDITION_AGENT_OBJECT: "spin-dry hot weather", SCOPE1: "for long time", RESULT_AGENT: "drought"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"b6b1-26df-3362-29e1", CONDITION_AGENT_OBJECT: "spin-dry hot weather", SCOPE1: "for long time", RESULT_AGENT: "drought"]
+
+	// CENTRAL         CAUSE: habitat destruction causes animals to move to find shelter in another habitat     (9fa0-9f6a-3b04-00f8) [ CONDITION_AGENT_OBJECT:"habitat destruction", RESULT_AGENT:"animal", RESULT_VERB:"move", FOR_PURPOSE:"find shelter", SCOPE2:"in habitat" ]
+	//row autoRow16 = [UUID:"9fa0-9f6a-3b04-00f8", CONDITION_AGENT_OBJECT: "habitat destruction", RESULT_AGENT: "animal", RESULT_VERB: "move", FOR_PURPOSE: "find shelter", SCOPE2: "in habitat"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"9fa0-9f6a-3b04-00f8", CONDITION_AGENT_OBJECT: "habitat destruction", RESULT_AGENT: "animal", RESULT_VERB: "move", FOR_PURPOSE: "find shelter", SCOPE2: "in habitat"]
+
+	// CENTRAL         CHANGE: a wildfire changes an ecosystem drastically     (d7f0-79fc-ed38-504f) [ ACTOR_WHO:"wildfire", VERB:"change", WHAT:"ecosystem", SCOPE:"drastically" ]
+	//row autoRow17 = [UUID:"d7f0-79fc-ed38-504f", ACTOR_WHO: "wildfire", VERB: "change", WHAT: "ecosystem", SCOPE: "drastically"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"d7f0-79fc-ed38-504f", ACTOR_WHO: "wildfire", VERB: "change", WHAT: "ecosystem", SCOPE: "drastically"]
+
+	// LEXGLUE         SYNONYMY: an environment is similar to an ecosystem     (c1d3-4ab4-b443-aac3) [ X1:"environment", X2:"ecosystem" ]
+	//row autoRow18 = [UUID:"c1d3-4ab4-b443-aac3", X1: "environment", X2: "ecosystem"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"c1d3-4ab4-b443-aac3", X1: "environment", X2: "ecosystem"]
+
+	// LEXGLUE         SYNONYMY: an environment means an area     (1240-2639-9a5f-96cd) [ X1:"environment", X2:"area" ]
+	//row autoRow19 = [UUID:"1240-2639-9a5f-96cd", X1: "environment", X2: "area"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"1240-2639-9a5f-96cd", X1: "environment", X2: "area"]
+
+	// LEXGLUE         SYNONYMY: an organism is a living thing     (87a0-dd02-dd6d-ee60) [ X1:"organism", X2:"live thing" ]
+	//row autoRow20 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"] //OVER-CONSTR.
+	row autoRow20 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"]
+
+	// LEXGLUE         SYNONYMY: woodland means forest     (75b7-e55a-c950-379a) [ X1:"woodland", X2:"forest" ]
+	//row autoRow21 = [UUID:"75b7-e55a-c950-379a", X1: "woodland", X2: "forest"] //OVER-CONSTR.
+	row autoRow21 = [UUID:"75b7-e55a-c950-379a", X1: "woodland", X2: "forest"]
+
+	// LEXGLUE         SYNONYMY: wildfire means forest fire     (255a-e572-50e2-f8e5) [ X1:"wildfire", X2:"forest fire" ]
+	//row autoRow22 = [UUID:"255a-e572-50e2-f8e5", X1: "wildfire", X2: "forest fire"] //OVER-CONSTR.
+	row autoRow22 = [UUID:"255a-e572-50e2-f8e5", X1: "wildfire", X2: "forest fire"]
+
+endinferencepattern

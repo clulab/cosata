@@ -1,0 +1,68 @@
+// Automatically converted pattern
+inferencepattern CEL_FEATURES_Gravity_Factors_Mass_and_Distance
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       COMPARISON: a dwarf planet usually is much smaller in size ; in mass than other planets     (f560-c57a-5c13-8468) [ THING:"dwarf planet", QUALIFIER:"usually", ACTION1:"be", COMPARISON:"much small", ATTRIBUTE:"in size;in mass", THING_COMPARED:"other planet" ]
+	//        HINTROW a planet 's moon is smaller than that planet     (3e43-6c70-96a7-964f) [ ADJ:"planet", THING:"moon", ACTION1:"be", COMPARISON:"small", THING_COMPARED:"planet" ]
+	//        HINTROW a star usually is larger than a planet     (d0a0-c566-15b4-8a30) [ THING:"star", QUALIFIER:"usually", ACTION1:"be", COMPARISON:"large", THING_COMPARED:"planet" ]
+	//  Notes: 2fa6-223b-ad1e-c3a8->d0a0-c566-15b4-8a30;447e-1243-6d4e-e9e1->f560-c57a-5c13-8468;3f74-37d4-8002-21b5->3e43-6c70-96a7-964fX is smaller in size than Y
+	//row autoRow0 = [TABLE:"COMPARISON", THING: "dwarf planet", ACTION1: "be", ATTRIBUTE: *"POS:IN"+"mass", THING_COMPARED: *"POS:JJ"+"planet"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"COMPARISON", ACTION1: "be", THING_COMPARED: *"POS:JJ"+"planet"]
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as the mass of a planet ; of a celestial object decreases , the surface gravity of that planet ; of that celestial object weakens     (17dc-2a01-aa3d-259f) [ QUANTITY_MEASURE1:"mass", AGENT_ATTRIBUTE1:"of planet;of celestial object", CHANGE1:"decrease", QUANTITY_MEASURE2:"surface gravity", AGENT_ATTRIBUTE2:"of planet;of celestial object", CHANGE2:"weaken" ]
+	//        HINTROW as mass of a planet ; of a celestial body increases , the force of gravity on that planet will increase     (cecf-144a-6959-4a28) [ QUANTITY_MEASURE1:"mass", AGENT_ATTRIBUTE1:"of planet;of celestial body", CHANGE1:"increase;increase", QUANTITY_MEASURE2:"force of gravity", SCOPE2A:"on planet", CHANGE2:"increase" ]
+	//row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "mass", AGENT_ATTRIBUTE1: "of"+*"POS:JJ"+"object", CHANGE1: "decrease", QUANTITY_MEASURE2: *"POS:NN"+"gravity", AGENT_ATTRIBUTE2: "of"+*"POS:JJ"+"object"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "mass", AGENT_ATTRIBUTE1: "of planet", QUANTITY_MEASURE2: *"POS:NN"+"gravity"]
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as distance from an object decreases , the pull of gravity on that object increases     (9d4d-3bfb-e0e2-d068) [ QUANTITY_MEASURE1:"distance", SCOPE1A:"from object", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"pull of gravity", SCOPE2A:"on object", CHANGE2:"increase" ]
+	//        HINTROW as the distance from an object increases , the force of gravity on that object will decrease     (dfb6-4ce2-e5ae-b00b) [ QUANTITY_MEASURE1:"distance from", AGENT_ATTRIBUTE1:"object", CHANGE1:"increase", AGENT_ATTRIBUTE2:"force of gravity", SCOPE2A:"on object", CHANGE2:"decrease" ]
+	//row autoRow2 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "distance", SCOPE1A: *"POS:IN"+"object", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "pull of gravity", SCOPE2A: "on object"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"COUPLEDRELATIONSHIP", QUANTITY_MEASURE1: "distance", AGENT_ATTRIBUTE2: "pull of gravity", SCOPE2A: "on object"]
+
+	// CENTRALSW       PROP-REL-DIST: Mercury is the planet that is first closest to the Sun     (c3ef-1aeb-c9fd-2b71) [ OBJECT_AGENT:"mercury", CLASS:"planet", RELATIVE_DISTANCE:"﻿1 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Pluto is the planet that is ninth closest to the Sun     (0390-aada-ce88-9040) [ OBJECT_AGENT:"pluto", CLASS:"planet", RELATIVE_DISTANCE:"9 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Earth is the planet that is third closest to the Sun     (a352-bde5-b854-f460) [ OBJECT_AGENT:"earth", CLASS:"planet", RELATIVE_DISTANCE:"3 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Venus is the planet that is second closest to the Sun     (859f-86f6-8ed6-3885) [ OBJECT_AGENT:"venus", CLASS:"planet", RELATIVE_DISTANCE:"2 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Mars is the planet that is fourth closest to the Sun     (4b45-65e4-b5c2-85c9) [ OBJECT_AGENT:"mar", CLASS:"planet", RELATIVE_DISTANCE:"4 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Jupiter is the planet that is fifth closest to the Sun     (393c-5d80-c259-3ee9) [ OBJECT_AGENT:"jupiter", CLASS:"planet", RELATIVE_DISTANCE:"5 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Saturn is the planet that is sixth closest to the Sun     (ffc8-4214-81e1-3903) [ OBJECT_AGENT:"saturn", CLASS:"planet", RELATIVE_DISTANCE:"6 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Uranus is the planet that is seventh closest to the Sun     (10d4-66aa-afc0-5c09) [ OBJECT_AGENT:"uranus", CLASS:"planet", RELATIVE_DISTANCE:"7 close", TO_REFERENCE_POINT:"sun" ]
+	//        HINTROW Neptune is the planet that is eighth closest to the Sun     (397b-d199-32b2-6e1f) [ OBJECT_AGENT:"neptune", CLASS:"planet", RELATIVE_DISTANCE:"8 close", TO_REFERENCE_POINT:"sun" ]
+	//  Notes: the distance between the sun and the planet
+	//row autoRow3 = [TABLE:"PROP-REL-DIST", CLASS: "planet", RELATIVE_DISTANCE: *"POS:JJ"+"close", TO_REFERENCE_POINT: "sun"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"PROP-REL-DIST", CLASS: "planet", RELATIVE_DISTANCE: *"POS:JJ"+"close", TO_REFERENCE_POINT: "sun"]
+
+	// GROUNDING       KINDOF: Pluto is a kind of dwarf planet     (1230-534f-c1fb-8a2a) [ HYPONYM:"pluto", HYPERNYM:"dwarf planet" ]
+	//        HINTROW Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//  Notes: X column
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "dwarf planet"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: *"POS:NN"+"planet"]
+
+	// GROUNDING       KINDOF: the Sun is a kind of star     (af26-8083-b908-7d3b) [ HYPONYM:"sun", HYPERNYM:"star" ]
+	//        HINTROW Earth is a kind of planet     (e473-7297-61c1-56fa) [ HYPONYM:"earth", HYPERNYM:"planet" ]
+	//  Notes: Y column
+//WARNING! Slot with no constraints.
+//	//row autoRow5 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow5 = [TABLE:"KINDOF"]
+
+	// CENTRAL         CAUSE: the mass of a planet causes the pull of gravity on that planet     (4181-3ee0-c35b-5e30) [ CONDITION_AGENT_OBJECT:"mass of planet", RESULT_AGENT:"pull of gravity", SCOPE2:"on planet" ]
+	//row autoRow6 = [UUID:"4181-3ee0-c35b-5e30", CONDITION_AGENT_OBJECT: "mass of planet", RESULT_AGENT: "pull of gravity", SCOPE2: "on planet"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4181-3ee0-c35b-5e30", CONDITION_AGENT_OBJECT: "mass of planet", RESULT_AGENT: "pull of gravity", SCOPE2: "on planet"]
+
+	// CENTRAL         KINDOF: gravity is a kind of force     (1271-8178-87cf-045c) [ HYPONYM:"gravity", HYPERNYM:"force" ]
+	//  Notes: peripheral central
+	//row autoRow7 = [UUID:"1271-8178-87cf-045c", HYPONYM: "gravity", HYPERNYM: "force"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"1271-8178-87cf-045c", HYPONYM: "gravity", HYPERNYM: "force"]
+
+	// LEXGLUE         SYNONYMY: gravity means gravitational pull ; gravitational energy ; gravitational force ; gravitational attraction     (a6ed-d678-af19-2281) [ X1:"gravity", X2:"gravitational pull;gravitational energy;gravitational force;gravitational attraction" ]
+	//row autoRow8 = [UUID:"a6ed-d678-af19-2281", X1: "gravity", X2: "gravitational pull"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"a6ed-d678-af19-2281", X1: "gravity", X2: "gravitational pull"]
+
+endinferencepattern

@@ -1,0 +1,76 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Erosion_Results_in_Canyons
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: weathering is a kind of geologic process     (b9ee-1aa0-8736-13c8) [ HYPONYM:"weather", SCOPE1:"geologic", HYPERNYM:"process" ]
+	//        HINTROW erosion is a kind of process     (7fff-260d-92e0-8f87) [ HYPONYM:"erode", HYPERNYM:"process" ]
+	//  Notes: peripheral
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "weather", HYPERNYM: "process"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "weather", HYPERNYM: "process"]
+
+	// GROUNDING       KINDOF: a river is a kind of flowing ; moving body of water     (9885-6337-f26c-cfbd) [ HYPONYM:"river", SCOPE1:"flow;move", HYPERNYM:"body of water" ]
+	//        HINTROW a stream is a kind of moving body of water     (c71c-f0da-3930-67f0) [ HYPONYM:"stream", SCOPE1:"move", HYPERNYM:"body of water" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "river", SCOPE1: "flow", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", SCOPE1: "move", HYPERNYM: "body of water"]
+
+	// GROUNDING       KINDOF: the Grand Canyon is a kind of canyon     (bea1-3b11-3955-ffaf) [ HYPONYM:"grand canyon", HYPERNYM:"canyon" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "grand canyon", HYPERNYM: "canyon"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "grand canyon", HYPERNYM: "canyon"]
+
+	// GROUNDING       KINDOF: a canyon is a kind of landform     (9391-2a1e-2e67-95b9) [ HYPONYM:"canyon", HYPERNYM:"landform" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "canyon", HYPERNYM: "landform"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "canyon", HYPERNYM: "landform"]
+
+	// CENTRAL         CHANGE: weathering ; mechanical weathering means breaking down rocks ; surface materials from a larger whole into smaller pieces by weather ; mechanical means     (791e-1c71-7a1d-d10a) [ PROCESS_NAME:"weather;mechanical weather", VERB:"break", WHAT:"rock;surface material", FROM:"large whole", INTO:"small piece", BY_THROUGH_HOW:"weather;mechanical mean" ]
+	//row autoRow4 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"791e-1c71-7a1d-d10a", PROCESS_NAME: "mechanical weather", VERB: "break", WHAT: "surface material", FROM: "large whole", INTO: "small piece", BY_THROUGH_HOW: "mechanical mean"]
+
+	// CENTRAL         CAUSE: rocks ; soil ; materials interacting with wind ; moving water over long periods of time causes weathering     (02f0-b4ba-41d8-0483) [ CONDITION_AGENT_OBJECT:"rock;soil;material", CONDITION_VERB:"interact with", CONDITION_PATIENT:"wind;move water", DURATION1:"over long period of time", RESULT_VERB:"weather" ]
+	//row autoRow5 = [UUID:"02f0-b4ba-41d8-0483", CONDITION_AGENT_OBJECT: "rock", CONDITION_VERB: "interact with", CONDITION_PATIENT: "move water", DURATION1: "over long period of time", RESULT_VERB: "weather"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"02f0-b4ba-41d8-0483", CONDITION_AGENT_OBJECT: "rock", CONDITION_VERB: "interact with", CONDITION_PATIENT: "move water", DURATION1: "over long period of time", RESULT_VERB: "weather"]
+
+	// CENTRAL         FORMEDBY: most canyons are formed by flowing rivers through erosion over long periods of time     (95de-5e9c-79e0-c861) [ QUANTIFIER:"much", OBJECT:"canyon", VERB:"flow", PATIENT:"river", BY_THROUGH_HOW:"through erode", SCOPE:"over long period of time" ]
+	//row autoRow6 = [UUID:"95de-5e9c-79e0-c861", QUANTIFIER: "much", OBJECT: "canyon", VERB: "flow", PATIENT: "river", BY_THROUGH_HOW: "through erode", SCOPE: "over long period of time"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"95de-5e9c-79e0-c861", QUANTIFIER: "much", OBJECT: "canyon", VERB: "flow", PATIENT: "river", BY_THROUGH_HOW: "through erode", SCOPE: "over long period of time"]
+
+	// CENTRAL         FORMEDBY: the Grand Canyon was formed by the Colorado River flowing over long periods of time     (d308-a04a-d030-5c6c) [ OBJECT:"grand canyon", AGENT_PROCESS:"colorado river", VERB:"flow", SCOPE:"long period of time" ]
+	//row autoRow7 = [UUID:"d308-a04a-d030-5c6c", OBJECT: "grand canyon", AGENT_PROCESS: "colorado river", VERB: "flow", SCOPE: "long period of time"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"d308-a04a-d030-5c6c", OBJECT: "grand canyon", AGENT_PROCESS: "colorado river", VERB: "flow", SCOPE: "long period of time"]
+
+	// CENTRAL         TRANSFER: erosion is when wind ; moving water transports sediments from one place to another place for a long distance     (86b7-c266-fd6c-3286) [ PROCESS_NAME:"erode", ACTOR_WHO:"wind;move water", VERB:"transport;transport", WHAT:"sediment", SOURCE:"one place", DESTINATION:"place", SCOPE:"for long distance" ]
+	//  Notes: 4bf3-ee38-89b1-156f->86b7-c266-fd6c-3286
+	//row autoRow8 = [UUID:"86b7-c266-fd6c-3286", PROCESS_NAME: "erode", ACTOR_WHO: "move water", VERB: "transport", WHAT: "sediment", SOURCE: "one place", DESTINATION: "place", SCOPE: "for long distance"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"86b7-c266-fd6c-3286", PROCESS_NAME: "erode", ACTOR_WHO: "move water", VERB: "transport", WHAT: "sediment", SOURCE: "one place", DESTINATION: "place", SCOPE: "for long distance"]
+
+	// CENTRAL         CHANGE: erosion ; weathering changes the Earth 's surface     (4267-93f0-e703-47f2) [ ACTOR_WHO:"erode;weather", VERB:"change;change", WHAT:"earth surface" ]
+	//row autoRow9 = [UUID:"4267-93f0-e703-47f2", ACTOR_WHO: "erode", VERB: "change", WHAT: "earth surface"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"4267-93f0-e703-47f2", ACTOR_WHO: "erode", VERB: "change", WHAT: "earth surface"]
+
+	// CENTRAL         KINDOF: a landform is a kind of natural formation     (26bf-462e-a8fb-f637) [ HYPONYM:"landform", SCOPE1:"nature", HYPERNYM:"form" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"26bf-462e-a8fb-f637", HYPONYM: "landform", SCOPE1: "nature", HYPERNYM: "form"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"26bf-462e-a8fb-f637", HYPONYM: "landform", SCOPE1: "nature", HYPERNYM: "form"]
+
+	// CENTRAL         MADEOF: a canyon is made of rock     (9752-f5f1-f7af-ff0e) [ OBJECT:"canyon", MATERIAL:"rock" ]
+	//row autoRow11 = [UUID:"9752-f5f1-f7af-ff0e", OBJECT: "canyon", MATERIAL: "rock"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"9752-f5f1-f7af-ff0e", OBJECT: "canyon", MATERIAL: "rock"]
+
+	// CENTRAL         CAUSE: erosion causes deposition     (7e2e-e161-5c98-444e) [ CONDITION_AGENT_OBJECT:"erode", RESULT_AGENT:"deposition" ]
+	//row autoRow12 = [UUID:"7e2e-e161-5c98-444e", CONDITION_AGENT_OBJECT: "erode", RESULT_AGENT: "deposition"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"7e2e-e161-5c98-444e", CONDITION_AGENT_OBJECT: "erode", RESULT_AGENT: "deposition"]
+
+	// CENTRAL         ACTION: sometimes weathering smooths ; rounds rocks     (e357-f8b5-992c-2d25) [ QUANTIFIER:"sometimes", AGENT_OBJECT:"weather", ACTION2:"smooth;round", OBJECT_PROPERTY:"rock" ]
+	//row autoRow13 = [UUID:"e357-f8b5-992c-2d25", QUANTIFIER: "sometimes", AGENT_OBJECT: "weather", ACTION2: "smooth", OBJECT_PROPERTY: "rock"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"e357-f8b5-992c-2d25", QUANTIFIER: "sometimes", AGENT_OBJECT: "weather", ACTION2: "smooth", OBJECT_PROPERTY: "rock"]
+
+	// LEXGLUE         SYNONYMY: mechanical weathering means physical weathering     (6cda-f0b2-9b40-f193) [ X1:"mechanical weather", X2:"physical weather" ]
+	//row autoRow14 = [UUID:"6cda-f0b2-9b40-f193", X1: "mechanical weather", X2: "physical weather"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"6cda-f0b2-9b40-f193", X1: "mechanical weather", X2: "physical weather"]
+
+endinferencepattern

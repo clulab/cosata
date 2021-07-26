@@ -1,0 +1,866 @@
+{"patternMatches": [
+{
+	"patternName":"MAT_COS_Evaporation_Over_a_Stove",
+	"matches":[
+		{
+		"uuids": ["4aa8-45fb-6589-f574","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","b877-a58b-f75a-3998","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4aa8-45fb-6589-f574", "rowText": "a car engine is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["891f-4f5c-91a2-bd31","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","b877-a58b-f75a-3998","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["2e43-a74f-bca2-5d7f","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","b877-a58b-f75a-3998","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e43-a74f-bca2-5d7f", "rowText": "a hand dryer produces heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["945f-acde-29f3-d573","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","b877-a58b-f75a-3998","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "945f-acde-29f3-d573", "rowText": "a hot plate is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["bdf8-fbda-ff94-54f5","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","b877-a58b-f75a-3998","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bdf8-fbda-ff94-54f5", "rowText": "a hot substance is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["c491-9f0f-8947-cd1b","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","b877-a58b-f75a-3998","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c491-9f0f-8947-cd1b", "rowText": "natural gas is a source of heat by burning", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["926d-355a-9b2c-c5d1","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","b877-a58b-f75a-3998","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "926d-355a-9b2c-c5d1", "rowText": "an oven is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["41f9-05ef-9272-1100","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","b877-a58b-f75a-3998","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "41f9-05ef-9272-1100", "rowText": "a radiator is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["55b7-97a0-0554-156d","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","b877-a58b-f75a-3998","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "55b7-97a0-0554-156d", "rowText": "a hot ; warm something is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d59b-bac8-e191-05be","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","b877-a58b-f75a-3998","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d59b-bac8-e191-05be", "rowText": "a stove generates heat for cooking usually", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","b877-a58b-f75a-3998","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["2889-3edc-095a-6d6b","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","b877-a58b-f75a-3998","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2889-3edc-095a-6d6b", "rowText": "sunlight produces heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["c681-db5c-096f-bade","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","b877-a58b-f75a-3998","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c681-db5c-096f-bade", "rowText": "the body of a mammal is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "b877-a58b-f75a-3998", "rowText": "a source of something emits ; produces ; generates ; provides that something", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["4aa8-45fb-6589-f574","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4aa8-45fb-6589-f574", "rowText": "a car engine is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow15", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow15", "value":"" }
+		]
+		},
+		{
+		"uuids": ["891f-4f5c-91a2-bd31","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "891f-4f5c-91a2-bd31", "rowText": "fire gives off light ; heat ; smoke", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow15", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow15", "value":"" }
+		]
+		},
+		{
+		"uuids": ["2e43-a74f-bca2-5d7f","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2e43-a74f-bca2-5d7f", "rowText": "a hand dryer produces heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow15", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow15", "value":"" }
+		]
+		},
+		{
+		"uuids": ["945f-acde-29f3-d573","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "945f-acde-29f3-d573", "rowText": "a hot plate is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow15", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow15", "value":"" }
+		]
+		},
+		{
+		"uuids": ["bdf8-fbda-ff94-54f5","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "bdf8-fbda-ff94-54f5", "rowText": "a hot substance is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow15", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow15", "value":"" }
+		]
+		},
+		{
+		"uuids": ["c491-9f0f-8947-cd1b","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c491-9f0f-8947-cd1b", "rowText": "natural gas is a source of heat by burning", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow15", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow15", "value":"" }
+		]
+		},
+		{
+		"uuids": ["926d-355a-9b2c-c5d1","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "926d-355a-9b2c-c5d1", "rowText": "an oven is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow15", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow15", "value":"" }
+		]
+		},
+		{
+		"uuids": ["41f9-05ef-9272-1100","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "41f9-05ef-9272-1100", "rowText": "a radiator is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow15", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow15", "value":"" }
+		]
+		},
+		{
+		"uuids": ["55b7-97a0-0554-156d","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "55b7-97a0-0554-156d", "rowText": "a hot ; warm something is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow15", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow15", "value":"" }
+		]
+		},
+		{
+		"uuids": ["d59b-bac8-e191-05be","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d59b-bac8-e191-05be", "rowText": "a stove generates heat for cooking usually", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow15", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow15", "value":"" }
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow15", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow15", "value":"" }
+		]
+		},
+		{
+		"uuids": ["2889-3edc-095a-6d6b","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2889-3edc-095a-6d6b", "rowText": "sunlight produces heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow15", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow15", "value":"" }
+		]
+		},
+		{
+		"uuids": ["c681-db5c-096f-bade","a0b2-a45f-01e1-4bf4","72bd-5535-598e-82e8","33c7-1992-4659-d284","c9e0-141e-88fa-2c43","e474-2a11-6e7b-ae8b","4a5d-ae1d-5ba6-8f8d","a49d-0411-7e72-17d8","cb74-f946-eef2-3ca5","edd3-cea2-f046-e76f","49e7-9112-fe19-cbb8","9f40-769a-b2ba-d984","f7e9-c6f8-892b-3496","a955-8642-4044-5a48","0439-8c06-da63-6721","3395-b5a2-ae2d-39c2","81b7-0a58-5b0b-0bbf","7d37-b81d-0cf3-9ae0","4d0b-497e-6a7f-bfca","de31-9a4c-d874-ac06","7ef3-7d2a-dd0a-7953"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c681-db5c-096f-bade", "rowText": "the body of a mammal is a source of heat", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "a0b2-a45f-01e1-4bf4", "rowText": "boiling ; evaporation means matter ; a substance changes from a liquid into a gas by increasing heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "72bd-5535-598e-82e8", "rowText": "a phase change is when matter ; a substance changes from one state of matter into another state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "33c7-1992-4659-d284", "rowText": "a pan ; frying pan ; pot is used for cooking food by heating food in it on a stove", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "c9e0-141e-88fa-2c43", "rowText": "if a thermal conductor ; an object is exposed to a source of heat then that conductor ; that object may become hot ; warm", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "e474-2a11-6e7b-ae8b", "rowText": "water is in the gas state , called water vapor ; steam , for temperatures between 373 ; 212 ; 100 and 100000000000 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "4a5d-ae1d-5ba6-8f8d", "rowText": "water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "a49d-0411-7e72-17d8", "rowText": "a thermal conductor is made of thermal conductive materials", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "cb74-f946-eef2-3ca5", "rowText": "as the temperature of a liquid increases , the rate of evaporation of that liquid will increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "edd3-cea2-f046-e76f", "rowText": "boiling is a kind of phase change", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "49e7-9112-fe19-cbb8", "rowText": "if a container contains something then that container touches that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9f40-769a-b2ba-d984", "rowText": "if heat is added to a substance then that substance absorbs that heat", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f7e9-c6f8-892b-3496", "rowText": "liquid is a kind of state of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "a955-8642-4044-5a48", "rowText": "pot ; pan ; frying pan is made of metal for cooking", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "0439-8c06-da63-6721", "rowText": "metal is a thermal ; thermal energy conductor", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "3395-b5a2-ae2d-39c2", "rowText": "substances are made of matter", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow18", "uuid": "81b7-0a58-5b0b-0bbf", "rowText": "water is a kind of substance", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow19", "uuid": "7d37-b81d-0cf3-9ae0", "rowText": "adding heat means increasing temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow20", "uuid": "4d0b-497e-6a7f-bfca", "rowText": "being on something ; placed in something ; placed over something means touching that something", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow21", "uuid": "de31-9a4c-d874-ac06", "rowText": "phase means state", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow22", "uuid": "7ef3-7d2a-dd0a-7953", "rowText": "to add means to increase", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow15", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow15", "value":"" }
+		]
+		}
+	]
+}
+]}
+

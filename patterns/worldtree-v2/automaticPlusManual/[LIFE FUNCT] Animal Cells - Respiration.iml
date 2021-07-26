@@ -1,0 +1,94 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animal_Cells_Respiration
+
+	// Plain text description
+	description = "Might not be necessary if knowledge is included in cells food to energy"
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: cellular respiration is a kind of process     (57ee-2852-addc-6da0) [ HYPONYM:"cellular respiration", HYPERNYM:"process" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "cellular respiration", HYPERNYM: "process"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "cellular respiration", HYPERNYM: "process"]
+
+	// GROUNDING       KINDOF: carbon dioxide is a kind of gas     (96ff-31bb-ea13-9aff) [ HYPONYM:"carbon dioxide", HYPERNYM:"gas" ]
+	//  Notes: peripheral
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "carbon dioxide", HYPERNYM: "gas"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "carbon dioxide", HYPERNYM: "gas"]
+
+	// GROUNDING       CONTAINS: food contains carbohydrates     (d11d-a195-7042-efcc) [ OBJECT_AGENT:"food", WHAT_IT_CONTAINS:"carbohydrate" ]
+	//        HINTROW food contains nutrients for living things     (a4c9-5ade-9cc2-f3f0) [ OBJECT_AGENT:"food", WHAT_IT_CONTAINS:"nutrient", FOR_PURPOSE:"live thing" ]
+	//  Notes: Good->a4c9-5ade-9cc2-f3f0
+	//row autoRow2 = [TABLE:"CONTAINS", OBJECT_AGENT: "food"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"CONTAINS", OBJECT_AGENT: "food"]
+
+	// GROUNDING       KINDOF: providing is a kind of function     (c8c6-5825-8e18-f509) [ HYPONYM:"provide", HYPERNYM:"function" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "provide", HYPERNYM: "function"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "provide", HYPERNYM: "function"]
+
+	// GROUNDING       KINDOF: a human is a kind of animal     (4253-4b9e-1e5f-1742) [ HYPONYM:"human", HYPERNYM:"animal" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "human", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "human", HYPERNYM: "animal"]
+
+	// CENTRAL         CHANGE: cellular respiration is when a cell converts from oxygen and carbohydrates into carbon dioxide, water, and energy     (7272-bf77-2331-1b55) [ PROCESS_NAME:"cellular respiration", ACTOR_WHO:"cell", VERB:"convert", FROM:"oxygen carbohydrate", INTO:"carbon dioxide water energy" ]
+	//row autoRow5 = [UUID:"7272-bf77-2331-1b55", PROCESS_NAME: "cellular respiration", ACTOR_WHO: "cell", VERB: "convert", FROM: "oxygen carbohydrate", INTO: "carbon dioxide water energy"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"7272-bf77-2331-1b55", PROCESS_NAME: "cellular respiration", ACTOR_WHO: "cell", VERB: "convert", FROM: "oxygen carbohydrate", INTO: "carbon dioxide water energy"]
+
+	// CENTRAL         PROCESSROLES: In the cellular respiration ; animal respiration process carbon dioxide is a waste product     (3f31-824e-6866-4db7) [ PROCESS_NAME:"cellular respiration;animal respiration", ACTOR_COMMON_EXAMPLE:"carbon dioxide", ROLE:"waste product" ]
+	//row autoRow6 = [UUID:"3f31-824e-6866-4db7", PROCESS_NAME: "cellular respiration", ACTOR_COMMON_EXAMPLE: "carbon dioxide", ROLE: "waste product"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3f31-824e-6866-4db7", PROCESS_NAME: "cellular respiration", ACTOR_COMMON_EXAMPLE: "carbon dioxide", ROLE: "waste product"]
+
+	// CENTRAL         PROCESSROLES: In the cellular respiration process heat is a by-product in animals     (c96d-cca7-312a-be2c) [ PROCESS_NAME:"cellular respiration", ACTOR_COMMON_EXAMPLE:"heat", ROLE:"by-product;by product", SCOPE:"in animal" ]
+	//row autoRow7 = [UUID:"c96d-cca7-312a-be2c", PROCESS_NAME: "cellular respiration", ACTOR_COMMON_EXAMPLE: "heat", ROLE: "by product", SCOPE: "in animal"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"c96d-cca7-312a-be2c", PROCESS_NAME: "cellular respiration", ACTOR_COMMON_EXAMPLE: "heat", ROLE: "by product", SCOPE: "in animal"]
+
+	// CENTRAL         SOURCEOF: cellular respiration is a source of energy for cell activities     (c1af-e34e-ead9-5bd0) [ AGENT:"cellular respiration", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"energy", FOR_PURPOSE:"cell activity" ]
+	//row autoRow8 = [UUID:"c1af-e34e-ead9-5bd0", AGENT: "cellular respiration", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", FOR_PURPOSE: "cell activity"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"c1af-e34e-ead9-5bd0", AGENT: "cellular respiration", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", FOR_PURPOSE: "cell activity"]
+
+	// CENTRAL         ACTION: digestion is when food is absorbed into the blood stream     (c3ab-8259-53c3-28eb) [ DEFINITION_NAME:"digest", AGENT_OBJECT:"food", ACTION2:"be absorb", OBJECT_PROPERTY:"into blood stream" ]
+	//row autoRow9 = [UUID:"c3ab-8259-53c3-28eb", DEFINITION_NAME: "digest", AGENT_OBJECT: "food", ACTION2: "be absorb", OBJECT_PROPERTY: "into blood stream"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"c3ab-8259-53c3-28eb", DEFINITION_NAME: "digest", AGENT_OBJECT: "food", ACTION2: "be absorb", OBJECT_PROPERTY: "into blood stream"]
+
+	// CENTRAL         ACTION: all cells perform cellular respiration     (849d-06ff-794e-6880) [ AGENT_OBJECT:"cell", ACTION2:"perform", OBJECT_PROPERTY:"cellular respiration" ]
+	//row autoRow10 = [UUID:"849d-06ff-794e-6880", AGENT_OBJECT: "cell", ACTION2: "perform", OBJECT_PROPERTY: "cellular respiration"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"849d-06ff-794e-6880", AGENT_OBJECT: "cell", ACTION2: "perform", OBJECT_PROPERTY: "cellular respiration"]
+
+	// CENTRAL         SOURCEOF: food is a source of energy for animals ; plants     (5753-2812-04c2-af70) [ AGENT:"food", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"energy", AGENT_IT_PROVIDES_THING_TO:"animal;plant" ]
+	//row autoRow11 = [UUID:"5753-2812-04c2-af70", AGENT: "food", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "animal"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"5753-2812-04c2-af70", AGENT: "food", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "energy", AGENT_IT_PROVIDES_THING_TO: "animal"]
+
+	// CENTRAL         KINDOF: an animal cell is a kind of cell     (2702-7db2-6eb1-e03f) [ HYPONYM:"animal cell", HYPERNYM:"cell" ]
+	//row autoRow12 = [UUID:"2702-7db2-6eb1-e03f", HYPONYM: "animal cell", HYPERNYM: "cell"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"2702-7db2-6eb1-e03f", HYPONYM: "animal cell", HYPERNYM: "cell"]
+
+	// CENTRAL         MADEOF: carbohydrates are made of sugars     (93e8-b9fd-8d3a-5601) [ OBJECT:"carbohydrate", MATERIAL:"sugar" ]
+	//row autoRow13 = [UUID:"93e8-b9fd-8d3a-5601", OBJECT: "carbohydrate", MATERIAL: "sugar"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"93e8-b9fd-8d3a-5601", OBJECT: "carbohydrate", MATERIAL: "sugar"]
+
+	// CENTRAL         SOURCEOF: processes sometimes produce waste products     (ba22-866b-15eb-3d9a) [ AGENT:"process", QUALIFIER:"sometimes", VERB_SOURCEOF_PROVIDE_ETC:"product", WHAT_IT_PROVIDES:"waste product" ]
+	//row autoRow14 = [UUID:"ba22-866b-15eb-3d9a", AGENT: "process", QUALIFIER: "sometimes", VERB_SOURCEOF_PROVIDE_ETC: "product", WHAT_IT_PROVIDES: "waste product"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"ba22-866b-15eb-3d9a", AGENT: "process", QUALIFIER: "sometimes", VERB_SOURCEOF_PROVIDE_ETC: "product", WHAT_IT_PROVIDES: "waste product"]
+
+	// CENTRAL         MADEOF: a living thing is made of cells     (6f96-e0e9-ed70-4dbc) [ OBJECT:"live thing", MATERIAL:"cell" ]
+	//row autoRow15 = [UUID:"6f96-e0e9-ed70-4dbc", OBJECT: "live thing", MATERIAL: "cell"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"6f96-e0e9-ed70-4dbc", OBJECT: "live thing", MATERIAL: "cell"]
+
+	// CENTRAL         KINDOF: an animal is a kind of living thing     (bb63-bcc5-0cd8-72db) [ HYPONYM:"animal", HYPERNYM:"live thing" ]
+	//row autoRow16 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"bb63-bcc5-0cd8-72db", HYPONYM: "animal", HYPERNYM: "live thing"]
+
+	// CENTRAL         ACTION: cellular respiration is when cells break down ; extract energy from food to produce energy     (c1cd-99dc-b931-3a4f) [ DEFINITION_NAME:"cellular respiration", AGENT_OBJECT:"cell", ACTION2:"break;extract energy from", OBJECT_PROPERTY:"food", FOR_PURPOSE:"product energy" ]
+	//row autoRow17 = [UUID:"c1cd-99dc-b931-3a4f", DEFINITION_NAME: "cellular respiration", AGENT_OBJECT: "cell", ACTION2: "extract energy from", OBJECT_PROPERTY: "food", FOR_PURPOSE: "product energy"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"c1cd-99dc-b931-3a4f", DEFINITION_NAME: "cellular respiration", AGENT_OBJECT: "cell", ACTION2: "extract energy from", OBJECT_PROPERTY: "food", FOR_PURPOSE: "product energy"]
+
+	// LEXGLUE         SYNONYMY: cellular respiration is cellular digestion     (2ede-65e6-e727-d345) [ X1:"cellular respiration", X2:"cellular digest" ]
+	//row autoRow18 = [UUID:"2ede-65e6-e727-d345", X1: "cellular respiration", X2: "cellular digest"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"2ede-65e6-e727-d345", X1: "cellular respiration", X2: "cellular digest"]
+
+	// LEXGLUE         SYNONYMY: converting is similar to producing     (0308-b556-3182-b793) [ ACTION1:"convert", ACTION2:"produce" ]
+	//row autoRow19 = [UUID:"0308-b556-3182-b793", ACTION1: "convert", ACTION2: "produce"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"0308-b556-3182-b793", ACTION1: "convert", ACTION2: "produce"]
+
+endinferencepattern

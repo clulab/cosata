@@ -1,0 +1,112 @@
+// Automatically converted pattern
+inferencepattern LIFE_ENVADP_Animals_Camouflage
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       EXAMPLES: An example of camouflage is organism changing into the color of the environment     (0a51-236d-27b4-abc4) [ AGENT_OBJECT1:"camouflage", AGENT_OBJECT2:"organism", VERB2:"change into", AGENT_OBJECT3:"color", SCOPE:"of environment" ]
+	//        HINTROW An example of camouflage is organism having the same color as its environment     (ece8-8e35-fc83-f487) [ AGENT_OBJECT1:"camouflage", AGENT_OBJECT2:"organism", VERB2:"have", AGENT_OBJECT3:"same color", SCOPE:"a environment" ]
+	//  Notes: change the color into the same as the environment
+	//row autoRow0 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "camouflage", AGENT_OBJECT2: "organism", AGENT_OBJECT3: "color", SCOPE: "of environment"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "camouflage", AGENT_OBJECT2: "organism", AGENT_OBJECT3: "color", SCOPE: "of environment"]
+
+	// CENTRALSW       PROP-ENVIRONMENTATTRIB: the arctic environment is white in color from being covered in snow     (7e81-184a-3132-e57b) [ ENVIRONMENT:"arctic", VALUE:"white", PROPERTY:"color", WHY:"be cover in snow" ]
+	//        HINTROW cold environments sometimes are white in color from being covered in snow     (6884-ef70-63e5-81fa) [ ENVIRONMENT:"cold", QUALIFIER:"sometimes", VALUE:"white", PROPERTY:"color", WHY:"be cover in snow" ]
+	//        HINTROW a dense forest environment often is dark in color     (f9e1-ca2c-699a-ab24) [ ADJ:"dense", ENVIRONMENT:"forest", QUALIFIER:"often", VALUE:"dark", PROPERTY:"color" ]
+	//        HINTROW a forest environment usually is green in color     (928d-a3e5-933a-978b) [ ENVIRONMENT:"forest", QUALIFIER:"usually", VALUE:"green", PROPERTY:"color" ]
+	//  Notes: environment is X in color
+	//row autoRow1 = [TABLE:"PROP-ENVIRONMENTATTRIB", VALUE: "white", PROPERTY: "color", WHY: *"POS:VB"+*"POS:VB"+"in snow"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-ENVIRONMENTATTRIB", PROPERTY: "color"]
+
+	// CENTRALSW       PROP-THINGS: snow is white in color     (4a3e-9dc2-ab24-8562) [ THING:"snow", VALUE:"white", ATTRIBUTE:"in color" ]
+	//        HINTROW grass is green in color     (c683-bb38-4c18-252e) [ THING:"grass", VALUE:"green", ATTRIBUTE:"in color" ]
+	//        HINTROW bark is usually brown in color     (8bb3-c62b-91dc-4004) [ THING:"bark", QUALIFIER2:"usually", VALUE:"brown", ATTRIBUTE:"in color" ]
+	//        HINTROW a leaf is often green in color     (c904-3dbd-0d11-2f34) [ THING:"leaf", QUALIFIER2:"often", VALUE:"green", ATTRIBUTE:"in color" ]
+	//  Notes: the color of the environment
+	//row autoRow2 = [TABLE:"PROP-THINGS", THING: "snow", VALUE: "white", ATTRIBUTE: "in color"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"PROP-THINGS", ATTRIBUTE: "in color"]
+
+	// CENTRALSW       EXAMPLES: An example of camouflage is an organism looking like leaves     (a61c-a47c-67a8-f86a) [ AGENT_OBJECT1:"camouflage", AGENT_OBJECT2:"organism", VERB2:"look like", AGENT_OBJECT3:"leaf" ]
+	//        HINTROW An example of camouflage is an organism looking like its environment     (3a90-a5a3-dc27-ca09) [ AGENT_OBJECT1:"camouflage", AGENT_OBJECT2:"organism", VERB2:"look like", AGENT_OBJECT3:"environment" ]
+	//  Notes: change the appearance into the same as the environment
+	//row autoRow3 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "camouflage", AGENT_OBJECT2: "organism", VERB2: "look like"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"EXAMPLES", AGENT_OBJECT1: "camouflage", AGENT_OBJECT2: "organism", VERB2: "look like"]
+
+	// GROUNDING       KINDOF: a rabbit is a kind of animal     (44d7-fef6-90ef-75aa) [ HYPONYM:"rabbit", HYPERNYM:"animal" ]
+	//        HINTROW a fox is a kind of animal     (9714-412f-bfe4-c7ab) [ HYPONYM:"fox", HYPERNYM:"animal" ]
+	//        HINTROW a bear is a kind of animal     (5639-8136-4788-3ee6) [ HYPONYM:"bear", HYPERNYM:"animal" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: a field is a kind of environment     (2a18-601d-51f0-3abc) [ HYPONYM:"field", HYPERNYM:"environment" ]
+	//        HINTROW a forest is a kind of environment     (b5d1-0f14-f32e-c6b4) [ HYPONYM:"forest", HYPERNYM:"environment" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "environment"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "environment"]
+
+	// CENTRAL         USEDFOR: camouflage is used for protection ; hiding by prey ; animals against predators ; from predators     (ac8a-77b3-7190-7751) [ ACTION:"camouflage", FOR_PURPOSE:"protect;hide", AGENT_THING_WHO_USES:"prey;animal", SCOPE2:"against predator;from predator" ]
+	//  Notes: from prey's view
+	//row autoRow6 = [UUID:"ac8a-77b3-7190-7751", ACTION: "camouflage", FOR_PURPOSE: "protect", AGENT_THING_WHO_USES: "prey", SCOPE2: "against predator"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"ac8a-77b3-7190-7751", ACTION: "camouflage", FOR_PURPOSE: "protect", AGENT_THING_WHO_USES: "prey", SCOPE2: "against predator"]
+
+	// CENTRAL         KINDOF: camouflage is a kind of protection against predators ; from predators ; against consumers     (39b9-9637-538d-0d33) [ HYPONYM:"camouflage", HYPERNYM:"protect", SCOPE2:"against predator;from predator;against consumer" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"39b9-9637-538d-0d33", HYPONYM: "camouflage", HYPERNYM: "protect", SCOPE2: "against predator"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"39b9-9637-538d-0d33", HYPONYM: "camouflage", HYPERNYM: "protect", SCOPE2: "against predator"]
+
+	// CENTRAL         KINDOF: coloration is a kind of adaptation for hiding ; camouflage     (ad2f-c1c6-5368-4fcd) [ HYPONYM:"coloration", HYPERNYM:"adapt", FOR_PURPOSE:"hide;camouflage" ]
+	//row autoRow8 = [UUID:"ad2f-c1c6-5368-4fcd", HYPONYM: "coloration", HYPERNYM: "adapt", FOR_PURPOSE: "hide"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"ad2f-c1c6-5368-4fcd", HYPONYM: "coloration", HYPERNYM: "adapt", FOR_PURPOSE: "hide"]
+
+	// CENTRAL         PARTOF: fur is often part of an animal     (2f86-693e-7175-9932) [ PART:"fur", QUANTIFIER1:"be often", WHOLE:"animal" ]
+	//row autoRow9 = [UUID:"2f86-693e-7175-9932", PART: "fur", QUANTIFIER1: "be often", WHOLE: "animal"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"2f86-693e-7175-9932", PART: "fur", QUANTIFIER1: "be often", WHOLE: "animal"]
+
+	// CENTRAL         PROP-THINGS: white fur is white in color     (9ed5-f4a8-9357-2763) [ ADJ:"white", THING:"fur", VALUE:"white", ATTRIBUTE:"in color" ]
+	//row autoRow10 = [UUID:"9ed5-f4a8-9357-2763", ADJ: "white", THING: "fur", VALUE: "white", ATTRIBUTE: "in color"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"9ed5-f4a8-9357-2763", ADJ: "white", THING: "fur", VALUE: "white", ATTRIBUTE: "in color"]
+
+	// CENTRAL         ACTION: adaptation is when an organism develops a trait over time for survival     (c6fe-fa08-c304-093d) [ DEFINITION_NAME:"adapt", AGENT_OBJECT:"organism", ACTION2:"develop", OBJECT_PROPERTY:"trait", WHEN_WHERE:"over time", FOR_PURPOSE:"survive" ]
+	//row autoRow11 = [UUID:"c6fe-fa08-c304-093d", DEFINITION_NAME: "adapt", AGENT_OBJECT: "organism", ACTION2: "develop", OBJECT_PROPERTY: "trait", WHEN_WHERE: "over time", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"c6fe-fa08-c304-093d", DEFINITION_NAME: "adapt", AGENT_OBJECT: "organism", ACTION2: "develop", OBJECT_PROPERTY: "trait", WHEN_WHERE: "over time", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         AFFECT: physical adaptation has a positive impact on the population ; the survival ; the reproduction of a species ; of individual organisms     (5d54-ce98-822d-70e0) [ ACTOR_WHO:"physical adapt", POSITIVE_NEGATIVE:"positive", PATIENT:"population;survive;reproduce", SCOPE:"of species;of individual organism" ]
+	//  Notes: fd4a-ee63-d305-515c->5d54-ce98-822d-70e0,4283-7393-990d-fdb7
+	//row autoRow12 = [UUID:"5d54-ce98-822d-70e0", ACTOR_WHO: "physical adapt", POSITIVE_NEGATIVE: "positive", PATIENT: "population", SCOPE: "of individual organism"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"5d54-ce98-822d-70e0", ACTOR_WHO: "physical adapt", POSITIVE_NEGATIVE: "positive", PATIENT: "population", SCOPE: "of individual organism"]
+
+	// CENTRAL         KINDOF: camouflage is a kind of adaptation for hiding in an environment     (c6ad-76f9-7f5c-33e0) [ HYPONYM:"camouflage", HYPERNYM:"adapt", FOR_PURPOSE:"hide", SCOPE2:"in environment" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"c6ad-76f9-7f5c-33e0", HYPONYM: "camouflage", HYPERNYM: "adapt", FOR_PURPOSE: "hide", SCOPE2: "in environment"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"c6ad-76f9-7f5c-33e0", HYPONYM: "camouflage", HYPERNYM: "adapt", FOR_PURPOSE: "hide", SCOPE2: "in environment"]
+
+	// CENTRAL         CHANGE-VEC: hiding means visibility ; ability to be seen decreases for camouflage     (60e9-1f2b-145c-00bd) [ PROCESS_NAME_ACTION:"hide", AGENT_OBJECT:"visibility;ability be see", DIRECTION:"decrease;decrease", FOR_PURPOSE:"camouflage" ]
+	//row autoRow14 = [UUID:"60e9-1f2b-145c-00bd", PROCESS_NAME_ACTION: "hide", AGENT_OBJECT: "ability be see", DIRECTION: "decrease", FOR_PURPOSE: "camouflage"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"60e9-1f2b-145c-00bd", PROCESS_NAME_ACTION: "hide", AGENT_OBJECT: "ability be see", DIRECTION: "decrease", FOR_PURPOSE: "camouflage"]
+
+	// CENTRAL         USEDFOR: camouflage can be used for hunting for prey ; food     (9be9-a346-c5bb-8681) [ AGENT_OBJECT:"camouflage", QUALIFIER:"be", FOR_PURPOSE:"hunt for", PATIENT:"prey;food" ]
+	//  Notes: from predator's view
+	//row autoRow15 = [UUID:"9be9-a346-c5bb-8681", AGENT_OBJECT: "camouflage", QUALIFIER: "be", FOR_PURPOSE: "hunt for", PATIENT: "prey"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"9be9-a346-c5bb-8681", AGENT_OBJECT: "camouflage", QUALIFIER: "be", FOR_PURPOSE: "hunt for", PATIENT: "prey"]
+
+	// CENTRAL         KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow16 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"]
+
+	// CENTRAL         CHANGE: disguise means changing appearance to hide     (ae70-e79a-1335-ece4) [ PROCESS_NAME:"disguise", VERB:"change", WHAT:"appearance", FOR_PURPOSE:"hide" ]
+	//row autoRow17 = [UUID:"ae70-e79a-1335-ece4", PROCESS_NAME: "disguise", VERB: "change", WHAT: "appearance", FOR_PURPOSE: "hide"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"ae70-e79a-1335-ece4", PROCESS_NAME: "disguise", VERB: "change", WHAT: "appearance", FOR_PURPOSE: "hide"]
+
+	// CENTRAL         USEDFOR: hiding can be used for avoiding predators     (bf07-ffd0-f0cf-8f16) [ AGENT_OBJECT:"hide", QUALIFIER:"be", FOR_PURPOSE:"avoid", PATIENT:"predator" ]
+	//row autoRow18 = [UUID:"bf07-ffd0-f0cf-8f16", AGENT_OBJECT: "hide", QUALIFIER: "be", FOR_PURPOSE: "avoid", PATIENT: "predator"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"bf07-ffd0-f0cf-8f16", AGENT_OBJECT: "hide", QUALIFIER: "be", FOR_PURPOSE: "avoid", PATIENT: "predator"]
+
+	// LEXGLUE         SYNONYMY: blending in is synonymous with hiding     (d861-52a2-6067-0722) [ ACTION1:"blend in", ACTION2:"hide" ]
+	//row autoRow19 = [UUID:"d861-52a2-6067-0722", ACTION1: "blend in", ACTION2: "hide"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"d861-52a2-6067-0722", ACTION1: "blend in", ACTION2: "hide"]
+
+endinferencepattern

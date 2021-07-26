@@ -1,0 +1,63 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Temperature_Effect_on_Forms_of_Precipitation
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: sleet is a kind of precipitation     (f704-bbf0-c1f5-b8ba) [ HYPONYM:"sleet", HYPERNYM:"precipitation" ]
+	//        HINTROW snow is a kind of precipitation     (8083-d6d0-9cba-da83) [ HYPONYM:"snow", HYPERNYM:"precipitation" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "precipitation"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "precipitation"]
+
+	// CENTRAL         CHANGE: freezing means matter ; a substance changes from a liquid into a solid by decreasing heat energy     (f03c-decc-030f-b860) [ PROCESS_NAME:"freeze", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"solid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//row autoRow1 = [UUID:"f03c-decc-030f-b860", PROCESS_NAME: "freeze", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "solid", BY_THROUGH_HOW: "decrease heat energy"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"f03c-decc-030f-b860", PROCESS_NAME: "freeze", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "solid", BY_THROUGH_HOW: "decrease heat energy"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C     (4a5a-9115-28a9-b97b) [ MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice", LOWER_BOUND:"0;-459;-273;459;273", UPPER_BOUND:"273;32;0", UNITS:"k;f;c" ]
+	//row autoRow2 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: "ice", LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the liquid state , called liquid water , for temperatures between 273 ; 32 ; 0 and 373 ; 212 ; 100 K ; F ; C     (4a5d-ae1d-5ba6-8f8d) [ MATERIAL_NAME:"water", STATEOFMATTER:"liquid", FORM_NAME:"liquid water", LOWER_BOUND:"273;32;0", UPPER_BOUND:"373;212;100", UNITS:"k;f;c" ]
+	//row autoRow3 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"4a5d-ae1d-5ba6-8f8d", MATERIAL_NAME: "water", STATEOFMATTER: "liquid", FORM_NAME: "liquid water", LOWER_BOUND: "273", UPPER_BOUND: "373", UNITS: "k"]
+
+	// CENTRAL         SYNONYMY: freezing point means temperature at which a liquid freezes ; below which a liquid freezes     (bb18-f19f-69ba-8bc6) [ X1:"freeze point", X2:"temperature", ACTION2:"at liquid freeze;below liquid freeze" ]
+	//row autoRow4 = [UUID:"bb18-f19f-69ba-8bc6", X1: "freeze point", X2: "temperature", ACTION2: "at liquid freeze"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"bb18-f19f-69ba-8bc6", X1: "freeze point", X2: "temperature", ACTION2: "at liquid freeze"]
+
+	// CENTRAL         PROP-THINGS: the freezing point of water ; melting point of water is 32F ; 0C ; 273K     (cdc9-5a05-7bcd-607f) [ THING:"freeze point of water;melt point of water", VALUE:"32f;0c;273k" ]
+	//row autoRow5 = [UUID:"cdc9-5a05-7bcd-607f", THING: "freeze point of water", VALUE: "32f"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"cdc9-5a05-7bcd-607f", THING: "freeze point of water", VALUE: "32f"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of heat energy     (d753-423d-5ce7-53ce) [ MEASURE:"temperature", QUANTITY_ADJ:"measure of", ATTRIBUTE:"heat energy" ]
+	//row autoRow6 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", QUANTITY_ADJ: "measure of", ATTRIBUTE: "heat energy"]
+
+	// CENTRAL         KINDOF: rain is a kind of precipitation     (da1e-dca3-f46a-5189) [ HYPONYM:"rain", HYPERNYM:"precipitation" ]
+	//row autoRow7 = [UUID:"da1e-dca3-f46a-5189", HYPONYM: "rain", HYPERNYM: "precipitation"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"da1e-dca3-f46a-5189", HYPONYM: "rain", HYPERNYM: "precipitation"]
+
+	// CENTRAL         ACTION: sleet is when raindrops freeze as they fall     (aaf4-2195-9948-4966) [ DEFINITION_NAME:"sleet", AGENT_OBJECT:"raindrop", ACTION2:"freeze", WHEN_WHERE:"a fall" ]
+	//  Notes: how sleet is formed
+	//row autoRow8 = [UUID:"aaf4-2195-9948-4966", DEFINITION_NAME: "sleet", AGENT_OBJECT: "raindrop", ACTION2: "freeze", WHEN_WHERE: "a fall"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"aaf4-2195-9948-4966", DEFINITION_NAME: "sleet", AGENT_OBJECT: "raindrop", ACTION2: "freeze", WHEN_WHERE: "a fall"]
+
+	// CENTRAL         CAUSE: temperature changing can cause phase changes     (f45b-e36a-7934-50a5) [ CONDITION_AGENT_OBJECT:"temperature", CONDITION_VERB:"change", RESULT_AGENT:"phase change" ]
+	//row autoRow9 = [UUID:"f45b-e36a-7934-50a5", CONDITION_AGENT_OBJECT: "temperature", CONDITION_VERB: "change", RESULT_AGENT: "phase change"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"f45b-e36a-7934-50a5", CONDITION_AGENT_OBJECT: "temperature", CONDITION_VERB: "change", RESULT_AGENT: "phase change"]
+
+	// CENTRAL         KINDOF: freezing is a kind of phase change     (eebb-a341-23c6-8447) [ HYPONYM:"freeze", HYPERNYM:"phase change" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"eebb-a341-23c6-8447", HYPONYM: "freeze", HYPERNYM: "phase change"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"eebb-a341-23c6-8447", HYPONYM: "freeze", HYPERNYM: "phase change"]
+
+	// CENTRAL         KINDOF: snow is a kind of ice     (c2a0-5b9e-4796-94a2) [ HYPONYM:"snow", HYPERNYM:"ice" ]
+	//  Notes: snow is ice falling directly from the cloud
+	//row autoRow11 = [UUID:"c2a0-5b9e-4796-94a2", HYPONYM: "snow", HYPERNYM: "ice"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"c2a0-5b9e-4796-94a2", HYPONYM: "snow", HYPERNYM: "ice"]
+
+endinferencepattern

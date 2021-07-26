@@ -1,0 +1,27 @@
+// Automatically converted pattern
+inferencepattern MAT_CHEM_Elements_Examples
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: helium is a kind of element     (e377-7e6c-08ee-0af6) [ HYPONYM:"helium", HYPERNYM:"element" ]
+	//        HINTROW gold is a kind of element     (eb57-77f3-768e-3665) [ HYPONYM:"gold", HYPERNYM:"element" ]
+	//        HINTROW copper is a kind of element     (6cfd-e59f-1413-76ff) [ HYPONYM:"copper", HYPERNYM:"element" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "element"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "element"]
+
+	// CENTRAL         MADEOF: an element is made of one kind of atoms     (07ab-6aed-2ab3-9846) [ OBJECT:"element", VALUE:"one kind of", MATERIAL:"atom" ]
+	//  Notes: peripheral
+	//row autoRow1 = [UUID:"07ab-6aed-2ab3-9846", OBJECT: "element", VALUE: "one kind of", MATERIAL: "atom"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"07ab-6aed-2ab3-9846", OBJECT: "element", VALUE: "one kind of", MATERIAL: "atom"]
+
+	// CENTRAL         PROP-MAT-PURITY-MIXTURE: elements are pure substances     (7c4a-208c-2aa4-7679) [ THING:"element", MIXTURE_PURE_SUBSTANCE:"pure substance" ]
+	//  Notes: 4706-54ea-c8d6-bedd->7c4a-208c-2aa4-7679
+	//row autoRow2 = [UUID:"7c4a-208c-2aa4-7679", THING: "element", MIXTURE_PURE_SUBSTANCE: "pure substance"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"7c4a-208c-2aa4-7679", THING: "element", MIXTURE_PURE_SUBSTANCE: "pure substance"]
+
+endinferencepattern

@@ -1,0 +1,514 @@
+{"patternMatches": [
+{
+	"patternName":"EARTH_WEATHER_Sun_Gives_energy_to_Earth",
+	"matches":[
+		{
+		"uuids": ["d247-b029-3aab-0950","0596-e537-4cc3-192c","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "0596-e537-4cc3-192c", "rowText": "a bay is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","95ee-8457-ae77-ae9a","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "95ee-8457-ae77-ae9a", "rowText": "an estuary is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","7b89-9ee6-46e3-69f9","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7b89-9ee6-46e3-69f9", "rowText": "a glacier is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","5d6a-544c-b296-832e","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5d6a-544c-b296-832e", "rowText": "a lake is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","a142-f9f0-f59e-1786","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "a142-f9f0-f59e-1786", "rowText": "a marsh is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","466a-2c15-ac54-8361","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "466a-2c15-ac54-8361", "rowText": "an ocean is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","2a41-7224-fbc2-ba94","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "2a41-7224-fbc2-ba94", "rowText": "a pond is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","7ebb-7a94-af1e-9fa9","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "7ebb-7a94-af1e-9fa9", "rowText": "a pool is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","65d3-05bf-28db-3f1a","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "65d3-05bf-28db-3f1a", "rowText": "a puddle is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","902c-e87d-dede-6cdc","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "902c-e87d-dede-6cdc", "rowText": "a reservoir is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","9885-6337-f26c-cfbd","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "9885-6337-f26c-cfbd", "rowText": "a river is a kind of flowing ; moving body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","c71c-f0da-3930-67f0","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "c71c-f0da-3930-67f0", "rowText": "a stream is a kind of moving body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","dddd-0b38-d1b4-2961","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "dddd-0b38-d1b4-2961", "rowText": "a ice cap is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","TEMPGEN-954258","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-954258", "rowText": "arctic ocean is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","TEMPGEN-954978","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-954978", "rowText": "colorado river is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","TEMPGEN-956376","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-956376", "rowText": "kettle is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","TEMPGEN-962373","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-962373", "rowText": "atlantic ocean is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","TEMPGEN-963025","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-963025", "rowText": "mountain glacier is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","TEMPGEN-963282","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-963282", "rowText": "ice sheet is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","TEMPGEN-963454","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-963454", "rowText": "polar ice cap is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","TEMPGEN-963459","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-963459", "rowText": "mountain ice cap is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["d247-b029-3aab-0950","TEMPGEN-963552","59d6-9954-ef5e-12b2","a3c3-47f1-32ba-5c7f","bbf1-262a-c774-3f47","2d69-ee53-599f-9438","cfea-1ba2-549b-7d10","3cac-554a-3149-cd7b","3825-51d0-5d33-2303","0a6a-f5dd-7c73-ed64","e7e8-9711-1051-9165","ef29-744a-92a8-f884"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d247-b029-3aab-0950", "rowText": "the sun is a source of radiation ; heat called sunlight", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-963552", "rowText": "pacific ocean is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "59d6-9954-ef5e-12b2", "rowText": "sunlight is a kind of solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "a3c3-47f1-32ba-5c7f", "rowText": "the sun transfers solar energy ; light energy ; heat energy from itself to the planets ; Earth through sunlight", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "bbf1-262a-c774-3f47", "rowText": "the sun is the source of energy for physical cycles on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2d69-ee53-599f-9438", "rowText": "the sun is the source of energy for life on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "cfea-1ba2-549b-7d10", "rowText": "An example of a physical cycle is the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "3cac-554a-3149-cd7b", "rowText": "water absorbs solar energy in the water cycle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "3825-51d0-5d33-2303", "rowText": "energy flows in an ecosystem through food chains", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0a6a-f5dd-7c73-ed64", "rowText": "the water cycle occurs on Earth", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "e7e8-9711-1051-9165", "rowText": "radiation means radiant energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "ef29-744a-92a8-f884", "rowText": "solar radiation means solar energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		}
+	]
+}
+]}
+

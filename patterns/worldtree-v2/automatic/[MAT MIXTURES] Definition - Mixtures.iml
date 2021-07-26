@@ -1,0 +1,55 @@
+// Automatically converted pattern
+inferencepattern MAT_MIXTURES_Definition_Mixtures
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: sugar is a kind of pure substance     (826e-4bd3-1390-0182) [ HYPONYM:"sugar", SCOPE1:"pure", HYPERNYM:"substance" ]
+	//        HINTROW butter is a kind of substance     (e15d-0c5d-0e78-b5dc) [ HYPONYM:"butter", HYPERNYM:"substance" ]
+	//        HINTROW flour is a kind of substance     (875c-3077-d916-cac6) [ HYPONYM:"flour", HYPERNYM:"substance" ]
+	//        HINTROW salt is a kind of pure substance     (1fd0-279c-ed27-afca) [ HYPONYM:"salt", SCOPE1:"pure", HYPERNYM:"substance" ]
+	//        HINTROW lemon juice is a kind of substance     (f78c-b282-3ea9-153e) [ HYPONYM:"lemon juice", HYPERNYM:"substance" ]
+	//        HINTROW pepper is a kind of substance     (7dee-e98d-d179-d782) [ HYPONYM:"pepper", HYPERNYM:"substance" ]
+	//        HINTROW food is a kind of substance     (c31f-f938-8a69-233b) [ HYPONYM:"food", HYPERNYM:"substance" ]
+	//  Notes: Y column
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "substance"]
+
+	// GROUNDING       PROP-MAT-PURITY-MIXTURE: sand is a mixture     (b3bf-e492-2f51-a6f7) [ THING:"sand", MIXTURE_PURE_SUBSTANCE:"mixture" ]
+	//        HINTROW air is a mixture     (442c-6b3e-0b69-467d) [ THING:"air", MIXTURE_PURE_SUBSTANCE:"mixture" ]
+	//        HINTROW dough is a mixture of sugar, butter, flour and salt     (bab7-3d03-9fb2-d46d) [ THING:"dough", MIXTURE_PURE_SUBSTANCE:"mixture", COMPONENTS:"of sugar butter flour salt" ]
+	//  Notes: 4721-2060-ea7f-c713->bab7-3d03-9fb2-d46d,0338-0a89-946d-e6e5;309f-3160-ee69-1275->b3bf-e492-2f51-a6f7;7acf-d960-5965-ec12->442c-6b3e-0b69-467dX is a kind of mixture
+	//row autoRow1 = [TABLE:"PROP-MAT-PURITY-MIXTURE", MIXTURE_PURE_SUBSTANCE: "mixture"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-MAT-PURITY-MIXTURE", MIXTURE_PURE_SUBSTANCE: "mixture"]
+
+	// GROUNDING       MADEOF: sand is made of very small rocks ; minerals     (6bdb-a6bb-4fe3-15cc) [ OBJECT:"sand", VALUE:"very small", MATERIAL:"rock;mineral" ]
+	//        HINTROW dough is made of sugar, butter, flour and salt     (0338-0a89-946d-e6e5) [ OBJECT:"dough", MATERIAL:"sugar butter flour salt" ]
+	//        HINTROW lemonade is made of water, lemon juice, and sugar     (b4ae-6412-4e0b-76cd) [ OBJECT:"lemonade", MATERIAL:"water lemon juice sugar" ]
+	//        HINTROW the Earth 's atmosphere is made of 78 percent nitrogen by mass     (18df-4496-f1cf-d9b1) [ QUANTIFIER:"earth", OBJECT:"atmosphere", VALUE:"78 percent", MATERIAL:"nitrogen", SCOPE:"by mass" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow2 = [TABLE:"MADEOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow2 = [TABLE:"MADEOF"]
+
+	// CENTRAL         IFTHEN: if two substances together form a mixture then those substances can be separated from one another by physical changes     (9710-6959-2c34-d204) [ THING:"two substance", SCOPE1A:"together", ACTION1:"form", OBJECT_PATIENT1:"mixture", ACTOR_AGENT_PROCESS2:"substance", ACTION3:"separate", OBJECT_PROPERTY3:"from one" ]
+	//row autoRow3 = [UUID:"9710-6959-2c34-d204", THING: "two substance", SCOPE1A: "together", ACTION1: "form", OBJECT_PATIENT1: "mixture", ACTOR_AGENT_PROCESS2: "substance", ACTION3: "separate", OBJECT_PROPERTY3: "from one"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"9710-6959-2c34-d204", THING: "two substance", SCOPE1A: "together", ACTION1: "form", OBJECT_PATIENT1: "mixture", ACTOR_AGENT_PROCESS2: "substance", ACTION3: "separate", OBJECT_PROPERTY3: "from one"]
+
+	// CENTRAL         FORMEDBY: an mixture is formed by two or more substances combined together physically     (9247-2bc4-e950-d3dd) [ OBJECT:"mixture", AGENT_PROCESS:"two much substance", VERB:"combine together", SCOPE:"physically" ]
+	//  Notes: X mixture is made of Y 
+	//row autoRow4 = [UUID:"9247-2bc4-e950-d3dd", OBJECT: "mixture", AGENT_PROCESS: "two much substance", VERB: "combine together", SCOPE: "physically"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"9247-2bc4-e950-d3dd", OBJECT: "mixture", AGENT_PROCESS: "two much substance", VERB: "combine together", SCOPE: "physically"]
+
+	// CENTRAL         KINDOF: a mixture is a kind of substance     (4e66-5eec-133c-0f66) [ HYPONYM:"mixture", HYPERNYM:"substance" ]
+	//row autoRow5 = [UUID:"4e66-5eec-133c-0f66", HYPONYM: "mixture", HYPERNYM: "substance"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"4e66-5eec-133c-0f66", HYPONYM: "mixture", HYPERNYM: "substance"]
+
+	// CENTRAL        (OPTIONAL) ACTION: classifying is when one sorts something by kind ; type     (0d00-93f4-5616-0efc) [ DEFINITION_NAME:"classify", AGENT_OBJECT:"one", ACTION2:"sort", OBJECT_PROPERTY:"something", HOW:"kind;type" ]
+	//row *autoRow6 = [UUID:"0d00-93f4-5616-0efc", DEFINITION_NAME: "classify", AGENT_OBJECT: "one", ACTION2: "sort", OBJECT_PROPERTY: "something", HOW: "kind"] //OVER-CONSTR.
+	row *autoRow6 = [UUID:"0d00-93f4-5616-0efc", DEFINITION_NAME: "classify", AGENT_OBJECT: "one", ACTION2: "sort", OBJECT_PROPERTY: "something", HOW: "kind"]
+
+endinferencepattern

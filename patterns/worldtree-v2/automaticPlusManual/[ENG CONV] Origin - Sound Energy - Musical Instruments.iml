@@ -1,0 +1,102 @@
+// Automatically converted pattern
+inferencepattern ENG_CONV_Origin_Sound_Energy_Musical_Instruments
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       EXAMPLES: An example of playing a musical instrument is strumming a guitar string     (1d01-8937-52ac-d9af) [ VERB1:"play", AGENT_OBJECT1:"musical instrument", VERB2:"strum", AGENT_OBJECT3:"guitar string" ]
+	//        HINTROW An example of playing a musical instrument is hitting the keys of a piano     (aadc-bc4f-81be-06ac) [ VERB1:"play", AGENT_OBJECT1:"musical instrument", VERB2:"hit", AGENT_OBJECT3:"key of piano" ]
+	//row autoRow0 = [TABLE:"EXAMPLES", VERB1: "play", AGENT_OBJECT1: "musical instrument", VERB2: <strum_0>, AGENT_OBJECT3: <guitar_2>+<string_1>] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"EXAMPLES", VERB1: "play", AGENT_OBJECT1: "musical instrument", VERB2: <strum_0>, AGENT_OBJECT3: <guitar_2>+<string_1>]
+
+	// CENTRALSW       CAUSE: plucking ; strumming a string can cause that string to vibrate     (5347-48a6-e352-a6f8) [ CONDITION_VERB:"pluck;strum", CONDITION_PATIENT:"string", RESULT_AGENT:"that string", RESULT_VERB:"vibrate" ]
+	//        HINTROW hitting an object causes the particles in that object to vibrate     (d4b3-702a-31e7-3f17) [ CONDITION_VERB:"hit", CONDITION_PATIENT:"object", RESULT_AGENT:"particle in object", RESULT_VERB:"vibrate" ]
+	//row autoRow1 = [TABLE:"CAUSE", CONDITION_VERB: <strum_0>, CONDITION_PATIENT: <string_1>, RESULT_AGENT: *"POS:IN"+<string_1>, RESULT_VERB: "vibrate"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CAUSE", CONDITION_VERB: <strum_0>, CONDITION_PATIENT: <string_1>, RESULT_VERB: "vibrate"]
+
+	// CENTRALSW       COUPLEDRELATIONSHIP: as a string of a musical instrument is plucked harder , the string will vibrate harder ; faster     (245b-94fb-b2d8-ed31) [ AGENT_ATTRIBUTE1:"string", SCOPE1A:"of musical instrument", ACTION1:"be pluck", CHANGE1:"hard", AGENT_ATTRIBUTE2:"string", ACTION2:"vibrate", CHANGE2:"hard;fast" ]
+	//        HINTROW as the string of a musical instrument is made tigter , the frequency of the sound it produces will increase     (6e02-a0c8-dfdf-683f) [ AGENT_ATTRIBUTE1:"string", SCOPE1A:"of musical instrument", CHANGE1:"be make tigter", QUANTITY_MEASURE2:"frequency of", AGENT_ATTRIBUTE2:"sound", ACTION2:"produce", CHANGE2:"increase" ]
+	//        HINTROW as a string of a musical instrument is plucked harder , the pitch produced will not change     (5fda-84f2-d2a4-c554) [ AGENT_ATTRIBUTE1:"string", SCOPE1A:"of musical instrument", ACTION1:"be pluck", CHANGE1:"hard", AGENT_ATTRIBUTE2:"pitch", ACTION2:"produce", CHANGE2:"not change" ]
+	//  Notes: if plucked harder or the strings made tighter then, it causes X
+	//row autoRow2 = [TABLE:"COUPLEDRELATIONSHIP", AGENT_ATTRIBUTE1: <string_1>, SCOPE1A: "of musical instrument", ACTION1: "be"+*"POS:VB", CHANGE1: "hard", AGENT_ATTRIBUTE2: <string_1>, ACTION2: "vibrate", CHANGE2: "hard"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"COUPLEDRELATIONSHIP", AGENT_ATTRIBUTE1: <string_1>, SCOPE1A: "of musical instrument"]
+
+	// CENTRALSW       PARTOF: a string is a part of a guitar for producing sound     (f0bc-89f4-573b-edfe) [ PART:"string", QUANTIFIER1:"be", WHOLE:"guitar", FOR_PURPOSE:"produce sound" ]
+	//        HINTROW a key is a part of a piano     (a887-85b8-05c7-c5e8) [ PART:"key", QUANTIFIER1:"be", WHOLE:"piano" ]
+	//row autoRow3 = [TABLE:"PARTOF", PART: <string_1>, QUANTIFIER1: "be", WHOLE: <guitar_2>, FOR_PURPOSE: "produce sound"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"PARTOF", PART: <string_1>, QUANTIFIER1: "be", WHOLE: <guitar_2>]
+
+	// CENTRALSW       SOURCEOF: vibrations are a source of sound     (6f04-f08d-2b7e-a7f4) [ AGENT:"vibration", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"sound" ]
+	//        HINTROW vibrating matter can produce sound     (cf64-935e-ea78-35a4) [ ACTION:"vibrate", OBJECT_PATIENT:"matt", VERB_SOURCEOF_PROVIDE_ETC:"product", WHAT_IT_PROVIDES:"sound" ]
+	//row autoRow4 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "be"+*"POS:NN"+"of", WHAT_IT_PROVIDES: "sound"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"SOURCEOF", VERB_SOURCEOF_PROVIDE_ETC: "be"+*"POS:NN"+*"POS:IN", WHAT_IT_PROVIDES: "sound"]
+
+	// GROUNDING       KINDOF: a guitar is a kind of musical instrument     (71b4-e5fc-3ed1-a1c0) [ HYPONYM:"guitar", HYPERNYM:"musical instrument" ]
+	//        HINTROW a drum is a kind of musical instrument     (d1b6-8301-bd8c-c627) [ HYPONYM:"drum", HYPERNYM:"musical instrument" ]
+	//        HINTROW a violin is a kind of musical instrument     (cad6-dd80-3774-fc9d) [ HYPONYM:"violin", HYPERNYM:"musical instrument" ]
+	//        HINTROW a flute is a kind of musical instrument     (e199-cb9e-c3be-c3de) [ HYPONYM:"flute", SCOPE1:"musical", HYPERNYM:"instrument" ]
+	//row autoRow5 = [TABLE:"KINDOF", HYPONYM: <guitar_2>, HYPERNYM: "musical instrument"] //OVER-CONSTR.
+	row autoRow5 = [TABLE:"KINDOF", HYPERNYM: "musical instrument"]
+
+	// CENTRAL         CHANGE: energy transformation means one kind of energy changes into another kind of energy     (3d34-b43e-8a7e-07fd) [ PROCESS_NAME:"energy transformation", ACTOR_WHO:"one kind of energy", VERB:"change", INTO:"kind of energy" ]
+	//row autoRow6 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"]
+
+	// CENTRAL        (OPTIONAL) COUPLEDRELATIONSHIP: as matter vibrates harder ; faster , the volume of the sound produced will increase     (89d9-628b-f755-c419) [ AGENT_ATTRIBUTE1:"matt", ACTION1:"vibrate", CHANGE1:"hard;fast", QUANTITY_MEASURE2:"volume of", AGENT_ATTRIBUTE2:"sound", ACTION2:"produce", CHANGE2:"increase" ]
+	//  Notes: X causes Y
+	//row *autoRow7 = [UUID:"89d9-628b-f755-c419", AGENT_ATTRIBUTE1: "matt", ACTION1: "vibrate", CHANGE1: "hard", QUANTITY_MEASURE2: "volume of", AGENT_ATTRIBUTE2: "sound", ACTION2: "produce", CHANGE2: "increase"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"89d9-628b-f755-c419", AGENT_ATTRIBUTE1: "matt", ACTION1: "vibrate", CHANGE1: "hard", QUANTITY_MEASURE2: "volume of", AGENT_ATTRIBUTE2: "sound", ACTION2: "produce", CHANGE2: "increase"]
+
+	// CENTRAL         EXAMPLES: An example of mechanical energy is an object in motion     (4aca-cf16-fcc6-1f79) [ AGENT_OBJECT1:"mechanical energy", AGENT_OBJECT2:"object in move" ]
+	//row autoRow8 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"4aca-cf16-fcc6-1f79", AGENT_OBJECT1: "mechanical energy", AGENT_OBJECT2: "object in move"]
+
+	// CENTRAL         TRANSFER: sound is produced when mechanical energy is transformed into sound energy     (290b-0e4b-0de3-8f9f) [ PROCESS_NAME:"sound be produce", ACTOR_WHO:"mechanical energy", VERB:"be transform", DESTINATION:"sound energy" ]
+	//row autoRow9 = [UUID:"290b-0e4b-0de3-8f9f", PROCESS_NAME: "sound be produce", ACTOR_WHO: "mechanical energy", VERB: "be transform", DESTINATION: "sound energy"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"290b-0e4b-0de3-8f9f", PROCESS_NAME: "sound be produce", ACTOR_WHO: "mechanical energy", VERB: "be transform", DESTINATION: "sound energy"]
+
+	// CENTRAL         CAUSE: matter ; molecules vibrating can cause sound     (6191-80db-d5e3-b23e) [ CONDITION_AGENT_OBJECT:"matt;molecule", CONDITION_VERB:"vibrate", RESULT_AGENT:"sound" ]
+	//row autoRow10 = [UUID:"6191-80db-d5e3-b23e", CONDITION_AGENT_OBJECT: "matt", CONDITION_VERB: "vibrate", RESULT_AGENT: "sound"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"6191-80db-d5e3-b23e", CONDITION_AGENT_OBJECT: "matt", CONDITION_VERB: "vibrate", RESULT_AGENT: "sound"]
+
+	// CENTRAL         KINDOF: sound is a kind of air vibration     (c73c-b25a-5409-a480) [ HYPONYM:"sound", SCOPE1:"air", HYPERNYM:"vibrate" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"c73c-b25a-5409-a480", HYPONYM: "sound", SCOPE1: "air", HYPERNYM: "vibrate"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"c73c-b25a-5409-a480", HYPONYM: "sound", SCOPE1: "air", HYPERNYM: "vibrate"]
+
+	// CENTRAL         KINDOF: a string is a kind of object     (e348-689b-5fde-b228) [ HYPONYM:"string", HYPERNYM:"object" ]
+	//row autoRow12 = [UUID:"e348-689b-5fde-b228", HYPONYM: <string_1>, HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"e348-689b-5fde-b228", HYPONYM: <string_1>, HYPERNYM: "object"]
+
+	// CENTRAL         KINDOF: mechanical energy is a kind of energy     (3144-f8f2-43a4-8712) [ HYPONYM:"mechanical energy", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"3144-f8f2-43a4-8712", HYPONYM: "mechanical energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"3144-f8f2-43a4-8712", HYPONYM: "mechanical energy", HYPERNYM: "energy"]
+
+	// CENTRAL         MADEOF: objects are made of materials ; substances ; matter     (80a3-454d-e8e0-3de2) [ OBJECT:"object", MATERIAL:"material;substance;matt" ]
+	//row autoRow14 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"]
+
+	// CENTRAL         KINDOF: sound is a kind of energy     (1980-256d-b685-846c) [ HYPONYM:"sound", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"1980-256d-b685-846c", HYPONYM: "sound", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"1980-256d-b685-846c", HYPONYM: "sound", HYPERNYM: "energy"]
+
+	// CENTRAL         KINDOF: vibration is a kind of motion     (84cd-6cd8-331b-f869) [ HYPONYM:"vibrate", HYPERNYM:"move" ]
+	//  Notes: peripheral
+	//row autoRow16 = [UUID:"84cd-6cd8-331b-f869", HYPONYM: "vibrate", HYPERNYM: "move"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"84cd-6cd8-331b-f869", HYPONYM: "vibrate", HYPERNYM: "move"]
+
+	// CENTRAL         SOURCEOF: musical instruments make sound when they are played     (f6ad-39ca-e8e1-b1d7) [ AGENT:"musical instrument", VERB_SOURCEOF_PROVIDE_ETC:"make", WHAT_IT_PROVIDES:"sound", SCOPE:"be play" ]
+	//row autoRow17 = [UUID:"f6ad-39ca-e8e1-b1d7", AGENT: "musical instrument", VERB_SOURCEOF_PROVIDE_ETC: "make", WHAT_IT_PROVIDES: "sound", SCOPE: "be play"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"f6ad-39ca-e8e1-b1d7", AGENT: "musical instrument", VERB_SOURCEOF_PROVIDE_ETC: "make", WHAT_IT_PROVIDES: "sound", SCOPE: "be play"]
+
+	// LEXGLUE         SYNONYMY: motion ; movement means moving ; to move     (d8a3-10bb-9aea-178a) [ X1:"move;move", ACTION2:"move;move" ]
+	//row autoRow18 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"d8a3-10bb-9aea-178a", X1: "move", ACTION2: "move"]
+
+endinferencepattern

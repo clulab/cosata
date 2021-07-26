@@ -1,0 +1,59 @@
+// Automatically converted pattern
+inferencepattern ENG_LIGHT_Light_Properties
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: sunlight is a kind of light     (49dc-4526-46f9-5b32) [ HYPONYM:"sunlight", HYPERNYM:"light" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "sunlight", HYPERNYM: "light"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "sunlight", HYPERNYM: "light"]
+
+	// CENTRAL         ACTION: electromagnetic radiation is arranged in the electromagnetic spectrum by wavelength ; frequency     (56c9-505f-6c16-b7d4) [ ADJ:"electromagnetic", AGENT_OBJECT:"radiation", ACTION2:"be arrange", OBJECT_PROPERTY:"in electromagnetic spectrum", BY_THROUGH_HOW:"wavelength;frequency" ]
+	//row autoRow1 = [UUID:"56c9-505f-6c16-b7d4", ADJ: "electromagnetic", AGENT_OBJECT: "radiation", ACTION2: "be arrange", OBJECT_PROPERTY: "in electromagnetic spectrum", BY_THROUGH_HOW: "wavelength"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"56c9-505f-6c16-b7d4", ADJ: "electromagnetic", AGENT_OBJECT: "radiation", ACTION2: "be arrange", OBJECT_PROPERTY: "in electromagnetic spectrum", BY_THROUGH_HOW: "wavelength"]
+
+	// CENTRAL         AFFORDANCES: electromagnetic waves can travel through a vacuum and matter     (7499-4077-caec-1e23) [ ACTOR_THING:"electromagnetic wave", VERB:"travel through", PATIENT:"vacuum matt" ]
+	//row autoRow2 = [UUID:"7499-4077-caec-1e23", ACTOR_THING: "electromagnetic wave", VERB: "travel through", PATIENT: "vacuum matt"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"7499-4077-caec-1e23", ACTOR_THING: "electromagnetic wave", VERB: "travel through", PATIENT: "vacuum matt"]
+
+	// CENTRAL         ACTION: bands ; ranges of frequencies of light waves is called electromagnetic spectrum     (b190-6cd5-1d54-842a) [ AGENT_OBJECT:"band;range", SCOPE1:"of frequency of light wave", ACTION2:"be call", OBJECT_PROPERTY:"electromagnetic spectrum" ]
+	//row autoRow3 = [UUID:"b190-6cd5-1d54-842a", AGENT_OBJECT: "band", SCOPE1: "of frequency of light wave", ACTION2: "be call", OBJECT_PROPERTY: "electromagnetic spectrum"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"b190-6cd5-1d54-842a", AGENT_OBJECT: "band", SCOPE1: "of frequency of light wave", ACTION2: "be call", OBJECT_PROPERTY: "electromagnetic spectrum"]
+
+	// CENTRAL         PROP-GENERIC: frequency is a property of a wave ; a particel of light ; an event     (6758-2fe3-2711-02aa) [ X:"frequency", Y:"wave;particel of light;event" ]
+	//row autoRow4 = [UUID:"6758-2fe3-2711-02aa", X: "frequency", Y: "particel of light"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"6758-2fe3-2711-02aa", X: "frequency", Y: "particel of light"]
+
+	// CENTRAL         ACTION: light travels fastest through a vacuum     (b925-8bb9-3f88-f04c) [ AGENT_OBJECT:"light", ACTION2:"travel", OBJECT_PROPERTY:"fast", WHEN_WHERE:"through vacuum" ]
+	//row autoRow5 = [UUID:"b925-8bb9-3f88-f04c", AGENT_OBJECT: "light", ACTION2: "travel", OBJECT_PROPERTY: "fast", WHEN_WHERE: "through vacuum"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"b925-8bb9-3f88-f04c", AGENT_OBJECT: "light", ACTION2: "travel", OBJECT_PROPERTY: "fast", WHEN_WHERE: "through vacuum"]
+
+	// CENTRAL         KINDOF: light is a kind of electromagnetic radiation     (f5bd-f09f-df33-571f) [ HYPONYM:"light", SCOPE1:"electromagnetic", HYPERNYM:"radiation" ]
+	//row autoRow6 = [UUID:"f5bd-f09f-df33-571f", HYPONYM: "light", SCOPE1: "electromagnetic", HYPERNYM: "radiation"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"f5bd-f09f-df33-571f", HYPONYM: "light", SCOPE1: "electromagnetic", HYPERNYM: "radiation"]
+
+	// CENTRAL         ACTION: light waves travel as transverse waves     (1f31-c338-8bff-2432) [ AGENT_OBJECT:"light wave", ACTION2:"travel", OBJECT_PROPERTY:"a transverse wave" ]
+	//row autoRow7 = [UUID:"1f31-c338-8bff-2432", AGENT_OBJECT: "light wave", ACTION2: "travel", OBJECT_PROPERTY: "a transverse wave"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"1f31-c338-8bff-2432", AGENT_OBJECT: "light wave", ACTION2: "travel", OBJECT_PROPERTY: "a transverse wave"]
+
+	// CENTRAL         MADEOF: sunlight is made of ultraviolet, infrared, and visible light     (78fa-2af9-0a4b-0688) [ OBJECT:"sunlight", MATERIAL:"ultraviolet infrare visible light" ]
+	//row autoRow8 = [UUID:"78fa-2af9-0a4b-0688", OBJECT: "sunlight", MATERIAL: "ultraviolet infrare visible light"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"78fa-2af9-0a4b-0688", OBJECT: "sunlight", MATERIAL: "ultraviolet infrare visible light"]
+
+	// CENTRAL         KINDOF: light is a kind of wave     (7830-1dcb-42c6-d8dc) [ HYPONYM:"light", HYPERNYM:"wave" ]
+	//row autoRow9 = [UUID:"7830-1dcb-42c6-d8dc", HYPONYM: "light", HYPERNYM: "wave"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"7830-1dcb-42c6-d8dc", HYPONYM: "light", HYPERNYM: "wave"]
+
+	// CENTRAL         PROP-GENERIC: reflection is a property of light     (e363-0e7a-b528-b31f) [ X:"reflect", Y:"light" ]
+	//row autoRow10 = [UUID:"e363-0e7a-b528-b31f", X: "reflect", Y: "light"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"e363-0e7a-b528-b31f", X: "reflect", Y: "light"]
+
+	// CENTRAL         PROP-GENERIC: refraction is a property of light     (a13e-3f40-feec-4963) [ X:"refract", Y:"light" ]
+	//row autoRow11 = [UUID:"a13e-3f40-feec-4963", X: "refract", Y: "light"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"a13e-3f40-feec-4963", X: "refract", Y: "light"]
+
+endinferencepattern

@@ -1,0 +1,37 @@
+// Automatically converted pattern
+inferencepattern MAT_PROPO_Changing_Shape_by_Action
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE: break down means change from a whole into pieces     (400d-d80d-09a3-3206) [ PROCESS_NAME:"break", VERB:"change", FROM:"whole", INTO:"piece" ]
+	//        HINTROW tearing means changing a whole into pieces     (23d7-086d-e662-8fd4) [ PROCESS_NAME:"tear", VERB:"change", FROM:"whole", INTO:"piece" ]
+	//        HINTROW cutting means changing the object from a whole into smaller pieces     (8bde-7729-7914-ff27) [ PROCESS_NAME:"cut", VERB:"change", WHAT:"object", FROM:"whole", INTO:"small piece" ]
+	//  Notes: X means changing the whole into pieces
+	//row autoRow0 = [TABLE:"CHANGE", VERB: "change", FROM: "whole", INTO: "piece"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CHANGE", VERB: "change", FROM: "whole", INTO: "piece"]
+
+	// GROUNDING       KINDOF: a paper is a kind of object     (9098-c80a-ed21-5447) [ HYPONYM:"paper", HYPERNYM:"object" ]
+	//        HINTROW a bar of copper is a kind of object     (278c-e0f0-c1e1-2258) [ HYPONYM:"bar of copper", HYPERNYM:"object" ]
+	//        HINTROW a paper bag is a kind of object     (55b0-655c-6c67-2cf5) [ HYPONYM:"paper bag", HYPERNYM:"object" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "object"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "object"]
+
+	// CENTRAL         PROP-GENERIC: size is a property of objects and includes ordered values of microscopic ; tiny ; small ; medium ; large     (02eb-d26b-a00c-c559) [ X:"size", Y:"object", ORDERED_UNORDERED:"order", VALUES:"microscopic;tiny;small;medium;large" ]
+	//row autoRow2 = [UUID:"02eb-d26b-a00c-c559", X: "size", Y: "object", ORDERED_UNORDERED: "order", VALUES: "microscopic"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"02eb-d26b-a00c-c559", X: "size", Y: "object", ORDERED_UNORDERED: "order", VALUES: "microscopic"]
+
+	// CENTRAL         COMPARISON: a part of ; piece of an object is smaller in size than the entire object ; whole object     (87d4-163c-b8bc-4a9f) [ ADJ:"part of;piece of", THING:"object", ACTION1:"be", COMPARISON:"small", ATTRIBUTE:"in size", THING_COMPARED:"entire object;whole object" ]
+	//  Notes: 3120-39a0-244c-c677->87d4-163c-b8bc-4a9f
+	//row autoRow3 = [UUID:"87d4-163c-b8bc-4a9f", ADJ: "part of", THING: "object", ACTION1: "be", COMPARISON: "small", ATTRIBUTE: "in size", THING_COMPARED: "entire object"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"87d4-163c-b8bc-4a9f", ADJ: "part of", THING: "object", ACTION1: "be", COMPARISON: "small", ATTRIBUTE: "in size", THING_COMPARED: "entire object"]
+
+	// CENTRAL         USEDFOR: the properties of something are used for describing that something     (33f0-39de-0983-aad8) [ AGENT_OBJECT:"property", SCOPE1:"of something", FOR_PURPOSE:"describe", PATIENT:"that something" ]
+	//row autoRow4 = [UUID:"33f0-39de-0983-aad8", AGENT_OBJECT: "property", SCOPE1: "of something", FOR_PURPOSE: "describe", PATIENT: "that something"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"33f0-39de-0983-aad8", AGENT_OBJECT: "property", SCOPE1: "of something", FOR_PURPOSE: "describe", PATIENT: "that something"]
+
+endinferencepattern

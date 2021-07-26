@@ -1,0 +1,44 @@
+// Automatically converted pattern
+inferencepattern CEL_DISTANCES_Heat_from_Sun_by_Distance
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as distance from a source of something increases , that something will decrease 
+	row autoRow0 = [UUID:"e78f-4643-92f4-383f", QUANTITY_MEASURE1: "distance", AGENT_ATTRIBUTE1: "source", CHANGE1: "increase"]
+
+	// CENTRAL         SOURCEOF: the sun is a source of (radiation;  heat) called sunlight 
+	row autoRow1 = [UUID:"d247-b029-3aab-0950", AGENT: "sun", VERB_sourceof_provide_etc: "source", WHAT_IT_PROVIDES: "heat", NAME: "sunlight"]
+
+	// CENTRAL         TRANSFER: the sun transfers (solar energy;  light energy; heat energy) from itself to the (planets; Earth) through sunlight 
+	row autoRow2 = [UUID:"a3c3-47f1-32ba-5c7f", BY_THROUGH_HOW: "sunlight", ACTOR_WHO: "sun", WHAT: "heat", DESTINATION: "Earth"]
+
+	// CENTRAL         IFTHEN: if (an object;  a substance; a location) absorbs solar energy then (that object;  that substance) will increase in temperature 
+	row autoRow3 = [UUID:"9554-47d7-c095-1df7", ACTOR_AGENT_PROCESS2: "object", THING: "object", ACTION3: "increase", OBJECT_PROPERTY3: "temperature", ACTION1: "absorb", OBJECT_PATIENT1: "solar"]
+/*
+	// CENTRAL         CAUSE: absorbing sunlight causes objects to heat 
+	row autoRow4 = [UUID:"dcbe-9523-4529-c54e", RESULT_VERB: "heat", CONDITION_VERB: "absorb", CONDITION_PATIENT: "sunlight", RESULT_AGENT: "object"]
+
+	// CENTRAL         SOURCEOF: sunlight produces heat 
+	row autoRow5 = [UUID:"2889-3edc-095a-6d6b", AGENT: "sunlight", WHAT_IT_PROVIDES: "heat"]
+
+	// CENTRAL         MEASUREMENTS: temperature is a measure of heat energy 
+	row autoRow6 = [UUID:"d753-423d-5ce7-53ce", MEASURE: "temperature", ATTRIBUTE: "heat"]
+
+	// GROUNDING       KINDOF: Earth is a kind of planet 
+	//        HINTROW Mars is a kind of planet 
+	//        HINTROW Mercury is a kind of planet 
+	//row autoRow7 = [TABLE:"KINDOF", HYPONYM: "Earth", HYPERNYM: "planet"]
+
+	// CENTRAL         KINDOF: a planet is a kind of celestial (object;  body) 
+	row autoRow8 = [UUID:"22a2-1029-702e-a29a", HYPONYM: "planet", HYPERNYM: "object"]
+
+	// CENTRAL        (OPTIONAL) CAUSE: the distance between the Sun and Earth causes liquid water to be able to exist 
+	//row autoRow9 = [UUID:"0285-a0b4-8c82-afce", SCOPE2: "Earth", CONDITION_AGENT_OBJECT: "distance", SCOPE1: "Earth"]
+*/
+
+endinferencepattern

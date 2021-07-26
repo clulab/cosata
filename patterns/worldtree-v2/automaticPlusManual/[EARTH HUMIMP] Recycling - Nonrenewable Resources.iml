@@ -1,0 +1,126 @@
+// Automatically converted pattern
+
+
+inferencepattern EARTH_HUMIMP_Recycling_Nonrenewable_Resources
+
+	// Plain text description
+	description = ""
+
+	// Requirements    
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-RESOURCES-RENEWABLE: metal is a nonrenewable resource     (9e1f-a1a8-643b-0b8c) [ RESOURCE:"metal", REWABLE_NONRENEWABLE:"nonrenewable" ]
+	//        HINTROW plastic is a nonrenewable resource     (06f5-8cbc-7ae5-111f) [ RESOURCE:"plastic", REWABLE_NONRENEWABLE:"nonrenewable" ]
+	//        HINTROW aluminum is a nonrenewable resource     (982b-08d3-f40e-289f) [ RESOURCE:"aluminum", REWABLE_NONRENEWABLE:"nonrenewable" ]
+	//  Notes: nonrenewable resource example
+	//row autoRow0 = [TABLE:"PROP-RESOURCES-RENEWABLE", REWABLE_NONRENEWABLE: "nonrenewable"] //OVER-CONSTR.
+	row *autoRow0 = [TABLE:"PROP-RESOURCES-RENEWABLE", RESOURCE:<materialName>, REWABLE_NONRENEWABLE: <renewableNonRenewable>]
+
+	// CENTRALSW       PROP-RECYCLABLE: aluminum is recyclable     (0e9a-5a09-0c3a-2a9a) [ OBJECT:"aluminum", RECYCLABLE_NON_RECYCLABLE:"recyclable" ]
+	//        HINTROW plastic is recyclable     (2d80-37ff-703e-c203) [ OBJECT:"plastic", RECYCLABLE_NON_RECYCLABLE:"recyclable" ]
+	//        HINTROW metal is recyclable     (cd4a-8889-eeda-a726) [ OBJECT:"metal", RECYCLABLE_NON_RECYCLABLE:"recyclable" ]
+	//row autoRow1 = [TABLE:"PROP-RECYCLABLE", OBJECT: <materialName>, RECYCLABLE_NON_RECYCLABLE: "recyclable"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-RECYCLABLE", OBJECT: <materialName>, RECYCLABLE_NON_RECYCLABLE: "recyclable"]
+
+	// CENTRALSW       MADEOF: a soda can is made of aluminum     (1e72-b6e0-1d37-50bc) [ OBJECT:"soda", MATERIAL:"aluminum" ]
+	//        HINTROW a plastic bag is made of plastic     (3e43-1ce3-7ea9-47a4) [ OBJECT:"plastic bag", MATERIAL:"plastic" ]
+	//        HINTROW a metal can is made of metal     (3e40-ab00-6f9a-4408) [ OBJECT:"metal", MATERIAL:"metal" ]
+	//  Notes: object X made of material Y
+	//row autoRow2 = [TABLE:"MADEOF", MATERIAL: <materialName>] //OVER-CONSTR.
+	row *autoRow2 = [TABLE:"MADEOF", OBJECT:<objectName>, MATERIAL: <materialName>]
+
+	// GROUNDING       KINDOF: metal is a kind of material     (95c4-ec5e-bce9-afd8) [ HYPONYM:"metal", HYPERNYM:"material" ]
+	//        HINTROW plastic is a kind of material made by humans     (b24b-be1d-9e0d-4037) [ HYPONYM:"plastic", HYPERNYM:"material", SCOPE2:"make by human" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "material"] //OVER-CONSTR.
+	row *autoRow3 = [TABLE:"KINDOF", HYPONYM:<materialName>, HYPERNYM: "material"]
+
+	// CENTRAL         AFFECT: recycling resources ; nonrenewable resources has a positive impact on the environment ; conservation of those resources     (813f-2778-ed53-0c9f) [ VERB:"recycle", OBJECT_PROPERTY:"resource;nonrenewable resource", POSITIVE_NEGATIVE:"positive", PATIENT:"environment;conserve of resource" ]
+	//row autoRow4 = [UUID:"813f-2778-ed53-0c9f", VERB: "recycle", OBJECT_PROPERTY: "nonrenewable resource", POSITIVE_NEGATIVE: "positive", PATIENT: "conserve of resource"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"813f-2778-ed53-0c9f", VERB: "recycle", OBJECT_PROPERTY: "nonrenewable resource", POSITIVE_NEGATIVE: "positive", PATIENT: "conserve of resource"]
+
+	// CENTRAL         PROP-THINGS: a nonrenewable resource is limited in supply     (2195-8880-3362-9682) [ ADJ:"nonrenewable", THING:"resource", VALUE:"limit", ATTRIBUTE:"in supply" ]
+	//row autoRow5 = [UUID:"2195-8880-3362-9682", ADJ: "nonrenewable", THING: "resource", VALUE: "limit", ATTRIBUTE: "in supply"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"2195-8880-3362-9682", ADJ: "nonrenewable", THING: "resource", VALUE: "limit", ATTRIBUTE: "in supply"]
+
+	// CENTRAL         IFTHEN: if a resource is limited in supply then that resource should be recycled     (ffeb-6ab3-c8e2-e48a) [ THING:"resource", OBJECT_PROPERTY1:"limit in supply", ACTOR_AGENT_PROCESS2:"that resource", ACTION3:"be", OBJECT_PROPERTY3:"recycle" ]
+	//row autoRow6 = [UUID:"ffeb-6ab3-c8e2-e48a", THING: "resource", OBJECT_PROPERTY1: "limit in supply", ACTOR_AGENT_PROCESS2: "that resource", ACTION3: "be", OBJECT_PROPERTY3: "recycle"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"ffeb-6ab3-c8e2-e48a", THING: "resource", OBJECT_PROPERTY1: "limit in supply", ACTOR_AGENT_PROCESS2: "that resource", ACTION3: "be", OBJECT_PROPERTY3: "recycle"]
+
+	// CENTRAL         ACTION: nonrenewable resources will eventually be depleted     (87e4-0553-c70e-56fa) [ ADJ:"nonrenewable", AGENT_OBJECT:"resource", QUANITIFIER:"eventually", ACTION2:"be deplete" ]
+	//row autoRow7 = [UUID:"87e4-0553-c70e-56fa", ADJ: "nonrenewable", AGENT_OBJECT: "resource", QUANITIFIER: "eventually", ACTION2: "be deplete"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"87e4-0553-c70e-56fa", ADJ: "nonrenewable", AGENT_OBJECT: "resource", QUANITIFIER: "eventually", ACTION2: "be deplete"]
+
+	// CENTRAL         AFFORDANCES: recyclable means a material can be recycled ; reused many times     (f450-c52a-cebe-ac01) [ PROCESS_NAME:"recyclable", ACTOR_THING:"material", VERB:"recycle;reuse", QUANTITY_RANGE:"many time" ]
+	//row autoRow8 = [UUID:"f450-c52a-cebe-ac01", PROCESS_NAME: "recyclable", ACTOR_THING: "material", VERB: "recycle", QUANTITY_RANGE: "many time"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f450-c52a-cebe-ac01", PROCESS_NAME: "recyclable", ACTOR_THING: "material", VERB: "recycle", QUANTITY_RANGE: "many time"]
+
+	// CENTRAL         KINDOF: a material is a kind of resource     (8519-e074-32e0-22b8) [ HYPONYM:"material", HYPERNYM:"resource" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"8519-e074-32e0-22b8", HYPONYM: "material", HYPERNYM: "resource"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"8519-e074-32e0-22b8", HYPONYM: "material", HYPERNYM: "resource"]
+
+	// CENTRAL         PROP-GENERIC: recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable     (b393-8aa8-f654-e6a9) [ X:"recyclability", Y:"material", ORDERED_UNORDERED:"order", VALUES:"nonrecyclable;recyclable" ]
+	//row autoRow10 = [UUID:"b393-8aa8-f654-e6a9", X: "recyclability", Y: "material", ORDERED_UNORDERED: "order", VALUES: "nonrecyclable"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"b393-8aa8-f654-e6a9", X: "recyclability", Y: "material", ORDERED_UNORDERED: "order", VALUES: "nonrecyclable"]
+
+	// CENTRAL         MADEOF: objects are made of materials ; substances ; matter     (80a3-454d-e8e0-3de2) [ OBJECT:"object", MATERIAL:"material;substance;matt" ]
+	//row autoRow11 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"80a3-454d-e8e0-3de2", OBJECT: "object", MATERIAL: "material"]
+
+endinferencepattern
+
+
+/*
+inferencepattern EARTH_HUMIMP_X_MADEOF_Y1
+    // For cases such as "X is made of Y, Y is a kind of Z, Z is renewable/non-renewable"
+
+	// CENTRALSW       PROP-RESOURCES-RENEWABLE: metal is a nonrenewable resource     (9e1f-a1a8-643b-0b8c) [ RESOURCE:"metal", REWABLE_NONRENEWABLE:"nonrenewable" ]
+	//        HINTROW plastic is a nonrenewable resource     (06f5-8cbc-7ae5-111f) [ RESOURCE:"plastic", REWABLE_NONRENEWABLE:"nonrenewable" ]
+	//        HINTROW aluminum is a nonrenewable resource     (982b-08d3-f40e-289f) [ RESOURCE:"aluminum", REWABLE_NONRENEWABLE:"nonrenewable" ]
+	//  Notes: nonrenewable resource example
+	//row autoRow0 = [TABLE:"PROP-RESOURCES-RENEWABLE", REWABLE_NONRENEWABLE: "nonrenewable"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-RESOURCES-RENEWABLE", RESOURCE:<materialName2>, REWABLE_NONRENEWABLE: <renewableNonRenewable>]
+
+	// CENTRALSW       PROP-RECYCLABLE: aluminum is recyclable     (0e9a-5a09-0c3a-2a9a) [ OBJECT:"aluminum", RECYCLABLE_NON_RECYCLABLE:"recyclable" ]
+	//        HINTROW plastic is recyclable     (2d80-37ff-703e-c203) [ OBJECT:"plastic", RECYCLABLE_NON_RECYCLABLE:"recyclable" ]
+	//        HINTROW metal is recyclable     (cd4a-8889-eeda-a726) [ OBJECT:"metal", RECYCLABLE_NON_RECYCLABLE:"recyclable" ]
+	//row autoRow1 = [TABLE:"PROP-RECYCLABLE", OBJECT: <materialName>, RECYCLABLE_NON_RECYCLABLE: "recyclable"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-RECYCLABLE", OBJECT: <materialName>, RECYCLABLE_NON_RECYCLABLE: <recycleableNonRecycleable>]
+
+	// CENTRALSW       MADEOF: a soda can is made of aluminum     (1e72-b6e0-1d37-50bc) [ OBJECT:"soda", MATERIAL:"aluminum" ]
+	//        HINTROW a plastic bag is made of plastic     (3e43-1ce3-7ea9-47a4) [ OBJECT:"plastic bag", MATERIAL:"plastic" ]
+	//        HINTROW a metal can is made of metal     (3e40-ab00-6f9a-4408) [ OBJECT:"metal", MATERIAL:"metal" ]
+	//  Notes: object X made of material Y
+	//row autoRow2 = [TABLE:"MADEOF", MATERIAL: <materialName>] //OVER-CONSTR.
+	row *autoRow2 = [TABLE:"MADEOF", OBJECT:<objectName>, MATERIAL: <materialName>]
+
+    row autoRow3 = [TABLE:"KINDOF", HYPONYM:<materialName>, HYPERNYM: <materialName2>]
+endinferencepattern
+
+inferencepattern EARTH_HUMIMP_X_MADEOF_Y2
+    // For cases such as "X is made of Y, Y is a kind of Z, Z is renewable/non-renewable"
+
+	// CENTRALSW       PROP-RESOURCES-RENEWABLE: metal is a nonrenewable resource     (9e1f-a1a8-643b-0b8c) [ RESOURCE:"metal", REWABLE_NONRENEWABLE:"nonrenewable" ]
+	//        HINTROW plastic is a nonrenewable resource     (06f5-8cbc-7ae5-111f) [ RESOURCE:"plastic", REWABLE_NONRENEWABLE:"nonrenewable" ]
+	//        HINTROW aluminum is a nonrenewable resource     (982b-08d3-f40e-289f) [ RESOURCE:"aluminum", REWABLE_NONRENEWABLE:"nonrenewable" ]
+	//  Notes: nonrenewable resource example
+	//row autoRow0 = [TABLE:"PROP-RESOURCES-RENEWABLE", REWABLE_NONRENEWABLE: "nonrenewable"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-RESOURCES-RENEWABLE", RESOURCE:<materialName2>, REWABLE_NONRENEWABLE: <renewableNonRenewable>]
+
+	// CENTRALSW       PROP-RECYCLABLE: aluminum is recyclable     (0e9a-5a09-0c3a-2a9a) [ OBJECT:"aluminum", RECYCLABLE_NON_RECYCLABLE:"recyclable" ]
+	//        HINTROW plastic is recyclable     (2d80-37ff-703e-c203) [ OBJECT:"plastic", RECYCLABLE_NON_RECYCLABLE:"recyclable" ]
+	//        HINTROW metal is recyclable     (cd4a-8889-eeda-a726) [ OBJECT:"metal", RECYCLABLE_NON_RECYCLABLE:"recyclable" ]
+	//row autoRow1 = [TABLE:"PROP-RECYCLABLE", OBJECT: <materialName>, RECYCLABLE_NON_RECYCLABLE: "recyclable"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"PROP-RECYCLABLE", OBJECT: <materialName>, RECYCLABLE_NON_RECYCLABLE: <recycleableNonRecycleable>]
+
+	// CENTRALSW       MADEOF: a soda can is made of aluminum     (1e72-b6e0-1d37-50bc) [ OBJECT:"soda", MATERIAL:"aluminum" ]
+	//        HINTROW a plastic bag is made of plastic     (3e43-1ce3-7ea9-47a4) [ OBJECT:"plastic bag", MATERIAL:"plastic" ]
+	//        HINTROW a metal can is made of metal     (3e40-ab00-6f9a-4408) [ OBJECT:"metal", MATERIAL:"metal" ]
+	//  Notes: object X made of material Y
+	//row autoRow2 = [TABLE:"MADEOF", MATERIAL: <materialName>] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"MADEOF", OBJECT:<objectName>, MATERIAL: <materialName>]
+
+    row autoRow3 = [TABLE:"KINDOF", HYPONYM:<materialName>, HYPERNYM: <materialName2>]
+endinferencepattern
+*/

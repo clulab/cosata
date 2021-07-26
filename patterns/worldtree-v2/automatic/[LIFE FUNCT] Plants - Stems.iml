@@ -1,0 +1,56 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Plants_Stems
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW a cactus is a kind of plant     (aadb-cb93-3373-eefa) [ HYPONYM:"cactus", HYPERNYM:"plant" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// GROUNDING       KINDOF: transporting is a kind of function     (6de6-2fbd-0113-0492) [ HYPONYM:"transportation", HYPERNYM:"function" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "transportation", HYPERNYM: "function"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "transportation", HYPERNYM: "function"]
+
+	// CENTRAL         KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//row autoRow2 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"]
+
+	// CENTRAL         REQUIRES: a plant ; living thing requires nutrients to grow     (085c-28bf-bb51-79e6) [ OBJECT_AGENT_PROCESS:"plant;live thing", VERB_REQUIRES:"require", OBJECT:"nutrient", FOR_PURPOSE:"grow" ]
+	//row autoRow3 = [UUID:"085c-28bf-bb51-79e6", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"085c-28bf-bb51-79e6", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "nutrient", FOR_PURPOSE: "grow"]
+
+	// CENTRAL         CONTAINS: a plant stem contains a system of tubes for transporting water and nutrients to other parts of the plant     (d534-dac5-f81f-1e26) [ OBJECT_AGENT:"plant stem", WHAT_IT_CONTAINS:"system of tube", FOR_PURPOSE:"transportation water nutrient", SCOPE:"other part of plant" ]
+	//row autoRow4 = [UUID:"d534-dac5-f81f-1e26", OBJECT_AGENT: "plant stem", WHAT_IT_CONTAINS: "system of tube", FOR_PURPOSE: "transportation water nutrient", SCOPE: "other part of plant"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"d534-dac5-f81f-1e26", OBJECT_AGENT: "plant stem", WHAT_IT_CONTAINS: "system of tube", FOR_PURPOSE: "transportation water nutrient", SCOPE: "other part of plant"]
+
+	// CENTRAL         VEHICLE: a plant stem is the vehicle for transporting water and food from roots to the rest of the plant     (e448-3228-b949-a107) [ ACTOR_WHO:"plant stem", VERB:"transportation", WHAT:"water food", SOURCE:"root", DESTINATION:"rest of plant" ]
+	//row autoRow5 = [UUID:"e448-3228-b949-a107", ACTOR_WHO: "plant stem", VERB: "transportation", WHAT: "water food", SOURCE: "root", DESTINATION: "rest of plant"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"e448-3228-b949-a107", ACTOR_WHO: "plant stem", VERB: "transportation", WHAT: "water food", SOURCE: "root", DESTINATION: "rest of plant"]
+
+	// CENTRAL         PARTOF: a stem is often a part of plant     (5740-86a7-4529-25cd) [ PART:"stem", QUANTIFIER1:"be often", WHOLE:"plant" ]
+	//row autoRow6 = [UUID:"5740-86a7-4529-25cd", PART: "stem", QUANTIFIER1: "be often", WHOLE: "plant"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"5740-86a7-4529-25cd", PART: "stem", QUANTIFIER1: "be often", WHOLE: "plant"]
+
+	// CENTRAL         SOURCEOF: a stem is a source of support for a plant     (317e-c441-1f21-0244) [ AGENT:"stem", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"support", AGENT_IT_PROVIDES_THING_TO:"plant" ]
+	//row autoRow7 = [UUID:"317e-c441-1f21-0244", AGENT: "stem", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "support", AGENT_IT_PROVIDES_THING_TO: "plant"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"317e-c441-1f21-0244", AGENT: "stem", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "support", AGENT_IT_PROVIDES_THING_TO: "plant"]
+
+	// CENTRAL         USEDFOR: a stem is used to store water by some plants     (5708-ce9b-2605-1881) [ AGENT_OBJECT:"stem", FOR_PURPOSE:"store", PATIENT:"water", AGENT_THING_WHO_USES:"plant" ]
+	//row autoRow8 = [UUID:"5708-ce9b-2605-1881", AGENT_OBJECT: "stem", FOR_PURPOSE: "store", PATIENT: "water", AGENT_THING_WHO_USES: "plant"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"5708-ce9b-2605-1881", AGENT_OBJECT: "stem", FOR_PURPOSE: "store", PATIENT: "water", AGENT_THING_WHO_USES: "plant"]
+
+	// CENTRAL         USEDFOR: specialized tissues at the ends of plant stems are used for growing taller by plants     (e1d3-5fb3-b1c4-5332) [ AGENT_OBJECT:"specialize tissue", SCOPE1:"at end of plant stem", FOR_PURPOSE:"grow tall", AGENT_THING_WHO_USES:"plant" ]
+	//row autoRow9 = [UUID:"e1d3-5fb3-b1c4-5332", AGENT_OBJECT: "specialize tissue", SCOPE1: "at end of plant stem", FOR_PURPOSE: "grow tall", AGENT_THING_WHO_USES: "plant"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"e1d3-5fb3-b1c4-5332", AGENT_OBJECT: "specialize tissue", SCOPE1: "at end of plant stem", FOR_PURPOSE: "grow tall", AGENT_THING_WHO_USES: "plant"]
+
+	// CENTRAL         ACTION: special tissues in plants transport food ; water ; minerals throughout the plant     (4cdf-2f38-c2ff-daa9) [ ADJ:"special", AGENT_OBJECT:"tissue", SCOPE1:"in plant", ACTION2:"transport", OBJECT_PROPERTY:"food;water;mineral", WHEN_WHERE:"throughout plant" ]
+	//row autoRow10 = [UUID:"4cdf-2f38-c2ff-daa9", ADJ: "special", AGENT_OBJECT: "tissue", SCOPE1: "in plant", ACTION2: "transport", OBJECT_PROPERTY: "food", WHEN_WHERE: "throughout plant"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"4cdf-2f38-c2ff-daa9", ADJ: "special", AGENT_OBJECT: "tissue", SCOPE1: "in plant", ACTION2: "transport", OBJECT_PROPERTY: "food", WHEN_WHERE: "throughout plant"]
+
+endinferencepattern

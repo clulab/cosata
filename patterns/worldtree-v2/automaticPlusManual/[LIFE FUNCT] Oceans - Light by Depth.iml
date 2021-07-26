@@ -1,0 +1,61 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Oceans_Light_by_Depth
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: algae is a kind of plant     (65ae-2928-0696-d8a9) [ HYPONYM:"alga", HYPERNYM:"plant" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "alga", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "alga", HYPERNYM: "plant"]
+
+	// GROUNDING       KINDOF: green marine algae are a kind of producer     (f216-9e38-7dc7-a6d1) [ HYPONYM:"green marine alga", HYPERNYM:"producer" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "green marine alga", HYPERNYM: "producer"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "green marine alga", HYPERNYM: "producer"]
+
+	// CENTRAL         CHANGE: photosynthesis means producers ; green plants convert from carbon dioxide and water and solar energy into carbohydrates and food and oxygen for themselves     (0962-4a47-4e17-ce97) [ PROCESS_NAME:"photosynthesis", ACTOR_WHO:"producer;green plant", VERB:"convert", FROM:"carbon dioxide water solar energy", INTO:"carbohydrate food oxygen" ]
+	//row autoRow2 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"0962-4a47-4e17-ce97", PROCESS_NAME: "photosynthesis", ACTOR_WHO: "green plant", VERB: "convert", FROM: "carbon dioxide water solar energy", INTO: "carbohydrate food oxygen"]
+
+	// CENTRAL         KINDOF: an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//  Notes: peripheral
+	//row autoRow3 = [UUID:"466a-2c15-ac54-8361", HYPONYM: "ocean", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"466a-2c15-ac54-8361", HYPONYM: "ocean", HYPERNYM: "body of water"]
+
+	// CENTRAL         REQUIRES: a plant requires sunlight for photosynthesis     (619e-a5d1-b505-4f69) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"sunlight", FOR_PURPOSE:"photosynthesis" ]
+	//row autoRow4 = [UUID:"619e-a5d1-b505-4f69", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "photosynthesis"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"619e-a5d1-b505-4f69", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "sunlight", FOR_PURPOSE: "photosynthesis"]
+
+	// CENTRAL        (OPTIONAL) UNIT: meters ( m ) are a metric ; SI unit used for measuring length ; distance generally used for values between 1 and 1000     (f297-a722-c60d-7be0) [ UNIT:"meter", ABBREVIATION:"be", PROPERTY:"length;distance", LOWERBOUND:"1", UPPERBOUND:"1000" ]
+	//row *autoRow5 = [UUID:"f297-a722-c60d-7be0", UNIT: "meter", ABBREVIATION: "be", PROPERTY: "length", LOWERBOUND: "1", UPPERBOUND: "1000"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"f297-a722-c60d-7be0", UNIT: "meter", ABBREVIATION: "be", PROPERTY: "length", LOWERBOUND: "1", UPPERBOUND: "1000"]
+
+	// CENTRAL         KINDOF: sunlight is a kind of light     (49dc-4526-46f9-5b32) [ HYPONYM:"sunlight", HYPERNYM:"light" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"49dc-4526-46f9-5b32", HYPONYM: "sunlight", HYPERNYM: "light"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"49dc-4526-46f9-5b32", HYPONYM: "sunlight", HYPERNYM: "light"]
+
+	// CENTRAL         REQUIRES: a plant requires photosynthesis to grow ; survive     (fe74-c2b4-98c2-9496) [ OBJECT_AGENT_PROCESS:"plant", VERB_REQUIRES:"require", OBJECT:"photosynthesis", FOR_PURPOSE:"grow;survive" ]
+	//row autoRow7 = [UUID:"fe74-c2b4-98c2-9496", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "photosynthesis", FOR_PURPOSE: "grow"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"fe74-c2b4-98c2-9496", OBJECT_AGENT_PROCESS: "plant", VERB_REQUIRES: "require", OBJECT: "photosynthesis", FOR_PURPOSE: "grow"]
+
+	// CENTRAL         KINDOF: depth is a kind of distance vertically     (2a5b-43c7-a5a7-dced) [ HYPONYM:"depth", HYPERNYM:"distance", SCOPE2:"vertically" ]
+	//row autoRow8 = [UUID:"2a5b-43c7-a5a7-dced", HYPONYM: "depth", HYPERNYM: "distance", SCOPE2: "vertically"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"2a5b-43c7-a5a7-dced", HYPONYM: "depth", HYPERNYM: "distance", SCOPE2: "vertically"]
+
+	// CENTRAL         LOCATIONS: sunlight can be found in the top 100 meters of the ocean     (96c7-57ec-3ba2-b514) [ THING_PROCESS:"sunlight", LOCATION:"top 100 meter of ocean" ]
+	//row autoRow9 = [UUID:"96c7-57ec-3ba2-b514", THING_PROCESS: "sunlight", LOCATION: "top 100 meter of ocean"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"96c7-57ec-3ba2-b514", THING_PROCESS: "sunlight", LOCATION: "top 100 meter of ocean"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the source of light becomes farther , that source of light will appear dimmer     (247f-1076-f052-4a42) [ QUANTITY_MEASURE1:"source", AGENT_ATTRIBUTE1:"of light", ACTION1:"become", CHANGE1:"far", QUANTITY_MEASURE2:"source", AGENT_ATTRIBUTE2:"of light", ACTION2:"appear", CHANGE2:"dim" ]
+	//row autoRow10 = [UUID:"247f-1076-f052-4a42", QUANTITY_MEASURE1: "source", AGENT_ATTRIBUTE1: "of light", ACTION1: "become", CHANGE1: "far", QUANTITY_MEASURE2: "source", AGENT_ATTRIBUTE2: "of light", ACTION2: "appear", CHANGE2: "dim"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"247f-1076-f052-4a42", QUANTITY_MEASURE1: "source", AGENT_ATTRIBUTE1: "of light", ACTION1: "become", CHANGE1: "far", QUANTITY_MEASURE2: "source", AGENT_ATTRIBUTE2: "of light", ACTION2: "appear", CHANGE2: "dim"]
+
+	// CENTRAL         ATTRIBUTE-VALUE-RANGE: deeper means greater in depth     (fddd-e3d7-b93b-187c) [ THING:"deep", VALUE:"great", ATTRIBUTE:"depth" ]
+	//row autoRow11 = [UUID:"fddd-e3d7-b93b-187c", THING: "deep", VALUE: "great", ATTRIBUTE: "depth"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"fddd-e3d7-b93b-187c", THING: "deep", VALUE: "great", ATTRIBUTE: "depth"]
+
+endinferencepattern

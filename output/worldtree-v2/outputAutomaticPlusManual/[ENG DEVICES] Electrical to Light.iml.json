@@ -1,0 +1,530 @@
+{"patternMatches": [
+{
+	"patternName":"ENG_DEVICES_Electrical_to_Light",
+	"matches":[
+		{
+		"uuids": ["0259-62d6-90d1-5285","8f0f-0358-dc1c-8630","0692-6be2-8fb9-41e9","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0259-62d6-90d1-5285", "rowText": "a light bulb converts electrical energy ; electricity into light energy ; light energy and heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["0259-62d6-90d1-5285","8f0f-0358-dc1c-8630","ac96-5db5-366c-b342","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0259-62d6-90d1-5285", "rowText": "a light bulb converts electrical energy ; electricity into light energy ; light energy and heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ac96-5db5-366c-b342", "rowText": "a doorbell is a kind of electric device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["0259-62d6-90d1-5285","8f0f-0358-dc1c-8630","130a-ea4e-6de1-a4af","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0259-62d6-90d1-5285", "rowText": "a light bulb converts electrical energy ; electricity into light energy ; light energy and heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "130a-ea4e-6de1-a4af", "rowText": "a flashlight is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["0259-62d6-90d1-5285","8f0f-0358-dc1c-8630","53c2-3d92-5b32-6e64","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0259-62d6-90d1-5285", "rowText": "a light bulb converts electrical energy ; electricity into light energy ; light energy and heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "53c2-3d92-5b32-6e64", "rowText": "household appliances are a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["0259-62d6-90d1-5285","8f0f-0358-dc1c-8630","00a4-b16a-aa4d-893d","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0259-62d6-90d1-5285", "rowText": "a light bulb converts electrical energy ; electricity into light energy ; light energy and heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "00a4-b16a-aa4d-893d", "rowText": "a light bulb is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["0259-62d6-90d1-5285","8f0f-0358-dc1c-8630","e58b-3217-6a20-dde2","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0259-62d6-90d1-5285", "rowText": "a light bulb converts electrical energy ; electricity into light energy ; light energy and heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "e58b-3217-6a20-dde2", "rowText": "a radio is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["0259-62d6-90d1-5285","8f0f-0358-dc1c-8630","89ae-f520-fdbf-4c54","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0259-62d6-90d1-5285", "rowText": "a light bulb converts electrical energy ; electricity into light energy ; light energy and heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ae-f520-fdbf-4c54", "rowText": "an television set is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["0259-62d6-90d1-5285","8f0f-0358-dc1c-8630","50a8-996b-b8bf-e107","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0259-62d6-90d1-5285", "rowText": "a light bulb converts electrical energy ; electricity into light energy ; light energy and heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "50a8-996b-b8bf-e107", "rowText": "a toaster is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["0259-62d6-90d1-5285","8f0f-0358-dc1c-8630","43df-97a4-a812-de66","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0259-62d6-90d1-5285", "rowText": "a light bulb converts electrical energy ; electricity into light energy ; light energy and heat energy", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "43df-97a4-a812-de66", "rowText": "an electric stove is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["536f-f053-aca7-9bed","8f0f-0358-dc1c-8630","0692-6be2-8fb9-41e9","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "536f-f053-aca7-9bed", "rowText": "an incandescent light bulb converts electrical energy ; electricity into light energy and heat energy by sending electricity through a filament", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["536f-f053-aca7-9bed","8f0f-0358-dc1c-8630","ac96-5db5-366c-b342","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "536f-f053-aca7-9bed", "rowText": "an incandescent light bulb converts electrical energy ; electricity into light energy and heat energy by sending electricity through a filament", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "ac96-5db5-366c-b342", "rowText": "a doorbell is a kind of electric device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["536f-f053-aca7-9bed","8f0f-0358-dc1c-8630","130a-ea4e-6de1-a4af","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "536f-f053-aca7-9bed", "rowText": "an incandescent light bulb converts electrical energy ; electricity into light energy and heat energy by sending electricity through a filament", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "130a-ea4e-6de1-a4af", "rowText": "a flashlight is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["536f-f053-aca7-9bed","8f0f-0358-dc1c-8630","53c2-3d92-5b32-6e64","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "536f-f053-aca7-9bed", "rowText": "an incandescent light bulb converts electrical energy ; electricity into light energy and heat energy by sending electricity through a filament", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "53c2-3d92-5b32-6e64", "rowText": "household appliances are a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["536f-f053-aca7-9bed","8f0f-0358-dc1c-8630","00a4-b16a-aa4d-893d","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "536f-f053-aca7-9bed", "rowText": "an incandescent light bulb converts electrical energy ; electricity into light energy and heat energy by sending electricity through a filament", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "00a4-b16a-aa4d-893d", "rowText": "a light bulb is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["536f-f053-aca7-9bed","8f0f-0358-dc1c-8630","e58b-3217-6a20-dde2","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "536f-f053-aca7-9bed", "rowText": "an incandescent light bulb converts electrical energy ; electricity into light energy and heat energy by sending electricity through a filament", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "e58b-3217-6a20-dde2", "rowText": "a radio is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["536f-f053-aca7-9bed","8f0f-0358-dc1c-8630","89ae-f520-fdbf-4c54","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "536f-f053-aca7-9bed", "rowText": "an incandescent light bulb converts electrical energy ; electricity into light energy and heat energy by sending electricity through a filament", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "89ae-f520-fdbf-4c54", "rowText": "an television set is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["536f-f053-aca7-9bed","8f0f-0358-dc1c-8630","50a8-996b-b8bf-e107","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "536f-f053-aca7-9bed", "rowText": "an incandescent light bulb converts electrical energy ; electricity into light energy and heat energy by sending electricity through a filament", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "50a8-996b-b8bf-e107", "rowText": "a toaster is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["536f-f053-aca7-9bed","8f0f-0358-dc1c-8630","43df-97a4-a812-de66","5e4d-6ae2-e556-9200","e83b-d62e-d528-3e9f","f5bd-f09f-df33-571f","3d34-b43e-8a7e-07fd","0692-6be2-8fb9-41e9","c6c3-2053-aaf7-86fe","0e96-d216-e3de-ce65","b668-73fc-5f73-b444","b5ca-9f64-d6d6-6783","e1cb-6dbd-0bf8-8d18","f742-384b-744c-10a9","4ba9-2d5a-0284-2882","eec9-c91d-1212-9891","5657-c6bc-e6cd-ae38","a67b-a715-13a4-9b5d"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "536f-f053-aca7-9bed", "rowText": "an incandescent light bulb converts electrical energy ; electricity into light energy and heat energy by sending electricity through a filament", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "8f0f-0358-dc1c-8630", "rowText": "a flashlight is a kind of battery-operated device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "43df-97a4-a812-de66", "rowText": "an electric stove is a kind of electrical device", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "5e4d-6ae2-e556-9200", "rowText": "electrical devices convert from electrical energy ; electricity into other forms of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "e83b-d62e-d528-3e9f", "rowText": "a battery converts chemical energy into electrical energy for powering electrical devices", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f5bd-f09f-df33-571f", "rowText": "light is a kind of electromagnetic radiation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "0692-6be2-8fb9-41e9", "rowText": "a battery-operated device is a kind of electrical device", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6c3-2053-aaf7-86fe", "rowText": "a battery is a source of electrical energy ; electricity", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "0e96-d216-e3de-ce65", "rowText": "a flashlight emits light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "b668-73fc-5f73-b444", "rowText": "closing an electric circuit causes an electrical device to function", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b5ca-9f64-d6d6-6783", "rowText": "electrical energy is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "e1cb-6dbd-0bf8-8d18", "rowText": "a flashlight requires a source of electricity to produce light", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "4ba9-2d5a-0284-2882", "rowText": "an electrical device requires electricity to turn on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "eec9-c91d-1212-9891", "rowText": "when electricity flows to a light bulb , the light bulb will turn on ; come on", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow16", "uuid": "5657-c6bc-e6cd-ae38", "rowText": "electricity means electrical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow17", "uuid": "a67b-a715-13a4-9b5d", "rowText": "energy conversion is similar to energy transformation", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		}
+	]
+}
+]}
+

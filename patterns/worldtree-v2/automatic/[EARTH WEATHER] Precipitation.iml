@@ -1,0 +1,78 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Precipitation
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW      (OPTIONAL) COUPLEDRELATIONSHIP: as the size of a cloud increases , the amount of precipitation contained in that cloud will increase     (2e26-d568-7d5a-f4be) [ QUANTITY_MEASURE1:"size", AGENT_ATTRIBUTE1:"of cloud", CHANGE1:"increase", QUANTITY_MEASURE2:"amount", AGENT_ATTRIBUTE2:"of precipitation", ACTION2:"contain in", PATIENT2:"cloud", CHANGE2:"increase" ]
+	//        HINTROW as the amount of water in air condensing into clouds decreases , the amount of precipitation will decrease     (d2e6-91ef-4697-5828) [ QUANTITY_MEASURE1:"amount of", AGENT_ATTRIBUTE1:"water in air", ACTION1:"condense into", PATIENT1:"cloud", CHANGE1:"decrease", QUANTITY_MEASURE2:"amount of", AGENT_ATTRIBUTE2:"precipitation", CHANGE2:"decrease" ]
+	//row *autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", AGENT_ATTRIBUTE1: "of cloud", QUANTITY_MEASURE2: "amount", AGENT_ATTRIBUTE2: "of precipitation", ACTION2: *"POS:VB"+"in", PATIENT2: "cloud"] //OVER-CONSTR.
+	row *autoRow0 = [TABLE:"COUPLEDRELATIONSHIP", AGENT_ATTRIBUTE1: "of cloud", QUANTITY_MEASURE2: "amount", AGENT_ATTRIBUTE2: "of precipitation"]
+
+	// CENTRALSW       CAUSE: a warm front causes cloudy and rainy weather     (9436-c8e4-c0e1-914f) [ CONDITION_AGENT_OBJECT:"warm front", RESULT_AGENT:"cloudy rain weather" ]
+	//        HINTROW cold fronts cause thunderstorms as they pass by     (3a13-9e03-8109-0023) [ CONDITION_AGENT_OBJECT:"cold front", RESULT_AGENT:"thunderstorm", SCOPE2:"a pass by" ]
+	//row autoRow1 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: <warm_0>+"front"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"CAUSE", CONDITION_AGENT_OBJECT: <warm_0>+"front"]
+
+	// CENTRALSW       SOURCEOF: clouds produce precipitation     (db52-3ce3-5e7f-1953) [ AGENT:"cloud", VERB_SOURCEOF_PROVIDE_ETC:"product", WHAT_IT_PROVIDES:"precipitation" ]
+	//        HINTROW grey clouds are a source of precipitation     (20a9-322c-b21a-3d54) [ ADJ:"grey", AGENT:"cloud", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"precipitation" ]
+	//row autoRow2 = [TABLE:"SOURCEOF", AGENT: "cloud", WHAT_IT_PROVIDES: "precipitation"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"SOURCEOF", AGENT: "cloud", WHAT_IT_PROVIDES: "precipitation"]
+
+	// CENTRALSW       KINDOF: rain is a kind of precipitation     (da1e-dca3-f46a-5189) [ HYPONYM:"rain", HYPERNYM:"precipitation" ]
+	//        HINTROW hail is a kind of precipitation ; ice     (cb4c-5229-e5b9-6408) [ HYPONYM:"hail", HYPERNYM:"precipitation;ice" ]
+	//        HINTROW snow is a kind of precipitation     (8083-d6d0-9cba-da83) [ HYPONYM:"snow", HYPERNYM:"precipitation" ]
+	//        HINTROW sleet is a kind of precipitation     (f704-bbf0-c1f5-b8ba) [ HYPONYM:"sleet", HYPERNYM:"precipitation" ]
+	//  Notes: forms of precipitation
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "rain", HYPERNYM: "precipitation"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "precipitation"]
+
+	// CENTRALSW       ACTION: a warm front is when warm air mass rises and passes over ; collides a cold air mass     (f992-5698-76aa-c6de) [ DEFINITION_NAME:"warm front", ADJ:"warm", AGENT_OBJECT:"air mass", ACTION2:"rise pass over;collide", OBJECT_PROPERTY:"cold air mass" ]
+	//        HINTROW a cold front is when a cooler air mass moves into contact with an area of warmer air     (d7b0-6601-25df-12d7) [ DEFINITION_NAME:"cold front", ADJ:"cool", AGENT_OBJECT:"air mass", ACTION2:"move into contact with", OBJECT_PROPERTY:"area of warm air" ]
+	//row autoRow4 = [TABLE:"ACTION", DEFINITION_NAME: <warm_0>+"front", ADJ: <warm_0>, AGENT_OBJECT: "air mass"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"ACTION", DEFINITION_NAME: <warm_0>+"front", AGENT_OBJECT: "air mass"]
+
+	// CENTRAL         CAUSE: water vapor condensing in clouds causes rain     (c43e-7b5f-7d4e-0bdf) [ CONDITION_AGENT_OBJECT:"water vapor", CONDITION_VERB:"condense", SCOPE1:"in cloud", RESULT_AGENT:"rain" ]
+	//row autoRow5 = [UUID:"c43e-7b5f-7d4e-0bdf", CONDITION_AGENT_OBJECT: "water vapor", CONDITION_VERB: "condense", SCOPE1: "in cloud", RESULT_AGENT: "rain"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"c43e-7b5f-7d4e-0bdf", CONDITION_AGENT_OBJECT: "water vapor", CONDITION_VERB: "condense", SCOPE1: "in cloud", RESULT_AGENT: "rain"]
+
+	// CENTRAL         SOURCEOF: oceans are the source of most of water vapor in the atmosphere     (264c-58db-a41c-9483) [ AGENT:"ocean", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"much of water vapor", SCOPE:"in atmosphere" ]
+	//row autoRow6 = [UUID:"264c-58db-a41c-9483", AGENT: "ocean", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "much of water vapor", SCOPE: "in atmosphere"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"264c-58db-a41c-9483", AGENT: "ocean", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "much of water vapor", SCOPE: "in atmosphere"]
+
+	// CENTRAL         CAUSE: cloudy conditions cause a low-pressure weather system     (7782-71ee-3c2e-0c81) [ CONDITION_AGENT_OBJECT:"cloudy condition", RESULT_AGENT:"low-pressure weather system;low pressure weather system" ]
+	//row autoRow7 = [UUID:"7782-71ee-3c2e-0c81", CONDITION_AGENT_OBJECT: "cloudy condition", RESULT_AGENT: "low pressure weather system"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"7782-71ee-3c2e-0c81", CONDITION_AGENT_OBJECT: "cloudy condition", RESULT_AGENT: "low pressure weather system"]
+
+	// CENTRAL         ACTION: grey clouds appear before precipitation     (457f-3767-5871-6ec8) [ ADJ:"grey", AGENT_OBJECT:"cloud", ACTION2:"appear", WHEN_WHERE:"before precipitation" ]
+	//  Notes: signs before precipitation
+	//row autoRow8 = [UUID:"457f-3767-5871-6ec8", ADJ: "grey", AGENT_OBJECT: "cloud", ACTION2: "appear", WHEN_WHERE: "before precipitation"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"457f-3767-5871-6ec8", ADJ: "grey", AGENT_OBJECT: "cloud", ACTION2: "appear", WHEN_WHERE: "before precipitation"]
+
+	// CENTRAL         CAUSE: low pressure systems cause precipitation     (e228-46ac-0cee-0559) [ CONDITION_AGENT_OBJECT:"low pressure system", RESULT_VERB:"precipitation" ]
+	//  Notes: signs before precipitation
+	//row autoRow9 = [UUID:"e228-46ac-0cee-0559", CONDITION_AGENT_OBJECT: "low pressure system", RESULT_VERB: "precipitation"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"e228-46ac-0cee-0559", CONDITION_AGENT_OBJECT: "low pressure system", RESULT_VERB: "precipitation"]
+
+	// CENTRAL         TRANSFER: precipitation is when rain ; snow ; hail fall from clouds to the Earth ; ground     (4347-84dc-10ce-8007) [ PROCESS_NAME:"precipitation", ACTOR_WHO:"rain;snow;hail", VERB:"fall", SOURCE:"cloud", DESTINATION:"earth;grind" ]
+	//row autoRow10 = [UUID:"4347-84dc-10ce-8007", PROCESS_NAME: "precipitation", ACTOR_WHO: "rain", VERB: "fall", SOURCE: "cloud", DESTINATION: "earth"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"4347-84dc-10ce-8007", PROCESS_NAME: "precipitation", ACTOR_WHO: "rain", VERB: "fall", SOURCE: "cloud", DESTINATION: "earth"]
+
+	// CENTRAL         ACTION: precipitation is when water falls from the sky     (7975-13c2-aeb2-5a9a) [ DEFINITION_NAME:"precipitation", AGENT_OBJECT:"water", ACTION2:"fall from", OBJECT_PROPERTY:"sky" ]
+	//row autoRow11 = [UUID:"7975-13c2-aeb2-5a9a", DEFINITION_NAME: "precipitation", AGENT_OBJECT: "water", ACTION2: "fall from", OBJECT_PROPERTY: "sky"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"7975-13c2-aeb2-5a9a", DEFINITION_NAME: "precipitation", AGENT_OBJECT: "water", ACTION2: "fall from", OBJECT_PROPERTY: "sky"]
+
+	// CENTRAL         PROP-GENERIC: precipitation is a property of weather     (5e47-e0b9-a06f-d37b) [ X:"precipitation", Y:"weather" ]
+	//row autoRow12 = [UUID:"5e47-e0b9-a06f-d37b", X: "precipitation", Y: "weather"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"5e47-e0b9-a06f-d37b", X: "precipitation", Y: "weather"]
+
+	// LEXGLUE         SYNONYMY: rainfall means the amount of precipitation     (bb3e-1c79-d8db-8643) [ X1:"rainfall", X2:"amount of precipitation" ]
+	//        HINTROW snowfall means the amount of precipitation in snow form     (fc90-339a-c4c7-f673) [ X1:"snowfall", X2:"amount of precipitation", Y2:"in snow form" ]
+	//row autoRow13 = [UUID:"bb3e-1c79-d8db-8643", X2: "amount of precipitation"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"bb3e-1c79-d8db-8643", X2: "amount of precipitation"]
+
+endinferencepattern

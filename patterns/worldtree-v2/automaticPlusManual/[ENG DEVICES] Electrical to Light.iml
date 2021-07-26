@@ -1,0 +1,89 @@
+// Automatically converted pattern
+inferencepattern ENG_DEVICES_Electrical_to_Light
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE: a light bulb converts electrical energy ; electricity into light energy ; light energy and heat energy     (0259-62d6-90d1-5285) [ ACTOR_WHO:"light bulb", VERB:"convert", FROM:"electric energy;electric", INTO:"light energy;light energy heat energy" ]
+	//        HINTROW an incandescent light bulb converts electrical energy ; electricity into light energy and heat energy by sending electricity through a filament     (536f-f053-aca7-9bed) [ ADJ_QUANTIFIER:"incandescent", ACTOR_WHO:"light bulb", VERB:"convert", FROM:"electric energy;electric", INTO:"light energy heat energy", BY_THROUGH_HOW:"send electric through filament" ]
+	//row autoRow0 = [TABLE:"CHANGE", ACTOR_WHO: "light bulb", VERB: "convert", FROM: "electric energy", INTO: "light energy"+*"POS:NN"+"energy"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CHANGE", ACTOR_WHO: "light bulb", VERB: "convert", FROM: "electric energy", INTO: "light energy"+*"POS:NN"+"energy"]
+
+	// GROUNDING       KINDOF: a flashlight is a kind of battery-operated device     (8f0f-0358-dc1c-8630) [ HYPONYM:"flashlight", SCOPE1:"battery-operated;battery operate", HYPERNYM:"device" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "flashlight", SCOPE1: "battery operate", HYPERNYM: "device"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "flashlight", SCOPE1: "battery operate", HYPERNYM: "device"]
+
+	// GROUNDING       KINDOF: a light bulb is a kind of electrical device     (00a4-b16a-aa4d-893d) [ HYPONYM:"light bulb", SCOPE1:"electric", HYPERNYM:"device" ]
+	//        HINTROW a flashlight is a kind of electrical device     (130a-ea4e-6de1-a4af) [ HYPONYM:"flashlight", SCOPE1:"electric", HYPERNYM:"device" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "light bulb", SCOPE1: "electric", HYPERNYM: "device"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", SCOPE1: "electric", HYPERNYM: "device"]
+
+	// CENTRAL         CHANGE: electrical devices convert from electrical energy ; electricity into other forms of energy     (5e4d-6ae2-e556-9200) [ ACTOR_WHO:"electric device", VERB:"convert", FROM:"electric energy;electric", INTO:"other form of energy" ]
+	//row autoRow3 = [UUID:"5e4d-6ae2-e556-9200", ACTOR_WHO: "electric device", VERB: "convert", FROM: "electric energy", INTO: "other form of energy"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"5e4d-6ae2-e556-9200", ACTOR_WHO: "electric device", VERB: "convert", FROM: "electric energy", INTO: "other form of energy"]
+
+	// CENTRAL         CHANGE: a battery converts chemical energy into electrical energy for powering electrical devices     (e83b-d62e-d528-3e9f) [ ACTOR_WHO:"battery", VERB:"convert", FROM:"chemical energy", INTO:"electric energy", FOR_PURPOSE:"power electric device" ]
+	//row autoRow4 = [UUID:"e83b-d62e-d528-3e9f", ACTOR_WHO: "battery", VERB: "convert", FROM: "chemical energy", INTO: "electric energy", FOR_PURPOSE: "power electric device"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"e83b-d62e-d528-3e9f", ACTOR_WHO: "battery", VERB: "convert", FROM: "chemical energy", INTO: "electric energy", FOR_PURPOSE: "power electric device"]
+
+	// CENTRAL         KINDOF: light is a kind of electromagnetic radiation     (f5bd-f09f-df33-571f) [ HYPONYM:"light", SCOPE1:"electromagnetic", HYPERNYM:"radiation" ]
+	//  Notes: peripheral
+	//row autoRow5 = [UUID:"f5bd-f09f-df33-571f", HYPONYM: "light", SCOPE1: "electromagnetic", HYPERNYM: "radiation"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"f5bd-f09f-df33-571f", HYPONYM: "light", SCOPE1: "electromagnetic", HYPERNYM: "radiation"]
+
+	// CENTRAL         CHANGE: energy transformation means one kind of energy changes into another kind of energy     (3d34-b43e-8a7e-07fd) [ PROCESS_NAME:"energy transformation", ACTOR_WHO:"one kind of energy", VERB:"change", INTO:"kind of energy" ]
+	//row autoRow6 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"3d34-b43e-8a7e-07fd", PROCESS_NAME: "energy transformation", ACTOR_WHO: "one kind of energy", VERB: "change", INTO: "kind of energy"]
+
+	// CENTRAL         KINDOF: a battery-operated device is a kind of electrical device     (0692-6be2-8fb9-41e9) [ HYPONYM:"battery-operated device;battery operate device", SCOPE1:"electric", HYPERNYM:"device" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"0692-6be2-8fb9-41e9", HYPONYM: "battery operate device", SCOPE1: "electric", HYPERNYM: "device"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"0692-6be2-8fb9-41e9", HYPONYM: "battery operate device", SCOPE1: "electric", HYPERNYM: "device"]
+
+	// CENTRAL         SOURCEOF: a battery is a source of electrical energy ; electricity     (c6c3-2053-aaf7-86fe) [ AGENT:"battery", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"electric energy;electric" ]
+	//row autoRow8 = [UUID:"c6c3-2053-aaf7-86fe", AGENT: "battery", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "electric energy"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"c6c3-2053-aaf7-86fe", AGENT: "battery", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "electric energy"]
+
+	// CENTRAL         SOURCEOF: a flashlight emits light     (0e96-d216-e3de-ce65) [ AGENT:"flashlight", VERB_SOURCEOF_PROVIDE_ETC:"emit", WHAT_IT_PROVIDES:"light" ]
+	//row autoRow9 = [UUID:"0e96-d216-e3de-ce65", AGENT: "flashlight", VERB_SOURCEOF_PROVIDE_ETC: "emit", WHAT_IT_PROVIDES: "light"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"0e96-d216-e3de-ce65", AGENT: "flashlight", VERB_SOURCEOF_PROVIDE_ETC: "emit", WHAT_IT_PROVIDES: "light"]
+
+	// CENTRAL         CAUSE: closing an electric circuit causes an electrical device to function     (b668-73fc-5f73-b444) [ CONDITION_VERB:"close", CONDITION_PATIENT:"electric circuit", RESULT_AGENT:"electric device", RESULT_VERB:"function" ]
+	//row autoRow10 = [UUID:"b668-73fc-5f73-b444", CONDITION_VERB: "close", CONDITION_PATIENT: "electric circuit", RESULT_AGENT: "electric device", RESULT_VERB: "function"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"b668-73fc-5f73-b444", CONDITION_VERB: "close", CONDITION_PATIENT: "electric circuit", RESULT_AGENT: "electric device", RESULT_VERB: "function"]
+
+	// CENTRAL         KINDOF: electrical energy is a kind of energy     (b5ca-9f64-d6d6-6783) [ HYPONYM:"electric energy", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow11 = [UUID:"b5ca-9f64-d6d6-6783", HYPONYM: "electric energy", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"b5ca-9f64-d6d6-6783", HYPONYM: "electric energy", HYPERNYM: "energy"]
+
+	// CENTRAL         REQUIRES: a flashlight requires a source of electricity to produce light     (e1cb-6dbd-0bf8-8d18) [ OBJECT_AGENT_PROCESS:"flashlight", VERB_REQUIRES:"require", OBJECT:"source of electric", FOR_PURPOSE:"product light" ]
+	//row autoRow12 = [UUID:"e1cb-6dbd-0bf8-8d18", OBJECT_AGENT_PROCESS: "flashlight", VERB_REQUIRES: "require", OBJECT: "source of electric", FOR_PURPOSE: "product light"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"e1cb-6dbd-0bf8-8d18", OBJECT_AGENT_PROCESS: "flashlight", VERB_REQUIRES: "require", OBJECT: "source of electric", FOR_PURPOSE: "product light"]
+
+	// CENTRAL         KINDOF: light is a kind of energy     (f742-384b-744c-10a9) [ HYPONYM:"light", HYPERNYM:"energy" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"f742-384b-744c-10a9", HYPONYM: "light", HYPERNYM: "energy"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"f742-384b-744c-10a9", HYPONYM: "light", HYPERNYM: "energy"]
+
+	// CENTRAL         REQUIRES: an electrical device requires electricity to turn on     (4ba9-2d5a-0284-2882) [ OBJECT_AGENT_PROCESS:"electric device", VERB_REQUIRES:"require", OBJECT:"electric", FOR_PURPOSE:"turn" ]
+	//row autoRow14 = [UUID:"4ba9-2d5a-0284-2882", OBJECT_AGENT_PROCESS: "electric device", VERB_REQUIRES: "require", OBJECT: "electric", FOR_PURPOSE: "turn"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"4ba9-2d5a-0284-2882", OBJECT_AGENT_PROCESS: "electric device", VERB_REQUIRES: "require", OBJECT: "electric", FOR_PURPOSE: "turn"]
+
+	// CENTRAL         IFTHEN: when electricity flows to a light bulb , the light bulb will turn on ; come on     (eec9-c91d-1212-9891) [ THING:"electric", ACTION1:"flow", OBJECT_PATIENT1:"light bulb", ACTOR_AGENT_PROCESS2:"light bulb", ACTION3:"turn;come on" ]
+	//row autoRow15 = [UUID:"eec9-c91d-1212-9891", THING: "electric", ACTION1: "flow", OBJECT_PATIENT1: "light bulb", ACTOR_AGENT_PROCESS2: "light bulb", ACTION3: "come on"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"eec9-c91d-1212-9891", THING: "electric", ACTION1: "flow", OBJECT_PATIENT1: "light bulb", ACTOR_AGENT_PROCESS2: "light bulb", ACTION3: "come on"]
+
+	// LEXGLUE         SYNONYMY: electricity means electrical energy     (5657-c6bc-e6cd-ae38) [ X1:"electric", X2:"electric energy" ]
+	//row autoRow16 = [UUID:"5657-c6bc-e6cd-ae38", X1: "electric", X2: "electric energy"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"5657-c6bc-e6cd-ae38", X1: "electric", X2: "electric energy"]
+
+	// LEXGLUE         SYNONYMY: energy conversion is similar to energy transformation     (a67b-a715-13a4-9b5d) [ X1:"energy conversion", X2:"energy transformation" ]
+	//row autoRow17 = [UUID:"a67b-a715-13a4-9b5d", X1: "energy conversion", X2: "energy transformation"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"a67b-a715-13a4-9b5d", X1: "energy conversion", X2: "energy transformation"]
+
+endinferencepattern

@@ -1,0 +1,103 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Habitat_Destruction_Deforestation
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       KINDOF: a forest is a kind of ecosystem     (e58d-03a1-b94d-942d) [ HYPONYM:"forest", HYPERNYM:"ecosystem" ]
+	//        HINTROW a rainforest is a kind of ecosystem     (4560-3d4b-41c1-7cdb) [ HYPONYM:"rainforest", HYPERNYM:"ecosystem" ]
+	//  Notes: peripheral
+	//row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "ecosystem"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPERNYM: "ecosystem"]
+
+	// CENTRALSW       HABITAT: some birds live in forests     (3ac8-28fa-96ea-4658) [ ORGANISM:"bird", HABITAT:"forest" ]
+	//        HINTROW a deer lives in a forest     (2974-683f-6607-88e7) [ ORGANISM:"deer", HABITAT:"forest" ]
+	//        HINTROW squirrels live in forests     (d5db-5790-9e73-1c35) [ ORGANISM:"squirrel", HABITAT:"forest" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"HABITAT"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"HABITAT", ORGANISM: <bird_0>, HABITAT: "forest"]
+
+	// GROUNDING       KINDOF: a bird is a kind of animal     (e26b-b21d-d4a3-25fc) [ HYPONYM:"bird", HYPERNYM:"animal" ]
+	//        HINTROW a deer is a kind of animal     (8cd7-84f7-76a1-1ba5) [ HYPONYM:"deer", HYPERNYM:"animal" ]
+	//        HINTROW a squirrel is a kind of animal     (b5dc-c66c-4d4e-031d) [ HYPONYM:"squirrel", HYPERNYM:"animal" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <bird_0>, HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: a tree is a kind of habitat     (3f80-84ba-b8e7-ef97) [ HYPONYM:"tree", HYPERNYM:"habitat" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "tree", HYPERNYM: "habitat"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "tree", HYPERNYM: "habitat"]
+
+	// CENTRAL         KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow4 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"10ce-c060-90b9-b748", HYPONYM: "animal", HYPERNYM: "organism"]
+
+	// CENTRAL         AFFECT: harming something has a negative impact on ; effect on that something     (57d4-79ba-a97d-0f9a) [ VERB:"harm", OBJECT_PROPERTY:"something", POSITIVE_NEGATIVE:"negative", PATIENT:"something" ]
+	//row autoRow5 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"57d4-79ba-a97d-0f9a", VERB: "harm", OBJECT_PROPERTY: "something", POSITIVE_NEGATIVE: "negative", PATIENT: "something"]
+
+	// CENTRAL         CAUSE: harming an animal species causes that animal 's population to decrease     (458c-0ba5-e5dd-00b8) [ CONDITION_VERB:"harm", CONDITION_PATIENT:"animal species", RESULT_AGENT:"that animal population", RESULT_VERB:"decrease" ]
+	//row autoRow6 = [UUID:"458c-0ba5-e5dd-00b8", CONDITION_VERB: "harm", CONDITION_PATIENT: "animal species", RESULT_AGENT: "that animal population", RESULT_VERB: "decrease"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"458c-0ba5-e5dd-00b8", CONDITION_VERB: "harm", CONDITION_PATIENT: "animal species", RESULT_AGENT: "that animal population", RESULT_VERB: "decrease"]
+
+	// CENTRAL         AFFECT: humans changing ecosystems ; environments usually has a negative impact on an ecosystem ; organisms living in an ecosystem     (f4dc-5030-6255-a1f8) [ ACTOR_WHO:"human", VERB:"change", OBJECT_PROPERTY:"ecosystem;environment", QUALIFIER1:"usually", POSITIVE_NEGATIVE:"negative", PATIENT:"ecosystem;organism live in ecosystem" ]
+	//row autoRow7 = [UUID:"f4dc-5030-6255-a1f8", ACTOR_WHO: "human", VERB: "change", OBJECT_PROPERTY: "ecosystem", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"f4dc-5030-6255-a1f8", ACTOR_WHO: "human", VERB: "change", OBJECT_PROPERTY: "ecosystem", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"]
+
+	// CENTRALSW       CONTAINS: a forest contains lots of plants ; trees     (a54a-a04c-71eb-ba0a) [ OBJECT_AGENT:"forest", QUANTITY_RANGE:"lot of", WHAT_IT_CONTAINS:"plant;tree" ]
+	//row autoRow8 = [TABLE:"CONTAINS", OBJECT_AGENT: "forest", QUANTITY_RANGE: "lot of", WHAT_IT_CONTAINS: "plant"] //OVER-CONSTR.
+	row autoRow8 = [TABLE:"CONTAINS", OBJECT_AGENT: "forest", QUANTITY_RANGE: "lot of", WHAT_IT_CONTAINS: "plant"]
+
+	// CENTRAL         IFTHEN: if an animal 's ; organisms habitat no longer exists ; ceases to exist then that animal ; that organism will die     (54f0-f2ea-baa5-7a2f) [ ADJ_QUANTITY1:"animal;organism", THING:"habitat", ACTION1:"no long exist;cease exist", ACTOR_AGENT_PROCESS2:"that animal;that organism", ACTION3:"die" ]
+	//row autoRow9 = [UUID:"54f0-f2ea-baa5-7a2f", ADJ_QUANTITY1: "animal", THING: "habitat", ACTION1: "no long exist", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "die"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"54f0-f2ea-baa5-7a2f", ADJ_QUANTITY1: "animal", THING: "habitat", ACTION1: "no long exist", ACTOR_AGENT_PROCESS2: "that animal", ACTION3: "die"]
+
+	// CENTRAL         ACTION: animals ; living things live and feed in their habitats ; near their habitats     (3e03-880a-9209-2d6c) [ AGENT_OBJECT:"animal;live thing", ACTION2:"live fee", WHEN_WHERE:"in habitat;near habitat" ]
+	//row autoRow10 = [UUID:"3e03-880a-9209-2d6c", AGENT_OBJECT: "live thing", ACTION2: "live fee", WHEN_WHERE: "in habitat"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"3e03-880a-9209-2d6c", AGENT_OBJECT: "live thing", ACTION2: "live fee", WHEN_WHERE: "in habitat"]
+
+	// CENTRAL         AFFECT: cutting down trees has a negative impact on an ecosystem ; organisms living in an ecosystem     (f178-8a67-81c1-e3fb) [ VERB:"cut", OBJECT_PROPERTY:"tree", POSITIVE_NEGATIVE:"negative", PATIENT:"ecosystem;organism live in ecosystem" ]
+	//row autoRow11 = [UUID:"f178-8a67-81c1-e3fb", VERB: "cut", OBJECT_PROPERTY: "tree", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"f178-8a67-81c1-e3fb", VERB: "cut", OBJECT_PROPERTY: "tree", POSITIVE_NEGATIVE: "negative", PATIENT: "organism live in ecosystem"]
+
+	// CENTRAL         CAUSE: humans changing animal habitats usually causes harm to those animals     (7828-f424-7e86-a420) [ CONDITION_AGENT_OBJECT:"human", CONDITION_VERB:"change", CONDITION_PATIENT:"animal habitat", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS:"usually", RESULT_VERB:"harm", RESULT_PATIENT:"animal" ]
+	//row autoRow12 = [UUID:"7828-f424-7e86-a420", CONDITION_AGENT_OBJECT: "human", CONDITION_VERB: "change", CONDITION_PATIENT: "animal habitat", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "usually", RESULT_VERB: "harm", RESULT_PATIENT: "animal"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"7828-f424-7e86-a420", CONDITION_AGENT_OBJECT: "human", CONDITION_VERB: "change", CONDITION_PATIENT: "animal habitat", QUALIFIER_RARELY_SOMETIMES_USUALLY_ALWAYS: "usually", RESULT_VERB: "harm", RESULT_PATIENT: "animal"]
+
+	// CENTRAL         KINDOF: an ecosystem is a kind of habitat     (9156-3212-805b-fd3d) [ HYPONYM:"ecosystem", HYPERNYM:"habitat" ]
+	//row autoRow13 = [UUID:"9156-3212-805b-fd3d", HYPONYM: "ecosystem", HYPERNYM: "habitat"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"9156-3212-805b-fd3d", HYPONYM: "ecosystem", HYPERNYM: "habitat"]
+
+	// CENTRALSW       CAUSE: cutting down trees in a forest causes the number of trees to decrease in that forest     (521a-5b49-3683-2b01) [ CONDITION_VERB:"cut", CONDITION_PATIENT:"tree", SCOPE1:"in forest", RESULT_AGENT:"numb of tree", RESULT_VERB:"decrease", SCOPE2:"in forest" ]
+	//row autoRow14 = [TABLE:"CAUSE", CONDITION_VERB: "cut", CONDITION_PATIENT: "tree", SCOPE1: "in forest", RESULT_AGENT: "numb of tree", RESULT_VERB: "decrease", SCOPE2: "in forest"] //OVER-CONSTR.
+	row autoRow14 = [TABLE:"CAUSE", CONDITION_VERB: "cut", CONDITION_PATIENT: "tree", SCOPE1: "in forest", RESULT_AGENT: "numb of tree", RESULT_VERB: "decrease", SCOPE2: "in forest"]
+
+	// CENTRAL         REQUIRES: building housing developments ; dams ; roads usually requires replacing ; destroying animal habitats     (02d9-ec74-0c49-8fcd) [ ACTION1:"build", OBJECT_AGENT_PROCESS:"house development;dam;road", QUANTIFIER:"usually", VERB_REQUIRES:"require", ACTION2:"replace;destroy", OBJECT:"animal habitat" ]
+	//row autoRow15 = [UUID:"02d9-ec74-0c49-8fcd", ACTION1: "build", OBJECT_AGENT_PROCESS: "house development", QUANTIFIER: "usually", VERB_REQUIRES: "require", ACTION2: "replace", OBJECT: "animal habitat"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"02d9-ec74-0c49-8fcd", ACTION1: "build", OBJECT_AGENT_PROCESS: "house development", QUANTIFIER: "usually", VERB_REQUIRES: "require", ACTION2: "replace", OBJECT: "animal habitat"]
+
+	// CENTRAL         LOCATIONS: organisms can be found in their habitats     (d119-be00-3406-f858) [ THING_PROCESS:"organism", LOCATION:"habitat" ]
+	//row autoRow16 = [UUID:"d119-be00-3406-f858", THING_PROCESS: "organism", LOCATION: "habitat"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"d119-be00-3406-f858", THING_PROCESS: "organism", LOCATION: "habitat"]
+
+	// CENTRALSW      (OPTIONAL) CONTAINS: rainforests contain many species     (3a60-1fd9-caa1-2275) [ OBJECT_AGENT:"rainforest", QUANTITY_RANGE:"many", WHAT_IT_CONTAINS:"species" ]
+	//row *autoRow17 = [TABLE:"CONTAINS", OBJECT_AGENT: "rainforest", QUANTITY_RANGE: "many", WHAT_IT_CONTAINS: "species"] //OVER-CONSTR.
+	row *autoRow17 = [TABLE:"CONTAINS", OBJECT_AGENT: "rainforest", QUANTITY_RANGE: "many", WHAT_IT_CONTAINS: "species"]
+
+	// CENTRAL         REQUIRES: an animal requires a habitat for survival     (fc71-7a5d-6e7b-5f5a) [ OBJECT_AGENT_PROCESS:"animal", VERB_REQUIRES:"require", OBJECT:"habitat", FOR_PURPOSE:"survive" ]
+	//row autoRow18 = [UUID:"fc71-7a5d-6e7b-5f5a", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "habitat", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"fc71-7a5d-6e7b-5f5a", OBJECT_AGENT_PROCESS: "animal", VERB_REQUIRES: "require", OBJECT: "habitat", FOR_PURPOSE: "survive"]
+
+	// LEXGLUE         CHANGE: killing means changing a living thing from alive to dead by harming     (ba9c-311b-f2d0-caa9) [ PROCESS_NAME:"kill", VERB:"change", WHAT:"live thing", FROM:"alive", INTO:"dead", BY_THROUGH_HOW:"harm" ]
+	//row autoRow19 = [UUID:"ba9c-311b-f2d0-caa9", PROCESS_NAME: "kill", VERB: "change", WHAT: "live thing", FROM: "alive", INTO: "dead", BY_THROUGH_HOW: "harm"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"ba9c-311b-f2d0-caa9", PROCESS_NAME: "kill", VERB: "change", WHAT: "live thing", FROM: "alive", INTO: "dead", BY_THROUGH_HOW: "harm"]
+
+	// LEXGLUE         SYNONYMY: removing forests means removing animal habitats     (aaa1-6683-9d15-9829) [ ACTION1:"remove", Y1:"forest", ACTION2:"remove", Y2:"animal habitat" ]
+	//row autoRow20 = [UUID:"aaa1-6683-9d15-9829", ACTION1: "remove", Y1: "forest", ACTION2: "remove", Y2: "animal habitat"] //OVER-CONSTR.
+	row autoRow20 = [UUID:"aaa1-6683-9d15-9829", ACTION1: "remove", Y1: "forest", ACTION2: "remove", Y2: "animal habitat"]
+
+endinferencepattern

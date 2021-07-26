@@ -1,0 +1,79 @@
+// Automatically converted pattern
+inferencepattern LIFE_FUNCT_Animals_Regulating_water_levels
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// GROUNDING       KINDOF: human is a kind of organism     (d043-a668-7b2c-fc6f) [ HYPONYM:"human", HYPERNYM:"organism" ]
+	//row autoRow0 = [TABLE:"KINDOF", HYPONYM: "human", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"KINDOF", HYPONYM: "human", HYPERNYM: "organism"]
+
+	// GROUNDING       KINDOF: exercise is a kind of physical activity     (c408-fd09-500e-0867) [ HYPONYM:"exercise", SCOPE1:"physical", HYPERNYM:"activity" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: "exercise", SCOPE1: "physical", HYPERNYM: "activity"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: "exercise", SCOPE1: "physical", HYPERNYM: "activity"]
+
+	// CENTRAL         USEDFOR: consuming liquids is used to replenish bodily water by an animal     (98ab-397e-9ff3-1259) [ ACTION:"consume", AGENT_OBJECT:"liquid", FOR_PURPOSE:"replenish", PATIENT:"bodily water", AGENT_THING_WHO_USES:"animal" ]
+	//row autoRow2 = [UUID:"98ab-397e-9ff3-1259", ACTION: "consume", AGENT_OBJECT: "liquid", FOR_PURPOSE: "replenish", PATIENT: "bodily water", AGENT_THING_WHO_USES: "animal"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"98ab-397e-9ff3-1259", ACTION: "consume", AGENT_OBJECT: "liquid", FOR_PURPOSE: "replenish", PATIENT: "bodily water", AGENT_THING_WHO_USES: "animal"]
+
+	// CENTRAL         IFTHEN: if an animal sweats then that animal 's bodily water decreases     (bf4f-5117-99f4-7b14) [ THING:"animal", ACTION1:"sweat", ACTOR_AGENT_PROCESS2:"animal", PROPERTY_SCOPE:"bodily water", ACTION3:"decrease" ]
+	//row autoRow3 = [UUID:"bf4f-5117-99f4-7b14", THING: "animal", ACTION1: "sweat", ACTOR_AGENT_PROCESS2: "animal", PROPERTY_SCOPE: "bodily water", ACTION3: "decrease"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"bf4f-5117-99f4-7b14", THING: "animal", ACTION1: "sweat", ACTOR_AGENT_PROCESS2: "animal", PROPERTY_SCOPE: "bodily water", ACTION3: "decrease"]
+
+	// CENTRAL         USEDFOR: thirst is used to make an animal realize that it needs to replenish its bodily water by the body     (c3fc-281f-3d87-7c77) [ AGENT_OBJECT:"thirst", FOR_PURPOSE:"make animal realize that need replenish bodily water", AGENT_THING_WHO_USES:"body" ]
+	//row autoRow4 = [UUID:"c3fc-281f-3d87-7c77", AGENT_OBJECT: "thirst", FOR_PURPOSE: "make animal realize that need replenish bodily water", AGENT_THING_WHO_USES: "body"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"c3fc-281f-3d87-7c77", AGENT_OBJECT: "thirst", FOR_PURPOSE: "make animal realize that need replenish bodily water", AGENT_THING_WHO_USES: "body"]
+
+	// CENTRAL         REQUIRES: animals ; living things require water for survival     (732f-cb0b-50b4-ad0d) [ OBJECT_AGENT_PROCESS:"animal;live thing", VERB_REQUIRES:"require", OBJECT:"water", FOR_PURPOSE:"survive" ]
+	//row autoRow5 = [UUID:"732f-cb0b-50b4-ad0d", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "water", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"732f-cb0b-50b4-ad0d", OBJECT_AGENT_PROCESS: "live thing", VERB_REQUIRES: "require", OBJECT: "water", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         IFTHEN: if something requires something else then that something else is important to that something     (9b37-65c8-ea17-fdb3) [ THING:"something", ACTION1:"require", OBJECT_PATIENT1:"something else", ACTOR_AGENT_PROCESS2:"that something else", ADJ_QUANTIFIER3:"important", OBJECT_PROPERTY3:"something" ]
+	//row autoRow6 = [UUID:"9b37-65c8-ea17-fdb3", THING: "something", ACTION1: "require", OBJECT_PATIENT1: "something else", ACTOR_AGENT_PROCESS2: "that something else", ADJ_QUANTIFIER3: "important", OBJECT_PROPERTY3: "something"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"9b37-65c8-ea17-fdb3", THING: "something", ACTION1: "require", OBJECT_PATIENT1: "something else", ACTOR_AGENT_PROCESS2: "that something else", ADJ_QUANTIFIER3: "important", OBJECT_PROPERTY3: "something"]
+
+	// CENTRAL         REQUIRES: organisms require liquid water to survive     (3338-5ddb-6fa9-7e2c) [ OBJECT_AGENT_PROCESS:"organism", VERB_REQUIRES:"require", OBJECT:"liquid water", FOR_PURPOSE:"survive" ]
+	//row autoRow7 = [UUID:"3338-5ddb-6fa9-7e2c", OBJECT_AGENT_PROCESS: "organism", VERB_REQUIRES: "require", OBJECT: "liquid water", FOR_PURPOSE: "survive"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"3338-5ddb-6fa9-7e2c", OBJECT_AGENT_PROCESS: "organism", VERB_REQUIRES: "require", OBJECT: "liquid water", FOR_PURPOSE: "survive"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as temperature in an environment decreases , the amount of water an animal in that environment will lose will decrease     (655c-cb6e-d3de-9be5) [ QUANTITY_MEASURE1:"temperature", SCOPE1A:"in environment", CHANGE1:"decrease", QUANTITY_MEASURE2:"amount of water", AGENT_ATTRIBUTE2:"animal", SCOPE2A:"in that environment", ACTION2:"lose", CHANGE2:"decrease" ]
+	//  Notes: lower temperature --> less water loss
+	//row autoRow8 = [UUID:"655c-cb6e-d3de-9be5", QUANTITY_MEASURE1: "temperature", SCOPE1A: "in environment", CHANGE1: "decrease", QUANTITY_MEASURE2: "amount of water", AGENT_ATTRIBUTE2: "animal", SCOPE2A: "in that environment", ACTION2: "lose", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"655c-cb6e-d3de-9be5", QUANTITY_MEASURE1: "temperature", SCOPE1A: "in environment", CHANGE1: "decrease", QUANTITY_MEASURE2: "amount of water", AGENT_ATTRIBUTE2: "animal", SCOPE2A: "in that environment", ACTION2: "lose", CHANGE2: "decrease"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the activity of an animal increases , the amount of water in an animal 's body in that environment will decrease     (c487-ace1-e8b8-6158) [ QUANTITY_MEASURE1:"activity", AGENT_ATTRIBUTE1:"of animal", CHANGE1:"increase", QUANTITY_MEASURE2:"amount of water", AGENT_ATTRIBUTE2:"in animal body", SCOPE2A:"in that environment", CHANGE2:"decrease" ]
+	//  Notes: activity --> lose water
+	//row autoRow9 = [UUID:"c487-ace1-e8b8-6158", QUANTITY_MEASURE1: "activity", AGENT_ATTRIBUTE1: "of animal", CHANGE1: "increase", QUANTITY_MEASURE2: "amount of water", AGENT_ATTRIBUTE2: "in animal body", SCOPE2A: "in that environment", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"c487-ace1-e8b8-6158", QUANTITY_MEASURE1: "activity", AGENT_ATTRIBUTE1: "of animal", CHANGE1: "increase", QUANTITY_MEASURE2: "amount of water", AGENT_ATTRIBUTE2: "in animal body", SCOPE2A: "in that environment", CHANGE2: "decrease"]
+
+	// CENTRAL         KINDOF: sweat is a kind of liquid     (fd81-eac1-1adc-da97) [ HYPONYM:"sweat", HYPERNYM:"liquid" ]
+	//  Notes: peripheral
+	//row autoRow10 = [UUID:"fd81-eac1-1adc-da97", HYPONYM: "sweat", HYPERNYM: "liquid"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"fd81-eac1-1adc-da97", HYPONYM: "sweat", HYPERNYM: "liquid"]
+
+	// CENTRAL         USEDFOR: sweat is used for adjusting to hot temperatures by some animals     (4822-2d16-dd11-2f6f) [ AGENT_OBJECT:"sweat", FOR_PURPOSE:"adjust", PATIENT:"hot temperature", AGENT_THING_WHO_USES:"animal" ]
+	//row autoRow11 = [UUID:"4822-2d16-dd11-2f6f", AGENT_OBJECT: "sweat", FOR_PURPOSE: "adjust", PATIENT: "hot temperature", AGENT_THING_WHO_USES: "animal"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"4822-2d16-dd11-2f6f", AGENT_OBJECT: "sweat", FOR_PURPOSE: "adjust", PATIENT: "hot temperature", AGENT_THING_WHO_USES: "animal"]
+
+	// CENTRAL         KINDOF: water is a kind of liquid at room temperature     (3961-d09c-4b9a-a6f7) [ HYPONYM:"water", HYPERNYM:"liquid", SCOPE2:"at room temperature" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"3961-d09c-4b9a-a6f7", HYPONYM: "water", HYPERNYM: "liquid", SCOPE2: "at room temperature"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"3961-d09c-4b9a-a6f7", HYPONYM: "water", HYPERNYM: "liquid", SCOPE2: "at room temperature"]
+
+	// LEXGLUE         SYNONYMY: to sweat means the body discharges water     (1658-768f-22f1-1022) [ ACTION1:"sweat", X2:"body", ACTION2:"discharge", Y2:"water" ]
+	//row autoRow13 = [UUID:"1658-768f-22f1-1022", ACTION1: "sweat", X2: "body", ACTION2: "discharge", Y2: "water"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"1658-768f-22f1-1022", ACTION1: "sweat", X2: "body", ACTION2: "discharge", Y2: "water"]
+
+	// LEXGLUE         SYNONYMY: an organism is a living thing     (87a0-dd02-dd6d-ee60) [ X1:"organism", X2:"live thing" ]
+	//row autoRow14 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"]
+
+	// LEXGLUE         SYNONYMY: replenish is similar to replace     (2cb4-44c5-0199-cd70) [ ACTION1:"replenish", ACTION2:"replace" ]
+	//row autoRow15 = [UUID:"2cb4-44c5-0199-cd70", ACTION1: "replenish", ACTION2: "replace"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"2cb4-44c5-0199-cd70", ACTION1: "replenish", ACTION2: "replace"]
+
+endinferencepattern

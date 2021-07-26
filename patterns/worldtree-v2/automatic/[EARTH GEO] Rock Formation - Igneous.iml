@@ -1,0 +1,102 @@
+// Automatically converted pattern
+inferencepattern EARTH_GEO_Rock_Formation_Igneous
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE-VEC: cooling ; colder means removing ; reducing ; decreasing heat ; temperature     (3a9b-81b5-1a3a-40a0) [ PROCESS_NAME_ACTION:"cool;cold", DIRECTION:"remove;reduce;decrease", PATIENT:"heat;temperature" ]
+	//        HINTROW cooling means temperature decreases     (b71d-3add-69c0-1d03) [ PROCESS_NAME_ACTION:"cool", AGENT_OBJECT:"temperature", DIRECTION:"decrease" ]
+	//row autoRow0 = [TABLE:"CHANGE-VEC", PROCESS_NAME_ACTION: "cool", DIRECTION: "reduce", PATIENT: "heat"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CHANGE-VEC", PROCESS_NAME_ACTION: "cool", DIRECTION: "decrease"]
+
+	// GROUNDING       KINDOF: pumice is a kind of igneous rock     (236b-7456-aa80-d1b2) [ HYPONYM:"pumice", HYPERNYM:"igneous rock" ]
+	//        HINTROW granite is a kind of igneous rock     (65b7-dcc0-e9d7-6b54) [ HYPONYM:"granite", SCOPE1:"igneous", HYPERNYM:"rock" ]
+	//  Notes: igneous rock examples
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "igneous rock"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "igneous rock"]
+
+	// GROUNDING       KINDOF: lava is a kind of matter     (f043-7ca6-4bc0-eead) [ HYPONYM:"lava", HYPERNYM:"matt" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "lava", HYPERNYM: "matt"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "lava", HYPERNYM: "matt"]
+
+	// CENTRAL         CHANGE: freezing means matter ; a substance changes from a liquid into a solid by decreasing heat energy     (f03c-decc-030f-b860) [ PROCESS_NAME:"freeze", ACTOR_WHO:"matt;substance", VERB:"change", FROM:"liquid", INTO:"solid", BY_THROUGH_HOW:"decrease heat energy" ]
+	//row autoRow3 = [UUID:"f03c-decc-030f-b860", PROCESS_NAME: "freeze", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "solid", BY_THROUGH_HOW: "decrease heat energy"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"f03c-decc-030f-b860", PROCESS_NAME: "freeze", ACTOR_WHO: "matt", VERB: "change", FROM: "liquid", INTO: "solid", BY_THROUGH_HOW: "decrease heat energy"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: rocks is in the liquid state , called magma ; molten rock , for temperatures between 1100 ; 600 and 2400 ; 1300 F ; C     (c089-fcae-36e8-b507) [ MATERIAL_NAME:"rock", STATEOFMATTER:"liquid", FORM_NAME:"magma;melt rock", LOWER_BOUND:"1100;600", UPPER_BOUND:"2400;1300", UNITS:"f;c" ]
+	//row autoRow4 = [UUID:"c089-fcae-36e8-b507", MATERIAL_NAME: "rock", STATEOFMATTER: "liquid", FORM_NAME: "melt rock", LOWER_BOUND: "1100", UPPER_BOUND: "2400", UNITS: "f"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"c089-fcae-36e8-b507", MATERIAL_NAME: "rock", STATEOFMATTER: "liquid", FORM_NAME: "melt rock", LOWER_BOUND: "1100", UPPER_BOUND: "2400", UNITS: "f"]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: magma is in the solid state , called rocks , for temperatures lower than 1100 ; 600 F ; C     (172b-a60e-4da5-8fd5) [ MATERIAL_NAME:"magma", STATEOFMATTER:"solid", FORM_NAME:"rock", LOWER_BOUND:"1100;600", UNITS:"f;c" ]
+	//row autoRow5 = [UUID:"172b-a60e-4da5-8fd5", MATERIAL_NAME: "magma", STATEOFMATTER: "solid", FORM_NAME: "rock", LOWER_BOUND: "1100", UNITS: "f"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"172b-a60e-4da5-8fd5", MATERIAL_NAME: "magma", STATEOFMATTER: "solid", FORM_NAME: "rock", LOWER_BOUND: "1100", UNITS: "f"]
+
+	// CENTRAL         LOCATIONS: usually something can be found near a source in greater concentrations     (901b-dccf-1b45-8b6e) [ QUANTIFIER:"usually", THING_PROCESS:"something", LOCATION:"near source", SCOPE:"in great concentration" ]
+	//row autoRow6 = [UUID:"901b-dccf-1b45-8b6e", QUANTIFIER: "usually", THING_PROCESS: "something", LOCATION: "near source", SCOPE: "in great concentration"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"901b-dccf-1b45-8b6e", QUANTIFIER: "usually", THING_PROCESS: "something", LOCATION: "near source", SCOPE: "in great concentration"]
+
+	// CENTRAL         PROP-GENERIC: class is a property of a rock and includes values of sedimentary ; metamorphic ; igneous     (ac6e-0804-8e8f-2943) [ X:"class", Y:"rock", VALUES:"sedimentary;metamorphic;igneous" ]
+	//row autoRow7 = [UUID:"ac6e-0804-8e8f-2943", X: "class", Y: "rock", VALUES: "sedimentary"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"ac6e-0804-8e8f-2943", X: "class", Y: "rock", VALUES: "sedimentary"]
+
+	// CENTRAL         FORMEDBY: igneous rocks ; minerals are formed by magma ; lava cooling ; crystallizing     (d9aa-4785-cdb4-ac25) [ OBJECT:"igneous rock;mineral", AGENT_PROCESS:"magma;lava", VERB:"cool;crystallize" ]
+	//row autoRow8 = [UUID:"d9aa-4785-cdb4-ac25", OBJECT: "igneous rock", AGENT_PROCESS: "magma", VERB: "cool"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"d9aa-4785-cdb4-ac25", OBJECT: "igneous rock", AGENT_PROCESS: "magma", VERB: "cool"]
+
+	// CENTRAL         FORMEDBY: different classes of rocks are formed by different methods     (2869-d2ab-bfe7-d8af) [ OBJECT:"differ class of rock", AGENT_PROCESS:"differ method" ]
+	//row autoRow9 = [UUID:"2869-d2ab-bfe7-d8af", OBJECT: "differ class of rock", AGENT_PROCESS: "differ method"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"2869-d2ab-bfe7-d8af", OBJECT: "differ class of rock", AGENT_PROCESS: "differ method"]
+
+	// CENTRAL        (OPTIONAL) TRANSFER: volcano eruption is when volcano deposits lava to the Earth 's surface     (8440-9ae2-417f-3c9d) [ PROCESS_NAME:"volcano erupt", ACTOR_WHO:"volcano", VERB:"deposit", WHAT:"lava", DESTINATION:"earth surface" ]
+	//  Notes: d4a7-9d20-2cba-1d42->8440-9ae2-417f-3c9d
+	//row *autoRow10 = [UUID:"8440-9ae2-417f-3c9d", PROCESS_NAME: "volcano erupt", ACTOR_WHO: "volcano", VERB: "deposit", WHAT: "lava", DESTINATION: "earth surface"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"8440-9ae2-417f-3c9d", PROCESS_NAME: "volcano erupt", ACTOR_WHO: "volcano", VERB: "deposit", WHAT: "lava", DESTINATION: "earth surface"]
+
+	// CENTRAL         SOURCEOF: a volcano is a source of magma ; lava     (8e8c-01c6-9da9-a9d6) [ AGENT:"volcano", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"magma;lava" ]
+	//row autoRow11 = [UUID:"8e8c-01c6-9da9-a9d6", AGENT: "volcano", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "magma"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"8e8c-01c6-9da9-a9d6", AGENT: "volcano", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "magma"]
+
+	// CENTRAL         MEASUREMENTS: class is a measure of how a rock is formed     (7bb2-b9de-1f81-ba85) [ MEASURE:"class", QUANTITY_ADJ:"measure of", AGENT:"rock", ACTION:"be form" ]
+	//row autoRow12 = [UUID:"7bb2-b9de-1f81-ba85", MEASURE: "class", QUANTITY_ADJ: "measure of", AGENT: "rock", ACTION: "be form"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"7bb2-b9de-1f81-ba85", MEASURE: "class", QUANTITY_ADJ: "measure of", AGENT: "rock", ACTION: "be form"]
+
+	// CENTRAL         CAUSE: freezing causes a solid to form     (a1a8-b11b-e127-8797) [ CONDITION_VERB:"freeze", RESULT_AGENT:"solid", RESULT_VERB:"form" ]
+	//row autoRow13 = [UUID:"a1a8-b11b-e127-8797", CONDITION_VERB: "freeze", RESULT_AGENT: "solid", RESULT_VERB: "form"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"a1a8-b11b-e127-8797", CONDITION_VERB: "freeze", RESULT_AGENT: "solid", RESULT_VERB: "form"]
+
+	// CENTRAL         KINDOF: liquid is a kind of state of matter     (f7e9-c6f8-892b-3496) [ HYPONYM:"liquid", HYPERNYM:"state of matt" ]
+	//  Notes: peripheral
+	//row autoRow14 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"f7e9-c6f8-892b-3496", HYPONYM: "liquid", HYPERNYM: "state of matt"]
+
+	// CENTRAL         KINDOF: solid is a kind of state of matter     (cf49-1b7a-89f0-41f5) [ HYPONYM:"solid", HYPERNYM:"state of matt" ]
+	//  Notes: peripheral
+	//row autoRow15 = [UUID:"cf49-1b7a-89f0-41f5", HYPONYM: "solid", HYPERNYM: "state of matt"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"cf49-1b7a-89f0-41f5", HYPONYM: "solid", HYPERNYM: "state of matt"]
+
+	// CENTRAL        (OPTIONAL) ACTION: active volcanoes erupt     (ac53-6ded-643e-16f8) [ ADJ:"active", AGENT_OBJECT:"volcano", ACTION2:"erupt" ]
+	//row *autoRow16 = [UUID:"ac53-6ded-643e-16f8", ADJ: "active", AGENT_OBJECT: "volcano", ACTION2: "erupt"] //OVER-CONSTR.
+	row *autoRow16 = [UUID:"ac53-6ded-643e-16f8", ADJ: "active", AGENT_OBJECT: "volcano", ACTION2: "erupt"]
+
+	// CENTRAL         KINDOF: igneous rock is a kind of rock     (075f-d7cb-993c-ade1) [ HYPONYM:"igneous rock", HYPERNYM:"rock" ]
+	//  Notes: peripheral
+	//row autoRow17 = [UUID:"075f-d7cb-993c-ade1", HYPONYM: "igneous rock", HYPERNYM: "rock"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"075f-d7cb-993c-ade1", HYPONYM: "igneous rock", HYPERNYM: "rock"]
+
+	// LEXGLUE         SYNONYMY: to change into means to form     (e156-6d5a-88c7-4edc) [ ACTION1:"change into", ACTION2:"form" ]
+	//row autoRow18 = [UUID:"e156-6d5a-88c7-4edc", ACTION1: "change into", ACTION2: "form"] //OVER-CONSTR.
+	row autoRow18 = [UUID:"e156-6d5a-88c7-4edc", ACTION1: "change into", ACTION2: "form"]
+
+	// LEXGLUE         SYNONYMY: state means form     (29a1-5acf-45b5-3b06) [ X1:"state", X2:"form" ]
+	//row autoRow19 = [UUID:"29a1-5acf-45b5-3b06", X1: "state", X2: "form"] //OVER-CONSTR.
+	row autoRow19 = [UUID:"29a1-5acf-45b5-3b06", X1: "state", X2: "form"]
+
+	// LEXGLUE         SYNONYMY: to reduce means to decrease     (1a70-2ddd-7f85-17ae) [ ACTION1:"reduce", ACTION2:"decrease" ]
+	//row autoRow20 = [UUID:"1a70-2ddd-7f85-17ae", ACTION1: "reduce", ACTION2: "decrease"] //OVER-CONSTR.
+	row autoRow20 = [UUID:"1a70-2ddd-7f85-17ae", ACTION1: "reduce", ACTION2: "decrease"]
+
+endinferencepattern

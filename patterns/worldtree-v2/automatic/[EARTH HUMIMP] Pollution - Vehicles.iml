@@ -1,0 +1,51 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Pollution_Vehicles
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PARTOF: an engine is a part of an automobile     (3c28-d2a7-4f05-ca25) [ PART:"engine", WHOLE:"automobile" ]
+	//        HINTROW a car engine is a part of a car     (e625-b411-690a-92ec) [ PART:"car engine", QUANTIFIER1:"be", WHOLE:"car" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow0 = [TABLE:"PARTOF"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PARTOF", PART: "engine"]
+
+	// GROUNDING       KINDOF: a motorcycle is a kind of automobile     (c9c3-ae93-6335-a96e) [ HYPONYM:"motorcycle", HYPERNYM:"automobile" ]
+	//        HINTROW a car is a kind of automobile     (eb14-f908-f76d-7cf0) [ HYPONYM:"car", HYPERNYM:"automobile" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "automobile"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "automobile"]
+
+	// CENTRAL         SOURCEOF: many vehicles emit pollution into the air     (8e30-5411-1171-26fa) [ ADJ:"many", AGENT:"vehicle", VERB_SOURCEOF_PROVIDE_ETC:"emit", WHAT_IT_PROVIDES:"pollute", SCOPE:"into air" ]
+	//row autoRow2 = [UUID:"8e30-5411-1171-26fa", ADJ: "many", AGENT: "vehicle", VERB_SOURCEOF_PROVIDE_ETC: "emit", WHAT_IT_PROVIDES: "pollute", SCOPE: "into air"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"8e30-5411-1171-26fa", ADJ: "many", AGENT: "vehicle", VERB_SOURCEOF_PROVIDE_ETC: "emit", WHAT_IT_PROVIDES: "pollute", SCOPE: "into air"]
+
+	// CENTRAL         AFFECT: pollution has a negative impact on the environment ; air quality ; water quality ; society     (d116-6f25-b3ac-7d88) [ ACTOR_WHO:"pollute", POSITIVE_NEGATIVE:"negative", PATIENT:"environment;air quality;water quality;society" ]
+	//row autoRow3 = [UUID:"d116-6f25-b3ac-7d88", ACTOR_WHO: "pollute", POSITIVE_NEGATIVE: "negative", PATIENT: "air quality"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"d116-6f25-b3ac-7d88", ACTOR_WHO: "pollute", POSITIVE_NEGATIVE: "negative", PATIENT: "air quality"]
+
+	// CENTRAL         REQUIRES: vehicles usually require gasoline to operate     (0bb0-16b1-30de-d0e2) [ OBJECT_AGENT_PROCESS:"vehicle", QUANTIFIER:"usually", VERB_REQUIRES:"require", OBJECT:"gasoline", FOR_PURPOSE:"operate" ]
+	//row autoRow4 = [UUID:"0bb0-16b1-30de-d0e2", OBJECT_AGENT_PROCESS: "vehicle", QUANTIFIER: "usually", VERB_REQUIRES: "require", OBJECT: "gasoline", FOR_PURPOSE: "operate"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"0bb0-16b1-30de-d0e2", OBJECT_AGENT_PROCESS: "vehicle", QUANTIFIER: "usually", VERB_REQUIRES: "require", OBJECT: "gasoline", FOR_PURPOSE: "operate"]
+
+	// CENTRAL         SOURCEOF: burning gasoline ; oil is a source of air pollution     (86ae-9fcc-40d0-77ab) [ ACTION:"burn", OBJECT_PATIENT:"gasoline;oil", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"air pollute" ]
+	//row autoRow5 = [UUID:"86ae-9fcc-40d0-77ab", ACTION: "burn", OBJECT_PATIENT: "gasoline", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "air pollute"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"86ae-9fcc-40d0-77ab", ACTION: "burn", OBJECT_PATIENT: "gasoline", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "air pollute"]
+
+	// CENTRAL         REQUIRES: using a gasoline engine requires burning gasoline     (1893-0c1c-dddc-e8c4) [ ACTION1:"use", OBJECT_AGENT_PROCESS:"gasoline engine", VERB_REQUIRES:"require", ACTION2:"burn", OBJECT:"gasoline" ]
+	//row autoRow6 = [UUID:"1893-0c1c-dddc-e8c4", ACTION1: "use", OBJECT_AGENT_PROCESS: "gasoline engine", VERB_REQUIRES: "require", ACTION2: "burn", OBJECT: "gasoline"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"1893-0c1c-dddc-e8c4", ACTION1: "use", OBJECT_AGENT_PROCESS: "gasoline engine", VERB_REQUIRES: "require", ACTION2: "burn", OBJECT: "gasoline"]
+
+	// CENTRAL         KINDOF: an automobile is a kind of vehicle     (7cb7-40ac-f4d5-eb6c) [ HYPONYM:"automobile", HYPERNYM:"vehicle" ]
+	//  Notes: peripheral
+	//row autoRow7 = [UUID:"7cb7-40ac-f4d5-eb6c", HYPONYM: "automobile", HYPERNYM: "vehicle"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"7cb7-40ac-f4d5-eb6c", HYPONYM: "automobile", HYPERNYM: "vehicle"]
+
+	// CENTRAL         CHANGE-VEC: polluting means something poisonous is added to an environment     (4d82-5c75-1ac1-abdd) [ PROCESS_NAME_ACTION:"pollute", AGENT_OBJECT:"something poisonous", DIRECTION:"add", PATIENT:"environment" ]
+	//row autoRow8 = [UUID:"4d82-5c75-1ac1-abdd", PROCESS_NAME_ACTION: "pollute", AGENT_OBJECT: "something poisonous", DIRECTION: "add", PATIENT: "environment"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"4d82-5c75-1ac1-abdd", PROCESS_NAME_ACTION: "pollute", AGENT_OBJECT: "something poisonous", DIRECTION: "add", PATIENT: "environment"]
+
+endinferencepattern

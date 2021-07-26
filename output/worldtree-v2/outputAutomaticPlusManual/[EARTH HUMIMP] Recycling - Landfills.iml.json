@@ -1,0 +1,1322 @@
+{"patternMatches": [
+{
+	"patternName":"EARTH_HUMIMP_Recycling_Landfills",
+	"matches":[
+		{
+		"uuids": ["9e1f-a1a8-643b-0b8c","2195-8880-3362-9682","cb54-2805-b32b-817f","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9e1f-a1a8-643b-0b8c", "rowText": "metal is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "2195-8880-3362-9682", "rowText": "a nonrenewable resource is limited in supply", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cb54-2805-b32b-817f", "rowText": "a metal can is a kind of waste", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"materialName", "value":"metal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"materialName", "value":"metal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["9e1f-a1a8-643b-0b8c","2195-8880-3362-9682","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9e1f-a1a8-643b-0b8c", "rowText": "metal is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "2195-8880-3362-9682", "rowText": "a nonrenewable resource is limited in supply", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"metal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"metal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["9e1f-a1a8-643b-0b8c","cb54-2805-b32b-817f","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9e1f-a1a8-643b-0b8c", "rowText": "metal is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cb54-2805-b32b-817f", "rowText": "a metal can is a kind of waste", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"metal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"metal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["06f5-8cbc-7ae5-111f","2195-8880-3362-9682","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "06f5-8cbc-7ae5-111f", "rowText": "plastic is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "2195-8880-3362-9682", "rowText": "a nonrenewable resource is limited in supply", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"plastic" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"plastic" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["0b4c-355e-1cca-d698","2195-8880-3362-9682","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0b4c-355e-1cca-d698", "rowText": "fossil fuels are a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "2195-8880-3362-9682", "rowText": "a nonrenewable resource is limited in supply", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"fossil fuel" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"fossil fuels" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["982b-08d3-f40e-289f","2195-8880-3362-9682","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "982b-08d3-f40e-289f", "rowText": "aluminum is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "2195-8880-3362-9682", "rowText": "a nonrenewable resource is limited in supply", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"aluminum" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"aluminum" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["77f9-749f-9394-ae34","2195-8880-3362-9682","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "2195-8880-3362-9682", "rowText": "a nonrenewable resource is limited in supply", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"coal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"coal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["4cbb-5f96-4d29-b4f5","2195-8880-3362-9682","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4cbb-5f96-4d29-b4f5", "rowText": "natural gas is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "2195-8880-3362-9682", "rowText": "a nonrenewable resource is limited in supply", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"nature gas" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"natural gas" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["8c18-c36b-a89a-60ec","2195-8880-3362-9682","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8c18-c36b-a89a-60ec", "rowText": "oil is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "2195-8880-3362-9682", "rowText": "a nonrenewable resource is limited in supply", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"oil" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"oil" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["8d24-c370-d9f6-efec","2195-8880-3362-9682","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8d24-c370-d9f6-efec", "rowText": "minerals are a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "2195-8880-3362-9682", "rowText": "a nonrenewable resource is limited in supply", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"mineral" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"minerals" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["45a4-97a7-5902-490d","2195-8880-3362-9682","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "45a4-97a7-5902-490d", "rowText": "groundwater is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "2195-8880-3362-9682", "rowText": "a nonrenewable resource is limited in supply", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"groundwater" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"groundwater" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["e094-f38a-c2c7-8407","2195-8880-3362-9682","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "e094-f38a-c2c7-8407", "rowText": "chemical energy is usually a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "2195-8880-3362-9682", "rowText": "a nonrenewable resource is limited in supply", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["2195-8880-3362-9682","b0f1-187c-f56a-22ed","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "2195-8880-3362-9682", "rowText": "a nonrenewable resource is limited in supply", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0f1-187c-f56a-22ed", "rowText": "dead organisms are a kind of waste", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"materialName", "value":"dead organism" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"materialName", "value":"dead organisms" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["2195-8880-3362-9682","85c5-24b7-8f38-f0a9","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "2195-8880-3362-9682", "rowText": "a nonrenewable resource is limited in supply", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "85c5-24b7-8f38-f0a9", "rowText": "a plastic bag is a kind of waste", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"materialName", "value":"plastic bag" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"materialName", "value":"plastic bag" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["2195-8880-3362-9682","cb54-2805-b32b-817f","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "2195-8880-3362-9682", "rowText": "a nonrenewable resource is limited in supply", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cb54-2805-b32b-817f", "rowText": "a metal can is a kind of waste", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"materialName", "value":"metal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"materialName", "value":"metal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["1af4-c273-5b80-34e6","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "1af4-c273-5b80-34e6", "rowText": "soil is a renewable resource for growing plants", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"soil" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"soil" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		]
+		},
+		{
+		"uuids": ["df02-656d-260a-04d5","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "df02-656d-260a-04d5", "rowText": "water is a renewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"water" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"water" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		]
+		},
+		{
+		"uuids": ["9e1f-a1a8-643b-0b8c","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9e1f-a1a8-643b-0b8c", "rowText": "metal is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"metal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"metal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["2146-8319-8af6-a8e3","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2146-8319-8af6-a8e3", "rowText": "alternative fuel is usually a renewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"alternative fuel" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"alternative fuel" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		]
+		},
+		{
+		"uuids": ["06f5-8cbc-7ae5-111f","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "06f5-8cbc-7ae5-111f", "rowText": "plastic is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"plastic" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"plastic" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["0b4c-355e-1cca-d698","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0b4c-355e-1cca-d698", "rowText": "fossil fuels are a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"fossil fuel" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"fossil fuels" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["982b-08d3-f40e-289f","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "982b-08d3-f40e-289f", "rowText": "aluminum is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"aluminum" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"aluminum" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["77f9-749f-9394-ae34","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "77f9-749f-9394-ae34", "rowText": "coal is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"coal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"coal" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["4cbb-5f96-4d29-b4f5","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4cbb-5f96-4d29-b4f5", "rowText": "natural gas is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"nature gas" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"natural gas" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["8c18-c36b-a89a-60ec","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8c18-c36b-a89a-60ec", "rowText": "oil is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"oil" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"oil" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["f5c3-d141-1a8b-80c9","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		]
+		},
+		{
+		"uuids": ["f5c3-d141-1a8b-80c9","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "f5c3-d141-1a8b-80c9", "rowText": "solar energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"solar energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" }
+		]
+		},
+		{
+		"uuids": ["27d4-eb24-0630-19ed","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "27d4-eb24-0630-19ed", "rowText": "trees are a renewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"tree" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"trees" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		]
+		},
+		{
+		"uuids": ["0da1-2296-dfe8-6873","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"wind" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"wind" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		]
+		},
+		{
+		"uuids": ["0da1-2296-dfe8-6873","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"wind" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"wind" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" }
+		]
+		},
+		{
+		"uuids": ["0da1-2296-dfe8-6873","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"wind energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"wind energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		]
+		},
+		{
+		"uuids": ["0da1-2296-dfe8-6873","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "0da1-2296-dfe8-6873", "rowText": "wind ; wind energy is a renewable ; inexhaustible resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"wind energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"wind energy" },
+			{ "name":"renewableNonRenewable", "value":"inexhaustible" }
+		]
+		},
+		{
+		"uuids": ["55b1-a769-b2b4-d023","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "55b1-a769-b2b4-d023", "rowText": "wood is a renewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"wood" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"wood" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		]
+		},
+		{
+		"uuids": ["4567-015f-debe-b7f4","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "4567-015f-debe-b7f4", "rowText": "biomass is a renewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"biomass" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"biomass" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		]
+		},
+		{
+		"uuids": ["9d65-2cd1-cfde-9967","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "9d65-2cd1-cfde-9967", "rowText": "tidal energy is a renewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"tidal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"tidal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		]
+		},
+		{
+		"uuids": ["7d8a-10b3-8aaa-c02d","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "7d8a-10b3-8aaa-c02d", "rowText": "vegetable oil is a renewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"vegetable oil" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"vegetable oil" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		]
+		},
+		{
+		"uuids": ["be42-bfb1-ed75-4dbf","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "be42-bfb1-ed75-4dbf", "rowText": "wave energy is a renewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"wave energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"wave energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		]
+		},
+		{
+		"uuids": ["3dd5-171b-5cd8-bf0d","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "3dd5-171b-5cd8-bf0d", "rowText": "geothermal energy is a renewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"geothermal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"geothermal energy" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		]
+		},
+		{
+		"uuids": ["8d24-c370-d9f6-efec","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "8d24-c370-d9f6-efec", "rowText": "minerals are a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"mineral" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"minerals" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["2c3f-03b0-b87f-c09a","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "2c3f-03b0-b87f-c09a", "rowText": "animals are a renewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"animal" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"animals" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		]
+		},
+		{
+		"uuids": ["ee9c-1f5d-0cf9-67c9","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "ee9c-1f5d-0cf9-67c9", "rowText": "hydroelectric power is a renewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"hydroelectric power" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"hydroelectric power" },
+			{ "name":"renewableNonRenewable", "value":"renewable" }
+		]
+		},
+		{
+		"uuids": ["45a4-97a7-5902-490d","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "45a4-97a7-5902-490d", "rowText": "groundwater is a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"groundwater" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"groundwater" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["e094-f38a-c2c7-8407","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "e094-f38a-c2c7-8407", "rowText": "chemical energy is usually a nonrenewable resource", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"chemical energy" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["2195-8880-3362-9682","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "2195-8880-3362-9682", "rowText": "a nonrenewable resource is limited in supply", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"materialName", "value":"" },
+			{ "name":"renewableNonRenewable", "value":"nonrenewable" }
+		]
+		},
+		{
+		"uuids": ["b0f1-187c-f56a-22ed","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "b0f1-187c-f56a-22ed", "rowText": "dead organisms are a kind of waste", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"dead organism" },
+			{ "name":"renewableNonRenewable", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"dead organisms" },
+			{ "name":"renewableNonRenewable", "value":"" }
+		]
+		},
+		{
+		"uuids": ["85c5-24b7-8f38-f0a9","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "85c5-24b7-8f38-f0a9", "rowText": "a plastic bag is a kind of waste", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"plastic bag" },
+			{ "name":"renewableNonRenewable", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"plastic bag" },
+			{ "name":"renewableNonRenewable", "value":"" }
+		]
+		},
+		{
+		"uuids": ["cb54-2805-b32b-817f","27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "cb54-2805-b32b-817f", "rowText": "a metal can is a kind of waste", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"metal" },
+			{ "name":"renewableNonRenewable", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"metal" },
+			{ "name":"renewableNonRenewable", "value":"" }
+		]
+		},
+		{
+		"uuids": ["27ab-3140-60ab-8b03","fbcb-2151-6afa-c1c5","ce64-9ef7-3084-5195","da14-61d8-ad00-8a01","ffeb-6ab3-c8e2-e48a","f450-c52a-cebe-ac01","f43e-ee8c-d2ee-7e60","b393-8aa8-f654-e6a9"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "", "rowText": "", "rowStatic": "false", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "27ab-3140-60ab-8b03", "rowText": "humans move waste to a landfill for disposal ; storage", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "fbcb-2151-6afa-c1c5", "rowText": "landfills have a negative impact on the environment ; communities", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "ce64-9ef7-3084-5195", "rowText": "recycling reduces ; decreases the amount of waste sent to landfills", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "da14-61d8-ad00-8a01", "rowText": "recycling has a positive impact on the environment", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "ffeb-6ab3-c8e2-e48a", "rowText": "if a resource is limited in supply then that resource should be recycled", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "f450-c52a-cebe-ac01", "rowText": "recyclable means a material can be recycled ; reused many times", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f43e-ee8c-d2ee-7e60", "rowText": "recycling is a kind of method of disposal", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "b393-8aa8-f654-e6a9", "rowText": "recyclability is a property of a material and includes ordered values of nonrecyclable ; recyclable", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"" },
+			{ "name":"renewableNonRenewable", "value":"" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow0", "value":"" },
+			{ "name":"autoRow4", "value":"" },
+			{ "name":"autoRow6", "value":"" },
+			{ "name":"materialName", "value":"" },
+			{ "name":"renewableNonRenewable", "value":"" }
+		]
+		}
+	]
+}
+]}
+

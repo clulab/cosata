@@ -1,0 +1,41 @@
+// --script before10temp2/scripts/runme/runme.iml --tablestoreIndex /home/peter/github/Synchronicity/annotation/tablestore/tableindex.txt --outputPath before10temp2/output/
+// --script before10temp2/scripts/runme/runme.iml --tablestoreIndex annotation/expl-tablestore-export-2020-02-17-123232/tableindex.txt --outputPath before10temp2/output/
+// --script before10temp2/scripts/runme/runme.iml --tablestoreIndex annotation/expl-unittesttablestore-current/tableindex.txt --outputPath before10temp2/output/
+
+
+// Includes
+// import of  1@atime
+//import "pattern1b.iml"
+//import "pattern2ba.iml"
+//import "pattern2c.iml"
+//import "pattern2b.iml"
+//import "test/p2.iml"
+//import "test/p1.iml"
+//import "longrun.iml"
+//import "testrun.iml"
+//import "test-or.iml"
+//import "test-omit.iml"
+//import "test-json.iml"
+//import "longrun1.iml"
+import "test-or1.iml"
+
+//println ("TEST")
+
+
+exportInfPatDebugHTML()			// new
+
+// perform const sat from pattern over knowl base
+executeAutoPatterns
+populateInfPatMatches
+
+
+// init, keepme
+incrementState
+
+// Dump the 3 log files
+exportInfPatHTML()			// **
+exportTableStoreHTML()
+exportStateSpaceHTML()
+
+exportInfPatJSON()
+

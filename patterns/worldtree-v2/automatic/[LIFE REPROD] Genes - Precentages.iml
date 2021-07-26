@@ -1,0 +1,73 @@
+// Automatically converted pattern
+inferencepattern LIFE_REPROD_Genes_Precentages
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       IFTHEN: if a heterozygous dominant organism is crossed ; bred with homozygous ; pure dominant organism , then the offspring will have a 0% probability of having recessive trait     (b1d9-25a5-a330-bc21) [ ADJ_QUANTITY1:"heterozygous", THING:"dominant organism", ACTION1:"cross;breed with", ADJ_QUANTITY1A:"homozygous;pure", OBJECT_PATIENT1:"dominant organism", ACTOR_AGENT_PROCESS2:"offspring", ACTION3:"have", ADJ_QUANTIFIER3:"0 % probability", OBJECT_PROPERTY3:"of have recessive trait" ]
+	//        HINTROW if a heterozygous dominant organism is crossed ; bred with homozygous ; pure dominant organism , then the offspring will be either heterozygous dominant or homozygous dominant     (b526-9f6c-22d5-484e) [ ADJ_QUANTITY1:"heterozygous", THING:"dominant organism", ACTION1:"cross;breed with", ADJ_QUANTITY1A:"homozygous;pure", OBJECT_PATIENT1:"dominant organism", ACTOR_AGENT_PROCESS2:"offspring", ACTION3:"be", OBJECT_PROPERTY3:"heterozygous dominant homozygous dominant" ]
+	//  Notes: hetero dominant x pure dominant
+	//row autoRow0 = [TABLE:"IFTHEN", ADJ_QUANTITY1: "heterozygous", THING: <dominant_4>+"organism", ACTION1: "breed with", ADJ_QUANTITY1A: <homozygous_2>, OBJECT_PATIENT1: <dominant_4>+"organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: *"POS:CD"+<_0>+"probability", OBJECT_PROPERTY3: "of have"+<recessive_3>+"trait"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"IFTHEN", ADJ_QUANTITY1: "heterozygous", THING: <dominant_4>+"organism", ACTION1: "breed with", ADJ_QUANTITY1A: <homozygous_2>, OBJECT_PATIENT1: <dominant_4>+"organism", ACTOR_AGENT_PROCESS2: "offspring", OBJECT_PROPERTY3: *"POS:IN"+*"POS:VB"+<recessive_3>+"trait"]
+
+	// CENTRALSW       IFTHEN: if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 25% probability of being homozygous recessive     (b0f7-0b94-dd72-578c) [ ADJ_QUANTITY1:"heterozygous", THING:"dominant organism", ACTION1:"cross;breed with", ADJ_QUANTITY1A:"heterozygous", OBJECT_PATIENT1:"dominant organism", ACTOR_AGENT_PROCESS2:"offspring", ACTION3:"have", ADJ_QUANTIFIER3:"25 % probability of", OBJECT_PROPERTY3:"be homozygous recessive" ]
+	//        HINTROW if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 25% probability of being homozygous dominant     (c789-7d60-5d0e-bc67) [ ADJ_QUANTITY1:"heterozygous", THING:"dominant organism", ACTION1:"cross;breed with", ADJ_QUANTITY1A:"heterozygous", OBJECT_PATIENT1:"dominant organism", ACTOR_AGENT_PROCESS2:"offspring", ACTION3:"have", ADJ_QUANTIFIER3:"25 % probability of", OBJECT_PROPERTY3:"be homozygous dominant" ]
+	//        HINTROW if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 75% probability of having dominant trait     (ee4a-b456-7903-e43d) [ ADJ_QUANTITY1:"heterozygous", THING:"dominant organism", ACTION1:"cross;breed with", ADJ_QUANTITY1A:"heterozygous", OBJECT_PATIENT1:"dominant organism", ACTOR_AGENT_PROCESS2:"offspring", ACTION3:"have", ADJ_QUANTIFIER3:"75 % probability of", OBJECT_PROPERTY3:"have dominant trait" ]
+	//        HINTROW if a heterozygous dominant organism is crossed ; bred with a heterozygous dominant organism , then the offspring will have a 50% probability of being heterozygous dominant     (2299-0633-182b-92f3) [ ADJ_QUANTITY1:"heterozygous", THING:"dominant organism", ACTION1:"cross;breed with", ADJ_QUANTITY1A:"heterozygous", OBJECT_PATIENT1:"dominant organism", ACTOR_AGENT_PROCESS2:"offspring", ACTION3:"have", ADJ_QUANTIFIER3:"50 % probability of", OBJECT_PROPERTY3:"be heterozygous dominant" ]
+	//  Notes: hetero dominant x hetero dominant
+	//row autoRow1 = [TABLE:"IFTHEN", ADJ_QUANTITY1: "heterozygous", THING: <dominant_4>+"organism", ACTION1: "breed with", ADJ_QUANTITY1A: "heterozygous", OBJECT_PATIENT1: <dominant_4>+"organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "25"+<_0>+"probability of", OBJECT_PROPERTY3: <be_1>+<homozygous_2>+<recessive_3>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"IFTHEN", ADJ_QUANTITY1: "heterozygous", THING: <dominant_4>+"organism", ACTION1: "breed with", ADJ_QUANTITY1A: "heterozygous", OBJECT_PATIENT1: <dominant_4>+"organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "25"+<_0>+"probability of", OBJECT_PROPERTY3: <be_1>+<homozygous_2>+<recessive_3>]
+
+	// CENTRALSW       IFTHEN: if a homozygous ; pure dominant organism is crossed ; bred with a homozygous ; pure recessive organism , then the offspring will have a 100% probability of being heterozygous dominant     (56e1-7195-4762-fd8d) [ ADJ_QUANTITY1:"homozygous;pure", THING:"dominant organism", ACTION1:"cross;breed with", ADJ_QUANTITY1A:"homozygous;pure", OBJECT_PATIENT1:"recessive organism", ACTOR_AGENT_PROCESS2:"offspring", ACTION3:"have", ADJ_QUANTIFIER3:"100 % probability of", OBJECT_PROPERTY3:"be heterozygous dominant" ]
+	//        HINTROW if a homozygous ; pure dominant organism is crossed ; bred with a homozygous ; pure recessive organism , then the offspring will have a 0% probability of being homozygous recessive     (2136-80f6-e4d4-3fb7) [ ADJ_QUANTITY1:"homozygous;pure", THING:"dominant organism", ACTION1:"cross;breed with", ADJ_QUANTITY1A:"homozygous;pure", OBJECT_PATIENT1:"recessive organism", ACTOR_AGENT_PROCESS2:"offspring", ACTION3:"have", ADJ_QUANTIFIER3:"0 % probability of", OBJECT_PROPERTY3:"be homozygous recessive" ]
+	//  Notes: pure dominant x pure recessive
+	//row autoRow2 = [TABLE:"IFTHEN", ADJ_QUANTITY1: <homozygous_2>, THING: <dominant_4>+"organism", ACTION1: "breed with", ADJ_QUANTITY1A: <homozygous_2>, OBJECT_PATIENT1: <recessive_3>+"organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "100"+<_0>+"probability of", OBJECT_PROPERTY3: <be_1>+"heterozygous"+<dominant_4>] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"IFTHEN", ADJ_QUANTITY1: <homozygous_2>, THING: <dominant_4>+"organism", ACTION1: "breed with", ADJ_QUANTITY1A: <homozygous_2>, OBJECT_PATIENT1: <recessive_3>+"organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "100"+<_0>+"probability of", OBJECT_PROPERTY3: <be_1>+*"POS:JJ"+<dominant_4>]
+
+	// CENTRALSW       IFTHEN: if a heterozygous dominant organism is crossed ; bred with homozygous ; pure recessive organism , then the offspring will have a 50% probability of being homozygous recessive     (d10d-6ed4-e695-8dab) [ ADJ_QUANTITY1:"heterozygous", THING:"dominant organism", ACTION1:"cross;breed with", ADJ_QUANTITY1A:"homozygous;pure", OBJECT_PATIENT1:"recessive organism", ACTOR_AGENT_PROCESS2:"offspring", ACTION3:"have", ADJ_QUANTIFIER3:"50 % probability of", OBJECT_PROPERTY3:"be homozygous recessive" ]
+	//        HINTROW if a heterozygous dominant organism is crossed ; bred with homozygous ; pure recessive organism , then the offspring will have a 50% probability of being heterozygous dominant     (83a0-292b-c6ee-d917) [ ADJ_QUANTITY1:"heterozygous", THING:"dominant organism", ACTION1:"cross;breed with", ADJ_QUANTITY1A:"homozygous;pure", OBJECT_PATIENT1:"recessive organism", ACTOR_AGENT_PROCESS2:"offspring", ACTION3:"have", ADJ_QUANTIFIER3:"50 % probability of", OBJECT_PROPERTY3:"be heterozygous dominant" ]
+	//  Notes: hetero dominant x pure recessive
+	//row autoRow3 = [TABLE:"IFTHEN", ADJ_QUANTITY1: "heterozygous", THING: <dominant_4>+"organism", ACTION1: "breed with", ADJ_QUANTITY1A: <homozygous_2>, OBJECT_PATIENT1: <recessive_3>+"organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "50"+<_0>+"probability of", OBJECT_PROPERTY3: <be_1>+<homozygous_2>+<recessive_3>] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"IFTHEN", ADJ_QUANTITY1: "heterozygous", THING: <dominant_4>+"organism", ACTION1: "breed with", ADJ_QUANTITY1A: <homozygous_2>, OBJECT_PATIENT1: <recessive_3>+"organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "50"+<_0>+"probability of", OBJECT_PROPERTY3: <be_1>+<homozygous_2>+<recessive_3>]
+
+	// CENTRALSW       IFTHEN: if both a dominant and recessive gene are present , the dominant trait will be visible ; expressed     (9d19-224c-847b-a622) [ ADJ_QUANTITY1:"dominant recessive", THING:"gene", OBJECT_PROPERTY1:"present", ADJ_QUANTITY2:"dominant", ACTOR_AGENT_PROCESS2:"trait", OBJECT_PROPERTY3:"visible;express" ]
+	//        HINTROW if both recessive genes are present , then the recessive trait will be visible ; expressed     (b3f6-5f19-c2eb-85e9) [ ADJ_QUANTITY1:"recessive", THING:"gene", ACTION1:"present", ADJ_QUANTITY2:"recessive", ACTOR_AGENT_PROCESS2:"trait", OBJECT_PROPERTY3:"visible;express" ]
+	//        HINTROW if both dominant genes are present , then the dominant trait will be visible ; expressed     (f00a-7d92-6e19-784a) [ ADJ_QUANTITY1:"dominant", THING:"gene", ACTION1:"present", ADJ_QUANTITY2:"dominant", ACTOR_AGENT_PROCESS2:"trait", OBJECT_PROPERTY3:"visible;express" ]
+	//row autoRow4 = [TABLE:"IFTHEN", ADJ_QUANTITY1: <dominant_4>+<recessive_3>, THING: "gene", ADJ_QUANTITY2: <dominant_4>, ACTOR_AGENT_PROCESS2: "trait", OBJECT_PROPERTY3: "visible"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"IFTHEN", ADJ_QUANTITY1: <dominant_4>+<recessive_3>, THING: "gene", ADJ_QUANTITY2: <dominant_4>, ACTOR_AGENT_PROCESS2: "trait", OBJECT_PROPERTY3: "visible"]
+
+	// CENTRAL         CAUSE: crossing ; breeding a homozygous dominant living thing with another living thing causes their offspring to have that dominant trait     (b2c7-e823-56f6-3747) [ CONDITION_VERB:"cross;breed", CONDITION_PATIENT:"homozygous dominant live thing", SCOPE1:"with live thing", RESULT_AGENT:"offspring", RESULT_VERB:"have", RESULT_PATIENT:"dominant trait" ]
+	//  Notes: pure dominant x pure dominant
+	//row autoRow5 = [UUID:"b2c7-e823-56f6-3747", CONDITION_VERB: "cross", CONDITION_PATIENT: <homozygous_2>+<dominant_4>+"live thing", SCOPE1: "with live thing", RESULT_AGENT: "offspring", RESULT_VERB: "have", RESULT_PATIENT: <dominant_4>+"trait"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"b2c7-e823-56f6-3747", CONDITION_VERB: "cross", CONDITION_PATIENT: <homozygous_2>+<dominant_4>+"live thing", SCOPE1: "with live thing", RESULT_AGENT: "offspring", RESULT_VERB: "have", RESULT_PATIENT: <dominant_4>+"trait"]
+
+	// CENTRAL         IFTHEN: if a homozygous ; pure recessive organism is crossed ; bred with a homozygous ; pure recessive organism , then the offspring will have a 100% probability of being homozygous recessive     (25d2-07b6-09f9-3dc3) [ ADJ_QUANTITY1:"homozygous;pure", THING:"recessive organism", ACTION1:"cross;breed with", ADJ_QUANTITY1A:"homozygous;pure", OBJECT_PATIENT1:"recessive organism", ACTOR_AGENT_PROCESS2:"offspring", ACTION3:"have", ADJ_QUANTIFIER3:"100 % probability of", OBJECT_PROPERTY3:"be homozygous recessive" ]
+	//  Notes: pure recessive x pure recessive
+	//row autoRow6 = [UUID:"25d2-07b6-09f9-3dc3", ADJ_QUANTITY1: <homozygous_2>, THING: <recessive_3>+"organism", ACTION1: "breed with", ADJ_QUANTITY1A: <homozygous_2>, OBJECT_PATIENT1: <recessive_3>+"organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "100"+<_0>+"probability of", OBJECT_PROPERTY3: <be_1>+<homozygous_2>+<recessive_3>] //OVER-CONSTR.
+	row autoRow6 = [UUID:"25d2-07b6-09f9-3dc3", ADJ_QUANTITY1: <homozygous_2>, THING: <recessive_3>+"organism", ACTION1: "breed with", ADJ_QUANTITY1A: <homozygous_2>, OBJECT_PATIENT1: <recessive_3>+"organism", ACTOR_AGENT_PROCESS2: "offspring", ACTION3: "have", ADJ_QUANTIFIER3: "100"+<_0>+"probability of", OBJECT_PROPERTY3: <be_1>+<homozygous_2>+<recessive_3>]
+
+	// CENTRAL         CONTAINS: a homozygous dominant organism contains only dominant genes     (acda-b7a0-d62c-ff9b) [ ADJ:"homozygous dominant", OBJECT_AGENT:"organism", QUANTITY_RANGE:"only", WHAT_IT_CONTAINS:"dominant gene" ]
+	//row autoRow7 = [UUID:"acda-b7a0-d62c-ff9b", ADJ: <homozygous_2>+<dominant_4>, OBJECT_AGENT: "organism", QUANTITY_RANGE: "only", WHAT_IT_CONTAINS: <dominant_4>+"gene"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"acda-b7a0-d62c-ff9b", ADJ: <homozygous_2>+<dominant_4>, OBJECT_AGENT: "organism", QUANTITY_RANGE: "only", WHAT_IT_CONTAINS: <dominant_4>+"gene"]
+
+	// CENTRAL         CONTAINS: a heterozygous organism contains both dominant and recessive genes     (bf6d-30bb-f14c-54bb) [ ADJ:"heterozygous", OBJECT_AGENT:"organism", WHAT_IT_CONTAINS:"dominant recessive gene" ]
+	//row autoRow8 = [UUID:"bf6d-30bb-f14c-54bb", ADJ: "heterozygous", OBJECT_AGENT: "organism", WHAT_IT_CONTAINS: <dominant_4>+<recessive_3>+"gene"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"bf6d-30bb-f14c-54bb", ADJ: "heterozygous", OBJECT_AGENT: "organism", WHAT_IT_CONTAINS: <dominant_4>+<recessive_3>+"gene"]
+
+	// CENTRAL         ACTION: traits can be determined by one pair ; many pairs of genes in an organism     (b514-8bda-4ce6-d5c4) [ AGENT_OBJECT:"trait", QUANITIFIER:"be", ACTION2:"determine", HOW:"one pair;many pair", SCOPE2:"of gene in organism" ]
+	//row autoRow9 = [UUID:"b514-8bda-4ce6-d5c4", AGENT_OBJECT: "trait", QUANITIFIER: <be_1>, ACTION2: "determine", HOW: "one pair", SCOPE2: "of gene in organism"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"b514-8bda-4ce6-d5c4", AGENT_OBJECT: "trait", QUANITIFIER: <be_1>, ACTION2: "determine", HOW: "one pair", SCOPE2: "of gene in organism"]
+
+	// LEXGLUE         SYNONYMY: 100% probability means always     (bf96-4d9a-577f-21f1) [ X1:"100 % probability", X2:"always" ]
+	//row autoRow10 = [UUID:"bf96-4d9a-577f-21f1", X1: "100"+<_0>+"probability", X2: "always"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"bf96-4d9a-577f-21f1", X1: "100"+<_0>+"probability", X2: "always"]
+
+	// LEXGLUE         SYNONYMY: 25% probability is similar to one in four     (e7f2-85b1-308c-77d8) [ X1:"25 % probability", X2:"one in four" ]
+	//row autoRow11 = [UUID:"e7f2-85b1-308c-77d8", X1: "25"+<_0>+"probability", X2: "one in four"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"e7f2-85b1-308c-77d8", X1: "25"+<_0>+"probability", X2: "one in four"]
+
+endinferencepattern

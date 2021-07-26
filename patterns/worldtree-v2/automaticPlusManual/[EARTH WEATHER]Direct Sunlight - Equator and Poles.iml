@@ -1,0 +1,62 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Direct_Sunlight_Equator_and_Poles
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: warmer means greater ; higher in temperature ; warmth     (3c5b-8471-16d4-f1b2) [ THING:"warm", VALUE:"great;high", ATTRIBUTE:"temperature;warmth" ]
+	//        HINTROW colder ; cooler means lower in temperature     (246e-dd6e-6e09-988a) [ THING:"cold;cool", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "temperature"]
+
+	// GROUNDING      (OPTIONAL) KINDOF: an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//        HINTROW a bay is a kind of body of water     (0596-e537-4cc3-192c) [ HYPONYM:"bay", HYPERNYM:"body of water" ]
+	//        HINTROW a river is a kind of flowing ; moving body of water     (9885-6337-f26c-cfbd) [ HYPONYM:"river", SCOPE1:"flow;move", HYPERNYM:"body of water" ]
+	//row *autoRow1 = [TABLE:"KINDOF", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row *autoRow1 = [TABLE:"KINDOF", HYPERNYM: "body of water"]
+
+	// CENTRAL         SOURCEOF: sunlight produces heat     (2889-3edc-095a-6d6b) [ AGENT:"sunlight", VERB_SOURCEOF_PROVIDE_ETC:"produce", WHAT_IT_PROVIDES:"heat" ]
+	//row autoRow2 = [UUID:"2889-3edc-095a-6d6b", AGENT: "sunlight", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "heat"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"2889-3edc-095a-6d6b", AGENT: "sunlight", VERB_SOURCEOF_PROVIDE_ETC: "produce", WHAT_IT_PROVIDES: "heat"]
+
+	// CENTRAL         COMPARISON: the equator receives the most amount of direct sunlight throughout the year     (cbae-470e-6ea8-ee3c) [ THING:"equator", ACTION1:"receive", COMPARISON:"much", ATTRIBUTE:"amount of", WHAT:"direct sunlight", SCOPE2:"throughout year" ]
+	//  Notes: 6fd0-fd6f-9d28-4a64->cbae-470e-6ea8-ee3c
+	//row autoRow3 = [UUID:"cbae-470e-6ea8-ee3c", THING: "equator", ACTION1: "receive", COMPARISON: "much", ATTRIBUTE: "amount of", WHAT: "direct sunlight", SCOPE2: "throughout year"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"cbae-470e-6ea8-ee3c", THING: "equator", ACTION1: "receive", COMPARISON: "much", ATTRIBUTE: "amount of", WHAT: "direct sunlight", SCOPE2: "throughout year"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as distance from the equator decreases , the climate will become warmer     (fa57-44a1-5ebb-ea27) [ QUANTITY_MEASURE1:"distance", SCOPE1A:"from equator", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"climate", ACTION2:"become", CHANGE2:"warm" ]
+	//row autoRow4 = [UUID:"fa57-44a1-5ebb-ea27", QUANTITY_MEASURE1: "distance", SCOPE1A: "from equator", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "climate", ACTION2: "become", CHANGE2: "warm"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"fa57-44a1-5ebb-ea27", QUANTITY_MEASURE1: "distance", SCOPE1A: "from equator", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "climate", ACTION2: "become", CHANGE2: "warm"]
+
+	// CENTRAL         IFTHEN: if an object ; a substance ; a location absorbs solar energy then that object ; that substance will increase in temperature     (9554-47d7-c095-1df7) [ THING:"object;substance;locate", ACTION1:"absorb", OBJECT_PATIENT1:"solar energy", ACTOR_AGENT_PROCESS2:"that object;that substance", ACTION3:"increase", OBJECT_PROPERTY3:"in temperature" ]
+	//row autoRow5 = [UUID:"9554-47d7-c095-1df7", THING: "object", ACTION1: "absorb", OBJECT_PATIENT1: "solar energy", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "increase", OBJECT_PROPERTY3: "in temperature"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"9554-47d7-c095-1df7", THING: "object", ACTION1: "absorb", OBJECT_PATIENT1: "solar energy", ACTOR_AGENT_PROCESS2: "that object", ACTION3: "increase", OBJECT_PROPERTY3: "in temperature"]
+
+	// CENTRAL         KINDOF: the equator is a kind of location     (a0b7-1826-744b-5423) [ HYPONYM:"equator", HYPERNYM:"locate" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"a0b7-1826-744b-5423", HYPONYM: "equator", HYPERNYM: "locate"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"a0b7-1826-744b-5423", HYPONYM: "equator", HYPERNYM: "locate"]
+
+	// CENTRAL         COMPARISON: the equator receives more sunlight than the poles on Earth     (6f54-6f77-4dff-56e3) [ THING:"equator", ACTION1:"receive", COMPARISON:"much", WHAT:"sunlight", THING_COMPARED:"pole", SCOPE:"on earth" ]
+	//  Notes: b401-733c-cfa3-138b->6f54-6f77-4dff-56e3
+	//row autoRow7 = [UUID:"6f54-6f77-4dff-56e3", THING: "equator", ACTION1: "receive", COMPARISON: "much", WHAT: "sunlight", THING_COMPARED: "pole", SCOPE: "on earth"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"6f54-6f77-4dff-56e3", THING: "equator", ACTION1: "receive", COMPARISON: "much", WHAT: "sunlight", THING_COMPARED: "pole", SCOPE: "on earth"]
+
+	// CENTRAL         COMPARISON: the poles receives the least amount of direct sunlight throughout the year     (f3ea-d056-792e-2973) [ THING:"pole", ACTION1:"receive", COMPARISON:"little", ATTRIBUTE:"amount of", WHAT:"direct sunlight", SCOPE2:"throughout year" ]
+	//  Notes: d997-0d53-44f5-2036->f3ea-d056-792e-2973
+	//row autoRow8 = [UUID:"f3ea-d056-792e-2973", THING: "pole", ACTION1: "receive", COMPARISON: "little", ATTRIBUTE: "amount of", WHAT: "direct sunlight", SCOPE2: "throughout year"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"f3ea-d056-792e-2973", THING: "pole", ACTION1: "receive", COMPARISON: "little", ATTRIBUTE: "amount of", WHAT: "direct sunlight", SCOPE2: "throughout year"]
+
+	// CENTRAL         SOURCEOF: the sun is a source of radiation ; heat called sunlight     (d247-b029-3aab-0950) [ AGENT:"sun", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"radiation;heat", NAME:"sunlight" ]
+	//row autoRow9 = [UUID:"d247-b029-3aab-0950", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "radiation", NAME: "sunlight"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"d247-b029-3aab-0950", AGENT: "sun", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "radiation", NAME: "sunlight"]
+
+	// CENTRAL        (OPTIONAL) ACTION: water absorbs solar energy in the water cycle     (3cac-554a-3149-cd7b) [ AGENT_OBJECT:"water", ACTION2:"absorb", OBJECT_PROPERTY:"solar energy", WHEN_WHERE:"in water cycle" ]
+	//row *autoRow10 = [UUID:"3cac-554a-3149-cd7b", AGENT_OBJECT: "water", ACTION2: "absorb", OBJECT_PROPERTY: "solar energy", WHEN_WHERE: "in water cycle"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"3cac-554a-3149-cd7b", AGENT_OBJECT: "water", ACTION2: "absorb", OBJECT_PROPERTY: "solar energy", WHEN_WHERE: "in water cycle"]
+
+endinferencepattern

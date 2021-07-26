@@ -1,0 +1,76 @@
+// Automatically converted pattern
+inferencepattern LIFE_INTERDEP_Dead_organisms_spread_disease
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW      (OPTIONAL) IFTHEN: if a tree is cut down then that tree will die     (767b-d14d-c5e5-ba84) [ THING:"tree", ACTION1:"cut", ACTOR_AGENT_PROCESS2:"that tree", ACTION3:"die" ]
+	//        HINTROW if a leaf falls off of a tree then that leaf is dead     (e03e-ee31-4d99-c0fe) [ THING:"leaf", ACTION1:"fall off of", OBJECT_PATIENT1:"tree", ACTOR_AGENT_PROCESS2:"that leaf", ADJ_QUANTIFIER3:"dead" ]
+	//  Notes: dead plant example
+	//row *autoRow0 = [TABLE:"IFTHEN", ACTOR_AGENT_PROCESS2: "that"+*"POS:NN", ACTION3: "die"] //OVER-CONSTR.
+	row *autoRow0 = [TABLE:"IFTHEN", ACTOR_AGENT_PROCESS2: "that"+*"POS:NN"]
+
+	// CENTRALSW       KINDOF: an animal is a kind of organism     (10ce-c060-90b9-b748) [ HYPONYM:"animal", HYPERNYM:"organism" ]
+	//        HINTROW a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPERNYM: "organism"]
+
+	// CENTRALSW       ACTION: dead organisms rot     (b150-d213-b73e-de9d) [ ADJ:"dead", AGENT_OBJECT:"organism", ACTION2:"rot" ]
+	//        HINTROW dead organisms decay     (2e43-6a8c-1231-65f1) [ ADJ:"dead", AGENT_OBJECT:"organism", ACTION2:"decay" ]
+	//row autoRow2 = [TABLE:"ACTION", ADJ: "dead", AGENT_OBJECT: "organism"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"ACTION", ADJ: "dead", AGENT_OBJECT: "organism"]
+
+	// GROUNDING       KINDOF: a rabbit is a kind of animal     (44d7-fef6-90ef-75aa) [ HYPONYM:"rabbit", HYPERNYM:"animal" ]
+	//        HINTROW a raccoon is a kind of animal     (e4ff-648c-242b-c15f) [ HYPONYM:"raccoon", HYPERNYM:"animal" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "animal"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPERNYM: "animal"]
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW a bush is a kind of plant     (311e-8d88-cde2-860d) [ HYPONYM:"bush", HYPERNYM:"plant" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPERNYM: "plant"]
+
+	// CENTRAL         CONTAINS: an ecosystem contains a large community of ; large numbers of living organisms     (7a75-f74f-4c98-0f01) [ OBJECT_AGENT:"ecosystem", QUANTITY_RANGE:"large community of;large number of", WHAT_IT_CONTAINS:"live organism" ]
+	//row autoRow5 = [UUID:"7a75-f74f-4c98-0f01", OBJECT_AGENT: "ecosystem", QUANTITY_RANGE: "large community of", WHAT_IT_CONTAINS: "live organism"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"7a75-f74f-4c98-0f01", OBJECT_AGENT: "ecosystem", QUANTITY_RANGE: "large community of", WHAT_IT_CONTAINS: "live organism"]
+
+	// CENTRAL         CHANGE-VEC: negative impacts on organisms ; species will decrease the population of the organisms ; the species     (83f9-1f31-2097-7a80) [ ADJ:"negative", AGENT_OBJECT:"impact", SCOPE1:"on organism;species", DIRECTION:"decrease", PATIENT:"population", SCOPE2:"of organism;species" ]
+	//  Notes: 4c89-1538-021d-96b2->83f9-1f31-2097-7a80
+	//row autoRow6 = [UUID:"83f9-1f31-2097-7a80", ADJ: "negative", AGENT_OBJECT: "impact", SCOPE1: "on organism", DIRECTION: "decrease", PATIENT: "population", SCOPE2: "of organism"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"83f9-1f31-2097-7a80", ADJ: "negative", AGENT_OBJECT: "impact", SCOPE1: "on organism", DIRECTION: "decrease", PATIENT: "population", SCOPE2: "of organism"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the amount of a source of something decreases , the amount of that something will decrease     (84e6-3d26-d645-4729) [ QUANTITY_MEASURE1:"amount", AGENT_ATTRIBUTE1:"of source of something", CHANGE1:"decrease", QUANTITY_MEASURE2:"amount", AGENT_ATTRIBUTE2:"of something", CHANGE2:"decrease" ]
+	//row autoRow7 = [UUID:"84e6-3d26-d645-4729", QUANTITY_MEASURE1: "amount", AGENT_ATTRIBUTE1: "of source of something", CHANGE1: "decrease", QUANTITY_MEASURE2: "amount", AGENT_ATTRIBUTE2: "of something", CHANGE2: "decrease"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"84e6-3d26-d645-4729", QUANTITY_MEASURE1: "amount", AGENT_ATTRIBUTE1: "of source of something", CHANGE1: "decrease", QUANTITY_MEASURE2: "amount", AGENT_ATTRIBUTE2: "of something", CHANGE2: "decrease"]
+
+	// CENTRAL         AFFECT: disease has a negative impact on an organism     (834c-378f-a471-62e0) [ ACTOR_WHO:"disease", POSITIVE_NEGATIVE:"negative", PATIENT:"organism" ]
+	//row autoRow8 = [UUID:"834c-378f-a471-62e0", ACTOR_WHO: "disease", POSITIVE_NEGATIVE: "negative", PATIENT: "organism"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"834c-378f-a471-62e0", ACTOR_WHO: "disease", POSITIVE_NEGATIVE: "negative", PATIENT: "organism"]
+
+	// CENTRAL         KINDOF: dead organisms are a kind of waste     (b0f1-187c-f56a-22ed) [ HYPONYM:"dead organism", HYPERNYM:"waste" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"b0f1-187c-f56a-22ed", HYPONYM: "dead organism", HYPERNYM: "waste"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"b0f1-187c-f56a-22ed", HYPONYM: "dead organism", HYPERNYM: "waste"]
+
+	// CENTRAL         SOURCEOF: dead organisms are a source of disease     (3860-7bb5-9020-d4e2) [ ADJ:"dead", AGENT:"organism", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"disease" ]
+	//  Notes: CORE
+	//row autoRow10 = [UUID:"3860-7bb5-9020-d4e2", ADJ: "dead", AGENT: "organism", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "disease"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"3860-7bb5-9020-d4e2", ADJ: "dead", AGENT: "organism", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "disease"]
+
+	// CENTRAL         IFTHEN: if a living thing dies then that living thing is dead     (1868-70f2-364b-04e1) [ THING:"live thing", ACTION1:"die", ACTOR_AGENT_PROCESS2:"that live thing", OBJECT_PROPERTY3:"dead" ]
+	//row autoRow11 = [UUID:"1868-70f2-364b-04e1", THING: "live thing", ACTION1: "die", ACTOR_AGENT_PROCESS2: "that live thing", OBJECT_PROPERTY3: "dead"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"1868-70f2-364b-04e1", THING: "live thing", ACTION1: "die", ACTOR_AGENT_PROCESS2: "that live thing", OBJECT_PROPERTY3: "dead"]
+
+	// CENTRAL         CONSUMERS-EATING: scavengers eat dead organisms     (207c-b6d1-fb72-d730) [ ORGANISM1:"scavenger", EATS_CONSUMES:"eat", ORGANISM2:"dead organism" ]
+	//row autoRow12 = [UUID:"207c-b6d1-fb72-d730", ORGANISM1: "scavenger", EATS_CONSUMES: "eat", ORGANISM2: "dead organism"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"207c-b6d1-fb72-d730", ORGANISM1: "scavenger", EATS_CONSUMES: "eat", ORGANISM2: "dead organism"]
+
+	// LEXGLUE         SYNONYMY: disease means illness     (02d9-f788-cefc-90a5) [ X1:"disease", X2:"illness" ]
+	//row autoRow13 = [UUID:"02d9-f788-cefc-90a5", X1: "disease", X2: "illness"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"02d9-f788-cefc-90a5", X1: "disease", X2: "illness"]
+
+endinferencepattern

@@ -1,0 +1,71 @@
+// Automatically converted pattern
+inferencepattern CEL_FEATURES_Definition_Galaxies
+
+	// Plain text description
+	description = "													"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CONTAINS: a galaxy contains dusts ; stars ; planets     (ca02-f295-6df6-5ba8) [ OBJECT_AGENT:"galaxy", WHAT_IT_CONTAINS:"dust;star;planet" ]
+	//        HINTROW a typical galaxy contains billions of stars     (4280-6180-728d-6f3f) [ OBJECT_AGENT:"typical galaxy", QUANTITY_RANGE:"billion", WHAT_IT_CONTAINS:"of star" ]
+	//  Notes: galaxy contains X
+	//row autoRow0 = [TABLE:"CONTAINS", OBJECT_AGENT: "galaxy", WHAT_IT_CONTAINS: "star"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CONTAINS", OBJECT_AGENT: "galaxy", WHAT_IT_CONTAINS: "star"]
+
+	// CENTRALSW       MADEOF: a galaxy is made of stars     (220e-8d69-4cdf-e5e8) [ OBJECT:"galaxy", MATERIAL:"star" ]
+	//        HINTROW a galaxy is made of a group of objects in space     (b39f-7795-d174-4d35) [ OBJECT:"galaxy", MATERIAL:"group of object", SCOPE:"in space" ]
+	//  Notes: galaxy is made of X
+	//row autoRow1 = [TABLE:"MADEOF", OBJECT: "galaxy", MATERIAL: "star"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"MADEOF", OBJECT: "galaxy", MATERIAL: "star"]
+
+	// GROUNDING       KINDOF: a galaxy is a kind of very large system of stars     (dd3b-8dac-b4d6-5fcf) [ HYPONYM:"galaxy", SCOPE1:"very large", HYPERNYM:"system of star" ]
+	//        HINTROW a galaxy is a kind of celestial body ; celestial object     (b4db-2e88-d470-81a1) [ HYPONYM:"galaxy", HYPERNYM:"celestial body;celestial object" ]
+	//        HINTROW a galaxy is a kind of structure     (3149-bd8c-a93d-9ea8) [ HYPONYM:"galaxy", HYPERNYM:"structure" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "galaxy", HYPERNYM: *"POS:NN"+*"POS:IN"+"star"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "galaxy"]
+
+	// GROUNDING       KINDOF: the Milky Way is a kind of spiral galaxy     (dcf5-2c9e-ba31-2aa0) [ HYPONYM:"milky way", HYPERNYM:"spiral galaxy" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "milky way", HYPERNYM: <spiral_0>+"galaxy"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "milky way", HYPERNYM: <spiral_0>+"galaxy"]
+
+	// GROUNDING       KINDOF: a spiral galaxy is a kind of galaxy     (0cdb-c505-1f4b-ac80) [ HYPONYM:"spiral galaxy", HYPERNYM:"galaxy" ]
+	//        HINTROW an irregular galaxy is a kind of galaxy     (c7e0-9c57-73c4-f92f) [ HYPONYM:"irregular galaxy", HYPERNYM:"galaxy" ]
+	//        HINTROW a elliptical galaxy is a kind of galaxy     (1324-018a-3467-d9b3) [ HYPONYM:"elliptical galaxy", HYPERNYM:"galaxy" ]
+	//  Notes: different shape of galaxy
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: <spiral_0>+"galaxy", HYPERNYM: "galaxy"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: <spiral_0>+"galaxy", HYPERNYM: "galaxy"]
+
+	// GROUNDING      (OPTIONAL) KINDOF: a star is a kind of celestial object ; celestial body     (dbe8-e776-f804-99a0) [ HYPONYM:"star", HYPERNYM:"celestial object;celestial body" ]
+	//row *autoRow5 = [TABLE:"KINDOF", HYPONYM: "star", HYPERNYM: "celestial object"] //OVER-CONSTR.
+	row *autoRow5 = [TABLE:"KINDOF", HYPONYM: "star", HYPERNYM: "celestial object"]
+
+	// GROUNDING       KINDOF: spiral is a kind of shape     (493c-13ce-92fc-2017) [ HYPONYM:"spiral", HYPERNYM:"shape" ]
+	//        HINTROW irregular is a kind of shape     (4b11-9e54-e3c1-1f6c) [ HYPONYM:"irregular", HYPERNYM:"shape" ]
+	//        HINTROW elliptical is a kind of shape     (2375-dc07-7da1-9ada) [ HYPONYM:"elliptical", HYPERNYM:"shape" ]
+	//  Notes: X is kind of shape
+	//row autoRow6 = [TABLE:"KINDOF", HYPONYM: <spiral_0>, HYPERNYM: "shape"] //OVER-CONSTR.
+	row autoRow6 = [TABLE:"KINDOF", HYPONYM: <spiral_0>, HYPERNYM: "shape"]
+
+	// CENTRAL         ACTION: a galaxy is held together by gravity     (f1cc-21ec-dccb-baab) [ AGENT_OBJECT:"galaxy", QUANITIFIER:"be", ACTION2:"hold together", HOW:"gravity" ]
+	//row autoRow7 = [UUID:"f1cc-21ec-dccb-baab", AGENT_OBJECT: "galaxy", QUANITIFIER: "be", ACTION2: "hold together", HOW: "gravity"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"f1cc-21ec-dccb-baab", AGENT_OBJECT: "galaxy", QUANITIFIER: "be", ACTION2: "hold together", HOW: "gravity"]
+
+	// CENTRAL         PARTOF: a halo is a part of a galaxy     (6700-1965-7952-abf5) [ PART:"halo", QUANTIFIER1:"be", WHOLE:"galaxy" ]
+	//row autoRow8 = [UUID:"6700-1965-7952-abf5", PART: "halo", QUANTIFIER1: "be", WHOLE: "galaxy"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"6700-1965-7952-abf5", PART: "halo", QUANTIFIER1: "be", WHOLE: "galaxy"]
+
+	// CENTRAL         AFFORDANCES: galaxies can be classified by shape     (9427-406a-f63a-c3ee) [ ACTOR_THING:"galaxy", VERB:"classify", BY_THROUGH_HOW:"shape" ]
+	//row autoRow9 = [UUID:"9427-406a-f63a-c3ee", ACTOR_THING: "galaxy", VERB: "classify", BY_THROUGH_HOW: "shape"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"9427-406a-f63a-c3ee", ACTOR_THING: "galaxy", VERB: "classify", BY_THROUGH_HOW: "shape"]
+
+	// CENTRAL         CONTAINS: a halo contains mostly old stars     (e086-0708-980e-b339) [ OBJECT_AGENT:"halo", QUANTITY_RANGE:"mostly", WHAT_IT_CONTAINS:"old star" ]
+	//row autoRow10 = [UUID:"e086-0708-980e-b339", OBJECT_AGENT: "halo", QUANTITY_RANGE: "mostly", WHAT_IT_CONTAINS: "old star"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"e086-0708-980e-b339", OBJECT_AGENT: "halo", QUANTITY_RANGE: "mostly", WHAT_IT_CONTAINS: "old star"]
+
+	// LEXGLUE         SYNONYMY: composed of means made of     (3e18-eada-4a5f-aeef) [ ACTION1:"compose of", ACTION2:"make of" ]
+	//row autoRow11 = [UUID:"3e18-eada-4a5f-aeef", ACTION1: "compose of", ACTION2: "make of"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"3e18-eada-4a5f-aeef", ACTION1: "compose of", ACTION2: "make of"]
+
+endinferencepattern

@@ -1,0 +1,132 @@
+{"patternMatches": [
+{
+	"patternName":"EARTH_HUMIMP_Source_of_Freshwater",
+	"matches":[
+		{
+		"uuids": ["d7f6-50dd-7ca1-7176","cb0f-c249-986a-bc7c","dddd-0b38-d1b4-2961","d1dd-062b-980f-a57e","0a38-75b6-1b3b-0082","2279-14a1-7023-5437","4a5a-9115-28a9-b97b","db6b-75c4-fea0-f7eb","c6f4-727a-aac3-9aa9","5962-c3e3-67cc-829b","7847-3026-98ee-208e","b927-5436-1d17-c396","7ef1-c28b-22e3-3edc","05be-c29c-dfe4-7212","d495-a1f3-29eb-04fe","1fc0-1a1e-2e4e-6bc7"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d7f6-50dd-7ca1-7176", "rowText": "ice caps are a source of freshwater", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "cb0f-c249-986a-bc7c", "rowText": "the polar ice caps are made of ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "dddd-0b38-d1b4-2961", "rowText": "a ice cap is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d1dd-062b-980f-a57e", "rowText": "polar ice cap is a kind of ice cap", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0a38-75b6-1b3b-0082", "rowText": "glaciers are a kind of major reservoir", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2279-14a1-7023-5437", "rowText": "the majority of freshwater is found in ice caps ; glaciers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4a5a-9115-28a9-b97b", "rowText": "water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "db6b-75c4-fea0-f7eb", "rowText": "if glaciers melt , then the melting glacial ice will be freshwater", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6f4-727a-aac3-9aa9", "rowText": "Antarctic polar ice contains ice ; glaciers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "5962-c3e3-67cc-829b", "rowText": "Earth contains glaciers ; ice caps", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7847-3026-98ee-208e", "rowText": "if the water is freshwater , then the water is not a source of salt", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b927-5436-1d17-c396", "rowText": "a body of water contains water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "7ef1-c28b-22e3-3edc", "rowText": "ice is a kind of solid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "05be-c29c-dfe4-7212", "rowText": "a water reservoir contains water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "d495-a1f3-29eb-04fe", "rowText": "ice is cold in temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "1fc0-1a1e-2e4e-6bc7", "rowText": "fresh water means freshwater", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"cap_1", "value":"cap" },
+			{ "name":"ice_0", "value":"ice" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"cap_1", "value":"caps" },
+			{ "name":"ice_0", "value":"ice" }
+		]
+		},
+		{
+		"uuids": ["d7f6-50dd-7ca1-7176","cb0f-c249-986a-bc7c","dddd-0b38-d1b4-2961","d1dd-062b-980f-a57e","0a38-75b6-1b3b-0082","2279-14a1-7023-5437","4a5a-9115-28a9-b97b","db6b-75c4-fea0-f7eb","c6f4-727a-aac3-9aa9","5962-c3e3-67cc-829b","b927-5436-1d17-c396","7ef1-c28b-22e3-3edc","05be-c29c-dfe4-7212","d495-a1f3-29eb-04fe","1fc0-1a1e-2e4e-6bc7"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d7f6-50dd-7ca1-7176", "rowText": "ice caps are a source of freshwater", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "cb0f-c249-986a-bc7c", "rowText": "the polar ice caps are made of ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "dddd-0b38-d1b4-2961", "rowText": "a ice cap is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d1dd-062b-980f-a57e", "rowText": "polar ice cap is a kind of ice cap", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0a38-75b6-1b3b-0082", "rowText": "glaciers are a kind of major reservoir", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2279-14a1-7023-5437", "rowText": "the majority of freshwater is found in ice caps ; glaciers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4a5a-9115-28a9-b97b", "rowText": "water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "db6b-75c4-fea0-f7eb", "rowText": "if glaciers melt , then the melting glacial ice will be freshwater", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6f4-727a-aac3-9aa9", "rowText": "Antarctic polar ice contains ice ; glaciers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "5962-c3e3-67cc-829b", "rowText": "Earth contains glaciers ; ice caps", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b927-5436-1d17-c396", "rowText": "a body of water contains water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "7ef1-c28b-22e3-3edc", "rowText": "ice is a kind of solid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "05be-c29c-dfe4-7212", "rowText": "a water reservoir contains water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "d495-a1f3-29eb-04fe", "rowText": "ice is cold in temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "1fc0-1a1e-2e4e-6bc7", "rowText": "fresh water means freshwater", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"cap_1", "value":"cap" },
+			{ "name":"ice_0", "value":"ice" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"cap_1", "value":"caps" },
+			{ "name":"ice_0", "value":"ice" }
+		]
+		},
+		{
+		"uuids": ["d7f6-50dd-7ca1-7176","cb0f-c249-986a-bc7c","dddd-0b38-d1b4-2961","d1dd-062b-980f-a57e","0a38-75b6-1b3b-0082","2279-14a1-7023-5437","4a5a-9115-28a9-b97b","c6f4-727a-aac3-9aa9","5962-c3e3-67cc-829b","7847-3026-98ee-208e","b927-5436-1d17-c396","7ef1-c28b-22e3-3edc","05be-c29c-dfe4-7212","d495-a1f3-29eb-04fe","1fc0-1a1e-2e4e-6bc7"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d7f6-50dd-7ca1-7176", "rowText": "ice caps are a source of freshwater", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "cb0f-c249-986a-bc7c", "rowText": "the polar ice caps are made of ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "dddd-0b38-d1b4-2961", "rowText": "a ice cap is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d1dd-062b-980f-a57e", "rowText": "polar ice cap is a kind of ice cap", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0a38-75b6-1b3b-0082", "rowText": "glaciers are a kind of major reservoir", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2279-14a1-7023-5437", "rowText": "the majority of freshwater is found in ice caps ; glaciers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4a5a-9115-28a9-b97b", "rowText": "water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6f4-727a-aac3-9aa9", "rowText": "Antarctic polar ice contains ice ; glaciers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "5962-c3e3-67cc-829b", "rowText": "Earth contains glaciers ; ice caps", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "7847-3026-98ee-208e", "rowText": "if the water is freshwater , then the water is not a source of salt", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b927-5436-1d17-c396", "rowText": "a body of water contains water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "7ef1-c28b-22e3-3edc", "rowText": "ice is a kind of solid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "05be-c29c-dfe4-7212", "rowText": "a water reservoir contains water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "d495-a1f3-29eb-04fe", "rowText": "ice is cold in temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "1fc0-1a1e-2e4e-6bc7", "rowText": "fresh water means freshwater", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"cap_1", "value":"cap" },
+			{ "name":"ice_0", "value":"ice" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"cap_1", "value":"caps" },
+			{ "name":"ice_0", "value":"ice" }
+		]
+		},
+		{
+		"uuids": ["d7f6-50dd-7ca1-7176","cb0f-c249-986a-bc7c","dddd-0b38-d1b4-2961","d1dd-062b-980f-a57e","0a38-75b6-1b3b-0082","2279-14a1-7023-5437","4a5a-9115-28a9-b97b","c6f4-727a-aac3-9aa9","5962-c3e3-67cc-829b","b927-5436-1d17-c396","7ef1-c28b-22e3-3edc","05be-c29c-dfe4-7212","d495-a1f3-29eb-04fe","1fc0-1a1e-2e4e-6bc7"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "d7f6-50dd-7ca1-7176", "rowText": "ice caps are a source of freshwater", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "cb0f-c249-986a-bc7c", "rowText": "the polar ice caps are made of ice", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "dddd-0b38-d1b4-2961", "rowText": "a ice cap is a kind of body of water", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "d1dd-062b-980f-a57e", "rowText": "polar ice cap is a kind of ice cap", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "0a38-75b6-1b3b-0082", "rowText": "glaciers are a kind of major reservoir", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "2279-14a1-7023-5437", "rowText": "the majority of freshwater is found in ice caps ; glaciers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "4a5a-9115-28a9-b97b", "rowText": "water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c6f4-727a-aac3-9aa9", "rowText": "Antarctic polar ice contains ice ; glaciers", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "5962-c3e3-67cc-829b", "rowText": "Earth contains glaciers ; ice caps", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "", "rowText": "", "rowStatic": "true", "rowOptional": "true", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "b927-5436-1d17-c396", "rowText": "a body of water contains water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "7ef1-c28b-22e3-3edc", "rowText": "ice is a kind of solid", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "05be-c29c-dfe4-7212", "rowText": "a water reservoir contains water", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "d495-a1f3-29eb-04fe", "rowText": "ice is cold in temperature", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "1fc0-1a1e-2e4e-6bc7", "rowText": "fresh water means freshwater", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"cap_1", "value":"cap" },
+			{ "name":"ice_0", "value":"ice" }
+		], 
+		"variablesOrigTextInferred": [
+			{ "name":"autoRow10", "value":"" },
+			{ "name":"autoRow7", "value":"" },
+			{ "name":"cap_1", "value":"caps" },
+			{ "name":"ice_0", "value":"ice" }
+		]
+		}
+	]
+}
+]}
+

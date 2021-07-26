@@ -1,0 +1,61 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Plants_Protecting_From_Cold
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       USEDFOR: a greenhouse is used to protect plants from the cold     (0b8a-d16a-4a24-14c5) [ AGENT_OBJECT:"greenhouse", FOR_PURPOSE:"protect", PATIENT:"plant", SCOPE2:"from cold" ]
+	//        HINTROW a greenhouse is used to protect plants by keeping them warm     (029c-4b0e-d2c0-2383) [ AGENT_OBJECT:"greenhouse", FOR_PURPOSE:"protect", PATIENT:"plant", BY_THROUGH_HOW:"keep warm" ]
+	//row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT: "greenhouse", FOR_PURPOSE: "protect", PATIENT: "plant"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"USEDFOR", AGENT_OBJECT: "greenhouse", FOR_PURPOSE: "protect", PATIENT: "plant"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: cold means low in temperature     (cf2a-6257-0c5c-7445) [ THING:"cold", VALUE:"low", ATTRIBUTE:"temperature" ]
+	//        HINTROW warm means medium heat energy ; temperature     (63df-d3d9-56dc-161a) [ THING:"warm", VALUE:"medium;medium", ATTRIBUTE:"heat energy;temperature" ]
+	//row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "cold", ATTRIBUTE: "temperature"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", ATTRIBUTE: "temperature"]
+
+	// GROUNDING       KINDOF: a greenhouse is a kind of shelter for plants     (4349-2e73-8808-3750) [ HYPONYM:"greenhouse", HYPERNYM:"shelter", FOR_PURPOSE:"plant" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "greenhouse", HYPERNYM: "shelter", FOR_PURPOSE: "plant"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: "greenhouse", HYPERNYM: "shelter", FOR_PURPOSE: "plant"]
+
+	// GROUNDING       KINDOF: a lemon tree is a kind of plant     (9cf1-bc5a-d350-5541) [ HYPONYM:"lemon tree", HYPERNYM:"plant" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "lemon tree", HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "lemon tree", HYPERNYM: "plant"]
+
+	// GROUNDING       KINDOF: covering something is a kind of protection     (3e42-533a-ed4d-c99b) [ HYPONYM:"cover something", HYPERNYM:"protect" ]
+	//        HINTROW shelter is a kind of protective covering     (07ae-5b5d-6e83-d86a) [ HYPONYM:"shelter", SCOPE1:"protect", HYPERNYM:"cover" ]
+//WARNING! Slot with no constraints.
+//	//row autoRow4 = [TABLE:"KINDOF"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow4 = [TABLE:"KINDOF"]
+
+	// CENTRAL         IFTHEN: if the environmental temperature ; air temperature is too cold then an animal ; a living thing in that environment may become cold     (2460-c937-4e53-293a) [ THING:"environment temperature;air temperature", ADJ_QUANTITY1A:"too", OBJECT_PROPERTY1:"cold", ACTOR_AGENT_PROCESS2:"animal;live thing", PROPERTY_SCOPE:"in that environment", OBJECT_PROPERTY3:"cold" ]
+	//row autoRow5 = [UUID:"2460-c937-4e53-293a", THING: "environment temperature", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "live thing", PROPERTY_SCOPE: "in that environment", OBJECT_PROPERTY3: "cold"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"2460-c937-4e53-293a", THING: "environment temperature", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "live thing", PROPERTY_SCOPE: "in that environment", OBJECT_PROPERTY3: "cold"]
+
+	// CENTRAL         AFFECT: cold temperatures usually have a negative impact on organisms     (cf66-dfc6-48d2-57ce) [ ACTOR_WHO:"cold temperature", QUALIFIER1:"usually", POSITIVE_NEGATIVE:"negative", PATIENT:"organism" ]
+	//row autoRow6 = [UUID:"cf66-dfc6-48d2-57ce", ACTOR_WHO: "cold temperature", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"cf66-dfc6-48d2-57ce", ACTOR_WHO: "cold temperature", QUALIFIER1: "usually", POSITIVE_NEGATIVE: "negative", PATIENT: "organism"]
+
+	// CENTRAL         AFFECT: protecting a living thing has a positive impact on that living thing 's survival ; health     (1992-cbd3-6534-a7f7) [ VERB:"protect", OBJECT_PROPERTY:"live thing", POSITIVE_NEGATIVE:"positive", ADJ:"live thing", PATIENT:"survive;health" ]
+	//row autoRow7 = [UUID:"1992-cbd3-6534-a7f7", VERB: "protect", OBJECT_PROPERTY: "live thing", POSITIVE_NEGATIVE: "positive", ADJ: "live thing", PATIENT: "survive"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"1992-cbd3-6534-a7f7", VERB: "protect", OBJECT_PROPERTY: "live thing", POSITIVE_NEGATIVE: "positive", ADJ: "live thing", PATIENT: "survive"]
+
+	// CENTRAL         IFTHEN: if a living thing becomes too cold then that living thing will die     (d662-f8eb-acab-099f) [ THING:"live thing", ACTION1:"become", ADJ_QUANTITY1A:"too", OBJECT_PROPERTY1:"cold", ACTOR_AGENT_PROCESS2:"that live thing", ACTION3:"die" ]
+	//row autoRow8 = [UUID:"d662-f8eb-acab-099f", THING: "live thing", ACTION1: "become", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "that live thing", ACTION3: "die"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"d662-f8eb-acab-099f", THING: "live thing", ACTION1: "become", ADJ_QUANTITY1A: "too", OBJECT_PROPERTY1: "cold", ACTOR_AGENT_PROCESS2: "that live thing", ACTION3: "die"]
+
+	// CENTRAL         KINDOF: a plant is a kind of organism     (26c3-eec4-e1d0-fac5) [ HYPONYM:"plant", HYPERNYM:"organism" ]
+	//  Notes: peripheral
+	//row autoRow9 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"26c3-eec4-e1d0-fac5", HYPONYM: "plant", HYPERNYM: "organism"]
+
+	// LEXGLUE         SYNONYMY: an organism is a living thing     (87a0-dd02-dd6d-ee60) [ X1:"organism", X2:"live thing" ]
+	//row autoRow10 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"87a0-dd02-dd6d-ee60", X1: "organism", X2: "live thing"]
+
+endinferencepattern

@@ -1,0 +1,85 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Erosion_Inhibited_by_Plantlife
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       CHANGE-VEC: tree roots decrease ; reduce soil erosion     (08a7-34bf-d1a2-f681) [ AGENT_OBJECT:"tree root", DIRECTION:"decrease;reduce", PATIENT:"soil erode" ]
+	//        HINTROW grass roots decrease ; reduce soil erosion     (3f27-9a07-5cec-f5dd) [ AGENT_OBJECT:"grass root", DIRECTION:"decrease;reduce", PATIENT:"soil erode" ]
+	//  Notes: 2996-0b6b-14c4-7682->08a7-34bf-d1a2-f681;dbcf-a20c-58fa-486f->3f27-9a07-5cec-f5dd
+	//row autoRow0 = [TABLE:"CHANGE-VEC", AGENT_OBJECT: <tree_0>+"root", DIRECTION: "decrease", PATIENT: "soil erode"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"CHANGE-VEC", AGENT_OBJECT: <tree_0>+"root", DIRECTION: "decrease", PATIENT: "soil erode"]
+
+	// CENTRALSW       CAUSE: rain causes erosion     (82b3-4291-31b5-2502) [ CONDITION_AGENT_OBJECT:"rain", RESULT_VERB:"erode" ]
+	//        HINTROW wind causes erosion     (562c-c77b-8ec7-4ab5) [ CONDITION_AGENT_OBJECT:"wind", RESULT_AGENT:"erode" ]
+	//        HINTROW wind and rain ; storms cause erosion     (a4ff-959e-a3ef-5a67) [ CONDITION_AGENT_OBJECT:"wind rain;storm", RESULT_AGENT:"erode" ]
+	//        HINTROW being exposed to wind ; water ; animals ; heat can cause erosion of soil ; of rocks     (ddd5-9774-f7cb-82f6) [ CONDITION_VERB:"be expose", CONDITION_PATIENT:"wind;water;animal;heat", RESULT_AGENT:"erode", SCOPE2:"of soil;of rock" ]
+	//  Notes: X causes erosion
+//WARNING! Slot with no constraints.
+//	//row autoRow1 = [TABLE:"CAUSE"] //OVER-CONSTR.
+//WARNING! Slot with no constraints.
+//	row autoRow1 = [TABLE:"CAUSE"]
+
+	// GROUNDING       KINDOF: a tree is a kind of plant     (0d3a-8739-9f42-5e1c) [ HYPONYM:"tree", HYPERNYM:"plant" ]
+	//        HINTROW grass is a kind of green plant     (9d2f-b39b-3921-a54c) [ HYPONYM:"grass", SCOPE1:"green", HYPERNYM:"plant" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <tree_0>, HYPERNYM: "plant"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <tree_0>, HYPERNYM: "plant"]
+
+	// GROUNDING       KINDOF: rain is a kind of water     (214a-9ca3-2983-aa79) [ HYPONYM:"rain", HYPERNYM:"water" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "rain", HYPERNYM: "water"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "rain", HYPERNYM: "water"]
+
+	// CENTRAL         TRANSFER: soil erosion is when wind ; moving water ; gravity moves soil from fields ; environments     (4c93-e1e3-546a-8cfa) [ PROCESS_NAME:"soil erode", ACTOR_WHO:"wind;move water;gravity", VERB:"move;move", WHAT:"soil", SOURCE:"field;environment" ]
+	//row autoRow4 = [UUID:"4c93-e1e3-546a-8cfa", PROCESS_NAME: "soil erode", ACTOR_WHO: "move water", VERB: "move", WHAT: "soil", SOURCE: "field"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"4c93-e1e3-546a-8cfa", PROCESS_NAME: "soil erode", ACTOR_WHO: "move water", VERB: "move", WHAT: "soil", SOURCE: "field"]
+
+	// CENTRAL         PROCESSROLES: In the erosion process roots of plants are an inhibitor     (d54f-e502-fa51-788d) [ PROCESS_NAME:"erode", ACTOR_COMMON_EXAMPLE:"root of plant", ROLE:"inhibit" ]
+	//row autoRow5 = [UUID:"d54f-e502-fa51-788d", PROCESS_NAME: "erode", ACTOR_COMMON_EXAMPLE: "root of plant", ROLE: "inhibit"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"d54f-e502-fa51-788d", PROCESS_NAME: "erode", ACTOR_COMMON_EXAMPLE: "root of plant", ROLE: "inhibit"]
+
+	// CENTRAL         PARTOF: roots are a part of a plant ; tree     (6cdd-9626-9859-7279) [ PART:"root", WHOLE:"plant;tree" ]
+	//row autoRow6 = [UUID:"6cdd-9626-9859-7279", PART: "root", WHOLE: <tree_0>] //OVER-CONSTR.
+	row autoRow6 = [UUID:"6cdd-9626-9859-7279", PART: "root", WHOLE: <tree_0>]
+
+	// CENTRAL         CHANGE-VEC: soil erosion means soil loss through wind ; water ; animals     (5e75-4bbb-dae0-311f) [ PROCESS_NAME_ACTION:"soil erode", AGENT_OBJECT:"soil", DIRECTION:"lose", BY_THROUGH_HOW:"wind;water;animal" ]
+	//row autoRow7 = [UUID:"5e75-4bbb-dae0-311f", PROCESS_NAME_ACTION: "soil erode", AGENT_OBJECT: "soil", DIRECTION: "lose", BY_THROUGH_HOW: "wind"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"5e75-4bbb-dae0-311f", PROCESS_NAME_ACTION: "soil erode", AGENT_OBJECT: "soil", DIRECTION: "lose", BY_THROUGH_HOW: "wind"]
+
+	// CENTRAL         AFFECT: erosion of soil has a negative impact on the environment ; soil quality     (1fc9-87b3-4b09-6451) [ VERB:"erode", OBJECT_PROPERTY:"of soil", POSITIVE_NEGATIVE:"negative", PATIENT:"environment;soil quality" ]
+	//row autoRow8 = [UUID:"1fc9-87b3-4b09-6451", VERB: "erode", OBJECT_PROPERTY: "of soil", POSITIVE_NEGATIVE: "negative", PATIENT: "soil quality"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"1fc9-87b3-4b09-6451", VERB: "erode", OBJECT_PROPERTY: "of soil", POSITIVE_NEGATIVE: "negative", PATIENT: "soil quality"]
+
+	// CENTRAL         CAUSE: removing an inhibitor of a process causes that process     (edb7-8723-f5ce-c5d8) [ CONDITION_VERB:"remove", CONDITION_PATIENT:"inhibit of process", RESULT_AGENT:"that process" ]
+	//row autoRow9 = [UUID:"edb7-8723-f5ce-c5d8", CONDITION_VERB: "remove", CONDITION_PATIENT: "inhibit of process", RESULT_AGENT: "that process"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"edb7-8723-f5ce-c5d8", CONDITION_VERB: "remove", CONDITION_PATIENT: "inhibit of process", RESULT_AGENT: "that process"]
+
+	// CENTRAL         ACTION: roots hold soil in place     (70be-f77b-7def-9453) [ AGENT_OBJECT:"root", ACTION2:"hold", OBJECT_PROPERTY:"soil", WHEN_WHERE:"in place" ]
+	//row autoRow10 = [UUID:"70be-f77b-7def-9453", AGENT_OBJECT: "root", ACTION2: "hold", OBJECT_PROPERTY: "soil", WHEN_WHERE: "in place"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"70be-f77b-7def-9453", AGENT_OBJECT: "root", ACTION2: "hold", OBJECT_PROPERTY: "soil", WHEN_WHERE: "in place"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as the deforestation increases , the soil erosion will increase     (b1c8-b2b3-3088-3bb5) [ AGENT_ATTRIBUTE1:"deforestation", CHANGE1:"increase", AGENT_ATTRIBUTE2:"soil erode", CHANGE2:"increase" ]
+	//  Notes: 8c00-2062-f745-cb8a->b1c8-b2b3-3088-3bb5
+	//row autoRow11 = [UUID:"b1c8-b2b3-3088-3bb5", AGENT_ATTRIBUTE1: "deforestation", CHANGE1: "increase", AGENT_ATTRIBUTE2: "soil erode", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"b1c8-b2b3-3088-3bb5", AGENT_ATTRIBUTE1: "deforestation", CHANGE1: "increase", AGENT_ATTRIBUTE2: "soil erode", CHANGE2: "increase"]
+
+	// CENTRAL         AFFECT: planting trees has a positive impact on an ecosystem     (53a9-7d7d-dbcb-98aa) [ VERB:"plant", OBJECT_PROPERTY:"tree", POSITIVE_NEGATIVE:"positive", PATIENT:"ecosystem" ]
+	//row autoRow12 = [UUID:"53a9-7d7d-dbcb-98aa", VERB: "plant", OBJECT_PROPERTY: <tree_0>, POSITIVE_NEGATIVE: "positive", PATIENT: "ecosystem"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"53a9-7d7d-dbcb-98aa", VERB: "plant", OBJECT_PROPERTY: <tree_0>, POSITIVE_NEGATIVE: "positive", PATIENT: "ecosystem"]
+
+	// CENTRAL        (OPTIONAL) AFFECT: decreasing something negative has a positive impact on a thing     (d390-3d50-786d-4e9f) [ VERB:"decrease", OBJECT_PROPERTY:"something negative", POSITIVE_NEGATIVE:"positive", PATIENT:"thing" ]
+	//row *autoRow13 = [UUID:"d390-3d50-786d-4e9f", VERB: "decrease", OBJECT_PROPERTY: "something negative", POSITIVE_NEGATIVE: "positive", PATIENT: "thing"] //OVER-CONSTR.
+	row *autoRow13 = [UUID:"d390-3d50-786d-4e9f", VERB: "decrease", OBJECT_PROPERTY: "something negative", POSITIVE_NEGATIVE: "positive", PATIENT: "thing"]
+
+	// LEXGLUE         SYNONYMY: inhibitor means something that prevents something from happening     (1ec2-4fac-096f-d2fc) [ X1:"inhibit", X2:"something", ACTION2:"prevent something from happen" ]
+	//row autoRow14 = [UUID:"1ec2-4fac-096f-d2fc", X1: "inhibit", X2: "something", ACTION2: "prevent something from happen"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"1ec2-4fac-096f-d2fc", X1: "inhibit", X2: "something", ACTION2: "prevent something from happen"]
+
+	// LEXGLUE         SYNONYMY: to inhibit means to prevent     (83fc-2b11-a88e-56cd) [ ACTION1:"inhibit", ACTION2:"prevent" ]
+	//row autoRow15 = [UUID:"83fc-2b11-a88e-56cd", ACTION1: "inhibit", ACTION2: "prevent"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"83fc-2b11-a88e-56cd", ACTION1: "inhibit", ACTION2: "prevent"]
+
+endinferencepattern

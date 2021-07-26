@@ -1,0 +1,575 @@
+{"patternMatches": [
+{
+	"patternName":"ENG_CONV_Conversion_Chemical_to_Mechanical_Energy",
+	"matches":[
+		{
+		"uuids": ["eb14-f908-f76d-7cf0","bc22-ba46-53be-ea3a","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eb14-f908-f76d-7cf0", "rowText": "a car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc22-ba46-53be-ea3a", "rowText": "coal is a kind of fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eb14-f908-f76d-7cf0","3092-233a-f999-2512","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eb14-f908-f76d-7cf0", "rowText": "a car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3092-233a-f999-2512", "rowText": "oil is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eb14-f908-f76d-7cf0","88c2-bbdf-af6c-6742","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eb14-f908-f76d-7cf0", "rowText": "a car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "88c2-bbdf-af6c-6742", "rowText": "petroleum is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eb14-f908-f76d-7cf0","96b8-8897-2576-7ee6","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eb14-f908-f76d-7cf0", "rowText": "a car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "96b8-8897-2576-7ee6", "rowText": "gasoline is a kind of fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eb14-f908-f76d-7cf0","ba85-c8f3-c662-1200","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eb14-f908-f76d-7cf0", "rowText": "a car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "ba85-c8f3-c662-1200", "rowText": "vegetable oil is a kind of fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eb14-f908-f76d-7cf0","5309-2b3c-1fc5-ecbd","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eb14-f908-f76d-7cf0", "rowText": "a car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5309-2b3c-1fc5-ecbd", "rowText": "biofuel is a kind of fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["eb14-f908-f76d-7cf0","TEMPGEN-326554","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "eb14-f908-f76d-7cf0", "rowText": "a car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-326554", "rowText": "cook oil is a kind of fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["c9c3-ae93-6335-a96e","bc22-ba46-53be-ea3a","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c9c3-ae93-6335-a96e", "rowText": "a motorcycle is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc22-ba46-53be-ea3a", "rowText": "coal is a kind of fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["c9c3-ae93-6335-a96e","3092-233a-f999-2512","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c9c3-ae93-6335-a96e", "rowText": "a motorcycle is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3092-233a-f999-2512", "rowText": "oil is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["c9c3-ae93-6335-a96e","88c2-bbdf-af6c-6742","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c9c3-ae93-6335-a96e", "rowText": "a motorcycle is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "88c2-bbdf-af6c-6742", "rowText": "petroleum is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["c9c3-ae93-6335-a96e","96b8-8897-2576-7ee6","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c9c3-ae93-6335-a96e", "rowText": "a motorcycle is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "96b8-8897-2576-7ee6", "rowText": "gasoline is a kind of fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["c9c3-ae93-6335-a96e","ba85-c8f3-c662-1200","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c9c3-ae93-6335-a96e", "rowText": "a motorcycle is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "ba85-c8f3-c662-1200", "rowText": "vegetable oil is a kind of fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["c9c3-ae93-6335-a96e","5309-2b3c-1fc5-ecbd","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c9c3-ae93-6335-a96e", "rowText": "a motorcycle is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5309-2b3c-1fc5-ecbd", "rowText": "biofuel is a kind of fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["c9c3-ae93-6335-a96e","TEMPGEN-326554","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "c9c3-ae93-6335-a96e", "rowText": "a motorcycle is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-326554", "rowText": "cook oil is a kind of fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-327000","bc22-ba46-53be-ea3a","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-327000", "rowText": "bumper car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "bc22-ba46-53be-ea3a", "rowText": "coal is a kind of fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-327000","3092-233a-f999-2512","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-327000", "rowText": "bumper car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "3092-233a-f999-2512", "rowText": "oil is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-327000","88c2-bbdf-af6c-6742","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-327000", "rowText": "bumper car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "88c2-bbdf-af6c-6742", "rowText": "petroleum is a kind of fossil fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-327000","96b8-8897-2576-7ee6","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-327000", "rowText": "bumper car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "96b8-8897-2576-7ee6", "rowText": "gasoline is a kind of fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-327000","ba85-c8f3-c662-1200","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-327000", "rowText": "bumper car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "ba85-c8f3-c662-1200", "rowText": "vegetable oil is a kind of fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-327000","5309-2b3c-1fc5-ecbd","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-327000", "rowText": "bumper car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "5309-2b3c-1fc5-ecbd", "rowText": "biofuel is a kind of fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		},
+		{
+		"uuids": ["TEMPGEN-327000","TEMPGEN-326554","144d-b049-cabe-6198","941b-2c2b-0aae-ee3a","3d34-b43e-8a7e-07fd","f58a-3073-53ae-87b4","5029-a71e-ab37-c4f9","9314-ce5b-a917-1d9c","c23e-4123-ef7b-6907","1b14-afc4-9d2b-8dbd","8f4b-dcdb-2be5-9423","3c28-d2a7-4f05-ca25","9e7d-986e-6af1-5ac1","f742-384b-744c-10a9","7cb7-40ac-f4d5-eb6c","d047-715f-550d-3eaa"],
+		"slots": [
+			{"rowSlotName": "autoRow0", "uuid": "TEMPGEN-327000", "rowText": "bumper car is a kind of automobile", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow1", "uuid": "TEMPGEN-326554", "rowText": "cook oil is a kind of fuel", "rowStatic": "false", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow2", "uuid": "144d-b049-cabe-6198", "rowText": "a internal combustion engine ; car engine ; automobile engine usually converts fuel ; chemical energy into mechanical energy and heat energy through combustion", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow3", "uuid": "941b-2c2b-0aae-ee3a", "rowText": "combustion means fire converts chemical energy into light energy and heat energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow4", "uuid": "3d34-b43e-8a7e-07fd", "rowText": "energy transformation means one kind of energy changes into another kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow5", "uuid": "f58a-3073-53ae-87b4", "rowText": "an internal combustion engine is used to move the automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow6", "uuid": "5029-a71e-ab37-c4f9", "rowText": "a combustion engine requires fuel to operate", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow7", "uuid": "9314-ce5b-a917-1d9c", "rowText": "mechanical energy can cause objects to move", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow8", "uuid": "c23e-4123-ef7b-6907", "rowText": "fuel contains chemical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow9", "uuid": "1b14-afc4-9d2b-8dbd", "rowText": "fuel is a kind of energy source", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow10", "uuid": "8f4b-dcdb-2be5-9423", "rowText": "kinetic energy is a kind of mechanical energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow11", "uuid": "3c28-d2a7-4f05-ca25", "rowText": "an engine is a part of an automobile", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow12", "uuid": "9e7d-986e-6af1-5ac1", "rowText": "heat is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow13", "uuid": "f742-384b-744c-10a9", "rowText": "light is a kind of energy", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow14", "uuid": "7cb7-40ac-f4d5-eb6c", "rowText": "an automobile is a kind of vehicle", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"},
+			{"rowSlotName": "autoRow15", "uuid": "d047-715f-550d-3eaa", "rowText": "a vehicle is a kind of object", "rowStatic": "true", "rowOptional": "false", "relaxedCount": "0"}
+		], 
+		"variables": [
+
+		], 
+		"variablesOrigTextInferred": [
+
+		]
+		}
+	]
+}
+]}
+

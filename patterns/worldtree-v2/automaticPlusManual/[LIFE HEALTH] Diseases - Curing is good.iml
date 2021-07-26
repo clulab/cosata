@@ -1,0 +1,52 @@
+// Automatically converted pattern
+inferencepattern LIFE_HEALTH_Diseases_Curing_is_good
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       AFFECT: disease has a negative impact on an organism     (834c-378f-a471-62e0) [ ACTOR_WHO:"disease", POSITIVE_NEGATIVE:"negative", PATIENT:"organism" ]
+	//        HINTROW illness has a negative impact on an organism 's health     (0c02-ef0b-7f35-1468) [ ACTOR_WHO:"illness", POSITIVE_NEGATIVE:"negative", PATIENT:"organism health" ]
+	//row autoRow0 = [TABLE:"AFFECT", POSITIVE_NEGATIVE: "negative", PATIENT: "organism"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"AFFECT", POSITIVE_NEGATIVE: "negative", PATIENT: "organism"]
+
+	// CENTRAL         AFFECT: decreasing something negative has a positive impact on a thing     (d390-3d50-786d-4e9f) [ VERB:"decrease", OBJECT_PROPERTY:"something negative", POSITIVE_NEGATIVE:"positive", PATIENT:"thing" ]
+	//row autoRow1 = [UUID:"d390-3d50-786d-4e9f", VERB: "decrease", OBJECT_PROPERTY: "something negative", POSITIVE_NEGATIVE: "positive", PATIENT: "thing"] //OVER-CONSTR.
+	row autoRow1 = [UUID:"d390-3d50-786d-4e9f", VERB: "decrease", OBJECT_PROPERTY: "something negative", POSITIVE_NEGATIVE: "positive", PATIENT: "thing"]
+
+	// CENTRAL         AFFECT: learning about the cause of a disease has a positive impact on finding a cure for the disease     (b78b-23bd-d0fc-8d81) [ VERB:"learn", OBJECT_PROPERTY:"about cause of disease", POSITIVE_NEGATIVE:"positive", PATIENT:"find cure for disease" ]
+	//row autoRow2 = [UUID:"b78b-23bd-d0fc-8d81", VERB: "learn", OBJECT_PROPERTY: "about cause of disease", POSITIVE_NEGATIVE: "positive", PATIENT: "find cure for disease"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"b78b-23bd-d0fc-8d81", VERB: "learn", OBJECT_PROPERTY: "about cause of disease", POSITIVE_NEGATIVE: "positive", PATIENT: "find cure for disease"]
+
+	// CENTRAL         SOURCEOF: vaccines are a source of long-term immunity against some diseases for the human body     (5eb4-3a39-73f3-372b) [ AGENT:"vaccine", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"long-term immunity against disease;long term immunity against disease", AGENT_IT_PROVIDES_THING_TO:"human body" ]
+	//row autoRow3 = [UUID:"5eb4-3a39-73f3-372b", AGENT: "vaccine", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "long term immunity against disease", AGENT_IT_PROVIDES_THING_TO: "human body"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"5eb4-3a39-73f3-372b", AGENT: "vaccine", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "long term immunity against disease", AGENT_IT_PROVIDES_THING_TO: "human body"]
+
+	// CENTRAL         AFFORDANCES: vaccines can help prevent illness     (c170-8ed0-d311-238e) [ ACTOR_THING:"vaccine", VERB:"help prevent", PATIENT:"illness" ]
+	//row autoRow4 = [UUID:"c170-8ed0-d311-238e", ACTOR_THING: "vaccine", VERB: "help prevent", PATIENT: "illness"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"c170-8ed0-d311-238e", ACTOR_THING: "vaccine", VERB: "help prevent", PATIENT: "illness"]
+
+	// CENTRAL         USEDFOR: research is used for learning     (63dd-9207-8bdb-61e9) [ AGENT_OBJECT:"research", FOR_PURPOSE:"learn" ]
+	//row autoRow5 = [UUID:"63dd-9207-8bdb-61e9", AGENT_OBJECT: "research", FOR_PURPOSE: "learn"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"63dd-9207-8bdb-61e9", AGENT_OBJECT: "research", FOR_PURPOSE: "learn"]
+
+	// CENTRAL         CHANGE-VEC: preventing something decreases the amount of that something     (1653-a7fe-e9be-42ca) [ PROCESS_NAME_ACTION:"prevent", AGENT_OBJECT:"something", DIRECTION:"decrease", QUANTITY:"amount of", PATIENT:"something" ]
+	//row autoRow6 = [UUID:"1653-a7fe-e9be-42ca", PROCESS_NAME_ACTION: "prevent", AGENT_OBJECT: "something", DIRECTION: "decrease", QUANTITY: "amount of", PATIENT: "something"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"1653-a7fe-e9be-42ca", PROCESS_NAME_ACTION: "prevent", AGENT_OBJECT: "something", DIRECTION: "decrease", QUANTITY: "amount of", PATIENT: "something"]
+
+	// LEXGLUE         SYNONYMY: cure means solution to being sick     (16ea-bfa4-07c6-c55d) [ X1:"cure", X2:"solution be sick" ]
+	//row autoRow7 = [UUID:"16ea-bfa4-07c6-c55d", X1: "cure", X2: "solution be sick"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"16ea-bfa4-07c6-c55d", X1: "cure", X2: "solution be sick"]
+
+	// LEXGLUE         SYNONYMY: solution is similar to a positive impact     (10ba-91e7-e31b-c025) [ X1:"solution", X2:"positive impact" ]
+	//row autoRow8 = [UUID:"10ba-91e7-e31b-c025", X1: "solution", X2: "positive impact"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"10ba-91e7-e31b-c025", X1: "solution", X2: "positive impact"]
+
+	// LEXGLUE         SYNONYMY: a positive impact is a benefit     (d0e2-806e-adad-7e98) [ X1:"positive impact", X2:"benefit" ]
+	//row autoRow9 = [UUID:"d0e2-806e-adad-7e98", X1: "positive impact", X2: "benefit"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"d0e2-806e-adad-7e98", X1: "positive impact", X2: "benefit"]
+
+endinferencepattern

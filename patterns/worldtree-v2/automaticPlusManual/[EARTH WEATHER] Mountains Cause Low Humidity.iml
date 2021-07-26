@@ -1,0 +1,89 @@
+// Automatically converted pattern
+inferencepattern EARTH_WEATHER_Mountains_Cause_Low_Humidity
+
+	// Plain text description
+	description = "the example of California is the background information"
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       PROP-GENERIC: humidity is a property of weather and include ordered values of dry ; humid     (33cb-429a-ce86-2d79) [ X:"humidity", Y:"weather", ORDERED_UNORDERED:"order", VALUES:"spin-dry;humid" ]
+	//        HINTROW moisture is a property of air mass and includes ordered values of dry ; humid     (fa3b-1528-2b6e-4d28) [ X:"moisture", Y:"air mass", ORDERED_UNORDERED:"order", VALUES:"spin-dry;humid" ]
+	//row autoRow0 = [TABLE:"PROP-GENERIC", ORDERED_UNORDERED: "order", VALUES: "spin-dry"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"PROP-GENERIC", ORDERED_UNORDERED: "order", VALUES: "spin-dry"]
+
+	// CENTRALSW       ATTRIBUTE-VALUE-RANGE: dry means low in amount of water ; wetness ; moisture     (5554-6d9d-779d-d5f5) [ THING:"spin-dry", VALUE:"low", ATTRIBUTE:"amount of water;wet;moisture" ]
+	//        HINTROW drier means lower in amount of water ; wetness ; moisture     (3cfa-bd2a-6867-18ba) [ THING:"dry", VALUE:"low", ATTRIBUTE:"amount of water;wet;moisture" ]
+	//row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", THING: "spin-dry", VALUE: "low", ATTRIBUTE: "amount of water"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"ATTRIBUTE-VALUE-RANGE", VALUE: "low", ATTRIBUTE: "amount of water"]
+
+	// GROUNDING       KINDOF: an ocean is a kind of body of water     (466a-2c15-ac54-8361) [ HYPONYM:"ocean", HYPERNYM:"body of water" ]
+	//        HINTROW a bay is a kind of body of water     (0596-e537-4cc3-192c) [ HYPONYM:"bay", HYPERNYM:"body of water" ]
+	//  Notes: peripheral
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: "ocean", HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPERNYM: "body of water"]
+
+	// GROUNDING       KINDOF: the Sierra Nevada is a kind of mountain range     (9308-078a-9edb-d453) [ HYPONYM:"sierra nevada", SCOPE1:"mountain", HYPERNYM:"range" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "sierra nevada", SCOPE1: "mountain", HYPERNYM: "range"] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "sierra nevada", SCOPE1: "mountain", HYPERNYM: "range"]
+
+	// CENTRAL         MEASUREMENTS: humidity is the amount of water vapor ; moisture in the air ; in the atmosphere     (1c42-416a-fc92-2b03) [ MEASURE:"humidity", QUANTITY_ADJ:"amount of", ATTRIBUTE:"water vapor;moisture", SCOPE:"in air;in atmosphere" ]
+	//row autoRow4 = [UUID:"1c42-416a-fc92-2b03", MEASURE: "humidity", QUANTITY_ADJ: "amount of", ATTRIBUTE: "water vapor", SCOPE: "in air"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"1c42-416a-fc92-2b03", MEASURE: "humidity", QUANTITY_ADJ: "amount of", ATTRIBUTE: "water vapor", SCOPE: "in air"]
+
+	// CENTRAL        (OPTIONAL) SUBDIVISION-GENERICSPATIAL: a coast is where land meets the edge of a body of water     (8d65-5a72-dae4-fb86) [ SUBDIVISION:"coast", TYPE_OF_SUBDIVISION:"land", PART:"edge of", WHOLE:"body of water" ]
+	//row *autoRow5 = [UUID:"8d65-5a72-dae4-fb86", SUBDIVISION: "coast", TYPE_OF_SUBDIVISION: "land", PART: "edge of", WHOLE: "body of water"] //OVER-CONSTR.
+	row *autoRow5 = [UUID:"8d65-5a72-dae4-fb86", SUBDIVISION: "coast", TYPE_OF_SUBDIVISION: "land", PART: "edge of", WHOLE: "body of water"]
+
+	// CENTRAL         COUPLEDRELATIONSHIP: as distance from water decreases , humidity will increase     (b9e7-6612-b3bc-264a) [ QUANTITY_MEASURE1:"distance", SCOPE1A:"from water", CHANGE1:"decrease", AGENT_ATTRIBUTE2:"humidity", CHANGE2:"increase" ]
+	//row autoRow6 = [UUID:"b9e7-6612-b3bc-264a", QUANTITY_MEASURE1: "distance", SCOPE1A: "from water", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "humidity", CHANGE2: "increase"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"b9e7-6612-b3bc-264a", QUANTITY_MEASURE1: "distance", SCOPE1A: "from water", CHANGE1: "decrease", AGENT_ATTRIBUTE2: "humidity", CHANGE2: "increase"]
+
+	// CENTRAL        (OPTIONAL) SUBDIVISION-COUNTRY: California is a state located in the United States of America     (0409-e9e6-43fb-ed4c) [ SUBDIVISION:"california", TYPE_OF_SUBDIVISION:"state", COUNTRY:"unite state of america" ]
+	//row *autoRow7 = [UUID:"0409-e9e6-43fb-ed4c", SUBDIVISION: "california", TYPE_OF_SUBDIVISION: "state", COUNTRY: "unite state of america"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"0409-e9e6-43fb-ed4c", SUBDIVISION: "california", TYPE_OF_SUBDIVISION: "state", COUNTRY: "unite state of america"]
+
+	// CENTRAL        (OPTIONAL) LOCATIONS: California is located on the west coast of United States     (e9a6-c7ef-f345-0cf4) [ THING_PROCESS:"california", LOCATION:"west coast", SCOPE:"of unite state" ]
+	//row *autoRow8 = [UUID:"e9a6-c7ef-f345-0cf4", THING_PROCESS: "california", LOCATION: "west coast", SCOPE: "of unite state"] //OVER-CONSTR.
+	row *autoRow8 = [UUID:"e9a6-c7ef-f345-0cf4", THING_PROCESS: "california", LOCATION: "west coast", SCOPE: "of unite state"]
+
+	// CENTRAL         SUBDIVISION-COUNTRY: Nevada is a state located in the United States of America     (e30b-6621-73f9-b0a3) [ SUBDIVISION:"nevada", TYPE_OF_SUBDIVISION:"state", COUNTRY:"unite state of america" ]
+	//row autoRow9 = [UUID:"e30b-6621-73f9-b0a3", SUBDIVISION: "nevada", TYPE_OF_SUBDIVISION: "state", COUNTRY: "unite state of america"] //OVER-CONSTR.
+	row autoRow9 = [UUID:"e30b-6621-73f9-b0a3", SUBDIVISION: "nevada", TYPE_OF_SUBDIVISION: "state", COUNTRY: "unite state of america"]
+
+	// CENTRAL         IFTHEN: if water vapor is limited to reach a location , then that location will be dry     (9560-9231-3442-560a) [ THING:"water vapor", ACTION1:"limit reach locate", ACTOR_AGENT_PROCESS2:"locate", OBJECT_PROPERTY3:"spin-dry" ]
+	//row autoRow10 = [UUID:"9560-9231-3442-560a", THING: "water vapor", ACTION1: "limit reach locate", ACTOR_AGENT_PROCESS2: "locate", OBJECT_PROPERTY3: "spin-dry"] //OVER-CONSTR.
+	row autoRow10 = [UUID:"9560-9231-3442-560a", THING: "water vapor", ACTION1: "limit reach locate", ACTOR_AGENT_PROCESS2: "locate", OBJECT_PROPERTY3: "spin-dry"]
+
+	// CENTRAL         ACTION: mountains can limit the water vapor reaching a location     (4fbc-136a-0180-b884) [ AGENT_OBJECT:"mountain", ACTION2:"limit", OBJECT_PROPERTY:"water vapor", FOR_PURPOSE:"reach locate" ]
+	//row autoRow11 = [UUID:"4fbc-136a-0180-b884", AGENT_OBJECT: "mountain", ACTION2: "limit", OBJECT_PROPERTY: "water vapor", FOR_PURPOSE: "reach locate"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"4fbc-136a-0180-b884", AGENT_OBJECT: "mountain", ACTION2: "limit", OBJECT_PROPERTY: "water vapor", FOR_PURPOSE: "reach locate"]
+
+	// CENTRAL         SOURCEOF: oceans are the source of most of water vapor in the atmosphere     (264c-58db-a41c-9483) [ AGENT:"ocean", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"much of water vapor", SCOPE:"in atmosphere" ]
+	//row autoRow12 = [UUID:"264c-58db-a41c-9483", AGENT: "ocean", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "much of water vapor", SCOPE: "in atmosphere"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"264c-58db-a41c-9483", AGENT: "ocean", VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "much of water vapor", SCOPE: "in atmosphere"]
+
+	// CENTRAL         KINDOF: the United States of America is a kind of location     (664b-4f0e-914c-f410) [ HYPONYM:"unite state of america", HYPERNYM:"locate" ]
+	//  Notes: peripheral
+	//row autoRow13 = [UUID:"664b-4f0e-914c-f410", HYPONYM: "unite state of america", HYPERNYM: "locate"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"664b-4f0e-914c-f410", HYPONYM: "unite state of america", HYPERNYM: "locate"]
+
+	// CENTRAL        (OPTIONAL) PROP-THINGS: the climate is high in humidity in California     (7f16-ff51-fa37-ef72) [ THING:"climate", VALUE:"high", ATTRIBUTE:"in humidity", SCOPE_RELATIVETO:"in california" ]
+	//row *autoRow14 = [UUID:"7f16-ff51-fa37-ef72", THING: "climate", VALUE: "high", ATTRIBUTE: "in humidity", SCOPE_RELATIVETO: "in california"] //OVER-CONSTR.
+	row *autoRow14 = [UUID:"7f16-ff51-fa37-ef72", THING: "climate", VALUE: "high", ATTRIBUTE: "in humidity", SCOPE_RELATIVETO: "in california"]
+
+	// CENTRAL         PROP-THINGS: the climate is low in humidity in Nevada     (4493-589b-f126-ea3e) [ THING:"climate", VALUE:"low", ATTRIBUTE:"in humidity", SCOPE_RELATIVETO:"in nevada" ]
+	//row autoRow15 = [UUID:"4493-589b-f126-ea3e", THING: "climate", VALUE: "low", ATTRIBUTE: "in humidity", SCOPE_RELATIVETO: "in nevada"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"4493-589b-f126-ea3e", THING: "climate", VALUE: "low", ATTRIBUTE: "in humidity", SCOPE_RELATIVETO: "in nevada"]
+
+	// CENTRAL         KINDOF: humidity is a kind of water vapor     (06e7-3920-6321-983c) [ HYPONYM:"humidity", HYPERNYM:"water vapor" ]
+	//  Notes: peripheral
+	//row autoRow16 = [UUID:"06e7-3920-6321-983c", HYPONYM: "humidity", HYPERNYM: "water vapor"] //OVER-CONSTR.
+	row autoRow16 = [UUID:"06e7-3920-6321-983c", HYPONYM: "humidity", HYPERNYM: "water vapor"]
+
+	// LEXGLUE         SYNONYMY: moist means humid     (9736-3e2b-eeb0-9a01) [ X1:"moist", X2:"humid" ]
+	//row autoRow17 = [UUID:"9736-3e2b-eeb0-9a01", X1: "moist", X2: "humid"] //OVER-CONSTR.
+	row autoRow17 = [UUID:"9736-3e2b-eeb0-9a01", X1: "moist", X2: "humid"]
+
+endinferencepattern

@@ -1,0 +1,50 @@
+// Automatically converted pattern
+inferencepattern EARTH_GEO_Definition_Minerals
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       MADEOF: a quartz is made of six-sided transparent crystals     (8d0a-7ce6-0ab0-d9f0) [ OBJECT:"quartz", VALUE:"six-sided transparent;six side transparent", MATERIAL:"crystal" ]
+	//        HINTROW a diamond is made of face-centered cubic crystals     (0077-cc92-85d1-3b4a) [ OBJECT:"diamond", VALUE:"face-centered cubic;face center cubic", MATERIAL:"crystal" ]
+	//row autoRow0 = [TABLE:"MADEOF", OBJECT: <quartz_0>, MATERIAL: "crystal"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"MADEOF", OBJECT: <quartz_0>, MATERIAL: "crystal"]
+
+	// GROUNDING       KINDOF: quartz is a kind of mineral     (fe8b-fc9f-5401-dc19) [ HYPONYM:"quartz", HYPERNYM:"mineral" ]
+	//        HINTROW diamond is a kind of mineral     (7e9a-fec3-cac8-51bb) [ HYPONYM:"diamond", HYPERNYM:"mineral" ]
+	//row autoRow1 = [TABLE:"KINDOF", HYPONYM: <quartz_0>, HYPERNYM: "mineral"] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"KINDOF", HYPONYM: <quartz_0>, HYPERNYM: "mineral"]
+
+	// CENTRAL         ACTION: classifying means grouping objects ; materials by their properties     (69c1-2991-2421-ce63) [ DEFINITION_NAME:"classify", ACTION2:"group", OBJECT_PROPERTY:"object;material", HOW:"property" ]
+	//row autoRow2 = [UUID:"69c1-2991-2421-ce63", DEFINITION_NAME: "classify", ACTION2: "group", OBJECT_PROPERTY: "object", HOW: "property"] //OVER-CONSTR.
+	row autoRow2 = [UUID:"69c1-2991-2421-ce63", DEFINITION_NAME: "classify", ACTION2: "group", OBJECT_PROPERTY: "object", HOW: "property"]
+
+	// CENTRAL         USEDFOR: the shape of the crystal of a substance can be used for identifying the substance     (93dc-83a4-40b7-18be) [ AGENT_OBJECT:"shape of crystal", SCOPE1:"of substance", QUALIFIER:"be", FOR_PURPOSE:"identify", PATIENT:"substance" ]
+	//row autoRow3 = [UUID:"93dc-83a4-40b7-18be", AGENT_OBJECT: "shape of crystal", SCOPE1: "of substance", QUALIFIER: "be", FOR_PURPOSE: "identify", PATIENT: "substance"] //OVER-CONSTR.
+	row autoRow3 = [UUID:"93dc-83a4-40b7-18be", AGENT_OBJECT: "shape of crystal", SCOPE1: "of substance", QUALIFIER: "be", FOR_PURPOSE: "identify", PATIENT: "substance"]
+
+	// CENTRAL         PROP-THINGS: a mineral usually has a crystal structure     (16b8-4881-cbed-004f) [ THING:"mineral", QUALIFIER1:"usually", VALUE:"crystal", ATTRIBUTE:"structure" ]
+	//row autoRow4 = [UUID:"16b8-4881-cbed-004f", THING: "mineral", QUALIFIER1: "usually", VALUE: "crystal", ATTRIBUTE: "structure"] //OVER-CONSTR.
+	row autoRow4 = [UUID:"16b8-4881-cbed-004f", THING: "mineral", QUALIFIER1: "usually", VALUE: "crystal", ATTRIBUTE: "structure"]
+
+	// CENTRAL         PROP-GENERIC: structure is a property of an object ; a material ; a substance     (46f3-afab-99e4-ee0c) [ X:"structure", Y:"object;material;substance" ]
+	//row autoRow5 = [UUID:"46f3-afab-99e4-ee0c", X: "structure", Y: "object"] //OVER-CONSTR.
+	row autoRow5 = [UUID:"46f3-afab-99e4-ee0c", X: "structure", Y: "object"]
+
+	// CENTRAL         KINDOF: a mineral is a kind of solid ; natural material     (f294-6f62-2e34-4af0) [ HYPONYM:"mineral", SCOPE1:"solid;nature", HYPERNYM:"material" ]
+	//  Notes: peripheral
+	//row autoRow6 = [UUID:"f294-6f62-2e34-4af0", HYPONYM: "mineral", SCOPE1: "solid", HYPERNYM: "material"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"f294-6f62-2e34-4af0", HYPONYM: "mineral", SCOPE1: "solid", HYPERNYM: "material"]
+
+	// LEXGLUE         SYNONYMY: being made of crystals is synonymous with having a crystal structure     (7146-f88d-9166-0691) [ ACTION1:"be make of", Y1:"crystal", ACTION2:"have", Y2:"crystal structure" ]
+	//row autoRow7 = [UUID:"7146-f88d-9166-0691", ACTION1: "be make of", Y1: "crystal", ACTION2: "have", Y2: "crystal structure"] //OVER-CONSTR.
+	row autoRow7 = [UUID:"7146-f88d-9166-0691", ACTION1: "be make of", Y1: "crystal", ACTION2: "have", Y2: "crystal structure"]
+
+	// LEXGLUE         SYNONYMY: grouping means putting ; placing in different groups     (ba30-2a8a-fe88-bca0) [ ACTION1:"group", ACTION2:"putt;place", Y2:"in differ group" ]
+	//row autoRow8 = [UUID:"ba30-2a8a-fe88-bca0", ACTION1: "group", ACTION2: "putt", Y2: "in differ group"] //OVER-CONSTR.
+	row autoRow8 = [UUID:"ba30-2a8a-fe88-bca0", ACTION1: "group", ACTION2: "putt", Y2: "in differ group"]
+
+endinferencepattern

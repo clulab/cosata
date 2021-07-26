@@ -1,0 +1,82 @@
+// Automatically converted pattern
+inferencepattern EARTH_HUMIMP_Source_of_Freshwater
+
+	// Plain text description
+	description = ""
+
+	// Requirements
+
+	// Row Definitions
+
+	// CENTRALSW       SOURCEOF: ice caps are a source of freshwater     (d7f6-50dd-7ca1-7176) [ AGENT:"ice cap", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"freshwater" ]
+	//        HINTROW glaciers are a source of freshwater     (ec40-fbdc-c113-3859) [ AGENT:"glacier", VERB_SOURCEOF_PROVIDE_ETC:"be source of", WHAT_IT_PROVIDES:"freshwater" ]
+	//row autoRow0 = [TABLE:"SOURCEOF", AGENT: <ice_0>+<cap_1>, VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "freshwater"] //OVER-CONSTR.
+	row autoRow0 = [TABLE:"SOURCEOF", AGENT: <ice_0>+<cap_1>, VERB_SOURCEOF_PROVIDE_ETC: "be source of", WHAT_IT_PROVIDES: "freshwater"]
+
+	// CENTRALSW       MADEOF: the polar ice caps are made of ice     (cb0f-c249-986a-bc7c) [ OBJECT:"polar ice cap", MATERIAL:"ice" ]
+	//        HINTROW a glacier is made of ice     (b901-aa66-c858-54e7) [ OBJECT:"glacier", MATERIAL:"ice" ]
+	//row autoRow1 = [TABLE:"MADEOF", OBJECT: "polar"+<ice_0>+<cap_1>, MATERIAL: <ice_0>] //OVER-CONSTR.
+	row autoRow1 = [TABLE:"MADEOF", OBJECT: *"POS:JJ"+<ice_0>+<cap_1>, MATERIAL: <ice_0>]
+
+	// GROUNDING       KINDOF: a ice cap is a kind of body of water     (dddd-0b38-d1b4-2961) [ HYPONYM:"ice cap", HYPERNYM:"body of water" ]
+	//        HINTROW a glacier is a kind of body of water     (7b89-9ee6-46e3-69f9) [ HYPONYM:"glacier", HYPERNYM:"body of water" ]
+	//row autoRow2 = [TABLE:"KINDOF", HYPONYM: <ice_0>+<cap_1>, HYPERNYM: "body of water"] //OVER-CONSTR.
+	row autoRow2 = [TABLE:"KINDOF", HYPONYM: <ice_0>+<cap_1>, HYPERNYM: "body of water"]
+
+	// GROUNDING       KINDOF: polar ice cap is a kind of ice cap     (d1dd-062b-980f-a57e) [ HYPONYM:"polar ice cap", HYPERNYM:"ice cap" ]
+	//        HINTROW ice sheet ; polar ice sheet is a kind of glacier     (0055-15be-f747-3fef) [ HYPONYM:"ice sheet;polar ice sheet", HYPERNYM:"glacier" ]
+	//row autoRow3 = [TABLE:"KINDOF", HYPONYM: "polar"+<ice_0>+<cap_1>, HYPERNYM: <ice_0>+<cap_1>] //OVER-CONSTR.
+	row autoRow3 = [TABLE:"KINDOF", HYPONYM: "polar"+<ice_0>+<cap_1>, HYPERNYM: <ice_0>+<cap_1>]
+
+	// GROUNDING       KINDOF: glaciers are a kind of major reservoir     (0a38-75b6-1b3b-0082) [ HYPONYM:"glacier", SCOPE1:"major", HYPERNYM:"reservoir" ]
+	//        HINTROW ice sheets are a kind of major water reservoir     (9ca8-f1bc-ed81-1fee) [ HYPONYM:"ice sheet", SCOPE1:"major", HYPERNYM:"water reservoir" ]
+	//row autoRow4 = [TABLE:"KINDOF", HYPONYM: "glacier", SCOPE1: "major", HYPERNYM: "reservoir"] //OVER-CONSTR.
+	row autoRow4 = [TABLE:"KINDOF", HYPONYM: "glacier", SCOPE1: "major", HYPERNYM: "reservoir"]
+
+	// CENTRAL         LOCATIONS: the majority of freshwater is found in ice caps ; glaciers     (2279-14a1-7023-5437) [ QUANTIFIER:"majority of", THING_PROCESS:"freshwater", LOCATION:"ice cap;glacier" ]
+	//row autoRow5 = [UUID:"2279-14a1-7023-5437", QUANTIFIER: "majority of", THING_PROCESS: "freshwater", LOCATION: <ice_0>+<cap_1>] //OVER-CONSTR.
+	row autoRow5 = [UUID:"2279-14a1-7023-5437", QUANTIFIER: "majority of", THING_PROCESS: "freshwater", LOCATION: <ice_0>+<cap_1>]
+
+	// CENTRAL         PROP-STATESOFMATTER-TEMPS: water is in the solid state , called ice , for temperatures between 0 ; -459 ; -273 and 273 ; 32 ; 0 K ; F ; C     (4a5a-9115-28a9-b97b) [ MATERIAL_NAME:"water", STATEOFMATTER:"solid", FORM_NAME:"ice", LOWER_BOUND:"0;-459;-273;459;273", UPPER_BOUND:"273;32;0", UNITS:"k;f;c" ]
+	//row autoRow6 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: <ice_0>, LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"] //OVER-CONSTR.
+	row autoRow6 = [UUID:"4a5a-9115-28a9-b97b", MATERIAL_NAME: "water", STATEOFMATTER: "solid", FORM_NAME: <ice_0>, LOWER_BOUND: "0", UPPER_BOUND: "273", UNITS: "k"]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if glaciers melt , then the melting glacial ice will be freshwater     (db6b-75c4-fea0-f7eb) [ THING:"glacier", ACTION1:"melt", ADJ_QUANTITY2:"melt", ACTOR_AGENT_PROCESS2:"glacial ice", OBJECT_PROPERTY3:"freshwater" ]
+	//row *autoRow7 = [UUID:"db6b-75c4-fea0-f7eb", THING: "glacier", ACTION1: "melt", ADJ_QUANTITY2: "melt", ACTOR_AGENT_PROCESS2: "glacial"+<ice_0>, OBJECT_PROPERTY3: "freshwater"] //OVER-CONSTR.
+	row *autoRow7 = [UUID:"db6b-75c4-fea0-f7eb", THING: "glacier", ACTION1: "melt", ADJ_QUANTITY2: "melt", ACTOR_AGENT_PROCESS2: "glacial"+<ice_0>, OBJECT_PROPERTY3: "freshwater"]
+
+	// CENTRAL         CONTAINS: Antarctic polar ice contains ice ; glaciers     (c6f4-727a-aac3-9aa9) [ OBJECT_AGENT:"antarctic polar ice", WHAT_IT_CONTAINS:"ice;glacier" ]
+	//row autoRow8 = [UUID:"c6f4-727a-aac3-9aa9", OBJECT_AGENT: "antarctic polar"+<ice_0>, WHAT_IT_CONTAINS: <ice_0>] //OVER-CONSTR.
+	row autoRow8 = [UUID:"c6f4-727a-aac3-9aa9", OBJECT_AGENT: "antarctic polar"+<ice_0>, WHAT_IT_CONTAINS: <ice_0>]
+
+	// CENTRAL         CONTAINS: Earth contains glaciers ; ice caps     (5962-c3e3-67cc-829b) [ OBJECT_AGENT:"earth", WHAT_IT_CONTAINS:"glacier;ice cap" ]
+	//row autoRow9 = [UUID:"5962-c3e3-67cc-829b", OBJECT_AGENT: "earth", WHAT_IT_CONTAINS: <ice_0>+<cap_1>] //OVER-CONSTR.
+	row autoRow9 = [UUID:"5962-c3e3-67cc-829b", OBJECT_AGENT: "earth", WHAT_IT_CONTAINS: <ice_0>+<cap_1>]
+
+	// CENTRAL        (OPTIONAL) IFTHEN: if the water is freshwater , then the water is not a source of salt     (7847-3026-98ee-208e) [ THING:"water", OBJECT_PATIENT1:"freshwater", ACTOR_AGENT_PROCESS2:"water", QUANTIFIER3:"not", ACTION3:"source of", OBJECT_PROPERTY3:"salt" ]
+	//row *autoRow10 = [UUID:"7847-3026-98ee-208e", THING: "water", OBJECT_PATIENT1: "freshwater", ACTOR_AGENT_PROCESS2: "water", QUANTIFIER3: "not", ACTION3: "source of", OBJECT_PROPERTY3: "salt"] //OVER-CONSTR.
+	row *autoRow10 = [UUID:"7847-3026-98ee-208e", THING: "water", OBJECT_PATIENT1: "freshwater", ACTOR_AGENT_PROCESS2: "water", QUANTIFIER3: "not", ACTION3: "source of", OBJECT_PROPERTY3: "salt"]
+
+	// CENTRAL         CONTAINS: a body of water contains water     (b927-5436-1d17-c396) [ OBJECT_AGENT:"body of water", WHAT_IT_CONTAINS:"water" ]
+	//row autoRow11 = [UUID:"b927-5436-1d17-c396", OBJECT_AGENT: "body of water", WHAT_IT_CONTAINS: "water"] //OVER-CONSTR.
+	row autoRow11 = [UUID:"b927-5436-1d17-c396", OBJECT_AGENT: "body of water", WHAT_IT_CONTAINS: "water"]
+
+	// CENTRAL         KINDOF: ice is a kind of solid     (7ef1-c28b-22e3-3edc) [ HYPONYM:"ice", HYPERNYM:"solid" ]
+	//  Notes: peripheral
+	//row autoRow12 = [UUID:"7ef1-c28b-22e3-3edc", HYPONYM: <ice_0>, HYPERNYM: "solid"] //OVER-CONSTR.
+	row autoRow12 = [UUID:"7ef1-c28b-22e3-3edc", HYPONYM: <ice_0>, HYPERNYM: "solid"]
+
+	// CENTRAL         CONTAINS: a water reservoir contains water     (05be-c29c-dfe4-7212) [ OBJECT_AGENT:"water reservoir", WHAT_IT_CONTAINS:"water" ]
+	//  Notes: cefe-3324-8ad0-9949->05be-c29c-dfe4-7212,3b3b-1bbf-c9ce-ef12
+	//row autoRow13 = [UUID:"05be-c29c-dfe4-7212", OBJECT_AGENT: "water reservoir", WHAT_IT_CONTAINS: "water"] //OVER-CONSTR.
+	row autoRow13 = [UUID:"05be-c29c-dfe4-7212", OBJECT_AGENT: "water reservoir", WHAT_IT_CONTAINS: "water"]
+
+	// LEXGLUE         PROP-THINGS: ice is cold in temperature     (d495-a1f3-29eb-04fe) [ THING:"ice", VALUE:"cold", ATTRIBUTE:"in temperature" ]
+	//row autoRow14 = [UUID:"d495-a1f3-29eb-04fe", THING: <ice_0>, VALUE: "cold", ATTRIBUTE: "in temperature"] //OVER-CONSTR.
+	row autoRow14 = [UUID:"d495-a1f3-29eb-04fe", THING: <ice_0>, VALUE: "cold", ATTRIBUTE: "in temperature"]
+
+	// LEXGLUE         SYNONYMY: fresh water means freshwater     (1fc0-1a1e-2e4e-6bc7) [ X1:"fresh water", X2:"freshwater" ]
+	//row autoRow15 = [UUID:"1fc0-1a1e-2e4e-6bc7", X1: "fresh water", X2: "freshwater"] //OVER-CONSTR.
+	row autoRow15 = [UUID:"1fc0-1a1e-2e4e-6bc7", X1: "fresh water", X2: "freshwater"]
+
+endinferencepattern
